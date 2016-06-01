@@ -1,0 +1,23 @@
+{
+  "name": "cooperation_web_html",
+  "version": "1.0.0",
+  "description": "众创部落页面version1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.oschina.net/copyrightshow/cooperation_web_html.git"
+  },
+  "keywords": [
+    "众创部落"
+  ],
+  "author": "xiao++",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-ruby-sass": "^2.0.6"
+  }
+}

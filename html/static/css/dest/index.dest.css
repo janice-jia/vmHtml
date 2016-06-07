@@ -1,0 +1,9 @@
+.test {
+  background-position: 0 0;
+  color: #dddddd; }
+
+
+/* ../../images/positonIcon/index.png */
+.test{
+background-image: url(../../images/positonIcon/index.png);
+}

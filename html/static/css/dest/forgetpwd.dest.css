@@ -8,7 +8,8 @@
   #fgpwd ul {
     text-align: center;
     margin: 0 auto;
-    overflow: hidden; }
+    overflow: hidden;
+    display: inline-block; }
   #fgpwd li {
     width: 154px;
     text-align: center;

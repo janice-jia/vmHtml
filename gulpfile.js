@@ -12,6 +12,7 @@ var uglify = require('gulp-uglify');//压缩js代码
 var rename = require('gulp-rename');//重命名
 var notify = require('gulp-notify');//更改提醒
 var cssSprite = require('gulp-css-spritesmith');//css 代码中的切片合并成雪碧图的工具
+var gulpIf = require('gulp-if');//gulp if
 
 /**
  * 引入配置
@@ -23,7 +24,7 @@ var pathConfig = require('./gulpConfigPath.js');
 /*
  * default
  * */
-gulp.task('default', ['autoSprite','styles','cleanCss','scripts']);
+gulp.task('default', ['styles','autoSprite','cleanCss','scripts']);
 
 
 /*
@@ -94,19 +95,19 @@ gulp.task('scripts', function() {
 
 // autoSprite 任务
 gulp.task('autoSprite', function() {
-        gulp.src('html/static/css/src/*.scss').pipe(cssSprite({
+        gulp.src('html/static/css/dest/*.css').pipe(cssSprite({
             // sprite背景图源文件夹，只有匹配此路径才会处理，默认 images/slice/
             imagepath: pathConfig.src.iconSrc,
 
             // 雪碧图输出目录，注意，会覆盖之前文件！默认 images/
-            spritedest: 'html/static/images/iconPositon/',
+            spritedest: 'html/static/images/positonIcon/',
 
             // 替换后的背景路径，默认 ../images/
-            spritepath: './static/images/iconPositon/',
+            spritepath: '../../images/positonIcon/',
 
         }))
         ////给文件添加.min后缀
-        .pipe(rename({suffix: '.dest' }))
+        .pipe(gulpIf('*.css',rename({suffix: '.dest' })))
 
         .pipe(gulp.dest('./'))
         //提醒任务完成

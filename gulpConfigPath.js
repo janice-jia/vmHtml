@@ -14,6 +14,5 @@ module.exports = {
         jsSrc: './html/static/js/src/*.js',
         jsDest: './html/static/js/dest',
         iconSrc: './html/static/images/icon/',
-        iconDest: './html/static/images/icon/',
     }
 }

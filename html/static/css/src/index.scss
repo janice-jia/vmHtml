@@ -1,2 +1,6 @@
-.aa{background-image:url("../../images/icon/icon_switch-off.png");width:71px;height:29px}
-.bb{background-image:url("../../images/icon/icon_switch-on.png");width:71px;height:29px}
+.aa{background-position: 0 0;width:71px;height:29px}
+
+/* ../images/iconPositon/index.scss.png */
+.aa{
+background-image: url(../images/iconPositon/index.scss.png);
+}

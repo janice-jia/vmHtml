@@ -101,8 +101,8 @@ gulp.task('autoSprite', function() {
             spritepath: '../images/iconPositon/',
 
         }))
-        //给文件添加.min后缀
-        .pipe(rename({suffix: '.position' }))
+        ////给文件添加.min后缀
+        //.pipe(rename({suffix: '.position' }))
 
         .pipe(gulp.dest('./'))
         //提醒任务完成

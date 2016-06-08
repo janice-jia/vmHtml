@@ -1,51 +1,114 @@
 $orange: #ffb30e;
 $gray: #9d9b9b;
 $light-gray: #9d9b9b;
+$white: #fff;
+$black: #000;
 #fgpwd {
   background-image: url(../../images/fgpwd/fgpwd_bg.jpg);
   height: 100vh;
   width: 100vw;
   text-align: center;
-  .container{
-    padding-top:50px ;
+  .container {
+    padding-top: 50px;
   }
-  ul{
+  ul {
     text-align: center;
-    margin:0 auto;
+    margin: 0 auto;
     overflow: hidden;
     display: inline-block;
-  }
-  //ul::after{
-  //  content: "";
-  //  clear: both;
-  //  display:table;
-  //}
-  li {
-    width: 154px;
-    text-align: center;
-    color: #fff;
-    float: left;
-
-    b {
-      width: 50px;
-      height: 50px;
-      background-color: $gray;
-      display: inline-block;
-      border-radius: 50%;
-      position: relative;
-      line-height: 50px;
-      i {
-        position: absolute;
-        top:50%;
-        left:-79px;
-        width: 105px;
-        display: inline-block;
-        height: 2px;
-        vertical-align: middle;;
+    li {
+      width: 154px;
+      text-align: center;
+      color: #fff;
+      float: left;
+      b {
+        width: 50px;
+        height: 50px;
         background-color: $gray;
-        margin-left: -50%;
+        display: inline-block;
+        border-radius: 50%;
+        position: relative;
+        line-height: 50px;
+        i {
+          position: absolute;
+          top: 50%;
+          left: -79px;
+          width: 105px;
+          display: inline-block;
+          height: 2px;
+          vertical-align: middle;;
+          background-color: $gray;
+          margin-left: -50%;
+        }
+      }
+      p {
+        line-height: 60px;
+      }
+    }
+    [data-fgpwd="finish"] {
+      b {
+        background-color: $orange;
       }
 
+      p {
+        color: $orange;
+      }
+    }
+
+  }
+  [data-fgpwd="form"] {
+    width: 440px;
+    padding: 24px 48px;
+    background-color: $white;
+    margin: 0 auto;
+    h2 {
+      font-size: 28px;
+      margin-bottom: 50px;;
+    }
+    span[data-fgpwd$='icon']{
+      background-repeat: no-repeat;
+      position: absolute;
+      height:100%;
+      width:40px;
+    }
+    input {
+      border: none;
+      box-shadow: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      padding-left: 50px;
+      height:52px;
+      line-height: 51px;
+    }
+    [data-fgpwd="fgunameicon"]{
+      background-image: url("../../images/icon/icon_fguser.png");
+    }
+    [data-fgpwd="fgverifyicon"]{
+      background-image: url("../../images/icon/icon_fgverify.png");
+    }
+    .form-group {
+      border-bottom: 1px solid #a7a7a7;
+    }
+    [data-fgpwd="nextStep"] {
+      background-color: $orange;
+      height: 60px;
+      margin-top: 60px;
+      margin-bottom: 10px;
     }
   }
+}
+
+#randomCode {
+  width: 50%;
+  background: $gray;
+  height: 60px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#changeCode {
+  vertical-align: middle;
+  width: 50%;
+  display: inline-block;
 }

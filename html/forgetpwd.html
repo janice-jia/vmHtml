@@ -15,6 +15,7 @@
     <![endif]-->
 </head>
 <body>
+<header></header>
 
 <div id="fgpwd">
     <div class="container">
@@ -45,6 +46,25 @@
                 <p>完成</p>
             </li>
         </ul>
+        <div data-fgpwd="form">
+            <h2>找回密码</h2>
+            <form id="addusername" action="">
+                <div class="form-group has-success has-feedback" >
+                    <label for="uname" class="sr-only">UserName/PhoneNumber</label>
+                    <span class="input-group-addon" data-fgpwd="fgunameicon"></span>
+                    <input class="form-control"  id="uname" name="uname" placeholder="请填写您的手机号/用户名">
+                </div>
+                <div class="form-group has-success has-feedback" >
+                    <label for="verify" class="sr-only">Verification code</label>
+                    <span class="input-group-addon" data-fgpwd="fgverifyicon"></span>
+                    <input class="form-control"  id="verify" name="verify" placeholder="请输入验证码">
+                </div>
+                <div data-fgpwd="randomCode">
+                    <div id="randomCode"></div><span id="changeCode">看不清？换一张</span>
+                </div>
+                <button type="button" data-fgpwd="nextStep" class="btn-block ">下一步</button>
+            </form>
+        </div>
     </div>
 
 </div>

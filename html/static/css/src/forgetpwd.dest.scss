@@ -1,3 +1,4 @@
+@charset "utf-8";
 $orange: #ffb30e;
 $gray: #9d9b9b;
 $light-gray: #9d9b9b;
@@ -11,6 +12,7 @@ $black: #000;
   .container {
     padding-top: 50px;
   }
+  /***  步骤  ***/
   ul {
     text-align: center;
     margin: 0 auto;
@@ -29,6 +31,7 @@ $black: #000;
         border-radius: 50%;
         position: relative;
         line-height: 50px;
+        font-size: 32px;
         i {
           position: absolute;
           top: 50%;
@@ -54,13 +57,68 @@ $black: #000;
         color: $orange;
       }
     }
-
   }
-  [data-fgpwd="form"] {
+  /**** 过程 *****/
+
+  [data-fgpwd="form_process"]{
+    form{
+      padding: 50px 48px 35px;
+      width: 440px;
+      background-color: $white;
+      margin: 0 auto;
+      border-radius: 10px;
+      margin-top: 60px;
+    }
+    /**************  1： 添加用户名  *********************/
+    h2 {
+      font-size: 28px;
+      margin-bottom: 50px;;
+    }
+    span[data-fgpwd$='icon']{
+      background-repeat: no-repeat;
+      position: absolute;
+      height:100%;
+      width:40px;
+    }
+    input {
+      border: none;
+      box-shadow: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      padding-left: 50px;
+      height:52px;
+      line-height: 51px;
+    }
+    [data-fgpwd="fgunameicon"]{
+      background-image: url("../../images/icon/icon_fguser.png");
+    }
+    [data-fgpwd="fgverifyicon"]{
+      background-image: url("../../images/icon/icon_fgverify.png");
+    }
+    .form-group {
+      border-bottom: 1px solid #a7a7a7;
+    }
+    [data-fgpwd="nextStep"] {
+      background-color: $orange;
+      height: 60px;
+      margin-top: 60px;
+    }
+
+    /**************  2： 验证身份   *********************/
+
+    /**************  3： 设置新密码  *********************/
+
+    /**************  4：完成  *********************/
+  }
+
+  [data-fgpwd="form_finish"] {
     width: 440px;
-    padding: 24px 48px;
     background-color: $white;
     margin: 0 auto;
+    border-radius: 10px;
+    margin-top:10px;
+    padding: 24px 48px;
     h2 {
       font-size: 28px;
       margin-bottom: 50px;;
@@ -99,16 +157,38 @@ $black: #000;
   }
 }
 
-#randomCode {
+/****  获取随机验证码  ****/
+#fgpwd_randomCode {
   width: 50%;
   background: $gray;
   height: 60px;
   display: inline-block;
   vertical-align: middle;
 }
-
-#changeCode {
+/****  更换随机验证码  ****/
+#fgpwd_changeCode {
   vertical-align: middle;
   width: 50%;
   display: inline-block;
 }
+
+
+/*** 默认隐藏模块 **/
+[data-fgpwd="form_process"]{
+  form{
+    display:none;
+  }
+}
+[data-fgpwd="form_finish"]{
+  display:none;
+}
+
+
+
+
+
+
+
+
+
+

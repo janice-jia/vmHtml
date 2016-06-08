@@ -1,8 +1,11 @@
+@charset "UTF-8";
 #fgpwd {
   background-image: url(../../images/fgpwd/fgpwd_bg.jpg);
   height: 100vh;
   width: 100vw;
-  text-align: center; }
+  text-align: center;
+  /***  步骤  ***/
+  /**** 过程 *****/ }
   #fgpwd .container {
     padding-top: 50px; }
   #fgpwd ul {
@@ -22,7 +25,8 @@
         display: inline-block;
         border-radius: 50%;
         position: relative;
-        line-height: 50px; }
+        line-height: 50px;
+        font-size: 32px; }
         #fgpwd ul li b i {
           position: absolute;
           top: 50%;
@@ -39,46 +43,94 @@
       background-color: #ffb30e; }
     #fgpwd ul [data-fgpwd="finish"] p {
       color: #ffb30e; }
-  #fgpwd [data-fgpwd="form"] {
-    width: 440px;
-    padding: 24px 48px;
-    background-color: #fff;
-    margin: 0 auto; }
-    #fgpwd [data-fgpwd="form"] h2 {
+  #fgpwd [data-fgpwd="form_process"] {
+    /**************  1： 添加用户名  *********************/
+    /**************  2： 验证身份   *********************/
+    /**************  3： 设置新密码  *********************/
+    /**************  4：完成  *********************/ }
+    #fgpwd [data-fgpwd="form_process"] form {
+      padding: 50px 48px 35px;
+      width: 440px;
+      background-color: #fff;
+      margin: 0 auto;
+      border-radius: 10px;
+      margin-top: 60px; }
+    #fgpwd [data-fgpwd="form_process"] h2 {
       font-size: 28px;
       margin-bottom: 50px; }
-    #fgpwd [data-fgpwd="form"] span[data-fgpwd$='icon'] {
+    #fgpwd [data-fgpwd="form_process"] span[data-fgpwd$='icon'] {
       background-repeat: no-repeat;
       position: absolute;
       height: 100%;
       width: 40px; }
-    #fgpwd [data-fgpwd="form"] input {
+    #fgpwd [data-fgpwd="form_process"] input {
       border: none;
       box-shadow: none;
       box-shadow: none;
       padding-left: 50px;
       height: 52px;
       line-height: 51px; }
-    #fgpwd [data-fgpwd="form"] [data-fgpwd="fgunameicon"] {
+    #fgpwd [data-fgpwd="form_process"] [data-fgpwd="fgunameicon"] {
       background-image: url("../../images/icon/icon_fguser.png"); }
-    #fgpwd [data-fgpwd="form"] [data-fgpwd="fgverifyicon"] {
+    #fgpwd [data-fgpwd="form_process"] [data-fgpwd="fgverifyicon"] {
       background-image: url("../../images/icon/icon_fgverify.png"); }
-    #fgpwd [data-fgpwd="form"] .form-group {
+    #fgpwd [data-fgpwd="form_process"] .form-group {
       border-bottom: 1px solid #a7a7a7; }
-    #fgpwd [data-fgpwd="form"] [data-fgpwd="nextStep"] {
+    #fgpwd [data-fgpwd="form_process"] [data-fgpwd="nextStep"] {
+      background-color: #ffb30e;
+      height: 60px;
+      margin-top: 60px; }
+  #fgpwd [data-fgpwd="form_finish"] {
+    width: 440px;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 24px 48px; }
+    #fgpwd [data-fgpwd="form_finish"] h2 {
+      font-size: 28px;
+      margin-bottom: 50px; }
+    #fgpwd [data-fgpwd="form_finish"] span[data-fgpwd$='icon'] {
+      background-repeat: no-repeat;
+      position: absolute;
+      height: 100%;
+      width: 40px; }
+    #fgpwd [data-fgpwd="form_finish"] input {
+      border: none;
+      box-shadow: none;
+      box-shadow: none;
+      padding-left: 50px;
+      height: 52px;
+      line-height: 51px; }
+    #fgpwd [data-fgpwd="form_finish"] [data-fgpwd="fgunameicon"] {
+      background-image: url("../../images/icon/icon_fguser.png"); }
+    #fgpwd [data-fgpwd="form_finish"] [data-fgpwd="fgverifyicon"] {
+      background-image: url("../../images/icon/icon_fgverify.png"); }
+    #fgpwd [data-fgpwd="form_finish"] .form-group {
+      border-bottom: 1px solid #a7a7a7; }
+    #fgpwd [data-fgpwd="form_finish"] [data-fgpwd="nextStep"] {
       background-color: #ffb30e;
       height: 60px;
       margin-top: 60px;
       margin-bottom: 10px; }
 
-#randomCode {
+/****  获取随机验证码  ****/
+#fgpwd_randomCode {
   width: 50%;
   background: #9d9b9b;
   height: 60px;
   display: inline-block;
   vertical-align: middle; }
 
-#changeCode {
+/****  更换随机验证码  ****/
+#fgpwd_changeCode {
   vertical-align: middle;
   width: 50%;
   display: inline-block; }
+
+/*** 默认隐藏模块 **/
+[data-fgpwd="form_process"] form {
+  display: none; }
+
+[data-fgpwd="form_finish"] {
+  display: none; }

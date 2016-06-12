@@ -7,7 +7,7 @@ $color2:#ffb30e;     /*黄色*/
 $color3:#c0c0c0;    /*浅灰*/
 
 
-.header-wall{
+#header-wall{
     height: 78px;
     width: 100%;
     background: #000000;
@@ -15,11 +15,19 @@ $color3:#c0c0c0;    /*浅灰*/
         width: 960px;
         padding: 0 20px;
         margin: 0 auto;
+        height: 100%;
         .header-log{
             float: left;
-            width: 38px;
-            height: 48px;
-            background: url("../../images/icon/logo.png") no-repeat;
+            a{
+                display: block;
+                padding: 8px 40px 0 17px;
+            }
+            .zcbl-logo{
+                display: block;
+                width: 38px;
+                height: 48px;
+                background: url("../../images/icon/logo.png") no-repeat;
+            }
         }
         .header-nav{
             float: left;
@@ -33,13 +41,38 @@ $color3:#c0c0c0;    /*浅灰*/
                     color: $color3;
                 }
                 &:hover,&.header-nav-hover{
-                    height: 74px;
+                    height: 78px;
                     background: $color1;
                     border-bottom:4px solid $color2;
                 }
                 &:hover a, &.header-nav-hover a{
                     color: #ffffff;
                 }
+            }
+        }
+        .header-right{
+            float: right;
+            width: 370px;
+            height: 100%;
+            .header-publish{
+                float: left;
+                width: 170px;
+                height: 100%;
+                line-height: 78px;
+                background: $color2;
+                text-align: center;
+                a{
+                    color: #000000;
+                }
+            }
+            .header-msg{
+                float: left;
+            }
+            .header-user{
+                width: 34px;
+                height: 36px;
+                float: right;
+                padding: 20px 0;
             }
         }
     }

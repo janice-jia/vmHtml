@@ -39,9 +39,9 @@
           margin-left: -50%; }
       #fgpwd ul li p {
         line-height: 60px; }
-    #fgpwd ul [data-fgpwd="finish"] b {
+    #fgpwd ul [data-fgpwd="cur"] b {
       background-color: #ffb30e; }
-    #fgpwd ul [data-fgpwd="finish"] p {
+    #fgpwd ul [data-fgpwd="cur"] p {
       color: #ffb30e; }
   #fgpwd [data-fgpwd="form_process"] {
     /**************  1： 添加用户名  *********************/
@@ -80,6 +80,20 @@
       background-color: #ffb30e;
       height: 60px;
       margin-top: 60px; }
+    #fgpwd [data-fgpwd="form_process"] [data-fgpwd="fgphonekeyget"] {
+      background-color: #9d9b9b;
+      height: 40px;
+      width: 120px;
+      right: 0;
+      vertical-align: middle;
+      position: absolute;
+      line-height: 28px;
+      color: #fff; }
+    #fgpwd [data-fgpwd="form_process"] [data-fgpwd="finish"] {
+      background-color: #ffb30e;
+      height: 60px;
+      margin-top: 140px;
+      margin-bottom: 10px; }
   #fgpwd [data-fgpwd="form_finish"] {
     width: 440px;
     background-color: #fff;

@@ -1,0 +1,14 @@
+@charset "utf-8";
+$orange: #ffb30e;
+$gray: #9d9b9b;
+$light-gray: #9d9b9b;
+$white: #fff;
+$black: #000;
+#login{
+  margin-top: 128px;/***         删删删删删删删删删删删删删删删删删删删删删删删删删删删删删删删删                 **/
+  [data-login="container"]{
+    width:440px;
+    height:520px;
+    background-color:$white;
+  }
+}

@@ -29,15 +29,15 @@
         right: 0;
         line-height: 48px;
         color: #ffb30e; }
-    #login [data-login="container"] [data-login="form"] input {
-      border: none;
-      box-shadow: none;
-      box-shadow: none;
-      padding-left: 45px;
-      height: 54px;
-      line-height: 54px; }
     #login [data-login="container"] [data-login="form"] .form-group {
       border-bottom: 1px solid #a7a7a7; }
+      #login [data-login="container"] [data-login="form"] .form-group input {
+        border: none;
+        box-shadow: none;
+        box-shadow: none;
+        padding-left: 45px;
+        height: 54px;
+        line-height: 54px; }
       #login [data-login="container"] [data-login="form"] .form-group span[data-login$='icon'] {
         background-repeat: no-repeat;
         position: absolute;
@@ -49,11 +49,76 @@
         background-position: -40px 0; }
     #login [data-login="container"] [data-login="form"] [data-login="login_submit"] {
       background-color: #ffb30e;
-      height: 60px; }
+      height: 60px;
+      margin-top: 15px;
+      margin-bottom: 20px; }
+    #login [data-login="container"] [data-login="form"] [data-login="pwdrel"] {
+      margin-bottom: 56px;
+      line-height: 16px; }
+      #login [data-login="container"] [data-login="form"] [data-login="pwdrel"] input {
+        margin: 0px;
+        width: 16px;
+        height: 16px;
+        margin-right: 10px; }
+      #login [data-login="container"] [data-login="form"] [data-login="pwdrel"] label {
+        float: left;
+        font-size: 16px;
+        font-weight: normal;
+        margin: 0; }
+      #login [data-login="container"] [data-login="form"] [data-login="pwdrel"] a {
+        float: right;
+        color: #171717; }
+    #login [data-login="container"] [data-login="pwdrel"]:after {
+      display: table;
+      clear: both;
+      content: ""; }
+    #login [data-login="container"] p[data-login="hr"] {
+      color: #909090;
+      line-height: 16px;
+      position: relative;
+      margin-bottom: 20px; }
+      #login [data-login="container"] p[data-login="hr"] i[data-login="hrlt"], #login [data-login="container"] p[data-login="hr"] i[data-login="hrrt"] {
+        position: absolute;
+        top: 50%;
+        width: 160px;
+        display: inline-block;
+        height: 1px;
+        vertical-align: middle;
+        background-color: #909090; }
+      #login [data-login="container"] p[data-login="hr"] i[data-login="hrlt"] {
+        left: 0px; }
+      #login [data-login="container"] p[data-login="hr"] i[data-login="hrrt"] {
+        right: 0; }
+    #login [data-login="container"] ul[data-login='otherlog'] li {
+      float: left;
+      width: 33.3%;
+      line-height: 22px;
+      padding-left: 10px;
+      text-align: left; }
+      #login [data-login="container"] ul[data-login='otherlog'] li b {
+        margin-right: 10px;
+        width: 22px;
+        height: 23px;
+        display: inline-block; }
+    #login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_qq"] a {
+      color: #3ea6ff; }
+    #login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_qq"] b {
+      background-position: 0 -54px; }
+    #login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_weibo"] a {
+      color: #ff4943; }
+    #login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_weibo"] b {
+      background-position: -22px -54px; }
+    #login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_weixin"] a {
+      color: #4dd854; }
+    #login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_weixin"] b {
+      background-position: -44px -54px; }
 
 
 /* ../../images/positonIcon/login.dest.png */
 #login [data-login="container"] [data-login="form"] .form-group [data-login="logusericon"],
-#login [data-login="container"] [data-login="form"] .form-group [data-login="logpwdicon"]{
+#login [data-login="container"] [data-login="form"] .form-group [data-login="logpwdicon"],
+#login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_qq"] b,
+#login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_weibo"] b,
+#login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_weixin"] b{
 background-image: url(../../images/positonIcon/login.dest.png);
 }

@@ -1,0 +1,52 @@
+@charset "UTF-8";
+#login {
+  padding-top: 128px;
+  /***         删删删删删删删删删删删删删删删删删删删删删删删删删删删删删删删删                 **/
+  background-image: url(../../images/fgpwd/fgpwd_bg.jpg);
+  height: 100vh;
+  width: 100vw;
+  text-align: center; }
+  #login [data-login="container"] {
+    padding: 0 50px;
+    width: 440px;
+    height: 520px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #fff; }
+    #login [data-login="container"] [data-login="logo"] {
+      margin-top: -68px; }
+    #login [data-login="container"] [data-login="tab"] {
+      text-align: center;
+      position: relative;
+      margin-bottom: 15px; }
+      #login [data-login="container"] [data-login="tab"] h2 {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 48px; }
+      #login [data-login="container"] [data-login="tab"] [data-login="register"] {
+        position: absolute;
+        font-size: 16px;
+        right: 0;
+        line-height: 48px;
+        color: #ffb30e; }
+    #login [data-login="container"] [data-login="form"] input {
+      border: none;
+      box-shadow: none;
+      box-shadow: none;
+      padding-left: 45px;
+      height: 54px;
+      line-height: 54px; }
+    #login [data-login="container"] [data-login="form"] .form-group {
+      border-bottom: 1px solid #a7a7a7; }
+      #login [data-login="container"] [data-login="form"] .form-group span[data-login$='icon'] {
+        background-repeat: no-repeat;
+        position: absolute;
+        height: 100%;
+        width: 40px; }
+      #login [data-login="container"] [data-login="form"] .form-group [data-login="logusericon"] {
+        background-image: url("../../images/icon/icon_loguser.png"); }
+      #login [data-login="container"] [data-login="form"] .form-group [data-login="logpwdicon"] {
+        background-image: url("../../images/icon/icon_logpwd.png"); }
+    #login [data-login="container"] [data-login="form"] [data-login="login_submit"] {
+      background-color: #ffb30e;
+      height: 60px; }

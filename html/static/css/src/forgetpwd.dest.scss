@@ -48,37 +48,37 @@ $black: #000;
         line-height: 60px;
       }
     }
-    [data-fgpwd="finish"] {
+    [data-fgpwd="cur"] {
       b {
         background-color: $orange;
       }
-
       p {
         color: $orange;
+      }
+      i {
+        background-color: $orange;
       }
     }
   }
   /**** 过程 *****/
 
-  [data-fgpwd="form_process"]{
-    form{
+  [data-fgpwd="form_process"] {
+    form {
       padding: 50px 48px 35px;
       width: 440px;
+      height:405px;
       background-color: $white;
       margin: 0 auto;
       border-radius: 10px;
       margin-top: 60px;
+      position: relative;
     }
     /**************  1： 添加用户名  *********************/
-    h2 {
-      font-size: 28px;
-      margin-bottom: 50px;;
-    }
-    span[data-fgpwd$='icon']{
+    span[data-fgpwd$='icon'] {
       background-repeat: no-repeat;
       position: absolute;
-      height:100%;
-      width:40px;
+      height: 100%;
+      width: 40px;
     }
     input {
       border: none;
@@ -87,73 +87,71 @@ $black: #000;
       -moz-box-shadow: none;
       box-shadow: none;
       padding-left: 50px;
-      height:52px;
+      height: 52px;
       line-height: 51px;
     }
-    [data-fgpwd="fgunameicon"]{
+    [data-fgpwd="fgunameicon"] {
       background-image: url("../../images/icon/icon_fguser.png");
     }
-    [data-fgpwd="fgverifyicon"]{
+    [data-fgpwd="fgverifyicon"] {
       background-image: url("../../images/icon/icon_fgverify.png");
     }
     .form-group {
       border-bottom: 1px solid #a7a7a7;
     }
+    [data-fgpwd="nextBox"]{
+      position: absolute;
+      bottom:25px;
+      width: 344px;
+      display: block;
+    }
     [data-fgpwd="nextStep"] {
       background-color: $orange;
       height: 60px;
-      margin-top: 60px;
     }
 
     /**************  2： 验证身份   *********************/
+    [data-fgpwd="fgphonekeyget"] {
+      background-color: #9d9b9b;
+      height: 40px;
+      width: 120px;
+      right: 0;
+      vertical-align: middle;
+      position: absolute;
+      line-height: 28px;
+      color: #fff;
+
+    }
 
     /**************  3： 设置新密码  *********************/
-
+    [data-fgpwd="finish"] {
+      background-color: $orange;
+      height: 60px;
+    }
     /**************  4：完成  *********************/
   }
 
   [data-fgpwd="form_finish"] {
     width: 440px;
+    height: 456px;
     background-color: $white;
+    background-image: url("../../images/fgpwd/fgpwd_box.png");
     margin: 0 auto;
     border-radius: 10px;
-    margin-top:10px;
+    margin-top: 10px;
     padding: 24px 48px;
     h2 {
       font-size: 28px;
-      margin-bottom: 50px;;
+      font-weight: bold;
     }
-    span[data-fgpwd$='icon']{
-      background-repeat: no-repeat;
-      position: absolute;
-      height:100%;
-      width:40px;
-    }
-    input {
-      border: none;
-      box-shadow: none;
-      -webkit-box-shadow: none;
-      -moz-box-shadow: none;
-      box-shadow: none;
-      padding-left: 50px;
-      height:52px;
-      line-height: 51px;
-    }
-    [data-fgpwd="fgunameicon"]{
-      background-image: url("../../images/icon/icon_fguser.png");
-    }
-    [data-fgpwd="fgverifyicon"]{
-      background-image: url("../../images/icon/icon_fgverify.png");
-    }
-    .form-group {
-      border-bottom: 1px solid #a7a7a7;
-    }
-    [data-fgpwd="nextStep"] {
-      background-color: $orange;
-      height: 60px;
-      margin-top: 60px;
+    h1 {
+      font-size: 40px;
       margin-bottom: 10px;
+      font-weight: bolder;
+      color:$orange;
+      line-height: 300px;
     }
+
   }
 }
 
@@ -165,6 +163,7 @@ $black: #000;
   display: inline-block;
   vertical-align: middle;
 }
+
 /****  更换随机验证码  ****/
 #fgpwd_changeCode {
   vertical-align: middle;
@@ -172,15 +171,15 @@ $black: #000;
   display: inline-block;
 }
 
-
 /*** 默认隐藏模块 **/
-[data-fgpwd="form_process"]{
-  form{
-    display:none;
+[data-fgpwd="form_process"] {
+  form {
+    display: none;
   }
 }
-[data-fgpwd="form_finish"]{
-  display:none;
+
+[data-fgpwd="form_finish"] {
+  display: none;
 }
 
 

@@ -19,29 +19,48 @@
     <![endif]-->
 </head>
 <body>
-<div id="header-wall">
+<!--header 开始-->
+<div id="zcbl-header">
     <div class="header-box">
         <h1 class="header-log">
             <a href="#" target="_blank"><span class="zcbl-logo"></span></a>
         </h1>
         <ul class="header-nav">
-            <li class="header-nav-hover"><a href="" target="_blank">首页</a></li>
-            <li><a href="" target="_blank">众创</a></li>
+            <li><a href="" target="_blank">首页</a></li>
+            <li class="header-nav-hover"><a href="" target="_blank">众创</a></li>
             <li><a href="" target="_blank">需求</a></li>
             <li><a href="" target="_blank">服务</a></li>
             <li><a href="" target="_blank">资讯</a></li>
         </ul>
         <div class="header-right">
-            <div class="header-publish"><a href="#" target="_blank">我要发布</a></div>
-            <div class="header-msg">消息</div>
-            <div class="header-user">
-                <a href="#" target="_blank">
-                    <img src="./static/images/public/icon_user.png" alt="用户头像" height="36" width="34">
-                </a>
+            <!--登录后-->
+            <div class="user-login hide">
+                <div class="header-user">
+                    <a href="#" target="_blank">
+                        <img src="./static/images/public/icon_user.png" alt="用户头像" height="36" width="34">
+                    </a>
+                </div>
+                <div class="header-msg">
+                    <a href="#">&nbsp;</a>
+                    <span class="header-havemsg"></span>
+                </div>
+                <div class="header-publish"><a href="#" target="_blank">我要发布</a></div>
+            </div>
+
+            <!--登录前-->
+            <div class="user-notlogin">
+                <ul>
+                    <li class="pr15"><a href="" target="_blank" class="app-color">App下载</a></li>
+                    <li><a href="" target="_blank">登录</a></li>
+                    <li>|</li>
+                    <li><a href="" target="_blank">注册</a></li>
+
+                </ul>
             </div>
         </div>
     </div>
 </div>
+<!--header 结束-->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="static/js/dest/jquery-1.11.3.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

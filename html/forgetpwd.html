@@ -3,6 +3,7 @@
 <head>
     <title>忘记密码</title>
     <meta charset="utf-8">
+    <!--IE浏览器运行最新的渲染模式-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
@@ -21,99 +22,46 @@
     <div class="container">
         <ul>
             <li data-fgpwd="finish">
-                <b>1</b>
+                <b data-fgpwd="schedule" data-fgpwd="active">1</b>
                 <p>填写用户名</p>
             </li>
             <li>
-                <b><i></i>2</b>
+                <b data-fgpwd="schedule">
+                    <i></i>
+                    2
+                </b>
                 <p>验证身份</p>
             </li>
             <li>
-                <b><i></i>3</b>
+                <b data-fgpwd="schedule">
+                    <i></i>
+                    3
+                </b>
                 <p>设置新密码</p>
             </li>
             <li>
-                <b><i></i>4</b>
+                <b data-fgpwd="schedule">
+                    <i></i>
+                    4
+                </b>
                 <p>完成</p>
             </li>
         </ul>
-        <!---- 过程 ---->
-        <div data-fgpwd="form_process">
-            <!----- 1： 添加用户名 ------->
-            <form id="fgpwd_addusername" style="display: block" action="">
-                <div class="form-group has-success has-feedback">
-                    <label for="fgpwd_uname" class="sr-only">UserName/PhoneNumber</label>
-                    <span class="input-group-addon" data-fgpwd="fgunameicon"></span>
-                    <input class="form-control" id="fgpwd_adduname" name="uname" placeholder="请填写您的手机号/用户名">
-                </div>
-                <div class="form-group has-success has-feedback">
-                    <label for="fgpwd_verify" class="sr-only">Verification code</label>
-                    <span class="input-group-addon" data-fgpwd="fgverifyicon"></span>
-                    <input class="form-control" id="fgpwd_verify" name="verify" placeholder="请输入验证码">
-                </div>
-                <div data-fgpwd="randomCode">
-                    <div id="fgpwd_randomCode"></div><span id="fgpwd_changeCode">看不清？换一张</span>
-                </div>
-                <button type="button" data-fgpwd="nextStep" class="btn-block ">下一步</button>
-            </form>
-
-            <!----- 2： 验证身份 ------->
-            <form id="fgpwd_authentication" action="">
-                <div class="form-group has-success has-feedback">
+        <div data-fgpwd="form">
+            <h2>找回密码</h2>
+            <form id="addusername" action="">
+                <div class="form-group has-success has-feedback" >
                     <label for="uname" class="sr-only">UserName/PhoneNumber</label>
                     <span class="input-group-addon" data-fgpwd="fgunameicon"></span>
-                    <input class="form-control" id="fgpwd_uname" name="uname" placeholder="云消雾散的天">
+                    <input class="form-control"  id="uname" name="uname" placeholder="请填写您的手机号/用户名">
                 </div>
-                <div class="form-group has-success has-feedback">
-                    <label for="fgpwd_phone" class="sr-only">phone</label>
-                    <span class="input-group-addon" data-fgpwd="fgverifyicon"></span>
-                    <input class="form-control" id="fgpwd_phone" name="verify" placeholder="请输入验证码">
-                </div>
-                <div data-fgpwd="randomCode">
-                    <div id="randomCode"></div>
-                    <span id="changeCode">看不清？换一张</span>
-                </div>
-                <button type="button" data-fgpwd="nextStep" class="btn-block ">下一步</button>
-            </form>
-
-            <!----- 3： 设置新密码 ------->
-            <form id="fgpwd_newpwd" action="">
-                <div class="form-group has-success has-feedback">
-                    <label for="uname" class="sr-only">UserName/PhoneNumber</label>
-                    <span class="input-group-addon" data-fgpwd="fgunameicon"></span>
-                    <input class="form-control" id="uname" name="uname" placeholder="请填写您的手机号/用户名">
-                </div>
-                <div class="form-group has-success has-feedback">
+                <div class="form-group has-success has-feedback" >
                     <label for="verify" class="sr-only">Verification code</label>
                     <span class="input-group-addon" data-fgpwd="fgverifyicon"></span>
-                    <input class="form-control" id="verify" name="verify" placeholder="请输入验证码">
+                    <input class="form-control"  id="verify" name="verify" placeholder="请输入验证码">
                 </div>
                 <div data-fgpwd="randomCode">
-                    <div id="randomCode"></div>
-                    <span id="changeCode">看不清？换一张</span>
-                </div>
-                <button type="button" data-fgpwd="nextStep" class="btn-block ">下一步</button>
-            </form>
-
-        </div>
-
-
-        <!----- 4：完成  ------>
-        <div data-fgpwd="form_finish">
-            <h2>找回密码</h2>
-            <form id="fgpwd_finish" action="">
-                <div class="form-group has-success has-feedback">
-                    <label for="fgpwd_uname" class="sr-only">UserName/PhoneNumber</label>
-                    <span class="input-group-addon" data-fgpwd="fgunameicon"></span>
-                    <input class="form-control" id="fgpwd_uname" name="uname" placeholder="请填写您的手机号/用户名">
-                </div>
-                <div class="form-group has-success has-feedback">
-                    <label for="fgpwd_verify" class="sr-only">Verification code</label>
-                    <span class="input-group-addon" data-fgpwd="fgverifyicon"></span>
-                    <input class="form-control" id="fgpwd_verify" name="verify" placeholder="请输入验证码">
-                </div>
-                <div data-fgpwd="randomCode">
-                    <div id="fgpwd_randomCode"></div><span id="fgpwd_changeCode">看不清？换一张</span>
+                    <div id="randomCode"></div><span id="changeCode">看不清？换一张</span>
                 </div>
                 <button type="button" data-fgpwd="nextStep" class="btn-block ">下一步</button>
             </form>

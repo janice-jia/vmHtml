@@ -1,16 +1,35 @@
 @charset "utf-8";
 /*
-* header
+*
 */
-$color1:#2e2e2e;    /*深灰*/
-$color2:#ffb30e;     /*黄色*/
-$color3:#c0c0c0;    /*浅灰*/
+$color-01:#171717;
+$color-02:#515151;
+$color-03:#909090;
+$color-04:#c1c1c1;//(输入框边框颜色)
+$color-05:#eeeeee;//(背景色)
+$color-06:#499af5;
+$color-07:#ffb30e;
+$color-08:#e43f3f;
 
+$color-2e2e2e:#2e2e2e;    /*深灰*/
+$color-ffffff:#ffffff;
+$color-acacac:#acacac;    /*友情链接字体灰，边框灰*/
 
-#header-wall{
+.extend-aline{
+    &:hover{
+        text-decoration: underline;
+    }
+}
+//公用头部样式
+#zcbl-header{
     height: 78px;
     width: 100%;
-    background: #000000;
+    margin-bottom: 17px;
+    position: fixed;
+    z-index: 1000;
+    top:0;
+    left: 0;
+    background: $color-01;
     .header-box{
         width: 960px;
         padding: 0 20px;
@@ -18,9 +37,19 @@ $color3:#c0c0c0;    /*浅灰*/
         height: 100%;
         .header-log{
             float: left;
+            position: relative;
+            &:after{
+                content: "";
+                position: absolute;
+                bottom: -28px;
+                left: -10px;
+                height: 17px;
+                width: 60px;
+                background: url("../../images/icon/icon_headertriangle.png");
+            }
             a{
                 display: block;
-                padding: 8px 40px 0 17px;
+                padding: 8px 40px 0 1px;
             }
             .zcbl-logo{
                 display: block;
@@ -38,15 +67,16 @@ $color3:#c0c0c0;    /*浅灰*/
                 text-align: center;
                 font-size: 18px;
                 a{
-                    color: $color3;
+                    color: $color-04;
+                    display: block;
                 }
                 &:hover,&.header-nav-hover{
                     height: 78px;
-                    background: $color1;
-                    border-bottom:4px solid $color2;
+                    background: $color-2e2e2e;
+                    border-bottom:4px solid $color-07;
                 }
                 &:hover a, &.header-nav-hover a{
-                    color: #ffffff;
+                    color: $color-ffffff;
                 }
             }
         }
@@ -54,26 +84,271 @@ $color3:#c0c0c0;    /*浅灰*/
             float: right;
             width: 370px;
             height: 100%;
-            .header-publish{
-                float: left;
-                width: 170px;
-                height: 100%;
-                line-height: 78px;
-                background: $color2;
-                text-align: center;
-                a{
-                    color: #000000;
+            .user-login{
+                .header-publish{
+                    float: right;
+                    width: 170px;
+                    height: 100%;
+                    line-height: 78px;
+                    background: $color-07;
+                    text-align: center;
+                    a{
+                        color: $color-01;
+                        display: block;
+                    }
+                }
+                .header-msg{
+                    a{
+                        position: absolute;
+                        top:-10px;
+                        left: -5px;
+                        display: block;
+                        width: 45px;
+                        height: 41px;
+                        z-index: 10;
+                    }
+                    float: right;
+                    width: 26px;
+                    height: 31px;
+                    background: url("../../images/icon/ic_headermsg.png") no-repeat;
+                    margin: 22px 60px 0 60px;
+                    position: relative;
+                    .header-havemsg{
+                        position: absolute;
+                        top: -5px;
+                        left: 26px;
+                        width: 12px;
+                        height: 12px;
+                        background: $color-08;
+                        border-radius: 50%;
+                    }
+                }
+                .header-msg{
+                    float: right;
+                }
+                .header-user{
+                    width: 34px;
+                    height: 36px;
+                    float: right;
+                    padding: 20px 0;
+                    img{
+                        border-radius: 50%;
+                    }
                 }
             }
-            .header-msg{
-                float: left;
-            }
-            .header-user{
-                width: 34px;
-                height: 36px;
-                float: right;
-                padding: 20px 0;
+            .user-notlogin{
+                ul{
+                    width: 215px;
+                    float: right;
+                    li{
+                        float: left;
+                        height: 78px;
+                        line-height: 78px;
+                        color: $color-ffffff;
+                        padding-left:14px;
+                        a{
+                            color: $color-ffffff;
+                            &.app-color{
+                                color: $color-07;
+                            }
+                            @extend .extend-aline;
+                        }
+                    }
+                }
             }
         }
+    }
+}
+.h95{
+    height:95px;
+}
+
+//公用尾部样式
+#zcbl-footer{
+    width: 100%;
+    height: 240px;
+    background: $color-01;
+    .footer-box{
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .footer-link{
+        height: 100px;
+        line-height: 100px;
+        border-bottom: 1px solid $color-acacac;
+        ul{
+            li{
+                float: left;
+                color: $color-ffffff;
+                padding: 0 9px 0 0;
+                &.p0{
+                    padding: 0;
+                }
+                a{
+                    font-size: 16px;
+                    color: $color-ffffff;
+                    @extend .extend-aline;
+                }
+            }
+        }
+    }
+    .footer-aboutus{
+        height: 85px;
+        .footer-aboutus-l{
+            float: left;
+            h1{
+                position: relative;
+                line-height: 44px;
+                margin-top: 20px;
+                width: 290px;
+                overflow: hidden;
+                a{
+                    color: $color-ffffff;
+                    display: block;
+                    height: 44px;
+                    padding: 0 0 0 65px;
+                    width: 145px;
+                    overflow: hidden;
+                    &:before{
+                        position: absolute;
+                        left: 8px;
+                        top: 0;
+                        content: "";
+                        background: url("../../images/icon/icon_footlogo.png") no-repeat;
+                        width: 34px;
+                        height: 44px;
+                    }
+                }
+            }
+        }
+        .footer-aboutus-z{
+            float: left;
+            margin-top: 20px;
+            ul{
+                li{
+                    float: left;
+                    line-height: 44px;
+                    color: $color-ffffff;
+                    span{
+                        &.divide{
+                            padding: 0 20px;
+                        }
+                    }
+                    a{
+                        color: $color-ffffff;
+                        @extend .extend-aline;
+                    }
+                }
+            }
+        }
+        .footer-aboutus-r{
+            float: right;
+            margin-top: 26px;
+            h2{
+                position: relative;
+                line-height: 31px;
+                color: $color-ffffff;
+                padding: 0 0 0 40px;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: url("../../images/icon/icon-phone.png");
+                    height: 32px;
+                    width: 32px;
+                }
+            }
+        }
+    }
+    .footer-copyright{
+        p{
+            text-align: center;
+            color: $color-ffffff;
+            font-size: 12px;
+        }
+    }
+}
+
+//公用分页样式
+.zcbl-page{
+    width: 100%;
+    margin: 20px 0;
+    ul{
+        text-align: center;
+        li{
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+            color: $color-03;
+            margin: 0 7px;
+            a{
+                color: $color-03;
+            }
+            &.zcbl-thisPage{
+                background: $color-07;
+                color: $color-ffffff;
+                border-radius: 2px;
+                a{
+                    color: $color-ffffff;
+                }
+            }
+            &.zcbl-nextPage{
+                a{
+                    display: inline-block;
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        top:7px;
+                        left: 10px;
+                        background: url("../../images/icon/icon-per-next.png") no-repeat;
+                        width: 9px;
+                        height: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+//按钮
+.btn-yellow-50,.btn-yellow-40{
+    display: block;
+    background: $color-07;
+    text-align: center;
+    color: $color-02;
+    font-size: 18px;
+    &:hover{
+        color: $color-ffffff;
+    }
+}
+
+.btn-yellow-50{
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.btn-yellow-40{
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.btn-blue{
+    display: block;
+    width: 120px;
+    border:1px solid $color-06;
+    background: $color-ffffff;
+    color: $color-06;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    &:hover{
+        color: $color-02;
     }
 }

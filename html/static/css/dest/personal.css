@@ -1,0 +1,521 @@
+/*
+* header
+*/
+.extend-aline:hover, #per-wall .per-wall-l .per-uname p a:hover, #per-wall .per-wall-l .per-fund p span.per-fund-cz a:hover, #per-wall .per-wall-l .per-fund p span.per-fund-tx a:hover, #per-wall .per-wall-l .per-identity p a:hover, #per-wall .per-wall-l .per-identity p.per-identity-more a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgTit a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgEdit a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgAdd .per-art-imgAdd-tit a:hover, #per-wall .per-wall-r .per-req ul li .per-reqTit h1 a:hover, #per-wall .per-wall-r .per-fans ul li .per-fansName .per-fansName-1 a:hover {
+  text-decoration: underline; }
+
+.exten-box-shadow, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgHover, #per-wall .per-wall-r .per-fans ul li.per-fans-hover, #per-wall .per-wall-r .per-fans ul li:hover {
+  background: #ffffff;
+  box-shadow: 0 0 5px rgba(81, 81, 81, 0.2); }
+
+#per-wall {
+  width: 1000px;
+  margin: 30px auto 35px auto; }
+  #per-wall .per-wall-l {
+    width: 280px;
+    margin-right: 30px;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #ffffff; }
+    #per-wall .per-wall-l .per-uimg {
+      position: relative;
+      float: left;
+      width: 100px;
+      height: 105px; }
+      #per-wall .per-wall-l .per-uimg .per-uimg-src {
+        position: absolute;
+        top: -17px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        cursor: pointer; }
+        #per-wall .per-wall-l .per-uimg .per-uimg-src img {
+          border-radius: 50%; }
+        #per-wall .per-wall-l .per-uimg .per-uimg-src .per-uimg-edit {
+          display: none;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.5); }
+          #per-wall .per-wall-l .per-uimg .per-uimg-src .per-uimg-edit a {
+            width: 100%;
+            height: 100%;
+            display: block; }
+            #per-wall .per-wall-l .per-uimg .per-uimg-src .per-uimg-edit a:after {
+              background: url("../../images/icon/ico-per-edit.png");
+              height: 43px;
+              width: 43px;
+              content: "";
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin: -25px 0 0 -22px; }
+      #per-wall .per-wall-l .per-uimg .per-uimg-src:hover .per-uimg-edit {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 10; }
+    #per-wall .per-wall-l .per-uname {
+      margin: 30px 0 0 20px;
+      width: 140px;
+      float: left; }
+      #per-wall .per-wall-l .per-uname p {
+        margin: 0;
+        color: #515151;
+        font-size: 18px;
+        height: 25px;
+        overflow: hidden;
+        width: 140px; }
+        #per-wall .per-wall-l .per-uname p.per-site {
+          font-size: 16px;
+          position: relative;
+          padding-left: 18px; }
+          #per-wall .per-wall-l .per-uname p.per-site:before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 0;
+            width: 12px;
+            height: 15px;
+            background: url("../../images/icon/icon-per-site.png") no-repeat; }
+        #per-wall .per-wall-l .per-uname p a {
+          color: #515151; }
+    #per-wall .per-wall-l .per-careBtn p {
+      width: 50%;
+      float: left; }
+    #per-wall .per-wall-l .per-line {
+      width: 100%;
+      height: 1px;
+      overflow: hidden;
+      border-bottom: 1px solid #515151; }
+    #per-wall .per-wall-l .per-fund {
+      margin-top: 24px;
+      padding-bottom: 14px; }
+      #per-wall .per-wall-l .per-fund p span {
+        float: right; }
+        #per-wall .per-wall-l .per-fund p span.per-fund-cz a {
+          color: #ffb30e; }
+        #per-wall .per-wall-l .per-fund p span.per-fund-tx a {
+          color: #515151; }
+    #per-wall .per-wall-l .per-appraise {
+      padding-top: 24px;
+      padding-bottom: 14px; }
+      #per-wall .per-wall-l .per-appraise p {
+        height: 16px;
+        padding-bottom: 10px; }
+      #per-wall .per-wall-l .per-appraise span {
+        float: left;
+        margin-right: 10px;
+        height: 16px;
+        line-height: 16px; }
+        #per-wall .per-wall-l .per-appraise span.stars-yellow {
+          background: url("../../images/icon/icon-stars-yellow.png") no-repeat;
+          width: 16px;
+          height: 16px;
+          display: block; }
+        #per-wall .per-wall-l .per-appraise span.stars-gray {
+          background: url("../../images/icon/icon-stars-gray.png") no-repeat;
+          width: 16px;
+          height: 16px;
+          display: block; }
+    #per-wall .per-wall-l .per-identity {
+      padding-top: 24px; }
+      #per-wall .per-wall-l .per-identity p {
+        margin-bottom: 0;
+        line-height: 25px; }
+        #per-wall .per-wall-l .per-identity p a {
+          color: #515151; }
+          #per-wall .per-wall-l .per-identity p a:hover {
+            color: #515151; }
+        #per-wall .per-wall-l .per-identity p.h25 {
+          height: 25px;
+          overflow: hidden; }
+        #per-wall .per-wall-l .per-identity p.mb30 {
+          margin-bottom: 30px; }
+        #per-wall .per-wall-l .per-identity p.h100 {
+          height: 100px;
+          overflow: hidden; }
+        #per-wall .per-wall-l .per-identity p.per-identity-more {
+          text-align: right;
+          margin: 15px 0 16px 0; }
+          #per-wall .per-wall-l .per-identity p.per-identity-more a {
+            color: #499af5; }
+            #per-wall .per-wall-l .per-identity p.per-identity-more a:hover {
+              color: #499af5; }
+  #per-wall .per-wall-r {
+    width: 690px;
+    float: left; }
+    #per-wall .per-wall-r .per-nav ul {
+      padding-bottom: 15px;
+      border-bottom: 1px solid #d2d2d2; }
+      #per-wall .per-wall-r .per-nav ul li {
+        float: left;
+        padding-right: 40px;
+        padding-left: 10px; }
+        #per-wall .per-wall-r .per-nav ul li a {
+          color: #515151;
+          line-height: 28px;
+          font-size: 20px;
+          text-align: center;
+          display: block; }
+          #per-wall .per-wall-r .per-nav ul li a:hover {
+            color: #ffb30e; }
+        #per-wall .per-wall-r .per-nav ul li.per-nav-hover a {
+          color: #ffb30e; }
+    #per-wall .per-wall-r .per-artnav {
+      padding: 10px 0 0 0; }
+      #per-wall .per-wall-r .per-artnav ul li {
+        float: left; }
+        #per-wall .per-wall-r .per-artnav ul li.per-artnav-hover a {
+          color: #499af5; }
+        #per-wall .per-wall-r .per-artnav ul li a {
+          color: #515151;
+          padding-right: 40px;
+          line-height: 25px;
+          height: 25px; }
+          #per-wall .per-wall-r .per-artnav ul li a:hover {
+            color: #499af5; }
+    #per-wall .per-wall-r .per-art-img {
+      padding-top: 25px;
+      min-height: 1105px; }
+      #per-wall .per-wall-r .per-art-img ul li {
+        width: 160px;
+        height: 190px;
+        float: left;
+        margin-left: 10px;
+        margin-right: 2px;
+        margin-bottom: 25px; }
+        #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgTit {
+          font-size: 14px;
+          font-weight: bolder;
+          padding: 0 20px;
+          margin-top: 15px;
+          overflow: hidden;
+          height: 20px;
+          line-height: 20px; }
+          #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgTit a {
+            color: #515151; }
+        #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-picFile {
+          height: 100px;
+          width: 100%;
+          position: relative;
+          margin-top: 10px; }
+          #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-picFile:after {
+            content: "";
+            position: absolute;
+            left: 20px;
+            top: 0;
+            width: 115px;
+            height: 100px;
+            background: url("../../images/icon/icon-per-file.png") no-repeat; }
+          #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-picFile .file-num {
+            position: absolute;
+            width: 48px;
+            height: 23px;
+            line-height: 23px;
+            left: 75px;
+            top: 77px;
+            color: #ffffff;
+            font-weight: bolder;
+            font-size: 14px;
+            text-align: center;
+            background: rgba(81, 81, 81, 0.8);
+            z-index: 10; }
+            #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-picFile .file-num a {
+              color: #ffffff; }
+        #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-videoFile {
+          height: 92px;
+          width: 100%;
+          position: relative;
+          margin-top: 18px; }
+          #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-videoFile:after {
+            content: "";
+            position: absolute;
+            left: 28px;
+            top: 0;
+            width: 104px;
+            height: 83px;
+            background: url("../../images/icon/icon-per-video.png") no-repeat; }
+        #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-audioFile {
+          height: 100px;
+          width: 100%;
+          position: relative;
+          margin-top: 10px; }
+          #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-audioFile:after {
+            content: "";
+            position: absolute;
+            left: 29px;
+            top: 0;
+            width: 102px;
+            height: 102px;
+            background: url("../../images/icon/icon-per-audio.png") no-repeat; }
+        #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-textFile {
+          height: 100px;
+          width: 100%;
+          position: relative;
+          margin-top: 10px; }
+          #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-textFile:after {
+            content: "";
+            position: absolute;
+            left: 43px;
+            top: 0;
+            width: 92px;
+            height: 98px;
+            background: url("../../images/icon/icon-per-text.png") no-repeat; }
+        #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgEdit {
+          text-align: center;
+          padding-top: 10px; }
+          #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgEdit a {
+            height: 25px;
+            line-height: 25px;
+            color: #515151; }
+        #per-wall .per-wall-r .per-art-img ul li.per-art-imgAdd {
+          background: #ffffff;
+          border: 1px dashed #c1c1c1; }
+          #per-wall .per-wall-r .per-art-img ul li.per-art-imgAdd .per-art-imgAdd-btn {
+            width: 50px;
+            height: 50px;
+            margin: 55px auto 15px auto; }
+            #per-wall .per-wall-r .per-art-img ul li.per-art-imgAdd .per-art-imgAdd-btn .add-btn {
+              position: relative; }
+              #per-wall .per-wall-r .per-art-img ul li.per-art-imgAdd .per-art-imgAdd-btn .add-btn:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: url("../../images/icon/icon-per-addfile.png") no-repeat;
+                width: 50px;
+                height: 50px; }
+          #per-wall .per-wall-r .per-art-img ul li.per-art-imgAdd .per-art-imgAdd-tit {
+            text-align: center; }
+            #per-wall .per-wall-r .per-art-img ul li.per-art-imgAdd .per-art-imgAdd-tit a {
+              color: #515151; }
+    #per-wall .per-wall-r .per-req {
+      min-height: 1085px; }
+      #per-wall .per-wall-r .per-req ul {
+        width: 100%; }
+        #per-wall .per-wall-r .per-req ul li .per-reqTit {
+          font-size: 22px;
+          color: #515151;
+          overflow: hidden;
+          height: 25px;
+          line-height: 25px;
+          margin: 20px 0; }
+          #per-wall .per-wall-r .per-req ul li .per-reqTit h1 {
+            width: 450px;
+            float: left;
+            margin: 0 10px 0 0; }
+            #per-wall .per-wall-r .per-req ul li .per-reqTit h1 a {
+              color: #515151; }
+          #per-wall .per-wall-r .per-req ul li .per-reqTit p {
+            float: left;
+            text-align: right;
+            width: 230px; }
+            #per-wall .per-wall-r .per-req ul li .per-reqTit p span {
+              color: #ffb30e; }
+        #per-wall .per-wall-r .per-req ul li .per-reqCon h3 {
+          width: 100%;
+          font-size: 18px;
+          height: 25px;
+          line-height: 25px;
+          overflow: hidden;
+          font-family: "adobeheitistd regular","Microsoft YaHei";
+          color: #909090; }
+        #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo {
+          margin: 15px 0 20px 0; }
+          #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo p {
+            float: left;
+            width: 200px;
+            position: relative;
+            padding-left: 25px; }
+            #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo p:before {
+              content: "";
+              position: absolute;
+              top: 4px;
+              left: 0;
+              background: url("../../images/icon/icon-per-zjArt.png") no-repeat;
+              width: 14px;
+              height: 16px; }
+          #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo ul {
+            float: right;
+            width: 490px;
+            color: #909090;
+            text-align: right; }
+            #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo ul li {
+              display: inline-block;
+              position: relative;
+              margin-left: 25px; }
+              #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-people {
+                padding-left: 35px; }
+                #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-people:before {
+                  content: "";
+                  position: absolute;
+                  top: 4px;
+                  left: 0;
+                  background: url("../../images/icon/icon-per-cy.png") no-repeat;
+                  width: 27px;
+                  height: 16px; }
+              #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-bzj {
+                padding-left: 23px; }
+                #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-bzj:before {
+                  content: "";
+                  position: absolute;
+                  top: 4px;
+                  left: 0;
+                  background: url("../../images/icon/icon-per-bzj.png") no-repeat;
+                  width: 16px;
+                  height: 17px; }
+              #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-time {
+                padding-left: 22px; }
+                #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-time:before {
+                  content: "";
+                  position: absolute;
+                  top: 4px;
+                  left: 0;
+                  background: url("../../images/icon/icon-per-time.png") no-repeat;
+                  width: 16px;
+                  height: 17px; }
+        #per-wall .per-wall-r .per-req ul li .per-reqStatus {
+          margin: 20px 0; }
+          #per-wall .per-wall-r .per-req ul li .per-reqStatus p {
+            float: left;
+            width: 340px;
+            height: 50px;
+            line-height: 50px;
+            color: #909090;
+            margin-bottom: 0;
+            font-size: 18px; }
+            #per-wall .per-wall-r .per-req ul li .per-reqStatus p .per-serBlue {
+              color: #499af5; }
+            #per-wall .per-wall-r .per-req ul li .per-reqStatus p .per-serYellow {
+              color: #ffb30e; }
+            #per-wall .per-wall-r .per-req ul li .per-reqStatus p .mr43 {
+              margin-right: 43px; }
+          #per-wall .per-wall-r .per-req ul li .per-reqStatus ul {
+            float: left;
+            width: 350px;
+            text-align: right; }
+            #per-wall .per-wall-r .per-req ul li .per-reqStatus ul li {
+              display: inline-block;
+              line-height: 50px;
+              height: 50px; }
+              #per-wall .per-wall-r .per-req ul li .per-reqStatus ul li.per-reqStaEdit {
+                font-size: 18px;
+                padding: 0 30px 0 10px; }
+                #per-wall .per-wall-r .per-req ul li .per-reqStatus ul li.per-reqStaEdit a {
+                  color: #515151; }
+                  #per-wall .per-wall-r .per-req ul li .per-reqStatus ul li.per-reqStaEdit a:hover {
+                    color: #e43f3f; }
+        #per-wall .per-wall-r .per-req ul li .per-reqLine {
+          height: 1px;
+          width: 100%;
+          border-bottom: 1px solid #d2d2d2; }
+    #per-wall .per-wall-r .per-fans {
+      min-height: 1105px; }
+      #per-wall .per-wall-r .per-fans ul li {
+        width: 190px;
+        height: 244px;
+        float: left;
+        margin: 30px 0 0 0;
+        background: #ffffff; }
+        #per-wall .per-wall-r .per-fans ul li.mlmr60 {
+          margin-left: 60px;
+          margin-right: 60px; }
+        #per-wall .per-wall-r .per-fans ul li:nth-child(2) {
+          margin-left: 60px;
+          margin-right: 60px; }
+        #per-wall .per-wall-r .per-fans ul li .per-fansNum {
+          font-size: 18px;
+          padding: 10px;
+          height: 14px; }
+          #per-wall .per-wall-r .per-fans ul li .per-fansNum .per-fansNum-l {
+            margin-bottom: 0;
+            width: 50%;
+            float: left;
+            height: 14px;
+            line-height: 14px;
+            position: relative;
+            padding-left: 20px;
+            overflow: hidden; }
+            #per-wall .per-wall-r .per-fans ul li .per-fansNum .per-fansNum-l:before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 13px;
+              height: 12px;
+              background: url("../../images/icon/icon-per-attention.png") no-repeat; }
+          #per-wall .per-wall-r .per-fans ul li .per-fansNum .per-fansNum-r {
+            margin-bottom: 0;
+            width: auto;
+            max-width: 50%;
+            float: right;
+            height: 14px;
+            line-height: 14px;
+            position: relative;
+            padding-left: 20px;
+            overflow: hidden; }
+            #per-wall .per-wall-r .per-fans ul li .per-fansNum .per-fansNum-r:before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 16px;
+              height: 14px;
+              background: url("../../images/icon/icon-per-fans.png") no-repeat; }
+        #per-wall .per-wall-r .per-fans ul li .per-fansImg {
+          width: 100px;
+          height: 100px;
+          margin: 15px auto 0 auto; }
+          #per-wall .per-wall-r .per-fans ul li .per-fansImg img {
+            border-radius: 50%; }
+        #per-wall .per-wall-r .per-fans ul li .per-fansName {
+          padding: 0 10px;
+          text-align: center; }
+          #per-wall .per-wall-r .per-fans ul li .per-fansName .per-fansName-1 {
+            text-align: center;
+            color: #515151;
+            font-size: 18px;
+            margin: 15px 0 10px 0; }
+            #per-wall .per-wall-r .per-fans ul li .per-fansName .per-fansName-1 a {
+              color: #515151; }
+          #per-wall .per-wall-r .per-fans ul li .per-fansName .per-fansName-2 {
+            position: relative;
+            margin-bottom: 0;
+            display: inline-block;
+            padding-left: 17px;
+            height: 16px;
+            line-height: 16px;
+            overflow: hidden; }
+            #per-wall .per-wall-r .per-fans ul li .per-fansName .per-fansName-2:before {
+              position: absolute;
+              content: "";
+              top: 0;
+              left: 0;
+              background: url("../../images/icon/icon-per-site.png") no-repeat;
+              width: 12px;
+              height: 15px; }
+        #per-wall .per-wall-r .per-fans ul li .per-fansBtn, #per-wall .per-wall-r .per-fans ul li .per-fansBtn-already {
+          width: 100%;
+          height: 34px;
+          line-height: 34px;
+          text-align: center;
+          margin-top: 3px; }
+          #per-wall .per-wall-r .per-fans ul li .per-fansBtn a, #per-wall .per-wall-r .per-fans ul li .per-fansBtn-already a {
+            width: 100%;
+            display: inline-block; }
+        #per-wall .per-wall-r .per-fans ul li .per-fansBtn {
+          background: #ffb30e; }
+          #per-wall .per-wall-r .per-fans ul li .per-fansBtn a {
+            color: #515151; }
+            #per-wall .per-wall-r .per-fans ul li .per-fansBtn a:hover {
+              color: #ffffff; }
+        #per-wall .per-wall-r .per-fans ul li .per-fansBtn-already {
+          background: #909090; }
+          #per-wall .per-wall-r .per-fans ul li .per-fansBtn-already a {
+            color: #ffffff; }
+            #per-wall .per-wall-r .per-fans ul li .per-fansBtn-already a:hover {
+              color: #515151; }

@@ -12,9 +12,10 @@ body {
   height: 100%; }
 
 body {
-  font-family: "Microsoft YaHei,Arial,Helvetica Neue,Hiragino Sans GB,Simsun,sans-self";
+  font-family: "Microsoft YaHei","Arial","Helvetica Neue","Hiragino Sans GB","Simsun,sans-self";
   font-size: 16px;
-  color: #595757; }
+  color: #515151;
+  background: #eeeeee; }
 
 table,
 td {
@@ -92,11 +93,6 @@ a:focus {
 /*字体*/
 .YaHei {
   font-family: "Microsoft YaHei"; }
-
-/*字体颜色*/
-.ftCol01 {
-  color: #595757;
-  /*深灰色*/ }
 
 /*字体对齐方式*/
 .tl {
@@ -288,27 +284,3 @@ a:focus {
 /*鼠标手势*/
 .cur {
   cursor: pointer; }
-
-/*背景色*/
-.bg01 {
-  background: #eee; }
-
-/*按钮色*/
-.btn01 {
-  background: #4B88C7;
-  /*深蓝色*/
-  color: #fff; }
-
-.btn01:hover {
-  background: #4A92D3;
-  /*浅蓝色*/ }
-
-/*边框颜色*/
-.borCol01 {
-  border: 1px solid #595757; }
-
-.borCol02 {
-  border: 1px solid #C9CACA; }
-
-.borCol03 {
-  border: 1px solid #9FA0A0; }

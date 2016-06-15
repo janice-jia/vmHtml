@@ -1,0 +1,719 @@
+@charset "utf-8";
+/*
+* header
+*/
+
+$color-01:#171717;
+$color-02:#515151;
+$color-03:#909090;
+$color-04:#c1c1c1;//(输入框边框颜色)
+$color-05:#eeeeee;//(背景色)
+$color-06:#499af5;
+$color-07:#ffb30e;
+$color-08:#e43f3f;
+
+$color-ffffff:#ffffff;
+$color-a0a0a0:#a0a0a0;
+$color-d2d2d2:#d2d2d2;
+
+.extend-aline{
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.exten-box-shadow{
+    background: $color-ffffff;
+    box-shadow: 0 0 5px rgba(81, 81, 81, 0.2);
+}
+
+#per-wall{
+    width: 1000px;
+    margin: 30px auto 35px auto;
+    .per-wall-l{
+        width: 280px;
+        margin-right: 30px;
+        float: left;
+        padding-left:10px;
+        padding-right: 10px;
+        background: $color-ffffff;
+        .per-uimg{
+            position: relative;
+            float: left;
+            width: 100px;
+            height: 105px;
+            .per-uimg-src{
+                position: absolute;
+                top:-17px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                cursor: pointer;
+                img{
+                    border-radius: 50%;
+                }
+                .per-uimg-edit{
+                    display: none;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    background: rgba(255,255,255,0.5);
+                    a{
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        &:after{
+                            background: url("../../images/icon/ico-per-edit.png");
+                            height: 43px;
+                            width: 43px;
+                            content: "";
+                            position: absolute;
+                            top:50%;
+                            left: 50%;
+                            margin: -25px 0 0 -22px;
+                        }
+                    }
+                }
+            }
+
+            .per-uimg-src:hover{
+                .per-uimg-edit{
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    z-index: 10;
+                }
+            }
+        }
+        .per-uname{
+            margin:30px 0 0 20px;
+            width: 140px;
+            float: left;
+            p{
+                margin: 0;
+                color: $color-02;
+                font-size: 18px;
+                height: 25px;
+                overflow: hidden;
+                width: 140px;
+                &.per-site{
+                    font-size: 16px;
+                    position: relative;
+                    padding-left: 18px;
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        top:5px;
+                        left: 0;
+                        width: 12px;
+                        height: 15px;
+                        background: url("../../images/icon/icon-per-site.png") no-repeat;
+                    }
+                }
+                a{
+                    color: $color-02;
+                    @extend .extend-aline;
+                }
+            }
+        }
+        .per-careBtn{
+            p{
+                width: 50%;
+                float: left;
+            }
+        }
+        .per-line{
+            width: 100%;
+            height: 1px;
+            overflow: hidden;
+            border-bottom: 1px solid $color-02;
+        }
+        .per-fund{
+            margin-top: 24px;
+            padding-bottom: 14px;
+            p{
+                span{
+                    float: right;
+                    &.per-fund-cz{
+                        a{
+                            color: $color-07;
+                            &:hover{
+                                @extend .extend-aline;
+                            }
+                        }
+                    }
+                    &.per-fund-tx{
+                        a{
+                            color: $color-02;
+                            &:hover{
+                                @extend .extend-aline;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+        .per-appraise{
+            padding-top: 24px;
+            padding-bottom: 14px;
+            p{
+                height: 16px;
+                padding-bottom: 10px;
+            }
+            span{
+                float: left;
+                margin-right: 10px;
+                height: 16px;
+                line-height: 16px;
+                &.stars-yellow{
+                    background: url("../../images/icon/icon-stars-yellow.png") no-repeat;
+                    width: 16px;
+                    height: 16px;
+                    display: block;
+                }
+                &.stars-gray{
+                    background: url("../../images/icon/icon-stars-gray.png") no-repeat;
+                    width: 16px;
+                    height: 16px;
+                    display: block;
+                }
+            }
+
+        }
+        .per-identity{
+            padding-top: 24px;
+            p{
+                margin-bottom: 0;
+                line-height: 25px;
+                a{
+                    color: $color-02;
+                    &:hover{
+                        color: $color-02;
+                        @extend .extend-aline;
+                    }
+                }
+                &.h25{
+                    height: 25px;
+                    overflow: hidden;
+                }
+                &.mb30{
+                    margin-bottom: 30px;
+                }
+                &.h100{
+                    height: 100px;
+                    overflow: hidden;
+                }
+                &.per-identity-more{
+                    text-align: right;
+                    margin: 15px 0 16px 0;
+                    a{
+                        color: $color-06;
+                        &:hover{
+                            color: $color-06;
+                            @extend .extend-aline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .per-wall-r{
+        width: 690px;
+        float: left;
+        .per-nav{
+            ul{
+                li{
+                    float: left;
+                    padding-right: 40px;
+                    padding-left: 10px;
+                    a{
+                        color: $color-02;
+                        line-height: 28px;
+                        font-size: 20px;
+                        text-align: center;
+                        display: block;
+                        &:hover{
+                            color: $color-07;
+                        }
+                    }
+                    &.per-nav-hover{
+                        a{
+                            color: $color-07;
+                        }
+                    }
+                }
+                padding-bottom: 15px;
+                border-bottom: 1px solid $color-d2d2d2;
+            }
+        }
+        .per-artnav{
+            padding: 10px 0 0 0;
+            ul{
+                li{
+                    float: left;
+                    &.per-artnav-hover{
+                        a{
+                            color: $color-06;
+                        }
+                    }
+                    a{
+                        color: $color-02;
+                        padding-right: 40px;
+                        line-height: 25px;
+                        height: 25px;
+                        &:hover{
+                            color: $color-06;
+                        }
+                    }
+                }
+            }
+        }
+        .per-art-img{
+            padding-top: 25px;
+            min-height: 1105px;
+            ul{
+                li{
+                    width: 160px;
+                    height: 190px;
+                    float: left;
+                    margin-left: 10px;
+                    margin-right: 2px;
+                    margin-bottom: 25px;
+                    &.per-art-imgDefault{
+                        .per-art-imgTit{
+                            font-size: 14px;
+                            font-weight:bolder;
+                            padding: 0 20px;
+                            margin-top: 15px;
+                            overflow: hidden;
+                            height: 20px;
+                            line-height: 20px;
+                            a{
+                                color: $color-02;
+                                @extend .extend-aline;
+                            }
+                        }
+                        .per-art-picFile{
+                            height: 100px;
+                            width: 100%;
+                            position: relative;
+                            margin-top: 10px;
+                            &:after{
+                                content: "";
+                                position: absolute;
+                                left: 20px;
+                                top: 0;
+                                width: 115px;
+                                height: 100px;
+                                background: url("../../images/icon/icon-per-file.png") no-repeat;
+                            }
+                            .file-num{
+                                position: absolute;
+                                width: 48px;
+                                height: 23px;
+                                line-height: 23px;
+                                left: 75px;
+                                top: 77px;
+                                color: $color-ffffff;
+                                font-weight: bolder;
+                                font-size: 14px;
+                                text-align: center;
+                                background: rgba(81,81,81,0.8);
+                                z-index: 10;
+                                a{
+                                    color: $color-ffffff;
+                                }
+                            }
+                        }
+                        .per-art-videoFile{
+                            height: 92px;
+                            width: 100%;
+                            position: relative;
+                            margin-top: 18px;
+                            &:after{
+                                content: "";
+                                position: absolute;
+                                left: 28px;
+                                top: 0;
+                                width: 104px;
+                                height: 83px;
+                                background: url("../../images/icon/icon-per-video.png") no-repeat;
+                            }
+                        }
+                        .per-art-audioFile{
+                            height: 100px;
+                            width: 100%;
+                            position: relative;
+                            margin-top: 10px;
+                            &:after{
+                                content: "";
+                                position: absolute;
+                                left: 29px;
+                                top: 0;
+                                width: 102px;
+                                height: 102px;
+                                background: url("../../images/icon/icon-per-audio.png") no-repeat;
+                            }
+                        }
+                        .per-art-textFile{
+                            height: 100px;
+                            width: 100%;
+                            position: relative;
+                            margin-top: 10px;
+                            &:after{
+                                content: "";
+                                position: absolute;
+                                left: 43px;
+                                top: 0;
+                                width: 92px;
+                                height: 98px;
+                                background: url("../../images/icon/icon-per-text.png") no-repeat;
+                            }
+                        }
+                        .per-art-imgEdit{
+                            text-align: center;
+                            padding-top: 10px;
+                            a{
+                                height: 25px;
+                                line-height: 25px;
+                                color: $color-02;
+                                @extend .extend-aline;
+                            }
+                        }
+                    }
+                    &.per-art-imgDefault:hover,&.per-art-imgHover{
+                        @extend .exten-box-shadow;
+                    }
+                    &.per-art-imgAdd{
+                        background: $color-ffffff;
+                        border: 1px dashed $color-04;
+                        .per-art-imgAdd-btn{
+                            width: 50px;
+                            height: 50px;
+                            margin:55px auto 15px auto;
+                            .add-btn{
+                                position: relative;
+                                &:before{
+                                    content: "";
+                                    position: absolute;
+                                    left: 0;
+                                    top: 0;
+                                    background: url("../../images/icon/icon-per-addfile.png") no-repeat;
+                                    width: 50px;
+                                    height: 50px;
+                                }
+                            }
+
+                        }
+                        .per-art-imgAdd-tit{
+                            text-align: center;
+                            a{
+                                color: $color-02;
+                                @extend .extend-aline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .per-req{
+            min-height: 1085px;
+            ul{
+                width: 100%;
+                li{
+                    .per-reqTit{
+                        font-size: 22px;
+                        color: $color-02;
+                        overflow: hidden;
+                        height: 25px;
+                        line-height: 25px;
+                        margin: 20px 0;
+                        h1{
+                            width: 450px;
+                            float: left;
+                            margin: 0 10px 0 0 ;
+                            a{
+                                color: $color-02;
+                                @extend .extend-aline;
+                            }
+                        }
+                        p{
+                            float: left;
+                            text-align: right;
+                            width: 230px;
+                            span{
+                                color: $color-07;
+                            }
+                        }
+                    }
+                    .per-reqCon{
+                        h3{
+                            width: 100%;
+                            font-size: 18px;
+                            height: 25px;
+                            line-height: 25px;
+                            overflow: hidden;
+                            font-family:"adobeheitistd regular","Microsoft YaHei";
+                            color: $color-03;
+                        }
+                        .per-reqInfo{
+                            margin: 15px 0 20px 0;
+                            p{
+                                float: left;
+                                width: 200px;
+                                position: relative;
+                                padding-left: 25px;
+                                &:before{
+                                    content: "";
+                                    position: absolute;
+                                    top: 4px;
+                                    left: 0;
+                                    background: url("../../images/icon/icon-per-zjArt.png") no-repeat;
+                                    width: 14px;
+                                    height: 16px;
+                                }
+                            }
+                            ul{
+                                float: right;
+                                width: 490px;
+                                color: $color-03;
+                                text-align: right;
+                                li{
+                                    display: inline-block;
+                                    position: relative;
+                                    margin-left: 25px;
+                                    &.per-req-people{
+                                        padding-left: 35px;
+                                        &:before{
+                                            content: "";
+                                            position: absolute;
+                                            top: 4px;
+                                            left: 0;
+                                            background: url("../../images/icon/icon-per-cy.png") no-repeat;
+                                            width: 27px;
+                                            height: 16px;
+                                        }
+                                    }
+                                    &.per-req-bzj{
+                                        padding-left: 23px;
+                                        &:before{
+                                            content: "";
+                                            position: absolute;
+                                            top: 4px;
+                                            left: 0;
+                                            background: url("../../images/icon/icon-per-bzj.png") no-repeat;
+                                            width: 16px;
+                                            height: 17px;
+                                        }
+                                    }
+                                    &.per-req-time{
+                                        padding-left: 22px;
+                                        &:before{
+                                            content: "";
+                                            position: absolute;
+                                            top: 4px;
+                                            left: 0;
+                                            background: url("../../images/icon/icon-per-time.png") no-repeat;
+                                            width: 16px;
+                                            height: 17px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .per-reqStatus{
+                        margin: 20px 0;
+                        p{
+                            float: left;
+                            width: 340px;
+                            height: 50px;
+                            line-height:50px;
+                            color: $color-03;
+                            margin-bottom: 0;
+                            font-size: 18px;
+                            .per-serBlue{
+                                color: $color-06;
+                            }
+                            .per-serYellow{
+                                color: $color-07;
+                            }
+                            .mr43{
+                                margin-right: 43px;
+                            }
+                        }
+                        ul{
+                            float: left;
+                            width: 350px;
+                            text-align: right;
+                            li{
+                                display: inline-block;
+                                line-height: 50px;
+                                height: 50px;
+                                &.per-reqStaEdit{
+                                    font-size: 18px;
+                                    padding:0 30px 0 10px;
+                                    a{
+                                        color: $color-02;
+                                        &:hover{
+                                            color: $color-08;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .per-reqLine{
+                        height: 1px;
+                        width: 100%;
+                        border-bottom: 1px solid $color-d2d2d2;
+                    }
+                }
+            }
+        }
+        .per-fans{
+            min-height: 1105px;
+            ul{
+                li{
+                    width: 190px;
+                    height: 244px;
+                    float: left;
+                    margin: 30px 0 0 0;
+                    background: $color-ffffff;
+                    &.mlmr60{
+                        margin-left: 60px;
+                        margin-right: 60px;
+                    }
+                    &:nth-child(2){
+                        margin-left: 60px;
+                        margin-right: 60px;
+                    }
+                    .per-fansNum{
+                        font-size: 18px;
+                        padding: 10px;
+                        height: 14px;
+                        .per-fansNum-l{
+                            margin-bottom: 0;
+                            width: 50%;
+                            float: left;
+                            height: 14px;
+                            line-height: 14px;
+                            position: relative;
+                            padding-left: 20px;
+                            overflow: hidden;
+                            &:before{
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 13px;
+                                height: 12px;
+                                background: url("../../images/icon/icon-per-attention.png") no-repeat;
+                            }
+
+                        }
+                        .per-fansNum-r{
+                            margin-bottom: 0;
+                            width: auto;
+                            max-width: 50%;
+                            float: right;
+                            height: 14px;
+                            line-height: 14px;
+                            position: relative;
+                            padding-left: 20px;
+                            overflow: hidden;
+                            &:before{
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 16px;
+                                height: 14px;
+                                background: url("../../images/icon/icon-per-fans.png") no-repeat;
+                            }
+                        }
+                    }
+                    .per-fansImg{
+                        width: 100px;
+                        height: 100px;
+                        margin: 15px auto 0 auto;
+                        img{
+                            border-radius: 50%;
+                        }
+                    }
+                    .per-fansName{
+                        padding: 0 10px;
+                        text-align: center;
+                        .per-fansName-1{
+                            text-align: center;
+                            color: $color-02;
+                            font-size: 18px;
+                            margin: 15px 0 10px 0;
+                            a{
+                                color: $color-02;
+                                &:hover{
+                                    @extend .extend-aline;
+                                }
+                            }
+                        }
+                        .per-fansName-2{
+                            position: relative;
+                            margin-bottom: 0;
+                            display: inline-block;
+                            padding-left: 17px;
+                            height: 16px;
+                            line-height: 16px;
+                            overflow: hidden;
+                            &:before{
+                                position: absolute;
+                                content: "";
+                                top:0;
+                                left: 0;
+                                background: url("../../images/icon/icon-per-site.png") no-repeat;
+                                width: 12px;
+                                height: 15px;
+                            }
+                        }
+                    }
+                    .per-fansBtn,.per-fansBtn-already{
+                        width: 100%;
+                        height: 34px;
+                        line-height: 34px;
+
+                        text-align: center;
+                        margin-top: 3px;
+                        a{
+                            width: 100%;
+                            display: inline-block;
+                        }
+
+                    }
+                    .per-fansBtn{
+                        background: $color-07;
+                        a{
+                            color: $color-02;
+                            &:hover{
+                                color: $color-ffffff;
+                            }
+                        }
+                    }
+                    .per-fansBtn-already{
+                        background: $color-03;
+                        a{
+                            color: $color-ffffff;
+                            &:hover{
+                                color: $color-02;
+                            }
+                        }
+                    }
+                    &.per-fans-hover,&:hover{
+                        @extend .exten-box-shadow;
+                    }
+                }
+            }
+        }
+    }
+}

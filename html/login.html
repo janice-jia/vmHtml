@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <title>忘记密码</title>
+    <title>登录</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +20,27 @@
 <div id="login">
     <div class="container">
         <div data-login="container">
-            <img src="" alt="">
+            <img data-login="logo" src="static/images/logo_bg.png" alt="">
+            <div data-login="tab">
+                <a data-login="register" href="#">立即注册</a>
+                <h2>登录</h2>
+            </div>
+            <form data-login="form" action="">
+                <div class="form-group has-success has-feedback">
+                    <label for="login_user" class="sr-only">UserName/PhoneNumber</label>
+                    <span class="input-group-addon" data-login="logusericon"></span>
+                    <input class="form-control" id="login_user" name="login_user" placeholder="请输入手机号/用户名">
+                </div>
+                <div class="form-group has-success has-feedback">
+                    <label for="login_pwd" class="sr-only">Verification code</label>
+                    <span class="input-group-addon" data-login="logpwdicon"></span>
+                    <input class="form-control" id="login_pwd" name="login_pwd" placeholder="请输入密码">
+                </div>
+                <button type="button" id="login_submit" data-login="login_submit" class="btn-block ">登录</button>
+                <label><input type="checkbox" name="rememberCode">记住密码</label>
+            </form>
+
+
         </div>
     </div>
 </div>

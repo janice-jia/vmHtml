@@ -43,14 +43,14 @@
             <!----- 1： 添加用户名 ------->
             <form id="fgpwd_addusername" style="display: block" action="">
                 <div class="form-group has-success has-feedback">
-                    <label for="fgpwd_uname" class="sr-only">UserName/PhoneNumber</label>
+                    <label for="fgpwd_adduname" class="sr-only">UserName/PhoneNumber</label>
                     <span class="input-group-addon" data-fgpwd="fgunameicon"></span>
-                    <input class="form-control" id="fgpwd_adduname" name="uname" placeholder="请填写您的手机号/用户名">
+                    <input class="form-control" id="fgpwd_adduname" name="fgpwd_adduname" placeholder="请填写您的手机号/用户名">
                 </div>
                 <div class="form-group has-success has-feedback">
                     <label for="fgpwd_verify" class="sr-only">Verification code</label>
                     <span class="input-group-addon" data-fgpwd="fgverifyicon"></span>
-                    <input class="form-control" id="fgpwd_verify" name="verify" placeholder="请输入验证码">
+                    <input class="form-control" id="fgpwd_verify" name="fgpwd_verify" placeholder="请输入验证码">
                 </div>
                 <div data-fgpwd="randomCode">
                     <div id="fgpwd_randomCode"></div><span id="fgpwd_changeCode">看不清？换一张</span>
@@ -64,20 +64,20 @@
             <!----- 2： 验证身份 ------->
             <form id="fgpwd_authentication" action="">
                 <div class="form-group has-success has-feedback">
-                    <label for="uname" class="sr-only">UserName/PhoneNumber</label>
+                    <label for="fgpwd_uname" class="sr-only">UserName/PhoneNumber</label>
                     <span class="input-group-addon" data-fgpwd="fgunameicon"></span>
-                    <input class="form-control" id="fgpwd_uname" name="uname" placeholder="云消雾散的天">
+                    <input class="form-control" id="fgpwd_uname" name="fgpwd_uname" placeholder="云消雾散的天">
                 </div>
                 <div class="form-group has-success has-feedback">
                     <label for="fgpwd_phone" class="sr-only">phone</label>
                     <span class="input-group-addon" data-fgpwd="fgverifyicon"></span>
-                    <input class="form-control" id="fgpwd_phone" name="verify" placeholder="157*****179">
+                    <input class="form-control" id="fgpwd_phone" name="fgpwd_phone" placeholder="157*****179">
                 </div>
                 <div class="form-group has-success has-feedback">
                     <label for="fgpwd_phoneKey" class="sr-only">phoneCode</label>
                     <span class="input-group-addon" data-fgpwd="fgverifyicon"></span>
                     <span class="input-group-addon" data-fgpwd="fgphonekeyget" id="fgpwd_phoneKeyGet">获取验证码</span>
-                    <input class="form-control" id="fgpwd_phoneKey" name="verify" placeholder="请输入手机验证码">
+                    <input class="form-control" id="fgpwd_phoneKey" name="fgpwd_phoneKey" placeholder="请输入手机验证码">
 
                 </div>
                 <p data-fgpwd="nextBox">
@@ -89,14 +89,14 @@
             <!----- 3： 设置新密码 ------->
             <form id="fgpwd_newpwd" action="">
                 <div class="form-group has-success has-feedback">
-                    <label for="uname" class="sr-only">UserName/PhoneNumber</label>
+                    <label for="fgpwd_addnewpwd" class="sr-only">UserName/PhoneNumber</label>
                     <span class="input-group-addon" data-fgpwd="fgunameicon"></span>
-                    <input class="form-control" id="uname" name="uname" placeholder="新的登录密码">
+                    <input class="form-control" id="fgpwd_addnewpwd" name="fgpwd_addnewpwd" placeholder="新的登录密码">
                 </div>
                 <div class="form-group has-success has-feedback">
-                    <label for="verify" class="sr-only">Verification code</label>
+                    <label for="fgpwd_conpwd" class="sr-only">Verification code</label>
                     <span class="input-group-addon" data-fgpwd="fgverifyicon"></span>
-                    <input class="form-control" id="verify" name="verify" placeholder="确认新密码">
+                    <input class="form-control" id="fgpwd_conpwd" name="fgpwd_conpwd" placeholder="确认新密码">
                 </div>
                 <p data-fgpwd="nextBox">
                     <button type="button" id="fgpwd_btnfinish" data-fgpwd="finish" class="btn-block ">完成</button>

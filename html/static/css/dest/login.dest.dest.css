@@ -44,9 +44,16 @@
         height: 100%;
         width: 40px; }
       #login [data-login="container"] [data-login="form"] .form-group [data-login="logusericon"] {
-        background-image: url("../../images/icon/icon_loguser.png"); }
+        background-position: 0 0; }
       #login [data-login="container"] [data-login="form"] .form-group [data-login="logpwdicon"] {
-        background-image: url("../../images/icon/icon_logpwd.png"); }
+        background-position: -40px 0; }
     #login [data-login="container"] [data-login="form"] [data-login="login_submit"] {
       background-color: #ffb30e;
       height: 60px; }
+
+
+/* ../../images/positonIcon/login.dest.png */
+#login [data-login="container"] [data-login="form"] .form-group [data-login="logusericon"],
+#login [data-login="container"] [data-login="form"] .form-group [data-login="logpwdicon"]{
+background-image: url(../../images/positonIcon/login.dest.png);
+}

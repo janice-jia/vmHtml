@@ -4,7 +4,7 @@
 .extend-aline:hover, #per-wall .per-wall-l .per-uname p a:hover, #per-wall .per-wall-l .per-fund p span.per-fund-cz a:hover, #per-wall .per-wall-l .per-fund p span.per-fund-tx a:hover, #per-wall .per-wall-l .per-identity p a:hover, #per-wall .per-wall-l .per-identity p.per-identity-more a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgTit a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgEdit a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgAdd .per-art-imgAdd-tit a:hover, #per-wall .per-wall-r .per-req ul li .per-reqTit h1 a:hover, #per-wall .per-wall-r .per-fans ul li .per-fansName .per-fansName-1 a:hover {
   text-decoration: underline; }
 
-.exten-box-shadow, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgHover, #per-wall .per-wall-r .per-fans ul li.per-fans-hover, #per-wall .per-wall-r .per-fans ul li:hover {
+.exten-box-shadow, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgHover, #per-wall .per-wall-r .per-fans ul li.per-fans-hover, #per-wall .per-wall-r .per-fans ul li:hover, #per-settings {
   background: #ffffff;
   box-shadow: 0 0 5px rgba(81, 81, 81, 0.2); }
 
@@ -519,3 +519,73 @@
             color: #ffffff; }
             #per-wall .per-wall-r .per-fans ul li .per-fansBtn-already a:hover {
               color: #515151; }
+
+#per-settings {
+  width: 1000px;
+  margin: 30px auto 100px auto;
+  padding-bottom: 30px;
+  background: #ffffff; }
+  #per-settings .per-setLine {
+    height: 1px;
+    overflow: hidden;
+    border-bottom: 1px solid #909090; }
+  #per-settings .per-setLine-dashed {
+    height: 1px;
+    overflow: hidden;
+    border-bottom: 1px dashed #909090; }
+  #per-settings .per-setTit {
+    height: 90px;
+    line-height: 90px;
+    font-size: 28px;
+    text-align: center;
+    border-bottom: 1px solid #909090; }
+  #per-settings .per-setEdit, #per-settings .per-set-up {
+    color: #909090; }
+    #per-settings .per-setEdit a, #per-settings .per-set-up a {
+      position: relative;
+      color: #909090;
+      display: inline-block;
+      padding-right: 22px; }
+      #per-settings .per-setEdit a:before, #per-settings .per-set-up a:before {
+        content: "";
+        position: absolute; }
+  #per-settings .per-setEdit a:before {
+    top: 33px;
+    right: 0;
+    background: url("../../images/icon/icon-set-down.png") no-repeat;
+    width: 13px;
+    height: 14px; }
+  #per-settings .per-set-up a:before {
+    top: 33px;
+    right: 0;
+    background: url("../../images/icon/icon-set-up.png") no-repeat;
+    width: 13px;
+    height: 13px; }
+  #per-settings .per-setItem {
+    padding: 0 50px;
+    font-size: 20px; }
+    #per-settings .per-setItem .per-itemTit {
+      height: 80px;
+      line-height: 80px; }
+      #per-settings .per-setItem .per-itemTit ul li.ml80 {
+        margin-left: 80px; }
+      #per-settings .per-setItem .per-itemTit ul li .per-set-wx, #per-settings .per-setItem .per-itemTit ul li .per-set-qq, #per-settings .per-setItem .per-itemTit ul li .per-set-wb {
+        display: inline-block;
+        margin: 30px 30px 0 0; }
+      #per-settings .per-setItem .per-itemTit ul li .per-set-wx {
+        background: url("../../images/icon/icon-set-wx.png") no-repeat;
+        width: 30px;
+        height: 25px; }
+      #per-settings .per-setItem .per-itemTit ul li .per-set-qq {
+        background: url("../../images/icon/icon-set-qq.png") no-repeat;
+        width: 24px;
+        height: 25px; }
+      #per-settings .per-setItem .per-itemTit ul li .per-set-wb {
+        background: url("../../images/icon/icon-set-wb.png") no-repeat;
+        width: 31px;
+        height: 25px; }
+    #per-settings .per-setItem .per-itemCon .per-set-label {
+      font-size: 20px;
+      font-weight: normal; }
+  #per-settings .per-hide {
+    display: none; }

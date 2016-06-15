@@ -4,7 +4,7 @@
 .extend-aline:hover, #per-wall .per-wall-l .per-uname p a:hover, #per-wall .per-wall-l .per-fund p span.per-fund-cz a:hover, #per-wall .per-wall-l .per-fund p span.per-fund-tx a:hover, #per-wall .per-wall-l .per-identity p a:hover, #per-wall .per-wall-l .per-identity p.per-identity-more a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgTit a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgEdit a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgAdd .per-art-imgAdd-tit a:hover, #per-wall .per-wall-r .per-req ul li .per-reqTit h1 a:hover, #per-wall .per-wall-r .per-fans ul li .per-fansName .per-fansName-1 a:hover {
   text-decoration: underline; }
 
-.exten-box-shadow, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgHover, #per-wall .per-wall-r .per-fans ul li.per-fans-hover, #per-wall .per-wall-r .per-fans ul li:hover {
+.exten-box-shadow, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgHover, #per-wall .per-wall-r .per-fans ul li.per-fans-hover, #per-wall .per-wall-r .per-fans ul li:hover, #per-settings {
   background: #ffffff;
   box-shadow: 0 0 5px rgba(81, 81, 81, 0.2); }
 
@@ -80,7 +80,7 @@
             left: 0;
             width: 12px;
             height: 15px;
-            background: no-repeat;background-position: -217px -48px; }
+            background: no-repeat;background-position: -139px -185px; }
         #per-wall .per-wall-l .per-uname p a {
           color: #515151; }
     #per-wall .per-wall-l .per-careBtn p {
@@ -112,12 +112,12 @@
         height: 16px;
         line-height: 16px; }
         #per-wall .per-wall-l .per-appraise span.stars-yellow {
-          background: no-repeat;background-position: -217px -16px;
+          background: no-repeat;background-position: -196px -117px;
           width: 16px;
           height: 16px;
           display: block; }
         #per-wall .per-wall-l .per-appraise span.stars-gray {
-          background: no-repeat;background-position: -217px 0;
+          background: no-repeat;background-position: -93px -210px;
           width: 16px;
           height: 16px;
           display: block; }
@@ -336,7 +336,7 @@
               position: absolute;
               top: 4px;
               left: 0;
-              background: no-repeat;background-position: -217px -32px;
+              background: no-repeat;background-position: -217px -50px;
               width: 14px;
               height: 16px; }
           #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo ul {
@@ -355,7 +355,7 @@
                   position: absolute;
                   top: 4px;
                   left: 0;
-                  background: no-repeat;background-position: -196px -100px;
+                  background: no-repeat;background-position: -217px -66px;
                   width: 27px;
                   height: 16px; }
               #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-bzj {
@@ -365,7 +365,7 @@
                   position: absolute;
                   top: 4px;
                   left: 0;
-                  background: no-repeat;background-position: -93px -185px;
+                  background: no-repeat;background-position: -196px -100px;
                   width: 16px;
                   height: 17px; }
               #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-time {
@@ -375,7 +375,7 @@
                   position: absolute;
                   top: 4px;
                   left: 0;
-                  background: no-repeat;background-position: -109px -185px;
+                  background: no-repeat;background-position: -123px -185px;
                   width: 16px;
                   height: 17px; }
         #per-wall .per-wall-r .per-req ul li .per-reqStatus {
@@ -447,7 +447,7 @@
               left: 0;
               width: 13px;
               height: 12px;
-              background: no-repeat;background-position: -125px -185px; }
+              background: no-repeat;background-position: -123px -202px; }
           #per-wall .per-wall-r .per-fans ul li .per-fansNum .per-fansNum-r {
             margin-bottom: 0;
             width: auto;
@@ -465,7 +465,7 @@
               left: 0;
               width: 16px;
               height: 14px;
-              background: no-repeat;background-position: -93px -202px; }
+              background: no-repeat;background-position: -212px -100px; }
         #per-wall .per-wall-r .per-fans ul li .per-fansImg {
           width: 100px;
           height: 100px;
@@ -495,7 +495,7 @@
               content: "";
               top: 0;
               left: 0;
-              background: no-repeat;background-position: -217px -48px;
+              background: no-repeat;background-position: -139px -185px;
               width: 12px;
               height: 15px; }
         #per-wall .per-wall-r .per-fans ul li .per-fansBtn, #per-wall .per-wall-r .per-fans ul li .per-fansBtn-already {
@@ -520,6 +520,76 @@
             #per-wall .per-wall-r .per-fans ul li .per-fansBtn-already a:hover {
               color: #515151; }
 
+#per-settings {
+  width: 1000px;
+  margin: 30px auto 100px auto;
+  padding-bottom: 30px;
+  background: #ffffff; }
+  #per-settings .per-setLine {
+    height: 1px;
+    overflow: hidden;
+    border-bottom: 1px solid #909090; }
+  #per-settings .per-setLine-dashed {
+    height: 1px;
+    overflow: hidden;
+    border-bottom: 1px dashed #909090; }
+  #per-settings .per-setTit {
+    height: 90px;
+    line-height: 90px;
+    font-size: 28px;
+    text-align: center;
+    border-bottom: 1px solid #909090; }
+  #per-settings .per-setEdit, #per-settings .per-set-up {
+    color: #909090; }
+    #per-settings .per-setEdit a, #per-settings .per-set-up a {
+      position: relative;
+      color: #909090;
+      display: inline-block;
+      padding-right: 22px; }
+      #per-settings .per-setEdit a:before, #per-settings .per-set-up a:before {
+        content: "";
+        position: absolute; }
+  #per-settings .per-setEdit a:before {
+    top: 33px;
+    right: 0;
+    background: no-repeat;background-position: -217px -82px;
+    width: 13px;
+    height: 14px; }
+  #per-settings .per-set-up a:before {
+    top: 33px;
+    right: 0;
+    background: no-repeat;background-position: -231px -50px;
+    width: 13px;
+    height: 13px; }
+  #per-settings .per-setItem {
+    padding: 0 50px;
+    font-size: 20px; }
+    #per-settings .per-setItem .per-itemTit {
+      height: 80px;
+      line-height: 80px; }
+      #per-settings .per-setItem .per-itemTit ul li.ml80 {
+        margin-left: 80px; }
+      #per-settings .per-setItem .per-itemTit ul li .per-set-wx, #per-settings .per-setItem .per-itemTit ul li .per-set-qq, #per-settings .per-setItem .per-itemTit ul li .per-set-wb {
+        display: inline-block;
+        margin: 30px 30px 0 0; }
+      #per-settings .per-setItem .per-itemTit ul li .per-set-wx {
+        background: no-repeat;background-position: -93px -185px;
+        width: 30px;
+        height: 25px; }
+      #per-settings .per-setItem .per-itemTit ul li .per-set-qq {
+        background: no-repeat;background-position: -217px -25px;
+        width: 24px;
+        height: 25px; }
+      #per-settings .per-setItem .per-itemTit ul li .per-set-wb {
+        background: no-repeat;background-position: -217px 0;
+        width: 31px;
+        height: 25px; }
+    #per-settings .per-setItem .per-itemCon .per-set-label {
+      font-size: 20px;
+      font-weight: normal; }
+  #per-settings .per-hide {
+    display: none; }
+
 
 /* ../../images/positonIcon/personal.png */
 #per-wall .per-wall-l .per-uimg .per-uimg-src .per-uimg-edit a:after,
@@ -537,6 +607,11 @@
 #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-time:before,
 #per-wall .per-wall-r .per-fans ul li .per-fansNum .per-fansNum-l:before,
 #per-wall .per-wall-r .per-fans ul li .per-fansNum .per-fansNum-r:before,
-#per-wall .per-wall-r .per-fans ul li .per-fansName .per-fansName-2:before{
+#per-wall .per-wall-r .per-fans ul li .per-fansName .per-fansName-2:before,
+#per-settings .per-setEdit a:before,
+#per-settings .per-set-up a:before,
+#per-settings .per-setItem .per-itemTit ul li .per-set-wx,
+#per-settings .per-setItem .per-itemTit ul li .per-set-qq,
+#per-settings .per-setItem .per-itemTit ul li .per-set-wb{
 background-image: url(../../images/positonIcon/personal.png);
 }

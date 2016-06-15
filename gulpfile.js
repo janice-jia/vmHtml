@@ -31,7 +31,8 @@ gulp.task('default', ['styles','autoSprite','cleanCss','scripts']);
  * 监听
  * */
 gulp.task("watch", function(){
-    gulp.watch(pathConfig.src.sassSrc+'*.scss', ['styles','autoSprite','cleanCss']);
+    gulp.watch(pathConfig.src.sassSrc+'*.scss', ['styles','autoSprite']);
+    gulp.watch(pathConfig.src.sassDest+'*.dest.css', ['cleanCss']);
     gulp.watch(pathConfig.src.jsSrc, ['scripts']);
 });
 
@@ -46,7 +47,7 @@ gulp.task('styles', function() {
         .pipe(gulp.dest(pathConfig.src.sassDest))
 
         //提醒任务完成
-        .pipe(notify({ message: 'Styles task complete' }));
+        //.pipe(notify({ message: 'Styles task complete' }));
 });
 
 // cleanCss
@@ -66,7 +67,7 @@ gulp.task('cleanCss', function() {
         .pipe(gulp.dest(pathConfig.src.minCss))
 
         //提醒任务完成
-        .pipe(notify({ message: 'cleanCss task complete' }));
+        //.pipe(notify({ message: 'cleanCss task complete' }));
 });
 
 // Scripts任务
@@ -90,7 +91,7 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest(pathConfig.src.jsDest))
 
         //提醒任务完成
-        .pipe(notify({ message: 'Scripts task complete' }));
+        //.pipe(notify({ message: 'Scripts task complete' }));
 });
 
 // autoSprite 任务
@@ -111,5 +112,5 @@ gulp.task('autoSprite', function() {
 
         .pipe(gulp.dest('./'))
         //提醒任务完成
-        .pipe(notify({ message: 'autoSprite task complete'}));
+        //.pipe(notify({ message: 'autoSprite task complete'}));
 })

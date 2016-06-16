@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <title>忘记密码</title>
+    <title>注册</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,92 +18,73 @@
 <div id="regist">
     <div class="container">
         <div data-regist="container">
-            <img data-regist="logo" src="static/images/logo_bg.png" alt="">
-            <form data-regist="form" action="">
-                <div role="tabpanel">
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs" role="tablist" data-regist="tabpanel">
-                        <li role="presentation" class="active"><a href="#one" aria-controls="one" role="tab" data-toggle="tab">个人注册</a></li>
-                        <li role="presentation"><a href="#studio" aria-controls="studio" role="tab" data-toggle="tab">工作室注册</a></li>
-                        <li role="presentation"><a href="#business" aria-controls="business" role="tab" data-toggle="tab">企业注册</a></li>
-                    </ul>
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                        <div  class="form-group has-success has-feedback tab-pane active" role="tabpanel" id="one">
-                            <label for="regist_oneuser" class="sr-only">请输入您的用户昵称</label>
-                            <span class="input-group-addon" data-regist="logusericon"></span>
-                            <input class="form-control" id="regist_oneuser" name="regist_oneuser" placeholder="请输入您的用户昵称">
-                        </div>
+            <div  data-regist="registnow">
+                <img data-regist="logo" src="static/images/logo_bg.png" alt="">
+                <form data-regist="form" action="">
+                    <div role="tabpanel">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist" data-regist="tabpanel">
+                            <li role="presentation" class="active"><a href="#one" aria-controls="one" role="tab" data-toggle="tab">个人注册</a></li>
+                            <li role="presentation"><a href="#studio" aria-controls="studio" role="tab" data-toggle="tab">工作室注册</a></li>
+                            <li role="presentation"><a href="#business" aria-controls="business" role="tab" data-toggle="tab">企业注册</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div  class="form-group has-success has-feedback tab-pane active" role="tabpanel" id="one">
+                                <label for="regist_oneuser" class="sr-only">请输入您的用户昵称</label>
+                                <span class="input-group-addon" data-regist="logusericon"></span>
+                                <input class="form-control" id="regist_oneuser" name="regist_oneuser" placeholder="请输入您的用户昵称">
+                            </div>
 
-                        <div class="tab-pane form-group has-success has-feedback" id="studio" role="tabpanel">
-                            <label for="regist_studiouser" class="sr-only">请输入工作室名称</label>
-                            <span class="input-group-addon" data-regist="logusericon"></span>
-                            <input class="form-control" id="regist_studiouser" name="regist_studiouser" placeholder="请输入工作室名称">
-                        </div>
+                            <div class="tab-pane form-group has-success has-feedback" id="studio" role="tabpanel">
+                                <label for="regist_studiouser" class="sr-only">请输入工作室名称</label>
+                                <span class="input-group-addon" data-regist="logusericon"></span>
+                                <input class="form-control" id="regist_studiouser" name="regist_studiouser" placeholder="请输入工作室名称">
+                            </div>
 
-                        <div class="tab-pane form-group has-success has-feedback" id="business" role="tabpanel">
-                            <label for="regist_businessuser" class="sr-only">请输入企业名称</label>
-                            <span class="input-group-addon" data-regist="logusericon"></span>
-                            <input class="form-control" id="regist_businessuser" name="regist_businessuser" placeholder="请输入企业名称">
+                            <div class="tab-pane form-group has-success has-feedback" id="business" role="tabpanel">
+                                <label for="regist_businessuser" class="sr-only">请输入企业名称</label>
+                                <span class="input-group-addon" data-regist="logusericon"></span>
+                                <input class="form-control" id="regist_businessuser" name="regist_businessuser" placeholder="请输入企业名称">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="form-group has-success has-feedback">
-                    <label for="regist_pwd" class="sr-only">请设置密码</label>
-                    <span class="input-group-addon" data-regist="logpwdicon"></span>
-                    <input class="form-control" id="regist_pwd" name="regist_pwd" placeholder="请设置密码">
-                </div>
-                <p data-regist="helpword" >*由字母加数字符号至少两种以上字符组成</p>
-                <div class="form-group has-success has-feedback">
-                    <label for="regist_phone" class="sr-only">请输入手机号码</label>
-                    <span class="input-group-addon" data-regist="regphoneicon"></span>
-                    <input class="form-control" id="regist_phone" name="regist_phone" placeholder="请输入手机号码">
-                </div>
-                <div class="form-group has-success has-feedback">
-                    <label for="regist_phoneKey" class="sr-only">请输入手机验证码</label>
-                    <span class="input-group-addon" data-regist="regkeyicon"></span>
-                    <input class="form-control" id="regist_phoneKey" name="regist_key" placeholder="请输入手机验证码">
-                </div>
-                <div data-regist="agreement">
-                    <label><input type="checkbox" name="agreement">我已经阅读并同意<a href="#">《众创部落协议》</a></label>
-                </div>
-                <button type="button" id="regist_submit" data-regist="regist_submit" class="btn-block ">立即注册</button>
-                <div data-regist="haveAccount"><a href="login.html">已有账号</a></div>
-
-            </form>
+                    <div class="form-group has-success has-feedback">
+                        <label for="regist_pwd" class="sr-only">请设置密码</label>
+                        <span class="input-group-addon" data-regist="logpwdicon"></span>
+                        <input class="form-control" id="regist_pwd" name="regist_pwd" placeholder="请设置密码">
+                    </div>
+                    <p data-regist="helpword" >*由字母加数字符号至少两种以上字符组成</p>
+                    <div class="form-group has-success has-feedback">
+                        <label for="regist_phone" class="sr-only">请输入手机号码</label>
+                        <span class="input-group-addon" data-regist="regphoneicon"></span>
+                        <input class="form-control" id="regist_phone" name="regist_phone" placeholder="请输入手机号码">
+                    </div>
+                    <div class="form-group has-success has-feedback">
+                        <label for="regist_phoneKey" class="sr-only">请输入手机验证码</label>
+                        <span class="input-group-addon" data-regist="regkeyicon"></span>
+                        <input class="form-control" id="regist_phoneKey" name="regist_key" placeholder="请输入手机验证码">
+                    </div>
+                    <div data-regist="agreement">
+                        <label><input type="checkbox" name="agreement">我已经阅读并同意<a href="#">《众创部落协议》</a></label>
+                    </div>
+                    <button type="button" id="regist_submit" data-regist="regist_submit" class="btn-block ">立即注册</button>
+                    <div data-regist="haveAccount"><a href="login.html">已有账号</a></div>
+                </form>
+            </div>
+            <div data-regist="regfinish" >
+                <h1>注册成功</h1>
+                <p data-regist="countdown"><span id="regist_countdown">3</span>秒后自动返回首页</p>
+            </div>
         </div>
     </div>
 </div>
 
-<div role="tabpanel">
-    <!-- Nav tabs -->
-    <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
-                                                  data-toggle="tab">Home</a></li>
-        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a>
-        </li>
-        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a>
-        </li>
-    </ul>
-
-    <!-- Tab panes -->
-    <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="home">111111111111111111</div>
-        <div role="tabpanel" class="tab-pane" id="profile">22222222222222222222222</div>
-        <div role="tabpanel" class="tab-pane" id="messages">33333333333333333333</div>
-        <div role="tabpanel" class="tab-pane" id="settings">444444444444444444444444444</div>
-    </div>
-    <br>
-    <br>
-    <br><br><br>
-
-
-</div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="static/js/dest/jquery-1.11.3.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="static/js/dest/bootstrap.min.js"></script>
+<script src="static/js/src/regist.js"></script>
 </body>
 </html>

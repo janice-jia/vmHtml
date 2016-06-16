@@ -5,15 +5,20 @@
   height: 100vh;
   width: 100vw;
   text-align: center;
-  background-image: url("../../images/fgpwd/fgpwd_bg.jpg"); }
+  background-image: url("../../images/fgpwd/fgpwd_bg.jpg");
+  /*******   内容  *******/ }
   #regist [data-regist="container"] {
     width: 440px;
     height: 620px;
     margin: 0 auto;
     border-radius: 10px;
-    background-color: #fff; }
+    background-color: #fff;
+    /** 注册信息界面 **/
+    /** 注册完成界面 **/ }
     #regist [data-regist="container"] [data-regist="registnow"] {
-      padding: 0 50px; }
+      padding: 0 50px;
+      /****  注册类型标签选项 *****/
+      /** 其他注册信息 **/ }
       #regist [data-regist="container"] [data-regist="registnow"] [data-regist="logo"] {
         margin-top: -68px; }
       #regist [data-regist="container"] [data-regist="registnow"] [data-regist="tabpanel"] {
@@ -32,53 +37,58 @@
         #regist [data-regist="container"] [data-regist="registnow"] [data-regist="tabpanel"] li {
           display: inline-block;
           width: 33.3%; }
-      #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] .form-group {
-        border-bottom: 1px solid #a7a7a7; }
-        #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] .form-group input {
-          border: none;
-          box-shadow: none;
-          box-shadow: none;
-          padding-left: 45px;
-          height: 54px;
-          line-height: 54px; }
-        #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] .form-group span[data-regist$='icon'] {
-          background-repeat: no-repeat;
-          position: absolute;
-          height: 100%;
-          width: 40px; }
-        #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] .form-group [data-regist="logusericon"] {
-          background-position: 0 0; }
-        #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] .form-group [data-regist="logpwdicon"] {
-          background-position: -40px 0; }
-        #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] .form-group [data-regist="regphoneicon"] {
-          background-position: 0 -54px; }
-        #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] .form-group [data-regist="regkeyicon"] {
-          background-position: -40px -54px; }
-      #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] [data-regist="helpword"] {
-        text-align: left;
-        color: #ffb30e; }
-      #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] [data-regist="regist_submit"] {
-        background-color: #ffb30e;
-        height: 60px;
-        margin-top: 15px; }
-      #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] [data-regist="agreement"] {
-        color: #c1c1c1;
-        text-align: left; }
-        #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] [data-regist="agreement"] label {
-          font-weight: normal; }
-        #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] [data-regist="agreement"] input {
-          height: 16px;
-          width: 16px;
-          margin-right: 10px;
-          position: relative;
-          bottom: -3px; }
-        #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] [data-regist="agreement"] a {
-          color: #171717; }
-      #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] [data-regist="haveAccount"] {
-        text-align: right;
-        line-height: 55px; }
-        #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] [data-regist="haveAccount"] a {
-          color: #171717; }
+      #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] {
+        /*** 密码提示文字 ***/
+        /*** 注册提交按钮 ***/
+        /*** 协议 ***/
+        /** 已有账号 **/ }
+        #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] .form-group {
+          border-bottom: 1px solid #a7a7a7; }
+          #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] .form-group input {
+            border: none;
+            box-shadow: none;
+            box-shadow: none;
+            padding-left: 45px;
+            height: 54px;
+            line-height: 54px; }
+          #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] .form-group span[data-regist$='icon'] {
+            background-repeat: no-repeat;
+            position: absolute;
+            height: 100%;
+            width: 40px; }
+          #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] .form-group [data-regist="logusericon"] {
+            background-position: 0 0; }
+          #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] .form-group [data-regist="logpwdicon"] {
+            background-position: -40px 0; }
+          #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] .form-group [data-regist="regphoneicon"] {
+            background-position: 0 -54px; }
+          #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] .form-group [data-regist="regkeyicon"] {
+            background-position: -40px -54px; }
+        #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] [data-regist="helpword"] {
+          text-align: left;
+          color: #ffb30e; }
+        #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] [data-regist="regist_submit"] {
+          background-color: #ffb30e;
+          height: 60px;
+          margin-top: 15px; }
+        #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] [data-regist="agreement"] {
+          color: #c1c1c1;
+          text-align: left; }
+          #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] [data-regist="agreement"] label {
+            font-weight: normal; }
+          #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] [data-regist="agreement"] input {
+            height: 16px;
+            width: 16px;
+            margin-right: 10px;
+            position: relative;
+            bottom: -3px; }
+          #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] [data-regist="agreement"] a {
+            color: #171717; }
+        #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] [data-regist="haveAccount"] {
+          text-align: right;
+          line-height: 55px; }
+          #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] [data-regist="haveAccount"] a {
+            color: #171717; }
     #regist [data-regist="container"] [data-regist="regfinish"] {
       display: none;
       position: relative;

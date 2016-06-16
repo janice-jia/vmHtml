@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>忘记密码</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="static/css/minCss/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/minCss/all.min.css">
+
+    <!--[if lt IE 9]>
+    <script src="static/js/dest/html5shiv.min.js"></script>
+    <script src="static/js/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header></header>
+
+<div id="recruit">
+    <div class="container">
+
+        <h2>发布需求</h2>
+        <div class="form-group"><p data-recuit="type" class="col-sm-2 control-label">选择类型</p>
+            <ul class="nav nav-tabs col-sm-10" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">征集作品</a>
+                </li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">招募创作人</a>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-content">
+            <form role="tabpanel" class="form-horizontal tab-pane active" id="home">
+                <div class="form-group">
+                    <label for="rec_name" class="col-sm-2 control-label">需求名称</label>
+                    <div class="col-sm-10">
+                        <input type="password" id="rec_name" name="rec_name" class="form-control" placeholder="5至20个字">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="rec_skills" class="col-sm-2 control-label">作品类型</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" id="rec_skills" name="rec_skills" placeholder="小说|文学副本">
+                        <input class="form-control" id="rec_skills" name="rec_skills" placeholder="诗歌|散文">
+                        <input class="form-control" id="rec_skills" name="rec_skills" placeholder="搞笑|段子">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="rec_paid" class="col-sm-2 control-label">酬金</label>
+                    <div class="col-sm-3">
+                        <input class="form-control" id="rec_paid" name="rec_paid">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="rec_deposit" class="col-sm-2 control-label">保证金</label>
+                    <div class="col-sm-3">
+                        <input class="form-control" id="rec_deposit" name="rec_deposit">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="rec_place" class="col-sm-2 control-label">需求地点</label>
+                    <div class="col-sm-10">
+                        <select name="rec_place" id="rec_place"></select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="rec_data" class="col-sm-2 control-label">截止日期</label>
+                    <div class="col-sm-3">
+                        <input class="form-control" id="rec_data" placeholder="2016-6-16">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="rec_details" class="col-sm-2 control-label">需求详情</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" id="rec_details" name="rec_details" placeholder="10-800个字">
+                    </div>
+                </div>
+            </form>
+            <form role="tabpanel" class="form-horizontal tab-pane" id="profile">
+                <div class="form-group">
+                    <label for="rec_name" class="col-sm-2 control-label">需求名称</label>
+                    <div class="col-sm-10">
+                        <input type="password" id="rec_name" name="rec_name" class="form-control" placeholder="5至20个字">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="rec_skills" class="col-sm-2 control-label">所需技能</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" id="rec_skills" name="rec_skills" placeholder="美术">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="rec_paid" class="col-sm-2 control-label">酬金</label>
+                    <div class="col-sm-3">
+                        <input class="form-control" id="rec_paid" name="rec_paid">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="rec_deposit" class="col-sm-2 control-label">保证金</label>
+                    <div class="col-sm-3">
+                        <input class="form-control" id="rec_deposit" name="rec_deposit">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="rec_place" class="col-sm-2 control-label">需求地点</label>
+                    <div class="col-sm-10">
+                        <select name="rec_place" id="rec_place"></select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="rec_data" class="col-sm-2 control-label">截止日期</label>
+                    <div class="col-sm-3">
+                        <input class="form-control" id="rec_data" placeholder="2016-6-16">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="rec_details" class="col-sm-2 control-label">需求详情</label>
+                    <div class="col-sm-10" data-recuit="textarea">
+                        <textarea name="" id="" placeholder="10-800个字"></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="static/js/dest/jquery-1.11.3.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="static/js/dest/bootstrap.min.js"></script>
+<script src="static/js/dest/all.min.js"></script>
+</body>
+</html>

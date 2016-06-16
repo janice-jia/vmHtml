@@ -42,6 +42,7 @@ $black: #000;
         color: $orange;
       }
     }
+    /*** 登录信息表单 ***/
     [data-login="form"]{
       .form-group {
         border-bottom: 1px solid #a7a7a7;
@@ -68,6 +69,7 @@ $black: #000;
           background-image: url("../../images/icon/icon_logpwd.png");
         }
       }
+      /* 登录按钮 */
       [data-login="login_submit"] {
         background-color: $orange;
         height: 60px;
@@ -94,13 +96,14 @@ $black: #000;
           color: $darker;
         }
       }
+      [data-login="pwdrel"]:after{
+        display: table;
+        clear: both;
+        content: "";
+      }
 
     }
-    [data-login="pwdrel"]:after{
-      display: table;
-      clear: both;
-      content: "";
-    }
+    /*** 分割线 ***/
     p[data-login="hr"]{
       color: $gray;
       line-height: 16px;
@@ -122,6 +125,7 @@ $black: #000;
         right:0;
       }
     }
+    /**** 其他登录方式  ***/
     ul[data-login='otherlog']{
       li{
         float:left;

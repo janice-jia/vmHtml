@@ -15,18 +15,20 @@ $black: #000;
   width: 100vw;
   text-align: center;
   background-image: url('../../images/fgpwd/fgpwd_bg.jpg');
+  /*******   内容  *******/
   [data-regist="container"]{
-
     width:440px;
     height:620px;
     margin:0 auto;
     border-radius: 10px;
     background-color:$white;
+    /** 注册信息界面 **/
     [data-regist="registnow"]{
       padding: 0 50px;
       [data-regist="logo"]{
         margin-top: -68px;
       }
+      /****  注册类型标签选项 *****/
       [data-regist="tabpanel"]{
         border:none;
         a{
@@ -49,6 +51,8 @@ $black: #000;
         }
 
       }
+
+      /** 其他注册信息 **/
       [data-regist="form"]{
         .form-group {
           border-bottom: 1px solid #a7a7a7;
@@ -81,15 +85,18 @@ $black: #000;
             background-image: url("../../images/icon/icon_regkey.png");
           }
         }
+        /*** 密码提示文字 ***/
         [data-regist="helpword"]{
           text-align:left;
           color: $orange;
         }
+        /*** 注册提交按钮 ***/
         [data-regist="regist_submit"] {
           background-color: $orange;
           height: 60px;
           margin-top:15px;
         }
+        /*** 协议 ***/
         [data-regist="agreement"]{
           color: $light-gray;
           text-align:left;
@@ -108,6 +115,7 @@ $black: #000;
             color: $darker;
           }
         }
+        /** 已有账号 **/
         [data-regist="haveAccount"]{
           text-align: right;
           line-height: 55px;
@@ -117,6 +125,7 @@ $black: #000;
         }
       }
     }
+    /** 注册完成界面 **/
     [data-regist="regfinish"]{
       display: none;
       position: relative;

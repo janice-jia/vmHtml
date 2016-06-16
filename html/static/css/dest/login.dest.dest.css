@@ -12,7 +12,10 @@
     height: 520px;
     margin: 0 auto;
     border-radius: 10px;
-    background-color: #fff; }
+    background-color: #fff;
+    /*** 登录信息表单 ***/
+    /*** 分割线 ***/
+    /**** 其他登录方式  ***/ }
     #login [data-login="container"] [data-login="logo"] {
       margin-top: -68px; }
     #login [data-login="container"] [data-login="tab"] {
@@ -29,49 +32,51 @@
         right: 0;
         line-height: 48px;
         color: #ffb30e; }
-    #login [data-login="container"] [data-login="form"] .form-group {
-      border-bottom: 1px solid #a7a7a7; }
-      #login [data-login="container"] [data-login="form"] .form-group input {
-        border: none;
-        box-shadow: none;
-        box-shadow: none;
-        padding-left: 45px;
-        height: 54px;
-        line-height: 54px; }
-      #login [data-login="container"] [data-login="form"] .form-group span[data-login$='icon'] {
-        background-repeat: no-repeat;
-        position: absolute;
-        height: 100%;
-        width: 40px; }
-      #login [data-login="container"] [data-login="form"] .form-group [data-login="logusericon"] {
-        background-position: 0 0; }
-      #login [data-login="container"] [data-login="form"] .form-group [data-login="logpwdicon"] {
-        background-position: -40px 0; }
-    #login [data-login="container"] [data-login="form"] [data-login="login_submit"] {
-      background-color: #ffb30e;
-      height: 60px;
-      margin-top: 15px;
-      margin-bottom: 20px; }
-    #login [data-login="container"] [data-login="form"] [data-login="pwdrel"] {
-      margin-bottom: 56px;
-      line-height: 16px; }
-      #login [data-login="container"] [data-login="form"] [data-login="pwdrel"] input {
-        margin: 0px;
-        width: 16px;
-        height: 16px;
-        margin-right: 10px; }
-      #login [data-login="container"] [data-login="form"] [data-login="pwdrel"] label {
-        float: left;
-        font-size: 16px;
-        font-weight: normal;
-        margin: 0; }
-      #login [data-login="container"] [data-login="form"] [data-login="pwdrel"] a {
-        float: right;
-        color: #171717; }
-    #login [data-login="container"] [data-login="pwdrel"]:after {
-      display: table;
-      clear: both;
-      content: ""; }
+    #login [data-login="container"] [data-login="form"] {
+      /* 登录按钮 */ }
+      #login [data-login="container"] [data-login="form"] .form-group {
+        border-bottom: 1px solid #a7a7a7; }
+        #login [data-login="container"] [data-login="form"] .form-group input {
+          border: none;
+          box-shadow: none;
+          box-shadow: none;
+          padding-left: 45px;
+          height: 54px;
+          line-height: 54px; }
+        #login [data-login="container"] [data-login="form"] .form-group span[data-login$='icon'] {
+          background-repeat: no-repeat;
+          position: absolute;
+          height: 100%;
+          width: 40px; }
+        #login [data-login="container"] [data-login="form"] .form-group [data-login="logusericon"] {
+          background-position: 0 0; }
+        #login [data-login="container"] [data-login="form"] .form-group [data-login="logpwdicon"] {
+          background-position: -40px 0; }
+      #login [data-login="container"] [data-login="form"] [data-login="login_submit"] {
+        background-color: #ffb30e;
+        height: 60px;
+        margin-top: 15px;
+        margin-bottom: 20px; }
+      #login [data-login="container"] [data-login="form"] [data-login="pwdrel"] {
+        margin-bottom: 56px;
+        line-height: 16px; }
+        #login [data-login="container"] [data-login="form"] [data-login="pwdrel"] input {
+          margin: 0px;
+          width: 16px;
+          height: 16px;
+          margin-right: 10px; }
+        #login [data-login="container"] [data-login="form"] [data-login="pwdrel"] label {
+          float: left;
+          font-size: 16px;
+          font-weight: normal;
+          margin: 0; }
+        #login [data-login="container"] [data-login="form"] [data-login="pwdrel"] a {
+          float: right;
+          color: #171717; }
+      #login [data-login="container"] [data-login="form"] [data-login="pwdrel"]:after {
+        display: table;
+        clear: both;
+        content: ""; }
     #login [data-login="container"] p[data-login="hr"] {
       color: #909090;
       line-height: 16px;

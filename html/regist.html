@@ -17,10 +17,13 @@
 <body>
 <div id="regist">
     <div class="container">
+        <!--  主题内容开始  -->
         <div data-regist="container">
+            <!--  注册信息界面  -->
             <div  data-regist="registnow">
                 <img data-regist="logo" src="static/images/logo_bg.png" alt="">
                 <form data-regist="form" action="">
+                    <!--  注册类型标签选项  -->
                     <div role="tabpanel">
                         <!-- Nav tabs -->
                         <ul class="nav nav-tabs" role="tablist" data-regist="tabpanel">
@@ -49,6 +52,7 @@
                             </div>
                         </div>
                     </div>
+                    <!--- 其他注册信息 --->
                     <div class="form-group has-success has-feedback">
                         <label for="regist_pwd" class="sr-only">请设置密码</label>
                         <span class="input-group-addon" data-regist="logpwdicon"></span>
@@ -65,6 +69,7 @@
                         <span class="input-group-addon" data-regist="regkeyicon"></span>
                         <input class="form-control" id="regist_phoneKey" name="regist_key" placeholder="请输入手机验证码">
                     </div>
+                    <!-- 同意协议 -->
                     <div data-regist="agreement">
                         <label><input type="checkbox" name="agreement">我已经阅读并同意<a href="#">《众创部落协议》</a></label>
                     </div>
@@ -72,6 +77,7 @@
                     <div data-regist="haveAccount"><a href="login.html">已有账号</a></div>
                 </form>
             </div>
+            <!--  注册完成界面  -->
             <div data-regist="regfinish" >
                 <h1>注册成功</h1>
                 <p data-regist="countdown"><span id="regist_countdown">3</span>秒后自动返回首页</p>
@@ -85,6 +91,6 @@
 <script src="static/js/dest/jquery-1.11.3.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="static/js/dest/bootstrap.min.js"></script>
-<script src="static/js/src/regist.js"></script>
+<script src="static/js/dest/all.min.js"></script>
 </body>
 </html>

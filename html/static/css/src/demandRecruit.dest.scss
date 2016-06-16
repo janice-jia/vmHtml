@@ -1,0 +1,57 @@
+@charset "utf-8";
+$darker:#171717;
+$darkgray:#515151;
+$gray: #909090;
+$light-gray: #c1c1c1;
+$bgcolor:#eee;
+$blue:#499af5;
+$orange: #ffb30e;
+$red:#e43f3f;
+$white: #fff;
+$black: #000;
+#recruit{
+  background-color:$white;
+  margin-top: 128px;
+  height:100%;
+  text-align: center;
+  .container{
+    width:740px;
+    h2{
+      font-size: 18px;
+      margin-top:40px;
+      font-weight: bold;
+    }
+    /** 招募方式 **/
+    [data-recuit="type"]{
+      font-weight: 700;
+      margin-bottom: 30px;
+
+    }
+    [role="tablist"]{
+      margin-bottom: 30px;
+      border:none;
+      a{
+        border:none;
+        padding: 0;
+        color: $darker;
+      }
+      .active>a{
+        color: $orange;
+      }
+      a:hover{
+        border:none;
+        background:none;
+        color: $orange;
+      }
+      li{
+        display: inline-block;
+        width:33.3%
+      }
+    }
+
+    [data-recuit="textarea"]>textarea{
+      width:626px;
+      height: 206px;
+    }
+  }
+}

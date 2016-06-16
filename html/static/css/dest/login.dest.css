@@ -23,7 +23,7 @@
         font-size: 20px;
         font-weight: bold;
         line-height: 48px; }
-      #login [data-login="container"] [data-login="tab"] [data-login="register"] {
+      #login [data-login="container"] [data-login="tab"] [data-login="regist"] {
         position: absolute;
         font-size: 16px;
         right: 0;
@@ -100,6 +100,9 @@
         width: 22px;
         height: 23px;
         display: inline-block; }
+      #login [data-login="container"] ul[data-login='otherlog'] li span {
+        position: relative;
+        top: -5px; }
     #login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_qq"] a {
       color: #3ea6ff; }
     #login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_qq"] b {

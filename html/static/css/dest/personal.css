@@ -4,7 +4,7 @@
 .extend-aline:hover, #per-wall .per-wall-l .per-uname p a:hover, #per-wall .per-wall-l .per-fund p span.per-fund-cz a:hover, #per-wall .per-wall-l .per-fund p span.per-fund-tx a:hover, #per-wall .per-wall-l .per-identity p a:hover, #per-wall .per-wall-l .per-identity p.per-identity-more a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgTit a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgEdit a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgAdd .per-art-imgAdd-tit a:hover, #per-wall .per-wall-r .per-req ul li .per-reqTit h1 a:hover, #per-wall .per-wall-r .per-fans ul li .per-fansName .per-fansName-1 a:hover {
   text-decoration: underline; }
 
-.exten-box-shadow, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgHover, #per-wall .per-wall-r .per-fans ul li.per-fans-hover, #per-wall .per-wall-r .per-fans ul li:hover, #per-settings {
+.exten-box-shadow, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgHover, #per-wall .per-wall-r .per-fans ul li.per-fans-hover, #per-wall .per-wall-r .per-fans ul li:hover, #per-settings, #per-settings .per-setItem .per-itemCon .per-img-border {
   background: #ffffff;
   box-shadow: 0 0 5px rgba(81, 81, 81, 0.2); }
 
@@ -44,7 +44,7 @@
             height: 100%;
             display: block; }
             #per-wall .per-wall-l .per-uimg .per-uimg-src .per-uimg-edit a:after {
-              background: url("../../images/icon/ico-per-edit.png");
+              background: url("../../images/icon/icon-per-edit.png");
               height: 43px;
               width: 43px;
               content: "";
@@ -584,8 +584,72 @@
         background: url("../../images/icon/icon-set-wb.png") no-repeat;
         width: 31px;
         height: 25px; }
-    #per-settings .per-setItem .per-itemCon .per-set-label {
-      font-size: 20px;
-      font-weight: normal; }
+    #per-settings .per-setItem .per-itemCon {
+      padding: 40px 0 0 140px; }
+      #per-settings .per-setItem .per-itemCon .per-itemGroup .per-radio-inline input[type=radio] {
+        margin-top: 10px; }
+      #per-settings .per-setItem .per-itemCon .per-itemGroup .per-payPwd {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        float: left;
+        padding: 0 0 0 12px;
+        margin-right: 10px; }
+      #per-settings .per-setItem .per-itemCon .per-set-label {
+        font-size: 20px;
+        font-weight: normal;
+        height: 50px;
+        line-height: 50px;
+        padding-right: 0;
+        padding-top: 0; }
+      #per-settings .per-setItem .per-itemCon .per-set-control {
+        font-size: 16px;
+        color: #909090;
+        height: 50px;
+        line-height: 50px; }
+      #per-settings .per-setItem .per-itemCon .per-img-border {
+        background: #f8f8f8;
+        padding: 5px;
+        width: 180px;
+        height: 180px; }
+      #per-settings .per-setItem .per-itemCon .per-input-file {
+        width: 180px;
+        height: 180px;
+        display: block;
+        position: relative;
+        z-index: 0;
+        border: 1px solid #bfbfbf; }
+        #per-settings .per-setItem .per-itemCon .per-input-file:before {
+          position: absolute;
+          top: 47px;
+          left: 66px;
+          content: "";
+          background: url("../../images/icon/icon-set-addfile.png");
+          width: 49px;
+          height: 49px; }
+        #per-settings .per-setItem .per-itemCon .per-input-file p {
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          text-align: center;
+          color: #bfbfbf;
+          font-size: 16px;
+          padding-top: 118px; }
+        #per-settings .per-setItem .per-itemCon .per-input-file input {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 2;
+          width: 180px;
+          height: 180px;
+          opacity: 0;
+          filter: alpha(opacity=0);
+          -moz-opacity: 0;
+          -khtml-opacity: 0;
+          opacity: 0;
+          cursor: pointer; }
+      #per-settings .per-setItem .per-itemCon .lh80 {
+        line-height: 80px; }
   #per-settings .per-hide {
     display: none; }

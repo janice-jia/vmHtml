@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <title>忘记密码</title>
+    <title>征集作品</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,119 +21,187 @@
     <div class="container">
 
         <h2>发布需求</h2>
-        <div class="form-group"><p data-recuit="type" class="col-sm-2 control-label">选择类型</p>
+        <div data-recuit="type" class="form-group">
+            <p class="col-sm-2 control-label"><span data-recuit="must"></span>选择类型</p>
             <ul class="nav nav-tabs col-sm-10" role="tablist">
-                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">征集作品</a>
+                <li role="presentation" class="active"><a href="#recruit_collectionwork" aria-controls="recruit_collectionwork" role="tab"
+                                                          data-toggle="tab">征集作品</a>
                 </li>
-                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">招募创作人</a>
+                <li role="presentation"><a href="#recruit_collectionperson" aria-controls="recruit_collectionperson" role="tab"
+                                           data-toggle="tab">招募创作人</a>
                 </li>
             </ul>
         </div>
         <div class="tab-content">
-            <form role="tabpanel" class="form-horizontal tab-pane active" id="home">
+            <form role="tabpanel" class="form-horizontal tab-pane active" id="recruit_collectionwork">
                 <div class="form-group">
-                    <label for="rec_name" class="col-sm-2 control-label">需求名称</label>
+                    <label class="col-sm-2 control-label"><span data-recuit="must"></span>需求名称</label>
                     <div class="col-sm-10">
-                        <input type="password" id="rec_name" name="rec_name" class="form-control" placeholder="5至20个字">
+                        <input type="password" name="rec_name" class="form-control" placeholder="5至20个字">
+                    </div>
+                </div>
+
+                <div class="form-group" data-recuit="rec_works">
+                    <label class="col-sm-2 control-label"><span data-recuit="must"></span>作品类型</label>
+                    <div class="col-sm-10" id="regist_works">
+                        <div>
+                            <select name="rec_works0">
+                                <option value="1">小说|文学副本</option>
+                                <option value="2">诗歌|散文</option>
+                                <option value="3">搞笑|段子</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select name="rec_works0">
+                                <option value="1">小说|文学副本</option>
+                                <option value="2">诗歌|散文</option>
+                                <option value="3">搞笑|段子</option>
+                            </select><button data-recuit="adddate" type="button"></button>
+                        </div>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="rec_skills" class="col-sm-2 control-label">作品类型</label>
-                    <div class="col-sm-10">
-                        <input class="form-control" id="rec_skills" name="rec_skills" placeholder="小说|文学副本">
-                        <input class="form-control" id="rec_skills" name="rec_skills" placeholder="诗歌|散文">
-                        <input class="form-control" id="rec_skills" name="rec_skills" placeholder="搞笑|段子">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="rec_paid" class="col-sm-2 control-label">酬金</label>
+                    <label class="col-sm-2 control-label"><span data-recuit="must"></span>酬金</label>
                     <div class="col-sm-3">
-                        <input class="form-control" id="rec_paid" name="rec_paid">
+                        <input class="form-control" name="rec_paid">
                     </div>
+                    <p>元 （需托管在平台，选稿后交付创作人）</p>
                 </div>
 
                 <div class="form-group">
-                    <label for="rec_deposit" class="col-sm-2 control-label">保证金</label>
+                    <label class="col-sm-2 control-label">保证金</label>
                     <div class="col-sm-3">
-                        <input class="form-control" id="rec_deposit" name="rec_deposit">
+                        <input class="form-control" name="rec_deposit">
                     </div>
+                    <p>元</p>
                 </div>
 
                 <div class="form-group">
-                    <label for="rec_place" class="col-sm-2 control-label">需求地点</label>
+                    <label class="col-sm-2 control-label">需求地点</label>
                     <div class="col-sm-10">
-                        <select name="rec_place" id="rec_place"></select>
+                        <select name="rec_place">
+                            <option value="1">北京</option>
+                            <option value="2">承德</option>
+                            <option value="3">上海</option>
+                            <option value="4">天津</option>
+                        </select>
                     </div>
                 </div>
 
-                <div class="form-group">
-                    <label for="rec_data" class="col-sm-2 control-label">截止日期</label>
+                <div class="form-group" data-regist="date">
+                    <label class="col-sm-2 control-label"><span data-recuit="must"></span>截止日期</label>
                     <div class="col-sm-3">
-                        <input class="form-control" id="rec_data" placeholder="2016-6-16">
+                        <input class="form-control" name="rec_date" placeholder="2016-6-16">
                     </div>
+                    <p><span></span></p>
                 </div>
 
                 <div class="form-group">
-                    <label for="rec_details" class="col-sm-2 control-label">需求详情</label>
-                    <div class="col-sm-10">
-                        <input class="form-control" id="rec_details" name="rec_details" placeholder="10-800个字">
-                    </div>
-                </div>
-            </form>
-            <form role="tabpanel" class="form-horizontal tab-pane" id="profile">
-                <div class="form-group">
-                    <label for="rec_name" class="col-sm-2 control-label">需求名称</label>
-                    <div class="col-sm-10">
-                        <input type="password" id="rec_name" name="rec_name" class="form-control" placeholder="5至20个字">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="rec_skills" class="col-sm-2 control-label">所需技能</label>
-                    <div class="col-sm-10">
-                        <input class="form-control" id="rec_skills" name="rec_skills" placeholder="美术">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="rec_paid" class="col-sm-2 control-label">酬金</label>
-                    <div class="col-sm-3">
-                        <input class="form-control" id="rec_paid" name="rec_paid">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="rec_deposit" class="col-sm-2 control-label">保证金</label>
-                    <div class="col-sm-3">
-                        <input class="form-control" id="rec_deposit" name="rec_deposit">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="rec_place" class="col-sm-2 control-label">需求地点</label>
-                    <div class="col-sm-10">
-                        <select name="rec_place" id="rec_place"></select>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="rec_data" class="col-sm-2 control-label">截止日期</label>
-                    <div class="col-sm-3">
-                        <input class="form-control" id="rec_data" placeholder="2016-6-16">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="rec_details" class="col-sm-2 control-label">需求详情</label>
+                    <label class="col-sm-2 control-label"><span data-recuit="must"></span>需求详情</label>
                     <div class="col-sm-10" data-recuit="textarea">
-                        <textarea name="" id="" placeholder="10-800个字"></textarea>
+                        <textarea name="rec_details" placeholder="10-800个字"></textarea>
                     </div>
+                </div>
+
+                <div data-recuit="submit" data-toggle="#recruit_modelwork">
+                    <button type="button" >发布</button>
+                </div>
+
+            </form>
+            <form role="tabpanel" class="form-horizontal tab-pane" id="recruit_collectionperson">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label"><span data-recuit="must"></span>需求名称</label>
+                    <div class="col-sm-10">
+                        <input type="password" name="rec_name" class="form-control" placeholder="5至20个字">
+                    </div>
+                </div>
+
+
+                <div class="form-group" data-recuit="rec_skills">
+                    <label class="col-sm-2 control-label"><span data-recuit="must"></span>所需技能</label>
+                    <div class="col-sm-10" id="regist_skills">
+                        <div>
+                            <select name="rec_skills">
+                                <option value="1">美术</option>
+                                <option value="2">音乐</option>
+                                <option value="3">计算机</option>
+                            </select><button data-recuit="addskill" type="button"></button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label"><span data-recuit="must"></span>酬金</label>
+                    <div class="col-sm-3">
+                        <input class="form-control" name="rec_paid">
+                    </div>
+                    <p>元 （需托管在平台，选稿后交付创作人）</p>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">保证金</label>
+                    <div class="col-sm-3">
+                        <input class="form-control" name="rec_deposit">
+                    </div>
+                    <p>元</p>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label"><span data-recuit="must"></span>需求地点</label>
+                    <div class="col-sm-10">
+                        <select name="rec_place">
+                            <option value="1">北京</option>
+                            <option value="2">承德</option>
+                            <option value="3">上海</option>
+                            <option value="4">天津</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group" data-regist="date">
+                    <label class="col-sm-2 control-label"><span data-recuit="must"></span>截止日期</label>
+                    <div class="col-sm-3">
+                        <input class="form-control" name="rec_date" placeholder="2016-6-16">
+                    </div>
+                    <p><span></span></p>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label"><span data-recuit="must"></span>需求详情</label>
+                    <div class="col-sm-10" data-recuit="textarea">
+                        <textarea name="rec_details" placeholder="10-800个字"></textarea>
+                    </div>
+                </div>
+                <div data-recuit="submit" data-toggle="#recruit_modelperson">
+                    <button type="button" >发布</button>
                 </div>
             </form>
         </div>
 
+
+    </div>
+    <div data-recuit="modalbox" id="recruit_modelwork">
+        <div data-recuit="modal">
+            <h2><b></b>需求发布成功！</h2>
+            <p><span>3</span>秒后自动跳转到需求详情页</p>
+        </div>
+
+    </div>
+
+    <div data-recuit="modalbox" id="recruit_modelperson">
+        <div data-recuit="modal">
+            <div data-recuit="modal-header">需求发布成功</div>
+            <div data-recuit="modal-body">
+                需求发布成功！付款成功后需求才会展示给其他用户。创作者完成需求后，需要您的确认平台才会打款给用户。
+            </div>
+            <hr>
+            <div data-recuit="modal-footer">
+                <button data-recuit="paynow"><a href="#">现在付款</a></button>
+                <button data-recuit="payafter"><a href="#">稍后付款</a></button>
+            </div>
+        </div>
 
     </div>
 </div>
@@ -141,6 +209,7 @@
 <script src="static/js/dest/jquery-1.11.3.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="static/js/dest/bootstrap.min.js"></script>
-<script src="static/js/dest/all.min.js"></script>
+<script src="static/js/src/recruit.js"></script>
+<!--<script src="static/js/dest/all.min.js"></script>-->
 </body>
 </html>

@@ -248,7 +248,8 @@
 .btn-yellow-40 {
   width: 120px;
   height: 40px;
-  line-height: 40px; }
+  line-height: 40px;
+  font-weight: 500; }
 
 .btn-blue {
   display: block;
@@ -259,9 +260,24 @@
   font-size: 18px;
   height: 40px;
   line-height: 40px;
-  text-align: center; }
+  text-align: center;
+  font-weight: 500; }
   .btn-blue:hover {
     color: #515151; }
+
+.btn-gray-50 {
+  display: block;
+  width: 130px;
+  border: 1px solid #b0b0b0;
+  background: #efefef;
+  color: #515151;
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: 500; }
+  .btn-gray-50:hover {
+    color: #909090; }
 
 
 /* ../../images/positonIcon/public.png */

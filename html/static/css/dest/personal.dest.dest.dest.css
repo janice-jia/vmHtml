@@ -44,7 +44,7 @@
             height: 100%;
             display: block; }
             #per-wall .per-wall-l .per-uimg .per-uimg-src .per-uimg-edit a:after {
-              background-position: -99px -185px;
+              background-position: 0 0;
               height: 43px;
               width: 43px;
               content: "";
@@ -80,7 +80,7 @@
             left: 0;
             width: 12px;
             height: 15px;
-            background: no-repeat;background-position: -196px -141px; }
+            background: no-repeat;background-position: -132px -185px; }
         #per-wall .per-wall-l .per-uname p a {
           color: #515151; }
     #per-wall .per-wall-l .per-careBtn p {
@@ -112,12 +112,12 @@
         height: 16px;
         line-height: 16px; }
         #per-wall .per-wall-l .per-appraise span.stars-yellow {
-          background: no-repeat;background-position: -142px -185px;
+          background: no-repeat;background-position: -81px -210px;
           width: 16px;
           height: 16px;
           display: block; }
         #per-wall .per-wall-l .per-appraise span.stars-gray {
-          background: no-repeat;background-position: -196px -125px;
+          background: no-repeat;background-position: -196px -100px;
           width: 16px;
           height: 16px;
           display: block; }
@@ -336,7 +336,7 @@
               position: absolute;
               top: 4px;
               left: 0;
-              background: no-repeat;background-position: -217px -84px;
+              background: no-repeat;background-position: -217px -58px;
               width: 14px;
               height: 16px; }
           #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo ul {
@@ -355,7 +355,7 @@
                   position: absolute;
                   top: 4px;
                   left: 0;
-                  background: no-repeat;background-position: -233px -50px;
+                  background: no-repeat;background-position: -217px -42px;
                   width: 27px;
                   height: 16px; }
               #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-bzj {
@@ -365,7 +365,7 @@
                   position: absolute;
                   top: 4px;
                   left: 0;
-                  background: no-repeat;background-position: -217px -50px;
+                  background: no-repeat;background-position: -116px -185px;
                   width: 16px;
                   height: 17px; }
               #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-time {
@@ -375,7 +375,7 @@
                   position: absolute;
                   top: 4px;
                   left: 0;
-                  background: no-repeat;background-position: -217px -67px;
+                  background: no-repeat;background-position: -217px -25px;
                   width: 16px;
                   height: 17px; }
         #per-wall .per-wall-r .per-req ul li .per-reqStatus {
@@ -447,7 +447,7 @@
               left: 0;
               width: 13px;
               height: 12px;
-              background: no-repeat;background-position: -231px -84px; }
+              background: no-repeat;background-position: -97px -210px; }
           #per-wall .per-wall-r .per-fans ul li .per-fansNum .per-fansNum-r {
             margin-bottom: 0;
             width: auto;
@@ -465,7 +465,7 @@
               left: 0;
               width: 16px;
               height: 14px;
-              background: no-repeat;background-position: -241px -25px; }
+              background: no-repeat;background-position: -217px -74px; }
         #per-wall .per-wall-r .per-fans ul li .per-fansImg {
           width: 100px;
           height: 100px;
@@ -495,7 +495,7 @@
               content: "";
               top: 0;
               left: 0;
-              background: no-repeat;background-position: -196px -141px;
+              background: no-repeat;background-position: -132px -185px;
               width: 12px;
               height: 15px; }
         #per-wall .per-wall-r .per-fans ul li .per-fansBtn, #per-wall .per-wall-r .per-fans ul li .per-fansBtn-already {
@@ -552,13 +552,13 @@
   #per-settings .per-setEdit a:before {
     top: 33px;
     right: 0;
-    background: no-repeat;background-position: -233px -66px;
+    background: no-repeat;background-position: -196px -116px;
     width: 13px;
     height: 14px; }
   #per-settings .per-set-up a:before {
     top: 33px;
     right: 0;
-    background: no-repeat;background-position: -158px -185px;
+    background: no-repeat;background-position: -50px -225px;
     width: 13px;
     height: 13px; }
   #per-settings .per-setItem {
@@ -573,15 +573,15 @@
         display: inline-block;
         margin: 30px 30px 0 0; }
       #per-settings .per-setItem .per-itemTit ul li .per-set-wx {
-        background: no-repeat;background-position: -196px -100px;
+        background: no-repeat;background-position: -217px 0;
         width: 30px;
         height: 25px; }
       #per-settings .per-setItem .per-itemTit ul li .per-set-qq {
-        background: no-repeat;background-position: -217px -25px;
+        background: no-repeat;background-position: -92px -185px;
         width: 24px;
         height: 25px; }
       #per-settings .per-setItem .per-itemTit ul li .per-set-wb {
-        background: no-repeat;background-position: -217px 0;
+        background: no-repeat;background-position: -50px -200px;
         width: 31px;
         height: 25px; }
     #per-settings .per-setItem .per-itemCon {
@@ -624,7 +624,7 @@
           top: 47px;
           left: 66px;
           content: "";
-          background-position: -50px -200px;
+          background-position: 0 0;
           width: 49px;
           height: 49px; }
         #per-settings .per-setItem .per-itemCon .per-input-file p {
@@ -656,7 +656,6 @@
 
 
 /* ../../images/positonIcon/personal.png */
-#per-wall .per-wall-l .per-uimg .per-uimg-src .per-uimg-edit a:after,
 #per-wall .per-wall-l .per-uname p.per-site:before,
 #per-wall .per-wall-l .per-appraise span.stars-yellow,
 #per-wall .per-wall-l .per-appraise span.stars-gray,
@@ -676,7 +675,18 @@
 #per-settings .per-set-up a:before,
 #per-settings .per-setItem .per-itemTit ul li .per-set-wx,
 #per-settings .per-setItem .per-itemTit ul li .per-set-qq,
-#per-settings .per-setItem .per-itemTit ul li .per-set-wb,
-#per-settings .per-setItem .per-itemCon .per-input-file:before{
+#per-settings .per-setItem .per-itemTit ul li .per-set-wb{
 background-image: url(../../images/positonIcon/personal.png);
+}
+
+
+/* ../../images/positonIcon/personal.dest.png */
+#per-settings .per-setItem .per-itemCon .per-input-file:before{
+background-image: url(../../images/positonIcon/personal.dest.png);
+}
+
+
+/* ../../images/positonIcon/personal.dest.dest.png */
+#per-wall .per-wall-l .per-uimg .per-uimg-src .per-uimg-edit a:after{
+background-image: url(../../images/positonIcon/personal.dest.dest.png);
 }

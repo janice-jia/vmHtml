@@ -14,6 +14,8 @@ $color-08:#e43f3f;
 $color-2e2e2e:#2e2e2e;    /*深灰*/
 $color-ffffff:#ffffff;
 $color-acacac:#acacac;    /*友情链接字体灰，边框灰*/
+$color-efefef:#efefef;
+$color-b0b0b0:#b0b0b0;
 
 .extend-aline{
     &:hover{
@@ -336,6 +338,7 @@ $color-acacac:#acacac;    /*友情链接字体灰，边框灰*/
     width: 120px;
     height: 40px;
     line-height: 40px;
+    font-weight: 500;
 }
 
 .btn-blue{
@@ -350,5 +353,22 @@ $color-acacac:#acacac;    /*友情链接字体灰，边框灰*/
     text-align: center;
     &:hover{
         color: $color-02;
+    }
+    font-weight: 500;
+}
+
+.btn-gray-50{
+    display: block;
+    width: 130px;
+    border:1px solid $color-b0b0b0;
+    background: $color-efefef;
+    color: $color-02;
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 500;
+    &:hover{
+        color: $color-03;
     }
 }

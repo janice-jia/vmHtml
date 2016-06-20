@@ -40,7 +40,7 @@ $black: #000;
     }
     /** 上传代表作品 **/
     /*通用*/
-    [data-pubservice="videofil"], [data-pubservice="audiofil"], [data-pubservice="imgfil"], [data-pubservice="addfil"] {
+    [data-pubservice="videofile"], [data-pubservice="audiofile"], [data-pubservice="imgfile"], [data-pubservice="addfile"] {
       width: 120px;
       height: 120px;
       float: left;
@@ -68,7 +68,7 @@ $black: #000;
       }
     }
     /* 上传新文件 */
-    [data-pubservice="addfil"] {
+    [data-pubservice="addfile"] {
       border: 1px dashed $light-gray;
       input{
         width: 120px;
@@ -87,13 +87,13 @@ $black: #000;
       }
     }
     /* 视频文件 */
-    [data-pubservice="videofil"] {
+    [data-pubservice="videofile"] {
       b{
         background-image: url("../../images/icon/icon_video.png");
       }
     }
     /* 音频文件 */
-    [data-pubservice="audiofil"] {
+    [data-pubservice="audiofile"] {
      b{
         background-image: url("../../images/icon/icon_audio.png");
       }

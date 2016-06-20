@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>发布服务</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="static/css/minCss/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/minCss/all.min.css">
+
+    <!--[if lt IE 9]>
+    <script src="static/js/dest/html5shiv.min.js"></script>
+    <script src="static/js/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header></header>
+<div id="pubservice">
+    <div class="container">
+        <h2>发布服务</h2>
+        <form class="form-horizontal">
+            <div data-pubservice="fomecontainer">
+
+
+                <div class="form-group">
+                    <label class="col-sm-3 control-label"><span data-form="must"></span>服务名称</label>
+                    <div class="col-sm-9">
+                        <input class="form-control" name="severName" placeholder="4-20个字">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label"><span data-form="must"></span>酬劳模式</label>
+                    <div class="col-sm-9">
+                        <input class="form-control" name="payPractices" placeholder="例如：每分钟1-3万">
+                    </div>
+                </div>
+                <div class="form-group" data-pubservice="textarea">
+                    <label class="col-sm-3 control-label"><span data-form="must"></span>服务详情</label>
+                    <div class="col-sm-9">
+                        <!--<input type="password" class="form-control" id="inputPassword4" placeholder="10-140个字">-->
+                        <textarea name="severDetails"  placeholder="10-140个字"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">上传代表作品</label>
+                    <div class="col-sm-9">
+                        <!-- 上传新作品 -->
+                        <div data-pubservice="addfil">
+                            <input type="file" id="pubservice_upfile">
+                            <b></b>
+                        </div>
+                        <!-- 视频文件格式 -->
+                        <div data-pubservice="videofil">
+                            <img src="static/images/demand/1.jpg" alt="">
+                            <b></b>
+                            <span data-pubservice="close" data-toggle="#pubservice_close"></span>
+                        </div>
+                        <!-- 音频文件格式 -->
+                        <div data-pubservice="audiofil">
+                            <img src="static/images/demand/2.jpg" alt="">
+                            <b></b>
+                            <span data-pubservice="close" data-toggle="#pubservice_close"></span>
+                        </div>
+                        <!-- 图片文件格式 -->
+                        <div data-pubservice="imgfil">
+                            <img src="static/images/demand/1.jpg" alt="">
+                            <b></b>
+                            <span data-pubservice="close" data-toggle="#pubservice_close"></span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="form-group" data-pubservice="footer">
+                    <div class="col-sm-offset-3 col-sm-9">
+                        <button type="submit" data-btn="tranbgbtn"  onclick="javascript:window.history.back(-1);">取消</button>
+                        <button type="submit" data-btn="orbgbtn" data-toggle="#pubservice_success">发布</button>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div data-modal="modalbox" id="pubservice_success">
+        <div data-modal="modal">
+            <h2><b></b>需求发布成功！</h2>
+            <p><span>3</span>秒后自动跳转到需求详情页</p>
+        </div>
+    </div>
+
+    <div data-modal="modalbox" id="pubservice_close">
+        <div data-modal="modal">
+            <h2><b></b>作品删除成功</h2>
+        </div>
+    </div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="static/js/dest/jquery-1.11.3.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="static/js/dest/bootstrap.min.js"></script>
+<script src="static/js/dest/all.min.js"></script>
+</body>
+</html>

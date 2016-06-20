@@ -13,7 +13,7 @@ $('[data-toggle="#pubservice_success"]').click(function(){
 });
 /** 获取上传文件 **/
 $('#pubservice_upfile').change(function(){
-    console.log($(this).val());
     var newfile=$(this).val();
-    
+    var reg=/[^.]*$/;
+    var subStrs= newfile.split(reg);
 });

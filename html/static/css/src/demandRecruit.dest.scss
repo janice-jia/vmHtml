@@ -18,6 +18,16 @@ $black: #000;
     color: $darker;
   }
 }
+[data-btn="grbgbtn"]{
+  background-color: $light-gray;
+  font-size: 20px;
+  width: 130px;
+  height: 50px;
+  color: $white;
+  a{
+    color: $white;
+  }
+}
 [data-btn="tranbgbtn"]{
   border: 2px solid #f0f0f0;
   font-size: 20px;

@@ -7,6 +7,15 @@
   [data-btn="orbgbtn"] a {
     color: #171717; }
 
+[data-btn="grbgbtn"] {
+  background-color: #c1c1c1;
+  font-size: 20px;
+  width: 130px;
+  height: 50px;
+  color: #fff; }
+  [data-btn="grbgbtn"] a {
+    color: #fff; }
+
 [data-btn="tranbgbtn"] {
   border: 2px solid #f0f0f0;
   font-size: 20px;

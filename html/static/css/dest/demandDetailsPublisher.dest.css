@@ -189,8 +189,10 @@
         #demdetpub_comment [data-demdetpub="commentContent"] [data-demdetpub="content"] [data-demdetpub="contentRight"] [data-demdetpub="conhead"] {
           padding-bottom: 24px;
           font-size: 20px;
-          font-weight: bold;
           color: #909090; }
+          #demdetpub_comment [data-demdetpub="commentContent"] [data-demdetpub="content"] [data-demdetpub="contentRight"] [data-demdetpub="conhead"] h2 {
+            display: inline-block;
+            font-weight: bold; }
           #demdetpub_comment [data-demdetpub="commentContent"] [data-demdetpub="content"] [data-demdetpub="contentRight"] [data-demdetpub="conhead"] div[data-demdetpub="answer"] {
             display: inline-block;
             font-weight: normal; }

@@ -273,8 +273,11 @@ $black: #000;
         [data-demdetpub="conhead"]{
           padding-bottom: 24px;
           font-size: 20px;
-          font-weight: bold;
           color: $gray;
+            h2{
+              display: inline-block;
+              font-weight: bold;
+            }
           div[data-demdetpub="answer"]{
             display: inline-block;
             font-weight: normal;

@@ -12,7 +12,6 @@ $black: #000;
 
 #pubservice {
   background-color: $white;
-  margin-top: 78px;
   padding-bottom: 30px;
   text-align: center;
   h2 {
@@ -36,66 +35,6 @@ $black: #000;
         width: 100%;
         padding-left: 10px;
         height: 190px;
-      }
-    }
-    /** 上传代表作品 **/
-    /*通用*/
-    [data-pubservice="videofile"], [data-pubservice="audiofile"], [data-pubservice="imgfile"], [data-pubservice="addfile"] {
-      width: 120px;
-      height: 120px;
-      float: left;
-      position: relative;
-      margin-right: 20px;
-      img {
-        width: inherit;
-        height: inherit;
-      }
-      b {
-        width: 38px;
-        height: 38px;
-        position: absolute;
-        top: 41px;
-        left: 41px;
-      }
-      [data-pubservice="close"] {
-        width: 18px;
-        height: 18px;
-        position: absolute;
-        top: -9px;
-        right: -9px;
-        background-image: url("../../images/icon/icon_close.png");
-        cursor: pointer;
-      }
-    }
-    /* 上传新文件 */
-    [data-pubservice="addfile"] {
-      border: 1px dashed $light-gray;
-      input{
-        width: 120px;
-        height:120px;
-        opacity: 0;
-        cursor: pointer;
-        z-index: 10;
-        position: relative;
-      }
-      b{
-        height: 50px;
-        width: 50px;
-        top: 32px;
-        left: 32px;
-        background-image: url("../../images/icon/icon_addimg.png");
-      }
-    }
-    /* 视频文件 */
-    [data-pubservice="videofile"] {
-      b{
-        background-image: url("../../images/icon/icon_video.png");
-      }
-    }
-    /* 音频文件 */
-    [data-pubservice="audiofile"] {
-     b{
-        background-image: url("../../images/icon/icon_audio.png");
       }
     }
 
@@ -125,9 +64,76 @@ $black: #000;
     }
   }
 }
+/** 上传代表作品 **/
+[data-demdetpub="pubservice_file"]{
+  p{
+    margin-bottom: 0;
+  }
+}
+#pubservice_file{
+  margin-bottom: 20px;
+  /** 通用 **/
+  div{
+    width: 120px;
+    height: 120px;
+    float: left;
+    position: relative;
+    margin-right: 20px;
+    img {
+      width: inherit;
+      height: inherit;
+    }
+    b {
+      width: 38px;
+      height: 38px;
+      position: absolute;
+      top: 41px;
+      left: 41px;
+    }
+    [data-pubservice="close"] {
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      top: -9px;
+      right: -9px;
+      background-image: url("../../images/icon/icon_close.png");
+      cursor: pointer;
+    }
+  }
+  /** 添加新作品 **/
+  [data-pubservice="addfile"] {
+    border: 1px dashed $light-gray;
+    input{
+      width: 120px;
+      height:120px;
+      opacity: 0;
+      cursor: pointer;
+      z-index: 10;
+      position: relative;
+    }
+    b{
+      height: 50px;
+      width: 50px;
+      top: 32px;
+      left: 32px;
+      background-image: url("../../images/icon/icon_addimg.png");
+    }
+  }
+  /* 视频文件 */
+  [data-pubservice="videofile"] {
+    b{
+      background-image: url("../../images/icon/icon_video.png");
+    }
+  }
+  /* 音频文件 */
+  [data-pubservice="audiofile"] {
+    b{
+      background-image: url("../../images/icon/icon_audio.png");
+    }
+  }
+}
 
 /** 发布成功摸态框 **/
-
 #pubservice_success {
   display: none;
   [data-modal="modal"] {

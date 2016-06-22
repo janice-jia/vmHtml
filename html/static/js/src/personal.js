@@ -9,3 +9,13 @@ function showHideSet(showHideID){
         $("#"+showHideID+'-down').css('display','none');
     }
 }
+
+//创建作品集弹层显示隐藏
+function showHidePopup(popupId){
+    var  popupDis = $('#'+popupId).css('display');
+    if(popupDis == 'block'){
+        $('#'+popupId).css('display','none');
+    }else{
+        $('#'+popupId).css('display','block');
+    }
+}

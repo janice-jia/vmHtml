@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人页面-上传视频作品</title>
+    <link rel="stylesheet" href="static/css/minCss/all.min.css">
+
+    <meta charset="utf-8">
+    <!--IE浏览器运行最新的渲染模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="static/css/minCss/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/minCss/all.min.css">
+
+    <!--[if lt IE 9]>
+    <script src="static/js/dest/html5shiv.min.js"></script>
+    <script src="static/js/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div id="header" style="height: 95px;"></div>
+<div id="per-publish">
+    <div class="per-pub-artMenu">
+        <ul>
+            <li><a href="./personal-publish-pic.html" target="_blank">图片作品</a></li>
+            <li class="per-pub-artMenu-hover"><a href="./personal-publish-video.html" target="_blank">视频作品</a></li>
+            <li><a href="./personal-publish-text.html"  target="_blank">文字作品</a></li>
+            <li><a href="./personal-publish-audio.html"  target="_blank">音频作品</a></li>
+        </ul>
+    </div>
+    <div class="per-pub-video">
+        <form action="" class="form-horizontal zcbl-form-horizontal">
+            <div class="form-group zcbl-form-group">
+                <label for="videoName" class="col-sm-2 control-label zcbl-control-label">视频名称：</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control zcbl-form-control" name="videoName" id="videoName" placeholder="20个汉字以内">
+                </div>
+            </div>
+            <div class="form-group zcbl-form-group">
+                <label for="keyword" class="col-sm-2 control-label zcbl-control-label">关键词：</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control zcbl-form-control" name="keyword" id="keyword" placeholder="用回车/空格/逗号间隔不同关键词">
+                </div>
+            </div>
+            <div class="form-group zcbl-form-group">
+                <label for="introduce" class="col-sm-2 control-label zcbl-control-label">作品介绍：</label>
+                <div class="col-sm-7">
+                    <textarea id="introduce" name="introduce" class="form-control zcbl-form-control" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="form-group zcbl-form-group">
+                <label class="col-sm-2 control-label zcbl-control-label">作品封面：</label>
+                <div class="col-sm-7">
+                    <div class="pub-file">
+                        <input type="file">
+                        <p class="zcbl-form-pBlue"><a href="#" target="_self">+上传封面</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group zcbl-form-group">
+                <div class="per-pub-videoUpload">
+                    <div class="per-pub-vieroQR">
+                        <a href="javascript:;" target="_self" onclick="showHidePopup('embedVideo')">嵌入视频</a>
+                    </div>
+                    <div class="per-pub-videoBox">
+                        <p class="per-pub-addVideoIcon">
+                            <input type="file">
+                        </p>
+                        <p class="per-pub-addVideoSC">上传视频</p>
+                        <p class="per-pub-addVideoTK">表示您已经同意众创部落条款</p>
+                        <p class="per-pub-addVideoTK">请勿上传色情，反动等违法视频</p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group zcbl-form-group">
+                <button type="submit" class="btn-yellow-50 right mb25 mt15">发布</button>
+            </div>
+        </form>
+    </div>
+
+
+</div>
+
+
+<!--嵌入视频弹层  start-->
+<div class="zcbl-popup zcbl-hidden" id="embedVideo">
+    <div class="zcbl-popup570 zcbl-popupHei340">
+        <div class="zcbl-popup570-tit">
+            嵌入视频
+        </div>
+        <form action="">
+            <div class="zcbl-popupForm">
+                <div class="form-group zcbl-popupGroup">
+                    <div class="col-sm-12 zcbl-popupSm">
+                        <input type="text" class="form-control embedVideo" name="embedVideo" id="embedVideo">
+                        <p class="embedVideoCon">支持嵌入优酷、爱奇艺、腾讯视频、乐视网站、A站、B站的视频分享嵌入码（flash地址） <a href="javascript:;"  target="_self">查看事例</a></p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+            <div class="zcbl-popupBtn">
+                <button type="submit" class="btn-yellow-50 left mr25">保存</button>
+                <span><a href="javascript:;" target="_self" onclick="showHidePopup('embedVideo')">取消</a></span>
+            </div>
+        </form>
+    </div>
+</div>
+<!--嵌入视频弹层  end-->
+
+<div id="footer"></div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="static/js/dest/jquery-1.11.3.min.js"></script>
+<script src="static/js/dest/all.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="static/js/dest/bootstrap.min.js"></script>
+</body>
+</html>

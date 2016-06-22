@@ -16,6 +16,8 @@ $color-ffffff:#ffffff;
 $color-acacac:#acacac;    /*友情链接字体灰，边框灰*/
 $color-efefef:#efefef;
 $color-b0b0b0:#b0b0b0;
+$color-2c2c2c:#2c2c2c;
+$color-9a9a9a:#9a9a9a;
 
 .extend-aline{
     &:hover{
@@ -372,3 +374,134 @@ $color-b0b0b0:#b0b0b0;
         color: $color-03;
     }
 }
+
+.zcbl-hidden{
+    display: none;
+}
+
+//弹层样式
+.zcbl-popup{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    .zcbl-popupHei285{
+        height: 274px;
+        margin-top:  -137px;
+    }
+    .zcbl-popupHei340{
+        height: 340px;
+        margin-top:  -170px;
+    }
+    .zcbl-popup570{
+        width: 570px;
+        position: absolute;
+        border-radius: 5px;
+        top:50%;
+        left: 50%;
+        background: $color-05;
+        margin-left: -285px;
+        .zcbl-popup570-tit{
+            margin: 0 30px;
+            padding: 33px 0 19px 0;
+            color: $color-2c2c2c;
+            font-size: 28px;
+            border-bottom: 1px solid $color-9a9a9a;
+        }
+        .zcbl-popupForm{
+            padding: 0 45px;
+            min-height: 90px;
+            border-bottom: 1px solid $color-acacac;
+            padding-top: 20px;
+        }
+        .zcbl-popupGroup{
+            label{
+                height: 50px;
+                line-height: 50px;
+                font-size: 20px;
+                padding: 0;
+                margin: 0;
+                font-weight: normal;
+                width: 125px;
+            }
+            .zcbl-popupSm{
+                margin: 0;
+                padding: 0;
+            }
+            .zcbl-popupControl{
+                height: 50px;
+                line-height: 50px;
+                width: 300px;
+            }
+            .embedVideo{
+                width: 505px;
+                height: 50px;
+                line-height: 50px;
+                margin-left: -13px;
+            }
+            .embedVideoCon{
+                font-size: 20px;
+                margin-top: 20px;
+                a{
+                    color: $color-06;
+                    &:hover{
+                        @extend .extend-aline;
+                    }
+                }
+            }
+        }
+        .zcbl-popupBtn{
+            padding: 20px 30px;
+            line-height: 50px;
+            span{
+                color: $color-07;
+                a{
+                    color: $color-07;
+                    font-size: 20px;
+                    &:hover{
+                        &:hover{
+                            @extend .extend-aline;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+//重新定义表单样式
+.zcbl-form-horizontal .zcbl-form-group{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.zcbl-form-horizontal .zcbl-control-label{
+    text-align: left;
+    font-size: 20px;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    width: 100px;
+}
+
+.zcbl-form-horizontal input.zcbl-form-control{
+    height: 50px;
+    line-height: 50px;
+    background: none;
+    font-size: 18px;
+}
+
+.zcbl-form-horizontal textarea.zcbl-form-control{
+    height: 170px;
+    font-size: 18px;
+    line-height: 25px;
+    background: none;
+}
+
+

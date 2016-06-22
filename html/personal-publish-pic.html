@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人页面-上传图片作品</title>
+    <link rel="stylesheet" href="static/css/minCss/all.min.css">
+
+    <meta charset="utf-8">
+    <!--IE浏览器运行最新的渲染模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="static/css/minCss/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/minCss/all.min.css">
+
+    <!--[if lt IE 9]>
+    <script src="static/js/dest/html5shiv.min.js"></script>
+    <script src="static/js/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div id="header" style="height: 95px;"></div>
+<div id="per-publish">
+    <div class="per-pub-artMenu">
+        <ul>
+            <li class="per-pub-artMenu-hover"><a href="./personal-publish-pic.html" target="_blank">图片作品</a></li>
+            <li><a href="./personal-publish-video.html" target="_blank">视频作品</a></li>
+            <li><a href="./personal-publish-text.html"  target="_blank">文字作品</a></li>
+            <li><a href="./personal-publish-audio.html"  target="_blank">音频作品</a></li>
+        </ul>
+    </div>
+    <div class="per-pub-choose">
+        <form action="" class="form-horizontal">
+            <div class="form-group per-pubGroup">
+                <label class="col-sm-2 control-label per-pub-picColl">选择照片专辑：</label>
+                <div class="col-sm-4">
+                    <select class="form-control per-pub-select">
+                        <option>默认</option>
+                        <option>默认2</option>
+                        <option>默认3</option>
+                        <option>默认4</option>
+                        <option>默认5</option>
+                    </select>
+                </div>
+                <div class="col-sm-2 per-pub-addPicColl">
+                    <a href="javascript:;" target="_self" onclick="showHidePopup('addColPopup')">+创建作品集</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="per-pub-picBox">
+        <ul>
+            <li class="per-pub-add">
+                <p class="per-pub-addIcon">
+                    <input type="file">
+                </p>
+                <p class="per-pub-addSC">上传作品</p>
+                <p class="per-pub-addZS">一次可上传100张</p>
+                <p class="per-pub-addDX">小于10M</p>
+            </li>
+            <li>
+                <div class="per-pub-img">
+                    <img src="./static/images/personal/pub-img.jpg" height="200"  width="200" alt="">
+                    <div class="per-pub-edit zcbl-hidden">
+                        <p class="per-pub-editFM"><a href="#" target="_blank">封面</a></p>
+                        <p class="per-pub-editDel"><a href="#" target="_blank">删除</a></p>
+                    </div>
+                </div>
+                <div class="per-pub-tit"><a href="#" target="_blank">沙滩晨跑</a></div>
+            </li>
+            <li>
+                <div class="per-pub-img">
+                    <img src="./static/images/personal/pub-img.jpg" height="200"  width="200" alt="">
+                    <div class="per-pub-edit zcbl-hidden">
+                        <p class="per-pub-editFM"><a href="#" target="_blank">封面</a></p>
+                        <p class="per-pub-editDel"><a href="#" target="_blank">删除</a></p>
+                    </div>
+                </div>
+                <div class="per-pub-tit"><a href="#" target="_blank">在此编辑图片名称</a></div>
+            </li>
+            <li>
+                <div class="per-pub-noImg">
+                    <p class="per-pub-progress">
+                        <span style="width: 50%">&nbsp;</span>
+                    </p>
+                </div>
+                <div class="per-pub-tit">在此编辑图片名称</div>
+            </li>
+            <li>
+                <div class="per-pub-img">
+                    <img src="./static/images/personal/pub-img.jpg" height="200"  width="200" alt="">
+                    <div class="per-pub-edit zcbl-hidden">
+                        <p class="per-pub-editFM"><a href="#" target="_blank">封面</a></p>
+                        <p class="per-pub-editDel"><a href="#" target="_blank">删除</a></p>
+                    </div>
+                </div>
+                <div class="per-pub-tit"><a href="#" target="_blank">在此编辑图片名称</a></div>
+            </li>
+            <li>
+                <div class="per-pub-img">
+                    <img src="./static/images/personal/pub-img.jpg" height="200"  width="200" alt="">
+                    <div class="per-pub-edit zcbl-hidden">
+                        <p class="per-pub-editFM"><a href="#" target="_blank">封面</a></p>
+                        <p class="per-pub-editDel"><a href="#" target="_blank">删除</a></p>
+                    </div>
+                </div>
+                <div class="per-pub-tit"><a href="#" target="_blank">在此编辑图片名称</a></div>
+            </li>
+            <li>
+                <div class="per-pub-img">
+                    <img src="./static/images/personal/pub-img.jpg" height="200"  width="200" alt="">
+                    <div class="per-pub-edit zcbl-hidden">
+                        <p class="per-pub-editFM"><a href="#" target="_blank">封面</a></p>
+                        <p class="per-pub-editDel"><a href="#" target="_blank">删除</a></p>
+                    </div>
+                </div>
+                <div class="per-pub-tit"><a href="#" target="_blank">在此编辑图片名称</a></div>
+            </li>
+            <li>
+                <div class="per-pub-img">
+                    <img src="./static/images/personal/pub-img.jpg" height="200"  width="200" alt="">
+                    <div class="per-pub-edit zcbl-hidden">
+                        <p class="per-pub-editFM"><a href="#" target="_blank">封面</a></p>
+                        <p class="per-pub-editDel"><a href="#" target="_blank">删除</a></p>
+                    </div>
+                </div>
+                <div class="per-pub-tit"><a href="#" target="_blank">在此编辑图片名称</a></div>
+            </li>
+            <div class="clear"></div>
+        </ul>
+
+    </div>
+    <div class="right mb25">
+        <button class="btn-yellow-50">发布</button>
+    </div>
+    <div class="clear mt25  "></div>
+
+</div>
+
+<!--创建作品集  start-->
+<div class="zcbl-popup zcbl-hidden" id="addColPopup">
+    <div class="zcbl-popup570 zcbl-popupHei285">
+        <div class="zcbl-popup570-tit">
+            创建作品集
+        </div>
+        <form action="">
+        <div class="zcbl-popupForm">
+            <div class="form-group zcbl-popupGroup">
+                <label for="colName" class="col-sm-3 control-label per-set-label">作品集名称：</label>
+                <div class="col-sm-8 zcbl-popupSm">
+                    <input type="text" class="form-control zcbl-popupControl" name="colName" id="colName">
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+            <div class="clear"></div>
+        <div class="zcbl-popupBtn">
+            <button type="submit" class="btn-yellow-50 left mr25">创建</button>
+            <span><a href="javascript:;" target="_self" onclick="showHidePopup('addColPopup')">取消</a></span>
+        </div>
+        </form>
+    </div>
+</div>
+<!--创建作品集  end-->
+<div id="footer"></div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="static/js/dest/jquery-1.11.3.min.js"></script>
+<script src="static/js/dest/all.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="static/js/dest/bootstrap.min.js"></script>
+</body>
+</html>

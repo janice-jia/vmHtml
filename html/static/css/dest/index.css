@@ -1,3 +1,60 @@
-.test {
-  background-image: url("../../images/icon/icon_switch-off.png");
-  color: #dddddd; }
+.zcbl-popup-public {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100000; }
+  .zcbl-popup-public .zcbl-public-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -174px 0 0 -414px;
+    width: 828px;
+    height: 348px;
+    background: #ffffff;
+    border-radius: 5px;
+    text-align: center; }
+    .zcbl-popup-public .zcbl-public-window ul li {
+      display: inline-block;
+      width: 208px;
+      height: 270px;
+      border-radius: 8px;
+      margin-top: 42px; }
+      .zcbl-popup-public .zcbl-public-window ul li.public-xq {
+        background: #ffb30e; }
+        .zcbl-popup-public .zcbl-public-window ul li.public-xq a:before {
+          top: 30px;
+          left: 47px;
+          background: url("../../images/icon/icon-index-publish-xq.png");
+          width: 120px;
+          height: 120px; }
+      .zcbl-popup-public .zcbl-public-window ul li.public-fw {
+        background: #e43f3f;
+        margin: 0 40px; }
+        .zcbl-popup-public .zcbl-public-window ul li.public-fw a:before {
+          top: 30px;
+          left: 50px;
+          background: url("../../images/icon/icon-index-publis-fw.png");
+          width: 109px;
+          height: 119px; }
+      .zcbl-popup-public .zcbl-public-window ul li.public-zp {
+        background: #499af5; }
+        .zcbl-popup-public .zcbl-public-window ul li.public-zp a:before {
+          top: 30px;
+          left: 32px;
+          background: url("../../images/icon/icon-index-publis-zp.png");
+          width: 149px;
+          height: 120px; }
+      .zcbl-popup-public .zcbl-public-window ul li a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        padding-top: 200px;
+        color: #ffffff;
+        font-size: 30px; }
+        .zcbl-popup-public .zcbl-public-window ul li a:before {
+          position: absolute;
+          content: ""; }

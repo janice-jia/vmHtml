@@ -4,7 +4,7 @@
 */
 /*深灰*/
 /*友情链接字体灰，边框灰*/
-.extend-aline:hover, #zcbl-header .header-box .header-right .user-notlogin ul li a:hover, #zcbl-footer .footer-link ul li a:hover, #zcbl-footer .footer-aboutus .footer-aboutus-z ul li a:hover {
+.extend-aline:hover, #zcbl-header .header-box .header-right .user-notlogin ul li a:hover, #zcbl-footer .footer-link ul li a:hover, #zcbl-footer .footer-aboutus .footer-aboutus-z ul li a:hover, .zcbl-popup .zcbl-popup570 .zcbl-popupGroup .embedVideoCon a:hover, .zcbl-popup .zcbl-popup570 .zcbl-popupBtn span a:hover {
   text-decoration: underline; }
 
 #zcbl-header {
@@ -278,3 +278,98 @@
   font-weight: 500; }
   .btn-gray-50:hover {
     color: #909090; }
+
+.zcbl-hidden {
+  display: none; }
+
+.zcbl-popup {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000; }
+  .zcbl-popup .zcbl-popupHei285 {
+    height: 274px;
+    margin-top: -137px; }
+  .zcbl-popup .zcbl-popupHei340 {
+    height: 340px;
+    margin-top: -170px; }
+  .zcbl-popup .zcbl-popup570 {
+    width: 570px;
+    position: absolute;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    background: #eeeeee;
+    margin-left: -285px; }
+    .zcbl-popup .zcbl-popup570 .zcbl-popup570-tit {
+      margin: 0 30px;
+      padding: 33px 0 19px 0;
+      color: #2c2c2c;
+      font-size: 28px;
+      border-bottom: 1px solid #9a9a9a; }
+    .zcbl-popup .zcbl-popup570 .zcbl-popupForm {
+      padding: 0 45px;
+      min-height: 90px;
+      border-bottom: 1px solid #acacac;
+      padding-top: 20px; }
+    .zcbl-popup .zcbl-popup570 .zcbl-popupGroup label {
+      height: 50px;
+      line-height: 50px;
+      font-size: 20px;
+      padding: 0;
+      margin: 0;
+      font-weight: normal;
+      width: 125px; }
+    .zcbl-popup .zcbl-popup570 .zcbl-popupGroup .zcbl-popupSm {
+      margin: 0;
+      padding: 0; }
+    .zcbl-popup .zcbl-popup570 .zcbl-popupGroup .zcbl-popupControl {
+      height: 50px;
+      line-height: 50px;
+      width: 300px; }
+    .zcbl-popup .zcbl-popup570 .zcbl-popupGroup .embedVideo {
+      width: 505px;
+      height: 50px;
+      line-height: 50px;
+      margin-left: -13px; }
+    .zcbl-popup .zcbl-popup570 .zcbl-popupGroup .embedVideoCon {
+      font-size: 20px;
+      margin-top: 20px; }
+      .zcbl-popup .zcbl-popup570 .zcbl-popupGroup .embedVideoCon a {
+        color: #499af5; }
+    .zcbl-popup .zcbl-popup570 .zcbl-popupBtn {
+      padding: 20px 30px;
+      line-height: 50px; }
+      .zcbl-popup .zcbl-popup570 .zcbl-popupBtn span {
+        color: #ffb30e; }
+        .zcbl-popup .zcbl-popup570 .zcbl-popupBtn span a {
+          color: #ffb30e;
+          font-size: 20px; }
+
+.zcbl-form-horizontal .zcbl-form-group {
+  margin-left: 0;
+  margin-right: 0; }
+
+.zcbl-form-horizontal .zcbl-control-label {
+  text-align: left;
+  font-size: 20px;
+  line-height: 50px;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  width: 100px; }
+
+.zcbl-form-horizontal input.zcbl-form-control {
+  height: 50px;
+  line-height: 50px;
+  background: none;
+  font-size: 18px; }
+
+.zcbl-form-horizontal textarea.zcbl-form-control {
+  height: 170px;
+  font-size: 18px;
+  line-height: 25px;
+  background: none; }

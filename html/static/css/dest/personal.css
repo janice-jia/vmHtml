@@ -1,7 +1,7 @@
 /*
 * header
 */
-.extend-aline:hover, #per-wall .per-wall-l .per-uname p a:hover, #per-wall .per-wall-l .per-fund p span.per-fund-cz a:hover, #per-wall .per-wall-l .per-fund p span.per-fund-tx a:hover, #per-wall .per-wall-l .per-identity p a:hover, #per-wall .per-wall-l .per-identity p.per-identity-more a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgTit a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgEdit a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgAdd .per-art-imgAdd-tit a:hover, #per-wall .per-wall-r .per-req ul li .per-reqTit h1 a:hover, #per-wall .per-wall-r .per-fans ul li .per-fansName .per-fansName-1 a:hover {
+.extend-aline:hover, #per-wall .per-wall-l .per-uname p a:hover, #per-wall .per-wall-l .per-fund p span.per-fund-cz a:hover, #per-wall .per-wall-l .per-fund p span.per-fund-tx a:hover, #per-wall .per-wall-l .per-identity p a:hover, #per-wall .per-wall-l .per-identity p.per-identity-more a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgTit a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgEdit a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgAdd .per-art-imgAdd-tit a:hover, #per-wall .per-wall-r .per-req ul li .per-reqTit h1 a:hover, #per-wall .per-wall-r .per-fans ul li .per-fansName .per-fansName-1 a:hover, #per-publish .per-pub-picBox ul li .per-pub-tit a:hover, #per-publish .pub-file .zcbl-form-pBlue a:hover, #per-publish .per-pub-videoUpload .per-pub-vieroQR a:hover {
   text-decoration: underline; }
 
 .exten-box-shadow, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgHover, #per-wall .per-wall-r .per-fans ul li.per-fans-hover, #per-wall .per-wall-r .per-fans ul li:hover, #per-settings, #per-settings .per-setItem .per-itemCon .per-img-border {
@@ -607,6 +607,11 @@
         color: #909090;
         height: 50px;
         line-height: 50px; }
+      #per-settings .per-setItem .per-itemCon .per-set-textarea {
+        font-size: 16px;
+        color: #909090;
+        height: 170px;
+        line-height: 25px; }
       #per-settings .per-setItem .per-itemCon .per-img-border {
         background: #f8f8f8;
         padding: 5px;
@@ -653,3 +658,330 @@
         line-height: 80px; }
   #per-settings .per-hide {
     display: none; }
+
+#per-publish {
+  padding: 0 16px;
+  width: 1000px;
+  margin: 30px auto 0 auto; }
+  #per-publish .per-pub-artMenu {
+    padding-bottom: 50px; }
+    #per-publish .per-pub-artMenu ul li {
+      display: inline-block;
+      padding-right: 60px; }
+      #per-publish .per-pub-artMenu ul li a {
+        font-size: 28px;
+        color: #515151; }
+      #per-publish .per-pub-artMenu ul li a:hover, #per-publish .per-pub-artMenu ul li.per-pub-artMenu-hover a {
+        color: #ffb30e; }
+  #per-publish .per-pub-choose .per-pubGroup {
+    margin: 0; }
+  #per-publish .per-pub-choose .per-pub-picColl {
+    font-size: 18px;
+    width: 126px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    height: 50px;
+    line-height: 50px; }
+  #per-publish .per-pub-choose .per-pub-select {
+    height: 50px;
+    line-height: 50px; }
+  #per-publish .per-pub-choose .per-pub-addPicColl {
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px; }
+    #per-publish .per-pub-choose .per-pub-addPicColl a {
+      color: #499af5; }
+  #per-publish .per-pub-picBox {
+    margin: 30px 0 30px 0;
+    border: 1px dashed #aaaaaa; }
+    #per-publish .per-pub-picBox ul {
+      margin-left: 12px; }
+      #per-publish .per-pub-picBox ul li {
+        float: left;
+        width: 200px;
+        height: 260px;
+        margin: 30px 18px; }
+        #per-publish .per-pub-picBox ul li.per-pub-add {
+          background: #ffffff;
+          border: 1px dashed #aaaaaa;
+          text-align: center; }
+          #per-publish .per-pub-picBox ul li.per-pub-add p.per-pub-addIcon {
+            position: relative;
+            width: 65px;
+            height: 65px;
+            margin: 75px auto 0 auto; }
+            #per-publish .per-pub-picBox ul li.per-pub-add p.per-pub-addIcon input[type=file] {
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 2;
+              width: 65px;
+              height: 65px;
+              cursor: pointer;
+              opacity: 0;
+              z-index: 2;
+              filter: alpha(opacity=0);
+              -moz-opacity: 0;
+              -khtml-opacity: 0;
+              opacity: 0; }
+            #per-publish .per-pub-picBox ul li.per-pub-add p.per-pub-addIcon a {
+              display: inline-block;
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 1; }
+            #per-publish .per-pub-picBox ul li.per-pub-add p.per-pub-addIcon:before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 0;
+              background: url("../../images/icon/icon-pub-add.png");
+              width: 65px;
+              height: 65px; }
+          #per-publish .per-pub-picBox ul li.per-pub-add p.per-pub-addSC {
+            font-size: 20px;
+            font-weight: bolder;
+            color: #9a9a9a;
+            padding: 20px 0 0 0; }
+          #per-publish .per-pub-picBox ul li.per-pub-add p.per-pub-addZS, #per-publish .per-pub-picBox ul li.per-pub-add p.per-pub-addDX {
+            font-size: 12px;
+            color: #9a9a9a;
+            line-height: 20px;
+            margin: 0; }
+        #per-publish .per-pub-picBox ul li .per-pub-img {
+          height: 200px;
+          width: 200px;
+          overflow: hidden;
+          background: #ffffff;
+          position: relative; }
+          #per-publish .per-pub-picBox ul li .per-pub-img:hover .per-pub-edit {
+            display: block; }
+          #per-publish .per-pub-picBox ul li .per-pub-img img {
+            max-width: 200px;
+            max-height: 200px;
+            cursor: pointer; }
+        #per-publish .per-pub-picBox ul li .per-pub-noImg {
+          height: 200px;
+          width: 200px;
+          background: #ffffff;
+          border: 1px solid #9a9a9a; }
+          #per-publish .per-pub-picBox ul li .per-pub-noImg .per-pub-progress {
+            width: 180px;
+            height: 18px;
+            border: 3px solid #ffb30e;
+            border-radius: 10px;
+            margin: 90px auto 0 auto;
+            padding: 0 3px; }
+            #per-publish .per-pub-picBox ul li .per-pub-noImg .per-pub-progress span {
+              display: inline-block;
+              height: 6px;
+              background: #ffb30e;
+              border-radius: 6px;
+              margin: 3px 0; }
+        #per-publish .per-pub-picBox ul li .per-pub-edit {
+          border: 1px solid #ffb30e;
+          height: 57px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background: #ffffff; }
+          #per-publish .per-pub-picBox ul li .per-pub-edit p {
+            float: left;
+            width: 50%;
+            line-height: 57px; }
+            #per-publish .per-pub-picBox ul li .per-pub-edit p a {
+              display: block;
+              width: 100%; }
+            #per-publish .per-pub-picBox ul li .per-pub-edit p.per-pub-editFM {
+              padding-left: 12px; }
+              #per-publish .per-pub-picBox ul li .per-pub-edit p.per-pub-editFM a {
+                color: #ffb30e;
+                position: relative; }
+                #per-publish .per-pub-picBox ul li .per-pub-edit p.per-pub-editFM a:after {
+                  position: absolute;
+                  top: 10px;
+                  right: 6px;
+                  content: "";
+                  background: url("../../images/icon/icon-pub-fm.png") no-repeat;
+                  width: 36px;
+                  height: 36px; }
+            #per-publish .per-pub-picBox ul li .per-pub-edit p.per-pub-editDel {
+              padding-right: 12px;
+              text-align: right; }
+              #per-publish .per-pub-picBox ul li .per-pub-edit p.per-pub-editDel a {
+                color: #9a9a9a;
+                position: relative; }
+                #per-publish .per-pub-picBox ul li .per-pub-edit p.per-pub-editDel a:after {
+                  content: "";
+                  position: absolute;
+                  left: 6px;
+                  top: 10px;
+                  background: url("../../images/icon/icon-pub-del.png") no-repeat;
+                  width: 36px;
+                  height: 36px; }
+        #per-publish .per-pub-picBox ul li .per-pub-tit {
+          height: 50px;
+          border: 1px solid #9a9a9a;
+          margin-top: 10px;
+          font-size: 18px;
+          color: #9a9a9a;
+          text-align: center;
+          line-height: 50px; }
+          #per-publish .per-pub-picBox ul li .per-pub-tit a {
+            color: #9a9a9a; }
+  #per-publish .pub-file {
+    height: 50px;
+    line-height: 50px;
+    position: relative; }
+    #per-publish .pub-file input[type=file] {
+      height: 50px;
+      width: 150px;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      z-index: 2;
+      filter: alpha(opacity=0);
+      -moz-opacity: 0;
+      -khtml-opacity: 0;
+      opacity: 0; }
+    #per-publish .pub-file .zcbl-form-pBlue {
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      color: #499af5;
+      font-size: 18px; }
+      #per-publish .pub-file .zcbl-form-pBlue a {
+        color: #499af5; }
+  #per-publish .pub-file-img {
+    height: 114px;
+    width: 114px;
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px; }
+    #per-publish .pub-file-img img {
+      border-radius: 5px; }
+    #per-publish .pub-file-img .pub-file-imgDel {
+      position: absolute;
+      top: -5px;
+      right: -7px;
+      background: url("../../images/icon/icon-pub-delImg.png");
+      width: 18px;
+      height: 18px; }
+      #per-publish .pub-file-img .pub-file-imgDel a {
+        display: inline-block;
+        width: 100%;
+        height: 100%; }
+  #per-publish .per-pub-videoUpload {
+    height: 480px;
+    border: 1px dashed #aaaaaa; }
+    #per-publish .per-pub-videoUpload .per-pub-vieroQR {
+      height: 40px;
+      text-align: right;
+      line-height: 40px;
+      padding-right: 15px;
+      font-size: 18px; }
+      #per-publish .per-pub-videoUpload .per-pub-vieroQR a {
+        color: #499af5; }
+    #per-publish .per-pub-videoUpload .per-pub-videoBox {
+      margin: 0 auto;
+      width: 527px;
+      height: 405px;
+      background: #ffffff;
+      border: 1px dashed #aaaaaa;
+      position: relative; }
+      #per-publish .per-pub-videoUpload .per-pub-videoBox img {
+        max-width: 525px;
+        max-height: 403px; }
+      #per-publish .per-pub-videoUpload .per-pub-videoBox .per-videoImg-edit {
+        width: 200px;
+        height: 57px;
+        margin-left: -100px;
+        background: #ffffff;
+        position: absolute;
+        bottom: -1px;
+        left: 50%;
+        border: 1px solid #ffb30e; }
+        #per-publish .per-pub-videoUpload .per-pub-videoBox .per-videoImg-edit p {
+          float: left;
+          width: 50%;
+          line-height: 57px; }
+          #per-publish .per-pub-videoUpload .per-pub-videoBox .per-videoImg-edit p a {
+            display: block;
+            width: 100%; }
+          #per-publish .per-pub-videoUpload .per-pub-videoBox .per-videoImg-edit p.per-pub-editFM {
+            padding-left: 12px; }
+            #per-publish .per-pub-videoUpload .per-pub-videoBox .per-videoImg-edit p.per-pub-editFM a {
+              color: #ffb30e;
+              position: relative; }
+              #per-publish .per-pub-videoUpload .per-pub-videoBox .per-videoImg-edit p.per-pub-editFM a:after {
+                position: absolute;
+                top: 10px;
+                right: 6px;
+                content: "";
+                background: url("../../images/icon/icon-pub-video.png") no-repeat;
+                width: 36px;
+                height: 36px; }
+          #per-publish .per-pub-videoUpload .per-pub-videoBox .per-videoImg-edit p.per-pub-editDel {
+            padding-right: 12px;
+            text-align: right; }
+            #per-publish .per-pub-videoUpload .per-pub-videoBox .per-videoImg-edit p.per-pub-editDel a {
+              color: #9a9a9a;
+              position: relative; }
+              #per-publish .per-pub-videoUpload .per-pub-videoBox .per-videoImg-edit p.per-pub-editDel a:after {
+                content: "";
+                position: absolute;
+                left: 6px;
+                top: 10px;
+                background: url("../../images/icon/icon-pub-del.png") no-repeat;
+                width: 36px;
+                height: 36px; }
+      #per-publish .per-pub-videoUpload .per-pub-videoBox .per-pub-addVideoIcon {
+        position: relative;
+        width: 65px;
+        height: 65px;
+        margin: 130px auto 0 auto;
+        cursor: pointer; }
+        #per-publish .per-pub-videoUpload .per-pub-videoBox .per-pub-addVideoIcon input[type=file] {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 2;
+          cursor: pointer;
+          width: 65px;
+          height: 65px;
+          opacity: 0;
+          filter: alpha(opacity=0);
+          -moz-opacity: 0;
+          -khtml-opacity: 0;
+          opacity: 0; }
+        #per-publish .per-pub-videoUpload .per-pub-videoBox .per-pub-addVideoIcon:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: url("../../images/icon/icon-pub-add.png");
+          width: 65px;
+          height: 65px; }
+      #per-publish .per-pub-videoUpload .per-pub-videoBox .per-pub-addVideoSC {
+        font-size: 20px;
+        text-align: center;
+        font-weight: 500;
+        margin-top: 22px;
+        color: #9a9a9a; }
+      #per-publish .per-pub-videoUpload .per-pub-videoBox .per-pub-addVideoTK {
+        text-align: center;
+        font-size: 12px;
+        line-height: 22px;
+        color: #9a9a9a;
+        margin-bottom: 0; }

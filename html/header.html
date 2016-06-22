@@ -1,32 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>头部</title>
-    <link rel="stylesheet" href="static/css/minCss/all.min.css">
-
-    <meta charset="utf-8">
-    <!--IE浏览器运行最新的渲染模式-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap -->
-    <link href="static/css/minCss/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./static/css/minCss/all.min.css">
-
-    <!--[if lt IE 9]>
-    <script src="static/js/dest/html5shiv.min.js"></script>
-    <script src="static/js/dest/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body>
 <!--header 开始-->
 <div id="zcbl-header">
     <div class="header-box">
         <h1 class="header-log">
-            <a href="#" target="_blank"><span class="zcbl-logo"></span></a>
+            <a href="index.html" target="_blank"><span class="zcbl-logo"></span></a>
         </h1>
         <ul class="header-nav">
-            <li><a href="" target="_blank">首页</a></li>
+            <li><a href="index.html" target="_blank">首页</a></li>
             <li class="header-nav-hover"><a href="" target="_blank">众创</a></li>
             <li><a href="" target="_blank">需求</a></li>
             <li><a href="" target="_blank">服务</a></li>
@@ -36,7 +15,7 @@
             <!--登录后-->
             <div class="user-login">
                 <div class="header-user">
-                    <a href="#" target="_blank">
+                    <a href="./personal-artwork-pic.html" target="_blank">
                         <img src="./static/images/public/icon_user.png" alt="用户头像" height="36" width="34">
                     </a>
                 </div>
@@ -44,7 +23,7 @@
                     <a href="#">&nbsp;</a>
                     <span class="header-havemsg"></span>
                 </div>
-                <div class="header-publish"><a href="#" target="_blank">我要发布</a></div>
+                <div class="header-publish" onclick="publish(event)"><a href="javascript:;" target="_blank">我要发布</a></div>
             </div>
 
             <!--登录前-->
@@ -61,9 +40,3 @@
     </div>
 </div>
 <!--header 结束-->
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="static/js/dest/jquery-1.11.3.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="static/js/dest/bootstrap.min.js"></script>
-</body>
-</html>

@@ -68,7 +68,7 @@
           #demdetpub [data-demdetpub="section"] [data-demdetpub="sectionheader"] ul[data-demdetpub="sectiononeul"] ul[role="tablist"] [data-demdetpub="demand"].active b {
             background-position: 0 -40px; }
     #demdetpub [data-demdetpub="section"] [data-demdetpub="sectionbody"] {
-      padding: 30px 66px; }
+      padding: 30px; }
   #demdetpub [data-demdetpub="aside"] {
     padding: 8px;
     width: 27%;
@@ -111,6 +111,7 @@
 
 /** 需求详情 **/
 #demdetpub_demand {
+  padding: 0 36px;
   /** 详情 **/
   /*** 头像 ***/
   /**  按钮  **/ }

@@ -1,0 +1,159 @@
+@charset "utf-8";
+$darker: #171717;
+$darkgray: #515151;
+$gray: #909090;
+$light-gray: #c1c1c1;
+$bgcolor: #eee;
+$blue: #499af5;
+$orange: #ffb30e;
+$red: #e43f3f;
+$white: #fff;
+$black: #000;
+
+#pubservice {
+  background-color: $white;
+  margin-top: 128px;
+  padding-bottom: 30px;
+  text-align: center;
+  h2 {
+    font-size: 28px;
+    line-height: 90px;
+    margin-bottom: 10px;
+  }
+  [data-pubservice="fomecontainer"] {
+    padding: 0 90px;
+    .form-group {
+      margin-bottom: 34px;
+      input {
+        height: 50px;
+
+      }
+    }
+    /** 服务详情 **/
+    [data-pubservice="textarea"] {
+      margin-bottom: 20px;
+      textarea {
+        width: 100%;
+        padding-left: 10px;
+        height: 190px;
+      }
+    }
+    /** 上传代表作品 **/
+    /*通用*/
+    [data-pubservice="videofile"], [data-pubservice="audiofile"], [data-pubservice="imgfile"], [data-pubservice="addfile"] {
+      width: 120px;
+      height: 120px;
+      float: left;
+      position: relative;
+      margin-right: 20px;
+      img {
+        width: inherit;
+        height: inherit;
+      }
+      b {
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        top: 41px;
+        left: 41px;
+      }
+      [data-pubservice="close"] {
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        top: -9px;
+        right: -9px;
+        background-image: url("../../images/icon/icon_close.png");
+        cursor: pointer;
+      }
+    }
+    /* 上传新文件 */
+    [data-pubservice="addfile"] {
+      border: 1px dashed $light-gray;
+      input{
+        width: 120px;
+        height:120px;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 10;
+        position: relative;
+      }
+      b{
+        height: 50px;
+        width: 50px;
+        top: 32px;
+        left: 32px;
+        background-image: url("../../images/icon/icon_addimg.png");
+      }
+    }
+    /* 视频文件 */
+    [data-pubservice="videofile"] {
+      b{
+        background-image: url("../../images/icon/icon_video.png");
+      }
+    }
+    /* 音频文件 */
+    [data-pubservice="audiofile"] {
+     b{
+        background-image: url("../../images/icon/icon_audio.png");
+      }
+    }
+
+    /** 底部按钮 **/
+    [data-pubservice="footer"] {
+      text-align: right;
+      button {
+        margin-left: 20px;
+      }
+
+    }
+  }
+  [data-modal="modal"] {
+    width: 750px;
+    height: 160px;
+    border: 1px solid transparent;
+    h2 {
+      font-size: 28px;
+      line-height: 74px;
+      b {
+        height: 74px;
+        width: 76px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+/** 发布成功摸态框 **/
+
+#pubservice_success {
+  display: none;
+  [data-modal="modal"] {
+    h2{
+      margin-top:28px;
+      color: $orange;
+      b {
+        background-image: url("../../images/icon/icon_recruitsuc.png");
+      }
+    }
+    p{
+      line-height: 50px;
+    }
+  }
+}
+
+/** 作品删除摸态框 **/
+#pubservice_close {
+  display: none;
+  [data-modal="modal"] {
+    h2 {
+      margin-top: 43px;
+      color: #5098cd;
+      b {
+        background-image: url("../../images/icon/icon_delsuccess.png");
+      }
+    }
+  }
+}

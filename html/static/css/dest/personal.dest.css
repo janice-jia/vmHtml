@@ -1,10 +1,10 @@
 /*
 * header
 */
-.extend-aline:hover, #per-wall .per-wall-l .per-uname p a:hover, #per-wall .per-wall-l .per-fund p span.per-fund-cz a:hover, #per-wall .per-wall-l .per-fund p span.per-fund-tx a:hover, #per-wall .per-wall-l .per-identity p a:hover, #per-wall .per-wall-l .per-identity p.per-identity-more a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgTit a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgEdit a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgAdd .per-art-imgAdd-tit a:hover, #per-wall .per-wall-r .per-req ul li .per-reqTit h1 a:hover, #per-wall .per-wall-r .per-fans ul li .per-fansName .per-fansName-1 a:hover, #per-publish .per-pub-picBox ul li .per-pub-tit a:hover, #per-publish .pub-file .zcbl-form-pBlue a:hover, #per-publish .per-pub-videoUpload .per-pub-vieroQR a:hover {
+.extend-aline:hover, #per-wall .per-wall-l .per-uname p a:hover, #per-wall .per-wall-l .per-fund p span.per-fund-cz a:hover, #per-wall .per-wall-l .per-fund p span.per-fund-tx a:hover, #per-wall .per-wall-l .per-identity p a:hover, #per-wall .per-wall-l .per-identity p.per-identity-more a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgTit a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgEdit a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgAdd .per-art-imgAdd-tit a:hover, #per-wall .per-wall-r .per-req ul li .per-reqTit h1 a:hover, #per-wall .per-wall-r .per-fans ul li .per-fansName .per-fansName-1 a:hover, #per-publish .per-pub-picBox ul li .per-pub-tit a:hover, #per-publish .pub-file .zcbl-form-pBlue a:hover, #per-publish .per-pub-videoUpload .per-pub-vieroQR a:hover, #per-album .per-album-con ul li .per-album-imgBox .per-album-imgEdit .per-album-imgEditFM a:hover, #per-album .per-album-con ul li .per-album-titBox a:hover {
   text-decoration: underline; }
 
-.exten-box-shadow, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgHover, #per-wall .per-wall-r .per-fans ul li.per-fans-hover, #per-wall .per-wall-r .per-fans ul li:hover, #per-settings, #per-settings .per-setItem .per-itemCon .per-img-border {
+.exten-box-shadow, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgHover, #per-wall .per-wall-r .per-fans ul li.per-fans-hover, #per-wall .per-wall-r .per-fans ul li:hover, #per-settings, #per-settings .per-setItem .per-itemCon .per-img-border, #per-album .per-album-con ul li:hover {
   background: #ffffff;
   box-shadow: 0 0 5px rgba(81, 81, 81, 0.2); }
 
@@ -80,7 +80,7 @@
             left: 0;
             width: 12px;
             height: 15px;
-            background: no-repeat;background-position: -232px -114px; }
+            background: no-repeat;background-position: -260px -16px; }
         #per-wall .per-wall-l .per-uname p a {
           color: #515151; }
     #per-wall .per-wall-l .per-careBtn p {
@@ -112,12 +112,12 @@
         height: 16px;
         line-height: 16px; }
         #per-wall .per-wall-l .per-appraise span.stars-yellow {
-          background: no-repeat;background-position: -253px -43px;
+          background: no-repeat;background-position: -253px -60px;
           width: 16px;
           height: 16px;
           display: block; }
         #per-wall .per-wall-l .per-appraise span.stars-gray {
-          background: no-repeat;background-position: -177px -185px;
+          background: no-repeat;background-position: -260px 0;
           width: 16px;
           height: 16px;
           display: block; }
@@ -336,7 +336,7 @@
               position: absolute;
               top: 4px;
               left: 0;
-              background: no-repeat;background-position: -196px -161px;
+              background: no-repeat;background-position: -217px -79px;
               width: 14px;
               height: 16px; }
           #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo ul {
@@ -355,7 +355,7 @@
                   position: absolute;
                   top: 4px;
                   left: 0;
-                  background: no-repeat;background-position: -95px -234px;
+                  background: no-repeat;background-position: -196px -170px;
                   width: 27px;
                   height: 16px; }
               #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-bzj {
@@ -365,7 +365,7 @@
                   position: absolute;
                   top: 4px;
                   left: 0;
-                  background: no-repeat;background-position: -232px -97px;
+                  background: no-repeat;background-position: -177px -185px;
                   width: 16px;
                   height: 17px; }
               #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-time {
@@ -375,7 +375,7 @@
                   position: absolute;
                   top: 4px;
                   left: 0;
-                  background: no-repeat;background-position: -235px -79px;
+                  background: no-repeat;background-position: -253px -43px;
                   width: 16px;
                   height: 17px; }
         #per-wall .per-wall-r .per-req ul li .per-reqStatus {
@@ -447,7 +447,7 @@
               left: 0;
               width: 13px;
               height: 12px;
-              background: no-repeat;background-position: -260px -27px; }
+              background: no-repeat;background-position: -260px -31px; }
           #per-wall .per-wall-r .per-fans ul li .per-fansNum .per-fansNum-r {
             margin-bottom: 0;
             width: auto;
@@ -465,7 +465,7 @@
               left: 0;
               width: 16px;
               height: 14px;
-              background: no-repeat;background-position: -260px 0; }
+              background: no-repeat;background-position: -141px -221px; }
         #per-wall .per-wall-r .per-fans ul li .per-fansImg {
           width: 100px;
           height: 100px;
@@ -495,7 +495,7 @@
               content: "";
               top: 0;
               left: 0;
-              background: no-repeat;background-position: -232px -114px;
+              background: no-repeat;background-position: -260px -16px;
               width: 12px;
               height: 15px; }
         #per-wall .per-wall-r .per-fans ul li .per-fansBtn, #per-wall .per-wall-r .per-fans ul li .per-fansBtn-already {
@@ -552,13 +552,13 @@
   #per-settings .per-setEdit a:before {
     top: 33px;
     right: 0;
-    background: no-repeat;background-position: -253px -59px;
+    background: no-repeat;background-position: -232px -122px;
     width: 13px;
     height: 14px; }
   #per-settings .per-set-up a:before {
     top: 33px;
     right: 0;
-    background: no-repeat;background-position: -260px -14px;
+    background: no-repeat;background-position: -120px -234px;
     width: 13px;
     height: 13px; }
   #per-settings .per-setItem {
@@ -573,15 +573,15 @@
         display: inline-block;
         margin: 30px 30px 0 0; }
       #per-settings .per-setItem .per-itemTit ul li .per-set-wx {
-        background: no-repeat;background-position: -65px -234px;
+        background: no-repeat;background-position: -232px -79px;
         width: 30px;
         height: 25px; }
       #per-settings .per-setItem .per-itemTit ul li .per-set-qq {
-        background: no-repeat;background-position: -65px -200px;
+        background: no-repeat;background-position: -96px -234px;
         width: 24px;
         height: 25px; }
       #per-settings .per-setItem .per-itemTit ul li .per-set-wb {
-        background: no-repeat;background-position: -196px -136px;
+        background: no-repeat;background-position: -65px -234px;
         width: 31px;
         height: 25px; }
     #per-settings .per-setItem .per-itemCon {
@@ -875,7 +875,7 @@
       position: absolute;
       top: -5px;
       right: -7px;
-      background-position: -217px -79px;
+      background-position: -232px -104px;
       width: 18px;
       height: 18px; }
       #per-publish .pub-file-img .pub-file-imgDel a {
@@ -895,14 +895,16 @@
         color: #499af5; }
     #per-publish .per-pub-videoUpload .per-pub-videoBox {
       margin: 0 auto;
-      width: 527px;
-      height: 405px;
+      width: 525px;
+      height: 403px;
       background: #ffffff;
       border: 1px dashed #aaaaaa;
       position: relative; }
       #per-publish .per-pub-videoUpload .per-pub-videoBox img {
         max-width: 525px;
-        max-height: 403px; }
+        max-height: 403px;
+        margin: -1px 0 0 -1px;
+        border: 1px solid #ffb30e; }
       #per-publish .per-pub-videoUpload .per-pub-videoBox .per-videoImg-edit {
         width: 200px;
         height: 57px;
@@ -986,6 +988,91 @@
         color: #9a9a9a;
         margin-bottom: 0; }
 
+#per-album .per-album-tit .per-album-titL {
+  width: 50%;
+  float: left;
+  font-size: 28px;
+  height: 50px;
+  line-height: 50px; }
+  #per-album .per-album-tit .per-album-titL a {
+    display: inline-block;
+    position: relative; }
+    #per-album .per-album-tit .per-album-titL a:after {
+      content: "";
+      position: absolute;
+      top: 13px;
+      left: 0;
+      background-position: -65px -200px;
+      height: 27px;
+      width: 27px; }
+#per-album .per-album-tit .per-album-titR {
+  width: 50%;
+  float: right; }
+#per-album .per-album-con {
+  margin-top: 20px; }
+  #per-album .per-album-con ul li {
+    width: 250px;
+    height: 284px;
+    float: left;
+    padding-top: 10px;
+    margin-bottom: 5px; }
+    #per-album .per-album-con ul li:hover {
+      background: #ffffff; }
+    #per-album .per-album-con ul li .per-album-imgBox {
+      width: 233px;
+      height: 232px;
+      padding-top: 1px;
+      padding-left: 1px;
+      background: #d2d2d2;
+      margin: 0 auto;
+      position: relative; }
+      #per-album .per-album-con ul li .per-album-imgBox:hover .per-album-imgEdit {
+        display: block; }
+      #per-album .per-album-con ul li .per-album-imgBox .per-album-imgEdit {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%; }
+        #per-album .per-album-con ul li .per-album-imgBox .per-album-imgEdit .per-album-imgEditFM {
+          width: 50%;
+          float: left;
+          width: 120px;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          background: #515151;
+          color: #ffffff;
+          margin: 8px 0 0 5px;
+          font-size: 18px;
+          font-weight: 500; }
+          #per-album .per-album-con ul li .per-album-imgBox .per-album-imgEdit .per-album-imgEditFM a {
+            color: #ffffff; }
+        #per-album .per-album-con ul li .per-album-imgBox .per-album-imgEdit .per-album-imgEditDel {
+          width: 40%;
+          float: right;
+          text-align: right; }
+          #per-album .per-album-con ul li .per-album-imgBox .per-album-imgEdit .per-album-imgEditDel a {
+            display: inline-block;
+            width: 34px;
+            height: 34px;
+            position: relative;
+            margin: 8px 14px 0 0; }
+            #per-album .per-album-con ul li .per-album-imgBox .per-album-imgEdit .per-album-imgEditDel a:after {
+              position: absolute;
+              content: "";
+              left: 0;
+              top: 0;
+              background: no-repeat;background-position: -196px -136px;
+              width: 34px;
+              height: 34px; }
+    #per-album .per-album-con ul li .per-album-titBox {
+      height: 40px;
+      line-height: 40px;
+      font-size: 18px;
+      text-align: center; }
+      #per-album .per-album-con ul li .per-album-titBox a {
+        color: #515151; }
+
 
 /* ../../images/positonIcon/personal.png */
 #per-wall .per-wall-l .per-uimg .per-uimg-src .per-uimg-edit a:after,
@@ -1015,6 +1102,8 @@
 #per-publish .pub-file-img .pub-file-imgDel,
 #per-publish .per-pub-videoUpload .per-pub-videoBox .per-videoImg-edit p.per-pub-editFM a:after,
 #per-publish .per-pub-videoUpload .per-pub-videoBox .per-videoImg-edit p.per-pub-editDel a:after,
-#per-publish .per-pub-videoUpload .per-pub-videoBox .per-pub-addVideoIcon:after{
+#per-publish .per-pub-videoUpload .per-pub-videoBox .per-pub-addVideoIcon:after,
+#per-album .per-album-tit .per-album-titL a:after,
+#per-album .per-album-con ul li .per-album-imgBox .per-album-imgEdit .per-album-imgEditDel a:after{
 background-image: url(../../images/positonIcon/personal.png);
 }

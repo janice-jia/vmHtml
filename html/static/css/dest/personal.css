@@ -1,10 +1,10 @@
 /*
 * header
 */
-.extend-aline:hover, #per-wall .per-wall-l .per-uname p a:hover, #per-wall .per-wall-l .per-fund p span.per-fund-cz a:hover, #per-wall .per-wall-l .per-fund p span.per-fund-tx a:hover, #per-wall .per-wall-l .per-identity p a:hover, #per-wall .per-wall-l .per-identity p.per-identity-more a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgTit a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgEdit a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgAdd .per-art-imgAdd-tit a:hover, #per-wall .per-wall-r .per-req ul li .per-reqTit h1 a:hover, #per-wall .per-wall-r .per-fans ul li .per-fansName .per-fansName-1 a:hover, #per-publish .per-pub-picBox ul li .per-pub-tit a:hover, #per-publish .pub-file .zcbl-form-pBlue a:hover, #per-publish .per-pub-videoUpload .per-pub-vieroQR a:hover {
+.extend-aline:hover, #per-wall .per-wall-l .per-uname p a:hover, #per-wall .per-wall-l .per-fund p span.per-fund-cz a:hover, #per-wall .per-wall-l .per-fund p span.per-fund-tx a:hover, #per-wall .per-wall-l .per-identity p a:hover, #per-wall .per-wall-l .per-identity p.per-identity-more a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgTit a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgEdit a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgAdd .per-art-imgAdd-tit a:hover, #per-wall .per-wall-r .per-req ul li .per-reqTit h1 a:hover, #per-wall .per-wall-r .per-fans ul li .per-fansName .per-fansName-1 a:hover, #per-publish .per-pub-picBox ul li .per-pub-tit a:hover, #per-publish .pub-file .zcbl-form-pBlue a:hover, #per-publish .per-pub-videoUpload .per-pub-vieroQR a:hover, #per-album .per-album-con ul li .per-album-imgBox .per-album-imgEdit .per-album-imgEditFM a:hover, #per-album .per-album-con ul li .per-album-titBox a:hover {
   text-decoration: underline; }
 
-.exten-box-shadow, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgHover, #per-wall .per-wall-r .per-fans ul li.per-fans-hover, #per-wall .per-wall-r .per-fans ul li:hover, #per-settings, #per-settings .per-setItem .per-itemCon .per-img-border {
+.exten-box-shadow, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgHover, #per-wall .per-wall-r .per-fans ul li.per-fans-hover, #per-wall .per-wall-r .per-fans ul li:hover, #per-settings, #per-settings .per-setItem .per-itemCon .per-img-border, #per-album .per-album-con ul li:hover {
   background: #ffffff;
   box-shadow: 0 0 5px rgba(81, 81, 81, 0.2); }
 
@@ -895,14 +895,16 @@
         color: #499af5; }
     #per-publish .per-pub-videoUpload .per-pub-videoBox {
       margin: 0 auto;
-      width: 527px;
-      height: 405px;
+      width: 525px;
+      height: 403px;
       background: #ffffff;
       border: 1px dashed #aaaaaa;
       position: relative; }
       #per-publish .per-pub-videoUpload .per-pub-videoBox img {
         max-width: 525px;
-        max-height: 403px; }
+        max-height: 403px;
+        margin: -1px 0 0 -1px;
+        border: 1px solid #ffb30e; }
       #per-publish .per-pub-videoUpload .per-pub-videoBox .per-videoImg-edit {
         width: 200px;
         height: 57px;
@@ -985,3 +987,88 @@
         line-height: 22px;
         color: #9a9a9a;
         margin-bottom: 0; }
+
+#per-album .per-album-tit .per-album-titL {
+  width: 50%;
+  float: left;
+  font-size: 28px;
+  height: 50px;
+  line-height: 50px; }
+  #per-album .per-album-tit .per-album-titL a {
+    display: inline-block;
+    position: relative; }
+    #per-album .per-album-tit .per-album-titL a:after {
+      content: "";
+      position: absolute;
+      top: 13px;
+      left: 0;
+      background: url("../../images/icon/per-album-edit.png");
+      height: 27px;
+      width: 27px; }
+#per-album .per-album-tit .per-album-titR {
+  width: 50%;
+  float: right; }
+#per-album .per-album-con {
+  margin-top: 20px; }
+  #per-album .per-album-con ul li {
+    width: 250px;
+    height: 284px;
+    float: left;
+    padding-top: 10px;
+    margin-bottom: 5px; }
+    #per-album .per-album-con ul li:hover {
+      background: #ffffff; }
+    #per-album .per-album-con ul li .per-album-imgBox {
+      width: 233px;
+      height: 232px;
+      padding-top: 1px;
+      padding-left: 1px;
+      background: #d2d2d2;
+      margin: 0 auto;
+      position: relative; }
+      #per-album .per-album-con ul li .per-album-imgBox:hover .per-album-imgEdit {
+        display: block; }
+      #per-album .per-album-con ul li .per-album-imgBox .per-album-imgEdit {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%; }
+        #per-album .per-album-con ul li .per-album-imgBox .per-album-imgEdit .per-album-imgEditFM {
+          width: 50%;
+          float: left;
+          width: 120px;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          background: #515151;
+          color: #ffffff;
+          margin: 8px 0 0 5px;
+          font-size: 18px;
+          font-weight: 500; }
+          #per-album .per-album-con ul li .per-album-imgBox .per-album-imgEdit .per-album-imgEditFM a {
+            color: #ffffff; }
+        #per-album .per-album-con ul li .per-album-imgBox .per-album-imgEdit .per-album-imgEditDel {
+          width: 40%;
+          float: right;
+          text-align: right; }
+          #per-album .per-album-con ul li .per-album-imgBox .per-album-imgEdit .per-album-imgEditDel a {
+            display: inline-block;
+            width: 34px;
+            height: 34px;
+            position: relative;
+            margin: 8px 14px 0 0; }
+            #per-album .per-album-con ul li .per-album-imgBox .per-album-imgEdit .per-album-imgEditDel a:after {
+              position: absolute;
+              content: "";
+              left: 0;
+              top: 0;
+              background: url("../../images/icon/per-album-del.png") no-repeat;
+              width: 34px;
+              height: 34px; }
+    #per-album .per-album-con ul li .per-album-titBox {
+      height: 40px;
+      line-height: 40px;
+      font-size: 18px;
+      text-align: center; }
+      #per-album .per-album-con ul li .per-album-titBox a {
+        color: #515151; }

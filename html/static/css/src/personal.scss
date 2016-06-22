@@ -1212,14 +1212,16 @@ $color-e5e5e5:#e5e5e5;
         }
         .per-pub-videoBox{
             margin: 0 auto;
-            width: 527px;
-            height: 405px;
+            width: 525px;
+            height: 403px;
             background: $color-ffffff;
             border: 1px dashed $color-aaaaaa;
             position: relative;
             img{
                 max-width: 525px;
                 max-height: 403px;
+                margin: -1px 0 0 -1px;
+                border: 1px solid $color-07;
             }
             .per-videoImg-edit{
                 width: 200px;
@@ -1316,6 +1318,121 @@ $color-e5e5e5:#e5e5e5;
                 line-height: 22px;
                 color: $color-9a9a9a;
                 margin-bottom: 0;
+            }
+        }
+    }
+}
+
+#per-album{
+    .per-album-tit{
+        .per-album-titL{
+            width: 50%;
+            float: left;
+            font-size: 28px;
+            height: 50px;
+            line-height: 50px;
+            a{
+                display: inline-block;
+                position: relative;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    top:13px;
+                    left: 0;
+                    background: url("../../images/icon/per-album-edit.png");
+                    height: 27px;
+                    width: 27px;
+                }
+            }
+        }
+        .per-album-titR{
+            width: 50%;
+            float: right;
+        }
+    }
+    .per-album-con{
+        margin-top: 20px;
+        ul{
+            li{
+                width: 250px;
+                height: 284px;
+                float: left;
+                padding-top: 10px;
+                margin-bottom: 5px;
+                &:hover{
+                    background: $color-ffffff;
+                    @extend .exten-box-shadow;
+                }
+                .per-album-imgBox{
+                    width: 233px;
+                    height: 232px;
+                    padding-top: 1px;
+                    padding-left: 1px;
+                    background: $color-d2d2d2;
+                    margin: 0 auto;
+                    position: relative;
+                    &:hover{
+                        .per-album-imgEdit{
+                            display: block;
+                        }
+                    }
+                    .per-album-imgEdit{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        .per-album-imgEditFM{
+                            width: 50%;
+                            float: left;
+                            width: 120px;
+                            height: 40px;
+                            line-height: 40px;
+                            text-align: center;
+                            background: $color-02;
+                            color: $color-ffffff;
+                            margin: 8px 0 0 5px;
+                            font-size: 18px;
+                            font-weight: 500;
+                            a{
+                                color: $color-ffffff;
+                                @extend  .extend-aline;
+                            }
+                        }
+                        .per-album-imgEditDel{
+                            width: 40%;
+                            float: right;
+                            text-align: right;
+                            a{
+                                display: inline-block;
+                                width: 34px;
+                                height: 34px;
+                                position: relative;
+                                margin: 8px 14px 0 0;
+                                &:after{
+                                    position: absolute;
+                                    content: "";
+                                    left: 0;
+                                    top:0;
+                                    background: url("../../images/icon/per-album-del.png") no-repeat;
+                                    width: 34px;
+                                    height: 34px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .per-album-titBox{
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 18px;
+                    text-align: center;
+                    a{
+                        color: $color-02;
+                        &:hover{
+                            @extend .extend-aline;
+                        }
+                    }
+                }
             }
         }
     }

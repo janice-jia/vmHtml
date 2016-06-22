@@ -15,7 +15,7 @@
     <![endif]-->
 </head>
 <body>
-<header></header>
+<div id="header" style="height: 95px;"></div>
 <div id="demdetpub">
     <div class="container">
         <stction data-demdetpub="section" role="tabpanel">
@@ -41,7 +41,7 @@
                 </ul>
             </div>
             <div data-demdetpub="sectionbody" class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="demdetpub_demand">
+                <div role="tabpanel" class="tab-pane " id="demdetpub_demand">
                     <table>
                         <thead>
                         <tr>
@@ -91,11 +91,60 @@
                         <button data-btn="grbgbtn">已选稿</button>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab-pane" id="demdetpub_comment">
+                <div role="tabpanel" class="tab-pane active" id="demdetpub_comment">
                     <div data-demdetpub="addcomment">
+                        <p>评论（<span>35</span>）</p>
+                        <div data-demdetpub="texeareabox">
+                            <textarea name="demdetpub_addcomment"></textarea>
+                            <span>0/140</span>
+                        </div>
 
+                        <div data-demdetpub="btn">
+                            <button data-btn="orbgbtn">发布</button>
+                        </div>
                     </div>
-                    <div data-demdetpub="commentContent"></div>
+                    <div data-demdetpub="commentContent">
+                        <div data-demdetpub="content">
+                            <div data-demdetpub="contentLeft">
+                                <img src="static/images/demand/1.jpg" alt="">
+                            </div>
+                            <div data-demdetpub="contentRight">
+                                <ul>
+                                    <li data-demdetpub="conhead"><h2>ABC</h2><p>2016.5.13 13:00</span></li>
+                                    <li data-demdetpub="conbody">评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容</li>
+                                    <li data-demdetpub="confoot"><a href="#"><b></b>回复</a>|<button>删除</button></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div data-demdetpub="content">
+                            <div data-demdetpub="contentLeft">
+                                <img src="static/images/demand/1.jpg" alt="">
+                            </div>
+                            <div data-demdetpub="contentRight">
+                                <ul>
+                                    <li data-demdetpub="conhead">用户名用户名 <div data-demdetpub="answer">回复:@<span>大小姐</span></div><p>2016.5.13 7:31</p></li>
+                                    <li data-demdetpub="conbody">评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容@ABC</li>
+                                    <li data-demdetpub="confoot"><a href="#"><b></b>回复</a>|<button>删除</button></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div data-demdetpub="content">
+                            <div data-demdetpub="contentLeft">
+                                <img src="static/images/demand/1.jpg" alt="">
+                            </div>
+                            <div data-demdetpub="contentRight">
+                                <ul>
+                                    <li data-demdetpub="conhead">大小姐<p>2016.5.13 7:31</p></li>
+                                    <li data-demdetpub="conbody">评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容</li>
+                                    <li data-demdetpub="confoot"><a href="#"><b></b>回复</a>|<button>删除</button></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="page"></div>
                 </div>
             </div>
 

@@ -12,7 +12,6 @@ $black: #000;
 
 #demdetpub {
   padding-top: 30px;
-  margin-top: 128px;
   padding-bottom: 30px;
   [data-demdetpub="section"] {
     width: 71%;
@@ -107,7 +106,7 @@ $black: #000;
       }
     }
     [data-demdetpub="sectionbody"] {
-      padding: 30px;
+
     }
   }
   /**  右边栏  **/
@@ -166,7 +165,7 @@ $black: #000;
 
 /** 需求详情 **/
 #demdetpub_demand {
-  padding: 0 36px;
+  padding: 30px 36px;
   /** 详情 **/
   table {
     position: relative;
@@ -178,6 +177,7 @@ $black: #000;
       }
       #demdetpub_closedemand {
         text-align: right;
+        line-height: 40px;
         a {
           color: $darker;
         }
@@ -224,4 +224,96 @@ $black: #000;
       margin-left: 20px;
     }
   }
+}
+
+
+/** 评论 **/
+#demdetpub_comment{
+  [data-demdetpub="addcomment"]{
+    margin-bottom: 20px;
+    padding: 30px;
+    [data-demdetpub="btn"]{
+      text-align: right;
+      padding-top: 20px;
+    }
+  }
+  [data-demdetpub="texeareabox"]{
+    position: relative;
+    textarea{
+      width:100%;
+      height:146px;
+    }
+    span{
+      position: absolute;
+      right: 20px;
+      bottom:10px;
+      color: $light-gray;
+    }
+  }
+  /** 评论内容 **/
+  [data-demdetpub="commentContent"]{
+    border-top: 1px solid $light-gray;
+    margin: 0 10px;
+    padding-top: 30px;
+    [data-demdetpub="content"]{
+      margin: 0 20px 30px 10px;
+      position: relative;
+
+      [data-demdetpub="contentLeft"]{
+       position:absolute;
+        vertical-align: top;
+        img{
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+        }
+      }
+      [data-demdetpub="contentRight"]{
+        padding-left: 110px;
+        [data-demdetpub="conhead"]{
+          padding-bottom: 24px;
+          font-size: 20px;
+          font-weight: bold;
+          color: $gray;
+          div[data-demdetpub="answer"]{
+            display: inline-block;
+            font-weight: normal;
+            span{
+              color: $blue;
+            }
+          }
+          p{
+            font-size: 18px;
+            float: right;
+            font-weight: normal;
+          }
+        }
+        [data-demdetpub="conbody"]{
+          padding-bottom: 20px;
+          font-size: 18px;
+          color: $darkgray;
+        }
+        [data-demdetpub="confoot"]{
+          font-size: 14px;
+          b{
+            background-image: url("../../images/icon/icon_message.png");
+            width: 18px;
+            height: 18px;
+            margin-right: 5px;
+            display: inline-block;
+            vertical-align: middle;
+          }
+          a{
+            color: $blue;
+            margin-right: 10px;
+          }
+          button{
+            margin-left: 10px;
+            background:none;
+          }
+        }
+      }
+    }
+  }
+
 }

@@ -139,18 +139,18 @@
     #demdet_demand table [data-demdet="number"] {
       position: absolute;
       right: 0; }
-  #demdet_demand [data-demdetpub="headimg"] {
+  #demdet_demand [data-demdet="headimg"] {
     margin-bottom: 30px; }
-    #demdet_demand [data-demdetpub="headimg"] li {
+    #demdet_demand [data-demdet="headimg"] li {
       float: left;
       margin-right: 30px; }
-      #demdet_demand [data-demdetpub="headimg"] li img {
+      #demdet_demand [data-demdet="headimg"] li img {
         width: 80px;
         height: 80px;
         border-radius: 50%; }
-    #demdet_demand [data-demdetpub="headimg"] li:last-child {
+    #demdet_demand [data-demdet="headimg"] li:last-child {
       margin-right: 0; }
-  #demdet_demand [data-demdetpub="headimg"]:after {
+  #demdet_demand [data-demdet="headimg"]:after {
     content: '';
     display: table;
     clear: both; }
@@ -264,8 +264,13 @@
     right: 20px; }
 
 /****************                       用户                  *****************************/
-#demdet [data-demdet="user"] [data-demdetpub="headimg"] li {
+#demdet [data-demdet="user"] [data-demdet="headimg"] li {
+  width: 94px;
   text-align: center; }
+  #demdet [data-demdet="user"] [data-demdet="headimg"] li button {
+    margin-top: 20px;
+    width: 94px;
+    height: 33px; }
 
 
 /* ../../images/positonIcon/demandDetailsPublisher.dest.png */

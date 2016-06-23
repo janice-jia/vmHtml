@@ -82,12 +82,12 @@
                     <!--- 用户 --->
                     <div data-demdet="user">
                         <!--  投稿  -->
-                        <div  data-demdetpub="works">
+                        <div  data-demdetuser="works">
                             <div>
-                                <ul data-demdetpub="headimg">
+                                <ul data-demdet="headimg">
                                     <li>
                                         <a href="#"><img src="static/images/demand/s1.jpg" alt=""></a>
-                                        <button data-btn="orbgbtn" data-toggle="#demdet_works">投稿</button>
+                                        <button data-btn="orbgbtn" data-toggle="modal" data-target="#demdet_works">投稿</button>
                                     </li>
                                     <li>
                                         <a href="#"><img src="static/images/demand/1.jpg" alt=""></a>
@@ -110,12 +110,12 @@
                             <p>上传的作品最多为15个作品源文件，视频大小限制20M、格式mp4，音乐5M、格式mp3，图片5M、格式jpg、png，文本大小限制5兆，格式word、txt、pdf</p>
                         </div>
                         <!--  报名  -->
-                        <div  data-demdetpub="person">
+                        <div  data-demdetuser="person">
                             <div>
-                                <ul data-demdetpub="headimg">
+                                <ul data-demdet="headimg">
                                     <li>
                                         <a href="#"><img src="static/images/demand/s1.jpg" alt=""></a>
-                                        <button data-btn="orbgbtn">报名</button>
+                                        <button data-btn="orbgbtn" data-toggle="modal" data-target="#demdet_person">报名</button>
                                     </li>
                                     <li>
                                         <a href="#"><img src="static/images/demand/1.jpg" alt=""></a>
@@ -261,7 +261,7 @@
 </div>
 
 <!--  投稿成功弹出框  -->
-<div data-modal="modalbox" id="demdet_works">
+<div data-modal="modalbox" id="demdet_works" class="modal fade" style="display: none">
     <div data-modal="modal">
         <h2><b></b>投稿已成功！</h2>
         <p>恭喜您，投稿成功</p>
@@ -269,19 +269,10 @@
 </div>
 
 <!--  报名成功弹出框  -->
-<div data-modal="modalbox" id="demdet_person">
+<div data-modal="modalbox" id="demdet_person" class="modal fade" style="display: none">
     <div data-modal="modal">
         <h2><b></b>报名已成功！</h2>
         <p>恭喜您，报名成功</p>
-    </div>
-</div>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
-
-<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            ...
-        </div>
     </div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

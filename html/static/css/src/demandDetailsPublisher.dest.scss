@@ -204,7 +204,7 @@ $black: #000;
 
   }
   /*** 头像 ***/
-  [data-demdetpub="headimg"] {
+  [data-demdet="headimg"] {
     margin-bottom: 30px;
     li {
       float: left;
@@ -219,7 +219,7 @@ $black: #000;
       margin-right: 0;
     }
   }
-  [data-demdetpub="headimg"]:after {
+  [data-demdet="headimg"]:after {
     content: '';
     display: table;
     clear: both;
@@ -366,12 +366,15 @@ $black: #000;
 
 /****************                       用户                  *****************************/
 #demdet {
-  [data-demdet="user"] {
-    [data-demdetpub="headimg"]{
+  [data-demdet="user"]{
+    [data-demdet="headimg"]{
       li{
+        width: 94px;
         text-align: center;
         button{
-
+          margin-top: 20px;
+          width:94px;
+          height: 33px;
         }
       }
     }

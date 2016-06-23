@@ -9,16 +9,15 @@ $orange: #ffb30e;
 $red: #e43f3f;
 $white: #fff;
 $black: #000;
-
-#demdetpub {
+#demdet {
   padding-top: 30px;
   padding-bottom: 30px;
-  [data-demdetpub="section"] {
+  [data-demdet="section"] {
     width: 71%;
     background-color: $white;
     float: left;
     /**  头部 **/
-    [data-demdetpub="sectionheader"] {
+    [data-demdet="sectionheader"] {
       border-bottom: 1px solid $gray;
       padding-left: 30px;
       padding-top: 40px;
@@ -27,7 +26,7 @@ $black: #000;
         font-weight: bolder;
       }
       /** 地址、看过、需求、评论 **/
-      ul[data-demdetpub="sectiononeul"] {
+      ul[data-demdet="sectiononeul"] {
         margin-top: 30px;
         ul {
           padding-bottom: 20px;
@@ -38,7 +37,7 @@ $black: #000;
               display: inline-block;
             }
           }
-          [data-demdetpub="address"], [data-demdetpub="eye"], [data-demdetpub="comment"], [data-demdetpub="demand"] {
+          [data-demdet="address"], [data-demdet="eye"], [data-demdet="comment"], [data-demdet="demand"] {
             b {
               height: 20px;
               display: inline-block;
@@ -46,26 +45,26 @@ $black: #000;
               vertical-align: middle;
             }
           }
-          [data-demdetpub="address"] {
+          [data-demdet="address"] {
             b {
               width: 12px;
               background-image: url("../../images/icon/icon_address.png");
             }
           }
-          [data-demdetpub="eye"] {
+          [data-demdet="eye"] {
             b {
               width: 20px;
               background-image: url("../../images/icon/icon_eye.png");
             }
           }
-          [data-demdetpub="comment"] {
+          [data-demdet="comment"] {
             font-size: 20px;
             b {
               width: 21px;
               background-image: url("../../images/icon/icon_commentg.png");
             }
           }
-          [data-demdetpub="demand"] {
+          [data-demdet="demand"] {
             font-size: 20px;
             b {
               width: 21px;
@@ -92,12 +91,12 @@ $black: #000;
             border-bottom: 2px solid $orange;
             color: $orange;
           }
-          [data-demdetpub="comment"].active {
+          [data-demdet="comment"].active {
             b {
               background-image: url("../../images/icon/icon_commento.png");
             }
           }
-          [data-demdetpub="demand"].active {
+          [data-demdet="demand"].active {
             b {
               background-image: url("../../images/icon/icon_demando.png");
             }
@@ -105,22 +104,19 @@ $black: #000;
         }
       }
     }
-    [data-demdetpub="sectionbody"] {
-
-    }
   }
   /**  右边栏  **/
-  [data-demdetpub="aside"] {
+  [data-demdet="aside"] {
     padding: 8px;
     width: 27%;
     background-color: $white;
     float: right;
-    [data-demdetpub="aside-header"] {
+    [data-demdet="aside-header"] {
       line-height: 48px;
       color: $gray;
       border-bottom: 2px solid $gray;
     }
-    [data-demdetpub="aside-body"] {
+    [data-demdet="aside-body"] {
       padding: 20px 24px;
       img {
         width: 100px;
@@ -139,7 +135,7 @@ $black: #000;
       p {
         color: $gray;
       }
-      [data-demdetpub="btn"]{
+      [data-demdet="btn"]{
         margin: 0 -16px;
         text-align: center;
         button{
@@ -151,7 +147,7 @@ $black: #000;
         }
       }
     }
-    [data-demdetpub="aside-footer"] {
+    [data-demdet="aside-footer"] {
       border-top: 2px solid $gray;
       padding-top: 30px;
       p {
@@ -166,7 +162,7 @@ $black: #000;
             color: $red;
           }
         }
-        [data-demdetpub="asidedate"] {
+        [data-demdet="asidedate"] {
           text-align: right;
         }
       }
@@ -175,7 +171,7 @@ $black: #000;
 }
 
 /** 需求详情 **/
-#demdetpub_demand {
+#demdet_demand {
   padding: 30px 36px;
   /** 详情 **/
   table {
@@ -186,7 +182,7 @@ $black: #000;
         color: $blue;
         font-size: 20px;
       }
-      #demdetpub_closedemand {
+      #demdet_closedemand {
         text-align: right;
         line-height: 40px;
         a {
@@ -201,14 +197,14 @@ $black: #000;
     tr > td:first-child {
       width: 100px;
     }
-    [data-demdetpub="number"] {
+    [data-demdet="number"] {
       position: absolute;
       right: 0;
     }
 
   }
   /*** 头像 ***/
-  [data-pubservice="headimg"] {
+  [data-demdetpub="headimg"] {
     margin-bottom: 30px;
     li {
       float: left;
@@ -223,13 +219,13 @@ $black: #000;
       margin-right: 0;
     }
   }
-  [data-pubservice="headimg"]:after {
+  [data-demdetpub="headimg"]:after {
     content: '';
     display: table;
     clear: both;
   }
   /**  按钮  **/
-  [data-demdetpub="btn"] {
+  [data-demdet="btn"] {
     text-align: right;
     button {
       margin-left: 20px;
@@ -238,16 +234,16 @@ $black: #000;
 }
 
 /** 评论 **/
-#demdetpub_comment {
-  [data-demdetpub="addcomment"] {
+#demdet_comment {
+  [data-demdet="addcomment"] {
     margin-bottom: 20px;
     padding: 30px;
-    [data-demdetpub="btn"] {
+    [data-demdet="btn"] {
       text-align: right;
       padding-top: 20px;
     }
   }
-  [data-demdetpub="texeareabox"] {
+  [data-demdet="texeareabox"] {
     position: relative;
     textarea {
       width: 100%;
@@ -261,15 +257,15 @@ $black: #000;
     }
   }
   /** 评论内容 **/
-  [data-demdetpub="commentContent"] {
+  [data-demdet="commentContent"] {
     border-top: 1px solid $light-gray;
     margin: 0 10px;
     padding-top: 30px;
-    [data-demdetpub="content"] {
+    [data-demdet="content"] {
       margin: 0 20px 30px 10px;
       position: relative;
 
-      [data-demdetpub="contentLeft"] {
+      [data-demdet="contentLeft"] {
         position: absolute;
         vertical-align: top;
         img {
@@ -278,9 +274,9 @@ $black: #000;
           border-radius: 50%;
         }
       }
-      [data-demdetpub="contentRight"] {
+      [data-demdet="contentRight"] {
         padding-left: 110px;
-        [data-demdetpub="conhead"] {
+        [data-demdet="conhead"] {
           padding-bottom: 24px;
           font-size: 20px;
           color: $gray;
@@ -288,7 +284,7 @@ $black: #000;
             display: inline-block;
             font-weight: bold;
           }
-          div[data-demdetpub="answer"] {
+          div[data-demdet="answer"] {
             display: inline-block;
             font-weight: normal;
             span {
@@ -301,12 +297,12 @@ $black: #000;
             font-weight: normal;
           }
         }
-        [data-demdetpub="conbody"] {
+        [data-demdet="conbody"] {
           padding-bottom: 20px;
           font-size: 18px;
           color: $darkgray;
         }
-        [data-demdetpub="confoot"] {
+        [data-demdet="confoot"] {
           font-size: 14px;
           b {
             background-image: url("../../images/icon/icon_message.png");
@@ -328,10 +324,10 @@ $black: #000;
       }
     }
   }
-
 }
+
 /** 删除评论确认弹窗框 **/
-[data-demdetpub="isdelanswer"] {
+[data-demdet="isdelanswer"] {
   display:none;
   position: absolute;
   top: 0;
@@ -357,7 +353,6 @@ $black: #000;
     width:80px;
     height: 30px;
     margin:0 10px;
-
   }
   i{
     display: inline-block;
@@ -366,5 +361,20 @@ $black: #000;
     position: absolute;
     bottom:-28px;
     right: 20px;
+  }
+}
+
+/****************                       用户                  *****************************/
+#demdet {
+  [data-demdet="user"] {
+    [data-demdetpub="headimg"]{
+      li{
+        text-align: center;
+        button{
+
+        }
+      }
+    }
+
   }
 }

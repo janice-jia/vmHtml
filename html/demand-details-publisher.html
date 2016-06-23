@@ -41,7 +41,7 @@
                 </ul>
             </div>
             <div data-demdetpub="sectionbody" class="tab-content">
-                <div role="tabpanel" class="tab-pane " id="demdetpub_demand">
+                <div role="tabpanel" class="tab-pane active" id="demdetpub_demand">
                     <table>
                         <thead>
                         <tr>
@@ -91,16 +91,15 @@
                         <button data-btn="grbgbtn">已选稿</button>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab-pane active" id="demdetpub_comment">
+                <div role="tabpanel" class="tab-pane " id="demdetpub_comment">
                     <div data-demdetpub="addcomment">
                         <p>评论（<span>35</span>）</p>
                         <div data-demdetpub="texeareabox">
                             <textarea name="demdetpub_addcomment"></textarea>
                             <span>0/140</span>
                         </div>
-
                         <div data-demdetpub="btn">
-                            <button data-btn="orbgbtn">发布</button>
+                            <button data-btn="orbgbtn" id="demdetpub_publish">发布</button>
                         </div>
                     </div>
                     <div data-demdetpub="commentContent">
@@ -112,7 +111,7 @@
                                 <ul>
                                     <li data-demdetpub="conhead"><h2 data-demdetpub="username">ABC</h2> <p>2016.5.13 13:00</p></li>
                                     <li data-demdetpub="conbody">评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容</li>
-                                    <li data-demdetpub="confoot"><a href="#" data-demdetpub="answerbtn"><b></b>回复</a>|<button>删除</button></li>
+                                    <li data-demdetpub="confoot"><a href="#" data-demdetpub="answerbtn"><b></b>回复</a>|<button data-demdetpub="answerdel">删除</button></li>
                                 </ul>
                             </div>
 
@@ -124,11 +123,10 @@
                             <div data-demdetpub="contentRight">
                                 <ul>
                                     <li data-demdetpub="conhead"><h2 data-demdetpub="username">用户名用户名</h2> <div data-demdetpub="answer">回复:@<span>大小姐</span></div><p>2016.5.13 7:31</p></li>
-                                    <li data-demdetpub="conbody">评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容@ABC</li>
-                                    <li data-demdetpub="confoot"><a href="#" data-demdetpub="answerbtn"><b></b>回复</a>|<button>删除</button></li>
+                                    <li data-demdetpub="conbody">评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容@ABC</li>
+                                    <li data-demdetpub="confoot"><a href="#" data-demdetpub="answerbtn"><b></b>回复</a>|<button  data-demdetpub="answerdel">删除</button></li>
                                 </ul>
                             </div>
-
                         </div>
                         <div data-demdetpub="content">
                             <div data-demdetpub="contentLeft">
@@ -138,7 +136,7 @@
                                 <ul>
                                     <li data-demdetpub="conhead"><h2 data-demdetpub="username">大小姐</h2><p>2016.5.13 7:31</p></li>
                                     <li data-demdetpub="conbody">评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容</li>
-                                    <li data-demdetpub="confoot"><a href="#" data-demdetpub="answerbtn"><b></b>回复</a>|<button>删除</button></li>
+                                    <li data-demdetpub="confoot"><a href="#" data-demdetpub="answerbtn"><b></b>回复</a>|<button data-demdetpub="answerdel">删除</button></li>
                                 </ul>
                             </div>
 
@@ -147,8 +145,6 @@
                     <div id="page"></div>
                 </div>
             </div>
-
-
         </stction>
         <aside data-demdetpub="aside">
             <div data-demdetpub="aside-header">
@@ -160,6 +156,11 @@
                     <h2>用户名</h2>
                 </div>
                 <p>自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍介绍</p>
+                <!------           关注                                    邀约                          发布者隐藏                        ------>
+                <div data-demdetpub="btn" style="display: none">
+                    <button data-btn="orbgbtn">关注</button>
+                    <button data-btn="blfontbtn">邀约</button>
+                </div>
             </div>
             <div data-demdetpub="aside-footer">
                 <p>需求概述</p>
@@ -193,6 +194,15 @@
 
         </aside>
     </div>
+
+</div>
+<div data-demdetpub="isdelanswer" id="demdetpub_isdelanswer">
+    <h2><b></b>确认要删除该评论吗</h2>
+    <div data-demdetpub="centerbtn">
+        <button value="true" type="button" data-btn="orbgbtn">确认</button>
+        <button value="false" type="button" data-btn="tranbgbtn">取消</button>
+    </div>
+    <i></i>
 </div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

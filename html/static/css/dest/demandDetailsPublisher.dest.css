@@ -91,6 +91,14 @@
         color: #515151; }
       #demdetpub [data-demdetpub="aside"] [data-demdetpub="aside-body"] p {
         color: #909090; }
+      #demdetpub [data-demdetpub="aside"] [data-demdetpub="aside-body"] [data-demdetpub="btn"] {
+        margin: 0 -16px;
+        text-align: center; }
+        #demdetpub [data-demdetpub="aside"] [data-demdetpub="aside-body"] [data-demdetpub="btn"] button {
+          width: 120px;
+          height: 40px; }
+        #demdetpub [data-demdetpub="aside"] [data-demdetpub="aside-body"] [data-demdetpub="btn"] button:first-child {
+          margin-right: 20px; }
     #demdetpub [data-demdetpub="aside"] [data-demdetpub="aside-footer"] {
       border-top: 2px solid #909090;
       padding-top: 30px; }
@@ -221,3 +229,36 @@
           #demdetpub_comment [data-demdetpub="commentContent"] [data-demdetpub="content"] [data-demdetpub="contentRight"] [data-demdetpub="confoot"] button {
             margin-left: 10px;
             background: none; }
+
+/** 删除评论确认弹窗框 **/
+[data-demdetpub="isdelanswer"] {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  width: 260px;
+  height: 100px;
+  border-top: 1px solid #ffb30e;
+  box-shadow: 0 7px 20px 0px;
+  text-align: center; }
+  [data-demdetpub="isdelanswer"] h2 {
+    line-height: 55px; }
+    [data-demdetpub="isdelanswer"] h2 b {
+      background-image: url("../../images/icon/icon_choose.png");
+      width: 22px;
+      height: 24px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px; }
+  [data-demdetpub="isdelanswer"] button {
+    width: 80px;
+    height: 30px;
+    margin: 0 10px; }
+  [data-demdetpub="isdelanswer"] i {
+    display: inline-block;
+    border: 14px solid transparent;
+    border-top-color: #fff;
+    position: absolute;
+    bottom: -28px;
+    right: 20px; }

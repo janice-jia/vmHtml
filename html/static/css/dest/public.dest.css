@@ -7,6 +7,55 @@
 .extend-aline:hover, #zcbl-header .header-box .header-right .user-notlogin ul li a:hover, #zcbl-footer .footer-link ul li a:hover, #zcbl-footer .footer-aboutus .footer-aboutus-z ul li a:hover, .zcbl-popup .zcbl-popup570 .zcbl-popupGroup .embedVideoCon a:hover, .zcbl-popup .zcbl-popup570 .zcbl-popupBtn span a:hover {
   text-decoration: underline; }
 
+[data-btn="orbgbtn"] {
+  background-color: #499af5;
+  font-size: 20px;
+  width: 130px;
+  height: 50px; }
+  [data-btn="orbgbtn"] a {
+    color: #171717; }
+
+[data-btn="grbgbtn"] {
+  background-color: #c1c1c1;
+  font-size: 20px;
+  width: 130px;
+  height: 50px;
+  color: #ffffff; }
+  [data-btn="grbgbtn"] a {
+    color: #ffffff; }
+
+[data-btn="tranbgbtn"] {
+  border: 2px solid #f0f0f0;
+  font-size: 20px;
+  width: 130px;
+  height: 50px;
+  background-color: transparent; }
+  [data-btn="tranbgbtn"] a {
+    color: #171717; }
+
+[data-btn="orfontbtn"] {
+  background-color: transparent;
+  font-size: 20px; }
+  [data-btn="orfontbtn"] a {
+    color: #ffb30e; }
+
+[data-btn="blfontbtn"] {
+  background-color: transparent;
+  font-size: 20px;
+  width: 130px;
+  height: 50px;
+  border: 1px solid #499af5;
+  color: #499af5; }
+
+/**  必填项的小红点  **/
+[data-form="must"] {
+  border: 3px solid red;
+  line-height: 28px;
+  display: inline-block;
+  border-radius: 50%;
+  vertical-align: text-top;
+  margin-right: 6px; }
+
 #zcbl-header {
   height: 78px;
   width: 100%;

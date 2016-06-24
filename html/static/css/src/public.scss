@@ -27,22 +27,22 @@ $color-9a9a9a:#9a9a9a;
 //按钮
 //黄背景黑字
 [data-btn="orbgbtn"]{
-    background-color: $orange;
+    background-color: $color-06;
     font-size: 20px;
     width: 130px;
     height: 50px;
     a{
-        color: $darker;
+        color: $color-01;
     }
 }
 [data-btn="grbgbtn"]{
-    background-color: $light-gray;
+    background-color: $color-04;
     font-size: 20px;
     width: 130px;
     height: 50px;
-    color: $white;
+    color: $color-ffffff;
     a{
-        color: $white;
+        color: $color-ffffff;
     }
 }
 [data-btn="tranbgbtn"]{
@@ -52,14 +52,14 @@ $color-9a9a9a:#9a9a9a;
     height: 50px;
     background-color: transparent;
     a{
-        color: $darker;
+        color:$color-01;
     }
 }
 [data-btn="orfontbtn"]{
     background-color: transparent;
     font-size: 20px;
     a{
-        color: $orange;
+        color: $color-07;
     }
 }
 [data-btn="blfontbtn"]{
@@ -67,8 +67,8 @@ $color-9a9a9a:#9a9a9a;
     font-size: 20px;
     width: 130px;
     height: 50px;
-    border: 1px solid $blue;
-    color: $blue;
+    border: 1px solid $color-06;
+    color: $color-06;
 }
 /**  必填项的小红点  **/
 [data-form="must"]{

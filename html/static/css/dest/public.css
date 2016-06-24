@@ -1,74 +1,319 @@
+@charset "UTF-8";
 /*
-Error: Undefined variable: "$orange".
-        on line 30 of ./html/static/css/src/public.scss
-
-25:     }
-26: }
-27: //按钮
-28: //黄背景黑字
-29: [data-btn="orbgbtn"]{
-30:     background-color: $orange;
-31:     font-size: 20px;
-32:     width: 130px;
-33:     height: 50px;
-34:     a{
-35:         color: $darker;
-
-<<<<<<< HEAD
-Backtrace:
-./html/static/css/src/public.scss:30
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:281:in `render'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin.rb:82:in `update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
-C:/Ruby23-x64/bin/sass:23:in `load'
-C:/Ruby23-x64/bin/sass:23:in `<main>'
+*
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$orange\".\A         on line 30 of ./html/static/css/src/public.scss\A \A 25:     }\A 26: }\A 27: //按钮\A 28: //黄背景黑字\A 29: [data-btn=\"orbgbtn\"]{\A 30:     background-color: $orange;\A 31:     font-size: 20px;\A 32:     width: 130px;\A 33:     height: 50px;\A 34:     a{\A 35:         color: $darker;"; }
-=======
+/*深灰*/
+/*友情链接字体灰，边框灰*/
+.extend-aline:hover, #zcbl-header .header-box .header-right .user-notlogin ul li a:hover, #zcbl-footer .footer-link ul li a:hover, #zcbl-footer .footer-aboutus .footer-aboutus-z ul li a:hover, .zcbl-popup .zcbl-popup570 .zcbl-popupGroup .embedVideoCon a:hover, .zcbl-popup .zcbl-popup570 .zcbl-popupBtn span a:hover {
+  text-decoration: underline; }
+
+[data-btn="orbgbtn"] {
+  background-color: #499af5;
+  font-size: 20px;
+  width: 130px;
+  height: 50px; }
+  [data-btn="orbgbtn"] a {
+    color: #171717; }
+
+[data-btn="grbgbtn"] {
+  background-color: #c1c1c1;
+  font-size: 20px;
+  width: 130px;
+  height: 50px;
+  color: #ffffff; }
+  [data-btn="grbgbtn"] a {
+    color: #ffffff; }
+
+[data-btn="tranbgbtn"] {
+  border: 2px solid #f0f0f0;
+  font-size: 20px;
+  width: 130px;
+  height: 50px;
+  background-color: transparent; }
+  [data-btn="tranbgbtn"] a {
+    color: #171717; }
+
+[data-btn="orfontbtn"] {
+  background-color: transparent;
+  font-size: 20px; }
+  [data-btn="orfontbtn"] a {
+    color: #ffb30e; }
+
+[data-btn="blfontbtn"] {
+  background-color: transparent;
+  font-size: 20px;
+  width: 130px;
+  height: 50px;
+  border: 1px solid #499af5;
+  color: #499af5; }
+
+/**  必填项的小红点  **/
+[data-form="must"] {
+  border: 3px solid red;
+  line-height: 28px;
+  display: inline-block;
+  border-radius: 50%;
+  vertical-align: text-top;
+  margin-right: 6px; }
+
+#zcbl-header {
+  height: 78px;
+  width: 100%;
+  margin-bottom: 17px;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background: #171717; }
+  #zcbl-header .header-box {
+    width: 960px;
+    padding: 0 20px;
+    margin: 0 auto;
+    height: 100%; }
+    #zcbl-header .header-box .header-log {
+      float: left;
+      position: relative; }
+      #zcbl-header .header-box .header-log:after {
+        content: "";
+        position: absolute;
+        bottom: -28px;
+        left: -10px;
+        height: 17px;
+        width: 60px;
+        background: url("../../images/icon/icon_headertriangle.png"); }
+      #zcbl-header .header-box .header-log a {
+        display: block;
+        padding: 8px 40px 0 1px; }
+      #zcbl-header .header-box .header-log .zcbl-logo {
+        display: block;
+        width: 38px;
+        height: 48px;
+        background: url("../../images/icon/logo.png") no-repeat; }
+    #zcbl-header .header-box .header-nav {
+      float: left; }
+      #zcbl-header .header-box .header-nav li {
+        float: left;
+        line-height: 78px;
+        width: 90px;
+        text-align: center;
+        font-size: 18px; }
+        #zcbl-header .header-box .header-nav li a {
+          color: #c1c1c1;
+          display: block; }
+        #zcbl-header .header-box .header-nav li:hover, #zcbl-header .header-box .header-nav li.header-nav-hover {
+          height: 78px;
+          background: #2e2e2e;
+          border-bottom: 4px solid #ffb30e; }
+        #zcbl-header .header-box .header-nav li:hover a, #zcbl-header .header-box .header-nav li.header-nav-hover a {
+          color: #ffffff; }
+    #zcbl-header .header-box .header-right {
+      float: right;
+      width: 370px;
+      height: 100%; }
+      #zcbl-header .header-box .header-right .user-login .header-publish {
+        float: right;
+        width: 170px;
+        height: 100%;
+        line-height: 78px;
+        background: #ffb30e;
+        text-align: center; }
+        #zcbl-header .header-box .header-right .user-login .header-publish a {
+          color: #171717;
+          display: block; }
+      #zcbl-header .header-box .header-right .user-login .header-msg {
+        float: right;
+        width: 26px;
+        height: 31px;
+        background: url("../../images/icon/icon_headermsg.png") no-repeat;
+        margin: 22px 60px 0 60px;
+        position: relative; }
+        #zcbl-header .header-box .header-right .user-login .header-msg a {
+          position: absolute;
+          top: -10px;
+          left: -5px;
+          display: block;
+          width: 45px;
+          height: 41px;
+          z-index: 10; }
+        #zcbl-header .header-box .header-right .user-login .header-msg .header-havemsg {
+          position: absolute;
+          top: -5px;
+          left: 26px;
+          width: 12px;
+          height: 12px;
+          background: #e43f3f;
+          border-radius: 50%; }
+      #zcbl-header .header-box .header-right .user-login .header-msg {
+        float: right; }
+      #zcbl-header .header-box .header-right .user-login .header-user {
+        width: 34px;
+        height: 36px;
+        float: right;
+        padding: 20px 0; }
+        #zcbl-header .header-box .header-right .user-login .header-user img {
+          border-radius: 50%; }
+      #zcbl-header .header-box .header-right .user-notlogin ul {
+        width: 215px;
+        float: right; }
+        #zcbl-header .header-box .header-right .user-notlogin ul li {
+          float: left;
+          height: 78px;
+          line-height: 78px;
+          color: #ffffff;
+          padding-left: 14px; }
+          #zcbl-header .header-box .header-right .user-notlogin ul li a {
+            color: #ffffff; }
+            #zcbl-header .header-box .header-right .user-notlogin ul li a.app-color {
+              color: #ffb30e; }
+
+.h95 {
+  height: 95px; }
+
+#zcbl-footer {
+  width: 100%;
+  height: 240px;
+  background: #171717; }
+  #zcbl-footer .footer-box {
+    width: 1000px;
+    margin: 0 auto; }
+  #zcbl-footer .footer-link {
+    height: 100px;
+    line-height: 100px;
+    border-bottom: 1px solid #acacac; }
+    #zcbl-footer .footer-link ul li {
+      float: left;
+      color: #ffffff;
+      padding: 0 9px 0 0; }
+      #zcbl-footer .footer-link ul li.p0 {
+        padding: 0; }
+      #zcbl-footer .footer-link ul li a {
+        font-size: 16px;
+        color: #ffffff; }
+  #zcbl-footer .footer-aboutus {
+    height: 85px; }
+    #zcbl-footer .footer-aboutus .footer-aboutus-l {
+      float: left; }
+      #zcbl-footer .footer-aboutus .footer-aboutus-l h1 {
+        position: relative;
+        line-height: 44px;
+        margin-top: 20px;
+        width: 290px;
+        overflow: hidden; }
+        #zcbl-footer .footer-aboutus .footer-aboutus-l h1 a {
+          color: #ffffff;
+          display: block;
+          height: 44px;
+          padding: 0 0 0 65px;
+          width: 145px;
+          overflow: hidden; }
+          #zcbl-footer .footer-aboutus .footer-aboutus-l h1 a:before {
+            position: absolute;
+            left: 8px;
+            top: 0;
+            content: "";
+            background: url("../../images/icon/icon_footlogo.png") no-repeat;
+            width: 34px;
+            height: 44px; }
+    #zcbl-footer .footer-aboutus .footer-aboutus-z {
+      float: left;
+      margin-top: 20px; }
+      #zcbl-footer .footer-aboutus .footer-aboutus-z ul li {
+        float: left;
+        line-height: 44px;
+        color: #ffffff; }
+        #zcbl-footer .footer-aboutus .footer-aboutus-z ul li span.divide {
+          padding: 0 20px; }
+        #zcbl-footer .footer-aboutus .footer-aboutus-z ul li a {
+          color: #ffffff; }
+    #zcbl-footer .footer-aboutus .footer-aboutus-r {
+      float: right;
+      margin-top: 26px; }
+      #zcbl-footer .footer-aboutus .footer-aboutus-r h2 {
+        position: relative;
+        line-height: 31px;
+        color: #ffffff;
+        padding: 0 0 0 40px; }
+        #zcbl-footer .footer-aboutus .footer-aboutus-r h2:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: url("../../images/icon/icon-phone.png");
+          height: 32px;
+          width: 32px; }
+  #zcbl-footer .footer-copyright p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 12px; }
+
+.zcbl-page {
+  width: 100%;
+  margin: 20px 0; }
+  .zcbl-page ul {
+    text-align: center; }
+    .zcbl-page ul li {
+      display: inline-block;
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      color: #909090;
+      margin: 0 7px; }
+      .zcbl-page ul li a {
+        color: #909090; }
+      .zcbl-page ul li.zcbl-thisPage {
+        background: #ffb30e;
+        color: #ffffff;
+        border-radius: 2px; }
+        .zcbl-page ul li.zcbl-thisPage a {
+          color: #ffffff; }
+      .zcbl-page ul li.zcbl-nextPage a {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        height: 100%; }
+        .zcbl-page ul li.zcbl-nextPage a:before {
+          content: "";
+          position: absolute;
+          top: 7px;
+          left: 10px;
+          background: url("../../images/icon/icon-per-next.png") no-repeat;
+          width: 9px;
+          height: 15px; }
+
+.btn-yellow-50, .btn-yellow-40 {
+  display: block;
+  background: #ffb30e;
+  text-align: center;
+  color: #515151;
+  font-size: 18px; }
+  .btn-yellow-50:hover, .btn-yellow-40:hover {
+    color: #ffffff; }
+
+.btn-yellow-50 {
+  width: 130px;
+  height: 50px;
+  line-height: 50px; }
+
+.btn-yellow-40 {
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  font-weight: 500; }
+
+.btn-blue {
+  display: block;
+  width: 120px;
+  border: 1px solid #499af5;
+  background: #ffffff;
+  color: #499af5;
+  font-size: 18px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 500; }
+  .btn-blue:hover {
+    color: #515151; }
+
 .btn-gray-50 {
   display: block;
   width: 130px;
@@ -183,4 +428,3 @@ body:before {
   font-size: 18px;
   line-height: 25px;
   background: none; }
->>>>>>> 370ebbaab824e2c8719660249e47341327425c12

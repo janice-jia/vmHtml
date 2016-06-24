@@ -49,9 +49,9 @@
           height: 100%;
           width: 40px; }
         #login [data-login="container"] [data-login="form"] .form-group [data-login="logusericon"] {
-          background-image: url("../../images/icon/icon_loguser.png"); }
+          background-position: 0 0; }
         #login [data-login="container"] [data-login="form"] .form-group [data-login="logpwdicon"] {
-          background-image: url("../../images/icon/icon_logpwd.png"); }
+          background-position: -40px 0; }
       #login [data-login="container"] [data-login="form"] [data-login="login_submit"] {
         background-color: #ffb30e;
         height: 60px;
@@ -111,12 +111,22 @@
     #login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_qq"] a {
       color: #3ea6ff; }
     #login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_qq"] b {
-      background-image: url(../../images/icon/icon_qq.png); }
+      background-position: 0 -54px; }
     #login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_weibo"] a {
       color: #ff4943; }
     #login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_weibo"] b {
-      background-image: url(../../images/icon/icon_weibo.png); }
+      background-position: -22px -54px; }
     #login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_weixin"] a {
       color: #4dd854; }
     #login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_weixin"] b {
-      background-image: url(../../images/icon/icon_weixin.png); }
+      background-position: -44px -54px; }
+
+
+/* ../../images/positonIcon/login.png */
+#login [data-login="container"] [data-login="form"] .form-group [data-login="logusericon"],
+#login [data-login="container"] [data-login="form"] .form-group [data-login="logpwdicon"],
+#login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_qq"] b,
+#login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_weibo"] b,
+#login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_weixin"] b{
+background-image: url(../../images/positonIcon/login.png);
+}

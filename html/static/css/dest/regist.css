@@ -57,13 +57,13 @@
             height: 100%;
             width: 40px; }
           #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] .form-group [data-regist="logusericon"] {
-            background-position: 0 0; }
+            background-image: url("../../images/icon/icon_loguser.png"); }
           #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] .form-group [data-regist="logpwdicon"] {
-            background-position: -40px 0; }
+            background-image: url("../../images/icon/icon_logpwd.png"); }
           #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] .form-group [data-regist="regphoneicon"] {
-            background-position: 0 -54px; }
+            background-image: url("../../images/icon/icon_regphone.png"); }
           #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] .form-group [data-regist="regkeyicon"] {
-            background-position: -40px -54px; }
+            background-image: url("../../images/icon/icon_regkey.png"); }
         #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] [data-regist="helpword"] {
           text-align: left;
           color: #ffb30e; }
@@ -102,12 +102,3 @@
         position: absolute;
         bottom: 150px;
         width: 100%; }
-
-
-/* ../../images/positonIcon/regist.dest.png */
-#regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] .form-group [data-regist="logusericon"],
-#regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] .form-group [data-regist="logpwdicon"],
-#regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] .form-group [data-regist="regphoneicon"],
-#regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] .form-group [data-regist="regkeyicon"]{
-background-image: url(../../images/positonIcon/regist.dest.png);
-}

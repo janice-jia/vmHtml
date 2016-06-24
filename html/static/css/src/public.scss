@@ -27,7 +27,7 @@ $color-9a9a9a:#9a9a9a;
 //按钮
 //黄背景黑字
 [data-btn="orbgbtn"]{
-    background-color: $color-06;
+    background-color: $color-07;
     font-size: 20px;
     width: 130px;
     height: 50px;
@@ -72,7 +72,7 @@ $color-9a9a9a:#9a9a9a;
 }
 /**  必填项的小红点  **/
 [data-form="must"]{
-    border:3px solid red;
+    border:3px solid $color-08;
     line-height: 28px;
     display: inline-block;
     border-radius: 50%;

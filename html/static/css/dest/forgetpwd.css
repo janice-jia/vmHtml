@@ -73,9 +73,9 @@
       height: 52px;
       line-height: 51px; }
     #fgpwd [data-fgpwd="form_process"] [data-fgpwd="fgunameicon"] {
-      background-position: 0 0; }
+      background-image: url("../../images/icon/icon_fguser.png"); }
     #fgpwd [data-fgpwd="form_process"] [data-fgpwd="fgverifyicon"] {
-      background-position: -40px 0; }
+      background-image: url("../../images/icon/icon_fgverify.png"); }
     #fgpwd [data-fgpwd="form_process"] .form-group {
       border-bottom: 1px solid #a7a7a7; }
     #fgpwd [data-fgpwd="form_process"] [data-fgpwd="nextBox"] {
@@ -138,10 +138,3 @@
 
 [data-fgpwd="form_finish"] {
   display: none; }
-
-
-/* ../../images/positonIcon/forgetpwd.dest.png */
-#fgpwd [data-fgpwd="form_process"] [data-fgpwd="fgunameicon"],
-#fgpwd [data-fgpwd="form_process"] [data-fgpwd="fgverifyicon"]{
-background-image: url(../../images/positonIcon/forgetpwd.dest.png);
-}

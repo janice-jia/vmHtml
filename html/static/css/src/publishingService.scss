@@ -136,6 +136,9 @@ $black: #000;
       width: 120px;
       height:120px;
       opacity: 0;
+      filter:alpha(opacity=0);       /* IE */
+      -moz-opacity:0;              /* 老版Mozilla */
+      -khtml-opacity:0;              /* 老版Safari */
       cursor: pointer;
       z-index: 10;
       position: relative;

@@ -1438,3 +1438,182 @@ $color-e5e5e5:#e5e5e5;
     }
 }
 
+#per-view-popup{
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top:0;
+    z-index: 1000;
+}
+.per-view-box{
+    width: 1000px;
+    background: $color-ffffff;
+    margin: 128px auto 0 auto;
+    padding: 0 10px;
+    height: auto;
+    .per-view-user{
+        .per-view-uerImg{
+            position: relative;
+            width: 120px;
+            float: left;
+            height: 100px;
+            img{
+                border: 2px solid $color-ffffff;
+                border-radius: 50%;
+                position: absolute;
+                top: -17px;
+            }
+        }
+        .per-view-userInfo{
+            float: left;
+            width: 860px;
+            padding: 30px 0 0 0;
+            p{
+                margin: 0;
+                font-size: 18px;
+                height: 25px;
+                overflow: hidden;
+                width: 140px;
+                a{
+                    color: $color-02;
+                }
+                &.per-site{
+                    font-size: 16px;
+                    position: relative;
+                    padding-left: 18px;
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        background: url("../../images/icon/icon-per-site.png") no-repeat;
+                        width: 12px;
+                        height: 15px;
+                        top:5px;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+    .per-Slide{
+        width:980px;
+        margin:20px auto;
+        #mainphoto {
+            cursor:pointer;
+            display:block;
+        }
+        #mainbody {
+            width:980px;
+            margin:23px 0;
+            position: relative;
+            .picLeft,.picRight{
+                filter:alpha(opacity=0.5);
+                -moz-opacity:0.5;
+                -khtml-opacity: 0.5;
+                opacity: 0.5;
+                &:hover{
+                    filter:alpha(opacity=1);
+                    -moz-opacity:1;
+                    -khtml-opacity: 1;
+                    opacity: 1;
+                }
+                cursor: pointer;
+                position: absolute;
+                top:50%;
+                width: 100px;
+                height: 100px;
+                cursor: pointer;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    top:25px;
+                    width: 24px;
+                    height: 43px;
+                }
+            }
+            .picLeft{
+                left: 0;
+                &:after{
+                    left: 13px;
+                    background: url("../../images/icon/icon-left.png");
+                }
+            }
+            .picRight{
+                right: 0;
+                &:after{
+                    right: 13px;
+                    background: url("../../images/icon/icon-right.png");
+                }
+            }
+        }
+        .per-goleft,.per-goright{
+            float:left;
+            height: 140px;
+            width: 58px;
+            background: $color-04;
+            margin-top: 7px;
+            cursor: pointer;
+            position: relative;
+            &:hover{
+                background: $color-03;
+            }
+            &:after{
+                content: "";
+                position: absolute;
+                width: 24px;
+                height: 43px;
+                top: 48px;
+            }
+        }
+        .per-goleft{
+            &:after{
+                background: url("../../images/icon/icon-left.png");
+                left: 13px;
+            }
+        }
+        .per-goright{
+            &:after{
+                background: url("../../images/icon/icon-right.png");
+                right: 13px;
+            }
+        }
+        #photos {
+            width:862px;
+            height:154px;
+            line-height:140px;
+            overflow:hidden;
+            float: left;
+        }
+        #showArea{
+            img{
+                width: 140px;
+                height: 140px;
+                display:block;
+                float:left;
+                cursor:pointer;
+                margin: 7px 15px 0 15px;
+                &.hoverMax{
+                    border: 2px solid #ffb30e;
+                    width: 154px;
+                    height: 154px;
+                    margin-top: 0;
+                    margin-left: 12px;
+                    margin-right: 12px;
+                }
+            }
+        }
+
+    }
+    .per-picedit{
+        margin-top: 50px;
+        padding-left: 120px;
+        .zcbl-form-horizontal{
+            .zcbl-control-label{
+                text-align: right;
+            }
+        }
+    }
+}
+

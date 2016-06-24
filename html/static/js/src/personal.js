@@ -19,3 +19,79 @@ function showHidePopup(popupId){
         $('#'+popupId).css('display','block');
     }
 }
+
+/*编辑图片start*/
+var spa = 40; //缩略图区域补充数值
+var w = 0;
+
+//设置当前选中
+function setChecked(checkedObj){
+    $('#showArea img').each(function(){
+        $(this).removeClass('hoverMax');
+    });
+    $('#mainphoto').attr('src',checkedObj.attr('rel'));
+    checkedObj.addClass('hoverMax');
+}
+
+$('#mainphoto').click(function() {
+    location = this.getAttribute('name');
+});
+
+function goLeft(){
+    if($(".hoverMax").prevAll().length > 0){
+        setChecked($(".hoverMax").prev('img'));
+        if($(".hoverMax").nextAll().length>4){
+            var marginLeft = parseInt($('#showArea').css('marginLeft'));
+            if(isNaN(marginLeft)){
+                marginLeft = 0;
+            }
+            $('#showArea').css('marginLeft',(marginLeft+170)+'px');
+        }
+    }
+}
+
+function goRight(){
+    if($(".hoverMax").nextAll().length > 0){
+        setChecked($(".hoverMax").next());
+        if($(".hoverMax").prevAll().length>4){
+            var marginLeft = parseInt($('#showArea').css('marginLeft'));
+            if(isNaN(marginLeft)){
+                marginLeft = 0;
+            }
+            $('#showArea').css('marginLeft',(marginLeft-170)+'px');
+        }
+    }
+}
+
+$(function() {
+    var rHtml = '';
+    $('#showArea img').each(function(){
+        w += parseInt($(this).attr('width')) + spa;
+        $(this).click(function() {
+            setChecked($(this));
+        });
+        rHtml += '<img src="' + $(this).attr('rel') + '" width="0" height="0" alt="" />';
+    });
+    $('#showArea').css('width',parseInt(w) + 'px');
+    var rLoad = document.createElement("div");
+    $('#photos').append(rLoad);
+    rLoad.style.width = "1px";
+    rLoad.style.height = "1px";
+    rLoad.style.overflow = "hidden";
+    rLoad.innerHTML = rHtml;
+});
+/*编辑图片end*/
+
+
+function showPicEdit(event){
+    $('#per-view-popup').css('display','block');
+    $(document).keyup(function(e){
+        var key =  e.which;
+        if(key == 27){
+            //关闭
+            $("#per-view-popup").hide();
+            return false;
+        }
+    });
+    event.stopPropagation();
+}

@@ -14,6 +14,7 @@ Error: Undefined variable: "$orange".
 34:     a{
 35:         color: $darker;
 
+<<<<<<< HEAD
 Backtrace:
 ./html/static/css/src/public.scss:30
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
@@ -67,3 +68,119 @@ body:before {
   white-space: pre;
   font-family: monospace;
   content: "Error: Undefined variable: \"$orange\".\A         on line 30 of ./html/static/css/src/public.scss\A \A 25:     }\A 26: }\A 27: //按钮\A 28: //黄背景黑字\A 29: [data-btn=\"orbgbtn\"]{\A 30:     background-color: $orange;\A 31:     font-size: 20px;\A 32:     width: 130px;\A 33:     height: 50px;\A 34:     a{\A 35:         color: $darker;"; }
+=======
+.btn-gray-50 {
+  display: block;
+  width: 130px;
+  border: 1px solid #b0b0b0;
+  background: #efefef;
+  color: #515151;
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: 500; }
+  .btn-gray-50:hover {
+    color: #909090; }
+
+.zcbl-hidden {
+  display: none; }
+
+.zcbl-popup {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000; }
+  .zcbl-popup .zcbl-popupHei285 {
+    height: 274px;
+    margin-top: -137px; }
+  .zcbl-popup .zcbl-popupHei340 {
+    height: 340px;
+    margin-top: -170px; }
+  .zcbl-popup .zcbl-popup570 {
+    width: 570px;
+    position: absolute;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    background: #eeeeee;
+    margin-left: -285px; }
+    .zcbl-popup .zcbl-popup570 .zcbl-popup570-tit {
+      margin: 0 30px;
+      padding: 33px 0 19px 0;
+      color: #2c2c2c;
+      font-size: 28px;
+      border-bottom: 1px solid #9a9a9a; }
+    .zcbl-popup .zcbl-popup570 .zcbl-popupForm {
+      padding: 0 45px;
+      min-height: 90px;
+      border-bottom: 1px solid #acacac;
+      padding-top: 20px; }
+    .zcbl-popup .zcbl-popup570 .zcbl-popupGroup label {
+      height: 50px;
+      line-height: 50px;
+      font-size: 20px;
+      padding: 0;
+      margin: 0;
+      font-weight: normal;
+      width: 125px; }
+    .zcbl-popup .zcbl-popup570 .zcbl-popupGroup .zcbl-popupSm {
+      margin: 0;
+      padding: 0; }
+    .zcbl-popup .zcbl-popup570 .zcbl-popupGroup .zcbl-popupControl {
+      height: 50px;
+      line-height: 50px;
+      width: 300px; }
+    .zcbl-popup .zcbl-popup570 .zcbl-popupGroup .embedVideo {
+      width: 505px;
+      height: 50px;
+      line-height: 50px;
+      margin-left: -13px; }
+    .zcbl-popup .zcbl-popup570 .zcbl-popupGroup .embedVideoCon {
+      font-size: 20px;
+      margin-top: 20px; }
+      .zcbl-popup .zcbl-popup570 .zcbl-popupGroup .embedVideoCon a {
+        color: #499af5; }
+    .zcbl-popup .zcbl-popup570 .zcbl-popupBtn {
+      padding: 20px 30px;
+      line-height: 50px; }
+      .zcbl-popup .zcbl-popup570 .zcbl-popupBtn span {
+        color: #ffb30e; }
+        .zcbl-popup .zcbl-popup570 .zcbl-popupBtn span a {
+          color: #ffb30e;
+          font-size: 20px; }
+
+.zcbl-form-horizontal .zcbl-form-group {
+  margin-left: 0;
+  margin-right: 0; }
+
+.zcbl-form-horizontal .zcbl-control-label {
+  text-align: left;
+  font-size: 20px;
+  line-height: 50px;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  width: 100px; }
+
+.zcbl-form-horizontal .zcbl-control-info {
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  font-size: 18px; }
+
+.zcbl-form-horizontal input.zcbl-form-control {
+  height: 50px;
+  line-height: 50px;
+  background: none;
+  font-size: 18px; }
+
+.zcbl-form-horizontal textarea.zcbl-form-control {
+  height: 170px;
+  font-size: 18px;
+  line-height: 25px;
+  background: none; }
+>>>>>>> 370ebbaab824e2c8719660249e47341327425c12

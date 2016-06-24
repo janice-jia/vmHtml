@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人页面</title>
+    <link rel="stylesheet" href="static/css/minCss/all.min.css">
+
+    <meta charset="utf-8">
+    <!--IE浏览器运行最新的渲染模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="static/css/minCss/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/minCss/all.min.css">
+
+    <!--[if lt IE 9]>
+    <script src="static/js/dest/html5shiv.min.js"></script>
+    <script src="static/js/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--编辑图片开始 start-->
+<style>body{background: none;}</style>
+<div class="per-view-box">
+    <div class="per-view-user">
+        <div class="per-view-uerImg">
+            <a href="#" target="_blank"><img src="./static/images/personal/user.jpg" height="100" width="100" alt=""></a>
+        </div>
+        <div class="per-view-userInfo">
+            <p><a href="#" target="_blank">用户名用户名</a></p>
+            <p class="per-site">北京，中国</p>
+        </div>
+    </div>
+    <div class="per-Slide">
+        <div id="mainbody">
+            <img src="./static/images/personal/max1.jpg" alt="" width="980" height="550" id="mainphoto" rel="images/max1.jpg"  />
+            <div class="picLeft" id="goMaxLeft" onclick="goLeft()"></div>
+            <div class="picRight" id="goMaxRight" onclick="goRight()"></div>
+        </div>
+        <div class="pototBox">
+
+            <div class="per-goleft" onclick="goLeft()">&nbsp;</div>
+
+            <div id="photos">
+                <div id="showArea">
+                    <!--
+                      SRC: 缩略图地址
+                      REL: 大图地址
+                    -->
+                    <img class="hoverMax" src="./static/images/personal/min1.jpg" alt="" width="140" height="140" rel="./static/images/personal/max1.jpg"/>
+                    <img src="./static/images/personal/max2.jpg" alt="" width="140" height="140" rel="./static/images/personal/max2.jpg"  />
+                    <img src="./static/images/personal/min1.jpg" alt="" width="140" height="140" rel="./static/images/personal/max1.jpg"/>
+                    <img src="./static/images/personal/max2.jpg" alt="" width="140" height="140" rel="./static/images/personal/max2.jpg"  />
+                    <img src="./static/images/personal/min1.jpg" alt="" width="140" height="140" rel="./static/images/personal/max1.jpg"/>
+                    <img src="./static/images/personal/max2.jpg" alt="" width="140" height="140" rel="./static/images/personal/max2.jpg"  />
+                    <img src="./static/images/personal/min1.jpg" alt="" width="140" height="140" rel="./static/images/personal/max1.jpg"/>
+                    <img src="./static/images/personal/max2.jpg" alt="" width="140" height="140" rel="./static/images/personal/max2.jpg"  />
+                </div>
+            </div>
+
+            <div class="per-goright" onclick="goRight()">&nbsp;</div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="per-picedit">
+        <form action="" class="form-horizontal zcbl-form-horizontal">
+            <div class="form-group zcbl-form-group">
+                <label for="artwotkName" class="col-sm-2 control-label zcbl-control-label">作品名称：</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control zcbl-form-control" name="artwotkName" id="artwotkName" placeholder="请在此填写图片名称">
+                </div>
+            </div>
+
+            <div class="form-group zcbl-form-group">
+                <label for="keyword" class="col-sm-2 control-label zcbl-control-label">关键词：</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control zcbl-form-control" name="keyword" id="keyword" placeholder="">
+                </div>
+            </div>
+
+            <div class="form-group zcbl-form-group">
+                <label for="introduce" class="col-sm-2 control-label zcbl-control-label">作品介绍：</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control zcbl-form-control" name="introduce" id="introduce" placeholder="">
+                </div>
+            </div>
+            <div class="form-group zcbl-form-group">
+                <label for="introduce" class="col-sm-2 control-label zcbl-control-label">发布时间：</label>
+                <div class="col-sm-9">
+                    <p class="zcbl-control-info">2016年12月18日 12：22：36</p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div id="comments">
+    </div>
+
+    <div class="clear"></div>
+</div>
+<!--编辑图片开始 end-->
+
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="static/js/dest/jquery-1.11.3.min.js"></script>
+<script src="static/js/dest/all.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="static/js/dest/bootstrap.min.js"></script>
+</body>
+</html>

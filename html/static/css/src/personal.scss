@@ -1212,14 +1212,16 @@ $color-e5e5e5:#e5e5e5;
         }
         .per-pub-videoBox{
             margin: 0 auto;
-            width: 527px;
-            height: 405px;
+            width: 525px;
+            height: 403px;
             background: $color-ffffff;
             border: 1px dashed $color-aaaaaa;
             position: relative;
             img{
                 max-width: 525px;
                 max-height: 403px;
+                margin: -1px 0 0 -1px;
+                border: 1px solid $color-07;
             }
             .per-videoImg-edit{
                 width: 200px;
@@ -1316,6 +1318,300 @@ $color-e5e5e5:#e5e5e5;
                 line-height: 22px;
                 color: $color-9a9a9a;
                 margin-bottom: 0;
+            }
+        }
+    }
+}
+
+#per-album{
+    .per-album-tit{
+        .per-album-titL{
+            width: 50%;
+            float: left;
+            font-size: 28px;
+            height: 50px;
+            line-height: 50px;
+            a{
+                display: inline-block;
+                position: relative;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    top:13px;
+                    left: 0;
+                    background: url("../../images/icon/per-album-edit.png");
+                    height: 27px;
+                    width: 27px;
+                }
+            }
+        }
+        .per-album-titR{
+            width: 50%;
+            float: right;
+        }
+    }
+    .per-album-con{
+        margin-top: 20px;
+        ul{
+            li{
+                width: 250px;
+                height: 284px;
+                float: left;
+                padding-top: 10px;
+                margin-bottom: 5px;
+                &:hover{
+                    background: $color-ffffff;
+                    @extend .exten-box-shadow;
+                }
+                .per-album-imgBox{
+                    width: 233px;
+                    height: 232px;
+                    padding-top: 1px;
+                    padding-left: 1px;
+                    background: $color-d2d2d2;
+                    margin: 0 auto;
+                    position: relative;
+                    &:hover{
+                        .per-album-imgEdit{
+                            display: block;
+                        }
+                    }
+                    .per-album-imgEdit{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        .per-album-imgEditFM{
+                            width: 50%;
+                            float: left;
+                            width: 120px;
+                            height: 40px;
+                            line-height: 40px;
+                            text-align: center;
+                            background: $color-02;
+                            color: $color-ffffff;
+                            margin: 8px 0 0 5px;
+                            font-size: 18px;
+                            font-weight: 500;
+                            a{
+                                color: $color-ffffff;
+                                @extend  .extend-aline;
+                            }
+                        }
+                        .per-album-imgEditDel{
+                            width: 40%;
+                            float: right;
+                            text-align: right;
+                            a{
+                                display: inline-block;
+                                width: 34px;
+                                height: 34px;
+                                position: relative;
+                                margin: 8px 14px 0 0;
+                                &:after{
+                                    position: absolute;
+                                    content: "";
+                                    left: 0;
+                                    top:0;
+                                    background: url("../../images/icon/per-album-del.png") no-repeat;
+                                    width: 34px;
+                                    height: 34px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .per-album-titBox{
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 18px;
+                    text-align: center;
+                    a{
+                        color: $color-02;
+                        &:hover{
+                            @extend .extend-aline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#per-view-popup{
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top:0;
+    z-index: 1000;
+}
+.per-view-box{
+    width: 1000px;
+    background: $color-ffffff;
+    margin: 128px auto 0 auto;
+    padding: 0 10px;
+    height: auto;
+    .per-view-user{
+        .per-view-uerImg{
+            position: relative;
+            width: 120px;
+            float: left;
+            height: 100px;
+            img{
+                border: 2px solid $color-ffffff;
+                border-radius: 50%;
+                position: absolute;
+                top: -17px;
+            }
+        }
+        .per-view-userInfo{
+            float: left;
+            width: 860px;
+            padding: 30px 0 0 0;
+            p{
+                margin: 0;
+                font-size: 18px;
+                height: 25px;
+                overflow: hidden;
+                width: 140px;
+                a{
+                    color: $color-02;
+                }
+                &.per-site{
+                    font-size: 16px;
+                    position: relative;
+                    padding-left: 18px;
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        background: url("../../images/icon/icon-per-site.png") no-repeat;
+                        width: 12px;
+                        height: 15px;
+                        top:5px;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+    .per-Slide{
+        width:980px;
+        margin:20px auto;
+        #mainphoto {
+            cursor:pointer;
+            display:block;
+        }
+        #mainbody {
+            width:980px;
+            margin:23px 0;
+            position: relative;
+            .picLeft,.picRight{
+                filter:alpha(opacity=0.5);
+                -moz-opacity:0.5;
+                -khtml-opacity: 0.5;
+                opacity: 0.5;
+                &:hover{
+                    filter:alpha(opacity=1);
+                    -moz-opacity:1;
+                    -khtml-opacity: 1;
+                    opacity: 1;
+                }
+                cursor: pointer;
+                position: absolute;
+                top:50%;
+                width: 100px;
+                height: 100px;
+                cursor: pointer;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    top:25px;
+                    width: 24px;
+                    height: 43px;
+                }
+            }
+            .picLeft{
+                left: 0;
+                &:after{
+                    left: 13px;
+                    background: url("../../images/icon/icon-left.png");
+                }
+            }
+            .picRight{
+                right: 0;
+                &:after{
+                    right: 13px;
+                    background: url("../../images/icon/icon-right.png");
+                }
+            }
+        }
+        .per-goleft,.per-goright{
+            float:left;
+            height: 140px;
+            width: 58px;
+            background: $color-04;
+            margin-top: 7px;
+            cursor: pointer;
+            position: relative;
+            &:hover{
+                background: $color-03;
+            }
+            &:after{
+                content: "";
+                position: absolute;
+                width: 24px;
+                height: 43px;
+                top: 48px;
+            }
+        }
+        .per-goleft{
+            &:after{
+                background: url("../../images/icon/icon-left.png");
+                left: 13px;
+            }
+        }
+        .per-goright{
+            &:after{
+                background: url("../../images/icon/icon-right.png");
+                right: 13px;
+            }
+        }
+        #photos {
+            width:862px;
+            height:154px;
+            line-height:140px;
+            overflow:hidden;
+            float: left;
+        }
+        #showArea{
+            img{
+                width: 140px;
+                height: 140px;
+                display:block;
+                float:left;
+                cursor:pointer;
+                margin: 7px 15px 0 15px;
+                &.hoverMax{
+                    border: 2px solid #ffb30e;
+                    width: 154px;
+                    height: 154px;
+                    margin-top: 0;
+                    margin-left: 12px;
+                    margin-right: 12px;
+                }
+            }
+        }
+
+    }
+    .per-picedit{
+        margin-top: 50px;
+        padding-left: 120px;
+        .zcbl-form-horizontal{
+            .zcbl-control-label{
+                text-align: right;
             }
         }
     }

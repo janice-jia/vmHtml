@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>个人页面-上传音频作品</title>
+    <title>个人页面-上传音频作品2</title>
     <link rel="stylesheet" href="static/css/minCss/all.min.css">
 
     <meta charset="utf-8">
@@ -25,12 +25,11 @@
     <div class="per-pub-artMenu">
         <ul>
             <li><a href="./personal-publish-pic.html" target="_blank">图片作品</a></li>
-            <li><a href="./personal-publish-video.html" target="_blank">视频作品</a></li>
+            <li class="per-pub-artMenu-hover"><a href="./personal-publish-video.html" target="_blank">视频作品</a></li>
             <li><a href="./personal-publish-text.html"  target="_blank">文字作品</a></li>
-            <li class="per-pub-artMenu-hover"><a href="./personal-publish-audio.html"  target="_blank">音频作品</a></li>
+            <li><a href="./personal-publish-audio.html"  target="_blank">音频作品</a></li>
         </ul>
     </div>
-
     <div class="per-pub-video">
         <form action="" class="form-horizontal zcbl-form-horizontal">
             <div class="form-group zcbl-form-group">
@@ -54,9 +53,9 @@
             <div class="form-group zcbl-form-group">
                 <label class="col-sm-2 control-label zcbl-control-label">作品封面：</label>
                 <div class="col-sm-7">
-                    <div class="pub-file">
-                        <input type="file">
-                        <p class="zcbl-form-pBlue"><a href="#" target="_self">+上传封面</a></p>
+                    <div class="pub-file-img">
+                        <img src="./static/images/personal/pub-img.jpg" height="114" width="114" alt="">
+                        <p class="pub-file-imgDel"><a href="#" target="_self"></a></p>
                     </div>
                 </div>
             </div>
@@ -65,11 +64,11 @@
                     <div class="per-pub-vieroQR">
                     </div>
                     <div class="per-pub-videoBox">
-                        <p class="per-pub-addVideoIcon">
-                            <input type="file">
-                        </p>
-                        <p class="per-pub-addVideoSC">上传音频</p>
-                        <p class="per-pub-addVideoTK">目前上传音乐格式仅MP3</p>
+                        <img src="./static/images/personal/videoImg.jpg" height="403" width="525" alt="">
+                        <div class="per-videoImg-edit">
+                            <p class="per-pub-editFM"><a href="#" target="_blank">封面</a></p>
+                            <p class="per-pub-editDel"><a href="#" target="_blank">删除</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -78,6 +77,8 @@
             </div>
         </form>
     </div>
+
+
 </div>
 
 <div id="footer"></div>

@@ -82,11 +82,7 @@ $black: #000;
             color: $darker;
             border-bottom: 2px solid transparent;
           }
-          a:hover {
-            border: none;
-            background: none;
-            color: $orange;
-          }
+
           .active > a {
             border-bottom: 2px solid $orange;
             color: $orange;
@@ -97,6 +93,27 @@ $black: #000;
             }
           }
           [data-demdet="demand"].active {
+            b {
+              background-image: url("../../images/icon/icon_demando.png");
+            }
+          }
+          [data-demdet="comment"]:hover {
+            a{
+              border: none;
+              background: none;
+              color: $orange;
+            }
+            b {
+              background-image: url("../../images/icon/icon_commento.png");
+            }
+          }
+
+          [data-demdet="demand"]:hover {
+            a {
+              border: none;
+              background: none;
+              color: $orange;
+            }
             b {
               background-image: url("../../images/icon/icon_demando.png");
             }

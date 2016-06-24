@@ -55,16 +55,24 @@
             border: none;
             color: #171717;
             border-bottom: 2px solid transparent; }
-          #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul[role="tablist"] a:hover {
-            border: none;
-            background: none;
-            color: #ffb30e; }
           #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul[role="tablist"] .active > a {
             border-bottom: 2px solid #ffb30e;
             color: #ffb30e; }
           #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul[role="tablist"] [data-demdet="comment"].active b {
             background-image: url("../../images/icon/icon_commento.png"); }
           #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul[role="tablist"] [data-demdet="demand"].active b {
+            background-image: url("../../images/icon/icon_demando.png"); }
+          #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul[role="tablist"] [data-demdet="comment"]:hover a {
+            border: none;
+            background: none;
+            color: #ffb30e; }
+          #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul[role="tablist"] [data-demdet="comment"]:hover b {
+            background-image: url("../../images/icon/icon_commento.png"); }
+          #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul[role="tablist"] [data-demdet="demand"]:hover a {
+            border: none;
+            background: none;
+            color: #ffb30e; }
+          #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul[role="tablist"] [data-demdet="demand"]:hover b {
             background-image: url("../../images/icon/icon_demando.png"); }
   #demdet [data-demdet="aside"] {
     padding: 8px;

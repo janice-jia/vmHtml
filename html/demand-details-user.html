@@ -157,11 +157,11 @@
                     <div data-demdet="commentContent">
                         <div data-demdet="content">
                             <div data-demdet="contentLeft">
-                                <img src="static/images/demand/1.jpg" alt="">
+                                <a href="#"><img src="static/images/demand/1.jpg" alt=""></a>
                             </div>
                             <div data-demdet="contentRight">
                                 <ul>
-                                    <li data-demdet="conhead"><h2 data-demdet="username">ABC</h2> <p>2016.5.13 13:00</p></li>
+                                    <li data-demdet="conhead"><h2 data-demdet="username"><a href="#">ABC</a></h2> <p>2016.5.13 13:00</p></li>
                                     <li data-demdet="conbody">评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容</li>
                                     <li data-demdet="confoot"><a href="#" data-demdet="answerbtn"><b></b>回复</a>|<button data-demdet="answerdel">删除</button></li>
                                 </ul>
@@ -170,11 +170,11 @@
                         </div>
                         <div data-demdet="content">
                             <div data-demdet="contentLeft">
-                                <img src="static/images/demand/1.jpg" alt="">
+                                <a href="#"><img src="static/images/demand/1.jpg" alt=""></a>
                             </div>
                             <div data-demdet="contentRight">
                                 <ul>
-                                    <li data-demdet="conhead"><h2 data-demdet="username">用户名用户名</h2> <div data-demdet="answer">回复:@<span>大小姐</span></div><p>2016.5.13 7:31</p></li>
+                                    <li data-demdet="conhead"><h2 data-demdet="username"><a href="#">用户名用户名</a></h2> <div data-demdet="answer">回复:@<span>大小姐</span></div><p>2016.5.13 7:31</p></li>
                                     <li data-demdet="conbody">评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容@ABC</li>
                                     <li data-demdet="confoot"><a href="#" data-demdet="answerbtn"><b></b>回复</a>|<button  data-demdet="answerdel">删除</button></li>
                                 </ul>
@@ -182,11 +182,11 @@
                         </div>
                         <div data-demdet="content">
                             <div data-demdet="contentLeft">
-                                <img src="static/images/demand/1.jpg" alt="">
+                                <a href="#"><img src="static/images/demand/1.jpg" alt=""></a>
                             </div>
                             <div data-demdet="contentRight">
                                 <ul>
-                                    <li data-demdet="conhead"><h2 data-demdet="username">大小姐</h2><p>2016.5.13 7:31</p></li>
+                                    <li data-demdet="conhead"><h2 data-demdet="username"><a href="#">大小姐</a></h2><p>2016.5.13 7:31</p></li>
                                     <li data-demdet="conbody">评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容</li>
                                     <li data-demdet="confoot"><a href="#" data-demdet="answerbtn"><b></b>回复</a>|<button data-demdet="answerdel">删除</button></li>
                                 </ul>
@@ -249,6 +249,22 @@
         </aside>
     </div>
 
+    <!--  投稿成功弹出框  -->
+    <div data-modal="modalbox" id="demdet_works" class="modal fade" style="display: none">
+        <div data-modal="modal">
+            <h2><b></b>投稿已成功！</h2>
+            <p>恭喜您，投稿成功</p>
+        </div>
+    </div>
+
+    <!--  报名成功弹出框  -->
+    <div data-modal="modalbox" id="demdet_person" class="modal fade" style="display: none">
+        <div data-modal="modal">
+            <h2><b></b>报名已成功！</h2>
+            <p>恭喜您，报名成功</p>
+        </div>
+    </div>
+
 </div>
 <!--  删除评论弹出框  -->
 <div data-demdet="isdelanswer" id="demdet_isdelanswer">
@@ -260,21 +276,7 @@
     <i></i>
 </div>
 
-<!--  投稿成功弹出框  -->
-<div data-modal="modalbox" id="demdet_works" class="modal fade" style="display: none">
-    <div data-modal="modal">
-        <h2><b></b>投稿已成功！</h2>
-        <p>恭喜您，投稿成功</p>
-    </div>
-</div>
 
-<!--  报名成功弹出框  -->
-<div data-modal="modalbox" id="demdet_person" class="modal fade" style="display: none">
-    <div data-modal="modal">
-        <h2><b></b>报名已成功！</h2>
-        <p>恭喜您，报名成功</p>
-    </div>
-</div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="static/js/dest/jquery-1.11.3.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

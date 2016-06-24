@@ -24,6 +24,63 @@ $color-9a9a9a:#9a9a9a;
         text-decoration: underline;
     }
 }
+//按钮
+//黄背景黑字
+[data-btn="orbgbtn"]{
+    background-color: $orange;
+    font-size: 20px;
+    width: 130px;
+    height: 50px;
+    a{
+        color: $darker;
+    }
+}
+[data-btn="grbgbtn"]{
+    background-color: $light-gray;
+    font-size: 20px;
+    width: 130px;
+    height: 50px;
+    color: $white;
+    a{
+        color: $white;
+    }
+}
+[data-btn="tranbgbtn"]{
+    border: 2px solid #f0f0f0;
+    font-size: 20px;
+    width: 130px;
+    height: 50px;
+    background-color: transparent;
+    a{
+        color: $darker;
+    }
+}
+[data-btn="orfontbtn"]{
+    background-color: transparent;
+    font-size: 20px;
+    a{
+        color: $orange;
+    }
+}
+[data-btn="blfontbtn"]{
+    background-color: transparent;
+    font-size: 20px;
+    width: 130px;
+    height: 50px;
+    border: 1px solid $blue;
+    color: $blue;
+}
+/**  必填项的小红点  **/
+[data-form="must"]{
+    border:3px solid red;
+    line-height: 28px;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: text-top;
+    margin-right: 6px;
+}
+
+
 //公用头部样式
 #zcbl-header{
     height: 78px;

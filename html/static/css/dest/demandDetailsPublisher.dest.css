@@ -160,73 +160,73 @@
       margin-left: 20px; }
 
 /** 评论 **/
-#demdet_comment {
+.zcbl-comments {
   /** 评论内容 **/ }
-  #demdet_comment [data-demdet="addcomment"] {
+  .zcbl-comments [data-demdet="addcomment"] {
     margin-bottom: 20px;
     padding: 30px; }
-    #demdet_comment [data-demdet="addcomment"] [data-demdet="btn"] {
+    .zcbl-comments [data-demdet="addcomment"] [data-demdet="btn"] {
       text-align: right;
       padding-top: 20px; }
-  #demdet_comment [data-demdet="texeareabox"] {
+  .zcbl-comments [data-demdet="texeareabox"] {
     position: relative; }
-    #demdet_comment [data-demdet="texeareabox"] textarea {
+    .zcbl-comments [data-demdet="texeareabox"] textarea {
       width: 100%;
       height: 146px; }
-    #demdet_comment [data-demdet="texeareabox"] span {
+    .zcbl-comments [data-demdet="texeareabox"] span {
       position: absolute;
       right: 20px;
       bottom: 10px;
       color: #c1c1c1; }
-  #demdet_comment [data-demdet="commentContent"] {
+  .zcbl-comments [data-demdet="commentContent"] {
     border-top: 1px solid #c1c1c1;
     margin: 0 10px;
     padding-top: 30px; }
-    #demdet_comment [data-demdet="commentContent"] [data-demdet="content"] {
+    .zcbl-comments [data-demdet="commentContent"] [data-demdet="content"] {
       margin: 0 20px 30px 10px;
       position: relative; }
-      #demdet_comment [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentLeft"] {
+      .zcbl-comments [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentLeft"] {
         position: absolute;
         vertical-align: top; }
-        #demdet_comment [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentLeft"] img {
+        .zcbl-comments [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentLeft"] img {
           width: 80px;
           height: 80px;
           border-radius: 50%; }
-      #demdet_comment [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] {
+      .zcbl-comments [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] {
         padding-left: 110px; }
-        #demdet_comment [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="conhead"] {
+        .zcbl-comments [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="conhead"] {
           padding-bottom: 24px;
           font-size: 20px;
           color: #909090; }
-          #demdet_comment [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="conhead"] h2 {
+          .zcbl-comments [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="conhead"] h2 {
             display: inline-block;
             font-weight: bold; }
-          #demdet_comment [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="conhead"] div[data-demdet="answer"] {
+          .zcbl-comments [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="conhead"] div[data-demdet="answer"] {
             display: inline-block;
             font-weight: normal; }
-            #demdet_comment [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="conhead"] div[data-demdet="answer"] span {
+            .zcbl-comments [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="conhead"] div[data-demdet="answer"] span {
               color: #499af5; }
-          #demdet_comment [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="conhead"] p {
+          .zcbl-comments [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="conhead"] p {
             font-size: 18px;
             float: right;
             font-weight: normal; }
-        #demdet_comment [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="conbody"] {
+        .zcbl-comments [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="conbody"] {
           padding-bottom: 20px;
           font-size: 18px;
           color: #515151; }
-        #demdet_comment [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="confoot"] {
+        .zcbl-comments [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="confoot"] {
           font-size: 14px; }
-          #demdet_comment [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="confoot"] b {
+          .zcbl-comments [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="confoot"] b {
             background-image: url("../../images/icon/icon_message.png");
             width: 18px;
             height: 18px;
             margin-right: 5px;
             display: inline-block;
             vertical-align: middle; }
-          #demdet_comment [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="confoot"] a {
+          .zcbl-comments [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="confoot"] a {
             color: #499af5;
             margin-right: 10px; }
-          #demdet_comment [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="confoot"] button {
+          .zcbl-comments [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="confoot"] button {
             margin-left: 10px;
             background: none; }
 

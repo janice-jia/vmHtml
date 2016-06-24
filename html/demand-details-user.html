@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <title>需求详情（发布者）</title>
+    <title>需求详情（用户）</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -42,6 +42,7 @@
                 </ul>
             </div>
             <div data-demdet="sectionbody" class="tab-content">
+                <!--  需求  -->
                 <div role="tabpanel" class="tab-pane active" id="demdet_demand">
                     <table>
                         <thead>
@@ -78,34 +79,70 @@
                         </tr>
                         </tbody>
                     </table>
-                    <!-- 发布者 -->
-                    <div data-demdet="publisher">
-                        <!--  头像  -->
-                        <div>
-                            <ul data-demdet="headimg">
-                                <li><a href="#"><img src="static/images/demand/s1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="static/images/demand/1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="static/images/demand/2.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="static/images/demand/1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="static/images/demand/2.jpg" alt=""></a></li>
-                            </ul>
+                    <!--- 用户 --->
+                    <div data-demdet="user">
+                        <!--  投稿  -->
+                        <div  data-demdetuser="works">
+                            <div>
+                                <ul data-demdet="headimg">
+                                    <li>
+                                        <a href="#"><img src="static/images/demand/s1.jpg" alt=""></a>
+                                        <button data-btn="orbgbtn" data-toggle="modal" data-target="#demdet_works">投稿</button>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="static/images/demand/1.jpg" alt=""></a>
+                                        <button data-btn="grbgbtn">已投稿</button>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="static/images/demand/2.jpg" alt=""></a>
+                                        <button data-btn="grbgbtn">已投稿</button>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="static/images/demand/1.jpg" alt=""></a>
+                                        <button data-btn="grbgbtn">已投稿</button>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="static/images/demand/2.jpg" alt=""></a>
+                                        <button data-btn="grbgbtn">已选用</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p>上传的作品最多为15个作品源文件，视频大小限制20M、格式mp4，音乐5M、格式mp3，图片5M、格式jpg、png，文本大小限制5兆，格式word、txt、pdf</p>
                         </div>
-                        <!--  选人  -->
-                        <div data-demdet="btn" data-demdetpub="person" style="display: none">
-                            <button data-btn="orbgbtn">选人</button>
-                            <button data-btn="grbgbtn">已选人</button>
+                        <!--  报名  -->
+                        <div  data-demdetuser="person">
+                            <div>
+                                <ul data-demdet="headimg">
+                                    <li>
+                                        <a href="#"><img src="static/images/demand/s1.jpg" alt=""></a>
+                                        <button data-btn="orbgbtn" data-toggle="modal" data-target="#demdet_person">报名</button>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="static/images/demand/1.jpg" alt=""></a>
+                                        <button data-btn="grbgbtn">已报名</button>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="static/images/demand/2.jpg" alt=""></a>
+                                        <button data-btn="grbgbtn">已报名</button>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="static/images/demand/1.jpg" alt=""></a>
+                                        <button data-btn="grbgbtn">已报名</button>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="static/images/demand/2.jpg" alt=""></a>
+                                        <button data-btn="grbgbtn">已选用</button>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <!--  选稿   -->
-                        <div data-demdet="btn" data-demdetpub="works">
-                            <button data-btn="orbgbtn">选稿</button>
-                            <button data-btn="grbgbtn">已选稿</button>
-                        </div>
+
                     </div>
 
                 </div>
-                <!--  评论  -->
+                <!--  评论 -->
                 <div role="tabpanel" class="tab-pane " id="demdet_comment">
-                    <!--  发表评论  -->
+                    <!-- 发表评论 -->
                     <div data-demdet="addcomment">
                         <p>评论（<span>35</span>）</p>
                         <div data-demdet="texeareabox">
@@ -157,7 +194,7 @@
 
                         </div>
                     </div>
-                    <!--  分页  -->
+                    <!--  分页页码  -->
                     <div id="page"></div>
                 </div>
             </div>
@@ -173,6 +210,11 @@
                     <h2>用户名</h2>
                 </div>
                 <p>自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍介绍</p>
+                <!------           关注                                    邀约                          发布者隐藏                        ------>
+                <div data-demdet="btn">
+                    <button data-btn="orbgbtn">关注</button>
+                    <button data-btn="blfontbtn">邀约</button>
+                </div>
             </div>
             <div data-demdet="aside-footer">
                 <p>需求概述</p>
@@ -206,9 +248,8 @@
 
         </aside>
     </div>
+
 </div>
-
-
 <!--  删除评论弹出框  -->
 <div data-demdet="isdelanswer" id="demdet_isdelanswer">
     <h2><b></b>确认要删除该评论吗</h2>
@@ -219,6 +260,21 @@
     <i></i>
 </div>
 
+<!--  投稿成功弹出框  -->
+<div data-modal="modalbox" id="demdet_works" class="modal fade" style="display: none">
+    <div data-modal="modal">
+        <h2><b></b>投稿已成功！</h2>
+        <p>恭喜您，投稿成功</p>
+    </div>
+</div>
+
+<!--  报名成功弹出框  -->
+<div data-modal="modalbox" id="demdet_person" class="modal fade" style="display: none">
+    <div data-modal="modal">
+        <h2><b></b>报名已成功！</h2>
+        <p>恭喜您，报名成功</p>
+    </div>
+</div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="static/js/dest/jquery-1.11.3.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

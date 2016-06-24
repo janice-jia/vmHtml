@@ -33,10 +33,6 @@ function setChecked(checkedObj){
     checkedObj.addClass('hoverMax');
 }
 
-$('#mainphoto').click(function() {
-    location = this.getAttribute('name');
-});
-
 function goLeft(){
     if($(".hoverMax").prevAll().length > 0){
         setChecked($(".hoverMax").prev('img'));
@@ -83,6 +79,8 @@ $(function() {
 /*编辑图片end*/
 
 
+
+//编辑图片iframe显示、隐藏
 function showPicEdit(event){
     $('#per-view-popup').css('display','block');
     $(document).keyup(function(e){
@@ -93,5 +91,24 @@ function showPicEdit(event){
             return false;
         }
     });
-    event.stopPropagation();
+    $('body', window.parent.document).css('overflow','hidden');
+    $("#editIframe").contents().find("html").click(function(event){
+        $('#per-view-popup', window.parent.document).hide();
+        $('body', window.parent.document).css('overflow','auto');
+        $("#popup-public").hide();
+    });
+
+    $("#editIframe").contents().find(".per-view-box").click(function(event){
+        if (event.stopPropagation) {
+            event.stopPropagation();
+        }else if (window.event) {
+            window.event.cancelBubble = true;
+        }
+    });
+    if (event.stopPropagation) {
+        event.stopPropagation();
+    }else if (window.event) {
+        window.event.cancelBubble = true;
+    }
 }
+

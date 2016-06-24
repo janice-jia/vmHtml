@@ -15,84 +15,86 @@
     <![endif]-->
 </head>
 <body>
-<div id="header" ></div>
 <div id="pubservice">
-    <div class="container">
-        <h2>发布服务</h2>
-        <form class="form-horizontal">
-            <div data-pubservice="fomecontainer">
-
-
-                <div class="form-group">
-                    <label class="col-sm-3 control-label"><span data-form="must"></span>服务名称</label>
-                    <div class="col-sm-9">
-                        <input class="form-control" name="severName" placeholder="4-20个字">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-sm-3 control-label"><span data-form="must"></span>酬劳模式</label>
-                    <div class="col-sm-9">
-                        <input class="form-control" name="payPractices" placeholder="例如：每分钟1-3万">
-                    </div>
-                </div>
-                <div class="form-group" data-pubservice="textarea">
-                    <label class="col-sm-3 control-label"><span data-form="must"></span>服务详情</label>
-                    <div class="col-sm-9">
-                        <!--<input type="password" class="form-control" id="inputPassword4" placeholder="10-140个字">-->
-                        <textarea name="severDetails"  placeholder="10-140个字"></textarea>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-sm-3 control-label">上传代表作品</label>
-                    <div class="col-sm-9" id="pubservice_file">
-                        <!-- 上传新作品 -->
-                        <div data-pubservice="addfile">
-                            <input type="file" id="pubservice_upfile">
-                            <b></b>
+    <div id="header" style="height: 78px;"></div>
+    <div data-pubservice="bg">
+        <div class="container">
+            <h2>发布服务</h2>
+            <form class="form-horizontal">
+                <div data-pubservice="fomecontainer">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label"><span data-form="must"></span>服务名称</label>
+                        <div class="col-sm-9">
+                            <input class="form-control" name="severName" placeholder="4-20个字">
                         </div>
-                        <!-- 视频文件格式 -->
-                        <div data-pubservice="videofile">
-                            <img src="static/images/demand/1.jpg" alt="">
-                            <b></b>
-                            <span data-pubservice="close" data-toggle="#pubservice_close"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label"><span data-form="must"></span>酬劳模式</label>
+                        <div class="col-sm-9">
+                            <input class="form-control" name="payPractices" placeholder="例如：每分钟1-3万">
                         </div>
-                        <!-- 音频文件格式 -->
-                        <div data-pubservice="audiofile">
-                            <img src="static/images/demand/2.jpg" alt="">
-                            <b></b>
-                            <span data-pubservice="close" data-toggle="#pubservice_close"></span>
+                    </div>
+                    <div class="form-group" data-pubservice="textarea">
+                        <label class="col-sm-3 control-label"><span data-form="must"></span>服务详情</label>
+                        <div class="col-sm-9">
+                            <!--<input type="password" class="form-control" id="inputPassword4" placeholder="10-140个字">-->
+                            <textarea name="severDetails"  placeholder="10-140个字"></textarea>
                         </div>
-                        <!-- 图片文件格式 -->
-                        <div data-pubservice="imgfile">
-                            <img src="static/images/demand/1.jpg" alt="">
-                            <b></b>
-                            <span data-pubservice="close" data-toggle="#pubservice_close"></span>
+                    </div>
+                    <div class="form-group" data-demdetpub="pubservice_file">
+                        <label class="col-sm-3 control-label">上传代表作品</label>
+                        <div class="col-sm-9" id="pubservice_file">
+                            <!-- 上传新作品 -->
+                            <div data-pubservice="addfile">
+                                <input type="file" id="pubservice_upfile">
+                                <b></b>
+                            </div>
+                            <!-- 视频文件格式 -->
+                            <div data-pubservice="videofile">
+                                <img src="static/images/demand/1.jpg" alt="">
+                                <b></b>
+                                <span data-pubservice="close" data-toggle="#pubservice_close"></span>
+                            </div>
+                            <!-- 音频文件格式 -->
+                            <div data-pubservice="audiofile">
+                                <img src="static/images/demand/2.jpg" alt="">
+                                <b></b>
+                                <span data-pubservice="close" data-toggle="#pubservice_close"></span>
+                            </div>
+                            <!-- 图片文件格式 -->
+                            <div data-pubservice="imgfile">
+                                <img src="static/images/demand/1.jpg" alt="">
+                                <b></b>
+                                <span data-pubservice="close" data-toggle="#pubservice_close"></span>
+                            </div>
                         </div>
+                        <p>目前代表作品的格式只支持：jpg、png、MP3、MP4最多上传3个</p>
+                    </div>
+                    <div class="form-group" data-pubservice="footer">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <button type="button" data-btn="tranbgbtn"  onclick="javascript:window.history.back(-1);">取消</button>
+                            <button type="button" data-btn="orbgbtn" data-toggle="#pubservice_success">发布</button>
 
+                        </div>
                     </div>
                 </div>
-                <div class="form-group" data-pubservice="footer">
-                    <div class="col-sm-offset-3 col-sm-9">
-                        <button type="submit" data-btn="tranbgbtn"  onclick="javascript:window.history.back(-1);">取消</button>
-                        <button type="submit" data-btn="orbgbtn" data-toggle="#pubservice_success">发布</button>
-
-                    </div>
-                </div>
+            </form>
+        </div>
+        <!--  需求发布成功  -->
+        <div data-modal="modalbox" id="pubservice_success">
+            <div data-modal="modal">
+                <h2><b></b>需求发布成功！</h2>
+                <p><span>3</span>秒后自动跳转到需求详情页</p>
             </div>
-        </form>
-    </div>
-    <div data-modal="modalbox" id="pubservice_success">
-        <div data-modal="modal">
-            <h2><b></b>需求发布成功！</h2>
-            <p><span>3</span>秒后自动跳转到需求详情页</p>
+        </div>
+        <!--    作品删除    -->
+        <div data-modal="modalbox" id="pubservice_close">
+            <div data-modal="modal">
+                <h2><b></b>作品删除成功</h2>
+            </div>
         </div>
     </div>
 
-    <div data-modal="modalbox" id="pubservice_close">
-        <div data-modal="modal">
-            <h2><b></b>作品删除成功</h2>
-        </div>
-    </div>
 </div>
 
 

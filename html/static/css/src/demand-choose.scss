@@ -11,7 +11,7 @@ $white: #fff;
 $black: #000;
 
 /***选人选稿 通用****/
-#choose {
+#demand_choose {
   .container {
     background-color: #fff;
     padding: 0 25px;
@@ -58,17 +58,67 @@ $black: #000;
 
 /**  选人  **/
 #choose_person {
-  [data-demand-person="personbox"] {
+  margin-bottom: 45px;
+  [data-demand-person="personboxl"] {
     width: 190px;
     height: 242px;
-    margin: 0 25px;
+    margin: 24px 21px 0;
+    position: relative;
+    display: inline-block;
 
+    /** 小摸态框 **/
     [data-demand-person="modalbox"] {
-      /** 小摸态框 **/
+      text-align: center;
+      height:0;
+      width: inherit;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color:rgba(0,0,0,.7);
+
+      filter:alpha(opacity=0);
+      -moz-opacity:0;
+      -khtml-opacity: 0;
+      opacity: 0;
+
+
+      -webkit-transition: all .5s;
+      -moz-transition: all .5s;
+      -ms-transition: all .5s;
+      -o-transition: all .5s;
+      transition: all .5s;
+      h3,button{
+        padding-top: 72px;
+        font-size: 18px;
+        background-color: transparent;
+        color: $orange;
+      }
+      a{
+        color: $orange;
+      }
+      hr{
+        border-color: $orange;
+        margin: 30px;
+      }
+      [data-demand-person="chooseover"]{
+        a{
+          line-height:242px;
+        }
+      }
     }
+
+    /**  鼠标移入  **/
+    [data-demand-person="modalbox"]:hover{
+      filter:alpha(opacity=1);
+      -moz-opacity:1;
+      -khtml-opacity: 1;
+      opacity: 1;
+      height: 242px;
+    }
+
+    /** 个人信息 **/
     [data-demand-person="information"] {
       text-align: center;
-      /** 个人信息 **/
       padding: 0 10px;
       [data-demand-person="inheader"] {
         b {
@@ -110,4 +160,6 @@ $black: #000;
     }
   }
 
+
 }
+

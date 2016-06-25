@@ -197,34 +197,3 @@ $black: #000;
     }
   }
 }
-/** 招募作者 **/
-#recruit_modelperson{
-  display:none;
-  [data-modal="modal"]{
-    width:570px;
-    text-align: left;
-    padding:0 32px;
-    [data-recuit="modal-header"]{
-      line-height: 60px;
-      border-bottom:1px solid $gray ;
-      font-size: 20px;
-      padding-top: 15px;
-    }
-    [data-recuit="modal-body"]{
-      line-height: 22px;
-      padding-top: 14px;
-      padding-bottom: 11px;
-    }
-    hr{
-      border-color: $gray;
-      margin-right: -32px;
-      margin-left: -32px;
-    }
-    [data-recuit="modal-footer"]{
-      button {
-        margin-right:30px;
-      }
-      padding-bottom: 20px;
-    }
-  }
-}

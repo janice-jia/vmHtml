@@ -1,78 +1,113 @@
 @charset "UTF-8";
 /***选人选稿 通用****/
-#choose .container {
+#demand_choose .container {
   background-color: #fff;
   padding: 0 25px;
   /* 需求选择通用头部 */ }
-  #choose .container [data-demand-choose="heading"] {
+  #demand_choose .container [data-demand-choose="heading"] {
     border-bottom: 2px solid #c1c1c1;
     padding: 38px 80px 0 78px;
     /***  右边头像区域  ***/ }
-    #choose .container [data-demand-choose="heading"] table {
+    #demand_choose .container [data-demand-choose="heading"] table {
       font-size: 20px; }
-      #choose .container [data-demand-choose="heading"] table td {
+      #demand_choose .container [data-demand-choose="heading"] table td {
         padding-bottom: 20px; }
-        #choose .container [data-demand-choose="heading"] table td span {
+        #demand_choose .container [data-demand-choose="heading"] table td span {
           color: #e43f3f; }
-    #choose .container [data-demand-choose="heading"] [data-demand-choose="headingright"] {
+    #demand_choose .container [data-demand-choose="heading"] [data-demand-choose="headingright"] {
       text-align: right;
       float: right;
       /** 头像及用户民 **/ }
-      #choose .container [data-demand-choose="heading"] [data-demand-choose="headingright"] [data-demand-choose="headimg"] {
+      #demand_choose .container [data-demand-choose="heading"] [data-demand-choose="headingright"] [data-demand-choose="headimg"] {
         text-align: center;
         /** 用户名 **/ }
-        #choose .container [data-demand-choose="heading"] [data-demand-choose="headingright"] [data-demand-choose="headimg"] img {
+        #demand_choose .container [data-demand-choose="heading"] [data-demand-choose="headingright"] [data-demand-choose="headimg"] img {
           width: 116px;
           height: 118px; }
-        #choose .container [data-demand-choose="heading"] [data-demand-choose="headingright"] [data-demand-choose="headimg"] h2 {
+        #demand_choose .container [data-demand-choose="heading"] [data-demand-choose="headingright"] [data-demand-choose="headimg"] h2 {
           color: #515151;
           font-size: 20px;
           margin-top: 16px; }
-      #choose .container [data-demand-choose="heading"] [data-demand-choose="headingright"] p {
+      #demand_choose .container [data-demand-choose="heading"] [data-demand-choose="headingright"] p {
         color: #909090;
         margin: 20px 0; }
 
 /**  选人  **/
-#choose_person [data-demand-person="personbox"] {
-  width: 190px;
-  height: 242px;
-  margin: 0 25px; }
-  #choose_person [data-demand-person="personbox"] [data-demand-person="modalbox"] {
-    /** 小摸态框 **/ }
-  #choose_person [data-demand-person="personbox"] [data-demand-person="information"] {
-    text-align: center;
-    /** 个人信息 **/
-    padding: 0 10px;
-    border-bottom: 1px solid #c1c1c1; }
-    #choose_person [data-demand-person="personbox"] [data-demand-person="information"] [data-demand-person="inheader"] b {
-      display: inline-block;
-      width: 16px;
-      height: 14px;
-      vertical-align: middle; }
-    #choose_person [data-demand-person="personbox"] [data-demand-person="information"] [data-demand-person="inheader"] [data-demand-person="smiconlt"] {
-      float: left; }
-      #choose_person [data-demand-person="personbox"] [data-demand-person="information"] [data-demand-person="inheader"] [data-demand-person="smiconlt"] b {
-        background-position: 0 0; }
-    #choose_person [data-demand-person="personbox"] [data-demand-person="information"] [data-demand-person="inheader"] [data-demand-person="smicongt"] {
-      float: right; }
-      #choose_person [data-demand-person="personbox"] [data-demand-person="information"] [data-demand-person="inheader"] [data-demand-person="smicongt"] b {
-        background-position: 0 -14px; }
-    #choose_person [data-demand-person="personbox"] [data-demand-person="information"] [data-demand-person="inheader"]:after {
-      content: '';
-      display: table;
-      clear: both; }
-    #choose_person [data-demand-person="personbox"] [data-demand-person="information"] img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      margin: 15px 0; }
-    #choose_person [data-demand-person="personbox"] [data-demand-person="information"] p {
-      margin-top: 15px;
-      margin-bottom: 30px; }
+#choose_person {
+  margin-bottom: 45px; }
+  #choose_person [data-demand-person="personboxl"] {
+    width: 190px;
+    height: 242px;
+    margin: 24px 21px 0;
+    position: relative;
+    display: inline-block;
+    /** 小摸态框 **/
+    /**  鼠标移入  **/
+    /** 个人信息 **/ }
+    #choose_person [data-demand-person="personboxl"] [data-demand-person="modalbox"] {
+      text-align: center;
+      height: 0;
+      width: inherit;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      filter: alpha(opacity=0);
+      -moz-opacity: 0;
+      -khtml-opacity: 0;
+      opacity: 0;
+      transition: all .5s; }
+      #choose_person [data-demand-person="personboxl"] [data-demand-person="modalbox"] h3, #choose_person [data-demand-person="personboxl"] [data-demand-person="modalbox"] button {
+        padding-top: 72px;
+        font-size: 18px;
+        background-color: transparent;
+        color: #ffb30e; }
+      #choose_person [data-demand-person="personboxl"] [data-demand-person="modalbox"] a {
+        color: #ffb30e; }
+      #choose_person [data-demand-person="personboxl"] [data-demand-person="modalbox"] hr {
+        border-color: #ffb30e;
+        margin: 30px; }
+      #choose_person [data-demand-person="personboxl"] [data-demand-person="modalbox"] [data-demand-person="chooseover"] a {
+        line-height: 242px; }
+    #choose_person [data-demand-person="personboxl"] [data-demand-person="modalbox"]:hover {
+      filter: alpha(opacity=1);
+      -moz-opacity: 1;
+      -khtml-opacity: 1;
+      opacity: 1;
+      height: 242px; }
+    #choose_person [data-demand-person="personboxl"] [data-demand-person="information"] {
+      text-align: center;
+      padding: 0 10px;
+      border-bottom: 1px solid #c1c1c1; }
+      #choose_person [data-demand-person="personboxl"] [data-demand-person="information"] [data-demand-person="inheader"] b {
+        display: inline-block;
+        width: 16px;
+        height: 14px;
+        vertical-align: middle; }
+      #choose_person [data-demand-person="personboxl"] [data-demand-person="information"] [data-demand-person="inheader"] [data-demand-person="smiconlt"] {
+        float: left; }
+        #choose_person [data-demand-person="personboxl"] [data-demand-person="information"] [data-demand-person="inheader"] [data-demand-person="smiconlt"] b {
+          background-position: 0 0; }
+      #choose_person [data-demand-person="personboxl"] [data-demand-person="information"] [data-demand-person="inheader"] [data-demand-person="smicongt"] {
+        float: right; }
+        #choose_person [data-demand-person="personboxl"] [data-demand-person="information"] [data-demand-person="inheader"] [data-demand-person="smicongt"] b {
+          background-position: 0 -14px; }
+      #choose_person [data-demand-person="personboxl"] [data-demand-person="information"] [data-demand-person="inheader"]:after {
+        content: '';
+        display: table;
+        clear: both; }
+      #choose_person [data-demand-person="personboxl"] [data-demand-person="information"] img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 15px 0; }
+      #choose_person [data-demand-person="personboxl"] [data-demand-person="information"] p {
+        margin-top: 15px;
+        margin-bottom: 30px; }
 
 
 /* ../../images/positonIcon/demand-choose.png */
-#choose_person [data-demand-person="personbox"] [data-demand-person="information"] [data-demand-person="inheader"] [data-demand-person="smiconlt"] b,
-#choose_person [data-demand-person="personbox"] [data-demand-person="information"] [data-demand-person="inheader"] [data-demand-person="smicongt"] b{
+#choose_person [data-demand-person="personboxl"] [data-demand-person="information"] [data-demand-person="inheader"] [data-demand-person="smiconlt"] b,
+#choose_person [data-demand-person="personboxl"] [data-demand-person="information"] [data-demand-person="inheader"] [data-demand-person="smicongt"] b{
 background-image: url(../../images/positonIcon/demand-choose.png);
 }

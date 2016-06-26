@@ -160,6 +160,7 @@
   box-shadow: 0 1px 5px #909090;
   border-radius: 2px; }
 
+/** 选稿弹窗 **/
 #demand_choose [data-demand-works="modal"] {
   padding: 10px;
   background-color: #fff;

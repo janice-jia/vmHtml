@@ -35,7 +35,10 @@ $color-9a9a9a:#9a9a9a;
         color: $color-01;
     }
 }
+/** 禁用按钮 **/
 [data-btn="grbgbtn"]{
+    display: inline-block;
+    text-align: center;
     background-color: $color-04;
     font-size: 20px;
     width: 130px;
@@ -84,7 +87,7 @@ $color-9a9a9a:#9a9a9a;
 
 /****三部分 摸态框***/
 .zcbl-modal-three[data-modal="modalbox"]  {
-    display: none;
+    //display: none;
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -125,7 +128,40 @@ $color-9a9a9a:#9a9a9a;
 }
 
 
-
+/** 视频图标 **/
+.zcbl-videoicon{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    padding: 30%;
+    background-color: rgba(0,0,0,.5);
+    b{
+        display: inline-block;
+        height: 38px;
+        width: 38px;
+        vertical-align: middle;
+        background-image: url("../../images/icon/icon_video.png");
+    }
+}
+/** 音频图标 **/
+.zcbl-audioicon{
+    position: absolute;
+    padding: 30%;
+    top:0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color: rgba(0,0,0,.5);
+    b{
+        display: inline-block;
+        height: 38px;
+        width: 38px;
+        vertical-align: middle;
+        background-image: url("../../images/icon/icon_audio.png");
+    }
+}
 
 //公用头部样式
 #zcbl-header{

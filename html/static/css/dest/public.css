@@ -15,7 +15,10 @@
   [data-btn="orbgbtn"] a {
     color: #171717; }
 
+/** 禁用按钮 **/
 [data-btn="grbgbtn"] {
+  display: inline-block;
+  text-align: center;
   background-color: #c1c1c1;
   font-size: 20px;
   width: 130px;
@@ -58,7 +61,6 @@
 
 /****三部分 摸态框***/
 .zcbl-modal-three[data-modal="modalbox"] {
-  display: none;
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -90,6 +92,38 @@
       padding-bottom: 24px; }
       .zcbl-modal-three[data-modal="modalbox"] [data-modal="modal"] [data-recuit="modal-footer"] button {
         margin-right: 30px; }
+
+/** 视频图标 **/
+.zcbl-videoicon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  padding: 30%;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .zcbl-videoicon b {
+    display: inline-block;
+    height: 38px;
+    width: 38px;
+    vertical-align: middle;
+    background-image: url("../../images/icon/icon_video.png"); }
+
+/** 音频图标 **/
+.zcbl-audioicon {
+  position: absolute;
+  padding: 30%;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .zcbl-audioicon b {
+    display: inline-block;
+    height: 38px;
+    width: 38px;
+    vertical-align: middle;
+    background-image: url("../../images/icon/icon_audio.png"); }
 
 #zcbl-header {
   height: 78px;

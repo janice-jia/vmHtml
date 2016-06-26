@@ -92,11 +92,11 @@
       #choose_person [data-demand-person="personboxl"] [data-demand-person="information"] [data-demand-person="inheader"] [data-demand-person="smiconlt"] {
         float: left; }
         #choose_person [data-demand-person="personboxl"] [data-demand-person="information"] [data-demand-person="inheader"] [data-demand-person="smiconlt"] b {
-          background-position: -12px 0; }
+          background-position: 0 0; }
       #choose_person [data-demand-person="personboxl"] [data-demand-person="information"] [data-demand-person="inheader"] [data-demand-person="smicongt"] {
         float: right; }
         #choose_person [data-demand-person="personboxl"] [data-demand-person="information"] [data-demand-person="inheader"] [data-demand-person="smicongt"] b {
-          background-position: 0 -15px; }
+          background-position: 0 -14px; }
       #choose_person [data-demand-person="personboxl"] [data-demand-person="information"] [data-demand-person="inheader"]:after {
         content: '';
         display: table;
@@ -174,20 +174,25 @@
       width: 100px;
       height: 100px;
       border-radius: 50%;
-      border: 2px solid #fff; }
+      border: 1px solid #fff; }
 #demand_choose [data-demand-works="username"] {
   display: inline-block; }
   #demand_choose [data-demand-works="username"] p b {
     display: inline-block;
     width: 12px;
-    height: 15px;
+    height: 20px;
     vertical-align: middle;
     background-position: 0 0; }
 
 
 /* ../../images/positonIcon/demand-choose.png */
 #choose_person [data-demand-person="personboxl"] [data-demand-person="information"] [data-demand-person="inheader"] [data-demand-person="smiconlt"] b,
-#choose_person [data-demand-person="personboxl"] [data-demand-person="information"] [data-demand-person="inheader"] [data-demand-person="smicongt"] b,
-#demand_choose [data-demand-works="username"] p b{
+#choose_person [data-demand-person="personboxl"] [data-demand-person="information"] [data-demand-person="inheader"] [data-demand-person="smicongt"] b{
 background-image: url(../../images/positonIcon/demand-choose.png);
+}
+
+
+/* ../../images/positonIcon/demand-choose.dest.png */
+#demand_choose [data-demand-works="username"] p b{
+background-image: url(../../images/positonIcon/demand-choose.dest.png);
 }

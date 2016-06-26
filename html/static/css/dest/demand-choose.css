@@ -159,3 +159,27 @@
   border: 1px solid #ffb30e;
   box-shadow: 0 1px 5px #909090;
   border-radius: 2px; }
+
+#demand_choose [data-demand-works="modal"] {
+  padding: 10px;
+  background-color: #fff;
+  margin: 130px auto 0;
+  width: 1000px; }
+  #demand_choose [data-demand-works="modal"] [data-demand-works="userhead"] {
+    margin-right: 20px;
+    display: inline-block;
+    margin-bottom: 35px; }
+    #demand_choose [data-demand-works="modal"] [data-demand-works="userhead"] img {
+      margin-top: -35px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 2px solid #fff; }
+#demand_choose [data-demand-works="username"] {
+  display: inline-block; }
+  #demand_choose [data-demand-works="username"] p b {
+    display: inline-block;
+    width: 12px;
+    height: 15px;
+    vertical-align: middle;
+    background-image: url("../../images/icon/icon_addresssm.png"); }

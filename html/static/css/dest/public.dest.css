@@ -61,6 +61,7 @@
 
 /****三部分 摸态框***/
 .zcbl-modal-three[data-modal="modalbox"] {
+  display: none;
   height: 100vh;
   width: 100%;
   position: fixed;

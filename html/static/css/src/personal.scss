@@ -20,6 +20,8 @@ $color-bfbfbf:#bfbfbf;
 $color-aaaaaa:#aaaaaa;
 $color-9a9a9a:#9a9a9a;
 $color-e5e5e5:#e5e5e5;
+$color-acacac:#acacac;
+$color-fb4444:#fb4444;
 
 .extend-aline{
     &:hover{
@@ -31,7 +33,7 @@ $color-e5e5e5:#e5e5e5;
     background: $color-ffffff;
     box-shadow: 0 0 5px rgba(81, 81, 81, 0.2);
 }
-
+//个人页面作品、需求、服务、关注、粉丝
 #per-wall{
     width: 1000px;
     margin: 30px auto 35px auto;
@@ -723,6 +725,7 @@ $color-e5e5e5:#e5e5e5;
     }
 }
 
+//账号设置
 #per-settings{
     width: 1000px;
     margin: 30px auto 100px auto;
@@ -910,6 +913,7 @@ $color-e5e5e5:#e5e5e5;
     }
 }
 
+//发布作品
 #per-publish{
     padding: 0 16px;
     width: 1000px;
@@ -1323,6 +1327,7 @@ $color-e5e5e5:#e5e5e5;
     }
 }
 
+//相册详细
 #per-album{
     .per-album-tit{
         .per-album-titL{
@@ -1438,6 +1443,7 @@ $color-e5e5e5:#e5e5e5;
     }
 }
 
+//遮罩
 #per-view-popup{
     width: 100%;
     background: rgba(0,0,0,0.5);
@@ -1448,11 +1454,13 @@ $color-e5e5e5:#e5e5e5;
     top:0;
     z-index: 1000;
 }
+
+//编辑查看作品
 .per-view-box{
     width: 1000px;
     background: $color-ffffff;
-    margin: 128px auto 0 auto;
-    padding: 0 10px;
+    margin: 128px auto 10px auto;
+    padding: 0 10px 40px 10px;
     height: auto;
     .per-view-user{
         .per-view-uerImg{
@@ -1614,6 +1622,162 @@ $color-e5e5e5:#e5e5e5;
                 text-align: right;
             }
         }
+    }
+    .videoBody{
+        width: 980px;
+        max-height: 550px;
+        position: relative;
+        .videoIcon{
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            margin: -91px 0 0 -90px;
+            a{
+                display: inline-block;
+                background: url("../../images/icon/icon-per-startVideo.png");
+                width: 180px;
+                height: 180px;
+            }
+        }
+    }
+    .audioBody{
+        width: 980px;
+        max-height: 550px;
+        position: relative;
+        .audioIcon{
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            margin: -91px 0 0 -90px;
+            a{
+                display: inline-block;
+                background: url("../../images/icon/icon-per-startAudio.png");
+                width: 183px;
+                height: 183px;
+            }
+        }
+        .audioSrc{
+            width: 980px;
+            position: absolute;
+            bottom: 5px;
+        }
+    }
+    .textBody{
+        width: 980px;
+        .zcbl-container{
+            width: 940px;
+            margin:  0 auto;
+        }
+        .zcbl-text-edit{
+            width: 880px;
+            margin: 0 auto;
+            h1{
+                p{
+                    font-size: 28px;
+                    margin: 0;
+                    padding: 0;
+                    &.zcbl-text-editL{
+                        float: left;
+                        width: 840px;
+                        overflow: hidden;
+                    }
+                    &.zcbl-text-editR{
+                        width: 33px;
+                        overflow: hidden;
+                        float: right;
+                        a{
+                            display: block;
+                            background: url("../../images/icon/icon-per-edit2.png") no-repeat;
+                            width: 33px;
+                            height: 34px;
+                        }
+                    }
+                }
+
+                margin-bottom: 40px;
+            }
+            p{
+                font-size: 18px;
+                line-height: 35px;
+            }
+            .zcbl-text-editTime{
+                text-align: right;
+                margin: 30px 0;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+//充值
+#per-recharge{
+    width: 1000px;
+    margin: 30px auto 35px auto;
+    .per-recharge-tit{
+        font-size: 28px;
+        padding-left: 12px;
+    }
+    .zcbl-form-horizontal{
+        .zcbl-form-group{
+            padding-left: 40px;
+            margin-bottom: 0;
+        }
+    }
+    .per-recharge-payType{
+        padding-left: 40px;
+        .per-recharge-radio{
+            input[type=radio]{
+                margin-top: 17px;
+            }
+            img{
+                margin-right: 30px;
+            }
+        }
+    }
+    .per-recharge-payList{
+        background: $color-ffffff;
+        border:  1px solid $color-acacac;
+        border-bottom: none;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        ul{
+            li{
+                padding: 0 30px;
+                height: 90px;
+                border-bottom: 1px solid $color-acacac;
+                .per-payList-tit{
+                    font-size: 20px;
+                    padding-top: 15px;
+                }
+                .per-payList-time{
+                    color: $color-03;
+                }
+                .per-payList-income,.per-payList-expend{
+                    margin: 0;
+                    padding: 0;
+                    line-height: 90px;
+                    font-size: 28px;
+                    text-align: right;
+                }
+                .per-payList-expend{
+                    color: $color-fb4444;
+                }
+            }
+        }
+    }
+
+}
+
+//付款详细
+#per-payInfo{
+    width: 1000px;
+    margin: 30px auto 35px auto;
+    .per-payInfo-orderId{
+
     }
 }
 

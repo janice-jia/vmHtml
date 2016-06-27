@@ -80,8 +80,8 @@ $(function() {
 
 
 
-//编辑图片iframe显示、隐藏
-function showPicEdit(event){
+//编辑iframe显示、隐藏
+function showEditIframe(event){
     $('#per-view-popup').css('display','block');
     $(document).keyup(function(e){
         var key =  e.which;
@@ -110,5 +110,11 @@ function showPicEdit(event){
     }else if (window.event) {
         window.event.cancelBubble = true;
     }
+}
+
+//文字作品--编辑
+function showEditText(){
+    $(".zcbl-text-edit").css('display','none');
+    $(".zcbl-container").css('display','block');
 }
 

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人页面-查看、编辑文字作品</title>
+    <link rel="stylesheet" href="static/css/minCss/all.min.css">
+
+    <meta charset="utf-8">
+    <!--IE浏览器运行最新的渲染模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="static/css/minCss/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/minCss/all.min.css">
+
+    <!--编辑器-->
+    <link rel="stylesheet" href="./static/js/umeditor/themes/default/css/umeditor.css">
+
+    <!--[if lt IE 9]>
+    <script src="static/js/dest/html5shiv.min.js"></script>
+    <script src="static/js/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style="background: none">
+<!--编辑文字 start-->
+<div class="per-view-box">
+    <div class="per-view-user">
+        <div class="per-view-uerImg">
+            <a href="./personal-artwork-pic.html" target="_blank"><img src="./static/images/personal/user.jpg" height="100" width="100" alt=""></a>
+        </div>
+        <div class="per-view-userInfo">
+            <p><a href="./personal-artwork-pic.html" target="_blank">用户名用户名</a></p>
+            <p class="per-site">北京，中国</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="textBody">
+        <div class="zcbl-text-edit">
+            <h1>
+                <p class="zcbl-text-editL">What Are Words</p>
+                <p class="zcbl-text-editR"><a href="javascript:;" onclick="showEditText()" target="_self">&nbsp;</a></p>
+                <div class="clear"></div>
+            </h1>
+            <p>你在，我就寸步不离</p>
+            <p>你走，我就如影随形</p>
+            <p>你唤，我就向你证明 我忠贞不渝</p>
+            <p>你最需要我的时候，若我离去 那我与禽兽无异</p>
+            <p>什么是誓言 如果你心不在焉 那就收回你的誓言</p>
+            <p>什么是誓言 如果只能共享荣华 那它必将如浮云般消逝</p>
+            <p>情到浓处 你海誓山盟 那誓言将永不消失 直到地裂天崩</p>
+            <p>你就是上天赐予我的天使 这是命运的安排</p>
+            <p>今晚我将守护在你身旁 与你同甘共苦</p>
+            <p>我将时刻陪伴你 不离不弃</p>
+            <p>什么是誓言 ;如果你心不在焉 ;那就收回你的誓言</p>
+            <p>如果只能共享荣华;那它必将如浮云般消逝</p>
+            <p>情到浓处 ;你海誓山盟 ;那誓言将永不消失 ;直到地裂天崩</p>
+            <p>你在，我就寸步不离</p>
+            <p>你走，我就如影随形</p>
+            <p>你唤，我就向你证明</p>
+            <p>我忠贞不渝</p>
+            <p>你最需要我的时候，若我离去</p>
+            <p>那我与禽兽无异</p>
+            <div class="zcbl-text-editTime">发布时间：2016年12月18日 12：22：36</div>
+        </div>
+        <div class="zcbl-container zcbl-hidden">
+            <script id="container" name="content" type="text/plain" style="width:940px;height:490px;"> 这里写你的初始化内容</script>
+        </div>
+    </div>
+
+    <div id="comments">
+    </div>
+
+</div>
+<!--编辑文字 end-->
+
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="static/js/dest/jquery-1.11.3.min.js"></script>
+<script src="static/js/dest/all.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="static/js/dest/bootstrap.min.js"></script>
+
+
+<!-- 配置文件 -->
+<script type="text/javascript" src="./static/js/umeditor/umeditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="./static/js/umeditor/umeditor.js"></script>
+<!-- 语言包文件 -->
+<script type="text/javascript" src="./static/js/umeditor/lang/zh-cn/zh-cn.js"></script>
+<!-- 实例化编辑器代码 -->
+<script type="text/javascript">
+    $(function(){
+        window.um = UM.getEditor('container', {
+            /* 传入配置参数,可配参数列表看umeditor.config.js */
+            toolbar: ['undo redo | bold italic underline strikethrough | forecolor backcolor removeformat | insertorderedlist insertunorderedlist | selectall cleardoc paragraph | fontfamily fontsize | justifyleft justifycenter justifyright justifyjustify ']
+        });
+    });
+</script>
+</body>
+</html>

@@ -201,8 +201,8 @@
 
     </div>
     <!-- 视频 -->
-    <div data-demand-works="modalbox"    id="demand_chooseworks-video" >
-        <div data-demand-works="modal">
+    <div data-demand-works="modalbox" style="display: none "  id="demand_chooseworks-video"  >
+        <div data-demand-works="modal" class="per-view-box">
             <div data-demand-works="modalheader">
                 <div data-demand-works="userhead"><img src="static/images/demand/1.jpg" alt=""></div>
                 <div data-demand-works="username">
@@ -211,11 +211,14 @@
                 </div>
             </div>
             <div data-demand-works="modalbody">
-                <div data-demand-works="modalvideo">
-                    <b></b>
-                    <video src="static/video&audio/oceans-clip.mp4"  width="980" height="550" controls="controls">
-                        您的浏览器版本较低 请升级浏览器
+                <div class="videoBody">
+                    <video width="980"  height="550"  controls="controls">
+                        <source src="./static/video/video2.mp4" type="video/mp4">
                     </video>
+                    <div class="videoIcon">
+                        <a href="#" target="_self">&nbsp;</a>
+                    </div>
+                    <div class="clear mt25"></div>
                 </div>
 
             </div>
@@ -223,7 +226,7 @@
 
     </div>
     <!-- 音频 -->
-    <div data-demand-works="modalbox"  style="display: none " id="demand_chooseworks-audio" >
+    <div data-demand-works="modalbox" id="demand_chooseworks-audio">
         <div data-demand-works="modal">
             <div data-demand-works="modalheader">
                 <div data-demand-works="userhead"><img src="static/images/demand/1.jpg" alt=""></div>
@@ -232,12 +235,17 @@
                     <p><i></i>北京，中国</p>
                 </div>
             </div>
-            <div data-demand-works="modalbody">
-                <div data-demand-works="modalaudio">
-                    <b></b>
-                    <audio src="static/video&audio/The%20One.mp3"  width="980" height="550" controls="controls">
-                        您的浏览器版本较低 请升级浏览器
+            <div data-demand-works="modalbody" class="per-view-box">
+                <div class="audioBody">
+                    <img src="./static/images/personal/max1.jpg" alt="" width="980" height="550" id="mainphoto" rel="images/max1.jpg"  />
+                    <audio class="audioSrc" controls="controls">
+                        您的浏览器不支持 audio 标签。
+                        <source src="./static/audio/audio.mp3" type="audio/mpeg">
                     </audio>
+                    <div class="audioIcon">
+                        <a href="#" target="_self">&nbsp;</a>
+                    </div>
+                    <div class="clear mt25"></div>
                 </div>
 
             </div>

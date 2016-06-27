@@ -92,11 +92,11 @@
       #choose_person [data-demand-person="personboxl"] [data-demand-person="information"] [data-demand-person="inheader"] [data-demand-person="smiconlt"] {
         float: left; }
         #choose_person [data-demand-person="personboxl"] [data-demand-person="information"] [data-demand-person="inheader"] [data-demand-person="smiconlt"] b {
-          background-position: -12px -183px; }
+          background-position: -12px 0; }
       #choose_person [data-demand-person="personboxl"] [data-demand-person="information"] [data-demand-person="inheader"] [data-demand-person="smicongt"] {
         float: right; }
         #choose_person [data-demand-person="personboxl"] [data-demand-person="information"] [data-demand-person="inheader"] [data-demand-person="smicongt"] b {
-          background-position: -28px -183px; }
+          background-position: 0 -15px; }
       #choose_person [data-demand-person="personboxl"] [data-demand-person="information"] [data-demand-person="inheader"]:after {
         content: '';
         display: table;
@@ -164,8 +164,7 @@
 #demand_choose {
   /** 图片弹窗 **/
   /**  文字弹窗  **/
-  /** 视频弹窗 **/
-  /** 视频弹窗 **/ }
+  /***  音频弹窗  ***/ }
   #demand_choose [data-demand-works="modalbox"] {
     width: 100%;
     min-height: 100vh;
@@ -202,7 +201,7 @@
         margin-right: 5px;
         display: inline-block;
         vertical-align: middle;
-        background-position: 0 -183px; }
+        background-position: 0 0; }
   #demand_choose [data-demand-works="modalimg"] {
     width: 980px;
     height: 550px;
@@ -221,47 +220,17 @@
       font-size: 28px; }
     #demand_choose [data-demand-works="modaltext"] p {
       font-size: 18px; }
-  #demand_choose [data-demand-works="modalvideo"] {
-    position: relative;
-    width: 980px;
-    height: 550px;
-    line-height: 550px;
-    text-align: center; }
-    #demand_choose [data-demand-works="modalvideo"] b {
-      position: absolute;
-      top: 34%;
-      left: 40%;
-      width: 183px;
-      height: 183px;
-      display: inline-block;
-      background-position: 0 0; }
-    #demand_choose [data-demand-works="modalvideo"] video {
-      max-width: 100%;
-      max-height: 100%; }
-  #demand_choose [data-demand-works="modalaudio"] {
-    position: relative;
-    width: 980px;
-    height: 550px;
-    line-height: 550px;
-    text-align: center; }
-    #demand_choose [data-demand-works="modalaudio"] b {
-      position: absolute;
-      top: 34%;
-      left: 40%;
-      width: 183px;
-      height: 183px;
-      display: inline-block;
-      background-position: -183px 0; }
-    #demand_choose [data-demand-works="modalaudio"] audio {
-      max-width: 100%;
-      max-height: 100%; }
+
+/***  音频弹窗  ***/
+#demand_chooseworks-audio .per-view-box {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
 
 
 /* ../../images/positonIcon/demand-choose.png */
 #choose_person [data-demand-person="personboxl"] [data-demand-person="information"] [data-demand-person="inheader"] [data-demand-person="smiconlt"] b,
 #choose_person [data-demand-person="personboxl"] [data-demand-person="information"] [data-demand-person="inheader"] [data-demand-person="smicongt"] b,
-#demand_choose [data-demand-works="username"] p i,
-#demand_choose [data-demand-works="modalvideo"] b,
-#demand_choose [data-demand-works="modalaudio"] b{
+#demand_choose [data-demand-works="username"] p i{
 background-image: url(../../images/positonIcon/demand-choose.png);
 }

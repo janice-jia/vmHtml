@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人页面-查看、编辑视频作品</title>
+    <link rel="stylesheet" href="static/css/minCss/all.min.css">
+
+    <meta charset="utf-8">
+    <!--IE浏览器运行最新的渲染模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="static/css/minCss/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/minCss/all.min.css">
+
+    <!--[if lt IE 9]>
+    <script src="static/js/dest/html5shiv.min.js"></script>
+    <script src="static/js/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style="background: none">
+<!--编辑视频 start-->
+<div class="per-view-box">
+    <div class="per-view-user">
+        <div class="per-view-uerImg">
+            <a href="./personal-artwork-pic.html" target="_blank"><img src="./static/images/personal/user.jpg" height="100" width="100" alt=""></a>
+        </div>
+        <div class="per-view-userInfo">
+            <p><a href="./personal-artwork-pic.html" target="_blank">用户名用户名</a></p>
+            <p class="per-site">北京，中国</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="videoBody">
+        <video width="980"  height="550"  controls="controls">
+            <source src="./static/video/video2.mp4" type="video/mp4">
+        </video>
+        <div class="videoIcon">
+            <a href="#" target="_self">&nbsp;</a>
+        </div>
+        <div class="clear mt25"></div>
+    </div>
+
+
+
+    <div class="per-picedit">
+        <form action="" class="form-horizontal zcbl-form-horizontal">
+            <div class="form-group zcbl-form-group">
+                <label for="artwotkName" class="col-sm-2 control-label zcbl-control-label">作品名称：</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control zcbl-form-control" name="artwotkName" id="artwotkName" placeholder="请在此填写图片名称">
+                    <!--查看时显示-->
+                    <!--<p class="zcbl-control-info">这里显示的是图片的名称</p>-->
+                </div>
+            </div>
+
+            <div class="form-group zcbl-form-group">
+                <label for="keyword" class="col-sm-2 control-label zcbl-control-label">关键词：</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control zcbl-form-control" name="keyword" id="keyword" placeholder="">
+                    <!--查看时显示-->
+                    <!--<p class="zcbl-control-info">关键词1，关键词2，关键词3</p>-->
+                </div>
+            </div>
+
+            <div class="form-group zcbl-form-group">
+                <label for="introduce" class="col-sm-2 control-label zcbl-control-label">作品介绍：</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control zcbl-form-control" name="introduce" id="introduce" placeholder="">
+                    <!--查看时显示-->
+                    <!--<p class="zcbl-control-info-line25">这些作品的是我的作品介绍，纯文字 作品介绍，纯文字性介绍这些作品的是我的作品介绍，纯文字性介绍这些作品的是我的作品介绍，纯文字性介绍这些作品的是我的作品介绍，纯文字性介绍这些作品的是我的作品介绍，纯文字性介绍这些作品的是我的作品介绍，纯文字性介绍这些作品的是我的作品介绍，纯文字性介绍 </p>-->
+                </div>
+            </div>
+            <div class="form-group zcbl-form-group">
+                <label for="introduce" class="col-sm-2 control-label zcbl-control-label">发布时间：</label>
+                <div class="col-sm-9">
+                    <p class="zcbl-control-info">2016年12月18日 12：22：36</p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div id="comments">
+    </div>
+
+</div>
+<!--编辑视频 end-->
+
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="static/js/dest/jquery-1.11.3.min.js"></script>
+<script src="static/js/dest/all.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="static/js/dest/bootstrap.min.js"></script>
+</body>
+</html>

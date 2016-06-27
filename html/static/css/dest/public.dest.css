@@ -417,6 +417,12 @@
   overflow: hidden;
   font-size: 18px; }
 
+.zcbl-form-horizontal .zcbl-control-info-line25 {
+  line-height: 25px;
+  overflow: hidden;
+  font-size: 18px;
+  margin-top: 12px; }
+
 .zcbl-form-horizontal input.zcbl-form-control {
   height: 50px;
   line-height: 50px;

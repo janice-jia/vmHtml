@@ -1086,8 +1086,8 @@
 .per-view-box {
   width: 1000px;
   background: #ffffff;
-  margin: 128px auto 0 auto;
-  padding: 0 10px;
+  margin: 128px auto 10px auto;
+  padding: 0 10px 40px 10px;
   height: auto; }
   .per-view-box .per-view-user .per-view-uerImg {
     position: relative;
@@ -1212,3 +1212,92 @@
     padding-left: 120px; }
     .per-view-box .per-picedit .zcbl-form-horizontal .zcbl-control-label {
       text-align: right; }
+  .per-view-box .videoBody {
+    width: 980px;
+    max-height: 550px;
+    position: relative; }
+    .per-view-box .videoBody .videoIcon {
+      width: 180px;
+      height: 180px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -91px 0 0 -90px; }
+      .per-view-box .videoBody .videoIcon a {
+        display: inline-block;
+        background: url("../../images/icon/icon-per-startVideo.png");
+        width: 180px;
+        height: 180px; }
+  .per-view-box .textBody {
+    width: 980px; }
+    .per-view-box .textBody .zcbl-container {
+      width: 940px;
+      margin: 0 auto; }
+    .per-view-box .textBody .zcbl-text-edit {
+      width: 880px;
+      margin: 0 auto; }
+      .per-view-box .textBody .zcbl-text-edit h1 {
+        margin-bottom: 40px; }
+        .per-view-box .textBody .zcbl-text-edit h1 p {
+          font-size: 28px;
+          margin: 0;
+          padding: 0; }
+          .per-view-box .textBody .zcbl-text-edit h1 p.zcbl-text-editL {
+            float: left;
+            width: 840px;
+            overflow: hidden; }
+          .per-view-box .textBody .zcbl-text-edit h1 p.zcbl-text-editR {
+            width: 33px;
+            overflow: hidden;
+            float: right; }
+            .per-view-box .textBody .zcbl-text-edit h1 p.zcbl-text-editR a {
+              display: block;
+              background: url("../../images/icon/icon-per-edit2.png") no-repeat;
+              width: 33px;
+              height: 34px; }
+      .per-view-box .textBody .zcbl-text-edit p {
+        font-size: 18px;
+        line-height: 35px; }
+      .per-view-box .textBody .zcbl-text-edit .zcbl-text-editTime {
+        text-align: right;
+        margin: 30px 0;
+        font-size: 20px; }
+
+#per-recharge {
+  width: 1000px;
+  margin: 30px auto 35px auto; }
+  #per-recharge .per-recharge-tit {
+    font-size: 28px;
+    padding-left: 12px; }
+  #per-recharge .zcbl-form-horizontal .zcbl-form-group {
+    padding-left: 40px;
+    margin-bottom: 0; }
+  #per-recharge .per-recharge-payType {
+    padding-left: 40px; }
+    #per-recharge .per-recharge-payType .per-recharge-radio input[type=radio] {
+      margin-top: 17px; }
+    #per-recharge .per-recharge-payType .per-recharge-radio img {
+      margin-right: 30px; }
+  #per-recharge .per-recharge-payList {
+    background: #ffffff;
+    border: 1px solid #acacac;
+    border-bottom: none;
+    margin-top: 30px;
+    margin-bottom: 60px; }
+    #per-recharge .per-recharge-payList ul li {
+      padding: 0 30px;
+      height: 90px;
+      border-bottom: 1px solid #acacac; }
+      #per-recharge .per-recharge-payList ul li .per-payList-tit {
+        font-size: 20px;
+        padding-top: 15px; }
+      #per-recharge .per-recharge-payList ul li .per-payList-time {
+        color: #909090; }
+      #per-recharge .per-recharge-payList ul li .per-payList-income, #per-recharge .per-recharge-payList ul li .per-payList-expend {
+        margin: 0;
+        padding: 0;
+        line-height: 90px;
+        font-size: 28px;
+        text-align: right; }
+      #per-recharge .per-recharge-payList ul li .per-payList-expend {
+        color: #fb4444; }

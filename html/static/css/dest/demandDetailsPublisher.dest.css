@@ -55,16 +55,24 @@
             border: none;
             color: #171717;
             border-bottom: 2px solid transparent; }
-          #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul[role="tablist"] a:hover {
-            border: none;
-            background: none;
-            color: #ffb30e; }
           #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul[role="tablist"] .active > a {
             border-bottom: 2px solid #ffb30e;
             color: #ffb30e; }
           #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul[role="tablist"] [data-demdet="comment"].active b {
             background-position: -76px -40px; }
           #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul[role="tablist"] [data-demdet="demand"].active b {
+            background-position: -88px 0; }
+          #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul[role="tablist"] [data-demdet="comment"]:hover a {
+            border: none;
+            background: none;
+            color: #ffb30e; }
+          #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul[role="tablist"] [data-demdet="comment"]:hover b {
+            background-position: -76px -40px; }
+          #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul[role="tablist"] [data-demdet="demand"]:hover a {
+            border: none;
+            background: none;
+            color: #ffb30e; }
+          #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul[role="tablist"] [data-demdet="demand"]:hover b {
             background-position: -88px 0; }
   #demdet [data-demdet="aside"] {
     padding: 8px;
@@ -304,6 +312,8 @@
 #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul [data-demdet="demand"] b,
 #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul[role="tablist"] [data-demdet="comment"].active b,
 #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul[role="tablist"] [data-demdet="demand"].active b,
+#demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul[role="tablist"] [data-demdet="comment"]:hover b,
+#demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul[role="tablist"] [data-demdet="demand"]:hover b,
 .zcbl-comments [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="confoot"] b,
 [data-demdet="isdelanswer"] h2 b,
 #demdet [data-modal="modal"] h2 b{

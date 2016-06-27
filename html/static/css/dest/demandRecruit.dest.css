@@ -139,31 +139,6 @@
     #recruit_modelwork [data-modal="modal"] p {
       line-height: 90px; }
 
-/** 招募作者 **/
-#recruit_modelperson {
-  display: none; }
-  #recruit_modelperson [data-modal="modal"] {
-    width: 570px;
-    text-align: left;
-    padding: 0 32px; }
-    #recruit_modelperson [data-modal="modal"] [data-recuit="modal-header"] {
-      line-height: 60px;
-      border-bottom: 1px solid #909090;
-      font-size: 20px;
-      padding-top: 15px; }
-    #recruit_modelperson [data-modal="modal"] [data-recuit="modal-body"] {
-      line-height: 22px;
-      padding-top: 14px;
-      padding-bottom: 11px; }
-    #recruit_modelperson [data-modal="modal"] hr {
-      border-color: #909090;
-      margin-right: -32px;
-      margin-left: -32px; }
-    #recruit_modelperson [data-modal="modal"] [data-recuit="modal-footer"] {
-      padding-bottom: 20px; }
-      #recruit_modelperson [data-modal="modal"] [data-recuit="modal-footer"] button {
-        margin-right: 30px; }
-
 
 /* ../../images/positonIcon/demandRecruit.png */
 #recruit .container .tab-content [data-recuit="rec_works"] button[data-recuit="adddate"],

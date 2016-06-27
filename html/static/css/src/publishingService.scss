@@ -102,7 +102,7 @@ $black: #000;
 #pubservice_file{
   margin-bottom: 20px;
   /** 通用 **/
-  div{
+  >div{
     width: 120px;
     height: 120px;
     float: left;
@@ -136,6 +136,9 @@ $black: #000;
       width: 120px;
       height:120px;
       opacity: 0;
+      filter:alpha(opacity=0);
+      -moz-opacity:0;
+      -khtml-opacity:0;
       cursor: pointer;
       z-index: 10;
       position: relative;
@@ -146,18 +149,6 @@ $black: #000;
       top: 32px;
       left: 32px;
       background-image: url("../../images/icon/icon_addimg.png");
-    }
-  }
-  /* 视频文件 */
-  [data-pubservice="videofile"] {
-    b{
-      background-image: url("../../images/icon/icon_video.png");
-    }
-  }
-  /* 音频文件 */
-  [data-pubservice="audiofile"] {
-    b{
-      background-image: url("../../images/icon/icon_audio.png");
     }
   }
 }

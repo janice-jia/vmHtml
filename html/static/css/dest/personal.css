@@ -1228,6 +1228,26 @@
         background: url("../../images/icon/icon-per-startVideo.png");
         width: 180px;
         height: 180px; }
+  .per-view-box .audioBody {
+    width: 980px;
+    max-height: 550px;
+    position: relative; }
+    .per-view-box .audioBody .audioIcon {
+      width: 180px;
+      height: 180px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -91px 0 0 -90px; }
+      .per-view-box .audioBody .audioIcon a {
+        display: inline-block;
+        background: url("../../images/icon/icon-per-startAudio.png");
+        width: 183px;
+        height: 183px; }
+    .per-view-box .audioBody .audioSrc {
+      width: 980px;
+      position: absolute;
+      bottom: 5px; }
   .per-view-box .textBody {
     width: 980px; }
     .per-view-box .textBody .zcbl-container {
@@ -1301,3 +1321,7 @@
         text-align: right; }
       #per-recharge .per-recharge-payList ul li .per-payList-expend {
         color: #fb4444; }
+
+#per-payInfo {
+  width: 1000px;
+  margin: 30px auto 35px auto; }

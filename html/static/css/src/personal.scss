@@ -1642,6 +1642,30 @@ $color-fb4444:#fb4444;
             }
         }
     }
+    .audioBody{
+        width: 980px;
+        max-height: 550px;
+        position: relative;
+        .audioIcon{
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            margin: -91px 0 0 -90px;
+            a{
+                display: inline-block;
+                background: url("../../images/icon/icon-per-startAudio.png");
+                width: 183px;
+                height: 183px;
+            }
+        }
+        .audioSrc{
+            width: 980px;
+            position: absolute;
+            bottom: 5px;
+        }
+    }
     .textBody{
         width: 980px;
         .zcbl-container{
@@ -1689,7 +1713,7 @@ $color-fb4444:#fb4444;
     }
 }
 
-
+//充值
 #per-recharge{
     width: 1000px;
     margin: 30px auto 35px auto;
@@ -1746,5 +1770,14 @@ $color-fb4444:#fb4444;
         }
     }
 
+}
+
+//付款详细
+#per-payInfo{
+    width: 1000px;
+    margin: 30px auto 35px auto;
+    .per-payInfo-orderId{
+
+    }
 }
 

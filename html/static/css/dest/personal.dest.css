@@ -44,7 +44,7 @@
             height: 100%;
             display: block; }
             #per-wall .per-wall-l .per-uimg .per-uimg-src .per-uimg-edit a:after {
-              background-position: -272px -102px;
+              background-position: -309px -180px;
               height: 43px;
               width: 43px;
               content: "";
@@ -80,7 +80,7 @@
             left: 0;
             width: 12px;
             height: 15px;
-            background: no-repeat;background-position: -331px -16px; }
+            background: no-repeat;background-position: -363px -141px; }
         #per-wall .per-wall-l .per-uname p a {
           color: #515151; }
     #per-wall .per-wall-l .per-careBtn p {
@@ -112,12 +112,12 @@
         height: 16px;
         line-height: 16px; }
         #per-wall .per-wall-l .per-appraise span.stars-yellow {
-          background: no-repeat;background-position: -331px 0;
+          background: no-repeat;background-position: -218px -321px;
           width: 16px;
           height: 16px;
           display: block; }
         #per-wall .per-wall-l .per-appraise span.stars-gray {
-          background: no-repeat;background-position: -272px -181px;
+          background: no-repeat;background-position: -387px -16px;
           width: 16px;
           height: 16px;
           display: block; }
@@ -210,7 +210,7 @@
             top: 0;
             width: 115px;
             height: 100px;
-            background: no-repeat;background-position: 0 -180px; }
+            background: no-repeat;background-position: -102px -183px; }
           #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-picFile .file-num {
             position: absolute;
             width: 48px;
@@ -238,7 +238,7 @@
             top: 0;
             width: 104px;
             height: 83px;
-            background: no-repeat;background-position: -115px -200px; }
+            background: no-repeat;background-position: 0 -285px; }
         #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-audioFile {
           height: 100px;
           width: 100%;
@@ -251,7 +251,7 @@
             top: 0;
             width: 102px;
             height: 102px;
-            background: no-repeat;background-position: -180px 0; }
+            background: no-repeat;background-position: 0 -183px; }
         #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-textFile {
           height: 100px;
           width: 100%;
@@ -264,7 +264,7 @@
             top: 0;
             width: 92px;
             height: 98px;
-            background: no-repeat;background-position: -180px -102px; }
+            background: no-repeat;background-position: -217px -180px; }
         #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgEdit {
           text-align: center;
           padding-top: 10px; }
@@ -336,7 +336,7 @@
               position: absolute;
               top: 4px;
               left: 0;
-              background: no-repeat;background-position: -165px -180px;
+              background: no-repeat;background-position: -199px -332px;
               width: 14px;
               height: 16px; }
           #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo ul {
@@ -355,7 +355,7 @@
                   position: absolute;
                   top: 4px;
                   left: 0;
-                  background: no-repeat;background-position: -65px -323px;
+                  background: no-repeat;background-position: -387px 0;
                   width: 27px;
                   height: 16px; }
               #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-bzj {
@@ -365,7 +365,7 @@
                   position: absolute;
                   top: 4px;
                   left: 0;
-                  background: no-repeat;background-position: -149px -180px;
+                  background: no-repeat;background-position: -309px -223px;
                   width: 16px;
                   height: 17px; }
               #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-time {
@@ -375,7 +375,7 @@
                   position: absolute;
                   top: 4px;
                   left: 0;
-                  background: no-repeat;background-position: -133px -180px;
+                  background: no-repeat;background-position: -363px -124px;
                   width: 16px;
                   height: 17px; }
         #per-wall .per-wall-r .per-req ul li .per-reqStatus {
@@ -447,7 +447,7 @@
               left: 0;
               width: 13px;
               height: 12px;
-              background: no-repeat;background-position: -108px -319px; }
+              background: no-repeat;background-position: -325px -223px; }
           #per-wall .per-wall-r .per-fans ul li .per-fansNum .per-fansNum-r {
             margin-bottom: 0;
             width: auto;
@@ -465,7 +465,7 @@
               left: 0;
               width: 16px;
               height: 14px;
-              background: no-repeat;background-position: -92px -319px; }
+              background: no-repeat;background-position: -309px -240px; }
         #per-wall .per-wall-r .per-fans ul li .per-fansImg {
           width: 100px;
           height: 100px;
@@ -495,7 +495,7 @@
               content: "";
               top: 0;
               left: 0;
-              background: no-repeat;background-position: -331px -16px;
+              background: no-repeat;background-position: -363px -141px;
               width: 12px;
               height: 15px; }
         #per-wall .per-wall-r .per-fans ul li .per-fansBtn, #per-wall .per-wall-r .per-fans ul li .per-fansBtn-already {
@@ -552,13 +552,13 @@
   #per-settings .per-setEdit a:before {
     top: 33px;
     right: 0;
-    background: no-repeat;background-position: -331px -31px;
+    background: no-repeat;background-position: -276px -278px;
     width: 13px;
     height: 14px; }
   #per-settings .per-set-up a:before {
     top: 33px;
     right: 0;
-    background: no-repeat;background-position: -315px -108px;
+    background: no-repeat;background-position: -164px -357px;
     width: 13px;
     height: 13px; }
   #per-settings .per-setItem {
@@ -573,15 +573,15 @@
         display: inline-block;
         margin: 30px 30px 0 0; }
       #per-settings .per-setItem .per-itemTit ul li .per-set-wx {
-        background: no-repeat;background-position: -315px -83px;
+        background: no-repeat;background-position: -169px -332px;
         width: 30px;
         height: 25px; }
       #per-settings .per-setItem .per-itemTit ul li .per-set-qq {
-        background: no-repeat;background-position: -159px -283px;
+        background: no-repeat;background-position: -140px -348px;
         width: 24px;
         height: 25px; }
       #per-settings .per-setItem .per-itemTit ul li .per-set-wb {
-        background: no-repeat;background-position: -255px -200px;
+        background: no-repeat;background-position: -69px -368px;
         width: 31px;
         height: 25px; }
     #per-settings .per-setItem .per-itemCon {
@@ -629,7 +629,7 @@
           top: 47px;
           left: 66px;
           content: "";
-          background-position: -282px 0;
+          background-position: -169px -283px;
           width: 49px;
           height: 49px; }
         #per-settings .per-setItem .per-itemCon .per-input-file p {
@@ -740,7 +740,7 @@
               top: 0;
               left: 0;
               z-index: 0;
-              background-position: 0 -280px;
+              background-position: -104px -283px;
               width: 65px;
               height: 65px; }
           #per-publish .per-pub-picBox ul li.per-pub-add p.per-pub-addSC {
@@ -808,7 +808,7 @@
                   top: 10px;
                   right: 6px;
                   content: "";
-                  background: no-repeat;background-position: -272px -145px;
+                  background: no-repeat;background-position: -363px -43px;
                   width: 36px;
                   height: 36px; }
             #per-publish .per-pub-picBox ul li .per-pub-edit p.per-pub-editDel {
@@ -822,7 +822,7 @@
                   position: absolute;
                   left: 6px;
                   top: 10px;
-                  background: no-repeat;background-position: -89px -283px;
+                  background: no-repeat;background-position: -104px -348px;
                   width: 36px;
                   height: 36px; }
         #per-publish .per-pub-picBox ul li .per-pub-tit {
@@ -875,7 +875,7 @@
       position: absolute;
       top: -5px;
       right: -7px;
-      background-position: -115px -180px;
+      background-position: -363px -106px;
       width: 18px;
       height: 18px; }
       #per-publish .pub-file-img .pub-file-imgDel a {
@@ -931,7 +931,7 @@
                 top: 10px;
                 right: 6px;
                 content: "";
-                background: no-repeat;background-position: -219px -200px;
+                background: no-repeat;background-position: 0 -368px;
                 width: 36px;
                 height: 36px; }
           #per-publish .per-pub-videoUpload .per-pub-videoBox .per-videoImg-edit p.per-pub-editDel {
@@ -945,7 +945,7 @@
                 position: absolute;
                 left: 6px;
                 top: 10px;
-                background: no-repeat;background-position: -89px -283px;
+                background: no-repeat;background-position: -104px -348px;
                 width: 36px;
                 height: 36px; }
       #per-publish .per-pub-videoUpload .per-pub-videoBox .per-pub-addVideoIcon {
@@ -972,7 +972,7 @@
           position: absolute;
           top: 0;
           left: 0;
-          background-position: 0 -280px;
+          background-position: -104px -283px;
           width: 65px;
           height: 65px; }
       #per-publish .per-pub-videoUpload .per-pub-videoBox .per-pub-addVideoSC {
@@ -1002,7 +1002,7 @@
       position: absolute;
       top: 13px;
       left: 0;
-      background-position: -219px -236px;
+      background-position: -363px -79px;
       height: 27px;
       width: 27px; }
 #per-album .per-album-tit .per-album-titR {
@@ -1062,7 +1062,7 @@
               content: "";
               left: 0;
               top: 0;
-              background: no-repeat;background-position: -125px -283px;
+              background: no-repeat;background-position: -242px -278px;
               width: 34px;
               height: 34px; }
     #per-album .per-album-con ul li .per-album-titBox {
@@ -1118,7 +1118,7 @@
         .per-view-box .per-view-user .per-view-userInfo p.per-site:before {
           content: "";
           position: absolute;
-          background: no-repeat;background-position: -331px -16px;
+          background: no-repeat;background-position: -363px -141px;
           width: 12px;
           height: 15px;
           top: 5px;
@@ -1159,12 +1159,12 @@
         left: 0; }
         .per-view-box .per-Slide #mainbody .picLeft:after {
           left: 13px;
-          background-position: -282px -49px; }
+          background-position: -218px -278px; }
       .per-view-box .per-Slide #mainbody .picRight {
         right: 0; }
         .per-view-box .per-Slide #mainbody .picRight:after {
           right: 13px;
-          background-position: -65px -280px; }
+          background-position: -363px 0; }
     .per-view-box .per-Slide .per-goleft, .per-view-box .per-Slide .per-goright {
       float: left;
       height: 140px;
@@ -1182,10 +1182,10 @@
         height: 43px;
         top: 48px; }
     .per-view-box .per-Slide .per-goleft:after {
-      background-position: -282px -49px;
+      background-position: -218px -278px;
       left: 13px; }
     .per-view-box .per-Slide .per-goright:after {
-      background-position: -65px -280px;
+      background-position: -363px 0;
       right: 13px; }
     .per-view-box .per-Slide #photos {
       width: 862px;
@@ -1225,9 +1225,29 @@
       margin: -91px 0 0 -90px; }
       .per-view-box .videoBody .videoIcon a {
         display: inline-block;
-        background-position: 0 0;
+        background-position: -183px 0;
         width: 180px;
         height: 180px; }
+  .per-view-box .audioBody {
+    width: 980px;
+    max-height: 550px;
+    position: relative; }
+    .per-view-box .audioBody .audioIcon {
+      width: 180px;
+      height: 180px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -91px 0 0 -90px; }
+      .per-view-box .audioBody .audioIcon a {
+        display: inline-block;
+        background-position: 0 0;
+        width: 183px;
+        height: 183px; }
+    .per-view-box .audioBody .audioSrc {
+      width: 980px;
+      position: absolute;
+      bottom: 5px; }
   .per-view-box .textBody {
     width: 980px; }
     .per-view-box .textBody .zcbl-container {
@@ -1252,7 +1272,7 @@
             float: right; }
             .per-view-box .textBody .zcbl-text-edit h1 p.zcbl-text-editR a {
               display: block;
-              background: no-repeat;background-position: -306px -49px;
+              background: no-repeat;background-position: -36px -368px;
               width: 33px;
               height: 34px; }
       .per-view-box .textBody .zcbl-text-edit p {
@@ -1302,6 +1322,10 @@
       #per-recharge .per-recharge-payList ul li .per-payList-expend {
         color: #fb4444; }
 
+#per-payInfo {
+  width: 1000px;
+  margin: 30px auto 35px auto; }
+
 
 /* ../../images/positonIcon/personal.png */
 #per-wall .per-wall-l .per-uimg .per-uimg-src .per-uimg-edit a:after,
@@ -1340,6 +1364,7 @@
 .per-view-box .per-Slide .per-goleft:after,
 .per-view-box .per-Slide .per-goright:after,
 .per-view-box .videoBody .videoIcon a,
+.per-view-box .audioBody .audioIcon a,
 .per-view-box .textBody .zcbl-text-edit h1 p.zcbl-text-editR a{
 background-image: url(../../images/positonIcon/personal.png);
 }

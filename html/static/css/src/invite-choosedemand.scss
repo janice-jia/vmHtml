@@ -1,0 +1,185 @@
+@charset "utf-8";
+/*
+* header
+*/
+
+$color-01: #171717;
+$color-02: #515151;
+$color-03: #909090;
+$color-04: #c1c1c1; //(输入框边框颜色)
+$color-05: #eeeeee; //(背景色)
+$color-06: #499af5;
+$color-07: #ffb30e;
+$color-08: #e43f3f;
+
+$color-ffffff: #ffffff;
+$color-a0a0a0: #a0a0a0;
+$color-d2d2d2: #d2d2d2;
+$color-f8f8f8: #f8f8f8;
+$color-bfbfbf: #bfbfbf;
+$color-aaaaaa: #aaaaaa;
+$color-9a9a9a: #9a9a9a;
+$color-e5e5e5: #e5e5e5;
+$color-acacac: #acacac;
+$color-fb4444: #fb4444;
+.extend-aline {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+#choosedemand {
+  .container {
+    padding-top: 30px;
+    width: 1000px;
+  }
+  .per-req {
+    ul {
+
+      width: 100%;
+      li {
+        .checkbox-yes {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          border: 1px solid $color-07;
+          float: left;
+          margin-top: 40px;
+          input {
+            width: 30px;
+            height: 30px;
+            margin-top: 0;
+            opacity: .5;
+          }
+        }
+        .checkbox-no {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          border: 1px solid $color-03;
+          float: left;
+          margin-top: 40px;
+          input {
+            width: 30px;
+            height: 30px;
+            margin-top: 0;
+            opacity: .3;
+          }
+        }
+        .checkbox-content{
+          padding-left: 50px;
+
+
+        }
+
+        .per-reqTit {
+          font-size: 22px;
+          color: $color-02;
+          overflow: hidden;
+          height: 25px;
+          line-height: 25px;
+          margin: 20px 0;
+          h1 {
+            width: 450px;
+            float: left;
+            margin: 0 10px 0 0;
+            a {
+              color: $color-02;
+              @extend .extend-aline;
+            }
+          }
+          p {
+            float: right;
+            text-align: right;
+            width: 230px;
+            span {
+              color: $color-08;
+            }
+          }
+        }
+        .per-reqCon {
+          h3 {
+            width: 100%;
+            font-size: 18px;
+            height: 25px;
+            line-height: 25px;
+            overflow: hidden;
+            font-family: "adobeheitistd regular", "Microsoft YaHei";
+            color: $color-03;
+          }
+          .per-reqInfo {
+            margin: 15px 0 20px 0;
+            p {
+              float: left;
+              position: relative;
+              b {
+                vertical-align: middle;
+                display: inline-block;
+                width: 14px;
+                height: 16px;margin-right: 11px;
+              }
+              b[data-choose-demand="usericon"]{
+                background: url("../../images/icon/icon_oruser.png") no-repeat;
+              }
+              b[data-choose-demand="workicon"]{
+                background: url("../../images/icon/icon-per-zjArt.png") no-repeat;
+              }
+            }
+            ul {
+              float: right;
+              width: 490px;
+              color: $color-03;
+              text-align: right;
+              li {
+                display: inline-block;
+                position: relative;
+                margin-left: 25px;
+                &.per-req-people {
+                  padding-left: 35px;
+                  b {
+                    vertical-align: middle;
+                    display: inline-block;
+                    width: 27px;
+                    height: 16px;
+                  }
+                  b[data-choose-demand="eye"]{
+                    background: url("../../images/icon/icon-per-cy.png") no-repeat;
+                  }
+                }
+                &.per-req-bzj {
+                  width: 103px;
+                  b {
+                    background: url("../../images/icon/icon-per-bzj.png") no-repeat;
+                    margin-right: 7px;
+                    width: 16px;
+                    height: 17px;
+                    display: inline-block;
+                    vertical-align: middle;
+                  }
+                }
+                &.per-req-time {
+                  width: 108px;
+                  padding-left: 22px;
+                  &:before {
+                    content: "";
+                    position: absolute;
+                    top: 4px;
+                    left: 0;
+                    background: url("../../images/icon/icon-per-time.png") no-repeat;
+                    width: 16px;
+                    height: 17px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .per-reqLine {
+          height: 1px;
+          margin-left: -50px;
+          border-bottom: 1px solid $color-d2d2d2;
+        }
+      }
+    }
+  }
+}

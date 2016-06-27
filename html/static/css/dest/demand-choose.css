@@ -161,26 +161,97 @@
   border-radius: 2px; }
 
 /** 选稿弹窗 **/
-#demand_choose [data-demand-works="modal"] {
-  padding: 10px;
-  background-color: #fff;
-  margin: 130px auto 0;
-  width: 1000px; }
-  #demand_choose [data-demand-works="modal"] [data-demand-works="userhead"] {
-    margin-right: 20px;
-    display: inline-block;
-    margin-bottom: 35px; }
-    #demand_choose [data-demand-works="modal"] [data-demand-works="userhead"] img {
-      margin-top: -35px;
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      border: 2px solid #fff; }
-#demand_choose [data-demand-works="username"] {
-  display: inline-block; }
-  #demand_choose [data-demand-works="username"] p b {
-    display: inline-block;
-    width: 12px;
-    height: 15px;
-    vertical-align: middle;
-    background-image: url("../../images/icon/icon_addresssm.png"); }
+#demand_choose {
+  /** 图片弹窗 **/
+  /**  文字弹窗  **/
+  /** 视频弹窗 **/
+  /** 视频弹窗 **/ }
+  #demand_choose [data-demand-works="modalbox"] {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5); }
+  #demand_choose [data-demand-works="modal"] {
+    padding: 10px;
+    background-color: #fff;
+    margin: 130px auto 50px;
+    width: 1000px; }
+    #demand_choose [data-demand-works="modal"] [data-demand-works="userhead"] {
+      margin-right: 20px;
+      display: inline-block;
+      margin-bottom: 30px; }
+      #demand_choose [data-demand-works="modal"] [data-demand-works="userhead"] img {
+        margin-top: -35px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 3px solid #fff; }
+  #demand_choose [data-demand-works="username"] {
+    display: inline-block; }
+    #demand_choose [data-demand-works="username"] h2 {
+      font-size: 18px;
+      color: #515151;
+      font-weight: bold;
+      margin-bottom: 10px; }
+    #demand_choose [data-demand-works="username"] p {
+      color: #515151; }
+      #demand_choose [data-demand-works="username"] p i {
+        width: 12px;
+        height: 15px;
+        margin-right: 5px;
+        display: inline-block;
+        vertical-align: middle;
+        background-image: url("../../images/icon/icon_addresssm.png"); }
+  #demand_choose [data-demand-works="modalimg"] {
+    width: 980px;
+    height: 550px;
+    line-height: 550px;
+    text-align: center; }
+    #demand_choose [data-demand-works="modalimg"] img {
+      max-width: 100%;
+      max-height: 100%; }
+  #demand_choose [data-demand-works="modaltext"] {
+    padding: 0 50px;
+    color: #515151; }
+    #demand_choose [data-demand-works="modaltext"] h1 {
+      margin-top: 22px;
+      margin-bottom: 60px;
+      font-weight: bold;
+      font-size: 28px; }
+    #demand_choose [data-demand-works="modaltext"] p {
+      font-size: 18px; }
+  #demand_choose [data-demand-works="modalvideo"] {
+    position: relative;
+    width: 980px;
+    height: 550px;
+    line-height: 550px;
+    text-align: center; }
+    #demand_choose [data-demand-works="modalvideo"] b {
+      position: absolute;
+      top: 34%;
+      left: 40%;
+      width: 183px;
+      height: 183px;
+      display: inline-block;
+      background-image: url("../../images/icon/icon_videolg.png"); }
+    #demand_choose [data-demand-works="modalvideo"] video {
+      max-width: 100%;
+      max-height: 100%; }
+  #demand_choose [data-demand-works="modalaudio"] {
+    position: relative;
+    width: 980px;
+    height: 550px;
+    line-height: 550px;
+    text-align: center; }
+    #demand_choose [data-demand-works="modalaudio"] b {
+      position: absolute;
+      top: 34%;
+      left: 40%;
+      width: 183px;
+      height: 183px;
+      display: inline-block;
+      background-image: url("../../images/icon/icon_audiolg.png"); }
+    #demand_choose [data-demand-works="modalaudio"] audio {
+      max-width: 100%;
+      max-height: 100%; }

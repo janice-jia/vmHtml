@@ -54,6 +54,7 @@
           background-position: -40px 0; }
       #login [data-login="container"] [data-login="form"] [data-login="login_submit"] {
         background-color: #ffb30e;
+        width: 100%;
         height: 60px;
         margin-top: 15px;
         margin-bottom: 20px; }

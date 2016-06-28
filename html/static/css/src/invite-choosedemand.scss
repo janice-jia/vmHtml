@@ -31,8 +31,46 @@ $color-fb4444: #fb4444;
 #choosedemand {
   .container {
     padding-top: 30px;
-    width: 1000px;
   }
+
+  /** web需求 **//** 下拉框 **/
+  [data-webdemand="dropdown"]{
+    background-color: $color-ffffff;
+    /**  下拉按钮  **/
+    [data-webdemand="dropdownbtn"]{
+      padding-bottom:10px;
+      margin-bottom: 20px;
+      text-align: center;
+      >li{
+        margin-right: 80px;
+        display: inline-block;
+        button{
+          color: $color-03;
+          background-color: transparent;
+          font-size: 28px;
+          b{
+            width: 22px;
+            height: 14px;
+            display: inline-block;
+            vertical-align: middle;
+            background-image: url("../../images/icon/icon_dropdown.png");
+          }
+        }
+      }
+    }
+    .dropdown-menu{
+      [data-webdemand="triangle"]{
+        position: absolute;
+        top:-9px;
+        left: 40%;
+        border: 5px solid transparent;
+        border-left: 9px solid transparent;
+        border-right: 9px solid transparent;;
+        border-bottom-color: $color-ffffff;
+      }
+    }
+  }
+
   .per-req {
     ul {
       li {
@@ -106,8 +144,10 @@ $color-fb4444: #fb4444;
             color: $color-03;
           }
           .per-reqInfo {
-            margin: 15px 0 20px 0;
+            margin: 10px 0 20px 0;
+            line-height: 30px;
             p {
+              margin-bottom: 0;
               float: left;
               position: relative;
               b {
@@ -191,12 +231,22 @@ $color-fb4444: #fb4444;
               }
             }
           }
+          .per-reqInfo:after{
+            content: '';
+            clear: both;
+            display: table;
+          }
+        }
+        .checkbox-content{
+          .per-reqLine {
+            margin-left: -50px;
+          }
         }
         .per-reqLine {
           height: 1px;
-          margin-left: -50px;
           border-bottom: 1px solid $color-d2d2d2;
         }
+
       }
     }
   }
@@ -209,6 +259,7 @@ $color-fb4444: #fb4444;
   }
 }
 
+/**
 #footer{
   #zcbl-footer{
     background-color: transparent;
@@ -230,3 +281,4 @@ $color-fb4444: #fb4444;
     background-image: url("../../images/icon/icon_bgphone.png");
   }
 }
+**/

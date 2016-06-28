@@ -35,16 +35,14 @@ $color-fb4444: #fb4444;
   }
   .per-req {
     ul {
-
-      width: 100%;
       li {
         .checkbox-yes {
           width: 30px;
           height: 30px;
           border-radius: 50%;
-          border: 1px solid $color-07;
           float: left;
           margin-top: 40px;
+          background-image: url("../../images/icon/icon_yes.png");
           input {
             width: 30px;
             height: 30px;
@@ -127,7 +125,6 @@ $color-fb4444: #fb4444;
             }
             ul {
               float: right;
-              width: 490px;
               color: $color-03;
               text-align: right;
               li {
@@ -135,15 +132,18 @@ $color-fb4444: #fb4444;
                 position: relative;
                 margin-left: 25px;
                 &.per-req-people {
-                  padding-left: 35px;
                   b {
                     vertical-align: middle;
                     display: inline-block;
                     width: 27px;
                     height: 16px;
+                    margin-right: 7px;
                   }
                   b[data-choose-demand="eye"]{
                     background: url("../../images/icon/icon-per-cy.png") no-repeat;
+                  }
+                  b[data-choose-demand="flag"]{
+                    background: url("../../images/icon/icon_flag.png") no-repeat;
                   }
                 }
                 &.per-req-bzj {
@@ -172,6 +172,24 @@ $color-fb4444: #fb4444;
                 }
               }
             }
+            [data-choose-demand="persontab"],[data-choose-demand="worktab"]{
+              float: left;
+              margin-left: 10px;
+              li{
+                padding:0 12px;
+                margin-left: 10px;
+                height: 30px;
+                line-height: 30px;
+                border: 1px solid $color-06;
+                color: $color-06;
+              }
+            }
+            [data-choose-demand="persontab"]{
+              li{
+                border: 1px solid $color-07;
+                color: $color-07;
+              }
+            }
           }
         }
         .per-reqLine {
@@ -181,5 +199,34 @@ $color-fb4444: #fb4444;
         }
       }
     }
+  }
+  [data-choose-demand="btn"]{
+    text-align: right;
+    margin:30px 0 ;
+    button{
+      margin: 0 20px;
+    }
+  }
+}
+
+#footer{
+  #zcbl-footer{
+    background-color: transparent;
+    color: $color-03;
+    .footer-link{
+      a,span{
+        color: $color-04;
+      }
+    }
+    li,a,p,h2
+    {
+      color: $color-03;
+    }
+  }
+  #zcbl-footer .footer-aboutus .footer-aboutus-l h1 a:before{
+    background-image: url("../../images/icon/icon_bglogo.png");
+  }
+  #zcbl-footer .footer-aboutus .footer-aboutus-r h2:before{
+    background-image: url("../../images/icon/icon_bgphone.png");
   }
 }

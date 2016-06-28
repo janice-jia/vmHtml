@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>公用模态框</title>
+    <link rel="stylesheet" href="static/css/minCss/all.min.css">
+    <meta charset="utf-8">
+    <!--IE浏览器运行最新的渲染模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="static/css/minCss/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/minCss/all.min.css">
+
+    <!--[if lt IE 9]>
+    <script src="static/js/dest/html5shiv.min.js"></script>
+    <script src="static/js/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="header" style="height: 78px;"></div>
+<br><br><br>
+<!-- 按钮触发模态框 -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1">
+    模态框1
+</button>
+
+<!-- 模态框1（Modal） -->
+<div class="modal fade" id="myModal1"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-1">
+        <h2 class="zcbl-modal-success">充值成功！</h2>
+        <p class="zcbl-modal-desc">恭喜您，充值成功！</p>
+    </div>
+</div>
+<!-- 模态框1（Modal） -->
+
+
+<!-- 按钮触发模态框 -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
+    模态框2
+</button>
+
+<!-- 模态框2（Modal） -->
+<div class="modal fade" id="myModal2"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-1">
+        <h2 class="zcbl-modal-error">充值失败！</h2>
+        <p class="zcbl-modal-desc">您可以使用其他方式支付或者继续充值</p>
+    </div>
+</div>
+<!-- 模态框2（Modal） -->
+
+<!-- 按钮触发模态框 -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal3">
+    模态框3
+</button>
+
+<!-- 模态框3（Modal） -->
+<div class="modal fade" id="myModal3"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-2">
+        <h2 class="zcbl-modal-success">需求删除成功</h2>
+        <p class="zcbl-modal-desc">3秒后自动跳转到服务页面</p>
+    </div>
+</div>
+<!-- 模态框3（Modal） -->
+
+<!-- 按钮触发模态框 -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal4">
+    模态框4
+</button>
+
+<!-- 模态框4（Modal） -->
+<div class="modal fade" id="myModal4"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-2">
+        <h2 class="zcbl-modal-blue">需求删除成功</h2>
+    </div>
+</div>
+<!-- 模态框4（Modal） -->
+
+
+<!-- 按钮触发模态框 -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal5">
+    模态框5
+</button>
+
+<!-- 模态框5（Modal） -->
+<div class="modal fade" id="myModal5"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-3 zcbl-modalHei285">
+        <div class="zcbl-modal-tit">
+            创建作品集
+        </div>
+        <form action="">
+            <div class="zcbl-popupForm">
+                <div class="form-group zcbl-popupGroup">
+                    <label for="colName" class="col-sm-3 control-label per-set-label">作品集名称：</label>
+                    <div class="col-sm-8 zcbl-popupSm">
+                        <input type="text" class="form-control zcbl-popupControl" name="colName" id="colName">
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+            <div class="zcbl-popupBtn">
+                <button type="submit" class="btn-yellow-50 left mr25">创建</button>
+                <button type="button" class="zcbl-modal-cancel" data-dismiss="modal">取消</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- 模态框5（Modal） -->
+
+
+<!-- 按钮触发模态框 -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal6">
+    模态框6
+</button>
+<!-- 模态框6（Modal） -->
+<div class="modal fade" id="myModal6"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-3 zcbl-modalHei340">
+        <div class="zcbl-modal-tit">
+            嵌入视频
+        </div>
+        <form action="">
+            <div class="zcbl-popupForm">
+                <div class="form-group zcbl-popupGroup">
+                    <div class="col-sm-12 zcbl-popupSm">
+                        <input type="text" class="form-control embedVideo" name="embedVideo" id="embedVideo">
+                        <p class="embedVideoCon">支持嵌入优酷、爱奇艺、腾讯视频、乐视网站、A站、B站的视频分享嵌入码（flash地址） <a href="javascript:;"  target="_self">查看事例</a></p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+            <div class="zcbl-popupBtn">
+                <button type="submit" class="btn-yellow-50 left mr25">保存</button>
+                <button type="button" class="zcbl-modal-cancel" data-dismiss="modal">取消</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- 模态框6（Modal） -->
+
+
+<!-- 按钮触发模态框 -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal7">
+    模态框7
+</button>
+<!-- 模态框7（Modal） -->
+<div class="modal fade" id="myModal7"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-3 zcbl-modalHei285">
+        <div class="zcbl-modal-tit">
+            密码错误
+        </div>
+        <div class="zcbl-modal-3-con">
+            <p class="zcbl-modal-3-desc">您已连续3次输入密码错误，余额支付将在1小时内冻结不可进行支付</p>
+        </div>
+        <div class="clear"></div>
+        <div class="zcbl-popupBtn">
+            <button type="submit" class="btn-yellow-50 left mr25" data-dismiss="modal">确认</button>
+            <button type="button" class="zcbl-modal-cancel" data-dismiss="modal">更换支付方式</button>
+        </div>
+    </div>
+</div>
+<!-- 模态框7（Modal） -->
+
+<!-- 按钮触发模态框 -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal8">
+    模态框8
+</button>
+<!-- 模态框8（Modal） -->
+<div class="modal fade" id="myModal8"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-4">
+        <div class="zcbl-modal-tit">
+            您对 ** 提供的服务感到
+        </div>
+    </div>
+</div>
+<!-- 模态框8（Modal） -->
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="static/js/dest/jquery-1.11.3.min.js"></script>
+<script src="static/js/dest/all.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="static/js/dest/bootstrap.min.js"></script>
+</body>
+</html>

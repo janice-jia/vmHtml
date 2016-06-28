@@ -1,0 +1,121 @@
+/*
+* header
+*/
+.extend-aline:hover, #choosedemand .per-req ul li .per-reqTit h1 a:hover {
+  text-decoration: underline; }
+
+#choosedemand .container {
+  padding-top: 30px;
+  width: 1000px; }
+#choosedemand .per-req ul {
+  width: 100%; }
+  #choosedemand .per-req ul li .checkbox-yes {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ffb30e;
+    float: left;
+    margin-top: 40px; }
+    #choosedemand .per-req ul li .checkbox-yes input {
+      width: 30px;
+      height: 30px;
+      margin-top: 0;
+      opacity: .5; }
+  #choosedemand .per-req ul li .checkbox-no {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #909090;
+    float: left;
+    margin-top: 40px; }
+    #choosedemand .per-req ul li .checkbox-no input {
+      width: 30px;
+      height: 30px;
+      margin-top: 0;
+      opacity: .3; }
+  #choosedemand .per-req ul li .checkbox-content {
+    padding-left: 50px; }
+  #choosedemand .per-req ul li .per-reqTit {
+    font-size: 22px;
+    color: #515151;
+    overflow: hidden;
+    height: 25px;
+    line-height: 25px;
+    margin: 20px 0; }
+    #choosedemand .per-req ul li .per-reqTit h1 {
+      width: 450px;
+      float: left;
+      margin: 0 10px 0 0; }
+      #choosedemand .per-req ul li .per-reqTit h1 a {
+        color: #515151; }
+    #choosedemand .per-req ul li .per-reqTit p {
+      float: right;
+      text-align: right;
+      width: 230px; }
+      #choosedemand .per-req ul li .per-reqTit p span {
+        color: #e43f3f; }
+  #choosedemand .per-req ul li .per-reqCon h3 {
+    width: 100%;
+    font-size: 18px;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    font-family: "adobeheitistd regular", "Microsoft YaHei";
+    color: #909090; }
+  #choosedemand .per-req ul li .per-reqCon .per-reqInfo {
+    margin: 15px 0 20px 0; }
+    #choosedemand .per-req ul li .per-reqCon .per-reqInfo p {
+      float: left;
+      position: relative; }
+      #choosedemand .per-req ul li .per-reqCon .per-reqInfo p b {
+        vertical-align: middle;
+        display: inline-block;
+        width: 14px;
+        height: 16px;
+        margin-right: 11px; }
+      #choosedemand .per-req ul li .per-reqCon .per-reqInfo p b[data-choose-demand="usericon"] {
+        background: url("../../images/icon/icon_oruser.png") no-repeat; }
+      #choosedemand .per-req ul li .per-reqCon .per-reqInfo p b[data-choose-demand="workicon"] {
+        background: url("../../images/icon/icon-per-zjArt.png") no-repeat; }
+    #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul {
+      float: right;
+      width: 490px;
+      color: #909090;
+      text-align: right; }
+      #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li {
+        display: inline-block;
+        position: relative;
+        margin-left: 25px; }
+        #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-people {
+          padding-left: 35px; }
+          #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-people b {
+            vertical-align: middle;
+            display: inline-block;
+            width: 27px;
+            height: 16px; }
+          #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-people b[data-choose-demand="eye"] {
+            background: url("../../images/icon/icon-per-cy.png") no-repeat; }
+        #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-bzj {
+          width: 103px; }
+          #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-bzj b {
+            background: url("../../images/icon/icon-per-bzj.png") no-repeat;
+            margin-right: 7px;
+            width: 16px;
+            height: 17px;
+            display: inline-block;
+            vertical-align: middle; }
+        #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-time {
+          width: 108px;
+          padding-left: 22px; }
+          #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-time:before {
+            content: "";
+            position: absolute;
+            top: 4px;
+            left: 0;
+            background: url("../../images/icon/icon-per-time.png") no-repeat;
+            width: 16px;
+            height: 17px; }
+  #choosedemand .per-req ul li .per-reqLine {
+    height: 1px;
+    margin-left: -50px;
+    border-bottom: 1px solid #d2d2d2; }

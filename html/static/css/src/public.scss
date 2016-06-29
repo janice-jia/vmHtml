@@ -746,6 +746,9 @@ button.zcbl-close{
     }
 }
 //按钮
+button{
+    border: none;
+}
 .btn-yellow-50,.btn-yellow-40{
     display: block;
     background: $color-07;

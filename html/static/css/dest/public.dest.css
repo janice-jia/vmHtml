@@ -262,6 +262,70 @@ button.zcbl-close {
     color: #2c2c2c;
     font-size: 28px;
     border-bottom: 1px solid #9a9a9a; }
+  .zcbl-modal-4 .zcbl-evaluate-tit {
+    padding: 20px 30px;
+    font-size: 20px; }
+  .zcbl-modal-4 .zcbl-evaluate-con {
+    padding: 0 55px;
+    height: 30px; }
+    .zcbl-modal-4 .zcbl-evaluate-con span {
+      display: inline-block;
+      margin-right: 30px;
+      background: no-repeat;background-position: -114px -118px;
+      width: 30px;
+      height: 30px; }
+      .zcbl-modal-4 .zcbl-evaluate-con span.yellow {
+        background: no-repeat;background-position: -150px -64px; }
+  .zcbl-modal-4 .zcbl-evaluate {
+    padding: 20px 30px 0 30px;
+    position: relative; }
+    .zcbl-modal-4 .zcbl-evaluate .zcbl-evaluate-control {
+      height: 210px;
+      background: none;
+      font-size: 20px; }
+    .zcbl-modal-4 .zcbl-evaluate .zcbl-evaluate-control-max {
+      position: absolute;
+      top: 200px;
+      right: 50px;
+      font-size: 18px;
+      color: #9a9a9a; }
+    .zcbl-modal-4 .zcbl-evaluate .zcbl-evaluate-rc {
+      padding-top: 20px; }
+      .zcbl-modal-4 .zcbl-evaluate .zcbl-evaluate-rc span {
+        color: #499af5; }
+  .zcbl-modal-4 .zcbl-evaluate-btn {
+    padding: 30px; }
+
+.zcbl-modal-5 {
+  width: 730px;
+  height: 440px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border-radius: 5px;
+  background: #e9e9e9;
+  z-index: 1400;
+  margin: -220px 0 0 -365px; }
+  .zcbl-modal-5 .zcbl-modal-tit {
+    margin: 0 30px;
+    padding: 33px 0 19px 0;
+    font-size: 28px; }
+  .zcbl-modal-5 .zcbl-opinion {
+    padding: 0 30px;
+    position: relative; }
+    .zcbl-modal-5 .zcbl-opinion .zcbl-opinion-control {
+      height: 240px;
+      font-size: 20px; }
+    .zcbl-modal-5 .zcbl-opinion .zcbl-opinion-control-max {
+      position: absolute;
+      bottom: 0;
+      right: 50px;
+      font-size: 18px;
+      color: #9a9a9a; }
+  .zcbl-modal-5 .zcbl-opinion-btn {
+    padding-top: 30px; }
+    .zcbl-modal-5 .zcbl-opinion-btn button {
+      margin: 0 auto; }
 
 /** 视频图标 **/
 .zcbl-videoicon {
@@ -277,7 +341,7 @@ button.zcbl-close {
     height: 38px;
     width: 38px;
     vertical-align: middle;
-    background-position: -76px -122px; }
+    background-position: 0 -148px; }
 
 /** 音频图标 **/
 .zcbl-audioicon {
@@ -293,7 +357,7 @@ button.zcbl-close {
     height: 38px;
     width: 38px;
     vertical-align: middle;
-    background-position: 0 -148px; }
+    background-position: -76px -122px; }
 
 #zcbl-header {
   height: 78px;
@@ -319,7 +383,7 @@ button.zcbl-close {
         left: -10px;
         height: 17px;
         width: 60px;
-        background-position: -150px -64px; }
+        background-position: -70px -160px; }
       #zcbl-header .header-box .header-log a {
         display: block;
         padding: 8px 40px 0 1px; }
@@ -515,7 +579,7 @@ button.zcbl-close {
           position: absolute;
           top: 7px;
           left: 10px;
-          background: no-repeat;background-position: -114px -118px;
+          background: no-repeat;background-position: -148px -94px;
           width: 9px;
           height: 15px; }
 
@@ -616,6 +680,8 @@ button.zcbl-close,
 .zcbl-modal-2 .zcbl-modal-error:before,
 .zcbl-modal-1 .zcbl-modal-blue:before,
 .zcbl-modal-2 .zcbl-modal-blue:before,
+.zcbl-modal-4 .zcbl-evaluate-con span,
+.zcbl-modal-4 .zcbl-evaluate-con span.yellow,
 .zcbl-videoicon b,
 .zcbl-audioicon b,
 #zcbl-header .header-box .header-log:after,

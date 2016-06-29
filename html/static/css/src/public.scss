@@ -332,6 +332,86 @@ button.zcbl-close{
         font-size: 28px;
         border-bottom: 1px solid $color-9a9a9a;
     }
+    .zcbl-evaluate-tit{
+        padding: 20px 30px;
+        font-size: 20px;
+    }
+    .zcbl-evaluate-con{
+        padding: 0 55px;
+        height: 30px;
+        span{
+            display: inline-block;
+            margin-right: 30px;
+            background: url("../../images/icon/icon-stars-gray1.png") no-repeat;
+            width: 30px;
+            height: 30px;
+            &.yellow{
+                background: url("../../images/icon/icon-stars-yellow1.png") no-repeat;
+            }
+        }
+    }
+    .zcbl-evaluate{
+        padding: 20px 30px 0 30px;
+        position: relative;
+        .zcbl-evaluate-control{
+            height: 210px;
+            background: none;
+            font-size: 20px;
+        }
+        .zcbl-evaluate-control-max{
+            position: absolute;
+            top: 200px;
+            right: 50px;
+            font-size: 18px;
+            color: $color-9a9a9a;
+        }
+        .zcbl-evaluate-rc{
+            padding-top: 20px;
+            span{
+                color: $color-06;
+            }
+        }
+    }
+    .zcbl-evaluate-btn{
+        padding: 30px;
+    }
+}
+.zcbl-modal-5{
+    width:730px;
+    height: 440px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    border-radius: 5px;
+    background: $color-e9e9e9;
+    z-index: 1400;
+    margin: -220px 0 0 -365px;
+    .zcbl-modal-tit{
+        margin: 0 30px;
+        padding: 33px 0 19px 0;
+        font-size: 28px;
+    }
+    .zcbl-opinion{
+        padding: 0 30px;
+        position: relative;
+        .zcbl-opinion-control{
+            height: 240px;
+            font-size: 20px;
+        }
+        .zcbl-opinion-control-max{
+            position: absolute;
+            bottom: 0;
+            right: 50px;
+            font-size: 18px;
+            color: $color-9a9a9a;
+        }
+    }
+    .zcbl-opinion-btn{
+        padding-top: 30px;
+        button{
+            margin: 0 auto;
+        }
+    }
 }
 
 

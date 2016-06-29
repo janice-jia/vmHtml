@@ -69,6 +69,7 @@
           color: #ffb30e; }
         #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] [data-regist="regist_submit"] {
           background-color: #ffb30e;
+          width: 100%;
           height: 60px;
           margin-top: 15px; }
         #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] [data-regist="agreement"] {

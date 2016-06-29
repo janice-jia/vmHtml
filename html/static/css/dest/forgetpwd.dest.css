@@ -85,6 +85,7 @@
       display: block; }
     #fgpwd [data-fgpwd="form_process"] [data-fgpwd="nextStep"] {
       background-color: #ffb30e;
+      width: 100%;
       height: 60px; }
     #fgpwd [data-fgpwd="form_process"] [data-fgpwd="fgphonekeyget"] {
       background-color: #9d9b9b;
@@ -97,6 +98,7 @@
       color: #fff; }
     #fgpwd [data-fgpwd="form_process"] [data-fgpwd="finish"] {
       background-color: #ffb30e;
+      width: 100%;
       height: 60px; }
   #fgpwd [data-fgpwd="form_finish"] {
     width: 440px;
@@ -138,6 +140,12 @@
 
 [data-fgpwd="form_finish"] {
   display: none; }
+
+/** bootstorp **/
+.has-success .input-group-addon {
+  color: #171717;
+  background: none;
+  border: none; }
 
 
 /* ../../images/positonIcon/forgetpwd.png */

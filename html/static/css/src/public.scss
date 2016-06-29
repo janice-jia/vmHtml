@@ -18,6 +18,9 @@ $color-efefef:#efefef;
 $color-b0b0b0:#b0b0b0;
 $color-2c2c2c:#2c2c2c;
 $color-9a9a9a:#9a9a9a;
+$color-e9e9e9:#e9e9e9;
+$color-90908f:#90908f;
+
 
 .extend-aline{
     &:hover{
@@ -126,6 +129,291 @@ $color-9a9a9a:#9a9a9a;
         }
     }
 }
+button.zcbl-close{
+    position: fixed;
+    top:100px;
+    right: 35px;
+    opacity:0.8;
+    filter:alpha(opacity=0.8);
+    -moz-opacity:0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    background: url("../../images/icon/icon-per-close.png") no-repeat;
+    width: 33px;
+    height: 33px;
+    &:hover{
+        opacity:1;
+        filter:alpha(opacity=1);
+        -moz-opacity:1;
+        -khtml-opacity: 1;
+        opacity: 1;
+    }
+}
+.zcbl-modal-1,.zcbl-modal-2{
+    border-radius: 5px;
+    background: $color-e9e9e9;
+    position: absolute;
+    text-align: center;
+    z-index: 1400;
+    .zcbl-modal-success,.zcbl-modal-error,.zcbl-modal-blue{
+        position: relative;
+        padding-left: 86px;
+        line-height: 74px;
+        display: inline-block;
+        margin: 0 auto;
+        font-size: 38px;
+        &:before{
+            content: "";
+            left: 0;
+            top:0;
+            position: absolute;
+        }
+    }
+    .zcbl-modal-success{
+        color: $color-07;
+        &:before{
+            background: url("../../images/icon/icon_recruitsuc.png") no-repeat;
+            width: 76px;
+            height: 74px;
+        }
+    }
+    .zcbl-modal-error{
+        color: $color-08;
+        &:before{
+            background: url("../../images/icon/icon-per-error.png") no-repeat;
+            width: 74px;
+            height: 74px;
+        }
+    }
+    .zcbl-modal-blue{
+        color: $color-06;
+        &:before{
+            background: url("../../images/icon/icon_delsuccess.png") no-repeat;
+            width: 76px;
+            height: 74px;
+        }
+    }
+    .zcbl-modal-desc{
+        font-size: 18px;
+    }
+}
+.zcbl-modal-1{
+    padding-top: 72px;
+    width: 500px;
+    height: 240px;
+    top: 50%;
+    left: 50%;
+    margin: -120px 0 0 -250px;
+    .zcbl-modal-desc{
+        padding-top: 40px;
+    }
+}
+.zcbl-modal-2{
+    padding-top: 30px;
+    width: 750px;
+    height: 160px;
+    top: 50%;
+    left: 50%;
+    margin: -80px 0 0 -375px;
+    .zcbl-modal-desc{
+        padding-top: 5px;
+    }
+}
+.zcbl-modalHei285{
+    height: 274px;
+    margin-top:  -137px;
+}
+.zcbl-modalHei340{
+    height: 340px;
+    margin-top:  -170px;
+}
+.zcbl-modal-3{
+    width: 570px;
+    position: absolute;
+    border-radius: 5px;
+    top:50%;
+    left: 50%;
+    background: $color-05;
+    margin-left: -285px;
+    z-index: 1400;
+    .zcbl-modal-tit{
+        margin: 0 30px;
+        padding: 33px 0 19px 0;
+        color: $color-2c2c2c;
+        font-size: 28px;
+        border-bottom: 1px solid $color-9a9a9a;
+    }
+    .zcbl-popupForm{
+        padding: 0 45px;
+        min-height: 90px;
+        border-bottom: 1px solid $color-acacac;
+        padding-top: 20px;
+    }
+    .zcbl-modal-3-con{
+        padding: 0 30px;
+        min-height: 90px;
+        border-bottom: 1px solid $color-acacac;
+        padding-top:10px;
+    }
+    .zcbl-popupGroup{
+        label{
+            height: 50px;
+            line-height: 50px;
+            font-size: 20px;
+            padding: 0;
+            margin: 0;
+            font-weight: normal;
+            width: 125px;
+        }
+        .zcbl-popupSm{
+            margin: 0;
+            padding: 0;
+        }
+        .zcbl-popupControl{
+            height: 50px;
+            line-height: 50px;
+            width: 300px;
+        }
+        .embedVideo{
+            width: 505px;
+            height: 50px;
+            line-height: 50px;
+            margin-left: -13px;
+        }
+        .embedVideoCon{
+            font-size: 20px;
+            margin-top: 20px;
+            a{
+                color: $color-06;
+                &:hover{
+                    @extend .extend-aline;
+                }
+            }
+        }
+    }
+    .zcbl-popupBtn{
+        padding: 20px 30px;
+        line-height: 50px;
+        .zcbl-modal-cancel{
+            color: $color-07;
+            font-size: 20px;
+            border: none;
+            background: none;
+            &:hover{
+                &:hover{
+                    @extend .extend-aline;
+                }
+            }
+        }
+    }
+    .zcbl-modal-3-desc{
+        font-size: 18px;
+        color: $color-90908f;
+        padding: 0;
+    }
+}
+.zcbl-modal-4{
+    width:778px;
+    height: 978px;
+    top: 0;
+    left: 50%;
+    position: absolute;
+    border-radius: 5px;
+    background: $color-e9e9e9;
+    z-index: 1400;
+    margin-left: -388px;
+    margin-top:100px;
+    margin-bottom: 100px;
+    .zcbl-modal-tit{
+        padding: 0 30px;
+        height: 90px;
+        line-height: 90px;
+        color: $color-2c2c2c;
+        font-size: 28px;
+        border-bottom: 1px solid $color-9a9a9a;
+    }
+    .zcbl-evaluate-tit{
+        padding: 20px 30px;
+        font-size: 20px;
+    }
+    .zcbl-evaluate-con{
+        padding: 0 55px;
+        height: 30px;
+        span{
+            display: inline-block;
+            margin-right: 30px;
+            background: url("../../images/icon/icon-stars-gray1.png") no-repeat;
+            width: 30px;
+            height: 30px;
+            &.yellow{
+                background: url("../../images/icon/icon-stars-yellow1.png") no-repeat;
+            }
+        }
+    }
+    .zcbl-evaluate{
+        padding: 20px 30px 0 30px;
+        position: relative;
+        .zcbl-evaluate-control{
+            height: 210px;
+            background: none;
+            font-size: 20px;
+        }
+        .zcbl-evaluate-control-max{
+            position: absolute;
+            top: 200px;
+            right: 50px;
+            font-size: 18px;
+            color: $color-9a9a9a;
+        }
+        .zcbl-evaluate-rc{
+            padding-top: 20px;
+            span{
+                color: $color-06;
+            }
+        }
+    }
+    .zcbl-evaluate-btn{
+        padding: 30px;
+    }
+}
+.zcbl-modal-5{
+    width:730px;
+    height: 440px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    border-radius: 5px;
+    background: $color-e9e9e9;
+    z-index: 1400;
+    margin: -220px 0 0 -365px;
+    .zcbl-modal-tit{
+        margin: 0 30px;
+        padding: 33px 0 19px 0;
+        font-size: 28px;
+    }
+    .zcbl-opinion{
+        padding: 0 30px;
+        position: relative;
+        .zcbl-opinion-control{
+            height: 240px;
+            font-size: 20px;
+        }
+        .zcbl-opinion-control-max{
+            position: absolute;
+            bottom: 0;
+            right: 50px;
+            font-size: 18px;
+            color: $color-9a9a9a;
+        }
+    }
+    .zcbl-opinion-btn{
+        padding-top: 30px;
+        button{
+            margin: 0 auto;
+        }
+    }
+}
+
 
 
 /** 视频图标 **/
@@ -518,101 +806,6 @@ $color-9a9a9a:#9a9a9a;
     display: none;
 }
 
-//弹层样式
-.zcbl-popup{
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10000;
-    .zcbl-popupHei285{
-        height: 274px;
-        margin-top:  -137px;
-    }
-    .zcbl-popupHei340{
-        height: 340px;
-        margin-top:  -170px;
-    }
-    .zcbl-popup570{
-        width: 570px;
-        position: absolute;
-        border-radius: 5px;
-        top:50%;
-        left: 50%;
-        background: $color-05;
-        margin-left: -285px;
-        .zcbl-popup570-tit{
-            margin: 0 30px;
-            padding: 33px 0 19px 0;
-            color: $color-2c2c2c;
-            font-size: 28px;
-            border-bottom: 1px solid $color-9a9a9a;
-        }
-        .zcbl-popupForm{
-            padding: 0 45px;
-            min-height: 90px;
-            border-bottom: 1px solid $color-acacac;
-            padding-top: 20px;
-        }
-        .zcbl-popupGroup{
-            label{
-                height: 50px;
-                line-height: 50px;
-                font-size: 20px;
-                padding: 0;
-                margin: 0;
-                font-weight: normal;
-                width: 125px;
-            }
-            .zcbl-popupSm{
-                margin: 0;
-                padding: 0;
-            }
-            .zcbl-popupControl{
-                height: 50px;
-                line-height: 50px;
-                width: 300px;
-            }
-            .embedVideo{
-                width: 505px;
-                height: 50px;
-                line-height: 50px;
-                margin-left: -13px;
-            }
-            .embedVideoCon{
-                font-size: 20px;
-                margin-top: 20px;
-                a{
-                    color: $color-06;
-                    &:hover{
-                        @extend .extend-aline;
-                    }
-                }
-            }
-        }
-        .zcbl-popupBtn{
-            padding: 20px 30px;
-            line-height: 50px;
-            span{
-                color: $color-07;
-                a{
-                    color: $color-07;
-                    font-size: 20px;
-                    &:hover{
-                        &:hover{
-                            @extend .extend-aline;
-                        }
-                    }
-                }
-            }
-        }
-
-    }
-}
-
-
 //重新定义表单样式
 .zcbl-form-horizontal .zcbl-form-group{
     margin-left: 0;
@@ -635,6 +828,7 @@ $color-9a9a9a:#9a9a9a;
     overflow: hidden;
     font-size: 18px;
 }
+
 .zcbl-form-horizontal .zcbl-control-info-line25{
     line-height: 25px;
     overflow: hidden;

@@ -1285,7 +1285,8 @@
 
 #per-recharge {
   width: 1000px;
-  margin: 30px auto 35px auto; }
+  margin: 30px auto 35px auto;
+  min-height: 500px; }
   #per-recharge .per-recharge-tit {
     font-size: 28px;
     padding-left: 12px; }
@@ -1298,6 +1299,10 @@
       margin-top: 17px; }
     #per-recharge .per-recharge-payType .per-recharge-radio img {
       margin-right: 30px; }
+  #per-recharge .zcbl-form-horizontal .pl12 {
+    padding-left: 12px; }
+  #per-recharge .zcbl-form-horizontal input.bgF {
+    background: #ffffff; }
   #per-recharge .per-recharge-payList {
     background: #ffffff;
     border: 1px solid #acacac;
@@ -1321,10 +1326,84 @@
         text-align: right; }
       #per-recharge .per-recharge-payList ul li .per-payList-expend {
         color: #fb4444; }
+  #per-recharge .per-pay-password {
+    font-size: 20px;
+    padding-top: 40px; }
+    #per-recharge .per-pay-password a {
+      color: #515151; }
+    #per-recharge .per-pay-password span {
+      padding: 0 20px; }
+      #per-recharge .per-pay-password span a {
+        color: #499af5; }
 
 #per-payInfo {
   width: 1000px;
   margin: 30px auto 35px auto; }
+  #per-payInfo .per-payInfo-order {
+    padding: 0 20px;
+    border-bottom: 1px solid #acacac; }
+    #per-payInfo .per-payInfo-order .per-payInfo-orderId, #per-payInfo .per-payInfo-order .per-payInfo-orderTime, #per-payInfo .per-payInfo-order .per-payInfo-orderTit, #per-payInfo .per-payInfo-order .per-payInfo-orderStatus {
+      font-size: 22px;
+      padding-bottom: 15px; }
+    #per-payInfo .per-payInfo-order .per-payInfo-orderTime, #per-payInfo .per-payInfo-order .per-payInfo-orderStatus {
+      text-align: right; }
+    #per-payInfo .per-payInfo-order .per-payInfo-orderTit {
+      color: #212121; }
+    #per-payInfo .per-payInfo-order .per-payInfo-des {
+      color: #90908f;
+      font-size: 18px;
+      padding-bottom: 15px; }
+    #per-payInfo .per-payInfo-order .per-payInfo-orderZJ, #per-payInfo .per-payInfo-order .per-payInfo-orderSC {
+      font-size: 18px;
+      padding-bottom: 15px; }
+    #per-payInfo .per-payInfo-order .per-payInfo-orderZJ {
+      position: relative;
+      padding-left: 25px; }
+      #per-payInfo .per-payInfo-order .per-payInfo-orderZJ:before {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: 0;
+        background-position: -199px -332px;
+        width: 14px;
+        height: 16px; }
+    #per-payInfo .per-payInfo-order .per-payInfo-orderSC {
+      position: relative;
+      padding-left: 25px;
+      display: inline-block;
+      float: right;
+      color: #90908f; }
+      #per-payInfo .per-payInfo-order .per-payInfo-orderSC:before {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: 0;
+        background-position: -363px -124px;
+        width: 16px;
+        height: 17px; }
+  #per-payInfo .per-payInfo-amount {
+    text-align: right;
+    color: #ffb30e;
+    font-size: 28px;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    #per-payInfo .per-payInfo-amount span {
+      display: inline-block;
+      width: 30px; }
+  #per-payInfo .per-payInfo-type {
+    height: 160px;
+    background: #ffffff;
+    padding: 30px 30px 0 30px; }
+    #per-payInfo .per-payInfo-type .per-recharge-tit {
+      font-size: 28px; }
+    #per-payInfo .per-payInfo-type .per-recharge-payType {
+      padding-top: 10px; }
+      #per-payInfo .per-payInfo-type .per-recharge-payType .per-recharge-radio input.input-img {
+        margin-top: 19px; }
+      #per-payInfo .per-payInfo-type .per-recharge-payType .per-recharge-radio img {
+        margin-right: 30px; }
+      #per-payInfo .per-payInfo-type .per-recharge-payType .per-recharge-radio .account-balance {
+        color: #ffb30e; }
 
 
 /* ../../images/positonIcon/personal.png */
@@ -1365,6 +1444,8 @@
 .per-view-box .per-Slide .per-goright:after,
 .per-view-box .videoBody .videoIcon a,
 .per-view-box .audioBody .audioIcon a,
-.per-view-box .textBody .zcbl-text-edit h1 p.zcbl-text-editR a{
+.per-view-box .textBody .zcbl-text-edit h1 p.zcbl-text-editR a,
+#per-payInfo .per-payInfo-order .per-payInfo-orderZJ:before,
+#per-payInfo .per-payInfo-order .per-payInfo-orderSC:before{
 background-image: url(../../images/positonIcon/personal.png);
 }

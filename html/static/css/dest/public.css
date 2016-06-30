@@ -4,7 +4,8 @@
 */
 /*深灰*/
 /*友情链接字体灰，边框灰*/
-.extend-aline:hover, .zcbl-modal-3 .zcbl-popupGroup .embedVideoCon a:hover, .zcbl-modal-3 .zcbl-popupBtn .zcbl-modal-cancel:hover, #zcbl-header .header-box .header-right .user-notlogin ul li a:hover, #zcbl-footer .footer-link ul li a:hover, #zcbl-footer .footer-aboutus .footer-aboutus-z ul li a:hover {
+.extend-aline:hover, .zcbl-modal-3 .zcbl-popupGroup .embedVideoCon a:hover, .zcbl-modal-3 .zcbl-popupBtn .zcbl-modal-cancel:hover, .zcbl-modal-3 .zcbl-modal-3-desc a:hover, #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-1 li a:hover,
+#zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-2 li a:hover, #zcbl-header .header-box .header-right .user-notlogin ul li a:hover, #zcbl-footer .footer-link ul li a:hover, #zcbl-footer .footer-aboutus .footer-aboutus-z ul li a:hover {
   text-decoration: underline; }
 
 [data-btn="orbgbtn"] {
@@ -242,6 +243,8 @@ button.zcbl-close {
     font-size: 18px;
     color: #90908f;
     padding: 0; }
+    .zcbl-modal-3 .zcbl-modal-3-desc a {
+      color: #90908f; }
 
 .zcbl-modal-4 {
   width: 778px;
@@ -326,6 +329,81 @@ button.zcbl-close {
     padding-top: 30px; }
     .zcbl-modal-5 .zcbl-opinion-btn button {
       margin: 0 auto; }
+
+.zcbl-modal-6 {
+  width: 1000px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  position: absolute;
+  background: #ffffff;
+  margin-left: -500px;
+  margin-top: 140px;
+  margin-bottom: 100px; }
+
+.zcbl-modal-7 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -174px 0 0 -414px;
+  width: 828px;
+  height: 348px;
+  background: #fff;
+  border-radius: 5px;
+  z-index: 1600; }
+  .zcbl-modal-7 .zcbl-public-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -174px 0 0 -414px;
+    z-index: 1600;
+    width: 828px;
+    height: 348px;
+    background: #ffffff;
+    border-radius: 5px;
+    text-align: center; }
+    .zcbl-modal-7 .zcbl-public-window ul li {
+      display: inline-block;
+      width: 208px;
+      height: 270px;
+      border-radius: 8px;
+      margin-top: 42px; }
+      .zcbl-modal-7 .zcbl-public-window ul li.public-xq {
+        background: #ffb30e; }
+        .zcbl-modal-7 .zcbl-public-window ul li.public-xq a:before {
+          top: 30px;
+          left: 47px;
+          background: url("../../images/icon/icon-index-publish-xq.png");
+          width: 120px;
+          height: 120px; }
+      .zcbl-modal-7 .zcbl-public-window ul li.public-fw {
+        background: #e43f3f;
+        margin: 0 40px; }
+        .zcbl-modal-7 .zcbl-public-window ul li.public-fw a:before {
+          top: 30px;
+          left: 50px;
+          background: url("../../images/icon/icon-index-publis-fw.png");
+          width: 109px;
+          height: 119px; }
+      .zcbl-modal-7 .zcbl-public-window ul li.public-zp {
+        background: #499af5; }
+        .zcbl-modal-7 .zcbl-public-window ul li.public-zp a:before {
+          top: 30px;
+          left: 32px;
+          background: url("../../images/icon/icon-index-publis-zp.png");
+          width: 149px;
+          height: 120px; }
+      .zcbl-modal-7 .zcbl-public-window ul li a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        padding-top: 200px;
+        color: #ffffff;
+        font-size: 30px; }
+        .zcbl-modal-7 .zcbl-public-window ul li a:before {
+          position: absolute;
+          content: ""; }
 
 /** 视频图标 **/
 .zcbl-videoicon {
@@ -450,11 +528,69 @@ button.zcbl-close {
         float: right; }
       #zcbl-header .header-box .header-right .user-login .header-user {
         width: 34px;
-        height: 36px;
+        height: 100%;
         float: right;
-        padding: 20px 0; }
+        padding: 20px 0;
+        position: relative; }
+        #zcbl-header .header-box .header-right .user-login .header-user:hover {
+          cursor: pointer; }
+          #zcbl-header .header-box .header-right .user-login .header-user:hover .zcbl-userInfo {
+            display: block; }
         #zcbl-header .header-box .header-right .user-login .header-user img {
           border-radius: 50%; }
+        #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo {
+          position: absolute;
+          left: -100px;
+          top: 82px;
+          width: 160px;
+          display: none;
+          height: 432px;
+          background: #ffffff;
+          border-radius: 5px; }
+          #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-top {
+            position: absolute;
+            left: 100px;
+            top: -10px;
+            background: url("../../images/icon/icon-index-top.png") no-repeat;
+            height: 10px;
+            width: 21px; }
+          #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-line {
+            height: 1px;
+            overflow: hidden;
+            border-bottom: 1px solid #dddddd; }
+          #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-1,
+          #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-2 {
+            text-align: left; }
+            #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-1 li a,
+            #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-2 li a {
+              font-size: 18px;
+              color: #515151;
+              padding-left: 32px; }
+          #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-1 {
+            margin-bottom: 18px; }
+            #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-1 li {
+              margin-top: 15px; }
+              #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-1 li.zcbl-userInfo-WB b {
+                display: inline-block;
+                background: url("../../images/icon/icon-index-wb.png") no-repeat;
+                width: 19px;
+                height: 16px;
+                margin-right: 5px; }
+              #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-1 li.zcbl-userInfo-WX b {
+                display: inline-block;
+                background: url("../../images/icon/icon-index-wx.png") no-repeat;
+                width: 19px;
+                height: 16px;
+                margin-right: 5px; }
+              #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-1 li.zcbl-userInfo-QQ b {
+                display: inline-block;
+                background: url("../../images/icon/icon-index-qq.png") no-repeat;
+                width: 19px;
+                height: 16px;
+                margin-right: 5px; }
+          #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-2 li {
+            height: 57px;
+            line-height: 57px; }
       #zcbl-header .header-box .header-right .user-notlogin ul {
         width: 215px;
         float: right; }

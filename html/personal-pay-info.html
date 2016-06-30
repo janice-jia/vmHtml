@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
-    <link href="static/css/minCss/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="less/bootstrap.css">
     <link rel="stylesheet" href="./static/css/minCss/all.min.css">
 
     <!--[if lt IE 9]>
@@ -63,13 +63,40 @@
     </div>
     <div class="row mt25">
         <div class="col-md-12">
-            <button type="submit" class="btn-yellow-50 right">立即支付</button>
+            <button type="button" class="btn-yellow-50 right" data-toggle="modal" data-target="#noBalance">立即支付</button>
         </div>
     </div>
     </form>
 </div>
 
+
+
 <div id="footer"></div>
+
+
+<!--余额不足-->
+<div class="modal fade" id="noBalance"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-3 zcbl-modalHei285">
+        <div class="zcbl-modal-tit">
+            余额不足
+        </div>
+        <div class="zcbl-modal-3-con">
+            <p class="zcbl-modal-3-desc">您的余额不足，请到 <a href="./personal-artwork-pic.html" target="_self">“个人中心”</a>充值，或者使用第三方支付</p>
+        </div>
+        <div class="clear"></div>
+        <div class="zcbl-popupBtn">
+            <button type="submit" class="btn-yellow-50 left mr25" data-dismiss="modal">充值</button>
+            <button type="button" class="zcbl-modal-cancel" data-dismiss="modal">更换支付方式</button>
+        </div>
+    </div>
+</div>
+<!--余额不足-->
+
+
+
+
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="static/js/dest/jquery-1.11.3.min.js"></script>
 

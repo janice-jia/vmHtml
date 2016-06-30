@@ -89,10 +89,10 @@ $color-fb4444: #fb4444;
             width: 30px;
             height: 30px;
             margin-top: 0;
-            filter:alpha(opacity=0.5);
+            filter:alpha(opacity=0);
             -moz-opacity:0.5;
-            -khtml-opacity: 0.5;
-            opacity: 0.5;
+            -khtml-opacity: 0;
+            opacity: 0;
 
           }
         }
@@ -107,7 +107,10 @@ $color-fb4444: #fb4444;
             width: 30px;
             height: 30px;
             margin-top: 0;
-            opacity: .3;
+            filter:alpha(opacity=0);
+            -moz-opacity:0;
+            -khtml-opacity: 0;
+            opacity: 0;
           }
         }
         .checkbox-content{

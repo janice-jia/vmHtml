@@ -1247,7 +1247,8 @@
     .per-view-box .audioBody .audioSrc {
       width: 980px;
       position: absolute;
-      bottom: 5px; }
+      bottom: 5px;
+      left: 0; }
   .per-view-box .textBody {
     width: 980px; }
     .per-view-box .textBody .zcbl-container {

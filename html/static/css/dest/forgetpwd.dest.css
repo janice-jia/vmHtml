@@ -2,6 +2,8 @@
 #fgpwd {
   background-image: url(../../images/fgpwd/fgpwd_bg.jpg);
   height: 100vh;
+  height: 100%;
+  width: 100%;
   width: 100vw;
   text-align: center;
   /***  步骤  ***/

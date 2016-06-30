@@ -1,0 +1,229 @@
+@charset "utf-8";
+/*
+* header
+*/
+
+$color-01: #171717;
+$color-02: #515151;
+$color-03: #909090;
+$color-04: #c1c1c1; //(输入框边框颜色)
+$color-05: #eeeeee; //(背景色)
+$color-06: #499af5;
+$color-07: #ffb30e;
+$color-08: #e43f3f;
+
+$color-ffffff: #ffffff;
+$color-a0a0a0: #a0a0a0;
+$color-d2d2d2: #d2d2d2;
+$color-f8f8f8: #f8f8f8;
+$color-bfbfbf: #bfbfbf;
+$color-aaaaaa: #aaaaaa;
+$color-9a9a9a: #9a9a9a;
+$color-e5e5e5: #e5e5e5;
+$color-acacac: #acacac;
+$color-fb4444: #fb4444;
+
+/** 下拉框 **/
+#severList {
+  [data-websever="dropdown"] {
+    background-color: $color-ffffff;
+    /**  下拉按钮  **/
+    [data-websever="dropdownbtn"] {
+      display: inline-block;
+      padding-top: 35px;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      text-align: left;
+      button {
+        color: $color-03;
+        background-color: transparent;
+        font-size: 28px;
+        b {
+          width: 22px;
+          height: 14px;
+          display: inline-block;
+          vertical-align: middle;
+          background-image: url("../../images/icon/icon_dropdown.png");
+        }
+      }
+    }
+    .dropdown-menu {
+      [data-webdemand="triangle"] {
+        position: absolute;
+        top: -9px;
+        left: 40%;
+        border: 5px solid transparent;
+        border-left: 9px solid transparent;
+        border-right: 9px solid transparent;;
+        border-bottom-color: $color-ffffff;
+      }
+    }
+
+    /**   搜索框  **/
+    [data-websever="search"] {
+      margin-top: 25px;
+      float: right;
+      [data-websever="input-group"] {
+        input {
+          border-top-left-radius: 2px;
+          border-bottom-left-radius: 2px;
+          width: 420px;
+          height: 50px;
+          background-color: $color-05;
+          padding-left: 14px;
+          box-shadow: none;
+          border: 1px solid $color-04;
+          color: $color-04;
+        }
+        span {
+          float: right;
+          button {
+            width: 92px;
+            height: 50px;
+            background-color: $color-04;
+            b {
+              vertical-align: middle;
+              width: 20px;
+              height: 23px;
+              display: inline-block;
+              background-image: url("../../images/icon/icon_search.png");
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+}
+
+/***  服务列表  ***/
+#severList {
+  > .container {
+    padding: 0;
+  }
+
+  [data-websever="severlist"] {
+    ul[data-websever="severlistul"] {
+      margin-top: 25px;
+      > li {
+        position: relative;
+        text-align: center;
+        margin-bottom: 60px;
+        width: 300px;
+        height: 300px;
+        margin-right: 50px;
+        padding: 0 10px;
+        float: left;
+        [data-websever="modal"] {
+          padding: 0 30px;
+          filter: alpha(opacity=0);
+          -moz-opacity: 0;
+          -khtml-opacity: 0;
+          opacity: 0;
+          transition: all .5s;
+          -moz-transition: all .5s; /* Firefox 4 */
+          -webkit-transition: all .5s; /* Safari 和 Chrome */
+          -o-transition: all .5s; /* Opera */
+          position: absolute;
+          height: 0;
+          top: 0;
+          left: 0;
+          background-color: $color-ffffff;
+          h2 {
+            line-height: 36px;
+            font-size: 20px;
+            color: $color-02;
+            margin: 0 auto;
+            margin-top: 38px;
+            margin-bottom: 12px;
+            width: 164px;
+          }
+          hr{
+            margin: 0 auto;
+            margin-bottom: 20px;
+            width: 70px;
+          }
+          p{
+            font-size: 18px;
+            color: $color-07;
+            margin-bottom: 20px;
+          }
+          div{
+            font-size: 18px;
+            color: $color-02;
+            text-align: left;
+          }
+        }
+        [data-websever="content"] {
+          height: 300px;
+          padding: 16px 30px 0 30px;
+          border-bottom: 1px solid #bfbfbf;
+          [data-websever="userhead"] {
+            width: 140px;
+            margin: 0 auto;
+            margin-bottom: 25px;
+            position: relative;
+            img {
+              width: 140px;
+              height: 140px;
+              border-radius: 50%;
+            }
+            span {
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: 30px;
+              height: 30px;
+              background-color: $color-ffffff;
+
+              border-radius: 50%;
+              text-align: center;
+              line-height: 30px;
+            }
+            [data-websever="qi"]{
+              color: $color-07;
+            }
+            [data-websever="ge"]{
+              color: $color-06;
+            }
+            [data-websever="gong"]{
+              color: #550ece;
+            }
+          }
+          [data-websever="username"] {
+            font-size: 20px;
+            color: $color-01;
+            margin-bottom: 15px;
+          }
+          [data-websever="usertab"] {
+            margin-bottom: 15px;
+            li {
+              display: inline;
+              margin: 0 5px;
+              color: $color-06;
+            }
+          }
+          [data-websever="userother"] {
+            color: $color-02;
+          }
+        }
+      }
+      > li:hover {
+        [data-websever="modal"] {
+          filter: alpha(opacity=1);
+          -moz-opacity: 1;
+          -khtml-opacity: 1;
+          opacity: 1;
+          height: 100%;
+
+        }
+      }
+    }
+    ul:after {
+      display: table;
+      clear: both;
+      content: '';
+    }
+  }
+}

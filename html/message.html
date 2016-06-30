@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>消息</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="less/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/minCss/all.min.css">
+
+    <!--[if lt IE 9]>
+    <script src="static/js/dest/html5shiv.min.js"></script>
+    <script src="static/js/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="header" style="height: 78px;"></div>
+<div id="message">
+    <div data-message="header">
+        <div class="container">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li data-message="h2">我的消息</li>
+                <li role="presentation" class="active"><a href="#message_home" aria-controls="message_home" role="tab"
+                                                          data-toggle="tab">系统</a></li>
+                <li role="presentation"><a href="#message_demand" aria-controls="message_demand" role="tab"
+                                           data-toggle="tab">需求</a></li>
+                <li role="presentation"><a href="#message_comment" aria-controls="message_comment" role="tab"
+                                           data-toggle="tab">评论</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-message="body" class="container">
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="message_home">
+                <ul data-message="messagelist">
+                    <li>
+                        <div data-message="left">
+                            <img src="static/images/demand/1.jpg" alt="">
+                        </div>
+                        <div data-message="right">
+                            <h2>众创部落
+                                <sapn data-message="date">2016.5.13 13:00</sapn>
+                            </h2>
+                            <div data-message="content">
+                                系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知
+                            </div>
+
+                        </div>
+                        <hr>
+                    </li>
+                    <li>
+                        <div data-message="left">
+                            <img src="static/images/demand/1.jpg" alt="">
+                        </div>
+                        <div data-message="right">
+                            <h2>众创部落
+                                <sapn data-message="date">2016.5.13 13:00</sapn>
+                            </h2>
+                            <div data-message="content">
+                                您于2016.11.11申请提现100元失败/成功
+                            </div>
+
+                        </div>
+                        <hr>
+                    </li>
+                    <li>
+                        <div data-message="left">
+                            <img src="static/images/demand/1.jpg" alt="">
+                        </div>
+                        <div data-message="right">
+                            <h2>众创部落
+                                <sapn data-message="date">2016.5.13 13:00</sapn>
+                            </h2>
+                            <div data-message="content">
+                                您发布的项目由于”某某“原因违规被下架需求、服务、作品
+                            </div>
+
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div role="tabpanel" class="tab-pane " id="message_demand">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#message_joindemand" aria-controls="message_home"
+                                                              role="tab"
+                                                              data-toggle="tab">参加的需求</a></li>
+                    <li role="presentation"><a href="#message_putdemand" aria-controls="message_demand" role="tab"
+                                               data-toggle="tab">发布的需求</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="message_joindemand">
+                        <ul data-message="messagelist">
+                            <li>
+                                <div data-message="left">
+                                    <img src="static/images/demand/1.jpg" alt="">
+                                </div>
+                                <div data-message="right">
+                                    <p><a href="#">ABC </a>选用了<a href="#">【需求名称】</a>的投稿，完成需求后请确认角稿</p>
+                                    <sapn data-message="demanddate">2016.5.13 13:00</sapn>
+                                    <div data-message="btn">
+                                        <button type="button" data-btn="orbgbtn">完成交稿</button>
+                                        <a href="#">申诉</a>
+                                    </div>
+                                </div>
+                                <hr>
+                            </li>
+                            <li>
+                                <div data-message="left">
+                                    <img src="static/images/demand/1.jpg" alt="">
+                                </div>
+                                <div data-message="right">
+                                    <p><a href="#">ABC </a>征用了<a href="#">【需求名称】</a>的创作人，完成需求后请确认角稿</p>
+                                    <sapn data-message="demanddate">2016.5.13 13:00</sapn>
+                                    <div data-message="btn">
+                                        <a href="#">评价</a>
+                                        <a href="#">已评价</a>
+                                    </div>
+                                </div>
+                                <hr>
+                            </li>
+                            <li>
+                                <div data-message="left">
+                                    <img src="static/images/demand/1.jpg" alt="">
+                                </div>
+                                <div data-message="right">
+                                    <p><a href="#">ABC </a>邀约你<a href="#">【需求名称】</a>的投稿联系电话:13811238888</p>
+                                    <sapn data-message="demanddate">2016.5.13 13:00</sapn>
+                                    <div data-message="btn">
+                                        <button type="button" data-btn="orbgbtn">接受邀约</button>
+                                        <button type="button" data-btn="orbgbtn">拒绝邀约</button>
+                                        <button type="button" data-btn="orbgbtn">完成交易</button>
+                                        <a href="#">已拒绝</a>
+                                    </div>
+                                </div>
+                                <hr>
+                            </li>
+                            <li>
+                                <div data-message="left">
+                                    <img src="static/images/demand/1.jpg" alt="">
+                                </div>
+                                <div data-message="right">
+                                    <p><a href="#">ABC </a>申请关闭招募<a href="#">【需求名称】</a>的创作人</p>
+                                    <sapn data-message="demanddate">2016.5.13 13:00</sapn>
+                                    <div data-message="btn">
+                                        <button type="button" data-btn="orbgbtn">同意</button>
+                                        <button type="button" data-btn="orbgbtn">拒绝</button>
+                                        <a href="#">已拒绝</a>
+                                    </div>
+                                </div>
+                                <hr>
+                            </li>
+                            <li>
+                                <div data-message="left">
+                                    <img src="static/images/demand/1.jpg" alt="">
+                                </div>
+                                <div data-message="right">
+                                    <p><a href="#">ABC </a>确认收到您的交稿，酬金已放入您的账户</p>
+                                    <sapn data-message="demanddate">2016.5.13 13:00</sapn>
+
+                                </div>
+                                <hr>
+                            </li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="message_putdemand">
+                        <ul data-message="messagelist">
+                            <li>
+                                <div data-message="left">
+                                    <img src="static/images/demand/1.jpg" alt="">
+                                </div>
+                                <div data-message="right">
+                                    <p><a href="#">ABC </a>参与了<a href="#">【需求名称】</a>的投稿</p>
+                                    <sapn data-message="demanddate">2016.5.13 13:00</sapn>
+                                </div>
+                                <hr>
+                            </li>
+                            <li>
+                                <div data-message="left">
+                                    <img src="static/images/demand/1.jpg" alt="">
+                                </div>
+                                <div data-message="right">
+                                    <p><a href="#">CBA </a>报名了<a href="#">【需求名称】</a>的招募</p>
+                                    <sapn data-message="demanddate">2016.5.13 13:00</sapn>
+                                    <div data-message="btn">
+                                        <a href="#">申诉</a>
+                                    </div>
+                                </div>
+                                <hr>
+                            </li>
+                            <li>
+                                <div data-message="left">
+                                    <img src="static/images/demand/1.jpg" alt="">
+                                </div>
+                                <div data-message="right">
+                                    <p><a href="#">ABC </a>接受或者拒绝了【需求名称】的邀约</p>
+                                    <sapn data-message="demanddate">2016.5.13 13:00</sapn>
+                                    <div data-message="btn">
+                                        <a href="#">评价</a>
+                                        <a href="#">申诉</a>
+                                    </div>
+                                </div>
+                                <hr>
+                            </li>
+                            <li>
+                                <div data-message="left">
+                                    <img src="static/images/demand/1.jpg" alt="">
+                                </div>
+                                <div data-message="right">
+                                    <p><a href="#">ABC </a>完成了【需求名称】的交稿</p>
+                                    <sapn data-message="demanddate">2016.5.13 13:00</sapn>
+                                    <div data-message="btn">
+                                        <a href="#">评价</a>
+                                    </div>
+                                </div>
+                                <hr>
+                            </li>
+                            <li>
+                            <div data-message="left">
+                                <img src="static/images/demand/1.jpg" alt="">
+                            </div>
+                            <div data-message="right">
+                                <p><a href="#">ABC </a>同意关闭需求，该需求已关闭或者不同意关闭需求，如有疑问请联系客服</p>
+                                <sapn data-message="demanddate">2016.5.13 13:00</sapn>
+                                <div data-message="btn">
+                                    <button type="button" data-btn="orbgbtn">确认收稿</button>
+                                    <a href="#">评价</a>
+                                    <a href="#">已评价</a>
+                                </div>
+                            </div>
+                            <hr>
+                        </li>
+                            <li>
+                                <div data-message="left">
+                                    <img src="static/images/demand/1.jpg" alt="">
+                                </div>
+                                <div data-message="right">
+                                    <p><a href="#">ABC </a>不同意关闭需求，如有疑问请联系客服</p>
+                                    <sapn data-message="demanddate">2016.5.13 13:00</sapn>
+                                </div>
+                                <hr>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="message_comment">
+                <ul data-message="messagelist">
+                    <li>
+                        <div data-message="left">
+                            <img src="static/images/demand/1.jpg" alt="">
+                        </div>
+                        <div data-message="right">
+                            <h2>用户名
+                                <sapn data-message="date">2016.5.13 13:00</sapn>
+                            </h2>
+                            <p>评论了您的作品:作品名称</p>
+                            <div data-message="content">
+                                此处是评论的内容此处是评论的内容此处是评论的内容此处是评论的内容此处是评论
+                                的内容此处是评论的内容此处是评论的内容
+                            </div>
+
+                        </div>
+                        <hr>
+                    </li>
+                    <li>
+                        <div data-message="left">
+                            <img src="static/images/demand/1.jpg" alt="">
+                        </div>
+                        <div data-message="right">
+                            <h2>用户名
+                                <sapn data-message="date">2016.5.13 13:00</sapn>
+                            </h2>
+                            <p>评论了您的作品:作品名称</p>
+                            <div data-message="content">
+                                此处是评论的内容此处是评论的内容此处是评论的内容此处是评论的内容此处是评论
+                                的内容此处是评论的内容此处是评论的内容
+                            </div>
+                        </div>
+                        <hr>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+        <div id="page"></div>
+    </div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="static/js/dest/jquery-1.11.3.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="static/js/dest/bootstrap.min.js"></script>
+<script src="static/js/dest/all.min.js"></script>
+</body>
+</html>

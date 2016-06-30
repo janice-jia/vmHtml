@@ -19,13 +19,10 @@ var gulpIf = require('gulp-if');//gulp if
  */
 var pathConfig = require('./gulpConfigPath.js');
 
-
-
 /*
  * default
  * */
 gulp.task('default', ['styles','autoSprite','cleanCss','scripts']);
-
 
 /*
  * 监听
@@ -53,7 +50,7 @@ gulp.task('styles', function() {
 // cleanCss
 gulp.task('cleanCss', function() {
     //编译sass
-    return gulp.src(pathConfig.src.sassDest+'*.dest.css')
+    return gulp.src(pathConfig.src.sassDest+'*.css')
         //css代码合并
         .pipe(concat('all.css'))
 
@@ -96,7 +93,7 @@ gulp.task('scripts', function() {
 
 // autoSprite 任务
 gulp.task('autoSprite', function() {
-        gulp.src('html/static/css/dest/*.css').pipe(cssSprite({
+        gulp.src('html/static/css/minCss/all.min.css').pipe(cssSprite({
             // sprite背景图源文件夹，只有匹配此路径才会处理，默认 images/slice/
             imagepath: pathConfig.src.iconSrc,
 
@@ -108,7 +105,7 @@ gulp.task('autoSprite', function() {
 
         }))
         ////给文件添加.min后缀
-        .pipe(gulpIf('*.css',rename({suffix: '.dest' })))
+        //.pipe(gulpIf('*.css',rename({suffix: '.dest' })))
 
         .pipe(gulp.dest('./'))
         //提醒任务完成

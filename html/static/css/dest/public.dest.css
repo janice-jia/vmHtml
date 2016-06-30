@@ -4,7 +4,8 @@
 */
 /*深灰*/
 /*友情链接字体灰，边框灰*/
-.extend-aline:hover, .zcbl-modal-3 .zcbl-popupGroup .embedVideoCon a:hover, .zcbl-modal-3 .zcbl-popupBtn .zcbl-modal-cancel:hover, #zcbl-header .header-box .header-right .user-notlogin ul li a:hover, #zcbl-footer .footer-link ul li a:hover, #zcbl-footer .footer-aboutus .footer-aboutus-z ul li a:hover {
+.extend-aline:hover, .zcbl-modal-3 .zcbl-popupGroup .embedVideoCon a:hover, .zcbl-modal-3 .zcbl-popupBtn .zcbl-modal-cancel:hover, .zcbl-modal-3 .zcbl-modal-3-desc a:hover, #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-1 li a:hover,
+#zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-2 li a:hover, #zcbl-header .header-box .header-right .user-notlogin ul li a:hover, #zcbl-footer .footer-link ul li a:hover, #zcbl-footer .footer-aboutus .footer-aboutus-z ul li a:hover {
   text-decoration: underline; }
 
 [data-btn="orbgbtn"] {
@@ -103,7 +104,7 @@ button.zcbl-close {
   -moz-opacity: 0.8;
   -khtml-opacity: 0.8;
   opacity: 0.8;
-  background: no-repeat;background-position: -150px 0;
+  background: no-repeat;background-position: -72px -239px;
   width: 33px;
   height: 33px; }
   button.zcbl-close:hover {
@@ -134,19 +135,19 @@ button.zcbl-close {
   .zcbl-modal-1 .zcbl-modal-success, .zcbl-modal-2 .zcbl-modal-success {
     color: #ffb30e; }
     .zcbl-modal-1 .zcbl-modal-success:before, .zcbl-modal-2 .zcbl-modal-success:before {
-      background: no-repeat;background-position: 0 -74px;
+      background: no-repeat;background-position: -109px -194px;
       width: 76px;
       height: 74px; }
   .zcbl-modal-1 .zcbl-modal-error, .zcbl-modal-2 .zcbl-modal-error {
     color: #e43f3f; }
     .zcbl-modal-1 .zcbl-modal-error:before, .zcbl-modal-2 .zcbl-modal-error:before {
-      background: no-repeat;background-position: 0 0;
+      background: no-repeat;background-position: -109px -120px;
       width: 74px;
       height: 74px; }
   .zcbl-modal-1 .zcbl-modal-blue, .zcbl-modal-2 .zcbl-modal-blue {
     color: #499af5; }
     .zcbl-modal-1 .zcbl-modal-blue:before, .zcbl-modal-2 .zcbl-modal-blue:before {
-      background: no-repeat;background-position: -74px 0;
+      background: no-repeat;background-position: -183px -120px;
       width: 76px;
       height: 74px; }
   .zcbl-modal-1 .zcbl-modal-desc, .zcbl-modal-2 .zcbl-modal-desc {
@@ -242,6 +243,8 @@ button.zcbl-close {
     font-size: 18px;
     color: #90908f;
     padding: 0; }
+    .zcbl-modal-3 .zcbl-modal-3-desc a {
+      color: #90908f; }
 
 .zcbl-modal-4 {
   width: 778px;
@@ -271,11 +274,11 @@ button.zcbl-close {
     .zcbl-modal-4 .zcbl-evaluate-con span {
       display: inline-block;
       margin-right: 30px;
-      background: no-repeat;background-position: -114px -118px;
+      background: no-repeat;background-position: -259px -120px;
       width: 30px;
       height: 30px; }
       .zcbl-modal-4 .zcbl-evaluate-con span.yellow {
-        background: no-repeat;background-position: -150px -64px; }
+        background: no-repeat;background-position: -72px -272px; }
   .zcbl-modal-4 .zcbl-evaluate {
     padding: 20px 30px 0 30px;
     position: relative; }
@@ -327,6 +330,81 @@ button.zcbl-close {
     .zcbl-modal-5 .zcbl-opinion-btn button {
       margin: 0 auto; }
 
+.zcbl-modal-6 {
+  width: 1000px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  position: absolute;
+  background: #ffffff;
+  margin-left: -500px;
+  margin-top: 140px;
+  margin-bottom: 100px; }
+
+.zcbl-modal-7 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -174px 0 0 -414px;
+  width: 828px;
+  height: 348px;
+  background: #fff;
+  border-radius: 5px;
+  z-index: 1600; }
+  .zcbl-modal-7 .zcbl-public-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -174px 0 0 -414px;
+    z-index: 1600;
+    width: 828px;
+    height: 348px;
+    background: #ffffff;
+    border-radius: 5px;
+    text-align: center; }
+    .zcbl-modal-7 .zcbl-public-window ul li {
+      display: inline-block;
+      width: 208px;
+      height: 270px;
+      border-radius: 8px;
+      margin-top: 42px; }
+      .zcbl-modal-7 .zcbl-public-window ul li.public-xq {
+        background: #ffb30e; }
+        .zcbl-modal-7 .zcbl-public-window ul li.public-xq a:before {
+          top: 30px;
+          left: 47px;
+          background-position: 0 0;
+          width: 120px;
+          height: 120px; }
+      .zcbl-modal-7 .zcbl-public-window ul li.public-fw {
+        background: #e43f3f;
+        margin: 0 40px; }
+        .zcbl-modal-7 .zcbl-public-window ul li.public-fw a:before {
+          top: 30px;
+          left: 50px;
+          background-position: 0 -120px;
+          width: 109px;
+          height: 119px; }
+      .zcbl-modal-7 .zcbl-public-window ul li.public-zp {
+        background: #499af5; }
+        .zcbl-modal-7 .zcbl-public-window ul li.public-zp a:before {
+          top: 30px;
+          left: 32px;
+          background-position: -120px 0;
+          width: 149px;
+          height: 120px; }
+      .zcbl-modal-7 .zcbl-public-window ul li a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        padding-top: 200px;
+        color: #ffffff;
+        font-size: 30px; }
+        .zcbl-modal-7 .zcbl-public-window ul li a:before {
+          position: absolute;
+          content: ""; }
+
 /** 视频图标 **/
 .zcbl-videoicon {
   position: absolute;
@@ -341,7 +419,7 @@ button.zcbl-close {
     height: 38px;
     width: 38px;
     vertical-align: middle;
-    background-position: 0 -148px; }
+    background-position: -269px 0; }
 
 /** 音频图标 **/
 .zcbl-audioicon {
@@ -357,7 +435,7 @@ button.zcbl-close {
     height: 38px;
     width: 38px;
     vertical-align: middle;
-    background-position: -76px -122px; }
+    background-position: -185px -194px; }
 
 #zcbl-header {
   height: 78px;
@@ -383,7 +461,7 @@ button.zcbl-close {
         left: -10px;
         height: 17px;
         width: 60px;
-        background-position: -70px -160px; }
+        background-position: 0 -287px; }
       #zcbl-header .header-box .header-log a {
         display: block;
         padding: 8px 40px 0 1px; }
@@ -391,7 +469,7 @@ button.zcbl-close {
         display: block;
         width: 38px;
         height: 48px;
-        background: no-repeat;background-position: -76px -74px; }
+        background: no-repeat;background-position: 0 -239px; }
     #zcbl-header .header-box .header-nav {
       float: left; }
       #zcbl-header .header-box .header-nav li {
@@ -427,7 +505,7 @@ button.zcbl-close {
         float: right;
         width: 26px;
         height: 31px;
-        background: no-repeat;background-position: -150px -33px;
+        background: no-repeat;background-position: -269px -70px;
         margin: 22px 60px 0 60px;
         position: relative; }
         #zcbl-header .header-box .header-right .user-login .header-msg a {
@@ -450,11 +528,69 @@ button.zcbl-close {
         float: right; }
       #zcbl-header .header-box .header-right .user-login .header-user {
         width: 34px;
-        height: 36px;
+        height: 100%;
         float: right;
-        padding: 20px 0; }
+        padding: 20px 0;
+        position: relative; }
+        #zcbl-header .header-box .header-right .user-login .header-user:hover {
+          cursor: pointer; }
+          #zcbl-header .header-box .header-right .user-login .header-user:hover .zcbl-userInfo {
+            display: block; }
         #zcbl-header .header-box .header-right .user-login .header-user img {
           border-radius: 50%; }
+        #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo {
+          position: absolute;
+          left: -100px;
+          top: 82px;
+          width: 160px;
+          display: none;
+          height: 432px;
+          background: #ffffff;
+          border-radius: 5px; }
+          #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-top {
+            position: absolute;
+            left: 100px;
+            top: -10px;
+            background: no-repeat;background-position: -223px -194px;
+            height: 10px;
+            width: 21px; }
+          #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-line {
+            height: 1px;
+            overflow: hidden;
+            border-bottom: 1px solid #dddddd; }
+          #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-1,
+          #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-2 {
+            text-align: left; }
+            #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-1 li a,
+            #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-2 li a {
+              font-size: 18px;
+              color: #515151;
+              padding-left: 32px; }
+          #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-1 {
+            margin-bottom: 18px; }
+            #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-1 li {
+              margin-top: 15px; }
+              #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-1 li.zcbl-userInfo-WB b {
+                display: inline-block;
+                background: no-repeat;background-position: -269px -101px;
+                width: 19px;
+                height: 16px;
+                margin-right: 5px; }
+              #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-1 li.zcbl-userInfo-WX b {
+                display: inline-block;
+                background: no-repeat;background-position: -105px -268px;
+                width: 19px;
+                height: 16px;
+                margin-right: 5px; }
+              #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-1 li.zcbl-userInfo-QQ b {
+                display: inline-block;
+                background: no-repeat;background-position: -124px -268px;
+                width: 19px;
+                height: 16px;
+                margin-right: 5px; }
+          #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-2 li {
+            height: 57px;
+            line-height: 57px; }
       #zcbl-header .header-box .header-right .user-notlogin ul {
         width: 215px;
         float: right; }
@@ -514,7 +650,7 @@ button.zcbl-close {
             left: 8px;
             top: 0;
             content: "";
-            background: no-repeat;background-position: -114px -74px;
+            background: no-repeat;background-position: -38px -239px;
             width: 34px;
             height: 44px; }
     #zcbl-footer .footer-aboutus .footer-aboutus-z {
@@ -541,7 +677,7 @@ button.zcbl-close {
           position: absolute;
           top: 0;
           left: 0;
-          background-position: -38px -148px;
+          background-position: -269px -38px;
           height: 32px;
           width: 32px; }
   #zcbl-footer .footer-copyright p {
@@ -579,7 +715,7 @@ button.zcbl-close {
           position: absolute;
           top: 7px;
           left: 10px;
-          background: no-repeat;background-position: -148px -94px;
+          background: no-repeat;background-position: -60px -283px;
           width: 9px;
           height: 15px; }
 
@@ -682,11 +818,18 @@ button.zcbl-close,
 .zcbl-modal-2 .zcbl-modal-blue:before,
 .zcbl-modal-4 .zcbl-evaluate-con span,
 .zcbl-modal-4 .zcbl-evaluate-con span.yellow,
+.zcbl-modal-7 .zcbl-public-window ul li.public-xq a:before,
+.zcbl-modal-7 .zcbl-public-window ul li.public-fw a:before,
+.zcbl-modal-7 .zcbl-public-window ul li.public-zp a:before,
 .zcbl-videoicon b,
 .zcbl-audioicon b,
 #zcbl-header .header-box .header-log:after,
 #zcbl-header .header-box .header-log .zcbl-logo,
 #zcbl-header .header-box .header-right .user-login .header-msg,
+#zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-top,
+#zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-1 li.zcbl-userInfo-WB b,
+#zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-1 li.zcbl-userInfo-WX b,
+#zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-1 li.zcbl-userInfo-QQ b,
 #zcbl-footer .footer-aboutus .footer-aboutus-l h1 a:before,
 #zcbl-footer .footer-aboutus .footer-aboutus-r h2:before,
 .zcbl-page ul li.zcbl-nextPage a:before{

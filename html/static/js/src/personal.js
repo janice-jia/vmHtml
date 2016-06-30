@@ -10,16 +10,6 @@ function showHideSet(showHideID){
     }
 }
 
-//创建作品集弹层显示隐藏
-function showHidePopup(popupId){
-    var  popupDis = $('#'+popupId).css('display');
-    if(popupDis == 'block'){
-        $('#'+popupId).css('display','none');
-    }else{
-        $('#'+popupId).css('display','block');
-    }
-}
-
 /*编辑图片start*/
 var spa = 40; //缩略图区域补充数值
 var w = 0;
@@ -78,39 +68,6 @@ $(function() {
 });
 /*编辑图片end*/
 
-
-
-//编辑iframe显示、隐藏
-function showEditIframe(event){
-    $('#per-view-popup').css('display','block');
-    $(document).keyup(function(e){
-        var key =  e.which;
-        if(key == 27){
-            //关闭
-            $("#per-view-popup").hide();
-            return false;
-        }
-    });
-    $('body', window.parent.document).css('overflow','hidden');
-    $("#editIframe").contents().find("html").click(function(event){
-        $('#per-view-popup', window.parent.document).hide();
-        $('body', window.parent.document).css('overflow','auto');
-        $("#popup-public").hide();
-    });
-
-    $("#editIframe").contents().find(".per-view-box").click(function(event){
-        if (event.stopPropagation) {
-            event.stopPropagation();
-        }else if (window.event) {
-            window.event.cancelBubble = true;
-        }
-    });
-    if (event.stopPropagation) {
-        event.stopPropagation();
-    }else if (window.event) {
-        window.event.cancelBubble = true;
-    }
-}
 
 //文字作品--编辑
 function showEditText(){

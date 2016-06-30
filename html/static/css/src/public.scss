@@ -20,6 +20,7 @@ $color-2c2c2c:#2c2c2c;
 $color-9a9a9a:#9a9a9a;
 $color-e9e9e9:#e9e9e9;
 $color-90908f:#90908f;
+$color-dddddd:#dddddd;
 
 
 .extend-aline{
@@ -310,6 +311,12 @@ button.zcbl-close{
         font-size: 18px;
         color: $color-90908f;
         padding: 0;
+        a{
+            color: $color-90908f;
+            &:hover{
+                @extend .extend-aline;
+            }
+        }
     }
 }
 .zcbl-modal-4{
@@ -410,6 +417,95 @@ button.zcbl-close{
         padding-top: 30px;
         button{
             margin: 0 auto;
+        }
+    }
+}
+.zcbl-modal-6{
+    width:1000px;
+    height: 100%;
+    top:0;
+    left: 50%;
+    position: absolute;
+    background: #ffffff;
+    margin-left: -500px;
+    margin-top: 140px;
+    margin-bottom: 100px;
+}
+
+.zcbl-modal-7{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -174px 0 0 -414px;
+    width: 828px;
+    height: 348px;
+    background: #fff;
+    border-radius: 5px;
+    z-index: 1600;
+    //发布弹层
+    .zcbl-public-window{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -174px 0 0 -414px;
+        z-index: 1600;
+        width: 828px;
+        height: 348px;
+        background: $color-ffffff;
+        border-radius: 5px;
+        text-align: center;
+        ul{
+            li{
+                display: inline-block;
+                width: 208px;
+                height: 270px;
+                border-radius: 8px;
+                margin-top: 42px;
+                &.public-xq{
+                    background: $color-07;
+                    a:before{
+                        top:30px;
+                        left: 47px;
+                        background: url("../../images/icon/icon-index-publish-xq.png");
+                        width: 120px;
+                        height: 120px;
+                    }
+                }
+                &.public-fw{
+                    background: $color-08;
+                    margin: 0 40px;
+                    a:before{
+                        top:30px;
+                        left: 50px;
+                        background: url("../../images/icon/icon-index-publis-fw.png");
+                        width: 109px;
+                        height: 119px;
+                    }
+                }
+                &.public-zp{
+                    background: $color-06;
+                    a:before{
+                        top:30px;
+                        left: 32px;
+                        background: url("../../images/icon/icon-index-publis-zp.png");
+                        width: 149px;
+                        height: 120px;
+                    }
+                }
+                a{
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    padding-top: 200px;
+                    color: $color-ffffff;
+                    font-size: 30px;
+                    &:before{
+                        position: absolute;
+                        content: "";
+                    }
+                }
+            }
         }
     }
 }
@@ -559,11 +655,100 @@ button.zcbl-close{
                 }
                 .header-user{
                     width: 34px;
-                    height: 36px;
+                    height: 100%;
                     float: right;
                     padding: 20px 0;
+                    position: relative;
+                    &:hover{
+                        cursor: pointer;
+                        .zcbl-userInfo{
+                            display: block;
+
+                        }
+                    }
                     img{
                         border-radius: 50%;
+                    }
+                    .zcbl-userInfo{
+                        position: absolute;
+                        left: -100px;
+                        top:82px;
+                        width: 160px;
+                        display: none;
+                        height: 432px;
+                        background: $color-ffffff;
+                        border-radius: 5px;
+                        .zcbl-userInfo-top{
+                            position: absolute;
+                            left: 100px;
+                            top: -10px;
+                            background: url("../../images/icon/icon-index-top.png") no-repeat;
+                            height: 10px;
+                            width: 21px;
+                        }
+                        .zcbl-userInfo-line{
+                            height: 1px;
+                            overflow: hidden;
+                            border-bottom: 1px solid $color-dddddd;
+                        }
+                        .zcbl-userInfo-1,
+                        .zcbl-userInfo-2{
+                            text-align: left;
+                            li{
+                                a{
+                                    font-size: 18px;
+                                    color: $color-02;
+                                    padding-left: 32px;
+                                    &:hover{
+                                        @extend .extend-aline;
+                                    }
+                                }
+                            }
+                        }
+                        .zcbl-userInfo-1{
+                            margin-bottom: 18px;
+                            li{
+                                margin-top: 15px;
+                                &.zcbl-userInfo-WB,
+                                &.zcbl-userInfo-WX,
+                                &.zcbl-userInfo-QQ{
+
+                                }
+                                &.zcbl-userInfo-WB{
+                                    b{
+                                        display: inline-block;
+                                        background: url("../../images/icon/icon-index-wb.png") no-repeat;
+                                        width: 19px;
+                                        height: 16px;
+                                        margin-right: 5px;
+                                    }
+                                }
+                                &.zcbl-userInfo-WX{
+                                    b{
+                                        display: inline-block;
+                                        background: url("../../images/icon/icon-index-wx.png") no-repeat;
+                                        width: 19px;
+                                        height: 16px;
+                                        margin-right: 5px;
+                                    }
+                                }
+                                &.zcbl-userInfo-QQ{
+                                    b{
+                                        display: inline-block;
+                                        background: url("../../images/icon/icon-index-qq.png") no-repeat;
+                                        width: 19px;
+                                        height: 16px;
+                                        margin-right: 5px;
+                                    }
+                                }
+                            }
+                        }
+                        .zcbl-userInfo-2{
+                            li{
+                                height: 57px;
+                                line-height: 57px;
+                            }
+                        }
                     }
                 }
             }

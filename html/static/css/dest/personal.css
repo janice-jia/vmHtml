@@ -1086,7 +1086,7 @@
 .per-view-box {
   width: 1000px;
   background: #ffffff;
-  margin: 128px auto 10px auto;
+  margin: -20px auto 10px auto;
   padding: 0 10px 40px 10px;
   height: auto; }
   .per-view-box .per-view-user .per-view-uerImg {
@@ -1125,12 +1125,17 @@
           left: 0; }
   .per-view-box .per-Slide {
     width: 980px;
-    margin: 20px auto; }
+    margin: 0 auto 20px auto; }
     .per-view-box .per-Slide #mainphoto {
       cursor: pointer;
-      display: block; }
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 0; }
     .per-view-box .per-Slide #mainbody {
       width: 980px;
+      height: 550px;
       margin: 23px 0;
       position: relative; }
       .per-view-box .per-Slide #mainbody .picLeft, .per-view-box .per-Slide #mainbody .picRight {
@@ -1247,7 +1252,8 @@
     .per-view-box .audioBody .audioSrc {
       width: 980px;
       position: absolute;
-      bottom: 5px; }
+      bottom: 5px;
+      left: 0; }
   .per-view-box .textBody {
     width: 980px; }
     .per-view-box .textBody .zcbl-container {
@@ -1278,10 +1284,10 @@
       .per-view-box .textBody .zcbl-text-edit p {
         font-size: 18px;
         line-height: 35px; }
-      .per-view-box .textBody .zcbl-text-edit .zcbl-text-editTime {
-        text-align: right;
-        margin: 30px 0;
-        font-size: 20px; }
+    .per-view-box .textBody .zcbl-text-editTime {
+      text-align: right;
+      margin: 30px;
+      font-size: 20px; }
 
 #per-recharge {
   width: 1000px;

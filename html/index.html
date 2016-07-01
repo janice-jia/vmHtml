@@ -12,6 +12,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="less/bootstrap.css">
     <link rel="stylesheet" href="./static/css/minCss/all.min.css">
+    <link rel="stylesheet" href="./static/ickeckSkins/minimal/grey.css">
 
     <!--[if lt IE 9]>
     <script src="static/js/dest/html5shiv.min.js"></script>
@@ -28,15 +29,18 @@
             <!-- 轮播（Carousel）指标 -->
             <div class="zcbl-seach">
                 <div class="zcbl-seach-l">
-                    <div class="zcbl-seach-option">
-                        <label class="radio-inline per-radio-inline">
-                            <input type="radio" name="seachType" id="seachType1" value="option1">众创
+                    <div class="zcbl-seach-option" id="seachRadio">
+                        <label class="radio-inline seach-radio-inline">
+                            <input type="radio" name="seachType" id="seachType1" value="option1" checked>
+                            <span class="pl5"></span>众创
                         </label>
-                        <label class="radio-inline per-radio-inline">
-                            <input type="radio" name="seachType" id="seachType2" value="option2">需求
+                        <label class="radio-inline seach-radio-inline">
+                            <input type="radio" name="seachType" id="seachType2" value="option2">
+                            <span class="pl5"></span>需求
                         </label>
-                        <label class="radio-inline per-radio-inline">
-                            <input type="radio" name="seachType" id="seachType3" value="option3">服务
+                        <label class="radio-inline seach-radio-inline">
+                            <input type="radio" name="seachType" id="seachType3" value="option3">
+                            <span class="pl5"></span>服务
                         </label>
                     </div>
                     <div class="zcbl-seach-btn">
@@ -361,6 +365,7 @@
 <div id="footer"></div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="static/js/dest/jquery-1.11.3.min.js"></script>
+<script src="static/ickeckSkins/icheck.js"></script>
 <script src="static/js/dest/all.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="static/js/dest/bootstrap.min.js"></script>

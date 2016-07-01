@@ -8,3 +8,10 @@ function loadHeaderFooter()
 
 loadHeaderFooter();
 
+
+$(document).ready(function(){
+    $('#seachRadio input').iCheck({
+        radioClass: 'iradio-grey-20',
+        increaseArea: '30%' // optional
+    });
+});

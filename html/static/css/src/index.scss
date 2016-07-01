@@ -23,6 +23,7 @@ $color-8f8f8e:#8f8f8e;
 .exten-box-shadow{
     background: $color-ffffff;
     box-shadow: 0 0 5px rgba(81, 81, 81, 0.2);
+
 }
 
 .zcbl-slide{
@@ -51,6 +52,10 @@ $color-8f8f8e:#8f8f8e;
                 padding-left: 140px;
                 .zcbl-seach-option{
                     font-size: 18px;
+                    .seach-radio-inline{
+                        padding: 0;
+
+                    }
                 }
                 .zcbl-seach-btn{
                     margin-top: 20px;

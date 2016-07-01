@@ -290,10 +290,30 @@
 <br>
 <br>
 按钮组
-<input type="checkbox" style="width: 30px;height: 30px;">
-<input type="checkbox" checked style="width: 30px;height: 30px;">
-<input type="radio" name="iCheck">
-<input type="radio" name="iCheck" checked>
+<form action="" id="icheck20">
+    <p>grey-20</p>
+<input type="checkbox" name="icheckbox" value="checkbox1">
+<input type="checkbox" name="icheckbox" value="checkbox2">
+<input type="radio" value="111111" name="iCheck">
+<input type="radio" value="222222" name="iCheck">
+</form>
+<br>
+<form action="" id="icheck30">
+    <p>yellow-20</p>
+    <input type="checkbox" name="icheckbox" value="checkbox1" checked>
+    <input type="checkbox" name="icheckbox" value="checkbox2">
+    <input type="radio" value="111111" name="iCheck"  checked >
+    <input type="radio" value="222222" name="iCheck">
+</form>
+
+
+<form action="" id="icheck16">
+    <p>yellow-20</p>
+    <input type="checkbox" name="icheckbox" value="checkbox1" checked>
+    <input type="checkbox" name="icheckbox" value="checkbox2">
+    <input type="radio" value="111111" name="iCheck" checked>
+    <input type="radio" value="222222" name="iCheck">
+</form>
 
 
 
@@ -308,9 +328,21 @@
 <script src="static/ickeckSkins/icheck.js"></script>
 <script>
     $(document).ready(function(){
-        $('input').iCheck({
-            checkboxClass: 'icheckbox_minimal-grey',
-            radioClass: 'iradio_minimal-grey',
+        $('#icheck20 input').iCheck({
+            checkboxClass: 'icheckbox-grey-20',
+            radioClass: 'iradio-grey-20',
+            increaseArea: '30%' // optional
+        });
+
+        $('#icheck30 input').iCheck({
+            checkboxClass: 'icheckbox-grey-30',
+            radioClass: 'iradio-grey-30',
+            increaseArea: '30%' // optional
+        });
+
+        $('#icheck16 input').iCheck({
+            checkboxClass: 'icheckbox-grey-16',
+            radioClass: 'iradio-grey-16',
             increaseArea: '30%' // optional
         });
     });

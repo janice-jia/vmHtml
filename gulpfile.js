@@ -22,14 +22,14 @@ var pathConfig = require('./gulpConfigPath.js');
 /*
  * default
  * */
-gulp.task('default', ['styles','autoSprite','cleanCss','scripts']);
+gulp.task('default', ['styles','cleanCss','scripts']);
 
 /*
  * 监听
  * */
 gulp.task("watch", function(){
-    gulp.watch(pathConfig.src.sassSrc+'*.scss', ['styles','autoSprite']);
-    gulp.watch(pathConfig.src.sassDest+'*.dest.css', ['cleanCss']);
+    gulp.watch(pathConfig.src.sassSrc+'*.scss', ['styles']);
+    gulp.watch(pathConfig.src.sassDest+'*.css', ['cleanCss']);
     gulp.watch(pathConfig.src.jsSrc, ['scripts']);
 });
 
@@ -37,10 +37,13 @@ gulp.task("watch", function(){
 gulp.task('styles', function() {
     //编译sass
     return sass(pathConfig.src.sassSrc+'*.scss')
-        //添加前缀
-        .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
 
         //保存未压缩文件到我们指定的目录下面
+        .pipe(gulp.dest(pathConfig.src.sassDest))
+
+        //添加前缀
+        .pipe(autoprefixer('last 2 version'))
+
         .pipe(gulp.dest(pathConfig.src.sassDest))
 
         //提醒任务完成
@@ -62,6 +65,20 @@ gulp.task('cleanCss', function() {
 
         //输出压缩文件到指定目录
         .pipe(gulp.dest(pathConfig.src.minCss))
+
+        //生成精灵图片
+        .pipe(cssSprite({
+            // sprite背景图源文件夹，只有匹配此路径才会处理，默认 images/slice/
+            imagepath: pathConfig.src.iconSrc,
+
+            // 雪碧图输出目录，注意，会覆盖之前文件！默认 images/
+            spritedest: 'html/static/images/positionIcon/',
+
+            // 替换后的背景路径，默认 ../images/
+            spritepath: '../../images/positionIcon/',
+
+        }))
+        .pipe(gulp.dest('./'))
 
         //提醒任务完成
         //.pipe(notify({ message: 'cleanCss task complete' }));
@@ -91,23 +108,3 @@ gulp.task('scripts', function() {
         //.pipe(notify({ message: 'Scripts task complete' }));
 });
 
-// autoSprite 任务
-gulp.task('autoSprite', function() {
-        gulp.src('html/static/css/minCss/all.min.css').pipe(cssSprite({
-            // sprite背景图源文件夹，只有匹配此路径才会处理，默认 images/slice/
-            imagepath: pathConfig.src.iconSrc,
-
-            // 雪碧图输出目录，注意，会覆盖之前文件！默认 images/
-            spritedest: 'html/static/images/positonIcon/',
-
-            // 替换后的背景路径，默认 ../images/
-            spritepath: '../../images/positonIcon/',
-
-        }))
-        ////给文件添加.min后缀
-        //.pipe(gulpIf('*.css',rename({suffix: '.dest' })))
-
-        .pipe(gulp.dest('./'))
-        //提醒任务完成
-        //.pipe(notify({ message: 'autoSprite task complete'}));
-})

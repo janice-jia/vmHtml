@@ -10,8 +10,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
-    <link href="static/css/minCss/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="less/bootstrap.css">
     <link rel="stylesheet" href="./static/css/minCss/all.min.css">
+    <link rel="stylesheet" href="./static/ickeckSkins/minimal/grey.css">
 
     <!--[if lt IE 9]>
     <script src="static/js/dest/html5shiv.min.js"></script>
@@ -21,58 +22,357 @@
 
 <body>
 <div id="header" style="height: 95px;"></div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
-<div>sssssssssss</div>
+<div class="zcbl-slide">
+    <div class="zcbl-slide-con">
+        <!--<img src="./static/images/index/photos-1.png" height="" alt="">-->
+        <div id="myCarousel" class="carousel slide zcbl-carousel-slide">
+            <!-- 轮播（Carousel）指标 -->
+            <div class="zcbl-seach">
+                <div class="zcbl-seach-l">
+                    <div class="zcbl-seach-option" id="seachRadio">
+                        <label class="radio-inline seach-radio-inline">
+                            <input type="radio" name="seachType" id="seachType1" value="option1" checked>
+                            <span class="pl5"></span>众创
+                        </label>
+                        <label class="radio-inline seach-radio-inline">
+                            <input type="radio" name="seachType" id="seachType2" value="option2">
+                            <span class="pl5"></span>需求
+                        </label>
+                        <label class="radio-inline seach-radio-inline">
+                            <input type="radio" name="seachType" id="seachType3" value="option3">
+                            <span class="pl5"></span>服务
+                        </label>
+                    </div>
+                    <div class="zcbl-seach-btn">
+                        <input type="text" name="seach" class="zcbl-seach-input">
+                        <button type="button" class="zcbl-seachBtn">搜索</button>
+                        <p class="zcbl-seach-or">or</p>
+                        <button type="button" class="zcbl-seach-publish" data-toggle="modal" data-target="#zcblPublish">发布</button>
+                    </div>
+                </div>
+                <div class="zcbl-seach-r">
+                    <ol class="carousel-indicators zcbl-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active">
+                            <img src="./static/images/index/picture-1.png" height="62" width="100" alt="First slide">
+                        </li>
+                        <li data-target="#myCarousel" data-slide-to="1">
+                            <img src="./static/images/index/picture-2.png" height="62" width="100" alt="First slide">
+                        </li>
+                        <li data-target="#myCarousel" data-slide-to="2">
+                            <img src="./static/images/index/picture-3.png" height="62" width="100" alt="First slide">
+                        </li>
+                        <li data-target="#myCarousel" data-slide-to="3">
+                            <img src="./static/images/index/picture-4.png" height="62" width="100" alt="First slide">
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner zcbl-inner">
+                <div class="item active">
+                    <img src="./static/images/index/photos-1.png" alt="First slide">
+                </div>
+                <div class="item">
+                    <img src="./static/images/index/photos-2.png" alt="Second slide">
+                </div>
+                <div class="item">
+                    <img src="./static/images/index/photos-3.png" alt="Third slide">
+                </div>
+                <div class="item">
+                    <img src="./static/images/index/photos-4.png" alt="Third slide">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
+<div class="zcbl-index-con">
+    <div class="zcbl-notice">
+        <p>网站建于2016年5月1日24：00整，系统进行维护，请大家准时睡觉不要来网站增加任何麻烦</p>
+    </div>
+    <div class="zcbl-banner">
+        <a href="#" target="_blank"><img src="./static/images/index/banner.jpg" height="100" width="1000" alt=""></a>
+    </div>
+    <div class="zcbl-tit">
+        <h2>
+            <span class="zcbl-tit-name">需求</span>
+            <span class="zcbl-tit-more"><a href="">更多></a></span>
+        </h2>
+    </div>
+    <div class="zcbl-require">
+        <ul>
+            <li>
+                <div class="zcbl-require-img">
+                    <a href="#" target="_blank"><img src="./static/images/index/require1.jpg" height="250" width="220" alt=""></a>
+                    <div class="zcbl-require-time"><b></b>20天19小时</div>
+                    <div class="zcbl-require-info">
+                        <p class="zcbl-require-name"><a href="#" target="_blank">需求名称需求名称需求...</a></p>
+                        <p class="zcbl-require-tag"><a href="#" target="_blank">动画导演，后期渲染，插画</a></p>
+                        <p class="zcbl-require-people"><b></b>125人参与</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="zcbl-require-img">
+                    <a href="#" target="_blank"><img src="./static/images/index/require2.jpg" height="250" width="220" alt=""></a>
+                    <div class="zcbl-require-time"><b></b>20天19小时</div>
+                    <div class="zcbl-require-info">
+                        <p class="zcbl-require-name"><a href="#" target="_blank">需求名称需求名称需求...</a></p>
+                        <p class="zcbl-require-tag"><a href="#" target="_blank">动画导演，后期渲染，插画</a></p>
+                        <p class="zcbl-require-people"><b></b>125人参与</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="zcbl-require-img">
+                    <a href="#" target="_blank"><img src="./static/images/index/require3.jpg" height="250" width="220" alt=""></a>
+                    <div class="zcbl-require-time"><b></b>20天19小时</div>
+                    <div class="zcbl-require-info">
+                        <p class="zcbl-require-name"><a href="#" target="_blank">需求名称需求名称需求...</a></p>
+                        <p class="zcbl-require-tag"><a href="#" target="_blank">动画导演，后期渲染，插画</a></p>
+                        <p class="zcbl-require-people"><b></b>125人参与</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="zcbl-require-img">
+                    <a href="#" target="_blank"><img src="./static/images/index/require4.jpg" height="250" width="220" alt=""></a>
+                    <div class="zcbl-require-time"><b></b>20天19小时</div>
+                    <div class="zcbl-require-info">
+                        <p class="zcbl-require-name"><a href="#" target="_blank">需求名称需求名称需求...</a></p>
+                        <p class="zcbl-require-tag"><a href="#" target="_blank">动画导演，后期渲染，插画</a></p>
+                        <p class="zcbl-require-people"><b></b>125人参与</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="zcbl-require-img">
+                    <a href="#" target="_blank"><img src="./static/images/index/require5.jpg" height="250" width="220" alt=""></a>
+                    <div class="zcbl-require-time"><b></b>20天19小时</div>
+                    <div class="zcbl-require-info">
+                        <p class="zcbl-require-name"><a href="#" target="_blank">需求名称需求名称需求...</a></p>
+                        <p class="zcbl-require-tag"><a href="#" target="_blank">动画导演，后期渲染，插画</a></p>
+                        <p class="zcbl-require-people"><b></b>125人参与</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="zcbl-require-img">
+                    <a href="#" target="_blank"><img src="./static/images/index/require6.jpg" height="250" width="220" alt=""></a>
+                    <div class="zcbl-require-time"><b></b>20天19小时</div>
+                    <div class="zcbl-require-info">
+                        <p class="zcbl-require-name"><a href="#" target="_blank">需求名称需求名称需求...</a></p>
+                        <p class="zcbl-require-tag"><a href="#" target="_blank">动画导演，后期渲染，插画</a></p>
+                        <p class="zcbl-require-people"><b></b>125人参与</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="zcbl-require-img">
+                    <a href="#" target="_blank"><img src="./static/images/index/require7.jpg" height="250" width="220" alt=""></a>
+                    <div class="zcbl-require-time"><b></b>20天19小时</div>
+                    <div class="zcbl-require-info">
+                        <p class="zcbl-require-name"><a href="#" target="_blank">需求名称需求名称需求...</a></p>
+                        <p class="zcbl-require-tag"><a href="#" target="_blank">动画导演，后期渲染，插画</a></p>
+                        <p class="zcbl-require-people"><b></b>125人参与</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="zcbl-require-img">
+                    <a href="#" target="_blank"><img src="./static/images/index/require8.jpg" height="250" width="220" alt=""></a>
+                    <div class="zcbl-require-time"><b></b>20天19小时</div>
+                    <div class="zcbl-require-info">
+                        <p class="zcbl-require-name"><a href="#" target="_blank">需求名称需求名称需求...</a></p>
+                        <p class="zcbl-require-tag"><a href="#" target="_blank">动画导演，后期渲染，插画</a></p>
+                        <p class="zcbl-require-people"><b></b>125人参与</p>
+                    </div>
+                </div>
+            </li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+    <div class="zcbl-banner">
+        <a href="#" target="_blank"><img src="./static/images/index/banner.jpg" height="100" width="1000" alt=""></a>
+    </div>
+    <div class="zcbl-tit">
+        <h2>
+            <span class="zcbl-tit-name">服务</span>
+            <span class="zcbl-tit-more"><a href="">更多></a></span>
+        </h2>
+    </div>
+    <div class="zcbl-service">
+        <ul>
+            <li>
+                <a href=""><img src="./static/images/index/service1.jpg" height="200" width="170" alt=""></a>
+                <div class="zcbl-service-info">
+                    <div class="zcbl-service-name">
+                        <p><a href="#" target="_blank">3D建模</a></p>
+                    </div>
+                    <div class="zcbl-service-line"></div>
+                    <div class="zcbl-service-time">
+                        <p>100元每小时</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href=""><img src="./static/images/index/service2.jpg" height="200" width="170" alt=""></a>
+                <div class="zcbl-service-info">
+                    <div class="zcbl-service-name">
+                        <p><a href="#" target="_blank">3D建模</a></p>
+                    </div>
+                    <div class="zcbl-service-line"></div>
+                    <div class="zcbl-service-time">
+                        <p>100元每小时</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href=""><img src="./static/images/index/service3.jpg" height="200" width="170" alt=""></a>
+                <div class="zcbl-service-info">
+                    <div class="zcbl-service-name">
+                        <p><a href="#" target="_blank">3D建模</a></p>
+                    </div>
+                    <div class="zcbl-service-line"></div>
+                    <div class="zcbl-service-time">
+                        <p>100元每小时</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href=""><img src="./static/images/index/service4.jpg" height="200" width="170" alt=""></a>
+                <div class="zcbl-service-info">
+                    <div class="zcbl-service-name">
+                        <p><a href="#" target="_blank">3D建模</a></p>
+                    </div>
+                    <div class="zcbl-service-line"></div>
+                    <div class="zcbl-service-time">
+                        <p>100元每小时</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href=""><img src="./static/images/index/service5.jpg" height="200" width="170" alt=""></a>
+                <div class="zcbl-service-info">
+                    <div class="zcbl-service-name">
+                        <p><a href="#" target="_blank">3D建模</a></p>
+                    </div>
+                    <div class="zcbl-service-line"></div>
+                    <div class="zcbl-service-time">
+                        <p>100元每小时</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href=""><img src="./static/images/index/service6.jpg" height="200" width="170" alt=""></a>
+                <div class="zcbl-service-info">
+                    <div class="zcbl-service-name">
+                        <p><a href="#" target="_blank">3D建模</a></p>
+                    </div>
+                    <div class="zcbl-service-line"></div>
+                    <div class="zcbl-service-time">
+                        <p>100元每小时</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href=""><img src="./static/images/index/service7.jpg" height="200" width="170" alt=""></a>
+                <div class="zcbl-service-info">
+                    <div class="zcbl-service-name">
+                        <p><a href="#" target="_blank">3D建模</a></p>
+                    </div>
+                    <div class="zcbl-service-line"></div>
+                    <div class="zcbl-service-time">
+                        <p>100元每小时</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href=""><img src="./static/images/index/service8.jpg" height="200" width="170" alt=""></a>
+                <div class="zcbl-service-info">
+                    <div class="zcbl-service-name">
+                        <p><a href="#" target="_blank">3D建模</a></p>
+                    </div>
+                    <div class="zcbl-service-line"></div>
+                    <div class="zcbl-service-time">
+                        <p>100元每小时</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href=""><img src="./static/images/index/service9.jpg" height="200" width="170" alt=""></a>
+                <div class="zcbl-service-info">
+                    <div class="zcbl-service-name">
+                        <p><a href="#" target="_blank">3D建模</a></p>
+                    </div>
+                    <div class="zcbl-service-line"></div>
+                    <div class="zcbl-service-time">
+                        <p>100元每小时</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href=""><img src="./static/images/index/service10.jpg" height="200" width="170" alt=""></a>
+                <div class="zcbl-service-info">
+                    <div class="zcbl-service-name">
+                        <p><a href="#" target="_blank">3D建模</a></p>
+                    </div>
+                    <div class="zcbl-service-line"></div>
+                    <div class="zcbl-service-time">
+                        <p>100元每小时</p>
+                    </div>
+                </div>
+            </li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+</div>
+
+<div class="zcbl-abouUs">
+    <div class="zcbl-abouUs-box">
+        <div class="zcbl-abouUs-l">
+            <div class="zcbl-about-wall">
+                <div class="zcbl-about-tit">
+                    <h1>我们的成长过程中，需要您的帮助</h1>
+                </div>
+                <div class="zcbl-about-con">
+                    <div class="zcbl-about-conL"></div>
+                    <div class="zcbl-about-conR">
+                        <h2><a href="#">意见反馈</a></h2>
+                        <p>我们的成长离不开您的支持和帮助，遇到问题，遇到麻烦，遇到不爽，来这里告诉我们，让我们知道怎么去改</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="zcbl-abouUs-line"></div>
+        <div class="zcbl-abouUs-r">
+            <div class="zcbl-about-wall">
+                <div class="zcbl-about-tit">
+                    <h1>让我们作为朋友吧</h1>
+                </div>
+                <div class="zcbl-about-con">
+                    <div class="zcbl-about-conL"></div>
+                    <div class="zcbl-about-conR">
+                        <h2>让我们作为朋友吧</h2>
+                        <p>加入我们，一起组建众创部落！为了部落！！！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div id="footer"></div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="static/js/dest/jquery-1.11.3.min.js"></script>
-
+<script src="static/ickeckSkins/icheck.js"></script>
 <script src="static/js/dest/all.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="static/js/dest/bootstrap.min.js"></script>
+<script>
+    $('#myCarousel').carousel({
+        interval: 5000
+    })
+</script>
 </body>
 </html>

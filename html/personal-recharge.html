@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
-    <link href="static/css/minCss/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="less/bootstrap.css">
     <link rel="stylesheet" href="./static/css/minCss/all.min.css">
 
     <!--[if lt IE 9]>
@@ -35,8 +35,6 @@
                 <label for="amount" class="col-sm-2 control-label zcbl-control-label">充值金额：</label>
                 <div class="col-sm-4">
                     <input type="text" class="form-control zcbl-form-control left" name="amount" id="amount" placeholder="">
-                    <!--查看时显示-->
-                    <!--<p class="zcbl-control-info">这里显示的是图片的名称</p>-->
                 </div>
                 <div><p class="zcbl-control-info">元</p></div>
             </div>
@@ -52,12 +50,35 @@
         </label>
     </div>
     <div class="right mt25">
-        <button type="submit" class="btn-yellow-50">确认提交</button>
+        <button type="button" class="btn-yellow-50" data-toggle="modal" data-target="#rechargeSuccess">确认提交</button>
     </div>
     <div class="clear"></div>
     </form>
     <div class="per-recharge-payList">
         <ul>
+            <li>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="per-payList-tit">需求收入</p>
+                        <p class="per-payList-time">2016.6.1 13：21</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="per-payList-income">+100元</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="per-payList-tit">需求酬金支出</p>
+                        <p class="per-payList-time">2016.6.1 13：21</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="per-payList-expend">-100元</p>
+                    </div>
+                </div>
+            </li>
+
             <li>
                 <div class="row">
                     <div class="col-md-8">
@@ -155,11 +176,35 @@
 </div>
 
 <div id="footer"></div>
+
+<!-- 充值成功（Modal） -->
+<div class="modal fade" id="rechargeSuccess"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-1">
+        <h2 class="zcbl-modal-success">充值成功！</h2>
+        <p class="zcbl-modal-desc">恭喜您，充值成功！</p>
+    </div>
+</div>
+<!-- 充值成功（Modal） -->
+
+<!-- 充值失败（Modal） -->
+<div class="modal fade" id="rechargeError"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-1">
+        <h2 class="zcbl-modal-error">充值失败！</h2>
+        <p class="zcbl-modal-desc">您可以使用其他方式支付或者继续充值</p>
+    </div>
+</div>
+<!-- 充值失败（Modal） -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="static/js/dest/jquery-1.11.3.min.js"></script>
 
 <script src="static/js/dest/all.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="static/js/dest/bootstrap.min.js"></script>
+
+<script>
+    $('#rechargeError').modal('show');
+</script>
 </body>
 </html>

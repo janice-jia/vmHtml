@@ -103,7 +103,7 @@
         margin: 0 -16px;
         text-align: center; }
         #demdet [data-demdet="aside"] [data-demdet="aside-body"] [data-demdet="btn"] button {
-          width: 120px;
+          width: 44%;
           height: 40px; }
         #demdet [data-demdet="aside"] [data-demdet="aside-body"] [data-demdet="btn"] button:first-child {
           margin-right: 20px; }

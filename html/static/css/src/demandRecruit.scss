@@ -72,6 +72,8 @@ $black: #000;
           width:100%;
           padding: 0 5px;
           height:50px;
+          border:1px solid #ccc;
+          border-radius: 4px;
         }
         [data-recuit="seldiv"]{
           position: relative;
@@ -144,6 +146,8 @@ $black: #000;
           padding-left: 10px;
           width:100%;
           height: 206px;
+          border:1px solid #ccc;
+          border-radius: 4px;
         }
       }
     }

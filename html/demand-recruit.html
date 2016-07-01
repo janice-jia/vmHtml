@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
-    <link href="static/css/minCss/bootstrap.min.css" rel="stylesheet">
+    <link href="less/bootstrap.css" rel="stylesheet">
+    <!--<link href="static/css/minCss/bootstrap.min.css" rel="stylesheet">-->
     <link rel="stylesheet" href="./static/css/minCss/all.min.css">
 
     <!--[if lt IE 9]>
@@ -112,7 +113,7 @@
                 </div>
 
                 <div data-recuit="submit" data-toggle="#recruit_modelwork">
-                    <button type="button" data-btn="orbgbtn">发布</button>
+                    <button type="button" data-toggle="modal" data-target="#recruit_modelwork" data-btn="orbgbtn">发布</button>
                 </div>
 
             </form>
@@ -187,35 +188,41 @@
                     </div>
                 </div>
                 <div data-recuit="submit" data-toggle="#recruit_modelperson">
-                    <button type="button" data-btn="orbgbtn">发布</button>
+                    <button type="button"  data-toggle="modal" data-target="#recruit_modelperson"  data-btn="orbgbtn">发布</button>
                 </div>
             </form>
         </div>
 
 
     </div>
-    <div data-modal="modalbox" id="recruit_modelwork">
-        <div data-modal="modal">
-            <h2><b></b>需求发布成功！</h2>
-            <p><span>3</span>秒后自动跳转到需求详情页</p>
-        </div>
+    <!--  摸态框  -->
 
+    <div class="modal fade" data-backdrop="static" id="recruit_modelwork"  aria-hidden="true">
+        <div class="zcbl-modal-1">
+            <h2 class="zcbl-modal-success">需求发布成功！</h2>
+            <p class="zcbl-modal-desc">3秒后自动跳转到服务页面</p>
+        </div>
     </div>
 
-    <div data-modal="modalbox" id="recruit_modelperson" class="zcbl-modal-three">
-        <div data-modal="modal">
-            <div data-recuit="modal-header">需求发布成功</div>
-            <div data-recuit="modal-body">
-                需求发布成功！付款成功后需求才会展示给其他用户。创作者完成需求后，需要您的确认平台才会打款给用户。
+
+    <div class="modal fade" data-backdrop="static" id="recruit_modelperson"  aria-hidden="true">
+        <div class="zcbl-modal-3 zcbl-modalHei285">
+            <div class="zcbl-modal-tit">
+                需求发布成功
             </div>
-            <hr>
-            <div data-recuit="modal-footer">
-                <button data-btn="orbgbtn"><a href="#">现在付款</a></button>
-                <button data-btn="orfontbtn"><a href="#">稍后付款</a></button>
+            <div class="zcbl-modal-3-con">
+                <p class="zcbl-modal-3-desc">
+                    需求发布成功！付款成功后需求才会展示给其他用户。创作者完成需求后，需要您的确认平台才会打款给用户。
+                </p>
+            </div>
+            <div class="clear"></div>
+            <div class="zcbl-popupBtn">
+                <button type="submit" class="btn-yellow-50 left mr25" data-dismiss="modal">现在付款</button>
+                <button type="button" class="zcbl-modal-cancel" data-dismiss="modal">稍后付款</button>
             </div>
         </div>
-
     </div>
+
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="static/js/dest/jquery-1.11.3.min.js"></script>

@@ -22,6 +22,8 @@ $color-9a9a9a:#9a9a9a;
 $color-e5e5e5:#e5e5e5;
 $color-acacac:#acacac;
 $color-fb4444:#fb4444;
+$color-212121:#212121;
+$color-90908f:#90908f;
 
 .extend-aline{
     &:hover{
@@ -1459,7 +1461,7 @@ $color-fb4444:#fb4444;
 .per-view-box{
     width: 1000px;
     background: $color-ffffff;
-    margin: 128px auto 10px auto;
+    margin: -20px auto 10px auto;
     padding: 0 10px 40px 10px;
     height: auto;
     .per-view-user{
@@ -1507,13 +1509,18 @@ $color-fb4444:#fb4444;
     }
     .per-Slide{
         width:980px;
-        margin:20px auto;
+        margin:0 auto 20px auto;
         #mainphoto {
             cursor:pointer;
             display:block;
+            position: absolute;
+            left: 0;
+            top:0;
+            z-index: 0;
         }
         #mainbody {
             width:980px;
+            height: 550px;
             margin:23px 0;
             position: relative;
             .picLeft,.picRight{
@@ -1664,6 +1671,7 @@ $color-fb4444:#fb4444;
             width: 980px;
             position: absolute;
             bottom: 5px;
+            left:0;
         }
     }
     .textBody{
@@ -1704,11 +1712,12 @@ $color-fb4444:#fb4444;
                 font-size: 18px;
                 line-height: 35px;
             }
-            .zcbl-text-editTime{
-                text-align: right;
-                margin: 30px 0;
-                font-size: 20px;
-            }
+
+        }
+        .zcbl-text-editTime{
+            text-align: right;
+            margin: 30px;
+            font-size: 20px;
         }
     }
 }
@@ -1717,6 +1726,7 @@ $color-fb4444:#fb4444;
 #per-recharge{
     width: 1000px;
     margin: 30px auto 35px auto;
+    min-height: 500px;
     .per-recharge-tit{
         font-size: 28px;
         padding-left: 12px;
@@ -1738,6 +1748,15 @@ $color-fb4444:#fb4444;
             }
         }
     }
+
+    .zcbl-form-horizontal .pl12{
+        padding-left: 12px;
+    }
+
+    .zcbl-form-horizontal input.bgF{
+        background: $color-ffffff;
+    }
+
     .per-recharge-payList{
         background: $color-ffffff;
         border:  1px solid $color-acacac;
@@ -1770,14 +1789,109 @@ $color-fb4444:#fb4444;
         }
     }
 
+    .per-pay-password{
+        font-size: 20px;
+        padding-top: 40px;
+        a{
+            color: $color-02;
+        }
+        span{
+            padding: 0 20px;
+            a{
+                color: $color-06;
+            }
+        }
+    }
 }
 
 //付款详细
 #per-payInfo{
     width: 1000px;
     margin: 30px auto 35px auto;
-    .per-payInfo-orderId{
-
+    .per-payInfo-order{
+        padding: 0 20px;
+        border-bottom: 1px solid $color-acacac;
+        .per-payInfo-orderId,.per-payInfo-orderTime,.per-payInfo-orderTit,.per-payInfo-orderStatus{
+            font-size: 22px;
+            padding-bottom: 15px;
+        }
+        .per-payInfo-orderTime,.per-payInfo-orderStatus{
+            text-align: right;
+        }
+        .per-payInfo-orderTit{
+            color: $color-212121;
+        }
+        .per-payInfo-des{
+            color: $color-90908f;
+            font-size: 18px;
+            padding-bottom: 15px;
+        }
+        .per-payInfo-orderZJ,.per-payInfo-orderSC{
+            font-size: 18px;
+            padding-bottom: 15px;
+        }
+        .per-payInfo-orderZJ{
+            position: relative;
+            padding-left: 25px;
+            &:before{
+                content: "";
+                position: absolute;
+                top:3px;
+                left: 0;
+                background: url("../../images/icon/icon-per-zjArt.png");
+                width: 14px;
+                height: 16px;
+            }
+        }
+        .per-payInfo-orderSC{
+            position: relative;
+            padding-left: 25px;
+            display: inline-block;
+            float: right;
+            color: $color-90908f;
+            &:before{
+                content: "";
+                position: absolute;
+                top:3px;
+                left: 0;
+                background: url("../../images/icon/icon-per-time.png");
+                width: 16px;
+                height: 17px;
+            }
+        }
+    }
+    .per-payInfo-amount{
+        text-align: right;
+        color: $color-07;
+        font-size: 28px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        span{
+            display: inline-block;
+            width: 30px;
+        }
+    }
+    .per-payInfo-type{
+        height: 160px;
+        background: $color-ffffff;
+        padding: 30px 30px 0 30px;
+        .per-recharge-tit{
+            font-size: 28px;
+        }
+        .per-recharge-payType{
+            padding-top: 10px;
+            .per-recharge-radio{
+                input.input-img{
+                    margin-top: 19px;
+                }
+                img{
+                    margin-right: 30px;
+                }
+                .account-balance{
+                    color: $color-07;
+                }
+            }
+        }
     }
 }
 

@@ -39,7 +39,8 @@
 
 /**  选人  **/
 #choose_person {
-  margin-bottom: 45px; }
+  margin-bottom: 45px;
+  /**  鼠标移入  **/ }
   #choose_person [data-demand-person="personboxl"] {
     width: 190px;
     height: 242px;
@@ -47,7 +48,6 @@
     position: relative;
     display: inline-block;
     /** 小摸态框 **/
-    /**  鼠标移入  **/
     /** 个人信息 **/ }
     #choose_person [data-demand-person="personboxl"] [data-demand-person="modalbox"] {
       text-align: center;
@@ -74,12 +74,6 @@
         margin: 30px; }
       #choose_person [data-demand-person="personboxl"] [data-demand-person="modalbox"] [data-demand-person="chooseover"] a {
         line-height: 242px; }
-    #choose_person [data-demand-person="personboxl"] [data-demand-person="modalbox"]:hover {
-      filter: alpha(opacity=1);
-      -moz-opacity: 1;
-      -khtml-opacity: 1;
-      opacity: 1;
-      height: 242px; }
     #choose_person [data-demand-person="personboxl"] [data-demand-person="information"] {
       text-align: center;
       padding: 0 10px;
@@ -109,6 +103,12 @@
       #choose_person [data-demand-person="personboxl"] [data-demand-person="information"] p {
         margin-top: 15px;
         margin-bottom: 30px; }
+  #choose_person [data-demand-person="personboxl"]:hover [data-demand-person="modalbox"] {
+    filter: alpha(opacity=1);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+    height: 242px; }
 
 /** 选稿 **/
 #choose_works [data-demand-works="worksboxl"] {

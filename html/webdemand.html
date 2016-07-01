@@ -6,19 +6,332 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
-    <link href="static/css/minCss/bootstrap.min.css" rel="stylesheet">
+    <link href="less/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="./static/css/minCss/all.min.css">
 
-    <!--[if lt IE 9]>
+    <!--&lt;!&ndash;[if lt IE 9]>-->
     <script src="static/js/dest/html5shiv.min.js"></script>
     <script src="static/js/dest/respond.min.js"></script>
     <![endif]-->
 </head>
 <body>
+<div id="header" style="height: 78px;"></div>
+<div id="choosedemand">
+    <div data-webdemand="dropdown">
+        <div class="container">
+            <div class="dropdown">
+                <ul data-webdemand="dropdownbtn">
+                    <li>
+                        <button type="button" class="dropdown-toggle" id="dropdownMenu1"
+                                data-toggle="dropdown">
+                            需求类型
+                            <b></b>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                            <li data-webdemand="triangle"></li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">需求下拉1</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">需求下拉2</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">
+                                    需求下拉3
+                                </a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">需求下拉4</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-toggle" id="dropdownMenu2"
+                                data-toggle="dropdown">
+                            截止日期
+                            <b></b>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+                            <li data-webdemand="triangle"></li>
+                            <li role="presentation" class="active">
+                                <a role="menuitem" tabindex="-1" href="#">今日发布</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">近3天发布</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">
+                                    近7天发布
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">24小时到期</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">3天内到期</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">7天内到期</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-toggle" id="dropdownMen3"
+                                data-toggle="dropdown">
+                            保证金
+                            <b></b>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+                            <li data-webdemand="triangle"></li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">  保证金</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">  保证金</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">
+                                    保证金
+                                </a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">  保证金</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-toggle" id="dropdownMenu4"
+                                data-toggle="dropdown">
+                            金额
+                           <b></b>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu4">
+                            <li data-webdemand="triangle"></li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">Java</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">数据挖掘</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">
+                                    数据通信/网络
+                                </a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">分离的链接</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+
+        <div class="per-reqBox">
+            <div class="per-req">
+                <ul>
+                    <li>
+                        <div class="per-reqTit">
+                            <h1>
+                                <a href="#" target="_blank">需求名称需求名称需求名...</a>
+                            </h1>
+                            <p>酬金：<span>1000</span>元</p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="per-reqCon">
+                            <h3>需求说明：这里显示的是需求的说明这里显示的是需求的说明这里显示的是需求的...</h3>
+                            <div class="per-reqInfo">
+                                <p><b data-choose-demand="workicon"></b>征集作品</p>
+                                <ul data-choose-demand="worktab">
+                                    <li>动画</li>
+                                    <li>原画</li>
+                                    <li>原画</li>
+                                </ul>
+                                <ul>
+                                    <li class="per-req-people"><b data-choose-demand="flag"></b>10人参加</li>
+                                    <li class="per-req-bzj"><b></b>已交保证金</li>
+                                    <li class="per-req-time">20天19小时</li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear per-reqLine"></div>
+
+
+                    </li>
+                    <li>
+                        <div class="per-reqTit">
+                            <h1>
+                                <a href="#" target="_blank">需求名称需求名称需求名...</a>
+                            </h1>
+                            <p>可议价</p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="per-reqCon">
+                            <h3>需求说明：这里显示的是需求的说明这里显示的是需求的说明这里显示的是需求的...</h3>
+                            <div class="per-reqInfo">
+                                <p><b data-choose-demand="workicon"></b>征集作品</p>
+                                <ul data-choose-demand="worktab">
+                                    <li>分镜头台本绘制</li>
+                                    <li>原画</li>
+                                    <li>原画</li>
+                                </ul>
+                                <ul>
+                                    <li class="per-req-people"><b data-choose-demand="flag"></b>10人参加</li>
+                                    <li class="per-req-bzj"><b></b>已交保证金</li>
+                                    <li class="per-req-time">20天19小时</li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear per-reqLine"></div>
+                    </li>
+                    <li>
+
+                        <div class="per-reqTit">
+                            <h1>
+                                <a href="#" target="_blank">需求名称需求名称需求名...</a>
+                            </h1>
+                            <p>酬金：<span>1000</span>元</p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="per-reqCon">
+                            <h3>需求说明：这里显示的是需求的说明这里显示的是需求的说明这里显示的是需求的...</h3>
+                            <div class="per-reqInfo">
+                                <p><b data-choose-demand="usericon"></b>招募创作人</p>
+                                <ul data-choose-demand="persontab">
+                                    <li>动画</li>
+                                    <li>原画</li>
+                                    <li>原画</li>
+                                </ul>
+                                <ul>
+                                    <li class="per-req-people"><b data-choose-demand="flag"></b>10人报名</li>
+                                    <li class="per-req-bzj"><b></b>已交保证金</li>
+                                    <li class="per-req-time">20天19小时</li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear per-reqLine"></div>
+
+                    </li>
+                    <li>
+
+                        <div class="per-reqTit">
+                            <h1>
+                                <a href="#" target="_blank">需求名称需求名称需求名...</a>
+                            </h1>
+                            <p>酬金：<span>1000</span>元</p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="per-reqCon">
+                            <h3>需求说明：这里显示的是需求的说明这里显示的是需求的说明这里显示的是需求的...</h3>
+                            <div class="per-reqInfo">
+                                <p><b data-choose-demand="usericon"></b>招募创作人</p>
+                                <ul>
+                                    <li class="per-req-people"><b data-choose-demand="eye"></b>10人报名</li>
+                                    <li class="per-req-bzj"></li>
+                                    <li class="per-req-time">交易成功</li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear per-reqLine"></div>
+
+                    </li>
+                    <li>
+
+                        <div class="per-reqTit">
+                            <h1>
+                                <a href="#" target="_blank">需求名称需求名称需求名...</a>
+                            </h1>
+                            <p>酬金：<span>1000</span>元</p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="per-reqCon">
+                            <h3>需求说明：这里显示的是需求的说明这里显示的是需求的说明这里显示的是需求的...</h3>
+                            <div class="per-reqInfo">
+                                <p><b data-choose-demand="workicon"></b>征集作品</p>
+                                <ul>
+                                    <li class="per-req-people"><b data-choose-demand="eye"></b>10人参加</li>
+                                    <li class="per-req-bzj"></li>
+                                    <li class="per-req-time">20天19小时</li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear per-reqLine"></div>
+
+
+                    </li>
+                    <li>
+
+                        <div class="per-reqTit">
+                            <h1>
+                                <a href="#" target="_blank">需求名称需求名称需求名...</a>
+                            </h1>
+                            <p>酬金：<span>1000</span>元</p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="per-reqCon">
+                            <h3>需求说明：这里显示的是需求的说明这里显示的是需求的说明这里显示的是需求的...</h3>
+                            <div class="per-reqInfo">
+                                <p><b data-choose-demand="workicon"></b>征集作品</p>
+                                <ul>
+                                    <li class="per-req-people"><b data-choose-demand="eye"></b>10人参加</li>
+                                    <li class="per-req-bzj"></li>
+                                    <li class="per-req-time">20天19小时</li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear per-reqLine"></div>
+
+                    </li>
+                    <li>
+                        <div class="per-reqTit">
+                            <h1>
+                                <a href="#" target="_blank">需求名称需求名称需求名...</a>
+                            </h1>
+                            <p>酬金：<span>1000</span>元</p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="per-reqCon">
+                            <h3>需求说明：这里显示的是需求的说明这里显示的是需求的说明这里显示的是需求的...</h3>
+                            <div class="per-reqInfo">
+                                <p><b data-choose-demand="workicon"></b>征集作品</p>
+                                <ul>
+                                    <li class="per-req-people"><b data-choose-demand="eye"></b>10人参加</li>
+                                    <li class="per-req-bzj"></li>
+                                    <li class="per-req-time">20天19小时</li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear per-reqLine"></div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="page"></div>
+    </div>
+</div>
+
+<div id="footer"></div>
+
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="static/js/dest/jquery-1.11.3.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="static/js/dest/bootstrap.min.js"></script>
+<script>$('.dropdown-toggle').dropdown()</script>
+<script src="static/js/dest/all.min.js"></script>
 </body>
 </html>

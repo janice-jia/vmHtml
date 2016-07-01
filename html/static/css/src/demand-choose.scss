@@ -112,15 +112,6 @@ $black: #000;
       }
     }
 
-    /**  鼠标移入  **/
-    [data-demand-person="modalbox"]:hover {
-      filter: alpha(opacity=1);
-      -moz-opacity: 1;
-      -khtml-opacity: 1;
-      opacity: 1;
-      height: 242px;
-    }
-
     /** 个人信息 **/
     [data-demand-person="information"] {
       text-align: center;
@@ -162,6 +153,16 @@ $black: #000;
         margin-bottom: 30px;
       }
       border-bottom: 1px solid $light-gray;
+    }
+  }
+  /**  鼠标移入  **/
+  [data-demand-person="personboxl"]:hover {
+    [data-demand-person="modalbox"] {
+      filter: alpha(opacity=1);
+      -moz-opacity: 1;
+      -khtml-opacity: 1;
+      opacity: 1;
+      height: 242px;
     }
   }
 
@@ -252,7 +253,6 @@ $black: #000;
       margin-right: 20px;
       display: inline-block;
       margin-bottom: 30px;
-
       img {
         margin-top: -35px;
         width: 100px;
@@ -312,8 +312,9 @@ $black: #000;
   /***  音频弹窗  ***/
 
 }
+
 /***  音频弹窗  ***/
-#demand_chooseworks-audio{
+#demand_chooseworks-audio {
   .per-view-box {
     width: 100%;
     margin: 0;

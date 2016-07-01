@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
-    <link href="static/css/minCss/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="less/bootstrap.css">
     <link rel="stylesheet" href="./static/css/minCss/all.min.css">
 
     <!--[if lt IE 9]>
@@ -44,7 +44,7 @@
                     </select>
                 </div>
                 <div class="col-sm-2 per-pub-addPicColl">
-                    <a href="javascript:;" target="_self" onclick="showHidePopup('addColPopup')">+创建作品集</a>
+                    <a href="javascript:;" target="_self" data-toggle="modal" data-target="#addColl">+创建作品集</a>
                 </div>
             </div>
         </form>
@@ -139,26 +139,27 @@
 </div>
 
 <!--创建作品集  start-->
-<div class="zcbl-popup zcbl-hidden" id="addColPopup">
-    <div class="zcbl-popup570 zcbl-popupHei285">
-        <div class="zcbl-popup570-tit">
+<div class="modal fade" id="addColl"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-3 zcbl-modalHei285">
+        <div class="zcbl-modal-tit">
             创建作品集
         </div>
         <form action="">
-        <div class="zcbl-popupForm">
-            <div class="form-group zcbl-popupGroup">
-                <label for="colName" class="col-sm-3 control-label per-set-label">作品集名称：</label>
-                <div class="col-sm-8 zcbl-popupSm">
-                    <input type="text" class="form-control zcbl-popupControl" name="colName" id="colName">
+            <div class="zcbl-popupForm">
+                <div class="form-group zcbl-popupGroup">
+                    <label for="colName" class="col-sm-3 control-label per-set-label">作品集名称：</label>
+                    <div class="col-sm-8 zcbl-popupSm">
+                        <input type="text" class="form-control zcbl-popupControl" name="colName" id="colName">
+                    </div>
                 </div>
+                <div class="clear"></div>
             </div>
             <div class="clear"></div>
-        </div>
-            <div class="clear"></div>
-        <div class="zcbl-popupBtn">
-            <button type="submit" class="btn-yellow-50 left mr25">创建</button>
-            <span><a href="javascript:;" target="_self" onclick="showHidePopup('addColPopup')">取消</a></span>
-        </div>
+            <div class="zcbl-popupBtn">
+                <button type="submit" class="btn-yellow-50 left mr25">创建</button>
+                <button type="button" class="zcbl-modal-cancel" data-dismiss="modal">取消</button>
+            </div>
         </form>
     </div>
 </div>

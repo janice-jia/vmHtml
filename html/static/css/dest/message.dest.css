@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/**  头部  **/
+#message [data-message="header"] {
+  background-color: #fff;
+  height: 102px;
+  /** 标签页 默认样式 **/ }
+  #message [data-message="header"] .container {
+    padding-top: 36px; }
+  #message [data-message="header"] ul[role="tablist"] {
+    padding: 0;
+    border: none; }
+    #message [data-message="header"] ul[role="tablist"] a {
+      padding: 0;
+      padding-bottom: 10px;
+      border: none;
+      color: #171717;
+      border-bottom: 2px solid transparent; }
+    #message [data-message="header"] ul[role="tablist"] .active > a {
+      border-bottom: 4px solid #ffb30e;
+      color: #ffb30e; }
+  #message [data-message="header"] ul[role="tablist"] {
+    text-align: center;
+    color: #515151; }
+    #message [data-message="header"] ul[role="tablist"] [data-message="h2"] {
+      font-size: 30px;
+      margin-right: 170px; }
+    #message [data-message="header"] ul[role="tablist"] li[role="presentation"] {
+      font-size: 28px;
+      margin-right: 122px; }
+      #message [data-message="header"] ul[role="tablist"] li[role="presentation"] a {
+        width: 88px;
+        color: #515151; }
+
+/** 主体 **/
+/** 列表通用样式 **/
+#message [data-message="body"] ul[data-message="messagelist"] {
+  margin-bottom: 50px;
+  padding-top: 23px; }
+  #message [data-message="body"] ul[data-message="messagelist"] [data-message="left"] {
+    float: left;
+    padding-left: 10px; }
+    #message [data-message="body"] ul[data-message="messagelist"] [data-message="left"] img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%; }
+  #message [data-message="body"] ul[data-message="messagelist"] [data-message="right"] {
+    padding-left: 110px; }
+    #message [data-message="body"] ul[data-message="messagelist"] [data-message="right"] h2 {
+      font-weight: bolder;
+      padding-top: 10px;
+      font-size: 20px;
+      margin-bottom: 16px; }
+    #message [data-message="body"] ul[data-message="messagelist"] [data-message="right"] [data-message="date"] {
+      float: right;
+      font-weight: normal;
+      font-size: 18px;
+      color: #909090; }
+    #message [data-message="body"] ul[data-message="messagelist"] [data-message="right"] [data-message="content"] {
+      font-size: 26px;
+      color: #515151; }
+  #message [data-message="body"] ul[data-message="messagelist"] hr {
+    border-color: #c1c1c1; }
+
+/**  系统  **/
+/**  需求  **/
+#message_demand {
+  padding-top: 36px;
+  /** 左侧头像 **/ }
+  #message_demand ul[role="tablist"] {
+    padding: 0;
+    border: none; }
+    #message_demand ul[role="tablist"] a {
+      padding: 0;
+      padding-bottom: 10px;
+      border: none;
+      color: #171717;
+      background-color: transparent; }
+    #message_demand ul[role="tablist"] .active > a {
+      color: #499af5; }
+  #message_demand ul[role="tablist"] a {
+    font-size: 20px;
+    color: #515151;
+    margin-right: 20px; }
+  #message_demand [data-message="left"] {
+    float: left;
+    padding-left: 10px; }
+    #message_demand [data-message="left"] img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%; }
+  #message_demand [data-message="right"] {
+    padding-left: 124px; }
+    #message_demand [data-message="right"] p {
+      padding-top: 10px;
+      font-size: 20px;
+      margin-bottom: 40px;
+      color: #515151; }
+      #message_demand [data-message="right"] p a {
+        color: #499af5; }
+    #message_demand [data-message="right"] [data-message="demanddate"] {
+      padding-top: 10px;
+      font-size: 18px;
+      color: #909090;
+      padding-bottom: 12px; }
+    #message_demand [data-message="right"] [data-message="btn"] {
+      text-align: right;
+      display: inline-block;
+      float: right;
+      margin-bottom: 20px; }
+      #message_demand [data-message="right"] [data-message="btn"] button {
+        width: 90px;
+        height: 40px;
+        margin-left: 20px; }
+      #message_demand [data-message="right"] [data-message="btn"] a {
+        color: #171717;
+        line-height: 40px;
+        margin-left: 40px; }
+  #message_demand hr {
+    clear: both; }
+
+/**  评论  **/
+#message_comment [data-message="right"] p {
+  font-size: 20px; }
+#message_comment [data-message="content"] {
+  font-size: 18px;
+  width: 814px;
+  background-color: #fff;
+  padding: 20px 30px;
+  margin-bottom: 10px; }

@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
-    <link href="static/css/minCss/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="less/bootstrap.css">
     <link rel="stylesheet" href="./static/css/minCss/all.min.css">
 
     <!--[if lt IE 9]>
@@ -62,7 +62,7 @@
             <div class="form-group zcbl-form-group">
                 <div class="per-pub-videoUpload">
                     <div class="per-pub-vieroQR">
-                        <a href="javascript:;" target="_self" onclick="showHidePopup('embedVideo')">嵌入视频</a>
+                        <a href="javascript:;" target="_self" data-toggle="modal" data-target="#addEmbed">嵌入视频</a>
                     </div>
                     <div class="per-pub-videoBox">
                         <p class="per-pub-addVideoIcon">
@@ -85,9 +85,10 @@
 
 
 <!--嵌入视频弹层  start-->
-<div class="zcbl-popup zcbl-hidden" id="embedVideo">
-    <div class="zcbl-popup570 zcbl-popupHei340">
-        <div class="zcbl-popup570-tit">
+<div class="modal fade" id="addEmbed"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-3 zcbl-modalHei340">
+        <div class="zcbl-modal-tit">
             嵌入视频
         </div>
         <form action="">
@@ -103,7 +104,7 @@
             <div class="clear"></div>
             <div class="zcbl-popupBtn">
                 <button type="submit" class="btn-yellow-50 left mr25">保存</button>
-                <span><a href="javascript:;" target="_self" onclick="showHidePopup('embedVideo')">取消</a></span>
+                <button type="button" class="zcbl-modal-cancel" data-dismiss="modal">取消</button>
             </div>
         </form>
     </div>

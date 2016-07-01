@@ -57,7 +57,7 @@
                 <!-- 个人小摸态框 -->
                 <div data-demand-person="modalbox">
                     <div data-demand-person="canchoose">
-                        <button type="button" data-demand-person="choosebtn">征用创作人</button>
+                        <button data-toggle="modal" data-target="#demand_chooseperson" type="button" data-demand-person="choosebtn">征用创作人</button>
                         <hr>
                         <a href="#">查看</a>
                     </div>
@@ -121,7 +121,29 @@
                 <!-- 个人小摸态框 -->
                 <div data-demand-person="modalbox">
                     <div data-demand-person="canchoose">
-                        <button type="button" data-demand-person="choosebtn">征用创作人</button>
+                        <button data-toggle="modal" data-target="#demand_chooseperson" type="button" data-demand-person="choosebtn">征用创作人</button>
+                        <hr>
+                        <a href="#">查看</a>
+                    </div>
+
+                </div>
+                <!--  个人信息  -->
+                <div data-demand-person="information">
+                    <div data-demand-person="inheader">
+                        <span data-demand-person="smiconlt"><b></b>1234</span>
+                        <span data-demand-person="smicongt"><b></b>1234</span>
+                    </div>
+                    <img src="static/images/demand/1.jpg" alt="">
+                    <div>我的小蜜蜂</div>
+                    <p>13810077654</p>
+
+                </div>
+            </div>
+            <div data-demand-person="personboxl">
+                <!-- 个人小摸态框 -->
+                <div data-toggle="modal" data-target="#demand_chooseperson" data-demand-person="modalbox">
+                    <div data-demand-person="canchoose">
+                        <button data-toggle="modal" data-target="#demand_chooseperson" type="button" data-demand-person="choosebtn">征用创作人</button>
                         <hr>
                         <a href="#">查看</a>
                     </div>
@@ -143,7 +165,7 @@
                 <!-- 个人小摸态框 -->
                 <div data-demand-person="modalbox">
                     <div data-demand-person="canchoose">
-                        <button type="button" data-demand-person="choosebtn">征用创作人</button>
+                        <button data-toggle="modal" data-target="#demand_chooseperson" type="button" data-demand-person="choosebtn">征用创作人</button>
                         <hr>
                         <a href="#">查看</a>
                     </div>
@@ -165,7 +187,7 @@
                 <!-- 个人小摸态框 -->
                 <div data-demand-person="modalbox">
                     <div data-demand-person="canchoose">
-                        <button type="button" data-demand-person="choosebtn">征用创作人</button>
+                        <button data-toggle="modal" data-target="#demand_chooseperson" type="button" data-demand-person="choosebtn">征用创作人</button>
                         <hr>
                         <a href="#">查看</a>
                     </div>
@@ -187,29 +209,7 @@
                 <!-- 个人小摸态框 -->
                 <div data-demand-person="modalbox">
                     <div data-demand-person="canchoose">
-                        <button type="button" data-demand-person="choosebtn">征用创作人</button>
-                        <hr>
-                        <a href="#">查看</a>
-                    </div>
-
-                </div>
-                <!--  个人信息  -->
-                <div data-demand-person="information">
-                    <div data-demand-person="inheader">
-                        <span data-demand-person="smiconlt"><b></b>1234</span>
-                        <span data-demand-person="smicongt"><b></b>1234</span>
-                    </div>
-                    <img src="static/images/demand/1.jpg" alt="">
-                    <div>我的小蜜蜂</div>
-                    <p>13810077654</p>
-
-                </div>
-            </div>
-            <div data-demand-person="personboxl">
-                <!-- 个人小摸态框 -->
-                <div data-demand-person="modalbox">
-                    <div data-demand-person="canchoose">
-                        <button type="button" data-demand-person="choosebtn">征用创作人</button>
+                        <button data-toggle="modal" data-target="#demand_chooseperson" type="button" data-demand-person="choosebtn">征用创作人</button>
                         <hr>
                         <a href="#">查看</a>
                     </div>
@@ -230,19 +230,21 @@
         </div>
         <div id="page"></div>
     </div>
-    <div data-modal="modalbox" id="demand_chooseperson" class="zcbl-modal-three">
-        <div data-modal="modal">
-            <div data-recuit="modal-header">是否征用创作人</div>
-            <div data-recuit="modal-body">
-                征用成功后，创作人将会按照您提出的需求进行创作，是否征用？
+    <!--  摸态框  -->
+    <div data-backdrop="static"  class="modal fade" id="demand_chooseperson"  aria-hidden="true">
+        <div class="zcbl-modal-3 zcbl-modalHei285">
+            <div class="zcbl-modal-tit">
+                是否征用创作人
             </div>
-            <hr>
-            <div data-recuit="modal-footer">
-                <button data-btn="orbgbtn"><a href="#">确认</a></button>
-                <button data-btn="orfontbtn"><a href="#">取消</a></button>
+            <div class="zcbl-modal-3-con">
+                <p class="zcbl-modal-3-desc">征用成功后，创作人将会按照您提出的需求进行创作，是否征用？</p>
+            </div>
+            <div class="clear"></div>
+            <div class="zcbl-popupBtn">
+                <button type="submit" class="btn-yellow-50 left mr25" data-dismiss="modal">确认</button>
+                <button type="button" class="zcbl-modal-cancel" data-dismiss="modal">取消</button>
             </div>
         </div>
-
     </div>
 </div>
 

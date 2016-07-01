@@ -9,7 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
-    <link href="static/css/minCss/bootstrap.min.css" rel="stylesheet">
+    <link href="less/bootstrap.css" rel="stylesheet">
+    <!--<link href="static/css/minCss/bootstrap.min.css" rel="stylesheet">-->
     <link rel="stylesheet" href="./static/css/minCss/all.min.css">
 
     <link rel="stylesheet" href="./static/ickeckSkins/minimal/grey.css">
@@ -272,7 +273,7 @@
     模态框10
 </button>
 <!-- 模态框10（Modal） -->
-<div class="modal fade" id="myModal10"  aria-hidden="true">
+<div class="modal fade" data-backdrop="static" id="myModal10"  aria-hidden="true">
     <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
     <div class="zcbl-modal-7">
         <div class="zcbl-public-window">
@@ -285,6 +286,29 @@
     </div>
 </div>
 <!-- 模态框10（Modal） -->
+
+
+
+<!-- 按钮触发模态框 -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal222">
+    data-backdrop="static"
+</button>
+<!-- 模态框11（Modal） -->
+<div class="modal fade" data-backdrop="static" id="myModal222"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-5">
+        <div class="zcbl-modal-tit">
+            意见反馈
+        </div>
+        <div class="zcbl-opinion">
+            <textarea class="form-control zcbl-opinion-control" rows="3" placeholder=""></textarea>
+            <p class="zcbl-opinion-control-max">0/300</p>
+        </div>
+        <div class="zcbl-opinion-btn">
+            <button type="button" class="btn-yellow-50">提交</button>
+        </div>
+    </div>
+</div>
 
 <br>
 <br>

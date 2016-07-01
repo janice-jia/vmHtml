@@ -1,0 +1,22 @@
+@charset "utf-8";
+$darker:#171717;
+$darkgray:#515151;
+$gray: #909090;
+$light-gray: #c1c1c1;
+$bgcolor:#eee;
+$blue:#499af5;
+$orange: #ffb30e;
+$red:#e43f3f;
+$white: #fff;
+$black: #000;
+
+#index-search-box {
+  border:1px solid red;
+  height: 300px;
+  width: 300px;
+  .search-input-box{
+    width: 300px;
+    height: 50px;
+    border:1px solid $black
+  }
+}

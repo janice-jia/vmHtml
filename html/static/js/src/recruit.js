@@ -1,3 +1,4 @@
+/***  需求作品  ***/
 $('#regist_works').delegate("[data-recuit='adddate']", "click", function (event) {
     $(event.target).attr({"data-recuit": "deldate"});
     var select = "<div data-recuit='seldiv'><b></b><select name='rec_works1'><option value ='1'>小说|文学副本</option><option selected value ='2'>诗歌|散文</option><option value ='3'>搞笑|段子</option></select><button data-recuit='adddate' type='button'></button></div>";
@@ -17,9 +18,4 @@ $('#regist_skills').delegate("[data-recuit='addskill']", "click", function (even
 });
 $('#regist_skills').delegate('[data-recuit="delskill"]', "click", function (event) {
     $(event.target).parent().remove();
-});
-/** 摸态框 **/
-$('[data-recuit="submit"]').click(function () {
-
-    $($(this).attr('data-toggle')).fadeIn();
 });

@@ -1,22 +1,50 @@
 @charset "utf-8";
-$darker:#171717;
-$darkgray:#515151;
+$darker: #171717;
+$darkgray: #515151;
 $gray: #909090;
 $light-gray: #c1c1c1;
-$bgcolor:#eee;
-$blue:#499af5;
+$bgcolor: #eee;
+$blue: #499af5;
 $orange: #ffb30e;
-$red:#e43f3f;
+$red: #e43f3f;
 $white: #fff;
 $black: #000;
 
 #index-search-box {
-  border:1px solid red;
-  height: 300px;
-  width: 300px;
-  .search-input-box{
-    width: 300px;
-    height: 50px;
-    border:1px solid $black
+  .search-input-box {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    text-align: center;
+    div {
+      display: inline-block;
+      select {
+        width: 114px;
+        height: 50px;
+        float: left;
+        padding-left: 20px;
+        border: 1px solid $light-gray
+      }
+      input {
+        float: left;
+        width: 300px;
+        height: 50px;
+        border: 1px solid $light-gray;
+        box-shadow: none;
+        border-left: none;
+        border-right: none;
+
+      }
+      button {
+        float: left;
+        width: 120px;
+        height: 50px;
+      }
+    }
+
+  }
+  .search-input-box:after {
+    display: table;
+    content: '';
+    clear: both;
   }
 }

@@ -5,7 +5,7 @@
   height: 100vh;
   width: 100vw;
   text-align: center;
-  background-image: url("../../images/pc/fgpwd/fgpwd_bg.jpg");
+  background-image: url("../../../images/pc/fgpwd/fgpwd_bg.jpg");
   /*******   内容  *******/ }
   #regist [data-regist="container"] {
     width: 440px;
@@ -57,13 +57,13 @@
             height: 100%;
             width: 40px; }
           #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] .form-group [data-regist="logusericon"] {
-            background-image: url("../../images/pc/icon/icon_loguser.png"); }
+            background-image: url("../../../images/pc/icon/icon_loguser.png"); }
           #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] .form-group [data-regist="logpwdicon"] {
-            background-image: url("../../images/pc/icon/icon_logpwd.png"); }
+            background-image: url("../../../images/pc/icon/icon_logpwd.png"); }
           #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] .form-group [data-regist="regphoneicon"] {
-            background-image: url("../../images/pc/icon/icon_regphone.png"); }
+            background-image: url("../../../images/pc/icon/icon_regphone.png"); }
           #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] .form-group [data-regist="regkeyicon"] {
-            background-image: url("../../images/pc/icon/icon_regkey.png"); }
+            background-image: url("../../../images/pc/icon/icon_regkey.png"); }
         #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] [data-regist="helpword"] {
           text-align: left;
           color: #ffb30e; }
@@ -94,7 +94,7 @@
       display: none;
       position: relative;
       height: 100%;
-      background-image: url("../../images/pc/fgpwd/regist_bg.png"); }
+      background-image: url("../../../images/pc/fgpwd/regist_bg.png"); }
       #regist [data-regist="container"] [data-regist="regfinish"] h1 {
         line-height: 500px;
         font-size: 70px;

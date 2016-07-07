@@ -126,13 +126,13 @@ $black: #000;
         [data-demand-person="smiconlt"] {
           float: left;
           b {
-            background-image: url("../../images/pc/icon/icon_like.png");
+            background-image: url("../../../images/pc/icon/icon_like.png");
           }
         }
         [data-demand-person="smicongt"] {
           float: right;
           b {
-            background-image: url("../../images/pc/icon/icon_group.png");
+            background-image: url("../../../images/pc/icon/icon_group.png");
           }
         }
 
@@ -279,7 +279,7 @@ $black: #000;
         margin-right: 5px;
         display: inline-block;
         vertical-align: middle;
-        background-image: url("../../images/pc/icon/icon_addresssm.png");
+        background-image: url("../../../images/pc/icon/icon_addresssm.png");
       }
     }
   }

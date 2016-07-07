@@ -75,7 +75,7 @@ gulp.task('cleanCss', function() {
             spritedest: 'html/static/images/pc/positionIcon/',
 
             // 替换后的背景路径，默认 ../images/
-            spritepath: '../../images/pc/positionIcon/',
+            spritepath: '../../../images/pc/positionIcon/',
 
         }))
         .pipe(gulp.dest('./'))

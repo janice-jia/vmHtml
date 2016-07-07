@@ -44,7 +44,7 @@
             height: 100%;
             display: block; }
             #per-wall .per-wall-l .per-uimg .per-uimg-src .per-uimg-edit a:after {
-              background: url("../../images/pc/icon/icon-per-edit.png");
+              background: url("../../../images/pc/icon/icon-per-edit.png");
               height: 43px;
               width: 43px;
               content: "";
@@ -80,7 +80,7 @@
             left: 0;
             width: 12px;
             height: 15px;
-            background: url("../../images/pc/icon/icon-per-site.png") no-repeat; }
+            background: url("../../../images/pc/icon/icon-per-site.png") no-repeat; }
         #per-wall .per-wall-l .per-uname p a {
           color: #515151; }
     #per-wall .per-wall-l .per-careBtn p {
@@ -112,12 +112,12 @@
         height: 16px;
         line-height: 16px; }
         #per-wall .per-wall-l .per-appraise span.stars-yellow {
-          background: url("../../images/pc/icon/icon-stars-yellow.png") no-repeat;
+          background: url("../../../images/pc/icon/icon-stars-yellow.png") no-repeat;
           width: 16px;
           height: 16px;
           display: block; }
         #per-wall .per-wall-l .per-appraise span.stars-gray {
-          background: url("../../images/pc/icon/icon-stars-gray.png") no-repeat;
+          background: url("../../../images/pc/icon/icon-stars-gray.png") no-repeat;
           width: 16px;
           height: 16px;
           display: block; }
@@ -210,7 +210,7 @@
             top: 0;
             width: 115px;
             height: 100px;
-            background: url("../../images/pc/icon/icon-per-file.png") no-repeat; }
+            background: url("../../../images/pc/icon/icon-per-file.png") no-repeat; }
           #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-picFile .file-num {
             position: absolute;
             width: 48px;
@@ -238,7 +238,7 @@
             top: 0;
             width: 104px;
             height: 83px;
-            background: url("../../images/pc/icon/icon-per-video.png") no-repeat; }
+            background: url("../../../images/pc/icon/icon-per-video.png") no-repeat; }
         #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-audioFile {
           height: 100px;
           width: 100%;
@@ -251,7 +251,7 @@
             top: 0;
             width: 102px;
             height: 102px;
-            background: url("../../images/pc/icon/icon-per-audio.png") no-repeat; }
+            background: url("../../../images/pc/icon/icon-per-audio.png") no-repeat; }
         #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-textFile {
           height: 100px;
           width: 100%;
@@ -264,7 +264,7 @@
             top: 0;
             width: 92px;
             height: 98px;
-            background: url("../../images/pc/icon/icon-per-text.png") no-repeat; }
+            background: url("../../../images/pc/icon/icon-per-text.png") no-repeat; }
         #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgEdit {
           text-align: center;
           padding-top: 10px; }
@@ -286,7 +286,7 @@
                 position: absolute;
                 left: 0;
                 top: 0;
-                background: url("../../images/pc/icon/icon-per-addfile.png") no-repeat;
+                background: url("../../../images/pc/icon/icon-per-addfile.png") no-repeat;
                 width: 50px;
                 height: 50px; }
           #per-wall .per-wall-r .per-art-img ul li.per-art-imgAdd .per-art-imgAdd-tit {
@@ -336,7 +336,7 @@
               position: absolute;
               top: 4px;
               left: 0;
-              background: url("../../images/pc/icon/icon-per-zjArt.png") no-repeat;
+              background: url("../../../images/pc/icon/icon-per-zjArt.png") no-repeat;
               width: 14px;
               height: 16px; }
           #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo ul {
@@ -355,7 +355,7 @@
                   position: absolute;
                   top: 4px;
                   left: 0;
-                  background: url("../../images/pc/icon/icon-per-cy.png") no-repeat;
+                  background: url("../../../images/pc/icon/icon-per-cy.png") no-repeat;
                   width: 27px;
                   height: 16px; }
               #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-bzj {
@@ -365,7 +365,7 @@
                   position: absolute;
                   top: 4px;
                   left: 0;
-                  background: url("../../images/pc/icon/icon-per-bzj.png") no-repeat;
+                  background: url("../../../images/pc/icon/icon-per-bzj.png") no-repeat;
                   width: 16px;
                   height: 17px; }
               #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-time {
@@ -375,7 +375,7 @@
                   position: absolute;
                   top: 4px;
                   left: 0;
-                  background: url("../../images/pc/icon/icon-per-time.png") no-repeat;
+                  background: url("../../../images/pc/icon/icon-per-time.png") no-repeat;
                   width: 16px;
                   height: 17px; }
         #per-wall .per-wall-r .per-req ul li .per-reqStatus {
@@ -447,7 +447,7 @@
               left: 0;
               width: 13px;
               height: 12px;
-              background: url("../../images/pc/icon/icon-per-attention.png") no-repeat; }
+              background: url("../../../images/pc/icon/icon-per-attention.png") no-repeat; }
           #per-wall .per-wall-r .per-fans ul li .per-fansNum .per-fansNum-r {
             margin-bottom: 0;
             width: auto;
@@ -465,7 +465,7 @@
               left: 0;
               width: 16px;
               height: 14px;
-              background: url("../../images/pc/icon/icon-per-fans.png") no-repeat; }
+              background: url("../../../images/pc/icon/icon-per-fans.png") no-repeat; }
         #per-wall .per-wall-r .per-fans ul li .per-fansImg {
           width: 100px;
           height: 100px;
@@ -495,7 +495,7 @@
               content: "";
               top: 0;
               left: 0;
-              background: url("../../images/pc/icon/icon-per-site.png") no-repeat;
+              background: url("../../../images/pc/icon/icon-per-site.png") no-repeat;
               width: 12px;
               height: 15px; }
         #per-wall .per-wall-r .per-fans ul li .per-fansBtn, #per-wall .per-wall-r .per-fans ul li .per-fansBtn-already {
@@ -552,13 +552,13 @@
   #per-settings .per-setEdit a:before {
     top: 33px;
     right: 0;
-    background: url("../../images/pc/icon/icon-set-down.png") no-repeat;
+    background: url("../../../images/pc/icon/icon-set-down.png") no-repeat;
     width: 13px;
     height: 14px; }
   #per-settings .per-set-up a:before {
     top: 33px;
     right: 0;
-    background: url("../../images/pc/icon/icon-set-up.png") no-repeat;
+    background: url("../../../images/pc/icon/icon-set-up.png") no-repeat;
     width: 13px;
     height: 13px; }
   #per-settings .per-setItem {
@@ -573,15 +573,15 @@
         display: inline-block;
         margin: 30px 30px 0 0; }
       #per-settings .per-setItem .per-itemTit ul li .per-set-wx {
-        background: url("../../images/pc/icon/icon-set-wx.png") no-repeat;
+        background: url("../../../images/pc/icon/icon-set-wx.png") no-repeat;
         width: 30px;
         height: 25px; }
       #per-settings .per-setItem .per-itemTit ul li .per-set-qq {
-        background: url("../../images/pc/icon/icon-set-qq.png") no-repeat;
+        background: url("../../../images/pc/icon/icon-set-qq.png") no-repeat;
         width: 24px;
         height: 25px; }
       #per-settings .per-setItem .per-itemTit ul li .per-set-wb {
-        background: url("../../images/pc/icon/icon-set-wb.png") no-repeat;
+        background: url("../../../images/pc/icon/icon-set-wb.png") no-repeat;
         width: 31px;
         height: 25px; }
     #per-settings .per-setItem .per-itemCon {
@@ -629,7 +629,7 @@
           top: 47px;
           left: 66px;
           content: "";
-          background: url("../../images/pc/icon/icon-set-addfile.png");
+          background: url("../../../images/pc/icon/icon-set-addfile.png");
           width: 49px;
           height: 49px; }
         #per-settings .per-setItem .per-itemCon .per-input-file p {
@@ -740,7 +740,7 @@
               top: 0;
               left: 0;
               z-index: 0;
-              background: url("../../images/pc/icon/icon-pub-add.png");
+              background: url("../../../images/pc/icon/icon-pub-add.png");
               width: 65px;
               height: 65px; }
           #per-publish .per-pub-picBox ul li.per-pub-add p.per-pub-addSC {
@@ -808,7 +808,7 @@
                   top: 10px;
                   right: 6px;
                   content: "";
-                  background: url("../../images/pc/icon/icon-pub-fm.png") no-repeat;
+                  background: url("../../../images/pc/icon/icon-pub-fm.png") no-repeat;
                   width: 36px;
                   height: 36px; }
             #per-publish .per-pub-picBox ul li .per-pub-edit p.per-pub-editDel {
@@ -822,7 +822,7 @@
                   position: absolute;
                   left: 6px;
                   top: 10px;
-                  background: url("../../images/pc/icon/icon-pub-del.png") no-repeat;
+                  background: url("../../../images/pc/icon/icon-pub-del.png") no-repeat;
                   width: 36px;
                   height: 36px; }
         #per-publish .per-pub-picBox ul li .per-pub-tit {
@@ -875,7 +875,7 @@
       position: absolute;
       top: -5px;
       right: -7px;
-      background: url("../../images/pc/icon/icon-pub-delImg.png");
+      background: url("../../../images/pc/icon/icon-pub-delImg.png");
       width: 18px;
       height: 18px; }
       #per-publish .pub-file-img .pub-file-imgDel a {
@@ -931,7 +931,7 @@
                 top: 10px;
                 right: 6px;
                 content: "";
-                background: url("../../images/pc/icon/icon-pub-video.png") no-repeat;
+                background: url("../../../images/pc/icon/icon-pub-video.png") no-repeat;
                 width: 36px;
                 height: 36px; }
           #per-publish .per-pub-videoUpload .per-pub-videoBox .per-videoImg-edit p.per-pub-editDel {
@@ -945,7 +945,7 @@
                 position: absolute;
                 left: 6px;
                 top: 10px;
-                background: url("../../images/pc/icon/icon-pub-del.png") no-repeat;
+                background: url("../../../images/pc/icon/icon-pub-del.png") no-repeat;
                 width: 36px;
                 height: 36px; }
       #per-publish .per-pub-videoUpload .per-pub-videoBox .per-pub-addVideoIcon {
@@ -972,7 +972,7 @@
           position: absolute;
           top: 0;
           left: 0;
-          background: url("../../images/pc/icon/icon-pub-add.png");
+          background: url("../../../images/pc/icon/icon-pub-add.png");
           width: 65px;
           height: 65px; }
       #per-publish .per-pub-videoUpload .per-pub-videoBox .per-pub-addVideoSC {
@@ -1002,7 +1002,7 @@
       position: absolute;
       top: 13px;
       left: 0;
-      background: url("../../images/pc/icon/per-album-edit.png");
+      background: url("../../../images/pc/icon/per-album-edit.png");
       height: 27px;
       width: 27px; }
 #per-album .per-album-tit .per-album-titR {
@@ -1062,7 +1062,7 @@
               content: "";
               left: 0;
               top: 0;
-              background: url("../../images/pc/icon/per-album-del.png") no-repeat;
+              background: url("../../../images/pc/icon/per-album-del.png") no-repeat;
               width: 34px;
               height: 34px; }
     #per-album .per-album-con ul li .per-album-titBox {
@@ -1118,7 +1118,7 @@
         .per-view-box .per-view-user .per-view-userInfo p.per-site:before {
           content: "";
           position: absolute;
-          background: url("../../images/pc/icon/icon-per-site.png") no-repeat;
+          background: url("../../../images/pc/icon/icon-per-site.png") no-repeat;
           width: 12px;
           height: 15px;
           top: 5px;
@@ -1164,12 +1164,12 @@
         left: 0; }
         .per-view-box .per-Slide #mainbody .picLeft:after {
           left: 13px;
-          background: url("../../images/pc/icon/icon-left.png"); }
+          background: url("../../../images/pc/icon/icon-left.png"); }
       .per-view-box .per-Slide #mainbody .picRight {
         right: 0; }
         .per-view-box .per-Slide #mainbody .picRight:after {
           right: 13px;
-          background: url("../../images/pc/icon/icon-right.png"); }
+          background: url("../../../images/pc/icon/icon-right.png"); }
     .per-view-box .per-Slide .per-goleft, .per-view-box .per-Slide .per-goright {
       float: left;
       height: 140px;
@@ -1187,10 +1187,10 @@
         height: 43px;
         top: 48px; }
     .per-view-box .per-Slide .per-goleft:after {
-      background: url("../../images/pc/icon/icon-left.png");
+      background: url("../../../images/pc/icon/icon-left.png");
       left: 13px; }
     .per-view-box .per-Slide .per-goright:after {
-      background: url("../../images/pc/icon/icon-right.png");
+      background: url("../../../images/pc/icon/icon-right.png");
       right: 13px; }
     .per-view-box .per-Slide #photos {
       width: 862px;
@@ -1230,7 +1230,7 @@
       margin: -91px 0 0 -90px; }
       .per-view-box .videoBody .videoIcon a {
         display: inline-block;
-        background: url("../../images/pc/icon/icon-per-startVideo.png");
+        background: url("../../../images/pc/icon/icon-per-startVideo.png");
         width: 180px;
         height: 180px; }
   .per-view-box .audioBody {
@@ -1246,7 +1246,7 @@
       margin: -91px 0 0 -90px; }
       .per-view-box .audioBody .audioIcon a {
         display: inline-block;
-        background: url("../../images/pc/icon/icon-per-startAudio.png");
+        background: url("../../../images/pc/icon/icon-per-startAudio.png");
         width: 183px;
         height: 183px; }
     .per-view-box .audioBody .audioSrc {
@@ -1278,7 +1278,7 @@
             float: right; }
             .per-view-box .textBody .zcbl-text-edit h1 p.zcbl-text-editR a {
               display: block;
-              background: url("../../images/pc/icon/icon-per-edit2.png") no-repeat;
+              background: url("../../../images/pc/icon/icon-per-edit2.png") no-repeat;
               width: 33px;
               height: 34px; }
       .per-view-box .textBody .zcbl-text-edit p {
@@ -1370,7 +1370,7 @@
         position: absolute;
         top: 3px;
         left: 0;
-        background: url("../../images/pc/icon/icon-per-zjArt.png");
+        background: url("../../../images/pc/icon/icon-per-zjArt.png");
         width: 14px;
         height: 16px; }
     #per-payInfo .per-payInfo-order .per-payInfo-orderSC {
@@ -1384,7 +1384,7 @@
         position: absolute;
         top: 3px;
         left: 0;
-        background: url("../../images/pc/icon/icon-per-time.png");
+        background: url("../../../images/pc/icon/icon-per-time.png");
         width: 16px;
         height: 17px; }
   #per-payInfo .per-payInfo-amount {

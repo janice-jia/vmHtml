@@ -139,7 +139,7 @@ button.zcbl-close{
     -moz-opacity:0.8;
     -khtml-opacity: 0.8;
     opacity: 0.8;
-    background: url("../../images/pc/icon/icon-per-close.png") no-repeat;
+    background: url("../../../images/pc/icon/icon-per-close.png") no-repeat;
     width: 33px;
     height: 33px;
     &:hover{
@@ -173,7 +173,7 @@ button.zcbl-close{
     .zcbl-modal-success{
         color: $color-07;
         &:before{
-            background: url("../../images/pc/icon/icon_recruitsuc.png") no-repeat;
+            background: url("../../../images/pc/icon/icon_recruitsuc.png") no-repeat;
             width: 76px;
             height: 74px;
         }
@@ -181,7 +181,7 @@ button.zcbl-close{
     .zcbl-modal-error{
         color: $color-08;
         &:before{
-            background: url("../../images/pc/icon/icon-per-error.png") no-repeat;
+            background: url("../../../images/pc/icon/icon-per-error.png") no-repeat;
             width: 74px;
             height: 74px;
         }
@@ -189,7 +189,7 @@ button.zcbl-close{
     .zcbl-modal-blue{
         color: $color-06;
         &:before{
-            background: url("../../images/pc/icon/icon_delsuccess.png") no-repeat;
+            background: url("../../../images/pc/icon/icon_delsuccess.png") no-repeat;
             width: 76px;
             height: 74px;
         }
@@ -349,11 +349,11 @@ button.zcbl-close{
         span{
             display: inline-block;
             margin-right: 30px;
-            background: url("../../images/pc/icon/icon-stars-gray1.png") no-repeat;
+            background: url("../../../images/pc/icon/icon-stars-gray1.png") no-repeat;
             width: 30px;
             height: 30px;
             &.yellow{
-                background: url("../../images/pc/icon/icon-stars-yellow1.png") no-repeat;
+                background: url("../../../images/pc/icon/icon-stars-yellow1.png") no-repeat;
             }
         }
     }
@@ -466,7 +466,7 @@ button.zcbl-close{
                     a:before{
                         top:30px;
                         left: 47px;
-                        background: url("../../images/pc/icon/icon-index-publish-xq.png");
+                        background: url("../../../images/pc/icon/icon-index-publish-xq.png");
                         width: 120px;
                         height: 120px;
                     }
@@ -477,7 +477,7 @@ button.zcbl-close{
                     a:before{
                         top:30px;
                         left: 50px;
-                        background: url("../../images/pc/icon/icon-index-publis-fw.png");
+                        background: url("../../../images/pc/icon/icon-index-publis-fw.png");
                         width: 109px;
                         height: 119px;
                     }
@@ -487,7 +487,7 @@ button.zcbl-close{
                     a:before{
                         top:30px;
                         left: 32px;
-                        background: url("../../images/pc/icon/icon-index-publis-zp.png");
+                        background: url("../../../images/pc/icon/icon-index-publis-zp.png");
                         width: 149px;
                         height: 120px;
                     }
@@ -526,7 +526,7 @@ button.zcbl-close{
         height: 38px;
         width: 38px;
         vertical-align: middle;
-        background-image: url("../../images/pc/icon/icon_video.png");
+        background-image: url("../../../images/pc/icon/icon_video.png");
     }
 }
 /** 音频图标 **/
@@ -543,7 +543,7 @@ button.zcbl-close{
         height: 38px;
         width: 38px;
         vertical-align: middle;
-        background-image: url("../../images/pc/icon/icon_audio.png");
+        background-image: url("../../../images/pc/icon/icon_audio.png");
     }
 }
 
@@ -572,7 +572,7 @@ button.zcbl-close{
                 left: -10px;
                 height: 17px;
                 width: 60px;
-                background: url("../../images/pc/icon/icon_headertriangle.png");
+                background: url("../../../images/pc/icon/icon_headertriangle.png");
             }
             a{
                 display: block;
@@ -582,7 +582,7 @@ button.zcbl-close{
                 display: block;
                 width: 38px;
                 height: 48px;
-                background: url("../../images/pc/icon/logo.png") no-repeat;
+                background: url("../../../images/pc/icon/logo.png") no-repeat;
             }
         }
         .header-nav{
@@ -637,7 +637,7 @@ button.zcbl-close{
                     float: right;
                     width: 26px;
                     height: 31px;
-                    background: url("../../images/pc/icon/icon_headermsg.png") no-repeat;
+                    background: url("../../../images/pc/icon/icon_headermsg.png") no-repeat;
                     margin: 22px 60px 0 60px;
                     position: relative;
                     .header-havemsg{
@@ -682,7 +682,7 @@ button.zcbl-close{
                             position: absolute;
                             left: 100px;
                             top: -10px;
-                            background: url("../../images/pc/icon/icon-index-top.png") no-repeat;
+                            background: url("../../../images/pc/icon/icon-index-top.png") no-repeat;
                             height: 10px;
                             width: 21px;
                         }
@@ -717,7 +717,7 @@ button.zcbl-close{
                                 &.zcbl-userInfo-WB{
                                     b{
                                         display: inline-block;
-                                        background: url("../../images/pc/icon/icon-index-wb.png") no-repeat;
+                                        background: url("../../../images/pc/icon/icon-index-wb.png") no-repeat;
                                         width: 19px;
                                         height: 16px;
                                         margin-right: 5px;
@@ -726,7 +726,7 @@ button.zcbl-close{
                                 &.zcbl-userInfo-WX{
                                     b{
                                         display: inline-block;
-                                        background: url("../../images/pc/icon/icon-index-wx.png") no-repeat;
+                                        background: url("../../../images/pc/icon/icon-index-wx.png") no-repeat;
                                         width: 19px;
                                         height: 16px;
                                         margin-right: 5px;
@@ -735,7 +735,7 @@ button.zcbl-close{
                                 &.zcbl-userInfo-QQ{
                                     b{
                                         display: inline-block;
-                                        background: url("../../images/pc/icon/icon-index-qq.png") no-repeat;
+                                        background: url("../../../images/pc/icon/icon-index-qq.png") no-repeat;
                                         width: 19px;
                                         height: 16px;
                                         margin-right: 5px;
@@ -830,7 +830,7 @@ button.zcbl-close{
                         left: 8px;
                         top: 0;
                         content: "";
-                        background: url("../../images/pc/icon/icon_footlogo.png") no-repeat;
+                        background: url("../../../images/pc/icon/icon_footlogo.png") no-repeat;
                         width: 34px;
                         height: 44px;
                     }
@@ -870,7 +870,7 @@ button.zcbl-close{
                     position: absolute;
                     top: 0;
                     left: 0;
-                    background: url("../../images/pc/icon/icon-phone.png");
+                    background: url("../../../images/pc/icon/icon-phone.png");
                     height: 32px;
                     width: 32px;
                 }
@@ -921,7 +921,7 @@ button.zcbl-close{
                         position: absolute;
                         top:7px;
                         left: 10px;
-                        background: url("../../images/pc/icon/icon-per-next.png") no-repeat;
+                        background: url("../../../images/pc/icon/icon-per-next.png") no-repeat;
                         width: 9px;
                         height: 15px;
                     }

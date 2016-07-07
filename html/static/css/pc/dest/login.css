@@ -2,7 +2,7 @@
 #login {
   padding-top: 128px;
   /***         删删删删删删删删删删删删删删删删删删删删删删删删删删删删删删删删                 **/
-  background-image: url(../../images/pc/fgpwd/fgpwd_bg.jpg);
+  background-image: url(../../../images/pc/fgpwd/fgpwd_bg.jpg);
   height: 100vh;
   width: 100vw;
   text-align: center; }
@@ -49,9 +49,9 @@
           height: 100%;
           width: 40px; }
         #login [data-login="container"] [data-login="form"] .form-group [data-login="logusericon"] {
-          background-image: url("../../images/pc/icon/icon_loguser.png"); }
+          background-image: url("../../../images/pc/icon/icon_loguser.png"); }
         #login [data-login="container"] [data-login="form"] .form-group [data-login="logpwdicon"] {
-          background-image: url("../../images/pc/icon/icon_logpwd.png"); }
+          background-image: url("../../../images/pc/icon/icon_logpwd.png"); }
       #login [data-login="container"] [data-login="form"] [data-login="login_submit"] {
         background-color: #ffb30e;
         width: 100%;
@@ -112,12 +112,12 @@
     #login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_qq"] a {
       color: #3ea6ff; }
     #login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_qq"] b {
-      background-image: url(../../images/pc/icon/icon_qq.png); }
+      background-image: url(../../../images/pc/icon/icon_qq.png); }
     #login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_weibo"] a {
       color: #ff4943; }
     #login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_weibo"] b {
-      background-image: url(../../images/pc/icon/icon_weibo.png); }
+      background-image: url(../../../images/pc/icon/icon_weibo.png); }
     #login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_weixin"] a {
       color: #4dd854; }
     #login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_weixin"] b {
-      background-image: url(../../images/pc/icon/icon_weixin.png); }
+      background-image: url(../../../images/pc/icon/icon_weixin.png); }

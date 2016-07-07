@@ -55,7 +55,7 @@
               position: absolute;
               left: 23px;
               top: 16px;
-              background: url("../../images/pc/icon/icon-index-seach.png") no-repeat;
+              background: url("../../../images/pc/icon/icon-index-seach.png") no-repeat;
               width: 20px;
               height: 23px; }
           .zcbl-slide .zcbl-slide-con .zcbl-seach .zcbl-seach-l .zcbl-seach-btn .zcbl-seach-or {
@@ -80,7 +80,7 @@
               position: absolute;
               top: 16px;
               left: 22px;
-              background: url("../../images/pc/icon/icon-index-publish.png") no-repeat;
+              background: url("../../../images/pc/icon/icon-index-publish.png") no-repeat;
               width: 20px;
               height: 21px; }
       .zcbl-slide .zcbl-slide-con .zcbl-seach .zcbl-seach-r {
@@ -161,7 +161,7 @@
         top: 0;
         left: 0; }
         .zcbl-index-con .zcbl-require ul li .zcbl-require-time b {
-          background: url("../../images/pc/icon/icon-index-time.png") no-repeat;
+          background: url("../../../images/pc/icon/icon-index-time.png") no-repeat;
           width: 20px;
           height: 20px;
           display: inline-block;
@@ -206,7 +206,7 @@
           .zcbl-index-con .zcbl-require ul li .zcbl-require-info .zcbl-require-people b {
             display: inline-block;
             float: left;
-            background: url("../../images/pc/icon/icon-index-people.png") no-repeat;
+            background: url("../../../images/pc/icon/icon-index-people.png") no-repeat;
             width: 13px;
             height: 20px;
             margin-right: 13px; }

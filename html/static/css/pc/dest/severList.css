@@ -22,7 +22,7 @@
         height: 14px;
         display: inline-block;
         vertical-align: middle;
-        background-image: url("../../images/pc/icon/icon_dropdown.png"); }
+        background-image: url("../../../images/pc/icon/icon_dropdown.png"); }
   #severList [data-websever="dropdown"] .dropdown-menu [data-webdemand="triangle"] {
     position: absolute;
     top: -9px;
@@ -55,7 +55,7 @@
           width: 20px;
           height: 23px;
           display: inline-block;
-          background-image: url("../../images/pc/icon/icon_search.png"); }
+          background-image: url("../../../images/pc/icon/icon_search.png"); }
 
 /***  服务列表  ***/
 #severList > .container {

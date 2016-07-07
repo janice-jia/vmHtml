@@ -104,7 +104,7 @@ button.zcbl-close {
   -moz-opacity: 0.8;
   -khtml-opacity: 0.8;
   opacity: 0.8;
-  background: url("../../images/pc/icon/icon-per-close.png") no-repeat;
+  background: url("../../../images/pc/icon/icon-per-close.png") no-repeat;
   width: 33px;
   height: 33px; }
   button.zcbl-close:hover {
@@ -135,19 +135,19 @@ button.zcbl-close {
   .zcbl-modal-1 .zcbl-modal-success, .zcbl-modal-2 .zcbl-modal-success {
     color: #ffb30e; }
     .zcbl-modal-1 .zcbl-modal-success:before, .zcbl-modal-2 .zcbl-modal-success:before {
-      background: url("../../images/pc/icon/icon_recruitsuc.png") no-repeat;
+      background: url("../../../images/pc/icon/icon_recruitsuc.png") no-repeat;
       width: 76px;
       height: 74px; }
   .zcbl-modal-1 .zcbl-modal-error, .zcbl-modal-2 .zcbl-modal-error {
     color: #e43f3f; }
     .zcbl-modal-1 .zcbl-modal-error:before, .zcbl-modal-2 .zcbl-modal-error:before {
-      background: url("../../images/pc/icon/icon-per-error.png") no-repeat;
+      background: url("../../../images/pc/icon/icon-per-error.png") no-repeat;
       width: 74px;
       height: 74px; }
   .zcbl-modal-1 .zcbl-modal-blue, .zcbl-modal-2 .zcbl-modal-blue {
     color: #499af5; }
     .zcbl-modal-1 .zcbl-modal-blue:before, .zcbl-modal-2 .zcbl-modal-blue:before {
-      background: url("../../images/pc/icon/icon_delsuccess.png") no-repeat;
+      background: url("../../../images/pc/icon/icon_delsuccess.png") no-repeat;
       width: 76px;
       height: 74px; }
   .zcbl-modal-1 .zcbl-modal-desc, .zcbl-modal-2 .zcbl-modal-desc {
@@ -274,11 +274,11 @@ button.zcbl-close {
     .zcbl-modal-4 .zcbl-evaluate-con span {
       display: inline-block;
       margin-right: 30px;
-      background: url("../../images/pc/icon/icon-stars-gray1.png") no-repeat;
+      background: url("../../../images/pc/icon/icon-stars-gray1.png") no-repeat;
       width: 30px;
       height: 30px; }
       .zcbl-modal-4 .zcbl-evaluate-con span.yellow {
-        background: url("../../images/pc/icon/icon-stars-yellow1.png") no-repeat; }
+        background: url("../../../images/pc/icon/icon-stars-yellow1.png") no-repeat; }
   .zcbl-modal-4 .zcbl-evaluate {
     padding: 20px 30px 0 30px;
     position: relative; }
@@ -373,7 +373,7 @@ button.zcbl-close {
         .zcbl-modal-7 .zcbl-public-window ul li.public-xq a:before {
           top: 30px;
           left: 47px;
-          background: url("../../images/pc/icon/icon-index-publish-xq.png");
+          background: url("../../../images/pc/icon/icon-index-publish-xq.png");
           width: 120px;
           height: 120px; }
       .zcbl-modal-7 .zcbl-public-window ul li.public-fw {
@@ -382,7 +382,7 @@ button.zcbl-close {
         .zcbl-modal-7 .zcbl-public-window ul li.public-fw a:before {
           top: 30px;
           left: 50px;
-          background: url("../../images/pc/icon/icon-index-publis-fw.png");
+          background: url("../../../images/pc/icon/icon-index-publis-fw.png");
           width: 109px;
           height: 119px; }
       .zcbl-modal-7 .zcbl-public-window ul li.public-zp {
@@ -390,7 +390,7 @@ button.zcbl-close {
         .zcbl-modal-7 .zcbl-public-window ul li.public-zp a:before {
           top: 30px;
           left: 32px;
-          background: url("../../images/pc/icon/icon-index-publis-zp.png");
+          background: url("../../../images/pc/icon/icon-index-publis-zp.png");
           width: 149px;
           height: 120px; }
       .zcbl-modal-7 .zcbl-public-window ul li a {
@@ -419,7 +419,7 @@ button.zcbl-close {
     height: 38px;
     width: 38px;
     vertical-align: middle;
-    background-image: url("../../images/pc/icon/icon_video.png"); }
+    background-image: url("../../../images/pc/icon/icon_video.png"); }
 
 /** 音频图标 **/
 .zcbl-audioicon {
@@ -435,7 +435,7 @@ button.zcbl-close {
     height: 38px;
     width: 38px;
     vertical-align: middle;
-    background-image: url("../../images/pc/icon/icon_audio.png"); }
+    background-image: url("../../../images/pc/icon/icon_audio.png"); }
 
 #zcbl-header {
   height: 78px;
@@ -461,7 +461,7 @@ button.zcbl-close {
         left: -10px;
         height: 17px;
         width: 60px;
-        background: url("../../images/pc/icon/icon_headertriangle.png"); }
+        background: url("../../../images/pc/icon/icon_headertriangle.png"); }
       #zcbl-header .header-box .header-log a {
         display: block;
         padding: 8px 40px 0 1px; }
@@ -469,7 +469,7 @@ button.zcbl-close {
         display: block;
         width: 38px;
         height: 48px;
-        background: url("../../images/pc/icon/logo.png") no-repeat; }
+        background: url("../../../images/pc/icon/logo.png") no-repeat; }
     #zcbl-header .header-box .header-nav {
       float: left; }
       #zcbl-header .header-box .header-nav li {
@@ -505,7 +505,7 @@ button.zcbl-close {
         float: right;
         width: 26px;
         height: 31px;
-        background: url("../../images/pc/icon/icon_headermsg.png") no-repeat;
+        background: url("../../../images/pc/icon/icon_headermsg.png") no-repeat;
         margin: 22px 60px 0 60px;
         position: relative; }
         #zcbl-header .header-box .header-right .user-login .header-msg a {
@@ -551,7 +551,7 @@ button.zcbl-close {
             position: absolute;
             left: 100px;
             top: -10px;
-            background: url("../../images/pc/icon/icon-index-top.png") no-repeat;
+            background: url("../../../images/pc/icon/icon-index-top.png") no-repeat;
             height: 10px;
             width: 21px; }
           #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-line {
@@ -572,19 +572,19 @@ button.zcbl-close {
               margin-top: 15px; }
               #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-1 li.zcbl-userInfo-WB b {
                 display: inline-block;
-                background: url("../../images/pc/icon/icon-index-wb.png") no-repeat;
+                background: url("../../../images/pc/icon/icon-index-wb.png") no-repeat;
                 width: 19px;
                 height: 16px;
                 margin-right: 5px; }
               #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-1 li.zcbl-userInfo-WX b {
                 display: inline-block;
-                background: url("../../images/pc/icon/icon-index-wx.png") no-repeat;
+                background: url("../../../images/pc/icon/icon-index-wx.png") no-repeat;
                 width: 19px;
                 height: 16px;
                 margin-right: 5px; }
               #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-1 li.zcbl-userInfo-QQ b {
                 display: inline-block;
-                background: url("../../images/pc/icon/icon-index-qq.png") no-repeat;
+                background: url("../../../images/pc/icon/icon-index-qq.png") no-repeat;
                 width: 19px;
                 height: 16px;
                 margin-right: 5px; }
@@ -650,7 +650,7 @@ button.zcbl-close {
             left: 8px;
             top: 0;
             content: "";
-            background: url("../../images/pc/icon/icon_footlogo.png") no-repeat;
+            background: url("../../../images/pc/icon/icon_footlogo.png") no-repeat;
             width: 34px;
             height: 44px; }
     #zcbl-footer .footer-aboutus .footer-aboutus-z {
@@ -677,7 +677,7 @@ button.zcbl-close {
           position: absolute;
           top: 0;
           left: 0;
-          background: url("../../images/pc/icon/icon-phone.png");
+          background: url("../../../images/pc/icon/icon-phone.png");
           height: 32px;
           width: 32px; }
   #zcbl-footer .footer-copyright p {
@@ -715,7 +715,7 @@ button.zcbl-close {
           position: absolute;
           top: 7px;
           left: 10px;
-          background: url("../../images/pc/icon/icon-per-next.png") no-repeat;
+          background: url("../../../images/pc/icon/icon-per-next.png") no-repeat;
           width: 9px;
           height: 15px; }
 

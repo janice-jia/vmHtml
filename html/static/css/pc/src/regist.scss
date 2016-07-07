@@ -14,7 +14,7 @@ $black: #000;
   height: 100vh;
   width: 100vw;
   text-align: center;
-  background-image: url('../../images/pc/fgpwd/fgpwd_bg.jpg');
+  background-image: url('../../../images/pc/fgpwd/fgpwd_bg.jpg');
   /*******   内容  *******/
   [data-regist="container"]{
     width:440px;
@@ -73,16 +73,16 @@ $black: #000;
             width: 40px;
           }
           [data-regist="logusericon"] {
-            background-image: url("../../images/pc/icon/icon_loguser.png");
+            background-image: url("../../../images/pc/icon/icon_loguser.png");
           }
           [data-regist="logpwdicon"] {
-            background-image: url("../../images/pc/icon/icon_logpwd.png");
+            background-image: url("../../../images/pc/icon/icon_logpwd.png");
           }
           [data-regist="regphoneicon"] {
-            background-image: url("../../images/pc/icon/icon_regphone.png");
+            background-image: url("../../../images/pc/icon/icon_regphone.png");
           }
           [data-regist="regkeyicon"] {
-            background-image: url("../../images/pc/icon/icon_regkey.png");
+            background-image: url("../../../images/pc/icon/icon_regkey.png");
           }
         }
         /*** 密码提示文字 ***/
@@ -131,7 +131,7 @@ $black: #000;
       display: none;
       position: relative;
       height: 100%;
-      background-image: url("../../images/pc/fgpwd/regist_bg.png");
+      background-image: url("../../../images/pc/fgpwd/regist_bg.png");
       h1{
         line-height: 500px;
         font-size:70px;

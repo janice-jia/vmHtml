@@ -10,7 +10,7 @@ $red:#e43f3f;
 $white: #fff;
 $black: #000;
 #fgpwd {
-  background-image: url(../../images/pc/fgpwd/fgpwd_bg.jpg);
+  background-image: url(../../../images/pc/fgpwd/fgpwd_bg.jpg);
   height: 100vh;
   height: 100%;
   width: 100%;
@@ -99,10 +99,10 @@ $black: #000;
       line-height: 51px;
     }
     [data-fgpwd="fgunameicon"] {
-      background-image: url("../../images/pc/icon/icon_fguser.png");
+      background-image: url("../../../images/pc/icon/icon_fguser.png");
     }
     [data-fgpwd="fgverifyicon"] {
-      background-image: url("../../images/pc/icon/icon_fgverify.png");
+      background-image: url("../../../images/pc/icon/icon_fgverify.png");
     }
     .form-group {
       border-bottom: 1px solid #a7a7a7;
@@ -145,7 +145,7 @@ $black: #000;
     width: 440px;
     height: 456px;
     background-color: $white;
-    background-image: url("../../images/pc/fgpwd/regist_bg.png");
+    background-image: url("../../../images/pc/fgpwd/regist_bg.png");
     margin: 0 auto;
     background-position: 50%;
     border-radius: 10px;

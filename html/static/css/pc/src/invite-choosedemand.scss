@@ -53,7 +53,7 @@ $color-fb4444: #fb4444;
             height: 14px;
             display: inline-block;
             vertical-align: middle;
-            background-image: url("../../images/pc/icon/icon_dropdown.png");
+            background-image: url("../../../images/pc/icon/icon_dropdown.png");
           }
         }
       }
@@ -138,10 +138,10 @@ $color-fb4444: #fb4444;
                 height: 16px;margin-right: 11px;
               }
               b[data-choose-demand="usericon"]{
-                background: url("../../images/pc/icon/icon_oruser.png") no-repeat;
+                background: url("../../../images/pc/icon/icon_oruser.png") no-repeat;
               }
               b[data-choose-demand="workicon"]{
-                background: url("../../images/pc/icon/icon-per-zjArt.png") no-repeat;
+                background: url("../../../images/pc/icon/icon-per-zjArt.png") no-repeat;
               }
             }
             ul {
@@ -161,16 +161,16 @@ $color-fb4444: #fb4444;
                     margin-right: 7px;
                   }
                   b[data-choose-demand="eye"]{
-                    background: url("../../images/pc/icon/icon-per-cy.png") no-repeat;
+                    background: url("../../../images/pc/icon/icon-per-cy.png") no-repeat;
                   }
                   b[data-choose-demand="flag"]{
-                    background: url("../../images/pc/icon/icon_flag.png") no-repeat;
+                    background: url("../../../images/pc/icon/icon_flag.png") no-repeat;
                   }
                 }
                 &.per-req-bzj {
                   width: 103px;
                   b {
-                    background: url("../../images/pc/icon/icon-per-bzj.png") no-repeat;
+                    background: url("../../../images/pc/icon/icon-per-bzj.png") no-repeat;
                     margin-right: 7px;
                     width: 16px;
                     height: 17px;
@@ -186,7 +186,7 @@ $color-fb4444: #fb4444;
                     position: absolute;
                     top: 4px;
                     left: 0;
-                    background: url("../../images/pc/icon/icon-per-time.png") no-repeat;
+                    background: url("../../../images/pc/icon/icon-per-time.png") no-repeat;
                     width: 16px;
                     height: 17px;
                   }
@@ -257,10 +257,10 @@ $color-fb4444: #fb4444;
     }
   }
   #zcbl-footer .footer-aboutus .footer-aboutus-l h1 a:before{
-    background-image: url("../../images/icon/icon_bglogo.png");
+    background-image: url("../../../images/icon/icon_bglogo.png");
   }
   #zcbl-footer .footer-aboutus .footer-aboutus-r h2:before{
-    background-image: url("../../images/icon/icon_bgphone.png");
+    background-image: url("../../../images/icon/icon_bgphone.png");
   }
 }
 **/

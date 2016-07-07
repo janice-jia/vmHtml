@@ -1,6 +1,6 @@
 @charset "UTF-8";
 #pubservice {
-  background-image: url("../../images/pc/demand/demandbg.jpg");
+  background-image: url("../../../images/pc/demand/demandbg.jpg");
   height: 100vh;
   background-repeat: no-repeat;
   background-position-y: 60px; }
@@ -74,7 +74,7 @@
       position: absolute;
       top: -9px;
       right: -9px;
-      background-image: url("../../images/pc/icon/icon_close.png");
+      background-image: url("../../../images/pc/icon/icon_close.png");
       cursor: pointer; }
   #pubservice_file [data-pubservice="addfile"] {
     border: 1px dashed #c1c1c1; }
@@ -93,7 +93,7 @@
       width: 50px;
       top: 32px;
       left: 32px;
-      background-image: url("../../images/pc/icon/icon_addimg.png"); }
+      background-image: url("../../../images/pc/icon/icon_addimg.png"); }
 
 /** 发布成功摸态框 **/
 #pubservice_success {
@@ -102,7 +102,7 @@
     margin-top: 28px;
     color: #ffb30e; }
     #pubservice_success [data-modal="modal"] h2 b {
-      background-image: url("../../images/pc/icon/icon_recruitsuc.png"); }
+      background-image: url("../../../images/pc/icon/icon_recruitsuc.png"); }
   #pubservice_success [data-modal="modal"] p {
     line-height: 50px; }
 
@@ -113,4 +113,4 @@
     margin-top: 43px;
     color: #5098cd; }
     #pubservice_close [data-modal="modal"] h2 b {
-      background-image: url("../../images/pc/icon/icon_delsuccess.png"); }
+      background-image: url("../../../images/pc/icon/icon_delsuccess.png"); }

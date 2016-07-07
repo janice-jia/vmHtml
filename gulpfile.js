@@ -72,10 +72,10 @@ gulp.task('cleanCss', function() {
             imagepath: pathConfig.src.iconSrc,
 
             // 雪碧图输出目录，注意，会覆盖之前文件！默认 images/
-            spritedest: 'html/static/images/positionIcon/',
+            spritedest: 'html/static/images/pc/positionIcon/',
 
             // 替换后的背景路径，默认 ../images/
-            spritepath: '../../images/positionIcon/',
+            spritepath: '../../images/pc/positionIcon/',
 
         }))
         .pipe(gulp.dest('./'))

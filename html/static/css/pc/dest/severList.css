@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/*
+* header
+*/
+/** 下拉框 **/
+#severList [data-websever="dropdown"] {
+  background-color: #ffffff;
+  /**  下拉按钮  **/
+  /**   搜索框  **/ }
+  #severList [data-websever="dropdown"] [data-websever="dropdownbtn"] {
+    display: inline-block;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: left; }
+    #severList [data-websever="dropdown"] [data-websever="dropdownbtn"] button {
+      color: #909090;
+      background-color: transparent;
+      font-size: 28px; }
+      #severList [data-websever="dropdown"] [data-websever="dropdownbtn"] button b {
+        width: 22px;
+        height: 14px;
+        display: inline-block;
+        vertical-align: middle;
+        background-image: url("../../images/pc/icon/icon_dropdown.png"); }
+  #severList [data-websever="dropdown"] .dropdown-menu [data-webdemand="triangle"] {
+    position: absolute;
+    top: -9px;
+    left: 40%;
+    border: 5px solid transparent;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom-color: #ffffff; }
+  #severList [data-websever="dropdown"] [data-websever="search"] {
+    margin-top: 25px;
+    float: right; }
+    #severList [data-websever="dropdown"] [data-websever="search"] [data-websever="input-group"] input {
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+      width: 420px;
+      height: 50px;
+      background-color: #eeeeee;
+      padding-left: 14px;
+      box-shadow: none;
+      border: 1px solid #c1c1c1;
+      color: #c1c1c1; }
+    #severList [data-websever="dropdown"] [data-websever="search"] [data-websever="input-group"] span {
+      float: right; }
+      #severList [data-websever="dropdown"] [data-websever="search"] [data-websever="input-group"] span button {
+        width: 92px;
+        height: 50px;
+        background-color: #c1c1c1; }
+        #severList [data-websever="dropdown"] [data-websever="search"] [data-websever="input-group"] span button b {
+          vertical-align: middle;
+          width: 20px;
+          height: 23px;
+          display: inline-block;
+          background-image: url("../../images/pc/icon/icon_search.png"); }
+
+/***  服务列表  ***/
+#severList > .container {
+  padding: 0; }
+#severList [data-websever="severlist"] ul[data-websever="severlistul"] {
+  margin-top: 25px; }
+  #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li {
+    position: relative;
+    text-align: center;
+    margin-bottom: 60px;
+    width: 300px;
+    height: 300px;
+    margin-right: 50px;
+    padding: 0 10px;
+    float: left; }
+    #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="modal"] {
+      padding: 0 30px;
+      filter: alpha(opacity=0);
+      -moz-opacity: 0;
+      -khtml-opacity: 0;
+      opacity: 0;
+      transition: all .5s;
+      -moz-transition: all .5s;
+      /* Firefox 4 */
+      -webkit-transition: all .5s;
+      /* Safari 和 Chrome */
+      -o-transition: all .5s;
+      /* Opera */
+      position: absolute;
+      height: 0;
+      top: 0;
+      left: 0;
+      background-color: #ffffff; }
+      #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="modal"] h2 {
+        line-height: 36px;
+        font-size: 20px;
+        color: #515151;
+        margin: 0 auto;
+        margin-top: 38px;
+        margin-bottom: 12px;
+        width: 164px; }
+      #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="modal"] hr {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 70px; }
+      #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="modal"] p {
+        font-size: 18px;
+        color: #ffb30e;
+        margin-bottom: 20px; }
+      #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="modal"] div {
+        font-size: 18px;
+        color: #515151;
+        text-align: left; }
+    #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="content"] {
+      height: 300px;
+      padding: 16px 30px 0 30px;
+      border-bottom: 1px solid #bfbfbf; }
+      #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="content"] [data-websever="userhead"] {
+        width: 140px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        position: relative; }
+        #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="content"] [data-websever="userhead"] img {
+          width: 140px;
+          height: 140px;
+          border-radius: 50%; }
+        #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="content"] [data-websever="userhead"] span {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 30px;
+          height: 30px;
+          background-color: #ffffff;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 30px; }
+        #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="content"] [data-websever="userhead"] [data-websever="qi"] {
+          color: #ffb30e; }
+        #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="content"] [data-websever="userhead"] [data-websever="ge"] {
+          color: #499af5; }
+        #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="content"] [data-websever="userhead"] [data-websever="gong"] {
+          color: #550ece; }
+      #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="content"] [data-websever="username"] {
+        font-size: 20px;
+        color: #171717;
+        margin-bottom: 15px; }
+      #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="content"] [data-websever="usertab"] {
+        margin-bottom: 15px; }
+        #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="content"] [data-websever="usertab"] li {
+          display: inline;
+          margin: 0 5px;
+          color: #499af5; }
+      #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="content"] [data-websever="userother"] {
+        color: #515151; }
+  #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li:hover [data-websever="modal"] {
+    filter: alpha(opacity=1);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+    height: 100%; }
+#severList [data-websever="severlist"] ul:after {
+  display: table;
+  clear: both;
+  content: ''; }

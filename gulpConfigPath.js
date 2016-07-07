@@ -7,12 +7,12 @@ module.exports = {
      * 网站页面部分的文件路径
      */
     src:{
-        sassSrc: './html/static/css/src/',
-        sassDest: './html/static/css/dest/',
-        cssSrc: './html/static/css/dest/*.css',
-        minCss: './html/static/css/minCss',
-        jsSrc: './html/static/js/src/*.js',
-        jsDest: './html/static/js/dest',
-        iconSrc: './html/static/images/icon/',
+        sassSrc: './html/static/css/pc/src/',
+        sassDest: './html/static/css/pc/dest/',
+        cssSrc: './html/static/css/pc/dest/*.css',
+        minCss: './html/static/css/pc/minCss',
+        jsSrc: './html/static/js/pc/src/*.js',
+        jsDest: './html/static/js/pc/dest',
+        iconSrc: './html/static/images/pc/icon/',
     }
 }

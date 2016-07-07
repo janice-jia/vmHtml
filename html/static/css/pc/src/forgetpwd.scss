@@ -129,7 +129,12 @@ $black: #000;
       position: absolute;
       line-height: 28px;
       color: #fff;
-
+    }
+    [data-fgpwd="fgpwd_phoneicon"] {
+      background-image: url("../../../images/pc/icon/icon_regphone.png");
+    }
+    [data-fgpwd="fgpwd_phoneKeyicon"] {
+      background-image: url("../../../images/pc/icon/icon_regkey.png");
     }
 
     /**************  3： 设置新密码  *********************/
@@ -137,6 +142,9 @@ $black: #000;
       background-color: $orange;
       width: 100%;
       height: 60px;
+    }
+    [data-fgpwd="fgpwd_addnewpwdicon"] {
+      background-image: url("../../../images/pc/icon/icon_logpwd.png");
     }
     /**************  4：完成  *********************/
   }

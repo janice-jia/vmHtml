@@ -1,7 +1,9 @@
 /** 删除评论 **/
 $('#demdet_comment').delegate("button[data-demdet='answerdel']", "click", function (event) {
-    /**  目标所在祖先元素  **/
-    var tarparent=$(event.target).parents('[ data-demdet="content"]');
+    var e = event || window.event;
+    var target=e.target;
+
+
     /** 获取点击位置在文档中的坐标 给弹出框赋值 **/
     function getMousePos(event) {
         var e = event || window.event;
@@ -11,6 +13,7 @@ $('#demdet_comment').delegate("button[data-demdet='answerdel']", "click", functi
         var y = e.pageY || e.clientY + scrollY;
         return { 'x': x, 'y': y };
     }
+
     /**   显示弹出框 **/
     $('#demdet_isdelanswer').fadeIn();
     /** 弹出框绝对定位 **/
@@ -23,15 +26,20 @@ $('#demdet_comment').delegate("button[data-demdet='answerdel']", "click", functi
         var e = event || window.event;
         var val=e.target.value;
         if(val == 'true'){
+            /**  目标所在祖先元素  **/
+            var tarparent=$(target).parents('[ data-demdet="content"]');
+            console.log(tarparent);
             tarparent.remove();
             $('#demdet_isdelanswer').fadeOut();
+            $.ajax();
+
         }else{
             $('#demdet_isdelanswer').fadeOut();
+            target=null;
         }
     });
 });
 /**  发布评论 **/
 $("#demdet_publish").click(function(){
     var text=$('#demdet_comment textarea').val();
-    //$('#demdet_comment ')
 });

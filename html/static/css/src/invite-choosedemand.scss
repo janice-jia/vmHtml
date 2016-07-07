@@ -77,41 +77,11 @@ $color-fb4444: #fb4444;
     ul {
       li {
         /**  复选框 选择样式  **/
-        .checkbox-yes {
+        .checkbox{
           width: 30px;
           height: 30px;
-          border-radius: 50%;
           float: left;
           margin-top: 40px;
-          background-image: url("../../images/icon/icon_yes.png");
-          /**  复选框 opacity:0  **/
-          input {
-            width: 30px;
-            height: 30px;
-            margin-top: 0;
-            filter:alpha(opacity=0);
-            -moz-opacity:0.5;
-            -khtml-opacity: 0;
-            opacity: 0;
-
-          }
-        }
-        .checkbox-no {
-          width: 30px;
-          height: 30px;
-          border-radius: 50%;
-          border: 1px solid $color-03;
-          float: left;
-          margin-top: 40px;
-          input {
-            width: 30px;
-            height: 30px;
-            margin-top: 0;
-            filter:alpha(opacity=0);
-            -moz-opacity:0;
-            -khtml-opacity: 0;
-            opacity: 0;
-          }
         }
         .checkbox-content{
           padding-left: 50px;

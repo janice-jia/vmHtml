@@ -42,37 +42,11 @@
       border-bottom-color: #ffffff; }
   #choosedemand .per-req ul li {
     /**  复选框 选择样式  **/ }
-    #choosedemand .per-req ul li .checkbox-yes {
+    #choosedemand .per-req ul li .checkbox {
       width: 30px;
       height: 30px;
-      border-radius: 50%;
-      float: left;
-      margin-top: 40px;
-      background-image: url("../../images/icon/icon_yes.png");
-      /**  复选框 opacity:0  **/ }
-      #choosedemand .per-req ul li .checkbox-yes input {
-        width: 30px;
-        height: 30px;
-        margin-top: 0;
-        filter: alpha(opacity=0);
-        -moz-opacity: 0.5;
-        -khtml-opacity: 0;
-        opacity: 0; }
-    #choosedemand .per-req ul li .checkbox-no {
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      border: 1px solid #909090;
       float: left;
       margin-top: 40px; }
-      #choosedemand .per-req ul li .checkbox-no input {
-        width: 30px;
-        height: 30px;
-        margin-top: 0;
-        filter: alpha(opacity=0);
-        -moz-opacity: 0;
-        -khtml-opacity: 0;
-        opacity: 0; }
     #choosedemand .per-req ul li .checkbox-content {
       padding-left: 50px; }
     #choosedemand .per-req ul li .per-reqTit {

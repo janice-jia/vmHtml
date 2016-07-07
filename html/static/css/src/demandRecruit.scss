@@ -67,6 +67,8 @@ $black: #000;
         margin-bottom: 38px;
         input{
           height:50px;
+          border:1px solid #ccc;
+          border-radius: 4px;
         }
         select{
           width:100%;
@@ -74,16 +76,6 @@ $black: #000;
           height:50px;
           border:1px solid #ccc;
           border-radius: 4px;
-        }
-        [data-recuit="seldiv"]{
-          position: relative;
-          b{
-            position: absolute;
-            border-left:1px solid $gray;
-            height: 13px;
-            right:22px;
-            top:17px;
-          }
         }
         label{
          padding-top:0;
@@ -106,12 +98,6 @@ $black: #000;
           padding-left:5px;
           margin-bottom: 16px;
           width:94%;
-        }
-        [data-recuit="seldiv"]{
-          b{
-            right:56px;
-            top:17px;
-          }
         }
         button{
           width:16px;

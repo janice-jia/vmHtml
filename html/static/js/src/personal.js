@@ -75,3 +75,11 @@ function showEditText(){
     $(".zcbl-container").css('display','block');
 }
 
+//搜索radio按钮样式
+$(document).ready(function(){
+    $('#payType input').iCheck({
+        radioClass: 'iradio-grey-20',
+        increaseArea: '30%' // optional
+    });
+});
+

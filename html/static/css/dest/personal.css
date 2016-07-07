@@ -1300,7 +1300,7 @@
     padding-left: 40px;
     margin-bottom: 0; }
   #per-recharge .per-recharge-payType {
-    padding-left: 40px; }
+    padding-left: 20px; }
     #per-recharge .per-recharge-payType .per-recharge-radio input[type=radio] {
       margin-top: 17px; }
     #per-recharge .per-recharge-payType .per-recharge-radio img {
@@ -1404,9 +1404,11 @@
       font-size: 28px; }
     #per-payInfo .per-payInfo-type .per-recharge-payType {
       padding-top: 10px; }
-      #per-payInfo .per-payInfo-type .per-recharge-payType .per-recharge-radio input.input-img {
-        margin-top: 19px; }
-      #per-payInfo .per-payInfo-type .per-recharge-payType .per-recharge-radio img {
-        margin-right: 30px; }
-      #per-payInfo .per-payInfo-type .per-recharge-payType .per-recharge-radio .account-balance {
-        color: #ffb30e; }
+      #per-payInfo .per-payInfo-type .per-recharge-payType .per-recharge-radio {
+        padding-left: 0; }
+        #per-payInfo .per-payInfo-type .per-recharge-payType .per-recharge-radio input.input-img {
+          margin-top: 19px; }
+        #per-payInfo .per-payInfo-type .per-recharge-payType .per-recharge-radio img {
+          margin-right: 30px; }
+        #per-payInfo .per-payInfo-type .per-recharge-payType .per-recharge-radio .account-balance {
+          color: #ffb30e; }

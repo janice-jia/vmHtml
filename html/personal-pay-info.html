@@ -12,6 +12,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="less/bootstrap.css">
     <link rel="stylesheet" href="./static/css/minCss/all.min.css">
+    <link rel="stylesheet" href="./static/ickeckSkins/minimal/grey.css">
 
     <!--[if lt IE 9]>
     <script src="static/js/dest/html5shiv.min.js"></script>
@@ -49,15 +50,18 @@
     <form action="" class="form-horizontal zcbl-form-horizontal">
     <div class="per-payInfo-type">
         <div class="per-recharge-tit">支付方式</div>
-        <div class="per-recharge-payType">
+        <div class="per-recharge-payType" id="payType">
             <label class="radio-inline per-recharge-radio">
-                <input type="radio" name="payType" value="option1" class="input-img"><img src="./static/images/personal/alipay.png" height="52" width="52" alt="">
+                <input type="radio" name="payType" value="option1" class="input-img">
+                <span class="pr5"></span><img src="./static/images/personal/alipay.png" height="52" width="52" alt="">
             </label>
             <label class="radio-inline per-recharge-radio">
-                <input type="radio" name="payType" value="option1" class="input-img"><img src="./static/images/personal/weChatPay.png" height="52" width="52" alt="">
+                <input type="radio" name="payType" value="option1" class="input-img">
+                <span class="pr5"><img src="./static/images/personal/weChatPay.png" height="52" width="52" alt="">
             </label>
             <label class="radio-inline per-recharge-radio">
-                <input type="radio" name="payType" value="option1">账户余额 <span class="account-balance">（10元）</span>
+                <input type="radio" name="payType" value="option1">
+                <span class="pr5">账户余额 <span class="account-balance">（10元）</span>
             </label>
         </div>
     </div>
@@ -101,6 +105,7 @@
 <script src="static/js/dest/jquery-1.11.3.min.js"></script>
 
 <script src="static/js/dest/all.min.js"></script>
+<script src="static/ickeckSkins/icheck.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="static/js/dest/bootstrap.min.js"></script>
 </body>

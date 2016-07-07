@@ -1738,7 +1738,7 @@ $color-90908f:#90908f;
         }
     }
     .per-recharge-payType{
-        padding-left: 40px;
+        padding-left: 20px;
         .per-recharge-radio{
             input[type=radio]{
                 margin-top: 17px;
@@ -1881,6 +1881,7 @@ $color-90908f:#90908f;
         .per-recharge-payType{
             padding-top: 10px;
             .per-recharge-radio{
+                padding-left: 0;
                 input.input-img{
                     margin-top: 19px;
                 }

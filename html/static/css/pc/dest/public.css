@@ -453,7 +453,8 @@ button.zcbl-close {
     height: 100%; }
     #zcbl-header .header-box .header-log {
       float: left;
-      position: relative; }
+      position: relative;
+      margin: 11px 0; }
       #zcbl-header .header-box .header-log:after {
         content: "";
         position: absolute;

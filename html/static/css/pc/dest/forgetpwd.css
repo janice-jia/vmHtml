@@ -98,10 +98,16 @@
       position: absolute;
       line-height: 28px;
       color: #fff; }
+    #fgpwd [data-fgpwd="form_process"] [data-fgpwd="fgpwd_phoneicon"] {
+      background-image: url("../../../images/pc/icon/icon_regphone.png"); }
+    #fgpwd [data-fgpwd="form_process"] [data-fgpwd="fgpwd_phoneKeyicon"] {
+      background-image: url("../../../images/pc/icon/icon_regkey.png"); }
     #fgpwd [data-fgpwd="form_process"] [data-fgpwd="finish"] {
       background-color: #ffb30e;
       width: 100%;
       height: 60px; }
+    #fgpwd [data-fgpwd="form_process"] [data-fgpwd="fgpwd_addnewpwdicon"] {
+      background-image: url("../../../images/pc/icon/icon_logpwd.png"); }
   #fgpwd [data-fgpwd="form_finish"] {
     width: 440px;
     height: 456px;

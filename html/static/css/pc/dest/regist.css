@@ -1,18 +1,14 @@
 @charset "UTF-8";
 #regist {
-  padding-top: 128px;
-  /***         删删删删删删删删删删删删删删删删删删删删删删删删删删删删删删删删                 **/
-  height: 100vh;
-  width: 100vw;
-  text-align: center;
-  background-image: url("../../../images/pc/fgpwd/fgpwd_bg.jpg");
   /*******   内容  *******/ }
   #regist [data-regist="container"] {
+    text-align: center;
     width: 440px;
     height: 620px;
     margin: 0 auto;
     border-radius: 10px;
     background-color: #fff;
+    padding-top: 44px;
     /** 注册信息界面 **/
     /** 注册完成界面 **/ }
     #regist [data-regist="container"] [data-regist="registnow"] {

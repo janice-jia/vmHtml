@@ -458,11 +458,13 @@ button.zcbl-close {
       #zcbl-header .header-box .header-log:after {
         content: "";
         position: absolute;
-        bottom: -28px;
+        top: 67px;
         left: -10px;
-        height: 17px;
-        width: 60px;
-        background: url("../../../images/pc/icon/icon_headertriangle.png"); }
+        width: 0;
+        height: 0;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-top: 17px solid #171717; }
       #zcbl-header .header-box .header-log a {
         display: block;
         padding: 8px 40px 0 1px; }

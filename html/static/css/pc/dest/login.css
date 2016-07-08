@@ -1,13 +1,20 @@
 @charset "UTF-8";
-#login {
+#lr {
   padding-top: 128px;
-  /***         删删删删删删删删删删删删删删删删删删删删删删删删删删删删删删删删                 **/
-  background-image: url(../../../images/pc/fgpwd/fgpwd_bg.jpg);
   height: 100vh;
   width: 100vw;
   text-align: center; }
-  #login [data-login="container"] {
+  #lr .container {
+    z-index: 10000;
+    position: relative;
+    /** 页面上的logo **/ }
+    #lr .container [data-login="logo"] {
+      position: absolute;
+      top: -68px;
+      left: 451px; }
+  #lr [data-login="container"] {
     padding: 0 50px;
+    padding-top: 44px;
     width: 440px;
     height: 520px;
     margin: 0 auto;
@@ -16,74 +23,72 @@
     /*** 登录信息表单 ***/
     /*** 分割线 ***/
     /**** 其他登录方式  ***/ }
-    #login [data-login="container"] [data-login="logo"] {
-      margin-top: -68px; }
-    #login [data-login="container"] [data-login="tab"] {
+    #lr [data-login="container"] [data-login="tab"] {
       text-align: center;
       position: relative;
       margin-bottom: 34px; }
-      #login [data-login="container"] [data-login="tab"] h2 {
+      #lr [data-login="container"] [data-login="tab"] h2 {
         font-size: 20px;
         font-weight: bold;
         line-height: 48px; }
-      #login [data-login="container"] [data-login="tab"] [data-login="regist"] {
+      #lr [data-login="container"] [data-login="tab"] [data-login="regist"] {
         position: absolute;
         font-size: 16px;
         right: 0;
         line-height: 48px;
         color: #ffb30e; }
-    #login [data-login="container"] [data-login="form"] {
+    #lr [data-login="container"] [data-login="form"] {
       /* 登录按钮 */ }
-      #login [data-login="container"] [data-login="form"] .form-group {
+      #lr [data-login="container"] [data-login="form"] .form-group {
         border-bottom: 1px solid #a7a7a7; }
-        #login [data-login="container"] [data-login="form"] .form-group input {
+        #lr [data-login="container"] [data-login="form"] .form-group input {
           border: none;
           box-shadow: none;
           box-shadow: none;
           padding-left: 45px;
           height: 54px;
           line-height: 54px; }
-        #login [data-login="container"] [data-login="form"] .form-group span[data-login$='icon'] {
+        #lr [data-login="container"] [data-login="form"] .form-group span[data-login$='icon'] {
           background-repeat: no-repeat;
           position: absolute;
           height: 100%;
           width: 40px; }
-        #login [data-login="container"] [data-login="form"] .form-group [data-login="logusericon"] {
+        #lr [data-login="container"] [data-login="form"] .form-group [data-login="logusericon"] {
           background-image: url("../../../images/pc/icon/icon_loguser.png"); }
-        #login [data-login="container"] [data-login="form"] .form-group [data-login="logpwdicon"] {
+        #lr [data-login="container"] [data-login="form"] .form-group [data-login="logpwdicon"] {
           background-image: url("../../../images/pc/icon/icon_logpwd.png"); }
-      #login [data-login="container"] [data-login="form"] [data-login="login_submit"] {
+      #lr [data-login="container"] [data-login="form"] [data-login="login_submit"] {
         background-color: #ffb30e;
         width: 100%;
         height: 60px;
         margin-top: 15px;
         margin-bottom: 20px; }
-      #login [data-login="container"] [data-login="form"] [data-login="pwdrel"] {
+      #lr [data-login="container"] [data-login="form"] [data-login="pwdrel"] {
         margin-bottom: 56px;
         line-height: 16px; }
-        #login [data-login="container"] [data-login="form"] [data-login="pwdrel"] input {
+        #lr [data-login="container"] [data-login="form"] [data-login="pwdrel"] input {
           margin: 0px;
           width: 16px;
           height: 16px;
           margin-right: 10px; }
-        #login [data-login="container"] [data-login="form"] [data-login="pwdrel"] label {
+        #lr [data-login="container"] [data-login="form"] [data-login="pwdrel"] label {
           float: left;
           font-size: 16px;
           font-weight: normal;
           margin: 0; }
-        #login [data-login="container"] [data-login="form"] [data-login="pwdrel"] a {
+        #lr [data-login="container"] [data-login="form"] [data-login="pwdrel"] a {
           float: right;
           color: #171717; }
-      #login [data-login="container"] [data-login="form"] [data-login="pwdrel"]:after {
+      #lr [data-login="container"] [data-login="form"] [data-login="pwdrel"]:after {
         display: table;
         clear: both;
         content: ""; }
-    #login [data-login="container"] p[data-login="hr"] {
+    #lr [data-login="container"] p[data-login="hr"] {
       color: #909090;
       line-height: 16px;
       position: relative;
       margin-bottom: 20px; }
-      #login [data-login="container"] p[data-login="hr"] i[data-login="hrlt"], #login [data-login="container"] p[data-login="hr"] i[data-login="hrrt"] {
+      #lr [data-login="container"] p[data-login="hr"] i[data-login="hrlt"], #lr [data-login="container"] p[data-login="hr"] i[data-login="hrrt"] {
         position: absolute;
         top: 50%;
         width: 160px;
@@ -91,33 +96,33 @@
         height: 1px;
         vertical-align: middle;
         background-color: #909090; }
-      #login [data-login="container"] p[data-login="hr"] i[data-login="hrlt"] {
+      #lr [data-login="container"] p[data-login="hr"] i[data-login="hrlt"] {
         left: 0px; }
-      #login [data-login="container"] p[data-login="hr"] i[data-login="hrrt"] {
+      #lr [data-login="container"] p[data-login="hr"] i[data-login="hrrt"] {
         right: 0; }
-    #login [data-login="container"] ul[data-login='otherlog'] li {
+    #lr [data-login="container"] ul[data-login='otherlog'] li {
       float: left;
       width: 33.3%;
       line-height: 22px;
       padding-left: 10px;
       text-align: left; }
-      #login [data-login="container"] ul[data-login='otherlog'] li b {
+      #lr [data-login="container"] ul[data-login='otherlog'] li b {
         margin-right: 10px;
         width: 22px;
         height: 23px;
         display: inline-block; }
-      #login [data-login="container"] ul[data-login='otherlog'] li span {
+      #lr [data-login="container"] ul[data-login='otherlog'] li span {
         position: relative;
         top: -5px; }
-    #login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_qq"] a {
+    #lr [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_qq"] a {
       color: #3ea6ff; }
-    #login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_qq"] b {
+    #lr [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_qq"] b {
       background-image: url(../../../images/pc/icon/icon_qq.png); }
-    #login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_weibo"] a {
+    #lr [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_weibo"] a {
       color: #ff4943; }
-    #login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_weibo"] b {
+    #lr [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_weibo"] b {
       background-image: url(../../../images/pc/icon/icon_weibo.png); }
-    #login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_weixin"] a {
+    #lr [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_weixin"] a {
       color: #4dd854; }
-    #login [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_weixin"] b {
+    #lr [data-login="container"] ul[data-login='otherlog'] li[data-login="otherlog_weixin"] b {
       background-image: url(../../../images/pc/icon/icon_weixin.png); }

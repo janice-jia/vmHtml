@@ -1,13 +1,13 @@
 @charset "UTF-8";
 #lr {
   padding-top: 128px;
-  /***         删删删删删删删删删删删删删删删删删删删删删删删删删删删删删删删删                 **/
-  background-image: url(../../../images/pc/fgpwd/fgpwd_bg.jpg);
   height: 100vh;
   width: 100vw;
   text-align: center; }
   #lr .container {
-    position: relative; }
+    z-index: 10000;
+    position: relative;
+    /** 页面上的logo **/ }
     #lr .container [data-login="logo"] {
       position: absolute;
       top: -68px;

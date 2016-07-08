@@ -10,13 +10,14 @@ $red:#e43f3f;
 $white: #fff;
 $black: #000;
 #lr{
-  padding-top: 128px;/***         删删删删删删删删删删删删删删删删删删删删删删删删删删删删删删删删                 **/
-  background-image: url(../../../images/pc/fgpwd/fgpwd_bg.jpg);
+  padding-top: 128px;
   height: 100vh;
   width: 100vw;
   text-align: center;
   .container{
+    z-index: 10000;
     position: relative;
+    /** 页面上的logo **/
     [data-login="logo"]{
       position: absolute;
       top:-68px;

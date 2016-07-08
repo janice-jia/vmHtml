@@ -41,6 +41,12 @@
                         <span class="input-group-addon" data-login="logpwdicon"></span>
                         <input class="form-control" id="login_pwd" name="login_pwd" placeholder="请输入密码" />
                     </div>
+                    <div class="form-group has-success has-feedback">
+                        <label for="login_key" class="sr-only">验证码</label>
+                        <span class="input-group-addon" data-login="logkeyicon"></span>
+                        <div id="login_randomCode"></div>
+                        <input class="form-control" id="login_key" name="login_key" placeholder="请输入验证码" />
+                    </div>
                     <button type="button" id="login_submit" data-login="login_submit" class="btn-block ">登录</button>
                     <div data-login="pwdrel">
                         <label><input type="checkbox" name="rememberCode"  />下次自动登录</label>
@@ -65,8 +71,6 @@
                         <a href="#"><b></b><span>微信</span></a>
                     </li>
                 </ul>
-
-
             </div>
         </div>
 

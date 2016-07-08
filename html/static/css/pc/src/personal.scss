@@ -824,17 +824,22 @@ $color-90908f:#90908f;
             padding:40px 0 0 140px;
             .per-itemGroup{
                 .per-radio-inline{
+                    padding-left: 0;
+                    margin-right: 10px;
                     input[type=radio]{
                         margin-top: 10px;
                     }
+                    .iradio-grey-20{
+                        margin-right: 10px;
+                    }
                 }
                 .per-payPwd{
-                    width: 50px;
+                    width: 55px;
                     height: 50px;
                     line-height: 50px;
                     float: left;
                     padding:0 0 0 12px;
-                    margin-right: 10px;
+                    margin-right: 20px;
                 }
             }
             .per-set-label{

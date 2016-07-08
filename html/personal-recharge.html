@@ -210,6 +210,14 @@
 
 <script>
     $('#rechargeError').modal('show');
+
+    //支付方式radio按钮样式
+    $(document).ready(function(){
+        $('#payType input').iCheck({
+            radioClass: 'iradio-grey-20',
+            increaseArea: '30%' // optional
+        });
+    });
 </script>
 </body>
 </html>

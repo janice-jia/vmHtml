@@ -8,12 +8,3 @@ function loadHeaderFooter()
 
 loadHeaderFooter();
 
-
-
-//搜索radio按钮样式
-$(document).ready(function(){
-    $('#seachRadio input').iCheck({
-        radioClass: 'iradio-grey-20',
-        increaseArea: '30%' // optional
-    });
-});

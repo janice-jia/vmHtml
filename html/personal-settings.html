@@ -11,6 +11,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="static/css/pc/minCss/bootstrap.min.css" />
     <link rel="stylesheet" href="static/css/pc/minCss/all.min.css" />
+    <link rel="stylesheet" href="./static/ickeckSkins/minimal/grey.css" />
 
     <!--[if lt IE 9]>
     <script src="static/js/pc/dest/html5shiv.min.js"></script>
@@ -47,13 +48,13 @@
             <form action="" class="form-horizontal">
                 <div class="form-group per-itemGroup">
                     <label for="uName" class="col-sm-2 control-label per-set-label">用户名：</label>
-                    <div class="col-sm-4">
+                    <div class="col-sm-6">
                         <input type="text" class="form-control per-set-control" name="uName" id="uName" placeholder="14个字" />
                     </div>
                 </div>
                 <div class="form-group per-itemGroup">
                     <label for="uName" class="col-sm-2 control-label per-set-label">性别：</label>
-                    <div class="col-sm-10">
+                    <div class="col-sm-10" id="sexType">
                         <label class="radio-inline per-radio-inline">
                             <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />男
                         </label>
@@ -217,19 +218,19 @@
             <form action="" class="form-horizontal">
                 <div class="form-group per-itemGroup">
                     <label for="pwd" class="col-sm-2 control-label per-set-label">原始密码：</label>
-                    <div class="col-sm-4">
+                    <div class="col-sm-6">
                         <input type="password" class="form-control per-set-control" name="pwd" id="pwd" />
                     </div>
                 </div>
                 <div class="form-group per-itemGroup">
                     <label for="newPwd" class="col-sm-2 control-label per-set-label">新密码：</label>
-                    <div class="col-sm-4">
+                    <div class="col-sm-6">
                         <input type="password" class="form-control per-set-control" name="newPwd" id="newPwd" />
                     </div>
                 </div>
                 <div class="form-group per-itemGroup">
                     <label for="reNewPwd" class="col-sm-2 control-label per-set-label">确认密码：</label>
-                    <div class="col-sm-4">
+                    <div class="col-sm-6">
                         <input type="password" class="form-control per-set-control" name="reNewPwd" id="reNewPwd" />
                     </div>
                 </div>
@@ -267,19 +268,19 @@
             <form action="" class="form-horizontal">
                 <div class="form-group per-itemGroup">
                     <label for="uName" class="col-sm-2 control-label per-set-label">真实姓名：</label>
-                    <div class="col-sm-4">
+                    <div class="col-sm-6">
                         <input type="text" class="form-control per-set-control" name="uName" id="uName" placeholder="请输入真实姓名" />
                     </div>
                 </div>
                 <div class="form-group per-itemGroup">
                     <label for="tel" class="col-sm-2 control-label per-set-label">手机号码：</label>
-                    <div class="col-sm-4">
+                    <div class="col-sm-6">
                         <input type="text" class="form-control per-set-control" name="tel" id="tel" />
                     </div>
                 </div>
                 <div class="form-group per-itemGroup">
                     <label for="certificateType" class="col-sm-2 control-label per-set-label">证件类型：</label>
-                    <div class="col-sm-4">
+                    <div class="col-sm-6">
                         <select class="form-control per-set-control" id="certificateType" name="certificateType">
                             <option>1</option>
                             <option>2</option>
@@ -291,13 +292,13 @@
                 </div>
                 <div class="form-group per-itemGroup">
                     <label for="certificate" class="col-sm-2 control-label per-set-label">证件号码：</label>
-                    <div class="col-sm-4">
+                    <div class="col-sm-6">
                         <input type="text" class="form-control per-set-control" name="certificate" id="certificate" />
                     </div>
                 </div>
                 <div class="form-group per-itemGroup">
                     <label for="certificate" class="col-sm-2 control-label per-set-label">上传照片：</label>
-                    <div class="col-sm-4">
+                    <div class="col-sm-6">
                         <div class="per-input-file">
                             <p>手持身份证正面照片</p>
                             <input type="file" />
@@ -306,7 +307,7 @@
                 </div>
                 <div class="form-group per-itemGroup">
                     <label for="certificate" class="col-sm-2 control-label per-set-label">上传照片：</label>
-                    <div class="col-sm-4">
+                    <div class="col-sm-6">
                         <div class="per-input-file">
                             <p>手持身份证背面照片</p>
                             <input type="file" />
@@ -406,19 +407,19 @@
             <form action="" class="form-horizontal">
                 <div class="form-group per-itemGroup">
                     <label for="payTel" class="col-sm-2 control-label per-set-label">手机号码：</label>
-                    <div class="col-sm-4">
+                    <div class="col-sm-6">
                         <input type="tel" class="form-control per-set-control" name="payTel" id="payTel" />
                     </div>
                 </div>
                 <div class="form-group per-itemGroup">
                     <label for="loginPwd" class="col-sm-2 control-label per-set-label">登录密码：</label>
-                    <div class="col-sm-4">
+                    <div class="col-sm-6">
                         <input type="tel" class="form-control per-set-control" name="loginPwd" id="loginPwd" />
                     </div>
                 </div>
                 <div class="form-group per-itemGroup">
                     <label for="authCode" class="col-sm-2 control-label per-set-label">验证码：</label>
-                    <div class="col-sm-4">
+                    <div class="col-sm-6">
                         <input type="tel" class="form-control per-set-control" name="authCode" id="authCode" />
                     </div>
                     <div class="col-sm-2">
@@ -427,13 +428,13 @@
                 </div>
                 <div class="form-group per-itemGroup">
                     <label for="authCode" class="col-sm-2 control-label per-set-label">支付密码：</label>
-                    <div class="col-sm-6">
-                        <input type="number" class="form-control per-set-control per-payPwd" />
-                        <input type="number" class="form-control per-set-control per-payPwd" />
-                        <input type="number" class="form-control per-set-control per-payPwd" />
-                        <input type="number" class="form-control per-set-control per-payPwd" />
-                        <input type="number" class="form-control per-set-control per-payPwd" />
-                        <input type="number" class="form-control per-set-control per-payPwd" />
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control per-set-control per-payPwd" />
+                        <input type="text" class="form-control per-set-control per-payPwd" />
+                        <input type="text" class="form-control per-set-control per-payPwd" />
+                        <input type="text" class="form-control per-set-control per-payPwd" />
+                        <input type="text" class="form-control per-set-control per-payPwd" />
+                        <input type="text" class="form-control per-set-control per-payPwd" />
                     </div>
                 </div>
                 <div class="form-group per-itemGroup">
@@ -451,8 +452,18 @@
 <div id="footer"></div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="static/js/pc/dest/jquery-1.11.3.min.js"></script>
+<script src="static/ickeckSkins/icheck.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="static/js/pc/dest/all.min.js"></script>
 <script src="static/js/pc/dest/bootstrap.min.js"></script>
+<script>
+    //性别radio按钮样式
+    $(document).ready(function(){
+        $('#sexType input').iCheck({
+            radioClass: 'iradio-grey-20',
+            increaseArea: '30%' // optional
+        });
+    });
+</script>
 </body>
 </html>

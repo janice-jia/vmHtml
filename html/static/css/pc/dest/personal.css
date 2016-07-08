@@ -586,15 +586,20 @@
         height: 25px; }
     #per-settings .per-setItem .per-itemCon {
       padding: 40px 0 0 140px; }
-      #per-settings .per-setItem .per-itemCon .per-itemGroup .per-radio-inline input[type=radio] {
-        margin-top: 10px; }
+      #per-settings .per-setItem .per-itemCon .per-itemGroup .per-radio-inline {
+        padding-left: 0;
+        margin-right: 10px; }
+        #per-settings .per-setItem .per-itemCon .per-itemGroup .per-radio-inline input[type=radio] {
+          margin-top: 10px; }
+        #per-settings .per-setItem .per-itemCon .per-itemGroup .per-radio-inline .iradio-grey-20 {
+          margin-right: 10px; }
       #per-settings .per-setItem .per-itemCon .per-itemGroup .per-payPwd {
-        width: 50px;
+        width: 55px;
         height: 50px;
         line-height: 50px;
         float: left;
         padding: 0 0 0 12px;
-        margin-right: 10px; }
+        margin-right: 20px; }
       #per-settings .per-setItem .per-itemCon .per-set-label {
         font-size: 20px;
         font-weight: normal;

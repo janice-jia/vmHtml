@@ -218,14 +218,14 @@ $color-8f8f8e:#8f8f8e;
                 margin-bottom: 38px;
                 overflow: hidden;
                 &:hover{
-                    @extend .exten-box-shadow;
+                    background: $color-ffffff;
+                    box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
                     .zcbl-require-info{
                         bottom: 0;
                     }
                 }
                 .zcbl-require-img{
                     width: 100%;
-
                     position: relative;
                 }
                 .zcbl-require-time{
@@ -249,7 +249,7 @@ $color-8f8f8e:#8f8f8e;
                     width: 100%;
                     padding: 0 12px;
                     position: absolute;
-                    bottom: -34px;
+                    bottom: -112px;
                     left: 0;
                     background: rgba(0,0,0,0.5);
                     transition:bottom 0.8s;

@@ -119,8 +119,14 @@
   width: 1000px;
   margin: 0 auto; }
   .zcbl-index-con .zcbl-notice {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 1000px;
     height: 80px;
     line-height: 80px; }
+    .zcbl-index-con .zcbl-notice a {
+      color: #515151;
+      padding-right: 20px; }
   .zcbl-index-con .zcbl-banner {
     width: 1000px;
     height: 100px; }

@@ -31,7 +31,7 @@ $color-90908f:#90908f;
     }
 }
 
-.exten-box-shadow{
+.extend-box-shadow{
     background: $color-ffffff;
     box-shadow: 0 0 5px rgba(81, 81, 81, 0.2);
 }
@@ -394,7 +394,7 @@ $color-90908f:#90908f;
                         }
                     }
                     &.per-art-imgDefault:hover,&.per-art-imgHover{
-                        @extend .exten-box-shadow;
+                        @extend .extend-box-shadow;
                     }
                     &.per-art-imgAdd{
                         background: $color-ffffff;
@@ -719,7 +719,7 @@ $color-90908f:#90908f;
                         }
                     }
                     &.per-fans-hover,&:hover{
-                        @extend .exten-box-shadow;
+                        @extend .extend-box-shadow;
                     }
                 }
             }
@@ -733,7 +733,7 @@ $color-90908f:#90908f;
     margin: 30px auto 100px auto;
     padding-bottom: 30px;
     background: $color-ffffff;
-    @extend .exten-box-shadow;
+    @extend .extend-box-shadow;
     .per-setLine{
         height: 1px;
         overflow: hidden;
@@ -863,7 +863,7 @@ $color-90908f:#90908f;
                 line-height: 25px;
             }
             .per-img-border{
-                @extend .exten-box-shadow;
+                @extend .extend-box-shadow;
                 background: $color-f8f8f8;
                 padding: 5px;
                 width: 180px;
@@ -1373,7 +1373,7 @@ $color-90908f:#90908f;
                 margin-bottom: 5px;
                 &:hover{
                     background: $color-ffffff;
-                    @extend .exten-box-shadow;
+                    @extend .extend-box-shadow;
                 }
                 .per-album-imgBox{
                     width: 233px;

@@ -167,8 +167,16 @@ $color-8f8f8e:#8f8f8e;
     margin: 0 auto;
     //首页公告
     .zcbl-notice{
+        white-space:nowrap;
+        overflow:hidden;
+        width:1000px;
         height: 80px;
         line-height: 80px;
+        a{
+            color: $color-02;
+            padding-right: 20px;
+
+        }
     }
 
     .zcbl-banner{

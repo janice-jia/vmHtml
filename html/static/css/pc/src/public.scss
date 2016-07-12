@@ -28,6 +28,16 @@ $color-dddddd:#dddddd;
         text-decoration: underline;
     }
 }
+
+.extend-box-shadow{
+    background: $color-ffffff;
+    box-shadow: 0 0 5px rgba(81, 81, 81, 0.2);
+}
+
+.mt40{
+    margin-top: 40px;
+}
+
 //按钮
 //黄背景黑字
 [data-btn="orbgbtn"]{
@@ -772,6 +782,35 @@ button.zcbl-close{
                             }
                             @extend .extend-aline;
                         }
+                        &.appDownLoad{
+                            position: relative;
+                            .appDownLoadBox{
+                                display: none;
+                                position: absolute;
+                                left: -30px;
+                                top:72px;
+                                width: 135px;
+                                height: 141px;
+                                text-align: center;
+                                padding-top: 13px;
+                                background: $color-ffffff;
+                                border-radius: 5px;
+                                @extend .extend-box-shadow;
+                                .appDownLoadBox-top{
+                                    position: absolute;
+                                    left: 60px;
+                                    top: -8px;
+                                    background: url("../../../images/pc/icon/icon-index-top.png") no-repeat;
+                                    height: 10px;
+                                    width: 21px;
+                                }
+                            }
+                            &:hover {
+                                .appDownLoadBox{
+                                    display: block;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -795,14 +834,26 @@ button.zcbl-close{
         height: 100px;
         line-height: 100px;
         border-bottom: 1px solid $color-acacac;
+        padding: 40px 0 40px 0;
+        p{
+            color: $color-ffffff;
+            &.footer-link-p{
+                width: 80px;
+                float: left;
+                line-height: 25px;
+            }
+        }
         ul{
+            &.footer-link-ul{
+                width: 922px;
+                float: left;
+                margin-left: -9px;
+            }
             li{
                 float: left;
+                line-height: 25px;
                 color: $color-ffffff;
-                padding: 0 9px 0 0;
-                &.p0{
-                    padding: 0;
-                }
+                padding: 0 0 0 9px;
                 a{
                     font-size: 16px;
                     color: $color-ffffff;

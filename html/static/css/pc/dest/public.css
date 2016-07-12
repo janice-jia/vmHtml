@@ -8,6 +8,13 @@
 #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-2 li a:hover, #zcbl-header .header-box .header-right .user-notlogin ul li a:hover, #zcbl-footer .footer-link ul li a:hover, #zcbl-footer .footer-aboutus .footer-aboutus-z ul li a:hover {
   text-decoration: underline; }
 
+.extend-box-shadow, #zcbl-header .header-box .header-right .user-notlogin ul li.appDownLoad .appDownLoadBox {
+  background: #ffffff;
+  box-shadow: 0 0 5px rgba(81, 81, 81, 0.2); }
+
+.mt40 {
+  margin-top: 40px; }
+
 [data-btn="orbgbtn"] {
   background-color: #ffb30e;
   font-size: 20px;
@@ -607,6 +614,28 @@ button.zcbl-close {
             color: #ffffff; }
             #zcbl-header .header-box .header-right .user-notlogin ul li a.app-color {
               color: #ffb30e; }
+          #zcbl-header .header-box .header-right .user-notlogin ul li.appDownLoad {
+            position: relative; }
+            #zcbl-header .header-box .header-right .user-notlogin ul li.appDownLoad .appDownLoadBox {
+              display: none;
+              position: absolute;
+              left: -30px;
+              top: 72px;
+              width: 135px;
+              height: 141px;
+              text-align: center;
+              padding-top: 13px;
+              background: #ffffff;
+              border-radius: 5px; }
+              #zcbl-header .header-box .header-right .user-notlogin ul li.appDownLoad .appDownLoadBox .appDownLoadBox-top {
+                position: absolute;
+                left: 60px;
+                top: -8px;
+                background: url("../../../images/pc/icon/icon-index-top.png") no-repeat;
+                height: 10px;
+                width: 21px; }
+            #zcbl-header .header-box .header-right .user-notlogin ul li.appDownLoad:hover .appDownLoadBox {
+              display: block; }
 
 .h95 {
   height: 95px; }
@@ -621,13 +650,23 @@ button.zcbl-close {
   #zcbl-footer .footer-link {
     height: 100px;
     line-height: 100px;
-    border-bottom: 1px solid #acacac; }
+    border-bottom: 1px solid #acacac;
+    padding: 40px 0 40px 0; }
+    #zcbl-footer .footer-link p {
+      color: #ffffff; }
+      #zcbl-footer .footer-link p.footer-link-p {
+        width: 80px;
+        float: left;
+        line-height: 25px; }
+    #zcbl-footer .footer-link ul.footer-link-ul {
+      width: 922px;
+      float: left;
+      margin-left: -9px; }
     #zcbl-footer .footer-link ul li {
       float: left;
+      line-height: 25px;
       color: #ffffff;
-      padding: 0 9px 0 0; }
-      #zcbl-footer .footer-link ul li.p0 {
-        padding: 0; }
+      padding: 0 0 0 9px; }
       #zcbl-footer .footer-link ul li a {
         font-size: 16px;
         color: #ffffff; }

@@ -18,7 +18,7 @@
 <button class="btn-yellow-40 left mr10" data-toggle="modal" data-target="#lr">
   登录/注册
 </button>
-<div id="lr" class="modal fade"  aria-hidden="true">
+<div id="lr" class="modal fade" data-backdrop="static"  aria-hidden="true">
     <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
     <div class="container">
         <img data-login="logo" src="static/images/pc/logo_bg.png" alt="" />
@@ -34,18 +34,21 @@
                     <div class="form-group has-success has-feedback">
                         <label for="login_user" class="sr-only">UserName/PhoneNumber</label>
                         <span class="input-group-addon" data-login="logusericon"></span>
-                        <input class="form-control" id="login_user" name="login_user" placeholder="请输入手机号/用户名" />
+                        <input class="form-control" id="login_user" name="login_user" placeholder="请输入手机号" />
+                        <span data-login="helpword" class="help-block">*由字母加数字符号至少两种以上字符组成</span>
                     </div>
                     <div class="form-group has-success has-feedback">
                         <label for="login_pwd" class="sr-only">Verification code</label>
                         <span class="input-group-addon" data-login="logpwdicon"></span>
                         <input class="form-control" id="login_pwd" name="login_pwd" placeholder="请输入密码" />
+                        <span data-login="helpword" class="help-block">*由字母加数字符号至少两种以上字符组成</span>
                     </div>
                     <div class="form-group has-success has-feedback">
                         <label for="login_key" class="sr-only">验证码</label>
                         <span class="input-group-addon" data-login="logkeyicon"></span>
                         <div id="login_randomCode"></div>
                         <input class="form-control" id="login_key" name="login_key" placeholder="请输入验证码" />
+                        <span data-login="helpword" class="help-block">*由字母加数字符号至少两种以上字符组成</span>
                     </div>
                     <button type="button" id="login_submit" data-login="login_submit" class="btn-block ">登录</button>
                     <div data-login="pwdrel">
@@ -93,18 +96,21 @@
                                     <label for="regist_oneuser" class="sr-only">请输入您的用户昵称</label>
                                     <span class="input-group-addon" data-regist="logusericon"></span>
                                     <input class="form-control" id="regist_oneuser" name="regist_oneuser" placeholder="请输入您的用户昵称" />
+                                    <span data-regist="helpword" class="help-block">*由字母加数字符号至少两种以上字符组成</span>
                                 </div>
 
                                 <div class="tab-pane form-group has-success has-feedback" id="studio" role="tabpanel">
                                     <label for="regist_studiouser" class="sr-only">请输入工作室名称</label>
                                     <span class="input-group-addon" data-regist="logusericon"></span>
                                     <input class="form-control" id="regist_studiouser" name="regist_studiouser" placeholder="请输入工作室名称" />
+                                    <span data-regist="helpword" class="help-block">*由字母加数字符号至少两种以上字符组成</span>
                                 </div>
 
                                 <div class="tab-pane form-group has-success has-feedback" id="business" role="tabpanel">
                                     <label for="regist_businessuser" class="sr-only">请输入企业名称</label>
                                     <span class="input-group-addon" data-regist="logusericon"></span>
                                     <input class="form-control" id="regist_businessuser" name="regist_businessuser" placeholder="请输入企业名称" />
+                                    <span data-regist="helpword" class="help-block">*由字母加数字符号至少两种以上字符组成</span>
                                 </div>
                             </div>
                         </div>
@@ -113,17 +119,20 @@
                             <label for="regist_pwd" class="sr-only">请设置密码</label>
                             <span class="input-group-addon" data-regist="logpwdicon"></span>
                             <input class="form-control" id="regist_pwd" name="regist_pwd" placeholder="请设置密码" />
+                            <span data-regist="helpword" class="help-block">*由字母加数字符号至少两种以上字符组成</span>
                         </div>
-                        <p data-regist="helpword" >*由字母加数字符号至少两种以上字符组成</p>
                         <div class="form-group has-success has-feedback">
                             <label for="regist_phone" class="sr-only">请输入手机号码</label>
                             <span class="input-group-addon" data-regist="regphoneicon"></span>
                             <input class="form-control" id="regist_phone" name="regist_phone" placeholder="请输入手机号码" />
+                            <span data-regist="helpword" class="help-block">*由字母加数字符号至少两种以上字符组成</span>
                         </div>
                         <div class="form-group has-success has-feedback">
                             <label for="regist_phoneKey" class="sr-only">请输入手机验证码</label>
                             <span class="input-group-addon" data-regist="regkeyicon"></span>
+                            <button type="button" disabled="disabled" id="recruit_getcode">点击获取验证码</button>
                             <input class="form-control" id="regist_phoneKey" name="regist_key" placeholder="请输入手机验证码" />
+                            <span data-regist="helpword" class="help-block">*由字母加数字符号至少两种以上字符组成</span>
                         </div>
                         <!-- 同意协议 -->
                         <div data-regist="agreement">

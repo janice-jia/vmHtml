@@ -27,9 +27,9 @@ $black: #000;
 
   [data-login="container"]{
     padding: 0 50px;
+    padding-bottom: 10px;
     padding-top: 44px;
     width:440px;
-    height:520px;
     margin:0 auto;
     border-radius: 10px;
     background-color:$white;
@@ -54,9 +54,9 @@ $black: #000;
     /*** 登录信息表单 ***/
     [data-login="form"]{
       .form-group {
-        border-bottom: 1px solid #a7a7a7;
         input {
           border: none;
+          border-radius: 0;
           box-shadow: none;
           -webkit-box-shadow: none;
           -moz-box-shadow: none;
@@ -64,11 +64,12 @@ $black: #000;
           padding-left: 45px;
           height: 54px;
           line-height: 54px;
+          border-bottom: 1px solid #a7a7a7;
         }
         span[data-login$='icon'] {
           background-repeat: no-repeat;
           position: absolute;
-          height: 100%;
+          height: 54px;
           width: 40px;
         }
         [data-login="logusericon"] {
@@ -80,6 +81,11 @@ $black: #000;
         [data-login="logkeyicon"] {
           background-image: url("../../../images/pc/icon/icon_logkeyicon.png");
 
+        }
+        /*** 提示文字 ***/
+        [data-login="helpword"]{
+          text-align:left;
+          color: $orange;
         }
       }
       /* 登录按钮 */
@@ -183,6 +189,11 @@ $black: #000;
         }
       }
     }
+    ul[data-login='otherlog']:after{
+      display: table;
+      clear: both;
+      content: '';
+    }
   }
 
 }
@@ -190,7 +201,7 @@ $black: #000;
 #login_randomCode{
   position: absolute;
   right: 0;
-  width:150px;
+  width:200px;
   height: 46px;
   background-color:$gray;
 }

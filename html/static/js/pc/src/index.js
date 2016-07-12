@@ -19,17 +19,17 @@ function scroll(obj)
 
 window.onload = function() {
     var pic = document.getElementById("scrollobj");
-
-    var myRoll = setInterval(function(){
-        scroll(document.getElementById('scrollobj'));
-    }, 30);
-
-    pic.onmouseover = function() { clearInterval(myRoll); };
-    pic.onmouseout = function() {
-        setInterval(
-            myRoll = setInterval(function(){
-                scroll(document.getElementById('scrollobj'));
-            }, 30)
-        );
-    };
+    if(pic){
+        var myRoll = setInterval(function(){
+            scroll(document.getElementById('scrollobj'));
+        }, 30);
+        pic.onmouseover = function() { clearInterval(myRoll); };
+        pic.onmouseout = function() {
+            setInterval(
+                myRoll = setInterval(function(){
+                    scroll(document.getElementById('scrollobj'));
+                }, 30)
+            );
+        };
+    }
 };

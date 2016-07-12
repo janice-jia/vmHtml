@@ -15,19 +15,25 @@
     <![endif]-->
 </head>
 <body>
-<button class="btn-yellow-40 left mr10" data-toggle="modal" data-target="#lr">
-  登录/注册
+<button class="btn-yellow-40 left mr10" onclick="loginFn()" data-toggle="modal" data-target="#lr">
+  登录
 </button>
+<button class="btn-yellow-40 left mr10" onclick="registFn()" data-toggle="modal" data-target="#lr">
+    注册
+</button>
+
+
 <div id="lr" class="modal fade" data-backdrop="static"  aria-hidden="true">
     <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
     <div class="container">
         <img data-login="logo" src="static/images/pc/logo_bg.png" alt="" />
         <div id="login">
-            <div data-login="container">
+            <div id="loginBox" style="display: none" data-login="container">
 
                 <div data-login="tab">
                     <a data-login="regist" id="torecruit">立即注册</a>
                     <h2>登录</h2>
+                    <button onclick="aaa()">关闭</button>
                 </div>
                 <!---  登录表单  --->
                 <form data-login="form" action="">
@@ -78,7 +84,7 @@
         </div>
 
         <div id="regist">
-            <div style="display: none" data-regist="container">
+            <div id="registBox" style="display: none"   data-regist="container">
                 <!--  注册信息界面  -->
                 <div  data-regist="registnow">
                     <form data-regist="form" action="">
@@ -156,6 +162,7 @@
 <script src="static/js/pc/dest/jquery-1.11.3.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="static/js/pc/dest/bootstrap.min.js"></script>
+<script src="static/js/pc/dest/all.min.js"></script>
 <script>
     var opts= [{'width':0},{'width':'440px'}];
     var time=200;
@@ -190,4 +197,6 @@
 </script> -->
 
 </body>
+
+
 </html>

@@ -1738,10 +1738,17 @@ $color-90908f:#90908f;
         font-size: 28px;
         padding-left: 12px;
     }
+
+    .zcbl-control-msg{
+        padding-left: 115px;
+        color: $color-07;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
     .zcbl-form-horizontal{
         .zcbl-form-group{
             padding-left: 40px;
-            margin-bottom: 0;
+            margin-bottom: 10px;
         }
     }
     .per-recharge-payType{

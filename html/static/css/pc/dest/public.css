@@ -832,7 +832,8 @@ button {
   height: 50px;
   line-height: 50px;
   overflow: hidden;
-  font-size: 18px; }
+  font-size: 18px;
+  margin-bottom: 0; }
 
 .zcbl-form-horizontal .zcbl-control-info-line25 {
   line-height: 25px;

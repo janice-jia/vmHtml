@@ -1305,9 +1305,14 @@
   #per-recharge .per-recharge-tit {
     font-size: 28px;
     padding-left: 12px; }
+  #per-recharge .zcbl-control-msg {
+    padding-left: 115px;
+    color: #ffb30e;
+    margin-top: 10px;
+    margin-bottom: 0px; }
   #per-recharge .zcbl-form-horizontal .zcbl-form-group {
     padding-left: 40px;
-    margin-bottom: 0; }
+    margin-bottom: 10px; }
   #per-recharge .per-recharge-payType {
     padding-left: 20px; }
     #per-recharge .per-recharge-payType .per-recharge-radio input[type=radio] {

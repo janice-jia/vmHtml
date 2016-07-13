@@ -94,12 +94,16 @@
     #per-wall .per-wall-l .per-fund {
       margin-top: 24px;
       padding-bottom: 14px; }
-      #per-wall .per-wall-l .per-fund p span {
-        float: right; }
-        #per-wall .per-wall-l .per-fund p span.per-fund-cz a {
-          color: #ffb30e; }
-        #per-wall .per-wall-l .per-fund p span.per-fund-tx a {
-          color: #515151; }
+      #per-wall .per-wall-l .per-fund p {
+        clear: both; }
+        #per-wall .per-wall-l .per-fund p span.per-fund-cz {
+          float: right; }
+          #per-wall .per-wall-l .per-fund p span.per-fund-cz a {
+            color: #ffb30e; }
+        #per-wall .per-wall-l .per-fund p span.per-fund-tx {
+          float: right; }
+          #per-wall .per-wall-l .per-fund p span.per-fund-tx a {
+            color: #515151; }
     #per-wall .per-wall-l .per-appraise {
       padding-top: 24px;
       padding-bottom: 14px; }

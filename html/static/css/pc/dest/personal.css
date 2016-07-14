@@ -1,7 +1,7 @@
 /*
 * header
 */
-.extend-aline:hover, #per-wall .per-wall-l .per-uname p a:hover, #per-wall .per-wall-l .per-fund p span.per-fund-cz a:hover, #per-wall .per-wall-l .per-fund p span.per-fund-tx a:hover, #per-wall .per-wall-l .per-identity p a:hover, #per-wall .per-wall-l .per-identity p.per-identity-more a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgTit a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgEdit a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgAdd .per-art-imgAdd-tit a:hover, #per-wall .per-wall-r .per-req ul li .per-reqTit h1 a:hover, #per-wall .per-wall-r .per-fans ul li .per-fansName .per-fansName-1 a:hover, #per-publish .per-pub-picBox ul li .per-pub-tit a:hover, #per-publish .pub-file .zcbl-form-pBlue a:hover, #per-publish .per-pub-videoUpload .per-pub-vieroQR a:hover, #per-album .per-album-con ul li .per-album-imgBox .per-album-imgEdit .per-album-imgEditFM a:hover, #per-album .per-album-con ul li .per-album-titBox a:hover {
+.extend-aline:hover, #per-wall .per-wall-l .per-uname p a:hover, #per-wall .per-wall-l .per-fund p span.per-fund-cz a:hover, #per-wall .per-wall-l .per-fund p span.per-fund-tx a:hover, #per-wall .per-wall-l .per-identity p a:hover, #per-wall .per-wall-l .per-identity p.per-identity-more a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgTit a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgEdit a:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgAdd .per-art-imgAdd-tit a:hover, #per-wall .per-wall-r .per-req ul li .per-reqTit h1 a:hover, #per-wall .per-wall-r .per-fans ul li .per-fansName .per-fansName-1 a:hover, #per-publish .per-pub-picBox ul li .per-pub-tit a:hover, #per-publish .pub-file .zcbl-form-pBlue a:hover, #per-publish .per-pub-videoUpload .per-pub-vieroQR a:hover, #per-album .per-album-con ul li .per-album-imgBox .per-album-imgEdit .per-album-imgEditFM a:hover, #per-album .per-album-con ul li .per-album-titBox a:hover, #per-payResult .per-payResultBox .zcbl-pay-error .zcbl-pay-msg2 a:hover {
   text-decoration: underline; }
 
 .extend-box-shadow, #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault:hover, #per-wall .per-wall-r .per-art-img ul li.per-art-imgHover, #per-wall .per-wall-r .per-fans ul li.per-fans-hover, #per-wall .per-wall-r .per-fans ul li:hover, #per-settings, #per-settings .per-setItem .per-itemCon .per-img-border, #per-album .per-album-con ul li:hover {
@@ -1432,3 +1432,60 @@
           margin-right: 30px; }
         #per-payInfo .per-payInfo-type .per-recharge-payType .per-recharge-radio .account-balance {
           color: #ffb30e; }
+
+#per-payResult {
+  min-height: 700px; }
+  #per-payResult .per-payResultBox {
+    height: 370px;
+    background: #ffffff;
+    text-align: center; }
+    #per-payResult .per-payResultBox .zcbl-pay-error {
+      display: inline-block;
+      height: 240px;
+      margin: 0 auto; }
+      #per-payResult .per-payResultBox .zcbl-pay-error .zcbl-pay-errorIcon {
+        padding-top: 130px;
+        position: relative;
+        text-align: left;
+        font-size: 38px;
+        color: #e43f3f;
+        padding-left: 100px; }
+        #per-payResult .per-payResultBox .zcbl-pay-error .zcbl-pay-errorIcon:before {
+          content: "";
+          left: 0;
+          top: 130px;
+          position: absolute;
+          background: url("../../../images/pc/icon/icon-per-error.png") no-repeat;
+          width: 74px;
+          height: 74px; }
+      #per-payResult .per-payResultBox .zcbl-pay-error .zcbl-pay-successIcon {
+        padding-top: 130px;
+        position: relative;
+        text-align: left;
+        font-size: 38px;
+        color: #ffb30e;
+        line-height: 74px;
+        padding-left: 100px; }
+        #per-payResult .per-payResultBox .zcbl-pay-error .zcbl-pay-successIcon:before {
+          content: "";
+          left: 0;
+          top: 130px;
+          position: absolute;
+          background: url("../../../images/pc/icon/icon_recruitsuc.png") no-repeat;
+          width: 76px;
+          height: 74px; }
+      #per-payResult .per-payResultBox .zcbl-pay-error .zcbl-pay-msg1 {
+        padding-left: 100px;
+        color: #909090;
+        font-size: 18px;
+        padding-top: 10px; }
+      #per-payResult .per-payResultBox .zcbl-pay-error .zcbl-pay-msg2 {
+        padding-left: 100px;
+        text-align: left;
+        font-size: 18px;
+        padding-top: 25px; }
+        #per-payResult .per-payResultBox .zcbl-pay-error .zcbl-pay-msg2 a.zcbl-pay-hrefYellow {
+          color: #ffb30e;
+          margin-right: 33px; }
+        #per-payResult .per-payResultBox .zcbl-pay-error .zcbl-pay-msg2 a.zcbl-pay-hrefGray {
+          color: #515151; }

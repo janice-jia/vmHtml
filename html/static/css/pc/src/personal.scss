@@ -1917,3 +1917,75 @@ $color-90908f:#90908f;
     }
 }
 
+//付款成功付款失败
+#per-payResult{
+    min-height: 700px;
+    .per-payResultBox{
+        height: 370px;
+        background: $color-ffffff;
+        text-align: center;
+        .zcbl-pay-error{
+            display: inline-block;
+            height: 240px;
+            margin: 0 auto;
+            .zcbl-pay-errorIcon{
+                padding-top: 130px;
+                position: relative;
+                text-align: left;
+                font-size: 38px;
+                color: $color-08;
+                padding-left: 100px;
+                &:before{
+                    content: "";
+                    left: 0;
+                    top: 130px;
+                    position: absolute;
+                    background: url("../../../images/pc/icon/icon-per-error.png") no-repeat;
+                    width: 74px;
+                    height: 74px;
+                }
+            }
+            .zcbl-pay-successIcon{
+                padding-top: 130px;
+                position: relative;
+                text-align: left;
+                font-size: 38px;
+                color: $color-07;
+                line-height: 74px;
+                padding-left: 100px;
+                &:before{
+                    content: "";
+                    left: 0;
+                    top: 130px;
+                    position: absolute;
+                    background: url("../../../images/pc/icon/icon_recruitsuc.png") no-repeat;
+                    width: 76px;
+                    height: 74px;
+                }
+            }
+            .zcbl-pay-msg1{
+                padding-left: 100px;
+                color: $color-03;
+                font-size: 18px;
+                padding-top: 10px;
+            }
+            .zcbl-pay-msg2{
+                padding-left: 100px;
+                text-align: left;
+                font-size: 18px;
+                padding-top: 25px;
+                a{
+                    @extend .extend-aline;
+                    &.zcbl-pay-hrefYellow{
+                        color: $color-07;
+                        margin-right: 33px;
+                    }
+                    &.zcbl-pay-hrefGray{
+                        color: $color-02;
+                    }
+                }
+            }
+        }
+    }
+}
+

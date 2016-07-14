@@ -132,6 +132,7 @@ $color-fb4444: #fb4444;
           left: 0;
           background-color: $color-ffffff;
           h2 {
+            height: 72px;
             line-height: 36px;
             font-size: 20px;
             color: $color-02;
@@ -171,6 +172,7 @@ $color-fb4444: #fb4444;
               border-radius: 50%;
             }
             span {
+              display: none;
               position: absolute;
               top: 0;
               right: 0;

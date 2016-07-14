@@ -147,12 +147,13 @@ $color-fb4444: #fb4444;
             ul {
               float: right;
               color: $color-03;
-              text-align: right;
+              text-align: left;
               li {
                 display: inline-block;
                 position: relative;
                 margin-left: 25px;
                 &.per-req-people {
+                  width: 120px;
                   b {
                     vertical-align: middle;
                     display: inline-block;
@@ -179,9 +180,16 @@ $color-fb4444: #fb4444;
                   }
                 }
                 &.per-req-time {
-                  width: 108px;
-                  padding-left: 22px;
-                  &:before {
+                  width: 118px;
+                  b {
+                    background: url("../../../images/pc/icon/icon-per-time.png") no-repeat;
+                    margin-right: 7px;
+                    width: 16px;
+                    height: 17px;
+                    display: inline-block;
+                    vertical-align: middle;
+                  }
+                  /**&:before {
                     content: "";
                     position: absolute;
                     top: 4px;
@@ -189,7 +197,7 @@ $color-fb4444: #fb4444;
                     background: url("../../../images/pc/icon/icon-per-time.png") no-repeat;
                     width: 16px;
                     height: 17px;
-                  }
+                  }**/
                 }
               }
             }

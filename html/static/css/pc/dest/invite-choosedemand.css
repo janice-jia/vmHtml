@@ -96,21 +96,23 @@
       #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul {
         float: right;
         color: #909090;
-        text-align: right; }
+        text-align: left; }
         #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li {
           display: inline-block;
           position: relative;
           margin-left: 25px; }
-          #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-people b {
-            vertical-align: middle;
-            display: inline-block;
-            width: 27px;
-            height: 16px;
-            margin-right: 7px; }
-          #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-people b[data-choose-demand="eye"] {
-            background: url("../../../images/pc/icon/icon-per-cy.png") no-repeat; }
-          #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-people b[data-choose-demand="flag"] {
-            background: url("../../../images/pc/icon/icon_flag.png") no-repeat; }
+          #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-people {
+            width: 120px; }
+            #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-people b {
+              vertical-align: middle;
+              display: inline-block;
+              width: 27px;
+              height: 16px;
+              margin-right: 7px; }
+            #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-people b[data-choose-demand="eye"] {
+              background: url("../../../images/pc/icon/icon-per-cy.png") no-repeat; }
+            #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-people b[data-choose-demand="flag"] {
+              background: url("../../../images/pc/icon/icon_flag.png") no-repeat; }
           #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-bzj {
             width: 103px; }
             #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-bzj b {
@@ -121,16 +123,23 @@
               display: inline-block;
               vertical-align: middle; }
           #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-time {
-            width: 108px;
-            padding-left: 22px; }
-            #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-time:before {
+            width: 118px;
+            /**&:before {
               content: "";
               position: absolute;
               top: 4px;
               left: 0;
               background: url("../../../images/pc/icon/icon-per-time.png") no-repeat;
               width: 16px;
-              height: 17px; }
+              height: 17px;
+            }**/ }
+            #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-time b {
+              background: url("../../../images/pc/icon/icon-per-time.png") no-repeat;
+              margin-right: 7px;
+              width: 16px;
+              height: 17px;
+              display: inline-block;
+              vertical-align: middle; }
       #choosedemand .per-req ul li .per-reqCon .per-reqInfo [data-choose-demand="persontab"], #choosedemand .per-req ul li .per-reqCon .per-reqInfo [data-choose-demand="worktab"] {
         float: left;
         margin-left: 10px; }

@@ -65,6 +65,7 @@
     #fgpwd [data-fgpwd="form_process"] span[data-fgpwd$='icon'] {
       background-repeat: no-repeat;
       position: absolute;
+      height: 50px;
       width: 40px; }
     #fgpwd [data-fgpwd="form_process"] input {
       border: none;

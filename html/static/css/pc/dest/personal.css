@@ -94,12 +94,16 @@
     #per-wall .per-wall-l .per-fund {
       margin-top: 24px;
       padding-bottom: 14px; }
-      #per-wall .per-wall-l .per-fund p span {
-        float: right; }
-        #per-wall .per-wall-l .per-fund p span.per-fund-cz a {
-          color: #ffb30e; }
-        #per-wall .per-wall-l .per-fund p span.per-fund-tx a {
-          color: #515151; }
+      #per-wall .per-wall-l .per-fund p {
+        clear: both; }
+        #per-wall .per-wall-l .per-fund p span.per-fund-cz {
+          float: right; }
+          #per-wall .per-wall-l .per-fund p span.per-fund-cz a {
+            color: #ffb30e; }
+        #per-wall .per-wall-l .per-fund p span.per-fund-tx {
+          float: right; }
+          #per-wall .per-wall-l .per-fund p span.per-fund-tx a {
+            color: #515151; }
     #per-wall .per-wall-l .per-appraise {
       padding-top: 24px;
       padding-bottom: 14px; }
@@ -1301,9 +1305,14 @@
   #per-recharge .per-recharge-tit {
     font-size: 28px;
     padding-left: 12px; }
+  #per-recharge .zcbl-control-msg {
+    padding-left: 115px;
+    color: #ffb30e;
+    margin-top: 10px;
+    margin-bottom: 0px; }
   #per-recharge .zcbl-form-horizontal .zcbl-form-group {
     padding-left: 40px;
-    margin-bottom: 0; }
+    margin-bottom: 10px; }
   #per-recharge .per-recharge-payType {
     padding-left: 20px; }
     #per-recharge .per-recharge-payType .per-recharge-radio input[type=radio] {

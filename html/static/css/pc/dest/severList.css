@@ -33,6 +33,7 @@
     border-bottom-color: #ffffff; }
   #severList [data-websever="dropdown"] [data-websever="search"] {
     margin-top: 25px;
+    margin-bottom: 30px;
     float: right; }
     #severList [data-websever="dropdown"] [data-websever="search"] [data-websever="input-group"] input {
       border-top-left-radius: 2px;

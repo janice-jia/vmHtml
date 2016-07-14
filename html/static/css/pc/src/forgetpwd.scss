@@ -158,7 +158,8 @@ $black: #000;
   /*******  修改密码成功界面  ************/
   [data-fgpwd="form_finish"] {
     width: 440px;
-    height: 456px;
+    // height: 456px;
+    height: 500px;
     background-color: $white;
     background-image: url("../../../images/pc/fgpwd/regist_bg.png");
     margin: 0 auto;

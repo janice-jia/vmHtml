@@ -115,7 +115,7 @@
       background-image: url("../../../images/pc/icon/icon_logpwd.png"); }
   #fgpwd [data-fgpwd="form_finish"] {
     width: 440px;
-    height: 456px;
+    height: 500px;
     background-color: #fff;
     background-image: url("../../../images/pc/fgpwd/regist_bg.png");
     margin: 0 auto;

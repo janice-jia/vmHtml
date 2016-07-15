@@ -32,24 +32,29 @@ $color-8f8f8e:#8f8f8e;
     //首页幻灯片
     #myCarousel{
         position: relative;
-        .zcbl-seach-l{
+        .zcbl-seach-option{
+            font-size: 18px;
             position: absolute;
             left: 50%;
             top:210px;
+            z-index: 1000;
+            width: 230px;
+            margin-left: -355px;
+            .seach-radio-inline{
+                padding: 0;
+            }
+        }
+        .zcbl-seach-l{
+            position: absolute;
+            left: 50%;
+            top:260px;
             z-index: 100;
             width: 600px;
             float: left;
             text-indent:0;
             margin-left: -355px;
-            .zcbl-seach-option{
-                font-size: 18px;
-                .seach-radio-inline{
-                    padding: 0;
-
-                }
-            }
+            height: 50px;
             .zcbl-seach-btn{
-                margin-top: 20px;
                 .zcbl-seach-input{
                     height: 50px;
                     width: 300px;
@@ -112,11 +117,11 @@ $color-8f8f8e:#8f8f8e;
             position: absolute;
             left: 50%;
             top:95px;
-            width: 200px;
+            width: 100px;
             float: left;
-            margin-left: 365px;
+            margin-left: 360px;
             .zcbl-indicators{
-                width: 200px;
+                width: 100px;
                 margin: 0;
                 padding-top: 25px;
                 text-align: right;

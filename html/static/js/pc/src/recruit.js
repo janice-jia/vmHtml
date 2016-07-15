@@ -12,8 +12,8 @@ $('#regist_works').delegate('[data-recuit="deldate"]', "click", function (event)
 
 $('#regist_skills').delegate("[data-recuit='addskill']", "click", function (event) {
     $(event.target).attr({"data-recuit": "delskill"});
-    var select = '<div><input type="text" placeholder="美术" name="rec_skills"><button data-recuit="addskill" type="button"></button></div>';
-    // var select='<div><select name="rec_skills"><option value ="1">美术</option><option value ="2">音乐</option><option value ="3">计算机</option></select><button data-recuit="addskill" type="button"></button></div>';
+    //var select = '<div><input type="text" placeholder="美术" name="rec_skills"><button data-recuit="addskill" type="button"></button></div>';
+     var select='<div><select name="rec_skills"><option value ="1">美术</option><option value ="2">音乐</option><option value ="3">计算机</option></select><button data-recuit="addskill" type="button"></button></div>';
     $("#regist_skills").append(select);
 });
 $('#regist_skills').delegate('[data-recuit="delskill"]', "click", function (event) {

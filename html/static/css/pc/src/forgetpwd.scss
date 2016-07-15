@@ -74,7 +74,7 @@ $black: #000;
     form {
       padding: 50px 48px 35px;
       width: 440px;
-      height:405px;
+      height:450px;
       background-color: $white;
       margin: 0 auto;
       border-radius: 10px;
@@ -90,6 +90,8 @@ $black: #000;
     }
     input {
       border: none;
+      border-bottom: 1px solid #a7a7a7;
+      border-radius: 0;
       box-shadow: none;
       -webkit-box-shadow: none;
       -moz-box-shadow: none;
@@ -105,7 +107,12 @@ $black: #000;
       background-image: url("../../../images/pc/icon/icon_fgverify.png");
     }
     .form-group {
-      border-bottom: 1px solid #a7a7a7;
+
+      /*** 提示文字 ***/
+      [data-fgpd="helpword"]{
+        text-align:left;
+        color: $orange;
+      }
     }
     [data-fgpwd="nextBox"]{
       position: absolute;
@@ -151,7 +158,8 @@ $black: #000;
   /*******  修改密码成功界面  ************/
   [data-fgpwd="form_finish"] {
     width: 440px;
-    height: 456px;
+    // height: 456px;
+    height: 500px;
     background-color: $white;
     background-image: url("../../../images/pc/fgpwd/regist_bg.png");
     margin: 0 auto;

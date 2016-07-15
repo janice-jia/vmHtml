@@ -56,7 +56,7 @@
     #fgpwd [data-fgpwd="form_process"] form {
       padding: 50px 48px 35px;
       width: 440px;
-      height: 405px;
+      height: 450px;
       background-color: #fff;
       margin: 0 auto;
       border-radius: 10px;
@@ -69,6 +69,8 @@
       width: 40px; }
     #fgpwd [data-fgpwd="form_process"] input {
       border: none;
+      border-bottom: 1px solid #a7a7a7;
+      border-radius: 0;
       box-shadow: none;
       box-shadow: none;
       padding-left: 50px;
@@ -79,7 +81,10 @@
     #fgpwd [data-fgpwd="form_process"] [data-fgpwd="fgverifyicon"] {
       background-image: url("../../../images/pc/icon/icon_fgverify.png"); }
     #fgpwd [data-fgpwd="form_process"] .form-group {
-      border-bottom: 1px solid #a7a7a7; }
+      /*** 提示文字 ***/ }
+      #fgpwd [data-fgpwd="form_process"] .form-group [data-fgpd="helpword"] {
+        text-align: left;
+        color: #ffb30e; }
     #fgpwd [data-fgpwd="form_process"] [data-fgpwd="nextBox"] {
       position: absolute;
       bottom: 25px;
@@ -110,7 +115,7 @@
       background-image: url("../../../images/pc/icon/icon_logpwd.png"); }
   #fgpwd [data-fgpwd="form_finish"] {
     width: 440px;
-    height: 456px;
+    height: 500px;
     background-color: #fff;
     background-image: url("../../../images/pc/fgpwd/regist_bg.png");
     margin: 0 auto;

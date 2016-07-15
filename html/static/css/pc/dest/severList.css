@@ -91,6 +91,7 @@
       left: 0;
       background-color: #ffffff; }
       #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="modal"] h2 {
+        height: 72px;
         line-height: 36px;
         font-size: 20px;
         color: #515151;
@@ -124,6 +125,7 @@
           height: 140px;
           border-radius: 50%; }
         #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="content"] [data-websever="userhead"] span {
+          display: none;
           position: absolute;
           top: 0;
           right: 0;

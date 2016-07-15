@@ -13,11 +13,14 @@
     <link rel="stylesheet" href="static/css/pc/minCss/all.min.css" />
 
     <link rel="stylesheet" href="./static/ickeckSkins/minimal/grey.css" />
+    <link rel="stylesheet" href="./static/js/pc/jQueryCalendar/calendar.css">
 
     <!--[if lt IE 9]>
     <script src="static/js/pc/dest/html5shiv.min.js"></script>
     <script src="static/js/pc/dest/respond.min.js"></script>
     <![endif]-->
+
+
 </head>
 <body>
 <div id="header" style="height: 78px;"></div>
@@ -338,18 +341,48 @@
     <input type="radio" value="222222" name="iCheck">
 </form>
 
+<br/><br/>
+<form action="">
+<div class="form-group per-itemGroup">
+    <label for="dt" class="col-sm-2 control-label per-set-label">日期控件：</label>
+    <div class="col-sm-6" style="position:inherit;">
+        <input type="text" id="dt" style="height: 50px;" class="form-control per-set-control" name="date" />
+        <div id="dd"></div>
+    </div>
+</div>
+    <button type="submit">提交</button>
+</form>
+
+
+
+
 
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-
-
-
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="static/js/pc/dest/jquery-1.11.3.min.js"></script>
 <script src="static/js/pc/dest/all.min.js"></script>
 <script src="static/ickeckSkins/icheck.js"></script>
+<script src="static/js/pc/jQueryCalendar/js/calendar.js"></script>
+
+
+
 <script>
+    $('#dd').calendar({
+        trigger: '#dt',
+        zIndex: 999,
+        format: 'yyyy-mm-dd',
+//        onSelected: function (view, date, data) {
+//            console.log('event: onSelected')
+//        },
+//        onClose: function (view, date, data) {
+//            console.log('event: onClose')
+//            console.log('view:' + view)
+//            console.log('date:' + date)
+//            console.log('data:' + (data || 'None'));
+//        }
+    });
     $(document).ready(function(){
         $('#icheck20 input').iCheck({
             checkboxClass: 'icheckbox-grey-20',

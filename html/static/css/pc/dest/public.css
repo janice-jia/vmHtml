@@ -188,6 +188,10 @@ button.zcbl-close {
   height: 340px;
   margin-top: -170px; }
 
+.zcbl-modalHei554 {
+  height: 554px;
+  margin-top: -277px; }
+
 .zcbl-modal-3 {
   width: 570px;
   position: absolute;
@@ -210,7 +214,8 @@ button.zcbl-close {
     padding-top: 20px; }
   .zcbl-modal-3 .zcbl-modal-3-con {
     padding: 0 30px;
-    min-height: 90px;
+    min-height: 45px;
+    text-align: center;
     border-bottom: 1px solid #acacac;
     padding-top: 10px; }
   .zcbl-modal-3 .zcbl-popupGroup label {
@@ -232,6 +237,19 @@ button.zcbl-close {
     width: 505px;
     height: 50px;
     line-height: 50px;
+    margin-left: -13px; }
+  .zcbl-modal-3 .zcbl-popupGroup .zcbl-control-SS {
+    width: 505px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: -13px;
+    background: none;
+    font-size: 18px; }
+  .zcbl-modal-3 .zcbl-popupGroup .zcbl-control-SStext {
+    width: 505px;
+    background: none;
+    height: 180px;
+    font-size: 18px;
     margin-left: -13px; }
   .zcbl-modal-3 .zcbl-popupGroup .embedVideoCon {
     font-size: 20px;

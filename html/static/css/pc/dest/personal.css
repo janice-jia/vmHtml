@@ -1020,6 +1020,9 @@
       background: url("../../../images/pc/icon/per-album-edit.png");
       height: 27px;
       width: 27px; }
+  #per-album .per-album-tit .per-album-titL .zcbl-album-control {
+    height: 50px;
+    width: 490px; }
 #per-album .per-album-tit .per-album-titR {
   width: 50%;
   float: right; }

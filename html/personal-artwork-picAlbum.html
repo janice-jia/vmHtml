@@ -24,7 +24,8 @@
     <div id="per-album">
         <div class="per-album-tit">
             <div class="per-album-titL">
-                <p>相册名称名称 <a href="javascript:;"  target="_self">&nbsp;</a></p>
+                <p id="albumP"><span id="albumName">相册名称名称</span> <a href="javascript:;" onclick="editAlbum()"  target="_self">&nbsp;</a></p>
+                <input id="albumInput" type="text" name="album" class="form-control zcbl-album-control zcbl-hidden" onblur="saveAlbum()">
             </div>
             <div class="per-album-titR"><a href="./personal-publish-pic.html" target="_blank" class="btn-yellow-50 right">上传作品</a></div>
             <div class="clear"></div>
@@ -292,6 +293,12 @@
                             <p class="zcbl-control-info">2016年12月18日 12：22：36</p>
                         </div>
                     </div>
+                    <div class="form-group zcbl-form-group">
+                        <label for="introduce" class="col-sm-2 control-label zcbl-control-label"></label>
+                        <div class="col-sm-9">
+                            <button class="btn-yellow-50 right">保存</button>
+                        </div>
+                    </div>
                 </form>
             </div>
 
@@ -310,5 +317,20 @@
 <script src="static/js/pc/dest/all.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="static/js/pc/dest/bootstrap.min.js"></script>
+<script>
+    //编辑相册名称
+    function editAlbum(){
+        $('#albumP').css('display','none');
+        $('#albumInput').css('display','block');
+        $('#albumInput').val($('#albumName').html());
+    }
+
+    //保存相册名称
+    function saveAlbum(){
+        $('#albumP').css('display','block');
+        $('#albumInput').css('display','none');
+        $('#albumName').html($('#albumInput').val());
+    }
+</script>
 </body>
 </html>

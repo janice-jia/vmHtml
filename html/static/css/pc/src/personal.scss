@@ -1341,6 +1341,13 @@ $color-90908f:#90908f;
             }
         }
     }
+    .per-setControlMsg{
+        clear: both;
+        padding-left: 115px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        color: $color-07;
+    }
 }
 
 //相册详细
@@ -1647,6 +1654,13 @@ $color-90908f:#90908f;
                 text-align: right;
             }
         }
+        .per-setControlMsg{
+            clear: both;
+            padding-left: 115px;
+            padding-top: 15px;
+            margin-bottom: 0;
+            color: $color-07;
+        }
     }
     .videoBody{
         width: 980px;
@@ -1695,11 +1709,11 @@ $color-90908f:#90908f;
     .textBody{
         width: 980px;
         .zcbl-container{
-            width: 940px;
+            width: 740px;
             margin:  0 auto;
         }
         .zcbl-text-edit{
-            width: 880px;
+            width: 740px;
             margin: 0 auto;
             h1{
                 p{

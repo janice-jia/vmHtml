@@ -35,23 +35,43 @@
 
     <div class="per-pub-video">
         <form action="" class="form-horizontal zcbl-form-horizontal">
+
             <div class="form-group zcbl-form-group">
-            <label class="col-sm-2 control-label zcbl-control-label">作品封面：</label>
-            <div class="col-sm-7">
-                <div class="pub-file">
-                    <input type="file" />
-                    <p class="zcbl-form-pBlue"><a href="#" target="_self">+上传封面</a></p>
+                <label for="textName" class="col-sm-2 control-label zcbl-control-label">文字名称：</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control zcbl-form-control" name="textName" id="textName" placeholder="20个汉字以内"  />
+                </div>
+                <p class="per-setControlMsg">*由字母加数字符号至少两种以上字符组成</p>
+            </div>
+            <div class="form-group zcbl-form-group">
+                <label for="keyword" class="col-sm-2 control-label zcbl-control-label">关键词：</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control zcbl-form-control" name="keyword" id="keyword" placeholder="用回车/空格/逗号间隔不同关键词" />
                 </div>
             </div>
-            <!--上传封面完成之后显示 start-->
-            <!--<div class="col-sm-7">-->
+            <div class="form-group zcbl-form-group">
+                <label for="introduce" class="col-sm-2 control-label zcbl-control-label">作品介绍：</label>
+                <div class="col-sm-7">
+                    <textarea id="introduce" name="introduce" class="form-control zcbl-form-control" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="form-group zcbl-form-group">
+                <label class="col-sm-2 control-label zcbl-control-label">作品封面：</label>
+                <div class="col-sm-7">
+                    <div class="pub-file">
+                        <input type="file" />
+                        <p class="zcbl-form-pBlue"><a href="#" target="_self">+上传封面</a></p>
+                    </div>
+                </div>
+                <!--上传封面完成之后显示 start-->
+                <!--<div class="col-sm-7">-->
                 <!--<div class="pub-file-img">-->
-                    <!--<img src="./static/images/personal/pub-img.jpg" height="114" width="114" alt="" />-->
-                    <!--<p class="pub-file-imgDel"><a href="#" target="_self"></a></p>-->
+                <!--<img src="./static/images/personal/pub-img.jpg" height="114" width="114" alt="" />-->
+                <!--<p class="pub-file-imgDel"><a href="#" target="_self"></a></p>-->
                 <!--</div>-->
-            <!--</div>-->
-            <!--上传封面完成之后显示 end-->
-        </div>
+                <!--</div>-->
+                <!--上传封面完成之后显示 end-->
+            </div>
             <div class="form-group zcbl-form-group">
                 <script id="container" name="content" type="text/plain" style="width:940px;height:490px;margin:0 auto;"> 这里写你的初始化内容</script>
             </div>

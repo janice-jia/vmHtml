@@ -1002,6 +1002,12 @@
         line-height: 22px;
         color: #9a9a9a;
         margin-bottom: 0; }
+  #per-publish .per-setControlMsg {
+    clear: both;
+    padding-left: 115px;
+    padding-top: 15px;
+    margin-bottom: 0;
+    color: #ffb30e; }
 
 #per-album .per-album-tit .per-album-titL {
   width: 50%;
@@ -1235,6 +1241,12 @@
     padding-left: 120px; }
     .per-view-box .per-picedit .zcbl-form-horizontal .zcbl-control-label {
       text-align: right; }
+    .per-view-box .per-picedit .per-setControlMsg {
+      clear: both;
+      padding-left: 115px;
+      padding-top: 15px;
+      margin-bottom: 0;
+      color: #ffb30e; }
   .per-view-box .videoBody {
     width: 980px;
     max-height: 550px;
@@ -1275,10 +1287,10 @@
   .per-view-box .textBody {
     width: 980px; }
     .per-view-box .textBody .zcbl-container {
-      width: 940px;
+      width: 740px;
       margin: 0 auto; }
     .per-view-box .textBody .zcbl-text-edit {
-      width: 880px;
+      width: 740px;
       margin: 0 auto; }
       .per-view-box .textBody .zcbl-text-edit h1 {
         margin-bottom: 40px; }

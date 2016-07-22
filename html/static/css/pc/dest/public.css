@@ -430,6 +430,15 @@ button.zcbl-close {
           position: absolute;
           content: ""; }
 
+.zcbl-loding {
+  width: 60px;
+  height: 24px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -12px;
+  margin-left: -30px; }
+
 /** 视频图标 **/
 .zcbl-videoicon {
   position: absolute;

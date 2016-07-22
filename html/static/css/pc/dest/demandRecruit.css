@@ -62,6 +62,10 @@
         #recruit .container .tab-content .form-group p {
           display: table;
           margin-bottom: 0; }
+        #recruit .container .tab-content .form-group [data-recuit="seldiv"] {
+          text-align: left; }
+          #recruit .container .tab-content .form-group [data-recuit="seldiv"] select {
+            width: 49%; }
       #recruit .container .tab-content [data-recuit="rec_works"], #recruit .container .tab-content [data-recuit="rec_skills"] {
         text-align: left; }
         #recruit .container .tab-content [data-recuit="rec_works"] select, #recruit .container .tab-content [data-recuit="rec_skills"] select {

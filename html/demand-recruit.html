@@ -38,14 +38,14 @@
                 <div class="form-group">
                     <label class="col-sm-2 control-label"><span data-form="must"></span>需求名称</label>
                     <div class="col-sm-10">
-                        <input type="password" name="rec_name" class="form-control" placeholder="5至20个字" />
+                        <input type="password" name="rec_name" class="form-control" Provholder="5至20个字" />
                     </div>
                 </div>
 
                 <div class="form-group" data-recuit="rec_works">
                     <label class="col-sm-2 control-label"><span data-form="must"></span>作品类型</label>
                     <div class="col-sm-10" id="regist_works">
-                        <div data-recuit="seldiv">
+                        <div >
                             <select name="rec_works0">
                                 <option value="1">小说|文学副本</option>
                                 <option value="2">诗歌|散文</option>
@@ -71,12 +71,17 @@
                     <p>元</p>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group" data-recuit="addsele">
                     <label class="col-sm-2 control-label">需求地点</label>
                     <div class="col-sm-10">
-                        <div>
-
-                            <select name="rec_place">
+                        <div data-recuit="seldiv">
+                            <select name="rec_Prov">
+                                <option value="1">北京</option>
+                                <option value="2">承德</option>
+                                <option value="3">上海</option>
+                                <option value="4">天津</option>
+                            </select>
+                            <select name="rec_City">
                                 <option value="1">北京</option>
                                 <option value="2">承德</option>
                                 <option value="3">上海</option>
@@ -90,7 +95,7 @@
                 <div class="form-group" data-regist="date">
                     <label class="col-sm-2 control-label"><span data-form="must"></span>截止日期</label>
                     <div class="col-sm-3">
-                        <input class="form-control" name="rec_date" placeholder="2016-6-16" />
+                        <input class="form-control" name="rec_date" Provholder="2016-6-16" />
                     </div>
                     <p><span></span></p>
                 </div>
@@ -98,7 +103,7 @@
                 <div class="form-group"  data-recuit="textarea">
                     <label class="col-sm-2 control-label"><span data-form="must"></span>需求详情</label>
                     <div class="col-sm-10" data-recuit="textarea">
-                        <textarea name="rec_details" placeholder="10-800个字"></textarea>
+                        <textarea name="rec_details" Provholder="10-800个字"></textarea>
                     </div>
                 </div>
 
@@ -111,7 +116,7 @@
                 <div class="form-group">
                     <label class="col-sm-2 control-label"><span data-form="must"></span>需求名称</label>
                     <div class="col-sm-10">
-                        <input type="password" name="rec_name" class="form-control" placeholder="5至20个字" />
+                        <input type="password" name="rec_name" class="form-control" Provholder="5至20个字" />
                     </div>
                 </div>
 
@@ -120,7 +125,7 @@
                     <label class="col-sm-2 control-label"><span data-form="must"></span>所需技能</label>
                     <div class="col-sm-10" id="regist_skills">
                         <div>
-                            <!--<input type="text" placeholder="美术" name="rec_skills" /><button data-recuit="addskill" type="button"></button>-->
+                            <!--<input type="text" Provholder="美术" name="rec_skills" /><button data-recuit="addskill" type="button"></button>-->
                             <select name="rec_skills">
                                 <option value="1">美术</option>
                                 <option value="2">音乐</option>
@@ -151,7 +156,13 @@
                     <label class="col-sm-2 control-label"><span data-form="must"></span>需求地点</label>
                     <div class="col-sm-10">
                         <div  data-recuit="seldiv">
-                            <select name="rec_place">
+                            <select name="rec_Prov">
+                                <option value="1">北京</option>
+                                <option value="2">承德</option>
+                                <option value="3">上海</option>
+                                <option value="4">天津</option>
+                            </select>
+                            <select name="rec_City">
                                 <option value="1">北京</option>
                                 <option value="2">承德</option>
                                 <option value="3">上海</option>
@@ -165,7 +176,7 @@
                 <div class="form-group" data-regist="date">
                     <label class="col-sm-2 control-label"><span data-form="must"></span>截止日期</label>
                     <div class="col-sm-3">
-                        <input class="form-control" name="rec_date" placeholder="2016-6-16" />
+                        <input class="form-control" name="rec_date" Provholder="2016-6-16" />
                     </div>
                     <p><span></span></p>
                 </div>
@@ -173,7 +184,7 @@
                 <div class="form-group"  data-recuit="textarea">
                     <label class="col-sm-2 control-label"><span data-form="must"></span>需求详情</label>
                     <div class="col-sm-10">
-                        <textarea name="rec_details" placeholder="10-800个字"></textarea>
+                        <textarea name="rec_details" Provholder="10-800个字"></textarea>
                     </div>
                 </div>
                 <div data-recuit="submit" data-toggle="#recruit_modelperson">

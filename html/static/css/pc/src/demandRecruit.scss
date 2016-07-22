@@ -84,6 +84,12 @@ $black: #000;
           display: table;
           margin-bottom: 0;
         }
+        [data-recuit="seldiv"]{
+          text-align: left;
+          select{
+            width:49%;
+          }
+        }
 
       }
       /** 表单特殊样式 **/

@@ -62,7 +62,8 @@
 #severList > .container {
   padding: 0; }
 #severList [data-websever="severlist"] ul[data-websever="severlistul"] {
-  margin-top: 25px; }
+  margin-top: 25px;
+  width: 1050px; }
   #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li {
     position: relative;
     text-align: center;

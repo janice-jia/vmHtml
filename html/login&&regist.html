@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <title>注册</title>
+    <title>登录</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -15,11 +15,75 @@
     <![endif]-->
 </head>
 <body>
-<div id="lr">
+<button class="btn-yellow-40 left mr10" onclick="loginFn()" data-toggle="modal" data-target="#lr">
+    登录
+</button>
+<button class="btn-yellow-40 left mr10" onclick="registFn()" data-toggle="modal" data-target="#lr">
+    注册
+</button>
+
+
+<div id="lr" class="modal fade" data-backdrop="static"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
     <div class="container">
         <img data-login="logo" src="static/images/pc/logo_bg.png" alt="" />
+        <div id="login">
+            <div id="loginBox" style="display: none" data-login="container">
+
+                <div data-login="tab">
+                    <a data-login="regist" id="torecruit">立即注册</a>
+                    <h2>登录</h2>
+                </div>
+                <!---  登录表单  --->
+                <form data-login="form" action="">
+                    <div class="form-group has-success has-feedback">
+                        <label for="login_user" class="sr-only">UserName/PhoneNumber</label>
+                        <span class="input-group-addon" data-login="logusericon"></span>
+                        <input class="form-control" id="login_user" name="login_user" placeholder="请输入手机号" />
+                        <span data-login="helpword" class="help-block">*由字母加数字符号至少两种以上字符组成</span>
+                    </div>
+                    <div class="form-group has-success has-feedback">
+                        <label for="login_pwd" class="sr-only">Verification code</label>
+                        <span class="input-group-addon" data-login="logpwdicon"></span>
+                        <input class="form-control" id="login_pwd" name="login_pwd" placeholder="请输入密码" />
+                        <span data-login="helpword" class="help-block">*由字母加数字符号至少两种以上字符组成</span>
+                    </div>
+                    <div class="form-group has-success has-feedback">
+                        <label for="login_key" class="sr-only">验证码</label>
+                        <span class="input-group-addon" data-login="logkeyicon"></span>
+                        <div id="login_randomCode"></div>
+                        <input class="form-control" id="login_key" name="login_key" placeholder="请输入验证码" />
+                        <span data-login="helpword" class="help-block">*由字母加数字符号至少两种以上字符组成</span>
+                    </div>
+                    <button type="button" id="login_submit" data-login="login_submit" class="btn-block ">登录</button>
+                    <div data-login="pwdrel">
+                        <label><input type="checkbox" name="rememberCode"  />下次自动登录</label>
+                        <a href="forgetpwd.html" target="_blank">忘记密码</a>
+                    </div>
+                </form>
+                <!---  分割线  --->
+                <p data-login="hr">
+                    <i data-login="hrlt"></i>
+                    或
+                    <i data-login="hrrt"></i>
+                </p>
+                <!---  其他登录方式  --->
+                <ul data-login='otherlog'>
+                    <li data-login="otherlog_qq">
+                        <a href="#"><b></b><span>QQ</span></a>
+                    </li>
+                    <li data-login="otherlog_weibo">
+                        <a href="#"><b></b><span>微博</span></a>
+                    </li>
+                    <li data-login="otherlog_weixin">
+                        <a href="#"><b></b><span>微信</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
         <div id="regist">
-            <div id="registBox" data-regist="container">
+            <div id="registBox" style="display: none"   data-regist="container">
                 <!--  注册信息界面  -->
                 <div  data-regist="registnow">
                     <form data-regist="form" action="">
@@ -114,6 +178,22 @@
         });
     });
 </script>
+<!--< script type="text/javascript">
+    //翻转
+    var rturn = function(target,time,opts){
+        target.find('#torecruit').click(function(){
+            console.log(111111111111111);
+            $("#torecruit").stop().animate(opts[0],time,function(){
+                $('#login').hide();
+                $('#regist').next().animate(opts[1],time);
+            });
+        });
+    };
+    var verticalOpts = [{'width':0},{'width':'180px'}];
+    rturn($('#torecruit'),1000,verticalOpts);
+    var horizontalOpts = [{'height':0,'top':'120px'},{'height':'240px','top':0}];
+    rturn($('#horizontal'),100,horizontalOpts);
+</script> -->
 
 </body>
 

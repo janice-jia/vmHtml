@@ -767,7 +767,10 @@ button.zcbl-close {
       color: #909090;
       margin: 0 7px; }
       .zcbl-page ul li a {
-        color: #909090; }
+        color: #909090;
+        display: inline-block;
+        width: 30px;
+        height: 30px; }
       .zcbl-page ul li.zcbl-thisPage {
         background: #ffb30e;
         color: #ffffff;

@@ -985,6 +985,9 @@ button.zcbl-close{
             margin: 0 7px;
             a{
                 color: $color-03;
+                display: inline-block;
+                width: 30px;
+                height: 30px;
             }
             &.zcbl-thisPage{
                 background: $color-07;

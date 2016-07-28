@@ -475,7 +475,9 @@
           height: 100px;
           margin: 15px auto 0 auto; }
           #per-wall .per-wall-r .per-fans ul li .per-fansImg img {
-            border-radius: 50%; }
+            border-radius: 50%;
+            width: 100px;
+            height: 100px; }
         #per-wall .per-wall-r .per-fans ul li .per-fansName {
           padding: 0 10px;
           text-align: center; }

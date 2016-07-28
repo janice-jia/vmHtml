@@ -119,7 +119,12 @@
     .zcbl-slide .zcbl-slide-con .zcbl-inner {
       height: 100%; }
       .zcbl-slide .zcbl-slide-con .zcbl-inner .item {
-        height: 100%; }
+        height: 100%;
+        background: center center; }
+        .zcbl-slide .zcbl-slide-con .zcbl-inner .item a {
+          display: block;
+          width: 100%;
+          height: 100%; }
 
 .zcbl-index-con {
   width: 1000px;

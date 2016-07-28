@@ -132,6 +132,7 @@ $color-fb4444: #fb4444;
           top: 0;
           left: 0;
           background-color: $color-ffffff;
+          width: 100%;
           h2 {
             height: 72px;
             line-height: 36px;
@@ -156,6 +157,7 @@ $color-fb4444: #fb4444;
             font-size: 18px;
             color: $color-02;
             text-align: left;
+            width: 100%;
           }
         }
         [data-websever="content"] {

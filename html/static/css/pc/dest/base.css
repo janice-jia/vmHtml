@@ -15,7 +15,8 @@ body {
   font-family: "Microsoft YaHei","Arial","Helvetica Neue","Hiragino Sans GB","Simsun,sans-self";
   font-size: 16px;
   color: #515151;
-  background: #eeeeee; }
+  background: #eeeeee;
+  word-break: break-all; }
 
 table,
 td {

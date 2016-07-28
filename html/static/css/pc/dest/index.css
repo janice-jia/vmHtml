@@ -208,6 +208,8 @@
           font-size: 18px;
           height: 22px;
           overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
           color: #ffffff; }
           .zcbl-index-con .zcbl-require ul li .zcbl-require-info .zcbl-require-name a {
             color: #ffffff; }
@@ -215,7 +217,10 @@
           margin-top: 8px;
           margin-bottom: 14px;
           height: 20px;
-          color: #ffffff; }
+          overflow: hidden;
+          color: #ffffff;
+          white-space: nowrap;
+          text-overflow: ellipsis; }
           .zcbl-index-con .zcbl-require ul li .zcbl-require-info .zcbl-require-tag a {
             color: #ffffff; }
         .zcbl-index-con .zcbl-require ul li .zcbl-require-info .zcbl-require-people {

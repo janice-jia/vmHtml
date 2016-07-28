@@ -120,7 +120,7 @@
       height: 100%; }
       .zcbl-slide .zcbl-slide-con .zcbl-inner .item {
         height: 100%;
-        background: center center; }
+        background: center center no-repeat; }
         .zcbl-slide .zcbl-slide-con .zcbl-inner .item a {
           display: block;
           width: 100%;

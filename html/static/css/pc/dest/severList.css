@@ -90,7 +90,8 @@
       height: 0;
       top: 0;
       left: 0;
-      background-color: #ffffff; }
+      background-color: #ffffff;
+      width: 100%; }
       #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="modal"] h2 {
         height: 72px;
         line-height: 36px;
@@ -111,7 +112,8 @@
       #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="modal"] div {
         font-size: 18px;
         color: #515151;
-        text-align: left; }
+        text-align: left;
+        width: 100%; }
     #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="content"] {
       height: 300px;
       padding: 16px 30px 0 30px;

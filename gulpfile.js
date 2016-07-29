@@ -64,7 +64,6 @@ gulp.task('stylesVs1', function() {
     //.pipe(notify({ message: 'Styles task complete' }));
 });
 
-
 // cleanCss
 gulp.task('cleanCss', function() {
     //编译sass

@@ -29,6 +29,7 @@ gulp.task('default', ['styles','cleanCss','scripts']);
  * */
 gulp.task("watch", function(){
     gulp.watch(pathConfig.src.sassSrc+'*.scss', ['styles']);
+    gulp.watch(pathConfig.src.sassSrcVs1+'*.scss', ['stylesVs1']);
     gulp.watch(pathConfig.src.sassDest+'*.css', ['cleanCss']);
     gulp.watch(pathConfig.src.jsSrc, ['scripts']);
 });
@@ -49,6 +50,20 @@ gulp.task('styles', function() {
         //提醒任务完成
         //.pipe(notify({ message: 'Styles task complete' }));
 });
+
+
+// Styles任务
+gulp.task('stylesVs1', function() {
+    //编译sass
+    return sass(pathConfig.src.sassSrcVs1+'*.scss')
+
+    //保存未压缩文件到我们指定的目录下面
+        .pipe(gulp.dest(pathConfig.src.sassDestVs1))
+
+    //提醒任务完成
+    //.pipe(notify({ message: 'Styles task complete' }));
+});
+
 
 // cleanCss
 gulp.task('cleanCss', function() {

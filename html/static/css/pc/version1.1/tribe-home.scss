@@ -28,11 +28,34 @@ $color-08: #e43f3f;
   /** 热门部落 **/
   [data-thome="hot-tribe"]{
     background-color: #fff ;
+    h2{
+      line-height: 64px;
+    }
+    div{
+      float: left;
+    }
     [data-thome="hot-left"] img{
       width: 326px;
       height:206px;
     }
+    [data-thome="hot-left"]{
+      ul{
+        text-align: center;
+        li{
+          float: left;
+          b{
+            font-size: 24px;
+            color: $color-02;
+          }
+        }
+      }
+    }
 
+  }
+  [data-thome="hot-tribe"]:after{
+    content: '';
+    display: table;
+    clear: both;
   }
 
 }

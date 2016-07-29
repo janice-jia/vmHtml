@@ -1,0 +1,12 @@
+@charset "UTF-8";
+#tribe-home {
+  /**轮播图**/
+  /** 热门部落 **/ }
+  #tribe-home .carousel-inner img {
+    width: 100%;
+    height: 280px; }
+  #tribe-home [data-thome="hot-tribe"] {
+    background-color: #fff; }
+    #tribe-home [data-thome="hot-tribe"] [data-thome="hot-left"] img {
+      width: 326px;
+      height: 206px; }

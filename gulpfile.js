@@ -13,6 +13,10 @@ var rename = require('gulp-rename');//重命名
 var notify = require('gulp-notify');//更改提醒
 var cssSprite = require('gulp-css-spritesmith');//css 代码中的切片合并成雪碧图的工具
 var gulpIf = require('gulp-if');//gulp if
+var browserSync = require('browser-sync').create();
+var reload      = browserSync.reload;
+
+
 
 /**
  * 引入配置
@@ -22,16 +26,34 @@ var pathConfig = require('./gulpConfigPath.js');
 /*
  * default
  * */
-gulp.task('default', ['styles','cleanCss','scripts']);
+gulp.task('default', ['styles','cleanCss','scripts'],function(){
+
+
+});
+
+// 实时刷新浏览器
+gulp.task('server', function() {
+    browserSync.init({
+        server: {
+            baseDir: "./html"
+        }
+    });
+
+});
+
 
 /*
  * 监听
  * */
-gulp.task("watch", function(){
+gulp.task("watch",['server'], function(){
     gulp.watch(pathConfig.src.sassSrc+'*.scss', ['styles']);
     gulp.watch(pathConfig.src.sassSrcVs1+'*.scss', ['stylesVs1']);
     gulp.watch(pathConfig.src.sassDest+'*.css', ['cleanCss']);
-    gulp.watch(pathConfig.src.jsSrc, ['scripts']);
+
+    gulp.watch(pathConfig.src.minCss+'*.css', ['cleanCss']).on('change', reload);;
+    gulp.watch(pathConfig.src.jsSrc, ['scripts']).on('change', reload);
+    gulp.watch("./html/*.html").on('change', reload);
+
 });
 
 // Styles任务

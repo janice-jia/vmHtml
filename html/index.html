@@ -28,7 +28,7 @@
         <div id="myCarousel" class="carousel slide zcbl-carousel-slide">
             <!-- 轮播（Carousel）指标 -->
             <div class="zcbl-seach-option" id="seachRadio">
-                <!--<label class="radio-inline seach-radio-inline">-->gu
+                <!--<label class="radio-inline seach-radio-inline">-->
                     <!--<input type="radio" name="seachType" id="seachType1" value="option1" checked="checked" />-->
                     <!--<span class="pl5"></span>众创-->
                 <!--</label>-->
@@ -44,28 +44,28 @@
             <div class="zcbl-seach-l">
 
                 <div class="zcbl-seach-btn">
-                    <input type="text" name="seach" class="zcbl-seach-input">
+                    <input type="text" name="seach" class="zcbl-seach-input" placeholder="输入您要查找的关键词">
                     <button type="button" class="zcbl-seachBtn">搜索</button>
                     <p class="zcbl-seach-or">or</p>
                     <button type="button" class="zcbl-seach-publish" data-toggle="modal" data-target="#zcblPublish">发布</button>
                 </div>
             </div>
-            <div class="zcbl-seach-r">
-                <ol class="carousel-indicators zcbl-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active">
-                        <img src="static/images/pc/index/picture-1.png" height="62" width="100" alt="First slide">
-                    </li>
-                    <li data-target="#myCarousel" data-slide-to="1">
-                        <img src="static/images/pc/index/picture-2.png" height="62" width="100" alt="First slide">
-                    </li>
-                    <li data-target="#myCarousel" data-slide-to="2">
-                        <img src="static/images/pc/index/picture-3.png" height="62" width="100" alt="First slide">
-                    </li>
-                    <li data-target="#myCarousel" data-slide-to="3">
-                        <img src="static/images/pc/index/picture-4.png" height="62" width="100" alt="First slide">
-                    </li>
-                </ol>
-            </div>
+            <!--<div class="zcbl-seach-r">-->
+                <!--<ol class="carousel-indicators zcbl-indicators">-->
+                    <!--<li data-target="#myCarousel" data-slide-to="0" class="active">-->
+                        <!--<img src="static/images/pc/index/picture-1.png" height="62" width="100" alt="First slide">-->
+                    <!--</li>-->
+                    <!--<li data-target="#myCarousel" data-slide-to="1">-->
+                        <!--<img src="static/images/pc/index/picture-2.png" height="62" width="100" alt="First slide">-->
+                    <!--</li>-->
+                    <!--<li data-target="#myCarousel" data-slide-to="2">-->
+                        <!--<img src="static/images/pc/index/picture-3.png" height="62" width="100" alt="First slide">-->
+                    <!--</li>-->
+                    <!--<li data-target="#myCarousel" data-slide-to="3">-->
+                        <!--<img src="static/images/pc/index/picture-4.png" height="62" width="100" alt="First slide">-->
+                    <!--</li>-->
+                <!--</ol>-->
+            <!--</div>-->
             <!-- 轮播（Carousel）项目 -->
             <div class="carousel-inner zcbl-inner">
                 <div class="item active" style="background-image: url(http://www.vmaking.com/index/B16C1167582)">
@@ -349,7 +349,7 @@
                     <div class="zcbl-about-conL"></div>
                     <div class="zcbl-about-conR">
                         <h2><a href="#">意见反馈</a></h2>
-                        <p>我们的成长离不开您的支持和帮助，遇到问题，遇到麻烦，遇到不爽，来这里告诉我们，让我们知道怎么去改</p>
+                        <p>我们的成长离不开您的支持和帮助，遇到问题，遇到麻烦，遇到不爽，来这里告诉我们，<a href="">提交反馈意见</a></p>
                     </div>
                 </div>
             </div>
@@ -381,13 +381,13 @@
 <script src="static/js/pc/dest/bootstrap.min.js"></script>
 <script>
     $('#myCarousel').carousel({
-        interval: 5000
+        interval: 3000
     })
 
     //搜索radio按钮样式
     $(document).ready(function(){
         $('#seachRadio input').iCheck({
-            radioClass: 'iradio-grey-20',
+            radioClass: 'iradio-fff-20',
             increaseArea: '30%' // optional
         });
     });

@@ -472,14 +472,14 @@ button.zcbl-close {
     background-image: url("../../../images/pc/icon/icon_audio.png"); }
 
 #zcbl-header {
-  height: 78px;
+  height: 50px;
   width: 100%;
   margin-bottom: 17px;
   position: fixed;
   z-index: 1000;
   top: 0;
   left: 0;
-  background: #171717; }
+  background: rgba(0, 0, 0, 0.3); }
   #zcbl-header .header-box {
     width: 960px;
     padding: 0 20px;
@@ -488,42 +488,35 @@ button.zcbl-close {
     #zcbl-header .header-box .header-log {
       float: left;
       position: relative;
-      margin: 11px 0; }
-      #zcbl-header .header-box .header-log:after {
-        content: "";
-        position: absolute;
-        top: 67px;
-        left: -10px;
-        width: 0;
-        height: 0;
-        border-left: 30px solid transparent;
-        border-right: 30px solid transparent;
-        border-top: 17px solid #171717; }
+      margin: 0;
+      padding: 0;
+      height: 100%; }
       #zcbl-header .header-box .header-log a {
         display: block;
-        padding: 8px 40px 0 1px; }
+        padding: 6px 40px 0 1px; }
       #zcbl-header .header-box .header-log .zcbl-logo {
         display: block;
-        width: 38px;
-        height: 48px;
-        background: url("../../../images/pc/icon/logo.png") no-repeat; }
+        width: 30px;
+        height: 38px;
+        background: url("../../../images/pc/icon/logo1.png") no-repeat; }
     #zcbl-header .header-box .header-nav {
       float: left; }
       #zcbl-header .header-box .header-nav li {
         float: left;
-        line-height: 78px;
+        line-height: 50px;
         width: 90px;
         text-align: center;
-        font-size: 18px; }
+        font-size: 16px; }
         #zcbl-header .header-box .header-nav li a {
           color: #c1c1c1;
           display: block; }
-        #zcbl-header .header-box .header-nav li:hover, #zcbl-header .header-box .header-nav li.header-nav-hover {
-          height: 78px;
-          background: #2e2e2e;
-          border-bottom: 4px solid #ffb30e; }
+        #zcbl-header .header-box .header-nav li.header-nav-hover {
+          height: 50px;
+          background: #ffb30e; }
         #zcbl-header .header-box .header-nav li:hover a, #zcbl-header .header-box .header-nav li.header-nav-hover a {
-          color: #ffffff; }
+          height: 50px;
+          color: #ffffff;
+          border-bottom: 4px solid #ffb30e; }
     #zcbl-header .header-box .header-right {
       float: right;
       width: 370px;
@@ -532,7 +525,7 @@ button.zcbl-close {
         float: right;
         width: 170px;
         height: 100%;
-        line-height: 78px;
+        line-height: 50px;
         background: #ffb30e;
         text-align: center; }
         #zcbl-header .header-box .header-right .user-login .header-publish a {
@@ -633,8 +626,8 @@ button.zcbl-close {
         float: right; }
         #zcbl-header .header-box .header-right .user-notlogin ul li {
           float: left;
-          height: 78px;
-          line-height: 78px;
+          height: 100%;
+          line-height: 50px;
           color: #ffffff;
           padding-left: 14px; }
           #zcbl-header .header-box .header-right .user-notlogin ul li a {
@@ -684,7 +677,8 @@ button.zcbl-close {
       #zcbl-footer .footer-link p.footer-link-p {
         width: 80px;
         float: left;
-        line-height: 25px; }
+        line-height: 25px;
+        font-size: 14px; }
     #zcbl-footer .footer-link ul.footer-link-ul {
       width: 922px;
       float: left;
@@ -695,7 +689,7 @@ button.zcbl-close {
       color: #ffffff;
       padding: 0 0 0 9px; }
       #zcbl-footer .footer-link ul li a {
-        font-size: 16px;
+        font-size: 14px;
         color: #ffffff; }
   #zcbl-footer .footer-aboutus {
     height: 85px; }
@@ -732,7 +726,8 @@ button.zcbl-close {
         #zcbl-footer .footer-aboutus .footer-aboutus-z ul li span.divide {
           padding: 0 20px; }
         #zcbl-footer .footer-aboutus .footer-aboutus-z ul li a {
-          color: #ffffff; }
+          color: #ffffff;
+          font-size: 14px; }
     #zcbl-footer .footer-aboutus .footer-aboutus-r {
       float: right;
       margin-top: 26px; }

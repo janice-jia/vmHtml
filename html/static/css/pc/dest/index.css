@@ -11,50 +11,58 @@
   .zcbl-slide #myCarousel {
     position: relative; }
     .zcbl-slide #myCarousel .zcbl-seach-option {
-      font-size: 18px;
+      font-size: 16px;
       position: absolute;
       left: 50%;
-      top: 210px;
+      top: 180px;
       z-index: 1000;
       width: 230px;
       margin-left: -355px; }
       .zcbl-slide #myCarousel .zcbl-seach-option .seach-radio-inline {
-        padding: 0; }
+        padding: 0;
+        color: #ffffff; }
     .zcbl-slide #myCarousel .zcbl-seach-l {
       position: absolute;
       left: 50%;
-      top: 260px;
+      top: 230px;
       z-index: 100;
-      width: 600px;
+      width: 680px;
       float: left;
       text-indent: 0;
       margin-left: -355px;
       height: 50px; }
       .zcbl-slide #myCarousel .zcbl-seach-l .zcbl-seach-btn .zcbl-seach-input {
-        height: 50px;
-        width: 300px;
+        height: 48px;
+        width: 380px;
         border: none;
-        background: rgba(255, 255, 255, 0.7);
+        background: rgba(255, 255, 255, 0.9);
         padding: 0 10px;
         float: left; }
       .zcbl-slide #myCarousel .zcbl-seach-l .zcbl-seach-btn .zcbl-seachBtn {
-        width: 120px;
-        height: 50px;
+        width: 95px;
+        height: 48px;
         float: left;
         background: rgba(255, 255, 255, 0.9);
         position: relative;
-        padding-left: 57px;
-        text-align: left;
-        font-size: 20px;
-        color: #878787; }
+        text-align: right;
+        padding-right: 18px;
+        font-size: 14px;
+        color: #333333; }
+        .zcbl-slide #myCarousel .zcbl-seach-l .zcbl-seach-btn .zcbl-seachBtn:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 14px;
+          height: 20px;
+          border-left: 1px solid #cccccc; }
         .zcbl-slide #myCarousel .zcbl-seach-l .zcbl-seach-btn .zcbl-seachBtn:before {
           content: "";
           position: absolute;
-          left: 23px;
+          left: 18px;
           top: 16px;
-          background: url("../../../images/pc/icon/icon-index-seach.png") no-repeat;
+          background: url("../../../images/pc/icon/icon-index-seach-1.png") no-repeat;
           width: 20px;
-          height: 23px; }
+          height: 20px; }
       .zcbl-slide #myCarousel .zcbl-seach-l .zcbl-seach-btn .zcbl-seach-or {
         float: left;
         width: 60px;
@@ -65,21 +73,22 @@
         color: #ffffff; }
       .zcbl-slide #myCarousel .zcbl-seach-l .zcbl-seach-btn .zcbl-seach-publish {
         float: left;
-        width: 120px;
-        height: 50px;
+        width: 95px;
+        height: 48px;
         position: relative;
-        padding-left: 56px;
-        text-align: left;
-        font-size: 20px;
-        color: #878787; }
+        padding-right: 18px;
+        text-align: right;
+        color: #333333;
+        font-size: 14px;
+        background: #ffffff; }
         .zcbl-slide #myCarousel .zcbl-seach-l .zcbl-seach-btn .zcbl-seach-publish:before {
           content: "";
           position: absolute;
           top: 16px;
-          left: 22px;
-          background: url("../../../images/pc/icon/icon-index-publish.png") no-repeat;
+          left: 18px;
+          background: url("../../../images/pc/icon/icon-index-publish-1.png") no-repeat;
           width: 20px;
-          height: 21px; }
+          height: 19px; }
     .zcbl-slide #myCarousel .zcbl-seach-r {
       position: absolute;
       left: 50%;
@@ -110,7 +119,7 @@
             border: 5px solid #ffb30e; }
   .zcbl-slide .zcbl-slide-con {
     width: 100%;
-    height: 457px; }
+    height: 350px; }
     .zcbl-slide .zcbl-slide-con img {
       max-width: 100%;
       min-height: 100%; }
@@ -133,8 +142,9 @@
     white-space: nowrap;
     overflow: hidden;
     width: 1000px;
-    height: 80px;
-    line-height: 80px; }
+    height: 55px;
+    line-height: 55px;
+    font-size: 14px; }
     .zcbl-index-con .zcbl-notice a {
       color: #515151;
       padding-right: 20px; }
@@ -143,17 +153,17 @@
     height: 100px; }
   .zcbl-index-con .zcbl-tit {
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 40px; }
+    margin-top: 25px;
+    margin-bottom: 25px; }
     .zcbl-index-con .zcbl-tit h2 {
       font-weight: normal; }
       .zcbl-index-con .zcbl-tit h2 .zcbl-tit-name {
-        font-size: 30px; }
+        font-size: 28px; }
       .zcbl-index-con .zcbl-tit h2 .zcbl-tit-more {
-        font-size: 18px;
-        padding-left: 30px; }
+        font-size: 14px;
+        padding-left: 20px; }
         .zcbl-index-con .zcbl-tit h2 .zcbl-tit-more a {
-          color: #515151; }
+          color: #ffb30e; }
   .zcbl-index-con .zcbl-require {
     margin-bottom: 12px;
     margin-left: -40px; }
@@ -177,11 +187,13 @@
         padding-left: 10px;
         height: 20px;
         line-height: 20px;
+        font-size: 14px;
+        color: #ffffff;
         position: absolute;
         top: 0;
         left: 0; }
         .zcbl-index-con .zcbl-require ul li .zcbl-require-time b {
-          background: url("../../../images/pc/icon/icon-index-time.png") no-repeat;
+          background: url("../../../images/pc/icon/icon-index-time-1.png") no-repeat;
           width: 20px;
           height: 20px;
           display: inline-block;
@@ -205,7 +217,7 @@
           margin: 0; }
         .zcbl-index-con .zcbl-require ul li .zcbl-require-info .zcbl-require-name {
           margin-top: 14px;
-          font-size: 18px;
+          font-size: 14px;
           height: 22px;
           overflow: hidden;
           white-space: nowrap;
@@ -216,6 +228,7 @@
         .zcbl-index-con .zcbl-require ul li .zcbl-require-info .zcbl-require-tag {
           margin-top: 8px;
           margin-bottom: 14px;
+          font-size: 14px;
           height: 20px;
           overflow: hidden;
           color: #ffffff;
@@ -227,14 +240,16 @@
           color: #acacac;
           height: 20px;
           line-height: 20px;
-          margin-bottom: 14px; }
+          margin-bottom: 14px;
+          font-size: 14px; }
           .zcbl-index-con .zcbl-require ul li .zcbl-require-info .zcbl-require-people b {
             display: inline-block;
             float: left;
-            background: url("../../../images/pc/icon/icon-index-people.png") no-repeat;
-            width: 13px;
-            height: 20px;
-            margin-right: 13px; }
+            background: url("../../../images/pc/icon/icon-index-people-1.png") no-repeat;
+            width: 10px;
+            height: 15px;
+            margin-right: 13px;
+            margin-top: 2px; }
   .zcbl-index-con .zcbl-service ul {
     margin-left: -40px; }
     .zcbl-index-con .zcbl-service ul li {
@@ -296,51 +311,55 @@
 
 .zcbl-abouUs {
   width: 100%;
-  height: 370px;
+  height: 253px;
   margin-top: 20px;
   background: #d6d6d6; }
   .zcbl-abouUs .zcbl-abouUs-box {
     width: 1000px;
-    margin: 0 auto;
-    padding-top: 73px; }
+    margin: 0 auto; }
   .zcbl-abouUs .zcbl-abouUs-l {
     float: left;
     width: 499px; }
   .zcbl-abouUs .zcbl-abouUs-line {
     width: 2px;
     float: left;
-    height: 220px;
+    margin-top: 20px;
+    height: 190px;
     border-right: 1px solid #8f8f8e; }
   .zcbl-abouUs .zcbl-abouUs-r {
     width: 499px;
     float: left;
     padding-left: 85px; }
   .zcbl-abouUs .zcbl-about-wall {
-    width: 425px; }
+    width: 500px;
+    padding-top: 6px; }
     .zcbl-abouUs .zcbl-about-wall .zcbl-about-tit h1 {
-      font-size: 28px;
-      height: 32px;
-      line-height: 32px;
-      overflow: hidden; }
-    .zcbl-abouUs .zcbl-about-wall .zcbl-about-con {
-      margin-top: 40px; }
-      .zcbl-abouUs .zcbl-about-wall .zcbl-about-con .zcbl-about-conL {
-        width: 140px;
-        height: 140px;
-        float: left;
-        background: #ffffff;
-        margin-right: 25px; }
-      .zcbl-abouUs .zcbl-about-wall .zcbl-about-con .zcbl-about-conR {
-        float: left;
-        width: 260px; }
-        .zcbl-abouUs .zcbl-about-wall .zcbl-about-con .zcbl-about-conR h2 {
-          font-size: 18px;
-          height: 35px;
-          line-height: 35px;
-          font-weight: inherit;
-          margin-bottom: 5px; }
-          .zcbl-abouUs .zcbl-about-wall .zcbl-about-con .zcbl-about-conR h2 a {
-            color: #515151; }
-        .zcbl-abouUs .zcbl-about-wall .zcbl-about-con .zcbl-about-conR p {
-          height: 30px;
-          line-height: 30px; }
+      font-size: 20px;
+      height: 50px;
+      font-weight: bold;
+      line-height: 50px;
+      overflow: hidden;
+      color: #2c2c2c;
+      font-family: "Microsoft YaHei"; }
+    .zcbl-abouUs .zcbl-about-wall .zcbl-about-con .zcbl-about-conL {
+      margin-top: 7px;
+      width: 128px;
+      height: 128px;
+      float: left;
+      background: #ffffff;
+      margin-right: 25px; }
+    .zcbl-abouUs .zcbl-about-wall .zcbl-about-con .zcbl-about-conR {
+      float: left;
+      width: 337px;
+      margin-top: 20px; }
+      .zcbl-abouUs .zcbl-about-wall .zcbl-about-con .zcbl-about-conR h2 {
+        font-size: 16px;
+        height: 35px;
+        line-height: 35px;
+        margin-bottom: 5px; }
+        .zcbl-abouUs .zcbl-about-wall .zcbl-about-con .zcbl-about-conR h2 a {
+          color: #515151; }
+      .zcbl-abouUs .zcbl-about-wall .zcbl-about-con .zcbl-about-conR p {
+        height: 30px;
+        font-size: 14px;
+        line-height: 30px; }

@@ -1,4 +1,4 @@
-.extend-aline:hover, .zcbl-index-con .zcbl-tit h2 .zcbl-tit-more a:hover, .zcbl-index-con .zcbl-require ul li .zcbl-require-info .zcbl-require-name a:hover, .zcbl-index-con .zcbl-require ul li .zcbl-require-info .zcbl-require-tag a:hover, .zcbl-index-con .zcbl-service ul li .zcbl-service-info .zcbl-service-name p a:hover, .zcbl-abouUs .zcbl-about-wall .zcbl-about-con .zcbl-about-conR h2 a:hover {
+.extend-aline:hover, .zcbl-index-con .zcbl-tit h2 .zcbl-tit-more a:hover, .zcbl-index-con .zcbl-require ul li .zcbl-require-info .zcbl-require-name a:hover, .zcbl-index-con .zcbl-require ul li .zcbl-require-info .zcbl-require-tag a:hover, .zcbl-abouUs .zcbl-about-wall .zcbl-about-con .zcbl-about-conR h2 a:hover {
   text-decoration: underline; }
 
 .exten-box-shadow, .zcbl-index-con .zcbl-service ul li:hover {
@@ -286,7 +286,8 @@
         /* Opera */ }
         .zcbl-index-con .zcbl-service ul li .zcbl-service-info .zcbl-service-name {
           height: 108px;
-          position: relative; }
+          position: relative;
+          font-size: 14px; }
           .zcbl-index-con .zcbl-service ul li .zcbl-service-info .zcbl-service-name p {
             width: 100%;
             position: absolute;
@@ -303,7 +304,8 @@
           border-bottom: 1px solid #ffffff;
           margin: 0 auto; }
         .zcbl-index-con .zcbl-service ul li .zcbl-service-info .zcbl-service-time {
-          padding: 16px 16px 0 16px; }
+          padding: 16px 16px 0 16px;
+          font-size: 14px; }
           .zcbl-index-con .zcbl-service ul li .zcbl-service-info .zcbl-service-time p {
             color: #ffffff;
             text-align: center;

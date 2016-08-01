@@ -47,7 +47,7 @@ gulp.task('server', function() {
  * */
 gulp.task("watch",['server'], function(){
     gulp.watch(pathConfig.src.sassSrc+'*.scss', ['styles']);
-    gulp.watch(pathConfig.src.sassSrcVs1+'*.scss', ['stylesVs1']);
+    gulp.watch(pathConfig.src.sassSrcVs1+'*.scss', ['stylesVs1']).on('change', reload);
     gulp.watch(pathConfig.src.sassDest+'*.css', ['cleanCss']);
 
     gulp.watch(pathConfig.src.minCss+'*.css', ['cleanCss']).on('change', reload);

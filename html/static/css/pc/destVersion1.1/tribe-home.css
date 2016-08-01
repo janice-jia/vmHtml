@@ -7,6 +7,21 @@
     height: 280px; }
   #tribe-home [data-thome="hot-tribe"] {
     background-color: #fff; }
+    #tribe-home [data-thome="hot-tribe"] h2 {
+      line-height: 64px; }
+    #tribe-home [data-thome="hot-tribe"] div {
+      float: left; }
     #tribe-home [data-thome="hot-tribe"] [data-thome="hot-left"] img {
       width: 326px;
       height: 206px; }
+    #tribe-home [data-thome="hot-tribe"] [data-thome="hot-left"] ul {
+      text-align: center; }
+      #tribe-home [data-thome="hot-tribe"] [data-thome="hot-left"] ul li {
+        float: left; }
+        #tribe-home [data-thome="hot-tribe"] [data-thome="hot-left"] ul li b {
+          font-size: 24px;
+          color: #515151; }
+  #tribe-home [data-thome="hot-tribe"]:after {
+    content: '';
+    display: table;
+    clear: both; }

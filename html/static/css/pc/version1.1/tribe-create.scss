@@ -1,0 +1,28 @@
+/**
+  创建部落 by Wdy
+*/
+
+@charset "utf-8";
+
+$font-12: 12px;
+$font-14: 14px;
+$font-16: 16px;
+$font-18: 18px;
+$font-20: 20px;
+$font-22: 22px;
+$font-24: 24px;
+
+$color-01: #171717;
+$color-02: #515151;
+$color-03: #909090;
+$color-04: #c1c1c1; //(输入框边框颜色)
+$color-05: #eeeeee; //(背景色)
+$color-06: #499af5;
+$color-07: #ffb30e;
+$color-08: #e43f3f;
+
+#tribe-create {
+  .container{
+    border:1px solid red;
+  }
+}

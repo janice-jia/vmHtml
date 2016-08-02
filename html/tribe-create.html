@@ -19,16 +19,64 @@
 <div id="tribe-create" >
     <div id="header" style="height: 78px;  "></div>
     <div class="container">
-        123123
+        <!--nav-->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#first" role="tab" data-toggle="tab">第1步</a></li>
+            <li role="presentation"><a href="#second" role="tab" data-toggle="tab">第2步</a></li>
+            <li role="presentation"><a href="#third" role="tab" data-toggle="tab">第3步</a></li>
+        </ul>
+        <!--panes-->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane" id="first">
+                <form action="" class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="tribe-name" class="col-sm-2 control-label">部落名称:</label>
+                        <div class="col-sm-10">
+                            <input type="text" id="tribe-name"  name="edit-tribe-name" class="form-control" placeholder="20个汉字以内">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">部落类型:</label>
+                            <div class="col-sm-10">
+                                <div >
+                                    <label>人物<input type="radio" name="options" id="option1" autocomplete="off" checked></label>
+                                    <label>漫画<input type="radio" name="options" id="option2" autocomplete="off"></label>
+                                    <label>小说<input type="radio" name="options" id="option3" autocomplete="off"></label>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">部落简介:</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">部落图标:</label>
+                        <div class="col-sm-10">
+                            <input type="file" class="filestyle" data-size="sm" data-placeholder="+ 上传图标">
+                            <span></span>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="second">
+                第二步骤
+            </div>
+            <div role="tabpanel" class="tab-pane" id="third">
+                第三部
+            </div>
+        </div>
     </div>
 </div>
-
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="static/js/pc/dest/jquery-1.11.3.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="static/js/pc/dest/bootstrap.min.js"></script>
+<script src="./static/js/pc/bootstrap-filestyle-1.2.1/src/bootstrap-filestyle.min.js"></script>
 <script src="static/js/pc/dest/all.min.js"></script>
 </body>
 </html>

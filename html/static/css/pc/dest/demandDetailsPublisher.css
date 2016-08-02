@@ -1,6 +1,5 @@
 @charset "UTF-8";
 #demdet {
-  padding-top: 30px;
   padding-bottom: 30px;
   /**  右边栏  **/ }
   #demdet [data-demdet="section"] {
@@ -11,11 +10,11 @@
     #demdet [data-demdet="section"] [data-demdet="sectionheader"] {
       border-bottom: 1px solid #909090;
       padding-left: 30px;
-      padding-top: 40px;
+      padding-top: 10px;
       /** 地址、看过、需求、评论 **/ }
       #demdet [data-demdet="section"] [data-demdet="sectionheader"] h1 {
-        font-size: 28px;
-        font-weight: bolder; }
+        font-size: 20px;
+        font-weight: normal; }
       #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] {
         margin-top: 30px; }
         #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul {
@@ -37,12 +36,12 @@
             width: 20px;
             background-image: url("../../../images/pc/icon/icon_eye.png"); }
           #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul [data-demdet="comment"] {
-            font-size: 20px; }
+            font-size: 16px; }
             #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul [data-demdet="comment"] b {
               width: 21px;
               background-image: url("../../../images/pc/icon/icon_commentg.png"); }
           #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul [data-demdet="demand"] {
-            font-size: 20px; }
+            font-size: 16px; }
             #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul [data-demdet="demand"] b {
               width: 21px;
               background-image: url("../../../images/pc/icon/icon_demandg.png"); }

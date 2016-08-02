@@ -23,230 +23,238 @@ $color-e5e5e5: #e5e5e5;
 $color-acacac: #acacac;
 $color-fb4444: #fb4444;
 .extend-aline {
-  &:hover {
-    text-decoration: underline;
-  }
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 #choosedemand {
-  .container {
-    padding-top: 30px;
-  }
-
-  /** web需求 **//** 下拉框 **/
-  [data-webdemand="dropdown"]{
-    background-color: $color-ffffff;
-    /**  下拉按钮  **/
-    [data-webdemand="dropdownbtn"]{
-      padding-bottom:10px;
-      margin-bottom: 20px;
-      text-align: center;
-      >li{
-        margin-right: 80px;
-        display: inline-block;
-        button{
-          color: $color-03;
-          background-color: transparent;
-          font-size: 28px;
-          b{
-            width: 22px;
-            height: 14px;
-            display: inline-block;
-            vertical-align: middle;
-            background-image: url("../../../images/pc/icon/icon_dropdown.png");
-          }
-        }
-      }
+    .container {
+        padding-top: 20px;
     }
-    .dropdown-menu{
-      [data-webdemand="triangle"]{
-        position: absolute;
-        top:-9px;
-        left: 40%;
-        border: 5px solid transparent;
-        border-left: 9px solid transparent;
-        border-right: 9px solid transparent;;
-        border-bottom-color: $color-ffffff;
-      }
-    }
-  }
 
-
-  /**  需求列表 **/
-  .per-req {
-    ul {
-      li {
-        /**  复选框 选择样式  **/
-        .checkbox{
-          width: 30px;
-          height: 30px;
-          float: left;
-          margin-top: 40px;
-        }
-        .checkbox-content{
-          padding-left: 50px;
-
-
-        }
-
-        .per-reqTit {
-          font-size: 22px;
-          color: $color-02;
-          overflow: hidden;
-          height: 25px;
-          line-height: 25px;
-          margin: 20px 0;
-          h1 {
-            width: 450px;
-            float: left;
-            margin: 0 10px 0 0;
-            a {
-              color: $color-02;
-              @extend .extend-aline;
-            }
-          }
-          p {
-            float: right;
-            text-align: right;
-            width: 230px;
-            span {
-              color: $color-08;
-            }
-          }
-        }
-        .per-reqCon {
-          h3 {
-            width: 100%;
-            font-size: 18px;
-            height: 25px;
-            line-height: 25px;
-            overflow: hidden;
-            font-family: "adobeheitistd regular", "Microsoft YaHei";
-            color: $color-03;
-          }
-          .per-reqInfo {
-            margin: 10px 0 20px 0;
-            line-height: 30px;
-            p {
-              margin-bottom: 0;
-              float: left;
-              position: relative;
-              b {
-                vertical-align: middle;
+    /** web需求 **//** 下拉框 **/
+    [data-webdemand="dropdown"] {
+        background-color: $color-ffffff;
+        height: 60px;
+        /**  下拉按钮  **/
+        [data-webdemand="dropdownbtn"] {
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            > li {
+                margin-right: 80px;
                 display: inline-block;
-                width: 14px;
-                height: 16px;margin-right: 11px;
-              }
-              b[data-choose-demand="usericon"]{
-                background: url("../../../images/pc/icon/icon_oruser.png") no-repeat;
-              }
-              b[data-choose-demand="workicon"]{
-                background: url("../../../images/pc/icon/icon-per-zjArt.png") no-repeat;
-              }
-            }
-            ul {
-              float: right;
-              color: $color-03;
-              text-align: left;
-              li {
-                display: inline-block;
-                position: relative;
-                margin-left: 25px;
-                &.per-req-people {
-                  width: 120px;
-                  b {
-                    vertical-align: middle;
-                    display: inline-block;
-                    width: 27px;
-                    height: 16px;
-                    margin-right: 7px;
-                  }
-                  b[data-choose-demand="eye"]{
-                    background: url("../../../images/pc/icon/icon-per-cy.png") no-repeat;
-                  }
-                  b[data-choose-demand="flag"]{
-                    background: url("../../../images/pc/icon/icon_flag.png") no-repeat;
-                  }
+                button {
+                    color: $color-03;
+                    background-color: transparent;
+                    font-size: 16px;
+                    b {
+                        width: 22px;
+                        height: 14px;
+                        display: inline-block;
+                        vertical-align: middle;
+                        background-image: url("../../../images/pc/icon/icon_dropdown.png");
+                    }
                 }
-                &.per-req-bzj {
-                  width: 108px;
-                  b {
-                    background: url("../../../images/pc/icon/icon-per-bzj.png") no-repeat;
-                    margin-right: 7px;
-                    width: 16px;
-                    height: 17px;
-                    display: inline-block;
-                    vertical-align: middle;
-                  }
+            }
+        }
+        .dropdown-menu {
+            [data-webdemand="triangle"] {
+                position: absolute;
+                top: -9px;
+                left: 40%;
+                border: 5px solid transparent;
+                border-left: 9px solid transparent;
+                border-right: 9px solid transparent;;
+                border-bottom-color: $color-ffffff;
+            }
+            li {
+                a {
+                    font-size: 12px;
                 }
-                &.per-req-time {
-                  width: 118px;
-                  b {
-                    background: url("../../../images/pc/icon/icon-per-time.png") no-repeat;
-                    margin-right: 7px;
-                    width: 16px;
-                    height: 17px;
-                    display: inline-block;
-                    vertical-align: middle;
-                  }
-                  /**&:before {
-                    content: "";
-                    position: absolute;
-                    top: 4px;
-                    left: 0;
-                    background: url("../../../images/pc/icon/icon-per-time.png") no-repeat;
-                    width: 16px;
-                    height: 17px;
-                  }**/
-                }
-              }
             }
-            [data-choose-demand="persontab"],[data-choose-demand="worktab"]{
-              float: left;
-              margin-left: 10px;
-              li{
-                padding:0 12px;
-                margin-left: 10px;
-                height: 30px;
-                line-height: 30px;
-                border: 1px solid $color-06;
-                color: $color-06;
-              }
-            }
-            [data-choose-demand="persontab"]{
-              li{
-                border: 1px solid $color-07;
-                color: $color-07;
-              }
-            }
-          }
-          .per-reqInfo:after{
-            content: '';
-            clear: both;
-            display: table;
-          }
         }
-        .checkbox-content{
-          .per-reqLine {
-            margin-left: -50px;
-          }
-        }
-        .per-reqLine {
-          height: 1px;
-          border-bottom: 1px solid $color-d2d2d2;
-        }
+    }
 
-      }
+    /**  需求列表 **/
+    .per-req {
+        ul {
+            li {
+                /**  复选框 选择样式  **/
+                .checkbox {
+                    width: 30px;
+                    height: 30px;
+                    float: left;
+                    margin-top: 40px;
+                }
+                .checkbox-content {
+                    padding-left: 50px;
+
+                }
+
+                .per-reqTit {
+                    font-size: 16px;
+                    color: $color-02;
+                    overflow: hidden;
+                    height: 25px;
+                    line-height: 25px;
+                    margin: 10px 0;
+                    h1 {
+                        width: 450px;
+                        float: left;
+                        margin: 0 10px 0 0;
+                        a {
+                            color: $color-02;
+                            @extend .extend-aline;
+                        }
+                    }
+                    p {
+                        float: right;
+                        text-align: right;
+                        width: 230px;
+                        span {
+                            color: $color-08;
+                        }
+                    }
+                }
+                .per-reqCon {
+                    height: 75px;
+                    h3 {
+                        width: 100%;
+                        font-size: 14px;
+                        height: 25px;
+                        line-height: 25px;
+                        overflow: hidden;
+                        font-family: "adobeheitistd regular", "Microsoft YaHei";
+                        color: $color-03;
+                    }
+                    .per-reqInfo {
+                        margin: 10px 0 20px 0;
+                        line-height: 30px;
+                        font-size: 14px;
+                        p {
+                            margin-bottom: 0;
+                            float: left;
+                            position: relative;
+                            b {
+                                vertical-align: middle;
+                                display: inline-block;
+                                width: 14px;
+                                height: 16px;
+                                margin-right: 11px;
+                            }
+                            b[data-choose-demand="usericon"] {
+                                background: url("../../../images/pc/icon/icon_oruser.png") no-repeat;
+                            }
+                            b[data-choose-demand="workicon"] {
+                                background: url("../../../images/pc/icon/icon-per-zjArt.png") no-repeat;
+                            }
+                        }
+                        ul {
+                            float: right;
+                            color: $color-03;
+                            text-align: left;
+                            li {
+                                display: inline-block;
+                                position: relative;
+                                margin-left: 25px;
+                                &.per-req-people {
+                                    width: 120px;
+                                    b {
+                                        vertical-align: middle;
+                                        display: inline-block;
+                                        width: 27px;
+                                        height: 16px;
+                                        margin-right: 7px;
+                                    }
+                                    b[data-choose-demand="eye"] {
+                                        background: url("../../../images/pc/icon/icon-per-cy.png") no-repeat;
+                                    }
+                                    b[data-choose-demand="flag"] {
+                                        background: url("../../../images/pc/icon/icon_flag.png") no-repeat;
+                                    }
+                                }
+                                &.per-req-bzj {
+                                    width: 108px;
+                                    b {
+                                        background: url("../../../images/pc/icon/icon-per-bzj.png") no-repeat;
+                                        margin-right: 7px;
+                                        width: 16px;
+                                        height: 17px;
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                    }
+                                }
+                                &.per-req-time {
+                                    width: 118px;
+                                    b {
+                                        background: url("../../../images/pc/icon/icon-per-time.png") no-repeat;
+                                        margin-right: 7px;
+                                        width: 16px;
+                                        height: 17px;
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                    }
+                                    /**&:before {
+                                      content: "";
+                                      position: absolute;
+                                      top: 4px;
+                                      left: 0;
+                                      background: url("../../../images/pc/icon/icon-per-time.png") no-repeat;
+                                      width: 16px;
+                                      height: 17px;
+                                    }**/
+                                }
+                            }
+                        }
+                        [data-choose-demand="persontab"], [data-choose-demand="worktab"] {
+                            float: left;
+                            margin-left: 10px;
+                            li {
+                                padding: 0 12px;
+                                margin-left: 10px;
+                                height: 26px;
+                                line-height: 26px;
+                                border: 1px solid $color-06;
+                                color: $color-06;
+                                font-size: 12px;
+                            }
+                        }
+                        [data-choose-demand="persontab"] {
+                            li {
+                                border: 1px solid $color-07;
+                                color: $color-07;
+                            }
+                        }
+                    }
+                    .per-reqInfo:after {
+                        content: '';
+                        clear: both;
+                        display: table;
+                    }
+                }
+                .checkbox-content {
+                    .per-reqLine {
+                        margin-left: -50px;
+                    }
+                }
+                .per-reqLine {
+                    height: 1px;
+                    border-bottom: 1px solid $color-d2d2d2;
+                }
+
+            }
+        }
     }
-  }
-  /**  提交按钮  **/
-  [data-choose-demand="btn"]{
-    text-align: right;
-    margin:30px 0 ;
-    button{
-      margin: 0 20px;
+    /**  提交按钮  **/
+    [data-choose-demand="btn"] {
+        text-align: right;
+        margin: 30px 0;
+        button {
+            margin: 0 20px;
+        }
     }
-  }
 }
 
 /**

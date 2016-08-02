@@ -67,9 +67,9 @@
   #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li {
     position: relative;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
     width: 300px;
-    height: 300px;
+    height: 290px;
     margin-right: 50px;
     padding: 0 10px;
     float: left; }
@@ -95,7 +95,7 @@
       #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="modal"] h2 {
         height: 72px;
         line-height: 36px;
-        font-size: 20px;
+        font-size: 16px;
         color: #515151;
         margin: 0 auto;
         margin-top: 38px;
@@ -106,16 +106,18 @@
         margin-bottom: 20px;
         width: 70px; }
       #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="modal"] p {
-        font-size: 18px;
+        font-size: 14px;
         color: #ffb30e;
         margin-bottom: 20px; }
       #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="modal"] div {
-        font-size: 18px;
-        color: #515151;
+        font-size: 14px;
+        color: #909090;
         text-align: left;
-        width: 100%; }
+        width: 100%;
+        height: 80px;
+        overflow: hidden; }
     #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="content"] {
-      height: 300px;
+      height: 288px;
       padding: 16px 30px 0 30px;
       border-bottom: 1px solid #bfbfbf; }
       #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="content"] [data-websever="userhead"] {
@@ -145,17 +147,19 @@
         #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="content"] [data-websever="userhead"] [data-websever="gong"] {
           color: #550ece; }
       #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="content"] [data-websever="username"] {
-        font-size: 20px;
+        font-size: 16px;
         color: #171717;
-        margin-bottom: 15px; }
+        margin-bottom: 10px; }
       #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="content"] [data-websever="usertab"] {
-        margin-bottom: 15px; }
+        margin-bottom: 10px; }
         #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="content"] [data-websever="usertab"] li {
           display: inline;
           margin: 0 5px;
+          font-size: 14px;
           color: #499af5; }
       #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="content"] [data-websever="userother"] {
-        color: #515151; }
+        color: #909090;
+        font-size: 14px; }
   #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li:hover [data-websever="modal"] {
     filter: alpha(opacity=1);
     -moz-opacity: 1;

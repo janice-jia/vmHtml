@@ -11,9 +11,10 @@
   /**  需求列表 **/
   /**  提交按钮  **/ }
   #choosedemand .container {
-    padding-top: 30px; }
+    padding-top: 20px; }
   #choosedemand [data-webdemand="dropdown"] {
     background-color: #ffffff;
+    height: 60px;
     /**  下拉按钮  **/ }
     #choosedemand [data-webdemand="dropdown"] [data-webdemand="dropdownbtn"] {
       padding-bottom: 10px;
@@ -25,7 +26,7 @@
         #choosedemand [data-webdemand="dropdown"] [data-webdemand="dropdownbtn"] > li button {
           color: #909090;
           background-color: transparent;
-          font-size: 28px; }
+          font-size: 16px; }
           #choosedemand [data-webdemand="dropdown"] [data-webdemand="dropdownbtn"] > li button b {
             width: 22px;
             height: 14px;
@@ -40,6 +41,8 @@
       border-left: 9px solid transparent;
       border-right: 9px solid transparent;
       border-bottom-color: #ffffff; }
+    #choosedemand [data-webdemand="dropdown"] .dropdown-menu li a {
+      font-size: 12px; }
   #choosedemand .per-req ul li {
     /**  复选框 选择样式  **/ }
     #choosedemand .per-req ul li .checkbox {
@@ -50,12 +53,12 @@
     #choosedemand .per-req ul li .checkbox-content {
       padding-left: 50px; }
     #choosedemand .per-req ul li .per-reqTit {
-      font-size: 22px;
+      font-size: 16px;
       color: #515151;
       overflow: hidden;
       height: 25px;
       line-height: 25px;
-      margin: 20px 0; }
+      margin: 10px 0; }
       #choosedemand .per-req ul li .per-reqTit h1 {
         width: 450px;
         float: left;
@@ -68,95 +71,99 @@
         width: 230px; }
         #choosedemand .per-req ul li .per-reqTit p span {
           color: #e43f3f; }
-    #choosedemand .per-req ul li .per-reqCon h3 {
-      width: 100%;
-      font-size: 18px;
-      height: 25px;
-      line-height: 25px;
-      overflow: hidden;
-      font-family: "adobeheitistd regular", "Microsoft YaHei";
-      color: #909090; }
-    #choosedemand .per-req ul li .per-reqCon .per-reqInfo {
-      margin: 10px 0 20px 0;
-      line-height: 30px; }
-      #choosedemand .per-req ul li .per-reqCon .per-reqInfo p {
-        margin-bottom: 0;
-        float: left;
-        position: relative; }
-        #choosedemand .per-req ul li .per-reqCon .per-reqInfo p b {
-          vertical-align: middle;
-          display: inline-block;
-          width: 14px;
-          height: 16px;
-          margin-right: 11px; }
-        #choosedemand .per-req ul li .per-reqCon .per-reqInfo p b[data-choose-demand="usericon"] {
-          background: url("../../../images/pc/icon/icon_oruser.png") no-repeat; }
-        #choosedemand .per-req ul li .per-reqCon .per-reqInfo p b[data-choose-demand="workicon"] {
-          background: url("../../../images/pc/icon/icon-per-zjArt.png") no-repeat; }
-      #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul {
-        float: right;
-        color: #909090;
-        text-align: left; }
-        #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li {
-          display: inline-block;
-          position: relative;
-          margin-left: 25px; }
-          #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-people {
-            width: 120px; }
-            #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-people b {
-              vertical-align: middle;
-              display: inline-block;
-              width: 27px;
-              height: 16px;
-              margin-right: 7px; }
-            #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-people b[data-choose-demand="eye"] {
-              background: url("../../../images/pc/icon/icon-per-cy.png") no-repeat; }
-            #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-people b[data-choose-demand="flag"] {
-              background: url("../../../images/pc/icon/icon_flag.png") no-repeat; }
-          #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-bzj {
-            width: 108px; }
-            #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-bzj b {
-              background: url("../../../images/pc/icon/icon-per-bzj.png") no-repeat;
-              margin-right: 7px;
-              width: 16px;
-              height: 17px;
-              display: inline-block;
-              vertical-align: middle; }
-          #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-time {
-            width: 118px;
-            /**&:before {
-              content: "";
-              position: absolute;
-              top: 4px;
-              left: 0;
-              background: url("../../../images/pc/icon/icon-per-time.png") no-repeat;
-              width: 16px;
-              height: 17px;
-            }**/ }
-            #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-time b {
-              background: url("../../../images/pc/icon/icon-per-time.png") no-repeat;
-              margin-right: 7px;
-              width: 16px;
-              height: 17px;
-              display: inline-block;
-              vertical-align: middle; }
-      #choosedemand .per-req ul li .per-reqCon .per-reqInfo [data-choose-demand="persontab"], #choosedemand .per-req ul li .per-reqCon .per-reqInfo [data-choose-demand="worktab"] {
-        float: left;
-        margin-left: 10px; }
-        #choosedemand .per-req ul li .per-reqCon .per-reqInfo [data-choose-demand="persontab"] li, #choosedemand .per-req ul li .per-reqCon .per-reqInfo [data-choose-demand="worktab"] li {
-          padding: 0 12px;
-          margin-left: 10px;
-          height: 30px;
-          line-height: 30px;
-          border: 1px solid #499af5;
-          color: #499af5; }
-      #choosedemand .per-req ul li .per-reqCon .per-reqInfo [data-choose-demand="persontab"] li {
-        border: 1px solid #ffb30e;
-        color: #ffb30e; }
-    #choosedemand .per-req ul li .per-reqCon .per-reqInfo:after {
-      content: '';
-      clear: both;
-      display: table; }
+    #choosedemand .per-req ul li .per-reqCon {
+      height: 75px; }
+      #choosedemand .per-req ul li .per-reqCon h3 {
+        width: 100%;
+        font-size: 14px;
+        height: 25px;
+        line-height: 25px;
+        overflow: hidden;
+        font-family: "adobeheitistd regular", "Microsoft YaHei";
+        color: #909090; }
+      #choosedemand .per-req ul li .per-reqCon .per-reqInfo {
+        margin: 10px 0 20px 0;
+        line-height: 30px;
+        font-size: 14px; }
+        #choosedemand .per-req ul li .per-reqCon .per-reqInfo p {
+          margin-bottom: 0;
+          float: left;
+          position: relative; }
+          #choosedemand .per-req ul li .per-reqCon .per-reqInfo p b {
+            vertical-align: middle;
+            display: inline-block;
+            width: 14px;
+            height: 16px;
+            margin-right: 11px; }
+          #choosedemand .per-req ul li .per-reqCon .per-reqInfo p b[data-choose-demand="usericon"] {
+            background: url("../../../images/pc/icon/icon_oruser.png") no-repeat; }
+          #choosedemand .per-req ul li .per-reqCon .per-reqInfo p b[data-choose-demand="workicon"] {
+            background: url("../../../images/pc/icon/icon-per-zjArt.png") no-repeat; }
+        #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul {
+          float: right;
+          color: #909090;
+          text-align: left; }
+          #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li {
+            display: inline-block;
+            position: relative;
+            margin-left: 25px; }
+            #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-people {
+              width: 120px; }
+              #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-people b {
+                vertical-align: middle;
+                display: inline-block;
+                width: 27px;
+                height: 16px;
+                margin-right: 7px; }
+              #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-people b[data-choose-demand="eye"] {
+                background: url("../../../images/pc/icon/icon-per-cy.png") no-repeat; }
+              #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-people b[data-choose-demand="flag"] {
+                background: url("../../../images/pc/icon/icon_flag.png") no-repeat; }
+            #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-bzj {
+              width: 108px; }
+              #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-bzj b {
+                background: url("../../../images/pc/icon/icon-per-bzj.png") no-repeat;
+                margin-right: 7px;
+                width: 16px;
+                height: 17px;
+                display: inline-block;
+                vertical-align: middle; }
+            #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-time {
+              width: 118px;
+              /**&:before {
+                content: "";
+                position: absolute;
+                top: 4px;
+                left: 0;
+                background: url("../../../images/pc/icon/icon-per-time.png") no-repeat;
+                width: 16px;
+                height: 17px;
+              }**/ }
+              #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-time b {
+                background: url("../../../images/pc/icon/icon-per-time.png") no-repeat;
+                margin-right: 7px;
+                width: 16px;
+                height: 17px;
+                display: inline-block;
+                vertical-align: middle; }
+        #choosedemand .per-req ul li .per-reqCon .per-reqInfo [data-choose-demand="persontab"], #choosedemand .per-req ul li .per-reqCon .per-reqInfo [data-choose-demand="worktab"] {
+          float: left;
+          margin-left: 10px; }
+          #choosedemand .per-req ul li .per-reqCon .per-reqInfo [data-choose-demand="persontab"] li, #choosedemand .per-req ul li .per-reqCon .per-reqInfo [data-choose-demand="worktab"] li {
+            padding: 0 12px;
+            margin-left: 10px;
+            height: 26px;
+            line-height: 26px;
+            border: 1px solid #499af5;
+            color: #499af5;
+            font-size: 12px; }
+        #choosedemand .per-req ul li .per-reqCon .per-reqInfo [data-choose-demand="persontab"] li {
+          border: 1px solid #ffb30e;
+          color: #ffb30e; }
+      #choosedemand .per-req ul li .per-reqCon .per-reqInfo:after {
+        content: '';
+        clear: both;
+        display: table; }
     #choosedemand .per-req ul li .checkbox-content .per-reqLine {
       margin-left: -50px; }
     #choosedemand .per-req ul li .per-reqLine {

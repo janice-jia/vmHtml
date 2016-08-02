@@ -12,7 +12,8 @@
       float: left;
       padding-left: 30px;
       border: 1px solid #c1c1c1;
-      text-align: right; }
+      text-align: right;
+      font-size: 14px; }
     #index-search-box .search-input-box div input {
       float: left;
       width: 300px;
@@ -27,7 +28,10 @@
       float: left;
       width: 120px;
       height: 48px;
-      font-size: 16px; }
+      font-size: 16px;
+      color: #ffffff; }
+      #index-search-box .search-input-box div button:hover {
+        color: #515151; }
 #index-search-box .search-input-box:after {
   display: table;
   content: '';

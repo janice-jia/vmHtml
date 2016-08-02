@@ -65,7 +65,8 @@
   display: inline-block;
   border-radius: 50%;
   vertical-align: text-top;
-  margin-right: 6px; }
+  margin-right: 6px;
+  margin-top: 8px; }
 
 /****三部分 摸态框***/
 .zcbl-modal-three[data-modal="modalbox"] {

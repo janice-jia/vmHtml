@@ -4,15 +4,20 @@
   height: 100vh;
   background-repeat: no-repeat;
   background-position-y: 60px; }
+  #pubservice .form-horizontal .control-label {
+    font-weight: normal;
+    padding: 0;
+    line-height: 50px; }
   #pubservice [data-pubservice="bg"] {
     background-color: #fff;
     padding-bottom: 30px;
     text-align: center;
     /** 摸态框通用 **/ }
     #pubservice [data-pubservice="bg"] h2 {
-      font-size: 28px;
+      font-size: 24px;
       line-height: 90px;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      font-weight: normal; }
     #pubservice [data-pubservice="bg"] [data-pubservice="fomecontainer"] {
       padding: 0 90px;
       /** 服务详情 **/
@@ -30,7 +35,8 @@
       #pubservice [data-pubservice="bg"] [data-pubservice="fomecontainer"] [data-pubservice="footer"] {
         text-align: right; }
         #pubservice [data-pubservice="bg"] [data-pubservice="fomecontainer"] [data-pubservice="footer"] button {
-          margin-left: 20px; }
+          margin-left: 20px;
+          font-size: 16px; }
     #pubservice [data-pubservice="bg"] [data-modal="modal"] {
       width: 750px;
       height: 160px;
@@ -47,7 +53,9 @@
 
 /** 上传代表作品 **/
 [data-demdetpub="pubservice_file"] p {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  padding-left: 30px;
+  font-size: 14px; }
 
 #pubservice_file {
   margin-bottom: 20px;

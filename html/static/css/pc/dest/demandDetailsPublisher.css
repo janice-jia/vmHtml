@@ -81,7 +81,7 @@
     #demdet [data-demdet="aside"] [data-demdet="aside-header"] {
       line-height: 48px;
       color: #909090;
-      border-bottom: 2px solid #909090; }
+      border-bottom: 1px solid #909090; }
     #demdet [data-demdet="aside"] [data-demdet="aside-body"] {
       padding: 20px 24px; }
       #demdet [data-demdet="aside"] [data-demdet="aside-body"] img {
@@ -94,28 +94,33 @@
       #demdet [data-demdet="aside"] [data-demdet="aside-body"] h2 {
         display: inline-block;
         line-height: 100px;
-        font-size: 20px;
+        font-size: 16px;
         color: #515151; }
       #demdet [data-demdet="aside"] [data-demdet="aside-body"] p {
-        color: #909090; }
+        color: #909090;
+        font-size: 14px; }
       #demdet [data-demdet="aside"] [data-demdet="aside-body"] [data-demdet="btn"] {
         margin: 0 -16px;
         text-align: center; }
         #demdet [data-demdet="aside"] [data-demdet="aside-body"] [data-demdet="btn"] button {
+          font-size: 14px;
           width: 44%;
           height: 40px; }
         #demdet [data-demdet="aside"] [data-demdet="aside-body"] [data-demdet="btn"] button:first-child {
-          margin-right: 20px; }
+          margin-right: 20px;
+          font-size: 14px; }
     #demdet [data-demdet="aside"] [data-demdet="aside-footer"] {
-      border-top: 2px solid #909090;
+      border-top: 1px solid #909090;
       padding-top: 30px; }
       #demdet [data-demdet="aside"] [data-demdet="aside-footer"] p {
-        color: #909090;
-        margin-bottom: 20px; }
+        color: #515151;
+        margin-bottom: 20px;
+        font-size: 14px; }
       #demdet [data-demdet="aside"] [data-demdet="aside-footer"] table {
         margin-left: 26px; }
         #demdet [data-demdet="aside"] [data-demdet="aside-footer"] table td {
-          padding-bottom: 20px; }
+          padding-bottom: 20px;
+          font-size: 14px; }
           #demdet [data-demdet="aside"] [data-demdet="aside-footer"] table td span {
             color: #e43f3f; }
         #demdet [data-demdet="aside"] [data-demdet="aside-footer"] table [data-demdet="asidedate"] {
@@ -123,7 +128,7 @@
 
 /** 需求详情 **/
 #demdet_demand {
-  padding: 30px 36px;
+  padding: 20px 36px;
   /** 详情 **/
   /*** 头像 ***/
   /**  按钮  **/ }
@@ -137,10 +142,12 @@
       text-align: right;
       line-height: 40px; }
       #demdet_demand table thead #demdet_closedemand a {
-        color: #171717; }
+        font-size: 14px;
+        color: #909090; }
     #demdet_demand table td {
-      padding-bottom: 30px;
-      vertical-align: top; }
+      padding-bottom: 15px;
+      vertical-align: top;
+      font-size: 14px; }
     #demdet_demand table tr > td:first-child {
       width: 100px; }
     #demdet_demand table [data-demdet="number"] {
@@ -164,6 +171,7 @@
   #demdet_demand [data-demdet="btn"] {
     text-align: right; }
     #demdet_demand [data-demdet="btn"] button {
+      font-size: 14px;
       margin-left: 20px; }
 
 /** 评论 **/
@@ -175,6 +183,8 @@
     .zcbl-comments [data-demdet="addcomment"] [data-demdet="btn"] {
       text-align: right;
       padding-top: 20px; }
+      .zcbl-comments [data-demdet="addcomment"] [data-demdet="btn"] button {
+        font-size: 14px; }
   .zcbl-comments [data-demdet="texeareabox"] {
     position: relative; }
     .zcbl-comments [data-demdet="texeareabox"] textarea {
@@ -203,23 +213,24 @@
         padding-left: 110px; }
         .zcbl-comments [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="conhead"] {
           padding-bottom: 24px;
-          font-size: 20px;
+          font-size: 16px;
+          font-weight: normal;
           color: #909090; }
           .zcbl-comments [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="conhead"] h2 {
             display: inline-block;
-            font-weight: bold; }
+            font-weight: normal; }
           .zcbl-comments [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="conhead"] div[data-demdet="answer"] {
             display: inline-block;
             font-weight: normal; }
             .zcbl-comments [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="conhead"] div[data-demdet="answer"] span {
               color: #499af5; }
           .zcbl-comments [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="conhead"] p {
-            font-size: 18px;
+            font-size: 14px;
             float: right;
             font-weight: normal; }
         .zcbl-comments [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="conbody"] {
           padding-bottom: 20px;
-          font-size: 18px;
+          font-size: 14px;
           color: #515151; }
         .zcbl-comments [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="confoot"] {
           font-size: 14px; }
@@ -279,7 +290,8 @@
     #demdet [data-demdet="user"] [data-demdet="headimg"] li button {
       margin-top: 20px;
       width: 94px;
-      height: 33px; }
+      height: 33px;
+      font-size: 14px; }
   #demdet [data-modal="modal"] {
     text-align: center;
     width: 500px;

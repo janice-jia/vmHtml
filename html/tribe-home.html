@@ -17,7 +17,7 @@
 </head>
 <body>
 <div id="tribe-home" >
-    <div id="header" style="height: 78px;  "></div>
+    <div id="header"></div>
     <div class="container">
         <!-- 轮播图 -->
         <div data-thome="carousel">
@@ -67,16 +67,18 @@
         <!--热门部落-->
         <div data-thome="hot-tribe">
             <h2>热门部落</h2>
+            <!--左侧图片-->
             <div data-thome="hot-left">
                 <img src="./static/images/pc/tribe/tribe_2.jpg" alt="">
             </div>
-            <div data-thome="hot-left">
+            <!--中间-->
+            <div data-thome="hot-center">
                 <ul>
                     <li>
                         <b>123</b>
                         <p>粉丝</p>
                     </li>
-                    <li>
+                    <li data-thome="hotcenli">
                         <b>123123</b>
                         <p>赞</p>
                     </li>
@@ -85,8 +87,25 @@
                         <p>建立</p>
                     </li>
                 </ul>
+                <div>
+                    <h3>孙火火（小名恭喜）</h3>
+                    <p>
+                        孙火火简介孙火火简介孙火火简介孙火火简介孙火火简介孙火火简介孙火火简介孙火火简介孙...
+                    </p>
+                </div>
             </div>
-            <div data-thome="hot-left"></div>
+            <!--右侧按钮-->
+            <div data-thome="hot-right">
+                <button><b></b>创建部落</button>
+                <p><a href="#">什么是部落</a></p>
+                <p><a href="#">查看创建手册</a></p>
+            </div>
+
+        </div>
+        <!-- 部落推荐 -->
+        <!--人物部落推荐-->
+        <div data-thome="tribe-recommend" class="tribe-box">
+            <h2></h2>
         </div>
     </div>
 </div>

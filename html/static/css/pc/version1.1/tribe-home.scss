@@ -18,6 +18,9 @@ $color-07: #ffb30e;
 $color-08: #e43f3f;
 
 #tribe-home {
+  .container{
+    padding: 0;
+  }
   /**轮播图**/
   .carousel-inner {
     img {
@@ -27,6 +30,8 @@ $color-08: #e43f3f;
   }
   /** 热门部落 **/
   [data-thome="hot-tribe"]{
+    padding-left:20px;
+
     background-color: #fff ;
     h2{
       line-height: 64px;
@@ -38,16 +43,69 @@ $color-08: #e43f3f;
       width: 326px;
       height:206px;
     }
-    [data-thome="hot-left"]{
+    [data-thome="hot-center"]{
+      width: 422px;
+      padding: 0 30px;
       ul{
         text-align: center;
+        border-bottom: 1px solid $color-04;
+        padding-bottom: 7px;
         li{
+          padding-top: 20px;
           float: left;
+          width: 33.3%;
           b{
             font-size: 24px;
+            line-height: 24px;
             color: $color-02;
           }
+          p{
+            padding: 15px 0;
+            font-size: 14px;
+            color: $color-02;
+            margin: 0;
+          }
         }
+        [data-thome="hotcenli"]{
+          border-left:1px solid $color-04 ;
+          border-right:1px solid $color-04 ;
+        }
+      }
+      ul:after{
+        content: '';
+        display: table;
+        clear: both;
+      }
+      h3{
+        line-height: 60px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+    [data-thome="hot-right"]{
+      border-left: 1px solid $color-04;
+      float: right;
+      padding: 0 34px;
+      margin-bottom: 31px;
+      text-align: center;
+      button{
+        height: 93px;
+        width:163px;
+        background-color: $color-07;
+        border-radius: 4px;
+        font-size: 20px;
+        color: $color-01;
+        b{
+          background-image: url("../../../images/pc/version1.1/icon/icon_pen.png");
+          width: 31px;
+          height:31px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right:10px;
+        }
+      }
+      p{
+        margin-top: 31px;
       }
     }
 

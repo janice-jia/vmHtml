@@ -115,5 +115,23 @@ $color-08: #e43f3f;
     display: table;
     clear: both;
   }
+}
+/** 部落推荐列表 **/
+.tribe-list-box{
+  padding-top:30px;
+  .tribe-list-tab{
+    font-size: 24px;
+    color: $color-02;
 
+  }
+  .tribe-list-li{
+    margin-top:20px;
+    padding: 0 7px;
+    .tribe-list-con{
+      img{
+        width:310px;
+        height:230px;
+      }
+    }
+  }
 }

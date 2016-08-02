@@ -74,3 +74,16 @@
     content: '';
     display: table;
     clear: both; }
+
+/** 部落推荐列表 **/
+.tribe-list-box {
+  padding-top: 30px; }
+  .tribe-list-box .tribe-list-tab {
+    font-size: 24px;
+    color: #515151; }
+  .tribe-list-box .tribe-list-li {
+    margin-top: 20px;
+    padding: 0 7px; }
+    .tribe-list-box .tribe-list-li .tribe-list-con img {
+      width: 310px;
+      height: 230px; }

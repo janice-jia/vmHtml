@@ -11,6 +11,9 @@ $white: #fff;
 $black: #000;
 
 #index-search-box {
+    .per-reqBox{
+        min-height: 400px;
+    }
     .search-input-box {
         margin-top: 60px;
         margin-bottom: 50px;
@@ -26,9 +29,6 @@ $black: #000;
                 text-align: right;
             }
             input {
-                &.border-left {
-                    border-left: 1px solid $light-gray;
-                }
                 float: left;
                 width: 300px;
                 height: 48px;

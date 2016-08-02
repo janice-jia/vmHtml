@@ -1,3 +1,5 @@
+#index-search-box .per-reqBox {
+  min-height: 400px; }
 #index-search-box .search-input-box {
   margin-top: 60px;
   margin-bottom: 50px;
@@ -21,8 +23,6 @@
       border-right: none;
       font-size: 14px;
       padding-left: 10px; }
-      #index-search-box .search-input-box div input.border-left {
-        border-left: 1px solid #c1c1c1; }
     #index-search-box .search-input-box div button {
       float: left;
       width: 120px;

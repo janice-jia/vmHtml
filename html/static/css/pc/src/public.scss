@@ -686,7 +686,7 @@ button.zcbl-close{
                     width: 26px;
                     height: 31px;
                     background: url("../../../images/pc/icon/icon_headermsg.png") no-repeat;
-                    margin: 22px 60px 0 60px;
+                    margin: 10px 60px 0 60px;
                     position: relative;
                     .header-havemsg{
                         position: absolute;
@@ -705,7 +705,7 @@ button.zcbl-close{
                     width: 34px;
                     height: 100%;
                     float: right;
-                    padding: 20px 0;
+                    padding: 8px 0;
                     position: relative;
                     &:hover{
                         cursor: pointer;
@@ -719,8 +719,8 @@ button.zcbl-close{
                     }
                     .zcbl-userInfo{
                         position: absolute;
-                        left: -100px;
-                        top:82px;
+                        left: -95px;
+                        top:60px;
                         width: 160px;
                         display: none;
                         height: 432px;

@@ -17,7 +17,7 @@
 
 [data-btn="orbgbtn"] {
   background-color: #ffb30e;
-  font-size: 20px;
+  font-size: 14px;
   width: 130px;
   height: 50px; }
   [data-btn="orbgbtn"] a {
@@ -28,7 +28,7 @@
   display: inline-block;
   text-align: center;
   background-color: #c1c1c1;
-  font-size: 20px;
+  font-size: 14px;
   width: 130px;
   height: 50px;
   color: #ffffff; }
@@ -37,7 +37,7 @@
 
 [data-btn="tranbgbtn"] {
   border: 2px solid #f0f0f0;
-  font-size: 20px;
+  font-size: 14px;
   width: 130px;
   height: 50px;
   background-color: transparent; }
@@ -46,13 +46,13 @@
 
 [data-btn="orfontbtn"] {
   background-color: transparent;
-  font-size: 20px; }
+  font-size: 14px; }
   [data-btn="orfontbtn"] a {
     color: #ffb30e; }
 
 [data-btn="blfontbtn"] {
   background-color: transparent;
-  font-size: 20px;
+  font-size: 14px;
   width: 130px;
   height: 50px;
   border: 1px solid #499af5;
@@ -795,7 +795,7 @@ button {
   background: #ffb30e;
   text-align: center;
   color: #515151;
-  font-size: 18px; }
+  font-size: 14px; }
   .btn-yellow-50:hover, .btn-yellow-40:hover {
     color: #ffffff; }
 
@@ -816,7 +816,7 @@ button {
   border: 1px solid #499af5;
   background: #ffffff;
   color: #499af5;
-  font-size: 18px;
+  font-size: 14px;
   height: 40px;
   line-height: 40px;
   text-align: center;
@@ -830,7 +830,7 @@ button {
   border: 1px solid #b0b0b0;
   background: #efefef;
   color: #515151;
-  font-size: 20px;
+  font-size: 14px;
   height: 50px;
   line-height: 50px;
   text-align: center;

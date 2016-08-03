@@ -42,7 +42,7 @@ $color-dddddd:#dddddd;
 //黄背景黑字
 [data-btn="orbgbtn"]{
     background-color: $color-07;
-    font-size: 20px;
+    font-size: 14px;
     width: 130px;
     height: 50px;
     a{
@@ -54,7 +54,7 @@ $color-dddddd:#dddddd;
     display: inline-block;
     text-align: center;
     background-color: $color-04;
-    font-size: 20px;
+    font-size: 14px;
     width: 130px;
     height: 50px;
     color: $color-ffffff;
@@ -64,7 +64,7 @@ $color-dddddd:#dddddd;
 }
 [data-btn="tranbgbtn"]{
     border: 2px solid #f0f0f0;
-    font-size: 20px;
+    font-size: 14px;
     width: 130px;
     height: 50px;
     background-color: transparent;
@@ -74,14 +74,14 @@ $color-dddddd:#dddddd;
 }
 [data-btn="orfontbtn"]{
     background-color: transparent;
-    font-size: 20px;
+    font-size: 14px;
     a{
         color: $color-07;
     }
 }
 [data-btn="blfontbtn"]{
     background-color: transparent;
-    font-size: 20px;
+    font-size: 14px;
     width: 130px;
     height: 50px;
     border: 1px solid $color-06;
@@ -1034,7 +1034,7 @@ button{
     background: $color-07;
     text-align: center;
     color: $color-02;
-    font-size: 18px;
+    font-size: 14px;
     &:hover{
         color: $color-ffffff;
     }
@@ -1059,7 +1059,7 @@ button{
     border:1px solid $color-06;
     background: $color-ffffff;
     color: $color-06;
-    font-size: 18px;
+    font-size: 14px;
     height: 40px;
     line-height: 40px;
     text-align: center;
@@ -1075,7 +1075,7 @@ button{
     border:1px solid $color-b0b0b0;
     background: $color-efefef;
     color: $color-02;
-    font-size: 20px;
+    font-size: 14px;
     height: 50px;
     line-height: 50px;
     text-align: center;

@@ -169,11 +169,14 @@
     margin-left: -40px; }
     .zcbl-index-con .zcbl-require ul li {
       width: 220px;
-      height: 250px;
+      height: 220px;
       float: left;
       margin-left: 40px;
-      margin-bottom: 38px;
+      margin-bottom: 20px;
       overflow: hidden; }
+      .zcbl-index-con .zcbl-require ul li img {
+        height: 220px;
+        height: 220px; }
       .zcbl-index-con .zcbl-require ul li:hover {
         background: #ffffff;
         box-shadow: 0 0 25px rgba(0, 0, 0, 0.9); }
@@ -332,6 +335,19 @@
     width: 499px;
     float: left;
     padding-left: 85px; }
+    .zcbl-abouUs .zcbl-abouUs-r .zcbl-about-wall .zcbl-about-con .zcbl-about-conL {
+      margin-right: 12px;
+      text-align: center; }
+    .zcbl-abouUs .zcbl-abouUs-r .zcbl-about-wall .zcbl-about-con .zcbl-about-conR {
+      width: 133px;
+      margin-top: 25px; }
+    .zcbl-abouUs .zcbl-abouUs-r .zcbl-about-wall .zcbl-about-con .zcbl-about-conR-2 {
+      width: 128px;
+      height: 128px;
+      margin-left: 11px;
+      float: left;
+      margin-top: 7px;
+      text-align: center; }
   .zcbl-abouUs .zcbl-about-wall {
     width: 500px;
     padding-top: 6px; }

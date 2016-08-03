@@ -130,6 +130,7 @@ $color-08: #e43f3f;
     }
   }
 }
+/** 部落首页 + 漫画部落页面 **/
 /** 部落推荐列表 **/
 .tribe-list-box{
   padding: 0 20px;
@@ -205,6 +206,41 @@ $color-08: #e43f3f;
       top:0;
       width: 100%;
       display: inline-block;
+    }
+  }
+}
+
+
+/** 漫画部落页面 条件选择 **/
+.searchtab{
+  height:130px;
+  padding: 50px;
+  background-color: #fff;
+  .container{
+    padding: 0 20px;
+    .searchtab-left{
+      margin-top: 15px;
+      float: left;
+      input{
+        height: 50px;
+        width: 500px;
+        border: 1px solid $color-04;
+        float: left;
+        padding: 5px;
+      }
+      button{
+        width: 120px;
+        float: left;
+      }
+    }
+    .searchtab-right{
+      margin-top: 15px;
+      float: right;
+      select{
+        width: 231px;
+        height: 50px;
+        padding: 10px;
+      }
     }
   }
 }

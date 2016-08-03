@@ -1,45 +1,40 @@
-@charset "UTF-8";
-/**
-  创建部落 by Wdy
+/*
+Error: Invalid GBK character "\xE5"
+        on line 2 of ./html/static/css/pc/version1.1/tribe-create.scss
+
+1: /**
+2:   创建部落 by Wdy
+3: *\/
+4: 
+5: @charset "utf-8";
+6: 
+7: $font-12: 12px;
+
+Backtrace:
+./html/static/css/pc/version1.1/tribe-create.scss:2
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/util.rb:1300:in `rescue in block in find_encoding_error'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/util.rb:1297:in `block in find_encoding_error'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/util.rb:1296:in `each'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/util.rb:1296:in `each_with_index'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/util.rb:1296:in `find_encoding_error'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/util.rb:905:in `check_sass_encoding'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:436:in `check_encoding!'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:392:in `_to_tree'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:281:in `render'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
+C:/Ruby23-x64/bin/sass:23:in `load'
+C:/Ruby23-x64/bin/sass:23:in `<main>'
 */
-#tribe-create .container {
-  margin-top: 40px; }
-  #tribe-create .container .tab-content label {
-    color: #515151;
-    font-size: 20px;
-    font-family: "Microsoft YaHei", "Arial", "Helvetica Neue", "Simsun,sans-self"; }
-
-/* 第一步 - 部落类型 */
-#tribe-create .container .form-control {
-  border: 1px solid #c1c1c1;
-  border-radius: 2px; }
-#tribe-create .tribe-type input[type="radio"] {
-  margin: 0px 10px 0 5px; }
-#tribe-create .upload-icon {
-  width: 90px;
-  height: 50px;
-  font-size: 18px;
-  color: #499af5;
-  margin-top: 8px; }
-#tribe-create .upload-icon-btn:hover {
-  cursor: pointer; }
-#tribe-create .upload-icon-preview:hover {
-  cursor: pointer; }
-
-/* 第二步*/
-#tribe-create #second .form-group:last-child > :first-child {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #171717; }
-  #tribe-create #second .form-group:last-child > :first-child:hover {
-    cursor: pointer; }
-
-/* 第三步*/
-#tribe-create #third .success-msg {
-  font-size: 16px;
-  color: #171717;
-  margin-top: 74px;
-  margin-bottom: 50px; }
-#tribe-create #third .third-content {
-  margin: 0 auto;
-  width: 560px; }
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid GBK character \"\xE5\"\A         on line 2 of ./html/static/css/pc/version1.1/tribe-create.scss\A \A 1: /**\A 2:   创建部落 by Wdy\A 3: */\A 4: \A 5: @charset \"utf-8\";\A 6: \A 7: $font-12: 12px;"; }

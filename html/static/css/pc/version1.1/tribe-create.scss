@@ -24,7 +24,7 @@ $color-08: #e43f3f;
 #tribe-create {
   .container{
     margin-top: 40px;
-    border:1px solid red;
+    //border:1px solid red;
     .tab-content label{
       color:$color-02;
       font-size:$font-20;
@@ -50,11 +50,11 @@ $color-08: #e43f3f;
   // 上传图标box
   .upload-icon {
     width:90px;
-    height: 60px;
+    height: 50px;
     font-size: 18px;
     color: $color-06;
     margin-top: 8px;
-    border:1px solid red;
+    //border:1px solid red;
 
   }
 
@@ -99,7 +99,11 @@ $color-08: #e43f3f;
       margin-top: 74px;
       margin-bottom: 50px;
     }
-
+    .third-content {
+      margin:0 auto;
+      width: 560px;
+      //border:1px solid black;
+    }
   }
 
 }

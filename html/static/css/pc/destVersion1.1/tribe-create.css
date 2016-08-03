@@ -3,8 +3,7 @@
   创建部落 by Wdy
 */
 #tribe-create .container {
-  margin-top: 40px;
-  border: 1px solid red; }
+  margin-top: 40px; }
   #tribe-create .container .tab-content label {
     color: #515151;
     font-size: 20px;
@@ -18,11 +17,10 @@
   margin: 0px 10px 0 5px; }
 #tribe-create .upload-icon {
   width: 90px;
-  height: 60px;
+  height: 50px;
   font-size: 18px;
   color: #499af5;
-  margin-top: 8px;
-  border: 1px solid red; }
+  margin-top: 8px; }
 #tribe-create .upload-icon-btn:hover {
   cursor: pointer; }
 #tribe-create .upload-icon-preview:hover {
@@ -42,3 +40,6 @@
   color: #171717;
   margin-top: 74px;
   margin-bottom: 50px; }
+#tribe-create #third .third-content {
+  margin: 0 auto;
+  width: 560px; }

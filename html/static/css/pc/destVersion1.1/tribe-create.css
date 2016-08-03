@@ -3,4 +3,42 @@
   创建部落 by Wdy
 */
 #tribe-create .container {
+  margin-top: 40px;
   border: 1px solid red; }
+  #tribe-create .container .tab-content label {
+    color: #515151;
+    font-size: 20px;
+    font-family: "Microsoft YaHei", "Arial", "Helvetica Neue", "Simsun,sans-self"; }
+
+/* 第一步 - 部落类型 */
+#tribe-create .container .form-control {
+  border: 1px solid #c1c1c1;
+  border-radius: 2px; }
+#tribe-create .tribe-type input[type="radio"] {
+  margin: 0px 10px 0 5px; }
+#tribe-create .upload-icon {
+  width: 90px;
+  height: 60px;
+  font-size: 18px;
+  color: #499af5;
+  margin-top: 8px;
+  border: 1px solid red; }
+#tribe-create .upload-icon-btn:hover {
+  cursor: pointer; }
+#tribe-create .upload-icon-preview:hover {
+  cursor: pointer; }
+
+/* 第二步*/
+#tribe-create #second .form-group:last-child > :first-child {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #171717; }
+  #tribe-create #second .form-group:last-child > :first-child:hover {
+    cursor: pointer; }
+
+/* 第三步*/
+#tribe-create #third .success-msg {
+  font-size: 16px;
+  color: #171717;
+  margin-top: 74px;
+  margin-bottom: 50px; }

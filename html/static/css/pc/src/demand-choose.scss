@@ -25,7 +25,11 @@ $black: #000;
                 td {
                     padding-bottom: 20px;
                     span {
+                        padding-right: 10px;
+                    }
+                    b{
                         color: $red;
+                        font-weight: normal;
                     }
                 }
             }

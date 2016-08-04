@@ -136,6 +136,8 @@
   /** 详情 **/
   /*** 头像 ***/
   /**  按钮  **/ }
+  #demdet_demand [data-demdetuser="works"] p {
+    font-size: 14px; }
   #demdet_demand table {
     position: relative;
     margin-bottom: 10px; }

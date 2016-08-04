@@ -197,6 +197,11 @@ $black: #000;
 /** 需求详情 **/
 #demdet_demand {
     padding: 20px 36px;
+    [data-demdetuser="works"] {
+        p{
+            font-size: 14px;
+        }
+    }
     /** 详情 **/
     table {
         position: relative;

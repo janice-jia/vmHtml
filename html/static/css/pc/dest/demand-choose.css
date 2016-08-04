@@ -14,7 +14,10 @@
       #demand_choose .container [data-demand-choose="heading"] table td {
         padding-bottom: 20px; }
         #demand_choose .container [data-demand-choose="heading"] table td span {
-          color: #e43f3f; }
+          padding-right: 10px; }
+        #demand_choose .container [data-demand-choose="heading"] table td b {
+          color: #e43f3f;
+          font-weight: normal; }
     #demand_choose .container [data-demand-choose="heading"] [data-demand-choose="headingright"] {
       text-align: right;
       float: right;

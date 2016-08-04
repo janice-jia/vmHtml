@@ -30,8 +30,9 @@
         margin-bottom: 20px; }
         #pubservice [data-pubservice="bg"] [data-pubservice="fomecontainer"] [data-pubservice="textarea"] textarea {
           width: 100%;
-          padding-left: 10px;
-          height: 190px; }
+          padding: 10px;
+          height: 190px;
+          font-size: 14px; }
       #pubservice [data-pubservice="bg"] [data-pubservice="fomecontainer"] [data-pubservice="footer"] {
         text-align: right; }
         #pubservice [data-pubservice="bg"] [data-pubservice="fomecontainer"] [data-pubservice="footer"] button {

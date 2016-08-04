@@ -2,6 +2,9 @@
 /**
   by dhj
 **/
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
 .breadcrumb > li {
   font-size: 18px;
   line-height: 32px;
@@ -85,6 +88,17 @@
       color: #fff;
       font-size: 18px; }
 
+.edittxt {
+  color: #909090;
+  font-size: 18px; }
+  .edittxt b {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("../../../images/pc/version1.1/icon/ico_edit.png"); }
+
 #tribe-book [data-tbook="header"] {
   padding: 20px 40px; }
   #tribe-book [data-tbook="header"] > ul {
@@ -109,16 +123,6 @@
     clear: both; }
   #tribe-book [data-tbook="main"] [data-tbook="maintop"] [data-tbook="edit"] {
     float: right; }
-    #tribe-book [data-tbook="main"] [data-tbook="maintop"] [data-tbook="edit"] b {
-      width: 16px;
-      height: 16px;
-      margin-right: 10px;
-      display: inline-block;
-      vertical-align: middle;
-      background-image: url("../../../images/pc/version1.1/icon/ico_edit.png"); }
-    #tribe-book [data-tbook="main"] [data-tbook="maintop"] [data-tbook="edit"] a {
-      color: #909090;
-      font-size: 18px; }
   #tribe-book [data-tbook="main"] [data-tbook="maintop"] hr {
     margin: 0 -28px;
     margin-top: 20px;
@@ -131,3 +135,12 @@
 #tribe-book [data-tbook="footer"] {
   margin: 50px auto;
   text-align: center; }
+
+/**  查看漫画 开始  **/
+#tribe-img [data-tcartoon="header"] {
+  line-height: 32px;
+  padding: 20px 40px; }
+  #tribe-img [data-tcartoon="header"] > ul {
+    float: right; }
+  #tribe-img [data-tcartoon="header"] > p {
+    float: left; }

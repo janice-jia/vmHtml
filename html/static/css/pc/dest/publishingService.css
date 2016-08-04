@@ -55,7 +55,8 @@
 [data-demdetpub="pubservice_file"] p {
   margin-bottom: 0;
   padding-left: 30px;
-  font-size: 14px; }
+  font-size: 14px;
+  color: #ffb30e; }
 
 #pubservice_file {
   margin-bottom: 20px;
@@ -99,8 +100,8 @@
     #pubservice_file [data-pubservice="addfile"] b {
       height: 50px;
       width: 50px;
-      top: 32px;
-      left: 32px;
+      top: 35px;
+      left: 35px;
       background-image: url("../../../images/pc/icon/icon_addimg.png"); }
 
 /** 发布成功摸态框 **/

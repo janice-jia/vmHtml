@@ -65,14 +65,16 @@
       #per-wall .per-wall-l .per-uname p {
         margin: 0;
         color: #515151;
-        font-size: 18px;
+        font-size: 14px;
         height: 25px;
         overflow: hidden;
         width: 140px; }
         #per-wall .per-wall-l .per-uname p.per-site {
-          font-size: 16px;
+          font-size: 12px;
           position: relative;
-          padding-left: 18px; }
+          padding-left: 18px;
+          line-height: 25px;
+          margin-top: 5px; }
           #per-wall .per-wall-l .per-uname p.per-site:before {
             content: "";
             position: absolute;
@@ -93,7 +95,8 @@
       border-bottom: 1px solid #515151; }
     #per-wall .per-wall-l .per-fund {
       margin-top: 24px;
-      padding-bottom: 14px; }
+      padding-bottom: 14px;
+      font-size: 14px; }
       #per-wall .per-wall-l .per-fund p {
         clear: both; }
         #per-wall .per-wall-l .per-fund p span.per-fund-cz {
@@ -106,7 +109,8 @@
             color: #515151; }
     #per-wall .per-wall-l .per-appraise {
       padding-top: 24px;
-      padding-bottom: 14px; }
+      padding-bottom: 14px;
+      font-size: 14px; }
       #per-wall .per-wall-l .per-appraise p {
         height: 16px;
         padding-bottom: 10px; }
@@ -126,7 +130,9 @@
           height: 16px;
           display: block; }
     #per-wall .per-wall-l .per-identity {
-      padding-top: 24px; }
+      padding-top: 24px;
+      font-size: 14px;
+      padding-bottom: 20px; }
       #per-wall .per-wall-l .per-identity p {
         margin-bottom: 0;
         line-height: 25px; }
@@ -153,18 +159,22 @@
     width: 690px;
     float: left; }
     #per-wall .per-wall-r .per-nav ul {
-      padding-bottom: 15px;
+      padding-bottom: 13px;
       border-bottom: 1px solid #d2d2d2; }
       #per-wall .per-wall-r .per-nav ul li {
         float: left;
-        padding-right: 40px;
-        padding-left: 10px; }
+        padding-right: 49px;
+        padding-left: 49px; }
         #per-wall .per-wall-r .per-nav ul li a {
           color: #515151;
           line-height: 28px;
           font-size: 20px;
           text-align: center;
           display: block; }
+          #per-wall .per-wall-r .per-nav ul li a span {
+            font-size: 16px;
+            margin-top: 9px;
+            display: inline-block; }
           #per-wall .per-wall-r .per-nav ul li a:hover {
             color: #ffb30e; }
         #per-wall .per-wall-r .per-nav ul li.per-nav-hover a {
@@ -194,7 +204,7 @@
         margin-bottom: 25px; }
         #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgTit {
           font-size: 14px;
-          font-weight: bolder;
+          font-weight: normal;
           padding: 0 20px;
           margin-top: 15px;
           overflow: hidden;
@@ -271,7 +281,8 @@
             background: url("../../../images/pc/icon/icon-per-text.png") no-repeat; }
         #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgEdit {
           text-align: center;
-          padding-top: 10px; }
+          padding-top: 10px;
+          font-size: 14px; }
           #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgEdit a {
             height: 25px;
             line-height: 25px;
@@ -534,7 +545,7 @@
   #per-settings .per-setLine {
     height: 1px;
     overflow: hidden;
-    border-bottom: 1px solid #909090; }
+    border-bottom: 1px solid #c1c1c1; }
   #per-settings .per-setLine-dashed {
     height: 1px;
     overflow: hidden;
@@ -542,9 +553,9 @@
   #per-settings .per-setTit {
     height: 90px;
     line-height: 90px;
-    font-size: 28px;
+    font-size: 22px;
     text-align: center;
-    border-bottom: 1px solid #909090; }
+    border-bottom: 1px solid #c1c1c1; }
   #per-settings .per-setEdit, #per-settings .per-set-up {
     color: #909090; }
     #per-settings .per-setEdit a, #per-settings .per-set-up a {
@@ -555,12 +566,14 @@
       #per-settings .per-setEdit a:before, #per-settings .per-set-up a:before {
         content: "";
         position: absolute; }
-  #per-settings .per-setEdit a:before {
-    top: 33px;
-    right: 0;
-    background: url("../../../images/pc/icon/icon-set-down.png") no-repeat;
-    width: 13px;
-    height: 14px; }
+  #per-settings .per-setEdit {
+    font-size: 14px; }
+    #per-settings .per-setEdit a:before {
+      top: 33px;
+      right: 0;
+      background: url("../../../images/pc/icon/icon-set-down.png") no-repeat;
+      width: 13px;
+      height: 14px; }
   #per-settings .per-set-up a:before {
     top: 33px;
     right: 0;
@@ -569,7 +582,7 @@
     height: 13px; }
   #per-settings .per-setItem {
     padding: 0 50px;
-    font-size: 20px; }
+    font-size: 16px; }
     #per-settings .per-setItem .per-itemTit {
       height: 80px;
       line-height: 80px; }
@@ -592,6 +605,11 @@
         height: 25px; }
     #per-settings .per-setItem .per-itemCon {
       padding: 40px 0 0 140px; }
+      #per-settings .per-setItem .per-itemCon .per-itemGroup #sexType {
+        margin-top: 6px; }
+      #per-settings .per-setItem .per-itemCon .per-itemGroup .per-itemGroup-icon {
+        padding-top: 15px;
+        width: 80px; }
       #per-settings .per-setItem .per-itemCon .per-itemGroup .per-radio-inline {
         padding-left: 0;
         margin-right: 10px; }
@@ -607,7 +625,7 @@
         padding: 0 0 0 12px;
         margin-right: 20px; }
       #per-settings .per-setItem .per-itemCon .per-set-label {
-        font-size: 20px;
+        font-size: 16px;
         font-weight: normal;
         height: 50px;
         line-height: 50px;
@@ -624,7 +642,8 @@
         padding-left: 160px;
         padding-top: 15px;
         margin-bottom: 0;
-        color: #ffb30e; }
+        color: #ffb30e;
+        font-size: 14px; }
       #per-settings .per-setItem .per-itemCon .per-set-textarea {
         font-size: 16px;
         color: #909090;
@@ -657,7 +676,7 @@
           left: 0;
           text-align: center;
           color: #bfbfbf;
-          font-size: 16px;
+          font-size: 14px;
           padding-top: 118px; }
         #per-settings .per-setItem .per-itemCon .per-input-file input {
           position: absolute;
@@ -1010,31 +1029,35 @@
     padding-left: 115px;
     padding-top: 15px;
     margin-bottom: 0;
-    color: #ffb30e; }
+    color: #ffb30e;
+    font-size: 14px; }
 
 #per-album .per-album-tit .per-album-titL {
   width: 50%;
   float: left;
-  font-size: 28px;
+  font-size: 20px;
   height: 50px;
-  line-height: 50px; }
+  line-height: 50px;
+  padding-left: 10px; }
   #per-album .per-album-tit .per-album-titL a {
     display: inline-block;
-    position: relative; }
+    position: relative;
+    margin-left: 10px; }
     #per-album .per-album-tit .per-album-titL a:after {
       content: "";
       position: absolute;
-      top: 13px;
+      top: 17px;
       left: 0;
-      background: url("../../../images/pc/icon/per-album-edit.png");
-      height: 27px;
-      width: 27px; }
+      background: url("../../../images/pc/icon/icon-index-publish-1.png");
+      height: 19px;
+      width: 20px; }
   #per-album .per-album-tit .per-album-titL .zcbl-album-control {
     height: 50px;
     width: 490px; }
 #per-album .per-album-tit .per-album-titR {
   width: 50%;
-  float: right; }
+  float: right;
+  padding-right: 10px; }
 #per-album .per-album-con {
   margin-top: 20px; }
   #per-album .per-album-con ul li {
@@ -1089,13 +1112,13 @@
               content: "";
               left: 0;
               top: 0;
-              background: url("../../../images/pc/icon/per-album-del.png") no-repeat;
-              width: 34px;
-              height: 34px; }
+              background: url("../../../images/pc/icon/per-album-del-1.png") no-repeat;
+              width: 25px;
+              height: 25px; }
     #per-album .per-album-con ul li .per-album-titBox {
       height: 40px;
       line-height: 40px;
-      font-size: 18px;
+      font-size: 14px;
       text-align: center; }
       #per-album .per-album-con ul li .per-album-titBox a {
         color: #515151; }
@@ -1129,19 +1152,20 @@
   .per-view-box .per-view-user .per-view-userInfo {
     float: left;
     width: 860px;
-    padding: 30px 0 0 0; }
+    padding: 23px 0 0 0; }
     .per-view-box .per-view-user .per-view-userInfo p {
       margin: 0;
-      font-size: 18px;
+      font-size: 14px;
       height: 25px;
       overflow: hidden;
       width: 140px; }
       .per-view-box .per-view-user .per-view-userInfo p a {
         color: #515151; }
       .per-view-box .per-view-user .per-view-userInfo p.per-site {
-        font-size: 16px;
+        font-size: 12px;
         position: relative;
-        padding-left: 18px; }
+        padding-left: 18px;
+        line-height: 25px; }
         .per-view-box .per-view-user .per-view-userInfo p.per-site:before {
           content: "";
           position: absolute;
@@ -1240,7 +1264,7 @@
         margin-left: 12px;
         margin-right: 12px; }
   .per-view-box .per-picedit {
-    margin-top: 50px;
+    margin-top: 10px;
     padding-left: 120px; }
     .per-view-box .per-picedit .zcbl-form-horizontal .zcbl-control-label {
       text-align: right; }
@@ -1249,7 +1273,8 @@
       padding-left: 115px;
       padding-top: 15px;
       margin-bottom: 0;
-      color: #ffb30e; }
+      color: #ffb30e;
+      font-size: 14px; }
   .per-view-box .videoBody {
     width: 980px;
     max-height: 550px;
@@ -1298,12 +1323,12 @@
       .per-view-box .textBody .zcbl-text-edit h1 {
         margin-bottom: 40px; }
         .per-view-box .textBody .zcbl-text-edit h1 p {
-          font-size: 28px;
+          font-size: 20px;
           margin: 0;
           padding: 0; }
           .per-view-box .textBody .zcbl-text-edit h1 p.zcbl-text-editL {
             float: left;
-            width: 840px;
+            width: 705px;
             overflow: hidden; }
           .per-view-box .textBody .zcbl-text-edit h1 p.zcbl-text-editR {
             width: 33px;
@@ -1315,29 +1340,31 @@
               width: 33px;
               height: 34px; }
       .per-view-box .textBody .zcbl-text-edit p {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 35px; }
     .per-view-box .textBody .zcbl-text-editTime {
       text-align: right;
       margin: 30px;
-      font-size: 20px; }
+      font-size: 14px; }
 
 #per-recharge {
   width: 1000px;
   margin: 30px auto 35px auto;
   min-height: 500px; }
   #per-recharge .per-recharge-tit {
-    font-size: 28px;
+    font-size: 18px;
     padding-left: 12px; }
   #per-recharge .zcbl-control-msg {
     padding-left: 115px;
+    font-size: 14px;
     color: #ffb30e;
     margin-top: 10px;
-    margin-bottom: 0px; }
+    margin-bottom: 10px; }
   #per-recharge .zcbl-form-horizontal .zcbl-form-group {
     padding-left: 40px;
-    margin-bottom: 10px; }
+    margin-bottom: 0px; }
   #per-recharge .per-recharge-payType {
+    padding-top: 10px;
     padding-left: 20px; }
     #per-recharge .per-recharge-payType .per-recharge-radio input[type=radio] {
       margin-top: 17px; }
@@ -1355,24 +1382,25 @@
     margin-bottom: 60px; }
     #per-recharge .per-recharge-payList ul li {
       padding: 0 30px;
-      height: 90px;
+      height: 78px;
       border-bottom: 1px solid #acacac; }
       #per-recharge .per-recharge-payList ul li .per-payList-tit {
-        font-size: 20px;
+        font-size: 16px;
         padding-top: 15px; }
       #per-recharge .per-recharge-payList ul li .per-payList-time {
-        color: #909090; }
+        color: #909090;
+        font-size: 14px; }
       #per-recharge .per-recharge-payList ul li .per-payList-income, #per-recharge .per-recharge-payList ul li .per-payList-expend {
         margin: 0;
         padding: 0;
-        line-height: 90px;
-        font-size: 28px;
+        line-height: 78px;
+        font-size: 20px;
         text-align: right; }
       #per-recharge .per-recharge-payList ul li .per-payList-expend {
         color: #fb4444; }
   #per-recharge .per-pay-password {
-    font-size: 20px;
-    padding-top: 40px; }
+    font-size: 14px;
+    padding-top: 20px; }
     #per-recharge .per-pay-password a {
       color: #515151; }
     #per-recharge .per-pay-password span {
@@ -1387,18 +1415,19 @@
     padding: 0 20px;
     border-bottom: 1px solid #acacac; }
     #per-payInfo .per-payInfo-order .per-payInfo-orderId, #per-payInfo .per-payInfo-order .per-payInfo-orderTime, #per-payInfo .per-payInfo-order .per-payInfo-orderTit, #per-payInfo .per-payInfo-order .per-payInfo-orderStatus {
-      font-size: 22px;
-      padding-bottom: 15px; }
+      font-size: 16px;
+      padding-bottom: 10px; }
     #per-payInfo .per-payInfo-order .per-payInfo-orderTime, #per-payInfo .per-payInfo-order .per-payInfo-orderStatus {
+      font-size: 14px;
       text-align: right; }
     #per-payInfo .per-payInfo-order .per-payInfo-orderTit {
       color: #212121; }
     #per-payInfo .per-payInfo-order .per-payInfo-des {
       color: #90908f;
-      font-size: 18px;
+      font-size: 14px;
       padding-bottom: 15px; }
     #per-payInfo .per-payInfo-order .per-payInfo-orderZJ, #per-payInfo .per-payInfo-order .per-payInfo-orderSC {
-      font-size: 18px;
+      font-size: 14px;
       padding-bottom: 15px; }
     #per-payInfo .per-payInfo-order .per-payInfo-orderZJ {
       position: relative;
@@ -1428,18 +1457,18 @@
   #per-payInfo .per-payInfo-amount {
     text-align: right;
     color: #ffb30e;
-    font-size: 28px;
-    padding-top: 30px;
-    padding-bottom: 30px; }
+    font-size: 18px;
+    padding-top: 25px;
+    padding-bottom: 25px; }
     #per-payInfo .per-payInfo-amount span {
       display: inline-block;
       width: 30px; }
   #per-payInfo .per-payInfo-type {
     height: 160px;
     background: #ffffff;
-    padding: 30px 30px 0 30px; }
+    padding: 20px 30px 0 30px; }
     #per-payInfo .per-payInfo-type .per-recharge-tit {
-      font-size: 28px; }
+      font-size: 18px; }
     #per-payInfo .per-payInfo-type .per-recharge-payType {
       padding-top: 10px; }
       #per-payInfo .per-payInfo-type .per-recharge-payType .per-recharge-radio {
@@ -1462,7 +1491,7 @@
       height: 240px;
       margin: 0 auto; }
       #per-payResult .per-payResultBox .zcbl-pay-error .zcbl-pay-errorIcon {
-        padding-top: 130px;
+        padding-top: 150px;
         position: relative;
         text-align: left;
         font-size: 38px;
@@ -1493,15 +1522,15 @@
           width: 76px;
           height: 74px; }
       #per-payResult .per-payResultBox .zcbl-pay-error .zcbl-pay-msg1 {
-        padding-left: 100px;
         color: #909090;
-        font-size: 18px;
-        padding-top: 10px; }
+        font-size: 16px;
+        padding-top: 10px;
+        margin-top: 30px; }
       #per-payResult .per-payResultBox .zcbl-pay-error .zcbl-pay-msg2 {
-        padding-left: 100px;
         text-align: left;
-        font-size: 18px;
-        padding-top: 25px; }
+        font-size: 14px;
+        padding-top: 25px;
+        text-align: center; }
         #per-payResult .per-payResultBox .zcbl-pay-error .zcbl-pay-msg2 a.zcbl-pay-hrefYellow {
           color: #ffb30e;
           margin-right: 33px; }

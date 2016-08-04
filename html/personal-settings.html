@@ -51,21 +51,24 @@
                 <div class="form-group per-itemGroup">
                     <label for="uName" class="col-sm-2 control-label per-set-label">用户名：</label>
                     <div class="col-sm-6">
-                        <input type="text" class="form-control per-set-control" name="uName" id="uName" placeholder="14个字" />
+                        <input type="text" class="form-control per-set-control" name="uName" id="uName" placeholder="" />
                     </div>
                     <p class="per-setControlMsg">*由字母加数字符号至少两种以上字符组成</p>
                 </div>
                 <div class="form-group per-itemGroup">
                     <label for="uName" class="col-sm-2 control-label per-set-label">性别：</label>
-                    <div class="col-sm-9" id="sexType">
-                        <label class="radio-inline per-radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />男
+                    <div class="col-sm-9 mt10" id="sexType">
+                        <label class="radio-inline">
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+                            <span>男</span>
                         </label>
                         <label class="radio-inline per-radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />女
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+                            <span>女</span>
                         </label>
                         <label class="radio-inline per-radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" />保密
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" />
+                            <span>保密</span>
                         </label>
                     </div>
                     <p class="per-setControlMsg">*由字母加数字符号至少两种以上字符组成</p>
@@ -157,7 +160,7 @@
                 </div>
                 <div class="form-group per-itemGroup">
                     <div class="col-sm-12 pl25 ml5">
-                        <button type="submit" class="btn-yellow-50">保存</button>
+                        <button type="submit" class="btn-yellow-50 right">保存</button>
                     </div>
                 </div>
             </form>
@@ -246,7 +249,7 @@
                 </div>
                 <div class="form-group per-itemGroup">
                     <div class="col-sm-12 pl25 ml5">
-                        <button type="submit" class="btn-yellow-50">保存</button>
+                        <button type="submit" class="btn-yellow-50 right">保存</button>
                     </div>
                 </div>
             </form>
@@ -332,7 +335,7 @@
                 </div>
                 <div class="form-group per-itemGroup">
                     <div class="col-sm-12 pl25 ml5">
-                        <button type="submit" class="btn-yellow-50">保存</button>
+                        <button type="submit" class="btn-yellow-50 right">保存</button>
                     </div>
                 </div>
             </form>
@@ -368,16 +371,16 @@
         <div class="per-itemCon">
             <form action="" class="form-horizontal">
                 <div class="form-group per-itemGroup">
-                    <div class="col-sm-2">
-                        <img src="static/images/pc/personal/wx.jpg" width="80" height="66" alt="" />
+                    <div class="col-sm-2 per-itemGroup-icon">
+                        <img src="static/images/pc/personal/weChat.png" width="40" height="40" alt="" />
                     </div>
                     <div class="col-sm-2 mr10">
                         <button type="submit" class="btn-gray-50 mt5">绑定</button>
                     </div>
                 </div>
                 <div class="form-group per-itemGroup">
-                    <div class="col-sm-2">
-                        <img src="static/images/pc/personal/qq.jpg" width="76" height="80" alt="" />
+                    <div class="col-sm-2 per-itemGroup-icon">
+                        <img src="static/images/pc/personal/QQ.png" width="40" height="40" alt="" />
                     </div>
                     <div class="col-sm-2 lh80 mr10 pr10">
                        609753231
@@ -387,8 +390,8 @@
                     </div>
                 </div>
                 <div class="form-group per-itemGroup">
-                    <div class="col-sm-2">
-                        <img src="static/images/pc/personal/wb.jpg" width="79" height="64" alt="" />
+                    <div class="col-sm-2 per-itemGroup-icon">
+                        <img src="static/images/pc/personal/sina.png" width="40" height="40" alt="" />
                     </div>
                     <div class="col-sm-2 mr10">
                         <button type="submit" class="btn-gray-50 mt10">取消绑定</button>
@@ -459,7 +462,7 @@
                 </div>
                 <div class="form-group per-itemGroup">
                     <div class="col-sm-12 pl25 ml5">
-                        <button type="submit" class="btn-yellow-50">保存</button>
+                        <button type="submit" class="btn-yellow-50 right">保存</button>
                     </div>
                 </div>
             </form>
@@ -482,7 +485,7 @@
     //性别radio按钮样式
     $(document).ready(function(){
         $('#sexType input').iCheck({
-            radioClass: 'iradio-grey-20',
+            radioClass: 'iradio-grey-16',
             increaseArea: '30%' // optional
         });
     });

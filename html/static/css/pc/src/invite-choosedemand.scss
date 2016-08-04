@@ -86,11 +86,10 @@ $color-fb4444: #fb4444;
                     width: 30px;
                     height: 30px;
                     float: left;
-                    margin-top: 40px;
+                    margin-top: 35px;
                 }
                 .checkbox-content {
-                    padding-left: 50px;
-
+                    padding-left: 35px;
                 }
 
                 .per-reqTit {
@@ -113,6 +112,7 @@ $color-fb4444: #fb4444;
                         float: right;
                         text-align: right;
                         width: 230px;
+                        font-size: 14px;
                         span {
                             color: $color-08;
                         }
@@ -169,7 +169,7 @@ $color-fb4444: #fb4444;
                                         margin-right: 7px;
                                     }
                                     b[data-choose-demand="eye"] {
-                                        background: url("../../../images/pc/icon/icon-per-cy.png") no-repeat;
+                                        background: url("../../../images/pc/icon/icon-per-cy-1.png") no-repeat;
                                     }
                                     b[data-choose-demand="flag"] {
                                         background: url("../../../images/pc/icon/icon_flag.png") no-repeat;

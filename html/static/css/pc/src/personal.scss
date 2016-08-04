@@ -104,7 +104,7 @@ $color-90908f:#90908f;
                 margin: 0;
                 color: $color-02;
                 font-size: 14px;
-                height: 25px;
+                max-height: 36px;
                 overflow: hidden;
                 width: 140px;
                 &.per-site{
@@ -139,7 +139,7 @@ $color-90908f:#90908f;
             width: 100%;
             height: 1px;
             overflow: hidden;
-            border-bottom: 1px solid $color-02;
+            border-bottom: 1px solid $color-04;
         }
         .per-fund{
             margin-top: 24px;
@@ -272,7 +272,8 @@ $color-90908f:#90908f;
             }
         }
         .per-artnav{
-            padding: 10px 0 0 0;
+            padding: 10px 0 10px 0;
+            border-bottom: 1px solid $color-d2d2d2;
             ul{
                 li{
                     float: left;
@@ -448,12 +449,12 @@ $color-90908f:#90908f;
                 width: 100%;
                 li{
                     .per-reqTit{
-                        font-size: 22px;
+                        font-size: 16px;
                         color: $color-02;
                         overflow: hidden;
                         height: 25px;
                         line-height: 25px;
-                        margin: 20px 0;
+                        margin: 10px 0;
                         h1{
                             width: 450px;
                             float: left;
@@ -468,14 +469,14 @@ $color-90908f:#90908f;
                             text-align: right;
                             width: 230px;
                             span{
-                                color: $color-07;
+                                color: $color-08;
                             }
                         }
                     }
                     .per-reqCon{
                         h3{
                             width: 100%;
-                            font-size: 18px;
+                            font-size: 14px;
                             height: 25px;
                             line-height: 25px;
                             overflow: hidden;
@@ -484,6 +485,7 @@ $color-90908f:#90908f;
                         }
                         .per-reqInfo{
                             margin: 15px 0 20px 0;
+                            font-size: 14px;
                             p{
                                 float: left;
                                 width: 200px;
@@ -515,9 +517,9 @@ $color-90908f:#90908f;
                                             position: absolute;
                                             top: 4px;
                                             left: 0;
-                                            background: url("../../../images/pc/icon/icon-per-cy.png") no-repeat;
-                                            width: 27px;
-                                            height: 16px;
+                                            background: url("../../../images/pc/icon/icon-per-cy-1.png") no-repeat;
+                                            width: 20px;
+                                            height: 12px;
                                         }
                                     }
                                     &.per-req-bzj{
@@ -549,7 +551,7 @@ $color-90908f:#90908f;
                         }
                     }
                     .per-reqStatus{
-                        margin: 20px 0;
+                        margin: 0 0 10px 0;
                         p{
                             float: left;
                             width: 340px;
@@ -557,7 +559,7 @@ $color-90908f:#90908f;
                             line-height:50px;
                             color: $color-03;
                             margin-bottom: 0;
-                            font-size: 18px;
+                            font-size: 14px;
                             .per-serBlue{
                                 color: $color-06;
                             }
@@ -577,7 +579,7 @@ $color-90908f:#90908f;
                                 line-height: 50px;
                                 height: 50px;
                                 &.per-reqStaEdit{
-                                    font-size: 18px;
+                                    font-size: 14px;
                                     padding:0 30px 0 10px;
                                     a{
                                         color: $color-02;
@@ -869,7 +871,7 @@ $color-90908f:#90908f;
                 }
             }
             .per-set-label{
-                font-size: 16px;
+                font-size: 14px;
                 font-weight: normal;
                 height: 50px;
                 line-height: 50px;
@@ -961,7 +963,7 @@ $color-90908f:#90908f;
     width: 1000px;
     margin:0 auto;
     .per-pub-artMenu{
-        padding-bottom: 50px;
+        padding-bottom: 28px;
         ul{
             li{
                 display: inline-block;
@@ -982,7 +984,7 @@ $color-90908f:#90908f;
             margin: 0;
         }
         .per-pub-picColl{
-            font-size: 18px;
+            font-size: 14px;
             width: 126px;
             text-align: left;
             margin: 0;
@@ -992,13 +994,16 @@ $color-90908f:#90908f;
             line-height: 50px;
         }
         .per-pub-select{
-            height: 50px;
-            line-height: 50px;
+            height: 30px;
+            line-height:30px;
+            width: 135px;
+            margin-top: 10px;
+            padding: 4px 12px;
         }
         .per-pub-addPicColl{
             height: 50px;
             line-height: 50px;
-            font-size: 18px;
+            font-size: 14px;
             a{
                 color: $color-06;
             }
@@ -1009,11 +1014,12 @@ $color-90908f:#90908f;
         border: 1px dashed $color-aaaaaa;
         ul{
             margin-left: 12px;
+            margin-bottom: 20px;
             li{
                 float: left;
                 width: 200px;
                 height: 260px;
-                margin: 30px 18px;
+                margin: 30px 18px 7px 18px;
                 &.per-pub-add{
                     background: $color-ffffff;
                     border: 1px dashed $color-aaaaaa;
@@ -1060,13 +1066,13 @@ $color-90908f:#90908f;
                             }
                         }
                         &.per-pub-addSC{
-                            font-size: 20px;
+                            font-size: 16px;
                             font-weight: bolder;
                             color: $color-9a9a9a;
                             padding: 20px 0 0 0;
                         }
                         &.per-pub-addZS,&.per-pub-addDX{
-                            font-size: 12px;
+                            font-size: 14px;
                             color: $color-9a9a9a;
                             line-height: 20px;
                             margin: 0;
@@ -1112,13 +1118,13 @@ $color-90908f:#90908f;
                     }
                 }
                 .per-pub-edit{
-                    border: 1px solid $color-07;
+                    //border: 1px solid $color-07;
                     height: 57px;
                     position: absolute;
-                    bottom: 0;
+                    top: 0;
                     left: 0;
                     width: 100%;
-                    background: $color-ffffff;
+                    //background: $color-ffffff;
                     p{
                         float: left;
                         width: 50%;
@@ -1144,8 +1150,10 @@ $color-90908f:#90908f;
                             }
                         }
                         &.per-pub-editDel{
+                            float: right;
                             padding-right: 12px;
                             text-align: right;
+                            width: 50px;
                             a{
                                 color: $color-9a9a9a;
                                 position: relative;
@@ -1154,9 +1162,9 @@ $color-90908f:#90908f;
                                     position: absolute;
                                     left: 6px;
                                     top: 10px;
-                                    background: url("../../../images/pc/icon/icon-pub-del.png") no-repeat;
-                                    width: 36px;
-                                    height: 36px;
+                                    background: url("../../../images/pc/icon/per-album-del-1.png") no-repeat;
+                                    width: 25px;
+                                    height: 25px;
                                 }
                             }
                         }
@@ -1166,7 +1174,7 @@ $color-90908f:#90908f;
                     height: 50px;
                     border: 1px solid $color-9a9a9a;
                     margin-top: 10px;
-                    font-size: 18px;
+                    font-size: 14px;
                     color: $color-9a9a9a;
                     text-align: center;
                     line-height: 50px;
@@ -1206,7 +1214,7 @@ $color-90908f:#90908f;
             left: 0;
             z-index: 1;
             color: $color-06;
-            font-size: 18px;
+            font-size: 14px;
             a{
                 color: $color-06;
                 &:hover{
@@ -1248,7 +1256,7 @@ $color-90908f:#90908f;
             text-align: right;
             line-height: 40px;
             padding-right: 15px;
-            font-size: 18px;
+            font-size: 14px;
             a{
                 color: $color-06;
                 &:hover{
@@ -1258,11 +1266,16 @@ $color-90908f:#90908f;
         }
         .per-pub-videoBox{
             margin: 0 auto;
-            width: 525px;
-            height: 403px;
+            width: 500px;
+            height: 400px;
             background: $color-ffffff;
             border: 1px dashed $color-aaaaaa;
             position: relative;
+            &:hover{
+                .per-videoImg-edit{
+                    display: block;
+                }
+            }
             img{
                 max-width: 525px;
                 max-height: 403px;
@@ -1270,14 +1283,12 @@ $color-90908f:#90908f;
                 border: 1px solid $color-07;
             }
             .per-videoImg-edit{
-                width: 200px;
+                width: 100%;
                 height: 57px;
-                margin-left: -100px;
-                background: $color-ffffff;
                 position: absolute;
-                bottom: -1px;
-                left: 50%;
-                border: 1px solid $color-07;
+                display: none;
+                top: 0;
+                left: 0;
                 p{
                     float: left;
                     width: 50%;
@@ -1305,6 +1316,8 @@ $color-90908f:#90908f;
                     &.per-pub-editDel{
                         padding-right: 12px;
                         text-align: right;
+                        float: right;
+                        width: 50px;
                         a{
                             color: $color-9a9a9a;
                             position: relative;
@@ -1313,9 +1326,9 @@ $color-90908f:#90908f;
                                 position: absolute;
                                 left: 6px;
                                 top: 10px;
-                                background: url("../../../images/pc/icon/icon-pub-del.png") no-repeat;
-                                width: 36px;
-                                height: 36px;
+                                background: url("../../../images/pc/icon/per-album-del-1.png") no-repeat;
+                                width: 25px;
+                                height: 25px;
                             }
                         }
                     }
@@ -1352,7 +1365,7 @@ $color-90908f:#90908f;
                 }
             }
             .per-pub-addVideoSC{
-                font-size: 20px;
+                font-size: 16px;
                 text-align: center;
                 font-weight: 500;
                 margin-top: 22px;
@@ -1539,9 +1552,9 @@ $color-90908f:#90908f;
             p{
                 margin: 0;
                 font-size: 14px;
-                height: 25px;
+                height: 24px;
                 overflow: hidden;
-                width: 140px;
+                width: 600px;
                 a{
                     color: $color-02;
                 }

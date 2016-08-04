@@ -66,7 +66,7 @@
         margin: 0;
         color: #515151;
         font-size: 14px;
-        height: 25px;
+        max-height: 36px;
         overflow: hidden;
         width: 140px; }
         #per-wall .per-wall-l .per-uname p.per-site {
@@ -92,7 +92,7 @@
       width: 100%;
       height: 1px;
       overflow: hidden;
-      border-bottom: 1px solid #515151; }
+      border-bottom: 1px solid #c1c1c1; }
     #per-wall .per-wall-l .per-fund {
       margin-top: 24px;
       padding-bottom: 14px;
@@ -180,7 +180,8 @@
         #per-wall .per-wall-r .per-nav ul li.per-nav-hover a {
           color: #ffb30e; }
     #per-wall .per-wall-r .per-artnav {
-      padding: 10px 0 0 0; }
+      padding: 10px 0 10px 0;
+      border-bottom: 1px solid #d2d2d2; }
       #per-wall .per-wall-r .per-artnav ul li {
         float: left; }
         #per-wall .per-wall-r .per-artnav ul li.per-artnav-hover a {
@@ -313,12 +314,12 @@
       #per-wall .per-wall-r .per-req ul {
         width: 100%; }
         #per-wall .per-wall-r .per-req ul li .per-reqTit {
-          font-size: 22px;
+          font-size: 16px;
           color: #515151;
           overflow: hidden;
           height: 25px;
           line-height: 25px;
-          margin: 20px 0; }
+          margin: 10px 0; }
           #per-wall .per-wall-r .per-req ul li .per-reqTit h1 {
             width: 450px;
             float: left;
@@ -330,17 +331,18 @@
             text-align: right;
             width: 230px; }
             #per-wall .per-wall-r .per-req ul li .per-reqTit p span {
-              color: #ffb30e; }
+              color: #e43f3f; }
         #per-wall .per-wall-r .per-req ul li .per-reqCon h3 {
           width: 100%;
-          font-size: 18px;
+          font-size: 14px;
           height: 25px;
           line-height: 25px;
           overflow: hidden;
           font-family: "adobeheitistd regular","Microsoft YaHei";
           color: #909090; }
         #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo {
-          margin: 15px 0 20px 0; }
+          margin: 15px 0 20px 0;
+          font-size: 14px; }
           #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo p {
             float: left;
             width: 200px;
@@ -370,9 +372,9 @@
                   position: absolute;
                   top: 4px;
                   left: 0;
-                  background: url("../../../images/pc/icon/icon-per-cy.png") no-repeat;
-                  width: 27px;
-                  height: 16px; }
+                  background: url("../../../images/pc/icon/icon-per-cy-1.png") no-repeat;
+                  width: 20px;
+                  height: 12px; }
               #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-bzj {
                 padding-left: 23px; }
                 #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-bzj:before {
@@ -394,7 +396,7 @@
                   width: 16px;
                   height: 17px; }
         #per-wall .per-wall-r .per-req ul li .per-reqStatus {
-          margin: 20px 0; }
+          margin: 0 0 10px 0; }
           #per-wall .per-wall-r .per-req ul li .per-reqStatus p {
             float: left;
             width: 340px;
@@ -402,7 +404,7 @@
             line-height: 50px;
             color: #909090;
             margin-bottom: 0;
-            font-size: 18px; }
+            font-size: 14px; }
             #per-wall .per-wall-r .per-req ul li .per-reqStatus p .per-serBlue {
               color: #499af5; }
             #per-wall .per-wall-r .per-req ul li .per-reqStatus p .per-serYellow {
@@ -418,7 +420,7 @@
               line-height: 50px;
               height: 50px; }
               #per-wall .per-wall-r .per-req ul li .per-reqStatus ul li.per-reqStaEdit {
-                font-size: 18px;
+                font-size: 14px;
                 padding: 0 30px 0 10px; }
                 #per-wall .per-wall-r .per-req ul li .per-reqStatus ul li.per-reqStaEdit a {
                   color: #515151; }
@@ -628,7 +630,7 @@
         padding: 0 0 0 12px;
         margin-right: 20px; }
       #per-settings .per-setItem .per-itemCon .per-set-label {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: normal;
         height: 50px;
         line-height: 50px;
@@ -704,7 +706,7 @@
   width: 1000px;
   margin: 0 auto; }
   #per-publish .per-pub-artMenu {
-    padding-bottom: 50px; }
+    padding-bottom: 28px; }
     #per-publish .per-pub-artMenu ul li {
       display: inline-block;
       padding-right: 60px; }
@@ -716,7 +718,7 @@
   #per-publish .per-pub-choose .per-pubGroup {
     margin: 0; }
   #per-publish .per-pub-choose .per-pub-picColl {
-    font-size: 18px;
+    font-size: 14px;
     width: 126px;
     text-align: left;
     margin: 0;
@@ -725,24 +727,28 @@
     height: 50px;
     line-height: 50px; }
   #per-publish .per-pub-choose .per-pub-select {
-    height: 50px;
-    line-height: 50px; }
+    height: 30px;
+    line-height: 30px;
+    width: 135px;
+    margin-top: 10px;
+    padding: 4px 12px; }
   #per-publish .per-pub-choose .per-pub-addPicColl {
     height: 50px;
     line-height: 50px;
-    font-size: 18px; }
+    font-size: 14px; }
     #per-publish .per-pub-choose .per-pub-addPicColl a {
       color: #499af5; }
   #per-publish .per-pub-picBox {
     margin: 30px 0 30px 0;
     border: 1px dashed #aaaaaa; }
     #per-publish .per-pub-picBox ul {
-      margin-left: 12px; }
+      margin-left: 12px;
+      margin-bottom: 20px; }
       #per-publish .per-pub-picBox ul li {
         float: left;
         width: 200px;
         height: 260px;
-        margin: 30px 18px; }
+        margin: 30px 18px 7px 18px; }
         #per-publish .per-pub-picBox ul li.per-pub-add {
           background: #ffffff;
           border: 1px dashed #aaaaaa;
@@ -784,12 +790,12 @@
               width: 65px;
               height: 65px; }
           #per-publish .per-pub-picBox ul li.per-pub-add p.per-pub-addSC {
-            font-size: 20px;
+            font-size: 16px;
             font-weight: bolder;
             color: #9a9a9a;
             padding: 20px 0 0 0; }
           #per-publish .per-pub-picBox ul li.per-pub-add p.per-pub-addZS, #per-publish .per-pub-picBox ul li.per-pub-add p.per-pub-addDX {
-            font-size: 12px;
+            font-size: 14px;
             color: #9a9a9a;
             line-height: 20px;
             margin: 0; }
@@ -824,13 +830,11 @@
               border-radius: 6px;
               margin: 3px 0; }
         #per-publish .per-pub-picBox ul li .per-pub-edit {
-          border: 1px solid #ffb30e;
           height: 57px;
           position: absolute;
-          bottom: 0;
+          top: 0;
           left: 0;
-          width: 100%;
-          background: #ffffff; }
+          width: 100%; }
           #per-publish .per-pub-picBox ul li .per-pub-edit p {
             float: left;
             width: 50%;
@@ -852,8 +856,10 @@
                   width: 36px;
                   height: 36px; }
             #per-publish .per-pub-picBox ul li .per-pub-edit p.per-pub-editDel {
+              float: right;
               padding-right: 12px;
-              text-align: right; }
+              text-align: right;
+              width: 50px; }
               #per-publish .per-pub-picBox ul li .per-pub-edit p.per-pub-editDel a {
                 color: #9a9a9a;
                 position: relative; }
@@ -862,14 +868,14 @@
                   position: absolute;
                   left: 6px;
                   top: 10px;
-                  background: url("../../../images/pc/icon/icon-pub-del.png") no-repeat;
-                  width: 36px;
-                  height: 36px; }
+                  background: url("../../../images/pc/icon/per-album-del-1.png") no-repeat;
+                  width: 25px;
+                  height: 25px; }
         #per-publish .per-pub-picBox ul li .per-pub-tit {
           height: 50px;
           border: 1px solid #9a9a9a;
           margin-top: 10px;
-          font-size: 18px;
+          font-size: 14px;
           color: #9a9a9a;
           text-align: center;
           line-height: 50px; }
@@ -899,7 +905,7 @@
       left: 0;
       z-index: 1;
       color: #499af5;
-      font-size: 18px; }
+      font-size: 14px; }
       #per-publish .pub-file .zcbl-form-pBlue a {
         color: #499af5; }
   #per-publish .pub-file-img {
@@ -930,30 +936,30 @@
       text-align: right;
       line-height: 40px;
       padding-right: 15px;
-      font-size: 18px; }
+      font-size: 14px; }
       #per-publish .per-pub-videoUpload .per-pub-vieroQR a {
         color: #499af5; }
     #per-publish .per-pub-videoUpload .per-pub-videoBox {
       margin: 0 auto;
-      width: 525px;
-      height: 403px;
+      width: 500px;
+      height: 400px;
       background: #ffffff;
       border: 1px dashed #aaaaaa;
       position: relative; }
+      #per-publish .per-pub-videoUpload .per-pub-videoBox:hover .per-videoImg-edit {
+        display: block; }
       #per-publish .per-pub-videoUpload .per-pub-videoBox img {
         max-width: 525px;
         max-height: 403px;
         margin: -1px 0 0 -1px;
         border: 1px solid #ffb30e; }
       #per-publish .per-pub-videoUpload .per-pub-videoBox .per-videoImg-edit {
-        width: 200px;
+        width: 100%;
         height: 57px;
-        margin-left: -100px;
-        background: #ffffff;
         position: absolute;
-        bottom: -1px;
-        left: 50%;
-        border: 1px solid #ffb30e; }
+        display: none;
+        top: 0;
+        left: 0; }
         #per-publish .per-pub-videoUpload .per-pub-videoBox .per-videoImg-edit p {
           float: left;
           width: 50%;
@@ -976,7 +982,9 @@
                 height: 36px; }
           #per-publish .per-pub-videoUpload .per-pub-videoBox .per-videoImg-edit p.per-pub-editDel {
             padding-right: 12px;
-            text-align: right; }
+            text-align: right;
+            float: right;
+            width: 50px; }
             #per-publish .per-pub-videoUpload .per-pub-videoBox .per-videoImg-edit p.per-pub-editDel a {
               color: #9a9a9a;
               position: relative; }
@@ -985,9 +993,9 @@
                 position: absolute;
                 left: 6px;
                 top: 10px;
-                background: url("../../../images/pc/icon/icon-pub-del.png") no-repeat;
-                width: 36px;
-                height: 36px; }
+                background: url("../../../images/pc/icon/per-album-del-1.png") no-repeat;
+                width: 25px;
+                height: 25px; }
       #per-publish .per-pub-videoUpload .per-pub-videoBox .per-pub-addVideoIcon {
         position: relative;
         width: 65px;
@@ -1016,7 +1024,7 @@
           width: 65px;
           height: 65px; }
       #per-publish .per-pub-videoUpload .per-pub-videoBox .per-pub-addVideoSC {
-        font-size: 20px;
+        font-size: 16px;
         text-align: center;
         font-weight: 500;
         margin-top: 22px;
@@ -1159,9 +1167,9 @@
     .per-view-box .per-view-user .per-view-userInfo p {
       margin: 0;
       font-size: 14px;
-      height: 25px;
+      height: 24px;
       overflow: hidden;
-      width: 140px; }
+      width: 600px; }
       .per-view-box .per-view-user .per-view-userInfo p a {
         color: #515151; }
       .per-view-box .per-view-user .per-view-userInfo p.per-site {

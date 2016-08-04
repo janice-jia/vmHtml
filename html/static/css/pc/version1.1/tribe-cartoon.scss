@@ -1,0 +1,214 @@
+/**
+ *  部落 - 动漫
+ */
+
+@charset "utf-8";
+
+$font-12: 12px;
+$font-14: 14px;
+$font-16: 16px;
+$font-18: 18px;
+$font-20: 20px;
+$font-22: 22px;
+$font-24: 24px;
+
+$color-01: #171717;
+$color-02: #515151;
+$color-03: #909090;
+$color-04: #c1c1c1; //(输入框边框颜色)
+$color-05: #eeeeee; //(背景色)
+$color-06: #499af5;
+$color-07: #ffb30e;
+$color-08: #e43f3f;
+
+#tribe-cartoon {
+  .container {
+    border:1px solid red;
+  }
+
+  // 部落头部
+  .cartoon-header {
+    margin-top: 220px;
+    border:1px solid $color-04;
+    height: 200px;
+    position: relative;
+
+    // 部落图标
+    >.tribe-icon {
+      width: 110px;
+      height: 110px;
+      position: absolute;
+      left:20px;
+      top:-55px;
+    }
+
+    // 部落工具按钮
+    >.tools-bar {
+      margin-left:130px;
+      //border:1px solid green;
+
+      >li {
+        color:#FFF;
+        float:left;
+        margin-left:20px;
+        margin-top: 16px;
+        cursor: pointer;
+      }
+
+      // 赞
+      >li:nth-child(2) {
+        background: url('/static/images/pc/version1.1/icon/icon_hand.png') no-repeat;
+        color:$color-06;
+        float:left;
+        padding-left: 30px;
+        margin-left:30px;
+        margin-top: 25px;
+      }
+
+      // 100
+      >li:nth-child(3) {
+
+      }
+
+      // VIP
+      >li:nth-child(4),>li:nth-child(3) {
+        color:#FFF;
+        float:left;
+        background: $color-03;
+        margin-left:30px;
+        margin-top: 25px;
+        border-radius: 3px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+
+    }
+
+    // 部落详情 描述 名称 酋长
+    >.tribe-info {
+      font-family: "Microsoft YaHei", "Arial", "Simsun,sans-self";
+      border:1px solid blue;
+      margin-top: 80px;
+      margin-left: 20px;
+      width: 730px;
+      >span {
+        display: block;
+      }
+
+      // 部落名称
+      >span:nth-child(1){
+        font-size: $font-20;
+        color: $color-01;
+        font-weight: bold;
+      }
+
+      // 部落简介
+      >span:nth-child(2){
+        font-size: $font-16;
+        color: $color-03;
+        margin-top: 10px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+
+      // 部落酋长名称
+      >div{
+        font-size: $font-16;
+        color: $color-01;
+        margin-top: 15px;
+        >span{
+          color:$color-06;
+        }
+      }
+    }
+
+    // 荣誉 粉丝数量 赞 诞生
+    &>.tribe-honor {
+      position: absolute;
+      //border:1px solid red;
+      right:60px;
+      top:35px;
+      font-size: $font-20;
+      color: $color-07;
+
+      // label
+      span {
+        margin-top: 15px;
+        float: left;
+        display: block;
+        //border:1px solid red;
+        width: 60px;
+        height: 30px;
+        color:$color-02;
+      }
+
+      // 点赞,粉丝,数量
+      span:nth-child(2) {
+        color: $color-07;
+      }
+    }
+
+    //斜线
+    .tribe-bias {
+      padding-top: 24px;
+      width: 98px;
+      font: 12px/2em georgia;
+      color: #fff;
+      text-indent: 2em;
+      position: absolute;
+      top:-38px;
+      right:-36px;
+      z-index: 3;
+      transform: rotate(40deg);
+      border-left: 22px solid transparent;
+      border-top: 20px solid transparent;
+      border-right: 17px solid transparent;
+      border-bottom: 20px solid #d23c18;;
+      &:after {
+        content: " ";
+        display: block;
+        position: absolute;
+        z-index: -3;
+        bottom: 100%;
+        left: 71px;
+        top:42px;
+        width: 0;
+        height: 0;
+        border-left: 0px solid transparent;
+        border-top: 4px solid transparent;
+        border-right: 4px solid #9d3016;
+        border-bottom: 0px solid #9d3016;
+        transform: rotate(44deg);
+      }
+      &:before {
+        content: " ";
+        display: block;
+        position: absolute;
+        z-index: -3;
+        bottom: 100%;
+        left: -20px;
+        top:40px;
+        width: 0;
+        height: 0;
+        border-left: 0px solid transparent;
+        border-top: 7px solid transparent;
+        border-right: 4px solid #9d3016;
+        border-bottom: 0px solid #9d3016;
+        transform: rotate(51deg);
+      }
+    }
+
+    // 星星
+    .tribe-start {
+      position: absolute;
+      right:19px;
+      top:7px;
+      z-index: 3;
+      font-size: 1em;
+      color:#FFF;
+    }
+
+  }
+
+}

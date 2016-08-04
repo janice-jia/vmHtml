@@ -16,11 +16,13 @@
 #tribe-create .tribe-type input[type="radio"] {
   margin: 0px 10px 0 5px; }
 #tribe-create .upload-icon {
-  width: 90px;
   height: 50px;
   font-size: 18px;
   color: #499af5;
   margin-top: 8px; }
+  #tribe-create .upload-icon > span {
+    font-size: 14px;
+    color: #909090; }
 #tribe-create .upload-icon-btn:hover {
   cursor: pointer; }
 #tribe-create .upload-icon-preview:hover {

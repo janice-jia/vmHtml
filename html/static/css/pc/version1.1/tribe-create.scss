@@ -49,12 +49,15 @@ $color-08: #e43f3f;
 
   // 上传图标box
   .upload-icon {
-    width:90px;
     height: 50px;
     font-size: 18px;
     color: $color-06;
     margin-top: 8px;
     //border:1px solid red;
+    >span{
+      font-size: $font-14;
+      color: $color-03;
+    }
 
   }
 

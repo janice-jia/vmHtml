@@ -21,6 +21,8 @@
       .zcbl-slide #myCarousel .zcbl-seach-option .seach-radio-inline {
         padding: 0;
         color: #ffffff; }
+        .zcbl-slide #myCarousel .zcbl-seach-option .seach-radio-inline .iradio-fff-16 {
+          top: -1px; }
     .zcbl-slide #myCarousel .zcbl-seach-l {
       position: absolute;
       left: 50%;

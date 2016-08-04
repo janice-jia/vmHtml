@@ -18,6 +18,9 @@ $color-05: #eeeeee; //(背景色)
 $color-06: #499af5;
 $color-07: #ffb30e;
 $color-08: #e43f3f;
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
 //面包屑导航
 .breadcrumb > li {
   font-size: 18px;
@@ -136,7 +139,18 @@ $color-08: #e43f3f;
   }
 }
 
-
+.edittxt{
+  color: $color-03;
+  font-size: 18px;
+  b{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("../../../images/pc/version1.1/icon/ico_edit.png");
+  }
+}
 
 #tribe-book {
   [data-tbook="header"] {
@@ -174,18 +188,7 @@ $color-08: #e43f3f;
       }
       [data-tbook="edit"]{
         float: right;
-        b{
-          width: 16px;
-          height: 16px;
-          margin-right: 10px;
-          display: inline-block;
-          vertical-align: middle;
-          background-image: url("../../../images/pc/version1.1/icon/ico_edit.png");
-        }
-        a{
-          color: $color-03;
-          font-size: 18px;
-        }
+
       }
       hr{
         margin: 0 -28px;
@@ -207,5 +210,20 @@ $color-08: #e43f3f;
   [data-tbook="footer"]{
     margin: 50px auto;
     text-align: center;
+  }
+}
+
+/**  查看漫画 开始  **/
+#tribe-img{
+  [data-tcartoon="header"] {
+    line-height: 32px;
+    padding: 20px 40px;
+    > ul {
+      float: right;
+
+    }
+    >p{
+      float: left;
+    }
   }
 }

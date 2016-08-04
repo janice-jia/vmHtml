@@ -23,6 +23,10 @@
   /**
    * 大众评论区
    * ===================
+   */
+  /**
+   * 申请开通
+   * ===================
    */ }
   #tribe-cartoon .cartoon-header {
     margin-top: 220px;
@@ -279,3 +283,25 @@
     border: 1px solid #c1c1c1;
     margin-bottom: 20px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35); }
+  #tribe-cartoon .tribe-apply-model {
+    background: #FFF;
+    height: 420px;
+    width: 650px;
+    margin-top: -210px;
+    padding-top: 70px;
+    padding-bottom: 70px; }
+    #tribe-cartoon .tribe-apply-model > form {
+      background: #FFF;
+      height: 100%;
+      font-size: 18px;
+      color: #171717; }
+      #tribe-cartoon .tribe-apply-model > form .checkbox:nth-child(1) {
+        margin-bottom: 114px;
+        margin-left: -120px; }
+      #tribe-cartoon .tribe-apply-model > form .checkbox:nth-child(2) {
+        margin-bottom: 70px;
+        margin-left: -120px; }
+      #tribe-cartoon .tribe-apply-model > form .checkbox label {
+        margin-left: 103px; }
+      #tribe-cartoon .tribe-apply-model > form .checkbox input {
+        margin-right: 10px; }

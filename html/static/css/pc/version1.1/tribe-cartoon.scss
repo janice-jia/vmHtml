@@ -1,8 +1,7 @@
+@charset "utf-8";
 /**
  *  部落 - 动漫
  */
-
-@charset "utf-8";
 
 $font-12: 12px;
 $font-14: 14px;
@@ -21,17 +20,29 @@ $color-06: #499af5;
 $color-07: #ffb30e;
 $color-08: #e43f3f;
 
+.selected-yellow {
+  color: $color-07 !important;
+}
+
+
 #tribe-cartoon {
+  background: white;
   .container {
-    border:1px solid red;
+    //border:1px solid red;
+
   }
 
-  // 部落头部
+  /**
+   *
+   * 部落头部区域
+   * ===================
+   */
   .cartoon-header {
     margin-top: 220px;
     border:1px solid $color-04;
     height: 200px;
     position: relative;
+    box-shadow: 0px 1px 3px rgba(0,0,0,.35);
 
     // 部落图标
     >.tribe-icon {
@@ -40,6 +51,17 @@ $color-08: #e43f3f;
       position: absolute;
       left:20px;
       top:-55px;
+      &:hover >.tribe-edit-icon{
+        cursor: pointer;
+        position: absolute;
+        left:0px;
+        top:0px;
+        display: block;
+        width: 106px;
+        height: 121px;
+        background: rgba(0,0,0,0.3) url('/static/images/pc/version1.1/icon/icon_edit.png') no-repeat center;
+
+      }
     }
 
     // 部落工具按钮
@@ -87,7 +109,7 @@ $color-08: #e43f3f;
     // 部落详情 描述 名称 酋长
     >.tribe-info {
       font-family: "Microsoft YaHei", "Arial", "Simsun,sans-self";
-      border:1px solid blue;
+      //border:1px solid blue;
       margin-top: 80px;
       margin-left: 20px;
       width: 730px;
@@ -210,5 +232,191 @@ $color-08: #e43f3f;
     }
 
   }
+
+  /**
+   * 内容区 人物造型 - 漫画 - 视频 - 剧集
+   * ===================
+   */
+
+  .cartoon-content {
+    margin-top: 15px;
+    border:1px solid $color-04;
+    height: 648px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,.35);
+
+    // 内容区导航
+    &>.content-nav {
+
+      &>li{
+        cursor: pointer;
+        margin-left: 40px;
+        color: $color-03;
+        font-size: $font-20;
+        float: left;
+        &:last-child {
+          font-size: $font-16;
+          color: $color-03;
+          float: right;
+        }
+        &:hover {
+          color: $color-07;
+        }
+      }
+    }
+
+    /**
+     * 漫画列表 ul
+     * ============
+     */
+    .cartoon-content-list{
+      clear: both;
+      //border:1px solid red;
+      width: 980px;
+      margin-left: -20px;
+      height: 520px;
+
+      // li
+      .cartoon-deatil{
+        position: relative;
+        cursor: pointer;
+        float:left;
+        width: 225px;
+        height: 225px;
+        //border:1px solid green;
+        margin-left:12px;
+        margin-top: 20px;
+        box-shadow: 0px 1px 3px rgba(0,0,0,.35);
+        transition:box-shadow .3s;
+
+        // 缩略图
+        img {
+          width: 100%;
+          height:auto;
+        }
+
+        &:hover{
+          box-shadow: 0px 5px 13px rgba(0,0,0,.35);
+        }
+
+
+        // 删除按钮
+        &:hover .cartoon-del {
+          background: url('/static/images/pc/version1.1/icon/icon_delete.png') no-repeat center;
+          width: 50px;
+          height: 50px;
+          display: block;
+          position: absolute;
+          right: 0px;
+          top:0;
+          z-index: 2;
+        }
+      }
+    }
+
+    /**
+     * 视频列表 ul
+     * ============
+     */
+    .video-content-list{
+      margin-top: 15px;
+      clear: both;
+      //border:1px solid red;
+      width: 920px;
+      height: 520px;
+
+      // video li
+      &>.video-detail{
+        position: relative;
+        cursor: pointer;
+        float:left;
+        width: 250px;
+        height: 190px;
+        //border:1px solid green;
+        margin-left:45px;
+        margin-top: 40px;
+        box-shadow: 0px 1px 3px rgba(0,0,0,.35);
+        transition:box-shadow .3s;
+
+        &:hover{
+          box-shadow: 0px 5px 13px rgba(0,0,0,.35);
+        }
+
+        // 缩略图
+        img {
+
+          width: 100%;
+          height:100%;
+        }
+
+        // 删除按钮
+        &:hover >.video-cover {
+          transition:background .3s;
+          background: rgba(0,0,0,0.3)url('/static/images/pc/version1.1/icon/icon_video_play.png') no-repeat center;
+          width: 100%;
+          height: 100%;
+          display: block;
+          position: absolute;
+          right: 0px;
+          top:0;
+          z-index: 2;
+        }
+      }
+    }
+
+    /**
+     * 剧集列表 ul
+     * ============
+     */
+    .novel-content-list{
+      margin-top: 15px;
+      clear: both;
+      //border:1px solid red;
+      width: 920px;
+      height: 520px;
+      padding-left: 23px;
+      // novel li
+      &>.novel-detail{
+        position: relative;
+        cursor: pointer;
+        float:left;
+        width: 200px;
+        font-size: $font-18;
+        color: $color-03;
+        //border:1px solid green;
+        margin-left:15px;
+        margin-top: 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        &:hover{
+          color: $color-06;
+        }
+      }
+    }
+  }
+
+  /**
+   * 进度区 启程-动画片-游戏-影视剧-大电影-衍生品
+   * ===================
+   */
+  .tribe-progress {
+    height: 240px;
+    background: $color-05;
+  }
+
+  /**
+   * 大众评论区
+   * ===================
+   */
+  .tribe-comments {
+    border:1px solid $color-04;
+    margin-bottom: 20px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,.35);
+  }
+
 
 }

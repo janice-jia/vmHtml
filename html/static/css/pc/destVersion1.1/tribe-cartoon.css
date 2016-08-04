@@ -2,132 +2,280 @@
 /**
  *  部落 - 动漫
  */
-#tribe-cartoon .container {
-  border: 1px solid red; }
-#tribe-cartoon .cartoon-header {
-  margin-top: 220px;
-  border: 1px solid #c1c1c1;
-  height: 200px;
-  position: relative; }
-  #tribe-cartoon .cartoon-header > .tribe-icon {
-    width: 110px;
-    height: 110px;
-    position: absolute;
-    left: 20px;
-    top: -55px; }
-  #tribe-cartoon .cartoon-header > .tools-bar {
-    margin-left: 130px; }
-    #tribe-cartoon .cartoon-header > .tools-bar > li {
-      color: #FFF;
-      float: left;
+.selected-yellow {
+  color: #ffb30e !important; }
+
+#tribe-cartoon {
+  background: white;
+  /**
+   *
+   * 部落头部区域
+   * ===================
+   */
+  /**
+   * 内容区 人物造型 - 漫画 - 视频 - 剧集
+   * ===================
+   */
+  /**
+   * 进度区 启程-动画片-游戏-影视剧-大电影-衍生品
+   * ===================
+   */
+  /**
+   * 大众评论区
+   * ===================
+   */ }
+  #tribe-cartoon .cartoon-header {
+    margin-top: 220px;
+    border: 1px solid #c1c1c1;
+    height: 200px;
+    position: relative;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35); }
+    #tribe-cartoon .cartoon-header > .tribe-icon {
+      width: 110px;
+      height: 110px;
+      position: absolute;
+      left: 20px;
+      top: -55px; }
+      #tribe-cartoon .cartoon-header > .tribe-icon:hover > .tribe-edit-icon {
+        cursor: pointer;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        display: block;
+        width: 106px;
+        height: 121px;
+        background: rgba(0, 0, 0, 0.3) url("/static/images/pc/version1.1/icon/icon_edit.png") no-repeat center; }
+    #tribe-cartoon .cartoon-header > .tools-bar {
+      margin-left: 130px; }
+      #tribe-cartoon .cartoon-header > .tools-bar > li {
+        color: #FFF;
+        float: left;
+        margin-left: 20px;
+        margin-top: 16px;
+        cursor: pointer; }
+      #tribe-cartoon .cartoon-header > .tools-bar > li:nth-child(2) {
+        background: url("/static/images/pc/version1.1/icon/icon_hand.png") no-repeat;
+        color: #499af5;
+        float: left;
+        padding-left: 30px;
+        margin-left: 30px;
+        margin-top: 25px; }
+      #tribe-cartoon .cartoon-header > .tools-bar > li:nth-child(4), #tribe-cartoon .cartoon-header > .tools-bar > li:nth-child(3) {
+        color: #FFF;
+        float: left;
+        background: #909090;
+        margin-left: 30px;
+        margin-top: 25px;
+        border-radius: 3px;
+        padding-left: 5px;
+        padding-right: 5px; }
+    #tribe-cartoon .cartoon-header > .tribe-info {
+      font-family: "Microsoft YaHei", "Arial", "Simsun,sans-self";
+      margin-top: 80px;
       margin-left: 20px;
-      margin-top: 16px;
-      cursor: pointer; }
-    #tribe-cartoon .cartoon-header > .tools-bar > li:nth-child(2) {
-      background: url("/static/images/pc/version1.1/icon/icon_hand.png") no-repeat;
-      color: #499af5;
-      float: left;
-      padding-left: 30px;
-      margin-left: 30px;
-      margin-top: 25px; }
-    #tribe-cartoon .cartoon-header > .tools-bar > li:nth-child(4), #tribe-cartoon .cartoon-header > .tools-bar > li:nth-child(3) {
-      color: #FFF;
-      float: left;
-      background: #909090;
-      margin-left: 30px;
-      margin-top: 25px;
-      border-radius: 3px;
-      padding-left: 5px;
-      padding-right: 5px; }
-  #tribe-cartoon .cartoon-header > .tribe-info {
-    font-family: "Microsoft YaHei", "Arial", "Simsun,sans-self";
-    border: 1px solid blue;
-    margin-top: 80px;
-    margin-left: 20px;
-    width: 730px; }
-    #tribe-cartoon .cartoon-header > .tribe-info > span {
-      display: block; }
-    #tribe-cartoon .cartoon-header > .tribe-info > span:nth-child(1) {
+      width: 730px; }
+      #tribe-cartoon .cartoon-header > .tribe-info > span {
+        display: block; }
+      #tribe-cartoon .cartoon-header > .tribe-info > span:nth-child(1) {
+        font-size: 20px;
+        color: #171717;
+        font-weight: bold; }
+      #tribe-cartoon .cartoon-header > .tribe-info > span:nth-child(2) {
+        font-size: 16px;
+        color: #909090;
+        margin-top: 10px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden; }
+      #tribe-cartoon .cartoon-header > .tribe-info > div {
+        font-size: 16px;
+        color: #171717;
+        margin-top: 15px; }
+        #tribe-cartoon .cartoon-header > .tribe-info > div > span {
+          color: #499af5; }
+    #tribe-cartoon .cartoon-header > .tribe-honor {
+      position: absolute;
+      right: 60px;
+      top: 35px;
       font-size: 20px;
-      color: #171717;
-      font-weight: bold; }
-    #tribe-cartoon .cartoon-header > .tribe-info > span:nth-child(2) {
-      font-size: 16px;
-      color: #909090;
-      margin-top: 10px;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden; }
-    #tribe-cartoon .cartoon-header > .tribe-info > div {
-      font-size: 16px;
-      color: #171717;
-      margin-top: 15px; }
-      #tribe-cartoon .cartoon-header > .tribe-info > div > span {
-        color: #499af5; }
-  #tribe-cartoon .cartoon-header > .tribe-honor {
-    position: absolute;
-    right: 60px;
-    top: 35px;
-    font-size: 20px;
-    color: #ffb30e; }
-    #tribe-cartoon .cartoon-header > .tribe-honor span {
-      margin-top: 15px;
-      float: left;
-      display: block;
-      width: 60px;
-      height: 30px;
-      color: #515151; }
-    #tribe-cartoon .cartoon-header > .tribe-honor span:nth-child(2) {
       color: #ffb30e; }
-  #tribe-cartoon .cartoon-header .tribe-bias {
-    padding-top: 24px;
-    width: 98px;
-    font: 12px/2em georgia;
-    color: #fff;
-    text-indent: 2em;
-    position: absolute;
-    top: -38px;
-    right: -36px;
-    z-index: 3;
-    transform: rotate(40deg);
-    border-left: 22px solid transparent;
-    border-top: 20px solid transparent;
-    border-right: 17px solid transparent;
-    border-bottom: 20px solid #d23c18; }
-    #tribe-cartoon .cartoon-header .tribe-bias:after {
-      content: " ";
-      display: block;
+      #tribe-cartoon .cartoon-header > .tribe-honor span {
+        margin-top: 15px;
+        float: left;
+        display: block;
+        width: 60px;
+        height: 30px;
+        color: #515151; }
+      #tribe-cartoon .cartoon-header > .tribe-honor span:nth-child(2) {
+        color: #ffb30e; }
+    #tribe-cartoon .cartoon-header .tribe-bias {
+      padding-top: 24px;
+      width: 98px;
+      font: 12px/2em georgia;
+      color: #fff;
+      text-indent: 2em;
       position: absolute;
-      z-index: -3;
-      bottom: 100%;
-      left: 71px;
-      top: 42px;
-      width: 0;
-      height: 0;
-      border-left: 0px solid transparent;
-      border-top: 4px solid transparent;
-      border-right: 4px solid #9d3016;
-      border-bottom: 0px solid #9d3016;
-      transform: rotate(44deg); }
-    #tribe-cartoon .cartoon-header .tribe-bias:before {
-      content: " ";
-      display: block;
+      top: -38px;
+      right: -36px;
+      z-index: 3;
+      transform: rotate(40deg);
+      border-left: 22px solid transparent;
+      border-top: 20px solid transparent;
+      border-right: 17px solid transparent;
+      border-bottom: 20px solid #d23c18; }
+      #tribe-cartoon .cartoon-header .tribe-bias:after {
+        content: " ";
+        display: block;
+        position: absolute;
+        z-index: -3;
+        bottom: 100%;
+        left: 71px;
+        top: 42px;
+        width: 0;
+        height: 0;
+        border-left: 0px solid transparent;
+        border-top: 4px solid transparent;
+        border-right: 4px solid #9d3016;
+        border-bottom: 0px solid #9d3016;
+        transform: rotate(44deg); }
+      #tribe-cartoon .cartoon-header .tribe-bias:before {
+        content: " ";
+        display: block;
+        position: absolute;
+        z-index: -3;
+        bottom: 100%;
+        left: -20px;
+        top: 40px;
+        width: 0;
+        height: 0;
+        border-left: 0px solid transparent;
+        border-top: 7px solid transparent;
+        border-right: 4px solid #9d3016;
+        border-bottom: 0px solid #9d3016;
+        transform: rotate(51deg); }
+    #tribe-cartoon .cartoon-header .tribe-start {
       position: absolute;
-      z-index: -3;
-      bottom: 100%;
-      left: -20px;
-      top: 40px;
-      width: 0;
-      height: 0;
-      border-left: 0px solid transparent;
-      border-top: 7px solid transparent;
-      border-right: 4px solid #9d3016;
-      border-bottom: 0px solid #9d3016;
-      transform: rotate(51deg); }
-  #tribe-cartoon .cartoon-header .tribe-start {
-    position: absolute;
-    right: 19px;
-    top: 7px;
-    z-index: 3;
-    font-size: 1em;
-    color: #FFF; }
+      right: 19px;
+      top: 7px;
+      z-index: 3;
+      font-size: 1em;
+      color: #FFF; }
+  #tribe-cartoon .cartoon-content {
+    margin-top: 15px;
+    border: 1px solid #c1c1c1;
+    height: 648px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35);
+    /**
+     * 漫画列表 ul
+     * ============
+     */
+    /**
+     * 视频列表 ul
+     * ============
+     */
+    /**
+     * 剧集列表 ul
+     * ============
+     */ }
+    #tribe-cartoon .cartoon-content > .content-nav > li {
+      cursor: pointer;
+      margin-left: 40px;
+      color: #909090;
+      font-size: 20px;
+      float: left; }
+      #tribe-cartoon .cartoon-content > .content-nav > li:last-child {
+        font-size: 16px;
+        color: #909090;
+        float: right; }
+      #tribe-cartoon .cartoon-content > .content-nav > li:hover {
+        color: #ffb30e; }
+    #tribe-cartoon .cartoon-content .cartoon-content-list {
+      clear: both;
+      width: 980px;
+      margin-left: -20px;
+      height: 520px; }
+      #tribe-cartoon .cartoon-content .cartoon-content-list .cartoon-deatil {
+        position: relative;
+        cursor: pointer;
+        float: left;
+        width: 225px;
+        height: 225px;
+        margin-left: 12px;
+        margin-top: 20px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35);
+        transition: box-shadow .3s; }
+        #tribe-cartoon .cartoon-content .cartoon-content-list .cartoon-deatil img {
+          width: 100%;
+          height: auto; }
+        #tribe-cartoon .cartoon-content .cartoon-content-list .cartoon-deatil:hover {
+          box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.35); }
+        #tribe-cartoon .cartoon-content .cartoon-content-list .cartoon-deatil:hover .cartoon-del {
+          background: url("/static/images/pc/version1.1/icon/icon_delete.png") no-repeat center;
+          width: 50px;
+          height: 50px;
+          display: block;
+          position: absolute;
+          right: 0px;
+          top: 0;
+          z-index: 2; }
+    #tribe-cartoon .cartoon-content .video-content-list {
+      margin-top: 15px;
+      clear: both;
+      width: 920px;
+      height: 520px; }
+      #tribe-cartoon .cartoon-content .video-content-list > .video-detail {
+        position: relative;
+        cursor: pointer;
+        float: left;
+        width: 250px;
+        height: 190px;
+        margin-left: 45px;
+        margin-top: 40px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35);
+        transition: box-shadow .3s; }
+        #tribe-cartoon .cartoon-content .video-content-list > .video-detail:hover {
+          box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.35); }
+        #tribe-cartoon .cartoon-content .video-content-list > .video-detail img {
+          width: 100%;
+          height: 100%; }
+        #tribe-cartoon .cartoon-content .video-content-list > .video-detail:hover > .video-cover {
+          transition: background .3s;
+          background: rgba(0, 0, 0, 0.3) url("/static/images/pc/version1.1/icon/icon_video_play.png") no-repeat center;
+          width: 100%;
+          height: 100%;
+          display: block;
+          position: absolute;
+          right: 0px;
+          top: 0;
+          z-index: 2; }
+    #tribe-cartoon .cartoon-content .novel-content-list {
+      margin-top: 15px;
+      clear: both;
+      width: 920px;
+      height: 520px;
+      padding-left: 23px; }
+      #tribe-cartoon .cartoon-content .novel-content-list > .novel-detail {
+        position: relative;
+        cursor: pointer;
+        float: left;
+        width: 200px;
+        font-size: 18px;
+        color: #909090;
+        margin-left: 15px;
+        margin-top: 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden; }
+        #tribe-cartoon .cartoon-content .novel-content-list > .novel-detail:hover {
+          color: #499af5; }
+  #tribe-cartoon .tribe-progress {
+    height: 240px;
+    background: #eeeeee; }
+  #tribe-cartoon .tribe-comments {
+    border: 1px solid #c1c1c1;
+    margin-bottom: 20px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35); }

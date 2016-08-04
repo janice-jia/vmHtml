@@ -16,7 +16,7 @@
         font-size: 20px;
         font-weight: normal; }
       #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] {
-        margin-top: 30px; }
+        margin-top: 20px; }
         #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul {
           padding-bottom: 20px; }
           #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul li {
@@ -29,9 +29,11 @@
             display: inline-block;
             margin-right: 8px;
             vertical-align: middle; }
-          #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul [data-demdet="address"] b {
-            width: 12px;
-            background-image: url("../../../images/pc/icon/icon_address.png"); }
+          #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul [data-demdet="address"] {
+            font-size: 12px; }
+            #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul [data-demdet="address"] b {
+              width: 12px;
+              background-image: url("../../../images/pc/icon/icon_address.png"); }
           #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul [data-demdet="eye"] b {
             width: 20px;
             background-image: url("../../../images/pc/icon/icon_eye.png"); }
@@ -83,24 +85,26 @@
       color: #909090;
       border-bottom: 1px solid #909090; }
     #demdet [data-demdet="aside"] [data-demdet="aside-body"] {
-      padding: 20px 24px; }
+      padding: 20px 5px; }
       #demdet [data-demdet="aside"] [data-demdet="aside-body"] img {
         width: 100px;
         height: 100px;
         margin-left: 6px;
-        margin-right: 20px;
+        margin-right: 10px;
         margin-bottom: 20px;
         border-radius: 50%; }
       #demdet [data-demdet="aside"] [data-demdet="aside-body"] h2 {
         display: inline-block;
-        line-height: 100px;
         font-size: 16px;
-        color: #515151; }
+        color: #515151;
+        width: 115px;
+        max-height: 36px;
+        overflow: hidden; }
       #demdet [data-demdet="aside"] [data-demdet="aside-body"] p {
         color: #909090;
         font-size: 14px; }
       #demdet [data-demdet="aside"] [data-demdet="aside-body"] [data-demdet="btn"] {
-        margin: 0 -16px;
+        margin: 0 -3px;
         text-align: center; }
         #demdet [data-demdet="aside"] [data-demdet="aside-body"] [data-demdet="btn"] button {
           font-size: 14px;

@@ -183,11 +183,11 @@ button.zcbl-close {
     padding-top: 5px; }
 
 .zcbl-modalHei285 {
-  height: 274px;
+  height: 250px;
   margin-top: -137px; }
 
 .zcbl-modalHei340 {
-  height: 340px;
+  height: 305px;
   margin-top: -170px; }
 
 .zcbl-modalHei554 {
@@ -207,7 +207,7 @@ button.zcbl-close {
     margin: 0 30px;
     padding: 33px 0 19px 0;
     color: #2c2c2c;
-    font-size: 28px;
+    font-size: 16px;
     border-bottom: 1px solid #9a9a9a; }
   .zcbl-modal-3 .zcbl-popupForm {
     padding: 0 45px;
@@ -223,7 +223,7 @@ button.zcbl-close {
   .zcbl-modal-3 .zcbl-popupGroup label {
     height: 50px;
     line-height: 50px;
-    font-size: 20px;
+    font-size: 14px;
     padding: 0;
     margin: 0;
     font-weight: normal;
@@ -254,7 +254,7 @@ button.zcbl-close {
     font-size: 18px;
     margin-left: -13px; }
   .zcbl-modal-3 .zcbl-popupGroup .embedVideoCon {
-    font-size: 20px;
+    font-size: 14px;
     margin-top: 20px; }
     .zcbl-modal-3 .zcbl-popupGroup .embedVideoCon a {
       color: #499af5; }
@@ -263,7 +263,7 @@ button.zcbl-close {
     line-height: 50px; }
     .zcbl-modal-3 .zcbl-popupBtn .zcbl-modal-cancel {
       color: #ffb30e;
-      font-size: 20px;
+      font-size: 14px;
       border: none;
       background: none; }
   .zcbl-modal-3 .zcbl-modal-3-desc {
@@ -290,7 +290,7 @@ button.zcbl-close {
     height: 90px;
     line-height: 90px;
     color: #2c2c2c;
-    font-size: 28px;
+    font-size: 16px;
     border-bottom: 1px solid #9a9a9a; }
   .zcbl-modal-4 .zcbl-evaluate-tit {
     padding: 20px 30px;
@@ -339,7 +339,7 @@ button.zcbl-close {
   .zcbl-modal-5 .zcbl-modal-tit {
     margin: 0 30px;
     padding: 33px 0 19px 0;
-    font-size: 28px; }
+    font-size: 16px; }
   .zcbl-modal-5 .zcbl-opinion {
     padding: 0 30px;
     position: relative; }
@@ -876,7 +876,7 @@ button {
   font-size: 14px; }
 
 .zcbl-form-horizontal textarea.zcbl-form-control {
-  height: 170px;
+  height: 85px;
   font-size: 14px;
   line-height: 25px;
   background: none; }

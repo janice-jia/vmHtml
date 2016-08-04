@@ -1,8 +1,7 @@
+@charset "utf-8";
 /**
   创建部落 by Wdy
 */
-
-@charset "utf-8";
 
 $font-12: 12px;
 $font-14: 14px;
@@ -49,12 +48,15 @@ $color-08: #e43f3f;
 
   // 上传图标box
   .upload-icon {
-    width:90px;
     height: 50px;
     font-size: 18px;
     color: $color-06;
     margin-top: 8px;
     //border:1px solid red;
+    >span{
+      font-size: $font-14;
+      color: $color-03;
+    }
 
   }
 
@@ -64,6 +66,7 @@ $color-08: #e43f3f;
       cursor: pointer;
     }
   }
+
 
   // 预览文件
   .upload-icon-preview {

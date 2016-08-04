@@ -16,7 +16,7 @@
         font-size: 20px;
         font-weight: normal; }
       #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] {
-        margin-top: 30px; }
+        margin-top: 20px; }
         #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul {
           padding-bottom: 20px; }
           #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul li {
@@ -29,9 +29,11 @@
             display: inline-block;
             margin-right: 8px;
             vertical-align: middle; }
-          #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul [data-demdet="address"] b {
-            width: 12px;
-            background-image: url("../../../images/pc/icon/icon_address.png"); }
+          #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul [data-demdet="address"] {
+            font-size: 12px; }
+            #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul [data-demdet="address"] b {
+              width: 12px;
+              background-image: url("../../../images/pc/icon/icon_address.png"); }
           #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul [data-demdet="eye"] b {
             width: 20px;
             background-image: url("../../../images/pc/icon/icon_eye.png"); }
@@ -83,24 +85,26 @@
       color: #909090;
       border-bottom: 1px solid #909090; }
     #demdet [data-demdet="aside"] [data-demdet="aside-body"] {
-      padding: 20px 24px; }
+      padding: 20px 5px; }
       #demdet [data-demdet="aside"] [data-demdet="aside-body"] img {
         width: 100px;
         height: 100px;
         margin-left: 6px;
-        margin-right: 20px;
+        margin-right: 10px;
         margin-bottom: 20px;
         border-radius: 50%; }
       #demdet [data-demdet="aside"] [data-demdet="aside-body"] h2 {
         display: inline-block;
-        line-height: 100px;
         font-size: 16px;
-        color: #515151; }
+        color: #515151;
+        width: 115px;
+        max-height: 36px;
+        overflow: hidden; }
       #demdet [data-demdet="aside"] [data-demdet="aside-body"] p {
         color: #909090;
         font-size: 14px; }
       #demdet [data-demdet="aside"] [data-demdet="aside-body"] [data-demdet="btn"] {
-        margin: 0 -16px;
+        margin: 0 -3px;
         text-align: center; }
         #demdet [data-demdet="aside"] [data-demdet="aside-body"] [data-demdet="btn"] button {
           font-size: 14px;
@@ -189,7 +193,10 @@
     position: relative; }
     .zcbl-comments [data-demdet="texeareabox"] textarea {
       width: 100%;
-      height: 146px; }
+      height: 146px;
+      font-size: 14px;
+      padding: 10px;
+      color: #909090; }
     .zcbl-comments [data-demdet="texeareabox"] span {
       position: absolute;
       right: 20px;
@@ -212,7 +219,8 @@
       .zcbl-comments [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] {
         padding-left: 110px; }
         .zcbl-comments [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="conhead"] {
-          padding-bottom: 24px;
+          padding-top: 25px;
+          padding-bottom: 14px;
           font-size: 16px;
           font-weight: normal;
           color: #909090; }
@@ -233,7 +241,8 @@
           font-size: 14px;
           color: #515151; }
         .zcbl-comments [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="confoot"] {
-          font-size: 14px; }
+          font-size: 14px;
+          text-align: right; }
           .zcbl-comments [data-demdet="commentContent"] [data-demdet="content"] [data-demdet="contentRight"] [data-demdet="confoot"] b {
             background-image: url("../../../images/pc/icon/icon_message.png");
             width: 18px;

@@ -43,6 +43,9 @@ $color-8f8f8e:#8f8f8e;
             .seach-radio-inline{
                 padding: 0;
                 color: $color-ffffff;
+                .iradio-fff-16{
+                    top: -1px;
+                }
             }
         }
         .zcbl-seach-l{
@@ -60,7 +63,7 @@ $color-8f8f8e:#8f8f8e;
                     height: 48px;
                     width: 380px;
                     border: none;
-                    background: rgba(255,255,255,0.9);
+                    background: rgba(255,255,255,0.7);
                     padding: 0 10px;
                     float: left;
                 }
@@ -68,7 +71,7 @@ $color-8f8f8e:#8f8f8e;
                     width: 95px;
                     height: 48px;
                     float: left;
-                    background: rgba(255,255,255,0.9);
+                    background: rgba(255,255,255,0.7);
                     position: relative;
                     text-align: right;
                     padding-right: 18px;
@@ -87,7 +90,7 @@ $color-8f8f8e:#8f8f8e;
                         position: absolute;
                         left: 18px;
                         top:16px;
-                        background: url("../../../images/pc/icon/icon-index-seach-1.png") no-repeat;
+                        background: url("../../../images/pc/icon/icon-index-seach-2.png") no-repeat;
                         width: 20px;
                         height: 20px;
                     }
@@ -110,13 +113,13 @@ $color-8f8f8e:#8f8f8e;
                     text-align: right;
                     color: #333333;
                     font-size: 14px;
-                    background: $color-ffffff;
+                    background: rgba(255, 255, 255, .7);
                     &:before{
                         content: "";
                         position: absolute;
                         top:16px;
                         left: 18px;
-                        background: url("../../../images/pc/icon/icon-index-publish-1.png") no-repeat;
+                        background: url("../../../images/pc/icon/icon-index-publish-2.png") no-repeat;
                         width: 20px;
                         height: 19px;
                     }
@@ -240,7 +243,7 @@ $color-8f8f8e:#8f8f8e;
                 overflow: hidden;
                 img{
                     height: 220px;
-                    height: 220px;
+                    height: 240px;
                 }
                 &:hover{
                     background: $color-ffffff;
@@ -251,6 +254,7 @@ $color-8f8f8e:#8f8f8e;
                 }
                 .zcbl-require-img{
                     width: 100%;
+                    height: 100%;
                     position: relative;
                 }
                 .zcbl-require-time{

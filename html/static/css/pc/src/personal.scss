@@ -103,14 +103,16 @@ $color-90908f:#90908f;
             p{
                 margin: 0;
                 color: $color-02;
-                font-size: 18px;
-                height: 25px;
+                font-size: 14px;
+                max-height: 36px;
                 overflow: hidden;
                 width: 140px;
                 &.per-site{
-                    font-size: 16px;
+                    font-size: 12px;
                     position: relative;
                     padding-left: 18px;
+                    line-height: 25px;
+                    margin-top: 5px;
                     &:before{
                         content: "";
                         position: absolute;
@@ -137,11 +139,12 @@ $color-90908f:#90908f;
             width: 100%;
             height: 1px;
             overflow: hidden;
-            border-bottom: 1px solid $color-02;
+            border-bottom: 1px solid $color-04;
         }
         .per-fund{
             margin-top: 24px;
             padding-bottom: 14px;
+            font-size: 14px;
             p{
                 clear: both;
                 span{
@@ -170,6 +173,7 @@ $color-90908f:#90908f;
         .per-appraise{
             padding-top: 24px;
             padding-bottom: 14px;
+            font-size: 14px;
             p{
                 height: 16px;
                 padding-bottom: 10px;
@@ -196,6 +200,8 @@ $color-90908f:#90908f;
         }
         .per-identity{
             padding-top: 24px;
+            font-size: 14px;
+            padding-bottom: 20px;
             p{
                 margin-bottom: 0;
                 line-height: 25px;
@@ -238,14 +244,19 @@ $color-90908f:#90908f;
             ul{
                 li{
                     float: left;
-                    padding-right: 40px;
-                    padding-left: 10px;
+                    padding-right: 49px;
+                    padding-left: 49px;
                     a{
                         color: $color-02;
                         line-height: 28px;
                         font-size: 20px;
                         text-align: center;
                         display: block;
+                        span{
+                            font-size: 16px;
+                            margin-top: 9px;
+                            display: inline-block;
+                        }
                         &:hover{
                             color: $color-07;
                         }
@@ -256,12 +267,13 @@ $color-90908f:#90908f;
                         }
                     }
                 }
-                padding-bottom: 15px;
+                padding-bottom: 13px;
                 border-bottom: 1px solid $color-d2d2d2;
             }
         }
         .per-artnav{
-            padding: 10px 0 0 0;
+            padding: 10px 0 10px 0;
+            border-bottom: 1px solid $color-d2d2d2;
             ul{
                 li{
                     float: left;
@@ -284,7 +296,7 @@ $color-90908f:#90908f;
         }
         .per-art-img{
             padding-top: 25px;
-            min-height: 1105px;
+            min-height: 660px;
             ul{
                 li{
                     width: 160px;
@@ -296,7 +308,7 @@ $color-90908f:#90908f;
                     &.per-art-imgDefault{
                         .per-art-imgTit{
                             font-size: 14px;
-                            font-weight:bolder;
+                            font-weight:normal;
                             padding: 0 20px;
                             margin-top: 15px;
                             overflow: hidden;
@@ -387,6 +399,7 @@ $color-90908f:#90908f;
                         .per-art-imgEdit{
                             text-align: center;
                             padding-top: 10px;
+                            font-size: 14px;
                             a{
                                 height: 25px;
                                 line-height: 25px;
@@ -436,12 +449,12 @@ $color-90908f:#90908f;
                 width: 100%;
                 li{
                     .per-reqTit{
-                        font-size: 22px;
+                        font-size: 16px;
                         color: $color-02;
                         overflow: hidden;
                         height: 25px;
                         line-height: 25px;
-                        margin: 20px 0;
+                        margin: 10px 0;
                         h1{
                             width: 450px;
                             float: left;
@@ -456,14 +469,14 @@ $color-90908f:#90908f;
                             text-align: right;
                             width: 230px;
                             span{
-                                color: $color-07;
+                                color: $color-08;
                             }
                         }
                     }
                     .per-reqCon{
                         h3{
                             width: 100%;
-                            font-size: 18px;
+                            font-size: 14px;
                             height: 25px;
                             line-height: 25px;
                             overflow: hidden;
@@ -472,6 +485,7 @@ $color-90908f:#90908f;
                         }
                         .per-reqInfo{
                             margin: 15px 0 20px 0;
+                            font-size: 14px;
                             p{
                                 float: left;
                                 width: 200px;
@@ -503,9 +517,9 @@ $color-90908f:#90908f;
                                             position: absolute;
                                             top: 4px;
                                             left: 0;
-                                            background: url("../../../images/pc/icon/icon-per-cy.png") no-repeat;
-                                            width: 27px;
-                                            height: 16px;
+                                            background: url("../../../images/pc/icon/icon-per-cy-1.png") no-repeat;
+                                            width: 20px;
+                                            height: 12px;
                                         }
                                     }
                                     &.per-req-bzj{
@@ -537,7 +551,7 @@ $color-90908f:#90908f;
                         }
                     }
                     .per-reqStatus{
-                        margin: 20px 0;
+                        margin: 0 0 10px 0;
                         p{
                             float: left;
                             width: 340px;
@@ -545,7 +559,7 @@ $color-90908f:#90908f;
                             line-height:50px;
                             color: $color-03;
                             margin-bottom: 0;
-                            font-size: 18px;
+                            font-size: 14px;
                             .per-serBlue{
                                 color: $color-06;
                             }
@@ -565,7 +579,7 @@ $color-90908f:#90908f;
                                 line-height: 50px;
                                 height: 50px;
                                 &.per-reqStaEdit{
-                                    font-size: 18px;
+                                    font-size: 14px;
                                     padding:0 30px 0 10px;
                                     a{
                                         color: $color-02;
@@ -636,6 +650,7 @@ $color-90908f:#90908f;
                             position: relative;
                             padding-left: 20px;
                             overflow: hidden;
+                            font-size: 14px;
                             &:before{
                                 content: "";
                                 position: absolute;
@@ -658,12 +673,12 @@ $color-90908f:#90908f;
                         }
                     }
                     .per-fansName{
-                        padding: 0 10px;
+                        padding: 3px 10px;
                         text-align: center;
                         .per-fansName-1{
                             text-align: center;
                             color: $color-02;
-                            font-size: 18px;
+                            font-size: 14px;
                             margin: 15px 0 10px 0;
                             a{
                                 color: $color-02;
@@ -680,10 +695,11 @@ $color-90908f:#90908f;
                             height: 16px;
                             line-height: 16px;
                             overflow: hidden;
+                            font-size: 12px;
                             &:before{
                                 position: absolute;
                                 content: "";
-                                top:0;
+                                top:1px;
                                 left: 0;
                                 background: url("../../../images/pc/icon/icon-per-site.png") no-repeat;
                                 width: 12px;
@@ -695,7 +711,7 @@ $color-90908f:#90908f;
                         width: 100%;
                         height: 34px;
                         line-height: 34px;
-
+                        font-size: 14px;
                         text-align: center;
                         margin-top: 3px;
                         a{
@@ -741,7 +757,7 @@ $color-90908f:#90908f;
     .per-setLine{
         height: 1px;
         overflow: hidden;
-        border-bottom: 1px solid $color-03;
+        border-bottom: 1px solid $color-04;
     }
     .per-setLine-dashed{
         height: 1px;
@@ -751,9 +767,9 @@ $color-90908f:#90908f;
     .per-setTit{
         height: 90px;
         line-height: 90px;
-        font-size: 28px;
+        font-size: 22px;
         text-align: center;
-        border-bottom: 1px solid $color-03;
+        border-bottom: 1px solid $color-04;
     }
     .per-setEdit,.per-set-up{
         color: $color-03;
@@ -769,6 +785,7 @@ $color-90908f:#90908f;
         }
     }
     .per-setEdit{
+        font-size: 14px;
         a{
             &:before{
                 top: 33px;
@@ -793,7 +810,7 @@ $color-90908f:#90908f;
 
     .per-setItem{
         padding: 0 50px;
-        font-size: 20px;
+        font-size: 16px;
         .per-itemTit{
             height: 80px;
             line-height: 80px;
@@ -827,6 +844,13 @@ $color-90908f:#90908f;
         .per-itemCon{
             padding:40px 0 0 140px;
             .per-itemGroup{
+                #sexType{
+                    margin-top: 6px;
+                }
+                .per-itemGroup-icon{
+                    padding-top: 15px;
+                    width: 80px;
+                }
                 .per-radio-inline{
                     padding-left: 0;
                     margin-right: 10px;
@@ -847,7 +871,7 @@ $color-90908f:#90908f;
                 }
             }
             .per-set-label{
-                font-size: 20px;
+                font-size: 14px;
                 font-weight: normal;
                 height: 50px;
                 line-height: 50px;
@@ -867,6 +891,7 @@ $color-90908f:#90908f;
                 padding-top: 15px;
                 margin-bottom: 0;
                 color: $color-07;
+                font-size: 14px;
             }
             .per-set-textarea{
                 font-size: 16px;
@@ -904,7 +929,7 @@ $color-90908f:#90908f;
                     left: 0;
                     text-align: center;
                     color: $color-bfbfbf;
-                    font-size: 16px;
+                    font-size: 14px;
                     padding-top: 118px;
                 }
                 input{
@@ -936,15 +961,15 @@ $color-90908f:#90908f;
 #per-publish{
     padding: 0 16px;
     width: 1000px;
-    margin:30px auto 0 auto;
+    margin:0 auto;
     .per-pub-artMenu{
-        padding-bottom: 50px;
+        padding-bottom: 28px;
         ul{
             li{
                 display: inline-block;
                 padding-right: 60px;
                 a{
-                    font-size: 28px;
+                    font-size: 18px;
                     color: $color-02;
 
                 }
@@ -959,7 +984,7 @@ $color-90908f:#90908f;
             margin: 0;
         }
         .per-pub-picColl{
-            font-size: 18px;
+            font-size: 14px;
             width: 126px;
             text-align: left;
             margin: 0;
@@ -969,13 +994,16 @@ $color-90908f:#90908f;
             line-height: 50px;
         }
         .per-pub-select{
-            height: 50px;
-            line-height: 50px;
+            height: 30px;
+            line-height:30px;
+            width: 135px;
+            margin-top: 10px;
+            padding: 4px 12px;
         }
         .per-pub-addPicColl{
             height: 50px;
             line-height: 50px;
-            font-size: 18px;
+            font-size: 14px;
             a{
                 color: $color-06;
             }
@@ -986,11 +1014,12 @@ $color-90908f:#90908f;
         border: 1px dashed $color-aaaaaa;
         ul{
             margin-left: 12px;
+            margin-bottom: 20px;
             li{
                 float: left;
                 width: 200px;
                 height: 260px;
-                margin: 30px 18px;
+                margin: 30px 18px 7px 18px;
                 &.per-pub-add{
                     background: $color-ffffff;
                     border: 1px dashed $color-aaaaaa;
@@ -1037,13 +1066,13 @@ $color-90908f:#90908f;
                             }
                         }
                         &.per-pub-addSC{
-                            font-size: 20px;
+                            font-size: 16px;
                             font-weight: bolder;
                             color: $color-9a9a9a;
                             padding: 20px 0 0 0;
                         }
                         &.per-pub-addZS,&.per-pub-addDX{
-                            font-size: 12px;
+                            font-size: 14px;
                             color: $color-9a9a9a;
                             line-height: 20px;
                             margin: 0;
@@ -1089,13 +1118,13 @@ $color-90908f:#90908f;
                     }
                 }
                 .per-pub-edit{
-                    border: 1px solid $color-07;
+                    //border: 1px solid $color-07;
                     height: 57px;
                     position: absolute;
-                    bottom: 0;
+                    top: 0;
                     left: 0;
                     width: 100%;
-                    background: $color-ffffff;
+                    //background: $color-ffffff;
                     p{
                         float: left;
                         width: 50%;
@@ -1121,8 +1150,10 @@ $color-90908f:#90908f;
                             }
                         }
                         &.per-pub-editDel{
+                            float: right;
                             padding-right: 12px;
                             text-align: right;
+                            width: 50px;
                             a{
                                 color: $color-9a9a9a;
                                 position: relative;
@@ -1131,9 +1162,9 @@ $color-90908f:#90908f;
                                     position: absolute;
                                     left: 6px;
                                     top: 10px;
-                                    background: url("../../../images/pc/icon/icon-pub-del.png") no-repeat;
-                                    width: 36px;
-                                    height: 36px;
+                                    background: url("../../../images/pc/icon/per-album-del-1.png") no-repeat;
+                                    width: 25px;
+                                    height: 25px;
                                 }
                             }
                         }
@@ -1143,7 +1174,7 @@ $color-90908f:#90908f;
                     height: 50px;
                     border: 1px solid $color-9a9a9a;
                     margin-top: 10px;
-                    font-size: 18px;
+                    font-size: 14px;
                     color: $color-9a9a9a;
                     text-align: center;
                     line-height: 50px;
@@ -1183,7 +1214,7 @@ $color-90908f:#90908f;
             left: 0;
             z-index: 1;
             color: $color-06;
-            font-size: 18px;
+            font-size: 14px;
             a{
                 color: $color-06;
                 &:hover{
@@ -1225,7 +1256,7 @@ $color-90908f:#90908f;
             text-align: right;
             line-height: 40px;
             padding-right: 15px;
-            font-size: 18px;
+            font-size: 14px;
             a{
                 color: $color-06;
                 &:hover{
@@ -1235,11 +1266,16 @@ $color-90908f:#90908f;
         }
         .per-pub-videoBox{
             margin: 0 auto;
-            width: 525px;
-            height: 403px;
+            width: 500px;
+            height: 400px;
             background: $color-ffffff;
             border: 1px dashed $color-aaaaaa;
             position: relative;
+            &:hover{
+                .per-videoImg-edit{
+                    display: block;
+                }
+            }
             img{
                 max-width: 525px;
                 max-height: 403px;
@@ -1247,14 +1283,12 @@ $color-90908f:#90908f;
                 border: 1px solid $color-07;
             }
             .per-videoImg-edit{
-                width: 200px;
+                width: 100%;
                 height: 57px;
-                margin-left: -100px;
-                background: $color-ffffff;
                 position: absolute;
-                bottom: -1px;
-                left: 50%;
-                border: 1px solid $color-07;
+                display: none;
+                top: 0;
+                left: 0;
                 p{
                     float: left;
                     width: 50%;
@@ -1282,6 +1316,8 @@ $color-90908f:#90908f;
                     &.per-pub-editDel{
                         padding-right: 12px;
                         text-align: right;
+                        float: right;
+                        width: 50px;
                         a{
                             color: $color-9a9a9a;
                             position: relative;
@@ -1290,9 +1326,9 @@ $color-90908f:#90908f;
                                 position: absolute;
                                 left: 6px;
                                 top: 10px;
-                                background: url("../../../images/pc/icon/icon-pub-del.png") no-repeat;
-                                width: 36px;
-                                height: 36px;
+                                background: url("../../../images/pc/icon/per-album-del-1.png") no-repeat;
+                                width: 25px;
+                                height: 25px;
                             }
                         }
                     }
@@ -1329,7 +1365,7 @@ $color-90908f:#90908f;
                 }
             }
             .per-pub-addVideoSC{
-                font-size: 20px;
+                font-size: 16px;
                 text-align: center;
                 font-weight: 500;
                 margin-top: 22px;
@@ -1350,6 +1386,7 @@ $color-90908f:#90908f;
         padding-top: 15px;
         margin-bottom: 0;
         color: $color-07;
+        font-size: 14px;
     }
 }
 
@@ -1359,20 +1396,22 @@ $color-90908f:#90908f;
         .per-album-titL{
             width: 50%;
             float: left;
-            font-size: 28px;
+            font-size: 20px;
             height: 50px;
             line-height: 50px;
+            padding-left: 10px;
             a{
                 display: inline-block;
                 position: relative;
+                margin-left: 10px;
                 &:after{
                     content: "";
                     position: absolute;
-                    top:13px;
+                    top:17px;
                     left: 0;
-                    background: url("../../../images/pc/icon/per-album-edit.png");
-                    height: 27px;
-                    width: 27px;
+                    background: url("../../../images/pc/icon/icon-index-publish-1.png");
+                    height: 19px;
+                    width: 20px;
                 }
             }
             .zcbl-album-control{
@@ -1383,6 +1422,7 @@ $color-90908f:#90908f;
         .per-album-titR{
             width: 50%;
             float: right;
+            padding-right: 10px;
         }
     }
     .per-album-con{
@@ -1448,9 +1488,9 @@ $color-90908f:#90908f;
                                     content: "";
                                     left: 0;
                                     top:0;
-                                    background: url("../../../images/pc/icon/per-album-del.png") no-repeat;
-                                    width: 34px;
-                                    height: 34px;
+                                    background: url("../../../images/pc/icon/per-album-del-1.png") no-repeat;
+                                    width: 25px;
+                                    height: 25px;
                                 }
                             }
                         }
@@ -1459,7 +1499,7 @@ $color-90908f:#90908f;
                 .per-album-titBox{
                     height: 40px;
                     line-height: 40px;
-                    font-size: 18px;
+                    font-size: 14px;
                     text-align: center;
                     a{
                         color: $color-02;
@@ -1508,20 +1548,21 @@ $color-90908f:#90908f;
         .per-view-userInfo{
             float: left;
             width: 860px;
-            padding: 30px 0 0 0;
+            padding: 23px 0 0 0;
             p{
                 margin: 0;
-                font-size: 18px;
-                height: 25px;
+                font-size: 14px;
+                height: 24px;
                 overflow: hidden;
-                width: 140px;
+                width: 600px;
                 a{
                     color: $color-02;
                 }
                 &.per-site{
-                    font-size: 16px;
+                    font-size: 12px;
                     position: relative;
                     padding-left: 18px;
+                    line-height: 25px;
                     &:before{
                         content: "";
                         position: absolute;
@@ -1650,7 +1691,7 @@ $color-90908f:#90908f;
 
     }
     .per-picedit{
-        margin-top: 50px;
+        margin-top: 10px;
         padding-left: 120px;
         .zcbl-form-horizontal{
             .zcbl-control-label{
@@ -1663,6 +1704,7 @@ $color-90908f:#90908f;
             padding-top: 15px;
             margin-bottom: 0;
             color: $color-07;
+            font-size: 14px;
         }
     }
     .videoBody{
@@ -1720,12 +1762,12 @@ $color-90908f:#90908f;
             margin: 0 auto;
             h1{
                 p{
-                    font-size: 28px;
+                    font-size: 20px;
                     margin: 0;
                     padding: 0;
                     &.zcbl-text-editL{
                         float: left;
-                        width: 840px;
+                        width: 705px;
                         overflow: hidden;
                     }
                     &.zcbl-text-editR{
@@ -1744,7 +1786,7 @@ $color-90908f:#90908f;
                 margin-bottom: 40px;
             }
             p{
-                font-size: 18px;
+                font-size: 16px;
                 line-height: 35px;
             }
 
@@ -1752,7 +1794,7 @@ $color-90908f:#90908f;
         .zcbl-text-editTime{
             text-align: right;
             margin: 30px;
-            font-size: 20px;
+            font-size: 14px;
         }
     }
 }
@@ -1763,23 +1805,25 @@ $color-90908f:#90908f;
     margin: 30px auto 35px auto;
     min-height: 500px;
     .per-recharge-tit{
-        font-size: 28px;
+        font-size: 18px;
         padding-left: 12px;
     }
 
     .zcbl-control-msg{
         padding-left: 115px;
+        font-size: 14px;
         color: $color-07;
         margin-top: 10px;
-        margin-bottom: 0px;
+        margin-bottom: 10px;
     }
     .zcbl-form-horizontal{
         .zcbl-form-group{
             padding-left: 40px;
-            margin-bottom: 10px;
+            margin-bottom: 0px;
         }
     }
     .per-recharge-payType{
+        padding-top: 10px;
         padding-left: 20px;
         .per-recharge-radio{
             input[type=radio]{
@@ -1808,20 +1852,21 @@ $color-90908f:#90908f;
         ul{
             li{
                 padding: 0 30px;
-                height: 90px;
+                height: 78px;
                 border-bottom: 1px solid $color-acacac;
                 .per-payList-tit{
-                    font-size: 20px;
+                    font-size: 16px;
                     padding-top: 15px;
                 }
                 .per-payList-time{
                     color: $color-03;
+                    font-size: 14px;
                 }
                 .per-payList-income,.per-payList-expend{
                     margin: 0;
                     padding: 0;
-                    line-height: 90px;
-                    font-size: 28px;
+                    line-height: 78px;
+                    font-size: 20px;
                     text-align: right;
                 }
                 .per-payList-expend{
@@ -1832,8 +1877,8 @@ $color-90908f:#90908f;
     }
 
     .per-pay-password{
-        font-size: 20px;
-        padding-top: 40px;
+        font-size: 14px;
+        padding-top: 20px;
         a{
             color: $color-02;
         }
@@ -1854,10 +1899,11 @@ $color-90908f:#90908f;
         padding: 0 20px;
         border-bottom: 1px solid $color-acacac;
         .per-payInfo-orderId,.per-payInfo-orderTime,.per-payInfo-orderTit,.per-payInfo-orderStatus{
-            font-size: 22px;
-            padding-bottom: 15px;
+            font-size: 16px;
+            padding-bottom: 10px;
         }
         .per-payInfo-orderTime,.per-payInfo-orderStatus{
+            font-size: 14px;
             text-align: right;
         }
         .per-payInfo-orderTit{
@@ -1865,11 +1911,11 @@ $color-90908f:#90908f;
         }
         .per-payInfo-des{
             color: $color-90908f;
-            font-size: 18px;
+            font-size: 14px;
             padding-bottom: 15px;
         }
         .per-payInfo-orderZJ,.per-payInfo-orderSC{
-            font-size: 18px;
+            font-size: 14px;
             padding-bottom: 15px;
         }
         .per-payInfo-orderZJ{
@@ -1905,9 +1951,9 @@ $color-90908f:#90908f;
     .per-payInfo-amount{
         text-align: right;
         color: $color-07;
-        font-size: 28px;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        font-size: 18px;
+        padding-top: 25px;
+        padding-bottom: 25px;
         span{
             display: inline-block;
             width: 30px;
@@ -1916,9 +1962,9 @@ $color-90908f:#90908f;
     .per-payInfo-type{
         height: 160px;
         background: $color-ffffff;
-        padding: 30px 30px 0 30px;
+        padding: 20px 30px 0 30px;
         .per-recharge-tit{
-            font-size: 28px;
+            font-size: 18px;
         }
         .per-recharge-payType{
             padding-top: 10px;
@@ -1950,7 +1996,7 @@ $color-90908f:#90908f;
             height: 240px;
             margin: 0 auto;
             .zcbl-pay-errorIcon{
-                padding-top: 130px;
+                padding-top: 150px;
                 position: relative;
                 text-align: left;
                 font-size: 38px;
@@ -1985,16 +2031,16 @@ $color-90908f:#90908f;
                 }
             }
             .zcbl-pay-msg1{
-                padding-left: 100px;
                 color: $color-03;
-                font-size: 18px;
+                font-size: 16px;
                 padding-top: 10px;
+                margin-top: 30px;
             }
             .zcbl-pay-msg2{
-                padding-left: 100px;
                 text-align: left;
-                font-size: 18px;
+                font-size: 14px;
                 padding-top: 25px;
+                text-align: center;
                 a{
                     @extend .extend-aline;
                     &.zcbl-pay-hrefYellow{

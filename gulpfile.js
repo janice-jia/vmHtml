@@ -108,6 +108,9 @@ gulp.task('cleanCss', function() {
             // sprite背景图源文件夹，只有匹配此路径才会处理，默认 images/slice/
             imagepath: pathConfig.src.iconSrc,
 
+            // 各图片间间距，如果设置为奇数，会强制+1以保证生成的2x图片为偶数宽高，默认 0
+            padding: 10,
+
             // 雪碧图输出目录，注意，会覆盖之前文件！默认 images/
             spritedest: 'html/static/images/pc/positionIcon/',
 

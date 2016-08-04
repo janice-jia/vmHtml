@@ -159,7 +159,8 @@ button.zcbl-close {
       width: 76px;
       height: 74px; }
   .zcbl-modal-1 .zcbl-modal-desc, .zcbl-modal-2 .zcbl-modal-desc {
-    font-size: 18px; }
+    font-size: 14px;
+    color: #909090; }
 
 .zcbl-modal-1 {
   padding-top: 72px;
@@ -182,11 +183,11 @@ button.zcbl-close {
     padding-top: 5px; }
 
 .zcbl-modalHei285 {
-  height: 274px;
+  height: 250px;
   margin-top: -137px; }
 
 .zcbl-modalHei340 {
-  height: 340px;
+  height: 305px;
   margin-top: -170px; }
 
 .zcbl-modalHei554 {
@@ -206,7 +207,7 @@ button.zcbl-close {
     margin: 0 30px;
     padding: 33px 0 19px 0;
     color: #2c2c2c;
-    font-size: 28px;
+    font-size: 16px;
     border-bottom: 1px solid #9a9a9a; }
   .zcbl-modal-3 .zcbl-popupForm {
     padding: 0 45px;
@@ -222,7 +223,7 @@ button.zcbl-close {
   .zcbl-modal-3 .zcbl-popupGroup label {
     height: 50px;
     line-height: 50px;
-    font-size: 20px;
+    font-size: 14px;
     padding: 0;
     margin: 0;
     font-weight: normal;
@@ -253,7 +254,7 @@ button.zcbl-close {
     font-size: 18px;
     margin-left: -13px; }
   .zcbl-modal-3 .zcbl-popupGroup .embedVideoCon {
-    font-size: 20px;
+    font-size: 14px;
     margin-top: 20px; }
     .zcbl-modal-3 .zcbl-popupGroup .embedVideoCon a {
       color: #499af5; }
@@ -262,7 +263,7 @@ button.zcbl-close {
     line-height: 50px; }
     .zcbl-modal-3 .zcbl-popupBtn .zcbl-modal-cancel {
       color: #ffb30e;
-      font-size: 20px;
+      font-size: 14px;
       border: none;
       background: none; }
   .zcbl-modal-3 .zcbl-modal-3-desc {
@@ -289,7 +290,7 @@ button.zcbl-close {
     height: 90px;
     line-height: 90px;
     color: #2c2c2c;
-    font-size: 28px;
+    font-size: 16px;
     border-bottom: 1px solid #9a9a9a; }
   .zcbl-modal-4 .zcbl-evaluate-tit {
     padding: 20px 30px;
@@ -338,7 +339,7 @@ button.zcbl-close {
   .zcbl-modal-5 .zcbl-modal-tit {
     margin: 0 30px;
     padding: 33px 0 19px 0;
-    font-size: 28px; }
+    font-size: 16px; }
   .zcbl-modal-5 .zcbl-opinion {
     padding: 0 30px;
     position: relative; }
@@ -509,7 +510,7 @@ button.zcbl-close {
         text-align: center;
         font-size: 16px; }
         #zcbl-header .header-box .header-nav li a {
-          color: #c1c1c1;
+          color: #ffffff;
           display: block; }
         #zcbl-header .header-box .header-nav li.header-nav-hover {
           height: 50px;
@@ -534,10 +535,10 @@ button.zcbl-close {
           display: block; }
       #zcbl-header .header-box .header-right .user-login .header-msg {
         float: right;
-        width: 26px;
-        height: 31px;
-        background: url("../../../images/pc/icon/icon_headermsg.png") no-repeat;
-        margin: 10px 60px 0 60px;
+        width: 21px;
+        height: 25px;
+        background: url("../../../images/pc/icon/icon_headermsg-1.png") no-repeat;
+        margin: 13px 60px 0 60px;
         position: relative; }
         #zcbl-header .header-box .header-right .user-login .header-msg a {
           position: absolute;
@@ -550,9 +551,9 @@ button.zcbl-close {
         #zcbl-header .header-box .header-right .user-login .header-msg .header-havemsg {
           position: absolute;
           top: -5px;
-          left: 26px;
-          width: 12px;
-          height: 12px;
+          left: 22px;
+          width: 8px;
+          height: 8px;
           background: #e43f3f;
           border-radius: 50%; }
       #zcbl-header .header-box .header-right .user-login .header-msg {
@@ -561,7 +562,7 @@ button.zcbl-close {
         width: 34px;
         height: 100%;
         float: right;
-        padding: 8px 0;
+        padding: 10px 0;
         position: relative; }
         #zcbl-header .header-box .header-right .user-login .header-user:hover {
           cursor: pointer; }
@@ -571,16 +572,16 @@ button.zcbl-close {
           border-radius: 50%; }
         #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo {
           position: absolute;
-          left: -95px;
+          left: -50px;
           top: 60px;
-          width: 160px;
+          width: 100px;
           display: none;
-          height: 432px;
+          height: 245px;
           background: #ffffff;
           border-radius: 5px; }
           #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-top {
             position: absolute;
-            left: 100px;
+            left: 55px;
             top: -10px;
             background: url("../../../images/pc/icon/icon-index-top.png") no-repeat;
             height: 10px;
@@ -594,9 +595,9 @@ button.zcbl-close {
             text-align: left; }
             #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-1 li a,
             #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-2 li a {
-              font-size: 18px;
-              color: #515151;
-              padding-left: 32px; }
+              font-size: 14px;
+              color: #222222;
+              padding-left: 23px; }
           #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-1 {
             margin-bottom: 18px; }
             #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-1 li {
@@ -719,7 +720,8 @@ button.zcbl-close {
             height: 44px; }
     #zcbl-footer .footer-aboutus .footer-aboutus-z {
       float: left;
-      margin-top: 20px; }
+      margin-top: 20px;
+      margin-left: 30px; }
       #zcbl-footer .footer-aboutus .footer-aboutus-z ul li {
         float: left;
         line-height: 44px;
@@ -847,7 +849,7 @@ button {
 
 .zcbl-form-horizontal .zcbl-control-label {
   text-align: left;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 50px;
   margin: 0;
   padding: 0;
@@ -858,7 +860,7 @@ button {
   height: 50px;
   line-height: 50px;
   overflow: hidden;
-  font-size: 18px;
+  font-size: 14px;
   margin-bottom: 0; }
 
 .zcbl-form-horizontal .zcbl-control-info-line25 {
@@ -871,10 +873,10 @@ button {
   height: 50px;
   line-height: 50px;
   background: none;
-  font-size: 18px; }
+  font-size: 14px; }
 
 .zcbl-form-horizontal textarea.zcbl-form-control {
-  height: 170px;
-  font-size: 18px;
+  height: 85px;
+  font-size: 14px;
   line-height: 25px;
   background: none; }

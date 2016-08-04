@@ -11,6 +11,7 @@
     padding-left: 20px;
     background-color: #fff; }
     #tribe-home [data-thome="hot-tribe"] h2 {
+      font-size: 24px;
       line-height: 64px; }
     #tribe-home [data-thome="hot-tribe"] div {
       float: left; }
@@ -46,8 +47,9 @@
         clear: both; }
       #tribe-home [data-thome="hot-tribe"] [data-thome="hot-center"] h3 {
         line-height: 60px;
-        font-size: 20px;
-        font-weight: bold; }
+        font-size: 20px; }
+      #tribe-home [data-thome="hot-tribe"] [data-thome="hot-center"] p {
+        color: #909090; }
     #tribe-home [data-thome="hot-tribe"] [data-thome="hot-right"] {
       border-left: 1px solid #c1c1c1;
       float: right;
@@ -74,16 +76,95 @@
     content: '';
     display: table;
     clear: both; }
+  #tribe-home footer {
+    margin: 40px 0; }
+    #tribe-home footer img {
+      width: 1000px;
+      height: 230px; }
 
+/** 部落首页 + 漫画部落页面 **/
 /** 部落推荐列表 **/
 .tribe-list-box {
+  padding: 0 20px;
   padding-top: 30px; }
   .tribe-list-box .tribe-list-tab {
     font-size: 24px;
     color: #515151; }
+    .tribe-list-box .tribe-list-tab a {
+      font-size: 16px;
+      margin-right: 20px;
+      color: #909090;
+      float: right; }
+  .tribe-list-box .tribe-list {
+    width: 972px; }
+  .tribe-list-box .tribe-list:after {
+    clear: both;
+    content: "";
+    display: table; }
   .tribe-list-box .tribe-list-li {
+    width: 310px;
     margin-top: 20px;
-    padding: 0 7px; }
+    margin-right: 14px;
+    border-bottom: 1px solid #c1c1c1;
+    position: relative;
+    float: left; }
     .tribe-list-box .tribe-list-li .tribe-list-con img {
       width: 310px;
       height: 230px; }
+    .tribe-list-box .tribe-list-li .tribe-list-con h3 {
+      font-size: 20px;
+      color: #515151;
+      padding-top: 15px;
+      padding-bottom: 12px; }
+    .tribe-list-box .tribe-list-li .tribe-list-con p {
+      color: #909090;
+      padding-bottom: 15px; }
+    .tribe-list-box .tribe-list-li .tribe-list-con .tribe-list-foot {
+      padding-bottom: 20px; }
+      .tribe-list-box .tribe-list-li .tribe-list-con .tribe-list-foot span {
+        color: #ffb30e;
+        margin-right: 16px; }
+      .tribe-list-box .tribe-list-li .tribe-list-con .tribe-list-foot span b {
+        width: 18px;
+        height: 14px;
+        display: inline-block;
+        margin-right: 5px; }
+      .tribe-list-box .tribe-list-li .tribe-list-con .tribe-list-foot .tribe-list-groupicon b {
+        background-image: url("../../../images/pc/version1.1/icon/icon_group.png"); }
+      .tribe-list-box .tribe-list-li .tribe-list-con .tribe-list-foot .tribe-list-zanicon b {
+        background-image: url("../../../images/pc/version1.1/icon/icon_zan.png"); }
+      .tribe-list-box .tribe-list-li .tribe-list-con .tribe-list-foot .tribe-list-clockicon b {
+        background-image: url("../../../images/pc/version1.1/icon/icon_clock.png"); }
+    .tribe-list-box .tribe-list-li a {
+      position: absolute;
+      height: 390px;
+      top: 0;
+      width: 100%;
+      display: inline-block; }
+
+/** 漫画部落页面 条件选择 **/
+.searchtab {
+  height: 130px;
+  padding: 50px;
+  background-color: #fff; }
+  .searchtab .container {
+    padding: 0 20px; }
+    .searchtab .container .searchtab-left {
+      margin-top: 15px;
+      float: left; }
+      .searchtab .container .searchtab-left input {
+        height: 50px;
+        width: 500px;
+        border: 1px solid #c1c1c1;
+        float: left;
+        padding: 5px; }
+      .searchtab .container .searchtab-left button {
+        width: 120px;
+        float: left; }
+    .searchtab .container .searchtab-right {
+      margin-top: 15px;
+      float: right; }
+      .searchtab .container .searchtab-right select {
+        width: 231px;
+        height: 50px;
+        padding: 10px; }

@@ -1,0 +1,211 @@
+@charset "utf-8";
+/**
+  by dhj
+**/
+$font-12: 12px;
+$font-14: 14px;
+$font-16: 16px;
+$font-18: 18px;
+$font-20: 20px;
+$font-22: 22px;
+$font-24: 24px;
+
+$color-01: #171717;
+$color-02: #515151;
+$color-03: #909090;
+$color-04: #c1c1c1; //(输入框边框颜色)
+$color-05: #eeeeee; //(背景色)
+$color-06: #499af5;
+$color-07: #ffb30e;
+$color-08: #e43f3f;
+//面包屑导航
+.breadcrumb > li {
+  font-size: 18px;
+  line-height:32px;
+  float: left;
+  color: $color-03;
+  a {
+    color: $color-03
+  }
+}
+
+.breadcrumb > li + li:before {
+  color: $color-03;
+  content: ">";
+  padding: 0 5px;
+}
+
+//目录 索引
+.indexed {
+  font-size: 18px;
+  text-align: center;
+  li {
+    float: left;
+    line-height: 32px;
+  }
+  .indexcenter {
+    position: relative;
+    width: 62px;
+    margin: 0 15px;
+
+    > a {
+      margin-top: -2px;
+      display: inline-block;
+      width: 100%;
+      border: 1px solid transparent;
+      border-top-width: 2px;
+      position: relative;
+      z-index: 100;
+    }
+
+    //下拉
+    .indexdrown {
+
+      display: none;
+      position: absolute;
+      top: 32px;
+      z-index: 10;
+      width: 170px;
+      border: 1px solid $color-03;
+      height: 215px;
+      overflow-y:scroll;
+      //禁止文字 自动换行
+      white-space:nowrap;
+      overflow-x: hidden;
+
+      li{
+        padding-left: 15px;
+        line-height: 34px;
+        height: 34px;
+        font-size: 14px;
+        border-bottom: 1px solid $color-03;
+        width: 100%;
+        text-align: left;
+      }
+    }
+  }
+}
+
+/**暗色索引**/
+.indexdarker {
+  a {
+    color: $color-03;
+  }
+
+}
+
+/**浅色索引**/
+.indexlight {
+  a {
+    color: $color-01;
+  }
+  .indexcenter {
+    //下拉
+    .indexdrown {
+      background-color: #fff;
+    }
+  }
+  .indexcenter:hover {
+    background-color: #fff;
+    > a {
+      border-color: $color-03;
+      border-top-color: $color-07;
+      border-bottom-color: #fff;
+    }
+  }
+  .indexcenter:hover .indexdrown {
+    display: block;
+  }
+}
+
+//自带背景索引
+.bgindexed{
+  text-align: center;
+  li{
+    display: inline-block;
+    margin: 0 10px;
+    a{
+      display: inline-block;
+      line-height: 40px;
+      width: 100px;
+      height: 40px;
+      background-color: #414141;
+      color:#fff;
+      font-size: 18px;
+    }
+  }
+}
+
+
+
+#tribe-book {
+  [data-tbook="header"] {
+    padding: 20px 40px;
+    > ul {
+      float: right;
+    }
+  }
+  [data-tbook="header"]:after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+  //主体内容
+  [data-tbook="main"]{
+    background-color: #efebe3;
+    padding: 40px 100px;
+    //文章信息
+    [data-tbook="maintop"]{
+      h1{
+        font-size:24px;
+        margin-bottom: 20px;
+      }
+      ul{
+        li{
+          float: left;
+          color: $color-03;
+          margin-right: 30px;
+        }
+      }
+      ul:after{
+        display: table;
+        content: "";
+        clear: both;
+      }
+      [data-tbook="edit"]{
+        float: right;
+        b{
+          width: 16px;
+          height: 16px;
+          margin-right: 10px;
+          display: inline-block;
+          vertical-align: middle;
+          background-image: url("../../../images/pc/version1.1/icon/ico_edit.png");
+        }
+        a{
+          color: $color-03;
+          font-size: 18px;
+        }
+      }
+      hr{
+        margin: 0 -28px;
+        margin-top: 20px;
+        border-color: $color-03;
+      }
+    }
+    //文章内容
+    [data-tbook="section"]{
+      p{
+        font-size: 20px;
+        color: $color-01;
+        text-indent:2em;
+        margin: 25px 0;
+      }
+    }
+  }
+  //底部导航
+  [data-tbook="footer"]{
+    margin: 50px auto;
+    text-align: center;
+  }
+}

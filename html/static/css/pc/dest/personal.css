@@ -65,14 +65,16 @@
       #per-wall .per-wall-l .per-uname p {
         margin: 0;
         color: #515151;
-        font-size: 18px;
-        height: 25px;
+        font-size: 14px;
+        max-height: 36px;
         overflow: hidden;
         width: 140px; }
         #per-wall .per-wall-l .per-uname p.per-site {
-          font-size: 16px;
+          font-size: 12px;
           position: relative;
-          padding-left: 18px; }
+          padding-left: 18px;
+          line-height: 25px;
+          margin-top: 5px; }
           #per-wall .per-wall-l .per-uname p.per-site:before {
             content: "";
             position: absolute;
@@ -90,10 +92,11 @@
       width: 100%;
       height: 1px;
       overflow: hidden;
-      border-bottom: 1px solid #515151; }
+      border-bottom: 1px solid #c1c1c1; }
     #per-wall .per-wall-l .per-fund {
       margin-top: 24px;
-      padding-bottom: 14px; }
+      padding-bottom: 14px;
+      font-size: 14px; }
       #per-wall .per-wall-l .per-fund p {
         clear: both; }
         #per-wall .per-wall-l .per-fund p span.per-fund-cz {
@@ -106,7 +109,8 @@
             color: #515151; }
     #per-wall .per-wall-l .per-appraise {
       padding-top: 24px;
-      padding-bottom: 14px; }
+      padding-bottom: 14px;
+      font-size: 14px; }
       #per-wall .per-wall-l .per-appraise p {
         height: 16px;
         padding-bottom: 10px; }
@@ -126,7 +130,9 @@
           height: 16px;
           display: block; }
     #per-wall .per-wall-l .per-identity {
-      padding-top: 24px; }
+      padding-top: 24px;
+      font-size: 14px;
+      padding-bottom: 20px; }
       #per-wall .per-wall-l .per-identity p {
         margin-bottom: 0;
         line-height: 25px; }
@@ -153,24 +159,29 @@
     width: 690px;
     float: left; }
     #per-wall .per-wall-r .per-nav ul {
-      padding-bottom: 15px;
+      padding-bottom: 13px;
       border-bottom: 1px solid #d2d2d2; }
       #per-wall .per-wall-r .per-nav ul li {
         float: left;
-        padding-right: 40px;
-        padding-left: 10px; }
+        padding-right: 49px;
+        padding-left: 49px; }
         #per-wall .per-wall-r .per-nav ul li a {
           color: #515151;
           line-height: 28px;
           font-size: 20px;
           text-align: center;
           display: block; }
+          #per-wall .per-wall-r .per-nav ul li a span {
+            font-size: 16px;
+            margin-top: 9px;
+            display: inline-block; }
           #per-wall .per-wall-r .per-nav ul li a:hover {
             color: #ffb30e; }
         #per-wall .per-wall-r .per-nav ul li.per-nav-hover a {
           color: #ffb30e; }
     #per-wall .per-wall-r .per-artnav {
-      padding: 10px 0 0 0; }
+      padding: 10px 0 10px 0;
+      border-bottom: 1px solid #d2d2d2; }
       #per-wall .per-wall-r .per-artnav ul li {
         float: left; }
         #per-wall .per-wall-r .per-artnav ul li.per-artnav-hover a {
@@ -184,7 +195,7 @@
             color: #499af5; }
     #per-wall .per-wall-r .per-art-img {
       padding-top: 25px;
-      min-height: 1105px; }
+      min-height: 660px; }
       #per-wall .per-wall-r .per-art-img ul li {
         width: 160px;
         height: 190px;
@@ -194,7 +205,7 @@
         margin-bottom: 25px; }
         #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgTit {
           font-size: 14px;
-          font-weight: bolder;
+          font-weight: normal;
           padding: 0 20px;
           margin-top: 15px;
           overflow: hidden;
@@ -271,7 +282,8 @@
             background: url("../../../images/pc/icon/icon-per-text.png") no-repeat; }
         #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgEdit {
           text-align: center;
-          padding-top: 10px; }
+          padding-top: 10px;
+          font-size: 14px; }
           #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgEdit a {
             height: 25px;
             line-height: 25px;
@@ -302,12 +314,12 @@
       #per-wall .per-wall-r .per-req ul {
         width: 100%; }
         #per-wall .per-wall-r .per-req ul li .per-reqTit {
-          font-size: 22px;
+          font-size: 16px;
           color: #515151;
           overflow: hidden;
           height: 25px;
           line-height: 25px;
-          margin: 20px 0; }
+          margin: 10px 0; }
           #per-wall .per-wall-r .per-req ul li .per-reqTit h1 {
             width: 450px;
             float: left;
@@ -319,17 +331,18 @@
             text-align: right;
             width: 230px; }
             #per-wall .per-wall-r .per-req ul li .per-reqTit p span {
-              color: #ffb30e; }
+              color: #e43f3f; }
         #per-wall .per-wall-r .per-req ul li .per-reqCon h3 {
           width: 100%;
-          font-size: 18px;
+          font-size: 14px;
           height: 25px;
           line-height: 25px;
           overflow: hidden;
           font-family: "adobeheitistd regular","Microsoft YaHei";
           color: #909090; }
         #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo {
-          margin: 15px 0 20px 0; }
+          margin: 15px 0 20px 0;
+          font-size: 14px; }
           #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo p {
             float: left;
             width: 200px;
@@ -359,9 +372,9 @@
                   position: absolute;
                   top: 4px;
                   left: 0;
-                  background: url("../../../images/pc/icon/icon-per-cy.png") no-repeat;
-                  width: 27px;
-                  height: 16px; }
+                  background: url("../../../images/pc/icon/icon-per-cy-1.png") no-repeat;
+                  width: 20px;
+                  height: 12px; }
               #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-bzj {
                 padding-left: 23px; }
                 #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-bzj:before {
@@ -383,7 +396,7 @@
                   width: 16px;
                   height: 17px; }
         #per-wall .per-wall-r .per-req ul li .per-reqStatus {
-          margin: 20px 0; }
+          margin: 0 0 10px 0; }
           #per-wall .per-wall-r .per-req ul li .per-reqStatus p {
             float: left;
             width: 340px;
@@ -391,7 +404,7 @@
             line-height: 50px;
             color: #909090;
             margin-bottom: 0;
-            font-size: 18px; }
+            font-size: 14px; }
             #per-wall .per-wall-r .per-req ul li .per-reqStatus p .per-serBlue {
               color: #499af5; }
             #per-wall .per-wall-r .per-req ul li .per-reqStatus p .per-serYellow {
@@ -407,7 +420,7 @@
               line-height: 50px;
               height: 50px; }
               #per-wall .per-wall-r .per-req ul li .per-reqStatus ul li.per-reqStaEdit {
-                font-size: 18px;
+                font-size: 14px;
                 padding: 0 30px 0 10px; }
                 #per-wall .per-wall-r .per-req ul li .per-reqStatus ul li.per-reqStaEdit a {
                   color: #515151; }
@@ -461,7 +474,8 @@
             line-height: 14px;
             position: relative;
             padding-left: 20px;
-            overflow: hidden; }
+            overflow: hidden;
+            font-size: 14px; }
             #per-wall .per-wall-r .per-fans ul li .per-fansNum .per-fansNum-r:before {
               content: "";
               position: absolute;
@@ -479,12 +493,12 @@
             width: 100px;
             height: 100px; }
         #per-wall .per-wall-r .per-fans ul li .per-fansName {
-          padding: 0 10px;
+          padding: 3px 10px;
           text-align: center; }
           #per-wall .per-wall-r .per-fans ul li .per-fansName .per-fansName-1 {
             text-align: center;
             color: #515151;
-            font-size: 18px;
+            font-size: 14px;
             margin: 15px 0 10px 0; }
             #per-wall .per-wall-r .per-fans ul li .per-fansName .per-fansName-1 a {
               color: #515151; }
@@ -495,11 +509,12 @@
             padding-left: 17px;
             height: 16px;
             line-height: 16px;
-            overflow: hidden; }
+            overflow: hidden;
+            font-size: 12px; }
             #per-wall .per-wall-r .per-fans ul li .per-fansName .per-fansName-2:before {
               position: absolute;
               content: "";
-              top: 0;
+              top: 1px;
               left: 0;
               background: url("../../../images/pc/icon/icon-per-site.png") no-repeat;
               width: 12px;
@@ -508,6 +523,7 @@
           width: 100%;
           height: 34px;
           line-height: 34px;
+          font-size: 14px;
           text-align: center;
           margin-top: 3px; }
           #per-wall .per-wall-r .per-fans ul li .per-fansBtn a, #per-wall .per-wall-r .per-fans ul li .per-fansBtn-already a {
@@ -534,7 +550,7 @@
   #per-settings .per-setLine {
     height: 1px;
     overflow: hidden;
-    border-bottom: 1px solid #909090; }
+    border-bottom: 1px solid #c1c1c1; }
   #per-settings .per-setLine-dashed {
     height: 1px;
     overflow: hidden;
@@ -542,9 +558,9 @@
   #per-settings .per-setTit {
     height: 90px;
     line-height: 90px;
-    font-size: 28px;
+    font-size: 22px;
     text-align: center;
-    border-bottom: 1px solid #909090; }
+    border-bottom: 1px solid #c1c1c1; }
   #per-settings .per-setEdit, #per-settings .per-set-up {
     color: #909090; }
     #per-settings .per-setEdit a, #per-settings .per-set-up a {
@@ -555,12 +571,14 @@
       #per-settings .per-setEdit a:before, #per-settings .per-set-up a:before {
         content: "";
         position: absolute; }
-  #per-settings .per-setEdit a:before {
-    top: 33px;
-    right: 0;
-    background: url("../../../images/pc/icon/icon-set-down.png") no-repeat;
-    width: 13px;
-    height: 14px; }
+  #per-settings .per-setEdit {
+    font-size: 14px; }
+    #per-settings .per-setEdit a:before {
+      top: 33px;
+      right: 0;
+      background: url("../../../images/pc/icon/icon-set-down.png") no-repeat;
+      width: 13px;
+      height: 14px; }
   #per-settings .per-set-up a:before {
     top: 33px;
     right: 0;
@@ -569,7 +587,7 @@
     height: 13px; }
   #per-settings .per-setItem {
     padding: 0 50px;
-    font-size: 20px; }
+    font-size: 16px; }
     #per-settings .per-setItem .per-itemTit {
       height: 80px;
       line-height: 80px; }
@@ -592,6 +610,11 @@
         height: 25px; }
     #per-settings .per-setItem .per-itemCon {
       padding: 40px 0 0 140px; }
+      #per-settings .per-setItem .per-itemCon .per-itemGroup #sexType {
+        margin-top: 6px; }
+      #per-settings .per-setItem .per-itemCon .per-itemGroup .per-itemGroup-icon {
+        padding-top: 15px;
+        width: 80px; }
       #per-settings .per-setItem .per-itemCon .per-itemGroup .per-radio-inline {
         padding-left: 0;
         margin-right: 10px; }
@@ -607,7 +630,7 @@
         padding: 0 0 0 12px;
         margin-right: 20px; }
       #per-settings .per-setItem .per-itemCon .per-set-label {
-        font-size: 20px;
+        font-size: 14px;
         font-weight: normal;
         height: 50px;
         line-height: 50px;
@@ -624,7 +647,8 @@
         padding-left: 160px;
         padding-top: 15px;
         margin-bottom: 0;
-        color: #ffb30e; }
+        color: #ffb30e;
+        font-size: 14px; }
       #per-settings .per-setItem .per-itemCon .per-set-textarea {
         font-size: 16px;
         color: #909090;
@@ -657,7 +681,7 @@
           left: 0;
           text-align: center;
           color: #bfbfbf;
-          font-size: 16px;
+          font-size: 14px;
           padding-top: 118px; }
         #per-settings .per-setItem .per-itemCon .per-input-file input {
           position: absolute;
@@ -680,21 +704,21 @@
 #per-publish {
   padding: 0 16px;
   width: 1000px;
-  margin: 30px auto 0 auto; }
+  margin: 0 auto; }
   #per-publish .per-pub-artMenu {
-    padding-bottom: 50px; }
+    padding-bottom: 28px; }
     #per-publish .per-pub-artMenu ul li {
       display: inline-block;
       padding-right: 60px; }
       #per-publish .per-pub-artMenu ul li a {
-        font-size: 28px;
+        font-size: 18px;
         color: #515151; }
       #per-publish .per-pub-artMenu ul li a:hover, #per-publish .per-pub-artMenu ul li.per-pub-artMenu-hover a {
         color: #ffb30e; }
   #per-publish .per-pub-choose .per-pubGroup {
     margin: 0; }
   #per-publish .per-pub-choose .per-pub-picColl {
-    font-size: 18px;
+    font-size: 14px;
     width: 126px;
     text-align: left;
     margin: 0;
@@ -703,24 +727,28 @@
     height: 50px;
     line-height: 50px; }
   #per-publish .per-pub-choose .per-pub-select {
-    height: 50px;
-    line-height: 50px; }
+    height: 30px;
+    line-height: 30px;
+    width: 135px;
+    margin-top: 10px;
+    padding: 4px 12px; }
   #per-publish .per-pub-choose .per-pub-addPicColl {
     height: 50px;
     line-height: 50px;
-    font-size: 18px; }
+    font-size: 14px; }
     #per-publish .per-pub-choose .per-pub-addPicColl a {
       color: #499af5; }
   #per-publish .per-pub-picBox {
     margin: 30px 0 30px 0;
     border: 1px dashed #aaaaaa; }
     #per-publish .per-pub-picBox ul {
-      margin-left: 12px; }
+      margin-left: 12px;
+      margin-bottom: 20px; }
       #per-publish .per-pub-picBox ul li {
         float: left;
         width: 200px;
         height: 260px;
-        margin: 30px 18px; }
+        margin: 30px 18px 7px 18px; }
         #per-publish .per-pub-picBox ul li.per-pub-add {
           background: #ffffff;
           border: 1px dashed #aaaaaa;
@@ -762,12 +790,12 @@
               width: 65px;
               height: 65px; }
           #per-publish .per-pub-picBox ul li.per-pub-add p.per-pub-addSC {
-            font-size: 20px;
+            font-size: 16px;
             font-weight: bolder;
             color: #9a9a9a;
             padding: 20px 0 0 0; }
           #per-publish .per-pub-picBox ul li.per-pub-add p.per-pub-addZS, #per-publish .per-pub-picBox ul li.per-pub-add p.per-pub-addDX {
-            font-size: 12px;
+            font-size: 14px;
             color: #9a9a9a;
             line-height: 20px;
             margin: 0; }
@@ -802,13 +830,11 @@
               border-radius: 6px;
               margin: 3px 0; }
         #per-publish .per-pub-picBox ul li .per-pub-edit {
-          border: 1px solid #ffb30e;
           height: 57px;
           position: absolute;
-          bottom: 0;
+          top: 0;
           left: 0;
-          width: 100%;
-          background: #ffffff; }
+          width: 100%; }
           #per-publish .per-pub-picBox ul li .per-pub-edit p {
             float: left;
             width: 50%;
@@ -830,8 +856,10 @@
                   width: 36px;
                   height: 36px; }
             #per-publish .per-pub-picBox ul li .per-pub-edit p.per-pub-editDel {
+              float: right;
               padding-right: 12px;
-              text-align: right; }
+              text-align: right;
+              width: 50px; }
               #per-publish .per-pub-picBox ul li .per-pub-edit p.per-pub-editDel a {
                 color: #9a9a9a;
                 position: relative; }
@@ -840,14 +868,14 @@
                   position: absolute;
                   left: 6px;
                   top: 10px;
-                  background: url("../../../images/pc/icon/icon-pub-del.png") no-repeat;
-                  width: 36px;
-                  height: 36px; }
+                  background: url("../../../images/pc/icon/per-album-del-1.png") no-repeat;
+                  width: 25px;
+                  height: 25px; }
         #per-publish .per-pub-picBox ul li .per-pub-tit {
           height: 50px;
           border: 1px solid #9a9a9a;
           margin-top: 10px;
-          font-size: 18px;
+          font-size: 14px;
           color: #9a9a9a;
           text-align: center;
           line-height: 50px; }
@@ -877,7 +905,7 @@
       left: 0;
       z-index: 1;
       color: #499af5;
-      font-size: 18px; }
+      font-size: 14px; }
       #per-publish .pub-file .zcbl-form-pBlue a {
         color: #499af5; }
   #per-publish .pub-file-img {
@@ -908,30 +936,30 @@
       text-align: right;
       line-height: 40px;
       padding-right: 15px;
-      font-size: 18px; }
+      font-size: 14px; }
       #per-publish .per-pub-videoUpload .per-pub-vieroQR a {
         color: #499af5; }
     #per-publish .per-pub-videoUpload .per-pub-videoBox {
       margin: 0 auto;
-      width: 525px;
-      height: 403px;
+      width: 500px;
+      height: 400px;
       background: #ffffff;
       border: 1px dashed #aaaaaa;
       position: relative; }
+      #per-publish .per-pub-videoUpload .per-pub-videoBox:hover .per-videoImg-edit {
+        display: block; }
       #per-publish .per-pub-videoUpload .per-pub-videoBox img {
         max-width: 525px;
         max-height: 403px;
         margin: -1px 0 0 -1px;
         border: 1px solid #ffb30e; }
       #per-publish .per-pub-videoUpload .per-pub-videoBox .per-videoImg-edit {
-        width: 200px;
+        width: 100%;
         height: 57px;
-        margin-left: -100px;
-        background: #ffffff;
         position: absolute;
-        bottom: -1px;
-        left: 50%;
-        border: 1px solid #ffb30e; }
+        display: none;
+        top: 0;
+        left: 0; }
         #per-publish .per-pub-videoUpload .per-pub-videoBox .per-videoImg-edit p {
           float: left;
           width: 50%;
@@ -954,7 +982,9 @@
                 height: 36px; }
           #per-publish .per-pub-videoUpload .per-pub-videoBox .per-videoImg-edit p.per-pub-editDel {
             padding-right: 12px;
-            text-align: right; }
+            text-align: right;
+            float: right;
+            width: 50px; }
             #per-publish .per-pub-videoUpload .per-pub-videoBox .per-videoImg-edit p.per-pub-editDel a {
               color: #9a9a9a;
               position: relative; }
@@ -963,9 +993,9 @@
                 position: absolute;
                 left: 6px;
                 top: 10px;
-                background: url("../../../images/pc/icon/icon-pub-del.png") no-repeat;
-                width: 36px;
-                height: 36px; }
+                background: url("../../../images/pc/icon/per-album-del-1.png") no-repeat;
+                width: 25px;
+                height: 25px; }
       #per-publish .per-pub-videoUpload .per-pub-videoBox .per-pub-addVideoIcon {
         position: relative;
         width: 65px;
@@ -994,7 +1024,7 @@
           width: 65px;
           height: 65px; }
       #per-publish .per-pub-videoUpload .per-pub-videoBox .per-pub-addVideoSC {
-        font-size: 20px;
+        font-size: 16px;
         text-align: center;
         font-weight: 500;
         margin-top: 22px;
@@ -1010,31 +1040,35 @@
     padding-left: 115px;
     padding-top: 15px;
     margin-bottom: 0;
-    color: #ffb30e; }
+    color: #ffb30e;
+    font-size: 14px; }
 
 #per-album .per-album-tit .per-album-titL {
   width: 50%;
   float: left;
-  font-size: 28px;
+  font-size: 20px;
   height: 50px;
-  line-height: 50px; }
+  line-height: 50px;
+  padding-left: 10px; }
   #per-album .per-album-tit .per-album-titL a {
     display: inline-block;
-    position: relative; }
+    position: relative;
+    margin-left: 10px; }
     #per-album .per-album-tit .per-album-titL a:after {
       content: "";
       position: absolute;
-      top: 13px;
+      top: 17px;
       left: 0;
-      background: url("../../../images/pc/icon/per-album-edit.png");
-      height: 27px;
-      width: 27px; }
+      background: url("../../../images/pc/icon/icon-index-publish-1.png");
+      height: 19px;
+      width: 20px; }
   #per-album .per-album-tit .per-album-titL .zcbl-album-control {
     height: 50px;
     width: 490px; }
 #per-album .per-album-tit .per-album-titR {
   width: 50%;
-  float: right; }
+  float: right;
+  padding-right: 10px; }
 #per-album .per-album-con {
   margin-top: 20px; }
   #per-album .per-album-con ul li {
@@ -1089,13 +1123,13 @@
               content: "";
               left: 0;
               top: 0;
-              background: url("../../../images/pc/icon/per-album-del.png") no-repeat;
-              width: 34px;
-              height: 34px; }
+              background: url("../../../images/pc/icon/per-album-del-1.png") no-repeat;
+              width: 25px;
+              height: 25px; }
     #per-album .per-album-con ul li .per-album-titBox {
       height: 40px;
       line-height: 40px;
-      font-size: 18px;
+      font-size: 14px;
       text-align: center; }
       #per-album .per-album-con ul li .per-album-titBox a {
         color: #515151; }
@@ -1129,19 +1163,20 @@
   .per-view-box .per-view-user .per-view-userInfo {
     float: left;
     width: 860px;
-    padding: 30px 0 0 0; }
+    padding: 23px 0 0 0; }
     .per-view-box .per-view-user .per-view-userInfo p {
       margin: 0;
-      font-size: 18px;
-      height: 25px;
+      font-size: 14px;
+      height: 24px;
       overflow: hidden;
-      width: 140px; }
+      width: 600px; }
       .per-view-box .per-view-user .per-view-userInfo p a {
         color: #515151; }
       .per-view-box .per-view-user .per-view-userInfo p.per-site {
-        font-size: 16px;
+        font-size: 12px;
         position: relative;
-        padding-left: 18px; }
+        padding-left: 18px;
+        line-height: 25px; }
         .per-view-box .per-view-user .per-view-userInfo p.per-site:before {
           content: "";
           position: absolute;
@@ -1240,7 +1275,7 @@
         margin-left: 12px;
         margin-right: 12px; }
   .per-view-box .per-picedit {
-    margin-top: 50px;
+    margin-top: 10px;
     padding-left: 120px; }
     .per-view-box .per-picedit .zcbl-form-horizontal .zcbl-control-label {
       text-align: right; }
@@ -1249,7 +1284,8 @@
       padding-left: 115px;
       padding-top: 15px;
       margin-bottom: 0;
-      color: #ffb30e; }
+      color: #ffb30e;
+      font-size: 14px; }
   .per-view-box .videoBody {
     width: 980px;
     max-height: 550px;
@@ -1298,12 +1334,12 @@
       .per-view-box .textBody .zcbl-text-edit h1 {
         margin-bottom: 40px; }
         .per-view-box .textBody .zcbl-text-edit h1 p {
-          font-size: 28px;
+          font-size: 20px;
           margin: 0;
           padding: 0; }
           .per-view-box .textBody .zcbl-text-edit h1 p.zcbl-text-editL {
             float: left;
-            width: 840px;
+            width: 705px;
             overflow: hidden; }
           .per-view-box .textBody .zcbl-text-edit h1 p.zcbl-text-editR {
             width: 33px;
@@ -1315,29 +1351,31 @@
               width: 33px;
               height: 34px; }
       .per-view-box .textBody .zcbl-text-edit p {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 35px; }
     .per-view-box .textBody .zcbl-text-editTime {
       text-align: right;
       margin: 30px;
-      font-size: 20px; }
+      font-size: 14px; }
 
 #per-recharge {
   width: 1000px;
   margin: 30px auto 35px auto;
   min-height: 500px; }
   #per-recharge .per-recharge-tit {
-    font-size: 28px;
+    font-size: 18px;
     padding-left: 12px; }
   #per-recharge .zcbl-control-msg {
     padding-left: 115px;
+    font-size: 14px;
     color: #ffb30e;
     margin-top: 10px;
-    margin-bottom: 0px; }
+    margin-bottom: 10px; }
   #per-recharge .zcbl-form-horizontal .zcbl-form-group {
     padding-left: 40px;
-    margin-bottom: 10px; }
+    margin-bottom: 0px; }
   #per-recharge .per-recharge-payType {
+    padding-top: 10px;
     padding-left: 20px; }
     #per-recharge .per-recharge-payType .per-recharge-radio input[type=radio] {
       margin-top: 17px; }
@@ -1355,24 +1393,25 @@
     margin-bottom: 60px; }
     #per-recharge .per-recharge-payList ul li {
       padding: 0 30px;
-      height: 90px;
+      height: 78px;
       border-bottom: 1px solid #acacac; }
       #per-recharge .per-recharge-payList ul li .per-payList-tit {
-        font-size: 20px;
+        font-size: 16px;
         padding-top: 15px; }
       #per-recharge .per-recharge-payList ul li .per-payList-time {
-        color: #909090; }
+        color: #909090;
+        font-size: 14px; }
       #per-recharge .per-recharge-payList ul li .per-payList-income, #per-recharge .per-recharge-payList ul li .per-payList-expend {
         margin: 0;
         padding: 0;
-        line-height: 90px;
-        font-size: 28px;
+        line-height: 78px;
+        font-size: 20px;
         text-align: right; }
       #per-recharge .per-recharge-payList ul li .per-payList-expend {
         color: #fb4444; }
   #per-recharge .per-pay-password {
-    font-size: 20px;
-    padding-top: 40px; }
+    font-size: 14px;
+    padding-top: 20px; }
     #per-recharge .per-pay-password a {
       color: #515151; }
     #per-recharge .per-pay-password span {
@@ -1387,18 +1426,19 @@
     padding: 0 20px;
     border-bottom: 1px solid #acacac; }
     #per-payInfo .per-payInfo-order .per-payInfo-orderId, #per-payInfo .per-payInfo-order .per-payInfo-orderTime, #per-payInfo .per-payInfo-order .per-payInfo-orderTit, #per-payInfo .per-payInfo-order .per-payInfo-orderStatus {
-      font-size: 22px;
-      padding-bottom: 15px; }
+      font-size: 16px;
+      padding-bottom: 10px; }
     #per-payInfo .per-payInfo-order .per-payInfo-orderTime, #per-payInfo .per-payInfo-order .per-payInfo-orderStatus {
+      font-size: 14px;
       text-align: right; }
     #per-payInfo .per-payInfo-order .per-payInfo-orderTit {
       color: #212121; }
     #per-payInfo .per-payInfo-order .per-payInfo-des {
       color: #90908f;
-      font-size: 18px;
+      font-size: 14px;
       padding-bottom: 15px; }
     #per-payInfo .per-payInfo-order .per-payInfo-orderZJ, #per-payInfo .per-payInfo-order .per-payInfo-orderSC {
-      font-size: 18px;
+      font-size: 14px;
       padding-bottom: 15px; }
     #per-payInfo .per-payInfo-order .per-payInfo-orderZJ {
       position: relative;
@@ -1428,18 +1468,18 @@
   #per-payInfo .per-payInfo-amount {
     text-align: right;
     color: #ffb30e;
-    font-size: 28px;
-    padding-top: 30px;
-    padding-bottom: 30px; }
+    font-size: 18px;
+    padding-top: 25px;
+    padding-bottom: 25px; }
     #per-payInfo .per-payInfo-amount span {
       display: inline-block;
       width: 30px; }
   #per-payInfo .per-payInfo-type {
     height: 160px;
     background: #ffffff;
-    padding: 30px 30px 0 30px; }
+    padding: 20px 30px 0 30px; }
     #per-payInfo .per-payInfo-type .per-recharge-tit {
-      font-size: 28px; }
+      font-size: 18px; }
     #per-payInfo .per-payInfo-type .per-recharge-payType {
       padding-top: 10px; }
       #per-payInfo .per-payInfo-type .per-recharge-payType .per-recharge-radio {
@@ -1462,7 +1502,7 @@
       height: 240px;
       margin: 0 auto; }
       #per-payResult .per-payResultBox .zcbl-pay-error .zcbl-pay-errorIcon {
-        padding-top: 130px;
+        padding-top: 150px;
         position: relative;
         text-align: left;
         font-size: 38px;
@@ -1493,15 +1533,15 @@
           width: 76px;
           height: 74px; }
       #per-payResult .per-payResultBox .zcbl-pay-error .zcbl-pay-msg1 {
-        padding-left: 100px;
         color: #909090;
-        font-size: 18px;
-        padding-top: 10px; }
+        font-size: 16px;
+        padding-top: 10px;
+        margin-top: 30px; }
       #per-payResult .per-payResultBox .zcbl-pay-error .zcbl-pay-msg2 {
-        padding-left: 100px;
         text-align: left;
-        font-size: 18px;
-        padding-top: 25px; }
+        font-size: 14px;
+        padding-top: 25px;
+        text-align: center; }
         #per-payResult .per-payResultBox .zcbl-pay-error .zcbl-pay-msg2 a.zcbl-pay-hrefYellow {
           color: #ffb30e;
           margin-right: 33px; }

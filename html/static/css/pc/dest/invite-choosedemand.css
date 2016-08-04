@@ -49,9 +49,9 @@
       width: 30px;
       height: 30px;
       float: left;
-      margin-top: 40px; }
+      margin-top: 35px; }
     #choosedemand .per-req ul li .checkbox-content {
-      padding-left: 50px; }
+      padding-left: 35px; }
     #choosedemand .per-req ul li .per-reqTit {
       font-size: 16px;
       color: #515151;
@@ -68,7 +68,8 @@
       #choosedemand .per-req ul li .per-reqTit p {
         float: right;
         text-align: right;
-        width: 230px; }
+        width: 230px;
+        font-size: 14px; }
         #choosedemand .per-req ul li .per-reqTit p span {
           color: #e43f3f; }
     #choosedemand .per-req ul li .per-reqCon {
@@ -116,7 +117,7 @@
                 height: 16px;
                 margin-right: 7px; }
               #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-people b[data-choose-demand="eye"] {
-                background: url("../../../images/pc/icon/icon-per-cy.png") no-repeat; }
+                background: url("../../../images/pc/icon/icon-per-cy-1.png") no-repeat; }
               #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-people b[data-choose-demand="flag"] {
                 background: url("../../../images/pc/icon/icon_flag.png") no-repeat; }
             #choosedemand .per-req ul li .per-reqCon .per-reqInfo ul li.per-req-bzj {

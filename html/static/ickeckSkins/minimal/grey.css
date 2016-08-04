@@ -3,6 +3,7 @@
 .icheckbox-grey-20,
 .iradio-grey-20,
 .iradio-fff-20,
+.iradio-fff-16,
 .icheckbox-grey-30,
 .iradio-grey-30,
 .icheckbox-grey-16,
@@ -34,6 +35,12 @@
     width: 20px;
     height: 20px;
     background: url(fff-20.png) no-repeat;
+}
+
+.iradio-fff-16{
+    width: 16px;
+    height: 16px;
+    background: url(fff-16.png) no-repeat;
 }
 
 .icheckbox-grey-30,
@@ -118,7 +125,7 @@
     background-position: -225px 0;
 }
 
-
+/*.iradio-fff-20*/
 .iradio-fff-20 {
     background-position: -125px 0;
 }
@@ -136,6 +143,45 @@
 }
 .iradio-fff-20.checked.disabled {
     background-position: -225px 0;
+}
+
+
+
+/*iradio-fff-16*/
+.icheckbox-fff-16 {
+    background-position: 0 0;
+}
+.icheckbox-fff-16.hover {
+    background-position: -20px 0;
+}
+.icheckbox-fff-16.checked {
+    background-position: -40px 0;
+}
+.icheckbox-fff-16.disabled {
+    background-position: -60px 0;
+    cursor: default;
+}
+.icheckbox-fff-16.checked.disabled {
+    background-position: -80px 0;
+}
+
+.iradio-fff-16 {
+    background-position: -100px 0;
+}
+
+.iradio-fff-16.hover {
+    background-position: -120px 0;
+}
+
+.iradio-fff-16.checked {
+    background-position: -140px 0;
+}
+.iradio-fff-16.disabled {
+    background-position: -160px 0;
+    cursor: default;
+}
+.iradio-fff-16.checked.disabled {
+    background-position: -180px 0;
 }
 
 /*grey-30*/

@@ -28,12 +28,12 @@
       position: relative;
       margin-bottom: 10px; }
       #lr [data-login="container"] [data-login="tab"] h2 {
-        font-size: 20px;
-        font-weight: bold;
+        font-size: 16px;
+        font-weight: normal;
         line-height: 48px; }
       #lr [data-login="container"] [data-login="tab"] [data-login="regist"] {
         position: absolute;
-        font-size: 16px;
+        font-size: 14px;
         right: 0;
         line-height: 48px;
         color: #ffb30e; }
@@ -63,7 +63,8 @@
           background-image: url("../../../images/pc/icon/icon_logkeyicon.png"); }
         #lr [data-login="container"] [data-login="form"] .form-group [data-login="helpword"] {
           text-align: left;
-          color: #ffb30e; }
+          color: #ffb30e;
+          font-size: 14px; }
       #lr [data-login="container"] [data-login="form"] [data-login="login_submit"] {
         background-color: #ffb30e;
         width: 100%;
@@ -77,15 +78,17 @@
           margin: 0px;
           width: 16px;
           height: 16px;
-          margin-right: 10px; }
+          margin-right: 10px;
+          float: left; }
         #lr [data-login="container"] [data-login="form"] [data-login="pwdrel"] label {
           float: left;
-          font-size: 16px;
+          font-size: 12px;
           font-weight: normal;
           margin: 0; }
         #lr [data-login="container"] [data-login="form"] [data-login="pwdrel"] a {
           float: right;
-          color: #171717; }
+          color: #171717;
+          font-size: 12px; }
       #lr [data-login="container"] [data-login="form"] [data-login="pwdrel"]:after {
         display: table;
         clear: both;
@@ -94,7 +97,8 @@
       color: #909090;
       line-height: 16px;
       position: relative;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      font-size: 14px; }
       #lr [data-login="container"] p[data-login="hr"] i[data-login="hrlt"], #lr [data-login="container"] p[data-login="hr"] i[data-login="hrrt"] {
         position: absolute;
         top: 50%;

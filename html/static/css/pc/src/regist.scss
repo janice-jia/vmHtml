@@ -1,153 +1,160 @@
 @charset "utf-8";
-$darker:#171717;
-$darkgray:#515151;
+$darker: #171717;
+$darkgray: #515151;
 $gray: #909090;
 $light-gray: #c1c1c1;
-$bgcolor:#eee;
-$blue:#499af5;
+$bgcolor: #eee;
+$blue: #499af5;
 $orange: #ffb30e;
-$red:#e43f3f;
+$red: #e43f3f;
 $white: #fff;
 $black: #000;
-#regist{
-  /*******   内容  *******/
-  [data-regist="container"]{
-    text-align: center;
-    width:440px;
-    margin:0 auto;
-    border-radius: 10px;
-    background-color:$white;
-    padding-top: 44px;
-    /** 注册信息界面 **/
-    [data-regist="registnow"]{
-      padding: 0 50px;
-      [data-regist="logo"]{
-        margin-top: -68px;
-      }
-      /****  注册类型标签选项 *****/
-      [data-regist="tabpanel"]{
-        border:none;
-        a{
-          line-height: 100px;
-          border:none;
-          padding: 0;
-          color: $darker;
-        }
-        .active>a{
-          color: $orange;
-        }
-        a:hover{
-          border:none;
-          background:none;
-          color: $orange;
-        }
-        li{
-          display: inline-block;
-          width:33.3%
-        }
+#regist {
+    /*******   内容  *******/
+    [data-regist="container"] {
+        text-align: center;
+        width: 440px;
+        margin: 0 auto;
+        border-radius: 10px;
+        background-color: $white;
+        padding-top: 44px;
+        /** 注册信息界面 **/
+        [data-regist="registnow"] {
+            padding: 0 50px;
+            [data-regist="logo"] {
+                margin-top: -68px;
+            }
+            /****  注册类型标签选项 *****/
+            [data-regist="tabpanel"] {
+                border: none;
+                a {
+                    line-height: 100px;
+                    border: none;
+                    padding: 0;
+                    color: $darker;
+                }
+                .active > a {
+                    color: $orange;
+                }
+                a:hover {
+                    border: none;
+                    background: none;
+                    color: $orange;
+                }
+                li {
+                    display: inline-block;
+                    width: 33.3%
+                }
 
-      }
+            }
 
-      /** 其他注册信息 **/
-      [data-regist="form"]{
-        .form-group {
-          input {
-            border: none;
-            border-radius: 0;
-            box-shadow: none;
-            -webkit-box-shadow: none;
-            -moz-box-shadow: none;
-            box-shadow: none;
-            padding-left: 45px;
-            height: 54px;
-            line-height: 54px;
-            border-bottom: 1px solid #a7a7a7;
-          }
-          span[data-regist$='icon'] {
-            background-repeat: no-repeat;
-            position: absolute;
-            height: 54px;
-            width: 40px;
-          }
-          [data-regist="logusericon"] {
-            background-image: url("../../../images/pc/icon/icon_loguser.png");
-          }
-          [data-regist="logpwdicon"] {
-            background-image: url("../../../images/pc/icon/icon_logpwd.png");
-          }
-          [data-regist="regphoneicon"] {
-            background-image: url("../../../images/pc/icon/icon_regphone.png");
-          }
-          [data-regist="regkeyicon"] {
-            background-image: url("../../../images/pc/icon/icon_regkey.png");
-          }
-        }
-        /*** 提示文字 ***/
-        [data-regist="helpword"]{
-          text-align:left;
-          color: $orange;
-        }
-        /*** 注册提交按钮 ***/
-        [data-regist="regist_submit"] {
-          background-color: $orange;
-          width: 100%;
-          height: 60px;
-          margin-top:15px;
-        }
-        /*** 协议 ***/
-        [data-regist="agreement"]{
-          color: $light-gray;
-          text-align:left;
-          label{
-            font-weight: normal;
-          }
+            /** 其他注册信息 **/
+            [data-regist="form"] {
+                .form-group {
+                    input {
+                        border: none;
+                        border-radius: 0;
+                        box-shadow: none;
+                        -webkit-box-shadow: none;
+                        -moz-box-shadow: none;
+                        box-shadow: none;
+                        padding-left: 45px;
+                        height: 54px;
+                        line-height: 54px;
+                        border-bottom: 1px solid #a7a7a7;
+                    }
+                    span[data-regist$='icon'] {
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        height: 54px;
+                        width: 40px;
+                    }
+                    [data-regist="logusericon"] {
+                        background-image: url("../../../images/pc/icon/icon_loguser.png");
+                    }
+                    [data-regist="logpwdicon"] {
+                        background-image: url("../../../images/pc/icon/icon_logpwd.png");
+                    }
+                    [data-regist="regphoneicon"] {
+                        background-image: url("../../../images/pc/icon/icon_regphone.png");
+                    }
+                    [data-regist="regkeyicon"] {
+                        background-image: url("../../../images/pc/icon/icon_regkey.png");
+                    }
+                }
+                /*** 提示文字 ***/
+                [data-regist="helpword"] {
+                    text-align: left;
+                    color: $orange;
+                    font-size: 14px;
+                }
+                /*** 注册提交按钮 ***/
+                [data-regist="regist_submit"] {
+                    background-color: $orange;
+                    width: 100%;
+                    height: 60px;
+                    margin-top: 15px;
+                    font-size: 14px;
+                }
+                /*** 协议 ***/
+                [data-regist="agreement"] {
+                    color: $light-gray;
+                    text-align: left;
+                    label {
+                        font-weight: normal;
+                        font-size: 14px;
+                    }
 
-          input{
-            height:16px;
-            width:16px;
-            margin-right:10px;
+                    input {
+                        height: 16px;
+                        width: 16px;
+                        margin-right: 10px;
+                        position: relative;
+                        bottom: -3px;
+                    }
+                    a {
+                        color: $darker;
+                        font-size: 12px;
+                    }
+                }
+                /** 已有账号 **/
+                [data-regist="haveAccount"] {
+                    text-align: right;
+                    line-height: 55px;
+                    a {
+                        color: $darker;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        /** 注册完成界面 **/
+        [data-regist="regfinish"] {
+            display: none;
             position: relative;
-            bottom: -3px;
-          }
-          a {
-            color: $darker;
-          }
+            height: 100%;
+            background-image: url("../../../images/pc/fgpwd/regist_bg.png");
+            h1 {
+                line-height: 500px;
+                font-size: 70px;
+                color: $orange;
+            }
+            [ data-regist="countdown"] {
+                position: absolute;
+                bottom: 150px;
+                width: 100%;
+            }
         }
-        /** 已有账号 **/
-        [data-regist="haveAccount"]{
-          text-align: right;
-          line-height: 55px;
-          a{
-            color: $darker;
-          }
-        }
-      }
     }
-    /** 注册完成界面 **/
-    [data-regist="regfinish"]{
-      display: none;
-      position: relative;
-      height: 100%;
-      background-image: url("../../../images/pc/fgpwd/regist_bg.png");
-      h1{
-        line-height: 500px;
-        font-size:70px;
-        color: $orange;
-      }
-      [ data-regist="countdown"]{
-        position: absolute;
-        bottom:150px;
-        width: 100%;
-      }
-    }
-  }
 
 }
+
 /** 获取验证码按钮 **/
-#recruit_getcode{
-  position: absolute;
-  right: 0;
-  width:130px;
-  height:40px;
-  color: $darkgray;
+#recruit_getcode {
+    position: absolute;
+    right: 0;
+    width: 130px;
+    height: 40px;
+    color: $darkgray;
+    font-size: 14px;
 }

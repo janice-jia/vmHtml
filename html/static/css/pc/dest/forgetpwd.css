@@ -84,10 +84,11 @@
       /*** 提示文字 ***/ }
       #fgpwd [data-fgpwd="form_process"] .form-group [data-fgpd="helpword"] {
         text-align: left;
-        color: #ffb30e; }
+        color: #ffb30e;
+        font-size: 14px; }
     #fgpwd [data-fgpwd="form_process"] [data-fgpwd="nextBox"] {
       position: absolute;
-      bottom: 25px;
+      bottom: 48px;
       width: 344px;
       display: block; }
     #fgpwd [data-fgpwd="form_process"] [data-fgpwd="nextStep"] {
@@ -124,8 +125,9 @@
     margin-top: 10px;
     padding: 24px 48px; }
     #fgpwd [data-fgpwd="form_finish"] h2 {
-      font-size: 28px;
-      font-weight: bold; }
+      font-size: 24px;
+      font-weight: normal;
+      margin-top: 20px; }
     #fgpwd [data-fgpwd="form_finish"] h1 {
       font-size: 40px;
       margin-bottom: 10px;
@@ -145,11 +147,15 @@
 #fgpwd_changeCode {
   vertical-align: middle;
   width: 50%;
-  display: inline-block; }
+  display: inline-block;
+  font-size: 14px; }
 
 /*** 默认隐藏模块 **/
 [data-fgpwd="form_process"] form {
   display: none; }
+
+#fgpwd_newpwd .has-feedback {
+  margin-bottom: 40px; }
 
 [data-fgpwd="form_finish"] {
   display: none; }

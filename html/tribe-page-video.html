@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="static/css/pc/minCss/all.min.css" />
     <link rel="stylesheet" href="static/css/pc/destVersion1.1/tribe-show.css" />
 
+    <!--播放器-->
+    <link rel="stylesheet" href="static/js/pc/mediaelement/build/mediaelementplayer.css">
+
     <!--[if lt IE 9]>
     <script src="static/js/pc/dest/html5shiv.min.js"></script>
     <script src="static/js/pc/dest/respond.min.js"></script>
@@ -53,18 +56,31 @@
                 <li>编辑</li>
             </div>
             <ul class="video-content-list">
-                <li class="video-detail"><img src="/static/images/pc/version1.1/test/01.jpg" alt=""><span
-                        class="video-cover"></span></li>
-                <li class="video-detail"><img src="/static/images/pc/version1.1/test/02.jpg" alt=""><span
-                        class="video-cover"></span></li>
-                <li class="video-detail"><img src="/static/images/pc/version1.1/test/03.jpg" alt=""><span
-                        class="video-cover"></span></li>
-                <li class="video-detail"><img src="/static/images/pc/version1.1/test/04.jpg" alt=""><span
-                        class="video-cover"></span></li>
-                <li class="video-detail"><img src="/static/images/pc/version1.1/test/05.jpg" alt=""><span
-                        class="video-cover"></span></li>
-                <li class="video-detail"><img src="/static/images/pc/version1.1/test/06.jpg" alt=""><span
-                        class="video-cover"></span></li>
+                <li class="video-detail">
+                    <object width=250 height=190>
+                        <param name="movie" value="http://share.vrs.sohu.com/3174240/v.swf&topBar=1&autoplay=false&plid=9076231&pub_catecode=0&from=page"></param>
+                        <param name="allowFullScreen" value="true"></param>
+                        <param name="allowscriptaccess" value="always"></param>
+                        <param name="wmode" value="Transparent"></param>
+                        <embed width=250 height=190 wmode="Transparent" allowfullscreen="true" allowscriptaccess="always" quality="high" src="http://share.vrs.sohu.com/3174240/v.swf&topBar=1&autoplay=false&plid=9076231&pub_catecode=0&from=page" type="application/x-shockwave-flash"/></embed>
+                    </object>
+                </li>
+                <li class="video-detail">
+                    <video src="/static/video/video2.mp4" controls="controls" type="video/mp4" width="100%" height="190"  preload="metadata"></video>
+                </li>
+                <li class="video-detail">
+                    <video src="/static/video/video3.mp4" controls="controls" type="video/mp4" width="100%" height="190"  preload="metadata"></video>
+                </li>
+                <li class="video-detail">
+                    <video src="/static/video/video2.mp4" controls="controls" type="video/mp4" width="100%" height="190"  preload="metadata"></video>
+                </li>
+                <li class="video-detail">
+                    <video src="/static/video/video1.mp4" controls="controls" type="video/mp4" width="100%" height="190"  preload="metadata"></video>
+                </li>
+                <li class="video-detail">
+                    <video src="/static/video/video3.mp4" controls="controls" type="video/mp4" width="100%" height="190"  preload="metadata"></video>
+                </li>
+
             </ul>
             <div id="page"></div>
         </div>
@@ -145,7 +161,23 @@
 <script src="static/js/pc/dest/jquery-1.11.3.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="static/js/pc/dest/bootstrap.min.js"></script>
+<script src="static/js/pc/mediaelement/build/mediaelement-and-player.js"></script>
 <script src="static/js/pc/jquery.form-master/jquery.form.js"></script>
 <script src="static/js/pc/dest/all.min.js"></script>
+<script>
+    $(function () {
+        $('audio,video').mediaelementplayer({
+            // automatically create these translations on load
+            translations:['es','ar','yi','zh-cn'],
+            // allow the user to add additional translations
+            translationSelector: true,
+            defaultVideoWidth: 200,
+            // default if the <video height> is not specified
+            defaultVideoHeight: 200,
+            // start with English automatically turned on
+            startLanguage: 'en'
+        });
+    })
+</script>
 </body>
 </html>

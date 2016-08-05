@@ -160,7 +160,7 @@
     .zcbl-index-con .zcbl-tit h2 {
       font-weight: normal; }
       .zcbl-index-con .zcbl-tit h2 .zcbl-tit-name {
-        font-size: 28px; }
+        font-size: 22px; }
       .zcbl-index-con .zcbl-tit h2 .zcbl-tit-more {
         font-size: 14px;
         padding-left: 20px; }
@@ -264,7 +264,7 @@
       background: #ffffff;
       float: left;
       margin-left: 38px;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       position: relative; }
       .zcbl-index-con .zcbl-service ul li:hover .zcbl-service-info {
         filter: alpha(opacity=1);
@@ -355,7 +355,7 @@
     width: 500px;
     padding-top: 6px; }
     .zcbl-abouUs .zcbl-about-wall .zcbl-about-tit h1 {
-      font-size: 20px;
+      font-size: 18px;
       height: 50px;
       font-weight: bold;
       line-height: 50px;

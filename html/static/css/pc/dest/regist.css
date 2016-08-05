@@ -61,17 +61,20 @@
           background-image: url("../../../images/pc/icon/icon_regkey.png"); }
         #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] [data-regist="helpword"] {
           text-align: left;
-          color: #ffb30e; }
+          color: #ffb30e;
+          font-size: 14px; }
         #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] [data-regist="regist_submit"] {
           background-color: #ffb30e;
           width: 100%;
           height: 60px;
-          margin-top: 15px; }
+          margin-top: 15px;
+          font-size: 14px; }
         #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] [data-regist="agreement"] {
           color: #c1c1c1;
           text-align: left; }
           #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] [data-regist="agreement"] label {
-            font-weight: normal; }
+            font-weight: normal;
+            font-size: 14px; }
           #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] [data-regist="agreement"] input {
             height: 16px;
             width: 16px;
@@ -79,12 +82,14 @@
             position: relative;
             bottom: -3px; }
           #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] [data-regist="agreement"] a {
-            color: #171717; }
+            color: #171717;
+            font-size: 12px; }
         #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] [data-regist="haveAccount"] {
           text-align: right;
           line-height: 55px; }
           #regist [data-regist="container"] [data-regist="registnow"] [data-regist="form"] [data-regist="haveAccount"] a {
-            color: #171717; }
+            color: #171717;
+            font-size: 12px; }
     #regist [data-regist="container"] [data-regist="regfinish"] {
       display: none;
       position: relative;
@@ -105,4 +110,5 @@
   right: 0;
   width: 130px;
   height: 40px;
-  color: #515151; }
+  color: #515151;
+  font-size: 14px; }

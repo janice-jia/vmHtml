@@ -31,11 +31,23 @@ h1,h2,h3,h4,h5,h6{
     color: $color-03
   }
 }
-
 .breadcrumb > li + li:before {
   color: $color-03;
   content: ">";
   padding: 0 5px;
+}
+
+//黑色背景面包屑
+.breadcrumb-dar >li{
+  color: #fff;
+  a {
+    color: #fff
+  }
+}
+.breadcrumb:after{
+  display: table;
+  content: "";
+  clear: both;
 }
 
 //目录 索引
@@ -89,15 +101,35 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 
-/**暗色索引**/
-.indexdarker {
+/**暗色背景索引**/
+.indexdark {
   a {
-    color: $color-03;
+    color: #eee;
+
+  }
+  .indexcenter {
+
+    //下拉
+    .indexdrown {
+      background-color: #535353;
+
+    }
+  }
+  .indexcenter:hover {
+    background-color: #535353;
+    > a {
+      border-color: $color-03;
+      border-top-color: $color-07;
+      border-bottom-color: #535353;
+    }
+  }
+  .indexcenter:hover .indexdrown {
+    display: block;
   }
 
 }
 
-/**浅色索引**/
+/**浅色背景索引**/
 .indexlight {
   a {
     color: $color-01;
@@ -138,7 +170,23 @@ h1,h2,h3,h4,h5,h6{
     }
   }
 }
+.garyindex{
+  li{
+    a{
+      background-color:$color-03;
+    }
+    select{
+      width: 100px;
+      height: 40px;
+      font-size: 18px;
+      color: #fff;
+      padding-left: 10px;
+      background-color: $color-03;
+    }
+  }
+  }
 
+//编辑
 .edittxt{
   color: $color-03;
   font-size: 18px;
@@ -148,13 +196,22 @@ h1,h2,h3,h4,h5,h6{
     margin-right: 10px;
     display: inline-block;
     vertical-align: middle;
-    background-image: url("../../../images/pc/version1.1/icon/ico_edit.png");
+    background-image: url("../../../images/pc/version1.1/icon/icon_edit.png");
   }
 }
 
+
+
+
+
+
+/** 小说详细页 **/
 #tribe-book {
   [data-tbook="header"] {
     padding: 20px 40px;
+    >ol{
+      float: left;
+    }
     > ul {
       float: right;
     }
@@ -215,15 +272,192 @@ h1,h2,h3,h4,h5,h6{
 
 /**  查看漫画 开始  **/
 #tribe-img{
-  [data-tcartoon="header"] {
+  background-color:#323232;
+  .container{
+    padding: 0;
+  }
+  //头部信息
+  [data-vimg="header"] {
     line-height: 32px;
     padding: 20px 40px;
-    > ul {
-      float: right;
-
-    }
+    color: $color-03;
+    > ul {float: right;}
     >p{
       float: left;
+      margin-right: 24px;
+      .edittxt{
+        margin-left: 10px;
+      }
+    }
+    .breadcrumb-dar{
+      margin-right: 30px;
+      float: left;
+
+      h1{
+        font-size: 24px;
+      }
+    }
+  }
+  [data-vimg="header"]:after{
+    display: table;
+    content: "";
+    clear: both;
+  }
+  //上一页 下一页
+  [data-vimg="indexed"]{
+    margin-bottom: 30px;
+    position: relative;
+    //底部页码
+    p{
+      position: absolute;
+      top: 0;
+      margin-left: 34px;
+      color: #fff;
+      font-size: 20px;
+      span{
+        font-size: 24px;
+        color: $color-07;
+      }
+    }
+  }
+  //中间图片区域
+  [data-vimg="imgbox"]{
+    overflow-x: hidden;
+    text-align: center;
+    div[data-vimg="img"]{
+      display: inline-block;
+      width: 680px;
+      height: 872px;
+      img{
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+
+
+    //右边栏
+    .aside{
+      position: relative;
+      right: 20px;
+      float: right;
+      margin-top: 40%;
+      >ul>li{
+        width: 50px;
+        height: 50px;
+        background-color: $color-01;
+        padding: 6px 0;
+        cursor:pointer;
+        b{
+          width: 28px;
+          height: 38px;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+      .aside-top{
+        position: relative;
+        b{
+          background-image: url('../../../images/pc/version1.1/icon/icon_comment.png');
+        }
+        i{
+          width: 20px;
+          height:20px;
+          display: inline-block;
+          background-color: $color-08;
+          position: absolute;
+          top: -10px;
+          left:-10px;
+          border-radius: 50%;
+          font-style: normal;
+          color: #fff;
+          vertical-align: middle;
+          line-height: 20px;
+        }
+      }
+      .aside-center{
+        border-top: 1px solid $color-03;
+        border-bottom: 1px solid $color-03;
+        b{
+          background-image: url('../../../images/pc/version1.1/icon/icon_light.png');
+        }
+      }
+      .aside-footer{
+        b{
+          background-image: url('../../../images/pc/version1.1/icon/icon_share.png');
+        }
+      }
+      .img-comment{
+        position: absolute;
+        right: -210px;
+        top: -200%;
+        width:185px;
+        background-color: #fff;
+        padding: 12px;
+        transition: all .5s;
+        h3{
+          border-bottom: 1px solid $color-04;
+          font-size: 20px;
+          color: $color-02;
+          padding-bottom: 12px;
+        }
+        p{
+          border-top: 1px solid $color-04;
+          font-size:18px;
+          color: $color-07;
+          line-height: 52px;
+          margin: 0;
+        }
+        li{
+          text-align: left;
+          line-height:26px;
+          font-size: 14px;
+          overflow-x: hidden;
+          white-space:nowrap;
+        }
+        li:hover{
+          background-color: $color-04;
+          white-space:normal;
+
+        }
+      }
+    }
+  }
+  //吐槽
+  [data-vimg="comment"]{
+    margin: 50px 0;
+    text-align: center;
+
+    .tribe-imgcomment{
+      display: inline-block;
+      input{
+        float: left;
+        width:498px;
+        height: 50px;
+        background-color: $color-04;
+        font-size: 18px;
+        color: $color-02;
+        border: none;
+        padding: 10px;
+      }
+      button{
+        float: left;
+        width: 120px;
+        height: 50px;
+        font-size: 18px;
+        color: #fff;
+      }
+      //按钮颜色
+      .tribe-darkbtn{
+        background-color: $color-01;
+      }
+      .tribe-graybtn{
+        background-color: $color-02;
+      }
+    }
+    .tribe-imgcomment:after{
+      display: table;
+      clear: both;
+      content: "";
     }
   }
 }

@@ -215,7 +215,7 @@ $color-8f8f8e:#8f8f8e;
         h2{
             font-weight: normal;
             .zcbl-tit-name{
-                font-size: 28px;
+                font-size: 22px;
             }
             .zcbl-tit-more{
                 font-size: 14px;
@@ -351,7 +351,7 @@ $color-8f8f8e:#8f8f8e;
                 background: $color-ffffff;
                 float: left;
                 margin-left: 38px;
-                margin-bottom: 30px;
+                margin-bottom: 20px;
                 position: relative;
                 &:hover{
                     @extend .exten-box-shadow;
@@ -467,7 +467,7 @@ $color-8f8f8e:#8f8f8e;
         padding-top: 6px;
         .zcbl-about-tit{
             h1{
-                font-size: 20px;
+                font-size: 18px;
                 height: 50px;
                 font-weight: bold;
                 line-height: 50px;

@@ -25,9 +25,13 @@
    * ===================
    */
   /**
-   * 申请开通
+   * 申请开通 - 模态框
    * ===================
-   */ }
+   */
+  /**
+  * 添加、编辑 - 剧集 - 模态框
+  * ===================
+  */ }
   #tribe-cartoon .cartoon-header {
     margin-top: 220px;
     border: 1px solid #c1c1c1;
@@ -295,3 +299,12 @@
         margin-left: 103px; }
       #tribe-cartoon .tribe-apply-model > form .checkbox input {
         margin-right: 10px; }
+  #tribe-cartoon .tribe-novel-model {
+    position: absolute;
+    padding-top: 36px;
+    top: 50%;
+    left: 50%;
+    margin: -345px 0 0 -465px;
+    background: #FFF;
+    height: 690px;
+    width: 930px; }

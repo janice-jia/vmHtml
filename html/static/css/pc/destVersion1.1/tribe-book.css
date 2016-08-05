@@ -18,6 +18,16 @@ h1, h2, h3, h4, h5, h6 {
   content: ">";
   padding: 0 5px; }
 
+.breadcrumb-dar > li {
+  color: #fff; }
+  .breadcrumb-dar > li a {
+    color: #fff; }
+
+.breadcrumb:after {
+  display: table;
+  content: "";
+  clear: both; }
+
 .indexed {
   font-size: 18px;
   text-align: center; }
@@ -56,11 +66,21 @@ h1, h2, h3, h4, h5, h6 {
         width: 100%;
         text-align: left; }
 
-/**暗色索引**/
-.indexdarker a {
-  color: #909090; }
+/**暗色背景索引**/
+.indexdark a {
+  color: #eee; }
+.indexdark .indexcenter .indexdrown {
+  background-color: #535353; }
+.indexdark .indexcenter:hover {
+  background-color: #535353; }
+  .indexdark .indexcenter:hover > a {
+    border-color: #909090;
+    border-top-color: #ffb30e;
+    border-bottom-color: #535353; }
+.indexdark .indexcenter:hover .indexdrown {
+  display: block; }
 
-/**浅色索引**/
+/**浅色背景索引**/
 .indexlight a {
   color: #171717; }
 .indexlight .indexcenter .indexdrown {
@@ -88,6 +108,16 @@ h1, h2, h3, h4, h5, h6 {
       color: #fff;
       font-size: 18px; }
 
+.garyindex li a {
+  background-color: #909090; }
+.garyindex li select {
+  width: 100px;
+  height: 40px;
+  font-size: 18px;
+  color: #fff;
+  padding-left: 10px;
+  background-color: #909090; }
+
 .edittxt {
   color: #909090;
   font-size: 18px; }
@@ -97,10 +127,13 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 10px;
     display: inline-block;
     vertical-align: middle;
-    background-image: url("../../../images/pc/version1.1/icon/ico_edit.png"); }
+    background-image: url("../../../images/pc/version1.1/icon/icon_edit.png"); }
 
+/** 小说详细页 **/
 #tribe-book [data-tbook="header"] {
   padding: 20px 40px; }
+  #tribe-book [data-tbook="header"] > ol {
+    float: left; }
   #tribe-book [data-tbook="header"] > ul {
     float: right; }
 #tribe-book [data-tbook="header"]:after {
@@ -137,10 +170,145 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center; }
 
 /**  查看漫画 开始  **/
-#tribe-img [data-tcartoon="header"] {
-  line-height: 32px;
-  padding: 20px 40px; }
-  #tribe-img [data-tcartoon="header"] > ul {
-    float: right; }
-  #tribe-img [data-tcartoon="header"] > p {
-    float: left; }
+#tribe-img {
+  background-color: #323232; }
+  #tribe-img .container {
+    padding: 0; }
+  #tribe-img [data-vimg="header"] {
+    line-height: 32px;
+    padding: 20px 40px;
+    color: #909090; }
+    #tribe-img [data-vimg="header"] > ul {
+      float: right; }
+    #tribe-img [data-vimg="header"] > p {
+      float: left;
+      margin-right: 24px; }
+      #tribe-img [data-vimg="header"] > p .edittxt {
+        margin-left: 10px; }
+    #tribe-img [data-vimg="header"] .breadcrumb-dar {
+      margin-right: 30px;
+      float: left; }
+      #tribe-img [data-vimg="header"] .breadcrumb-dar h1 {
+        font-size: 24px; }
+  #tribe-img [data-vimg="header"]:after {
+    display: table;
+    content: "";
+    clear: both; }
+  #tribe-img [data-vimg="indexed"] {
+    margin-bottom: 30px;
+    position: relative; }
+    #tribe-img [data-vimg="indexed"] p {
+      position: absolute;
+      top: 0;
+      margin-left: 34px;
+      color: #fff;
+      font-size: 20px; }
+      #tribe-img [data-vimg="indexed"] p span {
+        font-size: 24px;
+        color: #ffb30e; }
+  #tribe-img [data-vimg="imgbox"] {
+    overflow-x: hidden;
+    text-align: center; }
+    #tribe-img [data-vimg="imgbox"] div[data-vimg="img"] {
+      display: inline-block;
+      width: 680px;
+      height: 872px; }
+      #tribe-img [data-vimg="imgbox"] div[data-vimg="img"] img {
+        max-width: 100%;
+        max-height: 100%; }
+    #tribe-img [data-vimg="imgbox"] .aside {
+      position: relative;
+      right: 20px;
+      float: right;
+      margin-top: 40%; }
+      #tribe-img [data-vimg="imgbox"] .aside > ul > li {
+        width: 50px;
+        height: 50px;
+        background-color: #171717;
+        padding: 6px 0;
+        cursor: pointer; }
+        #tribe-img [data-vimg="imgbox"] .aside > ul > li b {
+          width: 28px;
+          height: 38px;
+          display: inline-block;
+          vertical-align: middle; }
+      #tribe-img [data-vimg="imgbox"] .aside .aside-top {
+        position: relative; }
+        #tribe-img [data-vimg="imgbox"] .aside .aside-top b {
+          background-image: url("../../../images/pc/version1.1/icon/icon_comment.png"); }
+        #tribe-img [data-vimg="imgbox"] .aside .aside-top i {
+          width: 20px;
+          height: 20px;
+          display: inline-block;
+          background-color: #e43f3f;
+          position: absolute;
+          top: -10px;
+          left: -10px;
+          border-radius: 50%;
+          font-style: normal;
+          color: #fff;
+          vertical-align: middle;
+          line-height: 20px; }
+      #tribe-img [data-vimg="imgbox"] .aside .aside-center {
+        border-top: 1px solid #909090;
+        border-bottom: 1px solid #909090; }
+        #tribe-img [data-vimg="imgbox"] .aside .aside-center b {
+          background-image: url("../../../images/pc/version1.1/icon/icon_light.png"); }
+      #tribe-img [data-vimg="imgbox"] .aside .aside-footer b {
+        background-image: url("../../../images/pc/version1.1/icon/icon_share.png"); }
+      #tribe-img [data-vimg="imgbox"] .aside .img-comment {
+        position: absolute;
+        right: -210px;
+        top: -200%;
+        width: 185px;
+        background-color: #fff;
+        padding: 12px;
+        transition: all .5s; }
+        #tribe-img [data-vimg="imgbox"] .aside .img-comment h3 {
+          border-bottom: 1px solid #c1c1c1;
+          font-size: 20px;
+          color: #515151;
+          padding-bottom: 12px; }
+        #tribe-img [data-vimg="imgbox"] .aside .img-comment p {
+          border-top: 1px solid #c1c1c1;
+          font-size: 18px;
+          color: #ffb30e;
+          line-height: 52px;
+          margin: 0; }
+        #tribe-img [data-vimg="imgbox"] .aside .img-comment li {
+          text-align: left;
+          line-height: 26px;
+          font-size: 14px;
+          overflow-x: hidden;
+          white-space: nowrap; }
+        #tribe-img [data-vimg="imgbox"] .aside .img-comment li:hover {
+          background-color: #c1c1c1;
+          white-space: normal; }
+  #tribe-img [data-vimg="comment"] {
+    margin: 50px 0;
+    text-align: center; }
+    #tribe-img [data-vimg="comment"] .tribe-imgcomment {
+      display: inline-block; }
+      #tribe-img [data-vimg="comment"] .tribe-imgcomment input {
+        float: left;
+        width: 498px;
+        height: 50px;
+        background-color: #c1c1c1;
+        font-size: 18px;
+        color: #515151;
+        border: none;
+        padding: 10px; }
+      #tribe-img [data-vimg="comment"] .tribe-imgcomment button {
+        float: left;
+        width: 120px;
+        height: 50px;
+        font-size: 18px;
+        color: #fff; }
+      #tribe-img [data-vimg="comment"] .tribe-imgcomment .tribe-darkbtn {
+        background-color: #171717; }
+      #tribe-img [data-vimg="comment"] .tribe-imgcomment .tribe-graybtn {
+        background-color: #515151; }
+    #tribe-img [data-vimg="comment"] .tribe-imgcomment:after {
+      display: table;
+      clear: both;
+      content: ""; }

@@ -27,6 +27,7 @@ $color-fb4444: #fb4444;
 #severList {
     [data-websever="dropdown"] {
         background-color: $color-ffffff;
+        height: 90px;
         /**  下拉按钮  **/
         [data-websever="dropdownbtn"] {
             display: inline-block;

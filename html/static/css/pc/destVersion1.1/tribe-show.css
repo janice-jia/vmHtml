@@ -243,19 +243,9 @@
         transition: box-shadow .3s; }
         #tribe-cartoon .cartoon-content .video-content-list > .video-detail:hover {
           box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.35); }
-        #tribe-cartoon .cartoon-content .video-content-list > .video-detail img {
+        #tribe-cartoon .cartoon-content .video-content-list > .video-detail video {
           width: 100%;
           height: 100%; }
-        #tribe-cartoon .cartoon-content .video-content-list > .video-detail:hover > .video-cover {
-          transition: background .3s;
-          background: rgba(0, 0, 0, 0.3) url("/static/images/pc/version1.1/icon/icon_video_play.png") no-repeat center;
-          width: 100%;
-          height: 100%;
-          display: block;
-          position: absolute;
-          right: 0px;
-          top: 0;
-          z-index: 2; }
     #tribe-cartoon .cartoon-content .novel-content-list {
       margin-top: 15px;
       clear: both;

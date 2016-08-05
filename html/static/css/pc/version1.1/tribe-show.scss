@@ -345,25 +345,24 @@ $color-08: #e43f3f;
           box-shadow: 0px 5px 13px rgba(0,0,0,.35);
         }
 
-        // 缩略图
-        img {
-
+        // 视频
+        video {
           width: 100%;
           height:100%;
         }
 
-        // 删除按钮
-        &:hover >.video-cover {
-          transition:background .3s;
-          background: rgba(0,0,0,0.3)url('/static/images/pc/version1.1/icon/icon_video_play.png') no-repeat center;
-          width: 100%;
-          height: 100%;
-          display: block;
-          position: absolute;
-          right: 0px;
-          top:0;
-          z-index: 2;
-        }
+        // 视频封面
+        //&:hover >.video-cover {
+        //  transition:background .3s;
+        //  background: rgba(0,0,0,0.3)url('/static/images/pc/version1.1/icon/icon_video_play.png') no-repeat center;
+        //  width: 100%;
+        //  height: 100%;
+        //  display: block;
+        //  position: absolute;
+        //  right: 0px;
+        //  top:0;
+        //  z-index: 2;
+        //}
       }
     }
 

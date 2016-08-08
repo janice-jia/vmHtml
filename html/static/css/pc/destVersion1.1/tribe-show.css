@@ -288,30 +288,36 @@
         float: left;
         width: 120px;
         height: 3px; }
+        #tribe-cartoon .tribe-progress #progressBar > li .progress-msg {
+          display: none;
+          background-color: inherit;
+          border-radius: 3px;
+          padding: 14px 30px;
+          min-height: 30px;
+          position: absolute;
+          bottom: 5px;
+          left: 46px;
+          z-index: 5; }
+        #tribe-cartoon .tribe-progress #progressBar > li .progress-icon {
+          background-color: #909090;
+          cursor: pointer;
+          position: absolute;
+          top: -20px;
+          width: 42px;
+          height: 42px;
+          border-radius: 50%; }
         #tribe-cartoon .tribe-progress #progressBar > li:nth-child(1) {
           width: 186px;
           background: #ffb30e; }
           #tribe-cartoon .tribe-progress #progressBar > li:nth-child(1) .progress-icon {
-            cursor: pointer;
-            position: absolute;
-            z-index: 4;
-            left: 46px;
-            top: -20px;
-            background: url("/static/images/pc/version1.1/timeline/film.png") no-repeat;
-            width: 42px;
-            height: 42px; }
+            z-index: 10;
+            left: 45px;
+            background-image: url("../../../images/pc/version1.1/icon/icon_m_start.png");
+            background-position-x: 1px; }
             #tribe-cartoon .tribe-progress #progressBar > li:nth-child(1) .progress-icon:hover .progress-msg {
               display: block; }
-          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(1) .progress-msg {
-            display: none;
-            background: #c1c1c1;
-            border-radius: 3px;
-            padding: 14px 30px;
-            min-height: 30px;
-            position: absolute;
-            bottom: 5px;
-            left: 46px;
-            z-index: 3; }
+          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(1) .progress-icon-finish {
+            background-color: #ffb30e; }
           #tribe-cartoon .tribe-progress #progressBar > li:nth-child(1):after {
             border-radius: 50%;
             background: #eeeeee;
@@ -338,6 +344,15 @@
             height: 59px; }
         #tribe-cartoon .tribe-progress #progressBar > li:nth-child(2) {
           background: #499af5; }
+          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(2) .progress-icon {
+            z-index: 9;
+            left: 71px;
+            background-image: url("../../../images/pc/version1.1/icon/icon_m_cartoon.png");
+            background-position: 1px; }
+            #tribe-cartoon .tribe-progress #progressBar > li:nth-child(2) .progress-icon:hover .progress-msg {
+              display: block; }
+          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(2) .progress-icon-finish {
+            background-color: #499af5; }
           #tribe-cartoon .tribe-progress #progressBar > li:nth-child(2):after {
             background: #eeeeee;
             font-size: 18px;
@@ -362,6 +377,15 @@
             border-radius: 50%; }
         #tribe-cartoon .tribe-progress #progressBar > li:nth-child(3) {
           background: #5BCC39; }
+          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(3) .progress-icon {
+            z-index: 8;
+            left: 70px;
+            background-image: url("../../../images/pc/version1.1/icon/icon_m_flash.png");
+            background-position: 2px; }
+            #tribe-cartoon .tribe-progress #progressBar > li:nth-child(3) .progress-icon:hover .progress-msg {
+              display: block; }
+          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(3) .progress-icon-finish {
+            background-color: #5BCC39; }
           #tribe-cartoon .tribe-progress #progressBar > li:nth-child(3):after {
             background: #eeeeee;
             content: "";
@@ -387,6 +411,15 @@
             height: 59px; }
         #tribe-cartoon .tribe-progress #progressBar > li:nth-child(4) {
           background: #499af5; }
+          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(4) .progress-icon {
+            z-index: 7;
+            left: 70px;
+            background-image: url("../../../images/pc/version1.1/icon/icon_m_game.png");
+            background-position-x: 2px; }
+            #tribe-cartoon .tribe-progress #progressBar > li:nth-child(4) .progress-icon:hover .progress-msg {
+              display: block; }
+          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(4) .progress-icon-finish {
+            background-color: #499af5; }
           #tribe-cartoon .tribe-progress #progressBar > li:nth-child(4):after {
             background: #eeeeee;
             padding-left: 66px;
@@ -411,6 +444,15 @@
             border-radius: 50%; }
         #tribe-cartoon .tribe-progress #progressBar > li:nth-child(5) {
           background: #FF6D33; }
+          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(5) .progress-icon {
+            z-index: 6;
+            left: 70px;
+            background-image: url("../../../images/pc/version1.1/icon/icon_m_tv.png");
+            background-position-x: 2px; }
+            #tribe-cartoon .tribe-progress #progressBar > li:nth-child(5) .progress-icon:hover .progress-msg {
+              display: block; }
+          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(5) .progress-icon-finish {
+            background-color: #FF6D33; }
           #tribe-cartoon .tribe-progress #progressBar > li:nth-child(5):after {
             background: #eeeeee;
             content: "";
@@ -436,6 +478,15 @@
             height: 59px; }
         #tribe-cartoon .tribe-progress #progressBar > li:nth-child(6) {
           background: #ffb30e; }
+          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(6) .progress-icon {
+            z-index: 5;
+            left: 70px;
+            background-image: url("../../../images/pc/version1.1/icon/icon_m_film.png");
+            background-position-x: 2px; }
+            #tribe-cartoon .tribe-progress #progressBar > li:nth-child(6) .progress-icon:hover .progress-msg {
+              display: block; }
+          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(6) .progress-icon-finish {
+            background-color: #ffb30e; }
           #tribe-cartoon .tribe-progress #progressBar > li:nth-child(6):after {
             background: #eeeeee;
             content: "大电影";
@@ -460,6 +511,13 @@
         #tribe-cartoon .tribe-progress #progressBar > li:nth-child(7) {
           width: 186px;
           background: #5BCC39; }
+          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(7) .progress-icon {
+            z-index: 4;
+            left: 100px;
+            background-image: url("../../../images/pc/version1.1/icon/icon_m_other.png");
+            background-position-x: 1px; }
+            #tribe-cartoon .tribe-progress #progressBar > li:nth-child(7) .progress-icon:hover .progress-msg {
+              display: block; }
           #tribe-cartoon .tribe-progress #progressBar > li:nth-child(7):after {
             border-radius: 50%;
             background: #eeeeee;

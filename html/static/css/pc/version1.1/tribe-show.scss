@@ -445,6 +445,37 @@ $pro-color-7:#5BCC39;
         &:nth-child(1){
           width: 186px;
           background: $pro-color-1;
+
+          // 进度图标
+          .progress-icon {
+            cursor: pointer;
+            position: absolute;
+            z-index: 4;
+            left:46px;
+            top:-20px;
+            background: url("/static/images/pc/version1.1/timeline/film.png") no-repeat;
+            width: 42px;
+            height: 42px;
+            //border:1px solid red;
+            &:hover .progress-msg{
+              display: block;
+            }
+          }
+
+          // 申请开通
+          .progress-msg {
+            //display: none;
+            background: $color-04;
+            border-radius: 3px;
+            padding: 14px 30px;
+            min-height: 30px;
+            //border: 1px solid red;
+            position: absolute;
+            bottom: 5px;
+            left:46px;
+            z-index: 3;
+          }
+
           &:after{
             border-radius: 50%;
             background: $color-05;
@@ -489,7 +520,7 @@ $pro-color-7:#5BCC39;
             width: $pro-with;
             height: 59px;
             //border:1px solid $pro-color-2;
-            z-index: 3;
+            z-index: 2;
           }
           &:before{
             background: $color-05;

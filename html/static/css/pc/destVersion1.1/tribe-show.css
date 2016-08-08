@@ -291,6 +291,26 @@
         #tribe-cartoon .tribe-progress #progressBar > li:nth-child(1) {
           width: 186px;
           background: #ffb30e; }
+          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(1) .progress-icon {
+            cursor: pointer;
+            position: absolute;
+            z-index: 4;
+            left: 46px;
+            top: -20px;
+            background: url("/static/images/pc/version1.1/timeline/film.png") no-repeat;
+            width: 42px;
+            height: 42px; }
+            #tribe-cartoon .tribe-progress #progressBar > li:nth-child(1) .progress-icon:hover .progress-msg {
+              display: block; }
+          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(1) .progress-msg {
+            background: #c1c1c1;
+            border-radius: 3px;
+            padding: 14px 30px;
+            min-height: 30px;
+            position: absolute;
+            bottom: 5px;
+            left: 46px;
+            z-index: 3; }
           #tribe-cartoon .tribe-progress #progressBar > li:nth-child(1):after {
             border-radius: 50%;
             background: #eeeeee;
@@ -328,7 +348,7 @@
             bottom: 3px;
             width: 120px;
             height: 59px;
-            z-index: 3; }
+            z-index: 2; }
           #tribe-cartoon .tribe-progress #progressBar > li:nth-child(2):before {
             background: #eeeeee;
             content: "";

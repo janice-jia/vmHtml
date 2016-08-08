@@ -1,0 +1,100 @@
+@charset "utf-8";
+/**
+  by dhj
+**/
+$font-12: 12px;
+$font-14: 14px;
+$font-16: 16px;
+$font-18: 18px;
+$font-20: 20px;
+$font-22: 22px;
+$font-24: 24px;
+
+$color-01: #171717;
+$color-02: #515151;
+$color-03: #909090;
+$color-04: #c1c1c1; //(输入框边框颜色)
+$color-05: #eeeeee; //(背景色)
+$color-06: #499af5;
+$color-07: #ffb30e;
+$color-08: #e43f3f;
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+p{
+  margin: 0;
+}
+//标题导航修改
+.zcbl-tmodal-1{
+  width:930px;
+  height:600px;
+  margin: 10% auto;
+  background-color: #fff;
+  padding:40px 0;
+  .zcbl-tmodal-row{
+    margin-bottom: 20px;
+    p{
+      margin: 0;
+      margin-left: 50px;
+      float: left;
+      font-size: 20px;
+      color: $color-02;
+      input,select{
+        margin-left: 30px;
+        width: 298px;
+        height:50px;
+        padding: 10px;
+      }
+    }
+  }
+  .zcbl-tmodal-row:after{
+    display: table;
+    content: "";
+    clear: both;
+  }
+
+
+  .zcbl-tmodal-subbtn{
+    text-align: center;
+    margin-top: 50px;
+    button{
+      width:130px;
+      height: 50px;
+      background-color: $color-07;
+    }
+  }
+}
+
+//上传漫画
+.zcbl-tmodal-1{
+  .zcbl-tmodal-tabinput{
+    text-align: center;
+    p{
+      font-size: 20px;
+      color: $color-02;
+      input{
+        width: 779px;
+        height: 50px;
+        margin-left: 30px;
+      }
+    }
+  }
+  .zcbl-tmodal-add{
+    text-align: center;
+    height: 260px;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    input{
+      height: 260px;
+      width: 200px;
+      background-color: #0f0f0f;
+      filter:alpha(opacity=50);
+      -moz-opacity:0.5;
+      -khtml-opacity:0.5;
+      opacity: 0.5;
+
+    }
+  }
+}

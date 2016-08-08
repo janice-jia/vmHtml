@@ -1,0 +1,64 @@
+/**
+  by dhj
+**/
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+p {
+  margin: 0; }
+
+.zcbl-tmodal-1 {
+  width: 930px;
+  height: 600px;
+  margin: 10% auto;
+  background-color: #fff;
+  padding: 40px 0; }
+  .zcbl-tmodal-1 .zcbl-tmodal-row {
+    margin-bottom: 20px; }
+    .zcbl-tmodal-1 .zcbl-tmodal-row p {
+      margin: 0;
+      margin-left: 50px;
+      float: left;
+      font-size: 20px;
+      color: #515151; }
+      .zcbl-tmodal-1 .zcbl-tmodal-row p input, .zcbl-tmodal-1 .zcbl-tmodal-row p select {
+        margin-left: 30px;
+        width: 298px;
+        height: 50px;
+        padding: 10px; }
+  .zcbl-tmodal-1 .zcbl-tmodal-row:after {
+    display: table;
+    content: "";
+    clear: both; }
+  .zcbl-tmodal-1 .zcbl-tmodal-subbtn {
+    text-align: center;
+    margin-top: 50px; }
+    .zcbl-tmodal-1 .zcbl-tmodal-subbtn button {
+      width: 130px;
+      height: 50px;
+      background-color: #ffb30e; }
+
+.zcbl-tmodal-1 .zcbl-tmodal-tabinput {
+  text-align: center; }
+  .zcbl-tmodal-1 .zcbl-tmodal-tabinput p {
+    font-size: 20px;
+    color: #515151; }
+    .zcbl-tmodal-1 .zcbl-tmodal-tabinput p input {
+      width: 779px;
+      height: 50px;
+      margin-left: 30px; }
+.zcbl-tmodal-1 .zcbl-tmodal-add {
+  text-align: center;
+  height: 260px;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 50px; }
+  .zcbl-tmodal-1 .zcbl-tmodal-add input {
+    height: 260px;
+    width: 200px;
+    background-color: #0f0f0f;
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5; }

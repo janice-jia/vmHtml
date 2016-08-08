@@ -303,6 +303,7 @@
             #tribe-cartoon .tribe-progress #progressBar > li:nth-child(1) .progress-icon:hover .progress-msg {
               display: block; }
           #tribe-cartoon .tribe-progress #progressBar > li:nth-child(1) .progress-msg {
+            display: none;
             background: #c1c1c1;
             border-radius: 3px;
             padding: 14px 30px;

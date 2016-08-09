@@ -421,26 +421,42 @@ $pro-color-7:#5BCC39;
     height: 240px;
     background: $color-05;
     //border: 1px solid red;
-    overflow: hidden;
+    //overflow: hidden;
+    &:before{
+      content: "";
+      display: table;
+    }
 
     // 进度条高度
     $pro-border:3px;
 
     // 进度条宽度 2 3 4 5 6
-    $pro-with:120px;
+    $pro-with:142px;
 
     #progressBar {
-      width: 1005px;
+      //width: 1005px;
+      width: 970px;
       background: #CCC;
       height: $pro-border;
       margin-top: 110px;
       & > li {
           position:relative;
           margin: 0px auto;
-          float: left;  width: $pro-with;
+          float: left;
+          width: $pro-with;
           height:$pro-border;
+          background-color: $color-03;
+          border-color: $color-03;
+        &:after{
+          border-color: $color-03;
+          color: $color-03;
+        }
+        &:before{
+          border-color: $color-03;
+          color: $color-03;
+        }
 
-        // 申请开通
+        // 申请开通 通用
         .progress-msg {
           display: none;
           background-color: inherit;
@@ -452,10 +468,17 @@ $pro-color-7:#5BCC39;
           bottom: 5px;
           left:46px;
           z-index: 5;
+          div{
+            color: #fff;
+            width: 174px;
+          }
         }
-        //开通前
+
+
+        //开通前 通用
         .progress-icon{
           background-color: $color-03;
+          border-color:$color-03 ;
           cursor: pointer;
           position: absolute;
           top:-20px;
@@ -464,10 +487,48 @@ $pro-color-7:#5BCC39;
           border-radius:50%;
         }
 
+
+        //开通后 通用
+        &.progress-finish{
+          .progress-icon{
+            background-color: inherit;
+          }
+          &:after{
+            border-color: inherit;
+            color: inherit;
+          }
+          &:before{
+            border-color: inherit;
+            color: inherit;
+          }
+        }
+        //开通后
+        &:nth-child(1).progress-finish,&:nth-child(6).progress-finish{
+          border-color: $pro-color-1;
+          background-color: $pro-color-1;
+          color: $pro-color-1;
+        }
+        &:nth-child(2).progress-finish,&:nth-child(4).progress-finish{
+          border-color: $pro-color-2;
+          background-color: $pro-color-2;
+          color: $pro-color-2;
+        }
+        &:nth-child(3).progress-finish,&:nth-child(7).progress-finish{
+          border-color: $pro-color-3;
+          background-color: $pro-color-3;
+          color: $pro-color-3;
+        }
+        &:nth-child(5).progress-finish{
+          border-color: $pro-color-5;
+          background-color: $pro-color-5;
+          color: $pro-color-5;
+        }
+
         // 进度1
         &:nth-child(1){
-          width: 186px;
-          background: $pro-color-1;
+          width: 96px;
+          //background-color: $pro-color-1;
+          //border-color:$pro-color-1 ;
 
           // 进度图标
           .progress-icon {
@@ -494,11 +555,14 @@ $pro-color-7:#5BCC39;
             bottom: -29px;
             width: 59px;
             height: 59px;
-            border:$pro-border solid  $pro-color-1;
+            //border:$pro-border solid  $pro-color-1;
+            border-style: solid;
+            border-width: $pro-border;
+            //border:$pro-border solid ;
           }
           &:before{
             font-size: $font-18;
-            color: $pro-color-1;
+            //color: $pro-color-1;
             z-index: 3;
             background: $color-05;
             content: "2016.7.25 启程";
@@ -508,7 +572,7 @@ $pro-color-7:#5BCC39;
             position: absolute;
             left:0px;
             top: $pro-border;
-            width: 186px;
+            width: 178px;
             height: 59px;
             //border:1px solid red;
           }
@@ -516,12 +580,12 @@ $pro-color-7:#5BCC39;
 
         // 进度2
         &:nth-child(2){
-          background: $pro-color-2;
+          //background: $pro-color-2;
 
           // 进度图标
           .progress-icon {
             z-index: 9;
-            left:71px;
+            left:92px;
             background-image: url("../../../images/pc/version1.1/icon/icon_m_cartoon.png");
             background-position: 1px;
             //border:1px solid red;
@@ -530,18 +594,18 @@ $pro-color-7:#5BCC39;
             }
           }
           //开通后
-          .progress-icon-finish{
+          /**.progress-icon-finish{
             background-color: $pro-color-2;
-          }
+          }**/
 
           &:after{
             background: $color-05;
             font-size: $font-18;
-            color: $pro-color-2;
+            //color: $pro-color-2;
             content: "漫画";
             padding-left: 70px;
             position: absolute;
-            left:0px;
+            left:24px;
             bottom: $pro-border;
             width: $pro-with;
             height: 59px;
@@ -556,19 +620,22 @@ $pro-color-7:#5BCC39;
             top: -29px;
             width: 59px;
             height: 59px;
-            border:$pro-border solid $pro-color-2;
+            //border:$pro-border solid $pro-color-2;
+            border-style: solid;
+            border-width: $pro-border;
+
             border-radius: 50%;
           }
         }
 
         // 进度3
         &:nth-child(3){
-          background: $pro-color-3;
+          //background: $pro-color-3;
 
           // 进度图标
           .progress-icon {
             z-index: 8;
-            left:70px;
+            left:92px;
             background-image: url("../../../images/pc/version1.1/icon/icon_m_flash.png");
             background-position:2px;
             //border:1px solid red;
@@ -589,19 +656,23 @@ $pro-color-7:#5BCC39;
             bottom: -29px;
             width: 59px;
             height: 59px;
-            border:$pro-border solid $pro-color-3;
             border-radius: 50%;
+            //border:$pro-border solid $pro-color-3;
+
+
+            border-style: solid;
+            border-width: $pro-border;
           }
           &:before{
             z-index: 3;
             background: $color-05;
             font-size: $font-18;
-            color:$pro-color-3;
+            //color:$pro-color-3;
             padding-top: 25px;
             padding-left: 66px;
             content: "动画片";
             position: absolute;
-            right:0px;
+            right:-16px;
             top: $pro-border;
             width: $pro-with;
             height: 59px;
@@ -612,12 +683,12 @@ $pro-color-7:#5BCC39;
 
         // 进度4
         &:nth-child(4){
-          background: $pro-color-4;
+          //background: $pro-color-4;
 
           // 进度图标
           .progress-icon {
             z-index: 7;
-            left:70px;
+            left:92px;
             background-image: url("../../../images/pc/version1.1/icon/icon_m_game.png");
             background-position-x: 2px;
             //border:1px solid red;
@@ -627,17 +698,17 @@ $pro-color-7:#5BCC39;
           }
           //开通后
           .progress-icon-finish{
-            background-color: $pro-color-4;
+            //background-color: $pro-color-4;
           }
 
           &:after{
             background: $color-05;
             padding-left: 66px;
-            color: $pro-color-4;
+            //color: $pro-color-4;
             font-size: $font-18;
             content: "游戏";
             position: absolute;
-            left:0px;
+            left:27px;
             bottom: $pro-border;
             width: $pro-with;
             height: 59px;
@@ -652,29 +723,27 @@ $pro-color-7:#5BCC39;
             top: -29px;
             width: 59px;
             height: 59px;
-            border:$pro-border solid $pro-color-2;
+            //border:$pro-border solid $pro-color-2;
+            border-style: solid;
+            border-width: $pro-border;
             border-radius: 50%;
           }
         }
 
         // 进度5
         &:nth-child(5){
-          background: $pro-color-5;
+          //background: $pro-color-5;
 
           // 进度图标
           .progress-icon {
             z-index: 6;
-            left:70px;
+            left:92px;
             background-image: url("../../../images/pc/version1.1/icon/icon_m_tv.png");
             background-position-x: 2px;
             //border:1px solid red;
             &:hover .progress-msg{
               display: block;
             }
-          }
-          //开通后
-          .progress-icon-finish{
-            background-color: $pro-color-5;
           }
 
           &:after{
@@ -685,7 +754,9 @@ $pro-color-7:#5BCC39;
             bottom: -29px;
             width: 59px;
             height: 59px;
-            border:$pro-border solid $pro-color-5;
+            //border:$pro-border solid $pro-color-5;
+            border-style: solid;
+            border-width: $pro-border;
             border-radius: 50%;
           }
           &:before{
@@ -695,9 +766,9 @@ $pro-color-7:#5BCC39;
             font-size: $font-18;
             padding-top: 25px;
             padding-left: 66px;
-            color: $pro-color-5;
+            //color: $pro-color-5;
             position: absolute;
-            left:0px;
+            left:15px;
             top: $pro-border;
             width: $pro-with;
             height: 59px;
@@ -708,12 +779,12 @@ $pro-color-7:#5BCC39;
 
         // 进度6
         &:nth-child(6){
-          background: $pro-color-6;
+          //background: $pro-color-6;
 
           // 进度图标
           .progress-icon {
             z-index:5;
-            left:70px;
+            left:92px;
             background-image: url("../../../images/pc/version1.1/icon/icon_m_film.png");
             background-position-x: 2px;
             //border:1px solid red;
@@ -721,18 +792,14 @@ $pro-color-7:#5BCC39;
               display: block;
             }
           }
-          //开通后
-          .progress-icon-finish{
-            background-color: $pro-color-6;
-          }
 
           &:after{
             background: $color-05;
             content: "大电影";
-            color: $pro-color-6;
+            //color: $pro-color-6;
             padding-left: 66px;
             position: absolute;
-            left:0px;
+            left:24px;
             bottom: $pro-border;
             width: $pro-with;
             height: 59px;
@@ -747,15 +814,18 @@ $pro-color-7:#5BCC39;
             top: -29px;
             width: 59px;
             height: 59px;
-            border:$pro-border solid $pro-color-6;
+            //border:$pro-border solid $pro-color-6;
+            border-style: solid;
+            border-width: $pro-border;
             border-radius: 50%;
           }
         }
 
         // 进度7
         &:nth-child(7){
-          width: 186px;
-          background: $pro-color-7;
+          //width: 186px;
+          width: 163px;
+          //background: $pro-color-7;
 
           // 进度图标
           .progress-icon {
@@ -775,24 +845,28 @@ $pro-color-7:#5BCC39;
             background: $color-05;
             content: "";
             position: absolute;
-            right:36px;
+            //right:36px;
+            right:14px;
             bottom: -29px;
             width: 59px;
             height: 59px;
-            border:$pro-border solid  $pro-color-7;
+            //border:$pro-border solid  $pro-color-7;
+            border-style: solid;
+            border-width: $pro-border;
           }
           &:before{
             z-index: 3;
             background: $color-05;
             content: "衍生品";
-            color: $pro-color-7;
+            //color: $pro-color-7;
             font-size: $font-18;
             padding-top: 25px;
             padding-left: 98px;
             position: absolute;
             left:0px;
             top: $pro-border;
-            width: 186px;
+            //width: 186px;
+            width: 152px;
             height: 59px;
             //border:1px solid red;
           }

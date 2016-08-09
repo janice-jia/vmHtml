@@ -2,13 +2,13 @@
 <html lang="zh-cn">
 <head>
     <title>部落 - 剧本</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!-- Bootstrap -->
-    <link href="static/css/pc/minCss/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="static/css/pc/minCss/all.min.css" />
-    <link rel="stylesheet" href="static/css/pc/destVersion1.1/tribe-show.css" />
+    <link href="static/css/pc/minCss/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="static/css/pc/minCss/all.min.css"/>
+    <link rel="stylesheet" href="static/css/pc/destVersion1.1/tribe-show.css"/>
 
     <!--编辑器-->
     <link rel="stylesheet" href="static/js/pc/umeditor/themes/default/css/umeditor.css">
@@ -18,7 +18,7 @@
     <![endif]-->
 </head>
 <body>
-<div id="tribe-cartoon" >
+<div id="tribe-cartoon">
     <div id="header" style="height: 50px;  "></div>
     <div class="container">
         <span class="pull-right mt25 mr15 cur">编辑背景</span>
@@ -98,18 +98,18 @@
             </ul>
             <div id="page"></div>
         </div>
-        <div class="tribe-progress">
 
+        <div class="tribe-progress">
             <div id="progressBar">
                 <li>
-                   <div class="progress-icon progress-icon-finish">
-                       <div class="progress-msg">
-                           <button class="btn-yellow-40"> 我要申请</button>
-                       </div>
-                   </div>
+                    <div class="progress-icon">
+                        <div class="progress-msg">
+                            <button class="btn-yellow-40"> 我要申请</button>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <div class="progress-icon progress-icon-finish">
+                    <div class="progress-icon ">
                         <div class="progress-msg">
                             <button class="btn-yellow-40"> 我要申请</button>
                         </div>
@@ -122,11 +122,20 @@
                         </div>
                     </div>
                 </li>
-                <li>
-                    <div class="progress-icon">
+                <li class="progress-finish">
+                    <div class="progress-icon  progress-icon-finish">
                         <div class="progress-msg">
-                            <button class="btn-yellow-40"> 我要申请</button>
+                            <div>
+                                <span>游戏</span>
+                                <p>2016.7.25启程</p>
+                                <p>2016.7.25启程</p>
+                                <p>2016.7.25启程</p>
+                                <p>2016.7.25启程</p>
+                                <p>2016.7.25启程</p>
+                            </div>
+
                         </div>
+
                     </div>
                 </li>
                 <li>
@@ -151,10 +160,8 @@
                     </div>
                 </li>
             </div>
-
-
-
         </div>
+
         <div class="tribe-comments">
             <!--  发表评论  -->
             <div class="zcbl-comments">
@@ -176,9 +183,12 @@
                         </div>
                         <div data-demdet="contentRight">
                             <ul>
-                                <li data-demdet="conhead"><h2 data-demdet="username">ABC</h2> <p>2016.5.13 13:00</p></li>
+                                <li data-demdet="conhead"><h2 data-demdet="username">ABC</h2>
+                                    <p>2016.5.13 13:00</p></li>
                                 <li data-demdet="conbody">评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容</li>
-                                <li data-demdet="confoot"><a href="#" data-demdet="answerbtn"><b></b>回复</a>|<button data-demdet="answerdel">删除</button></li>
+                                <li data-demdet="confoot"><a href="#" data-demdet="answerbtn"><b></b>回复</a>|
+                                    <button data-demdet="answerdel">删除</button>
+                                </li>
                             </ul>
                         </div>
 
@@ -189,9 +199,15 @@
                         </div>
                         <div data-demdet="contentRight">
                             <ul>
-                                <li data-demdet="conhead"><h2 data-demdet="username">用户名用户名</h2> <div data-demdet="answer">回复:@<span>大小姐</span></div><p>2016.5.13 7:31</p></li>
-                                <li data-demdet="conbody">评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容@ABC</li>
-                                <li data-demdet="confoot"><a href="#" data-demdet="answerbtn"><b></b>回复</a>|<button  data-demdet="answerdel">删除</button></li>
+                                <li data-demdet="conhead"><h2 data-demdet="username">用户名用户名</h2>
+                                    <div data-demdet="answer">回复:@<span>大小姐</span></div>
+                                    <p>2016.5.13 7:31</p></li>
+                                <li data-demdet="conbody">
+                                    评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容@ABC
+                                </li>
+                                <li data-demdet="confoot"><a href="#" data-demdet="answerbtn"><b></b>回复</a>|
+                                    <button data-demdet="answerdel">删除</button>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -201,9 +217,12 @@
                         </div>
                         <div data-demdet="contentRight">
                             <ul>
-                                <li data-demdet="conhead"><h2 data-demdet="username">大小姐</h2><p>2016.5.13 7:31</p></li>
+                                <li data-demdet="conhead"><h2 data-demdet="username">大小姐</h2>
+                                    <p>2016.5.13 7:31</p></li>
                                 <li data-demdet="conbody">评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容</li>
-                                <li data-demdet="confoot"><a href="#" data-demdet="answerbtn"><b></b>回复</a>|<button data-demdet="answerdel">删除</button></li>
+                                <li data-demdet="confoot"><a href="#" data-demdet="answerbtn"><b></b>回复</a>|
+                                    <button data-demdet="answerdel">删除</button>
+                                </li>
                             </ul>
                         </div>
 
@@ -227,24 +246,27 @@
 
 
     <!-- 添加,编辑 剧集 模态框（Modal） -->
-    <div class="modal fade" id="novel-model"  aria-hidden="true">
+    <div class="modal fade" id="novel-model" aria-hidden="true">
         <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
         <div class="tribe-novel-model">
             <form id="tribe-add-novel-form" method="post" class="form-horizontal" role="form">
                 <div class="form-group">
                     <label for="novel-title" class="mt5 col-md-1 col-md-offset-1 controle-label">标题:</label>
-                    <div class="col-md-8"><input type="text" class="form-control" id="novel-title" name="novel-title"></div>
+                    <div class="col-md-8"><input type="text" class="form-control" id="novel-title" name="novel-title">
+                    </div>
                 </div>
                 <div class="form-group">
                     <div class="col-md-offset-1 ">
                         <!--style给定宽度可以影响编辑器的最终宽度-->
-                        <script type="text/plain" id="novel-content" name="novel-content" style="width:840px;height:444px;">
+                        <script type="text/plain" id="novel-content" name="novel-content"
+                                style="width:840px;height:444px;">
                             <p>将文字复制到这里</p>
+
                         </script>
                     </div>
                 </div>
                 <div class="col-sm-offset-5 mt40">
-                    <button type="submit" class="btn btn-yellow-50" >提交</button>
+                    <button type="submit" class="btn btn-yellow-50">提交</button>
                 </div>
             </form>
         </div>
@@ -253,24 +275,24 @@
 
 
     <!-- 申请开通 模态框（Modal） -->
-    <div class="modal fade" id="myModal5"  aria-hidden="true">
+    <div class="modal fade" id="myModal5" aria-hidden="true">
         <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
         <div class="zcbl-modal-1 tribe-apply-model">
-                <form id="tribe-apply-form" method="post" >
-                        <div class="checkbox">
-                            <label><input type="radio" name="edit-tribe-type" value="1" checked>漫画&emsp;</label>
-                            <label><input type="radio" name="edit-tribe-type" value="2">动画片</label>
-                            <label><input type="radio" name="edit-tribe-type" value="3">游戏&emsp;</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="radio" name="edit-tribe-type" value="1" checked>影视剧</label>
-                            <label><input type="radio" name="edit-tribe-type" value="2">大电影</label>
-                            <label><input type="radio" name="edit-tribe-type" value="3">衍生品</label>
-                        </div>
-                        <div class="col-sm-offset-5 mt40">
-                            <button type="submit" class="btn btn-yellow-50" >提交</button>
-                        </div>
-                </form>
+            <form id="tribe-apply-form" method="post">
+                <div class="checkbox">
+                    <label><input type="radio" name="edit-tribe-type" value="1" checked>漫画&emsp;</label>
+                    <label><input type="radio" name="edit-tribe-type" value="2">动画片</label>
+                    <label><input type="radio" name="edit-tribe-type" value="3">游戏&emsp;</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="radio" name="edit-tribe-type" value="1" checked>影视剧</label>
+                    <label><input type="radio" name="edit-tribe-type" value="2">大电影</label>
+                    <label><input type="radio" name="edit-tribe-type" value="3">衍生品</label>
+                </div>
+                <div class="col-sm-offset-5 mt40">
+                    <button type="submit" class="btn btn-yellow-50">提交</button>
+                </div>
+            </form>
         </div>
     </div>
     <!-- 申请开通 （Modal） -->
@@ -291,16 +313,16 @@
 <script>
 
 
-    $(function(){
+    $(function () {
 
         /**
          * 实例化编辑器代码
          * ==============
          */
-        window.um = UM.getEditor('novel-content',{
+        window.um = UM.getEditor('novel-content', {
             // 是否自动长高,默认true
-            autoHeightEnabled:false,
-            toolbar: ['fontsize ','bold italic underline fullscreen',' justifyleft justifycenter justifyright justifyjustify']
+            autoHeightEnabled: false,
+            toolbar: ['fontsize ', 'bold italic underline fullscreen', ' justifyleft justifycenter justifyright justifyjustify']
         });
 
         /**
@@ -308,14 +330,14 @@
          * =======
          */
         $('#tribe-add-novel-form').ajaxForm({
-            url:'http://127.0.0.1/2.php',
-            beforeSubmit:function(arr){
-                if(!arr[0].value){
+            url: 'http://127.0.0.1/2.php',
+            beforeSubmit: function (arr) {
+                if (!arr[0].value) {
                     alert('请输入标题');
-                   return false;
+                    return false;
                 }
 
-                if(!arr[1].value){
+                if (!arr[1].value) {
                     alert('请输入内容');
                     return false;
                 }
@@ -323,16 +345,16 @@
                 console.log(arr)
                 return true;
             },
-            success:function(data){
+            success: function (data) {
 
                 // 申请成功,隐藏弹出层
                 $('#novel-model').modal('hide');
-                console.info('tribe-add-novel-form-success',data);
+                console.info('tribe-add-novel-form-success', data);
             },
-            error:function(e){
+            error: function (e) {
                 // 申请失败,隐藏弹出层
                 $('#novel-model').modal('hide');
-                console.info('tribe-add-novel-form-error',e);
+                console.info('tribe-add-novel-form-error', e);
             }
         });
 
@@ -342,17 +364,17 @@
          * =======
          */
         $('#tribe-apply-form').ajaxForm({
-            url:'http://127.0.0.1/2.php',
-            success:function(data){
+            url: 'http://127.0.0.1/2.php',
+            success: function (data) {
 
                 // 申请成功,隐藏弹出层
                 $('#myModal5').modal('hide');
-                console.info('tribe-apply-success',data);
+                console.info('tribe-apply-success', data);
             },
-            error:function(e){
+            error: function (e) {
                 // 申请失败,隐藏弹出层
                 $('#myModal5').modal('hide');
-                console.info('tribe-apple-error',e);
+                console.info('tribe-apple-error', e);
             }
         });
 

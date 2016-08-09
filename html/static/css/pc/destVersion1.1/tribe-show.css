@@ -275,10 +275,12 @@
           color: #499af5; }
   #tribe-cartoon .tribe-progress {
     height: 240px;
-    background: #eeeeee;
-    overflow: hidden; }
+    background: #eeeeee; }
+    #tribe-cartoon .tribe-progress:before {
+      content: "";
+      display: table; }
     #tribe-cartoon .tribe-progress #progressBar {
-      width: 1005px;
+      width: 970px;
       background: #CCC;
       height: 3px;
       margin-top: 110px; }
@@ -286,8 +288,16 @@
         position: relative;
         margin: 0px auto;
         float: left;
-        width: 120px;
-        height: 3px; }
+        width: 142px;
+        height: 3px;
+        background-color: #909090;
+        border-color: #909090; }
+        #tribe-cartoon .tribe-progress #progressBar > li:after {
+          border-color: #909090;
+          color: #909090; }
+        #tribe-cartoon .tribe-progress #progressBar > li:before {
+          border-color: #909090;
+          color: #909090; }
         #tribe-cartoon .tribe-progress #progressBar > li .progress-msg {
           display: none;
           background-color: inherit;
@@ -298,17 +308,44 @@
           bottom: 5px;
           left: 46px;
           z-index: 5; }
+          #tribe-cartoon .tribe-progress #progressBar > li .progress-msg div {
+            color: #fff;
+            width: 174px; }
         #tribe-cartoon .tribe-progress #progressBar > li .progress-icon {
           background-color: #909090;
+          border-color: #909090;
           cursor: pointer;
           position: absolute;
           top: -20px;
           width: 42px;
           height: 42px;
           border-radius: 50%; }
+        #tribe-cartoon .tribe-progress #progressBar > li.progress-finish .progress-icon {
+          background-color: inherit; }
+        #tribe-cartoon .tribe-progress #progressBar > li.progress-finish:after {
+          border-color: inherit;
+          color: inherit; }
+        #tribe-cartoon .tribe-progress #progressBar > li.progress-finish:before {
+          border-color: inherit;
+          color: inherit; }
+        #tribe-cartoon .tribe-progress #progressBar > li:nth-child(1).progress-finish, #tribe-cartoon .tribe-progress #progressBar > li:nth-child(6).progress-finish {
+          border-color: #ffb30e;
+          background-color: #ffb30e;
+          color: #ffb30e; }
+        #tribe-cartoon .tribe-progress #progressBar > li:nth-child(2).progress-finish, #tribe-cartoon .tribe-progress #progressBar > li:nth-child(4).progress-finish {
+          border-color: #499af5;
+          background-color: #499af5;
+          color: #499af5; }
+        #tribe-cartoon .tribe-progress #progressBar > li:nth-child(3).progress-finish, #tribe-cartoon .tribe-progress #progressBar > li:nth-child(7).progress-finish {
+          border-color: #5BCC39;
+          background-color: #5BCC39;
+          color: #5BCC39; }
+        #tribe-cartoon .tribe-progress #progressBar > li:nth-child(5).progress-finish {
+          border-color: #FF6D33;
+          background-color: #FF6D33;
+          color: #FF6D33; }
         #tribe-cartoon .tribe-progress #progressBar > li:nth-child(1) {
-          width: 186px;
-          background: #ffb30e; }
+          width: 96px; }
           #tribe-cartoon .tribe-progress #progressBar > li:nth-child(1) .progress-icon {
             z-index: 10;
             left: 45px;
@@ -327,10 +364,10 @@
             bottom: -29px;
             width: 59px;
             height: 59px;
-            border: 3px solid #ffb30e; }
+            border-style: solid;
+            border-width: 3px; }
           #tribe-cartoon .tribe-progress #progressBar > li:nth-child(1):before {
             font-size: 18px;
-            color: #ffb30e;
             z-index: 3;
             background: #eeeeee;
             content: "2016.7.25 启程";
@@ -340,29 +377,28 @@
             position: absolute;
             left: 0px;
             top: 3px;
-            width: 186px;
+            width: 178px;
             height: 59px; }
         #tribe-cartoon .tribe-progress #progressBar > li:nth-child(2) {
-          background: #499af5; }
+          /**.progress-icon-finish{
+            background-color: $pro-color-2;
+          }**/ }
           #tribe-cartoon .tribe-progress #progressBar > li:nth-child(2) .progress-icon {
             z-index: 9;
-            left: 71px;
+            left: 92px;
             background-image: url("../../../images/pc/version1.1/icon/icon_m_cartoon.png");
             background-position: 1px; }
             #tribe-cartoon .tribe-progress #progressBar > li:nth-child(2) .progress-icon:hover .progress-msg {
               display: block; }
-          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(2) .progress-icon-finish {
-            background-color: #499af5; }
           #tribe-cartoon .tribe-progress #progressBar > li:nth-child(2):after {
             background: #eeeeee;
             font-size: 18px;
-            color: #499af5;
             content: "漫画";
             padding-left: 70px;
             position: absolute;
-            left: 0px;
+            left: 24px;
             bottom: 3px;
-            width: 120px;
+            width: 142px;
             height: 59px;
             z-index: 2; }
           #tribe-cartoon .tribe-progress #progressBar > li:nth-child(2):before {
@@ -373,144 +409,130 @@
             top: -29px;
             width: 59px;
             height: 59px;
-            border: 3px solid #499af5;
+            border-style: solid;
+            border-width: 3px;
             border-radius: 50%; }
-        #tribe-cartoon .tribe-progress #progressBar > li:nth-child(3) {
-          background: #5BCC39; }
-          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(3) .progress-icon {
-            z-index: 8;
-            left: 70px;
-            background-image: url("../../../images/pc/version1.1/icon/icon_m_flash.png");
-            background-position: 2px; }
-            #tribe-cartoon .tribe-progress #progressBar > li:nth-child(3) .progress-icon:hover .progress-msg {
-              display: block; }
-          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(3) .progress-icon-finish {
-            background-color: #5BCC39; }
-          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(3):after {
-            background: #eeeeee;
-            content: "";
-            position: absolute;
-            right: 0px;
-            bottom: -29px;
-            width: 59px;
-            height: 59px;
-            border: 3px solid #5BCC39;
-            border-radius: 50%; }
-          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(3):before {
-            z-index: 3;
-            background: #eeeeee;
-            font-size: 18px;
-            color: #5BCC39;
-            padding-top: 25px;
-            padding-left: 66px;
-            content: "动画片";
-            position: absolute;
-            right: 0px;
-            top: 3px;
-            width: 120px;
-            height: 59px; }
-        #tribe-cartoon .tribe-progress #progressBar > li:nth-child(4) {
-          background: #499af5; }
-          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(4) .progress-icon {
-            z-index: 7;
-            left: 70px;
-            background-image: url("../../../images/pc/version1.1/icon/icon_m_game.png");
-            background-position-x: 2px; }
-            #tribe-cartoon .tribe-progress #progressBar > li:nth-child(4) .progress-icon:hover .progress-msg {
-              display: block; }
-          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(4) .progress-icon-finish {
-            background-color: #499af5; }
-          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(4):after {
-            background: #eeeeee;
-            padding-left: 66px;
-            color: #499af5;
-            font-size: 18px;
-            content: "游戏";
-            position: absolute;
-            left: 0px;
-            bottom: 3px;
-            width: 120px;
-            height: 59px;
-            z-index: 3; }
-          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(4):before {
-            background: #eeeeee;
-            content: "";
-            position: absolute;
-            right: 0px;
-            top: -29px;
-            width: 59px;
-            height: 59px;
-            border: 3px solid #499af5;
-            border-radius: 50%; }
-        #tribe-cartoon .tribe-progress #progressBar > li:nth-child(5) {
-          background: #FF6D33; }
-          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(5) .progress-icon {
-            z-index: 6;
-            left: 70px;
-            background-image: url("../../../images/pc/version1.1/icon/icon_m_tv.png");
-            background-position-x: 2px; }
-            #tribe-cartoon .tribe-progress #progressBar > li:nth-child(5) .progress-icon:hover .progress-msg {
-              display: block; }
-          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(5) .progress-icon-finish {
-            background-color: #FF6D33; }
-          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(5):after {
-            background: #eeeeee;
-            content: "";
-            position: absolute;
-            right: 0px;
-            bottom: -29px;
-            width: 59px;
-            height: 59px;
-            border: 3px solid #FF6D33;
-            border-radius: 50%; }
-          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(5):before {
-            z-index: 3;
-            background: #eeeeee;
-            content: "影视剧";
-            font-size: 18px;
-            padding-top: 25px;
-            padding-left: 66px;
-            color: #FF6D33;
-            position: absolute;
-            left: 0px;
-            top: 3px;
-            width: 120px;
-            height: 59px; }
-        #tribe-cartoon .tribe-progress #progressBar > li:nth-child(6) {
-          background: #ffb30e; }
-          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(6) .progress-icon {
-            z-index: 5;
-            left: 70px;
-            background-image: url("../../../images/pc/version1.1/icon/icon_m_film.png");
-            background-position-x: 2px; }
-            #tribe-cartoon .tribe-progress #progressBar > li:nth-child(6) .progress-icon:hover .progress-msg {
-              display: block; }
-          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(6) .progress-icon-finish {
-            background-color: #ffb30e; }
-          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(6):after {
-            background: #eeeeee;
-            content: "大电影";
-            color: #ffb30e;
-            padding-left: 66px;
-            position: absolute;
-            left: 0px;
-            bottom: 3px;
-            width: 120px;
-            height: 59px;
-            z-index: 3; }
-          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(6):before {
-            background: #eeeeee;
-            content: "";
-            position: absolute;
-            right: 0px;
-            top: -29px;
-            width: 59px;
-            height: 59px;
-            border: 3px solid #ffb30e;
-            border-radius: 50%; }
+        #tribe-cartoon .tribe-progress #progressBar > li:nth-child(3) .progress-icon {
+          z-index: 8;
+          left: 92px;
+          background-image: url("../../../images/pc/version1.1/icon/icon_m_flash.png");
+          background-position: 2px; }
+          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(3) .progress-icon:hover .progress-msg {
+            display: block; }
+        #tribe-cartoon .tribe-progress #progressBar > li:nth-child(3) .progress-icon-finish {
+          background-color: #5BCC39; }
+        #tribe-cartoon .tribe-progress #progressBar > li:nth-child(3):after {
+          background: #eeeeee;
+          content: "";
+          position: absolute;
+          right: 0px;
+          bottom: -29px;
+          width: 59px;
+          height: 59px;
+          border-radius: 50%;
+          border-style: solid;
+          border-width: 3px; }
+        #tribe-cartoon .tribe-progress #progressBar > li:nth-child(3):before {
+          z-index: 3;
+          background: #eeeeee;
+          font-size: 18px;
+          padding-top: 25px;
+          padding-left: 66px;
+          content: "动画片";
+          position: absolute;
+          right: -16px;
+          top: 3px;
+          width: 142px;
+          height: 59px; }
+        #tribe-cartoon .tribe-progress #progressBar > li:nth-child(4) .progress-icon {
+          z-index: 7;
+          left: 92px;
+          background-image: url("../../../images/pc/version1.1/icon/icon_m_game.png");
+          background-position-x: 2px; }
+          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(4) .progress-icon:hover .progress-msg {
+            display: block; }
+        #tribe-cartoon .tribe-progress #progressBar > li:nth-child(4):after {
+          background: #eeeeee;
+          padding-left: 66px;
+          font-size: 18px;
+          content: "游戏";
+          position: absolute;
+          left: 27px;
+          bottom: 3px;
+          width: 142px;
+          height: 59px;
+          z-index: 3; }
+        #tribe-cartoon .tribe-progress #progressBar > li:nth-child(4):before {
+          background: #eeeeee;
+          content: "";
+          position: absolute;
+          right: 0px;
+          top: -29px;
+          width: 59px;
+          height: 59px;
+          border-style: solid;
+          border-width: 3px;
+          border-radius: 50%; }
+        #tribe-cartoon .tribe-progress #progressBar > li:nth-child(5) .progress-icon {
+          z-index: 6;
+          left: 92px;
+          background-image: url("../../../images/pc/version1.1/icon/icon_m_tv.png");
+          background-position-x: 2px; }
+          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(5) .progress-icon:hover .progress-msg {
+            display: block; }
+        #tribe-cartoon .tribe-progress #progressBar > li:nth-child(5):after {
+          background: #eeeeee;
+          content: "";
+          position: absolute;
+          right: 0px;
+          bottom: -29px;
+          width: 59px;
+          height: 59px;
+          border-style: solid;
+          border-width: 3px;
+          border-radius: 50%; }
+        #tribe-cartoon .tribe-progress #progressBar > li:nth-child(5):before {
+          z-index: 3;
+          background: #eeeeee;
+          content: "影视剧";
+          font-size: 18px;
+          padding-top: 25px;
+          padding-left: 66px;
+          position: absolute;
+          left: 15px;
+          top: 3px;
+          width: 142px;
+          height: 59px; }
+        #tribe-cartoon .tribe-progress #progressBar > li:nth-child(6) .progress-icon {
+          z-index: 5;
+          left: 92px;
+          background-image: url("../../../images/pc/version1.1/icon/icon_m_film.png");
+          background-position-x: 2px; }
+          #tribe-cartoon .tribe-progress #progressBar > li:nth-child(6) .progress-icon:hover .progress-msg {
+            display: block; }
+        #tribe-cartoon .tribe-progress #progressBar > li:nth-child(6):after {
+          background: #eeeeee;
+          content: "大电影";
+          padding-left: 66px;
+          position: absolute;
+          left: 24px;
+          bottom: 3px;
+          width: 142px;
+          height: 59px;
+          z-index: 3; }
+        #tribe-cartoon .tribe-progress #progressBar > li:nth-child(6):before {
+          background: #eeeeee;
+          content: "";
+          position: absolute;
+          right: 0px;
+          top: -29px;
+          width: 59px;
+          height: 59px;
+          border-style: solid;
+          border-width: 3px;
+          border-radius: 50%; }
         #tribe-cartoon .tribe-progress #progressBar > li:nth-child(7) {
-          width: 186px;
-          background: #5BCC39; }
+          width: 163px; }
           #tribe-cartoon .tribe-progress #progressBar > li:nth-child(7) .progress-icon {
             z-index: 4;
             left: 100px;
@@ -523,23 +545,23 @@
             background: #eeeeee;
             content: "";
             position: absolute;
-            right: 36px;
+            right: 14px;
             bottom: -29px;
             width: 59px;
             height: 59px;
-            border: 3px solid #5BCC39; }
+            border-style: solid;
+            border-width: 3px; }
           #tribe-cartoon .tribe-progress #progressBar > li:nth-child(7):before {
             z-index: 3;
             background: #eeeeee;
             content: "衍生品";
-            color: #5BCC39;
             font-size: 18px;
             padding-top: 25px;
             padding-left: 98px;
             position: absolute;
             left: 0px;
             top: 3px;
-            width: 186px;
+            width: 152px;
             height: 59px; }
   #tribe-cartoon .tribe-comments {
     border: 1px solid #c1c1c1;

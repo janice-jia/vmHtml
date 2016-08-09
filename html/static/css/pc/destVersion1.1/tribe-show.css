@@ -530,13 +530,18 @@
         #tribe-cartoon .tribe-progress #progressBar > li:nth-child(7) {
           width: 163px; }
           #tribe-cartoon .tribe-progress #progressBar > li:nth-child(7) .progress-icon {
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35);
             z-index: 4;
             left: 100px; }
             #tribe-cartoon .tribe-progress #progressBar > li:nth-child(7) .progress-icon i {
               background-position-x: 1px;
               background-image: url("../../../images/pc/version1.1/icon/icon_m_other.png"); }
+            #tribe-cartoon .tribe-progress #progressBar > li:nth-child(7) .progress-icon:hover {
+              z-index: 6; }
           #tribe-cartoon .tribe-progress #progressBar > li:nth-child(7) .progress-msg {
-            left: 0px; }
+            display: block;
+            left: -138px;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35); }
           #tribe-cartoon .tribe-progress #progressBar > li:nth-child(7):after {
             border-radius: 50%;
             background: #eeeeee;

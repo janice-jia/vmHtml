@@ -213,6 +213,8 @@
           line-height: 20px; }
           #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgTit a {
             color: #515151; }
+            #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-imgTit a:hover {
+              cursor: pointer; }
         #per-wall .per-wall-r .per-art-img ul li.per-art-imgDefault .per-art-picFile {
           height: 100px;
           width: 100%;

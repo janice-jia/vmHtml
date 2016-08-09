@@ -317,6 +317,9 @@ $color-90908f:#90908f;
                             a{
                                 color: $color-02;
                                 @extend .extend-aline;
+                                &:hover{
+                                    cursor: pointer;
+                                }
                             }
                         }
                         .per-art-picFile{

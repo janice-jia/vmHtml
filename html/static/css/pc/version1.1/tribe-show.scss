@@ -750,7 +750,7 @@ $pro-color-7: #5BCC39;
             bottom: $pro-border;
             width: $pro-with;
             height: 59px;
-            z-index: 3;
+            z-index: 2;
           }
           &:before {
             background: $color-05;
@@ -781,7 +781,7 @@ $pro-color-7: #5BCC39;
           }
           //提示框
           .progress-msg{
-            left:-138px;
+            left:0px;
           }
 
           &:after {

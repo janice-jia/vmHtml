@@ -457,8 +457,8 @@ $pro-color-7: #5BCC39;
           padding: 14px 30px;
           min-height: 30px;
           position: absolute;
-          bottom: 5px;
-          left: 46px;
+          bottom: 55%;
+          left: 0;
           z-index: 5;
           div {
             color: #fff;
@@ -476,6 +476,13 @@ $pro-color-7: #5BCC39;
           width: 42px;
           height: 42px;
           border-radius: 50%;
+          i{
+            position: relative;
+            z-index: 20;
+            width: 42px;
+            height: 42px;
+            display: inline-block;
+          }
           &:hover .progress-msg {
             display: block;
           }
@@ -525,8 +532,10 @@ $pro-color-7: #5BCC39;
           .progress-icon {
             z-index: 10;
             left: 45px;
-            background-image: url("../../../images/pc/version1.1/icon/icon_m_start.png");
-            background-position-x: 1px;
+            i{
+              background-position-x:1px;
+              background-image: url("../../../images/pc/version1.1/icon/icon_m_start.png");
+            }
           }
 
           &:after {
@@ -564,8 +573,10 @@ $pro-color-7: #5BCC39;
           .progress-icon {
             z-index: 9;
             left: 92px;
-            background-image: url("../../../images/pc/version1.1/icon/icon_m_cartoon.png");
-            background-position: 1px;
+            i{
+              background-position-x:1px;
+              background-image: url("../../../images/pc/version1.1/icon/icon_m_cartoon.png");
+            }
           }
 
           &:after {
@@ -602,8 +613,10 @@ $pro-color-7: #5BCC39;
           .progress-icon {
             z-index: 8;
             left: 92px;
-            background-image: url("../../../images/pc/version1.1/icon/icon_m_flash.png");
-            background-position: 2px;
+            i{
+              background-position-x:2px;
+              background-image: url("../../../images/pc/version1.1/icon/icon_m_flash.png");
+            }
           }
 
           &:after {
@@ -640,8 +653,13 @@ $pro-color-7: #5BCC39;
           .progress-icon {
             z-index: 7;
             left: 92px;
-            background-image: url("../../../images/pc/version1.1/icon/icon_m_game.png");
-            background-position-x: 2px;
+            i{
+              background-position-x:1px;
+              background-image: url("../../../images/pc/version1.1/icon/icon_m_game.png");
+            }
+            .progress-msg{
+              left: 0;
+            }
           }
 
           &:after {
@@ -676,8 +694,10 @@ $pro-color-7: #5BCC39;
           .progress-icon {
             z-index: 6;
             left: 92px;
-            background-image: url("../../../images/pc/version1.1/icon/icon_m_tv.png");
-            background-position-x: 2px;
+            i{
+              background-position-x:1px;
+              background-image: url("../../../images/pc/version1.1/icon/icon_m_tv.png");
+            }
           }
 
           &:after {
@@ -715,8 +735,10 @@ $pro-color-7: #5BCC39;
           .progress-icon {
             z-index: 5;
             left: 92px;
-            background-image: url("../../../images/pc/version1.1/icon/icon_m_film.png");
-            background-position-x: 2px;
+            i{
+              background-position-x:2px;
+              background-image: url("../../../images/pc/version1.1/icon/icon_m_film.png");
+            }
           }
 
           &:after {
@@ -752,8 +774,14 @@ $pro-color-7: #5BCC39;
           .progress-icon {
             z-index: 4;
             left: 100px;
-            background-image: url("../../../images/pc/version1.1/icon/icon_m_other.png");
-            background-position-x: 1px;
+            i{
+              background-position-x:1px;
+              background-image: url("../../../images/pc/version1.1/icon/icon_m_other.png");
+            }
+          }
+          //提示框
+          .progress-msg{
+            left:-138px;
           }
 
           &:after {

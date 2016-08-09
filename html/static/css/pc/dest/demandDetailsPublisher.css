@@ -15,6 +15,25 @@
       #demdet [data-demdet="section"] [data-demdet="sectionheader"] h1 {
         font-size: 20px;
         font-weight: normal; }
+      #demdet [data-demdet="section"] [data-demdet="sectionheader"] .demdet-share {
+        padding-right: 20px;
+        position: relative;
+        float: right;
+        padding-left: 20px;
+        margin: 10px 0 0 0;
+        width: auto; }
+        #demdet [data-demdet="section"] [data-demdet="sectionheader"] .demdet-share a {
+          color: #515151; }
+          #demdet [data-demdet="section"] [data-demdet="sectionheader"] .demdet-share a:hover {
+            text-decoration: underline; }
+        #demdet [data-demdet="section"] [data-demdet="sectionheader"] .demdet-share:before {
+          position: absolute;
+          left: 0;
+          top: 2px;
+          content: "";
+          background: url("../../../images/pc/icon/icon-share.png");
+          width: 12px;
+          height: 16px; }
       #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] {
         margin-top: 20px; }
         #demdet [data-demdet="section"] [data-demdet="sectionheader"] ul[data-demdet="sectiononeul"] ul {

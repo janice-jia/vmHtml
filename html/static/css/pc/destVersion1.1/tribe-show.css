@@ -326,8 +326,19 @@
             width: 42px;
             height: 42px;
             display: inline-block; }
+          #tribe-cartoon .tribe-progress #progressBar > li .progress-icon b {
+            display: inline-block;
+            width: 41px;
+            height: 9px;
+            background-color: inherit;
+            position: absolute;
+            top: 16px;
+            z-index: 11; }
           #tribe-cartoon .tribe-progress #progressBar > li .progress-icon:hover .progress-msg {
-            display: block; }
+            display: block;
+            box-shadow: 0px 1px 3px black; }
+          #tribe-cartoon .tribe-progress #progressBar > li .progress-icon:hover {
+            box-shadow: 0px 1px 3px black; }
         #tribe-cartoon .tribe-progress #progressBar > li.progress-finish .progress-icon {
           background-color: inherit; }
         #tribe-cartoon .tribe-progress #progressBar > li.progress-finish:after {
@@ -530,7 +541,6 @@
         #tribe-cartoon .tribe-progress #progressBar > li:nth-child(7) {
           width: 163px; }
           #tribe-cartoon .tribe-progress #progressBar > li:nth-child(7) .progress-icon {
-            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35);
             z-index: 4;
             left: 100px; }
             #tribe-cartoon .tribe-progress #progressBar > li:nth-child(7) .progress-icon i {
@@ -539,9 +549,7 @@
             #tribe-cartoon .tribe-progress #progressBar > li:nth-child(7) .progress-icon:hover {
               z-index: 6; }
           #tribe-cartoon .tribe-progress #progressBar > li:nth-child(7) .progress-msg {
-            display: block;
-            left: -138px;
-            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35); }
+            left: -138px; }
           #tribe-cartoon .tribe-progress #progressBar > li:nth-child(7):after {
             border-radius: 50%;
             background: #eeeeee;

@@ -31,7 +31,6 @@ $('#demdet_comment').delegate("button[data-demdet='answerdel']", "click", functi
             console.log(tarparent);
             tarparent.remove();
             $('#demdet_isdelanswer').fadeOut();
-            $.ajax();
 
         }else{
             $('#demdet_isdelanswer').fadeOut();

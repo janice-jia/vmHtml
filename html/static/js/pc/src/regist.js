@@ -5,7 +5,6 @@ $("#regist_submit").click(function(){
     $("[data-regist='registnow']").css("display","none");
     $('[data-regist="regfinish"]').css("display","block");
 });
-$.ajax();
 
 function loginFn(){
     $("#loginBox").css("display","block");

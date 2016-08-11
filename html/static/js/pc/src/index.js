@@ -3,6 +3,10 @@ function loadHeaderFooter() {
     $("#footer").load("./footer.html");
     $("#page").load("./_page.html");
     $("#comments").load("./_comments.html");
+    $("#regist-person").load("./_rperson.html");
+    $("#regist-company").load("./_rcompany.html");
+    $("#regist-studio").load("./_rstudio.html");
+    
 }
 loadHeaderFooter();
 

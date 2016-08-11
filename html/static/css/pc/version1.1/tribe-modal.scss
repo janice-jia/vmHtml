@@ -43,15 +43,14 @@ p{
   padding:40px 0;
   border-radius: 4px;
   .zcbl-tmodal-row{
-    margin-bottom: 20px;
+    margin-bottom: 16px;
+    padding-left: 15px;
     p{
-      margin: 0;
-      margin-left: 50px;
+      margin: 0 25px;
       float: left;
-      font-size: 20px;
       color: $color-02;
       input,select{
-        margin-left: 30px;
+        margin-left: 16px;
         width: 298px;
         height:50px;
         padding: 10px;
@@ -79,12 +78,11 @@ p{
   .zcbl-tmodal-tabinput{
     text-align: center;
     p{
-      font-size: 20px;
       color: $color-02;
       input{
-        width: 779px;
+        width: 796px;
         height: 50px;
-        margin-left: 30px;
+        margin-left: 16px;
       }
     }
   }
@@ -165,17 +163,17 @@ p{
   .zcbl-tmodal-tabvinput{
     text-align: center;
     div{
-      font-size: 20px;
       color: $color-02;
       input{
-        width: 728px;
+        width: 732px;
         height: 50px;
-        margin-left: 20px;
+        margin-left: 16px;
       }
     }
     p{
       margin-top: 20px;
       color: $color-03;
+      font-size: 12px;
     }
   }
   .zcbl-tmodal-add{
@@ -258,13 +256,13 @@ p{
   border-radius: 4px;
   .per-pub-picBox{
     ul{
-      margin-left: 43px;
-      margin-bottom: 20px;
+      margin-left: 30px;
+      margin-bottom: 30px;
       li{
         float: left;
         width: 200px;
         height: 260px;
-        margin: 30px 7px 0 8px;
+        margin: 20px 7px 0 8px;
         &.per-pub-add{
           background: #ffffff;
           border: 1px dashed #aaaaaa;
@@ -443,7 +441,7 @@ p{
   .zcbl-tmodal-subbtn{
     text-align: center;
     margin-top: 50px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     button{
       width:130px;
       height: 50px;

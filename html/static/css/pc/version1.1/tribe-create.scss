@@ -25,9 +25,17 @@ $color-08: #e43f3f;
     margin-top: 40px;
     //border:1px solid red;
     .tab-content label{
+      padding-right:0;
+      font-weight: normal;
       color:$color-02;
-      font-size:$font-20;
+      font-size:$font-16;
       font-family: "Microsoft YaHei", "Arial", "Helvetica Neue", "Simsun,sans-self";
+    }
+    .tab-content input,.tab-content textarea{
+      background-color: $color-05;
+      &:focus{
+        background-color: #fff;
+      }
     }
   }
 }
@@ -49,7 +57,6 @@ $color-08: #e43f3f;
   // 上传图标box
   .upload-icon {
     height: 50px;
-    font-size: 18px;
     color: $color-06;
     margin-top: 8px;
     //border:1px solid red;
@@ -84,6 +91,9 @@ $color-08: #e43f3f;
     margin-top:10px;
     font-size: $font-16;
     color:$color-01;
+    span{
+      font-size: 14px;
+    }
     &:hover{
       cursor: pointer;
     }

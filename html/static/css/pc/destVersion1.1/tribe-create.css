@@ -5,9 +5,15 @@
 #tribe-create .container {
   margin-top: 40px; }
   #tribe-create .container .tab-content label {
+    padding-right: 0;
+    font-weight: normal;
     color: #515151;
-    font-size: 20px;
+    font-size: 16px;
     font-family: "Microsoft YaHei", "Arial", "Helvetica Neue", "Simsun,sans-self"; }
+  #tribe-create .container .tab-content input, #tribe-create .container .tab-content textarea {
+    background-color: #eeeeee; }
+    #tribe-create .container .tab-content input:focus, #tribe-create .container .tab-content textarea:focus {
+      background-color: #fff; }
 
 /* 第一步 - 部落类型 */
 #tribe-create .container .form-control {
@@ -17,7 +23,6 @@
   margin: 0px 10px 0 5px; }
 #tribe-create .upload-icon {
   height: 50px;
-  font-size: 18px;
   color: #499af5;
   margin-top: 8px; }
   #tribe-create .upload-icon > span {
@@ -33,6 +38,8 @@
   margin-top: 10px;
   font-size: 16px;
   color: #171717; }
+  #tribe-create #second .form-group:last-child > :first-child span {
+    font-size: 14px; }
   #tribe-create #second .form-group:last-child > :first-child:hover {
     cursor: pointer; }
 

@@ -112,3 +112,34 @@
   height: 40px;
   color: #515151;
   font-size: 14px; }
+
+/** v1.1 版本 注册选填信息 **/
+#reg-msg-down h2 {
+  color: #171717;
+  padding: 10px 0;
+  cursor: pointer; }
+  #reg-msg-down h2 b {
+    background-image: url("../../../images/pc/icon/icon-set-down.png");
+    display: inline-block;
+    width: 13px;
+    height: 14px;
+    vertical-align: middle;
+    margin-left: 5px; }
+#reg-msg-down #reg-msg-up .form-group input {
+  padding: 0; }
+#reg-msg-down #reg-msg-up [data-regist="radio"] {
+  color: #909090;
+  text-align: left;
+  border-bottom: 1px solid #c1c1c1;
+  padding-bottom: 10px; }
+  #reg-msg-down #reg-msg-up [data-regist="radio"] ul:after {
+    display: table;
+    content: '';
+    clear: both; }
+  #reg-msg-down #reg-msg-up [data-regist="radio"] li {
+    float: left;
+    margin-right: 10px; }
+  #reg-msg-down #reg-msg-up [data-regist="radio"] input {
+    height: 20px;
+    margin-right: 3px;
+    vertical-align: bottom; }

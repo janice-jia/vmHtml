@@ -83,7 +83,7 @@ $pro-color-7: #5BCC39;
       > li {
         color: #FFF;
         float: left;
-        margin-left: 20px;
+        margin-left: 16px;
         margin-top: 16px;
         cursor: pointer;
       }
@@ -130,16 +130,16 @@ $pro-color-7: #5BCC39;
 
       // 部落名称
       > span:nth-child(1) {
-        font-size: $font-20;
+        font-size: $font-16;
         color: $color-01;
         font-weight: bold;
       }
 
       // 部落简介
       > span:nth-child(2) {
-        font-size: $font-16;
+        font-size: $font-14;
         color: $color-03;
-        margin-top: 10px;
+        margin-top: 16px;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -147,9 +147,9 @@ $pro-color-7: #5BCC39;
 
       // 部落酋长名称
       > div {
-        font-size: $font-16;
+        font-size: $font-14;
         color: $color-01;
-        margin-top: 15px;
+        margin-top: 20px;
         > span {
           color: $color-06;
         }
@@ -162,7 +162,7 @@ $pro-color-7: #5BCC39;
       //border:1px solid red;
       right: 60px;
       top: 35px;
-      font-size: $font-20;
+      font-size: $font-16;
       color: $color-07;
 
       // label
@@ -171,8 +171,8 @@ $pro-color-7: #5BCC39;
         float: left;
         display: block;
         //border:1px solid red;
-        width: 60px;
-        height: 30px;
+        width: 50px;
+        height: 25px;
         color: $color-02;
       }
 
@@ -264,12 +264,12 @@ $pro-color-7: #5BCC39;
 
       & > li {
         cursor: pointer;
-        margin-left: 40px;
+        margin-right: 40px;
         color: $color-03;
-        font-size: $font-20;
+        font-size: $font-16;
         float: left;
         &:last-child {
-          font-size: $font-16;
+          font-size: $font-12;
           color: $color-03;
           float: right;
         }
@@ -387,7 +387,7 @@ $pro-color-7: #5BCC39;
       width: 920px;
       height: 520px;
 
-      padding-left: 23px;
+     // padding-left: 23px;
       // novel li
       & > .novel-detail {
         position: relative;
@@ -397,7 +397,7 @@ $pro-color-7: #5BCC39;
         font-size: $font-18;
         color: $color-03;
         //border:1px solid green;
-        margin-left: 15px;
+        //margin-left: 15px;
         margin-top: 20px;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -492,6 +492,26 @@ $pro-color-7: #5BCC39;
             top:16px;
             z-index: 11;
           }
+          span{
+            position: absolute;
+            left: -68px;
+            width: 178px;
+            display: inline-block;
+            font-size: $font-18;
+            z-index: 3;
+            padding-top: 25px;
+            white-space: nowrap;
+            height: 59px;
+            text-align: center;
+          }
+          span.timeline-before{
+            //left: -45px;
+            top: 23px;
+          }
+          span.timeline-after{
+            //left: -8px;
+            bottom: 47px;
+          }
           &:hover .progress-msg {
             display: block;
             box-shadow: 0px 1px 3px black;
@@ -549,8 +569,11 @@ $pro-color-7: #5BCC39;
               background-position-x:1px;
               background-image: url("../../../images/pc/version1.1/icon/icon_m_start.png");
             }
+            //span.timeline-before{
+            //  left: -45px;
+            //  top: 23px;
+            //}
           }
-
           &:after {
             border-radius: 50%;
             background: $color-05;
@@ -567,7 +590,7 @@ $pro-color-7: #5BCC39;
             font-size: $font-18;
             z-index: 3;
             background: $color-05;
-            content: "2016.7.25 启程";
+            content: "";
             padding-top: 25px;
             padding-left: 10px;
             white-space: nowrap;
@@ -590,12 +613,16 @@ $pro-color-7: #5BCC39;
               background-position-x:1px;
               background-image: url("../../../images/pc/version1.1/icon/icon_m_cartoon.png");
             }
+            //span.timeline-after{
+            //  left: -8px;
+            //  bottom: 47px;
+            //}
           }
 
           &:after {
             background: $color-05;
             font-size: $font-18;
-            content: "漫画";
+            content: "";
             padding-left: 70px;
             position: absolute;
             left: 24px;
@@ -650,7 +677,7 @@ $pro-color-7: #5BCC39;
             font-size: $font-18;
             padding-top: 25px;
             padding-left: 66px;
-            content: "动画片";
+            content: " ";
             position: absolute;
             right: -16px;
             top: $pro-border;
@@ -679,7 +706,7 @@ $pro-color-7: #5BCC39;
             background: $color-05;
             padding-left: 66px;
             font-size: $font-18;
-            content: "游戏";
+            content: " ";
             position: absolute;
             left: 27px;
             bottom: $pro-border;
@@ -728,7 +755,7 @@ $pro-color-7: #5BCC39;
           &:before {
             z-index: 3;
             background: $color-05;
-            content: "影视剧";
+            content: " ";
             font-size: $font-18;
             padding-top: 25px;
             padding-left: 66px;
@@ -756,7 +783,7 @@ $pro-color-7: #5BCC39;
 
           &:after {
             background: $color-05;
-            content: "大电影";
+            content: " ";
             padding-left: 66px;
             position: absolute;
             left: 24px;
@@ -816,7 +843,7 @@ $pro-color-7: #5BCC39;
           &:before {
             z-index: 3;
             background: $color-05;
-            content: "衍生品";
+            content: " ";
             font-size: $font-18;
             padding-top: 25px;
             padding-left: 98px;

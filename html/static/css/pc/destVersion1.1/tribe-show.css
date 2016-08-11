@@ -61,7 +61,7 @@
       #tribe-cartoon .cartoon-header > .tools-bar > li {
         color: #FFF;
         float: left;
-        margin-left: 20px;
+        margin-left: 16px;
         margin-top: 16px;
         cursor: pointer; }
       #tribe-cartoon .cartoon-header > .tools-bar > li:nth-child(2) {
@@ -88,34 +88,34 @@
       #tribe-cartoon .cartoon-header > .tribe-info > span {
         display: block; }
       #tribe-cartoon .cartoon-header > .tribe-info > span:nth-child(1) {
-        font-size: 20px;
+        font-size: 16px;
         color: #171717;
         font-weight: bold; }
       #tribe-cartoon .cartoon-header > .tribe-info > span:nth-child(2) {
-        font-size: 16px;
+        font-size: 14px;
         color: #909090;
-        margin-top: 10px;
+        margin-top: 16px;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden; }
       #tribe-cartoon .cartoon-header > .tribe-info > div {
-        font-size: 16px;
+        font-size: 14px;
         color: #171717;
-        margin-top: 15px; }
+        margin-top: 20px; }
         #tribe-cartoon .cartoon-header > .tribe-info > div > span {
           color: #499af5; }
     #tribe-cartoon .cartoon-header > .tribe-honor {
       position: absolute;
       right: 60px;
       top: 35px;
-      font-size: 20px;
+      font-size: 16px;
       color: #ffb30e; }
       #tribe-cartoon .cartoon-header > .tribe-honor span {
         margin-top: 15px;
         float: left;
         display: block;
-        width: 60px;
-        height: 30px;
+        width: 50px;
+        height: 25px;
         color: #515151; }
       #tribe-cartoon .cartoon-header > .tribe-honor span:nth-child(2) {
         color: #ffb30e; }
@@ -194,12 +194,12 @@
      */ }
     #tribe-cartoon .cartoon-content > .content-nav > li {
       cursor: pointer;
-      margin-left: 40px;
+      margin-right: 40px;
       color: #909090;
-      font-size: 20px;
+      font-size: 16px;
       float: left; }
       #tribe-cartoon .cartoon-content > .content-nav > li:last-child {
-        font-size: 16px;
+        font-size: 12px;
         color: #909090;
         float: right; }
       #tribe-cartoon .cartoon-content > .content-nav > li:hover {
@@ -257,8 +257,7 @@
       margin-top: 15px;
       clear: both;
       width: 920px;
-      height: 520px;
-      padding-left: 23px; }
+      height: 520px; }
       #tribe-cartoon .cartoon-content .novel-content-list > .novel-detail {
         position: relative;
         cursor: pointer;
@@ -266,7 +265,6 @@
         width: 200px;
         font-size: 18px;
         color: #909090;
-        margin-left: 15px;
         margin-top: 20px;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -334,6 +332,21 @@
             position: absolute;
             top: 16px;
             z-index: 11; }
+          #tribe-cartoon .tribe-progress #progressBar > li .progress-icon span {
+            position: absolute;
+            left: -68px;
+            width: 178px;
+            display: inline-block;
+            font-size: 18px;
+            z-index: 3;
+            padding-top: 25px;
+            white-space: nowrap;
+            height: 59px;
+            text-align: center; }
+          #tribe-cartoon .tribe-progress #progressBar > li .progress-icon span.timeline-before {
+            top: 23px; }
+          #tribe-cartoon .tribe-progress #progressBar > li .progress-icon span.timeline-after {
+            bottom: 47px; }
           #tribe-cartoon .tribe-progress #progressBar > li .progress-icon:hover .progress-msg {
             display: block;
             box-shadow: 0px 1px 3px black; }
@@ -386,7 +399,7 @@
             font-size: 18px;
             z-index: 3;
             background: #eeeeee;
-            content: "2016.7.25 启程";
+            content: "";
             padding-top: 25px;
             padding-left: 10px;
             white-space: nowrap;
@@ -404,7 +417,7 @@
         #tribe-cartoon .tribe-progress #progressBar > li:nth-child(2):after {
           background: #eeeeee;
           font-size: 18px;
-          content: "漫画";
+          content: "";
           padding-left: 70px;
           position: absolute;
           left: 24px;
@@ -446,7 +459,7 @@
           font-size: 18px;
           padding-top: 25px;
           padding-left: 66px;
-          content: "动画片";
+          content: " ";
           position: absolute;
           right: -16px;
           top: 3px;
@@ -464,7 +477,7 @@
           background: #eeeeee;
           padding-left: 66px;
           font-size: 18px;
-          content: "游戏";
+          content: " ";
           position: absolute;
           left: 27px;
           bottom: 3px;
@@ -502,7 +515,7 @@
         #tribe-cartoon .tribe-progress #progressBar > li:nth-child(5):before {
           z-index: 3;
           background: #eeeeee;
-          content: "影视剧";
+          content: " ";
           font-size: 18px;
           padding-top: 25px;
           padding-left: 66px;
@@ -519,7 +532,7 @@
             background-image: url("../../../images/pc/version1.1/icon/icon_m_film.png"); }
         #tribe-cartoon .tribe-progress #progressBar > li:nth-child(6):after {
           background: #eeeeee;
-          content: "大电影";
+          content: " ";
           padding-left: 66px;
           position: absolute;
           left: 24px;
@@ -564,7 +577,7 @@
           #tribe-cartoon .tribe-progress #progressBar > li:nth-child(7):before {
             z-index: 3;
             background: #eeeeee;
-            content: "衍生品";
+            content: " ";
             font-size: 18px;
             padding-top: 25px;
             padding-left: 98px;

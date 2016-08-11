@@ -16,7 +16,9 @@ $color-05: #eeeeee; //(背景色)
 $color-06: #499af5;
 $color-07: #ffb30e;
 $color-08: #e43f3f;
-
+p,h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
 #tribe-home {
   .container{
     padding: 0;
@@ -34,8 +36,7 @@ $color-08: #e43f3f;
 
     background-color: #fff ;
     h2{
-      font-size: 24px;
-      line-height: 64px;
+      line-height: 42px;
     }
     div{
       float: left;
@@ -46,7 +47,7 @@ $color-08: #e43f3f;
     }
     [data-thome="hot-center"]{
       width: 422px;
-      padding: 0 30px;
+      padding: 0 20px;
       ul{
         text-align: center;
         border-bottom: 1px solid $color-04;
@@ -78,11 +79,13 @@ $color-08: #e43f3f;
         clear: both;
       }
       h3{
-        line-height: 60px;
-        font-size: 20px;
+        line-height: 42px;
+        font-size: 16px;
+        color: $color-02;
       }
       p{
         color: $color-03;
+        font-size: 14px;
 
       }
     }
@@ -90,14 +93,14 @@ $color-08: #e43f3f;
       border-left: 1px solid $color-04;
       float: right;
       padding: 0 34px;
-      margin-bottom: 31px;
+      margin-bottom: 27px;
       text-align: center;
       button{
         height: 93px;
         width:163px;
         background-color: $color-07;
         border-radius: 4px;
-        font-size: 20px;
+        font-size: 16px;
         color: $color-01;
         b{
           background-image: url("../../../images/pc/version1.1/icon/icon_pen.png");
@@ -134,13 +137,11 @@ $color-08: #e43f3f;
 /** 部落推荐列表 **/
 .tribe-list-box{
   padding: 0 20px;
-  padding-top:30px;
+  padding-top:20px;
   .tribe-list-tab{
-    font-size: 24px;
     color: $color-02;
     a{
-      font-size: 16px;
-      margin-right: 20px;
+      font-size: 14px;
       color: $color-03;
       float: right;
     }
@@ -155,7 +156,7 @@ $color-08: #e43f3f;
   }
   .tribe-list-li{
     width: 310px;
-    margin-top:20px;
+    margin-top:16px;
     margin-right: 14px;
     border-bottom: 1px solid $color-04;
     position: relative;
@@ -166,16 +167,16 @@ $color-08: #e43f3f;
         height:230px;
       }
       h3{
-        font-size: 20px;
         color: $color-02;
         padding-top: 15px;
         padding-bottom: 12px;
       }
       p{
         color: $color-03;
-        padding-bottom: 15px;
+        padding-bottom: 14px;
       }
       .tribe-list-foot{
+        font-size: 14px;
         padding-bottom: 20px;
         span{
           color: $color-07;
@@ -202,7 +203,7 @@ $color-08: #e43f3f;
     }
     a{
       position: absolute;
-      height: 390px;
+      height: 372px;
       top:0;
       width: 100%;
       display: inline-block;

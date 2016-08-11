@@ -24,6 +24,11 @@ $color-acacac:#acacac;
 $color-fb4444:#fb4444;
 $color-212121:#212121;
 $color-90908f:#90908f;
+$color-52C1F5:#52C1F5;
+$color-F86767:#F86767;
+$color-b4b4b4:#b4b4b4;
+$color-d9d9d9:#d9d9d9;
+$color-2b2b2b:#2b2b2b;
 
 .extend-aline{
     &:hover{
@@ -170,6 +175,24 @@ $color-90908f:#90908f;
                 }
             }
         }
+        .per-care{
+            padding-top: 24px;
+            padding-bottom: 14px;
+            font-size: 14px;
+            p{
+                height: 16px;
+                padding-bottom: 10px;
+            }
+            span{
+                float: left;
+                margin-right: 10px;
+                height: 16px;
+                line-height: 16px;
+                &.right{
+                    float: right;
+                }
+            }
+        }
         .per-appraise{
             padding-top: 24px;
             padding-bottom: 14px;
@@ -195,6 +218,7 @@ $color-90908f:#90908f;
                     height: 16px;
                     display: block;
                 }
+
             }
 
         }
@@ -451,6 +475,29 @@ $color-90908f:#90908f;
             ul{
                 width: 100%;
                 li{
+                    .tribe-share{
+                        padding-right: 20px;
+                        position: relative;
+                        float: right;
+                        padding-left: 20px;
+                        margin: 10px 0 0 0;
+                        width: auto;
+                        a{
+                            color: $color-02;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                        &:before{
+                            position: absolute;
+                            left: 0;
+                            top: 2px;
+                            content: "";
+                            background: url("../../../images/pc/icon/icon-share.png");
+                            width: 12px;
+                            height: 16px;
+                        }
+                    }
                     .per-reqTit{
                         font-size: 16px;
                         color: $color-02;
@@ -459,7 +506,7 @@ $color-90908f:#90908f;
                         line-height: 25px;
                         margin: 10px 0;
                         h1{
-                            width: 450px;
+                            width: 410px;
                             float: left;
                             margin: 0 10px 0 0 ;
                             a{
@@ -468,7 +515,7 @@ $color-90908f:#90908f;
                             }
                         }
                         p{
-                            float: left;
+                            float: right;
                             text-align: right;
                             width: 230px;
                             span{
@@ -491,7 +538,7 @@ $color-90908f:#90908f;
                             font-size: 14px;
                             p{
                                 float: left;
-                                width: 200px;
+                                width: 160px;
                                 position: relative;
                                 padding-left: 25px;
                                 &:before{
@@ -574,8 +621,8 @@ $color-90908f:#90908f;
                             }
                         }
                         ul{
-                            float: left;
-                            width: 350px;
+                            float: right;
+                            width: 310px;
                             text-align: right;
                             li{
                                 display: inline-block;
@@ -743,6 +790,363 @@ $color-90908f:#90908f;
                     }
                     &.per-fans-hover,&:hover{
                         @extend .extend-box-shadow;
+                    }
+                }
+            }
+        }
+
+        //服务
+        .tribe-req,.tribe-ser{
+            margin-top: 20px;
+            background: $color-ffffff;
+            height: auto;
+            min-height: 0;
+            padding:20px 20px 10px 20px;
+            position: relative;
+            &:before{
+                content: "";
+                position: absolute;
+                left: 0;
+                top:0;
+                width: 0;
+                height: 0;
+                border-top: 72px solid $color-2b2b2b;
+                border-right: 85px solid transparent;
+            }
+            &:after{
+                content: "";
+                position: absolute;
+                left: 5px;
+                top: 15px;
+                color: $color-07;
+                font-size: 18px;
+            }
+        }
+        .tribe-ser{
+            &:after{
+                content: "服务";
+            }
+        }
+        .tribe-req{
+            &:after{
+                content: "需求";
+            }
+            .tribe-req-nav{
+                ul{
+                    padding-left: 60px;
+                    border: none;
+                    li{
+                        &.active{
+                            a{
+                                border: none;
+                                color: $color-06;
+                            }
+                        }
+                        a{
+                            height: 42px;
+                            line-height: 42px;
+                            color: $color-02;
+                            padding: 0 15px;
+                            font-size: 20px;
+                            &:hover{
+                                background: none;
+                                border: none;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //收入、支出、总金额
+        .tribe-finance{
+            margin-top: 5px;
+            ul{
+                li{
+                    float: left;
+                    width: 223px;
+                    height: 80px;
+                    border-radius: 4px;
+                    padding-left: 16px;
+                    padding-top: 8px;
+                    .tribe-finance-num{
+                        font-size: 26px;
+                        color: $color-ffffff;
+                        margin-bottom: 0;
+                        padding-bottom: 0;
+                    }
+                    .tribe-finance-name{
+                        font-size: 18px;
+                        color: $color-ffffff;
+                    }
+                    &.tribe-finance-income{
+                        background: $color-52C1F5;
+
+                    }
+                    &.tribe-finance-expend{
+                        background: $color-07;
+                        margin: 0 10px;
+                    }
+                    &.tribe-finance-amount{
+                        background: $color-F86767;
+                    }
+                }
+            }
+        }
+
+        //浏览数量
+        .tribe-artWork{
+            ul{
+                li{
+                    float: left;
+                    width: 223px;
+                    height: 230px;
+                    border-radius: 4px;
+                    margin-top: 20px;
+                    padding-right: 20px;
+                    border: 1px solid $color-b4b4b4;
+                    padding-top: 18px;
+                    background: $color-ffffff;
+                    .tribe-artWorkName{
+                        font-size: 18px;
+                        padding-left: 16px;
+                        height: 70px;
+                        margin-bottom: 0;
+                    }
+                    .tribe-artWorkNum{
+                        text-align: center;
+                        font-size: 56px;
+                    }
+                    .tribe-artWorkToday{
+                        text-align: center;
+                        font-size: 18px;
+                    }
+                    .tribe-artWorkNameBg1,
+                    .tribe-artWorkNameBg2,
+                    .tribe-artWorkNameBg3{
+                        position: relative;
+                    }
+                    .tribe-artWorkNameBg1{
+                        &:after{
+                            position: absolute;
+                            content: "";
+                            top: 0;
+                            right: 0;
+                            background: url("../../../images/pc/icon/icon-personal-artwork1.png") no-repeat;
+                            width: 56px;
+                            height: 56px;
+                        }
+                    }
+                    .tribe-artWorkNameBg2{
+                        &:after{
+                            position: absolute;
+                            content: "";
+                            top: 0;
+                            right: 0;
+                            background: url("../../../images/pc/icon/icon-personal-artwork2.png") no-repeat;
+                            width: 39px;
+                            height: 55px;
+                        }
+                    }
+                    .tribe-artWorkNameBg3{
+                        &:after{
+                            position: absolute;
+                            content: "";
+                            top: 0;
+                            right: 0;
+                            background: url("../../../images/pc/icon/icon-personal-artwork3.png") no-repeat;
+                            width: 46px;
+                            height: 56px;
+                        }
+                    }
+                }
+            }
+        }
+
+        //天气、评价、充值提现
+        .tribe-perInfo{
+            margin-top: 20px;
+            .tribe-weather,.tribe-evaluate,.tribe-money{
+                float: left;
+                height: 146px;
+            }
+            .tribe-weather,.tribe-evaluate{
+                border: 1px solid $color-d9d9d9;
+                border-radius: 4px;
+                background: $color-ffffff;
+            }
+            .tribe-weather{
+                width: 223px;
+                img{
+                    float: left;
+                }
+                .tribe-weather-info{
+                    width: 108px;
+                    float: left;
+                    padding-left: 10px;
+                    padding-top: 10px;
+                    p{
+                        width: 100%;
+                        overflow: hidden;
+                        &.tribe-f1{
+                            font-size: 20px;
+                        }
+                        &.tribe-f2{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            .tribe-evaluate{
+                width: 270px;
+                margin: 0 10px;
+                padding-top: 8px;
+                p{
+                    margin-bottom: 0px;
+                    padding-left: 40px;
+                    &.tribe-evaluate-desc{
+                        margin-top: 10px;
+                        font-size: 16px;
+                    }
+                    &.tribe-evaluate-start{
+                        padding-top: 5px;
+                        span{
+                            display: inline-block;
+                            width: 16px;
+                            height: 16px;
+                            margin-right: 5px;
+                            background: url("../../../images/pc/icon/icon-stars-gray.png");
+                            &.yellow{
+                                background: url("../../../images/pc/icon/icon-stars-yellow.png");
+                            }
+                        }
+                    }
+                }
+            }
+            .tribe-money{
+                width: 177px;
+                .tribe-recharge,.tribe-withdrawal{
+                    a{
+                        display: inline-block;
+                        width: 100%;
+                        height: 68px;
+                        line-height: 68px;
+                        font-size: 20px;
+                        border-radius: 4px;
+                        padding-left: 100px;
+                        color: $color-02;
+                    }
+                }
+                .tribe-recharge{
+                    a{
+                        background: $color-07;
+                        position: relative;
+                        &:before{
+                             content: "";
+                             position: absolute;
+                             top:13px;
+                             left: 40px;
+                             background: url("../../../images/pc/icon/icon-tribe-recharge.png") no-repeat;
+                             width: 40px;
+                             height: 40px;
+                         }
+                    }
+                }
+                .tribe-withdrawal{
+                    margin-top: 10px;
+                    a{
+                        background: $color-52C1F5;
+                        position: relative;
+                        &:before{
+                            content: "";
+                            position: absolute;
+                            top:13px;
+                            left: 40px;
+                            background: url("../../../images/pc/icon/icon-tribe-withdrawal.png") no-repeat;
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+
+        //作品数量
+        .tribe-artWorkNum{
+            margin-top: 20px;
+            ul{
+                li{
+                    float: left;
+                    width: 165px;
+                    height: 105px;
+                    border: 1px solid $color-d9d9d9;
+                    background: $color-ffffff;
+                    position: relative;
+                    border-radius: 4px;
+                    &.tribe-artWorkNum1,
+                    &.tribe-artWorkNum2,
+                    &.tribe-artWorkNum3,
+                    &.tribe-artWorkNum4{
+                        &:after{
+                            content: "";
+                            position: absolute;
+                            right: 0px;
+                            top: 0;
+                            z-index: 0;
+                            height: 103px;
+                            width: 108px;
+                        }
+                    }
+                    &.tribe-artWorkNum1{
+                        margin-right: 10px;
+                        color: $color-07;
+                        &:after{
+                            background: url("../../../images/pc/icon/icon-artWork-img.png") no-repeat;
+                        }
+                    }
+                    &.tribe-artWorkNum2{
+                        color: $color-52C1F5;
+                        &:after{
+                            width: 108px;
+                            background: url("../../../images/pc/icon/icon-artWork-video.png") no-repeat;
+                        }
+                    }
+                    &.tribe-artWorkNum3{
+                        color: $color-F86767;
+                        margin: 0 10px;
+                        &:after{
+                            width: 108px;
+                            background: url("../../../images/pc/icon/icon-artWork-audio.png") no-repeat;
+                        }
+                    }
+                    &.tribe-artWorkNum4{
+                        color: $color-02;
+                        &:after{
+                            width: 108px;
+                            background: url("../../../images/pc/icon/icon-artWork-text.png") no-repeat;
+                        }
+                    }
+                    .tribe-artWorkNumP1{
+                        font-size: 20px;
+                        margin-bottom: 0;
+                        position: absolute;
+                        z-index: 1;
+                        height: 25px;
+                        top: 30px;
+                        left: 16px;
+                        width: 75px;
+                        overflow: hidden;
+                    }
+                    .tribe-artWorkNumP2{
+                        font-size: 18px;
+                        position: absolute;
+                        z-index: 1;
+                        top: 55px;
+                        left: 16px;
+                        height: 25px;
+                        width: 60px;
+                        overflow: hidden;
                     }
                 }
             }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 * header
 */
@@ -107,6 +108,20 @@
           float: right; }
           #per-wall .per-wall-l .per-fund p span.per-fund-tx a {
             color: #515151; }
+    #per-wall .per-wall-l .per-care {
+      padding-top: 24px;
+      padding-bottom: 14px;
+      font-size: 14px; }
+      #per-wall .per-wall-l .per-care p {
+        height: 16px;
+        padding-bottom: 10px; }
+      #per-wall .per-wall-l .per-care span {
+        float: left;
+        margin-right: 10px;
+        height: 16px;
+        line-height: 16px; }
+        #per-wall .per-wall-l .per-care span.right {
+          float: right; }
     #per-wall .per-wall-l .per-appraise {
       padding-top: 24px;
       padding-bottom: 14px;
@@ -315,6 +330,25 @@
       min-height: 1085px; }
       #per-wall .per-wall-r .per-req ul {
         width: 100%; }
+        #per-wall .per-wall-r .per-req ul li .tribe-share {
+          padding-right: 20px;
+          position: relative;
+          float: right;
+          padding-left: 20px;
+          margin: 10px 0 0 0;
+          width: auto; }
+          #per-wall .per-wall-r .per-req ul li .tribe-share a {
+            color: #515151; }
+            #per-wall .per-wall-r .per-req ul li .tribe-share a:hover {
+              text-decoration: underline; }
+          #per-wall .per-wall-r .per-req ul li .tribe-share:before {
+            position: absolute;
+            left: 0;
+            top: 2px;
+            content: "";
+            background: url("../../../images/pc/icon/icon-share.png");
+            width: 12px;
+            height: 16px; }
         #per-wall .per-wall-r .per-req ul li .per-reqTit {
           font-size: 16px;
           color: #515151;
@@ -323,13 +357,13 @@
           line-height: 25px;
           margin: 10px 0; }
           #per-wall .per-wall-r .per-req ul li .per-reqTit h1 {
-            width: 450px;
+            width: 410px;
             float: left;
             margin: 0 10px 0 0; }
             #per-wall .per-wall-r .per-req ul li .per-reqTit h1 a {
               color: #515151; }
           #per-wall .per-wall-r .per-req ul li .per-reqTit p {
-            float: left;
+            float: right;
             text-align: right;
             width: 230px; }
             #per-wall .per-wall-r .per-req ul li .per-reqTit p span {
@@ -347,7 +381,7 @@
           font-size: 14px; }
           #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo p {
             float: left;
-            width: 200px;
+            width: 160px;
             position: relative;
             padding-left: 25px; }
             #per-wall .per-wall-r .per-req ul li .per-reqCon .per-reqInfo p:before {
@@ -414,8 +448,8 @@
             #per-wall .per-wall-r .per-req ul li .per-reqStatus p .mr43 {
               margin-right: 43px; }
           #per-wall .per-wall-r .per-req ul li .per-reqStatus ul {
-            float: left;
-            width: 350px;
+            float: right;
+            width: 310px;
             text-align: right; }
             #per-wall .per-wall-r .per-req ul li .per-reqStatus ul li {
               display: inline-block;
@@ -543,6 +577,260 @@
             color: #ffffff; }
             #per-wall .per-wall-r .per-fans ul li .per-fansBtn-already a:hover {
               color: #515151; }
+    #per-wall .per-wall-r .tribe-req, #per-wall .per-wall-r .tribe-ser {
+      margin-top: 20px;
+      background: #ffffff;
+      height: auto;
+      min-height: 0;
+      padding: 20px 20px 10px 20px;
+      position: relative; }
+      #per-wall .per-wall-r .tribe-req:before, #per-wall .per-wall-r .tribe-ser:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-top: 72px solid #2b2b2b;
+        border-right: 85px solid transparent; }
+      #per-wall .per-wall-r .tribe-req:after, #per-wall .per-wall-r .tribe-ser:after {
+        content: "";
+        position: absolute;
+        left: 5px;
+        top: 15px;
+        color: #ffb30e;
+        font-size: 18px; }
+    #per-wall .per-wall-r .tribe-ser:after {
+      content: "服务"; }
+    #per-wall .per-wall-r .tribe-req:after {
+      content: "需求"; }
+    #per-wall .per-wall-r .tribe-req .tribe-req-nav ul {
+      padding-left: 60px;
+      border: none; }
+      #per-wall .per-wall-r .tribe-req .tribe-req-nav ul li.active a {
+        border: none;
+        color: #499af5; }
+      #per-wall .per-wall-r .tribe-req .tribe-req-nav ul li a {
+        height: 42px;
+        line-height: 42px;
+        color: #515151;
+        padding: 0 15px;
+        font-size: 20px; }
+        #per-wall .per-wall-r .tribe-req .tribe-req-nav ul li a:hover {
+          background: none;
+          border: none;
+          text-decoration: underline; }
+    #per-wall .per-wall-r .tribe-finance {
+      margin-top: 5px; }
+      #per-wall .per-wall-r .tribe-finance ul li {
+        float: left;
+        width: 223px;
+        height: 80px;
+        border-radius: 4px;
+        padding-left: 16px;
+        padding-top: 8px; }
+        #per-wall .per-wall-r .tribe-finance ul li .tribe-finance-num {
+          font-size: 26px;
+          color: #ffffff;
+          margin-bottom: 0;
+          padding-bottom: 0; }
+        #per-wall .per-wall-r .tribe-finance ul li .tribe-finance-name {
+          font-size: 18px;
+          color: #ffffff; }
+        #per-wall .per-wall-r .tribe-finance ul li.tribe-finance-income {
+          background: #52C1F5; }
+        #per-wall .per-wall-r .tribe-finance ul li.tribe-finance-expend {
+          background: #ffb30e;
+          margin: 0 10px; }
+        #per-wall .per-wall-r .tribe-finance ul li.tribe-finance-amount {
+          background: #F86767; }
+    #per-wall .per-wall-r .tribe-artWork ul li {
+      float: left;
+      width: 223px;
+      height: 230px;
+      border-radius: 4px;
+      margin-top: 20px;
+      padding-right: 20px;
+      border: 1px solid #b4b4b4;
+      padding-top: 18px;
+      background: #ffffff; }
+      #per-wall .per-wall-r .tribe-artWork ul li .tribe-artWorkName {
+        font-size: 18px;
+        padding-left: 16px;
+        height: 70px;
+        margin-bottom: 0; }
+      #per-wall .per-wall-r .tribe-artWork ul li .tribe-artWorkNum {
+        text-align: center;
+        font-size: 56px; }
+      #per-wall .per-wall-r .tribe-artWork ul li .tribe-artWorkToday {
+        text-align: center;
+        font-size: 18px; }
+      #per-wall .per-wall-r .tribe-artWork ul li .tribe-artWorkNameBg1,
+      #per-wall .per-wall-r .tribe-artWork ul li .tribe-artWorkNameBg2,
+      #per-wall .per-wall-r .tribe-artWork ul li .tribe-artWorkNameBg3 {
+        position: relative; }
+      #per-wall .per-wall-r .tribe-artWork ul li .tribe-artWorkNameBg1:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        background: url("../../../images/pc/icon/icon-personal-artwork1.png") no-repeat;
+        width: 56px;
+        height: 56px; }
+      #per-wall .per-wall-r .tribe-artWork ul li .tribe-artWorkNameBg2:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        background: url("../../../images/pc/icon/icon-personal-artwork2.png") no-repeat;
+        width: 39px;
+        height: 55px; }
+      #per-wall .per-wall-r .tribe-artWork ul li .tribe-artWorkNameBg3:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        background: url("../../../images/pc/icon/icon-personal-artwork3.png") no-repeat;
+        width: 46px;
+        height: 56px; }
+    #per-wall .per-wall-r .tribe-perInfo {
+      margin-top: 20px; }
+      #per-wall .per-wall-r .tribe-perInfo .tribe-weather, #per-wall .per-wall-r .tribe-perInfo .tribe-evaluate, #per-wall .per-wall-r .tribe-perInfo .tribe-money {
+        float: left;
+        height: 146px; }
+      #per-wall .per-wall-r .tribe-perInfo .tribe-weather, #per-wall .per-wall-r .tribe-perInfo .tribe-evaluate {
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+        background: #ffffff; }
+      #per-wall .per-wall-r .tribe-perInfo .tribe-weather {
+        width: 223px; }
+        #per-wall .per-wall-r .tribe-perInfo .tribe-weather img {
+          float: left; }
+        #per-wall .per-wall-r .tribe-perInfo .tribe-weather .tribe-weather-info {
+          width: 108px;
+          float: left;
+          padding-left: 10px;
+          padding-top: 10px; }
+          #per-wall .per-wall-r .tribe-perInfo .tribe-weather .tribe-weather-info p {
+            width: 100%;
+            overflow: hidden; }
+            #per-wall .per-wall-r .tribe-perInfo .tribe-weather .tribe-weather-info p.tribe-f1 {
+              font-size: 20px; }
+            #per-wall .per-wall-r .tribe-perInfo .tribe-weather .tribe-weather-info p.tribe-f2 {
+              font-size: 16px; }
+      #per-wall .per-wall-r .tribe-perInfo .tribe-evaluate {
+        width: 270px;
+        margin: 0 10px;
+        padding-top: 8px; }
+        #per-wall .per-wall-r .tribe-perInfo .tribe-evaluate p {
+          margin-bottom: 0px;
+          padding-left: 40px; }
+          #per-wall .per-wall-r .tribe-perInfo .tribe-evaluate p.tribe-evaluate-desc {
+            margin-top: 10px;
+            font-size: 16px; }
+          #per-wall .per-wall-r .tribe-perInfo .tribe-evaluate p.tribe-evaluate-start {
+            padding-top: 5px; }
+            #per-wall .per-wall-r .tribe-perInfo .tribe-evaluate p.tribe-evaluate-start span {
+              display: inline-block;
+              width: 16px;
+              height: 16px;
+              margin-right: 5px;
+              background: url("../../../images/pc/icon/icon-stars-gray.png"); }
+              #per-wall .per-wall-r .tribe-perInfo .tribe-evaluate p.tribe-evaluate-start span.yellow {
+                background: url("../../../images/pc/icon/icon-stars-yellow.png"); }
+      #per-wall .per-wall-r .tribe-perInfo .tribe-money {
+        width: 177px; }
+        #per-wall .per-wall-r .tribe-perInfo .tribe-money .tribe-recharge a, #per-wall .per-wall-r .tribe-perInfo .tribe-money .tribe-withdrawal a {
+          display: inline-block;
+          width: 100%;
+          height: 68px;
+          line-height: 68px;
+          font-size: 20px;
+          border-radius: 4px;
+          padding-left: 100px;
+          color: #515151; }
+        #per-wall .per-wall-r .tribe-perInfo .tribe-money .tribe-recharge a {
+          background: #ffb30e;
+          position: relative; }
+          #per-wall .per-wall-r .tribe-perInfo .tribe-money .tribe-recharge a:before {
+            content: "";
+            position: absolute;
+            top: 13px;
+            left: 40px;
+            background: url("../../../images/pc/icon/icon-tribe-recharge.png") no-repeat;
+            width: 40px;
+            height: 40px; }
+        #per-wall .per-wall-r .tribe-perInfo .tribe-money .tribe-withdrawal {
+          margin-top: 10px; }
+          #per-wall .per-wall-r .tribe-perInfo .tribe-money .tribe-withdrawal a {
+            background: #52C1F5;
+            position: relative; }
+            #per-wall .per-wall-r .tribe-perInfo .tribe-money .tribe-withdrawal a:before {
+              content: "";
+              position: absolute;
+              top: 13px;
+              left: 40px;
+              background: url("../../../images/pc/icon/icon-tribe-withdrawal.png") no-repeat;
+              width: 40px;
+              height: 40px; }
+    #per-wall .per-wall-r .tribe-artWorkNum {
+      margin-top: 20px; }
+      #per-wall .per-wall-r .tribe-artWorkNum ul li {
+        float: left;
+        width: 165px;
+        height: 105px;
+        border: 1px solid #d9d9d9;
+        background: #ffffff;
+        position: relative;
+        border-radius: 4px; }
+        #per-wall .per-wall-r .tribe-artWorkNum ul li.tribe-artWorkNum1:after, #per-wall .per-wall-r .tribe-artWorkNum ul li.tribe-artWorkNum2:after, #per-wall .per-wall-r .tribe-artWorkNum ul li.tribe-artWorkNum3:after, #per-wall .per-wall-r .tribe-artWorkNum ul li.tribe-artWorkNum4:after {
+          content: "";
+          position: absolute;
+          right: 0px;
+          top: 0;
+          z-index: 0;
+          height: 103px;
+          width: 108px; }
+        #per-wall .per-wall-r .tribe-artWorkNum ul li.tribe-artWorkNum1 {
+          margin-right: 10px;
+          color: #ffb30e; }
+          #per-wall .per-wall-r .tribe-artWorkNum ul li.tribe-artWorkNum1:after {
+            background: url("../../../images/pc/icon/icon-artWork-img.png") no-repeat; }
+        #per-wall .per-wall-r .tribe-artWorkNum ul li.tribe-artWorkNum2 {
+          color: #52C1F5; }
+          #per-wall .per-wall-r .tribe-artWorkNum ul li.tribe-artWorkNum2:after {
+            width: 108px;
+            background: url("../../../images/pc/icon/icon-artWork-video.png") no-repeat; }
+        #per-wall .per-wall-r .tribe-artWorkNum ul li.tribe-artWorkNum3 {
+          color: #F86767;
+          margin: 0 10px; }
+          #per-wall .per-wall-r .tribe-artWorkNum ul li.tribe-artWorkNum3:after {
+            width: 108px;
+            background: url("../../../images/pc/icon/icon-artWork-audio.png") no-repeat; }
+        #per-wall .per-wall-r .tribe-artWorkNum ul li.tribe-artWorkNum4 {
+          color: #515151; }
+          #per-wall .per-wall-r .tribe-artWorkNum ul li.tribe-artWorkNum4:after {
+            width: 108px;
+            background: url("../../../images/pc/icon/icon-artWork-text.png") no-repeat; }
+        #per-wall .per-wall-r .tribe-artWorkNum ul li .tribe-artWorkNumP1 {
+          font-size: 20px;
+          margin-bottom: 0;
+          position: absolute;
+          z-index: 1;
+          height: 25px;
+          top: 30px;
+          left: 16px;
+          width: 75px;
+          overflow: hidden; }
+        #per-wall .per-wall-r .tribe-artWorkNum ul li .tribe-artWorkNumP2 {
+          font-size: 18px;
+          position: absolute;
+          z-index: 1;
+          top: 55px;
+          left: 16px;
+          height: 25px;
+          width: 60px;
+          overflow: hidden; }
 
 #per-settings {
   width: 1000px;

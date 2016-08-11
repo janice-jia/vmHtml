@@ -20,7 +20,7 @@
     <div class="container">
         <div data-demdet="section" role="tabpanel">
             <div data-demdet="sectionheader">
-                <p class="demdet-share"><a href="">分享</a></p>
+                <p class="demdet-share" data-toggle="modal" data-target="#myModal"><a href="javascript:;">分享</a></p>
                 <div class="clear"></div>
                 <h1>需求名称需求名称</h1>
                 <ul data-demdet="sectiononeul">
@@ -174,10 +174,57 @@
     <i></i>
 </div>
 
+
+
+
+<!-- 分享（Modal） -->
+<div class="modal fade" id="myModal"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-share">
+        <h2 class="zcbl-modal-shareTit">分享</h2>
+        <p class="zcbl-modal-shareDesc">让更多的人了解你，让更多的人帮助你</p>
+        <div class="zcbl-modal-shareImg">
+            <ul>
+                <li class="zcbl-modal-shareSina">
+                    <a href=""></a>
+                </li>
+                <li class="zcbl-modal-shareWx">
+                    <div class="zcbl-modal-shareWxMin">
+                        <a href="javascript:;"></a>
+                    </div>
+                    <div class="zcbl-modal-shareWxMax"><img src="./static/images/pc/index/QR_CODE.jpg" height="115" width="115" alt=""></div>
+
+                </li>
+                <li class="zcbl-modal-shareQQ">
+                    <a href=""></a>
+                </li>
+            </ul>
+            <div class=""></div>
+        </div>
+    </div>
+</div>
+<!-- 分享（Modal） -->
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="static/js/pc/dest/jquery-1.11.3.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="static/js/pc/dest/bootstrap.min.js"></script>
 <script src="static/js/pc/dest/all.min.js"></script>
+<script>
+    $(".zcbl-modal-shareWx").click(function(){
+        if($(".zcbl-modal-shareWxMax").css('display') == 'none'){
+            $(".zcbl-modal-shareWxMin").hide();
+            $(".zcbl-modal-shareSina a").hide();
+            $(".zcbl-modal-shareQQ a").hide();
+            $(".zcbl-modal-shareWxMax").show();
+        }else{
+            $(".zcbl-modal-shareWxMin").show();
+            $(".zcbl-modal-shareSina a").show();
+            $(".zcbl-modal-shareQQ a").show();
+            $(".zcbl-modal-shareWxMax").hide();
+        }
+
+    });
+</script>
 </body>
 </html>

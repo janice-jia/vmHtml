@@ -166,7 +166,9 @@
           color: #171717;
           margin-bottom: 10px; }
         #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="content"] [data-websever="usertab"] {
-          margin-bottom: 10px; }
+          margin-bottom: 10px;
+          height: 22px;
+          overflow: hidden; }
           #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="content"] [data-websever="usertab"] li {
             display: inline;
             margin: 0 5px;
@@ -174,7 +176,9 @@
             color: #499af5; }
         #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="content"] [data-websever="userother"] {
           color: #909090;
-          font-size: 14px; }
+          font-size: 14px;
+          height: 20px;
+          overflow: hidden; }
     #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li:hover [data-websever="modal"] {
       display: block;
       height: 100%;

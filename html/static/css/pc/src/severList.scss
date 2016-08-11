@@ -231,6 +231,8 @@ $color-fb4444: #fb4444;
                     }
                     [data-websever="usertab"] {
                         margin-bottom: 10px;
+                        height: 22px;
+                        overflow: hidden;
                         li {
                             display: inline;
                             margin: 0 5px;
@@ -241,6 +243,8 @@ $color-fb4444: #fb4444;
                     [data-websever="userother"] {
                         color: $color-03;
                         font-size: 14px;
+                        height: 20px;
+                        overflow: hidden;
                     }
                 }
             }

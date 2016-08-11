@@ -428,6 +428,65 @@ button.zcbl-close {
           position: absolute;
           content: ""; }
 
+.zcbl-modal-share {
+  width: 484px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border-radius: 5px;
+  background: #e9e9e9;
+  z-index: 1400;
+  margin: -150px 0 0 -242px; }
+  .zcbl-modal-share .zcbl-modal-shareTit {
+    text-align: center;
+    color: #ffb30e;
+    font-size: 38px;
+    padding: 56px 0 30px 0; }
+  .zcbl-modal-share .zcbl-modal-shareDesc {
+    text-align: center;
+    margin-bottom: 0px; }
+  .zcbl-modal-share .zcbl-modal-shareImg ul {
+    padding: 0 105px; }
+    .zcbl-modal-share .zcbl-modal-shareImg ul li {
+      float: left; }
+      .zcbl-modal-share .zcbl-modal-shareImg ul li.zcbl-modal-shareSina {
+        width: 20%;
+        text-align: left;
+        padding-top: 60px; }
+        .zcbl-modal-share .zcbl-modal-shareImg ul li.zcbl-modal-shareSina a {
+          display: inline-block;
+          width: 28px;
+          height: 23px;
+          background: url("../../../images/pc/icon/icon-modal-sina.png") no-repeat; }
+          .zcbl-modal-share .zcbl-modal-shareImg ul li.zcbl-modal-shareSina a:hover {
+            background: url("../../../images/pc/icon/icon-modal-sina-1.png") no-repeat; }
+      .zcbl-modal-share .zcbl-modal-shareImg ul li.zcbl-modal-shareWx {
+        width: 60%;
+        text-align: center; }
+        .zcbl-modal-share .zcbl-modal-shareImg ul li.zcbl-modal-shareWx .zcbl-modal-shareWxMin a {
+          margin-top: 60px;
+          display: inline-block;
+          width: 30px;
+          height: 24px;
+          background: url("../../../images/pc/icon/icon-modal-wx.png") no-repeat; }
+          .zcbl-modal-share .zcbl-modal-shareImg ul li.zcbl-modal-shareWx .zcbl-modal-shareWxMin a:hover {
+            background: url("../../../images/pc/icon/icon-modal-wx-1.png") no-repeat; }
+        .zcbl-modal-share .zcbl-modal-shareImg ul li.zcbl-modal-shareWx .zcbl-modal-shareWxMax {
+          padding-top: 20px;
+          display: none; }
+      .zcbl-modal-share .zcbl-modal-shareImg ul li.zcbl-modal-shareQQ {
+        width: 20%;
+        text-align: right;
+        padding-top: 60px; }
+        .zcbl-modal-share .zcbl-modal-shareImg ul li.zcbl-modal-shareQQ a {
+          display: inline-block;
+          width: 23px;
+          height: 23px;
+          background: url("../../../images/pc/icon/icon-modal-qq.png") no-repeat; }
+          .zcbl-modal-share .zcbl-modal-shareImg ul li.zcbl-modal-shareQQ a:hover {
+            background: url("../../../images/pc/icon/icon-modal-qq-1.png") no-repeat; }
+
 .zcbl-loding {
   width: 60px;
   height: 24px;
@@ -674,11 +733,13 @@ button.zcbl-close {
     border-bottom: 1px solid #acacac;
     padding: 40px 0 40px 0; }
     #zcbl-footer .footer-link p {
-      color: #ffffff; }
+      color: #ffffff;
+      margin-bottom: 0; }
       #zcbl-footer .footer-link p.footer-link-p {
         width: 80px;
         float: left;
         line-height: 25px;
+        height: 25px;
         font-size: 14px; }
     #zcbl-footer .footer-link ul.footer-link-ul {
       width: 922px;
@@ -687,6 +748,7 @@ button.zcbl-close {
     #zcbl-footer .footer-link ul li {
       float: left;
       line-height: 25px;
+      height: 25px;
       color: #ffffff;
       padding: 0 0 0 9px; }
       #zcbl-footer .footer-link ul li a {

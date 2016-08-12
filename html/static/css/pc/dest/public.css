@@ -941,3 +941,172 @@ button {
   font-size: 14px;
   line-height: 25px;
   background: none; }
+
+.topMain {
+  position: relative; }
+
+.goTop {
+  position: absolute;
+  right: -60px;
+  height: 195px;
+  width: 50px;
+  display: none;
+  margin-top: 350px; }
+  .goTop ul li {
+    height: 40px;
+    background: #dcdcdc;
+    margin-top: 4px; }
+    .goTop ul li a {
+      font-size: 14px;
+      color: #ffffff;
+      display: inline-block;
+      width: 100%;
+      height: 56px; }
+      .goTop ul li a:before {
+        position: relative;
+        left: 9px;
+        width: 32px;
+        height: 32px;
+        content: "";
+        line-height: 16px; }
+    .goTop ul li.top, .goTop ul li.download, .goTop ul li.help, .goTop ul li.tel {
+      position: relative; }
+      .goTop ul li.top:hover, .goTop ul li.download:hover, .goTop ul li.help:hover, .goTop ul li.tel:hover {
+        background: #878787; }
+        .goTop ul li.top:hover a:before, .goTop ul li.download:hover a:before, .goTop ul li.help:hover a:before, .goTop ul li.tel:hover a:before {
+          background: none;
+          width: 40px;
+          left: 11px; }
+    .goTop ul li.top {
+      height: 56px;
+      position: relative;
+      border: none;
+      background: #eeeeee; }
+      .goTop ul li.top a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3; }
+        .goTop ul li.top a:before {
+          position: absolute;
+          top: 16px;
+          height: 34px;
+          background: url("../../../images/pc/version1.1/icon/icon-top.png") no-repeat; }
+      .goTop ul li.top:before, .goTop ul li.top:hover:before {
+        content: "";
+        position: absolute;
+        height: 0;
+        width: 0;
+        overflow: hidden;
+        top: -25px;
+        left: 0;
+        border: 25px solid transparent;
+        border-bottom-color: #dcdcdc; }
+      .goTop ul li.top:after {
+        content: "";
+        position: absolute;
+        top: 25px;
+        left: 0;
+        width: 50px;
+        height: 31px;
+        border-top: 0;
+        background: #dcdcdc; }
+      .goTop ul li.top:hover {
+        background: #eeeeee; }
+        .goTop ul li.top:hover:before {
+          border-bottom-color: #878787; }
+        .goTop ul li.top:hover:after {
+          background: #878787; }
+        .goTop ul li.top:hover a:before {
+          top: 20px;
+          content: "返回顶部"; }
+    .goTop ul li.download a:before {
+      position: absolute;
+      top: 4px;
+      background: url("../../../images/pc/version1.1/icon/icon-download.png") no-repeat; }
+    .goTop ul li.download:hover a:before {
+      content: "APP下载"; }
+    .goTop ul li.download .download-box {
+      position: absolute;
+      right: 58px;
+      top: -32px;
+      width: 110px;
+      height: 104px;
+      border: 1px solid #c1c1c1;
+      padding: 2px;
+      display: none; }
+      .goTop ul li.download .download-box:before {
+        content: "";
+        position: absolute;
+        left: 107px;
+        top: 46px;
+        border: 4px solid transparent;
+        border-left-color: #eeeeee;
+        width: 0;
+        height: 0;
+        z-index: 2; }
+      .goTop ul li.download .download-box:after {
+        content: "";
+        position: absolute;
+        left: 108px;
+        top: 45px;
+        border: 5px solid transparent;
+        border-left-color: #c1c1c1;
+        width: 0;
+        height: 0;
+        z-index: 1; }
+      .goTop ul li.download .download-box .download-con {
+        background: #c1c1c1;
+        width: 104px;
+        height: 98px; }
+    .goTop ul li.help a:before {
+      position: absolute;
+      top: 4px;
+      background: url("../../../images/pc/version1.1/icon/icon-help.png") no-repeat; }
+    .goTop ul li.help:hover a:before {
+      content: "相关帮助"; }
+    .goTop ul li.tel a:before {
+      position: absolute;
+      top: 4px;
+      background: url("../../../images/pc/version1.1/icon/icon-tel.png") no-repeat; }
+    .goTop ul li.tel:hover a:before {
+      content: "联系客服"; }
+    .goTop ul li.tel .tel-box {
+      width: 176px;
+      height: 50px;
+      position: absolute;
+      right: 58px;
+      top: 0;
+      border: 1px solid #c1c1c1;
+      background: #eeeeee;
+      display: none; }
+      .goTop ul li.tel .tel-box:before {
+        content: "";
+        position: absolute;
+        right: -7px;
+        top: 21px;
+        border: 4px solid transparent;
+        border-left-color: #eeeeee;
+        width: 0;
+        height: 0;
+        z-index: 2; }
+      .goTop ul li.tel .tel-box:after {
+        content: "";
+        position: absolute;
+        right: -10px;
+        top: 20px;
+        border: 5px solid transparent;
+        border-left-color: #c1c1c1;
+        width: 0;
+        height: 0;
+        z-index: 1; }
+      .goTop ul li.tel .tel-box p {
+        margin-bottom: 0;
+        text-align: center; }
+      .goTop ul li.tel .tel-box .tel-box-num {
+        font-size: 16px;
+        color: #ffb30e;
+        height: 25px;
+        line-height: 25px; }
+      .goTop ul li.tel .tel-box .tel-box-desc {
+        font-size: 14px; }

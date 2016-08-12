@@ -263,3 +263,15 @@ $color-fb4444: #fb4444;
         }
     }
 }
+
+
+.white-hover{
+    ul{
+        li{
+            padding: 5px 5px 0 5px;
+            &:hover{
+                background: $color-ffffff;
+            }
+        }
+    }
+}

@@ -187,3 +187,8 @@
     display: table;
     clear: both;
     content: ''; }
+
+.white-hover ul li {
+  padding: 5px 5px 0 5px; }
+  .white-hover ul li:hover {
+    background: #ffffff; }

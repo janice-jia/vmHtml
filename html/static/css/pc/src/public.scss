@@ -21,6 +21,9 @@ $color-9a9a9a:#9a9a9a;
 $color-e9e9e9:#e9e9e9;
 $color-90908f:#90908f;
 $color-dddddd:#dddddd;
+$color-878787:#878787;
+$color-c4c4c4:#c4c4c4;
+$color-dcdcdc:#dcdcdc;
 
 
 .extend-aline{
@@ -1216,6 +1219,252 @@ button{
     font-size: 14px;
     line-height: 25px;
     background: none;
+}
+
+
+//返回顶部
+.topMain{
+    position: relative;
+}
+
+.goTop{
+    position: absolute;
+    right: -60px;
+    height: 195px;
+    width: 50px;
+    display: none;
+    margin-top: 350px;
+    ul{
+        li{
+            height: 40px;
+            background: $color-dcdcdc;
+            margin-top: 4px;
+            a{
+                font-size: 14px;
+                color: $color-ffffff;
+                display: inline-block;
+                width: 100%;
+                height: 56px;
+                &:before{
+                    position: relative;
+                    left: 9px;
+                    width: 32px;
+                    height: 32px;
+                    content: "";
+                    line-height: 16px;
+                }
+            }
+
+            &.top,&.download,&.help,&.tel{
+                position: relative;
+                &:hover{
+                    background: $color-878787;
+                    a{
+                        &:before{
+                            background: none;
+                            width: 40px;
+                            left: 11px;
+                        }
+                    }
+                }
+            }
+
+            &.top{
+                height: 56px;
+                position: relative;
+                border: none;
+                background: $color-05;
+                a{
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    z-index: 3;
+                    &:before{
+                        position: absolute;
+                        top:16px;
+                        height: 34px;
+                        background: url("../../../images/pc/version1.1/icon/icon-top.png") no-repeat;
+                    }
+                }
+                &:before,&:hover:before{
+                    content: "";
+                    position: absolute;
+                    height: 0;
+                    width: 0;
+                    overflow: hidden;
+                    top:-25px;
+                    left: 0;
+                    border: 25px solid transparent;
+                    border-bottom-color: $color-dcdcdc;
+                }
+                &:after{
+                    content: "";
+                    position: absolute;
+                    top:25px;
+                    left: 0;
+                    width: 50px;
+                    height: 31px;
+                    border-top: 0;
+                    background: $color-dcdcdc;
+                }
+                &:hover{
+                    background: $color-05;
+                    &:before{
+                        border-bottom-color: $color-878787;
+                    }
+                    &:after{
+                        background: $color-878787;
+                    }
+                    a{
+                        &:before{
+                            top: 20px;
+                            content: "返回顶部";
+                        }
+                    }
+                }
+
+            }
+
+            &.download{
+                a{
+                    &:before{
+                        position: absolute;
+                        top:4px;
+                        background: url("../../../images/pc/version1.1/icon/icon-download.png") no-repeat;
+                    }
+                }
+
+                &:hover{
+                    a{
+                        &:before{
+                            content: "APP下载";
+                        }
+                    }
+                }
+
+                .download-box{
+                    position: absolute;
+                    right: 58px;
+                    top:-32px;
+                    width: 110px;
+                    height: 104px;
+                    border:1px solid $color-04;
+                    padding: 2px;
+                    display: none;
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        left: 107px;
+                        top: 46px;
+                        border: 4px solid transparent;
+                        border-left-color: $color-05;
+                        width: 0;
+                        height: 0;
+                        z-index: 2;
+                    }
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        left: 108px;
+                        top: 45px;
+                        border: 5px solid transparent;
+                        border-left-color: $color-04;
+                        width: 0;
+                        height: 0;
+                        z-index: 1;
+                    }
+                    .download-con{
+                        background: $color-04;
+                        width: 104px;
+                        height: 98px;
+                    }
+                }
+            }
+
+            &.help{
+                a{
+                    &:before{
+                        position: absolute;
+                        top:4px;
+                        background: url("../../../images/pc/version1.1/icon/icon-help.png") no-repeat;
+                    }
+                }
+
+                &:hover{
+                    a{
+                        &:before{
+                            content: "相关帮助";
+                        }
+                    }
+                }
+            }
+
+            &.tel{
+                a{
+                    &:before{
+                        position: absolute;
+                        top:4px;
+                        background: url("../../../images/pc/version1.1/icon/icon-tel.png") no-repeat;
+                    }
+                }
+
+                &:hover{
+                    a{
+                        &:before{
+                            content: "联系客服";
+                        }
+                    }
+                }
+
+                .tel-box{
+                    width: 176px;
+                    height: 50px;
+                    position: absolute;
+                    right: 58px;
+                    top:0;
+                    border: 1px solid $color-04;
+                    background: $color-05;
+                    display: none;
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        right: -7px;
+                        top: 21px;
+                        border: 4px solid transparent;
+                        border-left-color: $color-05;
+                        width: 0;
+                        height: 0;
+                        z-index: 2;
+                    }
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        right: -10px;
+                        top: 20px;
+                        border: 5px solid transparent;
+                        border-left-color: $color-04;
+                        width: 0;
+                        height: 0;
+                        z-index: 1;
+                    }
+                    p{
+                        margin-bottom: 0;
+                        text-align: center;
+                    }
+                    .tel-box-num{
+                        font-size: 16px;
+                        color: $color-07;
+                        height: 25px;
+                        line-height: 25px;
+                    }
+                    .tel-box-desc{
+                        font-size: 14px;
+                    }
+                }
+            }
+
+        }
+    }
 }
 
 

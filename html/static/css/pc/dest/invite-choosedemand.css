@@ -82,6 +82,8 @@
         overflow: hidden;
         font-family: "adobeheitistd regular", "Microsoft YaHei";
         color: #909090; }
+        #choosedemand .per-req ul li .per-reqCon h3 a {
+          color: #909090; }
       #choosedemand .per-req ul li .per-reqCon .per-reqInfo {
         margin: 10px 0 20px 0;
         line-height: 30px;

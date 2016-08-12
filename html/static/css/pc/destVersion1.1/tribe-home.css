@@ -117,16 +117,17 @@ p, h1, h2, h3, h4, h5, h6 {
       color: #515151;
       padding-top: 15px;
       padding-bottom: 12px; }
-    .tribe-list-box .tribe-list-li .tribe-list-con p {
+    .tribe-list-box .tribe-list-li .tribe-list-con > p {
       color: #909090;
       padding-bottom: 14px; }
     .tribe-list-box .tribe-list-li .tribe-list-con .tribe-list-foot {
       font-size: 14px;
       padding-bottom: 20px; }
-      .tribe-list-box .tribe-list-li .tribe-list-con .tribe-list-foot span {
+      .tribe-list-box .tribe-list-li .tribe-list-con .tribe-list-foot p {
         color: #ffb30e;
-        margin-right: 16px; }
-      .tribe-list-box .tribe-list-li .tribe-list-con .tribe-list-foot span b {
+        margin-right: 16px;
+        display: inline-block; }
+      .tribe-list-box .tribe-list-li .tribe-list-con .tribe-list-foot p b {
         width: 18px;
         height: 14px;
         display: inline-block;

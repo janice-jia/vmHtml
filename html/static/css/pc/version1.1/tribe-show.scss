@@ -31,7 +31,9 @@ $pro-color-4: #499af5;
 $pro-color-5: #FF6D33;
 $pro-color-6: #ffb30e;
 $pro-color-7: #5BCC39;
-
+.container{
+  padding: 0;
+}
 .selected-yellow {
   color: $color-07 !important;
 }
@@ -384,7 +386,7 @@ $pro-color-7: #5BCC39;
       margin-top: 15px;
       clear: both;
       //border:1px solid red;
-      width: 920px;
+      width: 965px;
       height: 520px;
 
      // padding-left: 23px;
@@ -393,8 +395,10 @@ $pro-color-7: #5BCC39;
         position: relative;
         cursor: pointer;
         float: left;
-        width: 200px;
-        font-size: $font-18;
+        width: 234px;
+        margin-right: 7px;
+        font-size: $font-16;
+
         color: $color-03;
         //border:1px solid green;
         //margin-left: 15px;
@@ -463,6 +467,10 @@ $pro-color-7: #5BCC39;
           div {
             color: #fff;
             width: 174px;
+            p{
+              margin-bottom: 0;
+              line-height: 30px;
+            }
           }
         }
 
@@ -492,12 +500,11 @@ $pro-color-7: #5BCC39;
             top:16px;
             z-index: 11;
           }
-          span{
+          >span{
             position: absolute;
             left: -68px;
             width: 178px;
             display: inline-block;
-            font-size: $font-18;
             z-index: 3;
             padding-top: 25px;
             white-space: nowrap;

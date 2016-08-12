@@ -25,3 +25,10 @@ $(document).click(function(event){
         });
     }
 });
+// 查看图片 /查看漫画 亮灯效果
+$('#tribe-img-changebg').click(function(){
+    //        切换背景
+    $('#tribe-img').toggleClass('lightbg');
+    //        切换面包屑导航
+    $('.breadcrumb').toggleClass('breadcrumb-dar');
+});

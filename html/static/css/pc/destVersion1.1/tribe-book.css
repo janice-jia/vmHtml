@@ -2,12 +2,10 @@
 /**
   by dhj
 **/
-h1, h2, h3, h4, h5, h6 {
+p, h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
 .breadcrumb > li {
-  font-size: 18px;
-  line-height: 32px;
   float: left;
   color: #909090; }
   .breadcrumb > li a {
@@ -23,17 +21,24 @@ h1, h2, h3, h4, h5, h6 {
   .breadcrumb-dar > li a {
     color: #fff; }
 
-.breadcrumb:after {
-  display: table;
-  content: "";
-  clear: both; }
-
 .indexed {
   font-size: 18px;
   text-align: center; }
   .indexed li {
     float: left;
     line-height: 32px; }
+  .indexed a {
+    color: #171717; }
+  .indexed .indexcenter .indexdrown {
+    background-color: #fff; }
+  .indexed .indexcenter:hover {
+    background-color: #fff; }
+    .indexed .indexcenter:hover > a {
+      border-color: #909090;
+      border-top-color: #ffb30e;
+      border-bottom-color: #fff; }
+  .indexed .indexcenter:hover .indexdrown {
+    display: block; }
   .indexed .indexcenter {
     position: relative;
     width: 62px;
@@ -81,8 +86,6 @@ h1, h2, h3, h4, h5, h6 {
   display: block; }
 
 /**浅色背景索引**/
-.indexlight a {
-  color: #171717; }
 .indexlight .indexcenter .indexdrown {
   background-color: #fff; }
 .indexlight .indexcenter:hover {
@@ -131,7 +134,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /** 小说详细页 **/
 #tribe-book [data-tbook="header"] {
-  padding: 20px 40px; }
+  padding: 20px 40px;
+  font-size: 18px;
+  line-height: 32px; }
   #tribe-book [data-tbook="header"] > ol {
     float: left; }
   #tribe-book [data-tbook="header"] > ul {
@@ -172,6 +177,16 @@ h1, h2, h3, h4, h5, h6 {
 /**  查看漫画 开始  **/
 #tribe-img {
   background-color: #323232; }
+  #tribe-img.lightbg {
+    background-color: #eeeeee; }
+    #tribe-img.lightbg [data-vimg="indexed"] p {
+      color: #515151; }
+    #tribe-img.lightbg [data-vimg="comment"] .tribe-imgcomment input {
+      background-color: #eeeeee; }
+    #tribe-img.lightbg [data-vimg="comment"] .tribe-imgcomment:after {
+      display: table;
+      clear: both;
+      content: ""; }
   #tribe-img .container {
     padding: 0; }
   #tribe-img [data-vimg="header"] {
@@ -185,10 +200,10 @@ h1, h2, h3, h4, h5, h6 {
       margin-right: 24px; }
       #tribe-img [data-vimg="header"] > p .edittxt {
         margin-left: 10px; }
-    #tribe-img [data-vimg="header"] .breadcrumb-dar {
+    #tribe-img [data-vimg="header"] .breadcrumb {
       margin-right: 30px;
       float: left; }
-      #tribe-img [data-vimg="header"] .breadcrumb-dar h1 {
+      #tribe-img [data-vimg="header"] .breadcrumb h1 {
         font-size: 24px; }
   #tribe-img [data-vimg="header"]:after {
     display: table;
@@ -296,8 +311,10 @@ h1, h2, h3, h4, h5, h6 {
         background-color: #c1c1c1;
         font-size: 18px;
         color: #515151;
-        border: none;
-        padding: 10px; }
+        padding: 10px;
+        border: 1px solid #c1c1c1; }
+      #tribe-img [data-vimg="comment"] .tribe-imgcomment input:focus {
+        background-color: #fff; }
       #tribe-img [data-vimg="comment"] .tribe-imgcomment button {
         float: left;
         width: 120px;

@@ -325,9 +325,8 @@ p,h1,h2,h3,h4,h5,h6{
       top: 0;
       margin-left: 34px;
       color: #fff;
-      font-size: 20px;
       span{
-        font-size: 24px;
+        font-size: 20px;
         color: $color-07;
       }
     }
@@ -381,6 +380,7 @@ p,h1,h2,h3,h4,h5,h6{
           left:-10px;
           border-radius: 50%;
           font-style: normal;
+          font-size: 12px;
           color: #fff;
           vertical-align: middle;
           line-height: 20px;
@@ -405,16 +405,15 @@ p,h1,h2,h3,h4,h5,h6{
         width:185px;
         background-color: #fff;
         padding: 12px;
+        padding-bottom: 0;
         transition: all .5s;
         h3{
           border-bottom: 1px solid $color-04;
-          font-size: 20px;
           color: $color-02;
           padding-bottom: 12px;
         }
         p{
           border-top: 1px solid $color-04;
-          font-size:18px;
           color: $color-07;
           line-height: 52px;
           margin: 0;
@@ -445,8 +444,7 @@ p,h1,h2,h3,h4,h5,h6{
         float: left;
         width:498px;
         height: 50px;
-        background-color: $color-04;
-        font-size: 18px;
+        background-color: $color-05;
         color: $color-02;
         padding: 10px;
         border: 1px solid $color-04;
@@ -458,7 +456,6 @@ p,h1,h2,h3,h4,h5,h6{
         float: left;
         width: 120px;
         height: 50px;
-        font-size: 18px;
         color: #fff;
       }
       //按钮颜色

@@ -12,12 +12,17 @@
 
     <!--编辑器-->
     <link rel="stylesheet" href="static/js/pc/umeditor/themes/default/css/umeditor.css">
+
+
+
     <!--[if lt IE 9]>
     <script src="static/js/pc/dest/html5shiv.min.js"></script>
     <script src="static/js/pc/dest/respond.min.js"></script>
     <![endif]-->
 </head>
 <body>
+
+
 <div id="tribe-cartoon">
     <div id="header" style="height: 50px;  "></div>
     <div class="container">
@@ -280,17 +285,15 @@
         <div class="tribe-novel-model">
             <form id="tribe-add-novel-form" method="post" class="form-horizontal" role="form">
                 <div class="form-group">
-                    <label for="novel-title" class="mt5 col-md-1 col-md-offset-1 controle-label">标题:</label>
-                    <div class="col-md-8"><input type="text" class="form-control" id="novel-title" name="novel-title"/>
-                    </div>
+                    <label for="novel-title" class="mt5 controle-label">标题:</label>
+                    <input type="text" id="novel-title" name="novel-title"/>
+
                 </div>
                 <div class="form-group">
                     <div class="col-md-offset-1 ">
                         <!--style给定宽度可以影响编辑器的最终宽度-->
-                        <script type="text/plain" id="novel-content" name="novel-content"
-                                style="width:840px;height:444px;">
-                            <p>将文字复制到这里</p>
-
+                        <script type="text/plain" id="novel-content" name="novel-content" style="width:840px;height:444px;">
+                         <p>将文字复制到这里</p>
                         </script>
                     </div>
                 </div>
@@ -326,12 +329,10 @@
     </div>
     <!-- 申请开通 （Modal） -->
 </div>
+
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="static/js/pc/dest/jquery-1.11.3.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="static/js/pc/dest/bootstrap.min.js"></script>
-<script src="static/js/pc/jquery.form-master/jquery.form.js"></script>
-<script src="static/js/pc/dest/all.min.js"></script>
 
 <!-- 配置文件 -->
 <script type="text/javascript" src="static/js/pc/umeditor/umeditor.config.js"></script>
@@ -339,76 +340,79 @@
 <script type="text/javascript" src="static/js/pc/umeditor/umeditor.js"></script>
 <!-- 语言包文件 -->
 <script type="text/javascript" src="static/js/pc/umeditor/lang/zh-cn/zh-cn.js"></script>
+
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="static/js/pc/dest/bootstrap.min.js"></script>
+<script src="static/js/pc/jquery.form-master/jquery.form.js"></script>
+<script src="static/js/pc/dest/all.min.js"></script>
+
 <script>
+        $(function () {
+            /**
+             * 实例化编辑器代码
+             * ==============
+             */
+            UM.getEditor('novel-content', {
+                /* 传入配置参数,可配参数列表看umeditor.config.js */
+                toolbars: ['undo redo | bold italic underline strikethrough |  insertorderedlist insertunorderedlist | justifyleft justifycenter justifyright justifyjustify ']
+            });
 
 
-    $(function () {
 
-        /**
-         * 实例化编辑器代码
-         * ==============
-         */
-        window.um = UM.getEditor('novel-content', {
-            // 是否自动长高,默认true
-            autoHeightEnabled: false,
-            toolbar: ['fontsize ', 'bold italic underline fullscreen', ' justifyleft justifycenter justifyright justifyjustify']
-        });
+            /**
+             * 添加/编辑剧集 ajax提交
+             * =======
+             */
+            $('#tribe-add-novel-form').ajaxForm({
+                url: 'http://127.0.0.1/2.php',
+                beforeSubmit: function (arr) {
+                    if (!arr[0].value) {
+                        alert('请输入标题');
+                        return false;
+                    }
 
-        /**
-         * 添加/编辑剧集 ajax提交
-         * =======
-         */
-        $('#tribe-add-novel-form').ajaxForm({
-            url: 'http://127.0.0.1/2.php',
-            beforeSubmit: function (arr) {
-                if (!arr[0].value) {
-                    alert('请输入标题');
-                    return false;
+                    if (!arr[1].value) {
+                        alert('请输入内容');
+                        return false;
+                    }
+
+                    console.log(arr)
+                    return true;
+                },
+                success: function (data) {
+
+                    // 申请成功,隐藏弹出层
+                    $('#novel-model').modal('hide');
+                    console.info('tribe-add-novel-form-success', data);
+                },
+                error: function (e) {
+                    // 申请失败,隐藏弹出层
+                    $('#novel-model').modal('hide');
+                    console.info('tribe-add-novel-form-error', e);
                 }
+            });
 
-                if (!arr[1].value) {
-                    alert('请输入内容');
-                    return false;
+            /**
+             * 申请开通
+             * =======
+             */
+            $('#tribe-apply-form').ajaxForm({
+                url: 'http://127.0.0.1/2.php',
+                success: function (data) {
+
+                    // 申请成功,隐藏弹出层
+                    $('#myModal5').modal('hide');
+                    console.info('tribe-apply-success', data);
+                },
+                error: function (e) {
+                    // 申请失败,隐藏弹出层
+                    $('#myModal5').modal('hide');
+                    console.info('tribe-apple-error', e);
                 }
+            });
 
-                console.log(arr)
-                return true;
-            },
-            success: function (data) {
-
-                // 申请成功,隐藏弹出层
-                $('#novel-model').modal('hide');
-                console.info('tribe-add-novel-form-success', data);
-            },
-            error: function (e) {
-                // 申请失败,隐藏弹出层
-                $('#novel-model').modal('hide');
-                console.info('tribe-add-novel-form-error', e);
-            }
         });
-
-
-        /**
-         * 申请开通
-         * =======
-         */
-        $('#tribe-apply-form').ajaxForm({
-            url: 'http://127.0.0.1/2.php',
-            success: function (data) {
-
-                // 申请成功,隐藏弹出层
-                $('#myModal5').modal('hide');
-                console.info('tribe-apply-success', data);
-            },
-            error: function (e) {
-                // 申请失败,隐藏弹出层
-                $('#myModal5').modal('hide');
-                console.info('tribe-apple-error', e);
-            }
-        });
-
-
-    });
 </script>
 </body>
 </html>

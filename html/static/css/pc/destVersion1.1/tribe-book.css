@@ -204,10 +204,9 @@ p, h1, h2, h3, h4, h5, h6 {
       position: absolute;
       top: 0;
       margin-left: 34px;
-      color: #fff;
-      font-size: 20px; }
+      color: #fff; }
       #tribe-img [data-vimg="indexed"] p span {
-        font-size: 24px;
+        font-size: 20px;
         color: #ffb30e; }
   #tribe-img [data-vimg="imgbox"] {
     overflow-x: hidden;
@@ -249,6 +248,7 @@ p, h1, h2, h3, h4, h5, h6 {
           left: -10px;
           border-radius: 50%;
           font-style: normal;
+          font-size: 12px;
           color: #fff;
           vertical-align: middle;
           line-height: 20px; }
@@ -266,15 +266,14 @@ p, h1, h2, h3, h4, h5, h6 {
         width: 185px;
         background-color: #fff;
         padding: 12px;
+        padding-bottom: 0;
         transition: all .5s; }
         #tribe-img [data-vimg="imgbox"] .aside .img-comment h3 {
           border-bottom: 1px solid #c1c1c1;
-          font-size: 20px;
           color: #515151;
           padding-bottom: 12px; }
         #tribe-img [data-vimg="imgbox"] .aside .img-comment p {
           border-top: 1px solid #c1c1c1;
-          font-size: 18px;
           color: #ffb30e;
           line-height: 52px;
           margin: 0; }
@@ -296,8 +295,7 @@ p, h1, h2, h3, h4, h5, h6 {
         float: left;
         width: 498px;
         height: 50px;
-        background-color: #c1c1c1;
-        font-size: 18px;
+        background-color: #eeeeee;
         color: #515151;
         padding: 10px;
         border: 1px solid #c1c1c1; }
@@ -307,7 +305,6 @@ p, h1, h2, h3, h4, h5, h6 {
         float: left;
         width: 120px;
         height: 50px;
-        font-size: 18px;
         color: #fff; }
       #tribe-img [data-vimg="comment"] .tribe-imgcomment .tribe-darkbtn {
         background-color: #171717; }

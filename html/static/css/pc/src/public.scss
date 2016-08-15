@@ -542,7 +542,7 @@ button.zcbl-close{
         }
     }
 }
-
+//分享弹层
 .zcbl-modal-share{
     width:484px;
     height: 300px;
@@ -621,6 +621,8 @@ button.zcbl-close{
         }
     }
 }
+
+//loding弹层
 .zcbl-loding{
     width: 60px;
     height: 24px;
@@ -629,6 +631,202 @@ button.zcbl-close{
     top: 50%;
     margin-top:-12px;
     margin-left: -30px;
+}
+
+//私信弹层
+.zcbl-modal-personalLetter{
+    width: 650px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top:-325px;
+    margin-left: -300px;
+    border-radius: 5px;
+    background: $color-e9e9e9;
+    .zcbl-modal-tit{
+        padding: 0 30px;
+        height: 70px;
+        line-height: 70px;
+        color: $color-2c2c2c;
+        font-size: 16px;
+        border-bottom: 1px solid $color-acacac;
+        a{
+            color: $color-2c2c2c;
+            @extend .extend-aline;
+        }
+        .msg-zj{
+            color: $color-03;
+        }
+    }
+    .msgList{
+        height: 530px;
+        overflow-y: auto;
+        ul{
+            li{
+                height: 80px;
+                border-bottom: 1px solid $color-04;
+                &:hover{
+                    background: #f9f9f9;
+                    .msgBox{
+                        .msgBox-r{
+                            &:after{
+                                content: "";
+                                position: absolute;
+                                right: 30px;
+                                top: 29px;
+                                width: 13px;
+                                height: 22px;
+                                background: url("../../../images/pc/icon/icon-arrow-2.png") no-repeat;
+                            }
+                        }
+                    }
+                    .report{
+                        width: 16px;
+                        height: 14px;
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 2px;
+                        z-index: 111;
+                        background: url("../../../images/pc/icon/icon-report-1.png");
+                    }
+                }
+                .msgBox{
+                    .msgBox-l{
+                        line-height: 80px;
+                        float: left;
+                        width: 50px;
+                        height: 50px;
+                        margin: 0 20px 0 30px;
+                        img{
+                            border-radius: 50%;
+                        }
+                        a{
+                            display: inline-block;
+                            width: 100%;
+                            height: 100%;
+
+                        }
+                    }
+                    .msgBox-r{
+                        float: right;
+                        width: 530px;
+                        padding-right: 70px;
+                        position: relative;
+                        &:after{
+                            content: "";
+                            position: absolute;
+                            right: 30px;
+                            top: 29px;
+                            width: 13px;
+                            height: 22px;
+                            background: url("../../../images/pc/icon/icon-arrow-1.png") no-repeat;
+                        }
+                        a{
+                            position: absolute;
+                            display: inline-block;
+                            width: 100%;
+                            height: 100%;
+                            z-index: 100;
+                            top:0;
+                            left: 0;
+                        }
+                        .msgBox-rUinfo{
+                            margin-top: 10px;
+                            margin-bottom: 0;
+                            .msgUser{
+                                float: left;
+                                color: $color-02;
+                                font-size: 16px;
+                            }
+                            .msgTime{
+                                float: left;
+                                color: $color-03;
+                                font-size: 16px;
+                                padding-left: 20px;
+                            }
+                            .msgReport{
+                                float: left;
+                                position: relative;
+                                margin-left: 13px;
+                                margin-top: 2px;
+                                z-index: 110;
+                                &:hover{
+                                    cursor: pointer;
+                                    .report{
+                                        background: url("../../../images/pc/icon/icon-report-2.png");
+                                    }
+                                }
+
+                                .msgReport-up{
+                                    width: 18px;
+                                    height: 18px;
+                                    border: 1px solid $color-04;
+                                    &:before{
+                                        content: "";
+                                        position: absolute;
+                                        left: 4px;
+                                        top:7px;
+                                        width: 0;
+                                        height: 0;
+                                        overflow: hidden;
+                                        border: 5px solid transparent;
+                                        border-top-color: $color-03;
+                                        background: none;
+                                    }
+                                }
+                                .msgReport-down{
+                                    display: none;
+                                    position: absolute;
+                                    top:25px;
+                                    left: -25px;
+                                    z-index: 111;
+                                    height: 25px;
+                                    width: 80px;
+                                    line-height: 25px;
+                                    text-align: center;
+                                    border: 1px solid $color-04;
+                                    font-size: 14px;
+                                    &:before{
+                                        content: "";
+                                        position: absolute;
+                                        left: 29px;
+                                        top: -8px;
+                                        border: 4px solid transparent;
+                                        border-bottom-color: #eee;
+                                        width: 0;
+                                        height: 0;
+                                        z-index: 2;
+                                    }
+                                    &:after{
+                                        content: "";
+                                        position: absolute;
+                                        left: 28px;
+                                        top: -11px;
+                                        border: 5px solid transparent;
+                                        border-bottom-color: #c1c1c1;
+                                        width: 0;
+                                        height: 0;
+                                        z-index: 1;
+                                    }
+                                }
+                            }
+                            .msgConVal{
+                                font-size: 18px;
+                                color: $color-03;
+                                width: 100%;
+                                height: 22px;
+                                overflow: hidden;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 }
 
 

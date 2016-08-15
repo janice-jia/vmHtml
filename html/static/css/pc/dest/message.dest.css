@@ -68,6 +68,8 @@
       color: #909090; }
   #message [data-message="body"] ul[data-message="messagelist"] hr {
     border-color: #c1c1c1; }
+#message #message_home, #message #message_demand, #message #message_comment {
+  min-height: 500px; }
 
 /**  系统  **/
 /**  需求  **/

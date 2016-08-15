@@ -4,7 +4,7 @@
 */
 /*深灰*/
 /*友情链接字体灰，边框灰*/
-.extend-aline:hover, .zcbl-modal-3 .zcbl-popupGroup .embedVideoCon a:hover, .zcbl-modal-3 .zcbl-popupBtn .zcbl-modal-cancel:hover, .zcbl-modal-3 .zcbl-modal-3-desc a:hover, #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-1 li a:hover,
+.extend-aline:hover, .zcbl-modal-3 .zcbl-popupGroup .embedVideoCon a:hover, .zcbl-modal-3 .zcbl-popupBtn .zcbl-modal-cancel:hover, .zcbl-modal-3 .zcbl-modal-3-desc a:hover, .zcbl-modal-personalLetter .zcbl-modal-tit a:hover, #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-1 li a:hover,
 #zcbl-header .header-box .header-right .user-login .header-user .zcbl-userInfo .zcbl-userInfo-2 li a:hover, #zcbl-header .header-box .header-right .user-notlogin ul li a:hover, #zcbl-footer .footer-link ul li a:hover, #zcbl-footer .footer-aboutus .footer-aboutus-z ul li a:hover {
   text-decoration: underline; }
 
@@ -495,6 +495,161 @@ button.zcbl-close {
   top: 50%;
   margin-top: -12px;
   margin-left: -30px; }
+
+.zcbl-modal-personalLetter {
+  width: 650px;
+  height: 600px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -325px;
+  margin-left: -300px;
+  border-radius: 5px;
+  background: #e9e9e9; }
+  .zcbl-modal-personalLetter .zcbl-modal-tit {
+    padding: 0 30px;
+    height: 70px;
+    line-height: 70px;
+    color: #2c2c2c;
+    font-size: 16px;
+    border-bottom: 1px solid #acacac; }
+    .zcbl-modal-personalLetter .zcbl-modal-tit a {
+      color: #2c2c2c; }
+    .zcbl-modal-personalLetter .zcbl-modal-tit .msg-zj {
+      color: #909090; }
+  .zcbl-modal-personalLetter .msgList {
+    height: 530px;
+    overflow-y: auto; }
+    .zcbl-modal-personalLetter .msgList ul li {
+      height: 80px;
+      border-bottom: 1px solid #c1c1c1; }
+      .zcbl-modal-personalLetter .msgList ul li:hover {
+        background: #f9f9f9; }
+        .zcbl-modal-personalLetter .msgList ul li:hover .msgBox .msgBox-r:after {
+          content: "";
+          position: absolute;
+          right: 30px;
+          top: 29px;
+          width: 13px;
+          height: 22px;
+          background: url("../../../images/pc/icon/icon-arrow-2.png") no-repeat; }
+        .zcbl-modal-personalLetter .msgList ul li:hover .report {
+          width: 16px;
+          height: 14px;
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 2px;
+          z-index: 111;
+          background: url("../../../images/pc/icon/icon-report-1.png"); }
+      .zcbl-modal-personalLetter .msgList ul li .msgBox .msgBox-l {
+        line-height: 80px;
+        float: left;
+        width: 50px;
+        height: 50px;
+        margin: 0 20px 0 30px; }
+        .zcbl-modal-personalLetter .msgList ul li .msgBox .msgBox-l img {
+          border-radius: 50%; }
+        .zcbl-modal-personalLetter .msgList ul li .msgBox .msgBox-l a {
+          display: inline-block;
+          width: 100%;
+          height: 100%; }
+      .zcbl-modal-personalLetter .msgList ul li .msgBox .msgBox-r {
+        float: right;
+        width: 530px;
+        padding-right: 70px;
+        position: relative; }
+        .zcbl-modal-personalLetter .msgList ul li .msgBox .msgBox-r:after {
+          content: "";
+          position: absolute;
+          right: 30px;
+          top: 29px;
+          width: 13px;
+          height: 22px;
+          background: url("../../../images/pc/icon/icon-arrow-1.png") no-repeat; }
+        .zcbl-modal-personalLetter .msgList ul li .msgBox .msgBox-r a {
+          position: absolute;
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          z-index: 100;
+          top: 0;
+          left: 0; }
+        .zcbl-modal-personalLetter .msgList ul li .msgBox .msgBox-r .msgBox-rUinfo {
+          margin-top: 10px;
+          margin-bottom: 0; }
+          .zcbl-modal-personalLetter .msgList ul li .msgBox .msgBox-r .msgBox-rUinfo .msgUser {
+            float: left;
+            color: #515151;
+            font-size: 16px; }
+          .zcbl-modal-personalLetter .msgList ul li .msgBox .msgBox-r .msgBox-rUinfo .msgTime {
+            float: left;
+            color: #909090;
+            font-size: 16px;
+            padding-left: 20px; }
+          .zcbl-modal-personalLetter .msgList ul li .msgBox .msgBox-r .msgBox-rUinfo .msgReport {
+            float: left;
+            position: relative;
+            margin-left: 13px;
+            margin-top: 2px;
+            z-index: 110; }
+            .zcbl-modal-personalLetter .msgList ul li .msgBox .msgBox-r .msgBox-rUinfo .msgReport:hover {
+              cursor: pointer; }
+              .zcbl-modal-personalLetter .msgList ul li .msgBox .msgBox-r .msgBox-rUinfo .msgReport:hover .report {
+                background: url("../../../images/pc/icon/icon-report-2.png"); }
+            .zcbl-modal-personalLetter .msgList ul li .msgBox .msgBox-r .msgBox-rUinfo .msgReport .msgReport-up {
+              width: 18px;
+              height: 18px;
+              border: 1px solid #c1c1c1; }
+              .zcbl-modal-personalLetter .msgList ul li .msgBox .msgBox-r .msgBox-rUinfo .msgReport .msgReport-up:before {
+                content: "";
+                position: absolute;
+                left: 4px;
+                top: 7px;
+                width: 0;
+                height: 0;
+                overflow: hidden;
+                border: 5px solid transparent;
+                border-top-color: #909090;
+                background: none; }
+            .zcbl-modal-personalLetter .msgList ul li .msgBox .msgBox-r .msgBox-rUinfo .msgReport .msgReport-down {
+              display: none;
+              position: absolute;
+              top: 25px;
+              left: -25px;
+              z-index: 111;
+              height: 25px;
+              width: 80px;
+              line-height: 25px;
+              text-align: center;
+              border: 1px solid #c1c1c1;
+              font-size: 14px; }
+              .zcbl-modal-personalLetter .msgList ul li .msgBox .msgBox-r .msgBox-rUinfo .msgReport .msgReport-down:before {
+                content: "";
+                position: absolute;
+                left: 29px;
+                top: -8px;
+                border: 4px solid transparent;
+                border-bottom-color: #eee;
+                width: 0;
+                height: 0;
+                z-index: 2; }
+              .zcbl-modal-personalLetter .msgList ul li .msgBox .msgBox-r .msgBox-rUinfo .msgReport .msgReport-down:after {
+                content: "";
+                position: absolute;
+                left: 28px;
+                top: -11px;
+                border: 5px solid transparent;
+                border-bottom-color: #c1c1c1;
+                width: 0;
+                height: 0;
+                z-index: 1; }
+          .zcbl-modal-personalLetter .msgList ul li .msgBox .msgBox-r .msgBox-rUinfo .msgConVal {
+            font-size: 18px;
+            color: #909090;
+            width: 100%;
+            height: 22px;
+            overflow: hidden; }
 
 /** 视频图标 **/
 .zcbl-videoicon {

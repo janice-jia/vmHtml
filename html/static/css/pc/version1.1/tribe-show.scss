@@ -411,6 +411,43 @@ $pro-color-7: #5BCC39;
         }
       }
     }
+    /**
+     * 空白状态
+     * ============
+     */
+    .content-null{
+
+      width:520px;
+      height: 400px;
+      border: 1px dashed $color-04;
+      margin: 110px auto;
+
+      .content-null-add{
+        position: relative;
+        margin: 147px auto;
+        width: 65px;
+        input{
+          position: absolute;
+          background-color: #0f0f0f;
+          height: 112px;
+          width: 65px;
+          top: 0;
+          left: 0;
+          filter:alpha(opacity=0);
+          -moz-opacity:0;
+          -khtml-opacity:0;
+          opacity: 0;
+          cursor: pointer;
+        }
+        b{
+          background-image: url("../../../images/pc/version1.1/icon/icon_tribe_addwork.png");
+          display: inline-block;
+          width: 65px;
+          height: 65px;
+          margin-bottom: 20px;
+        }
+      }
+    }
   }
 
   /**

@@ -176,6 +176,9 @@ $black: #000;
             vertical-align: middle;
             margin-left:5px;
         }
+        .bgup{
+            background-image:url("../../../images/pc/icon/icon-set-up.png");
+        }
     }
     #reg-msg-up{
         .form-group {
@@ -209,5 +212,7 @@ $black: #000;
         }
     }
 
-    .reg-hide{}
+    .reg-hide{
+        display: none;
+    }
 }

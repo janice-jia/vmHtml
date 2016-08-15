@@ -125,6 +125,8 @@
     height: 14px;
     vertical-align: middle;
     margin-left: 5px; }
+  #reg-msg-down h2 .bgup {
+    background-image: url("../../../images/pc/icon/icon-set-up.png"); }
 #reg-msg-down #reg-msg-up .form-group input {
   padding: 0; }
 #reg-msg-down #reg-msg-up [data-regist="radio"] {
@@ -143,3 +145,5 @@
     height: 20px;
     margin-right: 3px;
     vertical-align: bottom; }
+#reg-msg-down .reg-hide {
+  display: none; }

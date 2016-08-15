@@ -194,6 +194,10 @@
     /**
      * 剧集列表 ul
      * ============
+     */
+    /**
+     * 空白状态
+     * ============
      */ }
     #tribe-cartoon .cartoon-content > .content-nav > li {
       cursor: pointer;
@@ -275,6 +279,33 @@
         overflow: hidden; }
         #tribe-cartoon .cartoon-content .novel-content-list > .novel-detail:hover {
           color: #499af5; }
+    #tribe-cartoon .cartoon-content .content-null {
+      width: 520px;
+      height: 400px;
+      border: 1px dashed #c1c1c1;
+      margin: 110px auto; }
+      #tribe-cartoon .cartoon-content .content-null .content-null-add {
+        position: relative;
+        margin: 147px auto;
+        width: 65px; }
+        #tribe-cartoon .cartoon-content .content-null .content-null-add input {
+          position: absolute;
+          background-color: #0f0f0f;
+          height: 112px;
+          width: 65px;
+          top: 0;
+          left: 0;
+          filter: alpha(opacity=0);
+          -moz-opacity: 0;
+          -khtml-opacity: 0;
+          opacity: 0;
+          cursor: pointer; }
+        #tribe-cartoon .cartoon-content .content-null .content-null-add b {
+          background-image: url("../../../images/pc/version1.1/icon/icon_tribe_addwork.png");
+          display: inline-block;
+          width: 65px;
+          height: 65px;
+          margin-bottom: 20px; }
   #tribe-cartoon .tribe-progress {
     height: 240px;
     background: #eeeeee; }

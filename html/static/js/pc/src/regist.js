@@ -15,3 +15,8 @@ function registFn(){
     $("#loginBox").css("display","none");
     $("#registBox").css("display","block");
 }
+//v1.1
+$('#registBox').delegate("#reg-msg-key", "click", function () {
+    $("#reg-msg-key b").toggleClass('bgup');
+    $('#reg-msg-up').toggleClass('reg-hide');
+});

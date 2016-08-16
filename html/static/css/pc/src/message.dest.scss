@@ -105,6 +105,9 @@ $black: #000;
             }
         }
     }
+    #message_home,#message_demand,#message_comment{
+        min-height: 500px;
+    }
 }
 
 /**  系统  **/

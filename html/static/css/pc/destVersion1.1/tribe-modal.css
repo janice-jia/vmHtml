@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
   by dhj
 **/
@@ -16,7 +17,6 @@ p {
 
 .zcbl-tmodal-1 {
   width: 930px;
-  height: 600px;
   margin: 10% auto;
   background-color: #fff;
   padding: 40px 0;
@@ -346,3 +346,56 @@ p {
       width: 130px;
       height: 50px;
       background-color: #ffb30e; }
+
+/**
+  * 申请开通 - 模态框
+  * ===================
+  */
+.tribe-apply-model {
+  background: #FFF;
+  height: 420px;
+  width: 650px;
+  margin-top: -210px;
+  padding-top: 70px;
+  padding-bottom: 70px; }
+  .tribe-apply-model > form {
+    background: #FFF;
+    height: 100%;
+    font-size: 18px;
+    color: #171717; }
+    .tribe-apply-model > form .checkbox:nth-child(1) {
+      margin-bottom: 114px;
+      margin-left: -120px; }
+    .tribe-apply-model > form .checkbox:nth-child(2) {
+      margin-bottom: 70px;
+      margin-left: -120px; }
+    .tribe-apply-model > form .checkbox label {
+      margin-left: 103px; }
+    .tribe-apply-model > form .checkbox input {
+      margin-right: 10px; }
+
+/**
+* 添加、编辑 - 剧集 - 模态框
+* ===================
+*/
+.tribe-novel-model {
+  position: absolute;
+  padding-top: 36px;
+  top: 50%;
+  left: 50%;
+  margin: -345px 0 0 -465px;
+  background: #FFF;
+  height: 690px;
+  width: 930px; }
+  .tribe-novel-model .form-group {
+    margin-left: 0; }
+    .tribe-novel-model .form-group .col-md-offset-1 {
+      margin-left: 40px; }
+    .tribe-novel-model .form-group label {
+      margin: 0;
+      margin-left: 40px;
+      padding-right: 16px;
+      line-height: 50px; }
+    .tribe-novel-model .form-group input {
+      width: 783px;
+      height: 50px; }

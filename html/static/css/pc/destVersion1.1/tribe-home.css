@@ -114,6 +114,8 @@ p, h1, h2, h3, h4, h5, h6 {
       font-size: 14px;
       color: #909090;
       float: right; }
+      .tribe-list-box .tribe-list-tab a:hover {
+        color: #ffb30e; }
   .tribe-list-box .tribe-list {
     width: 972px; }
   .tribe-list-box .tribe-list:after {
@@ -176,23 +178,26 @@ p, h1, h2, h3, h4, h5, h6 {
   background-color: #fff; }
   .searchtab .container {
     padding: 0 20px;
+    text-align: center;
     /**  下拉按钮  **/ }
-    .searchtab .container .searchtab-left {
-      margin-top: 27px;
-      margin-left: 118px;
-      float: left; }
-    .searchtab .container .searchtab-right {
+    .searchtab .container .searchtab-con {
       margin-top: 15px;
-      float: right; }
-      .searchtab .container .searchtab-right input {
+      display: inline-block; }
+      .searchtab .container .searchtab-con input {
         height: 50px;
         width: 500px;
         border: 1px solid #c1c1c1;
         float: left;
-        padding: 5px; }
-      .searchtab .container .searchtab-right button {
+        padding: 5px;
+        padding-left: 10px;
+        font-size: 14px; }
+      .searchtab .container .searchtab-con button {
         width: 120px;
         float: left; }
+      .searchtab .container .searchtab-con:after {
+        display: table;
+        content: "";
+        clear: both; }
     .searchtab .container [data-webdemand="dropdownbtn"] {
       position: relative;
       padding-bottom: 10px;

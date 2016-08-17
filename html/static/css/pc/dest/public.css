@@ -122,45 +122,45 @@ button.zcbl-close {
     -khtml-opacity: 1;
     opacity: 1; }
 
-.zcbl-modal-1, .zcbl-modal-2 {
+.zcbl-modal-1, .zcbl-modal-2, .zcbl-modal-8 {
   border-radius: 5px;
   background: #e9e9e9;
   position: absolute;
   text-align: center;
   z-index: 1400; }
-  .zcbl-modal-1 .zcbl-modal-success, .zcbl-modal-1 .zcbl-modal-error, .zcbl-modal-1 .zcbl-modal-blue, .zcbl-modal-2 .zcbl-modal-success, .zcbl-modal-2 .zcbl-modal-error, .zcbl-modal-2 .zcbl-modal-blue {
+  .zcbl-modal-1 .zcbl-modal-success, .zcbl-modal-1 .zcbl-modal-error, .zcbl-modal-1 .zcbl-modal-blue, .zcbl-modal-2 .zcbl-modal-success, .zcbl-modal-2 .zcbl-modal-error, .zcbl-modal-2 .zcbl-modal-blue, .zcbl-modal-8 .zcbl-modal-success, .zcbl-modal-8 .zcbl-modal-error, .zcbl-modal-8 .zcbl-modal-blue {
     position: relative;
     padding-left: 86px;
     line-height: 74px;
     display: inline-block;
     margin: 0 auto;
     font-size: 24px; }
-    .zcbl-modal-1 .zcbl-modal-success:before, .zcbl-modal-1 .zcbl-modal-error:before, .zcbl-modal-1 .zcbl-modal-blue:before, .zcbl-modal-2 .zcbl-modal-success:before, .zcbl-modal-2 .zcbl-modal-error:before, .zcbl-modal-2 .zcbl-modal-blue:before {
+    .zcbl-modal-1 .zcbl-modal-success:before, .zcbl-modal-1 .zcbl-modal-error:before, .zcbl-modal-1 .zcbl-modal-blue:before, .zcbl-modal-2 .zcbl-modal-success:before, .zcbl-modal-2 .zcbl-modal-error:before, .zcbl-modal-2 .zcbl-modal-blue:before, .zcbl-modal-8 .zcbl-modal-success:before, .zcbl-modal-8 .zcbl-modal-error:before, .zcbl-modal-8 .zcbl-modal-blue:before {
       content: "";
       left: 0;
       top: 0;
       position: absolute; }
-  .zcbl-modal-1 .zcbl-modal-blue, .zcbl-modal-2 .zcbl-modal-blue {
+  .zcbl-modal-1 .zcbl-modal-blue, .zcbl-modal-2 .zcbl-modal-blue, .zcbl-modal-8 .zcbl-modal-blue {
     margin: 12px auto; }
-  .zcbl-modal-1 .zcbl-modal-success, .zcbl-modal-2 .zcbl-modal-success {
+  .zcbl-modal-1 .zcbl-modal-success, .zcbl-modal-2 .zcbl-modal-success, .zcbl-modal-8 .zcbl-modal-success {
     color: #ffb30e; }
-    .zcbl-modal-1 .zcbl-modal-success:before, .zcbl-modal-2 .zcbl-modal-success:before {
+    .zcbl-modal-1 .zcbl-modal-success:before, .zcbl-modal-2 .zcbl-modal-success:before, .zcbl-modal-8 .zcbl-modal-success:before {
       background: url("../../../images/pc/icon/icon_recruitsuc.png") no-repeat;
       width: 76px;
       height: 74px; }
-  .zcbl-modal-1 .zcbl-modal-error, .zcbl-modal-2 .zcbl-modal-error {
+  .zcbl-modal-1 .zcbl-modal-error, .zcbl-modal-2 .zcbl-modal-error, .zcbl-modal-8 .zcbl-modal-error {
     color: #e43f3f; }
-    .zcbl-modal-1 .zcbl-modal-error:before, .zcbl-modal-2 .zcbl-modal-error:before {
+    .zcbl-modal-1 .zcbl-modal-error:before, .zcbl-modal-2 .zcbl-modal-error:before, .zcbl-modal-8 .zcbl-modal-error:before {
       background: url("../../../images/pc/icon/icon-per-error.png") no-repeat;
       width: 74px;
       height: 74px; }
-  .zcbl-modal-1 .zcbl-modal-blue, .zcbl-modal-2 .zcbl-modal-blue {
+  .zcbl-modal-1 .zcbl-modal-blue, .zcbl-modal-2 .zcbl-modal-blue, .zcbl-modal-8 .zcbl-modal-blue {
     color: #ffb30e; }
-    .zcbl-modal-1 .zcbl-modal-blue:before, .zcbl-modal-2 .zcbl-modal-blue:before {
+    .zcbl-modal-1 .zcbl-modal-blue:before, .zcbl-modal-2 .zcbl-modal-blue:before, .zcbl-modal-8 .zcbl-modal-blue:before {
       background: url("../../../images/pc/icon/icon_recruitsuc.png") no-repeat;
       width: 76px;
       height: 74px; }
-  .zcbl-modal-1 .zcbl-modal-desc, .zcbl-modal-2 .zcbl-modal-desc {
+  .zcbl-modal-1 .zcbl-modal-desc, .zcbl-modal-2 .zcbl-modal-desc, .zcbl-modal-8 .zcbl-modal-desc {
     font-size: 14px;
     color: #909090; }
 
@@ -427,6 +427,14 @@ button.zcbl-close {
         .zcbl-modal-7 .zcbl-public-window ul li a:before {
           position: absolute;
           content: ""; }
+
+.zcbl-modal-8 {
+  width: 390px;
+  height: 180px;
+  line-height: 180px;
+  top: 50%;
+  left: 50%;
+  margin: -120px 0 0 -250px; }
 
 .zcbl-modal-share {
   width: 484px;

@@ -78,10 +78,8 @@
     <div class="zcbl-modal-personalLetter">
         <div class="zcbl-modal-tit">
             <a href="javascript:;" onclick="showMsgList()">私信</a>
-            <span class="symbol">»</span>
-            <span class="msg-tit-user">名称名称名称</span>
-            <span class="symbol">»</span>
-            <span class="msg-zj">举报</span>
+            <span class="msg-tit-user zcbl-hidden">名称名称名称</span>
+            <span class="msg-zj zcbl-hidden">举报</span>
         </div>
         <div class="msgList">
             <ul>
@@ -91,14 +89,12 @@
                             <a href=""><img src="./static/images/pc/personal/user.jpg" height="50" width="50" alt=""></a>
                         </div>
                         <div class="msgBox-r">
-                            <a href="javascript:;" onclick="showMsgCon()"></a>
+                            <a href="javascript:;" onclick="showMsgCon('用户名用户名111')"></a>
                             <div class="msgBox-rUinfo">
                                 <p class="msgUser">用户名</p>
                                 <p class="msgTime">18分钟前</p>
-                                <div class="msgReport">
+                                <div class="msgReportText" onclick="showMsgReport('用户名用户名')">
                                     <p class="report"></p>
-                                    <!--<p class="msgReport-up"></p>-->
-                                    <!--<p class="msgReport-down">举报</p>-->
                                 </div>
                                 <div class="clear"></div>
                                 <p class="msgConVal">说话说话</p>
@@ -112,14 +108,12 @@
                             <a href=""><img src="./static/images/pc/personal/user.jpg" height="50" width="50" alt=""></a>
                         </div>
                         <div class="msgBox-r">
-                            <a href="javascript:;" onclick="showMsgCon()"></a>
+                            <a href="javascript:;" onclick="showMsgCon('用户名用户名')"></a>
                             <div class="msgBox-rUinfo">
                                 <p class="msgUser">用户名</p>
                                 <p class="msgTime">18分钟前</p>
-                                <div class="msgReport">
+                                <div class="msgReportText" onclick="showMsgReport('用户名用户名')">
                                     <p class="report"></p>
-                                    <!--<p class="msgReport-up"></p>-->
-                                    <!--<p class="msgReport-down">举报</p>-->
                                 </div>
                                 <div class="clear"></div>
                                 <p class="msgConVal">说话说话</p>
@@ -130,20 +124,18 @@
                 <li>
                     <div class="msgBox">
                         <div class="msgBox-l">
-                            <a href=""><img src="./static/images/pc/personal/user.jpg" height="50" width="50" alt=""></a>
+                            <a href=""><img src="./static/images/pc/personal/system.png" height="50" width="50" alt=""></a>
                         </div>
                         <div class="msgBox-r">
-                            <a href="javascript:;" onclick="showMsgCon()"></a>
+                            <a href="javascript:;" onclick="showMsgCon('系统消息')"></a>
                             <div class="msgBox-rUinfo">
-                                <p class="msgUser">用户名</p>
-                                <p class="msgTime">18分钟前</p>
-                                <div class="msgReport">
+                                <p class="msgUser">系统消息</p>
+                                <p class="msgTime">两周前</p>
+                                <div class="msgReportText" onclick="showMsgReport('系统消息')">
                                     <p class="report"></p>
-                                    <!--<p class="msgReport-up"></p>-->
-                                    <!--<p class="msgReport-down">举报</p>-->
                                 </div>
                                 <div class="clear"></div>
-                                <p class="msgConVal">说话说话</p>
+                                <p class="msgConVal">系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知</p>
                             </div>
                         </div>
                     </div>
@@ -151,22 +143,122 @@
             </ul>
         </div>
         <div class="msgCon zcbl-hidden">
-            sssssssss
+            <div class="msgConBox">
+                <div class="msgConTime">今天 <span>16:11</span></div>
+                <div class="masConLeft">
+                    <div class="masConLeft1">
+                        <a href="#" target="_self"><img src="./static/images/pc/personal/user.jpg" height="50" width="50" alt=""></a>
+                    </div>
+                    <div class="masConLeft2">
+                        吃了吗
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="masConRight">
+                    <div class="masConRight1">
+                        <a href="#" target="_self"><img src="./static/images/pc/personal/user.jpg" height="50" width="50" alt=""></a>
+                    </div>
+                    <div class="masConRight2">
+                        没吃回家吃去吧没吃回家吃去吧没吃回家吃去
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="masConLeft">
+                    <div class="masConLeft1">
+                        <a href="#" target="_self"><img src="./static/images/pc/personal/user.jpg" height="50" width="50" alt=""></a>
+                    </div>
+                    <div class="masConLeft2">
+                        吃了吗
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="masConRight">
+                    <div class="masConRight1">
+                        <a href="#" target="_self"><img src="./static/images/pc/personal/user.jpg" height="50" width="50" alt=""></a>
+                    </div>
+                    <div class="masConRight2">
+                        没吃回家吃去吧没吃回家吃去吧没吃回家吃去
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="masConLeft">
+                    <div class="masConLeft1">
+                        <a href="#" target="_self"><img src="./static/images/pc/personal/user.jpg" height="50" width="50" alt=""></a>
+                    </div>
+                    <div class="masConLeft2">
+                        吃了吗
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="masConRight">
+                    <div class="masConRight1">
+                        <a href="#" target="_self"><img src="./static/images/pc/personal/user.jpg" height="50" width="50" alt=""></a>
+                    </div>
+                    <div class="masConRight2">
+                        没吃回家吃去吧没吃回家吃去吧没吃回家吃去
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <form action="" class="zcbl-form-horizontal">
+                <div class="msgConEdit form-group">
+                    <textarea  name="form-control" id="" cols="30" rows="10" class="zcbl-form-control msgConEditText"></textarea>
+                    <button class="btn-yellow-50 right">发私信</button>
+                </div>
+            </form>
+        </div>
+        <div class="msgReport zcbl-hidden">
+            <p class="msgReportTit">举报原因</p>
+            <ul class="msgReportUl" id="msgReportUl">
+                <li><input type="radio" name="report"/><span>垃圾广告</span></li>
+                <li><input type="radio" name="report"/><span>淫秽色情</span></li>
+                <li><input type="radio" name="report"/><span>虚假中奖</span></li>
+                <li><input type="radio" name="report"/><span>敏感信息</span></li>
+                <li><input type="radio" name="report"/><span>人身攻击</span></li>
+                <li><input type="radio" name="report"/><span>骚扰他人</span></li>
+            </ul>
+            <div class="clear"></div>
+            <button class="btn-yellow-50 msgReportBtn">提交</button>
         </div>
     </div>
 </div>
 <!-- 私信（Modal） -->
+
+<script src="static/ickeckSkins/icheck.js"></script>
+<link rel="stylesheet" href="./static/ickeckSkins/minimal/grey.css" />
 <script>
-    function showMsgCon(){
+    function showMsgCon(uName){
+        if(uName){
+            $('.msg-tit-user').html(uName);
+            $('.msg-tit-user').show();
+        }
         $('.msgList').hide();
+        $('.msgReport').hide();
         $('.msgCon').show();
     }
 
     function showMsgList(){
         $('.msgList').show();
-        $('.msgCon,.msg-tit-user,.msg-zj,.symbol').hide();
+        $('.msgCon,.msg-tit-user,.msg-zj').hide();
     }
 
+    function showMsgReport(uName){
+        if(uName){
+            $('.msg-tit-user').html(uName);
+            $('.msg-tit-user').show();
+            $('.msg-zj').show();
+        }
+        $('.msgList').hide();
+        $('.msgReport').show();
+    }
+
+    //搜索radio按钮样式
+    $(document).ready(function(){
+        $('#msgReportUl input').iCheck({
+            radioClass: 'iradio-grey-16',
+            increaseArea: '30%' // optional
+        });
+    });
 </script>
 
 

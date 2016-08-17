@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Bootstrap -->
     <link href="static/css/pc/minCss/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="static/css/pc/minCss/all.min.css" />
 
     <link rel="stylesheet" href="./static/ickeckSkins/minimal/grey.css" />
     <link rel="stylesheet" href="./static/js/pc/jQueryCalendar/calendar.css">
@@ -432,7 +431,48 @@
 </div>
     <button type="submit">提交</button>
 </form>
+<br/><br/>
+<h1> v1.1 绑定摸态框</h1>
+<!-- 按钮触发模态框 -->
+<button class="btn-yellow-40 left mr10 mt10" data-toggle="modal" data-target="#myModal1-1">
+    绑定成功
+</button>
 
+<!--  绑定成功（Modal） -->
+<div class="modal fade" id="myModal1-1"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-8">
+        <h2 class="zcbl-modal-success">绑定成功！</h2>
+    </div>
+</div>
+<!--  绑定成功（Modal） -->
+
+<!-- 按钮触发模态框 -->
+<button class="btn-yellow-40 left mr10 mt10" data-toggle="modal" data-target="#myModal1-2">
+    密码错误
+</button>
+
+<!-- 密码错误（Modal） -->
+<div class="modal fade" id="myModal1-2"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-8">
+        <h2 class="zcbl-modal-error">手机号或密码错误</h2>
+    </div>
+</div>
+<!-- 密码错误（Modal） -->
+<!-- 按钮触发模态框 -->
+<button class="btn-yellow-40 left mr10 mt10" data-toggle="modal" data-target="#myModal1-3">
+    绑定次数过多
+</button>
+
+<!-- 绑定次数过多（Modal） -->
+<div class="modal fade" id="myModal1-3"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-8">
+        <h2 class="zcbl-modal-error">绑定次数过多，请稍后</h2>
+    </div>
+</div>
+<!-- 绑定次数过多（Modal） -->
 
 
 

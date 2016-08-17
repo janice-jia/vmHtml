@@ -9,6 +9,7 @@
     <link href="static/css/pc/minCss/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="static/css/pc/minCss/all.min.css"/>
     <link rel="stylesheet" href="static/css/pc/destVersion1.1/tribe-show.css"/>
+    <link rel="stylesheet" href="static/css/pc/destVersion1.1/tribe-modal.css"/>
 
     <!--编辑器-->
     <link rel="stylesheet" href="static/js/pc/umeditor/themes/default/css/umeditor.css">
@@ -57,7 +58,11 @@
                 <li>漫画</li>
                 <li>视频</li>
                 <li class="selected-yellow">剧集</li>
-                <li data-toggle="modal" data-target="#novel-model" data-backdrop="static">编辑</li>
+                <button type="button" class="btn-yellow-40" data-toggle="modal" data-target="#novel-model" >上传作品</button>
+                <!-- 弹出上传漫画修改弹窗 -->
+                <li class="exit" data-toggle="modal"  data-target="#tModal4" data-backdrop="static">编辑</li>
+                <!--  data-target="#novel-model"  -->
+
             </div>
             <ul class="novel-content-list">
                 <li class="novel-detail">第01章 Tony和苍老师不得不说的秘密</li>
@@ -328,6 +333,64 @@
         </div>
     </div>
     <!-- 申请开通 （Modal） -->
+
+    <!-- 模态框4（标题导航修改） -->
+    <div class="modal fade" id="tModal4" aria-hidden="true">
+        <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+        <div class="zcbl-tmodal-1">
+            <div class="zcbl-tmodal-row">
+                <p>标签一: <input type="text" placeholder="20个汉字以内"/></p>
+                <p>
+                    属性:
+                    <select name="" id="">
+                        <option value="0">图片</option>
+                        <option value="1">视频</option>
+                        <option value="2">漫画</option>
+                    </select>
+                </p>
+            </div>
+            <div class="zcbl-tmodal-row">
+                <p>标签二: <input type="text" placeholder="20个汉字以内"/></p>
+                <p>
+                    属性:
+                    <select name="" id="">
+                        <option value="0">图片</option>
+                        <option value="1">视频</option>
+                        <option value="2">漫画</option>
+                    </select>
+                </p>
+            </div>
+            <div class="zcbl-tmodal-row">
+                <p>标签三: <input type="text" placeholder="20个汉字以内"/></p>
+                <p>
+                    属性:
+                    <select name="" id="">
+                        <option value="0">图片</option>
+                        <option value="1">视频</option>
+                        <option value="2">漫画</option>
+                    </select>
+                </p>
+            </div>
+            <div class="zcbl-tmodal-row">
+                <p>标签四: <input type="text" placeholder="20个汉字以内"/></p>
+                <p>
+                    属性:
+                    <select name="" id="">
+                        <option value="0">图片</option>
+                        <option value="1">视频</option>
+                        <option value="2">漫画</option>
+                    </select>
+                </p>
+            </div>
+
+            <div class="zcbl-tmodal-subbtn">
+                <button type="button">提交</button>
+            </div>
+        </div>
+    </div>
+    <!-- 模态框4（标题导航修改） -->
+
+
 </div>
 
 

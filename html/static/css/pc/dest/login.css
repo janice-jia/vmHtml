@@ -149,3 +149,40 @@
   width: 200px;
   height: 46px;
   background-color: #909090; }
+
+/** v1.1 绑定 **/
+#lr [data-login="container"] {
+  /*** 登录信息表单 ***/ }
+  #lr [data-login="container"] [data-login="tab"] .bindtab {
+    margin-top: 10px; }
+  #lr [data-login="container"] [data-login="form"] [data-login="pwdrel-v1"] {
+    line-height: 16px; }
+    #lr [data-login="container"] [data-login="form"] [data-login="pwdrel-v1"] input {
+      margin: 0px;
+      width: 16px;
+      height: 16px;
+      margin-right: 10px;
+      float: left; }
+    #lr [data-login="container"] [data-login="form"] [data-login="pwdrel-v1"] label {
+      float: left;
+      font-size: 12px;
+      font-weight: normal;
+      margin: 0; }
+    #lr [data-login="container"] [data-login="form"] [data-login="pwdrel-v1"] a {
+      float: right;
+      color: #171717;
+      font-size: 12px; }
+    #lr [data-login="container"] [data-login="form"] [data-login="pwdrel-v1"] p {
+      margin-bottom: 24px; }
+      #lr [data-login="container"] [data-login="form"] [data-login="pwdrel-v1"] p [data-login="regist"] {
+        font-size: 14px;
+        color: #ffb30e;
+        float: none; }
+      #lr [data-login="container"] [data-login="form"] [data-login="pwdrel-v1"] p:after {
+        display: table;
+        content: "";
+        clear: both; }
+  #lr [data-login="container"] [data-login="form"] [data-login="pwdrel"]:after {
+    display: table;
+    clear: both;
+    content: ""; }

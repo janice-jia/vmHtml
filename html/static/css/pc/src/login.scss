@@ -10,207 +10,263 @@ $red: #e43f3f;
 $white: #fff;
 $black: #000;
 #lr {
-    padding-top: 128px;
-    height: 100vh;
-    width: 100vw;
-    text-align: center;
-    .container {
-        z-index: 10000;
-        position: relative;
-        /** 页面上的logo **/
-        [data-login="logo"] {
-            position: absolute;
-            top: -68px;
-            left: 451px;
-        }
+  padding-top: 128px;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  .container {
+    z-index: 10000;
+    position: relative;
+    /** 页面上的logo **/
+    [data-login="logo"] {
+      position: absolute;
+      top: -68px;
+      left: 451px;
     }
+  }
 
-    [data-login="container"] {
-        padding: 0 50px;
-        padding-bottom: 10px;
-        padding-top: 44px;
-        width: 440px;
-        margin: 0 auto;
-        border-radius: 10px;
-        background-color: $white;
-        [data-login="tab"] {
-            text-align: center;
-            position: relative;
-            margin-bottom: 10px;
-            h2 {
-                font-size: 16px;
-                font-weight: normal;
-                line-height: 48px;
-            }
-            [data-login="regist"] {
-                position: absolute;
-                font-size: 14px;
-                right: 0;
-                line-height: 48px;
-                color: $orange;
+  [data-login="container"] {
+    padding: 0 50px;
+    padding-bottom: 10px;
+    padding-top: 44px;
+    width: 440px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: $white;
+    [data-login="tab"] {
+      text-align: center;
+      position: relative;
+      margin-bottom: 10px;
+      h2 {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 48px;
+      }
+      [data-login="regist"] {
+        position: absolute;
+        font-size: 14px;
+        right: 0;
+        line-height: 48px;
+        color: $orange;
 
-            }
-        }
-        /*** 登录信息表单 ***/
-        [data-login="form"] {
-            .form-group {
-                input {
-                    border: none;
-                    border-radius: 0;
-                    box-shadow: none;
-                    -webkit-box-shadow: none;
-                    -moz-box-shadow: none;
-                    box-shadow: none;
-                    padding-left: 45px;
-                    height: 54px;
-                    line-height: 54px;
-                    border-bottom: 1px solid #a7a7a7;
-                }
-                span[data-login$='icon'] {
-                    background-repeat: no-repeat;
-                    position: absolute;
-                    height: 54px;
-                    width: 40px;
-                }
-                [data-login="logusericon"] {
-                    background-image: url("../../../images/pc/icon/icon_loguser.png");
-                }
-                [data-login="logpwdicon"] {
-                    background-image: url("../../../images/pc/icon/icon_logpwd.png");
-                }
-                [data-login="logkeyicon"] {
-                    background-image: url("../../../images/pc/icon/icon_logkeyicon.png");
-
-                }
-                /*** 提示文字 ***/
-                [data-login="helpword"] {
-                    text-align: left;
-                    color: $orange;
-                    font-size: 14px;
-                }
-            }
-            /* 登录按钮 */
-            [data-login="login_submit"] {
-                background-color: $orange;
-                width: 100%;
-                height: 60px;
-                margin-top: 5px;
-                margin-bottom: 20px;
-            }
-            [data-login="pwdrel"] {
-                margin-bottom: 24px;
-                line-height: 16px;
-                input {
-                    margin: 0px;
-                    width: 16px;
-                    height: 16px;
-                    margin-right: 10px;
-                    float: left;
-                }
-                label {
-                    float: left;
-                    font-size: 12px;
-                    font-weight: normal;
-                    margin: 0;
-                }
-                a {
-                    float: right;
-                    color: $darker;
-                    font-size: 12px;
-                }
-            }
-            [data-login="pwdrel"]:after {
-                display: table;
-                clear: both;
-                content: "";
-            }
-
-        }
-        /*** 分割线 ***/
-        p[data-login="hr"] {
-            color: $gray;
-            line-height: 16px;
-            position: relative;
-            margin-bottom: 20px;
-            font-size: 14px;
-            i[data-login="hrlt"], i[data-login="hrrt"] {
-                position: absolute;
-                top: 50%;
-                width: 160px;
-                display: inline-block;
-                height: 1px;
-                vertical-align: middle;;
-                background-color: $gray;
-            }
-            i[data-login="hrlt"] {
-                left: 0px;
-            }
-            i[data-login="hrrt"] {
-                right: 0;
-            }
-        }
-        /**** 其他登录方式  ***/
-        ul[data-login='otherlog'] {
-            li {
-                float: left;
-                width: 33.3%;
-                line-height: 22px;
-                padding-left: 10px;
-                text-align: left;
-                b {
-                    margin-right: 10px;
-                    width: 22px;
-                    height: 23px;
-
-                    display: inline-block;
-                }
-                span {
-                    position: relative;
-                    top: -5px;
-                }
-            }
-            li[data-login="otherlog_qq"] {
-                a {
-                    color: #3ea6ff;
-                }
-
-                b {
-                    background-image: url(../../../images/pc/icon/icon_qq.png);
-                }
-            }
-            li[data-login="otherlog_weibo"] {
-                a {
-                    color: #ff4943;
-                }
-
-                b {
-                    background-image: url(../../../images/pc/icon/icon_weibo.png);
-                }
-            }
-            li[data-login="otherlog_weixin"] {
-                a {
-                    color: #4dd854;
-                }
-
-                b {
-                    background-image: url(../../../images/pc/icon/icon_weixin.png);
-                }
-            }
-        }
-        ul[data-login='otherlog']:after {
-            display: table;
-            clear: both;
-            content: '';
-        }
+      }
     }
+    /*** 登录信息表单 ***/
+    [data-login="form"] {
+      .form-group {
+        input {
+          border: none;
+          border-radius: 0;
+          box-shadow: none;
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          box-shadow: none;
+          padding-left: 45px;
+          height: 54px;
+          line-height: 54px;
+          border-bottom: 1px solid #a7a7a7;
+        }
+        span[data-login$='icon'] {
+          background-repeat: no-repeat;
+          position: absolute;
+          height: 54px;
+          width: 40px;
+        }
+        [data-login="logusericon"] {
+          background-image: url("../../../images/pc/icon/icon_loguser.png");
+        }
+        [data-login="logpwdicon"] {
+          background-image: url("../../../images/pc/icon/icon_logpwd.png");
+        }
+        [data-login="logkeyicon"] {
+          background-image: url("../../../images/pc/icon/icon_logkeyicon.png");
+
+        }
+        /*** 提示文字 ***/
+        [data-login="helpword"] {
+          text-align: left;
+          color: $orange;
+          font-size: 14px;
+        }
+      }
+      /* 登录按钮 */
+      [data-login="login_submit"] {
+        background-color: $orange;
+        width: 100%;
+        height: 60px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+      }
+      [data-login="pwdrel"] {
+        margin-bottom: 24px;
+        line-height: 16px;
+        input {
+          margin: 0px;
+          width: 16px;
+          height: 16px;
+          margin-right: 10px;
+          float: left;
+        }
+        label {
+          float: left;
+          font-size: 12px;
+          font-weight: normal;
+          margin: 0;
+        }
+        a {
+          float: right;
+          color: $darker;
+          font-size: 12px;
+        }
+      }
+      [data-login="pwdrel"]:after {
+        display: table;
+        clear: both;
+        content: "";
+      }
+
+    }
+    /*** 分割线 ***/
+    p[data-login="hr"] {
+      color: $gray;
+      line-height: 16px;
+      position: relative;
+      margin-bottom: 20px;
+      font-size: 14px;
+      i[data-login="hrlt"], i[data-login="hrrt"] {
+        position: absolute;
+        top: 50%;
+        width: 160px;
+        display: inline-block;
+        height: 1px;
+        vertical-align: middle;;
+        background-color: $gray;
+      }
+      i[data-login="hrlt"] {
+        left: 0px;
+      }
+      i[data-login="hrrt"] {
+        right: 0;
+      }
+    }
+    /**** 其他登录方式  ***/
+    ul[data-login='otherlog'] {
+      li {
+        float: left;
+        width: 33.3%;
+        line-height: 22px;
+        padding-left: 10px;
+        text-align: left;
+        b {
+          margin-right: 10px;
+          width: 22px;
+          height: 23px;
+
+          display: inline-block;
+        }
+        span {
+          position: relative;
+          top: -5px;
+        }
+      }
+      li[data-login="otherlog_qq"] {
+        a {
+          color: #3ea6ff;
+        }
+
+        b {
+          background-image: url(../../../images/pc/icon/icon_qq.png);
+        }
+      }
+      li[data-login="otherlog_weibo"] {
+        a {
+          color: #ff4943;
+        }
+
+        b {
+          background-image: url(../../../images/pc/icon/icon_weibo.png);
+        }
+      }
+      li[data-login="otherlog_weixin"] {
+        a {
+          color: #4dd854;
+        }
+
+        b {
+          background-image: url(../../../images/pc/icon/icon_weixin.png);
+        }
+      }
+    }
+    ul[data-login='otherlog']:after {
+      display: table;
+      clear: both;
+      content: '';
+    }
+  }
 
 }
 
 /**  登录验证码  **/
 #login_randomCode {
-    position: absolute;
-    right: 0;
-    width: 200px;
-    height: 46px;
-    background-color: $gray;
+  position: absolute;
+  right: 0;
+  width: 200px;
+  height: 46px;
+  background-color: $gray;
+}
+
+/** v1.1 绑定 **/
+#lr {
+  [data-login="container"] {
+    [data-login="tab"] {
+      .bindtab{
+        margin-top: 10px;
+      }
+    }
+    /*** 登录信息表单 ***/
+    [data-login="form"] {
+      [data-login="pwdrel-v1"] {
+        line-height: 16px;
+        input {
+          margin: 0px;
+          width: 16px;
+          height: 16px;
+          margin-right: 10px;
+          float: left;
+        }
+        label {
+          float: left;
+          font-size: 12px;
+          font-weight: normal;
+          margin: 0;
+        }
+        a {
+          float: right;
+          color: $darker;
+          font-size: 12px;
+        }
+        p {
+          margin-bottom: 24px;
+          [data-login="regist"] {
+            font-size: 14px;
+            color: $orange;
+            float: none;
+          }
+          &:after {
+            display: table;
+            content: "";
+            clear: both;
+          }
+        }
+
+      }
+      [data-login="pwdrel"]:after {
+        display: table;
+        clear: both;
+        content: "";
+      }
+
+    }
+  }
+
 }

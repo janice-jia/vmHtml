@@ -154,7 +154,9 @@
 #lr [data-login="container"] {
   /*** 登录信息表单 ***/ }
   #lr [data-login="container"] [data-login="tab"] .bindtab {
-    margin-top: 10px; }
+    margin-top: 10px;
+    color: #ffb30e;
+    font-size: 14px; }
   #lr [data-login="container"] [data-login="form"] [data-login="pwdrel-v1"] {
     line-height: 16px; }
     #lr [data-login="container"] [data-login="form"] [data-login="pwdrel-v1"] input {

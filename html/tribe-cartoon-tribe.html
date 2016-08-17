@@ -20,20 +20,48 @@
 <div id="tribe-cartoon" >
     <div class="searchtab">
         <div class="container">
-            <div class="searchtab-left">
-                <input type="text" placeholder="请输入部落名称"/>
-                <button type="button" data-btn="orbgbtn">搜索</button>
+            <div class="searchtab-left" data-webdemand="dropdownbtn">
+                <button type="button" class="dropdown-toggle" id="dropdownMenu1"data-toggle="dropdown">
+                    排行
+                    <b></b>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li data-webdemand="triangle"></li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="#">按日期排行</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="#">需求下拉2</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="#">
+                            需求下拉3
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="#">需求下拉4</a>
+                    </li>
+                </ul>
             </div>
 
-            <div class="searchtab-right">
-                <select name="" id="">
-                    <option value="0">按日期排行</option>
-                </select>
+            <div class="searchtab-right" >
+
+                <input type="text" placeholder="请输入部落名称"/>
+                <button type="button" data-btn="orbgbtn">搜索</button>
+
+
             </div>
         </div>
     </div>
     <div class="container">
         <div data-thome="tribe-recommend" class="tribe-list-box">
+            <div data-thome="tribe-breadbox">
+                <ol class="breadcrumb">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">部落</a></li>
+                    <li class="active">漫画部落推荐</li>
+                </ol>
+            </div>
             <ul class="tribe-list">
                 <li class="tribe-list-li">
                     <div class="tribe-list-con">

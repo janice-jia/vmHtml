@@ -2,6 +2,22 @@
 p, h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
+.breadcrumb > li {
+  float: left;
+  color: #909090; }
+  .breadcrumb > li a {
+    color: #909090; }
+
+.breadcrumb > li + li:before {
+  color: #909090;
+  content: ">";
+  padding: 0 5px; }
+
+.breadcrumb-dar > li {
+  color: #fff; }
+  .breadcrumb-dar > li a {
+    color: #fff; }
+
 #tribe-home {
   /**轮播图**/
   /** 热门部落 **/ }
@@ -58,14 +74,14 @@ p, h1, h2, h3, h4, h5, h6 {
       border-left: 1px solid #c1c1c1;
       float: right;
       padding: 0 34px;
-      margin-bottom: 27px;
+      margin-bottom: 30px;
       text-align: center; }
       #tribe-home [data-thome="hot-tribe"] [data-thome="hot-right"] button {
         height: 93px;
         width: 163px;
+        font-weight: bold;
         background-color: #ffb30e;
         border-radius: 4px;
-        font-size: 16px;
         color: #171717; }
         #tribe-home [data-thome="hot-tribe"] [data-thome="hot-right"] button b {
           background-image: url("../../../images/pc/version1.1/icon/icon_pen.png");
@@ -75,7 +91,8 @@ p, h1, h2, h3, h4, h5, h6 {
           vertical-align: middle;
           margin-right: 10px; }
       #tribe-home [data-thome="hot-tribe"] [data-thome="hot-right"] p {
-        margin-top: 31px; }
+        margin-top: 30px;
+        font-size: 14px; }
   #tribe-home [data-thome="hot-tribe"]:after {
     content: '';
     display: table;
@@ -104,12 +121,15 @@ p, h1, h2, h3, h4, h5, h6 {
     content: "";
     display: table; }
   .tribe-list-box .tribe-list-li {
-    width: 310px;
+    width: 320px;
     margin-top: 16px;
-    margin-right: 14px;
-    border-bottom: 1px solid #c1c1c1;
+    margin-right: 4px;
+    border: 1px solid transparent;
+    border-bottom-color: #c1c1c1;
     position: relative;
-    float: left; }
+    float: left;
+    padding: 0 5px;
+    padding-top: 5px; }
     .tribe-list-box .tribe-list-li .tribe-list-con img {
       width: 310px;
       height: 230px; }
@@ -119,9 +139,10 @@ p, h1, h2, h3, h4, h5, h6 {
       padding-bottom: 12px; }
     .tribe-list-box .tribe-list-li .tribe-list-con > p {
       color: #909090;
-      padding-bottom: 14px; }
+      padding-bottom: 14px;
+      font-size: 14px; }
     .tribe-list-box .tribe-list-li .tribe-list-con .tribe-list-foot {
-      font-size: 14px;
+      font-size: 12px;
       padding-bottom: 20px; }
       .tribe-list-box .tribe-list-li .tribe-list-con .tribe-list-foot p {
         color: #ffb30e;
@@ -144,6 +165,9 @@ p, h1, h2, h3, h4, h5, h6 {
       top: 0;
       width: 100%;
       display: inline-block; }
+    .tribe-list-box .tribe-list-li:hover {
+      background-color: #fff;
+      border-color: #c1c1c1; }
 
 /** 漫画部落页面 条件选择 **/
 .searchtab {
@@ -151,23 +175,53 @@ p, h1, h2, h3, h4, h5, h6 {
   padding: 50px;
   background-color: #fff; }
   .searchtab .container {
-    padding: 0 20px; }
+    padding: 0 20px;
+    /**  下拉按钮  **/ }
     .searchtab .container .searchtab-left {
-      margin-top: 15px;
+      margin-top: 27px;
+      margin-left: 118px;
       float: left; }
-      .searchtab .container .searchtab-left input {
+    .searchtab .container .searchtab-right {
+      margin-top: 15px;
+      float: right; }
+      .searchtab .container .searchtab-right input {
         height: 50px;
         width: 500px;
         border: 1px solid #c1c1c1;
         float: left;
         padding: 5px; }
-      .searchtab .container .searchtab-left button {
+      .searchtab .container .searchtab-right button {
         width: 120px;
         float: left; }
-    .searchtab .container .searchtab-right {
-      margin-top: 15px;
-      float: right; }
-      .searchtab .container .searchtab-right select {
-        width: 231px;
-        height: 50px;
-        padding: 10px; }
+    .searchtab .container [data-webdemand="dropdownbtn"] {
+      position: relative;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      text-align: center; }
+      .searchtab .container [data-webdemand="dropdownbtn"] button {
+        color: #909090;
+        background-color: transparent;
+        font-size: 16px; }
+        .searchtab .container [data-webdemand="dropdownbtn"] button b {
+          width: 22px;
+          height: 14px;
+          display: inline-block;
+          vertical-align: middle;
+          background-image: url("../../../images/pc/icon/icon_dropdown.png"); }
+    .searchtab .container .dropdown-menu [data-webdemand="triangle"] {
+      position: absolute;
+      top: -9px;
+      left: 40%;
+      border: 5px solid transparent;
+      border-left: 9px solid transparent;
+      border-right: 9px solid transparent;
+      border-bottom-color: #fff; }
+    .searchtab .container .dropdown-menu li a {
+      font-size: 12px; }
+
+#tribe-cartoon [data-thome="tribe-breadbox"] {
+  font-size: 14px; }
+  #tribe-cartoon [data-thome="tribe-breadbox"]:after {
+    display: table;
+    content: "";
+    clear: both; }

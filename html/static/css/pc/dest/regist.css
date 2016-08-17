@@ -105,13 +105,14 @@
         width: 100%; }
 
 /** 获取验证码按钮 **/
-#recruit_getcode {
+#recruit_getcode, #recruit_fxyk {
   position: absolute;
   right: 0;
   width: 130px;
   height: 40px;
   color: #515151;
-  font-size: 14px; }
+  font-size: 14px;
+  background-color: #ffb30e; }
 
 /** v1.1 版本 注册选填信息 **/
 #reg-msg-down h2 {

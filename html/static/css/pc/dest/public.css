@@ -661,9 +661,20 @@ button.zcbl-close {
             height: 22px;
             overflow: hidden; }
   .zcbl-modal-personalLetter .msgCon {
-    height: 530px;
-    overflow-y: auto;
-    text-align: center; }
+    height: 530px; }
+    .zcbl-modal-personalLetter .msgCon .msgConBox {
+      text-align: center;
+      overflow-y: auto;
+      height: 332px;
+      border-bottom: 1px solid #c1c1c1; }
+    .zcbl-modal-personalLetter .msgCon .msgConEdit {
+      padding: 0 30px; }
+      .zcbl-modal-personalLetter .msgCon .msgConEdit .msgConEditText {
+        margin: 20px 0 10px 0;
+        width: 100%;
+        height: 80px;
+        border-radius: 5px;
+        padding: 5px; }
     .zcbl-modal-personalLetter .msgCon .msgConTime {
       height: 30px;
       line-height: 30px;
@@ -750,8 +761,7 @@ button.zcbl-close {
         display: inline-block;
         padding-top: 2px; }
     .zcbl-modal-personalLetter .msgReport .msgReportBtn {
-      margin: 0 auto;
-      margin-top: 95px; }
+      margin: 95px 0 0 205px; }
 
 /** 视频图标 **/
 .zcbl-videoicon {
@@ -980,7 +990,8 @@ button.zcbl-close {
 #zcbl-footer {
   width: 100%;
   height: 240px;
-  background: #171717; }
+  background: #171717;
+  min-width: 1000px; }
   #zcbl-footer .footer-box {
     width: 1000px;
     margin: 0 auto; }

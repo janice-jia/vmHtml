@@ -2,18 +2,23 @@
 /**
   创建部落 by Wdy
 */
-#tribe-create .container {
-  margin-top: 40px; }
+#tribe-create {
+  height: 100%;
+  background-color: #fff; }
+  #tribe-create .container .createheader {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 60px; }
   #tribe-create .container .tab-content label {
     padding-right: 0;
     font-weight: normal;
     color: #515151;
     font-size: 16px;
     font-family: "Microsoft YaHei", "Arial", "Helvetica Neue", "Simsun,sans-self"; }
-  #tribe-create .container .tab-content input, #tribe-create .container .tab-content textarea {
-    background-color: #eeeeee; }
-    #tribe-create .container .tab-content input:focus, #tribe-create .container .tab-content textarea:focus {
-      background-color: #fff; }
+  #tribe-create .container .form-group {
+    margin-bottom: 40px; }
+    #tribe-create .container .form-group button.right {
+      float: right; }
 
 /* 第一步 - 部落类型 */
 #tribe-create .container .form-control {
@@ -34,13 +39,15 @@
   cursor: pointer; }
 
 /* 第二步*/
-#tribe-create #second .form-group:last-child > :first-child {
+#tribe-create #second .form-group:last-child {
   margin-top: 10px;
   font-size: 16px;
   color: #171717; }
-  #tribe-create #second .form-group:last-child > :first-child span {
+  #tribe-create #second .form-group:last-child button {
+    margin-right: 10px; }
+  #tribe-create #second .form-group:last-child span {
     font-size: 14px; }
-  #tribe-create #second .form-group:last-child > :first-child:hover {
+  #tribe-create #second .form-group:last-child:hover {
     cursor: pointer; }
 
 /* 第三步*/

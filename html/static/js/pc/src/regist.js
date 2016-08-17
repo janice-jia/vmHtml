@@ -16,7 +16,11 @@ function registFn(){
     $("#registBox").css("display","block");
 }
 //v1.1
-$('#registBox').delegate("#reg-msg-key", "click", function () {
-    $("#reg-msg-key b").toggleClass('bgup');
-    $('#reg-msg-up').toggleClass('reg-hide');
+$('#registBox').delegate("#reg-msg-key", "click", function (event) {
+    var tar=event.target;
+    var par=$(tar).parents('#reg-msg-down');
+    $(par).find('#reg-msg-key b').toggleClass('bgup');
+    console.log($(par).children());
+    $(par).children('#reg-msg-up').toggleClass('reg-hide');
+    //$('#reg-msg-up').toggleClass('reg-hide');
 });

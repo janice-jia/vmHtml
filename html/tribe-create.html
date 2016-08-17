@@ -2,13 +2,13 @@
 <html lang="zh-cn">
 <head>
     <title>创建部落</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!-- Bootstrap -->
-    <link href="static/css/pc/minCss/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="static/css/pc/minCss/all.min.css" />
-    <link rel="stylesheet" href="static/css/pc/destVersion1.1/tribe-create.css" />
+    <link href="static/css/pc/minCss/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="static/css/pc/minCss/all.min.css"/>
+    <link rel="stylesheet" href="static/css/pc/destVersion1.1/tribe-create.css"/>
 
     <!--[if lt IE 9]>
     <script src="static/js/pc/dest/html5shiv.min.js"></script>
@@ -16,9 +16,10 @@
     <![endif]-->
 </head>
 <body>
-<div id="tribe-create" >
+<div id="tribe-create">
     <div id="header" style="height: 78px;  "></div>
     <div class="container">
+        <div class="createheader">创建部落</div>
         <!--nav-->
         <ul class="nav nav-tabs hide" role="tablist" id="myTabs">
             <li role="presentation"><a href="#first" role="tab" data-toggle="tab">第1步</a></li>
@@ -28,23 +29,25 @@
         <!--panes-->
         <div class="tab-content">
             <!--第一步-->
-            <div role="tabpanel" class="tab-pane" id="first">
-                <form action="http://127.0.0.1/2.php" class="form-horizontal" role="form" id="tribe-create-frist" method="post" enctype="multipart/form-data">
+            <div role="tabpanel" class="tab-pane" style="display: none" id="first">
+                <form action="http://127.0.0.1/2.php" class="form-horizontal" role="form" id="tribe-create-frist"
+                      method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="tribe-name" class="col-sm-2 control-label">部落名称:</label>
                         <div class="col-sm-4">
-                            <input type="text" id="tribe-name"  name="edit-tribe-name" class="form-control" placeholder="20个汉字以内"/>
+                            <input type="text" id="tribe-name" name="edit-tribe-name" class="form-control"
+                                   placeholder="20个汉字以内"/>
                         </div>
                     </div>
                     <div class="form-group tribe-type">
                         <label class="col-sm-2 control-label">部落类型:</label>
-                            <div class="col-sm-10">
-                                <div class="checkbox">
-                                    <label>人物<input type="radio" name="edit-tribe-type" value="1" checked/></label>
-                                    <label>漫画<input type="radio" name="edit-tribe-type" value="2"/></label>
-                                    <label>小说<input type="radio" name="edit-tribe-type" value="3"/></label>
-                                </div>
+                        <div class="col-sm-10">
+                            <div class="checkbox">
+                                <label><input type="radio" name="edit-tribe-type" value="1" checked/>人物</label>
+                                <label><input type="radio" name="edit-tribe-type" value="2"/>漫画</label>
+                                <label><input type="radio" name="edit-tribe-type" value="3"/>小说</label>
                             </div>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-2 control-label">部落简介:</label>
@@ -55,49 +58,51 @@
                     <div class="form-group">
                         <label class="col-sm-2 control-label">部落图标:</label>
                         <div class="col-sm-3">
-                            <input type="file" class="hide" name="edit-tribe-icon" id="tribe-upload-icon" accept="image/*"/>
+                            <input type="file" class="hide" name="edit-tribe-icon" id="tribe-upload-icon"
+                                   accept="image/*"/>
                             <div class="upload-icon">
-                                <div  class="upload-icon-btn">+上传图标</div>
+                                <div class="upload-icon-btn">+上传图标</div>
                                 <div class="upload-icon-preview"></div>
                                 <span>建议上传图标大小尺寸120*120</span>
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-sm-offset-3 mt40">
-                            <button type="submit" class="btn btn-yellow-50" >下一步</button>
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-6">
+                            <button type="submit" data-btn="orbgbtn" class="right">下一步</button>
                         </div>
                     </div>
                 </form>
             </div>
 
             <!--第二步-->
-            <div role="tabpanel" class="tab-pane" id="second">
+            <div role="tabpanel" class="tab-pane" style="display: none" id="second">
                 <form id="tribe-create-second" class="form-horizontal" role="form" method="post">
                     <div class="form-group">
                         <label for="operator-name" class="col-sm-2 control-label">运营者姓名:</label>
                         <div class="col-sm-4">
-                            <input type="text" id="operator-name"  name="operator-name" class="form-control" placeholder="20个汉字以内"/>
+                            <input type="text" id="operator-name" name="operator-name" class="form-control"
+                                   placeholder="20个汉字以内"/>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="operator-email" class="col-sm-2 control-label">运营者邮箱:</label>
                         <div class="col-sm-4">
-                            <input type="text" id="operator-email"  name="operator-email" class="form-control" />
+                            <input type="text" id="operator-email" name="operator-email" class="form-control"/>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="operator-phone" class="col-sm-2 control-label">运营者手机:</label>
                         <div class="col-sm-4">
-                            <input type="text" id="operator-phone"  name="operator-phone" class="form-control"/>
+                            <input type="text" id="operator-phone" name="operator-phone" class="form-control"/>
                         </div>
                     </div>
-                    <div class="form-group mt40" >
-                       <div  class="col-sm-1 col-sm-offset-2" >
-                           <span class="tribe-second-back">&lt;后退</span>
-                       </div>
-                        <div class="col-md-1">
-                            <button type="submit" class="btn btn-yellow-50">下一步</button>
+                    <div class="form-group btnbox">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-4">
+                            <button type="submit" data-btn="orbgbtn">上一步</button>
+                            <button type="submit" data-btn="orbgbtn" class="right">下一步</button>
                         </div>
                     </div>
 
@@ -105,9 +110,10 @@
             </div>
 
             <!--第三步-->
-            <div role="tabpanel" class="tab-pane " id="third">
+            <div role="tabpanel" class="tab-pane " style="display: block" id="third">
                 <div class="third-content">
-                    <div class="col-md-12"><img src="./static/images/pc/version1.1/create-success_icon.png" class="img-responsive"></div>
+                    <div class="col-md-12"><img src="./static/images/pc/version1.1/create-success_icon.png"
+                                                class="img-responsive"></div>
                     <div class="col-md-12 success-msg">申请提交后,工作人员会在24小时内审核申请内容,请留意站内信通知</div>
                     <div class="col-md-12">
                         <div class="row">

@@ -9,7 +9,8 @@
   width: 100%;
   margin-top: -95px; }
   .zcbl-slide #myCarousel {
-    position: relative; }
+    position: relative;
+    width: 100%; }
     .zcbl-slide #myCarousel .zcbl-seach-option {
       font-size: 16px;
       position: absolute;
@@ -121,7 +122,8 @@
             border: 5px solid #ffb30e; }
   .zcbl-slide .zcbl-slide-con {
     width: 100%;
-    height: 350px; }
+    height: 350px;
+    min-width: 1000px; }
     .zcbl-slide .zcbl-slide-con img {
       max-width: 100%;
       min-height: 100%; }
@@ -321,7 +323,8 @@
   width: 100%;
   height: 253px;
   margin-top: 20px;
-  background: #d6d6d6; }
+  background: #d6d6d6;
+  min-width: 1000px; }
   .zcbl-abouUs .zcbl-abouUs-box {
     width: 1000px;
     margin: 0 auto; }

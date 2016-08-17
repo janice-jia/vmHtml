@@ -89,7 +89,7 @@
                             <a href=""><img src="./static/images/pc/personal/user.jpg" height="50" width="50" alt=""></a>
                         </div>
                         <div class="msgBox-r">
-                            <a href="javascript:;" onclick="showMsgCon('用户名用户名')"></a>
+                            <a href="javascript:;" onclick="showMsgCon('用户名用户名111')"></a>
                             <div class="msgBox-rUinfo">
                                 <p class="msgUser">用户名</p>
                                 <p class="msgTime">18分钟前</p>
@@ -124,18 +124,18 @@
                 <li>
                     <div class="msgBox">
                         <div class="msgBox-l">
-                            <a href=""><img src="./static/images/pc/personal/user.jpg" height="50" width="50" alt=""></a>
+                            <a href=""><img src="./static/images/pc/personal/system.png" height="50" width="50" alt=""></a>
                         </div>
                         <div class="msgBox-r">
-                            <a href="javascript:;" onclick="showMsgCon('用户名用户名')"></a>
+                            <a href="javascript:;" onclick="showMsgCon('系统消息')"></a>
                             <div class="msgBox-rUinfo">
-                                <p class="msgUser">用户名</p>
-                                <p class="msgTime">18分钟前</p>
-                                <div class="msgReportText" onclick="showMsgReport('用户名用户名')">
+                                <p class="msgUser">系统消息</p>
+                                <p class="msgTime">两周前</p>
+                                <div class="msgReportText" onclick="showMsgReport('系统消息')">
                                     <p class="report"></p>
                                 </div>
                                 <div class="clear"></div>
-                                <p class="msgConVal">说话说话</p>
+                                <p class="msgConVal">系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知系统通知</p>
                             </div>
                         </div>
                     </div>
@@ -143,25 +143,69 @@
             </ul>
         </div>
         <div class="msgCon zcbl-hidden">
-            <div class="msgConTime">今天 <span>16:11</span></div>
-            <div class="masConLeft">
-                <div class="masConLeft1">
-                    <a href="#" target="_self"><img src="./static/images/pc/personal/user.jpg" height="50" width="50" alt=""></a>
+            <div class="msgConBox">
+                <div class="msgConTime">今天 <span>16:11</span></div>
+                <div class="masConLeft">
+                    <div class="masConLeft1">
+                        <a href="#" target="_self"><img src="./static/images/pc/personal/user.jpg" height="50" width="50" alt=""></a>
+                    </div>
+                    <div class="masConLeft2">
+                        吃了吗
+                    </div>
                 </div>
-                <div class="masConLeft2">
-                    吃了吗
+                <div class="clear"></div>
+                <div class="masConRight">
+                    <div class="masConRight1">
+                        <a href="#" target="_self"><img src="./static/images/pc/personal/user.jpg" height="50" width="50" alt=""></a>
+                    </div>
+                    <div class="masConRight2">
+                        没吃回家吃去吧没吃回家吃去吧没吃回家吃去
+                    </div>
                 </div>
+                <div class="clear"></div>
+                <div class="masConLeft">
+                    <div class="masConLeft1">
+                        <a href="#" target="_self"><img src="./static/images/pc/personal/user.jpg" height="50" width="50" alt=""></a>
+                    </div>
+                    <div class="masConLeft2">
+                        吃了吗
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="masConRight">
+                    <div class="masConRight1">
+                        <a href="#" target="_self"><img src="./static/images/pc/personal/user.jpg" height="50" width="50" alt=""></a>
+                    </div>
+                    <div class="masConRight2">
+                        没吃回家吃去吧没吃回家吃去吧没吃回家吃去
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="masConLeft">
+                    <div class="masConLeft1">
+                        <a href="#" target="_self"><img src="./static/images/pc/personal/user.jpg" height="50" width="50" alt=""></a>
+                    </div>
+                    <div class="masConLeft2">
+                        吃了吗
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="masConRight">
+                    <div class="masConRight1">
+                        <a href="#" target="_self"><img src="./static/images/pc/personal/user.jpg" height="50" width="50" alt=""></a>
+                    </div>
+                    <div class="masConRight2">
+                        没吃回家吃去吧没吃回家吃去吧没吃回家吃去
+                    </div>
+                </div>
+                <div class="clear"></div>
             </div>
-            <div class="clear"></div>
-            <div class="masConRight">
-                <div class="masConRight1">
-                    <a href="#" target="_self"><img src="./static/images/pc/personal/user.jpg" height="50" width="50" alt=""></a>
+            <form action="" class="zcbl-form-horizontal">
+                <div class="msgConEdit form-group">
+                    <textarea  name="form-control" id="" cols="30" rows="10" class="zcbl-form-control msgConEditText"></textarea>
+                    <button class="btn-yellow-50 right">发私信</button>
                 </div>
-                <div class="masConRight2">
-                    没吃回家吃去吧没吃回家吃去吧没吃回家吃去
-                </div>
-            </div>
-            <div class="clear"></div>
+            </form>
         </div>
         <div class="msgReport zcbl-hidden">
             <p class="msgReportTit">举报原因</p>
@@ -189,6 +233,7 @@
             $('.msg-tit-user').show();
         }
         $('.msgList').hide();
+        $('.msgReport').hide();
         $('.msgCon').show();
     }
 

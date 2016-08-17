@@ -21,20 +21,28 @@ $color-07: #ffb30e;
 $color-08: #e43f3f;
 
 #tribe-create {
-  .container{
-    margin-top: 40px;
+  height: 100%;
+  background-color: #fff;
+  .container {
     //border:1px solid red;
-    .tab-content label{
-      padding-right:0;
+
+    .createheader{
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 60px;
+    }
+
+    .tab-content label {
+      padding-right: 0;
       font-weight: normal;
-      color:$color-02;
-      font-size:$font-16;
+      color: $color-02;
+      font-size: $font-16;
       font-family: "Microsoft YaHei", "Arial", "Helvetica Neue", "Simsun,sans-self";
     }
-    .tab-content input,.tab-content textarea{
-      background-color: $color-05;
-      &:focus{
-        background-color: #fff;
+    .form-group {
+      margin-bottom: 40px;
+      button.right{
+        float: right;
       }
     }
   }
@@ -42,14 +50,14 @@ $color-08: #e43f3f;
 
 /* 第一步 - 部落类型 */
 #tribe-create {
-  .container{
-    .form-control{
-      border:1px solid $color-04;
+  .container {
+    .form-control {
+      border: 1px solid $color-04;
       border-radius: 2px;
     }
   }
   .tribe-type {
-    input[type="radio"]{
+    input[type="radio"] {
       margin: 0px 10px 0 5px;
     }
   }
@@ -60,7 +68,7 @@ $color-08: #e43f3f;
     color: $color-06;
     margin-top: 8px;
     //border:1px solid red;
-    >span{
+    > span {
       font-size: $font-14;
       color: $color-03;
     }
@@ -74,7 +82,6 @@ $color-08: #e43f3f;
     }
   }
 
-
   // 预览文件
   .upload-icon-preview {
     &:hover {
@@ -87,33 +94,36 @@ $color-08: #e43f3f;
 /* 第二步*/
 #tribe-create {
 
-  #second .form-group:last-child>:first-child{
-    margin-top:10px;
+  #second .form-group:last-child {
+    margin-top: 10px;
+
     font-size: $font-16;
-    color:$color-01;
-    span{
+    color: $color-01;
+    button{
+      margin-right: 10px;
+    }
+    span {
       font-size: 14px;
     }
-    &:hover{
+    &:hover {
       cursor: pointer;
     }
   }
 
 }
 
-
 /* 第三步*/
 #tribe-create {
 
   #third {
     .success-msg {
-      font-size:$font-16;
+      font-size: $font-16;
       color: $color-01;
       margin-top: 74px;
       margin-bottom: 50px;
     }
     .third-content {
-      margin:0 auto;
+      margin: 0 auto;
       width: 560px;
       //border:1px solid black;
     }

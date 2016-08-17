@@ -22,7 +22,7 @@ p, h1, h2, h3, h4, h5, h6 {
     color: #fff; }
 
 .indexed {
-  font-size: 16px;
+  font-size: 14px;
   text-align: center; }
   .indexed li {
     float: left;
@@ -87,6 +87,7 @@ p, h1, h2, h3, h4, h5, h6 {
   display: block; }
 
 .bgindexed {
+  font-size: 14px;
   text-align: center; }
   .bgindexed li {
     display: inline-block;
@@ -111,7 +112,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .edittxt {
   color: #909090;
-  font-size: 16px; }
+  font-size: 14px; }
   .edittxt b {
     width: 16px;
     height: 16px;
@@ -123,7 +124,7 @@ p, h1, h2, h3, h4, h5, h6 {
 /** 小说详细页 **/
 #tribe-book [data-tbook="header"] {
   padding: 20px 40px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 32px; }
   #tribe-book [data-tbook="header"] > ol {
     float: left; }
@@ -137,12 +138,13 @@ p, h1, h2, h3, h4, h5, h6 {
   background-color: #efebe3;
   padding: 40px 100px; }
   #tribe-book [data-tbook="main"] [data-tbook="maintop"] h1 {
-    font-size: 24px;
+    font-size: 16px;
     margin-bottom: 20px; }
   #tribe-book [data-tbook="main"] [data-tbook="maintop"] ul li {
     float: left;
     color: #909090;
-    margin-right: 30px; }
+    margin-right: 30px;
+    font-size: 14px; }
   #tribe-book [data-tbook="main"] [data-tbook="maintop"] ul:after {
     display: table;
     content: "";
@@ -154,7 +156,6 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-top: 20px;
     border-color: #909090; }
   #tribe-book [data-tbook="main"] [data-tbook="section"] p {
-    font-size: 20px;
     color: #171717;
     text-indent: 2em;
     margin: 25px 0; }

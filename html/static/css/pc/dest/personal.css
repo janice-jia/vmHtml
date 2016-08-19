@@ -97,6 +97,8 @@
             width: 14px;
             height: 16px;
             background: url("../../../images/pc/icon/icon-auth.png") no-repeat; }
+        #per-wall .per-wall-l .per-uname p.per-auth-grey {
+          color: #515151; }
         #per-wall .per-wall-l .per-uname p a {
           color: #515151; }
     #per-wall .per-wall-l .per-careBtn p {
@@ -176,7 +178,7 @@
         #per-wall .per-wall-l .per-identity p.mb30 {
           margin-bottom: 15px; }
         #per-wall .per-wall-l .per-identity p.h100 {
-          height: 100px;
+          max-height: 100px;
           overflow: hidden; }
         #per-wall .per-wall-l .per-identity p.per-identity-more {
           text-align: right;

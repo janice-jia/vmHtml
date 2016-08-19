@@ -143,6 +143,9 @@ $color-2b2b2b:#2b2b2b;
                         background: url("../../../images/pc/icon/icon-auth.png") no-repeat;
                     }
                 }
+                &.per-auth-grey{
+                    color: $color-02;
+                }
                 a{
                     color: $color-02;
                     @extend .extend-aline;
@@ -262,7 +265,7 @@ $color-2b2b2b:#2b2b2b;
                     margin-bottom: 15px;
                 }
                 &.h100{
-                    height: 100px;
+                    max-height: 100px;
                     overflow: hidden;
                 }
                 &.per-identity-more{

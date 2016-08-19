@@ -16,6 +16,7 @@ $color-ebe5e4:#ebe5e4;
 $color-B9B0A9:#B9B0A9;
 $color-d8cbc7:#d8cbc7;
 $color-80776D:#80776D;
+$color-a7a099:#a7a099;
 .topic-header{
     height: 50px;
     background: $color-292929;
@@ -50,7 +51,7 @@ $color-80776D:#80776D;
     }
 }
 .topicBox{
-    background: url("../../../images/pc/version1.1/topic/banner.png") no-repeat center 0;
+    background: url("../../../images/pc/version1.1/topic/banner.png") no-repeat center 0 #668f83;
 }
 
 .topic-main{
@@ -59,6 +60,7 @@ $color-80776D:#80776D;
     margin: 0 auto;
     .topic-nav{
         ul{
+
             background: url("../../../images/pc/version1.1/topic/nb_bg.png") no-repeat;
             height: 60px;
             line-height: 60px;
@@ -128,6 +130,7 @@ $color-80776D:#80776D;
     .topic-main-con{
         margin-top: 20px;
         .topic-main-con-l{
+            margin-bottom: 55px;
             width: 677px;
             float: left;
             background: $color-f9f1f1;
@@ -186,7 +189,7 @@ $color-80776D:#80776D;
                     }
                 }
                 .topic-notice-time-f2{
-                    font-size: 16px;
+                    font-size: 14px;
                     color: $color-B9B0A9;
                     padding-left: 20px;
                 }
@@ -230,6 +233,22 @@ $color-80776D:#80776D;
                     }
                 }
             }
+            .topic-notice-more{
+                margin-top: 20px;
+                height: 20px;
+                line-height: 20px;
+                text-align: center;
+                font-size: 14px;
+                color: $color-01;
+                &:hover{
+                    cursor: pointer;
+                }
+                span{
+                    font-size: 12px;
+                    font-weight: bold;
+                    padding-left: 5px;
+                }
+            }
         }
         .topic-main-con-r{
             width: 323px;
@@ -238,6 +257,7 @@ $color-80776D:#80776D;
             border-top-right-radius: 8px;
             border-bottom-right-radius: 8px;
             padding: 20px;
+            box-shadow:0 0 25px #cacaca inset;
             .topic-vote-tit{
                 h2{
                     font-size: 18px;
@@ -247,37 +267,74 @@ $color-80776D:#80776D;
                 p{
                     color: $color-01;
                     font-size: 16px;
+                    margin-bottom: 0;
                 }
             }
             .topic-vote-option{
                 ul{
                     li{
+                        padding: 18px 0;
+                        color: $color-80776D;
                         .topic-vote-radio{
                             float: left;
                         }
-                        span{
-                            display: inline-block;
+
+                        .topic-vote-name{
                             float: left;
-                            &.topic-vote-name{
-                                width: 80px;
-                                padding-left: 14px;
-                                margin-right: 10px;
-                                padding-top: 2px;
-                            }
-                            &.topic-vote-width{
-                                height: 16px;
-                                max-width: 125px;
+                            width: 80px;
+                            padding-left: 14px;
+                            padding-top: 2px;
+                        }
+
+
+                        .topic-vote-width{
+                            height: 16px;
+                            width: 145px;
+                            margin: 5px 0 0 10px;
+                            float: left;
+                            span{
+                                position: relative;
                                 background: $color-07;
-                                margin-top: 5px;
+                                width: 50%;
+                                height: 100%;
+                                display: inline-block;
+                                max-width: 145px;
+                                float: left;
                             }
-                            &.topic-vote-num{
-                                padding-top: 2px;
-                                margin-right: 10px;
-                            }
-                            &.w100{
-                                width: 100%;
+                            b{
+                                &.topic-vote-num{
+                                    position: absolute;
+                                    right: -30px;
+                                    top:0px;
+                                    font-weight: normal;
+                                    margin-left: 10px;
+                                    width: 20px;
+                                    margin-top: -3px;
+                                    font-size: 14px;
+                                }
                             }
                         }
+                    }
+                }
+                .topic-vote-btn{
+                    margin: 20px 0;
+                    width: 80px;
+                    height: 30px;
+                    line-height: 30px;
+                    color: #ffffff;
+                    font-size: 14px;
+                    text-align: center;
+                    background: $color-a7a099;
+                    &:hover{
+                        color: $color-02;
+                    }
+                }
+            }
+            .topic-vote-imgList{
+                border-top: 1px solid $color-d8cbc7;
+                ul{
+                    li{
+                        padding: 20px 0 0 0;
                     }
                 }
             }

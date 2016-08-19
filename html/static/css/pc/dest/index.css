@@ -318,6 +318,14 @@
             color: #ffffff;
             text-align: center;
             margin-bottom: 0; }
+  .zcbl-index-con .tribe-list-box {
+    padding: 0;
+    margin-bottom: 32px; }
+    .zcbl-index-con .tribe-list-box .tribe-list {
+      width: 1010px; }
+    .zcbl-index-con .tribe-list-box .tribe-list-li {
+      width: 326px;
+      margin-right: 10px; }
 
 .zcbl-abouUs {
   width: 100%;

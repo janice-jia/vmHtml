@@ -416,6 +416,18 @@ $color-8f8f8e:#8f8f8e;
             }
         }
     }
+
+    .tribe-list-box{
+        padding: 0;
+        margin-bottom:32px;
+        .tribe-list{
+            width: 1010px;
+        }
+        .tribe-list-li{
+            width: 326px;
+            margin-right: 10px;
+        }
+    }
 }
 
 .zcbl-abouUs{

@@ -1295,13 +1295,18 @@ button {
           background: #878787; }
         .goTop ul li.top:hover a:before {
           top: 20px;
-          content: "返回顶部"; }
+          font-size: 12px;
+          content: "返回顶部";
+          width: 27px; }
     .goTop ul li.download a:before {
       position: absolute;
       top: 4px;
       background: url("../../../images/pc/version1.1/icon/icon-download.png") no-repeat; }
     .goTop ul li.download:hover a:before {
-      content: "APP下载"; }
+      content: "APP下载";
+      font-size: 12px;
+      width: 26px;
+      padding-left: 2px; }
     .goTop ul li.download .download-box {
       position: absolute;
       right: 58px;
@@ -1340,13 +1345,17 @@ button {
       top: 4px;
       background: url("../../../images/pc/version1.1/icon/icon-help.png") no-repeat; }
     .goTop ul li.help:hover a:before {
-      content: "相关帮助"; }
+      content: "相关帮助";
+      font-size: 12px;
+      width: 27px; }
     .goTop ul li.tel a:before {
       position: absolute;
       top: 4px;
       background: url("../../../images/pc/version1.1/icon/icon-tel.png") no-repeat; }
     .goTop ul li.tel:hover a:before {
-      content: "联系客服"; }
+      content: "联系客服";
+      font-size: 12px;
+      width: 27px; }
     .goTop ul li.tel .tel-box {
       width: 176px;
       height: 50px;

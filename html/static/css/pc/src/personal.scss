@@ -193,7 +193,7 @@ $color-2b2b2b:#2b2b2b;
         .per-care{
             padding-top: 24px;
             padding-bottom: 14px;
-            font-size: 14px;
+            font-size: 12px;
             p{
                 height: 16px;
                 padding-bottom: 10px;
@@ -214,7 +214,7 @@ $color-2b2b2b:#2b2b2b;
         .per-appraise{
             padding-top: 24px;
             padding-bottom: 14px;
-            font-size: 14px;
+            font-size: 12px;
             p{
                 height: 16px;
                 padding-bottom: 10px;
@@ -242,7 +242,7 @@ $color-2b2b2b:#2b2b2b;
         }
         .per-identity{
             padding-top: 24px;
-            font-size: 14px;
+            font-size: 12px;
             padding-bottom: 20px;
             p{
                 margin-bottom: 0;
@@ -255,11 +255,11 @@ $color-2b2b2b:#2b2b2b;
                     }
                 }
                 &.h25{
-                    height: 25px;
+                    height: 20px;
                     overflow: hidden;
                 }
                 &.mb30{
-                    margin-bottom: 30px;
+                    margin-bottom: 15px;
                 }
                 &.h100{
                     height: 100px;
@@ -267,7 +267,7 @@ $color-2b2b2b:#2b2b2b;
                 }
                 &.per-identity-more{
                     text-align: right;
-                    margin: 15px 0 16px 0;
+                    margin: 15px 0 0 0;
                     a{
                         color: $color-06;
                         &:hover{
@@ -674,7 +674,7 @@ $color-2b2b2b:#2b2b2b;
 
         //服务
         .tribe-req,.tribe-ser{
-            margin-top: 20px;
+            margin-top: 10px;
             background: $color-ffffff;
             height: auto;
             min-height: 0;
@@ -743,18 +743,18 @@ $color-2b2b2b:#2b2b2b;
                 li{
                     float: left;
                     width: 223px;
-                    height: 80px;
+                    height: 70px;
                     border-radius: 4px;
                     padding-left: 16px;
-                    padding-top: 8px;
+                    padding-top: 13px;
                     .tribe-finance-num{
-                        font-size: 26px;
+                        font-size: 16px;
                         color: $color-ffffff;
                         margin-bottom: 0;
                         padding-bottom: 0;
                     }
                     .tribe-finance-name{
-                        font-size: 18px;
+                        font-size: 16px;
                         color: $color-ffffff;
                     }
                     &.tribe-finance-income{
@@ -778,26 +778,29 @@ $color-2b2b2b:#2b2b2b;
                 li{
                     float: left;
                     width: 223px;
-                    height: 230px;
+                    height: 190px;
                     border-radius: 4px;
-                    margin-top: 20px;
-                    padding-right: 20px;
+                    margin-top: 10px;
                     border: 1px solid $color-b4b4b4;
                     padding-top: 18px;
                     background: $color-ffffff;
                     .tribe-artWorkName{
-                        font-size: 18px;
+                        font-size: 16px;
                         padding-left: 16px;
-                        height: 70px;
+                        height: 60px;
                         margin-bottom: 0;
+                        margin-right: 20px;
                     }
                     .tribe-artWorkNum{
                         text-align: center;
-                        font-size: 56px;
+                        font-size: 36px;
+                        width: 100%;
+                        padding-bottom: 10px;
+                        margin-top: 0;
                     }
                     .tribe-artWorkToday{
                         text-align: center;
-                        font-size: 18px;
+                        font-size: 14px;
                     }
                     .tribe-artWorkNameBg1,
                     .tribe-artWorkNameBg2,
@@ -811,8 +814,8 @@ $color-2b2b2b:#2b2b2b;
                             top: 0;
                             right: 0;
                             background: url("../../../images/pc/icon/icon-personal-artwork1.png") no-repeat;
-                            width: 56px;
-                            height: 56px;
+                            width: 40px;
+                            height: 40px;
                         }
                     }
                     .tribe-artWorkNameBg2{
@@ -822,8 +825,8 @@ $color-2b2b2b:#2b2b2b;
                             top: 0;
                             right: 0;
                             background: url("../../../images/pc/icon/icon-personal-artwork2.png") no-repeat;
-                            width: 39px;
-                            height: 55px;
+                            width: 28px;
+                            height: 40px;
                         }
                     }
                     .tribe-artWorkNameBg3{
@@ -833,8 +836,8 @@ $color-2b2b2b:#2b2b2b;
                             top: 0;
                             right: 0;
                             background: url("../../../images/pc/icon/icon-personal-artwork3.png") no-repeat;
-                            width: 46px;
-                            height: 56px;
+                            width: 33px;
+                            height: 40px;
                         }
                     }
                 }
@@ -843,7 +846,7 @@ $color-2b2b2b:#2b2b2b;
 
         //天气、评价、充值提现
         .tribe-perInfo{
-            margin-top: 20px;
+            margin-top: 10px;
             .tribe-weather,.tribe-evaluate,.tribe-money{
                 float: left;
                 height: 146px;
@@ -859,18 +862,18 @@ $color-2b2b2b:#2b2b2b;
                     float: left;
                 }
                 .tribe-weather-info{
-                    width: 108px;
+                    width: 109px;
                     float: left;
-                    padding-left: 10px;
-                    padding-top: 10px;
+                    padding-top: 15px;
+                    text-align: center;
                     p{
                         width: 100%;
                         overflow: hidden;
                         &.tribe-f1{
-                            font-size: 20px;
+                            font-size: 16px;
                         }
                         &.tribe-f2{
-                            font-size: 16px;
+                            font-size: 14px;
                         }
                     }
                 }
@@ -909,10 +912,10 @@ $color-2b2b2b:#2b2b2b;
                         width: 100%;
                         height: 68px;
                         line-height: 68px;
-                        font-size: 20px;
+                        font-size: 16px;
                         border-radius: 4px;
                         padding-left: 100px;
-                        color: $color-02;
+                        color: $color-ffffff;
                     }
                 }
                 .tribe-recharge{
@@ -922,11 +925,11 @@ $color-2b2b2b:#2b2b2b;
                         &:before{
                              content: "";
                              position: absolute;
-                             top:13px;
-                             left: 40px;
+                             top:20px;
+                             left: 45px;
                              background: url("../../../images/pc/icon/icon-tribe-recharge.png") no-repeat;
-                             width: 40px;
-                             height: 40px;
+                             width: 30px;
+                             height: 30px;
                          }
                     }
                 }
@@ -938,11 +941,11 @@ $color-2b2b2b:#2b2b2b;
                         &:before{
                             content: "";
                             position: absolute;
-                            top:13px;
-                            left: 40px;
+                            top:20px;
+                            left: 45px;
                             background: url("../../../images/pc/icon/icon-tribe-withdrawal.png") no-repeat;
-                            width: 40px;
-                            height: 40px;
+                            width: 30px;
+                            height: 30px;
                         }
                     }
                 }
@@ -951,7 +954,7 @@ $color-2b2b2b:#2b2b2b;
 
         //作品数量
         .tribe-artWorkNum{
-            margin-top: 20px;
+            margin-top: 10px;
             ul{
                 li{
                     float: left;

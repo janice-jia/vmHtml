@@ -1,0 +1,254 @@
+@charset "utf-8";
+
+$color-01:#171717;
+$color-02:#515151;
+$color-03:#909090;
+$color-04:#c1c1c1;//(输入框边框颜色)
+$color-05:#eeeeee;//(背景色)
+$color-06:#499af5;
+$color-07:#ffb30e;
+$color-08:#e43f3f;
+
+
+$color-292929:#292929;
+$color-f9f1f1:#f9f1f1;
+$color-ebe5e4:#ebe5e4;
+$color-B9B0A9:#B9B0A9;
+$color-d8cbc7:#d8cbc7;
+$color-80776D:#80776D;
+.topic-header{
+    height: 50px;
+    background: $color-292929;
+    display: flex;
+    top:0;
+    left: 0;
+    z-index: 10;
+    .topic-header-con{
+        width: 1000px;
+        line-height: 50px;
+        margin: 0 auto;
+        h1{
+            float: left;
+            margin-right: 30px;
+            margin-bottom: 0;
+            margin-top: 0;
+            img{
+                margin-top: 7px;
+            }
+        }
+        ul{
+            float: left;
+            li{
+                a{
+                    color: rgba(192,192,192,.9);
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+.topicBox{
+    background: url("../../../images/pc/version1.1/topic/banner.png") no-repeat center 0;
+}
+
+.topic-main{
+    padding-top: 323px;
+    width: 1001px;
+    margin: 0 auto;
+    .topic-nav{
+        ul{
+            background: url("../../../images/pc/version1.1/topic/nb_bg.png") no-repeat;
+            height: 60px;
+            line-height: 60px;
+            li{
+                float: left;
+                width: 166px;
+                text-align: center;
+                a{
+                    color: #ffffff;
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                    font-size: 18px;
+                }
+                &.topic-nav-1{
+                    &:hover{
+                        background: url("../../../images/pc/version1.1/topic/nb_1_selectted.png") no-repeat;
+                    }
+                }
+                &.topic-nav-2{
+                    &:hover{
+                        background: url("../../../images/pc/version1.1/topic/nb_2_selectted.png") no-repeat;
+                    }
+                }
+                &.topic-nav-3{
+                    &:hover{
+                        background: url("../../../images/pc/version1.1/topic/nb_3_selectted.png") no-repeat;
+                    }
+                }
+                &.topic-nav-4{
+                    &:hover{
+                        background: url("../../../images/pc/version1.1/topic/nb_4_selectted.png") no-repeat;
+                    }
+                }
+                &.topic-nav-5{
+                    &:hover{
+                        background: url("../../../images/pc/version1.1/topic/nb_5_selectted.png") no-repeat;
+                    }
+                }
+                &.topic-nav-6{
+                    &:hover{
+                        background: url("../../../images/pc/version1.1/topic/nb_6_selectted.png") no-repeat 2px;
+                    }
+                }
+
+                &.topic-nav-hover-1{
+                    background: url("../../../images/pc/version1.1/topic/nb_1_selectted.png") no-repeat;
+                }
+                &.topic-nav-hover-2{
+                    background: url("../../../images/pc/version1.1/topic/nb_2_selectted.png") no-repeat;
+                }
+                &.topic-nav-hover-3{
+                    background: url("../../../images/pc/version1.1/topic/nb_3_selectted.png") no-repeat;
+                }
+                &.topic-nav-hover-4{
+                    background: url("../../../images/pc/version1.1/topic/nb_4_selectted.png") no-repeat;
+                }
+                &.topic-nav-hover-5{
+                    background: url("../../../images/pc/version1.1/topic/nb_5_selectted.png") no-repeat;
+                }
+                &.topic-nav-hover-6{
+                    background: url("../../../images/pc/version1.1/topic/nb_6_selectted.png") no-repeat 2px;
+                }
+            }
+        }
+    }
+    .topic-main-con{
+        margin-top: 20px;
+        .topic-main-con-l{
+            width: 677px;
+            float: left;
+            background: $color-f9f1f1;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            padding: 20px;
+            .topic-notice{
+                border-bottom: 1px solid $color-d8cbc7;
+                padding-bottom: 20px;
+                ul{
+                    li{
+                        float: left;
+                        width: 189px;
+                        &.m35{
+                            margin: 0 35px;
+                        }
+                        .topic-notice-img{
+                            img{
+                                border-radius: 5px;
+                                border: 1px solid #aa5336;
+                            }
+                            border-radius: 5px;
+                        }
+                        .topic-notice-name{
+                            padding-top: 10px;
+                            height: 45px;
+                            overflow: hidden;
+                            h2{
+                                padding: 0;
+                                margin: 0;
+                                a{
+                                    font-size: 16px;
+                                    color: $color-01;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .topic-notice-time{
+                font-size: 14px;
+                margin-top: 20px;
+                .topic-notice-time-f1{
+                    display: inline-block;
+                    position: relative;
+                    color: $color-07;
+                    padding-left: 24px;
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        top:3px;
+                        left: 0;
+                        background: url("../../../images/pc/version1.1/topic/comment_icon.png") no-repeat;
+                        width: 14px;
+                        height: 14px;
+                    }
+                }
+                .topic-notice-time-f2{
+                    font-size: 16px;
+                    color: $color-B9B0A9;
+                    padding-left: 20px;
+                }
+            }
+            .topic-notice-list{
+                padding: 20px 0;
+                border-bottom: 1px solid $color-d8cbc7;
+                .topic-notice-list-l{
+                    float: left;
+                    width: 189px;
+                    margin-right: 20px;
+                    img{
+                        border-radius: 5px;
+                        border: 1px solid #aa5336;
+                    }
+                }
+                .topic-notice-list-r{
+                    float: left;
+                    width: 428px;
+                    height: 2px;
+                    h2{
+                        font-size: 16px;
+                        height: 18px;
+                        overflow: hidden;
+                        a{
+                            color: $color-01;
+                        }
+                    }
+                    .topic-notice-list-desc{
+                        height: 70px;
+                        overflow: hidden;
+                        p{
+                            padding-top: 12px;
+                            font-size: 14px;
+                            color: $color-80776D;
+                            margin-bottom: 0;
+                        }
+                    }
+                    .topic-notice-time{
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+        .topic-main-con-r{
+            width: 323px;
+            float: left;
+            background: $color-ebe5e4;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            padding: 20px;
+            .topic-vote-tit{
+                h2{
+                    font-size: 18px;
+                    color: $color-07;
+                    padding-bottom: 20px;
+                }
+                p{
+                    color: $color-01;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

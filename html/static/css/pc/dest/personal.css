@@ -124,7 +124,7 @@
     #per-wall .per-wall-l .per-care {
       padding-top: 24px;
       padding-bottom: 14px;
-      font-size: 14px; }
+      font-size: 12px; }
       #per-wall .per-wall-l .per-care p {
         height: 16px;
         padding-bottom: 10px; }
@@ -140,7 +140,7 @@
     #per-wall .per-wall-l .per-appraise {
       padding-top: 24px;
       padding-bottom: 14px;
-      font-size: 14px; }
+      font-size: 12px; }
       #per-wall .per-wall-l .per-appraise p {
         height: 16px;
         padding-bottom: 10px; }
@@ -161,7 +161,7 @@
           display: block; }
     #per-wall .per-wall-l .per-identity {
       padding-top: 24px;
-      font-size: 14px;
+      font-size: 12px;
       padding-bottom: 20px; }
       #per-wall .per-wall-l .per-identity p {
         margin-bottom: 0;
@@ -171,16 +171,16 @@
           #per-wall .per-wall-l .per-identity p a:hover {
             color: #515151; }
         #per-wall .per-wall-l .per-identity p.h25 {
-          height: 25px;
+          height: 20px;
           overflow: hidden; }
         #per-wall .per-wall-l .per-identity p.mb30 {
-          margin-bottom: 30px; }
+          margin-bottom: 15px; }
         #per-wall .per-wall-l .per-identity p.h100 {
           height: 100px;
           overflow: hidden; }
         #per-wall .per-wall-l .per-identity p.per-identity-more {
           text-align: right;
-          margin: 15px 0 16px 0; }
+          margin: 15px 0 0 0; }
           #per-wall .per-wall-l .per-identity p.per-identity-more a {
             color: #499af5; }
             #per-wall .per-wall-l .per-identity p.per-identity-more a:hover {
@@ -484,7 +484,7 @@
           width: 100%;
           border-bottom: 1px solid #d2d2d2; }
     #per-wall .per-wall-r .tribe-req, #per-wall .per-wall-r .tribe-ser {
-      margin-top: 20px;
+      margin-top: 10px;
       background: #ffffff;
       height: auto;
       min-height: 0;
@@ -531,17 +531,17 @@
       #per-wall .per-wall-r .tribe-finance ul li {
         float: left;
         width: 223px;
-        height: 80px;
+        height: 70px;
         border-radius: 4px;
         padding-left: 16px;
-        padding-top: 8px; }
+        padding-top: 13px; }
         #per-wall .per-wall-r .tribe-finance ul li .tribe-finance-num {
-          font-size: 26px;
+          font-size: 16px;
           color: #ffffff;
           margin-bottom: 0;
           padding-bottom: 0; }
         #per-wall .per-wall-r .tribe-finance ul li .tribe-finance-name {
-          font-size: 18px;
+          font-size: 16px;
           color: #ffffff; }
         #per-wall .per-wall-r .tribe-finance ul li.tribe-finance-income {
           background: #52C1F5; }
@@ -553,24 +553,27 @@
     #per-wall .per-wall-r .tribe-artWork ul li {
       float: left;
       width: 223px;
-      height: 230px;
+      height: 190px;
       border-radius: 4px;
-      margin-top: 20px;
-      padding-right: 20px;
+      margin-top: 10px;
       border: 1px solid #b4b4b4;
       padding-top: 18px;
       background: #ffffff; }
       #per-wall .per-wall-r .tribe-artWork ul li .tribe-artWorkName {
-        font-size: 18px;
+        font-size: 16px;
         padding-left: 16px;
-        height: 70px;
-        margin-bottom: 0; }
+        height: 60px;
+        margin-bottom: 0;
+        margin-right: 20px; }
       #per-wall .per-wall-r .tribe-artWork ul li .tribe-artWorkNum {
         text-align: center;
-        font-size: 56px; }
+        font-size: 36px;
+        width: 100%;
+        padding-bottom: 10px;
+        margin-top: 0; }
       #per-wall .per-wall-r .tribe-artWork ul li .tribe-artWorkToday {
         text-align: center;
-        font-size: 18px; }
+        font-size: 14px; }
       #per-wall .per-wall-r .tribe-artWork ul li .tribe-artWorkNameBg1,
       #per-wall .per-wall-r .tribe-artWork ul li .tribe-artWorkNameBg2,
       #per-wall .per-wall-r .tribe-artWork ul li .tribe-artWorkNameBg3 {
@@ -581,26 +584,26 @@
         top: 0;
         right: 0;
         background: url("../../../images/pc/icon/icon-personal-artwork1.png") no-repeat;
-        width: 56px;
-        height: 56px; }
+        width: 40px;
+        height: 40px; }
       #per-wall .per-wall-r .tribe-artWork ul li .tribe-artWorkNameBg2:after {
         position: absolute;
         content: "";
         top: 0;
         right: 0;
         background: url("../../../images/pc/icon/icon-personal-artwork2.png") no-repeat;
-        width: 39px;
-        height: 55px; }
+        width: 28px;
+        height: 40px; }
       #per-wall .per-wall-r .tribe-artWork ul li .tribe-artWorkNameBg3:after {
         position: absolute;
         content: "";
         top: 0;
         right: 0;
         background: url("../../../images/pc/icon/icon-personal-artwork3.png") no-repeat;
-        width: 46px;
-        height: 56px; }
+        width: 33px;
+        height: 40px; }
     #per-wall .per-wall-r .tribe-perInfo {
-      margin-top: 20px; }
+      margin-top: 10px; }
       #per-wall .per-wall-r .tribe-perInfo .tribe-weather, #per-wall .per-wall-r .tribe-perInfo .tribe-evaluate, #per-wall .per-wall-r .tribe-perInfo .tribe-money {
         float: left;
         height: 146px; }
@@ -613,17 +616,17 @@
         #per-wall .per-wall-r .tribe-perInfo .tribe-weather img {
           float: left; }
         #per-wall .per-wall-r .tribe-perInfo .tribe-weather .tribe-weather-info {
-          width: 108px;
+          width: 109px;
           float: left;
-          padding-left: 10px;
-          padding-top: 10px; }
+          padding-top: 15px;
+          text-align: center; }
           #per-wall .per-wall-r .tribe-perInfo .tribe-weather .tribe-weather-info p {
             width: 100%;
             overflow: hidden; }
             #per-wall .per-wall-r .tribe-perInfo .tribe-weather .tribe-weather-info p.tribe-f1 {
-              font-size: 20px; }
-            #per-wall .per-wall-r .tribe-perInfo .tribe-weather .tribe-weather-info p.tribe-f2 {
               font-size: 16px; }
+            #per-wall .per-wall-r .tribe-perInfo .tribe-weather .tribe-weather-info p.tribe-f2 {
+              font-size: 14px; }
       #per-wall .per-wall-r .tribe-perInfo .tribe-evaluate {
         width: 270px;
         margin: 0 10px;
@@ -651,21 +654,21 @@
           width: 100%;
           height: 68px;
           line-height: 68px;
-          font-size: 20px;
+          font-size: 16px;
           border-radius: 4px;
           padding-left: 100px;
-          color: #515151; }
+          color: #ffffff; }
         #per-wall .per-wall-r .tribe-perInfo .tribe-money .tribe-recharge a {
           background: #ffb30e;
           position: relative; }
           #per-wall .per-wall-r .tribe-perInfo .tribe-money .tribe-recharge a:before {
             content: "";
             position: absolute;
-            top: 13px;
-            left: 40px;
+            top: 20px;
+            left: 45px;
             background: url("../../../images/pc/icon/icon-tribe-recharge.png") no-repeat;
-            width: 40px;
-            height: 40px; }
+            width: 30px;
+            height: 30px; }
         #per-wall .per-wall-r .tribe-perInfo .tribe-money .tribe-withdrawal {
           margin-top: 10px; }
           #per-wall .per-wall-r .tribe-perInfo .tribe-money .tribe-withdrawal a {
@@ -674,13 +677,13 @@
             #per-wall .per-wall-r .tribe-perInfo .tribe-money .tribe-withdrawal a:before {
               content: "";
               position: absolute;
-              top: 13px;
-              left: 40px;
+              top: 20px;
+              left: 45px;
               background: url("../../../images/pc/icon/icon-tribe-withdrawal.png") no-repeat;
-              width: 40px;
-              height: 40px; }
+              width: 30px;
+              height: 30px; }
     #per-wall .per-wall-r .tribe-artWorkNum {
-      margin-top: 20px; }
+      margin-top: 10px; }
       #per-wall .per-wall-r .tribe-artWorkNum ul li {
         float: left;
         width: 165px;

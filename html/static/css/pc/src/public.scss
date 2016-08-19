@@ -1667,7 +1667,9 @@ button{
                     a{
                         &:before{
                             top: 20px;
+                            font-size: 12px;
                             content: "返回顶部";
+                            width: 27px;
                         }
                     }
                 }
@@ -1687,6 +1689,9 @@ button{
                     a{
                         &:before{
                             content: "APP下载";
+                            font-size: 12px;
+                            width: 26px;
+                            padding-left: 2px;
                         }
                     }
                 }
@@ -1743,6 +1748,8 @@ button{
                     a{
                         &:before{
                             content: "相关帮助";
+                            font-size: 12px;
+                            width: 27px;
                         }
                     }
                 }
@@ -1761,6 +1768,8 @@ button{
                     a{
                         &:before{
                             content: "联系客服";
+                            font-size: 12px;
+                            width: 27px;
                         }
                     }
                 }

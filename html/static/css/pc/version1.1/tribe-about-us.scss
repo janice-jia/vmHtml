@@ -12,18 +12,21 @@ $color-08:#e43f3f;
 .about-us{
     width: 1000px;
     margin: 0 auto;
+    min-height: 600px;
     .about-us-l{
         width: 140px;
         height: 345px;
         float: left;
         margin-right: 38px;
         margin-bottom: 20px;
+        position: fixed;
         ul{
             border: 1px solid $color-04;
             li{
                 height: 50px;
                 line-height: 50px;
                 text-align: center;
+                font-size: 14px;
                 a{
                     display: inline-block;
                     width: 100%;
@@ -38,7 +41,6 @@ $color-08:#e43f3f;
 
                 }
                 &.about-us-hover a,a:hover{
-
                     &:before{
                         content: "";
                         position: absolute;
@@ -51,7 +53,7 @@ $color-08:#e43f3f;
                     &:after{
                         content:"";
                         position: absolute;
-                        right: 5px;
+                        right: 0px;
                         top: 19px;
                         width: 5px;
                         height: 10px;
@@ -67,17 +69,38 @@ $color-08:#e43f3f;
     }
     .about-us-r{
         float: right;
-        width: 808px;
+        width: 820px;
         margin-bottom: 90px;
+        .about-us-tit{
+            font-size: 16px;
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            margin-bottom: 20px;
+        }
         .about-us-con{
             p{
-                font-size: 16px;
-            }
-
-            .about-us-article{
-                margin-bottom: 35px;
+                font-size: 14px;
+                text-indent: 2em;
             }
         }
-
+        .about-contactUs-con{
+            p{
+                font-size: 12px;
+                img{
+                    margin: 0 auto;
+                }
+                span{
+                    width: 2em;
+                    display: inline-block;
+                }
+            }
+        }
+        .about-article{
+            p{
+                font-size: 14px;
+            }
+            margin-bottom: 40px;
+        }
     }
 }

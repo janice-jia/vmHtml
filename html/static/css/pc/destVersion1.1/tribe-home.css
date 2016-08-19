@@ -130,37 +130,39 @@ p, h1, h2, h3, h4, h5, h6 {
     border-bottom-color: #c1c1c1;
     position: relative;
     float: left;
-    padding: 0 5px;
     padding-top: 5px; }
-    .tribe-list-box .tribe-list-li .tribe-list-con img {
+    .tribe-list-box .tribe-list-li .tribe-list-con {
       width: 310px;
-      height: 230px; }
-    .tribe-list-box .tribe-list-li .tribe-list-con h3 {
-      color: #515151;
-      padding-top: 15px;
-      padding-bottom: 12px; }
-    .tribe-list-box .tribe-list-li .tribe-list-con > p {
-      color: #909090;
-      padding-bottom: 14px;
-      font-size: 14px; }
-    .tribe-list-box .tribe-list-li .tribe-list-con .tribe-list-foot {
-      font-size: 12px;
-      padding-bottom: 20px; }
-      .tribe-list-box .tribe-list-li .tribe-list-con .tribe-list-foot p {
-        color: #ffb30e;
-        margin-right: 16px;
-        display: inline-block; }
-      .tribe-list-box .tribe-list-li .tribe-list-con .tribe-list-foot p b {
-        width: 18px;
-        height: 14px;
-        display: inline-block;
-        margin-right: 5px; }
-      .tribe-list-box .tribe-list-li .tribe-list-con .tribe-list-foot .tribe-list-groupicon b {
-        background-image: url("../../../images/pc/version1.1/icon/icon_group.png"); }
-      .tribe-list-box .tribe-list-li .tribe-list-con .tribe-list-foot .tribe-list-zanicon b {
-        background-image: url("../../../images/pc/version1.1/icon/icon_zan.png"); }
-      .tribe-list-box .tribe-list-li .tribe-list-con .tribe-list-foot .tribe-list-clockicon b {
-        background-image: url("../../../images/pc/version1.1/icon/icon_clock.png"); }
+      margin: 0 auto; }
+      .tribe-list-box .tribe-list-li .tribe-list-con img {
+        width: 310px;
+        height: 230px; }
+      .tribe-list-box .tribe-list-li .tribe-list-con h3 {
+        color: #515151;
+        padding-top: 15px;
+        padding-bottom: 12px; }
+      .tribe-list-box .tribe-list-li .tribe-list-con > p {
+        color: #909090;
+        padding-bottom: 14px;
+        font-size: 14px; }
+      .tribe-list-box .tribe-list-li .tribe-list-con .tribe-list-foot {
+        font-size: 12px;
+        padding-bottom: 20px; }
+        .tribe-list-box .tribe-list-li .tribe-list-con .tribe-list-foot p {
+          color: #ffb30e;
+          margin-right: 16px;
+          display: inline-block; }
+        .tribe-list-box .tribe-list-li .tribe-list-con .tribe-list-foot p b {
+          width: 18px;
+          height: 14px;
+          display: inline-block;
+          margin-right: 5px; }
+        .tribe-list-box .tribe-list-li .tribe-list-con .tribe-list-foot .tribe-list-groupicon b {
+          background-image: url("../../../images/pc/version1.1/icon/icon_group.png"); }
+        .tribe-list-box .tribe-list-li .tribe-list-con .tribe-list-foot .tribe-list-zanicon b {
+          background-image: url("../../../images/pc/version1.1/icon/icon_zan.png"); }
+        .tribe-list-box .tribe-list-li .tribe-list-con .tribe-list-foot .tribe-list-clockicon b {
+          background-image: url("../../../images/pc/version1.1/icon/icon_clock.png"); }
     .tribe-list-box .tribe-list-li a {
       position: absolute;
       height: 372px;

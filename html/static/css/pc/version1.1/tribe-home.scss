@@ -196,9 +196,10 @@ p,h1,h2,h3,h4,h5,h6{
     border-bottom-color:$color-04;
     position: relative;
     float: left;
-    padding: 0 5px;
     padding-top: 5px;
     .tribe-list-con{
+      width: 310px;
+      margin: 0 auto;
       img{
         width:310px;
         height:230px;

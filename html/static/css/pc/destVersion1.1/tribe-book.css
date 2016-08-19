@@ -89,16 +89,59 @@ p, h1, h2, h3, h4, h5, h6 {
 .bgindexed {
   font-size: 14px;
   text-align: center; }
-  .bgindexed li {
+  .bgindexed > li {
     display: inline-block;
     margin: 0 10px; }
-    .bgindexed li a {
+    .bgindexed > li > a {
       display: inline-block;
       line-height: 40px;
       width: 100px;
       height: 40px;
       background-color: #414141;
       color: #fff; }
+  .bgindexed .indexcenter .indexdrown {
+    background-color: #414141;
+    font-size: 14px; }
+  .bgindexed .indexcenter:hover {
+    background-color: #fff; }
+    .bgindexed .indexcenter:hover > a {
+      border-color: #909090;
+      border-top-color: #ffb30e;
+      border-bottom-color: #414141; }
+  .bgindexed .indexcenter:hover .indexdrown {
+    display: block; }
+  .bgindexed .indexcenter {
+    position: relative;
+    top: 2px; }
+    .bgindexed .indexcenter > a {
+      display: inline-block;
+      width: 100px;
+      height: 40px;
+      border: 1px solid transparent;
+      border-top: 2px solid #414141;
+      position: relative;
+      z-index: 100; }
+    .bgindexed .indexcenter .indexdrown {
+      display: none;
+      position: absolute;
+      top: 39px;
+      z-index: 10;
+      width: 170px;
+      border: 1px solid #909090;
+      height: 215px;
+      overflow-y: scroll;
+      white-space: nowrap;
+      overflow-x: hidden; }
+      .bgindexed .indexcenter .indexdrown li {
+        padding-left: 15px;
+        line-height: 34px;
+        height: 34px;
+        font-size: 14px;
+        border-bottom: 1px solid #909090;
+        width: 100%;
+        text-align: left; }
+        .bgindexed .indexcenter .indexdrown li a {
+          color: #fff; }
 
 .garyindex li a {
   background-color: #909090; }

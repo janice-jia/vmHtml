@@ -164,3 +164,23 @@
       .topic-main .topic-main-con .topic-main-con-r .topic-vote-tit p {
         color: #171717;
         font-size: 16px; }
+      .topic-main .topic-main-con .topic-main-con-r .topic-vote-option ul li .topic-vote-radio {
+        float: left; }
+      .topic-main .topic-main-con .topic-main-con-r .topic-vote-option ul li span {
+        display: inline-block;
+        float: left; }
+        .topic-main .topic-main-con .topic-main-con-r .topic-vote-option ul li span.topic-vote-name {
+          width: 80px;
+          padding-left: 14px;
+          margin-right: 10px;
+          padding-top: 2px; }
+        .topic-main .topic-main-con .topic-main-con-r .topic-vote-option ul li span.topic-vote-width {
+          height: 16px;
+          max-width: 125px;
+          background: #ffb30e;
+          margin-top: 5px; }
+        .topic-main .topic-main-con .topic-main-con-r .topic-vote-option ul li span.topic-vote-num {
+          padding-top: 2px;
+          margin-right: 10px; }
+        .topic-main .topic-main-con .topic-main-con-r .topic-vote-option ul li span.w100 {
+          width: 100%; }

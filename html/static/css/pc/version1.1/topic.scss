@@ -249,6 +249,38 @@ $color-80776D:#80776D;
                     font-size: 16px;
                 }
             }
+            .topic-vote-option{
+                ul{
+                    li{
+                        .topic-vote-radio{
+                            float: left;
+                        }
+                        span{
+                            display: inline-block;
+                            float: left;
+                            &.topic-vote-name{
+                                width: 80px;
+                                padding-left: 14px;
+                                margin-right: 10px;
+                                padding-top: 2px;
+                            }
+                            &.topic-vote-width{
+                                height: 16px;
+                                max-width: 125px;
+                                background: $color-07;
+                                margin-top: 5px;
+                            }
+                            &.topic-vote-num{
+                                padding-top: 2px;
+                                margin-right: 10px;
+                            }
+                            &.w100{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

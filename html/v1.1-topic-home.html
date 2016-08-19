@@ -5,6 +5,7 @@
     <title>无尽神域_专题</title>
     <link rel="stylesheet" href="static/css/pc/minCss/all.min.css" />
     <link rel="stylesheet" href="static/css/pc/destversion1.1/topic.css" />
+    <link rel="stylesheet" href="./static/ickeckSkins/minimal/grey.css" />
 
     <!--IE浏览器运行最新的渲染模式-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -177,12 +178,14 @@
                     <h2>投票</h2>
                     <p>下一期，你最想看谁</p>
                 </div>
-                <div class="topic-vote-list">
+                <div class="topic-vote-option">
                     <ul>
                         <li>
-                            <input type="radio" name="vote" />
+                            <div class="topic-vote-radio">
+                                <input type="radio" name="vote"/>
+                            </div>
                             <span class="topic-vote-name">厉寒</span>
-                            <span class="topic-vote-width"></span>
+                            <span class="topic-vote-width w100"></span>
                             <span class="topic-vote-num">56</span>
                         </li>
                     </ul>
@@ -192,5 +195,17 @@
         <div class="clear"></div>
     </div>
 </div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="static/js/pc/dest/jquery-1.11.3.min.js"></script>
+<script src="static/ickeckSkins/icheck.js"></script>
+<script>
+    //搜索radio按钮样式
+    $(document).ready(function(){
+        $('.topic-vote-option input').iCheck({
+            radioClass: 'iradio-grey-16',
+            increaseArea: '30%' // optional
+        });
+    });
+</script>
 </body>
 </html>

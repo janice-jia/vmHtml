@@ -44,7 +44,7 @@
           text-decoration: underline; }
 
 .topicBox {
-  background: url("../../../images/pc/version1.1/topic/banner.png") no-repeat center 0; }
+  background: url("../../../images/pc/version1.1/topic/banner.png") no-repeat center 0 #668f83; }
 
 .topic-main {
   padding-top: 323px;
@@ -91,6 +91,7 @@
   .topic-main .topic-main-con {
     margin-top: 20px; }
     .topic-main .topic-main-con .topic-main-con-l {
+      margin-bottom: 55px;
       width: 677px;
       float: left;
       background: #f9f1f1;
@@ -137,7 +138,7 @@
             width: 14px;
             height: 14px; }
         .topic-main .topic-main-con .topic-main-con-l .topic-notice-time .topic-notice-time-f2 {
-          font-size: 16px;
+          font-size: 14px;
           color: #B9B0A9;
           padding-left: 20px; }
       .topic-main .topic-main-con .topic-main-con-l .topic-notice-list {
@@ -170,20 +171,82 @@
               margin-bottom: 0; }
           .topic-main .topic-main-con .topic-main-con-l .topic-notice-list .topic-notice-list-r .topic-notice-time {
             margin-top: 10px; }
+      .topic-main .topic-main-con .topic-main-con-l .topic-notice-more {
+        margin-top: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        font-size: 14px;
+        color: #171717; }
+        .topic-main .topic-main-con .topic-main-con-l .topic-notice-more:hover {
+          cursor: pointer; }
+        .topic-main .topic-main-con .topic-main-con-l .topic-notice-more span {
+          font-size: 12px;
+          font-weight: bold;
+          padding-left: 5px; }
     .topic-main .topic-main-con .topic-main-con-r {
       width: 323px;
       float: left;
       background: #ebe5e4;
       border-top-right-radius: 8px;
       border-bottom-right-radius: 8px;
-      padding: 20px; }
+      padding: 20px;
+      box-shadow: 0 0 25px #cacaca inset; }
       .topic-main .topic-main-con .topic-main-con-r .topic-vote-tit h2 {
         font-size: 18px;
         color: #ffb30e;
         padding-bottom: 20px; }
       .topic-main .topic-main-con .topic-main-con-r .topic-vote-tit p {
         color: #171717;
-        font-size: 16px; }
+        font-size: 16px;
+        margin-bottom: 0; }
+      .topic-main .topic-main-con .topic-main-con-r .topic-vote-option ul li {
+        padding: 18px 0;
+        color: #80776D; }
+        .topic-main .topic-main-con .topic-main-con-r .topic-vote-option ul li .topic-vote-radio {
+          float: left; }
+        .topic-main .topic-main-con .topic-main-con-r .topic-vote-option ul li .topic-vote-name {
+          float: left;
+          width: 80px;
+          padding-left: 14px;
+          padding-top: 2px; }
+        .topic-main .topic-main-con .topic-main-con-r .topic-vote-option ul li .topic-vote-width {
+          height: 16px;
+          width: 145px;
+          margin: 5px 0 0 10px;
+          float: left; }
+          .topic-main .topic-main-con .topic-main-con-r .topic-vote-option ul li .topic-vote-width span {
+            position: relative;
+            background: #ffb30e;
+            width: 50%;
+            height: 100%;
+            display: inline-block;
+            max-width: 145px;
+            float: left; }
+          .topic-main .topic-main-con .topic-main-con-r .topic-vote-option ul li .topic-vote-width b.topic-vote-num {
+            position: absolute;
+            right: -30px;
+            top: 0px;
+            font-weight: normal;
+            margin-left: 10px;
+            width: 20px;
+            margin-top: -3px;
+            font-size: 14px; }
+      .topic-main .topic-main-con .topic-main-con-r .topic-vote-option .topic-vote-btn {
+        margin: 20px 0;
+        width: 80px;
+        height: 30px;
+        line-height: 30px;
+        color: #ffffff;
+        font-size: 14px;
+        text-align: center;
+        background: #a7a099; }
+        .topic-main .topic-main-con .topic-main-con-r .topic-vote-option .topic-vote-btn:hover {
+          color: #515151; }
+      .topic-main .topic-main-con .topic-main-con-r .topic-vote-imgList {
+        border-top: 1px solid #d8cbc7; }
+        .topic-main .topic-main-con .topic-main-con-r .topic-vote-imgList ul li {
+          padding: 20px 0 0 0; }
     .topic-main .topic-main-con .topic-main-con-all {
       background: #f9f1f1;
       border-top-left-radius: 8px;

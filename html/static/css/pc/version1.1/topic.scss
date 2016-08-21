@@ -401,14 +401,60 @@ $color-a7a099:#a7a099;
                         }
                         p{
                             font-size: 14px;
+                            margin-bottom: 10px;
                         }
                         .txt-group{
                             margin-bottom: 30px;
                         }
                     }
                 }
+                a{
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                }
+            }
+            //图片列表
+            .img-list{
+                ul{
+                    width: 981px;
+                    li{
+                        margin-right: 20px;
+                        float: left;
+                        a{
+                            color: $color-01;
+                          div{
+                            width: 176px;
+                              height: 216px;
+                              border:1px solid $color-04;
+                              display: inline-block;
+                          }
+                        }
+                    }
+                    &:after{
+                        display: table;
+                        content: "";
+                        clear: both;
+                    }
+                }
             }
 
         }
+        &:after{
+            display: table;
+            content: "";
+        }
+    }
+}
+.panel{
+    margin-bottom: 10px;
+    .panel-heading{
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid $color-04;
+    }
+    .panel-body{
+        border-bottom: 1px solid $color-04;
     }
 }

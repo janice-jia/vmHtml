@@ -276,6 +276,40 @@
               font-size: 37px;
               margin-bottom: 20px; }
             .topic-main .topic-main-con .topic-main-con-all .topic-ban-txt .txtbox .txt-all p {
-              font-size: 14px; }
+              font-size: 14px;
+              margin-bottom: 10px; }
             .topic-main .topic-main-con .topic-main-con-all .topic-ban-txt .txtbox .txt-all .txt-group {
               margin-bottom: 30px; }
+        .topic-main .topic-main-con .topic-main-con-all .topic-ban-txt a {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0; }
+      .topic-main .topic-main-con .topic-main-con-all .img-list ul {
+        width: 981px; }
+        .topic-main .topic-main-con .topic-main-con-all .img-list ul li {
+          margin-right: 20px;
+          float: left; }
+          .topic-main .topic-main-con .topic-main-con-all .img-list ul li a {
+            color: #171717; }
+            .topic-main .topic-main-con .topic-main-con-all .img-list ul li a div {
+              width: 176px;
+              height: 216px;
+              border: 1px solid #c1c1c1;
+              display: inline-block; }
+        .topic-main .topic-main-con .topic-main-con-all .img-list ul:after {
+          display: table;
+          content: "";
+          clear: both; }
+    .topic-main .topic-main-con:after {
+      display: table;
+      content: ""; }
+
+.panel {
+  margin-bottom: 10px; }
+  .panel .panel-heading {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #c1c1c1; }
+  .panel .panel-body {
+    border-bottom: 1px solid #c1c1c1; }

@@ -1,3 +1,23 @@
+.breadcrumb > li {
+  float: left;
+  color: #ffb30e; }
+  .breadcrumb > li a {
+    color: #ffb30e; }
+  .breadcrumb > li:last-child {
+    color: #80776D; }
+    .breadcrumb > li:last-child a {
+      color: #80776D; }
+
+.breadcrumb > li + li:before {
+  color: #909090;
+  content: ">";
+  padding: 0 5px; }
+
+.breadcrumb:after {
+  display: table;
+  content: "";
+  clear: both; }
+
 .topic-header {
   height: 50px;
   background: #292929;
@@ -164,3 +184,35 @@
       .topic-main .topic-main-con .topic-main-con-r .topic-vote-tit p {
         color: #171717;
         font-size: 16px; }
+    .topic-main .topic-main-con .topic-main-con-all {
+      background: #f9f1f1;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      padding: 20px; }
+      .topic-main .topic-main-con .topic-main-con-all .topic-con-header {
+        margin-bottom: 20px;
+        font-size: 14px; }
+      .topic-main .topic-main-con .topic-main-con-all .topic-ban-txt {
+        position: relative;
+        height: 380px; }
+        .topic-main .topic-main-con .topic-main-con-all .topic-ban-txt img {
+          width: 960px;
+          height: 380px; }
+        .topic-main .topic-main-con .topic-main-con-all .topic-ban-txt .txtbox {
+          position: absolute;
+          width: 464px;
+          background-color: rgba(0, 0, 0, 0.8);
+          height: 100%;
+          display: table;
+          padding: 0 40px; }
+          .topic-main .topic-main-con .topic-main-con-all .topic-ban-txt .txtbox .txt-all {
+            vertical-align: middle;
+            display: table-cell;
+            color: #fff; }
+            .topic-main .topic-main-con .topic-main-con-all .topic-ban-txt .txtbox .txt-all .txt-title {
+              font-size: 37px;
+              margin-bottom: 20px; }
+            .topic-main .topic-main-con .topic-main-con-all .topic-ban-txt .txtbox .txt-all p {
+              font-size: 14px; }
+            .topic-main .topic-main-con .topic-main-con-all .topic-ban-txt .txtbox .txt-all .txt-group {
+              margin-bottom: 30px; }

@@ -72,14 +72,23 @@ $color-80776D:#80776D;
 }
 
 #topic-treasure{
+  margin-bottom:55px;
   .panel{
     .panel-heading{
+      h3{
+        display: inline-block;
+      }
       b{
         float: right;
-        background-image: url("./../../../images/pc/version1.1/icon/icon-down-sm.png");
+        background-image: url("./../../../images/pc/version1.1/icon/icon-up-sm.png");
         width: 10px;
         height: 6px;
         display: inline-block;
+        margin-top: 10px;
+        margin-right: 5px;
+      }
+      b.down{
+        background-image: url("./../../../images/pc/version1.1/icon/icon-down-sm.png");
       }
     }
   }

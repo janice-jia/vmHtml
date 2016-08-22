@@ -39,8 +39,8 @@
                 <li class="topic-nav-2"><a href="#">人物</a></li>
                 <li class="topic-nav-3"><a href="#">门派</a></li>
                 <li class="topic-nav-4"><a href="#">世界</a></li>
-                <li class="topic-nav-5"><a href="#">宝物</a></li>
-                <li class="topic-nav-6 topic-nav-hover-1"><a href="#">大事件</a></li>
+                <li class="topic-nav-5 topic-nav-hover-1"><a href="#">宝物</a></li>
+                <li class="topic-nav-6"><a href="#">大事件</a></li>
             </ul>
         </div>
         <div class="clear"></div>
@@ -53,9 +53,60 @@
                     </ul>
                 </div>
                 <div class="panel panel-default">
-                    <div class="panel-heading"><span>灵药</span><b></b></div>
-                    <div class="panel-body">
+                    <div class="panel-heading">
+                        <h3>灵药</h3><b></b>
+                    </div>
+                    <div class="panel-body hide">
                         <p>天生灵药，共分后天，先天两个层次，一品至五品，为后天灵药，六品至九品，为先天灵药</p>
+                        <div class="img-list">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div><img src="./static/images/pc/version1.1/topic/person-1.jpg" alt=""/></div>
+                                        <h4>天道九叶兰</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div><img src="./static/images/pc/version1.1/topic/person-2.jpg" alt=""/></div>
+                                        <h4>天道九叶兰</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div><img src="./static/images/pc/version1.1/topic/person-3.png" alt=""/></div>
+                                        <h4>天道九叶兰</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div>征稿中</div>
+                                        <h4>天道九叶兰</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div>征稿中</div>
+                                        <h4>天道九叶兰</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div>征稿中</div>
+                                        <h4>天道九叶兰</h4>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 每个不同种类的列表 放在 panel内 -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3>丹药</h3><b></b>
+                    </div>
+                    <div class="panel-body hide">
                         <div class="img-list">
                             <ul>
                                 <li>
@@ -96,15 +147,51 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"><span>丹药</span><b></b></h3>
-                    </div>
-                    <div class="panel-body">
-                        Panel content
+                        <div class="child-list">
+                            <h3>传说级灵丹</h3>
+                            <div class="img-list">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div>征稿中</div>
+                                            <h4>天道九叶兰</h4>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div>征稿中</div>
+                                            <h4>天道九叶兰</h4>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div>征稿中</div>
+                                            <h4>天道九叶兰</h4>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 子列表 将 img-list 放在 child-list 内 -->
+                        <div class="child-list">
+                            <h3>传说级灵丹</h3>
+                            <div class="img-list">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div>征稿中</div>
+                                            <h4>天道九叶兰</h4>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div>征稿中</div>
+                                            <h4>天道九叶兰</h4>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -112,5 +199,16 @@
         <div class="clear"></div>
     </div>
 </div>
+<script src="static/js/pc/dest/jquery-1.11.3.min.js"></script>
+<script src="static/js/pc/dest/all.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="static/js/pc/dest/bootstrap.min.js"></script>
+<script>
+    $('.panel').click(function(){
+        $(this).children('.panel-body').toggleClass('hide');
+        $(this).children('.panel-heading').children("b").toggleClass('down');
+
+    });
+</script>
 </body>
 </html>

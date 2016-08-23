@@ -236,3 +236,7 @@
   width: 100%;
   margin: 0;
   padding: 0; }
+
+/** 视频 **/
+#demand_chooseworks-video .zcbl-modal-6 {
+  height: auto; }

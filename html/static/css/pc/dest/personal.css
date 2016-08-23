@@ -452,6 +452,10 @@
                   height: 17px; }
         #per-wall .per-wall-r .per-req ul li .per-reqStatus {
           margin: 0 0 10px 0; }
+          #per-wall .per-wall-r .per-req ul li .per-reqStatus .btn-yellow-50 {
+            height: 40px;
+            line-height: 40px;
+            width: 100px; }
           #per-wall .per-wall-r .per-req ul li .per-reqStatus p {
             float: left;
             width: 340px;
@@ -507,7 +511,7 @@
         left: 5px;
         top: 15px;
         color: #ffb30e;
-        font-size: 18px; }
+        font-size: 16px; }
     #per-wall .per-wall-r .tribe-ser:after {
       content: "服务"; }
     #per-wall .per-wall-r .tribe-req:after {
@@ -523,7 +527,7 @@
         line-height: 42px;
         color: #515151;
         padding: 0 15px;
-        font-size: 20px; }
+        font-size: 16px; }
         #per-wall .per-wall-r .tribe-req .tribe-req-nav ul li a:hover {
           background: none;
           border: none;

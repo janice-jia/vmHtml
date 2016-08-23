@@ -626,6 +626,11 @@ $color-2b2b2b:#2b2b2b;
                     }
                     .per-reqStatus{
                         margin: 0 0 10px 0;
+                        .btn-yellow-50{
+                            height: 40px;
+                            line-height: 40px;
+                            width: 100px;
+                        }
                         p{
                             float: left;
                             width: 340px;
@@ -699,7 +704,7 @@ $color-2b2b2b:#2b2b2b;
                 left: 5px;
                 top: 15px;
                 color: $color-07;
-                font-size: 18px;
+                font-size: 16px;
             }
         }
         .tribe-ser{
@@ -727,7 +732,7 @@ $color-2b2b2b:#2b2b2b;
                             line-height: 42px;
                             color: $color-02;
                             padding: 0 15px;
-                            font-size: 20px;
+                            font-size: 16px;
                             &:hover{
                                 background: none;
                                 border: none;

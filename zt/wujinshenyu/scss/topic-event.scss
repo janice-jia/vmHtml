@@ -85,6 +85,9 @@ $color-80776D: #80776D;
                 display: inline-block;
                 margin-top: 10px;
                 margin-right: 5px;
+                &:hover{
+                    cursor: pointer;
+                }
             }
             b.down {
                 background-image: url("../images/icon/icon-down-sm.png");

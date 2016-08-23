@@ -41,6 +41,8 @@
   display: inline-block;
   margin-top: 10px;
   margin-right: 5px; }
+  #topic-treasure .panel .panel-heading b:hover {
+    cursor: pointer; }
 #topic-treasure .panel .panel-heading b.down {
   background-image: url("../images/icon/icon-down-sm.png"); }
 

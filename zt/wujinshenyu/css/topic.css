@@ -44,10 +44,15 @@
           text-decoration: underline; }
 
 .topicBox {
-  background: url("../images/banner.png") no-repeat center 0 #668f83; }
+  background: url("../images/banner.jpg") no-repeat center 0 #668f83;
+  padding: 30px 0 0 30px; }
+  .topicBox .goHome a {
+    color: #000; }
+    .topicBox .goHome a:hover {
+      text-decoration: underline; }
 
 .topic-main {
-  padding-top: 323px;
+  padding-top: 273px;
   width: 1001px;
   margin: 0 auto; }
   .topic-main .topic-nav ul {

@@ -123,6 +123,7 @@
       #tribe-cartoon .cartoon-header > .tribe-honor span:nth-child(2) {
         color: #ffb30e; }
     #tribe-cartoon .cartoon-header .tribe-bias {
+      margin: 10px 0;
       padding-top: 24px;
       width: 98px;
       font: 12px/2em georgia;
@@ -170,7 +171,7 @@
     #tribe-cartoon .cartoon-header .tribe-start {
       position: absolute;
       right: 19px;
-      top: 7px;
+      top: 9px;
       z-index: 3;
       font-size: 1em;
       color: #FFF; }

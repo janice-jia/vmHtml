@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+$color-01:#171717;
+$color-02:#515151;
+$color-03:#909090;
+$color-04:#c1c1c1;//(输入框边框颜色)
+$color-05:#eeeeee;//(背景色)
+$color-06:#499af5;
+$color-07:#ffb30e;
+$color-08:#e43f3f;
+
+
+$color-292929:#292929;
+$color-f9f1f1:#f9f1f1;
+$color-ebe5e4:#ebe5e4;
+$color-B9B0A9:#B9B0A9;
+$color-d8cbc7:#d8cbc7;
+$color-80776D:#80776D;
+
+#topic-event{
+  margin-bottom:55px;
+  .event-group{
+    border-bottom:1px solid $color-04;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    //大事件表格
+    .topic-tablebox{
+      text-align: center;
+      h2{
+        margin-top: 20px;
+        font-size: 18px;
+        color: $color-01;
+      }
+      table{
+        margin: 0 auto;
+        margin-top:15px;
+      }
+      th,td{
+        span{
+          width: 90px;
+          height: 36px;
+          display: inline-block;
+          margin: 5px;
+          text-align: center;
+          line-height: 36px;
+          font-weight: normal;
+
+        }
+      }
+      td{
+        width: 90px;
+        height:36px;
+        span{
+          background-color: #f0ebe2;
+        }
+      }
+      th{
+        span{
+          background-color: #e5ba6c;
+        }
+      }
+    }
+    .passages{
+      h3{
+        margin-bottom: 15px;
+      }
+      p{
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+#topic-treasure{
+  margin-bottom:55px;
+  .panel{
+    .panel-heading{
+      h3{
+        display: inline-block;
+      }
+      b{
+        float: right;
+        background-image: url("./../../../images/pc/version1.1/icon/icon-up-sm.png");
+        width: 10px;
+        height: 6px;
+        display: inline-block;
+        margin-top: 10px;
+        margin-right: 5px;
+      }
+      b.down{
+        background-image: url("./../../../images/pc/version1.1/icon/icon-down-sm.png");
+      }
+    }
+  }
+}

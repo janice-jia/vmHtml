@@ -246,84 +246,77 @@ $black: #000;
     }
 }
 
-/** 选稿弹窗 **/
-#demand_choose {
-    [data-demand-works="modalbox"] {
-        width: 100%;
-        min-height: 100vh;
-        position: absolute;
-        top: 0;
-        background-color: rgba(0, 0, 0, .5);
-    }
-    [data-demand-works="modal"] {
-        padding: 10px;
-        background-color: $white;
-        margin: 130px auto 50px;
-        width: 1000px;
-        [data-demand-works="userhead"] {
-            margin-right: 20px;
-            display: inline-block;
-            margin-bottom: 30px;
-            img {
-                margin-top: -35px;
-                width: 100px;
-                height: 100px;
-                border-radius: 50%;
-                border: 3px solid $white;
-            }
-        }
-    }
-    [data-demand-works="username"] {
+[data-demand-works="modalbox"] {
+    width: 100%;
+    min-height: 100vh;
+    top: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+[data-demand-works="modal"] {
+    padding: 10px;
+    background-color: $white;
+    margin: 130px auto 50px;
+    width: 1000px;
+    [data-demand-works="userhead"] {
+        margin-right: 20px;
         display: inline-block;
-        h2 {
-            font-size: 18px;
-            color: $darkgray;
-            font-weight: bold;
-            margin-bottom: 10px;
-
-        }
-        p {
-            color: $darkgray;
-            i {
-                width: 12px;
-                height: 15px;
-                margin-right: 5px;
-                display: inline-block;
-                vertical-align: middle;
-                background-image: url("../../../images/pc/icon/icon_addresssm.png");
-            }
-        }
-    }
-
-    /** 图片弹窗 **/
-    [data-demand-works="modalimg"] {
-        width: 980px;
-        height: 550px;
-        line-height: 550px;
-        text-align: center;
+        margin-bottom: 30px;
         img {
-            max-width: 100%;
-            max-height: 100%;
+            margin-top: -35px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid $white;
         }
     }
-    /**  文字弹窗  **/
-    [data-demand-works="modaltext"] {
-        padding: 0 50px;
+}
+[data-demand-works="username"] {
+    display: inline-block;
+    h2 {
+        font-size: 18px;
         color: $darkgray;
-        h1 {
-            margin-top: 22px;
-            margin-bottom: 60px;
-            font-weight: bold;
-            font-size: 28px;
-        }
-        p {
-            font-size: 18px;;
+        font-weight: bold;
+        margin-bottom: 10px;
+
+    }
+    p {
+        color: $darkgray;
+        i {
+            width: 12px;
+            height: 15px;
+            margin-right: 5px;
+            display: inline-block;
+            vertical-align: middle;
+            background-image: url("../../../images/pc/icon/icon_addresssm.png");
         }
     }
-    /***  音频弹窗  ***/
-
 }
 
+/** 图片弹窗 **/
+[data-demand-works="modalimg"] {
+    width: 980px;
+    height: 550px;
+    line-height: 550px;
+    text-align: center;
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+/**  文字弹窗  **/
+[data-demand-works="modaltext"] {
+    padding: 0 50px;
+    color: $darkgray;
+    h1 {
+        margin-top: 22px;
+        margin-bottom: 60px;
+        font-weight: bold;
+        font-size: 28px;
+    }
+    p {
+        font-size: 18px;;
+    }
+}
 /***  音频弹窗  ***/
 #demand_chooseworks-audio {
     .per-view-box {

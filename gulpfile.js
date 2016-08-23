@@ -26,7 +26,7 @@ var pathConfig = require('./gulpConfigPath.js');
 /*
  * default
  * */
-gulp.task('default', ['styles','stylesVs1','cleanCss','scripts'],function(){
+gulp.task('default', ['styles','stylesVs1','styles-wujinshenyu','cleanCss','scripts'],function(){
 
 
 });
@@ -35,7 +35,7 @@ gulp.task('default', ['styles','stylesVs1','cleanCss','scripts'],function(){
 gulp.task('server', function() {
     browserSync.init({
         server: {
-            baseDir: "./html"
+            baseDir: ["./html", "./zt/"]
         }
     });
 
@@ -48,12 +48,15 @@ gulp.task('server', function() {
 gulp.task("watch",['server'], function(){
     gulp.watch(pathConfig.src.sassSrc+'*.scss', ['styles']);
     gulp.watch(pathConfig.src.sassSrcVs1+'*.scss', ['stylesVs1']);
+    gulp.watch('./zt/wujinshenyu/scss/*.scss', ['styles-wujinshenyu']);
     gulp.watch(pathConfig.src.sassDest+'*.css', ['cleanCss']);
 
     gulp.watch(pathConfig.src.sassDestVs1+'*.css').on('change', reload);
     gulp.watch(pathConfig.src.minCss+'*.css', ['cleanCss']).on('change', reload);
     gulp.watch(pathConfig.src.jsSrc, ['scripts']).on('change', reload);
+    gulp.watch('./zt/wujinshenyu/src/*.css').on('change', reload);
     gulp.watch("./html/*.html").on('change', reload);
+    gulp.watch("./zt/wujinshenyu/*.html").on('change', reload);
 
 });
 
@@ -86,6 +89,16 @@ gulp.task('stylesVs1', function() {
     //提醒任务完成
     //.pipe(notify({ message: 'Styles task complete' }));
 });
+
+// 无尽神域专题任务
+gulp.task('styles-wujinshenyu', function() {
+    //编译sass
+    return sass('./zt/wujinshenyu/scss/*.scss')
+
+    //保存未压缩文件到我们指定的目录下面
+        .pipe(gulp.dest('./zt/wujinshenyu/css/'))
+});
+
 
 // cleanCss
 gulp.task('cleanCss', function() {

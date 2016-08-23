@@ -148,11 +148,32 @@
         </div>
     </div>
 </div>
+    <!-- 图片  -->
+    <div data-demand-works="modalbox" class="modal fade" style="display: none " id="demand_chooseworks-img">
+        <div data-demand-works="modal">
+            <div data-demand-works="modalbody">
+                <div data-demand-works="modalimg">
+                    <img src="static/images/pc/demand/1.jpg" alt="" />
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="static/js/pc/dest/jquery-1.11.3.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="static/js/pc/dest/bootstrap.min.js"></script>
 <script src="static/js/pc/jquery.form-master/jquery.form.js"></script>
 <script src="static/js/pc/dest/all.min.js"></script>
+<script>
+    $('body').delegate(".cartoon-deatil", "click", function (event) {
+        var url=$(this).children('img').attr('src');
+        $('#demand_chooseworks-img').modal();
+        $('[data-demand-works="modalimg"]').children('img').attr('src',url);
+    });
+</script>
 </body>
 </html>

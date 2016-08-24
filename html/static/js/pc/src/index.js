@@ -21,19 +21,19 @@ function scroll(obj)
         obj.scrollLeft = 0;
 }
 
-// window.onload = function() {
-//     var pic = document.getElementById("scrollobj");
-//     if(pic){
-//         var myRoll = setInterval(function(){
-//             scroll(document.getElementById('scrollobj'));
-//         }, 30);
-//         pic.onmouseover = function() { clearInterval(myRoll); };
-//         pic.onmouseout = function() {
-//             setInterval(
-//                 myRoll = setInterval(function(){
-//                     scroll(document.getElementById('scrollobj'));
-//                 }, 30)
-//             );
-//         };
-//     }
-// };
+ window.onload = function() {
+     var pic = document.getElementById("scrollobj");
+     if(pic){
+         var myRoll = setInterval(function(){
+             scroll(document.getElementById('scrollobj'));
+         }, 30);
+         pic.onmouseover = function() { clearInterval(myRoll); };
+         pic.onmouseout = function() {
+             setInterval(
+                 myRoll = setInterval(function(){
+                     scroll(document.getElementById('scrollobj'));
+                 }, 30)
+             );
+         };
+     }
+ };

@@ -341,7 +341,7 @@ $color-a7a099: #a7a099;
                                 &.topic-vote-num {
                                     position: absolute;
                                     right: -30px;
-                                    top: 0px;
+                                    top: 3px;
                                     font-weight: normal;
                                     margin-left: 10px;
                                     width: 20px;
@@ -504,5 +504,75 @@ $color-a7a099: #a7a099;
     }
     .panel-body {
         border-bottom: 1px solid $color-04;
+    }
+}
+
+//厉寒
+#topic-role{
+    .topic-role{
+        .topic-role-tit{
+            color: #ffa900;
+            padding: 20px 0 15px 0;
+            font-weight: bold;
+            a{
+                color: #ffa900;
+            }
+        }
+        .topic-role-jl{
+            float: left;
+            .topic-role-jlCon{
+                width: 570px;
+                height: 466px;
+                border: 1px solid #dddddd;
+                background: #ffffff;
+                padding: 20px;
+                p{
+                    margin-bottom: 15px;
+                    font-size: 14px;
+                    color: #80776D;
+                }
+            }
+        }
+        .topic-role-xw{
+            float: left;
+            margin-left: 30px;
+            .topic-role-xwCon{
+                width: 360px;
+                ul{
+                    margin-left: -54px;
+                    li{
+                        width: 80px;
+                        height:120px;
+                        float: left;
+                        margin-left: 54px;
+                        p{
+                            text-align: center;
+                            color: #171717;
+                            padding-top: 5px;
+                            a{
+                                color: #171717;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .topic-role-conTit{
+            .topic-role-tit{
+                padding-top: 0px;
+            }
+        }
+        .topic-role-con{
+            width: 100%;
+            height: 345px;
+            background: #ffffff;
+            padding: 20px;
+            border: 1px solid #dddddd;
+            p{
+                font-size: 14px;
+                color: #80776d;
+                margin-bottom: 38px;
+            }
+        }
     }
 }

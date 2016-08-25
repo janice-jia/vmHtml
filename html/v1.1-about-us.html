@@ -24,8 +24,8 @@
 <div class="about-us topMain">
     <div class="about-us-l">
         <ul>
-            <li class="about-us-hover"><a href="v1.1-about-us.html#about-us-con">关于我们</a></li>
-            <li><a href="v1.1-about-us.html#about-contactUs-con">联系我们</a></li>
+            <li><a href="v1.1-about-us.html#about-us-con">关于我们</a></li>
+            <li class="about-us-hover"><a href="v1.1-about-us.html#about-contactUs-con">联系我们</a></li>
             <li><a href="v1.1-about-us.html#about-recruitment-con">招聘信息</a></li>
             <li><a href="v1.1-about-us.html#about-web-terms">网站条款</a></li>
         </ul>
@@ -284,11 +284,23 @@
 
         // 点击锚点切换当前选中
         $('.about-us-l ul>li').click(function(){
+            $('.aboutCon').css('display','block');
             $('.about-us-l ul>li').each(function(){
                 $(this).removeClass('about-us-hover');
             });
             $(this).addClass('about-us-hover');
         });
+
+        //第一次进来左侧菜单高亮显示
+        var hoverIndex = $('.about-us-hover').index();
+        if(hoverIndex > 0){
+            $('.aboutCon').each(function(){
+                $(this).css('display','none');
+                if($(this).index() == hoverIndex){
+                    $(this).css('display','block');
+                }
+            });
+        }
     })();
 </script>
 

@@ -6,7 +6,6 @@ function loadHeaderFooter() {
     $("#regist-person").load("./_rperson.html");
     $("#regist-company").load("./_rcompany.html");
     $("#regist-studio").load("./_rstudio.html");
-    
 }
 loadHeaderFooter();
 

@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="static/js/pc/umeditor/themes/default/css/umeditor.css">
 
 
-
     <!--[if lt IE 9]>
     <script src="static/js/pc/dest/html5shiv.min.js"></script>
     <script src="static/js/pc/dest/respond.min.js"></script>
@@ -27,7 +26,11 @@
 <div id="tribe-cartoon">
     <div id="header" style="height: 50px;  "></div>
     <div class="container">
-        <span class="pull-right mt25 mr15 cur">编辑背景</span>
+        <div class="editbgbox pull-right mt25 mr15 cur">
+            <span>编辑背景</span>
+            <input id="editbg" type="file"/>
+        </div>
+
         <div class="cartoon-header">
             <div class="tribe-icon">
                 <img src="static/images/pc/logo_bg.png" alt="" class="img-thumbnail">
@@ -58,9 +61,9 @@
                 <li>漫画</li>
                 <li>视频</li>
                 <li class="selected-yellow">剧集</li>
-                <button type="button" class="btn-yellow-40" data-toggle="modal" data-target="#novel-model" >上传作品</button>
+                <button type="button" class="btn-yellow-40" data-toggle="modal" data-target="#novel-model">上传作品</button>
                 <!-- 弹出上传漫画修改弹窗 -->
-                <li class="exit" data-toggle="modal"  data-target="#tModal4" data-backdrop="static">编辑</li>
+                <li class="exit" data-toggle="modal" data-target="#tModal4" data-backdrop="static">编辑</li>
                 <!--  data-target="#novel-model"  -->
 
             </div>
@@ -116,7 +119,6 @@
             </ul>
             <div id="page"></div>
         </div>
-
         <div class="tribe-progress">
             <div id="progressBar">
                 <li>
@@ -200,7 +202,6 @@
                 </li>
             </div>
         </div>
-
         <div class="tribe-comments">
             <!--  发表评论  -->
             <div class="zcbl-comments">
@@ -282,8 +283,6 @@
             </div>
         </div>
     </div>
-
-
     <!-- 添加,编辑 剧集 模态框（Modal） -->
     <div class="modal fade" id="novel-model" aria-hidden="true">
         <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
@@ -297,8 +296,11 @@
                 <div class="form-group">
                     <div class="col-md-offset-1 ">
                         <!--style给定宽度可以影响编辑器的最终宽度-->
-                        <script type="text/plain" id="novel-content" name="novel-content" style="width:840px;height:444px;">
+                        <script type="text/plain" id="novel-content" name="novel-content"
+                                style="width:840px;height:444px;">
                          <p>将文字复制到这里</p>
+
+
                         </script>
                     </div>
                 </div>
@@ -309,8 +311,6 @@
         </div>
     </div>
     <!-- 添加,编辑 剧集（Modal） -->
-
-
     <!-- 申请开通 模态框（Modal） -->
     <div class="modal fade" id="myModal5" aria-hidden="true">
         <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
@@ -333,7 +333,6 @@
         </div>
     </div>
     <!-- 申请开通 （Modal） -->
-
     <!-- 模态框4（标题导航修改） -->
     <div class="modal fade" id="tModal4" aria-hidden="true">
         <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
@@ -389,8 +388,6 @@
         </div>
     </div>
     <!-- 模态框4（标题导航修改） -->
-
-
 </div>
 
 
@@ -411,71 +408,87 @@
 <script src="static/js/pc/dest/all.min.js"></script>
 
 <script>
-        $(function () {
-            /**
-             * 实例化编辑器代码
-             * ==============
-             */
-            UM.getEditor('novel-content', {
-                /* 传入配置参数,可配参数列表看umeditor.config.js */
-                toolbars: ['undo redo | bold italic underline strikethrough |  insertorderedlist insertunorderedlist | justifyleft justifycenter justifyright justifyjustify ']
-            });
+    $(function () {
+        /**
+         * 实例化编辑器代码
+         * ==============
+         */
+        UM.getEditor('novel-content', {
+            /* 传入配置参数,可配参数列表看umeditor.config.js */
+            toolbars: ['undo redo | bold italic underline strikethrough |  insertorderedlist insertunorderedlist | justifyleft justifycenter justifyright justifyjustify ']
+        });
 
 
-
-            /**
-             * 添加/编辑剧集 ajax提交
-             * =======
-             */
-            $('#tribe-add-novel-form').ajaxForm({
-                url: 'http://127.0.0.1/2.php',
-                beforeSubmit: function (arr) {
-                    if (!arr[0].value) {
-                        alert('请输入标题');
-                        return false;
-                    }
-
-                    if (!arr[1].value) {
-                        alert('请输入内容');
-                        return false;
-                    }
-
-                    console.log(arr)
-                    return true;
-                },
-                success: function (data) {
-
-                    // 申请成功,隐藏弹出层
-                    $('#novel-model').modal('hide');
-                    console.info('tribe-add-novel-form-success', data);
-                },
-                error: function (e) {
-                    // 申请失败,隐藏弹出层
-                    $('#novel-model').modal('hide');
-                    console.info('tribe-add-novel-form-error', e);
+        /**
+         * 添加/编辑剧集 ajax提交
+         * =======
+         */
+        $('#tribe-add-novel-form').ajaxForm({
+            url: 'http://127.0.0.1/2.php',
+            beforeSubmit: function (arr) {
+                if (!arr[0].value) {
+                    alert('请输入标题');
+                    return false;
                 }
-            });
 
-            /**
-             * 申请开通
-             * =======
-             */
-            $('#tribe-apply-form').ajaxForm({
-                url: 'http://127.0.0.1/2.php',
-                success: function (data) {
-
-                    // 申请成功,隐藏弹出层
-                    $('#myModal5').modal('hide');
-                    console.info('tribe-apply-success', data);
-                },
-                error: function (e) {
-                    // 申请失败,隐藏弹出层
-                    $('#myModal5').modal('hide');
-                    console.info('tribe-apple-error', e);
+                if (!arr[1].value) {
+                    alert('请输入内容');
+                    return false;
                 }
-            });
+
+                console.log(arr)
+                return true;
+            },
+            success: function (data) {
+
+                // 申请成功,隐藏弹出层
+                $('#novel-model').modal('hide');
+                console.info('tribe-add-novel-form-success', data);
+            },
+            error: function (e) {
+                // 申请失败,隐藏弹出层
+                $('#novel-model').modal('hide');
+                console.info('tribe-add-novel-form-error', e);
+            }
+        });
+
+        /**
+         * 申请开通
+         * =======
+         */
+        $('#tribe-apply-form').ajaxForm({
+            url: 'http://127.0.0.1/2.php',
+            success: function (data) {
+
+                // 申请成功,隐藏弹出层
+                $('#myModal5').modal('hide');
+                console.info('tribe-apply-success', data);
+            },
+            error: function (e) {
+                // 申请失败,隐藏弹出层
+                $('#myModal5').modal('hide');
+                console.info('tribe-apple-error', e);
+            }
+        });
+
+    });
+</script>
+<script>
+    $('body').delegate('#editbg input', 'change', function () {
+        var bgimg = $('#editbg input').val();
+        console.log($('#editbg input').val());
+        $.ajax({
+            type: "POST",
+            url: " ",
+            data: bgimg,
+            success: function(data){
+                $('#tribe-cartoon').css({
+                    backgroundImage:"url("+ data+")"
+                });
+            }
 
         });
+    });
 </script>
 </body>
 </html>

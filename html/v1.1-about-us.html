@@ -24,10 +24,10 @@
 <div class="about-us topMain">
     <div class="about-us-l">
         <ul>
-            <li><a href="v1.1-about-us.html#about-us-con">关于我们</a></li>
-            <li class="about-us-hover"><a href="v1.1-about-us.html#about-contactUs-con">联系我们</a></li>
-            <li><a href="v1.1-about-us.html#about-recruitment-con">招聘信息</a></li>
-            <li><a href="v1.1-about-us.html#about-web-terms">网站条款</a></li>
+            <li data-id="about-us-con" class="about-us-hover"><a href="javascript:;">关于我们</a></li>
+            <li data-id="about-contactUs-con" ><a href="javascript:;">联系我们</a></li>
+            <li data-id="about-recruitment-con"><a href="javascript:;">招聘信息</a></li>
+            <li data-id="about-web-terms"><a href="javascript:;">网站条款</a></li>
         </ul>
     </div>
     <div class="about-us-r">
@@ -282,25 +282,41 @@
         })
 
 
-        // 点击锚点切换当前选中
         $('.about-us-l ul>li').click(function(){
             $('.aboutCon').css('display','block');
-            $('.about-us-l ul>li').each(function(){
-                $(this).removeClass('about-us-hover');
-            });
+            $('.about-us-hover').removeClass('about-us-hover');
             $(this).addClass('about-us-hover');
+            $("#"+$(this).attr("data-id")).css('display','block').siblings().css('display','none');
+            switch($(this).index()){
+                case 0:
+                    $(document).attr('title','关于我们');
+                    break;
+                case 1:
+                    $(document).attr('title','联系我们');
+                    break;
+                case 2:
+                    $(document).attr('title','招聘信息');
+                    break;
+                case 3:
+                    $(document).attr('title','网站条款');
+                    break;
+                default:
+                    $(document).attr('title','关于我们');
+                    break;
+            }
         });
 
-        //第一次进来左侧菜单高亮显示
-        var hoverIndex = $('.about-us-hover').index();
-        if(hoverIndex > 0){
-            $('.aboutCon').each(function(){
-                $(this).css('display','none');
-                if($(this).index() == hoverIndex){
-                    $(this).css('display','block');
-                }
-            });
-        }
+//        //第一次进来左侧菜单高亮显示
+//        var hoverIndex = $('.about-us-hover').index();
+//        if(hoverIndex || hoverIndex==0){
+//            $('.aboutCon').each(function(){
+//                $(this).css('display','none');
+//                if($(this).index() == hoverIndex){
+//                    $(this).css('display','block');
+//                }
+//            });
+//
+//        }
     })();
 </script>
 

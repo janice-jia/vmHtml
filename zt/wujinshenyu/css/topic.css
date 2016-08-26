@@ -294,6 +294,30 @@
           height: 100%;
           width: 100%;
           top: 0; }
+      .topic-main .topic-main-con .topic-main-con-all .topic-tablebox {
+        text-align: center; }
+        .topic-main .topic-main-con .topic-main-con-all .topic-tablebox h2 {
+          margin-top: 20px;
+          font-size: 18px;
+          color: #171717; }
+        .topic-main .topic-main-con .topic-main-con-all .topic-tablebox table {
+          margin: 0 auto;
+          margin-top: 15px; }
+        .topic-main .topic-main-con .topic-main-con-all .topic-tablebox th span, .topic-main .topic-main-con .topic-main-con-all .topic-tablebox td span {
+          width: 90px;
+          height: 36px;
+          display: inline-block;
+          margin: 5px;
+          text-align: center;
+          line-height: 36px;
+          font-weight: normal; }
+        .topic-main .topic-main-con .topic-main-con-all .topic-tablebox td {
+          width: 90px;
+          height: 36px; }
+          .topic-main .topic-main-con .topic-main-con-all .topic-tablebox td span {
+            background-color: #f0ebe2; }
+        .topic-main .topic-main-con .topic-main-con-all .topic-tablebox th span {
+          background-color: #e5ba6c; }
       .topic-main .topic-main-con .topic-main-con-all .panel-heading {
         font-size: 18px;
         color: #171717; }

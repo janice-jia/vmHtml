@@ -54,7 +54,7 @@ gulp.task("watch",['server'], function(){
     gulp.watch(pathConfig.src.sassDestVs1+'*.css').on('change', reload);
     gulp.watch(pathConfig.src.minCss+'*.css', ['cleanCss']).on('change', reload);
     gulp.watch(pathConfig.src.jsSrc, ['scripts']).on('change', reload);
-    gulp.watch('./zt/wujinshenyu/src/*.css').on('change', reload);
+    gulp.watch('./zt/wujinshenyu/css/*.css').on('change', reload);
     gulp.watch("./html/*.html").on('change', reload);
     gulp.watch("./zt/wujinshenyu/*.html").on('change', reload);
 

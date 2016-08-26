@@ -432,6 +432,42 @@ $color-a7a099: #a7a099;
                     top: 0;
                 }
             }
+            .topic-tablebox {
+                text-align: center;
+                h2 {
+                    margin-top: 20px;
+                    font-size: 18px;
+                    color: $color-01;
+                }
+                table {
+                    margin: 0 auto;
+                    margin-top: 15px;
+                }
+                th, td {
+                    span {
+                        width: 90px;
+                        height: 36px;
+                        display: inline-block;
+                        margin: 5px;
+                        text-align: center;
+                        line-height: 36px;
+                        font-weight: normal;
+
+                    }
+                }
+                td {
+                    width: 90px;
+                    height: 36px;
+                    span {
+                        background-color: #f0ebe2;
+                    }
+                }
+                th {
+                    span {
+                        background-color: #e5ba6c;
+                    }
+                }
+            }
             //图片列表
             .panel-heading {
                 font-size: 18px;

@@ -164,7 +164,9 @@
         #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="content"] [data-websever="username"] {
           font-size: 16px;
           color: #171717;
-          margin-bottom: 10px; }
+          margin-bottom: 10px;
+          height: 20px;
+          overflow: hidden; }
         #severList [data-websever="severlist"] ul[data-websever="severlistul"] > li [data-websever="content"] [data-websever="usertab"] {
           margin-bottom: 10px;
           height: 22px;

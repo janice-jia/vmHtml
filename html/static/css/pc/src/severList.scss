@@ -228,6 +228,8 @@ $color-fb4444: #fb4444;
                         font-size: 16px;
                         color: $color-01;
                         margin-bottom: 10px;
+                        height: 20px;
+                        overflow: hidden;
                     }
                     [data-websever="usertab"] {
                         margin-bottom: 10px;

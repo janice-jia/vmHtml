@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>个人页面-上传音频作品2</title>
+    <link rel="stylesheet" href="static/css/pc/minCss/all.min.css" />
+
+    <!--IE浏览器运行最新的渲染模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="static/css/pc/minCss/bootstrap.min.css" />
+    <link rel="stylesheet" href="static/css/pc/minCss/all.min.css" />
+
+    <!--[if lt IE 9]>
+    <script src="static/js/pc/dest/html5shiv.min.js"></script>
+    <script src="static/js/pc/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div id="header" style="height: 95px;"></div>
+<div id="per-publish">
+    <div class="per-pub-artMenu">
+        <ul>
+            <li><a href="./personal-publish-pic.html" target="_blank">图片作品</a></li>
+            <li><a href="./personal-publish-video.html" target="_blank">视频作品</a></li>
+            <li class="per-pub-artMenu-hover"><a href="./personal-publish-audio.html"  target="_blank">音频作品</a></li>
+            <li><a href="./personal-publish-text.html"  target="_blank">文字作品</a></li>
+        </ul>
+    </div>
+    <div class="per-pub-video">
+        <form action="" class="form-horizontal zcbl-form-horizontal">
+            <div class="form-group zcbl-form-group">
+                <label for="audioName" class="col-sm-2 control-label zcbl-control-label">音乐名称：</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control zcbl-form-control" name="audioName" id="audioName" placeholder="20个汉字以内" />
+                </div>
+            </div>
+            <div class="form-group zcbl-form-group">
+                <label for="keyword" class="col-sm-2 control-label zcbl-control-label">关键词：</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control zcbl-form-control" name="keyword" id="keyword" placeholder="用回车/空格/逗号间隔不同关键词" />
+                </div>
+            </div>
+            <div class="form-group zcbl-form-group">
+                <label for="introduce" class="col-sm-2 control-label zcbl-control-label">作品介绍：</label>
+                <div class="col-sm-7">
+                    <textarea id="introduce" name="introduce" class="form-control zcbl-form-control" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="form-group zcbl-form-group">
+                <label class="col-sm-2 control-label zcbl-control-label">作品封面：</label>
+                <div class="col-sm-7">
+                    <div class="pub-file-img">
+                        <img src="static/images/pc/personal/pub-img.jpg" height="50" width="50" alt="" />
+                        <p class="pub-file-imgDel"><a href="#" target="_self"></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group zcbl-form-group">
+                <div class="per-pub-videoUpload">
+                    <div class="per-pub-vieroQR">
+                    </div>
+                    <div class="per-pub-videoBox">
+                        <img src="static/images/pc/personal/videoImg.jpg" height="403" width="525" alt="" />
+                        <div class="per-videoImg-edit">
+                            <!--<p class="per-pub-editFM"><a href="#" target="_blank">封面</a></p>-->
+                            <p class="per-pub-editDel"><a href="#" target="_blank"></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group zcbl-form-group">
+                <button type="submit" class="btn-yellow-50 right mb25 mt15">发布</button>
+            </div>
+        </form>
+    </div>
+
+
+</div>
+
+<div id="footer"></div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="static/js/pc/dest/jquery-1.11.3.min.js"></script>
+<script src="static/js/pc/dest/all.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="static/js/pc/dest/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<form data-regist="form" action="">
+    <div class="form-group has-success has-feedback">
+        <label for="regist_oneuser" class="sr-only">请输入您的用户昵称</label>
+        <span class="input-group-addon" data-regist="logusericon"></span>
+        <input class="form-control" id="regist_oneuser" name="regist_oneuser" placeholder="请输入您的用户昵称"/>
+        <span data-regist="helpword" class="help-block hide">*由字母加数字符号至少两种以上字符组成</span>
+    </div>
+    <!--- 通用注册信息 --->
+    <div class="form-group has-success has-feedback">
+        <label for="regist_pwd" class="sr-only">请设置密码</label>
+        <span class="input-group-addon" data-regist="logpwdicon"></span>
+        <input class="form-control" id="regist_pwd" name="regist_pwd" placeholder="请设置密码"/>
+        <span data-regist="helpword" class="help-block hide">*由字母加数字符号至少两种以上字符组成</span>
+    </div>
+    <div class="form-group has-success has-feedback">
+        <label for="regist_phone" class="sr-only">请输入手机号码</label>
+        <span class="input-group-addon" data-regist="regphoneicon"></span>
+        <button type="button" disabled="disabled" id="recruit_getcode">点击获取验证码</button>
+        <input class="form-control" id="regist_phone" name="regist_phone" placeholder="请输入手机号码"/>
+        <span data-regist="helpword" class="help-block hide">*由字母加数字符号至少两种以上字符组成</span>
+    </div>
+    <div class="form-group has-success has-feedback">
+        <label for="regist_phoneKey" class="sr-only">请输入手机验证码</label>
+        <span class="input-group-addon" data-regist="regkeyicon"></span>
+        <button type="button" disabled="disabled" id="recruit_fxyk">FXYK</button>
+        <input class="form-control" id="regist_phoneKey" name="regist_key" placeholder="请输入手机验证码"/>
+        <span data-regist="helpword" class="help-block hide">*由字母加数字符号至少两种以上字符组成</span>
+    </div>
+    <!-- 同意协议 -->
+    <div data-regist="agreement">
+        <label><input type="checkbox" name="agreement"/>我已经阅读并同意<a href="#">《众创部落协议》</a></label>
+    </div>
+    <button type="button" id="regist_submit" data-regist="regist_submit" class="btn-block ">立即注册</button>
+    <!--弹层注册 需去掉 a href属性 动画所需-->
+    <div data-regist="haveAccount"><a id="tologin" href="login.html">已有账号</a></div>
+</form>

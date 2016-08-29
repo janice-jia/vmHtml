@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>部落 - 剧本</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- Bootstrap -->
+    <link href="static/css/pc/minCss/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="static/css/pc/minCss/all.min.css"/>
+    <link rel="stylesheet" href="static/css/pc/destVersion1.1/tribe-show.css"/>
+
+    <!--编辑器-->
+    <link rel="stylesheet" href="static/js/pc/umeditor/themes/default/css/umeditor.css">
+
+
+
+    <!--[if lt IE 9]>
+    <script src="static/js/pc/dest/html5shiv.min.js"></script>
+    <script src="static/js/pc/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+
+<div id="tribe-cartoon">
+    <div id="header" style="height: 50px;  "></div>
+    <div class="container">
+        <span class="pull-right mt25 mr15 cur">编辑背景</span>
+        <div class="cartoon-header">
+            <div class="tribe-icon">
+                <img src="static/images/pc/logo_bg.png" alt="" class="img-thumbnail">
+                <a class="tribe-edit-icon" title="编辑图标"></a>
+            </div>
+            <div class="tools-bar">
+                <li class="btn-yellow-40">+ 加入部落</li>
+                <li>赞</li>
+                <li class="badge">100</li>
+                <li>vip</li>
+            </div>
+            <div class="tribe-info">
+                <span>孙悟空</span>
+                <span>高中的时候上课无聊和同桌聊天，他慷慨激昂的给我讲述着他好几年前和小伙伴去偷别人家的废铁，然后卖钱买冰棍的故事，我才发现原来我姥姥家后院丢的废铁都是他偷的。</span>
+                <div>酋长 : <span class="cur">隔壁老王</span></div>
+            </div>
+            <div class="tribe-honor">
+                <li><span>粉丝:</span><span>100</span></li>
+                <li><span>赞&emsp;: </span><span>1000</span></li>
+                <li><span>诞生: </span><span>200</span></li>
+            </div>
+            <h1 class="tribe-bias"><span class="tribe-arrow"></span></h1>
+            <span class="tribe-start">★</span>
+        </div>
+        <div class="cartoon-content">
+            <div class="content-nav">
+                <li class="selected-yellow">标签一</li>
+                <li>标签二</li>
+                <li>标签三</li>
+                <li>标签四</li>
+                <li data-toggle="modal" data-target="#novel-model" data-backdrop="static">编辑</li>
+            </div>
+           <div class="content-null">
+
+               <div class="content-null-add">
+                   <b></b>
+                   <p>上传图片</p>
+                   <input type="file"/>
+               </div>
+           </div>
+        </div>
+
+        <div class="tribe-progress">
+            <div id="progressBar">
+                <li>
+                    <div class="progress-icon">
+                        <i></i>
+                        <b></b>
+                        <span class="timeline-before">2016.07.25启程</span>
+                        <div class="progress-msg">
+                            <button class="btn-yellow-40"> 我要申请</button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="progress-icon ">
+                        <i></i>
+                        <b></b>
+                        <span class="timeline-after">漫画</span>
+                        <div class="progress-msg">
+                            <button class="btn-yellow-40"> 我要申请</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="progress-finish">
+                    <div class="progress-icon">
+                        <i></i>
+                        <b></b>
+                        <span class="timeline-before">动画片</span>
+                        <div class="progress-msg">
+                            <button class="btn-yellow-40"> 我要申请</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="progress-finish">
+                    <div class="progress-icon">
+                        <i></i>
+                        <b></b>
+                        <span class="timeline-after">游戏</span>
+                        <div class="progress-msg">
+                            <div>
+                                <p>游戏</p>
+                                <p>2016.7.25启程</p>
+                                <p>2016.7.25启程</p>
+                                <p>2016.7.25启程</p>
+                                <p>2016.7.25启程</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="progress-icon">
+                        <i></i>
+                        <b></b>
+                        <span class="timeline-before">影视剧</span>
+                        <div class="progress-msg">
+                            <button class="btn-yellow-40"> 我要申请</button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="progress-icon">
+                        <i></i>
+                        <b></b>
+                        <span class="timeline-after">大电影</span>
+                        <div class="progress-msg">
+                            <button class="btn-yellow-40"> 我要申请</button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="progress-icon">
+                        <i></i>
+                        <b></b>
+                        <span class="timeline-before">衍生品</span>
+                        <div class="progress-msg">
+                            <button class="btn-yellow-40"> 我要申请</button>
+                        </div>
+                    </div>
+
+                </li>
+            </div>
+        </div>
+
+        <div class="tribe-comments">
+            <!--  发表评论  -->
+            <div class="zcbl-comments">
+                <div data-demdet="addcomment">
+                    <p>评论（<span>35</span>）</p>
+                    <div data-demdet="texeareabox">
+                        <textarea name="demdet_addcomment"></textarea>
+                        <span>0/140</span>
+                    </div>
+                    <div data-demdet="btn">
+                        <button data-btn="orbgbtn" id="demdet_publish">发布</button>
+                    </div>
+                </div>
+                <!--  评论列表  -->
+                <div data-demdet="commentContent">
+                    <div data-demdet="content">
+                        <div data-demdet="contentLeft">
+                            <img src="static/images/pc/demand/1.jpg" alt="">
+                        </div>
+                        <div data-demdet="contentRight">
+                            <ul>
+                                <li data-demdet="conhead"><h2 data-demdet="username">ABC</h2>
+                                    <p>2016.5.13 13:00</p></li>
+                                <li data-demdet="conbody">评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容</li>
+                                <li data-demdet="confoot"><a href="#" data-demdet="answerbtn"><b></b>回复</a>|
+                                    <button data-demdet="answerdel">删除</button>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div data-demdet="content">
+                        <div data-demdet="contentLeft">
+                            <img src="static/images/pc/demand/1.jpg" alt="">
+                        </div>
+                        <div data-demdet="contentRight">
+                            <ul>
+                                <li data-demdet="conhead"><h2 data-demdet="username">用户名用户名</h2>
+                                    <div data-demdet="answer">回复:@<span>大小姐</span></div>
+                                    <p>2016.5.13 7:31</p></li>
+                                <li data-demdet="conbody">
+                                    评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容@ABC
+                                </li>
+                                <li data-demdet="confoot"><a href="#" data-demdet="answerbtn"><b></b>回复</a>|
+                                    <button data-demdet="answerdel">删除</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div data-demdet="content">
+                        <div data-demdet="contentLeft">
+                            <img src="static/images/pc/demand/1.jpg" alt="">
+                        </div>
+                        <div data-demdet="contentRight">
+                            <ul>
+                                <li data-demdet="conhead"><h2 data-demdet="username">大小姐</h2>
+                                    <p>2016.5.13 7:31</p></li>
+                                <li data-demdet="conbody">评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容</li>
+                                <li data-demdet="confoot"><a href="#" data-demdet="answerbtn"><b></b>回复</a>|
+                                    <button data-demdet="answerdel">删除</button>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--评论分页-->
+            <div class="zcbl-page">
+                <ul>
+                    <li class="zcbl-thisPage">1</li>
+                    <li class="zcbl-defaultPage"><a href="#" target="_blank">2</a></li>
+                    <li class="zcbl-defaultPage"><a href="#" target="_blank">3</a></li>
+                    <li class="zcbl-defaultPage"><a href="#" target="_blank">4</a></li>
+                    <li class="zcbl-defaultPage"><a href="#" target="_blank">…</a></li>
+                    <li class="zcbl-defaultPage"><a href="#" target="_blank">7</a></li>
+                    <li class="zcbl-nextPage"><a href="#" target="_blank">&nbsp;</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 添加,编辑 剧集 模态框（Modal） -->
+    <div class="modal fade" id="novel-model" aria-hidden="true">
+        <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+        <div class="tribe-novel-model">
+            <form id="tribe-add-novel-form" method="post" class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="novel-title" class="mt5 controle-label">标题:</label>
+                    <input type="text" id="novel-title" name="novel-title"/>
+
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-1 ">
+                        <!--style给定宽度可以影响编辑器的最终宽度-->
+                        <script type="text/plain" id="novel-content" name="novel-content" style="width:840px;height:444px;">
+                         <p>将文字复制到这里</p>
+                        </script>
+                    </div>
+                </div>
+                <div class="col-sm-offset-5 mt40">
+                    <button type="submit" class="btn btn-yellow-50">提交</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- 添加,编辑 剧集（Modal） -->
+
+
+    <!-- 申请开通 模态框（Modal） -->
+    <div class="modal fade" id="myModal5" aria-hidden="true">
+        <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+        <div class="zcbl-modal-1 tribe-apply-model">
+            <form id="tribe-apply-form" method="post">
+                <div class="checkbox">
+                    <label><input type="radio" name="edit-tribe-type" value="1" checked/>漫画&emsp;</label>
+                    <label><input type="radio" name="edit-tribe-type" value="2"/>动画片</label>
+                    <label><input type="radio" name="edit-tribe-type" value="3"/>游戏&emsp;</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="radio" name="edit-tribe-type" value="1" checked/>影视剧</label>
+                    <label><input type="radio" name="edit-tribe-type" value="2"/>大电影</label>
+                    <label><input type="radio" name="edit-tribe-type" value="3"/>衍生品</label>
+                </div>
+                <div class="col-sm-offset-5 mt40">
+                    <button type="submit" class="btn btn-yellow-50">提交</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- 申请开通 （Modal） -->
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="static/js/pc/dest/jquery-1.11.3.min.js"></script>
+
+<!-- 配置文件 -->
+<script type="text/javascript" src="static/js/pc/umeditor/umeditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="static/js/pc/umeditor/umeditor.js"></script>
+<!-- 语言包文件 -->
+<script type="text/javascript" src="static/js/pc/umeditor/lang/zh-cn/zh-cn.js"></script>
+
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="static/js/pc/dest/bootstrap.min.js"></script>
+<script src="static/js/pc/jquery.form-master/jquery.form.js"></script>
+<script src="static/js/pc/dest/all.min.js"></script>
+
+<script>
+    $(function () {
+        /**
+         * 实例化编辑器代码
+         * ==============
+         */
+        UM.getEditor('novel-content', {
+            /* 传入配置参数,可配参数列表看umeditor.config.js */
+            toolbars: ['undo redo | bold italic underline strikethrough |  insertorderedlist insertunorderedlist | justifyleft justifycenter justifyright justifyjustify ']
+        });
+
+
+
+        /**
+         * 添加/编辑剧集 ajax提交
+         * =======
+         */
+        $('#tribe-add-novel-form').ajaxForm({
+            url: 'http://127.0.0.1/2.php',
+            beforeSubmit: function (arr) {
+                if (!arr[0].value) {
+                    alert('请输入标题');
+                    return false;
+                }
+
+                if (!arr[1].value) {
+                    alert('请输入内容');
+                    return false;
+                }
+
+                console.log(arr)
+                return true;
+            },
+            success: function (data) {
+
+                // 申请成功,隐藏弹出层
+                $('#novel-model').modal('hide');
+                console.info('tribe-add-novel-form-success', data);
+            },
+            error: function (e) {
+                // 申请失败,隐藏弹出层
+                $('#novel-model').modal('hide');
+                console.info('tribe-add-novel-form-error', e);
+            }
+        });
+
+        /**
+         * 申请开通
+         * =======
+         */
+        $('#tribe-apply-form').ajaxForm({
+            url: 'http://127.0.0.1/2.php',
+            success: function (data) {
+
+                // 申请成功,隐藏弹出层
+                $('#myModal5').modal('hide');
+                console.info('tribe-apply-success', data);
+            },
+            error: function (e) {
+                // 申请失败,隐藏弹出层
+                $('#myModal5').modal('hide');
+                console.info('tribe-apple-error', e);
+            }
+        });
+
+    });
+</script>
+</body>
+</html>

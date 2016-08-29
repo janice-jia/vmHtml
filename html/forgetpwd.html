@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <!----  56  ------>
+    <title>忘记密码</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap -->
+    <link href="static/css/pc/minCss/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="static/css/pc/minCss/all.min.css" />
+
+    <!--[if lt IE 9]>
+    <script src="static/js/pc/dest/html5shiv.min.js"></script>
+    <script src="static/js/pc/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header></header>
+
+<div id="fgpwd">
+    <div class="container">
+        <ul data-fgpwd="stepul">
+            <li data-fgpwd="cur">
+                <b>1</b>
+                <p>填写用户名</p>
+            </li>
+            <li>
+                <b><i></i>2</b>
+                <p>验证身份</p>
+            </li>
+            <li>
+                <b><i></i>3</b>
+                <p>设置新密码</p>
+            </li>
+            <li>
+                <b><i></i>4</b>
+                <p>完成</p>
+            </li>
+        </ul>
+        <!----1-3 过程 ---->
+        <div data-fgpwd="form_process">
+            <!----- 1： 添加用户名 ------->
+            <form id="fgpwd_addusername" style="display: block" action="">
+                <div class="form-group has-success has-feedback">
+                    <label for="fgpwd_adduname" class="sr-only">UserName/PhoneNumber</label>
+                    <span class="input-group-addon" data-fgpwd="fgunameicon"></span>
+                    <input class="form-control" id="fgpwd_adduname" name="fgpwd_adduname" placeholder="请填写您的手机号/用户名">
+                    <span data-fgpd="helpword" class="help-block">*由字母加数字符号至少两种以上字符组成</span>
+                </div>
+                <div class="form-group has-success has-feedback">
+                    <label for="fgpwd_verify" class="sr-only">Verification code</label>
+                    <span class="input-group-addon" data-fgpwd="fgverifyicon"></span>
+                    <input class="form-control" id="fgpwd_verify" name="fgpwd_verify" placeholder="请输入验证码" />
+                    <span data-fgpd="helpword" class="help-block">*由字母加数字符号至少两种以上字符组成</span>
+                </div>
+                <div data-fgpwd="randomCode">
+                    <div id="fgpwd_randomCode"></div><span id="fgpwd_changeCode">看不清？换一张</span>
+                </div>
+                <p data-fgpwd="nextBox">
+                    <button type="button" id="fgpwd_addNextStep" data-fgpwd="nextStep" class="btn-block ">下一步</button>
+                </p>
+
+            </form>
+
+            <!----- 2： 验证身份 ------->
+            <form id="fgpwd_authentication" action="">
+                <div class="form-group has-success has-feedback">
+                    <label for="fgpwd_uname" class="sr-only">UserName/PhoneNumber</label>
+                    <span class="input-group-addon" data-fgpwd="fgunameicon"></span>
+                    <input class="form-control" id="fgpwd_uname" name="fgpwd_uname" placeholder="云消雾散的天" />
+                </div>
+                <div class="form-group has-success has-feedback">
+                    <label for="fgpwd_phone" class="sr-only">phone</label>
+                    <span class="input-group-addon" data-fgpwd="fgpwd_phoneicon"></span>
+                    <input class="form-control" id="fgpwd_phone" name="fgpwd_phone" placeholder="157*****179" />
+                </div>
+                <div class="form-group has-success has-feedback">
+                    <label for="fgpwd_phoneKey" class="sr-only">phoneCode</label>
+                    <span class="input-group-addon" data-fgpwd="fgpwd_phoneKeyicon"></span>
+                    <span class="input-group-addon" data-fgpwd="fgphonekeyget" id="fgpwd_phoneKeyGet">获取验证码</span>
+                    <input class="form-control" id="fgpwd_phoneKey" name="fgpwd_phoneKey" placeholder="请输入手机验证码" />
+                    <span data-fgpd="helpword" class="help-block">*由字母加数字符号至少两种以上字符组成</span>
+
+                </div>
+                <p data-fgpwd="nextBox">
+                    <button type="button" id="fgpwd_verNextStep" data-fgpwd="nextStep" class="btn-block ">下一步</button>
+                </p>
+
+            </form>
+
+            <!----- 3： 设置新密码 ------->
+            <form id="fgpwd_newpwd" action="">
+                <div class="form-group has-success has-feedback">
+                    <label for="fgpwd_addnewpwd" class="sr-only">UserName/PhoneNumber</label>
+                    <span class="input-group-addon" data-fgpwd="fgpwd_addnewpwdicon"></span>
+                    <input class="form-control" id="fgpwd_addnewpwd" name="fgpwd_addnewpwd" placeholder="新的登录密码" />
+                </div>
+                <div class="form-group has-success has-feedback">
+                    <label for="fgpwd_conpwd" class="sr-only">Verification code</label>
+                    <span class="input-group-addon" data-fgpwd="fgpwd_addnewpwdicon"></span>
+                    <input class="form-control" id="fgpwd_conpwd" name="fgpwd_conpwd" placeholder="确认新密码" />
+                    <span data-fgpd="helpword" class="help-block">*两次密码不一致</span>
+                </div>
+                <p data-fgpwd="nextBox">
+                    <button type="button" id="fgpwd_btnfinish" data-fgpwd="finish" class="btn-block ">完成</button>
+                </p>
+
+            </form>
+
+        </div>
+
+
+        <!----- 4：完成  ------>
+        <div data-fgpwd="form_finish">
+            <h2>找回密码</h2>
+            <h1>新密码设置成功</h1>
+            <p><span id="fgpwd_countdown">3</span>秒后自动返回首页</p>
+        </div>
+    </div>
+
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="static/js/pc/dest/jquery-1.11.3.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="static/js/pc/dest/bootstrap.min.js"></script>
+<script src="static/js/pc/dest/all.min.js"></script>
+</body>
+</html>

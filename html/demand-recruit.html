@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>征集作品</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap -->
+    <link href="static/css/pc/minCss/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="static/css/pc/minCss/all.min.css" />
+
+    <!--[if lt IE 9]>
+    <script src="static/js/pc/dest/html5shiv.min.js"></script>
+    <script src="static/js/pc/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="header" ></div>
+<div id="recruit">
+    <div class="container">
+
+        <h2>发布需求</h2>
+        <div data-recuit="type" class="form-group">
+            <p class="col-sm-2 control-label"><span data-form="must"></span>选择类型：</p>
+            <ul class="nav nav-tabs col-sm-10" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#recruit_collectionwork" aria-controls="recruit_collectionwork" role="tab"
+                                                          data-toggle="tab">征集作品</a>
+                </li>
+                <li role="presentation">
+                    <a href="#recruit_collectionperson" aria-controls="recruit_collectionperson" role="tab"
+                                           data-toggle="tab">招募创作人</a>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-content">
+            <form role="tabpanel" class="form-horizontal tab-pane active" id="recruit_collectionwork">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label"><span data-form="must"></span>需求名称：</label>
+                    <div class="col-sm-10">
+                        <input type="password" name="rec_name" class="form-control" Provholder="5至20个字" />
+                    </div>
+                </div>
+
+                <div class="form-group" data-recuit="rec_works">
+                    <label class="col-sm-2 control-label"><span data-form="must"></span>作品类型：</label>
+                    <div class="col-sm-10" id="regist_works">
+                        <div >
+                            <select name="rec_works0">
+                                <option value="1">小说|文学副本</option>
+                                <option value="2">诗歌|散文</option>
+                                <option value="3">搞笑|段子</option>
+                            </select><button data-recuit="adddate" type="button"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label"><span data-form="must"></span>酬金：</label>
+                    <div class="col-sm-3">
+                        <input class="form-control" name="rec_paid" />
+                    </div>
+                    <p>元</p>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">保证金：</label>
+                    <div class="col-sm-3">
+                        <input class="form-control" name="rec_deposit" />
+                    </div>
+                    <p>元（需托管在平台，选稿后交付创作人）</p>
+                </div>
+
+                <div class="form-group" data-recuit="addsele">
+                    <label class="col-sm-2 control-label">需求地点：</label>
+                    <div class="col-sm-10">
+                        <div data-recuit="seldiv">
+                            <select name="rec_Prov">
+                                <option value="1">北京</option>
+                                <option value="2">承德</option>
+                                <option value="3">上海</option>
+                                <option value="4">天津</option>
+                            </select>
+                            <select name="rec_City">
+                                <option value="1">北京</option>
+                                <option value="2">承德</option>
+                                <option value="3">上海</option>
+                                <option value="4">天津</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="form-group" data-regist="date">
+                    <label class="col-sm-2 control-label"><span data-form="must"></span>截止日期：</label>
+                    <div class="col-sm-3">
+                        <input class="form-control" name="rec_date" Provholder="2016-6-16" />
+                    </div>
+                    <p><span></span></p>
+                </div>
+
+                <div class="form-group"  data-recuit="textarea">
+                    <label class="col-sm-2 control-label"><span data-form="must"></span>需求详情：</label>
+                    <div class="col-sm-10" data-recuit="textarea">
+                        <textarea name="rec_details" Provholder="10-800个字"></textarea>
+                    </div>
+                </div>
+
+                <div data-recuit="submit" data-toggle="#recruit_modelwork">
+                    <button type="button" data-btn="tranbgbtn"  onclick="javascript:window.history.back(-1);">取消</button>
+                    <button type="button" data-toggle="modal" data-target="#recruit_modelwork" data-btn="orbgbtn">发布</button>
+                </div>
+
+            </form>
+            <form role="tabpanel" class="form-horizontal tab-pane" id="recruit_collectionperson">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label"><span data-form="must"></span>需求名称：</label>
+                    <div class="col-sm-10">
+                        <input type="password" name="rec_name" class="form-control" Provholder="5至20个字" />
+                    </div>
+                </div>
+
+
+                <div class="form-group" data-recuit="rec_skills">
+                    <label class="col-sm-2 control-label"><span data-form="must"></span>所需技能：</label>
+                    <div class="col-sm-10" id="regist_skills">
+                        <div>
+                            <!--<input type="text" Provholder="美术" name="rec_skills" /><button data-recuit="addskill" type="button"></button>-->
+                            <select name="rec_skills">
+                                <option value="1">美术</option>
+                                <option value="2">音乐</option>
+                                <option value="3">计算机</option>
+                            </select><button data-recuit="addskill" type="button"></button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label"><span data-form="must"></span>酬金：</label>
+                    <div class="col-sm-3">
+                        <input class="form-control" name="rec_paid" />
+                    </div>
+                    <p>元</p>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">保证金</label>
+                    <div class="col-sm-3">
+                        <input class="form-control" name="rec_deposit" />
+                    </div>
+                    <p>元（需托管在平台，选稿后交付创作人）</p>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label"><span data-form="must"></span>需求地点：</label>
+                    <div class="col-sm-10">
+                        <div  data-recuit="seldiv">
+                            <select name="rec_Prov">
+                                <option value="1">北京</option>
+                                <option value="2">承德</option>
+                                <option value="3">上海</option>
+                                <option value="4">天津</option>
+                            </select>
+                            <select name="rec_City">
+                                <option value="1">北京</option>
+                                <option value="2">承德</option>
+                                <option value="3">上海</option>
+                                <option value="4">天津</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="form-group" data-regist="date">
+                    <label class="col-sm-2 control-label"><span data-form="must"></span>截止日期：</label>
+                    <div class="col-sm-3">
+                        <input class="form-control" name="rec_date" Provholder="2016-6-16" />
+                    </div>
+                    <p><span></span></p>
+                </div>
+
+                <div class="form-group"  data-recuit="textarea">
+                    <label class="col-sm-2 control-label"><span data-form="must"></span>需求详情：</label>
+                    <div class="col-sm-10">
+                        <textarea name="rec_details" Provholder="10-800个字"></textarea>
+                    </div>
+                </div>
+                <div data-recuit="submit" data-toggle="#recruit_modelperson">
+                    <button type="button" data-btn="tranbgbtn"  onclick="javascript:window.history.back(-1);">取消</button>
+                    <button type="button"  data-toggle="modal" data-target="#recruit_modelperson"  data-btn="orbgbtn">发布</button>
+
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+    <!--  摸态框  -->
+
+    <div class="modal fade" data-backdrop="static" id="recruit_modelwork"  aria-hidden="true">
+        <div class="zcbl-modal-1">
+            <h2 class="zcbl-modal-success">需求发布成功！</h2>
+            <p class="zcbl-modal-desc">3秒后自动跳转到服务页面</p>
+        </div>
+    </div>
+
+
+    <div class="modal fade" data-backdrop="static" id="recruit_modelperson"  aria-hidden="true">
+        <div class="zcbl-modal-3 zcbl-modalHei285">
+            <div class="zcbl-modal-tit">
+                需求发布成功
+            </div>
+            <div class="zcbl-modal-3-con">
+                <p class="zcbl-modal-3-desc">
+                    需求发布成功！付款成功后需求才会展示给其他用户。创作者完成需求后，需要您的确认平台才会打款给用户。
+                </p>
+            </div>
+            <div class="clear"></div>
+            <div class="zcbl-popupBtn">
+                <button type="submit" class="btn-yellow-50 left mr25" data-dismiss="modal">现在付款</button>
+                <button type="button" class="zcbl-modal-cancel" data-dismiss="modal">稍后付款</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="static/js/pc/dest/jquery-1.11.3.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="static/js/pc/dest/bootstrap.min.js"></script>
+<script src="static/js/pc/dest/all.min.js"></script>
+<script>
+    /***  需求作品  ***/
+    $('#regist_works').delegate("[data-recuit='adddate']", "click", function (event) {
+        $(event.target).attr({"data-recuit": "deldate"});
+        var select = "<div><b></b><select name='rec_works1'><option value ='1'>小说|文学副本</option><option selected value ='2'>诗歌|散文</option><option value ='3'>搞笑|段子</option></select><button data-recuit='adddate' type='button'></button></div>";
+        $("#regist_works").append(select);
+    });
+    $('#regist_works').delegate('[data-recuit="deldate"]', "click", function (event) {
+        $(event.target).parent().remove();
+    });
+
+    /** 需求技能 **/
+
+    $('#regist_skills').delegate("[data-recuit='addskill']", "click", function (event) {
+        $(event.target).attr({"data-recuit": "delskill"});
+        //var select = '<div><input type="text" placeholder="美术" name="rec_skills"><button data-recuit="addskill" type="button"></button></div>';
+        var select='<div><select name="rec_skills"><option value ="1">美术</option><option value ="2">音乐</option><option value ="3">计算机</option></select><button data-recuit="addskill" type="button"></button></div>';
+        $("#regist_skills").append(select);
+    });
+    $('#regist_skills').delegate('[data-recuit="delskill"]', "click", function (event) {
+        $(event.target).parent().remove();
+    });
+</script>
+
+</body>
+</html>

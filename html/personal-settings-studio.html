@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>个人页面-账号设置-工作室实名认证</title>
+    <link rel="stylesheet" href="static/css/pc/minCss/all.min.css" />
+
+    <!--IE浏览器运行最新的渲染模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="static/css/pc/minCss/bootstrap.min.css" />
+    <link rel="stylesheet" href="static/css/pc/minCss/all.min.css" />
+    <link rel="stylesheet" href="./static/ickeckSkins/minimal/grey.css" />
+    <link rel="stylesheet" href="./static/js/pc/jQueryCalendar/calendar.css">
+    <link rel="stylesheet" href="./static/js/pc/tagsInput/jquery.tagsinput.css">
+
+    <!--[if lt IE 9]>
+    <script src="static/js/pc/dest/html5shiv.min.js"></script>
+    <script src="static/js/pc/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div id="header" style="height: 95px;"></div>
+<div id="per-settings">
+    <div class="per-setTit">
+        账号设置
+    </div>
+    <!--个人资料 start-->
+    <div class="per-setItem" id="per-aboutMe-down">
+        <div class="per-itemTit">
+            <ul>
+                <li class="left">个人资料</li>
+                <li class="left ml80">用户昵称/用户名</li>
+                <li class="right per-setEdit"><a href="javascript:;" target="_self" onclick="showHideSet('per-aboutMe')">编辑</a></li>
+            </ul>
+            <div class="clear per-setLine"></div>
+        </div>
+    </div>
+    <div class="per-setItem per-hide" id="per-aboutMe-up">
+        <div class="per-itemTit">
+            <ul>
+                <li class="left">个人资料</li>
+                <li class="right per-set-up"><a href="javascript:;"  target="_self" onclick="showHideSet('per-aboutMe')">收起</a></li>
+            </ul>
+            <div class="clear per-setLine-dashed"></div>
+        </div>
+        <div class="per-itemCon">
+            <form action="" class="form-horizontal">
+                <div class="form-group per-itemGroup">
+                    <label for="uName" class="col-sm-2 control-label per-set-label">用户名：</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control per-set-control" name="uName" id="uName" placeholder="14个字" />
+                    </div>
+                    <p class="per-setControlMsg">*由字母加数字符号至少两种以上字符组成</p>
+                </div>
+                <div class="form-group per-itemGroup">
+                    <label for="uName" class="col-sm-2 control-label per-set-label">性别：</label>
+                    <div class="col-sm-9 mt10" id="sexType">
+                        <label class="radio-inline">
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+                            <span>男</span>
+                        </label>
+                        <label class="radio-inline per-radio-inline">
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+                            <span>女</span>
+                        </label>
+                        <label class="radio-inline per-radio-inline">
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" />
+                            <span>保密</span>
+                        </label>
+                    </div>
+                    <p class="per-setControlMsg">*由字母加数字符号至少两种以上字符组成</p>
+                </div>
+                <div class="form-group per-itemGroup">
+                    <label for="uName" class="col-sm-2 control-label per-set-label">个性域名：</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control per-set-control" name="uName" id="uName" placeholder="http://" />
+                    </div>
+                    <p class="per-setControlMsg">*由字母加数字符号至少两种以上字符组成</p>
+                </div>
+                <div class="form-group per-itemGroup">
+                    <label for="uName" class="col-sm-2 control-label per-set-label">生日：</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control per-set-control" name="birthday" id="birthday" />
+                        <div id="birthdayBox" class="ml15"></div>
+                    </div>
+                    <p class="per-setControlMsg">*由字母加数字符号至少两种以上字符组成</p>
+                </div>
+                <div class="form-group per-itemGroup">
+                    <label for="uName" class="col-sm-2 control-label per-set-label">国籍：</label>
+                    <div class="col-sm-6">
+                        <select class="form-control per-set-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <p class="per-setControlMsg">*由字母加数字符号至少两种以上字符组成</p>
+                </div>
+                <div class="form-group per-itemGroup">
+                    <label for="uName" class="col-sm-2 control-label per-set-label">所在地区：</label>
+                    <div class="col-sm-3">
+                        <select class="form-control per-set-control">
+                            <option>请选择省份</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-3">
+                        <select class="form-control per-set-control">
+                            <option>请选择城市</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <p class="per-setControlMsg">*由字母加数字符号至少两种以上字符组成</p>
+                </div>
+                <div class="form-group">
+                    <label for="uName" class="col-sm-2 control-label per-set-label">个人简介：</label>
+                    <div class="col-sm-8">
+                        <textarea class="form-control per-set-textarea" rows="3"></textarea>
+                    </div>
+                    <p class="per-setControlMsg">*由字母加数字符号至少两种以上字符组成</p>
+                </div>
+                <div class="form-group per-itemGroup">
+                    <label for="uName" class="col-sm-2 control-label per-set-label">所在行业：</label>
+                    <div class="col-sm-6">
+                        <select class="form-control per-set-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <p class="per-setControlMsg">*由字母加数字符号至少两种以上字符组成</p>
+                </div>
+                <div class="form-group per-itemGroup">
+                    <label for="tag1" class="col-sm-2 control-label per-set-label">职业标签：</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control per-set-control" name="uName" id="tag1" placeholder="用回车/空格不同职业标签(每个标签最多7个字)" />
+                    </div>
+                    <p class="per-setControlMsg">*由字母加数字符号至少两种以上字符组成</p>
+                </div>
+                <div class="form-group per-itemGroup">
+                    <label for="tag2" class="col-sm-2 control-label per-set-label">擅长技能：</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control per-set-control" name="uName" id="tag2" placeholder="用回车/空格不同职业标签(每个标签最多7个字)" />
+                    </div>
+                    <p class="per-setControlMsg">*由字母加数字符号至少两种以上字符组成</p>
+                </div>
+                <div class="form-group per-itemGroup">
+                    <div class="col-sm-12 pl25 ml5">
+                        <button type="submit" class="btn-yellow-50 right">保存</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="clear per-setLine"></div>
+    </div>
+    <!--个人资料 end-->
+
+    <!--个人头像 start-->
+    <div class="per-setItem" id="per-avatar-down">
+        <div class="per-itemTit">
+            <ul>
+                <li class="left">个人头像</li>
+                <li class="left ml80"><img src="static/images/pc/personal/user.jpg" height="52" width="52" alt="用户头像" /></li>
+                <li class="right per-setEdit"><a href="javascript:;" target="_self" onclick="showHideSet('per-avatar')">编辑</a></li>
+            </ul>
+            <div class="clear per-setLine"></div>
+        </div>
+    </div>
+    <div class="per-setItem per-hide" id="per-avatar-up">
+        <div class="per-itemTit">
+            <ul>
+                <li class="left">个人头像</li>
+                <li class="right per-set-up"><a href="javascript:;" target="_self" onclick="showHideSet('per-avatar')">收起</a></li>
+            </ul>
+            <div class="clear per-setLine-dashed"></div>
+        </div>
+        <div class="per-itemCon">
+            <form action="" class="form-horizontal">
+                <div class="col-sm-3 mb25">
+                    <div class="per-img-border">
+                        <img src="static/images/pc/personal/user.jpg" height="170" width="170" alt="" />
+                    </div>
+                </div>
+                <div class="col-sm-8 mt20">
+                    <button type="button" class="btn-gray-50 mt20">上传头像</button>
+                    <button type="submit" class="btn-yellow-50 mt10">保存</button>
+                </div>
+            </form>
+        </div>
+        <div class="clear per-setLine"></div>
+    </div>
+    <!--个人头像 end-->
+
+    <!--修改密码 start-->
+    <div class="per-setItem" id="per-pwd-down">
+        <div class="per-itemTit">
+            <ul>
+                <li class="left">修改密码</li>
+                <li class="left ml80">*********</li>
+                <li class="right per-setEdit"><a href="javascript:;" target="_self" onclick="showHideSet('per-pwd')">编辑</a></li>
+            </ul>
+            <div class="clear per-setLine"></div>
+        </div>
+    </div>
+    <div class="per-setItem per-hide" id="per-pwd-up">
+        <div class="per-itemTit">
+            <ul>
+                <li class="left">修改密码</li>
+                <li class="right per-set-up"><a href="javascript:;" target="_self" onclick="showHideSet('per-pwd')">收起</a></li>
+            </ul>
+            <div class="clear per-setLine-dashed"></div>
+        </div>
+        <div class="per-itemCon">
+            <form action="" class="form-horizontal">
+                <div class="form-group per-itemGroup">
+                    <label for="pwd" class="col-sm-2 control-label per-set-label">原始密码：</label>
+                    <div class="col-sm-6">
+                        <input type="password" class="form-control per-set-control" name="pwd" id="pwd" />
+                    </div>
+                    <p class="per-setControlMsg">*由字母加数字符号至少两种以上字符组成</p>
+                </div>
+                <div class="form-group per-itemGroup">
+                    <label for="newPwd" class="col-sm-2 control-label per-set-label">新密码：</label>
+                    <div class="col-sm-6">
+                        <input type="password" class="form-control per-set-control" name="newPwd" id="newPwd" />
+                    </div>
+                    <p class="per-setControlMsg">*由字母加数字符号至少两种以上字符组成</p>
+                </div>
+                <div class="form-group per-itemGroup">
+                    <label for="reNewPwd" class="col-sm-2 control-label per-set-label">确认密码：</label>
+                    <div class="col-sm-6">
+                        <input type="password" class="form-control per-set-control" name="reNewPwd" id="reNewPwd" />
+                    </div>
+                    <p class="per-setControlMsg">*由字母加数字符号至少两种以上字符组成</p>
+                </div>
+                <div class="form-group per-itemGroup">
+                    <div class="col-sm-12 pl25 ml5">
+                        <button type="submit" class="btn-yellow-50 right">保存</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="clear per-setLine"></div>
+    </div>
+    <!--修改密码 end-->
+
+    <!--实名认证 start-->
+    <div class="per-setItem" id="per-realNameAuth-down">
+        <div class="per-itemTit">
+            <ul>
+                <li class="left">实名认证</li>
+                <li class="left ml80">已认证</li>
+                <li class="right per-setEdit"><a href="javascript:;" target="_self" onclick="showHideSet('per-realNameAuth')">编辑</a></li>
+            </ul>
+            <div class="clear per-setLine"></div>
+        </div>
+    </div>
+    <div class="per-setItem per-hide" id="per-realNameAuth-up">
+        <div class="per-itemTit">
+            <ul>
+                <li class="left">实名认证</li>
+                <li class="right per-set-up"><a href="javascript:;" target="_self" onclick="showHideSet('per-realNameAuth')">收起</a></li>
+            </ul>
+            <div class="clear per-setLine-dashed"></div>
+        </div>
+        <div class="per-itemCon">
+            <form action="" class="form-horizontal">
+                <div class="form-group per-itemGroup">
+                    <label for="uName" class="col-sm-2 control-label per-set-label">工作室名称：</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control per-set-control" name="uName" id="uName" placeholder="请输入真实姓名" />
+                    </div>
+                    <p class="per-setControlMsg">*由字母加数字符号至少两种以上字符组成</p>
+                </div>
+                <div class="form-group per-itemGroup">
+                    <label for="uName1" class="col-sm-2 control-label per-set-label">负责人姓名：</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control per-set-control" name="uName1" id="uName1" placeholder="" />
+                    </div>
+                    <p class="per-setControlMsg">*由字母加数字符号至少两种以上字符组成</p>
+                </div>
+                <div class="form-group per-itemGroup">
+                    <label for="tel" class="col-sm-2 control-label per-set-label">手机号码：</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control per-set-control" name="tel" id="tel" />
+                    </div>
+                    <p class="per-setControlMsg">*由字母加数字符号至少两种以上字符组成</p>
+                </div>
+                <div class="form-group per-itemGroup">
+                    <label for="certificateType" class="col-sm-2 control-label per-set-label">证件类型：</label>
+                    <div class="col-sm-6">
+                        <select class="form-control per-set-control" id="certificateType" name="certificateType">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <p class="per-setControlMsg">*由字母加数字符号至少两种以上字符组成</p>
+                </div>
+                <div class="form-group per-itemGroup">
+                    <label for="certificate" class="col-sm-2 control-label per-set-label">证件号码：</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control per-set-control" name="certificate" id="certificate" />
+                    </div>
+                    <p class="per-setControlMsg">*由字母加数字符号至少两种以上字符组成</p>
+                </div>
+                <div class="form-group per-itemGroup">
+                    <label for="certificate" class="col-sm-2 control-label per-set-label">上传照片：</label>
+                    <div class="col-sm-6">
+                        <div class="per-input-file">
+                            <p>手持身份证正面照片</p>
+                            <input type="file" />
+                        </div>
+                    </div>
+                    <p class="per-setControlMsg">*由字母加数字符号至少两种以上字符组成</p>
+                </div>
+                <div class="form-group per-itemGroup">
+                    <label for="certificate" class="col-sm-2 control-label per-set-label">上传照片：</label>
+                    <div class="col-sm-6">
+                        <div class="per-input-file">
+                            <p>手持身份证背面照片</p>
+                            <input type="file" />
+                        </div>
+                    </div>
+                    <p class="per-setControlMsg">*由字母加数字符号至少两种以上字符组成</p>
+                </div>
+                <div class="form-group per-itemGroup">
+                    <div class="col-sm-12 pl25 ml5">
+                        <button type="submit" class="btn-yellow-50 right">保存</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="clear per-setLine"></div>
+    </div>
+    <!--实名认证 end-->
+
+    <!--账号绑定 start-->
+    <div class="per-setItem" id="per-bind-down">
+        <div class="per-itemTit">
+            <ul>
+                <li class="left">账号绑定</li>
+                <li class="left ml80">
+                    <p class="per-set-wx"></p>
+                    <p class="per-set-qq"></p>
+                    <p class="per-set-wb"></p>
+                </li>
+                <li class="right per-setEdit"><li class="right per-setEdit"><a href="javascript:;" target="_self" onclick="showHideSet('per-bind')">编辑</a></li></li>
+            </ul>
+            <div class="clear per-setLine"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="per-setItem per-hide" id="per-bind-up">
+        <div class="per-itemTit">
+            <ul>
+                <li class="left">账号绑定</li>
+                <li class="right per-set-up"><a href="javascript:;" target="_self" onclick="showHideSet('per-bind')">收起</a></li>
+            </ul>
+            <div class="clear per-setLine-dashed"></div>
+        </div>
+        <div class="per-itemCon">
+            <form action="" class="form-horizontal">
+                <div class="form-group per-itemGroup">
+                    <div class="col-sm-2 per-itemGroup-icon">
+                        <img src="static/images/pc/personal/weChat.png" width="40" height="40" alt="" />
+                    </div>
+                    <div class="col-sm-2 mr10">
+                        <button type="submit" class="btn-gray-50 mt5">绑定</button>
+                    </div>
+                </div>
+                <div class="form-group per-itemGroup">
+                    <div class="col-sm-2 per-itemGroup-icon">
+                        <img src="static/images/pc/personal/QQ.png" width="40" height="40" alt="" />
+                    </div>
+                    <div class="col-sm-2 lh80 mr10 pr10">
+                        609753231
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="submit" class="btn-gray-50 mt15">取消绑定</button>
+                    </div>
+                </div>
+                <div class="form-group per-itemGroup">
+                    <div class="col-sm-2 per-itemGroup-icon">
+                        <img src="static/images/pc/personal/sina.png" width="40" height="40" alt="" />
+                    </div>
+                    <div class="col-sm-2 mr10">
+                        <button type="submit" class="btn-gray-50 mt10">取消绑定</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="clear per-setLine"></div>
+    </div>
+    <!--账号绑定 end-->
+
+    <!--支付密码 start-->
+    <div class="per-setItem" id="per-payPwd-down">
+        <div class="per-itemTit">
+            <ul>
+                <li class="left">支付密码</li>
+                <li class="left ml80">*********</li>
+                <li class="right per-setEdit"><a href="javascript:;" target="_self" onclick="showHideSet('per-payPwd')">编辑</a></li>
+            </ul>
+            <div class="clear per-setLine"></div>
+        </div>
+    </div>
+    <div class="per-setItem per-hide" id="per-payPwd-up">
+        <div class="per-itemTit">
+            <ul>
+                <li class="left">支付密码</li>
+                <li class="right per-set-up"><a href="javascript:;" target="_self" onclick="showHideSet('per-payPwd')">收起</a></li>
+            </ul>
+            <div class="clear per-setLine-dashed"></div>
+        </div>
+        <div class="per-itemCon">
+            <form action="" class="form-horizontal">
+                <div class="form-group per-itemGroup">
+                    <label for="payTel" class="col-sm-2 control-label per-set-label">手机号码：</label>
+                    <div class="col-sm-6">
+                        <input type="tel" class="form-control per-set-control" name="payTel" id="payTel" />
+                    </div>
+                    <p class="per-setControlMsg">*由字母加数字符号至少两种以上字符组成</p>
+                </div>
+                <div class="form-group per-itemGroup">
+                    <label for="loginPwd" class="col-sm-2 control-label per-set-label">登录密码：</label>
+                    <div class="col-sm-6">
+                        <input type="tel" class="form-control per-set-control" name="loginPwd" id="loginPwd" />
+                    </div>
+                    <p class="per-setControlMsg">*由字母加数字符号至少两种以上字符组成</p>
+                </div>
+                <div class="form-group per-itemGroup">
+                    <label for="authCode" class="col-sm-2 control-label per-set-label">验证码：</label>
+                    <div class="col-sm-6">
+                        <input type="tel" class="form-control per-set-control" name="authCode" id="authCode" />
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="submit" class="btn-gray-50">获取验证码</button>
+                    </div>
+                    <p class="per-setControlMsg">*由字母加数字符号至少两种以上字符组成</p>
+                </div>
+                <div class="form-group per-itemGroup">
+                    <label for="authCode" class="col-sm-2 control-label per-set-label">支付密码：</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control per-set-control per-payPwd" />
+                        <input type="text" class="form-control per-set-control per-payPwd" />
+                        <input type="text" class="form-control per-set-control per-payPwd" />
+                        <input type="text" class="form-control per-set-control per-payPwd" />
+                        <input type="text" class="form-control per-set-control per-payPwd" />
+                        <input type="text" class="form-control per-set-control per-payPwd" />
+                    </div>
+                    <p class="per-setControlMsg">*由字母加数字符号至少两种以上字符组成</p>
+                </div>
+                <div class="form-group per-itemGroup">
+                    <div class="col-sm-12 pl25 ml5">
+                        <button type="submit" class="btn-yellow-50 right">保存</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="clear per-setLine"></div>
+    </div>
+    <!--支付密码 end-->
+</div>
+
+<div id="footer"></div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="static/js/pc/dest/jquery-1.11.3.min.js"></script>
+<script src="static/ickeckSkins/icheck.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="static/js/pc/dest/all.min.js"></script>
+<script src="static/js/pc/jQueryCalendar/js/calendar.js"></script>
+<script src="static/js/pc/tagsInput/jquery.tagsinput.js"></script>
+<script src="static/js/pc/dest/bootstrap.min.js"></script>
+<script>
+    //性别radio按钮样式
+    $(document).ready(function(){
+        $('#sexType input').iCheck({
+            radioClass: 'iradio-grey-16',
+            increaseArea: '30%' // optional
+        });
+    });
+
+    //生日日期控件
+    $('#birthdayBox').calendar({
+        trigger: '#birthday',
+        zIndex: 999,
+        format: 'yyyy-mm-dd',
+//        onSelected: function (view, date, data) {
+//            console.log('event: onSelected')
+//        },
+//        onClose: function (view, date, data) {
+//            console.log('event: onClose')
+//            console.log('view:' + view)
+//            console.log('date:' + date)
+//            console.log('data:' + (data || 'None'));
+//        }
+    });
+
+
+    //标签控件
+    function onAddTag(tag) {
+        alert("添加标签: " + tag);
+    }
+    function onRemoveTag(tag) {
+        alert("删除标签: " + tag);
+    }
+
+    function onChangeTag(input,tag) {
+        alert("修改标签: " + tag);
+    }
+    $('#tag1').tagsInput({
+        'width':'auto',
+        'defaultText':'用回车不同职业标签(每个标签最多7个字)', //默认文字
+        'minChars' : 0, //每个标签的小最字符
+        'maxChars' : 0, //每个标签的最大字符，如果不设置或者为0，就是无限大
+        'placeholderColor' : '#666666' //设置defaultText的颜色
+    });
+    $('#tag2').tagsInput({
+        'width':'auto',
+        'defaultText':'用回车不同擅长技能(每个标签最多7个字)', //默认文字
+        'minChars' : 0, //每个标签的小最字符
+        'maxChars' : 0, //每个标签的最大字符，如果不设置或者为0，就是无限大
+        'placeholderColor' : '#666666' //设置defaultText的颜色
+    });
+
+</script>
+</body>
+</html>

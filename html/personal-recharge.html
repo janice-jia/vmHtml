@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>个人页面-充值</title>
+    <link rel="stylesheet" href="static/css/pc/minCss/all.min.css" />
+
+    <!--IE浏览器运行最新的渲染模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="static/css/pc/minCss/bootstrap.min.css" />
+    <link rel="stylesheet" href="static/css/pc/minCss/all.min.css" />
+    <link rel="stylesheet" href="./static/ickeckSkins/minimal/grey.css" />
+
+    <!--[if lt IE 9]>
+    <script src="static/js/pc/dest/html5shiv.min.js"></script>
+    <script src="static/js/pc/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="header" style="height: 95px;"></div>
+
+<div id="per-recharge">
+    <div class="per-recharge-tit">填写充值金额</div>
+    <form action="" class="form-horizontal zcbl-form-horizontal">
+    <div class="per-recharge-pay">
+            <div class="form-group zcbl-form-group">
+                <label class="col-sm-2 control-label zcbl-control-label">充值账户：</label>
+                <div class="col-sm-4">
+                    <p class="zcbl-control-info">138****1234</p>
+                </div>
+            </div>
+            <div class="form-group zcbl-form-group">
+                <label for="amount" class="col-sm-2 control-label zcbl-control-label">充值金额：</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control zcbl-form-control left" name="amount" id="amount" placeholder="" />
+                </div>
+                <div><p class="zcbl-control-info">元</p></div>
+                <p class="zcbl-control-msg">*由字母加数字符号至少两种以上字符组成</p>
+            </div>
+
+    </div>
+    <div class="per-recharge-tit mt25">支付方式</div>
+    <div class="per-recharge-payType" id="payType">
+        <label class="radio-inline per-recharge-radio">
+            <input type="radio" name="payType" value="option1" />
+            <span class="pr5"></span>
+            <img src="static/images/pc/personal/alipay.png" height="52" width="52" alt="" />
+        </label>
+        <label class="radio-inline per-recharge-radio">
+            <input type="radio" name="payType" value="option1" />
+            <span class="pr5"></span>
+            <img src="static/images/pc/personal/weChatPay.png" height="52" width="52" alt="" />
+        </label>
+    </div>
+    <div class="right mt25">
+        <button type="button" class="btn-yellow-50" data-toggle="modal" data-target="#rechargeSuccess">确认提交</button>
+    </div>
+    <div class="clear"></div>
+    </form>
+    <div class="per-recharge-payList">
+        <ul>
+            <li>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="per-payList-tit">需求收入</p>
+                        <p class="per-payList-time">2016.6.1 13：21</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="per-payList-income">+100元</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="per-payList-tit">需求酬金支出</p>
+                        <p class="per-payList-time">2016.6.1 13：21</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="per-payList-expend">-100元</p>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="per-payList-tit">需求收入</p>
+                        <p class="per-payList-time">2016.6.1 13：21</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="per-payList-income">+100元</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="per-payList-tit">需求酬金支出</p>
+                        <p class="per-payList-time">2016.6.1 13：21</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="per-payList-expend">-100元</p>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="per-payList-tit">需求收入</p>
+                        <p class="per-payList-time">2016.6.1 13：21</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="per-payList-income">+100元</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="per-payList-tit">需求酬金支出</p>
+                        <p class="per-payList-time">2016.6.1 13：21</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="per-payList-expend">-100元</p>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="per-payList-tit">需求收入</p>
+                        <p class="per-payList-time">2016.6.1 13：21</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="per-payList-income">+100元</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="per-payList-tit">需求酬金支出</p>
+                        <p class="per-payList-time">2016.6.1 13：21</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="per-payList-expend">-100元</p>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="per-payList-tit">需求收入</p>
+                        <p class="per-payList-time">2016.6.1 13：21</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="per-payList-income">+100元</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="per-payList-tit">需求酬金支出</p>
+                        <p class="per-payList-time">2016.6.1 13：21</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="per-payList-expend">-100元</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div id="page"></div>
+</div>
+
+<div id="footer"></div>
+
+<!-- 充值成功（Modal） -->
+<div class="modal fade" id="rechargeSuccess"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-1">
+        <h2 class="zcbl-modal-success">充值成功！</h2>
+        <p class="zcbl-modal-desc">恭喜您，充值成功！</p>
+    </div>
+</div>
+<!-- 充值成功（Modal） -->
+
+<!-- 充值失败（Modal） -->
+<div class="modal fade" id="rechargeError"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-1">
+        <h2 class="zcbl-modal-error">充值失败！</h2>
+        <p class="zcbl-modal-desc">您可以使用其他方式支付或者继续充值</p>
+    </div>
+</div>
+<!-- 充值失败（Modal） -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="static/js/pc/dest/jquery-1.11.3.min.js"></script>
+
+<script src="static/js/pc/dest/all.min.js"></script>
+<script src="static/ickeckSkins/icheck.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="static/js/pc/dest/bootstrap.min.js"></script>
+
+<script>
+    $('#rechargeError').modal('show');
+
+    //支付方式radio按钮样式
+    $(document).ready(function(){
+        $('#payType input').iCheck({
+            radioClass: 'iradio-grey-16',
+            increaseArea: '30%' // optional
+        });
+    });
+</script>
+</body>
+</html>

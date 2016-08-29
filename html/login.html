@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>登录</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap -->
+    <link href="static/css/pc/minCss/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="static/css/pc/minCss/all.min.css" />
+
+    <!--[if lt IE 9]>
+    <script src="static/js/pc/dest/html5shiv.min.js"></script>
+    <script src="static/js/pc/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="lr">
+    <div class="container">
+        <img data-login="logo" src="static/images/pc/logo_bg.png" alt="" />
+        <div id="login">
+            <div id="loginBox" data-login="container">
+
+                <div data-login="tab">
+                    <a data-login="regist" id="torecruit">立即注册</a>
+                    <h2>登录</h2>
+                </div>
+                <!---  登录表单  --->
+                <form data-login="form" action="">
+                    <div class="form-group has-success has-feedback">
+                        <label for="login_user" class="sr-only">UserName/PhoneNumber</label>
+                        <span class="input-group-addon" data-login="logusericon"></span>
+                        <input class="form-control" id="login_user" name="login_user" placeholder="请输入手机号" />
+                        <span data-login="helpword" class="help-block">*由字母加数字符号至少两种以上字符组成</span>
+                    </div>
+                    <div class="form-group has-success has-feedback">
+                        <label for="login_pwd" class="sr-only">Verification code</label>
+                        <span class="input-group-addon" data-login="logpwdicon"></span>
+                        <input class="form-control" id="login_pwd" name="login_pwd" placeholder="请输入密码" />
+                        <span data-login="helpword" class="help-block">*由字母加数字符号至少两种以上字符组成</span>
+                    </div>
+                    <div class="form-group has-success has-feedback">
+                        <label for="login_key" class="sr-only">验证码</label>
+                        <span class="input-group-addon" data-login="logkeyicon"></span>
+                        <div id="login_randomCode"></div>
+                        <input class="form-control" id="login_key" name="login_key" placeholder="请输入验证码" />
+                        <span data-login="helpword" class="help-block">*由字母加数字符号至少两种以上字符组成</span>
+                    </div>
+                    <button type="button" id="login_submit" data-login="login_submit" class="btn-block ">登录</button>
+                    <div data-login="pwdrel">
+                        <label><input type="checkbox" name="rememberCode"  />下次自动登录</label>
+                        <a href="forgetpwd.html" target="_blank">忘记密码</a>
+                    </div>
+                </form>
+                <!---  分割线  --->
+                <p data-login="hr">
+                    <i data-login="hrlt"></i>
+                    或
+                    <i data-login="hrrt"></i>
+                </p>
+                <!---  其他登录方式  --->
+                <ul data-login='otherlog'>
+                    <li data-login="otherlog_qq">
+                        <a href="#"><b></b><span>QQ</span></a>
+                    </li>
+                    <li data-login="otherlog_weibo">
+                        <a href="#"><b></b><span>微博</span></a>
+                    </li>
+                    <li data-login="otherlog_weixin">
+                        <a href="#"><b></b><span>微信</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="static/js/pc/dest/jquery-1.11.3.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="static/js/pc/dest/bootstrap.min.js"></script>
+<script src="static/js/pc/dest/all.min.js"></script>
+<script>
+    var opts= [{'width':0},{'width':'440px'}];
+    var time=200;
+    $('#torecruit').click(function(){
+        $('[data-login="container"]').animate(opts[0],time,function(){
+            $('[data-login="container"]').hide();
+            $('[data-regist="container"]').show().animate(opts[1],time);
+        });
+    });
+    $('#tologin').click(function(){
+        $('[data-regist="container"]').animate(opts[0],time,function(){
+            $('[data-regist="container"]').hide();
+            $('[data-login="container"]').show().animate(opts[1],time);
+        });
+    });
+</script>
+<!--< script type="text/javascript">
+    //翻转
+    var rturn = function(target,time,opts){
+        target.find('#torecruit').click(function(){
+            console.log(111111111111111);
+            $("#torecruit").stop().animate(opts[0],time,function(){
+                $('#login').hide();
+                $('#regist').next().animate(opts[1],time);
+            });
+        });
+    };
+    var verticalOpts = [{'width':0},{'width':'180px'}];
+    rturn($('#torecruit'),1000,verticalOpts);
+    var horizontalOpts = [{'height':0,'top':'120px'},{'height':'240px','top':0}];
+    rturn($('#horizontal'),100,horizontalOpts);
+</script> -->
+
+</body>
+
+
+</html>

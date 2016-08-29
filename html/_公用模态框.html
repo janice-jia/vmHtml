@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>公用模态框</title>
+    <link rel="stylesheet" href="static/css/pc/minCss/all.min.css" />
+    <meta charset="utf-8">
+    <!--IE浏览器运行最新的渲染模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap -->
+    <link href="static/css/pc/minCss/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./static/ickeckSkins/minimal/grey.css" />
+    <link rel="stylesheet" href="./static/js/pc/jQueryCalendar/calendar.css">
+
+    <!--[if lt IE 9]>
+    <script src="static/js/pc/dest/html5shiv.min.js"></script>
+    <script src="static/js/pc/dest/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+<body>
+<div id="header" style="height: 78px;"></div>
+<!-- 按钮触发模态框 -->
+<button class="btn-yellow-40 left mr10 mt10" data-toggle="modal" data-target="#myModal1">
+    模态框1
+</button>
+
+<!-- 模态框1（Modal） -->
+<div class="modal fade" id="myModal1"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-1">
+        <h2 class="zcbl-modal-success">充值成功！</h2>
+        <p class="zcbl-modal-desc">恭喜您，充值成功！</p>
+    </div>
+</div>
+<!-- 模态框1（Modal） -->
+
+
+<!-- 按钮触发模态框 -->
+<button class="btn-yellow-40 left mr10 mt10" data-toggle="modal" data-target="#myModal2">
+    模态框2
+</button>
+
+<!-- 模态框2（Modal） -->
+<div class="modal fade" id="myModal2"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-1">
+        <h2 class="zcbl-modal-error">充值失败！</h2>
+        <p class="zcbl-modal-desc">您可以使用其他方式支付或者继续充值</p>
+    </div>
+</div>
+<!-- 模态框2（Modal） -->
+
+<!-- 按钮触发模态框 -->
+<button class="btn-yellow-40 left mr10 mt10" data-toggle="modal" data-target="#myModal3">
+    模态框3
+</button>
+
+<!-- 模态框3（Modal） -->
+<div class="modal fade" id="myModal3"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-2">
+        <h2 class="zcbl-modal-success">需求删除成功</h2>
+        <p class="zcbl-modal-desc">3秒后自动跳转到服务页面</p>
+    </div>
+</div>
+<!-- 模态框3（Modal） -->
+
+<!-- 按钮触发模态框 -->
+<button class="btn-yellow-40 left mr10 mt10" data-toggle="modal" data-target="#myModal4">
+    模态框4
+</button>
+
+<!-- 模态框4（Modal） -->
+<div class="modal fade" id="myModal4"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-2">
+        <h2 class="zcbl-modal-blue">需求删除成功</h2>
+    </div>
+</div>
+<!-- 模态框4（Modal） -->
+
+
+<!-- 按钮触发模态框 -->
+<button class="btn-yellow-40 left mr10 mt10" data-toggle="modal" data-target="#myModal5">
+    模态框5
+</button>
+
+<!-- 模态框5（Modal） -->
+<div class="modal fade" id="myModal5"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-3 zcbl-modalHei285">
+        <div class="zcbl-modal-tit">
+            创建作品集
+        </div>
+        <form action="">
+            <div class="zcbl-popupForm">
+                <div class="form-group zcbl-popupGroup">
+                    <label for="colName" class="col-sm-3 control-label per-set-label">作品集名称：</label>
+                    <div class="col-sm-8 zcbl-popupSm">
+                        <input type="text" class="form-control zcbl-popupControl" name="colName" id="colName">
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+            <div class="zcbl-popupBtn">
+                <button type="submit" class="btn-yellow-50 left mr25">创建</button>
+                <button type="button" class="zcbl-modal-cancel" data-dismiss="modal">取消</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- 模态框5（Modal） -->
+
+
+<!-- 按钮触发模态框 -->
+<button class="btn-yellow-40 left mr10 mt10" data-toggle="modal" data-target="#myModal6">
+    模态框6
+</button>
+<!-- 模态框6（Modal） -->
+<div class="modal fade" id="myModal6"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-3 zcbl-modalHei340">
+        <div class="zcbl-modal-tit">
+            嵌入视频
+        </div>
+        <form action=""嵌入视频>
+            <div class="zcbl-popupForm">
+                <div class="form-group zcbl-popupGroup">
+                    <div class="col-sm-12 zcbl-popupSm">
+                        <input type="text" class="form-control embedVideo" name="embedVideo" id="embedVideo">
+                        <p class="embedVideoCon">支持嵌入优酷、爱奇艺、腾讯视频、乐视网站、A站、B站的视频分享嵌入码（flash地址） <a href="javascript:;"  target="_self">查看事例</a></p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+            <div class="zcbl-popupBtn">
+                <button type="submit" class="btn-yellow-50 left mr25">保存</button>
+                <button type="button" class="zcbl-modal-cancel" data-dismiss="modal">取消</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- 模态框6（Modal） -->
+
+
+<!-- 按钮触发模态框 -->
+<button class="btn-yellow-40 left mr10 mt10" data-toggle="modal" data-target="#myModal7">
+    模态框7
+</button>
+<!-- 模态框7（Modal） -->
+<div class="modal fade" id="myModal7"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-3 zcbl-modalHei285">
+        <div class="zcbl-modal-tit">
+            密码错误
+        </div>
+        <div class="zcbl-modal-3-con">
+            <p class="zcbl-modal-3-desc tl">您已连续3次输入密码错误，余额支付将在1小时内冻结不可进行支付</p>
+        </div>
+        <div class="clear"></div>
+        <div class="zcbl-popupBtn">
+            <button type="submit" class="btn-yellow-50 left mr25" data-dismiss="modal">确认</button>
+            <button type="button" class="zcbl-modal-cancel" data-dismiss="modal">更换支付方式</button>
+        </div>
+    </div>
+</div>
+<!-- 模态框7（Modal） -->
+
+<!-- 按钮触发模态框 -->
+<button class="btn-yellow-40 left mr10 mt10" data-toggle="modal" data-target="#myModal8">
+    模态框8
+</button>
+<!-- 模态框8（Modal） -->
+<div class="modal fade" id="myModal8"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-4">
+        <div class="zcbl-modal-tit">
+            您对 ** 提供的服务感到
+        </div>
+        <div class="zcbl-evaluate-tit">1 . 整体映像（综合美誉度）</div>
+        <div class="zcbl-evaluate-con">
+            <span class="yellow"></span>
+            <span class="yellow"></span>
+            <span class="yellow"></span>
+            <span class="yellow"></span>
+            <span></span>
+        </div>
+        <div class="zcbl-evaluate-tit">2 . 信誉度（付款情况）</div>
+        <div class="zcbl-evaluate-con">
+            <span class="yellow"></span>
+            <span class="yellow"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="zcbl-evaluate-tit">3 . 修改情况</div>
+        <div class="zcbl-evaluate-con">
+            <span class="yellow"></span>
+            <span class="yellow"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="zcbl-evaluate-tit">4 . 合作态度</div>
+        <div class="zcbl-evaluate-con">
+            <span class="yellow"></span>
+            <span class="yellow"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="zcbl-evaluate-tit">5 . 额外要求</div>
+        <div class="zcbl-evaluate-con">
+            <span class="yellow"></span>
+            <span class="yellow"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="zcbl-evaluate">
+            <textarea class="form-control zcbl-evaluate-control" rows="3" placeholder="评语"></textarea>
+            <p class="zcbl-evaluate-control-max">0/140</p>
+            <!--<p class="zcbl-evaluate-rc">-->
+                <!--<span>热词1</span>-->
+                <!--<span>丨</span>-->
+                <!--<span>热词2</span>-->
+                <!--<span>丨</span>-->
+                <!--<span>热词3</span>-->
+            <!--</p>-->
+        </div>
+        <div class="zcbl-evaluate-btn">
+            <button type="button" class="btn-yellow-50">确定</button>
+        </div>
+    </div>
+</div>
+<!-- 模态框8（Modal） -->
+
+
+
+
+<!-- 按钮触发模态框 -->
+<button class="btn-yellow-40 left mr10 mt10" data-toggle="modal" data-target="#myModal9">
+    模态框9
+</button>
+<!-- 模态框9（Modal） -->
+<div class="modal fade" id="myModal9"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-5">
+        <div class="zcbl-modal-tit">
+            意见反馈
+        </div>
+        <div class="zcbl-opinion">
+            <textarea class="form-control zcbl-opinion-control" rows="3" placeholder=""></textarea>
+            <p class="zcbl-opinion-control-max">0/300</p>
+        </div>
+        <div class="zcbl-opinion-btn">
+            <button type="button" class="btn-yellow-50">提交</button>
+        </div>
+    </div>
+</div>
+<!-- 模态框9（Modal） -->
+
+
+
+<!-- 按钮触发模态框 -->
+<button class="btn-yellow-40 left mr10 mt10" data-toggle="modal" data-target="#myModal10">
+    模态框10
+</button>
+<!-- 模态框10（Modal） -->
+<div class="modal fade" data-backdrop="static" id="myModal10"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-7">
+        <div class="zcbl-public-window">
+            <ul>
+                <li class="public-xq"><a href="#" target="_blank">发布需求</a></li>
+                <li class="public-fw"><a href="#" target="_blank">提供服务</a></li>
+                <li class="public-zp"><a href="./personal-publish-pic.html" target="_blank">上传作品</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- 模态框10（Modal） -->
+
+
+
+<!-- 按钮触发模态框 -->
+<button class="btn-yellow-40 left mr10 mt10" data-toggle="modal" data-target="#myModal222" data-backdrop="static">
+    空白不关闭
+</button>
+<!-- 模态框11（Modal） -->
+<div class="modal fade" data-backdrop="static" id="myModal222"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-5">
+        <div class="zcbl-modal-tit">
+            意见反馈
+        </div>
+        <div class="zcbl-opinion">
+            <textarea class="form-control zcbl-opinion-control" rows="3" placeholder=""></textarea>
+            <p class="zcbl-opinion-control-max">0/300</p>
+        </div>
+        <div class="zcbl-opinion-btn">
+            <button type="button" class="btn-yellow-50">提交</button>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- 按钮触发模态框 -->
+<button class="btn-yellow-40 left mr10 mt10" data-toggle="modal" data-target="#myModal12">
+    申诉
+</button>
+<!-- 模态框12（Modal） -->
+<div class="modal fade" id="myModal12"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-3 zcbl-modalHei554">
+        <div class="zcbl-modal-tit">
+            我要申诉
+        </div>
+        <form action="">
+            <div class="zcbl-popupForm">
+                <div class="form-group zcbl-popupGroup">
+                    <div class="col-sm-12 zcbl-popupSm">
+                        <input type="text" class="form-control zcbl-control-SS" name="name"  placeholder="联系人">
+                        <input type="text" class="form-control zcbl-control-SS mt20" name="tel" placeholder="联系电话">
+                        <textarea class="form-control zcbl-control-SStext mt20 mb20" name="" rows="3" placeholder="申诉内容"></textarea>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+            <div class="zcbl-popupBtn">
+                <button type="submit" class="btn-yellow-50 left mr25">提交</button>
+                <button type="reset" class="zcbl-modal-cancel" data-dismiss="modal">取消</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- 模态框12（Modal） -->
+
+<!-- 按钮触发模态框 -->
+<button class="btn-yellow-40 left mr10 mt10" data-toggle="modal" data-target="#myModal13">
+    加载层
+</button>
+<!-- 加载层（Modal） -->
+<div class="modal fade" id="myModal13"  aria-hidden="true" data-backdrop="static">
+    <div class="zcbl-loding">
+        <img src="./static/images/pc/public/loading.gif" height="24" width="60" alt="">
+    </div>
+</div>
+<!-- 加载层（Modal） -->
+
+
+<!-- 分享触发模态框 -->
+<button class="btn-yellow-40 left mr10 mt10" data-toggle="modal" data-target="#myModal14">
+    分享
+</button>
+<!-- 分享（Modal） -->
+<div class="modal fade" id="myModal14"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-share">
+        <h2 class="zcbl-modal-shareTit">分享</h2>
+        <p class="zcbl-modal-shareDesc">让更多的人了解你，让更多的人帮助你</p>
+        <div class="zcbl-modal-shareImg">
+            <ul>
+                <li class="zcbl-modal-shareSina">
+                    <a href=""></a>
+                </li>
+                <li class="zcbl-modal-shareWx">
+                    <div class="zcbl-modal-shareWxMin">
+                        <a href="javascript:;"></a>
+                    </div>
+                    <div class="zcbl-modal-shareWxMax"><img src="./static/images/pc/index/QR_CODE.jpg" height="115" width="115" alt=""></div>
+
+                </li>
+                <li class="zcbl-modal-shareQQ">
+                    <a href=""></a>
+                </li>
+            </ul>
+            <!--<img src="./static/images/pc/index/QR_CODE.jpg" height="114" width="114" alt="">-->
+            <div class=""></div>
+        </div>
+    </div>
+</div>
+<!-- 分享（Modal） -->
+
+<p class="mt20 clear"></p>
+<br>
+<br>
+<br>
+按钮组
+<form action="" id="icheck20">
+    <p>grey-20</p>
+<input type="checkbox" name="icheckbox" value="checkbox1">
+<input type="checkbox" name="icheckbox" value="checkbox2">
+<input type="radio" value="111111" name="iCheck">
+<input type="radio" value="222222" name="iCheck">
+</form>
+<br>
+<form action="" id="icheck30">
+    <p>yellow-30</p>
+    <input type="checkbox" name="icheckbox" value="checkbox1" checked>
+    <input type="checkbox" name="icheckbox" value="checkbox2">
+    <input type="radio" value="111111" name="iCheck"  checked >
+    <input type="radio" value="222222" name="iCheck">
+</form>
+
+
+<form action="" id="icheck16">
+    <p>yellow-16</p>
+    <input type="checkbox" name="icheckbox" value="checkbox1" checked>
+    <input type="checkbox" name="icheckbox" value="checkbox2">
+    <input type="radio" value="111111" name="iCheck" checked>
+    <input type="radio" value="222222" name="iCheck">
+</form>
+
+<br/><br/>
+<form action="">
+<div class="form-group per-itemGroup">
+    <label for="dt" class="col-sm-2 control-label per-set-label">日期控件：</label>
+    <div class="col-sm-6" style="position:inherit;">
+        <input type="text" id="dt" style="height: 50px;" class="form-control per-set-control" name="date" />
+        <div id="dd"></div>
+    </div>
+</div>
+    <button type="submit">提交</button>
+</form>
+<br/><br/>
+<h1> v1.1 绑定摸态框</h1>
+<!-- 按钮触发模态框 -->
+<button class="btn-yellow-40 left mr10 mt10" data-toggle="modal" data-target="#myModal1-1">
+    绑定成功
+</button>
+
+<!--  绑定成功（Modal） -->
+<div class="modal fade" id="myModal1-1"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-8">
+        <h2 class="zcbl-modal-success">绑定成功！</h2>
+    </div>
+</div>
+<!--  绑定成功（Modal） -->
+
+<!-- 按钮触发模态框 -->
+<button class="btn-yellow-40 left mr10 mt10" data-toggle="modal" data-target="#myModal1-2">
+    密码错误
+</button>
+
+<!-- 密码错误（Modal） -->
+<div class="modal fade" id="myModal1-2"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-8">
+        <h2 class="zcbl-modal-error">手机号或密码错误</h2>
+    </div>
+</div>
+<!-- 密码错误（Modal） -->
+<!-- 按钮触发模态框 -->
+<button class="btn-yellow-40 left mr10 mt10" data-toggle="modal" data-target="#myModal1-3">
+    绑定次数过多
+</button>
+
+<!-- 绑定次数过多（Modal） -->
+<div class="modal fade" id="myModal1-3"  aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-modal-8">
+        <h2 class="zcbl-modal-error">绑定次数过多，请稍后</h2>
+    </div>
+</div>
+<!-- 绑定次数过多（Modal） -->
+
+
+
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="static/js/pc/dest/jquery-1.11.3.min.js"></script>
+<script src="static/js/pc/dest/all.min.js"></script>
+<script src="static/ickeckSkins/icheck.js"></script>
+<script src="static/js/pc/jQueryCalendar/js/calendar.js"></script>
+
+
+
+<script>
+    $('#dd').calendar({
+        trigger: '#dt',
+        zIndex: 999,
+        format: 'yyyy-mm-dd',
+//        onSelected: function (view, date, data) {
+//            console.log('event: onSelected')
+//        },
+//        onClose: function (view, date, data) {
+//            console.log('event: onClose')
+//            console.log('view:' + view)
+//            console.log('date:' + date)
+//            console.log('data:' + (data || 'None'));
+//        }
+    });
+    $(document).ready(function(){
+        $('#icheck20 input').iCheck({
+            checkboxClass: 'icheckbox-grey-20',
+            radioClass: 'iradio-grey-20',
+            increaseArea: '30%' // optional
+        });
+
+        $('#icheck30 input').iCheck({
+            checkboxClass: 'icheckbox-grey-30',
+            radioClass: 'iradio-grey-30',
+            increaseArea: '30%' // optional
+        });
+
+        $('#icheck16 input').iCheck({
+            checkboxClass: 'icheckbox-grey-16',
+            radioClass: 'iradio-grey-16',
+            increaseArea: '30%' // optional
+        });
+    });
+
+    //    分享--点击微信效果
+    $(".zcbl-modal-shareWx").click(function(){
+        if($(".zcbl-modal-shareWxMax").css('display') == 'none'){
+            $(".zcbl-modal-shareWxMin").hide();
+            $(".zcbl-modal-shareSina a").hide();
+            $(".zcbl-modal-shareQQ a").hide();
+            $(".zcbl-modal-shareWxMax").show();
+        }else{
+            $(".zcbl-modal-shareWxMin").show();
+            $(".zcbl-modal-shareSina a").show();
+            $(".zcbl-modal-shareQQ a").show();
+            $(".zcbl-modal-shareWxMax").hide();
+        }
+
+    });
+</script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="static/js/pc/dest/bootstrap.min.js"></script>
+</body>
+</html>

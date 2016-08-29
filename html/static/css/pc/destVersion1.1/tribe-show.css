@@ -262,7 +262,10 @@
           width: 100px;
           height: 100px;
           display: inline-block;
-          position: absolute; }
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin: -50px; }
         #tribe-cartoon .cartoon-content .cartoon-content-list > .video-detail:hover {
           box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.35); }
           #tribe-cartoon .cartoon-content .cartoon-content-list > .video-detail:hover:hover .cartoon-del {
@@ -624,7 +627,8 @@
             #tribe-cartoon div.tribe-progress #progressBar > li:nth-child(7) .progress-icon:hover {
               z-index: 6; }
           #tribe-cartoon div.tribe-progress #progressBar > li:nth-child(7) .progress-msg {
-            left: -138px; }
+            left: initial;
+            right: 0; }
           #tribe-cartoon div.tribe-progress #progressBar > li:nth-child(7):after {
             border-radius: 50%;
             background: #eeeeee;

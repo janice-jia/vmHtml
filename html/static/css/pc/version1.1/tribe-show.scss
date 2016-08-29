@@ -357,6 +357,9 @@ $pro-color-7: #5BCC39;
           height: 100px;
           display: inline-block;
           position: absolute;
+          top:50%;
+          left:50%;
+          margin: -50px;
         }
         &:hover {
           box-shadow: 0px 5px 13px rgba(0, 0, 0, .35);
@@ -903,7 +906,8 @@ $pro-color-7: #5BCC39;
           }
           //提示框
           .progress-msg {
-            left: -138px;
+            left:initial;
+            right:0;
           }
 
           &:after {

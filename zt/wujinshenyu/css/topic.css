@@ -58,7 +58,8 @@
   .topic-main .topic-nav ul {
     background: url("../images/nb_bg.png") no-repeat;
     height: 60px;
-    line-height: 60px; }
+    line-height: 60px;
+    min-height: 1000px; }
     .topic-main .topic-nav ul li {
       float: left;
       width: 166px;

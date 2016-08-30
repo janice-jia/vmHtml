@@ -379,7 +379,7 @@
   float: left; }
   #topic-role .topic-role .topic-role-jl .topic-role-jlCon {
     width: 570px;
-    height: 466px;
+    min-height: 466px;
     border: 1px solid #dddddd;
     background: #ffffff;
     padding: 20px; }

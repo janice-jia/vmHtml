@@ -100,6 +100,9 @@ $color-a7a099: #a7a099;
     .topic-nav {
         ul {
             background: url("../images/nb_bg.png") no-repeat;
+            width: 834px;
+            margin: 0 auto;
+            overflow: hidden;
             height: 60px;
             line-height: 60px;
             li {

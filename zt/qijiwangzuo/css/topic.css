@@ -58,6 +58,9 @@
   margin: 0 auto; }
   .topic-main .topic-nav ul {
     background: url("../images/nb_bg.png") no-repeat;
+    width: 834px;
+    margin: 0 auto;
+    overflow: hidden;
     height: 60px;
     line-height: 60px; }
     .topic-main .topic-nav ul li {
@@ -379,7 +382,7 @@
   float: left; }
   #topic-role .topic-role .topic-role-jl .topic-role-jlCon {
     width: 570px;
-    min-height: 466px;
+    height: 466px;
     border: 1px solid #dddddd;
     background: #ffffff;
     padding: 20px; }

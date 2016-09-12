@@ -480,7 +480,24 @@
     #mhp-header .footermsg .edit-introduce .jb a {
       color: #999999; }
 
-<<<<<<< HEAD
+.vm-homePageNav {
+  height: 50px;
+  line-height: 50px;
+  background: #ffffff;
+  padding: 0 40px; }
+  .vm-homePageNav ul li {
+    float: left; }
+    .vm-homePageNav ul li a {
+      display: inline-block;
+      height: 100%;
+      width: 100%; }
+      .vm-homePageNav ul li a:hover {
+        color: #ffb30e;
+        border-bottom: 1px solid #ffb30e; }
+    .vm-homePageNav ul li.vm-homePageNav-hover a {
+      color: #ffb30e;
+      border-bottom: 1px solid #ffb30e; }
+
 .error-page {
   min-height: 800px; }
   .error-page .error-box {
@@ -502,22 +519,3 @@
       color: #3b3b3b;
       margin-top: 30px;
       margin-bottom: 40px; }
-=======
-.vm-homePageNav {
-  height: 50px;
-  line-height: 50px;
-  background: #ffffff;
-  padding: 0 40px; }
-  .vm-homePageNav ul li {
-    float: left; }
-    .vm-homePageNav ul li a {
-      display: inline-block;
-      height: 100%;
-      width: 100%; }
-      .vm-homePageNav ul li a:hover {
-        color: #ffb30e;
-        border-bottom: 1px solid #ffb30e; }
-    .vm-homePageNav ul li.vm-homePageNav-hover a {
-      color: #ffb30e;
-      border-bottom: 1px solid #ffb30e; }
->>>>>>> dfd1eedae242e0cfa6a6a7f0eaf6d2de34565a7b

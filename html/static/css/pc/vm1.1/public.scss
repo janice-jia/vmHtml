@@ -260,19 +260,19 @@ $color-ffffff: #ffffff;
             background: url("../../../images/pc/vm1.1/public/icon-seach.png") 10px 7px #f7f8fa no-repeat;
         }
     }
-    .vm-no-login{
-        ul{
-            li{
+    .vm-no-login {
+        ul {
+            li {
                 float: left;
                 font-size: 14px;
-                a{
+                a {
                     color: #3b3b3b;
-                    &:hover{
+                    &:hover {
                         color: #999999;
                     }
                 }
-                span{
-                    padding:0 10px;
+                span {
+                    padding: 0 10px;
                     color: #cccccc;
                 }
             }
@@ -313,7 +313,7 @@ $color-ffffff: #ffffff;
                 border-radius: 50%;
             }
         }
-        .vm-user-open{
+        .vm-user-open {
             display: none;
             position: absolute;
             right: -20px;
@@ -321,28 +321,28 @@ $color-ffffff: #ffffff;
             width: 125px;
             background: $color-ffffff;
             z-index: 10;
-            ul{
+            ul {
                 padding: 10px 0;
                 width: 100%;
                 border-bottom: 1px solid #dddddd;
-                li{
+                li {
                     padding-left: 22px;
                     height: 30px;
                     line-height: 30px;
                     overflow: hidden;
-                    a{
+                    a {
                         font-size: 14px;
                         color: #707070;
                         padding: 0;
                         display: inline-block;
                         width: 100%;
                         height: 100%;
-                        &:hover{
+                        &:hover {
                             color: $color-01;
                         }
                     }
-                    span{
-                        &.msgNum{
+                    span {
+                        &.msgNum {
                             margin-left: 10px;
                             display: inline-block;
                             padding: 0 5px;
@@ -356,10 +356,10 @@ $color-ffffff: #ffffff;
                     }
                     &.WB,
                     &.WX,
-                    &.TX{
+                    &.TX {
                         padding-left: 45px;
                         position: relative;
-                        &:before{
+                        &:before {
                             content: '';
                             position: absolute;
                             top: 8px;
@@ -368,18 +368,18 @@ $color-ffffff: #ffffff;
                             height: 13px;
                         }
                     }
-                    &.WB{
+                    &.WB {
                         &:before {
                             background: url("../../../images/pc/vm1.1/icon/icon-WB.png");
 
                         }
                     }
-                    &.WX{
+                    &.WX {
                         &:before {
                             background: url("../../../images/pc/vm1.1/icon/icon-WX.png");
                         }
                     }
-                    &.TX{
+                    &.TX {
                         &:before {
                             background: url("../../../images/pc/vm1.1/icon/icon-TX.png");
                             width: 15px;
@@ -389,8 +389,8 @@ $color-ffffff: #ffffff;
                 }
             }
         }
-        &:hover{
-            .vm-user-open{
+        &:hover {
+            .vm-user-open {
                 display: block;
             }
         }
@@ -663,7 +663,34 @@ $color-ffffff: #ffffff;
     }
 }
 
-<<<<<<< HEAD
+//我的主页--公用导航
+.vm-homePageNav {
+    height: 50px;
+    line-height: 50px;
+    background: $color-ffffff;
+    padding: 0 40px;
+    ul {
+        li {
+            float: left;
+            a {
+                display: inline-block;
+                height: 100%;
+                width: 100%;
+                &:hover {
+                    color: $color-08;
+                    border-bottom: 1px solid $color-08;
+                }
+            }
+            &.vm-homePageNav-hover {
+                a {
+                    color: $color-08;
+                    border-bottom: 1px solid $color-08;
+                }
+            }
+        }
+    }
+}
+
 .error-page {
     min-height: 800px;
     .error-box {
@@ -687,34 +714,6 @@ $color-ffffff: #ffffff;
             color: #3b3b3b;
             margin-top: 30px;
             margin-bottom: 40px;
-=======
-}
-
-//我的主页--公用导航
-.vm-homePageNav{
-    height: 50px;
-    line-height: 50px;
-    background: $color-ffffff;
-    padding: 0 40px;
-    ul{
-        li{
-            float: left;
-            a{
-                display: inline-block;
-                height: 100%;
-                width: 100%;
-                &:hover{
-                    color: $color-08;
-                    border-bottom: 1px solid $color-08;
-                }
-            }
-            &.vm-homePageNav-hover{
-                a{
-                    color: $color-08;
-                    border-bottom: 1px solid $color-08;
-                }
-            }
->>>>>>> dfd1eedae242e0cfa6a6a7f0eaf6d2de34565a7b
         }
     }
 }

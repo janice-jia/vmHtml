@@ -537,3 +537,129 @@ $color-ffffff: #ffffff;
         }
     }
 }
+
+//没有内容小人
+.null-content {
+    text-align: center;
+    background-color: #fff;
+    display: table;
+    width: 100%;
+    &:before {
+        display: table;
+        content: "";
+    }
+    p:before {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        content: "";
+        display: block;
+        width: 148px;
+        height: 154px;
+        background-image: url("../../../images/pc/vm1.1/icon/icon-null.png");
+    }
+    p {
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 14px;
+
+    }
+}
+
+//编辑白色图标
+.editmsg-fff {
+    display: inline-block;
+    background-image: url("../../../images/pc/vm1.1/icon/icon-edit-fff.png");
+    width: 20px;
+    height: 20px;
+}
+
+//我的主页--头部
+#mhp-header {
+    height: 310px;
+    border-bottom: 1px solid $color-04;
+    position: relative;
+    background-color: #fff;
+    .editbg {
+        position: absolute;
+        top: 7px;
+        right: 7px;
+        width: 100px;
+        height: 30px;
+        background-color: $color-02;
+        border-radius: 2px;;
+    }
+    .bgimg {
+        height: 150px;
+        width: 100%;
+    }
+    .centerbtn {
+        padding: 6px;
+        float: right;
+        button {
+            margin-left: 28px;
+        }
+    }
+    .footermsg {
+        text-align: center;
+        > p {
+            margin: 15px;
+        }
+        .head {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto;
+            margin-top: -45px;
+            position: relative;
+            display: block;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+            b {
+                position: absolute;
+                top: 35px;
+                left: 35px;
+                @extend .opacity-0;
+            }
+            &:hover {
+                b {
+                    @extend .opacity-1;
+                }
+            }
+        }
+        .edit-introduce {
+            display: inline-block;
+            position: relative;
+            p {
+                line-height: 22px;
+                display: inline-block;
+                width: 231px;
+                color: $color-04;
+            }
+            b {
+                width: 12px;
+                height: 12px;
+                display: inline-block;
+                background-image: url("../../../images/pc/vm1.1/icon/icon-editpen-12.png");
+
+            }
+            input {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 231px;
+                height: 22px;
+            }
+            //input:focus{@extend .opacity-1}
+        }
+        .edit-introduce {
+            .jb {
+                a {
+                    color: $color-06;
+                }
+            }
+        }
+    }
+
+}

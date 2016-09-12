@@ -17,57 +17,59 @@ $color-07: #499af5;
 $color-08: #ffb30e;
 $color-09: #e43f3f;
 
-#more-tribe{
-  background-color: #fff;
-  .null-content{
-    height: 800px;
-  }
+#more-tribe {
+    background-color: #fff;
+    .null-content {
+        height: 800px;
+    }
 
 }
-.seach-center{
-  .center{
-    margin-top: 15px;
-    text-align: center;
-    position:relative;
-    button{
-     margin-left: 20px;
-      height:25px;
+
+.seach-center {
+    .center {
+        margin-top: 15px;
+        text-align: center;
+        position: relative;
+        button {
+            margin-left: 20px;
+            height: 25px;
+        }
     }
-  }
-  .tribe-total{
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin-right: 16px;
-    margin-top:8px;
-    color: #c0c0c0;
-    span{
-      color: $color-09;
-      font-size: 18px;
+    .tribe-total {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-right: 16px;
+        margin-top: 8px;
+        color: #c0c0c0;
+        span {
+            color: $color-09;
+            font-size: 18px;
+        }
     }
- }
 }
-.more-tribe-list{
-  padding-left:18px;
-  width: 1030px;
-  min-height: 600px;
-  li{
-    width: 180px;
-    margin-top: 30px;
-    margin-right: 20px;
-    float: left;
-    img{
-      width:80px;
-      height: 80px;
-      margin-right: 20px;
-      border-radius: 50%;
+
+.more-tribe-list {
+    padding-left: 18px;
+    width: 1030px;
+    min-height: 600px;
+    li {
+        width: 180px;
+        margin-top: 30px;
+        margin-right: 20px;
+        float: left;
+        img {
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+        h2 {
+            font-weight: bold;
+            margin-top: 8px;
+        }
+        p {
+            margin-top: 8px;
+        }
     }
-    h2{
-      font-weight: bold;
-      margin-top: 8px;
-    }
-    p{
-      margin-top: 8px;
-    }
-  }
 }

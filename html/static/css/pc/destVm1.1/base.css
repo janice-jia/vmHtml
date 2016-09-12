@@ -1,0 +1,332 @@
+@charset "UTF-8";
+/**
+* this is a base stylesheet
+*/
+* {
+  margin: 0;
+  padding: 0; }
+
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-family: "Microsoft YaHei","Arial","Helvetica Neue","Hiragino Sans GB","Simsun,sans-self";
+  font-size: 12px;
+  color: #666666;
+  background: #f7f8fa;
+  word-break: break-all; }
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+table,
+td {
+  border-collapse: collapse;
+  border: none; }
+
+a, input, textarea, select {
+  font-family: "Microsoft YaHei";
+  outline: none; }
+
+textarea {
+  resize: none; }
+
+img, button {
+  border: none; }
+
+button {
+  font-family: "Microsoft YaHei";
+  cursor: pointer; }
+
+li {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6, small {
+  font-size: 100%; }
+
+a {
+  color: #666666; }
+  a:hover {
+    color: #171717; }
+
+a:link,
+a:visited,
+a:focus {
+  text-decoration: none; }
+
+*:focus {
+  outline: none !important; }
+
+/*font */
+.f12 {
+  font-size: 12px; }
+
+.f14 {
+  font-size: 14px; }
+
+.f16 {
+  font-size: 16px; }
+
+.f18 {
+  font-size: 18px; }
+
+.f20 {
+  font-size: 20px; }
+
+.f22 {
+  font-size: 22px; }
+
+.f24 {
+  font-size: 24px; }
+
+/*文字样式（加粗|正常）*/
+.fb {
+  font-weight: bold; }
+
+.fn {
+  font-weight: normal; }
+
+/*段落缩进*/
+.t0 {
+  text-indent: 0; }
+
+.t2 {
+  text-indent: 2em; }
+
+/*文本行高*/
+.lh20 {
+  line-height: 20px; }
+
+.lh25 {
+  line-height: 25px; }
+
+.lh30 {
+  line-height: 30px; }
+
+/*字体*/
+.YaHei {
+  font-family: "Microsoft YaHei"; }
+
+/*字体对齐方式*/
+.tl {
+  text-align: left; }
+
+.tc {
+  text-align: center; }
+
+.tr {
+  text-align: right; }
+
+/*定位*/
+.pos-r {
+  position: relative; }
+
+.pos-a {
+  position: absolute; }
+
+.pos-f {
+  position: fixed; }
+
+/*内外边距*/
+.m5 {
+  margin: 5px; }
+
+.mt5 {
+  margin-top: 5px; }
+
+.mr5 {
+  margin-right: 5px; }
+
+.mb5 {
+  margin-bottom: 5px; }
+
+.ml5 {
+  margin-left: 5px; }
+
+.p5 {
+  padding: 5px; }
+
+.pt5 {
+  padding-top: 5px; }
+
+.pr5 {
+  padding-right: 5px; }
+
+.pb5 {
+  padding-bottom: 5px; }
+
+.pl5 {
+  padding-left: 5px; }
+
+.m10 {
+  margin: 10px; }
+
+.mt10 {
+  margin-top: 10px; }
+
+.mr10 {
+  margin-right: 10px; }
+
+.mb10 {
+  margin-bottom: 10px; }
+
+.ml10 {
+  margin-left: 10px; }
+
+.p10 {
+  padding: 10px; }
+
+.pt10 {
+  padding-top: 10px; }
+
+.pr10 {
+  padding-right: 10px; }
+
+.pb10 {
+  padding-bottom: 10px; }
+
+.pl10 {
+  padding-left: 10px; }
+
+.m15 {
+  margin: 15px; }
+
+.mt15 {
+  margin-top: 15px; }
+
+.mr15 {
+  margin-right: 15px; }
+
+.mb15 {
+  margin-bottom: 15px; }
+
+.ml15 {
+  margin-left: 15px; }
+
+.p15 {
+  padding: 15px; }
+
+.pt15 {
+  padding-top: 15px; }
+
+.pr15 {
+  padding-right: 15px; }
+
+.pb15 {
+  padding-bottom: 15px; }
+
+.pl15 {
+  padding-left: 15px; }
+
+.m20 {
+  margin: 20px; }
+
+.mt20 {
+  margin-top: 20px; }
+
+.mr20 {
+  margin-right: 20px; }
+
+.mb20 {
+  margin-bottom: 20px; }
+
+.ml20 {
+  margin-left: 20px; }
+
+.p20 {
+  padding: 20px; }
+
+.pt20 {
+  padding-top: 20px; }
+
+.pr20 {
+  padding-right: 20px; }
+
+.pb20 {
+  padding-bottom: 20px; }
+
+.pl20 {
+  padding-left: 20px; }
+
+.m25 {
+  margin: 25px; }
+
+.mt25 {
+  margin-top: 25px; }
+
+.mr25 {
+  margin-right: 25px; }
+
+.mb25 {
+  margin-bottom: 25px; }
+
+.ml25 {
+  margin-left: 25px; }
+
+.p25 {
+  padding: 25px; }
+
+.pt25 {
+  padding-top: 25px; }
+
+.pr25 {
+  padding-right: 25px; }
+
+.pb25 {
+  padding-bottom: 25px; }
+
+.pl25 {
+  padding-left: 25px; }
+
+.m30 {
+  margin: 30px; }
+
+.mt30 {
+  margin-top: 30px; }
+
+.mr30 {
+  margin-right: 30px; }
+
+.mb30 {
+  margin-bottom: 30px; }
+
+.ml30 {
+  margin-left: 30px; }
+
+.p30 {
+  padding: 30px; }
+
+.pt30 {
+  padding-top: 30px; }
+
+.pr30 {
+  padding-right: 30px; }
+
+.pb30 {
+  padding-bottom: 30px; }
+
+.pl30 {
+  padding-left: 30px; }
+
+/*浮动*/
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clear {
+  clear: both; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+/*鼠标手势*/
+.cur {
+  cursor: pointer; }

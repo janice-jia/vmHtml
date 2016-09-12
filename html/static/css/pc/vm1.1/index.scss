@@ -1,0 +1,568 @@
+@charset "utf-8";
+/*
+* this is a index stylesheet
+*/
+
+$color-01:#171717;
+$color-02:#f7f8fa;//（背景颜色）
+$color-03:#dcdcdc;//（输入边框颜色）
+$color-04:#b9c1c7;//（直线颜色）
+$color-05:#666666;//（标题字颜色）
+$color-06:#999999;//（编辑画笔颜色）
+$color-07:#499af5;
+$color-08:#ffb30e;
+$color-09:#e43f3f;
+
+$color-ffffff:#ffffff;
+$color-cccccc:#cccccc;
+$color-d7d7d7:#d7d7d7;
+$color-e8e8e8:#e8e8e8;
+$color-e1e1e1:#e1e1e1;
+
+.extend-aline{
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.vm-banner{
+    background: $color-ffffff;
+    .vm-slide{
+        float: left;
+        width: 518px;
+        height: 408px;
+        .carousel-indicators{
+            .active{
+                background: $color-ffffff;
+                position: relative;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    top: -5px;
+                    left: -5px;
+                    border: 1px solid $color-ffffff;
+                    border-radius: 10px;
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+            li{
+                width: 8px;
+                height: 8px;
+                background: #eeeeee;
+                border: none;
+                margin: 0 3px;
+            }
+        }
+        .vm-slide-inner{
+            height: 100%;
+            .vm-slide-item{
+                width: 100%;
+                height: 100%;
+                img{
+                    min-width: 100%;
+                    min-height: 100%;
+                }
+            }
+        }
+        .vm-slide-control{
+            span{
+                margin-top: 190px;
+                display: inline-block;
+                height: 36px;
+                width: 20px;
+                background: #fff;
+                position: relative;
+                &:before{
+                    position: absolute;
+                    content: " ";
+                    top: 9px;
+                    left: 5px;
+                    width: 11px;
+                    height: 18px;
+
+                }
+            }
+
+        }
+
+        .left{
+            span{
+                &:before{
+                    background: url("../../../images/pc/icon/icon-left.png") no-repeat;
+                }
+            }
+        }
+        .right{
+            span{
+                &:before{
+                    background: url("../../../images/pc/icon/icon-right.png") no-repeat;
+                }
+            }
+        }
+    }
+    .vm-banner-con{
+        width: 492px;
+        float: left;
+        .vm-banner-con-1,
+        .vm-banner-con-2,
+        .vm-banner-con-3,
+        .vm-banner-con-4{
+            float: left;
+            width: 246px;
+        }
+        .vm-banner-con-1,
+        .vm-banner-con-4{
+            padding: 25px;
+            position: relative;
+            &:before{
+                content: "";
+                position: absolute;
+                top: 88px;
+            }
+            h2{
+                font-size: 16px;
+                line-height: 25px;
+                max-height: 50px;
+                overflow: hidden;
+                a{
+                    &:hover{
+                        @extend .extend-aline;
+                    }
+                }
+            }
+            p{
+                color: $color-06;
+                margin-top: 15px;
+                line-height: 22px;
+                max-height: 88px;
+                overflow: hidden;
+            }
+        }
+        .vm-banner-con-1{
+            &:before{
+                right: -20px;
+                width: 0;
+                height: 0;
+                overflow: hidden;
+                border: 10px solid transparent;
+                border-left-color: $color-ffffff;
+                background: none;
+            }
+        }
+        .vm-banner-con-4{
+            &:before{
+                left: -20px;
+                width: 0;
+                height: 0;
+                overflow: hidden;
+                border: 10px solid transparent;
+                border-right-color: $color-ffffff;
+                background: none;
+            }
+        }
+    }
+}
+
+.vm-tit{
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    h2{
+        height: 100%;
+        line-height: 50px;
+        font-size: 20px;
+        color: $color-01;
+        position: relative;
+        margin: 0 35px;
+        a{
+            color: $color-01;
+            &:hover{
+                color: $color-05;
+            }
+        }
+        &:before,
+        &:after{
+            position: absolute;
+            top: 50px;
+            content: "";
+            width: 435px;
+            height: 1px;
+            border-bottom: 1px solid #c2c2c2;
+        }
+        &:before{
+            left: 0;
+        }
+        &:after{
+            right: 0;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+}
+.vm-more{
+    text-align: center;
+    a{
+        margin: 14px 0 32px 0;
+        display: inline-block;
+        width: 155px;
+        height: 40px;
+        line-height: 40px;
+        border: 1px solid #c2c2c2;
+        text-align: center;
+        font-size: 14px;
+        color: $color-06;
+        &:hover{
+            color: $color-05;
+        }
+    }
+}
+
+//部落
+.vm-tribe{
+    background: $color-e8e8e8;
+    .vm-tribe-con{
+        ul{
+            padding-left: 20px;
+            li{
+                width: 222px;
+                height: 367px;
+                float: left;
+                background: $color-ffffff;
+                border: 1px solid $color-d7d7d7;
+                margin-left: 18px;
+                margin-bottom: 18px;
+                box-shadow: 0 5px 0 rgba(215, 215, 215, 0.3);
+                .vm-tribe-con-img{
+                    width: 220px;
+                    height: 220px;
+                    text-align: center;
+                    display: table-cell;
+                    display:table-cell;
+                    text-align:center;
+                    vertical-align:middle;
+                    img{
+                        max-height: 220px;
+                        max-width: 220px;
+                    }
+                }
+                .vm-tribe-con-tit{
+                    text-align: center;
+                    height: 20px;
+                    overflow: hidden;
+                    line-height: 20px;
+                    margin: 18px 25px 12px 25px;
+                    a{
+                        font-size: 14px;
+                        color: $color-01;
+                        &:hover{
+                            @extend .extend-aline;
+                        }
+                    }
+                }
+                .vm-tribe-con-des{
+                    height: 45px;
+                    overflow: hidden;
+                    margin: 0 10px;
+                    padding: 0 15px;
+                    line-height: 20px;
+                    color: $color-06;
+                    border-bottom: 1px solid #c2c2c2;
+                }
+                .vm-tribe-con-view{
+                    padding-left: 15px;
+                    padding-top: 17px;
+                    color: $color-06;
+                    span{
+                        display: inline-block;
+                        float: left;
+                        position: relative;
+                        width: 58px;
+                        padding-left: 15px;
+                        margin-left: 5px;
+                        overflow: hidden;
+                        height: 16px;
+                        &:before{
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            top: 3px;
+                        }
+                        &.view{
+                            padding-left: 17px;
+                            &:before{
+                                width: 14px;
+                                height: 10px;
+                                background: url("../../../images/pc/icon/icon-view.png");
+                            }
+                        }
+                        &.msg{
+                            &:before {
+                                height: 12px;
+                                width: 12px;
+                                background: url("../../../images/pc/icon/icon-msg.png");
+                            }
+                        }
+                        &.care{
+                            &:before {
+                                height: 12px;
+                                width: 12px;
+                                background: url("../../../images/pc/icon/icon-care.png");
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//需求
+.vm-need{
+    .vm-need-con{
+        ul{
+            padding-left: 10px;
+            li{
+                float: left;
+                width: 297px;
+                border: 1px solid $color-cccccc;
+                margin:0 0 18px 25px;
+                .vm-need-img{
+                    width: 295px;
+                    height: 150px;
+                    text-align: center;
+                    display: table-cell;
+                    display:table-cell;
+                    text-align:center;
+                    vertical-align:middle;
+                    img{
+                        max-height: 150px;
+                        max-width: 295px;
+                    }
+                }
+                .vm-need-tit{
+                    line-height: 20px;
+                    height: 40px;
+                    overflow: hidden;
+                    padding: 0 75px;
+                    margin: 20px 0;
+                    a{
+                        font-size: 14px;
+                        color: $color-01;
+                        &:hover{
+                            @extend .extend-aline;
+                        }
+                    }
+                }
+                .vm-need-con{
+                    margin: 0 20px;
+                    height: 40px;
+                    line-height: 40px;
+                    border-top: 1px solid $color-cccccc;
+                    text-align: center;
+                    overflow: hidden;
+                    a{
+                        color: $color-05;
+                        &:hover{
+                            @extend .extend-aline;
+                        }
+                    }
+                }
+                .vm-need-info{
+                    border-top: 1px solid $color-cccccc;
+                    height: 40px;
+                    line-height: 40px;
+                    padding: 0 20px;
+                    .actor{
+                        padding-left: 15px;
+                        position: relative;
+                        &:before{
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            top:3px;
+                            background: url("../../../images/pc/icon/icon-actor.png") no-repeat;
+                            height: 11px;
+                            width: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//服务
+.vm-serve{
+    background: $color-e8e8e8;
+    .vm-serve-con{
+        ul{
+            padding-left: 15px;
+            li{
+                float: left;
+                width: 174px;
+                border: 1px solid $color-d7d7d7;
+                background: $color-ffffff;
+                margin:0 0 18px 18px;
+                .vm-serve-img{
+                    width: 172px;
+                    height: 150px;
+                    text-align: center;
+                    display: table-cell;
+                    display:table-cell;
+                    text-align:center;
+                    vertical-align:middle;
+                    img{
+                        max-height: 150px;
+                        max-width: 172px;
+                    }
+                }
+                .vm-serve-tit{
+                    line-height: 20px;
+                    height: 40px;
+                    overflow: hidden;
+                    padding: 0 25px;
+                    margin: 10px 0;
+                    a{
+                        font-size: 14px;
+                        color: $color-01;
+                        &:hover{
+                            @extend .extend-aline;
+                        }
+                    }
+                }
+                .vm-serve-price{
+                    color: $color-06;
+                    text-align: center;
+                    p{
+                        height: 16px;
+                        margin-bottom: 10px;
+                    }
+                }
+                .vm-serve-user{
+                    border-top:1px solid $color-cccccc;
+                    height: 40px;
+                    margin: 0 8px;
+                    padding-top: 8px;
+                    a{
+                        display: inline-block;
+                        float: left;
+                        color: $color-06;
+                        &:hover{
+                            color: $color-05;
+                        }
+                        &.vm-serve-avatar{
+                            width: 21px;
+                            height: 21px;
+                            img{
+                                max-width: 21px;
+                                max-width: 21px;
+                                border-radius: 50%;
+                            }
+                        }
+                        &.vm-serve-name{
+                            width: 135px;
+                            height: 21px;
+                            line-height: 21px;
+                            overflow: hidden;
+                            padding-left: 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//意见反馈
+.vm-feed{
+    width: 100%;
+    height: 253px;
+    background: $color-e8e8e8;
+    border-top: 1px solid $color-e1e1e1;
+    padding-top: 10px;
+    .vm-feed-l{
+        float: left;
+        width: 499px;
+        margin-left: 10px;
+    }
+    .vm-feed-line{
+        width: 2px;
+        float: left;
+        margin-top: 20px;
+        height: 190px;
+        border-right: 1px solid $color-e1e1e1;
+    }
+    .vm-feed-r{
+        width: 499px;
+        float: left;
+        padding-left: 77px;
+        .vm-feed-wall{
+            .vm-feed-con{
+                .vm-feed-conL{
+                    margin-right: 12px;
+                    text-align: center;
+                }
+                .vm-feed-conR{
+                    width: 133px;
+                    margin-top: 25px;
+                }
+                .vm-feed-conR2{
+                    width: 128px;
+                    height: 128px;
+                    margin-left: 11px;
+                    float: left;
+                    margin-top: 7px;
+                    text-align: center;
+
+                }
+            }
+        }
+    }
+    .vm-feed-wall{
+        width: 500px;
+        padding-top: 6px;
+        .vm-feed-tit{
+            h1{
+                font-size: 18px;
+                height: 50px;
+                font-weight: bold;
+                line-height: 50px;
+                overflow: hidden;
+                color: #2c2c2c;
+                font-family: "Microsoft YaHei";
+            }
+        }
+        .vm-feed-con{
+            .vm-feed-conL{
+                margin-top: 7px;
+                width: 128px;
+                height: 128px;
+                float: left;
+                background: $color-ffffff;
+                margin-right: 30px;
+            }
+            .vm-feed-conR{
+                float: left;
+                width: 265px;
+                margin-top: 20px;
+                h2{
+                    font-size: 14px;
+                    height: 35px;
+                    line-height: 35px;
+                    margin-bottom: 5px;
+                    a{
+                        &:hover{
+                            @extend .extend-aline;
+                        }
+                    }
+                }
+                p{
+                    height: 30px;
+                    font-size: 14px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}

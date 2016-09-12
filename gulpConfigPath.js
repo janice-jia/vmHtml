@@ -9,8 +9,10 @@ module.exports = {
     src:{
         sassSrc: './html/static/css/pc/src/',
         sassSrcVs1: './html/static/css/pc/version1.1/',
+        sassSrcVm1: './html/static/css/pc/vm1.1/',
         sassDest: './html/static/css/pc/dest/',
         sassDestVs1: './html/static/css/pc/destVersion1.1/',
+        sassDestVm1: './html/static/css/pc/destVm1.1/',
         cssSrc: './html/static/css/pc/dest/*.css',
         minCss: './html/static/css/pc/minCss',
         jsSrc: './html/static/js/pc/src/*.js',

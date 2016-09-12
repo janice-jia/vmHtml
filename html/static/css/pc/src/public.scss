@@ -1017,269 +1017,98 @@ button.zcbl-close{
 }
 
 //公用头部样式
-#zcbl-header{
-    height: 50px;
+.vm-header {
     width: 100%;
-    margin-bottom: 17px;
+    margin: 0 auto;
+    height: 50px;
+    line-height: 50px;
     position: fixed;
-    z-index: 1000;
-    top:0;
+    top: 0;
     left: 0;
-    background: rgba(0, 0, 0 ,0.3);
-    .header-box{
-        width: 960px;
-        padding: 0 20px;
-        margin: 0 auto;
-        height: 100%;
-        .header-log{
+    background: $color-ffffff;
+    z-index: 1000;
+    h1 {
+        padding-left: 20px;
+        font-size: 14px;
+        a {
+            display: inline-block;
             float: left;
+            font-size: 14px;
+            line-height: 50px;
+            padding-right: 15px;
+            color: #3b3b3b;
+        }
+    }
+    .vm-nav {
+        padding-left: 15px;
+        font-size: 14px;
+        li {
+            float: left;
+            width: 67px;
+            text-align: center;
+            a {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                color: #3b3b3b;
+            }
+            &:hover {
+                height: 50px;
+                border-bottom: 3px solid #ffb30e;
+            }
+            &.vm-nav-hover {
+                background: #ffb30e;
+            }
+        }
+    }
+    .vm-search {
+        float: left;
+        margin: 0 90px 0 50px;
+        input {
+            font-size: 12px;
+            height: 25px;
+            line-height: 25px;
+            width: 280px;
             position: relative;
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            //&:after{
-            //    content: "";
-            //    position: absolute;
-            //    top: 67px;
-            //    left: -10px;
-            //    width: 0;
-            //    height: 0;
-            //    border-left: 30px solid transparent;
-            //    border-right: 30px solid transparent;
-            //    border-top: 17px solid $color-01;
-            //}
-            a{
-                display: block;
-                padding: 6px 40px 0 1px;
-            }
-            .zcbl-logo{
-                display: block;
-                width: 30px;
-                height: 38px;
-                background: url("../../../images/pc/icon/logo1.png") no-repeat;
-            }
+            padding: 0 15px 0 30px;
+            border-radius: 4px;
+            border: 1px solid #e7e8ea;
+            background: url("../../../images/pc/vm1.1/public/icon-seach.png") 10px 7px #f7f8fa no-repeat;
         }
-        .header-nav{
-            float: left;
-            li{
-                float: left;
-                line-height: 50px;
-                width: 90px;
-                text-align: center;
-                font-size: 16px;
-                a{
-                    color: $color-ffffff;
-                    display: block;
-                }
-
-                &.header-nav-hover{
-                    height: 50px;
-                    background: $color-07;
-                }
-
-                &:hover a, &.header-nav-hover a{
-                    height: 50px;
-                    color: $color-ffffff;
-                    border-bottom: 4px solid $color-07;
-                }
-            }
-        }
-        .header-right{
-            float: right;
-            width: 370px;
+    }
+    .vm-news {
+        float: left;
+        width: 50px;
+        height: 100%;
+        position: relative;
+        a {
+            display: inline-block;
+            width: 100%;
             height: 100%;
-            .user-login{
-                .header-publish{
-                    float: right;
-                    width: 170px;
-                    height: 100%;
-                    line-height: 50px;
-                    background: $color-07;
-                    text-align: center;
-                    a{
-                        color: $color-01;
-                        display: block;
-                    }
-                }
-                .header-msg{
-                    a{
-                        position: absolute;
-                        top:-10px;
-                        left: -5px;
-                        display: block;
-                        width: 45px;
-                        height: 41px;
-                        z-index: 10;
-                    }
-                    float: right;
-                    width: 21px;
-                    height: 25px;
-                    background: url("../../../images/pc/icon/icon_headermsg-1.png") no-repeat;
-                    margin: 13px 60px 0 60px;
-                    position: relative;
-                    .header-havemsg{
-                        position: absolute;
-                        top: -5px;
-                        left: 22px;
-                        width: 8px;
-                        height: 8px;
-                        background: $color-08;
-                        border-radius: 50%;
-                    }
-                }
-                .header-msg{
-                    float: right;
-                }
-                .header-user{
-                    width: 34px;
-                    height: 100%;
-                    float: right;
-                    padding: 10px 0;
-                    position: relative;
-                    &:hover{
-                        cursor: pointer;
-                        .zcbl-userInfo{
-                            display: block;
-
-                        }
-                    }
-                    img{
-                        border-radius: 50%;
-                    }
-                    .zcbl-userInfo{
-                        position: absolute;
-                        left: -50px;
-                        top:60px;
-                        width: 100px;
-                        display: none;
-                        height: 245px;
-                        background: $color-ffffff;
-                        box-shadow: 0 1px 4px rgba(0,0,0,.2);
-                        .zcbl-userInfo-top{
-                            position: absolute;
-                            left: 55px;
-                            top: -10px;
-                            background: url("../../../images/pc/icon/icon-index-top.png") no-repeat;
-                            height: 10px;
-                            width: 21px;
-                        }
-                        .zcbl-userInfo-line{
-                            height: 1px;
-                            overflow: hidden;
-                            border-bottom: 1px solid $color-dddddd;
-                        }
-                        .zcbl-userInfo-1,
-                        .zcbl-userInfo-2{
-                            text-align: left;
-                            li{
-                                a{
-                                    font-size: 14px;
-                                    color: #222222;
-                                    padding-left: 23px;
-                                    &:hover{
-                                        @extend .extend-aline;
-                                    }
-                                    span{
-                                        color: $color-08;
-                                    }
-                                }
-                            }
-                        }
-                        .zcbl-userInfo-1{
-                            margin-bottom: 18px;
-                            li{
-                                margin-top: 15px;
-                                &.zcbl-userInfo-WB,
-                                &.zcbl-userInfo-WX,
-                                &.zcbl-userInfo-QQ{
-
-                                }
-                                &.zcbl-userInfo-WB{
-                                    b{
-                                        display: inline-block;
-                                        background: url("../../../images/pc/icon/icon-index-wb.png") no-repeat;
-                                        width: 19px;
-                                        height: 16px;
-                                        margin-right: 5px;
-                                    }
-                                }
-                                &.zcbl-userInfo-WX{
-                                    b{
-                                        display: inline-block;
-                                        background: url("../../../images/pc/icon/icon-index-wx.png") no-repeat;
-                                        width: 19px;
-                                        height: 16px;
-                                        margin-right: 5px;
-                                    }
-                                }
-                                &.zcbl-userInfo-QQ{
-                                    b{
-                                        display: inline-block;
-                                        background: url("../../../images/pc/icon/icon-index-qq.png") no-repeat;
-                                        width: 19px;
-                                        height: 16px;
-                                        margin-right: 5px;
-                                    }
-                                }
-                            }
-                        }
-                        .zcbl-userInfo-2{
-                            li{
-                                height: 57px;
-                                line-height: 57px;
-                            }
-                        }
-                    }
-                }
-            }
-            .user-notlogin{
-                ul{
-                    width: 215px;
-                    float: right;
-                    li{
-                        float: left;
-                        height: 100%;
-                        line-height: 50px;
-                        color: $color-ffffff;
-                        padding-left:14px;
-                        a{
-                            color: $color-ffffff;
-                            &.app-color{
-                                color: $color-07;
-                            }
-                            @extend .extend-aline;
-                        }
-                        &.appDownLoad{
-                            position: relative;
-                            .appDownLoadBox{
-                                display: none;
-                                position: absolute;
-                                left: -30px;
-                                top:72px;
-                                width: 135px;
-                                height: 141px;
-                                text-align: center;
-                                padding-top: 13px;
-                                background: $color-ffffff;
-                                border-radius: 5px;
-                                @extend .extend-box-shadow;
-                                .appDownLoadBox-top{
-                                    position: absolute;
-                                    left: 60px;
-                                    top: -8px;
-                                    background: url("../../../images/pc/icon/icon-index-top.png") no-repeat;
-                                    height: 10px;
-                                    width: 21px;
-                                }
-                            }
-                            &:hover {
-                                .appDownLoadBox{
-                                    display: block;
-                                }
-                            }
-                        }
-                    }
-                }
+            background: url("../../../images/pc/vm1.1/public/icon-msg.png") 10px 19px no-repeat;
+        }
+        .vm-havemsg {
+            position: absolute;
+            top: 17px;
+            left: 25px;
+            width: 8px;
+            height: 8px;
+            background: #e43f3f;
+            border-radius: 50%;
+        }
+    }
+    .vm-user {
+        height: 100%;
+        width: 20px;
+        float: left;
+        position: relative;
+        margin-left: 30px;
+        a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            img {
+                border-radius: 50%;
             }
         }
     }
@@ -1289,124 +1118,90 @@ button.zcbl-close{
 }
 
 //公用尾部样式
-#zcbl-footer{
+.vm-footer {
     width: 100%;
     height: 240px;
-    background: $color-01;
+    background: #171717;
     min-width: 1000px;
-    .footer-box{
-        width: 1000px;
-        margin: 0 auto;
-    }
-    .footer-link{
+    .vm-footer-link {
         height: 100px;
         line-height: 100px;
-        border-bottom: 1px solid $color-acacac;
-        padding: 40px 0 40px 0;
-        p{
+        border-bottom: 1px solid #acacac;
+        color: $color-ffffff;
+        text-align: center;
+        font-size: 12px;
+        a {
             color: $color-ffffff;
-            margin-bottom: 0;
-            &.footer-link-p{
-                width: 80px;
-                float: left;
-                line-height: 25px;
-                height: 25px;
-                font-size: 14px;
-            }
-        }
-        ul{
-            &.footer-link-ul{
-                width: 922px;
-                float: left;
-                margin-left: -9px;
-            }
-            li{
-                float: left;
-                line-height: 25px;
-                height: 25px;
-                color: $color-ffffff;
-                padding: 0 0 0 9px;
-                a{
-                    font-size: 14px;
-                    color: $color-ffffff;
-                    @extend .extend-aline;
-                }
-            }
+            @extend .extend-aline;
+            display: inline-block;
+            padding: 0 3px;
         }
     }
-    .footer-aboutus{
+    .vm-footer-about {
         height: 85px;
-        .footer-aboutus-l{
+        .vm-footer-about-l {
             float: left;
-            h1{
+            h1 {
                 position: relative;
                 line-height: 44px;
                 margin-top: 20px;
                 width: 290px;
                 overflow: hidden;
-                a{
+                a {
                     color: $color-ffffff;
                     display: block;
                     height: 44px;
-                    padding: 0 0 0 65px;
+                    padding: 0 0 0 8px;
                     width: 145px;
                     overflow: hidden;
-                    &:before{
-                        position: absolute;
-                        left: 8px;
-                        top: 0;
-                        content: "";
-                        background: url("../../../images/pc/icon/icon_footlogo.png") no-repeat;
-                        width: 34px;
-                        height: 44px;
-                    }
                 }
             }
         }
-        .footer-aboutus-z{
+        .vm-footer-about-z {
             float: left;
             margin-top: 20px;
             margin-left: 30px;
-            ul{
-                li{
+            font-size: 12px;
+            ul {
+                li {
                     float: left;
                     line-height: 44px;
                     color: $color-ffffff;
-                    span{
-                        &.divide{
+                    span {
+                        &.divide {
                             padding: 0 20px;
                         }
                     }
-                    a{
+                    a {
                         color: $color-ffffff;
                         @extend .extend-aline;
-                        font-size: 14px;
                     }
                 }
             }
         }
-        .footer-aboutus-r{
+        .vm-footer-about-r {
             float: right;
             margin-top: 26px;
-            h2{
+            font-size: 12px;
+            h2 {
                 position: relative;
                 line-height: 31px;
                 color: $color-ffffff;
                 padding: 0 0 0 40px;
-                &:before{
+                &:before {
                     content: "";
                     position: absolute;
                     top: 0;
                     left: 0;
                     background: url("../../../images/pc/icon/icon-phone.png");
-                    height: 32px;
-                    width: 32px;
+                    height: 31px;
+                    width: 29px;
                 }
             }
         }
     }
-    .footer-copyright{
-        p{
+    .vm-footer-copyright {
+        p {
             text-align: center;
             color: $color-ffffff;
             font-size: 12px;

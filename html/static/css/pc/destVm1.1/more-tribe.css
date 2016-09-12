@@ -1,0 +1,17 @@
+#more-tribe {
+  background-color: #000; }
+
+.seach-center .center {
+  margin-top: 15px;
+  text-align: center; }
+  .seach-center .center button {
+    margin-left: 20px;
+    height: 25px; }
+
+.more-tribe-list li {
+  margin-top: 30px;
+  float: left; }
+  .more-tribe-list li img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; }

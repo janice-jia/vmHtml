@@ -52,9 +52,9 @@
         width: 11px;
         height: 18px; }
     .vm-banner .vm-slide .left span:before {
-      background: url("../../../images/pc/icon/icon-left.png") no-repeat; }
+      background: url("../../../images/pc/vm1.1/icon/icon-left.png") no-repeat; }
     .vm-banner .vm-slide .right span:before {
-      background: url("../../../images/pc/icon/icon-right.png") no-repeat; }
+      background: url("../../../images/pc/vm1.1/icon/icon-right.png") no-repeat; }
   .vm-banner .vm-banner-con {
     width: 492px;
     float: left; }
@@ -159,7 +159,7 @@
       border: 1px solid #d7d7d7;
       margin-left: 18px;
       margin-bottom: 18px;
-      box-shadow: 0 5px 0 rgba(215, 215, 215, 0.3); }
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); }
       .vm-tribe .vm-tribe-con ul li .vm-tribe-con-img {
         width: 220px;
         height: 220px;
@@ -211,15 +211,15 @@
             .vm-tribe .vm-tribe-con ul li .vm-tribe-con-view span.view:before {
               width: 14px;
               height: 10px;
-              background: url("../../../images/pc/icon/icon-view.png"); }
+              background: url("../../../images/pc/vm1.1/icon/icon-view.png"); }
           .vm-tribe .vm-tribe-con ul li .vm-tribe-con-view span.msg:before {
             height: 12px;
             width: 12px;
-            background: url("../../../images/pc/icon/icon-msg.png"); }
+            background: url("../../../images/pc/vm1.1/icon/icon-msg.png"); }
           .vm-tribe .vm-tribe-con ul li .vm-tribe-con-view span.care:before {
             height: 12px;
             width: 12px;
-            background: url("../../../images/pc/icon/icon-care.png"); }
+            background: url("../../../images/pc/vm1.1/icon/icon-care.png"); }
 
 .vm-need .vm-need-con ul {
   padding-left: 10px; }
@@ -270,7 +270,7 @@
           position: absolute;
           left: 0;
           top: 3px;
-          background: url("../../../images/pc/icon/icon-actor.png") no-repeat;
+          background: url("../../../images/pc/vm1.1/icon/icon-actor.png") no-repeat;
           height: 11px;
           width: 8px; }
 

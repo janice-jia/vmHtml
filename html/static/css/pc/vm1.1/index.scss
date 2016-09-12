@@ -88,14 +88,14 @@ $color-e1e1e1:#e1e1e1;
         .left{
             span{
                 &:before{
-                    background: url("../../../images/pc/icon/icon-left.png") no-repeat;
+                    background: url("../../../images/pc/vm1.1/icon/icon-left.png") no-repeat;
                 }
             }
         }
         .right{
             span{
                 &:before{
-                    background: url("../../../images/pc/icon/icon-right.png") no-repeat;
+                    background: url("../../../images/pc/vm1.1/icon/icon-right.png") no-repeat;
                 }
             }
         }
@@ -232,7 +232,7 @@ $color-e1e1e1:#e1e1e1;
                 border: 1px solid $color-d7d7d7;
                 margin-left: 18px;
                 margin-bottom: 18px;
-                box-shadow: 0 5px 0 rgba(215, 215, 215, 0.3);
+                box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
                 .vm-tribe-con-img{
                     width: 220px;
                     height: 220px;
@@ -293,21 +293,21 @@ $color-e1e1e1:#e1e1e1;
                             &:before{
                                 width: 14px;
                                 height: 10px;
-                                background: url("../../../images/pc/icon/icon-view.png");
+                                background: url("../../../images/pc/vm1.1/icon/icon-view.png");
                             }
                         }
                         &.msg{
                             &:before {
                                 height: 12px;
                                 width: 12px;
-                                background: url("../../../images/pc/icon/icon-msg.png");
+                                background: url("../../../images/pc/vm1.1/icon/icon-msg.png");
                             }
                         }
                         &.care{
                             &:before {
                                 height: 12px;
                                 width: 12px;
-                                background: url("../../../images/pc/icon/icon-care.png");
+                                background: url("../../../images/pc/vm1.1/icon/icon-care.png");
                             }
                         }
                     }
@@ -381,7 +381,7 @@ $color-e1e1e1:#e1e1e1;
                             position: absolute;
                             left: 0;
                             top:3px;
-                            background: url("../../../images/pc/icon/icon-actor.png") no-repeat;
+                            background: url("../../../images/pc/vm1.1/icon/icon-actor.png") no-repeat;
                             height: 11px;
                             width: 8px;
                         }

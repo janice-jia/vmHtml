@@ -260,6 +260,24 @@ $color-ffffff: #ffffff;
             background: url("../../../images/pc/vm1.1/public/icon-seach.png") 10px 7px #f7f8fa no-repeat;
         }
     }
+    .vm-no-login{
+        ul{
+            li{
+                float: left;
+                font-size: 14px;
+                a{
+                    color: #3b3b3b;
+                    &:hover{
+                        color: #999999;
+                    }
+                }
+                span{
+                    padding:0 10px;
+                    color: #cccccc;
+                }
+            }
+        }
+    }
     .vm-news {
         float: left;
         width: 50px;
@@ -283,16 +301,97 @@ $color-ffffff: #ffffff;
     }
     .vm-user {
         height: 100%;
-        width: 20px;
+        width: 50px;
         float: left;
         position: relative;
-        margin-left: 30px;
         a {
+            padding: 0 15px;
             display: inline-block;
-            width: 100%;
+            width: 50px;
             height: 100%;
             img {
                 border-radius: 50%;
+            }
+        }
+        .vm-user-open{
+            display: none;
+            position: absolute;
+            right: -20px;
+            top: 50px;
+            width: 125px;
+            background: $color-ffffff;
+            z-index: 10;
+            ul{
+                padding: 10px 0;
+                width: 100%;
+                border-bottom: 1px solid #dddddd;
+                li{
+                    padding-left: 22px;
+                    height: 30px;
+                    line-height: 30px;
+                    overflow: hidden;
+                    a{
+                        font-size: 14px;
+                        color: #707070;
+                        padding: 0;
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
+                        &:hover{
+                            color: $color-01;
+                        }
+                    }
+                    span{
+                        &.msgNum{
+                            margin-left: 10px;
+                            display: inline-block;
+                            padding: 0 5px;
+                            font-size: 12px;
+                            height: 15px;
+                            background: $color-08;
+                            border-radius: 3px;
+                            line-height: 15px;
+                            color: #707070;
+                        }
+                    }
+                    &.WB,
+                    &.WX,
+                    &.TX{
+                        padding-left: 45px;
+                        position: relative;
+                        &:before{
+                            content: '';
+                            position: absolute;
+                            top: 8px;
+                            left: 22px;
+                            width: 16px;
+                            height: 13px;
+                        }
+                    }
+                    &.WB{
+                        &:before {
+                            background: url("../../../images/pc/vm1.1/icon/icon-WB.png");
+
+                        }
+                    }
+                    &.WX{
+                        &:before {
+                            background: url("../../../images/pc/vm1.1/icon/icon-WX.png");
+                        }
+                    }
+                    &.TX{
+                        &:before {
+                            background: url("../../../images/pc/vm1.1/icon/icon-TX.png");
+                            width: 15px;
+                            height: 13px;
+                        }
+                    }
+                }
+            }
+        }
+        &:hover{
+            .vm-user-open{
+                display: block;
             }
         }
     }
@@ -564,6 +663,7 @@ $color-ffffff: #ffffff;
     }
 }
 
+<<<<<<< HEAD
 .error-page {
     min-height: 800px;
     .error-box {
@@ -587,6 +687,34 @@ $color-ffffff: #ffffff;
             color: #3b3b3b;
             margin-top: 30px;
             margin-bottom: 40px;
+=======
+}
+
+//我的主页--公用导航
+.vm-homePageNav{
+    height: 50px;
+    line-height: 50px;
+    background: $color-ffffff;
+    padding: 0 40px;
+    ul{
+        li{
+            float: left;
+            a{
+                display: inline-block;
+                height: 100%;
+                width: 100%;
+                &:hover{
+                    color: $color-08;
+                    border-bottom: 1px solid $color-08;
+                }
+            }
+            &.vm-homePageNav-hover{
+                a{
+                    color: $color-08;
+                    border-bottom: 1px solid $color-08;
+                }
+            }
+>>>>>>> dfd1eedae242e0cfa6a6a7f0eaf6d2de34565a7b
         }
     }
 }

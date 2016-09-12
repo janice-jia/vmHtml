@@ -413,3 +413,25 @@
         height: 22px; }
     #mhp-header .footermsg .edit-introduce .jb a {
       color: #999999; }
+
+.error-page {
+  min-height: 800px; }
+  .error-page .error-box {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #dcdcdc;
+    display: table; }
+    .error-page .error-box .table-cell {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center; }
+    .error-page .error-box b {
+      background-image: url("../../../images/pc/vm1.1/icon/icon-careful.png");
+      width: 66px;
+      height: 66px;
+      display: inline-block; }
+    .error-page .error-box p {
+      font-size: 14px;
+      color: #3b3b3b;
+      margin-top: 30px;
+      margin-bottom: 40px; }

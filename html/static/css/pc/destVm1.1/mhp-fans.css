@@ -20,6 +20,27 @@
   -khtml-opacity: 0.5;
   -webkit-opacity: 0.5; }
 
+.null-content {
+  text-align: center;
+  background-color: #fff;
+  display: table;
+  width: 100%; }
+  .null-content:before {
+    display: table;
+    content: ""; }
+  .null-content p:before {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    content: "";
+    display: block;
+    width: 148px;
+    height: 154px;
+    background-image: url("../../../images/pc/icon/icon-null.png"); }
+  .null-content p {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 14px; }
+
 .editmsg-fff {
   display: inline-block;
   background-image: url("../../../images/pc/icon/icon-edit-fff.png");
@@ -104,6 +125,11 @@
       border-color: #ffb30e; }
       #mhp-tab .nav-tabs .active a {
         color: #ffb30e; }
+
+#mhp-content .tab-content {
+  min-height: 500px; }
+  #mhp-content .tab-content .null-content {
+    height: 500px; }
 
 .tab-lists {
   margin-left: 10px; }

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>粉丝</title>
+
+    <!--IE浏览器运行最新的渲染模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="static/css/pc/minCss/bootstrap.min.css"/>
+    <link rel="stylesheet" href="static/css/pc/minCss/all.min.css"/>
+
+    <!--[if lt IE 9]>
+    <script src="static/js/pc/dest/html5shiv.min.js"></script>
+    <script src="static/js/pc/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<!--header start-->
+<div class="vm-header">
+    <div class="container">
+        <h1>
+            <a href="">
+                <img src="./static/images/pc/logo.png" height="36" width="30" alt="众创部落"/>
+            </a>
+            <a href=""><b>众创部落</b></a>
+        </h1>
+        <ul class="vm-nav">
+            <li class="vm-nav-hover"><a href="#">首页</a></li>
+            <li><a href="#">部落</a></li>
+            <li><a href="#">需求</a></li>
+            <li><a href="#">服务</a></li>
+        </ul>
+        <div class="vm-seach">
+            <input type="text" placeholder="搜索"/>
+        </div>
+        <div class="vm-news">
+            <a href="#">&nbsp;</a>
+            <span class="vm-havemsg"></span>
+        </div>
+        <div class="vm-user">
+            <a target="_blank" href="#">
+                <img src="./static/images/pc/public/default-avatar.png" alt="用户头像" height="20" width="20">
+            </a>
+        </div>
+    </div>
+</div>
+<!--header end-->
+
+<div id="myHomepage" class="container mt50 mb50">
+    <div id="mhp-header">
+        <div class="top">
+            <button type="button" id="editbg" class="editbg">上传封面图</button>
+            <img class="bgimg" src="static/images/pc/jpg/tribe_1.jpg" alt=""/>
+        </div>
+        <div class="centerbtn">
+            <button type="button" class="btn-yellow-100">关注</button>
+            <button type="button" class="btn-yellow-100">私信</button>
+        </div>
+        <div class="footermsg">
+            <a class="head" href="#">
+                <img src="static/images/pc/jpg/tribe_2.jpg" alt="">
+                <b class="editmsg-fff"></b>
+            </a>
+            <p>用户名用户名</p>
+            <div id="edit-introduce" class="edit-introduce">
+                <p>介绍下自己，让大家认识你......</p>
+                <b ></b>
+                <input class="opacity-0" type="text" value="介绍下自己，让大家认识你......">
+            </div>
+
+        </div>
+    </div>
+    <div id="mhp-tab">
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="active" role="presentation" >
+                <a href="#tab-tribe" aria-controls="home" role="tab" data-toggle="tab">部落</a>
+            </li>
+            <li role="presentation">
+                <a href="#tab-posts" aria-controls="profile" role="tab" data-toggle="tab">帖子</a>
+            </li>
+            <li role="presentation">
+                <a href="#tab-zan" aria-controls="messages" role="tab" data-toggle="tab">赞过</a>
+            </li>
+            <li role="presentation">
+                <a href="#tab-concern" aria-controls="settings" role="tab" data-toggle="tab">关注</a>
+            </li>
+            <li role="presentation">
+                <a href="#tab-fans" aria-controls="settings" role="tab" data-toggle="tab">粉丝</a>
+            </li>
+        </ul>
+
+    </div>
+    <div id="mhp-content">
+        <div class="tab-content">
+            <!--  部落 -->
+            <div role="tabpanel" class="tab-pane  active" id="tab-tribe">
+                <!-- 没有内容时显示 null-content -->
+                <div class="null-content">
+                    <p>酋长大人您还没有创建部落或加入部落</p>
+                </div>
+                <ul class="tab-tribe-list tab-lists hide">
+                    <li>
+                        <div class="tribe-head">
+                            <p>我是酋长</p>
+                            <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                        </div>
+                        <p>龙口粉丝(*＾-＾*)</p>
+                    </li>
+                    <li>
+                        <div class="tribe-head">
+                            <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                        </div>
+                        <p>龙口粉丝(*＾-＾*)</p>
+                    </li>
+                    <li>
+                        <div class="tribe-head">
+                            <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                        </div>
+                        <p>龙口粉丝(*＾-＾*)</p>
+                    </li>
+                    <li>
+                        <div class="tribe-head">
+                            <p>我是酋长</p>
+                            <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                        </div>
+                        <p>龙口粉丝(*＾-＾*)</p>
+                    </li>
+                    <li>
+                        <div class="tribe-head">
+                            <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                        </div>
+                        <p>龙口粉丝(*＾-＾*)</p>
+                    </li>
+                    <li>
+                        <div class="tribe-head">
+                            <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                        </div>
+                        <p>龙口粉丝(*＾-＾*)</p>
+                    </li><li>
+                    <div class="tribe-head">
+                        <p>我是酋长</p>
+                        <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                    </div>
+                    <p>龙口粉丝(*＾-＾*)</p>
+                </li>
+                    <li>
+                        <div class="tribe-head">
+                            <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                        </div>
+                        <p>龙口粉丝(*＾-＾*)</p>
+                    </li>
+                    <li>
+                        <div class="tribe-head">
+                            <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                        </div>
+                        <p>龙口粉丝(*＾-＾*)</p>
+                    </li><li>
+                    <div class="tribe-head">
+                        <p>我是酋长</p>
+                        <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                    </div>
+                    <p>龙口粉丝(*＾-＾*)</p>
+                </li>
+                    <li>
+                        <div class="tribe-head">
+                            <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                        </div>
+                        <p>龙口粉丝(*＾-＾*)</p>
+                    </li>
+                    <li>
+                        <div class="tribe-head">
+                            <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                        </div>
+                        <p>龙口粉丝(*＾-＾*)</p>
+                    </li><li>
+                    <div class="tribe-head">
+                        <p>我是酋长</p>
+                        <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                    </div>
+                    <p>龙口粉丝(*＾-＾*)</p>
+                </li>
+                    <li>
+                        <div class="tribe-head">
+                            <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                        </div>
+                        <p>龙口粉丝(*＾-＾*)</p>
+                    </li>
+                    <li>
+                        <div class="tribe-head">
+                            <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                        </div>
+                        <p>龙口粉丝(*＾-＾*)</p>
+                    </li>
+
+                </ul>
+            </div>
+            <!--  帖子  -->
+            <div role="tabpanel" class="tab-pane" id="tab-posts">
+                <div class="tab-lists-left">
+                    <ul>
+                        <li>
+                            <div class="tp-list-header">
+                                <div class="left">
+                                    <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                                    <span>用户名用户名</span>
+                                </div>
+                                <div class="right">
+                                    <a href="#">删除</a>
+                                    <p>2016年9月9日 11:43</p>
+                                </div>
+                            </div>
+                            <div class="tp-list-content">
+                                <div class="text">
+                                     <h1>标题标题</h1>
+                                    <p>话题这里显示的是标题话题这里显示的是标题话题这里显示的是标题话题是这里显示的是标题话题是这里显示的是标题话题这里显示的是标题话题这里显示的是标题话题这里显示的是标题话题是标题话题是标题话题是标题话题是标题话题是标题话题是...</p>
+                                </div>
+                                <ul class="othermsg">
+                                    <li class="icon-eye"><b></b>浏览<span>30999</span></li>
+                                    <li class="icon-msg"><b></b>留言<span>30999</span></li>
+                                    <li class="icon-zan"><b></b>赞<span>30999</span></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tp-list-header">
+                                <div class="left">
+                                    <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                                    <span>用户名用户名</span>
+                                </div>
+                                <div class="right">
+                                    <a href="#">删除</a>
+                                    <p>2016年9月9日 11:43</p>
+                                </div>
+                            </div>
+                            <div class="tp-list-content">
+                                <div class="left-img-200">
+                                    <img src="static/images/pc/jpg/tribe_1.jpg" alt=""/>
+                                </div>
+                                <div class="text">
+                                    <h1 class="to-top">标题标题</h1>
+                                    <p>话题这里显示的是标题话题这里显示的是标题话题这里显示的是标题话题是这里显示的是标题话题是这里显示的是标题话题这里显示的是标题话题这里显示的是标题话题这里显示的是标题话题是标题话题是标题话题是标题话题是标题话题是标题话题是...</p>
+                                </div>
+                                <ul class="othermsg">
+                                    <li class="icon-eye"><b></b>浏览<span>30999</span></li>
+                                    <li class="icon-msg"><b></b>留言<span>30999</span></li>
+                                    <li class="icon-zan"><b></b>赞<span>30999</span></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tp-list-header">
+                                <div class="left">
+                                    <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                                    <span>用户名用户名</span>
+                                </div>
+                                <div class="right">
+                                    <a href="#">删除</a>
+                                    <p>2016年9月9日 11:43</p>
+                                </div>
+                            </div>
+                            <div class="tp-list-content">
+                                <div class="text">
+                                    <h1 class="to-top">标题标题</h1>
+                                    <p>话题这里显示的是标题话题这里显示的是标题话题这里显示的是标题话题是这里显示的是标题话题是这里显示的是标题话题这里显示的是标题话题这里显示的是标题话题这里显示的是标题话题是标题话题是标题话题是标题话题是标题话题是标题话题是...</p>
+                                </div>
+                                <ul class="left-img-list">
+                                    <li> <img src="static/images/pc/jpg/tribe_1.jpg" alt=""/></li>
+                                    <li> <img src="static/images/pc/jpg/tribe_1.jpg" alt=""/></li>
+                                    <li> <img src="static/images/pc/jpg/tribe_1.jpg" alt=""/></li>
+                                    <li> <img src="static/images/pc/jpg/tribe_1.jpg" alt=""/></li>
+                                    <li> <img src="static/images/pc/jpg/tribe_1.jpg" alt=""/></li>
+                                </ul>
+                                <ul class="othermsg">
+                                    <li class="icon-eye"><b></b>浏览<span>30999</span></li>
+                                    <li class="icon-msg"><b></b>留言<span>30999</span></li>
+                                    <li class="icon-zan"><b></b>赞<span>30999</span></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-lists-right">
+                    <h1>热门推荐</h1>
+                    <ul>
+                        <li><img src="static/images/pc/jpg/tribe_2.jpg" alt=""/></li>
+                        <li><img src="static/images/pc/jpg/tribe_2.jpg" alt=""/></li>
+                        <li><img src="static/images/pc/jpg/tribe_2.jpg" alt=""/></li>
+                    </ul>
+                </div>
+            </div>
+            <!--  赞过  -->
+            <div role="tabpanel" class="tab-pane" id="tab-zan">
+                <div class="tab-lists-left">
+                    <ul>
+                        <li>
+                            <div class="tp-list-header">
+                                <div class="left">
+                                    <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                                    <span>用户名用户名</span>
+                                </div>
+                                <div class="right">
+                                    <a href="#">删除</a>
+                                    <p>2016年9月9日 11:43</p>
+                                </div>
+                            </div>
+                            <div class="tp-list-content">
+                                <div class="text">
+                                    <h1>标题标题</h1>
+                                    <p>话题这里显示的是标题话题这里显示的是标题话题这里显示的是标题话题是这里显示的是标题话题是这里显示的是标题话题这里显示的是标题话题这里显示的是标题话题这里显示的是标题话题是标题话题是标题话题是标题话题是标题话题是标题话题是...</p>
+                                </div>
+                                <ul class="othermsg">
+                                    <li class="icon-eye"><b></b>浏览<span>30999</span></li>
+                                    <li class="icon-msg"><b></b>留言<span>30999</span></li>
+                                    <li class="icon-zan"><b></b>赞<span>30999</span></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tp-list-header">
+                                <div class="left">
+                                    <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                                    <span>用户名用户名</span>
+                                </div>
+                                <div class="right">
+                                    <a href="#">删除</a>
+                                    <p>2016年9月9日 11:43</p>
+                                </div>
+                            </div>
+                            <div class="tp-list-content">
+                                <div class="left-img-200">
+                                    <img src="static/images/pc/jpg/tribe_1.jpg" alt=""/>
+                                </div>
+                                <div class="text">
+                                    <h1 class="to-top">标题标题</h1>
+                                    <p>话题这里显示的是标题话题这里显示的是标题话题这里显示的是标题话题是这里显示的是标题话题是这里显示的是标题话题这里显示的是标题话题这里显示的是标题话题这里显示的是标题话题是标题话题是标题话题是标题话题是标题话题是标题话题是...</p>
+                                </div>
+                                <ul class="othermsg">
+                                    <li class="icon-eye"><b></b>浏览<span>30999</span></li>
+                                    <li class="icon-msg"><b></b>留言<span>30999</span></li>
+                                    <li class="icon-zan"><b></b>赞<span>30999</span></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tp-list-header">
+                                <div class="left">
+                                    <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                                    <span>用户名用户名</span>
+                                </div>
+                                <div class="right">
+                                    <a href="#">删除</a>
+                                    <p>2016年9月9日 11:43</p>
+                                </div>
+                            </div>
+                            <div class="tp-list-content">
+                                <div class="text">
+                                    <h1 class="to-top">标题标题</h1>
+                                    <p>话题这里显示的是标题话题这里显示的是标题话题这里显示的是标题话题是这里显示的是标题话题是这里显示的是标题话题这里显示的是标题话题这里显示的是标题话题这里显示的是标题话题是标题话题是标题话题是标题话题是标题话题是标题话题是...</p>
+                                </div>
+                                <ul class="left-img-list">
+                                    <li> <img src="static/images/pc/jpg/tribe_1.jpg" alt=""/></li>
+                                    <li> <img src="static/images/pc/jpg/tribe_1.jpg" alt=""/></li>
+                                    <li> <img src="static/images/pc/jpg/tribe_1.jpg" alt=""/></li>
+                                    <li> <img src="static/images/pc/jpg/tribe_1.jpg" alt=""/></li>
+                                    <li> <img src="static/images/pc/jpg/tribe_1.jpg" alt=""/></li>
+                                </ul>
+                                <ul class="othermsg">
+                                    <li class="icon-eye"><b></b>浏览<span>30999</span></li>
+                                    <li class="icon-msg"><b></b>留言<span>30999</span></li>
+                                    <li class="icon-zan"><b></b>赞<span>30999</span></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-lists-right">
+                    <h1>热门推荐</h1>
+                    <ul>
+                        <li><img src="static/images/pc/jpg/tribe_2.jpg" alt=""/></li>
+                        <li><img src="static/images/pc/jpg/tribe_2.jpg" alt=""/></li>
+                        <li><img src="static/images/pc/jpg/tribe_2.jpg" alt=""/></li>
+                    </ul>
+                </div>
+            </div>
+            <!--  关注  -->
+            <div role="tabpanel" class="tab-pane" id="tab-concern">
+                <ul class="tab-lists tab-fans-list">
+                    <li>
+                        <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                        <p>龙口粉丝(*＾-＾*)</p>
+                        <button type="button" class="btn-writh-74">已关注</button>
+                    </li>
+                    <li>
+                        <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                        <p>龙口粉丝(*＾-＾*)</p>
+                        <button type="button" class="btn-writh-74">已关注</button>
+                    </li><li>
+                    <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                    <p>龙口粉丝(*＾-＾*)</p>
+                    <button type="button" class="btn-writh-74">已关注</button>
+                </li><li>
+                    <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                    <p>龙口粉丝(*＾-＾*)</p>
+                    <button type="button" class="btn-writh-74">已关注</button>
+                </li><li>
+                    <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                    <p>龙口粉丝(*＾-＾*)</p>
+                    <button type="button" class="btn-writh-74">已关注</button>
+                </li><li>
+                    <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                    <p>龙口粉丝(*＾-＾*)</p>
+                    <button type="button" class="btn-writh-74">已关注</button>
+                </li><li>
+                    <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                    <p>龙口粉丝(*＾-＾*)</p>
+                    <button type="button" class="btn-writh-74">已关注</button>
+                </li><li>
+                    <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                    <p>龙口粉丝(*＾-＾*)</p>
+                    <button type="button" class="btn-writh-74">已关注</button>
+                </li><li>
+                    <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                    <p>龙口粉丝(*＾-＾*)</p>
+                    <button type="button" class="btn-writh-74">已关注</button>
+                </li>
+
+                </ul>
+            </div>
+            <!--  粉丝  -->
+            <div role="tabpanel" class="tab-pane" id="tab-fans">
+                <ul class="tab-fans-list tab-lists">
+                    <li>
+                        <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                        <p>龙口粉丝(*＾-＾*)</p>
+                        <button type="button" class="btn-yellow-74">关注</button>
+                    </li>
+                    <li>
+                        <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                        <p>龙口粉丝(*＾-＾*)</p>
+                        <button type="button" class="btn-yellow-74">关注</button>
+                    </li><li>
+                    <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                    <p>龙口粉丝(*＾-＾*)</p>
+                    <button type="button" class="btn-yellow-74">关注</button>
+                </li><li>
+                    <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                    <p>龙口粉丝(*＾-＾*)</p>
+                    <button type="button" class="btn-yellow-74">关注</button>
+                </li><li>
+                    <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                    <p>龙口粉丝(*＾-＾*)</p>
+                    <button type="button" class="btn-yellow-74">关注</button>
+                </li><li>
+                    <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                    <p>龙口粉丝(*＾-＾*)</p>
+                    <button type="button" class="btn-yellow-74">关注</button>
+                </li><li>
+                    <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                    <p>龙口粉丝(*＾-＾*)</p>
+                    <button type="button" class="btn-yellow-74">关注</button>
+                </li><li>
+                    <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                    <p>龙口粉丝(*＾-＾*)</p>
+                    <button type="button" class="btn-yellow-74">关注</button>
+                </li><li>
+                    <img src="static/images/pc/jpg/tribe_2.jpg" alt=""/>
+                    <p>龙口粉丝(*＾-＾*)</p>
+                    <button type="button" class="btn-yellow-74">关注</button>
+                </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="zcbl-page">
+            <ul>
+                <li class="zcbl-thisPage">1</li>
+                <li class="zcbl-defaultPage"><a href="#" target="_blank">2</a></li>
+                <li class="zcbl-defaultPage"><a href="#" target="_blank">3</a></li>
+                <li class="zcbl-defaultPage"><a href="#" target="_blank">4</a></li>
+                <li class="zcbl-defaultPage"><a href="#" target="_blank">…</a></li>
+                <li class="zcbl-defaultPage"><a href="#" target="_blank">158</a></li>
+                <li class="zcbl-nextPage"><a href="#" target="_blank">&nbsp;</a></li>
+                <li class="zcbl-pageNum">共158页</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--footer start-->
+<div class="vm-footer">
+    <div class="container">
+        <div class="vm-footer-link">
+            <a href="#" target="_blank">自由职业者</a>
+            <a href="#" target="_blank">时间财富网</a>
+            <a href="#" target="_blank">一品威客</a>
+            <a href="#" target="_blank">威客天空</a>
+            <a href="#" target="_blank">网络营销</a>
+            <a href="#" target="_blank">客客出品</a>
+            <a href="#" target="_blank">大都督</a>
+            <a href="#" target="_blank">产品经理网</a>
+            <a href="#" target="_blank">互帮网</a>
+            <a href="#" target="_blank">小鱼儿众包</a>
+            <a href="#" target="_blank">推一把</a>
+            <a href="#" target="_blank">A5任务</a>
+            <a href="#" target="_blank">站长</a>
+        </div>
+        <div class="vm-footer-about">
+            <div class="vm-footer-about-l">
+                <h1>
+                    <a href="#" target="_blank">
+                        <img src="./static/images/pc/footlogo.png" alt="" />
+                        <!--SLOGAN-->
+                    </a>
+                </h1>
+            </div>
+            <div class="vm-footer-about-z">
+                <ul>
+                    <li><a href="#" target="_blank">关于我们</a></li>
+                    <li><span class="divide">|</span></li>
+                    <li><a href="#" target="_blank">联系我们</a></li>
+                    <li><span class="divide">|</span></li>
+                    <li><a href="#" target="_blank">招聘信息</a></li>
+                    <li><span class="divide">|</span></li>
+                    <li><a href="#" target="_blank">网站条款</a></li>
+                </ul>
+            </div>
+            <div class="vm-footer-about-r">
+                <h2>400-800-900</h2>
+            </div>
+        </div>
+        <div class="vm-footer-copyright">
+            <p>Copyright 2007-2016 cyzong.cn All rights reserved 京ICP证070362号 京ICP备08103950 京公海网安备110108000742号新出发京零字第朝140005号</p>
+        </div>
+    </div>
+</div>
+<!--footer end-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="static/js/pc/dest/jquery-1.11.3.min.js"></script>
+<!--<script src="static/js/pc/dest/all.min.js"></script>-->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="static/js/pc/dest/bootstrap.min.js"></script>
+<script>
+    //签名
+    $("#edit-introduce > b").click(function () {
+        $(this).next('input').removeClass('opacity-0');
+    });
+    //判断一个元素是否是另一个元素的子元素
+    function isInComment(obj, parentObj) {
+        while (obj != undefined && obj != null && obj.tagName.toUpperCase() != 'BODY') {
+            if (obj == parentObj) {
+                return true;
+            }
+            obj = obj.parentNode;
+        }
+        return false;
+    }
+    //判断event是否是签名区域内
+    $(document).click(function (event) {
+        if (!isInComment(event.target, $("#edit-introduce")[0])) {
+            $('#edit-introduce').children('input').addClass('opacity-0');
+            var inputval= $('#edit-introduce').children('input').val();
+            $('#edit-introduce').children('p').text(inputval);
+
+        }
+    });
+</script>
+
+
+</body>
+</html>

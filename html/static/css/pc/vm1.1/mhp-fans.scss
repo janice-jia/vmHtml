@@ -40,7 +40,32 @@ $color-09: #e43f3f;
   -khtml-opacity: 0.5;
   -webkit-opacity: 0.5;
 }
+//没有内容
+.null-content{
+  text-align: center;
+  background-color: #fff;
+  display: table;
+  width: 100%;
+  &:before{
+    display: table;
+    content: "";
+  }
+  p:before{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    content: "";
+    display: block;
+    width:148px;
+    height: 154px;
+    background-image: url("../../../images/pc/icon/icon-null.png");
+  }
+  p{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 14px;
 
+  }
+}
 
 .editmsg-fff {
   display: inline-block;
@@ -168,6 +193,14 @@ $color-09: #e43f3f;
   }
 }
 
+#mhp-content{
+  .tab-content{
+    min-height: 500px;
+    .null-content{
+      height: 500px;
+    }
+  }
+}
 
 //粉丝、部落、关注列表
 .tab-lists{

@@ -479,3 +479,21 @@
         height: 22px; }
     #mhp-header .footermsg .edit-introduce .jb a {
       color: #999999; }
+
+.vm-homePageNav {
+  height: 50px;
+  line-height: 50px;
+  background: #ffffff;
+  padding: 0 40px; }
+  .vm-homePageNav ul li {
+    float: left; }
+    .vm-homePageNav ul li a {
+      display: inline-block;
+      height: 100%;
+      width: 100%; }
+      .vm-homePageNav ul li a:hover {
+        color: #ffb30e;
+        border-bottom: 1px solid #ffb30e; }
+    .vm-homePageNav ul li.vm-homePageNav-hover a {
+      color: #ffb30e;
+      border-bottom: 1px solid #ffb30e; }

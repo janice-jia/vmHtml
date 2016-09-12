@@ -663,3 +663,31 @@ $color-ffffff: #ffffff;
     }
 
 }
+
+//我的主页--公用导航
+.vm-homePageNav{
+    height: 50px;
+    line-height: 50px;
+    background: $color-ffffff;
+    padding: 0 40px;
+    ul{
+        li{
+            float: left;
+            a{
+                display: inline-block;
+                height: 100%;
+                width: 100%;
+                &:hover{
+                    color: $color-08;
+                    border-bottom: 1px solid $color-08;
+                }
+            }
+            &.vm-homePageNav-hover{
+                a{
+                    color: $color-08;
+                    border-bottom: 1px solid $color-08;
+                }
+            }
+        }
+    }
+}

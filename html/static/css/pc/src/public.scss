@@ -1042,6 +1042,9 @@ button.zcbl-close{
     .vm-nav {
         padding-left: 15px;
         font-size: 14px;
+        height: 100%;
+        width: 425px;
+        float: left;
         li {
             float: left;
             width: 67px;
@@ -1063,7 +1066,7 @@ button.zcbl-close{
     }
     .vm-search {
         float: left;
-        margin: 0 90px 0 50px;
+        margin: 0 50px 0 0;
         input {
             font-size: 12px;
             height: 25px;
@@ -1074,6 +1077,24 @@ button.zcbl-close{
             border-radius: 4px;
             border: 1px solid #e7e8ea;
             background: url("../../../images/pc/vm1.1/public/icon-seach.png") 10px 7px #f7f8fa no-repeat;
+        }
+    }
+    .vm-no-login{
+        ul{
+            li{
+                float: left;
+                font-size: 14px;
+                a{
+                    color: #3b3b3b;
+                    &:hover{
+                        color: #999999;
+                    }
+                }
+                span{
+                    padding:0 10px;
+                    color: #cccccc;
+                }
+            }
         }
     }
     .vm-news {
@@ -1099,20 +1120,102 @@ button.zcbl-close{
     }
     .vm-user {
         height: 100%;
-        width: 20px;
+        width: 50px;
         float: left;
         position: relative;
-        margin-left: 30px;
         a {
+            padding: 0 15px;
             display: inline-block;
-            width: 100%;
+            width: 50px;
             height: 100%;
             img {
                 border-radius: 50%;
             }
         }
+        .vm-user-open{
+            display: none;
+            position: absolute;
+            right: -20px;
+            top: 50px;
+            width: 125px;
+            background: $color-ffffff;
+            z-index: 10;
+            ul{
+                padding: 10px 0;
+                width: 100%;
+                border-bottom: 1px solid #dddddd;
+                li{
+                    padding-left: 22px;
+                    height: 30px;
+                    line-height: 30px;
+                    overflow: hidden;
+                    a{
+                        font-size: 14px;
+                        color: #707070;
+                        padding: 0;
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
+                        &:hover{
+                            color: $color-01;
+                        }
+                    }
+                    span{
+                        &.msgNum{
+                            margin-left: 10px;
+                            display: inline-block;
+                            padding: 0 5px;
+                            font-size: 12px;
+                            height: 15px;
+                            background: $color-08;
+                            border-radius: 3px;
+                            line-height: 15px;
+                            color: #707070;
+                        }
+                    }
+                    &.WB,
+                    &.WX,
+                    &.TX{
+                        padding-left: 45px;
+                        position: relative;
+                        &:before{
+                            content: '';
+                            position: absolute;
+                            top: 8px;
+                            left: 22px;
+                            width: 16px;
+                            height: 13px;
+                        }
+                    }
+                    &.WB{
+                        &:before {
+                            background: url("../../../images/pc/vm1.1/icon/icon-WB.png");
+
+                        }
+                    }
+                    &.WX{
+                        &:before {
+                            background: url("../../../images/pc/vm1.1/icon/icon-WX.png");
+                        }
+                    }
+                    &.TX{
+                        &:before {
+                            background: url("../../../images/pc/vm1.1/icon/icon-TX.png");
+                            width: 15px;
+                            height: 13px;
+                        }
+                    }
+                }
+            }
+        }
+        &:hover{
+            .vm-user-open{
+                display: block;
+            }
+        }
     }
 }
+
 .h95{
     height:95px;
 }

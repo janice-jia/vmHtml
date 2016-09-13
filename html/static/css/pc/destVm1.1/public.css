@@ -35,7 +35,7 @@
   -khtml-opacity: 0.5;
   -webkit-opacity: 0.5; }
 
-.btn-yellow, .btn-yellow-100, .btn-yellow-80, .btn-yellow-66, .btn-yellow-74 {
+.btn-yellow, .btn-yellow-100, .btn-yellow-150, .btn-yellow-80, .btn-yellow-66, .btn-yellow-74 {
   width: 100px;
   height: 30px;
   line-height: 30px;
@@ -43,11 +43,17 @@
   background: #ffb30e;
   text-align: center;
   cursor: pointer; }
-  .btn-yellow:hover, .btn-yellow-100:hover, .btn-yellow-80:hover, .btn-yellow-66:hover, .btn-yellow-74:hover {
+  .btn-yellow:hover, .btn-yellow-100:hover, .btn-yellow-150:hover, .btn-yellow-80:hover, .btn-yellow-66:hover, .btn-yellow-74:hover {
     color: #ffffff; }
 
 .btn-yellow-100 {
   width: 100px; }
+
+.btn-yellow-150 {
+  display: inline-block;
+  width: 150px;
+  height: 60px;
+  line-height: 60px; }
 
 .btn-yellow-80 {
   width: 80px;
@@ -547,3 +553,21 @@
       color: #3b3b3b;
       margin-top: 30px;
       margin-bottom: 40px; }
+
+.more-tribe-list {
+  padding-left: 18px; }
+  .more-tribe-list li {
+    width: 180px;
+    margin-top: 30px;
+    margin-right: 20px;
+    float: left; }
+    .more-tribe-list li img {
+      width: 80px;
+      height: 80px;
+      margin-right: 20px;
+      border-radius: 50%; }
+    .more-tribe-list li h2 {
+      font-weight: bold;
+      margin-top: 8px; }
+    .more-tribe-list li p {
+      margin-top: 8px; }

@@ -1,0 +1,135 @@
+.banner-150 {
+  height: 150px;
+  width: 100%; }
+  .banner-150 img {
+    height: 100%;
+    width: 100%; }
+
+hr {
+  margin: 0; }
+
+#tribe-index .index-tribe-box {
+  margin-top: 10px;
+  width: 100%;
+  padding-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(81, 81, 81, 0.2); }
+  #tribe-index .index-tribe-box .box-header {
+    border-bottom: 1px solid #bcbcbc;
+    height: 60px;
+    line-height: 60px;
+    font-size: 14px;
+    padding-left: 42px; }
+  #tribe-index .index-tribe-box .box-content .content-left {
+    width: 806px;
+    float: left; }
+    #tribe-index .index-tribe-box .box-content .content-left .more-tribe-list {
+      width: 826px; }
+  #tribe-index .index-tribe-box .box-content .content-right {
+    float: right; }
+    #tribe-index .index-tribe-box .box-content .content-right .create-tribe-box {
+      width: 170px;
+      text-align: center; }
+      #tribe-index .index-tribe-box .box-content .content-right .create-tribe-box > a {
+        margin-top: 25px;
+        color: #000; }
+      #tribe-index .index-tribe-box .box-content .content-right .create-tribe-box hr {
+        border-style: dashed;
+        background-color: #ccc;
+        margin-top: 15px; }
+      #tribe-index .index-tribe-box .box-content .content-right .create-tribe-box p {
+        margin-top: 10px;
+        color: #000; }
+        #tribe-index .index-tribe-box .box-content .content-right .create-tribe-box p a {
+          color: #000; }
+        #tribe-index .index-tribe-box .box-content .content-right .create-tribe-box p span {
+          color: #e43f3f;
+          font-size: 18px;
+          margin: 0 10px; }
+      #tribe-index .index-tribe-box .box-content .content-right .create-tribe-box .checkall b {
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        margin-left: 5px;
+        vertical-align: middle;
+        background-image: url("../../../images/pc/vm1.1/icon/icon-check-right.png"); }
+  #tribe-index .index-tribe-box .box-content:after {
+    content: "";
+    display: table;
+    clear: both; }
+#tribe-index .left-box-742 {
+  width: 742px;
+  float: left; }
+  #tribe-index .left-box-742 .index-tribe-box {
+    padding-bottom: 0; }
+  #tribe-index .left-box-742 .vm-tribe {
+    background: none; }
+    #tribe-index .left-box-742 .vm-tribe .vm-tribe-con ul {
+      padding: 0;
+      padding-top: 20px; }
+#tribe-index .right-box-242 {
+  width: 242px;
+  float: right; }
+
+.ranking-list {
+  margin-top: 10px;
+  padding: 10px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #e0e1e2; }
+  .ranking-list h1 {
+    font-size: 14px; }
+  .ranking-list li {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 10px; }
+    .ranking-list li:after {
+      display: inline-block;
+      width: 10px;
+      height: 12px;
+      content: "";
+      position: absolute;
+      right: 26px;
+      top: 2px; }
+  .ranking-list .first img {
+    width: 54px;
+    height: 54px;
+    margin-right: 24px;
+    border-radius: 50%;
+    vertical-align: middle; }
+  .ranking-list .first h2 {
+    font-weight: bold; }
+  .ranking-list .first p {
+    margin-top: 8px; }
+  .ranking-list .first:after {
+    top: 24px; }
+  .ranking-list .up:after {
+    background-image: url("../../../images/pc/vm1.1/icon/icon-up.png"); }
+  .ranking-list .down:after {
+    background-image: url("../../../images/pc/vm1.1/icon/icon-down.png"); }
+
+.hot-topic {
+  margin-top: 20px;
+  padding: 10px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #e0e1e2; }
+  .hot-topic h1 {
+    font-size: 14px; }
+  .hot-topic li {
+    padding: 10px;
+    margin: 0 -10px;
+    line-height: 22px;
+    border-bottom: 1px solid #c2c2c2; }
+    .hot-topic li:before {
+      display: inline-block;
+      width: 8px;
+      height: 10px;
+      content: "";
+      background-image: url("../../../images/pc/vm1.1/icon/icon-topic-right.png"); }
+    .hot-topic li:last-child {
+      border: none;
+      padding-bottom: 0; }
+    .hot-topic li p {
+      display: inline;
+      color: #ffb30e; }

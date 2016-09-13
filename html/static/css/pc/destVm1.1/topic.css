@@ -1,0 +1,37 @@
+/*
+* this is a topic stylesheet
+*/
+.topic-wall {
+  width: 100%;
+  margin-top: 13px; }
+  .topic-wall .topic-wall-l {
+    background: #ffffff;
+    width: 675px;
+    float: left;
+    box-shadow: 0 0 5px rgba(81, 81, 81, 0.2); }
+    .topic-wall .topic-wall-l .topic-public {
+      height: 45px;
+      line-height: 45px;
+      padding-left: 40px; }
+      .topic-wall .topic-wall-l .topic-public .btn-yellow-100 {
+        position: relative;
+        text-align: left;
+        padding-left: 47px; }
+        .topic-wall .topic-wall-l .topic-public .btn-yellow-100:before {
+          content: "";
+          left: 25px;
+          top: 8px;
+          position: absolute;
+          background: url("../../../images/pc/vm1.1/icon/icon-edit-gray.png") no-repeat;
+          width: 15px;
+          height: 14px; }
+    .topic-wall .topic-wall-l .vm-topic-con > ul > li {
+      margin-top: 0;
+      box-shadow: none; }
+    .topic-wall .topic-wall-l .vm-topic-con .tp-list-header {
+      border-top: 1px solid #b9c1c7;
+      border-bottom: none; }
+  .topic-wall .topic-wall-r {
+    background: #ffffff;
+    width: 325px;
+    float: right; }

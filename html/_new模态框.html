@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>公用模态框</title>
+    <link rel="stylesheet" href="static/css/pc/minCss/all.min.css" />
+    <meta charset="utf-8">
+    <!--IE浏览器运行最新的渲染模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap -->
+    <link href="static/css/pc/minCss/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="static/css/pc/destVm1.1/base.css" />
+    <link rel="stylesheet" href="static/css/pc/destVm1.1/public.css" />
+
+
+    <!--[if lt IE 9]>
+    <script src="static/js/pc/dest/html5shiv.min.js"></script>
+    <script src="static/js/pc/dest/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+<body>
+<div id="header" style="height: 78px;"></div>
+<!-- 按钮触发模态框 -->
+<button class="btn-yellow-40 left mr10 mt10" data-toggle="modal" data-target="#editChannel">
+    编辑频道模态框
+</button>
+
+<button class="btn-yellow-40 left mr10 mt10" data-toggle="modal" data-target="#delMsg">
+    删除提示模态框
+</button>
+
+<!-- 编辑频道模态框（Modal） -->
+<div class="modal fade" id="editChannel"  aria-hidden="true">
+    <div class="vm-modal modal-editChannel">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+        <div class="tit">编辑频道</div>
+        <form action="">
+            <div class="modal-group pl20">
+                <label for="name">频道名称</label>
+                <input type="text" name="name" id="name" placeholder="请输入全新的频道名称">
+                <p class="clear">最好1个汉字，最多6个汉字</p>
+            </div>
+            <div class="clear tc mt20">
+                <button class="btn-yellow-100">提交</button>
+                <button class="btn-cancel">取消</button>
+            </div>
+            <div class="del">
+                <a href="javascript:;" data-dismiss="modal" aria-hidden="true">删除频道</a>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- 编辑频道模态框（Modal） -->
+
+<!-- 删除提示模态框（Modal） -->
+<div class="modal fade" id="delMsg"  aria-hidden="true">
+    <div class="vm-modal modal-delMsg">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+        <div class="tit">编辑频道</div>
+        <div class="con">
+            <p>你确定要删除自己发布的帖子吗？</p>
+            <p>一旦删除帖子，涉及到帖子中的评论回复也将被删除。</p>
+        </div>
+        <div class="clear tc btn">
+            <button class="btn-yellow-100">提交</button>
+            <button class="btn-cancel" data-dismiss="modal" aria-hidden="true">取消</button>
+        </div>
+    </div>
+</div>
+<!-- 删除提示模态框（Modal） -->
+
+
+<!-- 我要发帖（Modal） -->
+<div class="modal fade" id="addTopic"  aria-hidden="true">
+    <div class="vm-modal modal-addTopic">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+        <div class="tit">我要发帖</div>
+
+        <div class="clear tc btn">
+            <button class="btn-yellow-100">提交</button>
+            <button class="btn-cancel" data-dismiss="modal" aria-hidden="true">取消</button>
+        </div>
+    </div>
+</div>
+<!-- 我要发帖（Modal） -->
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="static/js/pc/dest/jquery-1.11.3.min.js"></script>
+<script src="static/js/pc/dest/all.min.js"></script>
+<script src="static/ickeckSkins/icheck.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="static/js/pc/dest/bootstrap.min.js"></script>
+</body>
+</html>

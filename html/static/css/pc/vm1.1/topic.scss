@@ -1,0 +1,62 @@
+@charset "utf-8";
+/*
+* this is a topic stylesheet
+*/
+
+$color-01: #171717;
+$color-02: #f7f8fa; //（背景颜色）
+$color-03: #dcdcdc; //（输入边框颜色）
+$color-04: #b9c1c7; //（直线颜色）
+$color-05: #666666; //（标题字颜色）
+$color-06: #999999; //（编辑画笔颜色）
+$color-07: #499af5;
+$color-07: #499af5;
+$color-08: #ffb30e;
+$color-09: #e43f3f;
+
+$color-ffffff: #ffffff;
+
+.topic-wall{
+    width: 100%;
+    margin-top: 13px;
+    .topic-wall-l{
+        background: $color-ffffff;
+        width: 675px;
+        float: left;
+        box-shadow: 0 0 5px rgba(81, 81, 81, 0.2);
+        .topic-public{
+            height: 45px;
+            line-height: 45px;
+            padding-left: 40px;
+            .btn-yellow-100{
+                position: relative;
+                text-align: left;
+                padding-left: 47px;
+                &:before{
+                    content: "";
+                    left: 25px;
+                    top: 8px;
+                    position: absolute;
+                    background: url("../../../images/pc/vm1.1/icon/icon-edit-gray.png") no-repeat;
+                    width: 15px;
+                    height: 14px;
+                }
+            }
+        }
+        .vm-topic-con{
+            > ul > li{
+                margin-top: 0;
+                box-shadow: none;
+            }
+            .tp-list-header{
+                border-top:1px solid #b9c1c7;
+                border-bottom: none;
+            }
+        }
+    }
+    .topic-wall-r{
+        background: $color-ffffff;
+        width: 325px;
+        float: right;
+    }
+}

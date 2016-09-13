@@ -1,0 +1,202 @@
+@charset "utf-8";
+$font-12: 12px;
+$font-14: 14px;
+$font-16: 16px;
+$font-18: 18px;
+$font-20: 20px;
+$font-22: 22px;
+$font-24: 24px;
+
+$color-01: #171717;
+$color-02: #f7f8fa; //（背景颜色）
+$color-03: #dcdcdc; //（输入边框颜色）
+$color-04: #b9c1c7; //（直线颜色）
+$color-05: #666666; //（标题字颜色）
+$color-06: #999999; //（编辑画笔颜色）
+$color-07: #499af5;
+$color-08: #ffb30e;
+$color-09: #e43f3f;
+
+.banner-150 {
+    height: 150px;
+    width: 100%;
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+hr {
+    margin: 0;
+}
+
+#tribe-index {
+    .index-tribe-box {
+        margin-top: 10px;
+        width: 100%;
+        padding-bottom: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(81, 81, 81, 0.2);
+        .box-header {
+            border-bottom: 1px solid #bcbcbc;
+            height: 60px;
+            line-height: 60px;
+            font-size: 14px;
+            padding-left: 42px;
+        }
+        .box-content {
+            .content-left {
+                width: 806px;
+                float: left;
+                .more-tribe-list {
+                    width: 826px;
+                }
+            }
+            .content-right {
+                float: right;
+                .create-tribe-box {
+                    width: 170px;
+                    text-align: center;
+                    > a {
+                        margin-top: 25px;
+                        color: #000;
+                    }
+                    hr {
+                        border-style: dashed;
+                        background-color: #ccc;
+                        margin-top: 15px;
+                    }
+                    p {
+                        margin-top: 10px;
+                        color: #000;
+                        a {
+                            color: #000;
+                        }
+                        span {
+                            color: $color-09;
+                            font-size: 18px;
+                            margin: 0 10px;
+                        }
+                    }
+                    .checkall {
+                        b {
+                            width: 12px;
+                            height: 12px;
+                            display: inline-block;
+                            margin-left: 5px;
+                            vertical-align: middle;
+                            background-image: url("../../../images/pc/vm1.1/icon/icon-check-right.png");
+                        }
+                    }
+                }
+            }
+            &:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        }
+    }
+    .left-box-742 {
+        width: 742px;
+        float: left;
+        .index-tribe-box {
+            padding-bottom: 0;
+        }
+        .vm-tribe {
+            background: none;
+            .vm-tribe-con ul {
+                padding: 0;
+                padding-top: 20px;
+            }
+        }
+    }
+    .right-box-242 {
+        width: 242px;
+        float: right;
+    }
+}
+
+//部落排行榜
+.ranking-list {
+    margin-top: 10px;
+    padding: 10px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #e0e1e2;
+    h1 {
+        font-size: 14px;
+    }
+    li {
+        position: relative;
+        margin-top: 20px;
+        margin-left: 10px;
+        &:after {
+            display: inline-block;
+            width: 10px;
+            height: 12px;
+            content: "";
+            position: absolute;
+            right: 26px;
+            top: 2px;
+        }
+    }
+    .first {
+        img {
+            width: 54px;
+            height: 54px;
+            margin-right: 24px;
+            border-radius: 50%;
+            vertical-align: middle;
+        }
+        h2 {
+            font-weight: bold;
+        }
+        p {
+            margin-top: 8px;
+        }
+        &:after {
+            top: 24px;
+        }
+    }
+    .up:after {
+        background-image: url("../../../images/pc/vm1.1/icon/icon-up.png");
+    }
+    .down:after {
+        background-image: url("../../../images/pc/vm1.1/icon/icon-down.png");
+    }
+
+}
+
+//热门话题
+.hot-topic {
+    margin-top: 20px;
+    padding: 10px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #e0e1e2;
+    h1 {
+        font-size: 14px;
+    }
+    li {
+        padding: 10px;
+        margin: 0 -10px;
+        line-height: 22px;
+        border-bottom: 1px solid #c2c2c2;
+        &:before {
+            display: inline-block;
+            width: 8px;
+            height: 10px;
+            content: "";
+            background-image: url("../../../images/pc/vm1.1/icon/icon-topic-right.png");
+        }
+        &:last-child{
+            border: none;
+            padding-bottom: 0;
+        }
+        p{
+            display:inline;
+            color:$color-08;
+        }
+    }
+}

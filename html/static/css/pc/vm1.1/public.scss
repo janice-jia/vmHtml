@@ -77,8 +77,15 @@ $color-ffffff: #ffffff;
 }
 
 .btn-yellow-100 {
+     @extend .btn-yellow;
+     width: 100px;
+ }
+.btn-yellow-150{
     @extend .btn-yellow;
-    width: 100px;
+    display: inline-block;
+    width: 150px;
+    height:60px;
+    line-height: 60px;
 }
 
 .btn-yellow-80 {
@@ -1094,8 +1101,32 @@ $color-ffffff: #ffffff;
 }
 
 //我要发帖模态框
-.modal-addTopic{
+.modal-addTopic {
     width: 865px;
     height: 620px;
     margin: -310px 0 0 -430px;
+}
+
+//更多部落列表
+.more-tribe-list {
+    padding-left: 18px;
+    li {
+        width: 180px;
+        margin-top: 30px;
+        margin-right: 20px;
+        float: left;
+        img {
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+        h2 {
+            font-weight: bold;
+            margin-top: 8px;
+        }
+        p {
+            margin-top: 8px;
+        }
+    }
 }

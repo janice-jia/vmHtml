@@ -2,6 +2,9 @@
   background-color: #fff; }
   #more-tribe .null-content {
     height: 800px; }
+  #more-tribe .more-tribe-list {
+    width: 1030px;
+    min-height: 600px; }
 
 .seach-center .center {
   margin-top: 15px;
@@ -20,23 +23,3 @@
   .seach-center .tribe-total span {
     color: #e43f3f;
     font-size: 18px; }
-
-.more-tribe-list {
-  padding-left: 18px;
-  width: 1030px;
-  min-height: 600px; }
-  .more-tribe-list li {
-    width: 180px;
-    margin-top: 30px;
-    margin-right: 20px;
-    float: left; }
-    .more-tribe-list li img {
-      width: 80px;
-      height: 80px;
-      margin-right: 20px;
-      border-radius: 50%; }
-    .more-tribe-list li h2 {
-      font-weight: bold;
-      margin-top: 8px; }
-    .more-tribe-list li p {
-      margin-top: 8px; }

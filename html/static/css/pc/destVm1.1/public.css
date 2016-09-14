@@ -885,6 +885,21 @@
       width: 47px;
       height: 46px; }
 
+.modal-shareFriend {
+  width: 495px;
+  height: 345px; }
+  .modal-shareFriend .shareFriend {
+    text-align: center;
+    padding: 20px 0; }
+    .modal-shareFriend .shareFriend img {
+      width: 178px;
+      height: 178px; }
+  .modal-shareFriend .shareFriendMsg {
+    height: 70px;
+    border-top: 1px solid #b9c1c7; }
+    .modal-shareFriend .shareFriendMsg p {
+      padding: 20px 0 0 20px; }
+
 .more-tribe-list {
   padding-left: 18px; }
   .more-tribe-list li {

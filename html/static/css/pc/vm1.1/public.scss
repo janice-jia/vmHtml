@@ -1192,6 +1192,27 @@ $color-ffffff: #ffffff;
     }
 }
 
+//分享朋友圈
+.modal-shareFriend{
+    width: 495px;
+    height: 345px;
+    .shareFriend{
+        text-align: center;
+        padding: 20px 0;
+        img{
+            width: 178px;
+            height: 178px;
+        }
+    }
+    .shareFriendMsg{
+        height: 70px;
+        border-top: 1px solid #b9c1c7;
+        p{
+            padding: 20px 0 0 20px;
+        }
+    }
+}
+
 //更多部落列表
 .more-tribe-list {
     padding-left: 18px;

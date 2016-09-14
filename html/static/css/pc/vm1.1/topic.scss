@@ -166,6 +166,197 @@ $color-ffffff: #ffffff;
                 }
             }
         }
+
+        //话题详细
+        .topicInfo{
+            background: $color-ffffff;
+            box-shadow: 0 0 5px rgba(81, 81, 81, 0.2);
+            .topicInfo-tit{
+                padding-bottom: 20px;
+                p{
+                    padding: 0 14px;
+                    span{
+                        padding-right: 10px;
+                        padding-left: 18px;
+                        &.comment,
+                        &.praise,
+                        &.view{
+                            display: inline-block;
+                            position: relative;
+                            &:before{
+                                content: '';
+                                position: absolute;
+                                top: 2px;
+                                left: 0;
+                                width: 15px;
+                                height: 13px;
+                            }
+                        }
+
+                        &.comment{
+                            &:before{
+                                background: url("../../../images/pc/vm1.1/icon/icon-msg.png");
+                            }
+                        }
+                        &.praise{
+                            &:before{
+                                background: url("../../../images/pc/vm1.1/icon/icon-zan.png");
+                            }
+                        }
+                        &.view{
+                            &:before{
+                                background: url("../../../images/pc/vm1.1/icon/icon-eye.png");
+                            }
+                        }
+                    }
+                    &.tit{
+                        padding: 20px 14px;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                }
+                border-bottom:1px solid #b9c1c7;
+            }
+            .topicInfo-con{
+                padding-top: 20px;
+                .topicInfo-conL{
+                    width: 72px;
+                    float: left;
+                    text-align: center;
+                    img{
+                        width: 38px;
+                        height: 38px;
+                        border-radius: 50%;
+                    }
+                }
+                .topicInfo-conR{
+                    width: 532px;
+                    float: left;
+                    .topicInfo-name{
+                        height: 38px;
+                        line-height: 38px;
+                        font-weight:bold;
+                        a{
+                            @extend .extend-aline;
+                        }
+                    }
+                    .topicInfo-conR-con{
+                        text-align: center;
+                        padding: 10px 0;
+                        p{
+                            text-align: left;
+                            padding-bottom: 10px;
+                        }
+                        img{
+                            max-width: 532px;
+                        }
+                    }
+                    .topicInfo-time{
+                        margin: 44px 0 20px 0;
+                        ul{
+                            li{
+                                float: left;
+                                padding-right: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //评论
+        .topicInfo-comment{
+            padding: 20px;
+            background: $color-ffffff;
+            box-shadow: 0 0 5px rgba(81, 81, 81, 0.2);
+            margin-top: 13px;
+            .topicInfo-comment-noLogin{
+                width: 636px;
+                height: 85px;
+                border: 1px solid #bcbcbc;
+                margin: 0 auto;
+                p{
+                    line-height: 85px;
+                    text-align: center;
+                    span{
+                        padding: 0 5px;
+                    }
+                    a{
+                        color: $color-08;
+                        @extend .extend-aline;
+                    }
+                }
+            }
+            .topicCom-tit{
+                margin: 36px 0 20px 0;
+                font-size: 14px;
+            }
+            .topicCom-com{
+                padding-bottom: 40px;
+                .topicCom-comL{
+                    float: left;
+                    width: 58px;
+                    img{
+                        width: 38px;
+                        height: 38px;
+                        border-radius: 50%;
+                    }
+                }
+                .topicCom-comR{
+                    float: left;
+                    width: 570px;
+                    .topicCom-name{
+                        height: 38px;
+                        line-height: 38px;
+                        overflow: hidden;
+                        font-weight: bold;
+                        a{
+                            @extend .extend-aline;
+                        }
+                    }
+                    .topicCom-con{
+                        padding: 5px 0 0 0;
+                        p{
+
+                        }
+                    }
+                    .topicCom-time{
+                        padding: 20px 0 0 0;
+                        .topicCom-num{
+                            text-align: right;
+                            span{
+                                position: relative;
+                                display: inline-block;
+                                margin-left: 30px;
+                                padding-left: 18px;
+                                &.zan{
+                                    &:before{
+                                        content: '';
+                                        left: 0;
+                                        top: 2px;
+                                        position: absolute;
+                                        background: url("../../../images/pc/vm1.1/icon/icon-zan.png");
+                                        width: 15px;
+                                        height: 13px;
+                                    }
+                                }
+                                &.reply{
+                                    &:before{
+                                        content: '';
+                                        left: 0;
+                                        top: 2px;
+                                        position: absolute;
+                                        background: url("../../../images/pc/vm1.1/icon/icon-msg.png");
+                                        width: 15px;
+                                        height: 13px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     .topic-wall-r{
         background: $color-ffffff;

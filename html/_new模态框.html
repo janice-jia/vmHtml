@@ -25,12 +25,25 @@
 <div id="header" style="height: 78px;"></div>
 <!-- 按钮触发模态框 -->
 <button class="btn-yellow-40 left mr10 mt10" data-toggle="modal" data-target="#editChannel">
-    编辑频道模态框
+    编辑频道
 </button>
 
 <button class="btn-yellow-40 left mr10 mt10" data-toggle="modal" data-target="#delMsg">
-    删除提示模态框
+    删除提示
 </button>
+
+<button class="btn-yellow-40 left mr10 mt10" data-toggle="modal" data-target="#addTopic">
+    我要发帖
+</button>
+
+<button class="btn-yellow-40 left mr10 mt10" data-toggle="modal" data-target="#succeedMsg">
+    发布成功
+</button>
+
+<button class="btn-yellow-40 left mr10 mt10" data-toggle="modal" data-target="#shareFriend">
+    分享朋友圈
+</button>
+
 
 <!-- 编辑频道模态框（Modal） -->
 <div class="modal fade" id="editChannel"  aria-hidden="true">
@@ -40,7 +53,7 @@
         <form action="">
             <div class="modal-group pl20">
                 <label for="name">频道名称</label>
-                <input type="text" name="name" id="name" placeholder="请输入全新的频道名称">
+                <input type="text" name="name" id="name" placeholder="请输入全新的频道名称"/>
                 <p class="clear">最好1个汉字，最多6个汉字</p>
             </div>
             <div class="clear tc mt20">
@@ -59,7 +72,7 @@
 <div class="modal fade" id="delMsg"  aria-hidden="true">
     <div class="vm-modal modal-delMsg">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-        <div class="tit">编辑频道</div>
+        <div class="tit">提示</div>
         <div class="con">
             <p>你确定要删除自己发布的帖子吗？</p>
             <p>一旦删除帖子，涉及到帖子中的评论回复也将被删除。</p>
@@ -78,14 +91,46 @@
     <div class="vm-modal modal-addTopic">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
         <div class="tit">我要发帖</div>
-
+        <div class="addTopicName">
+            <label for="name">创建帖子标题</label>
+            <input type="text" name="name" id="name" placeholder="标题为5-30个汉字"/>
+        </div>
+        <div class="addTopicCon">
+            <label for="name">添加帖子内容</label>
+            <div class="addTopicEdit">这里是编辑器</div>
+            <p class="clear tr pr105 pt10">当前已输入0个字符, 您还可以输入5000个汉字</p>
+        </div>
         <div class="clear tc btn">
-            <button class="btn-yellow-100">提交</button>
+            <button class="btn-yellow-100">发布</button>
             <button class="btn-cancel" data-dismiss="modal" aria-hidden="true">取消</button>
         </div>
     </div>
 </div>
 <!-- 我要发帖（Modal） -->
+
+<!-- 发布成功提示模态框（Modal） -->
+<div class="modal fade" id="succeedMsg"  aria-hidden="true">
+    <div class="vm-modal modal-succeedMsg">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+        <p>发布成功</p>
+    </div>
+</div>
+<!-- 发布成功提示模态框（Modal） -->
+
+<!-- 分享朋友圈模态框（Modal） -->
+<div class="modal fade" id="shareFriend"  aria-hidden="true">
+    <div class="vm-modal modal-shareFriend">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+        <div class="tit">分享到微信朋友圈</div>
+        <div class="shareFriend">
+            <img src="./static/images/pc/vm1.1/test/t-4.jpg" alt="">
+        </div>
+        <div class="shareFriendMsg">
+            <p>打开微信，点击底部的“发现”，使用“扫一扫”即可将网页分享到我的朋友圈。<br/><a href="">如何使用？</a></p>
+        </div>
+    </div>
+</div>
+<!-- 分享朋友圈模态框（Modal） -->
 
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

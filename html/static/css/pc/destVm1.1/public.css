@@ -641,7 +641,8 @@
       margin-bottom: 40px; }
 
 .vm-hot {
-  width: 100%; }
+  width: 100%;
+  background: #ffffff; }
   .vm-hot h1 {
     line-height: 40px;
     margin-left: 10px;
@@ -749,10 +750,12 @@
   width: 500px;
   height: 250px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  background: #e9e9e9;
-  margin: -125px 0 0 -250px; }
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: #e9e9e9; }
   .vm-modal .close {
     background: url("../../../images/pc/vm1.1/icon/icon-close-1.png") no-repeat;
     width: 10px;
@@ -810,7 +813,10 @@
 .modal-delMsg {
   max-height: 195px;
   margin: -90px 0 0 -250px;
-  height: auto; }
+  height: auto;
+  top: 50%;
+  left: 50%;
+  bottom: auto; }
   .modal-delMsg .con {
     padding: 15px 20px; }
     .modal-delMsg .con p {
@@ -824,8 +830,76 @@
 
 .modal-addTopic {
   width: 865px;
-  height: 620px;
-  margin: -310px 0 0 -430px; }
+  height: 620px; }
+  .modal-addTopic .tit {
+    margin: 0;
+    padding: 0 20px; }
+  .modal-addTopic .addTopicName {
+    height: 70px;
+    border-bottom: 1px solid #b9c1c7;
+    padding: 20px 20px 0 20px; }
+    .modal-addTopic .addTopicName label {
+      float: left;
+      width: 95px;
+      font-weight: normal; }
+    .modal-addTopic .addTopicName input {
+      float: left;
+      width: 625px;
+      background: none;
+      height: 30px;
+      padding: 0 10px;
+      border: 1px solid #dcdcdc; }
+  .modal-addTopic .addTopicCon {
+    padding: 20px;
+    height: 450px; }
+    .modal-addTopic .addTopicCon label {
+      float: left;
+      font-weight: normal;
+      padding-top: 55px;
+      width: 95px; }
+    .modal-addTopic .addTopicCon .addTopicEdit {
+      float: left;
+      width: 625px;
+      height: 385px;
+      border: 1px solid #999999; }
+    .modal-addTopic .addTopicCon .pr105 {
+      padding-right: 105px; }
+  .modal-addTopic .btn {
+    text-align: right;
+    padding-right: 85px; }
+
+.modal-succeedMsg {
+  width: 450px;
+  height: 200px; }
+  .modal-succeedMsg p {
+    position: relative;
+    margin-top: 50px;
+    padding: 30px 0 0 215px;
+    font-size: 20px;
+    color: #000000; }
+    .modal-succeedMsg p:before {
+      content: '';
+      position: absolute;
+      left: 150px;
+      top: 23px;
+      background: url("../../../images/pc/vm1.1/icon/icon-succeed.png");
+      width: 47px;
+      height: 46px; }
+
+.modal-shareFriend {
+  width: 495px;
+  height: 345px; }
+  .modal-shareFriend .shareFriend {
+    text-align: center;
+    padding: 20px 0; }
+    .modal-shareFriend .shareFriend img {
+      width: 178px;
+      height: 178px; }
+  .modal-shareFriend .shareFriendMsg {
+    height: 70px;
+    border-top: 1px solid #b9c1c7; }
+    .modal-shareFriend .shareFriendMsg p {
+      padding: 20px 0 0 20px; }
 
 .more-tribe-list {
   padding-left: 18px; }

@@ -878,6 +878,7 @@ $color-ffffff: #ffffff;
 //public  热门推荐
 .vm-hot{
     width: 100%;
+    background: $color-ffffff;
     h1 {
         line-height: 40px;
         margin-left: 10px;
@@ -1023,10 +1024,12 @@ $color-ffffff: #ffffff;
     width: 500px;
     height: 250px;
     position: absolute;
-    top:50%;
-    left: 50%;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
     background: #e9e9e9;
-    margin: -125px 0 0 -250px;
     .close{
         background: url("../../../images/pc/vm1.1/icon/icon-close-1.png") no-repeat;
         width: 10px;
@@ -1098,6 +1101,9 @@ $color-ffffff: #ffffff;
     max-height: 195px;
     margin: -90px 0 0 -250px;
     height: auto;
+    top: 50%;
+    left: 50%;
+    bottom: auto;
     .con{
         padding: 15px 20px;
         p{
@@ -1117,7 +1123,95 @@ $color-ffffff: #ffffff;
 .modal-addTopic {
     width: 865px;
     height: 620px;
-    margin: -310px 0 0 -430px;
+    .tit{
+        margin: 0;
+        padding: 0 20px;
+    }
+    .addTopicName{
+        height: 70px;
+        border-bottom: 1px solid #b9c1c7;
+        padding: 20px 20px 0 20px;
+        label{
+            float: left;
+            width: 95px;
+            font-weight: normal;
+        }
+        input{
+            float: left;
+            width: 625px;
+            background: none;
+            height: 30px;
+            padding: 0 10px;
+            border: 1px solid #dcdcdc;
+        }
+    }
+    .addTopicCon{
+        padding: 20px;
+        height: 450px;
+        label{
+            float: left;
+            font-weight: normal;
+            padding-top: 55px;
+            width: 95px;
+        }
+        .addTopicEdit{
+            float: left;
+            width: 625px;
+            height: 385px;
+            border: 1px solid $color-06;
+        }
+        .pr105{
+            padding-right: 105px;
+        }
+    }
+    .btn{
+        text-align: right;
+        padding-right: 85px;
+    }
+}
+
+//发布成功提示模态框
+.modal-succeedMsg{
+    width: 450px;
+    height: 200px;
+    //position: relative;
+    p{
+        position: relative;
+        margin-top: 50px;
+        padding: 30px 0 0 215px;
+        font-size: 20px;
+        color: #000000;
+        &:before{
+            content: '';
+            position: absolute;
+            left: 150px;
+            top: 23px;
+            background: url("../../../images/pc/vm1.1/icon/icon-succeed.png");
+            width: 47px;
+            height: 46px;
+        }
+    }
+}
+
+//分享朋友圈
+.modal-shareFriend{
+    width: 495px;
+    height: 345px;
+    .shareFriend{
+        text-align: center;
+        padding: 20px 0;
+        img{
+            width: 178px;
+            height: 178px;
+        }
+    }
+    .shareFriendMsg{
+        height: 70px;
+        border-top: 1px solid #b9c1c7;
+        p{
+            padding: 20px 0 0 20px;
+        }
+    }
 }
 
 //更多部落列表

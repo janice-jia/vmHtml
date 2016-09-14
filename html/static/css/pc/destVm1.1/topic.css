@@ -1,6 +1,9 @@
 /*
 * this is a topic stylesheet
 */
+.extend-aline:hover, .topic-wall .topic-wall-l .vm-album-con ul li p a:hover, .topic-wall .topic-wall-l .vm-video-con ul li p a:hover, .topic-wall .topic-wall-l .vm-text-con ul li p a:hover {
+  text-decoration: underline; }
+
 .topic-wall {
   width: 100%;
   margin-top: 13px; }
@@ -9,6 +12,23 @@
     width: 675px;
     float: left;
     box-shadow: 0 0 5px rgba(81, 81, 81, 0.2); }
+    .topic-wall .topic-wall-l .null-content {
+      position: relative;
+      height: 200px;
+      border-top: 1px solid #b9c1c7;
+      padding: 20px 0; }
+      .topic-wall .topic-wall-l .null-content p {
+        padding-left: 365px;
+        text-align: left; }
+        .topic-wall .topic-wall-l .null-content p:before {
+          left: 180px;
+          top: 20px;
+          position: absolute; }
+    .topic-wall .topic-wall-l .topic-tit {
+      height: 45px;
+      line-height: 45px;
+      padding: 0 20px 0 45px;
+      font-size: 14px; }
     .topic-wall .topic-wall-l .topic-public {
       height: 45px;
       line-height: 45px;
@@ -31,7 +51,86 @@
     .topic-wall .topic-wall-l .vm-topic-con .tp-list-header {
       border-top: 1px solid #b9c1c7;
       border-bottom: none; }
+    .topic-wall .topic-wall-l .topicCon {
+      background: #ffffff;
+      box-shadow: 0 0 5px rgba(81, 81, 81, 0.2);
+      margin-bottom: 10px; }
+    .topic-wall .topic-wall-l .vm-album-con {
+      border-top: 1px solid #b9c1c7; }
+      .topic-wall .topic-wall-l .vm-album-con ul {
+        padding-top: 15px;
+        padding-bottom: 5px;
+        width: 650px;
+        margin: 0 auto; }
+        .topic-wall .topic-wall-l .vm-album-con ul li {
+          width: 116px;
+          float: left;
+          margin: 0 7px; }
+          .topic-wall .topic-wall-l .vm-album-con ul li img {
+            width: 116px;
+            height: 82px; }
+          .topic-wall .topic-wall-l .vm-album-con ul li p {
+            width: 116px;
+            height: 20px;
+            line-height: 20px;
+            overflow: hidden;
+            margin: 10px 0;
+            text-align: center; }
+    .topic-wall .topic-wall-l .vm-video-con {
+      border-top: 1px solid #b9c1c7; }
+      .topic-wall .topic-wall-l .vm-video-con ul {
+        padding-top: 15px;
+        padding-bottom: 5px;
+        margin: 0 auto;
+        width: 616px; }
+        .topic-wall .topic-wall-l .vm-video-con ul li {
+          width: 140px;
+          float: left;
+          margin: 0 7px; }
+          .topic-wall .topic-wall-l .vm-video-con ul li img {
+            width: 140px;
+            height: 92px; }
+          .topic-wall .topic-wall-l .vm-video-con ul li p {
+            width: 140px;
+            height: 20px;
+            line-height: 20px;
+            overflow: hidden;
+            margin: 10px 0;
+            text-align: center; }
+    .topic-wall .topic-wall-l .vm-text-con {
+      border-top: 1px solid #b9c1c7;
+      padding: 10px 36px; }
+      .topic-wall .topic-wall-l .vm-text-con ul li {
+        float: left;
+        width: 132px;
+        margin-right: 18px; }
+        .topic-wall .topic-wall-l .vm-text-con ul li p {
+          height: 30px;
+          line-height: 30px;
+          overflow: hidden; }
   .topic-wall .topic-wall-r {
     background: #ffffff;
     width: 325px;
     float: right; }
+    .topic-wall .topic-wall-r .vm-team {
+      background: #ffffff; }
+      .topic-wall .topic-wall-r .vm-team h1 {
+        line-height: 40px;
+        padding: 0 14px;
+        font-size: 14px; }
+        .topic-wall .topic-wall-r .vm-team h1 a {
+          font-size: 12px; }
+      .topic-wall .topic-wall-r .vm-team ul {
+        padding: 10px 0 10px 5px; }
+        .topic-wall .topic-wall-r .vm-team ul li {
+          float: left;
+          width: 54px;
+          margin-left: 20px; }
+          .topic-wall .topic-wall-r .vm-team ul li img {
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            margin-bottom: 10px; }
+  .topic-wall .noBg {
+    background: none;
+    box-shadow: none; }

@@ -16,6 +16,12 @@ $color-09: #e43f3f;
 
 $color-ffffff: #ffffff;
 
+.extend-aline {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 .topic-wall{
     width: 100%;
     margin-top: 13px;
@@ -24,6 +30,27 @@ $color-ffffff: #ffffff;
         width: 675px;
         float: left;
         box-shadow: 0 0 5px rgba(81, 81, 81, 0.2);
+        .null-content{
+            position: relative;
+            height: 200px;
+            border-top:1px solid #b9c1c7;
+            padding: 20px 0;
+            p{
+                padding-left: 365px;
+                text-align: left;
+                &:before{
+                    left: 180px;
+                    top: 20px;
+                    position: absolute;
+                }
+            }
+        }
+        .topic-tit{
+            height: 45px;
+            line-height: 45px;
+            padding: 0 20px 0 45px;
+            font-size: 14px;
+        }
         .topic-public{
             height: 45px;
             line-height: 45px;
@@ -53,10 +80,125 @@ $color-ffffff: #ffffff;
                 border-bottom: none;
             }
         }
+
+        .topicCon{
+            background: $color-ffffff;
+            box-shadow: 0 0 5px rgba(81, 81, 81, 0.2);
+            margin-bottom: 10px;
+        }
+        .vm-album-con{
+            border-top:1px solid #b9c1c7;
+            ul{
+                padding-top: 15px;
+                padding-bottom: 5px;
+                width: 650px;
+                margin: 0 auto;
+                li{
+                    width: 116px;
+                    float: left;
+                    margin: 0 7px;
+                    img{
+                        width: 116px;
+                        height: 82px;
+                    }
+                    p{
+                        width: 116px;
+                        height: 20px;
+                        line-height: 20px;
+                        overflow: hidden;
+                        margin: 10px 0;
+                        text-align: center;
+                        a{
+                            @extend .extend-aline;
+                        }
+                    }
+                }
+            }
+        }
+
+        .vm-video-con{
+            border-top:1px solid #b9c1c7;
+            ul{
+                //padding-left: 31px;
+                padding-top: 15px;
+                padding-bottom: 5px;
+                margin: 0 auto;
+                width: 616px;
+                li{
+                    width: 140px;
+                    float: left;
+                    margin: 0 7px;
+                    img{
+                        width: 140px;
+                        height: 92px;
+                    }
+                    p{
+                        width: 140px;
+                        height: 20px;
+                        line-height: 20px;
+                        overflow: hidden;
+                        margin: 10px 0;
+                        text-align: center;
+                        a{
+                            @extend .extend-aline;
+                        }
+                    }
+                }
+            }
+        }
+
+        .vm-text-con{
+            border-top:1px solid #b9c1c7;
+            padding: 10px 36px;
+            ul{
+                li{
+                    float: left;
+                    width: 132px;
+                    margin-right: 18px;
+                    p{
+                        height: 30px;
+                        line-height: 30px;
+                        overflow: hidden;
+                        a{
+                            @extend .extend-aline;
+                        }
+                    }
+                }
+            }
+        }
     }
     .topic-wall-r{
         background: $color-ffffff;
         width: 325px;
         float: right;
+        .vm-team{
+            background: $color-ffffff;
+            h1 {
+                line-height: 40px;
+                padding: 0 14px;
+                font-size: 14px;
+                a{
+                    font-size: 12px;
+                }
+            }
+            ul{
+                padding: 10px 0 10px 5px;
+                li{
+                    float: left;
+                    width: 54px;
+                    margin-left: 20px;
+                    img{
+                        width: 54px;
+                        height: 54px;
+                        border-radius: 50%;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .noBg{
+        background: none;
+        box-shadow: none;
     }
 }

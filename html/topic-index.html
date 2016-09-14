@@ -90,9 +90,9 @@
 
 <div class="container mt50 mb50">
     <div id="mhp-header">
-        <div class="top">
+        <div class="top" style="background-image: url('static/images/pc/vm1.1/jpg/tribe_1.jpg')">
             <button type="button" id="editbg" class="editbg">上传封面图</button>
-            <img class="bgimg" src="static/images/pc/vm1.1/test/t-1.jpg" alt=""/>
+            <!--<img class="bgimg" src="static/images/pc/vm1.1/test/t-1.jpg" alt=""/>-->
         </div>
         <div class="centerbtn">
             <button type="button" class="btn-yellow-100">加入部落</button>
@@ -794,6 +794,34 @@
     $('.channel-close a').click(function(){
         $('.vn-add-channel').hide('slow');
     });
+</script>
+<script type="text/javascript">
+    var scroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var scrollFunc = function (e) {
+        e = e || window.event;
+        if (e.wheelDelta) {  //判断浏览器IE，谷歌滑轮事件
+            if (e.wheelDelta > 0) { //当滑轮向上滚动时
+                var scroll = document.body.scrollTop || document.documentElement.scrollTop;
+                if (scroll == 0) {
+                    $('#mhp-header').css({ marginTop: "0px"});
+                    $('#mhp-header .top').css({ backgroundPositionY: "0px"});
+                }
+            }
+        } else if (e.detail) {  //Firefox滑轮事件
+            if (e.detail > 0) { //当滑轮向上滚动时
+                var scroll = document.body.scrollTop || document.documentElement.scrollTop;
+                if (scroll == 0) {
+                    $('#mhp-header').css({ marginTop: "0px"});
+                }
+            }
+        }
+    };
+    //给页面绑定滑轮滚动事件
+    if (document.addEventListener) {//firefox
+        document.addEventListener('DOMMouseScroll', scrollFunc, false);
+    }
+    //滚动滑轮触发scrollFunc方法  //ie 谷歌
+    window.onmousewheel = document.onmousewheel = scrollFunc;
 </script>
 
 </body>

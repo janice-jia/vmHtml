@@ -68,8 +68,15 @@ hr {
       padding: 0;
       padding-top: 20px; }
 #tribe-index .right-box-242 {
-  width: 242px;
+  width: 260px;
   float: right; }
+  #tribe-index .right-box-242 .vm-hot {
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #e0e1e2; }
+    #tribe-index .right-box-242 .vm-hot img {
+      width: 234px;
+      height: 80px; }
 
 .ranking-list {
   margin-top: 10px;

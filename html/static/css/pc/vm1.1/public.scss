@@ -614,6 +614,7 @@ $color-ffffff: #ffffff;
     .top{
         height:250px;
         background-attachment:fixed;
+        background-repeat: no-repeat;
         background-position-y: -100px;
         -webkit-transition: all 0.5s;
         -moz-transition: all 0.5s;

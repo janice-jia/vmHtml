@@ -112,8 +112,17 @@ hr {
         }
     }
     .right-box-242 {
-        width: 242px;
+        width: 260px;
         float: right;
+        .vm-hot{
+            margin-top: 20px;
+            background-color: #fff;
+            border: 1px solid #e0e1e2;
+            img{
+                width: 234px;
+                height:80px;
+            }
+        }
     }
 }
 

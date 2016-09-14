@@ -1,0 +1,140 @@
+@charset "utf-8";
+$font-12: 12px;
+$font-14: 14px;
+$font-16: 16px;
+$font-18: 18px;
+$font-20: 20px;
+$font-22: 22px;
+$font-24: 24px;
+
+$color-01: #171717;
+$color-02: #f7f8fa; //（背景颜色）
+$color-03: #dcdcdc; //（输入边框颜色）
+$color-04: #b9c1c7; //（直线颜色）
+$color-05: #666666; //（标题字颜色）
+$color-06: #999999; //（编辑画笔颜色）
+$color-07: #499af5;
+$color-08: #ffb30e;
+$color-09: #e43f3f;
+
+.mt20 {
+    margin-top: 20px;
+}
+
+#create-tribe {
+    background-color: #fff;
+    .create-title {
+        font-size: 20px;
+        text-align: center;
+        line-height: 60px;
+        margin-bottom: 5px;
+    }
+    .create-status {
+        text-align: center;
+        margin-bottom: 20px;
+        li {
+            width: 90px;
+            height: 90px;
+            line-height: 90px;
+            border-radius: 50%;
+            border: 2px dashed $color-08;
+            display: inline-block;
+            margin: 0 45px;
+            &.finish {
+                background-color: $color-08;
+                color: #0a0a0a;
+            }
+        }
+    }
+    .form-group:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .form-group {
+        margin-top: 10px;
+        .col-sm-10 {
+            width: 600px;
+            padding: 0;
+        }
+        .col-sm-2 {
+            width: 145px;
+            padding-right: 10px;
+        }
+        label {
+            text-align: right;
+        }
+        p {
+            margin-top: 10px;
+            color: #999;
+        }
+        input {
+            height: 30px;
+            border: 1px solid #dcdcdc;
+            box-shadow: none;
+            &.input-455 {
+                width: 455px;
+                display: inline-block;
+            }
+        }
+        textarea {
+            height: 100px;
+            width: 100%;
+            border: 1px solid #dcdcdc;
+            box-shadow: none;
+        }
+        .left-100 {
+            float: left;
+            width: 100px;
+            margin-right: 10px;
+        }
+        .head-img {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            background-color: $color-02;
+            margin: 0 auto;
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: 50%;
+                vertical-align: middle;
+            }
+        }
+        .bg-img {
+            height: 200px;
+            background-color: $color-02;
+            img {
+                height: 100%;
+                width: 100%;
+                vertical-align: middle;
+            }
+        }
+        .tabs {
+            margin-top: 15px;
+            height: 30px;
+            &:before{
+                display: table;
+                content: "";
+            }
+            p{
+                display: inline-block;
+                background-color: #dcdcdc;
+                height: 30px;
+                padding: 6px 17px;
+                margin-right: 10px;
+                margin-top: 0;
+                padding-right: 0;
+
+                .deltab {
+                    margin: 0 10px;
+                    width: 10px;
+                    height: 10px;
+                    display: inline-block;
+                    background-image: url("../../../images/pc/vm1.1/icon/icon-close-1.png");
+                }
+            }
+        }
+
+    }
+}

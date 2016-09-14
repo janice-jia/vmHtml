@@ -1,0 +1,95 @@
+.mt20 {
+  margin-top: 20px; }
+
+#create-tribe {
+  background-color: #fff; }
+  #create-tribe .create-title {
+    font-size: 20px;
+    text-align: center;
+    line-height: 60px;
+    margin-bottom: 5px; }
+  #create-tribe .create-status {
+    text-align: center;
+    margin-bottom: 20px; }
+    #create-tribe .create-status li {
+      width: 90px;
+      height: 90px;
+      line-height: 90px;
+      border-radius: 50%;
+      border: 2px dashed #ffb30e;
+      display: inline-block;
+      margin: 0 45px; }
+      #create-tribe .create-status li.finish {
+        background-color: #ffb30e;
+        color: #0a0a0a; }
+  #create-tribe .form-group:after {
+    content: "";
+    display: table;
+    clear: both; }
+  #create-tribe .form-group {
+    margin-top: 10px; }
+    #create-tribe .form-group .col-sm-10 {
+      width: 600px;
+      padding: 0; }
+    #create-tribe .form-group .col-sm-2 {
+      width: 145px;
+      padding-right: 10px; }
+    #create-tribe .form-group label {
+      text-align: right; }
+    #create-tribe .form-group p {
+      margin-top: 10px;
+      color: #999; }
+    #create-tribe .form-group input {
+      height: 30px;
+      border: 1px solid #dcdcdc;
+      box-shadow: none; }
+      #create-tribe .form-group input.input-455 {
+        width: 455px;
+        display: inline-block; }
+    #create-tribe .form-group textarea {
+      height: 100px;
+      width: 100%;
+      border: 1px solid #dcdcdc;
+      box-shadow: none; }
+    #create-tribe .form-group .left-100 {
+      float: left;
+      width: 100px;
+      margin-right: 10px; }
+    #create-tribe .form-group .head-img {
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      background-color: #f7f8fa;
+      margin: 0 auto; }
+      #create-tribe .form-group .head-img img {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        vertical-align: middle; }
+    #create-tribe .form-group .bg-img {
+      height: 200px;
+      background-color: #f7f8fa; }
+      #create-tribe .form-group .bg-img img {
+        height: 100%;
+        width: 100%;
+        vertical-align: middle; }
+    #create-tribe .form-group .tabs {
+      margin-top: 15px;
+      height: 30px; }
+      #create-tribe .form-group .tabs:before {
+        display: table;
+        content: ""; }
+      #create-tribe .form-group .tabs p {
+        display: inline-block;
+        background-color: #dcdcdc;
+        height: 30px;
+        padding: 6px 17px;
+        margin-right: 10px;
+        margin-top: 0;
+        padding-right: 0; }
+        #create-tribe .form-group .tabs p .deltab {
+          margin: 0 10px;
+          width: 10px;
+          height: 10px;
+          display: inline-block;
+          background-image: url("../../../images/pc/vm1.1/icon/icon-close-1.png"); }

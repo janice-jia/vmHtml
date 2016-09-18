@@ -475,6 +475,7 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position-y: -100px;
+    background-position-x: center;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;

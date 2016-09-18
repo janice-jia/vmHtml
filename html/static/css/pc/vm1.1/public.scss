@@ -63,6 +63,10 @@ $color-ffffff: #ffffff;
 }
 
 //公用按钮样式
+.btn-transparent{
+    background-color: transparent;
+}
+
 .btn-yellow {
     width: 100px;
     height: 30px;
@@ -199,6 +203,25 @@ $color-ffffff: #ffffff;
         color: $color-01;
     }
 }
+
+.btn-blue {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 2px;
+    background: $color-07;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    &:hover {
+        color: $color-ffffff;
+    }
+}
+.btn-blue-100 {
+    @extend .btn-blue;
+    width: 100px;
+}
+
 
 // 公用搜索
 .vm-seach {
@@ -616,6 +639,7 @@ $color-ffffff: #ffffff;
         background-attachment:fixed;
         background-repeat: no-repeat;
         background-position-y: -100px;
+        background-position-x:center;
         -webkit-transition: all 0.5s;
         -moz-transition: all 0.5s;
         -ms-transition: all 0.5s;

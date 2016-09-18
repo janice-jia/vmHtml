@@ -36,6 +36,9 @@
   -khtml-opacity: 0.5;
   -webkit-opacity: 0.5; }
 
+.btn-transparent {
+  background-color: transparent; }
+
 .btn-yellow, .btn-yellow-100, .btn-yellow-150, .btn-yellow-80, .btn-yellow-66, .btn-yellow-74 {
   width: 100px;
   height: 30px;
@@ -140,6 +143,21 @@
   border: none; }
   .btn-cancel:hover {
     color: #171717; }
+
+.btn-blue, .btn-blue-100 {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 2px;
+  background: #499af5;
+  text-align: center;
+  cursor: pointer;
+  color: #fff; }
+  .btn-blue:hover, .btn-blue-100:hover {
+    color: #ffffff; }
+
+.btn-blue-100 {
+  width: 100px; }
 
 .vm-seach input {
   height: 25px;
@@ -457,6 +475,7 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position-y: -100px;
+    background-position-x: center;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;

@@ -1193,7 +1193,7 @@ $color-ffffff: #ffffff;
     }
 }
 
-//分享朋友圈
+//分享朋友圈模态框
 .modal-shareFriend{
     width: 495px;
     height: 345px;
@@ -1211,6 +1211,93 @@ $color-ffffff: #ffffff;
         p{
             padding: 20px 0 0 20px;
         }
+    }
+}
+
+//上传漫画模态框
+.modal-uploadComic{
+    width: 920px;
+    height: 515px;
+    .tit{
+        border: none;
+        font-size: 14px;
+        color: $color-05;
+    }
+    .con{
+        width: 100%;
+        clear: both;
+        label{
+            float: left;
+            width: 150px;
+            text-align: right;
+            font-weight: normal;
+            margin-right: 45px;
+            line-height: 30px;
+        }
+        input[type="text"]{
+            float: left;
+            width: 350px;
+            height: 30px;
+            border: 1px solid #dcdcdc;
+            background: none;
+        }
+        .msg{
+            float: left;
+            padding-left: 20px;
+            line-height: 30px;
+            color: $color-09;
+            width: 270px;
+            height: 30px;
+            overflow: hidden;
+        }
+        .artwork{
+            float: left;
+            width: 230px;
+            height: 230px;
+            border: 1px dashed #dcdcdc;
+            margin-top: 10px;
+            position: relative;
+            &:before{
+                content: '';
+                position: absolute;
+                left: 102px;
+                top: 102px;
+                background: url("../../../images/pc/vm1.1/icon/icon-upload.png");
+                width: 27px;
+                height: 27px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            input[type="file"]{
+                opacity: 0;
+                width: 100%;
+                height: 100%;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            .close{
+                content: '';
+                position: absolute;
+                right: -8px;
+                top: -8px;
+                background: url("../../../images/pc/vm1.1/icon/icon-close-2.png");
+                width: 16px;
+                height: 16px;
+                margin: 0;
+            }
+        }
+    }
+    .pMsg{
+        color: $color-09;
+        padding-left: 195px;
+        margin-top: 8px;
+    }
+    .btn{
+        clear: both;
+        text-align: center;
+        padding-top: 50px;
     }
 }
 

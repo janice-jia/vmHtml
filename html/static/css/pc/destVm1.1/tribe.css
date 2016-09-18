@@ -29,6 +29,9 @@
       line-height: 45px;
       padding: 0 20px 0 45px;
       font-size: 14px; }
+      .topic-wall .topic-wall-l .topic-tit .btn-yellow-80 {
+        margin-top: 12px;
+        font-size: 12px; }
     .topic-wall .topic-wall-l .topic-public {
       height: 45px;
       line-height: 45px;
@@ -186,6 +189,15 @@
             padding: 0 5px; }
           .topic-wall .topic-wall-l .topicInfo-comment .topicInfo-comment-noLogin p a {
             color: #ffb30e; }
+      .topic-wall .topic-wall-l .topicInfo-comment .topicInfo-comment-Login {
+        width: 636px;
+        height: 85px;
+        margin: 0 auto; }
+        .topic-wall .topic-wall-l .topicInfo-comment .topicInfo-comment-Login textarea {
+          width: 100%;
+          height: 100%;
+          padding: 10px;
+          border: 1px solid #bcbcbc; }
       .topic-wall .topic-wall-l .topicInfo-comment .topicCom-tit {
         margin: 36px 0 20px 0;
         font-size: 14px; }
@@ -259,3 +271,189 @@
   .topic-wall .noBg {
     background: none;
     box-shadow: none; }
+
+.modal-editComic {
+  width: 1010px;
+  background: #000000;
+  margin: 50px auto;
+  position: relative;
+  min-height: 100%;
+  height: auto; }
+  .modal-editComic .close {
+    background: url("../../../images/pc/vm1.1/icon/icon-close-fff.png");
+    width: 10px;
+    height: 10px;
+    opacity: .7; }
+    .modal-editComic .close:hover {
+      opacity: 1; }
+  .modal-editComic .artworkBox {
+    padding: 80px 20px; }
+    .modal-editComic .artworkBox .artworkL {
+      float: left;
+      width: 635px;
+      background: #ffffff; }
+      .modal-editComic .artworkBox .artworkL .comicBox .comicBox-tit {
+        padding-left: 155px;
+        padding-top: 35px; }
+        .modal-editComic .artworkBox .artworkL .comicBox .comicBox-tit .comicBox-tit-l {
+          float: left;
+          width: 300px;
+          text-align: center;
+          font-size: 14px; }
+        .modal-editComic .artworkBox .artworkL .comicBox .comicBox-tit .comicBox-tit-r {
+          float: right; }
+          .modal-editComic .artworkBox .artworkL .comicBox .comicBox-tit .comicBox-tit-r ul li {
+            float: left;
+            padding: 0 10px 0 15px; }
+            .modal-editComic .artworkBox .artworkL .comicBox .comicBox-tit .comicBox-tit-r ul li a {
+              display: inline-block;
+              width: 100%;
+              height: 100%; }
+            .modal-editComic .artworkBox .artworkL .comicBox .comicBox-tit .comicBox-tit-r ul li.catalog {
+              position: relative;
+              padding-bottom: 10px; }
+              .modal-editComic .artworkBox .artworkL .comicBox .comicBox-tit .comicBox-tit-r ul li.catalog:hover .comicBox-catalog {
+                display: block; }
+          .modal-editComic .artworkBox .artworkL .comicBox .comicBox-tit .comicBox-tit-r .comicBox-catalog {
+            position: absolute;
+            left: -30px;
+            top: 20px;
+            width: 108px;
+            border: 1px solid #dcdcdc;
+            background: #ffffff;
+            display: none; }
+            .modal-editComic .artworkBox .artworkL .comicBox .comicBox-tit .comicBox-tit-r .comicBox-catalog ul {
+              padding: 5px; }
+              .modal-editComic .artworkBox .artworkL .comicBox .comicBox-tit .comicBox-tit-r .comicBox-catalog ul li {
+                width: 100%;
+                text-align: center;
+                height: 30px;
+                line-height: 30px;
+                overflow: hidden; }
+      .modal-editComic .artworkBox .artworkL .comicBox .comicBox-edit {
+        padding: 0 10px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 14px; }
+        .modal-editComic .artworkBox .artworkL .comicBox .comicBox-edit a {
+          color: #999999; }
+          .modal-editComic .artworkBox .artworkL .comicBox .comicBox-edit a:hover {
+            color: #666666; }
+      .modal-editComic .artworkBox .artworkL .comicBox .comicBox-con img {
+        max-width: 635px; }
+    .modal-editComic .artworkBox .artworkR {
+      float: right;
+      width: 320px;
+      background: #ffffff; }
+      .modal-editComic .artworkBox .artworkR .artwork-user {
+        height: 90px; }
+        .modal-editComic .artworkBox .artworkR .artwork-user .artwork-userL {
+          width: 38px;
+          height: 38px;
+          float: left;
+          margin: 21px 15px 0 18px; }
+          .modal-editComic .artworkBox .artworkR .artwork-user .artwork-userL img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%; }
+        .modal-editComic .artworkBox .artworkR .artwork-user .artwork-userR {
+          float: left;
+          width: 240px; }
+          .modal-editComic .artworkBox .artworkR .artwork-user .artwork-userR .user {
+            margin-top: 10px;
+            height: 35px;
+            line-height: 35px; }
+          .modal-editComic .artworkBox .artworkR .artwork-user .artwork-userR .btn {
+            margin-left: -15px; }
+            .modal-editComic .artworkBox .artworkR .artwork-user .artwork-userR .btn button {
+              margin-left: 15px; }
+      .modal-editComic .artworkBox .artworkR .artwork-share {
+        border-top: 1px solid #b9c1c7;
+        border-bottom: 1px solid #b9c1c7;
+        height: 50px;
+        line-height: 50px;
+        text-align: right; }
+        .modal-editComic .artworkBox .artworkR .artwork-share a {
+          display: inline-block;
+          margin: 0 20px; }
+          .modal-editComic .artworkBox .artworkR .artwork-share a.zan {
+            width: 80px;
+            height: 30px;
+            background: #e43f3f;
+            border-radius: 2px;
+            text-align: center;
+            line-height: 30px;
+            color: #ffffff; }
+      .modal-editComic .artworkBox .artworkR .artwork-comment {
+        padding: 0 20px; }
+        .modal-editComic .artworkBox .artworkR .artwork-comment p {
+          height: 33px;
+          line-height: 33px; }
+        .modal-editComic .artworkBox .artworkR .artwork-comment .artwork-comNoLogin {
+          height: 60px;
+          width: 280px;
+          border: 1px solid #bcbcbc;
+          text-align: center; }
+          .modal-editComic .artworkBox .artworkR .artwork-comment .artwork-comNoLogin p {
+            height: 60px;
+            line-height: 60px; }
+            .modal-editComic .artworkBox .artworkR .artwork-comment .artwork-comNoLogin p span {
+              padding: 0 5px; }
+              .modal-editComic .artworkBox .artworkR .artwork-comment .artwork-comNoLogin p span a {
+                color: #ffb30e; }
+        .modal-editComic .artworkBox .artworkR .artwork-comment .artwork-comLogin {
+          height: 60px;
+          width: 280px; }
+          .modal-editComic .artworkBox .artworkR .artwork-comment .artwork-comLogin textarea {
+            height: 100%;
+            width: 100%;
+            border: 1px solid #bcbcbc;
+            padding: 10px; }
+      .modal-editComic .artworkBox .artworkR .artworkCom-Box {
+        clear: both; }
+        .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com {
+          padding: 20px 16px 0 16px;
+          border-top: 1px solid #b9c1c7;
+          margin-bottom: 20px; }
+          .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-tit {
+            font-size: 14px;
+            padding-bottom: 20px; }
+          .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-comL {
+            width: 60px;
+            float: left; }
+            .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-comL img {
+              width: 38px;
+              height: 38px;
+              border-radius: 50%; }
+          .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-comR {
+            float: left;
+            width: 224px; }
+            .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-comR .artworkCom-name {
+              height: 38px;
+              line-height: 38px;
+              font-weight: bold; }
+          .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-con {
+            padding-top: 20px;
+            padding-bottom: 10px; }
+          .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-time p {
+            text-align: right; }
+          .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-del {
+            padding-top: 10px;
+            text-align: right; }
+            .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-del a {
+              display: inline-block;
+              position: relative;
+              margin-left: 25px; }
+              .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-del a.zan, .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-del a.reply {
+                padding-left: 20px; }
+                .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-del a.zan:before, .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-del a.reply:before {
+                  content: '';
+                  position: absolute;
+                  left: 0;
+                  top: 2px;
+                  width: 15px;
+                  height: 13px; }
+              .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-del a.reply:before {
+                background: url("../../../images/pc/vm1.1/icon/icon-msg.png"); }
+              .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-del a.zan:before {
+                background: url("../../../images/pc/vm1.1/icon/icon-zan.png"); }

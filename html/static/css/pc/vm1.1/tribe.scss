@@ -50,6 +50,10 @@ $color-ffffff: #ffffff;
             line-height: 45px;
             padding: 0 20px 0 45px;
             font-size: 14px;
+            .btn-yellow-80{
+                margin-top: 12px;
+                font-size: 12px;
+            }
         }
         .topic-public{
             height: 45px;
@@ -287,6 +291,17 @@ $color-ffffff: #ffffff;
                     }
                 }
             }
+            .topicInfo-comment-Login{
+                width: 636px;
+                height: 85px;
+                margin: 0 auto;
+                textarea{
+                    width: 100%;
+                    height: 100%;
+                    padding: 10px;
+                    border: 1px solid #bcbcbc;
+                }
+            }
             .topicCom-tit{
                 margin: 36px 0 20px 0;
                 font-size: 14px;
@@ -391,5 +406,263 @@ $color-ffffff: #ffffff;
     .noBg{
         background: none;
         box-shadow: none;
+    }
+}
+
+.modal-editComic{
+    width: 1010px;
+    background: #000000;
+    margin: 50px auto;
+    position: relative;
+    min-height: 100%;
+    height: auto;
+    .close{
+        background: url("../../../images/pc/vm1.1/icon/icon-close-fff.png");
+        width: 10px;
+        height: 10px;
+        opacity: .7;
+        &:hover{
+            opacity: 1;
+        }
+    }
+    .artworkBox{
+        padding: 80px 20px;
+        .artworkL{
+            float: left;
+            width: 635px;
+            background: $color-ffffff;
+            .comicBox{
+                .comicBox-tit{
+                    padding-left: 155px;
+                    padding-top: 35px;
+                    .comicBox-tit-l{
+                        float: left;
+                        width: 300px;
+                        text-align: center;
+                        font-size: 14px;
+                    }
+                    .comicBox-tit-r{
+                        float: right;
+                        ul{
+                            li{
+                                float: left;
+                                padding: 0 10px 0 15px;
+                                a{
+                                    display: inline-block;
+                                    width: 100%;
+                                    height: 100%;
+
+                                }
+                                &.catalog{
+                                    position: relative;
+                                    padding-bottom: 10px;
+                                    &:hover{
+                                        .comicBox-catalog{
+                                            display: block;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .comicBox-catalog{
+                            position: absolute;
+                            left: -30px;
+                            top: 20px;
+                            width: 108px;
+                            border: 1px solid #dcdcdc;
+                            background: $color-ffffff;
+                            display: none;
+                            ul{
+                                padding: 5px;
+                                li{
+                                    width: 100%;
+                                    text-align: center;
+                                    height: 30px;
+                                    line-height: 30px;
+                                    overflow: hidden;
+                                }
+                            }
+                        }
+                    }
+                }
+                .comicBox-edit{
+                    padding: 0 10px;
+                    height: 35px;
+                    line-height: 35px;
+                    font-size: 14px;
+                    a{
+                        color: $color-06;
+                        &:hover{
+                            color: $color-05;
+                        }
+                    }
+                }
+                .comicBox-con{
+                    img{
+                        max-width: 635px;
+                    }
+                }
+            }
+        }
+        .artworkR{
+            float: right;
+            width: 320px;
+            background: $color-ffffff;
+            .artwork-user{
+                height: 90px;
+                .artwork-userL{
+                    width: 38px;
+                    height: 38px;
+                    float: left;
+                    margin: 21px 15px 0 18px;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 50%;
+                    }
+                }
+                .artwork-userR{
+                    float: left;
+                    width: 240px;
+                    .user{
+                        margin-top: 10px;
+                        height: 35px;
+                        line-height: 35px;
+                    }
+                    .btn{
+                        margin-left: -15px;
+                        button{
+                            margin-left: 15px;
+                        }
+                    }
+                }
+            }
+            .artwork-share{
+                border-top: 1px solid #b9c1c7;
+                border-bottom: 1px solid #b9c1c7;
+                height: 50px;
+                line-height: 50px;
+                text-align: right;
+                a{
+                    display: inline-block;
+                    margin: 0 20px;
+                    &.zan{
+                        width: 80px;
+                        height: 30px;
+                        background: $color-09;
+                        border-radius: 2px;
+                        text-align: center;
+                        line-height: 30px;
+                        color: $color-ffffff;
+                    }
+                }
+            }
+            .artwork-comment{
+                padding: 0 20px;
+                p{
+                    height: 33px;
+                    line-height: 33px;
+                }
+                .artwork-comment-con{}
+                .artwork-comNoLogin{
+                    height: 60px;
+                    width: 280px;
+                    border: 1px solid #bcbcbc;
+                    text-align: center;
+                    p{
+                        height: 60px;
+                        line-height: 60px;
+                        span{
+                            padding: 0 5px;
+                            a{
+                                color: $color-08;
+                            }
+                        }
+                    }
+                }
+                .artwork-comLogin{
+                    height: 60px;
+                    width: 280px;
+                    textarea{
+                        height: 100%;
+                        width: 100%;
+                        border: 1px solid #bcbcbc;
+                        padding: 10px;
+                    }
+                }
+
+            }
+            .artworkCom-Box{
+                clear: both;
+                .artworkCom-com{
+                    padding: 20px 16px 0 16px;
+                    border-top: 1px solid #b9c1c7;
+                    margin-bottom: 20px;
+                    .artworkCom-tit{
+                        font-size: 14px;
+                        padding-bottom: 20px;
+                    }
+                    .artworkCom-comL{
+                        width: 60px;
+                        float: left;
+                        img{
+                            width: 38px;
+                            height: 38px;
+                            border-radius: 50%;
+                        }
+                    }
+                    .artworkCom-comR{
+                        float: left;
+                        width: 224px;
+                        .artworkCom-name{
+                            height: 38px;
+                            line-height: 38px;
+                            font-weight: bold;
+                        }
+                    }
+                    .artworkCom-con{
+                        padding-top: 20px;
+                        padding-bottom: 10px;
+                    }
+                    .artworkCom-time{
+                        p{
+                            text-align: right;
+                        }
+                    }
+                    .artworkCom-del{
+                        padding-top: 10px;
+                        a{
+                            display: inline-block;
+                            position: relative;
+                            margin-left: 25px;
+                            &.zan,
+                            &.reply{
+                                padding-left: 20px;
+                                &:before{
+                                    content: '';
+                                    position: absolute;
+                                    left: 0;
+                                    top: 2px;
+                                    width: 15px;
+                                    height: 13px;
+                                }
+                            }
+                            &.reply{
+                                &:before{
+                                    background: url("../../../images/pc/vm1.1/icon/icon-msg.png");
+                                }
+                            }
+                            &.zan{
+                                &:before{
+                                    background: url("../../../images/pc/vm1.1/icon/icon-zan.png");
+                                }
+                            }
+                        }
+                        text-align: right;
+                    }
+                }
+            }
+        }
     }
 }

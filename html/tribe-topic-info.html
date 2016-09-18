@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="static/css/pc/destVm1.1/base.css" />
     <link rel="stylesheet" href="static/css/pc/destVm1.1/public.css" />
-    <link rel="stylesheet" href="static/css/pc/destVm1.1/topic.css" />
+    <link rel="stylesheet" href="static/css/pc/destVm1.1/tribe.css" />
 
     <!--[if lt IE 9]>
     <script src="static/js/pc/dest/html5shiv.min.js"></script>
@@ -128,11 +128,11 @@
     <div class="vm-homePageNav">
         <ul>
             <li>
-                <a href="./topic-index.html">首页</a>
+                <a href="tribe-user-index.html">首页</a>
                 <a href="javascript:;" class="vm-homePageNav-edit" data-toggle="modal" data-target="#editChannel"></a>
             </li>
             <li class="vm-homePageNav-hover">
-                <a href="./topic-pd.html">话题话题话题</a>
+                <a href="tribe-topic.html">话题话题话题</a>
                 <a href="javascript:;" class="vm-homePageNav-edit" data-toggle="modal" data-target="#editChannel"></a>
             </li>
             <li>
@@ -179,11 +179,11 @@
                     </li>
                     <li>
                         <p class="channel-cor5">投票</p>
-                        <p>已添加</p>
+                        <p>敬请期待</p>
                     </li>
                     <li>
                         <p class="channel-cor6">公告</p>
-                        <p>已添加</p>
+                        <p>敬请期待</p>
                     </li>
                 </ul>
             </div>
@@ -242,6 +242,8 @@
                 </div>
             </div>
             <div class="topicInfo-comment">
+
+                <!--未登录-->
                 <div class="topicInfo-comment-noLogin">
                     <p>
                         <span>您需要登录后才可以回帖</span>
@@ -250,6 +252,12 @@
                         <span><a href="">免费注册</a></span>
                     </p>
                 </div>
+
+                <!--已登录-->
+                <div class="topicInfo-comment-Login hide">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="我也要说两句..."></textarea>
+                </div>
+
                 <div class="topicCom-tit">热门评论</div>
                 <div class="topicCom-Box">
                     <div class="topicCom-com">

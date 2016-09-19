@@ -779,7 +779,11 @@
     background: url("../../../images/pc/vm1.1/icon/icon-close-1.png") no-repeat;
     width: 10px;
     height: 10px;
-    margin: 10px 10px 0 0; }
+    margin: 10px 10px 0 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100; }
   .vm-modal .tit {
     margin: 0 20px;
     height: 50px;
@@ -888,22 +892,30 @@
     padding-right: 85px; }
 
 .modal-succeedMsg {
+  display: table;
   width: 450px;
   height: 200px; }
   .modal-succeedMsg p {
+    vertical-align: middle;
     position: relative;
-    margin-top: 50px;
-    padding: 30px 0 0 215px;
+    text-align: center;
+    width: 100%;
     font-size: 20px;
     color: #000000; }
     .modal-succeedMsg p:before {
       content: '';
-      position: absolute;
-      left: 150px;
-      top: 23px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 16px;
       background: url("../../../images/pc/vm1.1/icon/icon-succeed.png");
       width: 47px;
       height: 46px; }
+  .modal-succeedMsg .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center; }
+    .modal-succeedMsg .table-cell p {
+      margin-bottom: 15px; }
 
 .modal-shareFriend {
   width: 495px;

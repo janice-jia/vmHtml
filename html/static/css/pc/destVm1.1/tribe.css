@@ -471,3 +471,19 @@
                 background: url("../../../images/pc/vm1.1/icon/icon-msg.png"); }
               .modal-infoComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-del a.zan:before {
                 background: url("../../../images/pc/vm1.1/icon/icon-zan.png"); }
+
+.vm-text-con {
+  min-height: 375px; }
+
+.bookBox-con {
+  min-height: 650px;
+  width: 480px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #999999; }
+  .bookBox-con .title {
+    text-align: center;
+    margin: 30px 0; }
+  .bookBox-con p {
+    margin-bottom: 20px;
+    text-indent: 2em; }

@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>部落展示-相册内容</title>
+
+    <!--IE浏览器运行最新的渲染模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="static/css/pc/minCss/bootstrap.min.css"/>
+    <link rel="stylesheet" href="static/css/pc/minCss/all.min.css"/>
+
+    <link rel="stylesheet" href="static/css/pc/destVm1.1/base.css" />
+    <link rel="stylesheet" href="static/css/pc/destVm1.1/public.css" />
+    <link rel="stylesheet" href="static/css/pc/destVm1.1/tribe.css" />
+
+    <!--[if lt IE 9]>
+    <script src="static/js/pc/dest/html5shiv.min.js"></script>
+    <script src="static/js/pc/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<!--header start-->
+<div class="vm-header">
+    <div class="container">
+        <h1>
+            <a href="">
+                <img src="./static/images/pc/vm1.1/logo.png" height="36" width="30" alt="众创部落"/>
+            </a>
+            <a href=""><b>众创部落</b></a>
+        </h1>
+        <ul class="vm-nav">
+            <li class="vm-nav-hover"><a href="#">首页</a></li>
+            <li><a href="#">部落</a></li>
+            <li><a href="#">活动</a></li>
+            <li><a href="#">需求</a></li>
+            <li><a href="#">服务</a></li>
+        </ul>
+        <div class="vm-search">
+            <input type="text" placeholder="搜索"/>
+        </div>
+
+        <!--登录前 start-->
+        <div class="vm-no-login">
+            <ul>
+                <li><a href="#">登录</a></li>
+                <li><span>|</span></li>
+                <li><a href="#">注册</a></li>
+            </ul>
+        </div>
+        <!--登录前 end-->
+
+        <!--登录后 start-->
+        <div class="vm-news hide">
+            <a href="#">&nbsp;</a>
+            <span class="vm-havemsg"></span>
+        </div>
+        <div class="vm-user hide">
+            <a target="_blank" href="#">
+                <img src="./static/images/pc/vm1.1/public/default-avatar.png" alt="用户头像" height="20" width="20"/>
+            </a>
+            <div class="vm-user-open">
+                <ul>
+                    <li><a href="#">我的部落</a></li>
+                    <li><a href="#">我的工作台</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">私信<span class="msgNum">1</span></a></li>
+                </ul>
+                <ul>
+                    <li class="WB"><a href="#">新浪微博</a></li>
+                    <li class="WX"><a href="#">微信</a></li>
+                    <li class="TX"><a href="#">腾讯空间</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">账号设置</a></li>
+                    <li><a href="#">退出</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--登陆后 end-->
+
+
+    </div>
+</div>
+<!--header end-->
+
+
+<div class="container mt50 mb50">
+    <div id="mhp-header">
+        <div class="top" style="background-image: url('static/images/pc/vm1.1/jpg/tribe_1.jpg')">
+            <button type="button" id="editbg" class="editbg">上传封面图</button>
+            <!--<img class="bgimg" src="static/images/pc/vm1.1/test/t-1.jpg" alt=""/>-->
+        </div>
+        <div class="centerbtn">
+            <button type="button" class="btn-yellow-100">加入部落</button>
+            <button type="button" class="btn-yellow-100">赞</button>
+        </div>
+        <div class="footermsg">
+            <a class="head" href="#">
+                <img src="static/images/pc/vm1.1/test/t-2.jpg" alt=""/>
+                <b class="editmsg-fff"></b>
+            </a>
+            <p>用户名用户名</p>
+            <div id="edit-introduce" class="edit-introduce">
+                <p>介绍下自己，让大家认识你......</p>
+                <b ></b>
+                <input class="opacity-0" type="text" value="介绍下自己，让大家认识你......">
+            </div>
+            <div class="userInfo row pl10 pr10 mt25">
+                <div class="col-lg-3 tl">
+                    <p><span>酋长：</span><span>赤小豆童鞋</span></p>
+                </div>
+                <div class="col-lg-6">
+                    <span>族员：9999</span>
+                    <span class="ml30 mr30">赞：9999</span>
+                    <span>诞生：9999天</span>
+                </div>
+                <div class="col-lg-3 tr jb"><a href="">侵权举报</a></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--个人主页公用导航 start-->
+    <div class="vm-homePageNav">
+        <ul>
+            <li>
+                <a href="tribe-user-index.html">首页</a>
+            </li>
+            <li>
+                <a href="tribe-topic.html">话题话题话题</a>
+                <a href="javascript:;" class="vm-homePageNav-edit" data-toggle="modal" data-target="#editChannel"></a>
+            </li>
+            <li class="vm-homePageNav-hover">
+                <a href="">相册相册相册</a>
+                <a href="javascript:;" class="vm-homePageNav-edit" data-toggle="modal" data-target="#editChannel"></a>
+            </li>
+            <li>
+                <a href="#">视频视频视频</a>
+                <a href="javascript:;" class="vm-homePageNav-edit" data-toggle="modal" data-target="#myModal1"></a>
+            </li>
+            <li>
+                <a href="tribe-novel.html">小说小说小说</a>
+                <a href="javascript:;" class="vm-homePageNav-edit" data-toggle="modal" data-target="#editChannel"></a>
+            </li>
+            <li>
+                <a href="tribe-comic.html">漫画漫画漫画</a>
+                <a href="javascript:;" class="vm-homePageNav-edit" data-toggle="modal" data-target="#editChannel"></a>
+            </li>
+            <li class="vm-homePageNav-manage"><a href="javascript:;"></a></li>
+        </ul>
+    </div>
+    <div class="vn-add-channel container">
+        <div class="row">
+            <div class="col-lg-2 channel-tit">
+                <p>添加部落频道</p>
+            </div>
+            <div class="col-lg-9 channel-list">
+                <ul>
+                    <li>
+                        <p class="channel-cor1">相册</p>
+                        <p class="ok">已添加</p>
+                    </li>
+                    <li>
+                        <p class="channel-cor2">视频</p>
+                        <p class="ok">已添加</p>
+                    </li>
+                    <li>
+                        <p class="channel-cor3">小说</p>
+                        <p class="ok">已添加</p>
+                    </li>
+                    <li>
+                        <p class="channel-cor4">漫画</p>
+                        <button class="btn-gray-80">添加</button>
+                    </li>
+                    <li>
+                        <p class="channel-cor5">投票</p>
+                        <p>敬请期待</p>
+                    </li>
+                    <li>
+                        <p class="channel-cor6">公告</p>
+                        <p>敬请期待</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-1 channel-close">
+                <a href="javascript:;"></a>
+            </div>
+        </div>
+    </div>
+    <!--个人主页公用导航 start-->
+
+    <div class="topic-wall">
+        <div class="topic-wall-c">
+            <!--小说-->
+            <div class="topicCon">
+                <div class="topic-tit">
+                    <a href="#"><span>&lt; 返回</span></a>
+                    <a href="javascript:;" class="btn-yellow-80 right">上传相片</a>
+                </div>
+                <div class="vm-album-con  vm-album-con-pd">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
+                            <!--<p><a href="#">相册名称相册名称</a></p>-->
+                            <div class="edit-albumName">
+                                <a href="#">最长8个字</a>
+                                <b ></b>
+                                <input class="hide" type="text" value="相册名称" maxlength="8">
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
+                            <!--<p><a href="#">相册名称相册名称</a></p>-->
+                            <div class="edit-albumName">
+                                <a href="#">12345678</a>
+                                <b ></b>
+                                <input class="hide" type="text" value="相册名称" maxlength="8">
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
+                            <!--<p><a href="#">相册名称相册名称</a></p>-->
+                            <div class="edit-albumName">
+                                <a href="#">一个好长的名字</a>
+                                <b ></b>
+                                <input class="hide" type="text" value="相册名称" maxlength="8">
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
+                            <!--<p><a href="#">相册名称相册名称</a></p>-->
+                            <div class="edit-albumName">
+                                <a href="#">一个好长的名字</a>
+                                <b ></b>
+                                <input class="hide" type="text" value="相册名称" maxlength="8">
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
+                            <!--<p><a href="#">相册名称相册名称</a></p>-->
+                            <div class="edit-albumName">
+                                <a href="#">一个好长的名字</a>
+                                <b ></b>
+                                <input class="hide" type="text" value="相册名称" maxlength="8">
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
+                            <!--<p><a href="#">相册名称相册名称</a></p>-->
+                            <div class="edit-albumName">
+                                <a href="#">一个好长的名字</a>
+                                <b ></b>
+                                <input class="hide" type="text" value="相册名称" maxlength="8">
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
+                            <!--<p><a href="#">相册名称相册名称</a></p>-->
+                            <div class="edit-albumName">
+                                <a href="#">一个好长的名字</a>
+                                <b ></b>
+                                <input class="hide" type="text" value="相册名称" maxlength="8">
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
+                            <!--<p><a href="#">相册名称相册名称</a></p>-->
+                            <div class="edit-albumName">
+                                <a href="#">一个好长的名字</a>
+                                <b ></b>
+                                <input class="hide" type="text" value="相册名称" maxlength="8">
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
+                            <!--<p><a href="#">相册名称相册名称</a></p>-->
+                            <div class="edit-albumName">
+                                <a href="#">一个好长的名字</a>
+                                <b ></b>
+                                <input class="hide" type="text" value="相册名称" maxlength="8">
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
+                            <!--<p><a href="#">相册名称相册名称</a></p>-->
+                            <div class="edit-albumName">
+                                <a href="#">一个好长的名字</a>
+                                <b ></b>
+                                <input class="hide" type="text" value="相册名称" maxlength="8">
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
+                            <!--<p><a href="#">相册名称相册名称</a></p>-->
+                            <div class="edit-albumName">
+                                <a href="#">一个好长的名字</a>
+                                <b ></b>
+                                <input class="hide" type="text" value="相册名称" maxlength="8">
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
+                            <!--<p><a href="#">相册名称相册名称</a></p>-->
+                            <div class="edit-albumName">
+                                <a href="#">一个好长的名字</a>
+                                <b ></b>
+                                <input class="hide" type="text" value="相册名称" maxlength="8">
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
+                            <!--<p><a href="#">相册名称相册名称</a></p>-->
+                            <div class="edit-albumName">
+                                <a href="#">一个好长的名字</a>
+                                <b ></b>
+                                <input class="hide" type="text" value="相册名称" maxlength="8">
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
+                            <!--<p><a href="#">相册名称相册名称</a></p>-->
+                            <div class="edit-albumName">
+                                <a href="#">一个好长的名字</a>
+                                <b ></b>
+                                <input class="hide" type="text" value="相册名称" maxlength="8">
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
+                            <!--<p><a href="#">相册名称相册名称</a></p>-->
+                            <div class="edit-albumName">
+                                <a href="#">一个好长的名字</a>
+                                <b ></b>
+                                <input class="hide" type="text" value="相册名称" maxlength="8">
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
+                            <!--<p><a href="#">相册名称相册名称</a></p>-->
+                            <div class="edit-albumName">
+                                <a href="#">一个好长的名字</a>
+                                <b ></b>
+                                <input class="hide" type="text" value="相册名称" maxlength="8">
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
+                            <!--<p><a href="#">相册名称相册名称</a></p>-->
+                            <div class="edit-albumName">
+                                <a href="#">一个好长的名字</a>
+                                <b ></b>
+                                <input class="hide" type="text" value="相册名称" maxlength="8">
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
+                            <!--<p><a href="#">相册名称相册名称</a></p>-->
+                            <div class="edit-albumName">
+                                <a href="#">一个好长的名字</a>
+                                <b ></b>
+                                <input class="hide" type="text" value="相册名称" maxlength="8">
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
+                            <!--<p><a href="#">相册名称相册名称</a></p>-->
+                            <div class="edit-albumName">
+                                <a href="#">一个好长的名字</a>
+                                <b ></b>
+                                <input class="hide" type="text" value="相册名称" maxlength="8">
+                            </div>
+
+                        </li>
+
+                        <div class="clear"></div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <!--<div class="zcbl-page">-->
+            <!--<ul>-->
+                <!--<li class="zcbl-thisPage">1</li>-->
+                <!--<li class="zcbl-defaultPage"><a href="#" target="_blank">2</a></li>-->
+                <!--<li class="zcbl-defaultPage"><a href="#" target="_blank">3</a></li>-->
+                <!--<li class="zcbl-defaultPage"><a href="#" target="_blank">4</a></li>-->
+                <!--<li class="zcbl-defaultPage"><a href="#" target="_blank">…</a></li>-->
+                <!--<li class="zcbl-defaultPage"><a href="#" target="_blank">158</a></li>-->
+                <!--<li class="zcbl-nextPage"><a href="#" target="_blank">&nbsp;</a></li>-->
+                <!--<li class="zcbl-pageNum">共158页</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    </div>
+</div>
+
+<!--footer start-->
+<div class="vm-footer">
+    <div class="container">
+        <div class="vm-footer-link">
+            <a href="#" target="_blank">自由职业者</a>
+            <a href="#" target="_blank">时间财富网</a>
+            <a href="#" target="_blank">一品威客</a>
+            <a href="#" target="_blank">威客天空</a>
+            <a href="#" target="_blank">网络营销</a>
+            <a href="#" target="_blank">客客出品</a>
+            <a href="#" target="_blank">大都督</a>
+            <a href="#" target="_blank">产品经理网</a>
+            <a href="#" target="_blank">互帮网</a>
+            <a href="#" target="_blank">小鱼儿众包</a>
+            <a href="#" target="_blank">推一把</a>
+            <a href="#" target="_blank">A5任务</a>
+            <a href="#" target="_blank">站长</a>
+        </div>
+        <div class="vm-footer-about">
+            <div class="vm-footer-about-l">
+                <h1>
+                    <a href="#" target="_blank">
+                        <img src="./static/images/pc/vm1.1/footlogo.png" alt="" />
+                        <!--SLOGAN-->
+                    </a>
+                </h1>
+            </div>
+            <div class="vm-footer-about-z">
+                <ul>
+                    <li><a href="#" target="_blank">关于我们</a></li>
+                    <li><span class="divide">|</span></li>
+                    <li><a href="#" target="_blank">联系我们</a></li>
+                    <li><span class="divide">|</span></li>
+                    <li><a href="#" target="_blank">招聘信息</a></li>
+                    <li><span class="divide">|</span></li>
+                    <li><a href="#" target="_blank">网站条款</a></li>
+                </ul>
+            </div>
+            <div class="vm-footer-about-r">
+                <h2>400-800-900</h2>
+            </div>
+        </div>
+        <div class="vm-footer-copyright">
+            <p>Copyright 2007-2016 cyzong.cn All rights reserved 京ICP证070362号 京ICP备08103950 京公海网安备110108000742号新出发京零字第朝140005号</p>
+        </div>
+    </div>
+</div>
+<!--footer end-->
+
+<!-- 编辑频道模态框（Modal） -->
+<div class="modal fade" id="editChannel"  aria-hidden="true">
+    <div class="vm-modal modal-editChannel">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+        <div class="tit">编辑频道</div>
+        <form action="">
+            <div class="modal-group pl20">
+                <label for="name">频道名称</label>
+                <input type="text" name="name" id="name" placeholder="请输入全新的频道名称" />
+                <p class="clear">最好1个汉字，最多6个汉字</p>
+            </div>
+            <div class="clear tc mt20">
+                <button class="btn-yellow-100">提交</button>
+                <button class="btn-cancel">取消</button>
+            </div>
+            <div class="del">
+                <a href="javascript:;" data-dismiss="modal" aria-hidden="true">删除频道</a>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- 编辑频道模态框（Modal） -->
+
+<!-- 删除提示模态框（Modal） -->
+<div class="modal fade" id="delMsg"  aria-hidden="true">
+    <div class="vm-modal modal-delMsg">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+        <div class="tit">提示</div>
+        <div class="con">
+            <p>您确定要删除首页栏目吗？？</p>
+        </div>
+        <div class="clear tc btn">
+            <button class="btn-yellow-100">确定</button>
+            <button class="btn-cancel" data-dismiss="modal" aria-hidden="true">取消</button>
+        </div>
+    </div>
+</div>
+<!-- 删除提示模态框（Modal） -->
+
+<!-- 小说详细模态框（Modal） -->
+<div class="modal fade" id="infoNovel"  aria-hidden="true">
+    <div class="vm-modal modal-infoComic">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+        <div class="artworkBox">
+            <div class="artworkL">
+                <div class="comicBox">
+                    <div class="comicBox-tit">
+                        <div class="comicBox-tit-l">
+                            小说章节的名称
+                        </div>
+                        <div class="comicBox-tit-r">
+                            <ul>
+                                <li><a href="">上一话</a></li>
+                                <li class="catalog">
+                                    <a href="" >目录</a>
+                                    <div class="comicBox-catalog">
+                                        <ul>
+                                            <li>目录</li>
+                                            <li><a href="#">第一章</a></li>
+                                            <li><a href="#">第一章</a></li>
+                                            <li><a href="#">第一章</a></li>
+                                            <li><a href="#">第一章</a></li>
+                                            <li><a href="#">第一章</a></li>
+                                            <li><a href="#">第一章</a></li>
+                                            <div class="clear"></div>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="">下一话</a></li>
+                            </ul>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="comicBox-edit">
+                        <a href="javascript:;" data-toggle="modal" data-target="#editComic" data-dismiss="modal" >编辑</a>
+                    </div>
+                    <div class="bookBox-con">
+                        <h3 class="title">2016年9月19日 11:49</h3>
+                        <p>
+                            雨是从午后开始下的，起初是小雨，傍晚时分转为大雨，路上少有行人。
+                        </p>
+                        <p>
+                            虽然没到掌灯时分，但由于天色过于昏暗，城中陆续出现了灯烛的光亮，光亮主要集中在东城的十几里范围，那是皇城的所在，也是富贵人家生活的区域。
+                        </p>
+                        <p>
+                            虽然没到掌灯时分，但由于天色过于昏暗，城中陆续出现了灯烛的光亮，光亮主要集中在东城的十几里范围，那是皇城的所在，也是富贵人家生活的区域。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="artworkR">
+                <div class="artwork-user">
+                    <div class="artwork-userL">
+                        <a href="#"><img src="static/images/pc/vm1.1/test/t-2.jpg" alt="" /></a>
+                    </div>
+                    <div class="artwork-userR">
+                        <div class="user"><a href="#">用户名用户名用户名用户名</a></div>
+                        <div class="btn">
+                            <button type="button" class="btn-yellow-66">关注</button>
+                            <button type="button" class="btn-yellow-66">私信</button>
+                            <button type="button" class="btn-gray-66">已关注</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--分享-->
+                <div class="artwork-share">
+                    <a href="#" class="zan">赞 1,876</a>
+                    <a href="#"><img src="static/images/pc/vm1.1/icon/icon-qq.png" alt="" /></a>
+                    <a href="#"><img src="static/images/pc/vm1.1/icon/icon-sina.png" alt="" /></a>
+                    <a href="#"><img src="static/images/pc/vm1.1/icon/icon-wx-23.png" alt="" /></a>
+                </div>
+
+                <!--评论输入框-->
+                <div class="artwork-comment">
+                    <p class="tr">可以输入140字</p>
+
+                    <!--未登录-->
+                    <div class="artwork-comNoLogin">
+                        <p>
+                            <span>您需要登录后才可以回帖</span>
+                            <span><a href="">登录</a></span>
+                            <span>|</span>
+                            <span><a href="">免费注册</a></span>
+                        </p>
+                    </div>
+
+                    <!--已登录-->
+                    <div class="artwork-comLogin hide">
+                        <textarea name="" placeholder="我也要说两句..." id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <button type="button" class="btn-yellow-80 mt20 mb20 right">发表评论</button>
+                </div>
+
+                <!--评论列表-->
+                <div class="artworkCom-Box">
+                    <div class="artworkCom-com">
+                        <p class="artworkCom-tit">热门评论</p>
+                        <div class="artworkCom-comL">
+                            <a href=""><img src="static/images/pc/vm1.1/test/t-2.jpg" alt=""/></a>
+                        </div>
+                        <div class="artworkCom-comR">
+                            <div class="artworkCom-name">
+                                <a href="">用户名用户名用户名用户名</a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="artworkCom-con">
+                            <p>用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价</p>
+                        </div>
+                        <div class="artworkCom-time">
+                            <p>1分钟前</p>
+                        </div>
+                        <div class="artworkCom-del">
+                            <a href="">删除</a>
+                            <a href="">举报</a>
+                            <a href="" class="zan">99999</a>
+                            <a href="" class="reply">回复</a>
+                        </div>
+                    </div>
+                    <div class="artworkCom-com">
+                        <div class="artworkCom-comL">
+                            <a href=""><img src="static/images/pc/vm1.1/test/t-2.jpg" alt=""/></a>
+                        </div>
+                        <div class="artworkCom-comR">
+                            <div class="artworkCom-name">
+                                <a href="">用户名用户名用户名用户名</a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="artworkCom-con">
+                            <p>用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价</p>
+                        </div>
+                        <div class="artworkCom-time">
+                            <p>1分钟前</p>
+                        </div>
+                    </div>
+                    <div class="artworkCom-com">
+                        <p class="artworkCom-tit">最新评论</p>
+                        <div class="artworkCom-comL">
+                            <a href=""><img src="static/images/pc/vm1.1/test/t-2.jpg" alt=""/></a>
+                        </div>
+                        <div class="artworkCom-comR">
+                            <div class="artworkCom-name">
+                                <a href="">用户名用户名用户名用户名</a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="artworkCom-con">
+                            <p>用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价</p>
+                        </div>
+                        <div class="artworkCom-time">
+                            <p>1分钟前</p>
+                        </div>
+                        <div class="artworkCom-del">
+                            <a href="">删除</a>
+                            <a href="">举报</a>
+                            <a href="" class="zan">99999</a>
+                            <a href="" class="reply">回复</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<!-- 小说详细模态框（Modal） -->
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="static/js/pc/dest/jquery-1.11.3.min.js"></script>
+<!--<script src="static/js/pc/dest/all.min.js"></script>-->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="static/js/pc/dest/bootstrap.min.js"></script>
+<script>
+    //签名
+    $("#edit-introduce > b").click(function () {
+        $(this).next('input').removeClass('opacity-0');
+    });
+    //判断event是否是签名区域内
+    $(document).click(function (event) {
+        if (!isInComment(event.target, $("#edit-introduce")[0])) {
+            $('#edit-introduce').children('input').addClass('opacity-0');
+            var inputval= $('#edit-introduce').children('input').val();
+            $('#edit-introduce').children('p').text(inputval);
+
+        }
+    });
+
+    //相册名称
+    $(".edit-albumName > b").click(function (event) {
+        if($('.ean-now')){
+            var now=$('.ean-now');
+            $(now).removeClass('ean-now');
+            $(now).children('input').addClass('hide');
+            var inputval= $(now).children('input').val();
+            $(now).children('a').text(inputval);
+            now=null;
+        }
+        var e=event.target;
+        $(e).parent().addClass("ean-now");
+        $(e).next('input').removeClass('hide');
+        var albumName= $(e).siblings('a').text();
+        $(e).next('input').val(albumName);
+    });
+    //判断event是否是相册名称区域内
+    $(document).click(function (event) {
+        if (!isInComment(event.target, $(".ean-now")[0])) {
+            var now=$('.ean-now');
+            $(now).removeClass('ean-now');
+            $(now).children('input').addClass('hide');
+            var inputval= $(now).children('input').val();
+            $(now).children('a').text(inputval);
+            now=null;
+        }
+    });
+
+    //相册名称更改结束
+    //判断一个元素是否是另一个元素的子元素
+    function isInComment(obj, parentObj) {
+        while (obj != undefined && obj != null && obj.tagName.toUpperCase() != 'BODY') {
+            if (obj == parentObj) {
+                return true;
+            }
+            obj = obj.parentNode;
+        }
+        return false;
+    }
+
+
+    $('.vm-homePageNav-manage').click(function(){
+        if($('.vn-add-channel').css('display') == 'block'){
+            $('.vn-add-channel').hide('slow');
+        }else{
+            $('.vn-add-channel').show('slow');
+        }
+    });
+    $('.channel-close a').click(function(){
+        $('.vn-add-channel').hide('slow');
+    });
+</script>
+<script type="text/javascript">
+    var scroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var scrollFunc = function (e) {
+        e = e || window.event;
+        if (e.wheelDelta) {  //判断浏览器IE，谷歌滑轮事件
+            if (e.wheelDelta > 0) { //当滑轮向上滚动时
+                var scroll = document.body.scrollTop || document.documentElement.scrollTop;
+                if (scroll == 0) {
+                    $('#mhp-header').css({ marginTop: "0px"});
+                    $('#mhp-header .top').css({ backgroundPositionY: "0px"});
+                }
+            }
+        } else if (e.detail) {  //Firefox滑轮事件
+            if (e.detail > 0) { //当滑轮向上滚动时
+                var scroll = document.body.scrollTop || document.documentElement.scrollTop;
+                if (scroll == 0) {
+                    $('#mhp-header').css({ marginTop: "0px"});
+                }
+            }
+        }
+    };
+    //给页面绑定滑轮滚动事件
+    if (document.addEventListener) {//firefox
+        document.addEventListener('DOMMouseScroll', scrollFunc, false);
+    }
+    //滚动滑轮触发scrollFunc方法  //ie 谷歌
+    window.onmousewheel = document.onmousewheel = scrollFunc;
+</script>
+
+</body>
+</html>

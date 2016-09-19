@@ -102,6 +102,10 @@
       border: 10px solid transparent;
       border-right-color: #ffffff;
       background: none; }
+    .vm-banner .vm-banner-con .vm-banner-con-3 img,
+    .vm-banner .vm-banner-con .vm-banner-con-4 img {
+      width: 244px;
+      height: 205px; }
 
 .vm-tit {
   height: 100px;
@@ -162,15 +166,10 @@
       box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); }
       .vm-tribe .vm-tribe-con ul li .vm-tribe-con-img {
         width: 220px;
-        height: 220px;
-        text-align: center;
-        display: table-cell;
-        display: table-cell;
-        text-align: center;
-        vertical-align: middle; }
+        height: 220px; }
         .vm-tribe .vm-tribe-con ul li .vm-tribe-con-img img {
-          max-height: 220px;
-          max-width: 220px; }
+          height: 220px;
+          width: 220px; }
       .vm-tribe .vm-tribe-con ul li .vm-tribe-con-tit {
         text-align: center;
         height: 20px;
@@ -214,7 +213,7 @@
               background: url("../../../images/pc/vm1.1/icon/icon-view.png"); }
           .vm-tribe .vm-tribe-con ul li .vm-tribe-con-view span.msg:before {
             height: 12px;
-            width: 12px;
+            width: 13px;
             background: url("../../../images/pc/vm1.1/icon/icon-msg.png"); }
           .vm-tribe .vm-tribe-con ul li .vm-tribe-con-view span.care:before {
             height: 12px;
@@ -230,15 +229,10 @@
     margin: 0 0 18px 25px; }
     .vm-need .vm-need-con ul li .vm-need-img {
       width: 295px;
-      height: 150px;
-      text-align: center;
-      display: table-cell;
-      display: table-cell;
-      text-align: center;
-      vertical-align: middle; }
+      height: 150px; }
       .vm-need .vm-need-con ul li .vm-need-img img {
-        max-height: 150px;
-        max-width: 295px; }
+        height: 150px;
+        width: 295px; }
     .vm-need .vm-need-con ul li .vm-need-tit {
       line-height: 20px;
       height: 40px;
@@ -286,15 +280,10 @@
       margin: 0 0 18px 18px; }
       .vm-serve .vm-serve-con ul li .vm-serve-img {
         width: 172px;
-        height: 150px;
-        text-align: center;
-        display: table-cell;
-        display: table-cell;
-        text-align: center;
-        vertical-align: middle; }
+        height: 150px; }
         .vm-serve .vm-serve-con ul li .vm-serve-img img {
-          max-height: 150px;
-          max-width: 172px; }
+          height: 150px;
+          width: 172px; }
       .vm-serve .vm-serve-con ul li .vm-serve-tit {
         line-height: 20px;
         height: 40px;

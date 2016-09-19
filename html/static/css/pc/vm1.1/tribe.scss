@@ -69,13 +69,15 @@ $color-ffffff: #ffffff;
             }
         }
         .topic-tit{
-            height: 45px;
-            line-height: 45px;
+            height: 56px;
+            line-height: 56px;
             padding: 0 20px 0 45px;
             font-size: 14px;
             .btn-yellow-80{
                 margin-top: 12px;
                 font-size: 12px;
+                height: 30px;
+                line-height: 30px;
             }
         }
         .topic-public{
@@ -214,6 +216,59 @@ $color-ffffff: #ffffff;
                     &:hover{
                         .del{
                             display: block;
+                        }
+                    }
+                }
+            }
+        }
+
+        .vm-video-list{
+            ul{
+                border-top: 1px solid #b9c1c7;
+                li{
+                    border-bottom: 1px solid #b9c1c7;
+                    padding: 0 14px;
+                    height: 142px;
+                    .vm-videoL{
+                        float: left;
+                        width: 200px;
+                        padding: 20px 0;
+                        margin-right: 16px;
+                        img{
+                            width: 200px;
+                            height: 102px;
+                        }
+                    }
+                    .vm-videoR{
+                        float: left;
+                        padding: 20px 0;
+                        width: 430px;
+                        .top{
+                            height: 18px;
+                            margin-bottom: 28px;
+                            p{
+                                font-size: 12px;
+                                width: 62px;
+                                height: 18px;
+                                background-color: #e43f3f;
+                                text-align: center;
+                                line-height: 18px;
+                                color: #fff;
+                            }
+                        }
+                        .name{
+                            height: 15px;
+                            overflow: hidden;
+                            a{
+                                @extend .extend-aline;
+                            }
+                        }
+                        .time{
+                            margin-top: 24px;
+                            a{
+                                width: auto;
+                                padding-left: 20px;
+                            }
                         }
                     }
                 }
@@ -800,6 +855,10 @@ $color-ffffff: #ffffff;
 
 //小说
 .vm-text-con{
+    min-height: 190px;
+}
+
+.minH375{
     min-height: 375px;
 }
 

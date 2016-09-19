@@ -160,6 +160,14 @@ $color-e1e1e1:#e1e1e1;
                 background: none;
             }
         }
+
+        .vm-banner-con-3,
+        .vm-banner-con-4{
+            img{
+                width: 244px;
+                height: 205px;
+            }
+        }
     }
 }
 
@@ -236,14 +244,9 @@ $color-e1e1e1:#e1e1e1;
                 .vm-tribe-con-img{
                     width: 220px;
                     height: 220px;
-                    text-align: center;
-                    display: table-cell;
-                    display:table-cell;
-                    text-align:center;
-                    vertical-align:middle;
                     img{
-                        max-height: 220px;
-                        max-width: 220px;
+                        height: 220px;
+                        width: 220px;
                     }
                 }
                 .vm-tribe-con-tit{
@@ -299,7 +302,7 @@ $color-e1e1e1:#e1e1e1;
                         &.msg{
                             &:before {
                                 height: 12px;
-                                width: 12px;
+                                width: 13px;
                                 background: url("../../../images/pc/vm1.1/icon/icon-msg.png");
                             }
                         }
@@ -330,14 +333,9 @@ $color-e1e1e1:#e1e1e1;
                 .vm-need-img{
                     width: 295px;
                     height: 150px;
-                    text-align: center;
-                    display: table-cell;
-                    display:table-cell;
-                    text-align:center;
-                    vertical-align:middle;
                     img{
-                        max-height: 150px;
-                        max-width: 295px;
+                        height: 150px;
+                        width: 295px;
                     }
                 }
                 .vm-need-tit{
@@ -407,14 +405,9 @@ $color-e1e1e1:#e1e1e1;
                 .vm-serve-img{
                     width: 172px;
                     height: 150px;
-                    text-align: center;
-                    display: table-cell;
-                    display:table-cell;
-                    text-align:center;
-                    vertical-align:middle;
                     img{
-                        max-height: 150px;
-                        max-width: 172px;
+                        height: 150px;
+                        width: 172px;
                     }
                 }
                 .vm-serve-tit{

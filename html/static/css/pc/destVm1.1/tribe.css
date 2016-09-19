@@ -102,15 +102,29 @@
             text-align: center; }
     .topic-wall .topic-wall-l .vm-text-con {
       border-top: 1px solid #b9c1c7;
-      padding: 10px 36px; }
-      .topic-wall .topic-wall-l .vm-text-con ul li {
-        float: left;
-        width: 132px;
-        margin-right: 18px; }
-        .topic-wall .topic-wall-l .vm-text-con ul li p {
-          height: 30px;
-          line-height: 30px;
-          overflow: hidden; }
+      padding: 10px 19px 10px 20px; }
+      .topic-wall .topic-wall-l .vm-text-con ul {
+        margin-left: -36px; }
+        .topic-wall .topic-wall-l .vm-text-con ul li {
+          float: left;
+          width: 132px;
+          margin-left: 36px; }
+          .topic-wall .topic-wall-l .vm-text-con ul li p {
+            height: 30px;
+            line-height: 30px;
+            overflow: hidden; }
+    .topic-wall .topic-wall-l .vm-text-con-pd ul li p {
+      position: relative; }
+      .topic-wall .topic-wall-l .vm-text-con-pd ul li p a {
+        display: inline-block;
+        width: 99px; }
+        .topic-wall .topic-wall-l .vm-text-con-pd ul li p a.del {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 109px; }
+    .topic-wall .topic-wall-l .vm-text-con-pd ul li:hover .del {
+      display: block; }
     .topic-wall .topic-wall-l .topicInfo {
       background: #ffffff;
       box-shadow: 0 0 5px rgba(81, 81, 81, 0.2); }
@@ -272,49 +286,49 @@
     background: none;
     box-shadow: none; }
 
-.modal-editComic {
+.modal-infoComic {
   width: 1010px;
   background: #000000;
   margin: 50px auto;
   position: relative;
   min-height: 100%;
   height: auto; }
-  .modal-editComic .close {
+  .modal-infoComic .close {
     background: url("../../../images/pc/vm1.1/icon/icon-close-fff.png");
     width: 10px;
     height: 10px;
     opacity: .7; }
-    .modal-editComic .close:hover {
+    .modal-infoComic .close:hover {
       opacity: 1; }
-  .modal-editComic .artworkBox {
+  .modal-infoComic .artworkBox {
     padding: 80px 20px; }
-    .modal-editComic .artworkBox .artworkL {
+    .modal-infoComic .artworkBox .artworkL {
       float: left;
       width: 635px;
       background: #ffffff; }
-      .modal-editComic .artworkBox .artworkL .comicBox .comicBox-tit {
+      .modal-infoComic .artworkBox .artworkL .comicBox .comicBox-tit {
         padding-left: 155px;
         padding-top: 35px; }
-        .modal-editComic .artworkBox .artworkL .comicBox .comicBox-tit .comicBox-tit-l {
+        .modal-infoComic .artworkBox .artworkL .comicBox .comicBox-tit .comicBox-tit-l {
           float: left;
           width: 300px;
           text-align: center;
           font-size: 14px; }
-        .modal-editComic .artworkBox .artworkL .comicBox .comicBox-tit .comicBox-tit-r {
+        .modal-infoComic .artworkBox .artworkL .comicBox .comicBox-tit .comicBox-tit-r {
           float: right; }
-          .modal-editComic .artworkBox .artworkL .comicBox .comicBox-tit .comicBox-tit-r ul li {
+          .modal-infoComic .artworkBox .artworkL .comicBox .comicBox-tit .comicBox-tit-r ul li {
             float: left;
             padding: 0 10px 0 15px; }
-            .modal-editComic .artworkBox .artworkL .comicBox .comicBox-tit .comicBox-tit-r ul li a {
+            .modal-infoComic .artworkBox .artworkL .comicBox .comicBox-tit .comicBox-tit-r ul li a {
               display: inline-block;
               width: 100%;
               height: 100%; }
-            .modal-editComic .artworkBox .artworkL .comicBox .comicBox-tit .comicBox-tit-r ul li.catalog {
+            .modal-infoComic .artworkBox .artworkL .comicBox .comicBox-tit .comicBox-tit-r ul li.catalog {
               position: relative;
               padding-bottom: 10px; }
-              .modal-editComic .artworkBox .artworkL .comicBox .comicBox-tit .comicBox-tit-r ul li.catalog:hover .comicBox-catalog {
+              .modal-infoComic .artworkBox .artworkL .comicBox .comicBox-tit .comicBox-tit-r ul li.catalog:hover .comicBox-catalog {
                 display: block; }
-          .modal-editComic .artworkBox .artworkL .comicBox .comicBox-tit .comicBox-tit-r .comicBox-catalog {
+          .modal-infoComic .artworkBox .artworkL .comicBox .comicBox-tit .comicBox-tit-r .comicBox-catalog {
             position: absolute;
             left: -30px;
             top: 20px;
@@ -322,61 +336,61 @@
             border: 1px solid #dcdcdc;
             background: #ffffff;
             display: none; }
-            .modal-editComic .artworkBox .artworkL .comicBox .comicBox-tit .comicBox-tit-r .comicBox-catalog ul {
+            .modal-infoComic .artworkBox .artworkL .comicBox .comicBox-tit .comicBox-tit-r .comicBox-catalog ul {
               padding: 5px; }
-              .modal-editComic .artworkBox .artworkL .comicBox .comicBox-tit .comicBox-tit-r .comicBox-catalog ul li {
+              .modal-infoComic .artworkBox .artworkL .comicBox .comicBox-tit .comicBox-tit-r .comicBox-catalog ul li {
                 width: 100%;
                 text-align: center;
                 height: 30px;
                 line-height: 30px;
                 overflow: hidden; }
-      .modal-editComic .artworkBox .artworkL .comicBox .comicBox-edit {
+      .modal-infoComic .artworkBox .artworkL .comicBox .comicBox-edit {
         padding: 0 10px;
         height: 35px;
         line-height: 35px;
         font-size: 14px; }
-        .modal-editComic .artworkBox .artworkL .comicBox .comicBox-edit a {
+        .modal-infoComic .artworkBox .artworkL .comicBox .comicBox-edit a {
           color: #999999; }
-          .modal-editComic .artworkBox .artworkL .comicBox .comicBox-edit a:hover {
+          .modal-infoComic .artworkBox .artworkL .comicBox .comicBox-edit a:hover {
             color: #666666; }
-      .modal-editComic .artworkBox .artworkL .comicBox .comicBox-con img {
+      .modal-infoComic .artworkBox .artworkL .comicBox .comicBox-con img {
         max-width: 635px; }
-    .modal-editComic .artworkBox .artworkR {
+    .modal-infoComic .artworkBox .artworkR {
       float: right;
       width: 320px;
       background: #ffffff; }
-      .modal-editComic .artworkBox .artworkR .artwork-user {
+      .modal-infoComic .artworkBox .artworkR .artwork-user {
         height: 90px; }
-        .modal-editComic .artworkBox .artworkR .artwork-user .artwork-userL {
+        .modal-infoComic .artworkBox .artworkR .artwork-user .artwork-userL {
           width: 38px;
           height: 38px;
           float: left;
           margin: 21px 15px 0 18px; }
-          .modal-editComic .artworkBox .artworkR .artwork-user .artwork-userL img {
+          .modal-infoComic .artworkBox .artworkR .artwork-user .artwork-userL img {
             height: 100%;
             width: 100%;
             border-radius: 50%; }
-        .modal-editComic .artworkBox .artworkR .artwork-user .artwork-userR {
+        .modal-infoComic .artworkBox .artworkR .artwork-user .artwork-userR {
           float: left;
           width: 240px; }
-          .modal-editComic .artworkBox .artworkR .artwork-user .artwork-userR .user {
+          .modal-infoComic .artworkBox .artworkR .artwork-user .artwork-userR .user {
             margin-top: 10px;
             height: 35px;
             line-height: 35px; }
-          .modal-editComic .artworkBox .artworkR .artwork-user .artwork-userR .btn {
+          .modal-infoComic .artworkBox .artworkR .artwork-user .artwork-userR .btn {
             margin-left: -15px; }
-            .modal-editComic .artworkBox .artworkR .artwork-user .artwork-userR .btn button {
+            .modal-infoComic .artworkBox .artworkR .artwork-user .artwork-userR .btn button {
               margin-left: 15px; }
-      .modal-editComic .artworkBox .artworkR .artwork-share {
+      .modal-infoComic .artworkBox .artworkR .artwork-share {
         border-top: 1px solid #b9c1c7;
         border-bottom: 1px solid #b9c1c7;
         height: 50px;
         line-height: 50px;
         text-align: right; }
-        .modal-editComic .artworkBox .artworkR .artwork-share a {
+        .modal-infoComic .artworkBox .artworkR .artwork-share a {
           display: inline-block;
           margin: 0 20px; }
-          .modal-editComic .artworkBox .artworkR .artwork-share a.zan {
+          .modal-infoComic .artworkBox .artworkR .artwork-share a.zan {
             width: 80px;
             height: 30px;
             background: #e43f3f;
@@ -384,76 +398,76 @@
             text-align: center;
             line-height: 30px;
             color: #ffffff; }
-      .modal-editComic .artworkBox .artworkR .artwork-comment {
+      .modal-infoComic .artworkBox .artworkR .artwork-comment {
         padding: 0 20px; }
-        .modal-editComic .artworkBox .artworkR .artwork-comment p {
+        .modal-infoComic .artworkBox .artworkR .artwork-comment p {
           height: 33px;
           line-height: 33px; }
-        .modal-editComic .artworkBox .artworkR .artwork-comment .artwork-comNoLogin {
+        .modal-infoComic .artworkBox .artworkR .artwork-comment .artwork-comNoLogin {
           height: 60px;
           width: 280px;
           border: 1px solid #bcbcbc;
           text-align: center; }
-          .modal-editComic .artworkBox .artworkR .artwork-comment .artwork-comNoLogin p {
+          .modal-infoComic .artworkBox .artworkR .artwork-comment .artwork-comNoLogin p {
             height: 60px;
             line-height: 60px; }
-            .modal-editComic .artworkBox .artworkR .artwork-comment .artwork-comNoLogin p span {
+            .modal-infoComic .artworkBox .artworkR .artwork-comment .artwork-comNoLogin p span {
               padding: 0 5px; }
-              .modal-editComic .artworkBox .artworkR .artwork-comment .artwork-comNoLogin p span a {
+              .modal-infoComic .artworkBox .artworkR .artwork-comment .artwork-comNoLogin p span a {
                 color: #ffb30e; }
-        .modal-editComic .artworkBox .artworkR .artwork-comment .artwork-comLogin {
+        .modal-infoComic .artworkBox .artworkR .artwork-comment .artwork-comLogin {
           height: 60px;
           width: 280px; }
-          .modal-editComic .artworkBox .artworkR .artwork-comment .artwork-comLogin textarea {
+          .modal-infoComic .artworkBox .artworkR .artwork-comment .artwork-comLogin textarea {
             height: 100%;
             width: 100%;
             border: 1px solid #bcbcbc;
             padding: 10px; }
-      .modal-editComic .artworkBox .artworkR .artworkCom-Box {
+      .modal-infoComic .artworkBox .artworkR .artworkCom-Box {
         clear: both; }
-        .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com {
+        .modal-infoComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com {
           padding: 20px 16px 0 16px;
           border-top: 1px solid #b9c1c7;
           margin-bottom: 20px; }
-          .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-tit {
+          .modal-infoComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-tit {
             font-size: 14px;
             padding-bottom: 20px; }
-          .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-comL {
+          .modal-infoComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-comL {
             width: 60px;
             float: left; }
-            .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-comL img {
+            .modal-infoComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-comL img {
               width: 38px;
               height: 38px;
               border-radius: 50%; }
-          .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-comR {
+          .modal-infoComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-comR {
             float: left;
             width: 224px; }
-            .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-comR .artworkCom-name {
+            .modal-infoComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-comR .artworkCom-name {
               height: 38px;
               line-height: 38px;
               font-weight: bold; }
-          .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-con {
+          .modal-infoComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-con {
             padding-top: 20px;
             padding-bottom: 10px; }
-          .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-time p {
+          .modal-infoComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-time p {
             text-align: right; }
-          .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-del {
+          .modal-infoComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-del {
             padding-top: 10px;
             text-align: right; }
-            .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-del a {
+            .modal-infoComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-del a {
               display: inline-block;
               position: relative;
               margin-left: 25px; }
-              .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-del a.zan, .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-del a.reply {
+              .modal-infoComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-del a.zan, .modal-infoComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-del a.reply {
                 padding-left: 20px; }
-                .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-del a.zan:before, .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-del a.reply:before {
+                .modal-infoComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-del a.zan:before, .modal-infoComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-del a.reply:before {
                   content: '';
                   position: absolute;
                   left: 0;
                   top: 2px;
                   width: 15px;
                   height: 13px; }
-              .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-del a.reply:before {
+              .modal-infoComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-del a.reply:before {
                 background: url("../../../images/pc/vm1.1/icon/icon-msg.png"); }
-              .modal-editComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-del a.zan:before {
+              .modal-infoComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-del a.zan:before {
                 background: url("../../../images/pc/vm1.1/icon/icon-zan.png"); }

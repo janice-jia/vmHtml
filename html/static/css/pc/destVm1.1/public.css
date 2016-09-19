@@ -922,7 +922,8 @@
 
 .modal-uploadComic {
   width: 920px;
-  height: 515px; }
+  height: 515px;
+  background: #ffffff; }
   .modal-uploadComic .tit {
     border: none;
     font-size: 14px;
@@ -982,7 +983,10 @@
         background: url("../../../images/pc/vm1.1/icon/icon-close-2.png");
         width: 16px;
         height: 16px;
-        margin: 0; }
+        margin: 0;
+        opacity: 1; }
+        .modal-uploadComic .con .artwork .close:hover {
+          opacity: .7; }
   .modal-uploadComic .pMsg {
     color: #e43f3f;
     padding-left: 195px;

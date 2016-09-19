@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <title>部落展示-话题首页</title>
+    <title>部落展示-小说首页</title>
 
     <!--IE浏览器运行最新的渲染模式-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -127,7 +127,7 @@
     <!--个人主页公用导航 start-->
     <div class="vm-homePageNav">
         <ul>
-            <li class="vm-homePageNav-hover">
+            <li>
                 <a href="tribe-user-index.html">首页</a>
             </li>
             <li>
@@ -135,14 +135,14 @@
                 <a href="javascript:;" class="vm-homePageNav-edit" data-toggle="modal" data-target="#editChannel"></a>
             </li>
             <li>
-                <a href="#">相册相册相册</a>
+                <a href="">相册相册相册</a>
                 <a href="javascript:;" class="vm-homePageNav-edit" data-toggle="modal" data-target="#editChannel"></a>
             </li>
             <li>
                 <a href="#">视频视频视频</a>
                 <a href="javascript:;" class="vm-homePageNav-edit" data-toggle="modal" data-target="#myModal1"></a>
             </li>
-            <li>
+            <li class="vm-homePageNav-hover">
                 <a href="tribe-novel.html">小说小说小说</a>
                 <a href="javascript:;" class="vm-homePageNav-edit" data-toggle="modal" data-target="#editChannel"></a>
             </li>
@@ -195,360 +195,141 @@
 
     <div class="topic-wall">
         <div class="topic-wall-l noBg">
-
-            <!--话题-->
-            <div class="topicCon">
-                <div class="topic-tit">
-                    话题
-                </div>
-                <div class="null-content">
-                    <p>酋长大人，请赐予我力量吧！</p>
-                </div>
-                <!--公用话题列表 start-->
-                <div class="vm-topic-con hide">
-                    <ul>
-                        <li>
-                            <div class="tp-list-header">
-                                <div class="left">
-                                    <a href=""><img src="static/images/pc/vm1.1/jpg/tribe_2.jpg" alt=""/></a>
-                                    <span><a href="">用户名用户名</a></span>
-                                </div>
-                                <div class="right">
-                                    <a href="#">取消置顶</a>
-                                    <a href="#">取消推荐</a>
-                                    <a href="javascript:;"  data-toggle="modal" data-target="#delMsg">删除</a>
-                                    <p>2016年9月9日 11:43</p>
-                                </div>
-                            </div>
-                            <div class="tp-list-content">
-                                <div class="left-img-200">
-                                    <a href=""><img src="static/images/pc/vm1.1/jpg/tribe_1.jpg" alt=""/></a>
-                                </div>
-                                <div class="text">
-                                    <h1 class="to-top"><a href="">标题标题</a></h1>
-                                    <p>话题这里显示的是标题话题这里显示的是标题话题这里显示的是标题话题是这里显示的是标题话题是这里显示的是标题话题这里显示的是标题话题这里显示的是标题话题这里显示的是标题话题是标题话题是标题话题是标题话题是标题话题是标题话题是...</p>
-                                </div>
-                                <ul class="othermsg">
-                                    <li class="icon-eye"><b></b>浏览<span>30999</span></li>
-                                    <li class="icon-msg"><b></b>留言<span>30999</span></li>
-                                    <li class="icon-zan"><b></b>赞<span>30999</span></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tp-list-header">
-                                <div class="left">
-                                    <a href=""><img src="static/images/pc/vm1.1/jpg/tribe_2.jpg" alt=""/></a>
-                                    <span><a href="">用户名用户名</a></span>
-                                </div>
-                                <div class="right">
-                                    <a href="javascript:;"  data-toggle="modal" data-target="#delMsg">删除</a>
-                                    <p>2016年9月9日 11:43</p>
-                                </div>
-                            </div>
-                            <div class="tp-list-content">
-                                <div class="text">
-                                    <h1><a href="">标题标题</a></h1>
-                                    <p>话题这里显示的是标题话题这里显示的是标题话题这里显示的是标题话题是这里显示的是标题话题是这里显示的是标题话题这里显示的是标题话题这里显示的是标题话题这里显示的是标题话题是标题话题是标题话题是标题话题是标题话题是标题话题是...</p>
-                                </div>
-                                <ul class="othermsg">
-                                    <li class="icon-eye"><b></b>浏览<span>30999</span></li>
-                                    <li class="icon-msg"><b></b>留言<span>30999</span></li>
-                                    <li class="icon-zan"><b></b>赞<span>30999</span></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tp-list-header">
-                                <div class="left">
-                                    <a href=""><img src="static/images/pc/vm1.1/jpg/tribe_2.jpg" alt=""/></a>
-                                    <a href=""><span>用户名用户名</span></a>
-                                </div>
-                                <div class="right">
-                                    <a href="javascript:;"  data-toggle="modal" data-target="#delMsg">删除</a>
-                                    <p>2016年9月9日 11:43</p>
-                                </div>
-                            </div>
-                            <div class="tp-list-content">
-                                <div class="text">
-                                    <h1><a href="">标题标题</a></h1>
-                                    <p>话题这里显示的是标题话题这里显示的是标题话题这里显示的是标题话题是这里显示的是标题话题是这里显示的是标题话题这里显示的是标题话题这里显示的是标题话题这里显示的是标题话题是标题话题是标题话题是标题话题是标题话题是标题话题是...</p>
-                                </div>
-                                <ul class="left-img-list">
-                                    <li> <a href=""><img src="static/images/pc/vm1.1/jpg/tribe_1.jpg" alt=""/></a></li>
-                                    <li> <a href=""><img src="static/images/pc/vm1.1/jpg/tribe_1.jpg" alt=""/></a></li>
-                                    <li> <a href=""><img src="static/images/pc/vm1.1/jpg/tribe_1.jpg" alt=""/></a></li>
-                                    <li> <a href=""><img src="static/images/pc/vm1.1/jpg/tribe_1.jpg" alt=""/></a></li>
-                                    <li> <a href=""><img src="static/images/pc/vm1.1/jpg/tribe_1.jpg" alt=""/></a></li>
-                                </ul>
-                                <ul class="othermsg">
-                                    <li class="icon-eye"><b></b>浏览<span>30999</span></li>
-                                    <li class="icon-msg"><b></b>留言<span>30999</span></li>
-                                    <li class="icon-zan"><b></b>赞<span>30999</span></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <!--公用话题列表 start-->
-            </div>
-
-
-            <!--相册-->
-            <div class="topicCon">
-                <div class="topic-tit">
-                    相册
-                    <a href="javascript:;" class="right" data-toggle="modal" data-target="#delMsg">删除</a>
-                </div>
-                <div class="null-content">
-                    <p>酋长大人，相册是空空的耶！</p>
-                </div>
-                <div class="vm-album-con hide">
-                    <ul>
-                        <li>
-                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <p><a href="#">相册名称相册名称</a></p>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-18.jpg" alt=""/></a>
-                            <p><a href="#">相册名称相册名称</a></p>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <p><a href="#">相册名称相册名称</a></p>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-18.jpg" alt=""/></a>
-                            <p><a href="#">相册名称相册名称</a></p>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <p><a href="#">相册名称相册名称</a></p>
-                        </li>
-
-                        <li>
-                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <p><a href="#">相册名称相册名称</a></p>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-18.jpg" alt=""/></a>
-                            <p><a href="#">相册名称相册名称</a></p>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <p><a href="#">相册名称相册名称</a></p>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-18.jpg" alt=""/></a>
-                            <p><a href="#">相册名称相册名称</a></p>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <p><a href="#">相册名称相册名称</a></p>
-                        </li>
-
-                        <li>
-                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <p><a href="#">相册名称相册名称</a></p>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-18.jpg" alt=""/></a>
-                            <p><a href="#">相册名称相册名称</a></p>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <p><a href="#">相册名称相册名称</a></p>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-18.jpg" alt=""/></a>
-                            <p><a href="#">相册名称相册名称</a></p>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <p><a href="#">相册名称相册名称</a></p>
-                        </li>
-                        <div class="clear"></div>
-                    </ul>
-                </div>
-            </div>
-
-            <!--视频-->
-            <div class="topicCon">
-                <div class="topic-tit">
-                    视频
-                    <a href="javascript:;" class="right" data-toggle="modal" data-target="#delMsg">删除</a>
-                </div>
-                <div class="null-content">
-                    <p>酋长上传个视频吧，让大家认识认识我们吧！</p>
-                </div>
-                <div class="vm-video-con hide">
-                    <ul>
-                        <li>
-                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <p><a href="#">视频的名称</a></p>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-18.jpg" alt=""/></a>
-                            <p><a href="#">视频的名称</a></p>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <p><a href="#">视频的名称</a></p>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-18.jpg" alt=""/></a>
-                            <p><a href="#">视频的名称</a></p>
-                        </li>
-
-                        <li>
-                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <p><a href="#">视频的名称</a></p>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-18.jpg" alt=""/></a>
-                            <p><a href="#">视频的名称</a></p>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <p><a href="#">视频的名称</a></p>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./static/images/pc/vm1.1/test/i-18.jpg" alt=""/></a>
-                            <p><a href="#">视频的名称</a></p>
-                        </li>
-                        <div class="clear"></div>
-                    </ul>
-                </div>
-            </div>
-
             <!--小说-->
             <div class="topicCon">
                 <div class="topic-tit">
-                    小说
-                    <a href="javascript:;" class="right" data-toggle="modal" data-target="#delMsg">删除</a>
+                    <a href="javascript:;" class="btn-yellow-80 right">上传文章</a>
                 </div>
-                <div class="null-content">
-                    <p>酋长大人，这里什么都没有，什么都没有</p>
-                </div>
-                <div class="vm-text-con hide">
+                <div class="vm-text-con vm-text-con-pd">
                     <ul>
                         <li>
-                            <p><a href="#">第一章无敌的寂寞第一章无敌的寂寞</a></p>
+                            <p><a href="#">第一章无敌的寂寞第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
                         </li>
                         <li>
-                            <p><a href="#">第一章无敌的寂寞</a></p>
+                            <p><a href="#">第二章无敌的寂寞</a><a href="#" class="del">删除</a</p>
                         </li>
                         <li>
-                            <p><a href="#">第一章无敌的寂寞</a></p>
+                            <p><a href="#">第三章无敌的寂寞</a><a href="#" class="del">删除</a</p>
                         </li>
                         <li>
-                            <p><a href="#">第一章无敌的寂寞第一章无敌的寂寞</a></p>
-                        </li>
-
-                        <li>
-                            <p><a href="#">第一章无敌的寂寞</a></p>
-                        </li>
-                        <li>
-                            <p><a href="#">第一章无敌的寂寞</a></p>
-                        </li>
-                        <li>
-                            <p><a href="#">第一章无敌的寂寞</a></p>
-                        </li>
-                        <li>
-                            <p><a href="#">第一章无敌的寂寞第一章无敌的寂寞</a></p>
-                        </li>
-                        <div class="clear"></div>
-                    </ul>
-                </div>
-            </div>
-
-            <!--漫画-->
-            <div class="topicCon">
-                <div class="topic-tit">
-                    漫画
-                    <a href="javascript:;" class="right" data-toggle="modal" data-target="#delMsg">删除</a>
-                </div>
-                <div class="null-content">
-                    <p>酋长大人，里面空的我都不好意思进去看</p>
-                </div>
-                <div class="vm-text-con hide">
-                    <ul>
-                        <li>
-                            <p><a href="#">1.公交车</a></p>
-                        </li>
-                        <li>
-                            <p><a href="#">2.恶果</a></p>
-                        </li>
-                        <li>
-                            <p><a href="#">3.登门道谢</a></p>
-                        </li>
-                        <li>
-                            <p><a href="#">4.天涯沦落人</a></p>
+                            <p><a href="#">第四章无敌的寂寞第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
                         </li>
 
                         <li>
-                            <p><a href="#">1.公交车</a></p>
+                            <p><a href="#">第一章无敌的寂寞第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
                         </li>
                         <li>
-                            <p><a href="#">2.恶果</a></p>
+                            <p><a href="#">第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
                         </li>
                         <li>
-                            <p><a href="#">3.登门道谢</a></p>
+                            <p><a href="#">第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
                         </li>
                         <li>
-                            <p><a href="#">4.天涯沦落人</a></p>
-                        </li>
-
-                        <li>
-                            <p><a href="#">1.公交车</a></p>
-                        </li>
-                        <li>
-                            <p><a href="#">2.恶果</a></p>
-                        </li>
-                        <li>
-                            <p><a href="#">3.登门道谢</a></p>
-                        </li>
-                        <li>
-                            <p><a href="#">4.天涯沦落人</a></p>
+                            <p><a href="#">第一章无敌的寂寞第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
                         </li>
 
                         <li>
-                            <p><a href="#">1.公交车</a></p>
+                            <p><a href="#">第一章无敌的寂寞第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
                         </li>
                         <li>
-                            <p><a href="#">2.恶果</a></p>
+                            <p><a href="#">第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
                         </li>
                         <li>
-                            <p><a href="#">3.登门道谢</a></p>
+                            <p><a href="#">第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
                         </li>
                         <li>
-                            <p><a href="#">4.天涯沦落人</a></p>
-                        </li>
-
-                        <li>
-                            <p><a href="#">1.公交车</a></p>
-                        </li>
-                        <li>
-                            <p><a href="#">2.恶果</a></p>
-                        </li>
-                        <li>
-                            <p><a href="#">3.登门道谢</a></p>
-                        </li>
-                        <li>
-                            <p><a href="#">4.天涯沦落人</a></p>
+                            <p><a href="#">第一章无敌的寂寞第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
                         </li>
 
                         <li>
-                            <p><a href="#">1.公交车</a></p>
+                            <p><a href="#">第一章无敌的寂寞第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
                         </li>
                         <li>
-                            <p><a href="#">2.恶果</a></p>
+                            <p><a href="#">第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
                         </li>
                         <li>
-                            <p><a href="#">3.登门道谢</a></p>
+                            <p><a href="#">第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
                         </li>
                         <li>
-                            <p><a href="#">4.天涯沦落人</a></p>
+                            <p><a href="#">第一章无敌的寂寞第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
+                        </li>
+
+                        <li>
+                            <p><a href="#">第一章无敌的寂寞第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
+                        </li>
+                        <li>
+                            <p><a href="#">第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
+                        </li>
+                        <li>
+                            <p><a href="#">第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
+                        </li>
+                        <li>
+                            <p><a href="#">第一章无敌的寂寞第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
+                        </li>
+
+                        <li>
+                            <p><a href="#">第一章无敌的寂寞第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
+                        </li>
+                        <li>
+                            <p><a href="#">第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
+                        </li>
+                        <li>
+                            <p><a href="#">第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
+                        </li>
+                        <li>
+                            <p><a href="#">第一章无敌的寂寞第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
+                        </li>
+
+                        <li>
+                            <p><a href="#">第一章无敌的寂寞第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
+                        </li>
+                        <li>
+                            <p><a href="#">第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
+                        </li>
+                        <li>
+                            <p><a href="#">第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
+                        </li>
+                        <li>
+                            <p><a href="#">第一章无敌的寂寞第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
+                        </li>
+
+                        <li>
+                            <p><a href="#">第一章无敌的寂寞第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
+                        </li>
+                        <li>
+                            <p><a href="#">第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
+                        </li>
+                        <li>
+                            <p><a href="#">第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
+                        </li>
+                        <li>
+                            <p><a href="#">第一章无敌的寂寞第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
+                        </li>
+
+                        <li>
+                            <p><a href="#">第一章无敌的寂寞第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
+                        </li>
+                        <li>
+                            <p><a href="#">第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
+                        </li>
+                        <li>
+                            <p><a href="#">第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
+                        </li>
+                        <li>
+                            <p><a href="#">第一章无敌的寂寞第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
+                        </li>
+
+                        <li>
+                            <p><a href="#">第一章无敌的寂寞第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
+                        </li>
+                        <li>
+                            <p><a href="#">第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
+                        </li>
+                        <li>
+                            <p><a href="#">第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
+                        </li>
+                        <li>
+                            <p><a href="#">第一章无敌的寂寞第一章无敌的寂寞</a><a href="#" class="del">删除</a</p>
                         </li>
                         <div class="clear"></div>
                     </ul>
@@ -567,6 +348,19 @@
             </div>
         </div>
         <div class="clear"></div>
+
+        <!--<div class="zcbl-page">-->
+            <!--<ul>-->
+                <!--<li class="zcbl-thisPage">1</li>-->
+                <!--<li class="zcbl-defaultPage"><a href="#" target="_blank">2</a></li>-->
+                <!--<li class="zcbl-defaultPage"><a href="#" target="_blank">3</a></li>-->
+                <!--<li class="zcbl-defaultPage"><a href="#" target="_blank">4</a></li>-->
+                <!--<li class="zcbl-defaultPage"><a href="#" target="_blank">…</a></li>-->
+                <!--<li class="zcbl-defaultPage"><a href="#" target="_blank">158</a></li>-->
+                <!--<li class="zcbl-nextPage"><a href="#" target="_blank">&nbsp;</a></li>-->
+                <!--<li class="zcbl-pageNum">共158页</li>-->
+            <!--</ul>-->
+        <!--</div>-->
     </div>
 </div>
 
@@ -657,9 +451,6 @@
     </div>
 </div>
 <!-- 删除提示模态框（Modal） -->
-
-
-
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="static/js/pc/dest/jquery-1.11.3.min.js"></script>

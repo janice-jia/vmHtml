@@ -1242,6 +1242,7 @@ $color-ffffff: #ffffff;
 .modal-uploadComic{
     width: 920px;
     height: 515px;
+    background: $color-ffffff;
     .tit{
         border: none;
         font-size: 14px;
@@ -1310,6 +1311,10 @@ $color-ffffff: #ffffff;
                 width: 16px;
                 height: 16px;
                 margin: 0;
+                opacity: 1;
+                &:hover{
+                    opacity: .7;
+                }
             }
         }
     }

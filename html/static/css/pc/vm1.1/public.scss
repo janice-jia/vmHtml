@@ -1059,6 +1059,10 @@ $color-ffffff: #ffffff;
         width: 10px;
         height: 10px;
         margin: 10px 10px 0 0;
+        position: absolute;
+        top:0;
+        right:0;
+        z-index: 100;
     }
     .tit{
         margin: 0 20px;
@@ -1196,23 +1200,39 @@ $color-ffffff: #ffffff;
 
 //发布成功提示模态框
 .modal-succeedMsg{
+    display: table;
     width: 450px;
     height: 200px;
     //position: relative;
     p{
+        //display: table-cell;
+        vertical-align: middle;
         position: relative;
-        margin-top: 50px;
-        padding: 30px 0 0 215px;
+        text-align: center;
+        width: 100%;
+        //margin-top: 50px;
+        //padding: 30px 0 0 215px;
         font-size: 20px;
         color: #000000;
         &:before{
             content: '';
-            position: absolute;
-            left: 150px;
-            top: 23px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 16px;
+            //position: absolute;
+            //left: 150px;
+            //top: 23px;
             background: url("../../../images/pc/vm1.1/icon/icon-succeed.png");
             width: 47px;
             height: 46px;
+        }
+    }
+    .table-cell{
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        p{
+            margin-bottom: 15px;
         }
     }
 }

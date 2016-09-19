@@ -1,7 +1,7 @@
 /*
 * this is a topic stylesheet
 */
-.extend-aline:hover, .topic-wall .topic-wall-l .vm-album-con ul li p a:hover, .topic-wall .topic-wall-l .vm-video-con ul li p a:hover, .topic-wall .topic-wall-l .vm-text-con ul li p a:hover, .topic-wall .topic-wall-l .topicInfo .topicInfo-con .topicInfo-conR .topicInfo-name a:hover, .topic-wall .topic-wall-l .topicInfo-comment .topicInfo-comment-noLogin p a:hover, .topic-wall .topic-wall-l .topicInfo-comment .topicCom-com .topicCom-comR .topicCom-name a:hover {
+.extend-aline:hover, .topic-wall .topic-wall-l .vm-album-con ul li p a:hover, .topic-wall .topic-wall-l .vm-video-con ul li p a:hover, .topic-wall .topic-wall-l .vm-text-con ul li p a:hover, .topic-wall .topic-wall-l .vm-video-list ul li .vm-videoR .name a:hover, .topic-wall .topic-wall-l .topicInfo .topicInfo-con .topicInfo-conR .topicInfo-name a:hover, .topic-wall .topic-wall-l .topicInfo-comment .topicInfo-comment-noLogin p a:hover, .topic-wall .topic-wall-l .topicInfo-comment .topicCom-com .topicCom-comR .topicCom-name a:hover {
   text-decoration: underline; }
 
 .topic-wall {
@@ -127,6 +127,43 @@
           left: 109px; }
     .topic-wall .topic-wall-l .vm-text-con-pd ul li:hover .del {
       display: block; }
+    .topic-wall .topic-wall-l .vm-video-list ul {
+      border-top: 1px solid #b9c1c7; }
+      .topic-wall .topic-wall-l .vm-video-list ul li {
+        border-bottom: 1px solid #b9c1c7;
+        padding: 0 14px;
+        height: 142px; }
+        .topic-wall .topic-wall-l .vm-video-list ul li .vm-videoL {
+          float: left;
+          width: 200px;
+          padding: 20px 0;
+          margin-right: 16px; }
+          .topic-wall .topic-wall-l .vm-video-list ul li .vm-videoL img {
+            width: 200px;
+            height: 102px; }
+        .topic-wall .topic-wall-l .vm-video-list ul li .vm-videoR {
+          float: left;
+          padding: 20px 0;
+          width: 430px; }
+          .topic-wall .topic-wall-l .vm-video-list ul li .vm-videoR .top {
+            height: 18px;
+            margin-bottom: 28px; }
+            .topic-wall .topic-wall-l .vm-video-list ul li .vm-videoR .top p {
+              font-size: 12px;
+              width: 62px;
+              height: 18px;
+              background-color: #e43f3f;
+              text-align: center;
+              line-height: 18px;
+              color: #fff; }
+          .topic-wall .topic-wall-l .vm-video-list ul li .vm-videoR .name {
+            height: 15px;
+            overflow: hidden; }
+          .topic-wall .topic-wall-l .vm-video-list ul li .vm-videoR .time {
+            margin-top: 24px; }
+            .topic-wall .topic-wall-l .vm-video-list ul li .vm-videoR .time a {
+              width: auto;
+              padding-left: 20px; }
     .topic-wall .topic-wall-l .topicInfo {
       background: #ffffff;
       box-shadow: 0 0 5px rgba(81, 81, 81, 0.2); }
@@ -475,6 +512,9 @@
                 background: url("../../../images/pc/vm1.1/icon/icon-zan.png"); }
 
 .vm-text-con {
+  min-height: 190px; }
+
+.minH375 {
   min-height: 375px; }
 
 .bookBox-con {

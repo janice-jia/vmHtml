@@ -955,7 +955,8 @@
       width: 350px;
       height: 30px;
       border: 1px solid #dcdcdc;
-      background: none; }
+      background: none;
+      padding: 0 10px; }
     .modal-uploadComic .con .msg {
       float: left;
       padding-left: 20px;
@@ -1027,6 +1028,12 @@
       width: 200px; }
     .modal-uploadComic .con .hig102 {
       height: 102px; }
+    .modal-uploadComic .con .novelBox {
+      width: 575px;
+      height: 300px;
+      border: 1px solid #dcdcdc;
+      float: left;
+      margin-top: 8px; }
   .modal-uploadComic .pMsg {
     color: #e43f3f;
     padding-left: 195px;

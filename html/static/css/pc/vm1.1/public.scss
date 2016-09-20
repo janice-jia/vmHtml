@@ -1284,6 +1284,7 @@ $color-ffffff: #ffffff;
             height: 30px;
             border: 1px solid #dcdcdc;
             background: none;
+            padding: 0 10px;
         }
         .msg{
             float: left;
@@ -1369,6 +1370,13 @@ $color-ffffff: #ffffff;
         }
         .hig102{
             height: 102px;
+        }
+        .novelBox{
+            width: 575px;
+            height: 300px;
+            border: 1px solid #dcdcdc;
+            float: left;
+            margin-top: 8px;
         }
     }
     .pMsg{

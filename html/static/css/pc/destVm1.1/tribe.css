@@ -1,7 +1,6 @@
 /*
 * this is a topic stylesheet
 */
-<<<<<<< HEAD
 .opacity-1, .topic-wall .vm-album-con-pd .edit-albumName:hover b {
   opacity: 1;
   filter: alpha(opacity=100);
@@ -23,10 +22,7 @@
   -khtml-opacity: 0.5;
   -webkit-opacity: 0.5; }
 
-.extend-aline:hover, .topic-wall .topic-wall-l .vm-album-con ul li p a:hover, .topic-wall .topic-wall-l .vm-video-con ul li p a:hover, .topic-wall .topic-wall-l .vm-text-con ul li p a:hover, .topic-wall .topic-wall-l .topicInfo .topicInfo-con .topicInfo-conR .topicInfo-name a:hover, .topic-wall .topic-wall-l .topicInfo-comment .topicInfo-comment-noLogin p a:hover, .topic-wall .topic-wall-l .topicInfo-comment .topicCom-com .topicCom-comR .topicCom-name a:hover, .topic-wall .vm-album-con-pd ul li p a:hover {
-=======
-.extend-aline:hover, .topic-wall .topic-wall-l .vm-album-con ul li p a:hover, .topic-wall .topic-wall-l .vm-video-con ul li p a:hover, .topic-wall .topic-wall-l .vm-text-con ul li p a:hover, .topic-wall .topic-wall-l .vm-video-list ul li .vm-videoR .name a:hover, .topic-wall .topic-wall-l .topicInfo .topicInfo-con .topicInfo-conR .topicInfo-name a:hover, .topic-wall .topic-wall-l .topicInfo-comment .topicInfo-comment-noLogin p a:hover, .topic-wall .topic-wall-l .topicInfo-comment .topicCom-com .topicCom-comR .topicCom-name a:hover {
->>>>>>> 02e39393f85403563a109a4733b9c10c2794a915
+.extend-aline:hover, .topic-wall .topic-wall-l .vm-album-con ul li p a:hover, .topic-wall .topic-wall-l .vm-video-con ul li p a:hover, .topic-wall .topic-wall-l .vm-text-con ul li p a:hover, .topic-wall .topic-wall-l .vm-video-list ul li .vm-videoR .name a:hover, .topic-wall .topic-wall-l .topicInfo .topicInfo-con .topicInfo-conR .topicInfo-name a:hover, .topic-wall .topic-wall-l .topicInfo-comment .topicInfo-comment-noLogin p a:hover, .topic-wall .topic-wall-l .topicInfo-comment .topicCom-com .topicCom-comR .topicCom-name a:hover, .topic-wall .vm-album-con-pd ul li p a:hover {
   text-decoration: underline; }
 
 .topic-wall {

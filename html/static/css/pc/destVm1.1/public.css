@@ -336,6 +336,156 @@
     .vm-header .vm-user:hover .vm-user-open {
       display: block; }
 
+.vm-black-header {
+  width: 100%;
+  margin: 0 auto;
+  height: 50px;
+  line-height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #171717;
+  z-index: 1000; }
+  .vm-black-header h1 {
+    font-size: 14px;
+    position: absolute;
+    left: 20px;
+    top: 0; }
+    .vm-black-header h1 a {
+      display: inline-block;
+      float: left;
+      font-size: 14px;
+      padding-right: 8px;
+      color: #ffffff;
+      font-size: 16px; }
+      .vm-black-header h1 a b {
+        line-height: 50px;
+        font-weight: normal; }
+    .vm-black-header h1 .vm-black-msg {
+      line-height: 50px;
+      margin-left: 15px; }
+      .vm-black-header h1 .vm-black-msg img {
+        width: 21px;
+        height: 14px; }
+  .vm-black-header .vm-nav {
+    font-size: 16px;
+    height: 100%;
+    width: 425px;
+    float: left; }
+    .vm-black-header .vm-nav li {
+      float: left;
+      width: auto;
+      text-align: center;
+      margin-right: 30px;
+      padding: 0 5px; }
+      .vm-black-header .vm-nav li a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        color: #ffffff; }
+      .vm-black-header .vm-nav li:hover {
+        height: 50px;
+        border-bottom: 3px solid #ffb30e; }
+      .vm-black-header .vm-nav li.vm-nav-hover {
+        width: 67px;
+        background: #ffb30e; }
+  .vm-black-header .vm-search {
+    float: right; }
+    .vm-black-header .vm-search input {
+      font-size: 12px;
+      height: 35px;
+      line-height: 35px;
+      width: 280px;
+      position: relative;
+      padding: 0 15px 0 38px;
+      border-radius: 4px;
+      border: 1px solid #e7e8ea;
+      background: url("../../../images/pc/vm1.1/icon/icon-seach-1.png") 9px 7px #f7f8fa no-repeat; }
+  .vm-black-header .vm-no-login {
+    position: absolute;
+    right: 30px;
+    top: 0; }
+    .vm-black-header .vm-no-login ul li {
+      float: left;
+      font-size: 14px; }
+      .vm-black-header .vm-no-login ul li a {
+        color: #ffffff; }
+        .vm-black-header .vm-no-login ul li a:hover {
+          color: #ffffff; }
+      .vm-black-header .vm-no-login ul li span {
+        padding: 0 10px;
+        color: #cccccc; }
+  .vm-black-header .vm-user {
+    height: 100%;
+    width: 50px;
+    position: absolute;
+    right: 30px;
+    top: 0; }
+    .vm-black-header .vm-user a {
+      display: inline-block;
+      width: 50px;
+      height: 100%; }
+      .vm-black-header .vm-user a img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%; }
+    .vm-black-header .vm-user .vm-user-open {
+      display: none;
+      position: absolute;
+      right: 0px;
+      top: 50px;
+      width: 125px;
+      background: #ffffff;
+      z-index: 10; }
+      .vm-black-header .vm-user .vm-user-open ul {
+        padding: 10px 0;
+        width: 100%;
+        border-bottom: 1px solid #dddddd; }
+        .vm-black-header .vm-user .vm-user-open ul li {
+          padding-left: 22px;
+          height: 30px;
+          line-height: 30px;
+          overflow: hidden; }
+          .vm-black-header .vm-user .vm-user-open ul li a {
+            font-size: 14px;
+            color: #707070;
+            padding: 0;
+            display: inline-block;
+            width: 100%;
+            height: 100%; }
+            .vm-black-header .vm-user .vm-user-open ul li a:hover {
+              color: #171717; }
+          .vm-black-header .vm-user .vm-user-open ul li span.msgNum {
+            margin-left: 10px;
+            display: inline-block;
+            padding: 0 5px;
+            font-size: 12px;
+            height: 15px;
+            background: #ffb30e;
+            border-radius: 3px;
+            line-height: 15px;
+            color: #707070; }
+          .vm-black-header .vm-user .vm-user-open ul li.WB, .vm-black-header .vm-user .vm-user-open ul li.WX, .vm-black-header .vm-user .vm-user-open ul li.TX {
+            padding-left: 45px;
+            position: relative; }
+            .vm-black-header .vm-user .vm-user-open ul li.WB:before, .vm-black-header .vm-user .vm-user-open ul li.WX:before, .vm-black-header .vm-user .vm-user-open ul li.TX:before {
+              content: '';
+              position: absolute;
+              top: 8px;
+              left: 22px;
+              width: 16px;
+              height: 13px; }
+          .vm-black-header .vm-user .vm-user-open ul li.WB:before {
+            background: url("../../../images/pc/vm1.1/icon/icon-WB.png"); }
+          .vm-black-header .vm-user .vm-user-open ul li.WX:before {
+            background: url("../../../images/pc/vm1.1/icon/icon-WX.png"); }
+          .vm-black-header .vm-user .vm-user-open ul li.TX:before {
+            background: url("../../../images/pc/vm1.1/icon/icon-TX.png");
+            width: 15px;
+            height: 13px; }
+    .vm-black-header .vm-user:hover .vm-user-open {
+      display: block; }
+
 .vm-footer {
   width: 100%;
   height: 240px;

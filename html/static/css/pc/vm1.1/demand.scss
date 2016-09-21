@@ -15,3 +15,205 @@ $color-08: #ffb30e;
 $color-09: #e43f3f;
 
 $color-ffffff: #ffffff;
+
+
+//需求列表
+.demand-type{
+    width: 100%;
+    height: 80px;
+    background: #ffffff;
+    box-shadow: 0 0 5px rgba(81, 81, 81, 0.2);
+    .dropdown{
+        float: left;
+        margin-right: 60px;
+        position: relative;
+        .demand-typeName{
+            line-height: 80px;
+            background: none;
+            font-size: 18px;
+            &:hover{
+                cursor: pointer;
+            }
+            b{
+                display: inline-block;
+                width: 17px;
+                height: 17px;
+                line-height: 15px;
+                text-align: center;
+                color: #b7b7b8;
+                font-size: 12px;
+                border: 1px solid #e1dede;
+                float: right;
+                margin-top: 32px;
+                margin-left: 5px;
+            }
+        }
+        .dropdown-menu{
+            position: absolute;
+            left: 0;
+            top: 60px;
+            z-index: 1000;
+            padding: 10px;
+            margin: 2px 0 0;
+            list-style: none;
+            font-size: 14px;
+            text-align: left;
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.175);
+            li{
+                margin: 0;
+            }
+            .triangle{
+                position: absolute;
+                top: -9px;
+                left: 40%;
+                border: 5px solid transparent;
+                border-left: 9px solid transparent;
+                border-right: 9px solid transparent;
+                border-bottom-color: #fff;
+            }
+            .menuItem{
+                border-radius: 2px;
+                display: block;
+                padding: 5px 22px;
+                clear: both;
+                font-weight: normal;
+                line-height: 1.42857143;
+                color: #333;
+                font-size: 14px;
+            }
+            .menuItem:hover{
+                background: $color-08;
+                color: $color-01;
+            }
+        }
+    }
+    .demand-publish{
+        float: right;
+        line-height: 80px;
+        button{
+            width: 106px;
+            height: 40px;
+            line-height: 40px;
+            padding-left: 55px;
+            text-align: left;
+            color: #ffffff;
+            border: none;
+            background: url("../../../images/pc/vm1.1/icon/icon-edit-demand.png") no-repeat 22px 10px $color-08;
+        }
+    }
+}
+
+.demand-list{
+    margin: 38px 0 38px -20px;
+    min-height: 600px;
+    li{
+        width: 495px;
+        height: 240px;
+        background: $color-ffffff;
+        float: left;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 5px rgba(81, 81, 81, 0.2);
+        padding: 0 23px;
+        .demand-item{
+            .demand-itemReward{
+                height: 55px;
+                line-height: 55px;
+                border-bottom: 1px solid #e1dede;
+                .demand-itemRewardL{
+                    width: 50%;
+                    float: left;
+                    font-size: 16px;
+                    color: $color-08;
+                }
+                .demand-itemRewardR{
+                    text-align: right;
+                    width: 50%;
+                    float: left;
+                    span{
+                        display: inline-block;
+                        height: 18px;
+                        line-height: 18px;
+                        padding-left: 23px;
+                        &.ok{
+                            color: $color-08;
+                            background: url("../../../images/pc/vm1.1/icon/icon-reward.png") no-repeat;
+                        }
+                        &.no{
+                            background: url("../../../images/pc/vm1.1/icon/icon-reward-gray.png") no-repeat;
+                            color: $color-06;
+                        }
+                    }
+                }
+            }
+            .demand-itemTit{
+                height: 45px;
+                margin-top: 15px;
+                h1{
+                    float: left;
+                    width: 375px;
+                    height: 30px;
+                    line-height: 30px;
+                    overflow: hidden;
+                    a{
+                        font-size: 16px;
+                        color: $color-01;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                p{
+                    float: right;
+                    width: 70px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    &.recruit{
+                        color: $color-07;
+                        border: 1px solid $color-07;
+                    }
+                    &.collect{
+                        color: #3fca6a;
+                        border: 1px solid #3fca6a;
+                    }
+                }
+            }
+            .demand-con{
+                clear: both;
+                font-size: 14px;
+                padding-bottom: 10px;
+                p{
+                    height: 55px;
+                    line-height: 18px;
+                    overflow: hidden;
+                }
+            }
+            .demand-apply{
+                height: 55px;
+                line-height: 55px;
+                border-top: 1px solid #e1dede;
+                color: $color-06;
+                .demand-applyL{
+                    width: 50%;
+                    float: left;
+                    background: url("../../../images/pc/vm1.1/icon/icon-apply.png")0 50% no-repeat;
+                    padding-left: 20px;
+                }
+                .demand-applyR{
+                    width: 50%;
+                    float: left;
+                    text-align: right;
+                    p{
+                        display: inline-block;
+                        background: url("../../../images/pc/vm1.1/icon/icon-time.png")0 50% no-repeat;
+                        padding-left: 20px;
+                    }
+
+                }
+            }
+        }
+    }
+}

@@ -35,6 +35,9 @@ $color-ffffff: #ffffff;
 .mb50 {
     margin-bottom: 50px;
 }
+.mt20{
+    margin-top: 20px;
+}
 
 //透明度
 .opacity-1 {
@@ -587,7 +590,7 @@ $color-ffffff: #ffffff;
         display: table;
         content: "";
     }
-    p:before {
+    >p:before {
         margin: 0 auto;
         margin-bottom: 20px;
         content: "";
@@ -596,11 +599,16 @@ $color-ffffff: #ffffff;
         height: 154px;
         background-image: url("../../../images/pc/vm1.1/icon/icon-null.png");
     }
-    p {
+    >p {
         display: table-cell;
         vertical-align: middle;
         font-size: 14px;
-
+        span{
+            color: $color-09;
+        }
+    }
+    b{
+        font-weight: normal;
     }
 }
 
@@ -1418,6 +1426,113 @@ $color-ffffff: #ffffff;
         }
         p {
             margin-top: 8px;
+        }
+    }
+}
+
+.seach-center {
+    .center {
+        margin-top: 15px;
+        text-align: center;
+        position: relative;
+        button {
+            margin-left: 20px;
+            height: 25px;
+        }
+    }
+    .tribe-total {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-right: 16px;
+        margin-top: 8px;
+        color: #c0c0c0;
+        span {
+            color: $color-09;
+            font-size: 18px;
+        }
+    }
+    .search-result{
+        width: 380px;
+        text-align: left;
+        margin: 10px auto 20px;
+        span{
+            color: $color-09;
+        }
+        b{
+            font-weight: normal;
+            margin:0 5px;
+        }
+    }
+}
+
+//活动
+#activity {
+    .null-content {
+        height: 800px;
+    }
+}
+
+.active-list-494 {
+    width: 1030px;
+    li {
+        position: relative;
+        width: 495px;
+        height: 300px;
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 5px rgba(81, 81, 81, 0.2);
+        img {
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+        }
+        p {
+            position: absolute;
+            bottom: 20px;
+            text-align: center;
+            width: 100%;
+            color: #fff;
+            font-size: 14px;
+        }
+    }
+}
+
+//搜索结果
+.bodybg{
+    background-color: $color-02;
+}
+#search{
+ background-color: #fff;
+    .tab-content{
+        min-height: 600px;
+        .null-content{
+            height:600px;
+        }
+    }
+    .topic-wall{
+        margin-top: 0;
+        padding-top: 10px;
+    }
+}
+#search-tab{
+    padding-left: 5px;
+    font-size: 14px;
+    color: $color-05;
+    a{
+        display: inline-block;
+    }
+    .active{
+        font-weight: bold;
+        a:before{
+            width: 6px;
+            height: 6px;
+            content: "";
+            display: inline-block;
+            background-color: $color-05;
+            margin-right: 5px;
+            vertical-align: middle;
         }
     }
 }

@@ -77,6 +77,7 @@ $color-ffffff: #ffffff;
     background: $color-08;
     text-align: center;
     cursor: pointer;
+    display: inline-block;
     &:hover {
         color: $color-ffffff;
     }
@@ -198,6 +199,7 @@ $color-ffffff: #ffffff;
 
 .btn-cancel{
     background: none;
+    display: inline-block;
     width: 100px;
     text-align: center;
     border: none;
@@ -222,6 +224,24 @@ $color-ffffff: #ffffff;
 .btn-blue-100 {
     @extend .btn-blue;
     width: 100px;
+}
+
+.btn-red {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 2px;
+    background: $color-09;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    &:hover {
+        color: $color-ffffff;
+    }
+}
+.btn-red-80{
+    @extend .btn-red;
+    width: 80px;
 }
 
 
@@ -1403,6 +1423,42 @@ $color-ffffff: #ffffff;
         clear: both;
         text-align: center;
         padding-top: 50px;
+    }
+}
+
+//创建相册集模态框
+.modal-addAlbum{
+    width: 400px;
+    height: 180px;
+    .tit{
+        margin: 0;
+        padding: 0 20px;
+    }
+    .modal-group{
+        padding: 0 35px;
+        margin: 10px 0;
+        label{
+            float: left;
+            font-weight: normal;
+            width: 75px;
+        }
+        input{
+            float: left;
+            width: 230px;
+            height: 30px;
+            line-height: 30px;
+            padding: 0 10px;
+            border: 1px solid #dcdcdc;
+            border-radius: 2px;
+        }
+    }
+    .modal-group-msg{
+        padding-left: 75px;
+        padding-top: 10px;
+        color: $color-09;
+    }
+    .btn-cancel{
+        margin-right: 23px;
     }
 }
 

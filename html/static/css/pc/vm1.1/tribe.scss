@@ -524,6 +524,170 @@ $color-ffffff: #ffffff;
             }
         }
     }
+
+    //上传相片
+    .photo-upload{
+        min-height: 550px;
+        .pl145{
+            padding-left: 145px;
+        }
+        .pl124{
+            padding-left: 124px;
+        }
+        .photo-upload-tit{
+            height: 50px;
+            line-height: 50px;
+            padding: 0 65px;
+        }
+        .photo-upload-album{
+            .photo-upload-albumName{
+                select{
+                    min-width: 120px;
+                    height: 30px;
+                    border: 1px solid #dcdcdc;
+                    border-radius: 2px;
+                }
+                a{
+                    padding-left: 25px;
+                    color: $color-07;
+                }
+            }
+            .photo-upload-albumCon{
+                margin-top: 20px;
+                width: 720px;
+                height: 448px;
+                border: 1px solid #dcdcdc;
+                .photo-upload-btnFile{
+                    width: 230px;
+                    height: 230px;
+                    border: 1px dashed #dcdcdc;
+                    margin: 90px auto 0 auto;
+                    position: relative;
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        background: url("../../../images/pc/vm1.1/icon/icon-upload-43.png");
+                        width: 43px;
+                        height: 43px;
+                        margin: -22px 0 0 -22px;
+                    }
+                }
+                .photo-upload-Msg{
+                    text-align: center;
+                    padding-top: 40px;
+                }
+                .input-file{
+                    width: 100%;
+                    height: 100%;
+                    opacity: .0;
+                    cursor: pointer;
+                }
+            }
+            .photo-upload-albumList{
+                ul{
+                    margin-top: 20px;
+                    li{
+                        float: left;
+                        width: 124px;
+                        margin-right: 36px;
+                        margin-top: 10px;
+                        .photo-upload-img{
+                            width: 100%;
+                            height: 124px;
+                            position: relative;
+                            &:hover{
+                                .photo-upload-control{
+                                    display: block;
+                                }
+                            }
+                            img{
+                                height: 124px;
+                                width: 124px;
+                            }
+                            .photo-upload-control{
+                                display: none;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                background: rgba(0,0,0,.6);
+                                height: 30px;
+                                line-height: 30px;
+                                text-align: right;
+                                padding: 0 10px;
+                                a {
+                                    color: #fefefe;
+                                }
+                            }
+                        }
+                        .name{
+                            width: 124px;
+                            text-align: center;
+                            height: 30px;
+                            line-height: 30px;
+                            overflow: hidden;
+                        }
+                        .imgUpload{
+                            border: 1px solid #dcdcdc;
+                            position: relative;
+                            .progress{
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                width: 86px;
+                                height: 8px;
+                                border: 2px solid $color-08;
+                                margin: 0 auto;
+                                border-radius: 5px;
+                                margin: -4px 0 0 -44px;
+                                span{
+                                    margin: 1px;
+                                    max-width: 80px;
+                                    height: 2px;
+                                    float: left;
+                                    overflow: hidden;
+                                    display: inline-block;
+                                    background: $color-08;
+                                }
+                            }
+                        }
+                        .btnUpload{
+                            border: 1px dashed #dcdcdc;
+                            position: relative;
+                            &:before{
+                                content: '';
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                background: url("../../../images/pc/vm1.1/icon/icon-upload-43.png");
+                                width: 43px;
+                                height: 43px;
+                                margin: -22px 0 0 -22px;
+                            }
+                            .fileUpload{
+                                width: 100%;
+                                height: 100%;
+                                cursor: pointer;
+                                opacity: .0;
+                            }
+                        }
+                    }
+                }
+            }
+            .photo-upload-btn{
+                text-align: right;
+                padding-right: 125px;
+                padding-top: 60px;
+                .btn-yellow{
+                    color: $color-01;
+                }
+            }
+        }
+
+    }
+
     .vm-album-con-pd{
         min-height: 500px;
         ul{
@@ -612,6 +776,17 @@ $color-ffffff: #ffffff;
         }
     }
 
+    .vm-album-addBtn{
+        padding: 15px 0 0 19px;
+        .btn-yellow-80{
+            height: 30px;
+            line-height: 30px;
+            color: $color-01;
+            &:hover{
+                color: $color-05;
+            }
+        }
+    }
 
     .noBg{
         background: none;

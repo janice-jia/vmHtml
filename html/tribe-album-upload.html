@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <title>部落展示-相册首页</title>
+    <title>部落展示-上传相片</title>
 
     <!--IE浏览器运行最新的渲染模式-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -195,224 +195,96 @@
 
     <div class="topic-wall">
         <div class="topic-wall-c">
-            <!--小说-->
-            <div class="topicCon">
-                <div class="vm-album-addBtn">
-                    <a href="tribe-album-upload.html" class="btn-yellow-80">上传相片</a>
-                    <button class="btn-cancel" data-target="#addAlbum" data-toggle="modal">创建相册集</button>
+            <div class="photo-upload">
+                <div class="photo-upload-tit">
+                    上传相片
                 </div>
-                <div class="vm-album-con  vm-album-con-pd">
-                    <ul>
-                        <li>
-                            <a href="tribe-album-photo.html"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <!--<p><a href="#">相册名称相册名称</a></p>-->
-                            <div class="edit-albumName">
-                                <a href="tribe-album-photo.html">最长8个字</a>
-                                <b ></b>
-                                <input class="hide" type="text" value="相册名称" maxlength="8">
-                            </div>
+                <div class="photo-upload-album pl145 ">
+                    <div class="photo-upload-albumName">
+                        <select name="albumName" id="albumName">
+                            <option value="">请选择</option>
+                        </select>
+                        <a href="javascript:;" data-target="#addAlbum" data-toggle="modal">创建相册集</a>
+                    </div>
+                    <div class="photo-upload-albumCon">
+                        <div class="photo-upload-btnFile">
+                            <input class="input-file" type="file" />
+                        </div>
+                        <p class="photo-upload-Msg">上传的照片可在线美化并保存；一次可上传10张，每张不超过3MB</p>
+                    </div>
+                </div>
 
-                        </li>
-                        <li>
-                            <a href="tribe-album-photo.html"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <!--<p><a href="#">相册名称相册名称</a></p>-->
-                            <div class="edit-albumName">
-                                <a href="tribe-album-photo.html">12345678</a>
-                                <b ></b>
-                                <input class="hide" type="text" value="相册名称" maxlength="8">
-                            </div>
 
-                        </li>
-                        <li>
-                            <a href="tribe-album-photo.html"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <!--<p><a href="#">相册名称相册名称</a></p>-->
-                            <div class="edit-albumName">
-                                <a href="tribe-album-photo.html">一个好长的名字</a>
-                                <b ></b>
-                                <input class="hide" type="text" value="相册名称" maxlength="8">
-                            </div>
+                <div class="photo-upload-album pl124 hide">
+                    <div class="photo-upload-albumName">
+                        <p>相册集名称相册集名称</p>
+                    </div>
+                    <div class="photo-upload-albumList">
+                        <ul>
+                            <li>
+                                <div class="photo-upload-img imgUpload">
+                                    <p class="progress">
+                                        <span style="width: 50%">&nbsp;</span>
+                                    </p>
+                                </div>
+                                <p class="name">我是图片</p>
+                            </li>
+                            <li>
+                                <div class="photo-upload-img">
+                                    <img src="./static/images/pc/vm1.1/test/i-17.jpg" alt="">
+                                    <p class="photo-upload-control">
+                                        <a href="#">删除</a>
+                                    </p>
+                                </div>
+                                <p class="name">我是图片</p>
+                            </li>
+                            <li>
+                                <div class="photo-upload-img">
+                                    <img src="./static/images/pc/vm1.1/test/i-17.jpg" alt="">
+                                    <p class="photo-upload-control">
+                                        <a href="#">删除</a>
+                                    </p>
+                                </div>
+                                <p class="name">我是图片</p>
+                            </li>
+                            <li>
+                                <div class="photo-upload-img">
+                                    <img src="./static/images/pc/vm1.1/test/i-17.jpg" alt="">
+                                    <p class="photo-upload-control">
+                                        <a href="#">删除</a>
+                                    </p>
+                                </div>
+                                <p class="name">我是图片</p>
+                            </li>
+                            <li>
+                                <div class="photo-upload-img">
+                                    <img src="./static/images/pc/vm1.1/test/i-17.jpg" alt="">
+                                    <p class="photo-upload-control">
+                                        <a href="#">删除</a>
+                                    </p>
+                                </div>
+                                <p class="name">我是图片</p>
+                            </li>
 
-                        </li>
-                        <li>
-                            <a href="tribe-album-photo.html"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <!--<p><a href="#">相册名称相册名称</a></p>-->
-                            <div class="edit-albumName">
-                                <a href="tribe-album-photo.html">一个好长的名字</a>
-                                <b ></b>
-                                <input class="hide" type="text" value="相册名称" maxlength="8">
-                            </div>
-
-                        </li>
-                        <li>
-                            <a href="tribe-album-photo.html"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <!--<p><a href="#">相册名称相册名称</a></p>-->
-                            <div class="edit-albumName">
-                                <a href="tribe-album-photo.html">一个好长的名字</a>
-                                <b ></b>
-                                <input class="hide" type="text" value="相册名称" maxlength="8">
-                            </div>
-
-                        </li>
-                        <li>
-                            <a href="tribe-album-photo.html"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <!--<p><a href="#">相册名称相册名称</a></p>-->
-                            <div class="edit-albumName">
-                                <a href="tribe-album-photo.html">一个好长的名字</a>
-                                <b ></b>
-                                <input class="hide" type="text" value="相册名称" maxlength="8">
-                            </div>
-
-                        </li>
-                        <li>
-                            <a href="tribe-album-photo.html"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <!--<p><a href="#">相册名称相册名称</a></p>-->
-                            <div class="edit-albumName">
-                                <a href="tribe-album-photo.html">一个好长的名字</a>
-                                <b ></b>
-                                <input class="hide" type="text" value="相册名称" maxlength="8">
-                            </div>
-
-                        </li>
-                        <li>
-                            <a href="tribe-album-photo.html"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <!--<p><a href="#">相册名称相册名称</a></p>-->
-                            <div class="edit-albumName">
-                                <a href="tribe-album-photo.html">一个好长的名字</a>
-                                <b ></b>
-                                <input class="hide" type="text" value="相册名称" maxlength="8">
-                            </div>
-
-                        </li>
-                        <li>
-                            <a href="tribe-album-photo.html"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <!--<p><a href="#">相册名称相册名称</a></p>-->
-                            <div class="edit-albumName">
-                                <a href="tribe-album-photo.html">一个好长的名字</a>
-                                <b ></b>
-                                <input class="hide" type="text" value="相册名称" maxlength="8">
-                            </div>
-
-                        </li>
-                        <li>
-                            <a href="tribe-album-photo.html"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <!--<p><a href="#">相册名称相册名称</a></p>-->
-                            <div class="edit-albumName">
-                                <a href="tribe-album-photo.html">一个好长的名字</a>
-                                <b ></b>
-                                <input class="hide" type="text" value="相册名称" maxlength="8">
-                            </div>
-
-                        </li>
-                        <li>
-                            <a href="tribe-album-photo.html"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <!--<p><a href="#">相册名称相册名称</a></p>-->
-                            <div class="edit-albumName">
-                                <a href="tribe-album-photo.html">一个好长的名字</a>
-                                <b ></b>
-                                <input class="hide" type="text" value="相册名称" maxlength="8">
-                            </div>
-
-                        </li>
-                        <li>
-                            <a href="tribe-album-photo.html"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <!--<p><a href="#">相册名称相册名称</a></p>-->
-                            <div class="edit-albumName">
-                                <a href="tribe-album-photo.html">一个好长的名字</a>
-                                <b ></b>
-                                <input class="hide" type="text" value="相册名称" maxlength="8">
-                            </div>
-
-                        </li>
-                        <li>
-                            <a href="tribe-album-photo.html"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <!--<p><a href="#">相册名称相册名称</a></p>-->
-                            <div class="edit-albumName">
-                                <a href="tribe-album-photo.html">一个好长的名字</a>
-                                <b ></b>
-                                <input class="hide" type="text" value="相册名称" maxlength="8">
-                            </div>
-
-                        </li>
-                        <li>
-                            <a href="tribe-album-photo.html"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <!--<p><a href="#">相册名称相册名称</a></p>-->
-                            <div class="edit-albumName">
-                                <a href="tribe-album-photo.html">一个好长的名字</a>
-                                <b ></b>
-                                <input class="hide" type="text" value="相册名称" maxlength="8">
-                            </div>
-
-                        </li>
-                        <li>
-                            <a href="tribe-album-photo.html"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <!--<p><a href="#">相册名称相册名称</a></p>-->
-                            <div class="edit-albumName">
-                                <a href="tribe-album-photo.html">一个好长的名字</a>
-                                <b ></b>
-                                <input class="hide" type="text" value="相册名称" maxlength="8">
-                            </div>
-
-                        </li>
-                        <li>
-                            <a href="tribe-album-photo.html"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <!--<p><a href="#">相册名称相册名称</a></p>-->
-                            <div class="edit-albumName">
-                                <a href="tribe-album-photo.html">一个好长的名字</a>
-                                <b ></b>
-                                <input class="hide" type="text" value="相册名称" maxlength="8">
-                            </div>
-
-                        </li>
-                        <li>
-                            <a href="tribe-album-photo.html"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <!--<p><a href="#">相册名称相册名称</a></p>-->
-                            <div class="edit-albumName">
-                                <a href="tribe-album-photo.html">一个好长的名字</a>
-                                <b ></b>
-                                <input class="hide" type="text" value="相册名称" maxlength="8">
-                            </div>
-
-                        </li>
-                        <li>
-                            <a href="tribe-album-photo.html"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <!--<p><a href="#">相册名称相册名称</a></p>-->
-                            <div class="edit-albumName">
-                                <a href="tribe-album-photo.html">一个好长的名字</a>
-                                <b ></b>
-                                <input class="hide" type="text" value="相册名称" maxlength="8">
-                            </div>
-
-                        </li>
-                        <li>
-                            <a href="tribe-album-photo.html"><img src="./static/images/pc/vm1.1/test/i-17.jpg" alt=""/></a>
-                            <!--<p><a href="#">相册名称相册名称</a></p>-->
-                            <div class="edit-albumName">
-                                <a href="tribe-album-photo.html">一个好长的名字</a>
-                                <b ></b>
-                                <input class="hide" type="text" value="相册名称" maxlength="8">
-                            </div>
-
-                        </li>
-
-                        <div class="clear"></div>
-                    </ul>
+                            <li>
+                                <div class="photo-upload-img btnUpload">
+                                    <input class="fileUpload" type="file" />
+                                </div>
+                            </li>
+                            <div class="clear"></div>
+                        </ul>
+                    </div>
+                    <div class="photo-upload-btn">
+                        <button class="btn-yellow">开始上传</button>
+                        <button class="btn-gray-100 mr10 ml10">继续添加</button>
+                        <button class="btn-red">取消上传</button>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="clear"></div>
 
-        <!--<div class="zcbl-page">-->
-            <!--<ul>-->
-                <!--<li class="zcbl-thisPage">1</li>-->
-                <!--<li class="zcbl-defaultPage"><a href="#" target="_blank">2</a></li>-->
-                <!--<li class="zcbl-defaultPage"><a href="#" target="_blank">3</a></li>-->
-                <!--<li class="zcbl-defaultPage"><a href="#" target="_blank">4</a></li>-->
-                <!--<li class="zcbl-defaultPage"><a href="#" target="_blank">…</a></li>-->
-                <!--<li class="zcbl-defaultPage"><a href="#" target="_blank">158</a></li>-->
-                <!--<li class="zcbl-nextPage"><a href="#" target="_blank">&nbsp;</a></li>-->
-                <!--<li class="zcbl-pageNum">共158页</li>-->
-            <!--</ul>-->
-        <!--</div>-->
+
     </div>
 </div>
 
@@ -487,6 +359,22 @@
     </div>
 </div>
 <!-- 编辑频道模态框（Modal） -->
+
+<!-- 删除提示模态框（Modal） -->
+<div class="modal fade" id="delMsg"  aria-hidden="true">
+    <div class="vm-modal modal-delMsg">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+        <div class="tit">提示</div>
+        <div class="con">
+            <p>您确定要删除首页栏目吗？？</p>
+        </div>
+        <div class="clear tc btn">
+            <button class="btn-yellow-100">确定</button>
+            <button class="btn-cancel" data-dismiss="modal" aria-hidden="true">取消</button>
+        </div>
+    </div>
+</div>
+<!-- 删除提示模态框（Modal） -->
 
 <!-- 创建相册集模态框（Modal） -->
 <div class="modal fade" id="addAlbum"  aria-hidden="true">

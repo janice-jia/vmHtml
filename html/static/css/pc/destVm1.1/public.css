@@ -46,7 +46,8 @@
   border-radius: 2px;
   background: #ffb30e;
   text-align: center;
-  cursor: pointer; }
+  cursor: pointer;
+  display: inline-block; }
   .btn-yellow:hover, .btn-yellow-100:hover, .btn-yellow-150:hover, .btn-yellow-80:hover, .btn-yellow-66:hover, .btn-yellow-74:hover {
     color: #ffffff; }
 
@@ -138,6 +139,7 @@
 
 .btn-cancel {
   background: none;
+  display: inline-block;
   width: 100px;
   text-align: center;
   border: none; }
@@ -158,6 +160,21 @@
 
 .btn-blue-100 {
   width: 100px; }
+
+.btn-red, .btn-red-80 {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 2px;
+  background: #e43f3f;
+  text-align: center;
+  cursor: pointer;
+  color: #fff; }
+  .btn-red:hover, .btn-red-80:hover {
+    color: #ffffff; }
+
+.btn-red-80 {
+  width: 80px; }
 
 .vm-seach input {
   height: 25px;
@@ -1047,6 +1064,34 @@
     clear: both;
     text-align: center;
     padding-top: 50px; }
+
+.modal-addAlbum {
+  width: 400px;
+  height: 180px; }
+  .modal-addAlbum .tit {
+    margin: 0;
+    padding: 0 20px; }
+  .modal-addAlbum .modal-group {
+    padding: 0 35px;
+    margin: 10px 0; }
+    .modal-addAlbum .modal-group label {
+      float: left;
+      font-weight: normal;
+      width: 75px; }
+    .modal-addAlbum .modal-group input {
+      float: left;
+      width: 230px;
+      height: 30px;
+      line-height: 30px;
+      padding: 0 10px;
+      border: 1px solid #dcdcdc;
+      border-radius: 2px; }
+  .modal-addAlbum .modal-group-msg {
+    padding-left: 75px;
+    padding-top: 10px;
+    color: #e43f3f; }
+  .modal-addAlbum .btn-cancel {
+    margin-right: 23px; }
 
 .more-tribe-list {
   padding-left: 18px; }

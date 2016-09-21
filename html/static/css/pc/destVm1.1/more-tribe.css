@@ -5,21 +5,3 @@
   #more-tribe .more-tribe-list {
     width: 1030px;
     min-height: 600px; }
-
-.seach-center .center {
-  margin-top: 15px;
-  text-align: center;
-  position: relative; }
-  .seach-center .center button {
-    margin-left: 20px;
-    height: 25px; }
-.seach-center .tribe-total {
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin-right: 16px;
-  margin-top: 8px;
-  color: #c0c0c0; }
-  .seach-center .tribe-total span {
-    color: #e43f3f;
-    font-size: 18px; }

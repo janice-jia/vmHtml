@@ -29,26 +29,3 @@ $color-09: #e43f3f;
 
 }
 
-.seach-center {
-    .center {
-        margin-top: 15px;
-        text-align: center;
-        position: relative;
-        button {
-            margin-left: 20px;
-            height: 25px;
-        }
-    }
-    .tribe-total {
-        position: absolute;
-        right: 0;
-        top: 0;
-        margin-right: 16px;
-        margin-top: 8px;
-        color: #c0c0c0;
-        span {
-            color: $color-09;
-            font-size: 18px;
-        }
-    }
-}

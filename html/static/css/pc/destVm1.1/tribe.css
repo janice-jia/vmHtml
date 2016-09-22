@@ -25,6 +25,11 @@
 .extend-aline:hover, .topic-wall .topic-wall-l .vm-album-con ul li p a:hover, .topic-wall .topic-wall-l .vm-video-con ul li p a:hover, .topic-wall .topic-wall-l .vm-text-con ul li p a:hover, .topic-wall .topic-wall-l .vm-video-list ul li .vm-videoR .name a:hover, .topic-wall .topic-wall-l .topicInfo .topicInfo-con .topicInfo-conR .topicInfo-name a:hover, .topic-wall .topic-wall-l .topicInfo-comment .topicInfo-comment-noLogin p a:hover, .topic-wall .topic-wall-l .topicInfo-comment .topicCom-com .topicCom-comR .topicCom-name a:hover, .topic-wall .vm-album-con-pd ul li p a:hover {
   text-decoration: underline; }
 
+.tab-pane .vm-topic-con {
+  overflow: hidden; }
+  .tab-pane .vm-topic-con ul {
+    margin-top: -1px; }
+
 .topic-wall {
   width: 100%;
   margin-top: 13px; }
@@ -56,8 +61,8 @@
         height: 30px;
         line-height: 30px; }
     .topic-wall .topic-wall-l .topic-public {
-      height: 45px;
-      line-height: 45px;
+      height: 56px;
+      line-height: 56px;
       padding-left: 40px; }
       .topic-wall .topic-wall-l .topic-public .btn-yellow-100 {
         position: relative;

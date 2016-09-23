@@ -163,7 +163,8 @@
       border: 1px solid #d7d7d7;
       margin-left: 18px;
       margin-bottom: 18px;
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); }
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+      position: relative; }
       .vm-tribe .vm-tribe-con ul li .vm-tribe-con-img {
         width: 220px;
         height: 220px; }
@@ -226,7 +227,8 @@
     float: left;
     width: 297px;
     border: 1px solid #cccccc;
-    margin: 0 0 18px 25px; }
+    margin: 0 0 18px 25px;
+    position: relative; }
     .vm-need .vm-need-con ul li .vm-need-img {
       width: 295px;
       height: 150px; }
@@ -277,7 +279,10 @@
       width: 174px;
       border: 1px solid #d7d7d7;
       background: #ffffff;
-      margin: 0 0 18px 18px; }
+      margin: 0 0 18px 18px;
+      position: relative; }
+      .vm-serve .vm-serve-con ul li .hrefBlock {
+        height: 235px; }
       .vm-serve .vm-serve-con ul li .vm-serve-img {
         width: 172px;
         height: 150px; }
@@ -303,7 +308,10 @@
         border-top: 1px solid #cccccc;
         height: 40px;
         margin: 0 8px;
-        padding-top: 8px; }
+        padding-top: 8px;
+        position: relative; }
+        .vm-serve .vm-serve-con ul li .vm-serve-user .hrefBlock {
+          height: 100%; }
         .vm-serve .vm-serve-con ul li .vm-serve-user a {
           display: inline-block;
           float: left;

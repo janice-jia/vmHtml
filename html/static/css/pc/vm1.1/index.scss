@@ -226,6 +226,8 @@ $color-e1e1e1:#e1e1e1;
     }
 }
 
+
+
 //部落
 .vm-tribe{
     background: $color-e8e8e8;
@@ -241,6 +243,8 @@ $color-e1e1e1:#e1e1e1;
                 margin-left: 18px;
                 margin-bottom: 18px;
                 box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+                position: relative;
+
                 .vm-tribe-con-img{
                     width: 220px;
                     height: 220px;
@@ -330,6 +334,7 @@ $color-e1e1e1:#e1e1e1;
                 width: 297px;
                 border: 1px solid $color-cccccc;
                 margin:0 0 18px 25px;
+                position: relative;
                 .vm-need-img{
                     width: 295px;
                     height: 150px;
@@ -402,6 +407,10 @@ $color-e1e1e1:#e1e1e1;
                 border: 1px solid $color-d7d7d7;
                 background: $color-ffffff;
                 margin:0 0 18px 18px;
+                position: relative;
+                .hrefBlock{
+                    height: 235px;
+                }
                 .vm-serve-img{
                     width: 172px;
                     height: 150px;
@@ -437,6 +446,10 @@ $color-e1e1e1:#e1e1e1;
                     height: 40px;
                     margin: 0 8px;
                     padding-top: 8px;
+                    position: relative;
+                    .hrefBlock{
+                        height: 100%;
+                    }
                     a{
                         display: inline-block;
                         float: left;

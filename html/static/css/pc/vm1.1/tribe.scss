@@ -746,6 +746,13 @@ $color-ffffff: #ffffff;
                         @extend .extend-aline;
                     }
                 }
+                .vm-album-cover{
+                    width: 120px;
+                    height: 120px;
+                    border: 1px solid #dcdcdc;
+                    background: url("../../../images/pc/vm1.1/icon/icon-cover.png");
+                    background-size: 120px 120px;
+                }
             }
         }
         .edit-albumName {

@@ -168,13 +168,15 @@
     $('#torecruit').click(function(){
         $('[data-login="container"]').animate(opts[0],time,function(){
             $('[data-login="container"]').hide();
-            $('[data-regist="container"]').show().animate(opts[1],time);
+            $('[data-regist="container"]').show();
+            $('[data-login="container"]').animate(opts[1],time);
         });
     });
     $('#tologin').click(function(){
         $('[data-regist="container"]').animate(opts[0],time,function(){
             $('[data-regist="container"]').hide();
-            $('[data-login="container"]').show().animate(opts[1],time);
+            $('[data-login="container"]').show();
+            $('[data-regist="container"]').animate(opts[1],time);
         });
     });
 </script>

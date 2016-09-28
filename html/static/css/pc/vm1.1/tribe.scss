@@ -45,6 +45,14 @@ $color-ffffff: #ffffff;
     }
 }
 
+.tab-pane{
+    .vm-topic-con{
+        overflow: hidden;
+        ul{
+            margin-top: -1px;
+        }
+    }
+}
 .topic-wall{
     width: 100%;
     margin-top: 13px;
@@ -81,8 +89,8 @@ $color-ffffff: #ffffff;
             }
         }
         .topic-public{
-            height: 45px;
-            line-height: 45px;
+            height: 56px;
+            line-height: 56px;
             padding-left: 40px;
             .btn-yellow-100{
                 position: relative;
@@ -525,6 +533,7 @@ $color-ffffff: #ffffff;
         }
     }
 
+
     //上传相片
     .photo-upload{
         min-height: 550px;
@@ -736,6 +745,13 @@ $color-ffffff: #ffffff;
                     a{
                         @extend .extend-aline;
                     }
+                }
+                .vm-album-cover{
+                    width: 120px;
+                    height: 120px;
+                    border: 1px solid #dcdcdc;
+                    background: url("../../../images/pc/vm1.1/icon/icon-cover.png");
+                    background-size: 120px 120px;
                 }
             }
         }

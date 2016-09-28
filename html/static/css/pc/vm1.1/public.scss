@@ -750,8 +750,10 @@ $color-ffffff: #ffffff;
 .zcbl-page {
     width: 100%;
     margin: 40px 0;
+    text-align: center;
     ul {
         text-align: center;
+        display: inline-block;
         li {
             display: inline-block;
             height: 24px;
@@ -791,10 +793,16 @@ $color-ffffff: #ffffff;
                     }
                 }
             }
-            &.zcbl-pageNum {
-                width: auto;
-            }
+
         }
+    }
+    .zcbl-pageNum {
+        display: inline-block;
+        height: 24px;
+        line-height: 24px;
+        color: $color-05;
+        margin: 0 4px;
+        font-weight: bold;
     }
 }
 

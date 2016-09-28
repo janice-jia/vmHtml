@@ -556,9 +556,11 @@
 
 .zcbl-page {
   width: 100%;
-  margin: 40px 0; }
+  margin: 40px 0;
+  text-align: center; }
   .zcbl-page ul {
-    text-align: center; }
+    text-align: center;
+    display: inline-block; }
     .zcbl-page ul li {
       display: inline-block;
       height: 24px;
@@ -591,8 +593,13 @@
           background: url("../../../images/pc/vm1.1/icon/icon-per-next.png") no-repeat;
           width: 9px;
           height: 15px; }
-      .zcbl-page ul li.zcbl-pageNum {
-        width: auto; }
+  .zcbl-page .zcbl-pageNum {
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    color: #666666;
+    margin: 0 4px;
+    font-weight: bold; }
 
 .null-content {
   text-align: center;

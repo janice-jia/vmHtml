@@ -1754,6 +1754,11 @@ $color-ffffff: #ffffff;
 
 .active-list-494 {
     width: 1030px;
+    &:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
     li {
         position: relative;
         width: 495px;

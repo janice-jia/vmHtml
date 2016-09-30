@@ -1313,6 +1313,10 @@
 
 .active-list-494 {
   width: 1030px; }
+  .active-list-494:after {
+    content: "";
+    display: table;
+    clear: both; }
   .active-list-494 li {
     position: relative;
     width: 495px;

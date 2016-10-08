@@ -1308,11 +1308,11 @@
   width: 1030px; }
   .active-list-494 li {
     position: relative;
-    width: 495px;
-    height: 300px;
+    width: 500px;
+    height: 280px;
     float: left;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     box-shadow: 0 0 5px rgba(81, 81, 81, 0.2); }
     .active-list-494 li img {
       width: 100%;

@@ -91,7 +91,7 @@
 <div class="container mt50 mb50">
     <div id="mhp-header">
         <div class="top" style="background-image: url('static/images/pc/vm1.1/jpg/tribe_1.jpg')">
-            <button type="button" id="editbg" class="editbg">上传封面图</button>
+            <button type="button" id="editbg" class="editbg" data-toggle="modal" data-target="#editbgmo">上传封面图</button>
             <!--<img class="bgimg" src="static/images/pc/vm1.1/test/t-1.jpg" alt=""/>-->
         </div>
         <div class="centerbtn">
@@ -569,6 +569,43 @@
 </div>
 <!-- 上传视频模态框（Modal） -->
 
+
+<!-- 模态框  上传封面 -->
+<div class="modal fade" id="editbgmo" aria-hidden="true">
+    <button type="button" class="close zcbl-close" data-dismiss="modal" aria-hidden="true"></button>
+    <div class="zcbl-tmodal-editbg">
+        <div class="per-pub-picBox">
+            <ul>
+                <li class="per-pub-add">
+                    <p class="per-pub-addIcon">
+                        <input type="file" />
+                    </p>
+                    <p class="per-pub-addSC">上传封面图</p>
+                    <p class="per-pub-addZS">(1010*500px)</p>
+                    <!--<p class="per-pub-addDX">小于10M</p>-->
+                </li>
+                <li>
+                    <div class="per-pub-img">
+                        <img src="static/images/pc/personal/pub-img.jpg" height="200" width="200" alt="" />
+                        <div class="per-pub-edit zcbl-hidden">
+                            <!--<p class="per-pub-editFM"><a href="#" target="_blank">封面</a></p>-->
+                            <p class="per-pub-editDel"><a href="#" target="_blank"></a></p>
+                        </div>
+                    </div>
+                    <div class="per-pub-tit">
+                        <!--<a href="#" target="_blank">沙滩晨跑</a>-->
+                        <input type="text" value="沙滩晨跑"/>
+                    </div>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <div class="zcbl-tmodal-subbtn">
+            <button type="button">提交</button>
+        </div>
+    </div>
+</div>
+<!-- 模态框 上传封面 -->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="static/js/pc/dest/jquery-1.11.3.min.js"></script>

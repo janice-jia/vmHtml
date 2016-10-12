@@ -1887,6 +1887,56 @@ $color-ffffff: #ffffff;
     }
 }
 
+//侵权举报
+.modal-reportTort{
+    width: 645px;
+    height: 450px;
+    background-color: #fff;
+    .tit{
+        margin: 0;
+        padding: 0 20px;
+    }
+    .reportMsg{
+        padding: 20px;
+        font-size: 14px;
+        .tortRedio{
+            margin:20px 0;
+            p{
+                margin-left: 10px;
+                display: inline-block;
+            }
+            span{
+                margin-left: 2px;
+            }
+        }
+        textarea{
+            width: 100%;
+            height: 150px;
+            border: 1px solid $color-06;
+        }
+        .tortCode{
+            input{
+                width: 100px;
+                height: 30px;
+                margin-left: 10px;
+            }
+            .codeImg{
+                margin: 0 10px;
+                width:78px;
+                height: 30px;
+                background-color: #eee;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+    .btn{
+        button{
+            margin:0 10px;
+        }
+    }
+}
+
 
 //更多部落列表
 .more-tribe-list {

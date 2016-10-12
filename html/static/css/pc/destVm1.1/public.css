@@ -1423,6 +1423,41 @@
       height: 50px;
       background-color: #ffb30e; }
 
+.modal-reportTort {
+  width: 645px;
+  height: 450px;
+  background-color: #fff; }
+  .modal-reportTort .tit {
+    margin: 0;
+    padding: 0 20px; }
+  .modal-reportTort .reportMsg {
+    padding: 20px;
+    font-size: 14px; }
+    .modal-reportTort .reportMsg .tortRedio {
+      margin: 20px 0; }
+      .modal-reportTort .reportMsg .tortRedio p {
+        margin-left: 10px;
+        display: inline-block; }
+      .modal-reportTort .reportMsg .tortRedio span {
+        margin-left: 2px; }
+    .modal-reportTort .reportMsg textarea {
+      width: 100%;
+      height: 150px;
+      border: 1px solid #999999; }
+    .modal-reportTort .reportMsg .tortCode input {
+      width: 100px;
+      height: 30px;
+      margin-left: 10px; }
+    .modal-reportTort .reportMsg .tortCode .codeImg {
+      margin: 0 10px;
+      width: 78px;
+      height: 30px;
+      background-color: #eee;
+      display: inline-block;
+      vertical-align: middle; }
+  .modal-reportTort .btn button {
+    margin: 0 10px; }
+
 .more-tribe-list {
   padding-left: 18px; }
   .more-tribe-list li {

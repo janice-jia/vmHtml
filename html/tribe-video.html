@@ -118,7 +118,7 @@
                     <span class="ml30 mr30">赞：9999</span>
                     <span>诞生：9999天</span>
                 </div>
-                <div class="col-lg-3 tr jb"><a href="">侵权举报</a></div>
+                <div class="col-lg-3 tr jb"><a href="javascript:;"  data-toggle="modal" data-target="#reportTort">侵权举报</a></div>
             </div>
 
         </div>
@@ -606,6 +606,64 @@
     </div>
 </div>
 <!-- 模态框 上传封面 -->
+
+<!-- 侵权举报（Modal） -->
+<div class="modal fade" id="reportTort"  aria-hidden="true">
+    <div class="vm-modal modal-reportTort">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+        <div class="tit">侵权举报</div>
+        <form action="">
+            <div class="reportMsg">
+                <p>举报作品 ： <span>界</span></p>
+                <div class="tortRedio"  id="icheck16">
+                    举报理由 ：
+                    <p>
+                        <input type="radio" value="0" name="tortRedio" checked>
+                        <span>盗用作品</span>
+                    </p>
+                    <p>
+                        <input type="radio" value="1" name="tortRedio">
+                        <span>内容违法</span>
+                    </p>
+                    <p>
+                        <input type="radio" value="2" name="tortRedio">
+                        <span>广告</span>
+                    </p>
+                </div>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <p class="clear tr pt10">请输入1-200字的举报理由</p>
+                <div class="tortCode">
+                    验证码：
+                    <input type="text">
+                    <div class="codeImg"></div>
+                    <button type="button" class="btn-transparent">换一张</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="clear tc btn">
+            <button class="btn-yellow-100" data-dismiss="modal"  data-toggle="modal" data-target="#tribeIndexTortMsg">提交</button>
+            <button class="btn-gray-100" data-dismiss="modal" aria-hidden="true">取消</button>
+        </div>
+    </div>
+</div>
+<!-- 侵权举报（Modal） -->
+
+<!-- 提交侵权提示模态框（Modal） -->
+<div class="modal fade" id="tribeIndexTortMsg"  aria-hidden="true">
+    <div class="vm-modal modal-succeedMsg">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+        <div class="table-cell">
+            <p>
+                提交侵权举报成功
+            </p>
+            <span>非常感谢您的参与，我们与您一起共同进步</span>
+        </div>
+
+
+    </div>
+</div>
+<!-- 提交侵权提示模态框（Modal） -->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="static/js/pc/dest/jquery-1.11.3.min.js"></script>

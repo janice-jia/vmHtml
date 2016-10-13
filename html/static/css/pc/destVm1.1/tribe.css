@@ -700,7 +700,9 @@
             border: 1px solid #bcbcbc;
             padding: 10px; }
       .modal-infoComic .artworkBox .artworkR .artworkCom-Box {
-        clear: both; }
+        clear: both;
+        height: 714px;
+        overflow-y: auto; }
         .modal-infoComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com {
           padding: 20px 16px 0 16px;
           border-top: 1px solid #b9c1c7;

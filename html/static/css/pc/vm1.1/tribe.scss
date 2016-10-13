@@ -996,6 +996,8 @@ $color-ffffff: #ffffff;
             }
             .artworkCom-Box{
                 clear: both;
+                height:714px;
+                overflow-y: auto;
                 .artworkCom-com{
                     padding: 20px 16px 0 16px;
                     border-top: 1px solid #b9c1c7;

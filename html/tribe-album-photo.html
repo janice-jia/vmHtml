@@ -817,6 +817,7 @@
         } , 1000 );
     });
 </script>
+<!-- 初始页面 向上滚动 封面显示完全 -->
 <script type="text/javascript">
     var scroll = document.body.scrollTop || document.documentElement.scrollTop;
     var scrollFunc = function (e) {
@@ -845,6 +846,197 @@
     //滚动滑轮触发scrollFunc方法  //ie 谷歌
     window.onmousewheel = document.onmousewheel = scrollFunc;
 </script>
+<!-- modal 向下滚动 加载新评论 -->
+<script type="text/javascript">
+   $("#infoPhoto").bind("scroll",function(e){
+       var scrollFunc = function (e) {
+           e = e || window.event;
+           if (e.wheelDelta) {  //判断浏览器IE，谷歌滑轮事件
+               if (e.wheelDelta < 0) { //当滑轮向下滚动时
+                   var scroll =this.scrollTop || this.scrollTop;
+                   if (scroll>=$(this).children(".vm-modal").height()-$(window).height()) {
+                       console.log("+++++++++++");
+                       $(".artworkCom-Box").append(
+                               '<div class="artworkCom-com">'+
+                                   '<p class="artworkCom-tit">热门评论</p>'+
+                                   '<div class="artworkCom-comL">'+
+                                       '<a href=""><img src="static/images/pc/vm1.1/test/t-2.jpg" alt=""/></a>'+
+                                   '</div>'+
+                                   '<div class="artworkCom-comR">'+
+                                       '<div class="artworkCom-name">'+
+                                           '<a href="">用户名用户名用户名用户名</a>'+
+                                       '</div>'+
+                                   '</div>'+
+                                   '<div class="clear"></div>'+
+                                   '<div class="artworkCom-con">'+
+                                       '<p>用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价</p>'+
+                                   '</div>'+
+                                   '<div class="artworkCom-time">'+
+                                       '<p>1分钟前</p>'+
+                                   '</div>'+
+                                   '<div class="artworkCom-del">'+
+                                       '<a href="">删除</a>'+
+                                       '<a href="">举报</a>'+
+                                       '<a href="" class="zan">99999</a>'+
+                                       '<a href="" class="reply">回复</a>'+
+                                   '</div>'+
+                               '</div>'+
+                               '<div class="artworkCom-com">'+
+                               '<div class="artworkCom-comL">'+
+                               '<a href=""><img src="static/images/pc/vm1.1/test/t-2.jpg" alt=""/></a>'+
+                               '</div>'+
+                               '<div class="artworkCom-comR">'+
+                               '<div class="artworkCom-name">'+
+                               '<a href="">用户名用户名用户名用户名</a>'+
+                               '</div>'+
+                               '</div>'+
+                               '<div class="clear"></div>'+
+                               '<div class="artworkCom-con">'+
+                               '<p>用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价</p>'+
+                               '</div>'+
+                               '<div class="artworkCom-time">'+
+                               '<p>1分钟前</p>'+
+                       '</div>'+
+                       '</div>'+
+                       '<div class="artworkCom-com">'+
+                               '<p class="artworkCom-tit">最新评论</p>'+
+                               '<div class="artworkCom-comL">'+
+                               '<a href=""><img src="static/images/pc/vm1.1/test/t-2.jpg" alt=""/></a>'+
+                               '</div>'+
+                               '<div class="artworkCom-comR">'+
+                               '<div class="artworkCom-name">'+
+                               '<a href="">用户名用户名用户名用户名</a>'+
+                               '</div>'+
+                               '</div>'+
+                               '<div class="clear"></div>'+
+                               '<div class="artworkCom-con">'+
+                               '<p>用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价</p>'+
+                               '</div>'+
+                               '<div class="artworkCom-time">'+
+                               '<p>1分钟前</p>'+
+                       '</div>'+
+                       '<div class="artworkCom-del">'+
+                               '<a href="">删除</a>'+
+                               '<a href="">举报</a>'+
+                               '<a href="" class="zan">99999</a>'+
+                               '<a href="" class="reply">回复</a>'+
+                               '</div>'+
+                               '</div>'
+                       );
+                   }
+               }
+           } else if (e.detail) {  //Firefox滑轮事
+               if (e.wheelDelta < 0) { //当滑轮向下滚动时
+                   var scroll =this.scrollTop || this.scrollTop;
+                   if (scroll>=$(this).children(".vm-modal").height()-$(window).height()) {
+                       console.log("+++++++++++");
+                       $(".artworkCom-Box").append(
+                               '<div class="artworkCom-com">'+
+                               '<p class="artworkCom-tit">热门评论</p>'+
+                               '<div class="artworkCom-comL">'+
+                               '<a href=""><img src="static/images/pc/vm1.1/test/t-2.jpg" alt=""/></a>'+
+                               '</div>'+
+                               '<div class="artworkCom-comR">'+
+                               '<div class="artworkCom-name">'+
+                               '<a href="">用户名用户名用户名用户名</a>'+
+                               '</div>'+
+                               '</div>'+
+                               '<div class="clear"></div>'+
+                               '<div class="artworkCom-con">'+
+                               '<p>用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价</p>'+
+                               '</div>'+
+                               '<div class="artworkCom-time">'+
+                               '<p>1分钟前</p>'+
+                               '</div>'+
+                               '<div class="artworkCom-del">'+
+                               '<a href="">删除</a>'+
+                               '<a href="">举报</a>'+
+                               '<a href="" class="zan">99999</a>'+
+                               '<a href="" class="reply">回复</a>'+
+                               '</div>'+
+                               '</div>'+
+                               '<div class="artworkCom-com">'+
+                               '<div class="artworkCom-comL">'+
+                               '<a href=""><img src="static/images/pc/vm1.1/test/t-2.jpg" alt=""/></a>'+
+                               '</div>'+
+                               '<div class="artworkCom-comR">'+
+                               '<div class="artworkCom-name">'+
+                               '<a href="">用户名用户名用户名用户名</a>'+
+                               '</div>'+
+                               '</div>'+
+                               '<div class="clear"></div>'+
+                               '<div class="artworkCom-con">'+
+                               '<p>用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价</p>'+
+                               '</div>'+
+                               '<div class="artworkCom-time">'+
+                               '<p>1分钟前</p>'+
+                               '</div>'+
+                               '</div>'+
+                               '<div class="artworkCom-com">'+
+                               '<p class="artworkCom-tit">最新评论</p>'+
+                               '<div class="artworkCom-comL">'+
+                               '<a href=""><img src="static/images/pc/vm1.1/test/t-2.jpg" alt=""/></a>'+
+                               '</div>'+
+                               '<div class="artworkCom-comR">'+
+                               '<div class="artworkCom-name">'+
+                               '<a href="">用户名用户名用户名用户名</a>'+
+                               '</div>'+
+                               '</div>'+
+                               '<div class="clear"></div>'+
+                               '<div class="artworkCom-con">'+
+                               '<p>用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价用户的评价</p>'+
+                               '</div>'+
+                               '<div class="artworkCom-time">'+
+                               '<p>1分钟前</p>'+
+                               '</div>'+
+                               '<div class="artworkCom-del">'+
+                               '<a href="">删除</a>'+
+                               '<a href="">举报</a>'+
+                               '<a href="" class="zan">99999</a>'+
+                               '<a href="" class="reply">回复</a>'+
+                               '</div>'+
+                               '</div>'
+                       );
+                   }
+               }
+           }
+       };
+       //给页面绑定滑轮滚动事件
+       if (this.addEventListener) {//firefox
+           this.addEventListener('DOMMouseScroll', scrollFunc, false);
+       }
+       //滚动滑轮触发scrollFunc方法  //ie 谷歌
+       window.onmousewheel = this.onmousewheel = scrollFunc;
 
+   });
+</script>
+<!--<script type="text/javascript">-->
+    <!--//var scroll = document.body.scrollTop || document.documentElement.scrollTop;-->
+    <!--var scrollFunc = function (e) {-->
+
+        <!--e = e || window.event;-->
+        <!--console.log(e);-->
+
+        <!--if (e.wheelDelta) {  //判断浏览器IE，谷歌滑轮事件-->
+            <!--if (e.wheelDelta < 0) { //当滑轮向上滚动时-->
+                <!--var scroll = document.body.scrollTop || document.documentElement.scrollTop;-->
+                <!--console.log("down");-->
+            <!--}-->
+        <!--} else if (e.detail) {  //Firefox滑轮事件-->
+            <!--if (e.detail > 0) { //当滑轮向上滚动时-->
+                <!--var scroll = document.body.scrollTop || document.documentElement.scrollTop;-->
+                <!--if (scroll == 0) {-->
+                    <!--$('#mhp-header').css({ marginTop: "0px"});-->
+                <!--}-->
+            <!--}-->
+        <!--}-->
+    <!--};-->
+    <!--//给页面绑定滑轮滚动事件-->
+    <!--if (document.addEventListener) {//firefox-->
+        <!--document.addEventListener('DOMMouseScroll', scrollFunc, false);-->
+    <!--}-->
+    <!--//滚动滑轮触发scrollFunc方法  //ie 谷歌-->
+    <!--window.onmousewheel = document.onmousewheel = scrollFunc;-->
+<!--</script>-->
 </body>
 </html>

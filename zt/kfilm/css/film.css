@@ -1,0 +1,161 @@
+/*
+*
+*/
+.body {
+  background: url("../images/bg.png");
+  min-height: 100%;
+  padding-bottom: 124px; }
+
+.banner {
+  background-image: url("../images/banner-01.png");
+  background-repeat: no-repeat;
+  height: 789px; }
+
+.container {
+  width: 1138px;
+  margin: 0 auto; }
+
+.container-bg {
+  background: url("../images/body-bg-icon.png") no-repeat center; }
+
+.filmbox {
+  background-color: #ffffff;
+  height: 694px;
+  padding: 60px;
+  position: relative;
+  margin-top: 76px; }
+  .filmbox .box-num, .filmbox .box-num-top {
+    position: absolute;
+    top: -50px;
+    left: -34px;
+    width: 160px;
+    height: 90px;
+    border-radius: 43px;
+    border: 2px solid #575655;
+    text-align: center;
+    line-height: 84px;
+    color: #64d0d7;
+    font-size: 36px;
+    font-weight: bold;
+    background-color: #ffffff;
+    -moz-box-shadow: -5px -5px 5px #F8F8F8 inset;
+    -webkit-box-shadow: -5px -5px 5px #F8F8F8 inset;
+    box-shadow: -5px -5px 5px #F8F8F8 inset; }
+  .filmbox .box-num-top:before {
+    background-image: url("../images/icon/icon-top.png");
+    width: 56px;
+    height: 52px;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: -30px;
+    left: -6px; }
+  .filmbox .box-left {
+    float: left;
+    margin-right: 60px; }
+    .filmbox .box-left img {
+      width: 404px;
+      height: 574px; }
+  .filmbox .box-right .film-title {
+    color: #2c2720;
+    margin-bottom: 30px; }
+    .filmbox .box-right .film-title h1 {
+      font-size: 44px;
+      margin-top: 15px;
+      margin-bottom: 12px; }
+    .filmbox .box-right .film-title p {
+      font-size: 34px; }
+  .filmbox .box-right .film-con p {
+    line-height: 30px;
+    color: #6c6254;
+    font-size: 18px;
+    margin-bottom: 10px; }
+  .filmbox .box-right .into-film {
+    margin-top: 30px;
+    background-color: #f9d3d1;
+    font-size: 16px;
+    color: #846765;
+    width: 164px;
+    height: 52px;
+    display: inline-block;
+    border-radius: 4px;
+    line-height: 52px;
+    text-align: center; }
+  .filmbox.icon-chair:before {
+    background-image: url("../images/icon-chair.png");
+    width: 151px;
+    height: 166px;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: -76px;
+    right: -52px; }
+  .filmbox.icon-projector:after {
+    background-image: url("../images/icon-projector.png");
+    width: 170px;
+    height: 150px;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: -48px;
+    right: -54px; }
+
+#cos-footer {
+  background-color: #c7c2b0;
+  padding-top: 50px; }
+  #cos-footer .footer-container {
+    width: 1000px;
+    margin: 0 auto;
+    color: #969388;
+    font-size: 14px;
+    padding-bottom: 36px; }
+    #cos-footer .footer-container .footer-left .txt-black {
+      clear: both;
+      color: #353430;
+      margin-top: 20px; }
+      #cos-footer .footer-container .footer-left .txt-black a {
+        color: #353430; }
+      #cos-footer .footer-container .footer-left .txt-black h1 {
+        font-size: 36px;
+        margin-top: 6px;
+        margin-bottom: 10px; }
+      #cos-footer .footer-container .footer-left .txt-black p {
+        font-size: 18px; }
+      #cos-footer .footer-container .footer-left .txt-black .logo-wbg {
+        margin-right: 13px;
+        margin-bottom: 10px;
+        float: left;
+        width: 76px;
+        height: 76px;
+        padding-top: 12px;
+        padding-left: 17px;
+        background-color: #353430;
+        border-radius: 18px; }
+      #cos-footer .footer-container .footer-left .txt-black:after {
+        content: "";
+        display: block;
+        clear: both; }
+    #cos-footer .footer-container .footer-right {
+      color: #353430; }
+      #cos-footer .footer-container .footer-right img {
+        width: 108px;
+        height: 108px;
+        margin-bottom: 8px; }
+      #cos-footer .footer-container .footer-right ul > li {
+        float: left;
+        margin-left: 27px;
+        text-align: center; }
+        #cos-footer .footer-container .footer-right ul > li .icon-weixin:before {
+          content: "";
+          display: inline-block;
+          background-image: url("../images/icon/icon-weixin-353430.png");
+          width: 18px;
+          height: 14px;
+          margin-right: 5px; }
+        #cos-footer .footer-container .footer-right ul > li .icon-weibo:before {
+          content: "";
+          display: inline-block;
+          background-image: url("../images/icon/icon-weibo-353430.png");
+          width: 18px;
+          height: 14px;
+          margin-right: 5px; }

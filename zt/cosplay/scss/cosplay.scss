@@ -1,0 +1,279 @@
+@charset "utf-8";
+/*
+*
+*/
+$color-bg-01: #2e220f ; //(body bg)
+$color-bg-02: #5c3f15; //(footer bg)
+$color-bg-03: #4b300a; //图片底板
+
+$color-txt-01:#ffba00; //(加粗橘黄色小标题)
+$color-txt-02:#deceb6; //(偏白色字体)
+$color-txt-03:#ffa600; //(橘黄色文字)
+$color-txt-04:#ccb799; //(底部版权文字)
+
+$color-border-01: #7b6442;
+
+$color-01:#171717;
+$color-02:#515151;
+$color-03:#909090;
+$color-04:#c1c1c1;//(输入框边框颜色)
+$color-05:#eeeeee;//(背景色)
+$color-06:#499af5;
+$color-07:#ffb30e;
+$color-08:#e43f3f;
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+.body{
+    background: url("../images/banner-01.jpg") no-repeat center 0 $color-bg-01;
+    min-height: 100%;
+    padding-top: 845px;//背景图片高度
+    padding-bottom: 124px;
+}
+.container{
+    width: 830px;
+    margin: 0 auto;
+}
+.conbox-1{
+    width: 100%;
+    height: 370px;
+    background-image: url("../images/boxbg-01.png");
+    &:before{
+        content: "";
+        display: inline-block;
+        background-image: url("../images/icon/icon-decorate-01.png");
+        width: 270px;
+        height: 152px;
+        margin-top: -69px;
+        margin-left: -3px;
+    }
+}
+.conbox-2{
+    width: 100%;
+    height: 340px;
+    background-image: url("../images/boxbg-02.png");
+    padding: 0 60px;
+    .active-con{
+        float: left;
+        padding-top: 78px;
+        color: $color-txt-02;
+        font-size: 18px;
+        >li{
+            margin-bottom: 20px;
+        }
+        b{
+            color: $color-txt-01;
+            font-size: 24px;
+            line-height: 24px;
+            margin-right: 10px;
+        }
+        span{
+            color: $color-txt-03;
+        }
+        li>ul{
+            vertical-align: text-top;
+            display: inline-block;
+            line-height: 28px;
+        }
+    }
+    //二维码
+    .twc{
+        margin-top: -120px;
+        clear: both;
+        color: $color-txt-02;
+        li{
+            text-align: center;
+            width: 134px;
+            display: inline-block;
+            .img-box{
+                width: 108px;
+                height: 108px;
+                border: 1px solid $color-border-01;
+                background-color: $color-bg-03;
+                text-align: center;
+                padding-top: 3px;
+                margin: 0 auto;
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            p{
+                margin-top: 10px;
+                font-size: 14px;
+            }
+        }
+    }
+    &:before{
+        content: "";
+        display: inline-block;
+        background-image: url("../images/icon/icon-decorate-02.png");
+        width: 230px;
+        height: 184px;
+        margin-top: -139px;
+        margin-right: -94px;
+        float: right;
+    }
+}
+.conbox-3{
+    width: 100%;
+    height: 1380px;
+    background-image: url("../images/boxbg-03.png");
+    color: $color-txt-02;
+    position: relative;
+
+    .title{
+        font-size: 24px;
+        line-height: 24px;
+        margin-left: 63px;
+        margin-bottom: 45px;
+    }
+    b{
+        color: $color-txt-01;
+    }
+    .active-prizes{
+        background-color: $color-bg-02;
+        width: 678px;
+        height: 348px;
+        border: 1px solid $color-border-01;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 40px;
+        padding: 0 55px;
+        p.tit{
+                font-size: 20px;
+                margin-top: 30px;
+                margin-bottom: 8px;
+        }
+        div{
+            display: inline-block;
+            .img-box{
+                margin-top: 34px;
+                margin-bottom: 12px;
+                width: 254px;
+                height: 172px;
+                padding: 6px;
+                background-color: $color-bg-03;
+            }
+        }
+        div.hr{
+            width:1px;
+            height: 287px;
+            margin-top: 28px;
+            background-color:$color-border-01;
+            background: -webkit-linear-gradient($color-bg-02, $color-border-01 ,$color-bg-02); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient($color-bg-02, $color-border-01 ,$color-bg-02); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient($color-bg-02, $color-border-01 ,$color-bg-02); /* Firefox 3.6 - 15 */
+            background: linear-gradient($color-bg-02, $color-border-01 ,$color-bg-02); /* 标准的语法 */
+        }
+        ul>li.hr{
+            margin: 0 23px;
+
+        }
+    }
+    p{
+        text-align: center;
+    }
+
+    &:before{
+        content: "";
+        display: inline-block;
+        background-image: url("../images/icon/icon-decorate-03.png");
+        width: 195px;
+        height: 214px;
+        margin-top: -127px;
+        margin-left: -96px;
+    }
+    &:after{
+        content: "";
+        display: inline-block;
+        background-image: url("../images/icon/icon-decorate-04.png");
+        width: 204px;
+        height: 138px;
+        position: absolute;
+        right:-19px;
+        bottom:-7px
+    }
+}
+
+#cos-footer{
+    background-color:$color-bg-02 ;
+    padding-top: 50px;
+    .footer-container{
+        width: 1000px;
+        margin:0 auto;
+        color: $color-txt-04;
+        font-size: 14px;
+        padding-bottom: 36px;
+        .footer-left{
+            .txt-write{
+                clear: both;
+                color: #fff;
+                margin-top: 20px;
+                a{
+                    color: #fff;
+                }
+                h1{
+                    font-size: 36px;
+                    margin-top: 6px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 18px;
+                }
+                .logo-wbg{
+                    //display: inline-block;
+                    margin-right: 13px;
+                    margin-bottom: 10px;
+                    float: left;
+                    width: 76px;
+                    height: 76px;
+                    padding-top: 12px;
+                    padding-left: 17px;
+                    background-color: #fff;
+                    border-radius: 18px;
+                }
+                &:after{
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+            }
+
+        }
+        .footer-right{
+            img{
+                width: 108px;
+                height: 108px;
+                margin-bottom: 8px;
+            }
+            ul>li{
+                float: left;
+                margin-left: 27px;
+                text-align: center;
+                .icon-weixin:before{
+                    content: "";
+                    display: inline-block;
+                    background-image: url("../images/icon/icon-weixin-deceb6.png");
+                    width: 18px;
+                    height: 14px;
+                    margin-right: 5px;
+                }
+                .icon-weibo:before{
+                    content: "";
+                    display: inline-block;
+                    background-image: url("../images/icon/icon-weibo-deceb6.png");
+                    width: 18px;
+                    height: 14px;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+    }
+}

@@ -19,7 +19,7 @@ var reload      = browserSync.reload;
 /*
  * default
  * */
-gulp.task('default', ['styles-wujinshenyu','styles-qijiwangzuo'],function(){
+gulp.task('default', ['styles-wujinshenyu','styles-qijiwangzuo','styles-cosplay'],function(){
 
 });
 
@@ -40,11 +40,16 @@ gulp.task('server', function() {
 gulp.task("watch",['server'], function(){
     gulp.watch('./zt/wujinshenyu/scss/*.scss', ['styles-wujinshenyu']);
     gulp.watch('./zt/qijiwangzuo/scss/*.scss', ['styles-qijiwangzuo']);
+    gulp.watch('./zt/cosplay/scss/*.scss', ['styles-cosplay']);
+
     gulp.watch('./zt/wujinshenyu/css/*.css').on('change', reload);
     gulp.watch('./zt/qijiwangzuo/css/*.css').on('change', reload);
+    gulp.watch('./zt/cosplay/css/*.css').on('change', reload);
+
     gulp.watch("./html/*.html").on('change', reload);
     gulp.watch("./zt/wujinshenyu/*.html").on('change', reload);
     gulp.watch("./zt/qijiwangzuo/*.html").on('change', reload);
+    gulp.watch("./zt/cosplay/*.html").on('change', reload);
 
 });
 
@@ -69,5 +74,13 @@ gulp.task('styles-qijiwangzuo', function() {
         .pipe(gulp.dest('./zt/qijiwangzuo/css/'))
 });
 
+// cosplay专题任务
+gulp.task('styles-cosplay', function() {
+    //编译sass
+    return sass('./zt/cosplay/scss/*.scss')
+
+    //保存编译之后的css文件到指定的目录
+        .pipe(gulp.dest('./zt/cosplay/css/'))
+});
 
 

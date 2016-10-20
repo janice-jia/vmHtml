@@ -308,10 +308,8 @@ a:focus {
 .work-body {
   width: 100%; }
   .work-body .work-banner {
-    width: 100%; }
-    .work-body .work-banner img {
-      max-width: 100%;
-      float: left; }
+    background: url("../images/banner.jpg") center 0 no-repeat;
+    height: 302px; }
 
 .work-bg {
   width: 100%;

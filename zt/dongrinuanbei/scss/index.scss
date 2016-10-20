@@ -7,12 +7,12 @@
 .cup-body{
     width: 100%;
     min-height: 1450px;
-    background: url("../images/b-1.png") center center no-repeat;
+    background: url("../images/b-1.png") center 0 no-repeat;
 }
 
 .cop-bg{
     width: 100%;
-    background: url("../images/b-2.png") center center no-repeat;
+    background: url("../images/b-2.png") center 0 no-repeat;
     padding-top: 300px;
     .cup-con{
         width: 1000px;
@@ -60,8 +60,6 @@
         min-height: 1310px;
     }
 }
-
-
 
 
 #cup-footer{

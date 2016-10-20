@@ -315,9 +315,9 @@ a:focus {
 .disney-banner {
   width: 100%;
   position: relative;
+  background: url("../images/banner.png") center 0 no-repeat;
+  height: 649px;
   z-index: 2; }
-  .disney-banner img {
-    max-width: 100%; }
 
 .disney-bg {
   margin-top: -52px;

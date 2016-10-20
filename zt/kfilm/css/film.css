@@ -7,9 +7,9 @@
   padding-bottom: 124px; }
 
 .banner {
-  background-image: url("../images/banner-01.png");
-  background-repeat: no-repeat;
-  height: 789px; }
+  width: 100%; }
+  .banner img {
+    max-width: 100%; }
 
 .container {
   width: 1138px;

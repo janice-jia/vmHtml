@@ -308,11 +308,11 @@ a:focus {
 .cup-body {
   width: 100%;
   min-height: 1450px;
-  background: url("../images/b-1.png") no-repeat; }
+  background: url("../images/b-1.png") center center no-repeat; }
 
 .cop-bg {
   width: 100%;
-  background: url("../images/b-2.png") no-repeat;
+  background: url("../images/b-2.png") center center no-repeat;
   padding-top: 300px; }
   .cop-bg .cup-con {
     width: 1000px;
@@ -340,6 +340,14 @@ a:focus {
         font-family: Simsun,sans-self;
         padding-top: 15px; }
 
+@media screen and (max-width: 1280px) {
+  .cop-bg .cup-con {
+    padding-top: 360px; }
+    .cop-bg .cup-con .cup-des {
+      height: 125px; }
+
+  .cup-body {
+    min-height: 1310px; } }
 #cup-footer {
   background-color: #c7c2b0;
   padding-top: 50px; }

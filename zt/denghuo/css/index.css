@@ -304,3 +304,85 @@ a:focus {
 /*鼠标手势*/
 .cur {
   cursor: pointer; }
+
+.work-body {
+  width: 100%; }
+  .work-body .work-banner {
+    width: 100%; }
+    .work-body .work-banner img {
+      max-width: 100%;
+      float: left; }
+
+.work-bg {
+  width: 100%;
+  background: url("../images/b-1.jpg") no-repeat;
+  padding-top: 20px; }
+
+.work-img {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center; }
+  .work-img .work-code {
+    padding: 40px 0; }
+
+#work-footer {
+  background-color: #a3aca3;
+  padding-top: 50px; }
+  #work-footer .footer-container {
+    width: 1000px;
+    margin: 0 auto;
+    color: #969388;
+    font-size: 14px;
+    padding-bottom: 36px; }
+    #work-footer .footer-container .footer-left .txt-black {
+      clear: both;
+      color: #353430;
+      margin-top: 20px; }
+      #work-footer .footer-container .footer-left .txt-black a {
+        color: #353430; }
+      #work-footer .footer-container .footer-left .txt-black h1 {
+        font-size: 36px;
+        margin-top: 6px;
+        margin-bottom: 10px; }
+      #work-footer .footer-container .footer-left .txt-black p {
+        font-size: 18px; }
+      #work-footer .footer-container .footer-left .txt-black .logo-wbg {
+        margin-right: 13px;
+        margin-bottom: 10px;
+        float: left;
+        width: 76px;
+        height: 76px;
+        padding-top: 12px;
+        padding-left: 17px;
+        background-color: #353430;
+        border-radius: 18px; }
+      #work-footer .footer-container .footer-left .txt-black:after {
+        content: "";
+        display: block;
+        clear: both; }
+    #work-footer .footer-container .footer-right {
+      color: #353430; }
+      #work-footer .footer-container .footer-right img {
+        width: 108px;
+        height: 108px;
+        margin-bottom: 8px; }
+      #work-footer .footer-container .footer-right ul > li {
+        float: left;
+        margin-left: 27px;
+        text-align: center; }
+        #work-footer .footer-container .footer-right ul > li .icon-weixin:before {
+          content: "";
+          display: inline-block;
+          background-image: url("../images/icon/icon-weixin-353430.png");
+          width: 18px;
+          height: 14px;
+          margin-right: 5px; }
+        #work-footer .footer-container .footer-right ul > li .icon-weibo:before {
+          content: "";
+          display: inline-block;
+          background-image: url("../images/icon/icon-weibo-353430.png");
+          width: 18px;
+          height: 14px;
+          margin-right: 5px; }
+    #work-footer .footer-container .copy {
+      color: #969388; }

@@ -4,3 +4,108 @@
 */
 
 @import "base";
+.work-body{
+    width: 100%;
+    .work-banner{
+        width: 100%;
+        img{
+            max-width: 100%;
+            float: left;
+        }
+    }
+
+}
+.work-bg{
+    width: 100%;
+    background: url("../images/b-1.jpg") no-repeat;
+    padding-top: 20px;
+}
+
+.work-img{
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    .work-code{
+        padding: 40px 0;
+    }
+}
+
+#work-footer{
+    background-color:#a3aca3 ;
+    padding-top: 50px;
+    .footer-container{
+        width: 1000px;
+        margin:0 auto;
+        color: #969388;
+        font-size: 14px;
+        padding-bottom: 36px;
+        .footer-left{
+            .txt-black{
+                clear: both;
+                color: #353430;
+                margin-top: 20px;
+                a{
+                    color: #353430;
+                }
+                h1{
+                    font-size: 36px;
+                    margin-top: 6px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 18px;
+                }
+                .logo-wbg{
+                    //display: inline-block;
+                    margin-right: 13px;
+                    margin-bottom: 10px;
+                    float: left;
+                    width: 76px;
+                    height: 76px;
+                    padding-top: 12px;
+                    padding-left: 17px;
+                    background-color: #353430;
+                    border-radius: 18px;
+                }
+                &:after{
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+            }
+
+        }
+        .footer-right{
+            color: #353430;
+            img{
+                width: 108px;
+                height: 108px;
+                margin-bottom: 8px;
+            }
+            ul>li{
+                float: left;
+                margin-left: 27px;
+                text-align: center;
+                .icon-weixin:before{
+                    content: "";
+                    display: inline-block;
+                    background-image: url("../images/icon/icon-weixin-353430.png");
+                    width: 18px;
+                    height: 14px;
+                    margin-right: 5px;
+                }
+                .icon-weibo:before{
+                    content: "";
+                    display: inline-block;
+                    background-image: url("../images/icon/icon-weibo-353430.png");
+                    width: 18px;
+                    height: 14px;
+                    margin-right: 5px;
+                }
+            }
+        }
+        .copy{
+            color: #969388;
+        }
+    }
+}

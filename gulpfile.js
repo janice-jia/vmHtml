@@ -43,7 +43,7 @@ gulp.task("watch",['server'], function(){
     gulp.watch('./zt/cosplay/scss/*.scss', ['styles-cosplay']);
     gulp.watch('./zt/kfilm/scss/*.scss', ['styles-kfilm']);
     gulp.watch('./zt/disney/scss/*.scss', ['styles-disney']);
-    gulp.watch('./zt/dongrinuanbei/scss/*.scss', ['styles-disney']);
+    gulp.watch('./zt/dongrinuanbei/scss/*.scss', ['styles-dongrinuanbei']);
 
     gulp.watch('./zt/wujinshenyu/css/*.css').on('change', reload);
     gulp.watch('./zt/qijiwangzuo/css/*.css').on('change', reload);

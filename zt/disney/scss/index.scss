@@ -1,0 +1,306 @@
+@charset "utf-8";
+/**
+* this is index stylesheet
+*/
+
+
+@import "base";
+.extend-box-shadow{
+    background: #ffffff;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.disney-body{
+    background: #5cbde8;
+}
+
+.disney-banner{
+    width: 100%;
+    position: relative;
+    img{
+        max-width: 100%;
+    }
+    z-index: 2;
+}
+
+.disney-bg{
+    margin-top: -52px;
+    padding-top: 155px;
+    position: relative;
+    z-index: 1;
+    min-width: 1230px;
+    background: url("../images/b-3.jpg") #5cbde8 no-repeat;
+}
+
+.disney-con{
+    width: 1230px;
+    margin: 0 auto;
+    padding-bottom: 160px;
+    .disney-leftCon{
+        margin-top: 155px;
+        width: 1012px;
+        height: 438px;
+        background: url("../images/b-1.png");
+        position: relative;
+        .disL-box{
+            width: 100%;
+            height:100%;
+        }
+        .disL-img{
+            margin: 40px;
+            height: 359px;
+            width: 252px;
+            float: left;
+            @extend .extend-box-shadow;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .disL-con{
+            padding-top: 40px;
+            width: 415px;
+            float: left;
+            color: #ffffff;
+            .disM-tit{
+                font-size: 44px;
+                font-weight: bold;
+                height: 72px;
+            }
+            .disM-con{
+                font-size: 18px;
+                line-height: 28px;
+                height: 235px;
+            }
+            .disM-btn{
+                width: 178px;
+                height: 52px;
+                line-height: 52px;
+                background: #ffdf82;
+                border-radius: 4px;
+                color: #745f21;
+                text-align: center;
+                a{
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                    color: #745f21;
+                }
+            }
+        }
+    }
+    .disney-leftRight{
+        position: relative;
+        margin-top: 155px;
+        float: right;
+        width: 1012px;
+        height: 438px;
+        background: url("../images/b-2.png");
+        .disR-box{
+            .disR-con{
+                padding-top: 40px;
+                width: 415px;
+                float: right;
+                color: #ffffff;
+                .disM-tit{
+                    font-size: 44px;
+                    font-weight: bold;
+                    height: 72px;
+                }
+                .disM-con{
+                    font-size: 18px;
+                    line-height: 28px;
+                    height: 235px;
+                }
+                .disM-btn{
+                    width: 178px;
+                    height: 52px;
+                    line-height: 52px;
+                    background: #ffdf82;
+                    border-radius: 4px;
+                    color: #745f21;
+                    text-align: center;
+                    a{
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
+                        color: #745f21;
+                    }
+                }
+            }
+        }
+        .disR-img{
+            width: 252px;
+            height: 359px;
+            float: right;
+            margin: 40px;
+            @extend .extend-box-shadow;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .disM1{
+        margin: 0;
+        &:after{
+            content: '';
+            width: 300px;
+            height: 328px;
+            display: block;
+            position: absolute;
+            right: -70px;
+            top: -105px;
+            background: url("../images/b-3.png");
+        }
+    }
+    .disM2{
+        .disR-box .disR-con{
+            width: 435px;
+        }
+        .disR-box .disR-con .disM-tit{
+            height: 125px;
+        }
+        .disR-box .disR-con .disM-con{
+            height: 170px;
+        }
+        &:before{
+            content: '';
+            width: 395px;
+            height: 404px;
+            display: block;
+            position: absolute;
+            left: -165px;
+            top: -115px;
+            background: url("../images/b-4.png");
+        }
+    }
+    .disM3{
+        &:after{
+            content: '';
+            width: 308px;
+            height: 550px;
+            display: block;
+            position: absolute;
+            right: -57px;
+            top: -100px;
+            background: url("../images/b-5.png");
+        }
+    }
+    .disM4{
+        &:before{
+            content: '';
+            width: 303px;
+            height: 528px;
+            display: block;
+            position: absolute;
+            left: -50px;
+            top: -90px;
+            background: url("../images/b-6.png");
+        }
+    }
+    .disM5{
+        &:after{
+            content: '';
+            width: 358px;
+            height: 591px;
+            display: block;
+            position: absolute;
+            right: -58px;
+            top: -150px;
+            background: url("../images/b-7.png");
+        }
+    }
+    .disM6{
+        &:before{
+            content: '';
+            width: 670px;
+            height: 586px;
+            display: block;
+            position: absolute;
+            left: -410px;
+            top: -149px;
+            background: url("../images/b-8.png");
+        }
+    }
+
+}
+
+
+#disney-footer {
+    background-color:#61a0dd ;
+    padding-top: 50px;
+    .footer-container {
+        width: 1000px;
+        margin: 0 auto;
+        color: #353430;
+        font-size: 14px;
+        padding-bottom: 36px;
+        .footer-left {
+            .txt-write {
+                clear: both;
+                color: #fff;
+                margin-top: 20px;
+                a {
+                    color: #fff;
+                }
+                h1 {
+                    font-size: 36px;
+                    margin-top: 6px;
+                    margin-bottom: 10px;
+                }
+                p {
+                    font-size: 18px;
+                }
+                .logo-wbg {
+                    margin-right: 13px;
+                    margin-bottom: 10px;
+                    float: left;
+                    width: 76px;
+                    height: 76px;
+                    padding-top: 12px;
+                    padding-left: 17px;
+                    background-color: #353430;
+                    border-radius: 18px;
+                }
+                &:after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+            }
+
+        }
+        .footer-right {
+            img {
+                width: 108px;
+                height: 108px;
+                margin-bottom: 8px;
+            }
+            ul > li {
+                float: left;
+                margin-left: 27px;
+                text-align: center;
+                .icon-weixin:before {
+                    content: "";
+                    display: inline-block;
+                    background-image: url("../images/icon/icon-weixin-353430.png");
+                    width: 18px;
+                    height: 14px;
+                    margin-right: 5px;
+                }
+                .icon-weibo:before {
+                    content: "";
+                    display: inline-block;
+                    background-image: url("../images/icon/icon-weibo-353430.png");
+                    width: 18px;
+                    height: 14px;
+                    margin-right: 5px;
+                }
+            }
+        }
+        .copy-con{
+            color: rgba(255, 255, 255, 0.3);
+        }
+    }
+}

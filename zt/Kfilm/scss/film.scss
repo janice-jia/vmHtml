@@ -24,8 +24,7 @@ $color-border-02: #575655; // (NO 描边)
     padding-bottom: 124px;
 }
 .banner{
-    background-image: url("../images/banner-01.png");
-    background-repeat: no-repeat;
+    background: url("../images/banner-01.png") center 0 no-repeat;
     height: 789px;
 }
 .container{

@@ -1,0 +1,539 @@
+@charset "UTF-8";
+/**
+* this is index stylesheet
+*/
+/**
+* this is a base stylesheet
+*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-family: "Microsoft YaHei","Arial","Helvetica Neue","Hiragino Sans GB","Simsun,sans-self";
+  font-size: 16px;
+  color: #515151;
+  background: #eeeeee;
+  word-break: break-all; }
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  line-height: 1.1; }
+
+table,
+td {
+  border-collapse: collapse;
+  border: none; }
+
+a, input, textarea, select {
+  font-family: "Microsoft YaHei";
+  outline: none; }
+
+textarea {
+  resize: none; }
+
+img, button {
+  border: none; }
+
+button {
+  font-family: "Microsoft YaHei";
+  cursor: pointer; }
+
+li {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6, small {
+  font-size: 100%; }
+
+a:link,
+a:visited,
+a:focus {
+  text-decoration: none; }
+
+*:focus {
+  outline: none !important; }
+
+/*font */
+.f12 {
+  font-size: 12px; }
+
+.f14 {
+  font-size: 14px; }
+
+.f16 {
+  font-size: 16px; }
+
+.f18 {
+  font-size: 18px; }
+
+.f22 {
+  font-size: 22px; }
+
+.f24 {
+  font-size: 24px; }
+
+/*文字样式（加粗|正常）*/
+.fb {
+  font-weight: bold; }
+
+.fn {
+  font-weight: normal; }
+
+/*段落缩进*/
+.t0 {
+  text-indent: 0; }
+
+.t2 {
+  text-indent: 2em; }
+
+/*文本行高*/
+.lh20 {
+  line-height: 20px; }
+
+.lh25 {
+  line-height: 25px; }
+
+.lh30 {
+  line-height: 30px; }
+
+/*字体*/
+.YaHei {
+  font-family: "Microsoft YaHei"; }
+
+/*字体对齐方式*/
+.tl {
+  text-align: left; }
+
+.tc {
+  text-align: center; }
+
+.tr {
+  text-align: right; }
+
+/*定位*/
+.pos-r {
+  position: relative; }
+
+.pos-a {
+  position: absolute; }
+
+.pos-f {
+  position: fixed; }
+
+/*内外边距*/
+.m5 {
+  margin: 5px; }
+
+.mt5 {
+  margin-top: 5px; }
+
+.mr5 {
+  margin-right: 5px; }
+
+.mb5 {
+  margin-bottom: 5px; }
+
+.ml5 {
+  margin-left: 5px; }
+
+.p5 {
+  padding: 5px; }
+
+.pt5 {
+  padding-top: 5px; }
+
+.pr5 {
+  padding-right: 5px; }
+
+.pb5 {
+  padding-bottom: 5px; }
+
+.pl5 {
+  padding-left: 5px; }
+
+.m10 {
+  margin: 10px; }
+
+.mt10 {
+  margin-top: 10px; }
+
+.mr10 {
+  margin-right: 10px; }
+
+.mb10 {
+  margin-bottom: 10px; }
+
+.ml10 {
+  margin-left: 10px; }
+
+.p10 {
+  padding: 10px; }
+
+.pt10 {
+  padding-top: 10px; }
+
+.pr10 {
+  padding-right: 10px; }
+
+.pb10 {
+  padding-bottom: 10px; }
+
+.pl10 {
+  padding-left: 10px; }
+
+.m15 {
+  margin: 15px; }
+
+.mt15 {
+  margin-top: 15px; }
+
+.mr15 {
+  margin-right: 15px; }
+
+.mb15 {
+  margin-bottom: 15px; }
+
+.ml15 {
+  margin-left: 15px; }
+
+.p15 {
+  padding: 15px; }
+
+.pt15 {
+  padding-top: 15px; }
+
+.pr15 {
+  padding-right: 15px; }
+
+.pb15 {
+  padding-bottom: 15px; }
+
+.pl15 {
+  padding-left: 15px; }
+
+.m20 {
+  margin: 20px; }
+
+.mt20 {
+  margin-top: 20px; }
+
+.mr20 {
+  margin-right: 20px; }
+
+.mb20 {
+  margin-bottom: 20px; }
+
+.ml20 {
+  margin-left: 20px; }
+
+.p20 {
+  padding: 20px; }
+
+.pt20 {
+  padding-top: 20px; }
+
+.pr20 {
+  padding-right: 20px; }
+
+.pb20 {
+  padding-bottom: 20px; }
+
+.pl20 {
+  padding-left: 20px; }
+
+.m25 {
+  margin: 25px; }
+
+.mt25 {
+  margin-top: 25px; }
+
+.mr25 {
+  margin-right: 25px; }
+
+.mb25 {
+  margin-bottom: 25px; }
+
+.ml25 {
+  margin-left: 25px; }
+
+.p25 {
+  padding: 25px; }
+
+.pt25 {
+  padding-top: 25px; }
+
+.pr25 {
+  padding-right: 25px; }
+
+.pb25 {
+  padding-bottom: 25px; }
+
+.pl25 {
+  padding-left: 25px; }
+
+/*浮动*/
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clear {
+  clear: both; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+/*鼠标手势*/
+.cur {
+  cursor: pointer; }
+
+.extend-box-shadow, .disney-con .disney-leftCon .disL-img, .disney-con .disney-leftRight .disR-img {
+  background: #ffffff;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5); }
+
+.disney-body {
+  background: #5cbde8; }
+
+.disney-banner {
+  width: 100%;
+  position: relative;
+  background: url("../images/banner.png") center 0 no-repeat;
+  height: 649px;
+  z-index: 2; }
+
+.disney-bg {
+  margin-top: -52px;
+  padding-top: 155px;
+  position: relative;
+  z-index: 1;
+  min-width: 1230px;
+  background: url("../images/b-3.jpg") #5cbde8 no-repeat; }
+
+.disney-con {
+  width: 1230px;
+  margin: 0 auto;
+  padding-bottom: 160px; }
+  .disney-con .disney-leftCon {
+    margin-top: 155px;
+    width: 1012px;
+    height: 438px;
+    background: url("../images/b-1.png");
+    position: relative; }
+    .disney-con .disney-leftCon .disL-box {
+      width: 100%;
+      height: 100%; }
+    .disney-con .disney-leftCon .disL-img {
+      margin: 40px;
+      height: 359px;
+      width: 252px;
+      float: left; }
+      .disney-con .disney-leftCon .disL-img img {
+        width: 100%;
+        height: 100%; }
+    .disney-con .disney-leftCon .disL-con {
+      padding-top: 40px;
+      width: 415px;
+      float: left;
+      color: #ffffff; }
+      .disney-con .disney-leftCon .disL-con .disM-tit {
+        font-size: 44px;
+        font-weight: bold;
+        height: 72px; }
+      .disney-con .disney-leftCon .disL-con .disM-con {
+        font-size: 18px;
+        line-height: 28px;
+        height: 235px; }
+      .disney-con .disney-leftCon .disL-con .disM-btn {
+        width: 178px;
+        height: 52px;
+        line-height: 52px;
+        background: #ffdf82;
+        border-radius: 4px;
+        color: #745f21;
+        text-align: center; }
+        .disney-con .disney-leftCon .disL-con .disM-btn a {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          color: #745f21; }
+  .disney-con .disney-leftRight {
+    position: relative;
+    margin-top: 155px;
+    float: right;
+    width: 1012px;
+    height: 438px;
+    background: url("../images/b-2.png"); }
+    .disney-con .disney-leftRight .disR-box .disR-con {
+      padding-top: 40px;
+      width: 415px;
+      float: right;
+      color: #ffffff; }
+      .disney-con .disney-leftRight .disR-box .disR-con .disM-tit {
+        font-size: 44px;
+        font-weight: bold;
+        height: 72px; }
+      .disney-con .disney-leftRight .disR-box .disR-con .disM-con {
+        font-size: 18px;
+        line-height: 28px;
+        height: 235px; }
+      .disney-con .disney-leftRight .disR-box .disR-con .disM-btn {
+        width: 178px;
+        height: 52px;
+        line-height: 52px;
+        background: #ffdf82;
+        border-radius: 4px;
+        color: #745f21;
+        text-align: center; }
+        .disney-con .disney-leftRight .disR-box .disR-con .disM-btn a {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          color: #745f21; }
+    .disney-con .disney-leftRight .disR-img {
+      width: 252px;
+      height: 359px;
+      float: right;
+      margin: 40px; }
+      .disney-con .disney-leftRight .disR-img img {
+        width: 100%;
+        height: 100%; }
+  .disney-con .disM1 {
+    margin: 0; }
+    .disney-con .disM1:after {
+      content: '';
+      width: 300px;
+      height: 328px;
+      display: block;
+      position: absolute;
+      right: -70px;
+      top: -105px;
+      background: url("../images/b-3.png"); }
+  .disney-con .disM2 .disR-box .disR-con {
+    width: 435px; }
+  .disney-con .disM2 .disR-box .disR-con .disM-tit {
+    height: 125px; }
+  .disney-con .disM2 .disR-box .disR-con .disM-con {
+    height: 170px; }
+  .disney-con .disM2:before {
+    content: '';
+    width: 395px;
+    height: 404px;
+    display: block;
+    position: absolute;
+    left: -165px;
+    top: -115px;
+    background: url("../images/b-4.png"); }
+  .disney-con .disM3:after {
+    content: '';
+    width: 308px;
+    height: 550px;
+    display: block;
+    position: absolute;
+    right: -57px;
+    top: -100px;
+    background: url("../images/b-5.png"); }
+  .disney-con .disM4:before {
+    content: '';
+    width: 303px;
+    height: 528px;
+    display: block;
+    position: absolute;
+    left: -50px;
+    top: -90px;
+    background: url("../images/b-6.png"); }
+  .disney-con .disM5:after {
+    content: '';
+    width: 358px;
+    height: 591px;
+    display: block;
+    position: absolute;
+    right: -58px;
+    top: -150px;
+    background: url("../images/b-7.png"); }
+  .disney-con .disM6:before {
+    content: '';
+    width: 670px;
+    height: 586px;
+    display: block;
+    position: absolute;
+    left: -410px;
+    top: -149px;
+    background: url("../images/b-8.png"); }
+
+#disney-footer {
+  background-color: #61a0dd;
+  padding-top: 50px; }
+  #disney-footer .footer-container {
+    width: 1000px;
+    margin: 0 auto;
+    color: #353430;
+    font-size: 14px;
+    padding-bottom: 36px; }
+    #disney-footer .footer-container .footer-left .txt-write {
+      clear: both;
+      color: #fff;
+      margin-top: 20px; }
+      #disney-footer .footer-container .footer-left .txt-write a {
+        color: #fff; }
+      #disney-footer .footer-container .footer-left .txt-write h1 {
+        font-size: 36px;
+        margin-top: 6px;
+        margin-bottom: 10px; }
+      #disney-footer .footer-container .footer-left .txt-write p {
+        font-size: 18px; }
+      #disney-footer .footer-container .footer-left .txt-write .logo-wbg {
+        margin-right: 13px;
+        margin-bottom: 10px;
+        float: left;
+        width: 76px;
+        height: 76px;
+        padding-top: 12px;
+        padding-left: 17px;
+        background-color: #353430;
+        border-radius: 18px; }
+      #disney-footer .footer-container .footer-left .txt-write:after {
+        content: "";
+        display: block;
+        clear: both; }
+    #disney-footer .footer-container .footer-right img {
+      width: 108px;
+      height: 108px;
+      margin-bottom: 8px; }
+    #disney-footer .footer-container .footer-right ul > li {
+      float: left;
+      margin-left: 27px;
+      text-align: center; }
+      #disney-footer .footer-container .footer-right ul > li .icon-weixin:before {
+        content: "";
+        display: inline-block;
+        background-image: url("../images/icon/icon-weixin-353430.png");
+        width: 18px;
+        height: 14px;
+        margin-right: 5px; }
+      #disney-footer .footer-container .footer-right ul > li .icon-weibo:before {
+        content: "";
+        display: inline-block;
+        background-image: url("../images/icon/icon-weibo-353430.png");
+        width: 18px;
+        height: 14px;
+        margin-right: 5px; }
+    #disney-footer .footer-container .copy-con {
+      color: rgba(255, 255, 255, 0.3); }

@@ -10,8 +10,11 @@ $color-txt-01:#ffba00; //(加粗橘黄色小标题)
 $color-txt-02:#deceb6; //(偏白色字体)
 $color-txt-03:#ffa600; //(橘黄色文字)
 $color-txt-04:#ccb799; //(底部版权文字)
+$color-txt-05: #ffba00; //直达微博
 
 $color-border-01: #7b6442;
+
+
 
 $color-01:#171717;
 $color-02:#515151;
@@ -83,9 +86,42 @@ $color-08:#e43f3f;
     }
     //二维码
     .twc{
-        margin-top: -120px;
+        margin-top: -187px;
         clear: both;
         color: $color-txt-02;
+
+        .goto-weibo{
+            float: right;
+            border-radius: 24px;
+            font-weight: bold;
+            font-size: 18px;
+            display: inline-block;
+            width: 138px;
+            height:50px;
+            line-height: 48px;
+            border: 1px solid $color-txt-05;
+            text-align: center;
+            margin-bottom: 33px;
+            color:$color-txt-05;
+            margin-right: 10px;
+
+            -moz-box-shadow:0 5px 0 #68561f;
+            -webkit-box-shadow:0 5px 0 #68561f;
+            box-shadow:0 5px 0 #68561f;
+
+            &:before{
+                background-image: url("../images/icon/icon-weibo-ffba00.png");
+                width: 24px;
+                height: 18px;
+                content: "";
+                display: inline-block;
+                margin-right: 5px;
+                vertical-align: middle;
+            }
+        }
+        ul{
+            clear: both;
+        }
         li{
             text-align: center;
             width: 134px;
@@ -132,6 +168,7 @@ $color-08:#e43f3f;
         line-height: 24px;
         margin-left: 63px;
         margin-bottom: 45px;
+        text-align: left;
     }
     b{
         color: $color-txt-01;
@@ -263,6 +300,7 @@ $color-08:#e43f3f;
                     width: 18px;
                     height: 14px;
                     margin-right: 5px;
+                    vertical-align: middle;
                 }
                 .icon-weibo:before{
                     content: "";
@@ -271,6 +309,7 @@ $color-08:#e43f3f;
                     width: 18px;
                     height: 14px;
                     margin-right: 5px;
+                    vertical-align: middle;
                 }
             }
         }

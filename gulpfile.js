@@ -42,17 +42,22 @@ gulp.task("watch",['server'], function(){
     gulp.watch('./zt/qijiwangzuo/scss/*.scss', ['styles-qijiwangzuo']);
     gulp.watch('./zt/cosplay/scss/*.scss', ['styles-cosplay']);
     gulp.watch('./zt/kfilm/scss/*.scss', ['styles-kfilm']);
+    gulp.watch('./zt/sunhuohuo/scss/*.scss', ['styles-sunhuohuo']);
 
     gulp.watch('./zt/wujinshenyu/css/*.css').on('change', reload);
     gulp.watch('./zt/qijiwangzuo/css/*.css').on('change', reload);
     gulp.watch('./zt/cosplay/css/*.css').on('change', reload);
     gulp.watch('./zt/kfilm/css/*.css').on('change', reload);
+    gulp.watch('./zt/sunhuohuo/css/*.css').on('change', reload);
+
 
     gulp.watch("./html/*.html").on('change', reload);
     gulp.watch("./zt/wujinshenyu/*.html").on('change', reload);
     gulp.watch("./zt/qijiwangzuo/*.html").on('change', reload);
     gulp.watch("./zt/cosplay/*.html").on('change', reload);
     gulp.watch("./zt/kfilm/*.html").on('change', reload);
+    gulp.watch("./zt/sunhuohuo/*.html").on('change', reload);
+
 
 });
 
@@ -95,3 +100,11 @@ gulp.task('styles-kfilm', function() {
         .pipe(gulp.dest('./zt/kfilm/css/'))
 });
 
+// sunhuohuo专题任务
+gulp.task('styles-sunhuohuo', function() {
+    //编译sass
+    return sass('./zt/sunhuohuo/scss/*.scss')
+
+    //保存编译之后的css文件到指定的目录
+        .pipe(gulp.dest('./zt/sunhuohuo/css/'))
+});

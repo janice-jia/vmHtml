@@ -1955,6 +1955,9 @@ $color-ffffff: #ffffff;
         h2 {
             font-weight: bold;
             margin-top: 8px;
+            width: 80px;
+            height: 13px;
+            overflow: hidden;
         }
         p {
             margin-top: 8px;

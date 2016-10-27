@@ -1,0 +1,9 @@
+# 过滤文件
+*.bak
+*.xml
+npm-debug.log
+/.sass-cache
+.idea/workspace.xml
+.idea/*
+/.idea
+/node_modules

@@ -1,0 +1,12 @@
+// 覆盖字体路径变量，以防止编译出错
+$ratchicons-path: "../../node_modules/amazeui-touch/fonts/";
+
+@import "../../node_modules/amazeui-touch/scss/amazeui.touch.scss";
+$color-1:#ffb305;
+
+
+.navbar-dark {
+    .navbar-nav-item{
+        color: $color-1;
+    }
+}

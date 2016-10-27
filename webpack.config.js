@@ -1,5 +1,3 @@
-var fs = require('fs')
-var path = require('path')
 var htmlWebpackPlugin = require('html-webpack-plugin')
 var webpack =require('webpack')
 

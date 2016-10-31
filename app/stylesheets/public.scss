@@ -1,0 +1,102 @@
+/*public start*/
+
+//主体颜色
+$color-1:#FFB30E;
+$color-2:#4BBCF6;
+
+//边框颜色
+$border-color-1:#D7D7D7;
+$border-color-2:#DDDDDD;
+
+//字体颜色
+$text-color-1:#171717;
+$text-color-2:#949494;
+$text-color-3:#3C3C3C;
+$text-color-4:#C3C3C3;
+
+//距离
+$xs: 0.3125rem;
+$sm: 0.625rem;
+$lg: 1.25rem;
+$xl: 2rem;
+
+//字体颜色类
+.text-color-1{
+    color: $text-color-1;
+}
+
+.text-color-2{
+    color: $text-color-2;
+}
+
+.text-color-3{
+    color: $text-color-3;
+}
+
+.text-color-4{
+    color: $text-color-4;
+}
+
+//字体大小类
+.text-size-xs{
+    font-size: rem-calc(14);
+}
+.text-size-sm{
+    font-size: rem-calc(16);
+}
+.text-size-lg{
+    font-size: rem-calc(18);
+}
+.text-size-xl{
+    font-size: rem-calc(20);
+}
+.text-size-xxl{
+    font-size: rem-calc(22);
+}
+.text-size-xxl{
+    font-size: rem-calc(24);
+}
+
+//背景
+.bgNone{
+    background: none;
+}
+.bgF{
+    background: #ffffff;
+}
+
+//按钮类
+.extend-btn{
+    width: 100%;
+    border: none;
+    line-height: 1;
+    padding: .75em 1em;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+    @extend .text-size-xs;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.btn-yellow{
+    background: $color-1;
+    color: #ffffff;
+    @extend .extend-btn;
+}
+
+.btn-blue{
+    background: $color-2;
+    color: #ffffff;
+    @extend .extend-btn
+}
+
+.btn-white{
+    background: #ffffff;
+    color: $text-color-3;
+    border: 1px solid $border-color-2;
+    border-radius: 0;
+    @extend .extend-btn
+}
+

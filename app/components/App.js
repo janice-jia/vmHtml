@@ -7,7 +7,6 @@ import {
     Container,
     Group,
     NavBar,
-    amStyles,
     OffCanvas,
     OffCanvasTrigger,
     List
@@ -22,35 +21,35 @@ export default React.createClass({
     render() {
         return (
             <Container>
+                <Container>{this.props.children}</Container>
                 <NavBar
                     title="vmaking"
                     leftNav={[{title: '',
-                    icon:'bars',
-                    component: OffCanvasTrigger,
-                    offCanvas:<OffCanvas>
-                            <List>
-                            <List.Item
-                              linkComponent={Link}
-                              linkProps={{
-                                to: `/`,
-                                onClick: this.onDismiss,
-                              }}
-                              title="Home"
-                            />
-                            <List.Item
-                              linkComponent={Link}
-                              linkProps={{
-                                to: '/test',
-                                onClick: this.onDismiss,
-                              }}
-                              title="Test"
-                            />
-                          </List>
-                        </OffCanvas>,
-                    isClone:true}]}
+                icon:'bars',
+                component: OffCanvasTrigger,
+                offCanvas:<OffCanvas>
+                        <List>
+                        <List.Item
+                          linkComponent={Link}
+                          linkProps={{
+                            to: `/`,
+                            onClick: this.onDismiss,
+                          }}
+                          title="Home"
+                        />
+                        <List.Item
+                          linkComponent={Link}
+                          linkProps={{
+                            to: '/test',
+                            onClick: this.onDismiss,
+                          }}
+                          title="Test"
+                        />
+                      </List>
+                    </OffCanvas>,
+                isClone:true}]}
                     rightNav={[{title:'right'}]}
                     amStyle="dark"/>
-                {this.props.children}
             </Container>
         )
     }

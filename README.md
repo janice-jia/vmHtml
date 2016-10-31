@@ -345,11 +345,9 @@
 			                url: 'http://www.ibanyi.com/api/user',
 			            })
 			            .done((data) => {
-			                console.info('dataSuccess',data);
 			                this.updateHomeSuccess(data);
 			            })
 			            .fail((jqXhr) => {
-			                console.info('dataFail',jqXhr);
 			                this.updateHomeFail(jqXhr);
 			            });
 			    }

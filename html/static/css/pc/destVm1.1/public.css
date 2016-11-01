@@ -1472,7 +1472,10 @@
       border-radius: 50%; }
     .more-tribe-list li h2 {
       font-weight: bold;
-      margin-top: 8px; }
+      margin-top: 8px;
+      width: 80px;
+      height: 13px;
+      overflow: hidden; }
     .more-tribe-list li p {
       margin-top: 8px; }
 

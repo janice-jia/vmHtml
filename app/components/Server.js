@@ -16,7 +16,6 @@ export default React.createClass({
         return {}
     },
     render() {
-        //var value = this.state.value;
         return <View>
             <Container>
                 <Header></Header>

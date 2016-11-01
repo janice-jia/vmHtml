@@ -1,6 +1,9 @@
 .mt20 {
   margin-top: 20px; }
 
+.mb20 {
+  margin-bottom: 20px; }
+
 #create-tribe {
   background-color: #fff; }
   #create-tribe .create-title {
@@ -10,7 +13,7 @@
     margin-bottom: 5px; }
   #create-tribe .create-status {
     text-align: center;
-    margin-bottom: 20px; }
+    margin-bottom: 30px; }
     #create-tribe .create-status li {
       width: 90px;
       height: 90px;
@@ -30,6 +33,8 @@
     margin-bottom: 30px;
     margin-top: 10px;
     padding-left: 80px; }
+    #create-tribe .form-group.mb66 {
+      margin-bottom: 66px; }
     #create-tribe .form-group .col-sm-10 {
       width: 600px;
       padding: 0; }
@@ -37,7 +42,9 @@
       width: 70px;
       padding-right: 10px; }
     #create-tribe .form-group label {
-      padding-left: 0; }
+      padding-left: 0;
+      font-weight: normal;
+      font-size: 14px; }
     #create-tribe .form-group p {
       margin-top: 10px;
       color: #999; }
@@ -146,6 +153,9 @@
         width: 100%;
         height: 100%;
         cursor: pointer; }
+  #create-tribe .nextStep a {
+    display: inline-block;
+    margin-right: 10px; }
   #create-tribe .nextStep:before {
     content: "";
     min-height: 1px;
@@ -155,7 +165,7 @@
   #create-tribe .create-finish {
     text-align: center;
     min-height: 600px;
-    margin-top: 86px; }
+    margin-top: 80px; }
     #create-tribe .create-finish .finish-icon {
       font-size: 20px;
       line-height: 74px;

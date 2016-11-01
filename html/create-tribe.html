@@ -94,8 +94,8 @@
         <li>提交审核</li>
     </ul>
     <!--  form 的 class 可以不加 只为区分步骤 -->
-    <form class="create-1" action="">
-        <div class="form-group">
+    <form id="create-1" class="create-1" action="">
+        <div class="form-group mb66">
             <label class="col-sm-2 control-label">部落名称</label>
             <div class="col-sm-10">
                 <input type="text" name="tribe-name" class="form-control" maxlength="10" minlength="2">
@@ -166,13 +166,16 @@
         </div>
         <div class="form-group nextStep">
             <div class="col-sm-10">
-                <button type="button" class="btn-blue-100">下一步</button>
+                <a  href="javascript:scroll(0,0)">
+                    <button type="button" class="btn-blue-100">下一步</button>
+                </a>
+
             </div>
         </div>
     </form>
-    <form class="create-2" style="display:none;" action="">
+    <form id="create-2" class="create-2" style="display:none;" action="">
         <div class="form-group">
-            <label class="col-sm-2 control-label">酋长信息</label>
+            <label class="col-sm-2 control-label mb20">酋长信息</label>
             <p class="clear">请准确填写以下信息，部落创建后，申请者将成为该部落的酋长 <br/>
                 酋长拥有一个部落的最高管理权限，可以任命和罢免助理酋长，并对助理酋长的违规行为负连带责任。</p>
         </div>
@@ -198,7 +201,7 @@
                     <div class="id-img">
                         <input type="file" id="idCard-face" class="opacity-0">
                         <!--<div class="idcard-box">-->
-                            <!--<b class="del-idcard opacity-0"></b>-->
+                        <!--<b class="del-idcard opacity-0"></b>-->
                         <!--</div>-->
                     </div>
                     <p>手持身份证正面照片</p>
@@ -212,8 +215,8 @@
                     <div class="id-img">
                         <input type="file" id="idCard-back" class="opacity-0">
                         <!--<div class="idcard-box">-->
-                            <!--&lt;!&ndash;<img src="static/images/pc/vm1.1/jpg/tribe_2.jpg" alt="">&ndash;&gt;-->
-                            <!--<b class="del-idcard opacity-0"></b>-->
+                        <!--&lt;!&ndash;<img src="static/images/pc/vm1.1/jpg/tribe_2.jpg" alt="">&ndash;&gt;-->
+                        <!--<b class="del-idcard opacity-0"></b>-->
                         <!--</div>-->
                     </div>
                     <p>手持身份证背面照片</p>
@@ -239,12 +242,17 @@
         </div>
         <div class="form-group nextStep">
             <div class="col-sm-10">
-                <button type="button" class="btn-blue-100">上一步</button>
-                <button type="button" class="btn-blue-100">提交申请</button>
+                <a href="javascript:scroll(0,0)">
+                    <button type="button" class="btn-blue-100" >上一步</button>
+                </a>
+                <a  href="javascript:scroll(0,0)" class="btn-blue-100 submit">
+                    提交申请
+                </a>
+
             </div>
         </div>
     </form>
-    <div class="create-3 create-finish" style="display:none;">
+    <div id="create-3" class="create-3 create-finish" style="display:none;">
         <h2 class="finish-icon">您的申请信息已经成功提交</h2>
         <p>
             我们正在努力地进行审核，审核通过后将会以站内信或短信的形式通知您，请及时接收。
@@ -314,7 +322,7 @@
 <script src="static/js/pc/dest/bootstrap.min.js"></script>
 <script type="text/javascript">
     //删除图片
-    $(document).delegate('.del-idcard','click',function(event){
+    $(document).delegate('.del-idcard', 'click', function (event) {
         var e = event.target;
         //console.log($(e).parent().siblings('input').val());
         $(e).parent().siblings('input').val("");
@@ -329,7 +337,7 @@
                     '</div>';
             var e = event.target;
             $(e).parent().append(idcardBox);
-            $(e).next('.idcard-box').children('img').attr('src',data);
+            $(e).next('.idcard-box').children('img').attr('src', data);
         });
     });
     function run(input_file, get_data) {
@@ -357,6 +365,21 @@
         }
     }
 
+</script>
+
+<script>
+    $('#create-1 .nextStep button').click(function () {
+        $('#create-1').css({'display': 'none'});
+        $('#create-2').css({'display': 'block'});
+    });
+    $('#create-2 .nextStep button').click(function () {
+        $('#create-2').css({'display': 'none'});
+        $('#create-1').css({'display': 'block'});
+    });
+    $('#create-2 .nextStep .submit').click(function () {
+        $('#create-2').css({'display': 'none'});
+        $('#create-3').css({'display': 'block'});
+    });
 </script>
 
 </body>

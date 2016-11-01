@@ -1,12 +1,16 @@
 import React from 'react'
-import { Route, IndexRoute } from 'react-router'
+import {Router, Route, IndexRoute, browserHistory} from 'react-router'
 import App from './components/App'
 import Home from './components/Home'
-import Test from './components/Test'
+import Server from './components/Server'
+import Require from './components/Require'
 
 module.exports = (
-  <Route path="/" component={App}>
-    <IndexRoute component={Home}/>
-    <Route path="/test" component={Test}/>
-  </Route>
+    <Router history={browserHistory}>
+        <Route path="/" component={App}>
+            <IndexRoute component={Home}/>
+            <Route path="/server" component={Server}/>
+            <Route path="/require" component={Require}/>
+        </Route>
+    </Router>
 )

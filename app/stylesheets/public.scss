@@ -38,22 +38,31 @@ $xl: 2rem;
 }
 
 //字体大小类
-.text-size-xs{
+.text-size-12{
+    font-size: rem-calc(12);
+}
+.text-size-13{
+    font-size: rem-calc(13);
+}
+.text-size-14{
     font-size: rem-calc(14);
 }
-.text-size-sm{
+.text-size-15{
+    font-size: rem-calc(15);
+}
+.text-size-16{
     font-size: rem-calc(16);
 }
-.text-size-lg{
+.text-size-18{
     font-size: rem-calc(18);
 }
-.text-size-xl{
+.text-size-20{
     font-size: rem-calc(20);
 }
-.text-size-xxl{
+.text-size-22{
     font-size: rem-calc(22);
 }
-.text-size-xxl{
+.text-size-24{
     font-size: rem-calc(24);
 }
 
@@ -74,7 +83,7 @@ $xl: 2rem;
     border-radius: 4px;
     display: inline-block;
     text-align: center;
-    @extend .text-size-xs;
+    @extend .text-size-14;
     &:hover{
         cursor: pointer;
     }

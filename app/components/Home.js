@@ -4,18 +4,6 @@ import HomeStore from '../stores/HomeStore'
 import HomeActions from '../actions/HomeActions'
 import Header from './Header'
 
-const sliderIntance = (
-    <Slider>
-        <Slider.Item>
-            <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg" />
-        </Slider.Item>
-        <Slider.Item>
-            <img src="http://s.amazeui.org/media/i/demos/bing-2.jpg" />
-        </Slider.Item>
-    </Slider>
-);
-
-
 const img = <img className="home-tribe-media" width="44" height="44" src="http://s.amazeui.org/media/i/demos/bing-1.jpg" />
 const tit = (
     <div className="home-tribe-item">
@@ -25,13 +13,16 @@ const tit = (
 )
 const btn = <div className="home-tribe-tag">海贼王部落</div>
 
-
 class Home extends React.Component{
+    setHeight(){
+        console.info('myImg',this.refs);
+    }
+
     constructor(props) {
         super(props);
         this.state = HomeStore.getState();
-        this.onChange = this.onChange.bind(this);
         this.state.home = [];
+        this.onChange = this.onChange.bind(this);
     }
 
     componentDidMount() {
@@ -47,23 +38,26 @@ class Home extends React.Component{
         this.setState(state)
     }
 
-    handleToggleClick() {
-        this.setState(prevState => ({
-            showWarning: !prevState.showWarning
-        }));
-    }
-
     render() {
         return <View>
                 <Container scrollable className="home">
                     <Header></Header>
-                    <div className="home-slide">{sliderIntance}</div>
+                    <div className="home-slide">
+                        <Slider>
+                            <Slider.Item>
+                                <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg" />
+                            </Slider.Item>
+                            <Slider.Item>
+                                <img src="http://s.amazeui.org/media/i/demos/bing-2.jpg" />
+                            </Slider.Item>
+                        </Slider>
+                    </div>
                     <div className="home-tribe border-d7d7d7 bgF">
                         <Group noPadded className="margin-0">
                             <h5 className="home-group-header margin-sm">部落</h5>
                             <Grid avg={4}>
                                 <Col className="padding-v-0">
-                                    <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg" />
+                                    <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg" ref="myImg" onLoad={this.setHeight()}/>
                                 </Col>
                                 <Col className="padding-v-0">
                                     <img src="http://s.amazeui.org/media/i/demos/bing-2.jpg" />
@@ -75,6 +69,7 @@ class Home extends React.Component{
                                     <img src="http://s.amazeui.org/media/i/demos/bing-4.jpg" />
                                 </Col>
                             </Grid>
+
                             <Grid avg={4} className="text-center">
                                 <Col className="padding-v-xs">
                                     <p className="home-tribe-name">剑灵部落</p>

@@ -12,6 +12,10 @@ import {
 import Header from './Header'
 
 export default React.createClass({
+    contextTypes: {
+        router: React.PropTypes.object
+    },
+
     getInitialState: function(){
         return {}
     },
@@ -26,7 +30,7 @@ export default React.createClass({
                                 <List.Item
                                     title = "女爵"
                                     subTitle = "发行公司：环球唱片"
-                                    href = "http://www.vmaking.com/"
+                                    href = "server/info/01"
                                     desc = "服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述服务描述"
                                     target = "_blank"
                                 >
@@ -43,16 +47,16 @@ export default React.createClass({
                                 <List.Item
                                     title = "女爵"
                                     subTitle = "发行公司：环球唱片"
-                                    href = "http://www.vmaking.com/"
+                                    href = "server/info/01"
                                     desc = "111"
                                     target = "_blank"
                                 >
                                     <Grid align="between">
                                         <Col cols={2} className="padding-0">
-                                            <span className="text-size-xs text-color-4">交易成功</span>
+                                            <span className="text-size-12 text-color-4">交易成功</span>
                                         </Col>
                                         <Col cols={2} className=" text-right">
-                                            <span className="text-size-xs text-color-4">北京</span>
+                                            <span className="text-size-12 text-color-4">北京</span>
                                         </Col>
                                     </Grid>
                                 </List.Item>
@@ -63,16 +67,16 @@ export default React.createClass({
                                 <List.Item
                                     title = "女爵"
                                     subTitle = "发行公司：环球唱片"
-                                    href = "http://www.vmaking.com/"
+                                    href = "server/info/01"
                                     desc = "111"
                                     target = "_blank"
                                 >
                                     <Grid align="between">
                                         <Col cols={2} className="padding-0">
-                                            <span className="text-size-xs text-color-4">交易成功</span>
+                                            <span className="text-size-12 text-color-4">交易成功</span>
                                         </Col>
                                         <Col cols={2} className=" text-right">
-                                            <span className="text-size-xs text-color-4">北京</span>
+                                            <span className="text-size-12 text-color-4">北京</span>
                                         </Col>
                                     </Grid>
                                 </List.Item>
@@ -83,7 +87,7 @@ export default React.createClass({
                                 <List.Item
                                     title = "女爵"
                                     subTitle = "发行公司：环球唱片"
-                                    href = "http://www.vmaking.com/"
+                                    href = "server/info/01"
                                     desc = "111"
                                     target = "_blank"
                                 >
@@ -101,6 +105,7 @@ export default React.createClass({
                     </Tabs>
                 </div>
             </Container>
+            {this.props.children}
         </View>;
     }
 })

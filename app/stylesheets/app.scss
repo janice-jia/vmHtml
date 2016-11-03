@@ -6,6 +6,8 @@ $ratchicons-path: "../../node_modules/amazeui-touch/fonts/";
 //引入自定义样式文件
 @import "./public";
 @import "./home";
-@import "server";
+@import "./server";
+@import "./serverInfo";
+@import "./require";
 
 

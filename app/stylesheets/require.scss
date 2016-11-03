@@ -1,0 +1,39 @@
+.require-tabs-list {
+    border-bottom: 1px solid $border-color-1;
+    .tabs-nav {
+        button {
+            border: none;
+            color: $text-color-3;
+            background: none;
+            &:hover {
+                border: none;
+                background: none;
+                color: $text-color-3;
+            }
+        }
+        button.active {
+            background: none;
+            border: none;
+            border-bottom: 2px solid $color-1;
+            color: $color-1;
+        }
+    }
+    .list {
+        .item {
+            border: 1px solid $border-color-1;
+        }
+        .item-desc {
+            @include line-clamp(3);
+            @extend .text-size-12;
+            color: $text-color-4;
+        }
+        .item-title {
+            color: $color-1;
+            @extend .text-size-14;
+        }
+        .item-subtitle {
+            color: $text-color-3;
+            @extend .text-size-12;
+        }
+    }
+}

@@ -26,7 +26,7 @@ export default React.createClass({
                                 <List.Item
                                     title = "12345元"
                                     subTitle = "名称"
-                                    href = "http://www.vmaking.com/"
+                                    href = "/require/info/01"
                                     desc = "需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述"
                                     target = "_blank"
                                 >
@@ -43,7 +43,7 @@ export default React.createClass({
                                 <List.Item
                                     title = "女爵"
                                     subTitle = "发行公司：环球唱片"
-                                    href = "http://www.vmaking.com/"
+                                    href = "/require/info/01"
                                     desc = "需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述"
                                     target = "_blank"
                                 >
@@ -63,7 +63,7 @@ export default React.createClass({
                                 <List.Item
                                     title = "女爵"
                                     subTitle = "发行公司：环球唱片"
-                                    href = "http://www.vmaking.com/"
+                                    href = "/require/info/01"
                                     desc = "111"
                                     target = "_blank"
                                 >
@@ -83,7 +83,7 @@ export default React.createClass({
                                 <List.Item
                                     title = "女爵"
                                     subTitle = "发行公司：环球唱片"
-                                    href = "http://www.vmaking.com/"
+                                    href = "/require/info/01"
                                     desc = "111"
                                     target = "_blank"
                                 >

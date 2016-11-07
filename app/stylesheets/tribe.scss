@@ -68,9 +68,10 @@ $color-border-01:#ddd;
         }
     }
     .tribe-user-btn{
-        border: 1px solid $border-color-3;
-        padding: 0 $sm;
-        @extend .text-color-3;
+        border: 1px solid $border-color-5;
+        //width: 75px;
+        padding:$sm;
+        @extend .text-color-5;
         @extend .text-size-14;
     }
 }

@@ -41,7 +41,6 @@ $color-border-01:#ddd;
     }
 
 }
-
 /*部落 详细 start*/
 .tribe-info-user{
     border-bottom: 1px solid $border-color-1;
@@ -58,20 +57,109 @@ $color-border-01:#ddd;
         }
         .item-subtitle{
             margin-bottom: $sm;
+            font-weight: normal;
             @extend .text-size-13;
             color: $color-txt-02;
         }
         .item-desc{
+            font-weight: normal;
             @extend .text-size-12;
             -webkit-line-clamp:1;
             color: $color-txt-02;
+            padding-right: 30px;
         }
     }
     .tribe-user-btn{
         border: 1px solid $border-color-5;
-        //width: 75px;
         padding:$sm;
         @extend .text-color-5;
-        @extend .text-size-14;
+        @extend .text-size-12;
+    }
+
+    .tirbe-info-tab{
+        text-align: center;
+        //p{
+        //    display: inline-block;
+        //    width: 49%;
+        //    margin: 0;
+        //}
+        a{
+            display: inline-block;
+            width: 49%;
+            @extend .text-size-14;
+            @extend .text-color-3;
+        }
+        hr{
+            display: inline-block;
+            height: 25px;
+            margin: $sm 0;
+            border-right-width:1px;
+            vertical-align: middle;
+        }
     }
 }
+.tribe-toTopList{
+    border: 1px solid $color-border-01;
+    ul{
+        padding:0;
+    }
+    li{
+        list-style: none;
+        line-height: 26px;
+        @extend .text-size-14;
+        color: $text-color-3;
+    }
+    .icon-toTop{
+        &:before{
+            width: 17px;
+            height: 17px;
+            background-color:$color-1;
+            display: inline-block;
+            margin-right: $sm;
+            content: "顶";
+            line-height: 17px;
+            text-align: center;
+            color: #fff;
+            border-radius: 2px;
+            //vertical-align: middle;
+        }
+    }
+}
+
+//部落 话题border
+.tribe-topic-list{
+    .border-d7d7d7{
+        border: 1px solid $border-color-1;
+    }
+    .home-tribe-name{
+        width: 100%;
+        height: 1.2rem;
+        overflow: hidden;
+        @extend .text-size-12;
+        color: $text-color-2;
+    }
+    .home-tribe-media{
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+    }
+    .home-tribe-tag{
+        border: 1px solid $border-color-1;
+        padding: 0 $sm;
+    }
+    .home-tribe-item{
+        p{
+            line-height: 1.5;
+            height: 1.5rem;
+            overflow: hidden;
+            margin: 0;
+        }
+    }
+    .item{
+        border: none;
+    }
+    .home-tribe-desc{
+        @include line-clamp();
+    }
+}
+

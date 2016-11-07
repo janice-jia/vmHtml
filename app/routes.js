@@ -6,6 +6,8 @@ import Server from './components/Server'
 import ServerInfo from './components/ServerInfo'
 import Require from './components/Require'
 import RequireInfo from './components/RequireInfo'
+import Tribe from './components/Tribe'
+import TribeInfo from './components/TribeInfo'
 
 module.exports = (
     <Router history={browserHistory}>
@@ -15,6 +17,8 @@ module.exports = (
             <Route path="/server/info/:serverId" component={ServerInfo}/>
             <Route path="/require" component={Require}/>
             <Route path="/require/info/:requireId" component={RequireInfo}/>
+            <Route path="/tribe" component={Tribe}/>
+            <Route path="/tribe/info/:tribeId" component={TribeInfo}/>
         </Route>
     </Router>
 )

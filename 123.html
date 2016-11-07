@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="target-densitydpi=device-dpi" />
+    <meta name="viewport" content="target-densitydpi=high-dpi" />
+    <meta name="viewport" content="target-densitydpi=medium-dpi" />
+    <meta name="viewport" content="target-densitydpi=low-dpi" />
+    <meta name="viewport" content="target-densitydpi=200" />
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"/>
+    <meta name="viewport" content="height=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+    <title th:text="${title}"></title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            width: 100%
+        }
+
+        .topic-box{
+            padding: 20px;
+        }
+        .topic-title{
+            margin-top: 10px;
+            font-size: 36px;
+            color: #1c212c;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+        .topic-p{
+            text-indent:2em;
+            font-size: 28px;
+            color: #949494;
+        }
+        .topic-img{
+            margin-top: 20px;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="topic-box" th:utext="${content}">
+   <h1 class="topic-title">标题名称标题名称标题</h1>
+    <p class="topic-p">
+        《守望先锋》动画系列最新一集动画系列最新一集动画系列最新一集动画系列最新一集动画系列最新一集动画系列最新一集动画系列最新一集动画系列最新一集动画系列最新一集动画系列最新一集动画系列最新一集动画系列最新一集动画系列最新一集动画系列最新一集动画系列最新一集动画系列最新一集
+    </p>
+    <div class="topic-img">
+        <img src="http://lorempixel.com/160/160/people/" alt="">
+    </div>
+</div>
+</body>
+</html>

@@ -31,7 +31,7 @@ class Header extends React.Component{
                         <List.Item
                           linkComponent={NavLink}
                           linkProps={{
-                            to: '/tribes',
+                            to: '/tribe',
                             onClick: this.onDismiss,
                           }}
                           title="部落"

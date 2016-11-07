@@ -1,0 +1,76 @@
+$color-txt-01:#3c3c3c;
+$color-txt-02:#949494;
+
+$color-border-01:#ddd;
+
+
+.tribe{
+    .t-index-list{
+        margin: 0;
+        li{
+            border-color: $color-border-01;
+        }
+        .item-media{
+            width:60px;
+            height: 60px;
+            border: 1px solid $color-border-01;
+        }
+        .item-main{
+            .item-title{
+                margin-bottom: $sm;
+                font-weight: bold;
+                @extend .text-size-14;
+            }
+            .item-subtitle{
+                margin-bottom: $sm;
+                @extend .text-size-13;
+                color: $color-txt-02;
+            }
+            .item-desc{
+                @extend .text-size-12;
+                -webkit-line-clamp:1;
+                color: $color-txt-02;
+            }
+        }
+        .item-title-row>.icon-right-nav{
+            filter:alpha(opacity=0);       /* IE */
+            -moz-opacity:0;              /* 老版Mozilla */
+            -khtml-opacity:0;              /* 老版Safari */
+            opacity: 0;           /* 支持opacity的浏览器*/
+        }
+    }
+
+}
+
+/*部落 详细 start*/
+.tribe-info-user{
+    border-bottom: 1px solid $border-color-1;
+    .item-media{
+        width:60px;
+        height: 60px;
+        border: 1px solid $color-border-01;
+    }
+    .item-main{
+        .item-title{
+            margin-bottom: $sm;
+            font-weight: bold;
+            @extend .text-size-14;
+        }
+        .item-subtitle{
+            margin-bottom: $sm;
+            @extend .text-size-13;
+            color: $color-txt-02;
+        }
+        .item-desc{
+            @extend .text-size-12;
+            -webkit-line-clamp:1;
+            color: $color-txt-02;
+        }
+    }
+    .tribe-user-btn{
+        border: 1px solid $border-color-3;
+        padding: 0 $sm;
+        @extend .text-color-3;
+        @extend .text-size-14;
+    }
+}

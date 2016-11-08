@@ -84,16 +84,16 @@ export default React.createClass({
                 </Group>
 
                 <Group noPadded className="margin-v">
-                    <div className="padding-v require-badge">
+                    <div className="padding-top require-badge">
                         <p className="text-size-14">
                             <Badge></Badge>
-                            <span className="padding-left-sm">热门评论</span></p>
+                            <span className="padding-left-sm">热门评论</span>
+                        </p>
                         <List className="comments">
                             <List.Item
                                 media={<img className="comments-avatar" width="44" height="44" src="http://s.amazeui.org/media/i/demos/bing-2.jpg" />}
                                 title="女爵"
                                 subTitle="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内"
-                                href="http://music.163.com/#/album?id=3130"
                                 desc={<Grid align="between">
                                         <Col cols={2} className="text-left padding-0">10分钟前</Col>
                                         <Col cols={2} className="text-right">2</Col>
@@ -101,13 +101,32 @@ export default React.createClass({
                             />
                         </List>
                     </div>
-                    内容
-                    <div className="padding-v require-badge">
+                    <div className="padding-top require-badge border-none">
                         <p className="text-size-14">
                             <Badge></Badge>
-                            <span className="padding-left-sm">全部评论（30条）</span></p>
+                            <span className="padding-left-sm">全部评论（30条）</span>
+                        </p>
+                        <List className="comments">
+                            <List.Item
+                                media={<img className="comments-avatar" width="44" height="44" src="http://s.amazeui.org/media/i/demos/bing-2.jpg" />}
+                                title="女爵"
+                                subTitle="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内"
+                                desc={<Grid align="between">
+                                        <Col cols={2} className="text-left padding-0">10分钟前</Col>
+                                        <Col cols={2} className="text-right">2</Col>
+                                      </Grid>}
+                            />
+                            <List.Item
+                                media={<img className="comments-avatar" width="44" height="44" src="http://s.amazeui.org/media/i/demos/bing-2.jpg" />}
+                                title="女爵"
+                                subTitle="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内"
+                                desc={<Grid align="between">
+                                        <Col cols={2} className="text-left padding-0">10分钟前</Col>
+                                        <Col cols={2} className="text-right">2</Col>
+                                      </Grid>}
+                            />
+                        </List>
                     </div>
-                    内容
                 </Group>
             </Container>
         </View>;

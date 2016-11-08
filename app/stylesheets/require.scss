@@ -112,7 +112,7 @@
 
     .item, .item-linked > a{
         align-items: flex-start;
-        @extend .padding-left-xs;
+        @extend .padding-left;
     }
 
     .item-title{

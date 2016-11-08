@@ -9,6 +9,8 @@ import RequireInfo from './components/RequireInfo'
 import Tribe from './components/Tribe'
 import TribeInfo from './components/TribeInfo'
 import TribeAlbum from './components/TribeAlbum'
+import TribeAlbumInfo from './components/TribeAlbumInfo'
+import TribeImgMsg from './components/TribeImgMsg'
 
 module.exports = (
     <Router history={browserHistory}>
@@ -20,7 +22,9 @@ module.exports = (
             <Route path="/require/info/:requireId" component={RequireInfo}/>
             <Route path="/tribe" component={Tribe}/>
             <Route path="/tribe/info/:tribeId" component={TribeInfo}/>
-            <Route path="/tribe/album/:albumId" component={TribeAlbum}/>
+            <Route path="/tribe/album/:tribeId" component={TribeAlbum}/>
+            <Route path="/tribe/album/info/:albumId" component={TribeAlbumInfo}/>
+            <Route path="/tribe/album/img/:imgId" component={TribeImgMsg}/>
         </Route>
     </Router>
 )

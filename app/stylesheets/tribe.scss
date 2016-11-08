@@ -163,3 +163,36 @@ $color-border-01:#ddd;
     }
 }
 
+//部落相册
+.tribe-album{
+    //相册图片
+    .albumImg{
+        width: 115px;
+        height: 115px;
+        margin: 0 auto;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    //相册名称
+    .tribe-albumName{
+        color:$text-color-3;
+    }
+}
+////相册详情底部评论信息
+//.tribe-album-msg{
+//    .tabbar-label{
+//        &:before{
+//            content: "";
+//            display: inline-block;
+//            width: 20px;
+//            height: 17px;
+//            margin-right: $sm;
+//            background-color: #000;
+//            vertical-align: middle;
+//
+//        }
+//    }
+//}
+

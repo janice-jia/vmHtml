@@ -87,6 +87,10 @@ $color-ffffff: #ffffff;
                 height: 30px;
                 line-height: 30px;
             }
+            a{
+                color: $color-06;
+                font-size: 12px;
+            }
         }
         .topic-public{
             height: 56px;

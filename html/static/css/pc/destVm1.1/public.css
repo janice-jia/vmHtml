@@ -218,6 +218,7 @@
     .vm-header .vm-nav li {
       float: left;
       width: 67px;
+      margin-right: 10px;
       text-align: center; }
       .vm-header .vm-nav li a {
         display: inline-block;
@@ -564,8 +565,9 @@
     .zcbl-page ul li {
       display: inline-block;
       height: 24px;
-      width: 24px;
+      min-width: 24px;
       line-height: 24px;
+      width: auto;
       color: #666666;
       margin: 0 4px;
       font-weight: bold; }
@@ -588,8 +590,8 @@
         .zcbl-page ul li.zcbl-nextPage a:before {
           content: "";
           position: absolute;
-          top: 7px;
-          left: 10px;
+          top: 5px;
+          left: 9px;
           background: url("../../../images/pc/vm1.1/icon/icon-per-next.png") no-repeat;
           width: 9px;
           height: 15px; }
@@ -633,7 +635,7 @@
   height: 20px; }
 
 #mhp-header {
-  height: 410px;
+  height: 414px;
   margin-top: -100px;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -725,13 +727,14 @@
       display: inline-block;
       height: 100%;
       width: 100%;
-      font-weight: bold; }
+      font-weight: normal; }
       .vm-homePageNav ul li a:hover {
         color: #ffb30e;
         border-bottom: 1px solid #ffb30e; }
     .vm-homePageNav ul li.vm-homePageNav-hover a {
       color: #ffb30e;
-      border-bottom: 1px solid #ffb30e; }
+      border-bottom: 1px solid #ffb30e;
+      font-weight: bold; }
       .vm-homePageNav ul li.vm-homePageNav-hover a.vm-homePageNav-edit {
         display: block; }
     .vm-homePageNav ul li a.vm-homePageNav-edit {

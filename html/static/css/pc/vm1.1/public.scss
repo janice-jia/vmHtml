@@ -291,6 +291,7 @@ $color-ffffff: #ffffff;
         li {
             float: left;
             width: 67px;
+            margin-right: 10px;
             text-align: center;
             a {
                 display: inline-block;
@@ -757,8 +758,9 @@ $color-ffffff: #ffffff;
         li {
             display: inline-block;
             height: 24px;
-            width: 24px;
+            min-width: 24px;
             line-height: 24px;
+            width: auto;
             color: $color-05;
             margin: 0 4px;
             font-weight: bold;
@@ -785,8 +787,8 @@ $color-ffffff: #ffffff;
                     &:before {
                         content: "";
                         position: absolute;
-                        top: 7px;
-                        left: 10px;
+                        top: 5px;
+                        left: 9px;
                         background: url("../../../images/pc/vm1.1/icon/icon-per-next.png") no-repeat;
                         width: 9px;
                         height: 15px;
@@ -848,7 +850,7 @@ $color-ffffff: #ffffff;
 
 //我的主页--头部
 #mhp-header {
-    height: 410px;
+    height: 414px;
     margin-top: -100px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -969,7 +971,7 @@ $color-ffffff: #ffffff;
                 display: inline-block;
                 height: 100%;
                 width: 100%;
-                font-weight: bold;
+                font-weight: normal;
                 &:hover {
                     color: $color-08;
                     border-bottom: 1px solid $color-08;
@@ -979,6 +981,7 @@ $color-ffffff: #ffffff;
                 a {
                     color: $color-08;
                     border-bottom: 1px solid $color-08;
+                    font-weight: bold;
                     &.vm-homePageNav-edit{
                         display: block;
                     }

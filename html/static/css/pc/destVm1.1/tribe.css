@@ -60,6 +60,9 @@
         font-size: 12px;
         height: 30px;
         line-height: 30px; }
+      .topic-wall .topic-wall-l .topic-tit a {
+        color: #999999;
+        font-size: 12px; }
     .topic-wall .topic-wall-l .topic-public {
       height: 56px;
       line-height: 56px;

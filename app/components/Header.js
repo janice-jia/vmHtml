@@ -3,7 +3,7 @@ import {
     Link,
 } from 'react-router';
 import NavLink from './NavLink'
-import {NavBar, OffCanvasTrigger, OffCanvas, List} from 'amazeui-touch'
+import {NavBar, OffCanvasTrigger, OffCanvas, List, TabBar} from 'amazeui-touch'
 
 class Header extends React.Component{
     onDismiss(e) {

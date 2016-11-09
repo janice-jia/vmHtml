@@ -3,7 +3,7 @@ import {
     Link,
 } from 'react-router';
 import NavLink from './NavLink'
-import {NavBar, OffCanvasTrigger, OffCanvas, List, TabBar, Notification, Field} from 'amazeui-touch'
+import {NavBar, OffCanvasTrigger, OffCanvas, List, TabBar, Notification, Field, Group, Grid, Col} from 'amazeui-touch'
 import $ from 'jquery'
 
 
@@ -35,13 +35,19 @@ class Header extends React.Component{
                 animated
                 onDismiss={this.closeNotification.bind(this)}
             >
-                <div>
-                    <Field
-                        label="Your Name"
-                        containerClassName="my-label"
-                        placeholder="What's your name."
-                    />
-                </div>
+                <Group>
+                    <Grid>
+                        <Col>
+                            <Field
+                                label="Your Name"
+                                containerClassName="my-label"
+                                placeholder="What's your name."
+                            />
+                        </Col>
+                        <Col><button class="btn-">取消</button></Col>
+                    </Grid>
+
+                </Group>
             </Notification>
 
             <NavBar

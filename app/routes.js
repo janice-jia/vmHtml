@@ -12,6 +12,7 @@ import TribeAlbum from './components/TribeAlbum'
 import TribeAlbumInfo from './components/TribeAlbumInfo'
 import TribeImgCom from './components/TribeImgCom'
 import TribeTopic from './components/TribeTopic'
+import TribePerson from './components/TribePerson'
 
 
 module.exports = (
@@ -28,6 +29,7 @@ module.exports = (
             <Route path="/tribe/album/info/:albumId" component={TribeAlbumInfo}/>
             <Route path="/tribe/album/img/:imgId" component={TribeImgCom}/>
             <Route path="/tribe/topic/01" component={TribeTopic}/>
+            <Route path="/tribe/person" component={TribePerson}/>
         </Route>
     </Router>
 )

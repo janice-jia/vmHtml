@@ -8,8 +8,11 @@ const albums = {
         title: '原画部落',
         media: 'http://lorempixel.com/160/160/people/',
         subTitle: '123456',
-        desc: '一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介'
-    };
+        desc: '一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介',
+        personHref:"/tribe/person",
+        albumHref:"/tribe/album/01",
+
+};
 const listName=[
   "原画CG部落规定","原画硬件设备：手绘板的参数调整","别停笔，一直画","【重要通知】关于最近删帖状况解释"
 ];
@@ -92,9 +95,9 @@ export default React.createClass({
                         //title={tit}
                     />
                     <div className="tirbe-info-tab">
-                        <a href="#">族员</a>
+                        <a href={albums.personHref}>族员</a>
                         <hr/>
-                        <a href="/tribe/album/01">相册</a>
+                        <a href={albums.albumHref}>相册</a>
                     </div>
                 </div>
                 <Group className="margin-v tribe-toTopList">

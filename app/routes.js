@@ -9,6 +9,7 @@ import RequireInfo from './components/RequireInfo'
 import Tribe from './components/Tribe'
 import TribeInfo from './components/TribeInfo'
 import TribeAlbum from './components/TribeAlbum'
+import Search from './components/Search'
 
 module.exports = (
     <Router history={browserHistory}>
@@ -21,6 +22,7 @@ module.exports = (
             <Route path="/tribe" component={Tribe}/>
             <Route path="/tribe/info/:tribeId" component={TribeInfo}/>
             <Route path="/tribe/album/:albumId" component={TribeAlbum}/>
+            <Route path="/search" component={Search}/>
         </Route>
     </Router>
 )

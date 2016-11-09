@@ -15,12 +15,14 @@ class Header extends React.Component{
         };
     }
 
+    //打开搜索
     openNotification() {
         this.setState({
             visible: true
         });
     }
 
+    //关闭搜索
     closeNotification() {
         this.setState({
             visible: false
@@ -30,24 +32,24 @@ class Header extends React.Component{
     render() {
         return <div className="header">
             <Notification
+                className="padding-v-xs"
                 amStyle={this.state.amStyle}
                 visible={this.state.visible}
                 animated
+                closeBtn={false}
                 onDismiss={this.closeNotification.bind(this)}
             >
-                <Group>
-                    <Grid>
-                        <Col>
-                            <Field
-                                label="Your Name"
-                                containerClassName="my-label"
-                                placeholder="What's your name."
+                <Grid className="bgNone">
+                    <Col cols={5} className="padding-0">
+                        <form action="">
+                            <Field className="margin-0 padding-v-xs text-size-14"
+                                placeholder="众创"
                             />
-                        </Col>
-                        <Col><button class="btn-">取消</button></Col>
-                    </Grid>
+                        </form>
+                    </Col>
+                    <Col cols={1} className="padding-0 bgNone text-right" onClick={this.closeNotification.bind(this)}><p className="text-size-14 padding-v-xs">取消</p></Col>
+                </Grid>
 
-                </Group>
             </Notification>
 
             <NavBar
@@ -95,7 +97,7 @@ class Header extends React.Component{
                     </OffCanvas>,
                 isClone:true}]}
             rightNav={[{
-                title:'right'
+                title:'right',
             }]}
             onAction={this.openNotification.bind(this)}
             amStyle="dark"/>

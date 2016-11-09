@@ -3,16 +3,49 @@ import {
     Link,
 } from 'react-router';
 import NavLink from './NavLink'
-import {NavBar, OffCanvasTrigger, OffCanvas, List, TabBar} from 'amazeui-touch'
+import {NavBar, OffCanvasTrigger, OffCanvas, List, TabBar, Notification, Field} from 'amazeui-touch'
+import $ from 'jquery'
+
 
 class Header extends React.Component{
-    onDismiss(e) {
-        // 从 OffCanvas 内部元素关闭 OffCanvas
-        // 紧耦合，需要重构 OffCanvas
-        this.refs.oct.close();
+    constructor(props) {
+        super(props);
+        this.state={
+            visible: false
+        };
     }
+
+    openNotification() {
+        this.setState({
+            visible: true
+        });
+    }
+
+    closeNotification() {
+        this.setState({
+            visible: false
+        });
+    }
+
     render() {
-        return <NavBar
+        return <div className="header">
+            <Notification
+                amStyle={this.state.amStyle}
+                visible={this.state.visible}
+                animated
+                onDismiss={this.closeNotification.bind(this)}
+            >
+                <div>
+                    <Field
+                        label="Your Name"
+                        containerClassName="my-label"
+                        placeholder="What's your name."
+                    />
+                </div>
+            </Notification>
+
+            <NavBar
+            className="Header"
             title="vmaking"
             leftNav={[{title: '',
                 icon:'bars',
@@ -55,8 +88,12 @@ class Header extends React.Component{
                       </List>
                     </OffCanvas>,
                 isClone:true}]}
-            rightNav={[{title:'right'}]}
-            amStyle="dark"/>;
+            rightNav={[{
+                title:'right'
+            }]}
+            onAction={this.openNotification.bind(this)}
+            amStyle="dark"/>
+        </div>;
     }
 }
 

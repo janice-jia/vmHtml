@@ -662,7 +662,7 @@
       width: 90px;
       height: 90px;
       margin: 0 auto;
-      margin-top: -45px;
+      margin-top: -50px;
       position: relative;
       display: block; }
       #mhp-header .footermsg .head img {
@@ -678,19 +678,21 @@
       position: relative; }
       #mhp-header .footermsg .edit-introduce p {
         line-height: 22px;
+        height: 22px;
         display: inline-block;
-        width: 231px;
+        width: 270px;
+        overflow: hidden;
         color: #b9c1c7; }
       #mhp-header .footermsg .edit-introduce b {
         width: 12px;
-        height: 12px;
+        height: 22px;
         display: inline-block;
-        background-image: url("../../../images/pc/vm1.1/icon/icon-editpen-12.png"); }
+        background: url("../../../images/pc/vm1.1/icon/icon-editpen-12.png") no-repeat center; }
       #mhp-header .footermsg .edit-introduce input {
         position: absolute;
         top: 0;
         left: 0;
-        width: 231px;
+        width: 270px;
         height: 22px; }
     #mhp-header .footermsg .userInfo .jb a {
       color: #999999; }

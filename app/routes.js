@@ -22,7 +22,7 @@ module.exports = (
             <Route path="/tribe" component={Tribe}/>
             <Route path="/tribe/info/:tribeId" component={TribeInfo}/>
             <Route path="/tribe/album/:albumId" component={TribeAlbum}/>
-            <Route path="/search" component={Search}/>
+            <Route path="/search"  params={{search: ''}} component={Search}/>
         </Route>
     </Router>
 )

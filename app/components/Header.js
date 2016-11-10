@@ -1,7 +1,7 @@
 import React from 'react'
-import {
-    Link,
-} from 'react-router';
+//import {
+//    Link,
+//} from 'react-router';
 import NavLink from './NavLink'
 import {NavBar, OffCanvasTrigger, OffCanvas, List, TabBar, Notification, Field, Group, Grid, Col} from 'amazeui-touch'
 import $ from 'jquery'
@@ -10,16 +10,30 @@ import $ from 'jquery'
 class Header extends React.Component{
     constructor(props) {
         super(props);
-        this.state={
-            visible: false
-        };
+
+        //判断当前是否在搜索页，如果是搜索页则默认显示搜索导航条
+        if(this.props.isSearch){
+            this.state={
+                visible: true
+            };
+        }else{
+            this.state={
+                visible: false
+            };
+        }
     }
 
     //打开搜索
-    openNotification() {
-        this.setState({
-            visible: true
-        });
+    openNotification(item) {
+        if(item.className == 'right'){
+            this.setState({
+                visible: true
+            });
+        }else{
+            this.setState({
+                visible: false
+            });
+        }
     }
 
     //关闭搜索
@@ -27,6 +41,14 @@ class Header extends React.Component{
         this.setState({
             visible: false
         });
+    }
+
+    searchSubmit(event) {
+        event.preventDefault()
+        console.info('searchSubmit');
+        const search = event.target.elements[0].value
+        const path = `/repos/${search}`
+        console.log(path)
     }
 
     render() {
@@ -41,13 +63,13 @@ class Header extends React.Component{
             >
                 <Grid className="bgNone">
                     <Col cols={5} className="padding-0">
-                        <form action="">
-                            <Field className="margin-0 padding-v-xs text-size-14"
-                                placeholder="众创"
-                            />
+                        <form onSubmit={this.searchSubmit}>
+                            <Field name="search"  className="margin-0 padding-v-xs text-size-14" placeholder="众创" />
                         </form>
                     </Col>
-                    <Col cols={1} className="padding-0 bgNone text-right" onClick={this.closeNotification.bind(this)}><p className="text-size-14 padding-v-xs">取消</p></Col>
+                    <Col cols={1} className="padding-0 bgNone text-right" onClick={this.closeNotification.bind(this)}>
+                        <p className="text-size-14 padding-v-xs">取消</p>
+                    </Col>
                 </Grid>
 
             </Notification>
@@ -98,6 +120,7 @@ class Header extends React.Component{
                 isClone:true}]}
             rightNav={[{
                 title:'right',
+                className:'right'
             }]}
             onAction={this.openNotification.bind(this)}
             amStyle="dark"/>

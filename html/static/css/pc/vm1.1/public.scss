@@ -850,7 +850,7 @@ $color-ffffff: #ffffff;
 
 //我的主页--头部
 #mhp-header {
-    height: 414px;
+    //height: 414px;
     //margin-top: -100px;
     //-webkit-transition: all 0.5s;
     //-moz-transition: all 0.5s;
@@ -870,7 +870,7 @@ $color-ffffff: #ffffff;
         border-radius: 2px;;
     }
     .top{
-        height:250px;
+        height:285px;
         //background-attachment:fixed;
         //background-repeat: no-repeat;
         //background-position-y: -100px;
@@ -897,7 +897,7 @@ $color-ffffff: #ffffff;
             width: 90px;
             height: 90px;
             margin: 0 auto;
-            margin-top: -50px;
+            margin-top: -45px;
             position: relative;
             display: block;
             img {
@@ -944,6 +944,7 @@ $color-ffffff: #ffffff;
             //input:focus{@extend .opacity-1}
         }
         .userInfo {
+            padding-bottom: 10px;
             .jb {
                 a {
                     color: $color-06;

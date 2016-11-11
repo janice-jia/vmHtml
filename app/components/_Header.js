@@ -1,4 +1,5 @@
 import React from 'react'
+import { browserHistory } from 'react-router'
 //import {
 //    Link,
 //} from 'react-router';
@@ -14,11 +15,13 @@ class Header extends React.Component{
         //判断当前是否在搜索页，如果是搜索页则默认显示搜索导航条
         if(this.props.isSearch){
             this.state={
-                visible: true
+                visible: true,
+                value: ''
             };
         }else{
             this.state={
-                visible: false
+                visible: false,
+                value: ''
             };
         }
     }
@@ -43,12 +46,20 @@ class Header extends React.Component{
         });
     }
 
-    searchSubmit(event) {
+    handleChange(event) {
+        this.setState({
+            textValue: event.target.value
+        })
+    }
+
+    handleSubmit(event) {
         event.preventDefault()
-        console.info('searchSubmit');
-        const search = event.target.elements[0].value
-        const path = `/repos/${search}`
-        console.log(path)
+        browserHistory.push({
+            pathname: '/search',
+            query: {
+                qsparam: 'sssssss'
+            }
+        })
     }
 
     render() {
@@ -63,8 +74,8 @@ class Header extends React.Component{
             >
                 <Grid className="bgNone">
                     <Col cols={5} className="padding-0">
-                        <form onSubmit={this.searchSubmit}>
-                            <Field name="search"  className="margin-0 padding-v-xs text-size-14" placeholder="众创" />
+                        <form onSubmit={this.handleSubmit.bind(this)}>
+                            <Field name="search" onChange={this.handleChange.bind(this)}   className="margin-0 padding-v-xs text-size-14" placeholder="众创" />
                         </form>
                     </Col>
                     <Col cols={1} className="padding-0 bgNone text-right" onClick={this.closeNotification.bind(this)}>

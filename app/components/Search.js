@@ -1,6 +1,6 @@
 import React from 'react'
 import {View, Container, Tabs, List, Grid, Col} from 'amazeui-touch'
-import Header from './Header'
+import Header from './_Header'
 
 
 class Search extends React.Component{

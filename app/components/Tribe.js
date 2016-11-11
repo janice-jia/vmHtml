@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './Header'
+import Header from './_Header'
 import {
     Container,Group,List,View,Badge} from 'amazeui-touch';
 

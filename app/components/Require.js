@@ -9,7 +9,7 @@ import {
     Grid,
     Col
 } from 'amazeui-touch';
-import Header from './Header';
+import Header from './_Header';
 
 export default React.createClass({
     getInitialState: function(){

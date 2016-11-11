@@ -2,7 +2,7 @@ import React from 'react'
 import {Container, Group, Slider, Grid, Col, List, View} from 'amazeui-touch'
 import HomeStore from '../stores/HomeStore'
 import HomeActions from '../actions/HomeActions'
-import Header from './Header'
+import Header from './_Header'
 
 const img = <img className="home-tribe-media" width="44" height="44" src="http://s.amazeui.org/media/i/demos/bing-1.jpg" />
 const tit = (

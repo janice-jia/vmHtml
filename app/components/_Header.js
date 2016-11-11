@@ -11,19 +11,23 @@ import $ from 'jquery'
 class Header extends React.Component{
     constructor(props) {
         super(props);
-
+        console.info('this.context.router',this.context);
         //判断当前是否在搜索页，如果是搜索页则默认显示搜索导航条
         if(this.props.isSearch){
             this.state={
                 visible: true,
-                value: ''
+                searchVal: ''
             };
         }else{
             this.state={
                 visible: false,
-                value: ''
+                searchVal: ''
             };
         }
+    }
+
+    componentDidMount(){
+
     }
 
     //打开搜索
@@ -48,7 +52,7 @@ class Header extends React.Component{
 
     handleChange(event) {
         this.setState({
-            textValue: event.target.value
+            searchVal: event.target.value
         })
     }
 
@@ -56,11 +60,12 @@ class Header extends React.Component{
         event.preventDefault()
         browserHistory.push({
             pathname: '/search',
-            query: {
-                qsparam: 'sssssss'
+            state:{
+                searchVal:'aaa'
             }
-        })
+        });
     }
+
 
     render() {
         return <div className="header">
@@ -75,7 +80,7 @@ class Header extends React.Component{
                 <Grid className="bgNone">
                     <Col cols={5} className="padding-0">
                         <form onSubmit={this.handleSubmit.bind(this)}>
-                            <Field name="search" onChange={this.handleChange.bind(this)}   className="margin-0 padding-v-xs text-size-14" placeholder="众创" />
+                            <Field name="search" onChange={this.handleChange.bind(this)} value={this.state.searchVal}   className="margin-0 padding-v-xs text-size-14" placeholder="众创" />
                         </form>
                     </Col>
                     <Col cols={1} className="padding-0 bgNone text-right" onClick={this.closeNotification.bind(this)}>

@@ -13,13 +13,15 @@ import Search from './components/Search'
 
 
 function requireCredentials(nextState, replace, next) {
-    const query = nextState.location.query
-    console.info('query',query);
-
+    //const query = nextState.location.query
+    console.info('nextState.location',nextState);
+    const searchVal = nextState.location.state.searchVal;
+    console.info('searchVal',searchVal);
+    next();
 }
 
 module.exports = (
-    <Router history={browserHistory}>
+    <Router>
         <Route path="/" component={App}>
             <IndexRoute component={Home}/>
             <Route path="/server" component={Server}/>

@@ -161,7 +161,6 @@ class Home extends React.Component{
                         </p>
                         <p className="text-center text-size-14 text-color-2">京ICP备14057447号-3</p>
                     </div>
-                    <p>意见反馈意见反馈意见反馈意见反馈意见反馈意见反馈意见反馈</p>
             </Container>
         </View>;
     }

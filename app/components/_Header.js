@@ -11,7 +11,6 @@ import $ from 'jquery'
 class Header extends React.Component{
     constructor(props) {
         super(props);
-        console.info('this.context.router',this.context);
         //判断当前是否在搜索页，如果是搜索页则默认显示搜索导航条
         if(this.props.isSearch){
             this.state={

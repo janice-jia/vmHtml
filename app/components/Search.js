@@ -7,8 +7,11 @@ class Search extends React.Component{
     constructor(props) {
         super(props);
         this.state={
-            visible: true
+            visible: true,
+            searchVal:this.props.location.state.searchVal
         };
+        //console.info('this.props',this.props.location.state.searchVal);
+        //console.info('this.props.route',this.props.route);
     }
 
     render() {

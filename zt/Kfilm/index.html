@@ -9,6 +9,28 @@
     <link rel="stylesheet" href="css/film.css">
 </head>
 <body>
+<!--header start-->
+<div class="vm-header">
+    <div class="container">
+        <h1>
+            <a href="http://www.vmaking.com/">
+                <img src="./images/logo.png" height="36" width="30" alt="众创部落"/>
+            </a>
+            <a href="http://www.vmaking.com/"><b>众创部落</b></a>
+        </h1>
+        <ul class="vm-nav">
+            <li class="vm-nav-hover"><a href="http://www.vmaking.com/">首页</a></li>
+            <li><a href="http://www.vmaking.com/pc/tribes/index">部落</a></li>
+            <li><a href="http://www.vmaking.com/pc/activities/list?currentPage=1&itemsPerPage=4">活动</a></li>
+            <li><a href="http://www.vmaking.com/pc/require/list">需求</a></li>
+            <li><a href="http://www.vmaking.com/pc/server/list">服务</a></li>
+        </ul>
+        <div class="vm-search">
+            <input type="text" placeholder="搜索" id="search"/>
+        </div>
+    </div>
+</div>
+<!--header end-->
 <div id="cos-header"></div>
 <div class="body">
     <div class="banner"></div>
@@ -151,4 +173,18 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery-1.11.3.min.js"></script>
 </body>
+<script>
+    var searchBtn = document.getElementById('search');
+    searchBtn.onkeydown = function(e){
+        if(!e){
+            e = window.event;
+        }
+        if((e.keyCode || e.which) == 13){
+            var searchVal = searchBtn.value;
+            if(searchVal != ''){
+                location.href = "http://www.vmaking.com/search?search="+searchVal;
+            }
+        }
+    }
+</script>
 </html>

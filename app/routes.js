@@ -11,15 +11,6 @@ import TribeInfo from './components/TribeInfo'
 import TribeAlbum from './components/TribeAlbum'
 import Search from './components/Search'
 
-
-function requireCredentials(nextState, replace, next) {
-    //const query = nextState.location.query
-    console.info('nextState.location',nextState);
-    const searchVal = nextState.location.state.searchVal;
-    console.info('searchVal',searchVal);
-    next();
-}
-
 module.exports = (
     <Router>
         <Route path="/" component={App}>
@@ -31,7 +22,7 @@ module.exports = (
             <Route path="/tribe" component={Tribe}/>
             <Route path="/tribe/info/:tribeId" component={TribeInfo}/>
             <Route path="/tribe/album/:albumId" component={TribeAlbum}/>
-            <Route path="/search"  component={Search} onEnter={requireCredentials}/>
+            <Route path="/search"  component={Search}/>
         </Route>
     </Router>
 )

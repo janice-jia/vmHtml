@@ -10,19 +10,19 @@ class Search extends React.Component{
             visible: true,
             searchVal:this.props.location.state.searchVal
         };
-        //console.info('this.props',this.props.location.state.searchVal);
-        //console.info('this.props.route',this.props.route);
+        console.info('this.props.location',this.props.location);
+        console.info('this.props.location.state.searchVal',this.props.location.state.searchVal);
     }
 
     render() {
         return <View className="header">
             <Container>
-                <Header isSearch={true}></Header>
+                <Header isSearch={true} searchVal={this.state.searchVal}></Header>
                 <div className="require-tabs-list">
                     <Tabs  onAction={this.handleAction} className="margin-0">
                         <Tabs.Item title='部落' key='1' className="padding-0">
                             <List className="margin-top-0">
-                                ssssssss
+                                {this.state.searchVal}
                             </List>
                         </Tabs.Item>
                         <Tabs.Item title='话题' key='2' className="padding-0">

@@ -14,10 +14,6 @@ const tit = (
 const btn = <div className="home-tribe-tag">海贼王部落</div>
 
 class Home extends React.Component{
-    setHeight(){
-        console.info('myImg',this.refs);
-    }
-
     constructor(props) {
         super(props);
         this.state = HomeStore.getState();
@@ -57,7 +53,7 @@ class Home extends React.Component{
                             <h5 className="home-group-header margin-sm">部落</h5>
                             <Grid avg={4}>
                                 <Col className="padding-v-0">
-                                    <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg" ref="myImg" onLoad={this.setHeight()}/>
+                                    <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg"/>
                                 </Col>
                                 <Col className="padding-v-0">
                                     <img src="http://s.amazeui.org/media/i/demos/bing-2.jpg" />

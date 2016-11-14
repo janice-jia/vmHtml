@@ -15,7 +15,7 @@ class Header extends React.Component{
         if(this.props.isSearch){
             this.state={
                 visible: true,
-                searchVal: ''
+                searchVal: this.props.searchVal
             };
         }else{
             this.state={
@@ -56,15 +56,13 @@ class Header extends React.Component{
     }
 
     handleSubmit(event) {
-        event.preventDefault()
+        event.preventDefault();
+        console.info('handleSubmit',this.state);
         browserHistory.push({
             pathname: '/search',
-            state:{
-                searchVal:'aaa'
-            }
+            state:this.state
         });
     }
-
 
     render() {
         return <div className="header">

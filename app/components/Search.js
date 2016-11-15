@@ -8,13 +8,10 @@ class Search extends React.Component{
         super(props);
         this.state={
             visible: true,
-            searchVal:this.props.location.state.searchVal
+            searchVal:this.props.location.query.search
         };
-        console.info('this.props.location',this.props.location);
-        console.info('this.props.location.state.searchVal',this.props.location.state.searchVal);
     }
     handleChange(event) {
-        console.info('ss');
         this.setState({
             searchVal: event.target.value
         })

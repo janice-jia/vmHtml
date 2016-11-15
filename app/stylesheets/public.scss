@@ -90,6 +90,9 @@ $xl: 2rem;
 //背景
 .bgNone{
     background: none;
+    .group-body{
+        background: none;
+    }
 }
 .bgF{
     background: #ffffff;
@@ -127,6 +130,12 @@ $xl: 2rem;
     color: $text-color-3;
     border: 1px solid $border-color-2;
     border-radius: 0;
+    @extend .extend-btn
+}
+
+.btn-white-noBorder{
+    background: #ffffff;
+    color: $text-color-3;
     @extend .extend-btn
 }
 

@@ -1649,6 +1649,11 @@ $color-ffffff: #ffffff;
         a{
             color: $color-07;
         }
+        textarea{
+            width: 420px;
+            border: none;
+            background: none;
+        }
     }
     .btn{
         clear: both;

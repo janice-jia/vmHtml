@@ -799,3 +799,14 @@
     width: 17px;
     height: 11px;
     vertical-align: middle; }
+
+.tribe-interest {
+  width: 100%;
+  background: url("../../../images/pc/vm1.1/tribe/tribe-interest-bg.jpg") center no-repeat; }
+  .tribe-interest .tribe-interest-banner {
+    width: 100%; }
+    .tribe-interest .tribe-interest-banner img {
+      max-width: 100%; }
+  .tribe-interest .tribe-interest-img {
+    margin: 20px 0;
+    text-align: center; }

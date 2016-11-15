@@ -1223,6 +1223,10 @@
     margin-top: 8px; }
     .modal-uploadComic .videoCodeMsg a {
       color: #499af5; }
+    .modal-uploadComic .videoCodeMsg textarea {
+      width: 420px;
+      border: none;
+      background: none; }
   .modal-uploadComic .btn {
     clear: both;
     text-align: center;

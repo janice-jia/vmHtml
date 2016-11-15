@@ -13,11 +13,17 @@ class Search extends React.Component{
         console.info('this.props.location',this.props.location);
         console.info('this.props.location.state.searchVal',this.props.location.state.searchVal);
     }
+    handleChange(event) {
+        console.info('ss');
+        this.setState({
+            searchVal: event.target.value
+        })
+    }
 
     render() {
         return <View className="header">
             <Container>
-                <Header isSearch={true} searchVal={this.state.searchVal}></Header>
+                <Header isSearch={true} onChange={this.handleChange.bind(this)} searchVal={this.state.searchVal}></Header>
                 <div className="require-tabs-list">
                     <Tabs  onAction={this.handleAction} className="margin-0">
                         <Tabs.Item title='部落' key='1' className="padding-0">

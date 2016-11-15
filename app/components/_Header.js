@@ -23,6 +23,7 @@ class Header extends React.Component{
                 searchVal: ''
             };
         }
+        this.onChange = this.onChange.bind(this);
     }
 
     componentDidMount(){
@@ -57,11 +58,16 @@ class Header extends React.Component{
 
     handleSubmit(event) {
         event.preventDefault();
-        console.info('handleSubmit',this.state);
+        console.info('this',this);
+        this.onChange(this.state);
         browserHistory.push({
             pathname: '/search',
-            state:this.state
+            state:this.state,
         });
+    }
+
+    onChange(state) {
+        this.setState(state)
     }
 
     render() {

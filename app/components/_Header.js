@@ -86,7 +86,7 @@ class Header extends React.Component {
 
             <NavBar
                 className="Header"
-                title="vmaking"
+                title={<div className="home-logo">logo</div>}
                 leftNav={[{title: '',
                 icon:'bars',
                 component: OffCanvasTrigger,
@@ -94,6 +94,10 @@ class Header extends React.Component {
                         <Group className="header-login bgNone margin-0 padding-v">
                             <Link to="/register" className="btn-yellow margin-bottom">注册</Link>
                             <Link to="/login" className="btn-white-noBorder">登陆</Link>
+                        </Group>
+                        <Group className="header-login bgNone margin-0 hidden">
+                            <div className="header-user-avatar margin-v"><img src="http://s.amazeui.org/media/i/demos/bing-2.jpg" height="50" width="50" alt=""/></div>
+                            <div className="header-user-name text-color-7 text-size-16">用户名用户名</div>
                         </Group>
                         <List className="header-nav">
                             <List.Item
@@ -105,32 +109,37 @@ class Header extends React.Component {
                                 onlyActiveOnIndex:true
                                 }}
                                 title="首页"
-                                className="header-nav-index"
+                                className="header-nav-icon header-nav-index"
                             />
                             <List.Item
                                 linkComponent={NavLink}
-                                media={<Icon name="person"/>}
+                                media={<Icon/>}
                                 linkProps={{
                                 to: '/tribe',
                                 onClick: this.onDismiss,
                                 }}
                                 title="部落"
+                                className="header-nav-icon header-nav-tribe"
                             />
                             <List.Item
                                 linkComponent={NavLink}
+                                media={<Icon/>}
                                 linkProps={{
                                 to: '/require',
                                 onClick: this.onDismiss,
                                 }}
                                 title="需求"
+                                className="header-nav-icon header-nav-require"
                             />
                             <List.Item
                                 linkComponent={NavLink}
+                                media={<Icon/>}
                                 linkProps={{
                                 to: '/server',
                                 onClick: this.onDismiss,
                                 }}
                                 title="服务"
+                                className="header-nav-icon header-nav-server"
                             />
                         </List>
                     </OffCanvas>,

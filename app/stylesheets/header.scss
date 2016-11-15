@@ -6,11 +6,35 @@
     .item-title{
         @extend .text-size-15;
     }
-    .header-nav-index{
+
+
+
+    //导航小图标
+    .header-nav-icon{
         .icon{
             height: 17px;
             width: 18px;
+            float: left;
+        }
+    }
+    .header-nav-index{
+        .icon{
             background: pink;
+        }
+    }
+    .header-nav-tribe{
+        .icon{
+            background: yellow;
+        }
+    }
+    .header-nav-require{
+        .icon {
+            background: blue;
+        }
+    }
+    .header-nav-server{
+        .icon {
+            background: palevioletred;
         }
     }
 }
@@ -18,6 +42,21 @@
     background: #171717;
     .group-body{
         background: none;
+    }
+    //登陆之后
+    .header-user-avatar{
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        margin: 0 auto;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+    .header-user-name{
+        text-align: center;
     }
 }
 /*Header end*/

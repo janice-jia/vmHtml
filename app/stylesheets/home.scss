@@ -1,4 +1,10 @@
 /*Home start*/
+.home-logo{
+    height: 27px;
+    width: 34px;
+    background: pink;
+    margin: 0 auto;
+}
 .home{
     .slider-control{
         display: none;
@@ -45,5 +51,11 @@
 }
 .header-link-active .item-title{
     color: $color-1;
+}
+
+.home-icon-view{
+    width: 18px;
+    height: 11px;
+    background: pink;
 }
 /*Home end*/

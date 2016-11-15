@@ -122,17 +122,17 @@ class Home extends React.Component{
                                 </Grid>
                                 <Grid align="between">
                                     <Col cols={2} className="padding-h text-size-12 text-color-4">
-                                        <span className="icon icon-back text-size-12"></span>
+                                        <span className="icon home-icon-view margin-right-xs"></span>
                                         123
                                     </Col>
                                     <Col cols={2} className="padding-h text-size-12 text-color-4 text-right">
                                         <Grid>
                                             <Col>
-                                                <span className="icon icon-back text-size-12"></span>
+                                                <span className="icon home-icon-view margin-right-xs"></span>
                                                 123
                                             </Col>
                                             <Col>
-                                                <span className="icon icon-back text-size-12"></span>
+                                                <span className="icon home-icon-view margin-right-xs"></span>
                                                 123
                                             </Col>
                                         </Grid>

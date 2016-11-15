@@ -800,13 +800,20 @@
     height: 11px;
     vertical-align: middle; }
 
+.tribe-interest-banner {
+  width: 100%;
+  background: #2f3543;
+  text-align: center; }
+  .tribe-interest-banner img {
+    max-width: 100%; }
+
 .tribe-interest {
   width: 100%;
   background: url("../../../images/pc/vm1.1/tribe/tribe-interest-bg.jpg") center no-repeat; }
-  .tribe-interest .tribe-interest-banner {
-    width: 100%; }
-    .tribe-interest .tribe-interest-banner img {
-      max-width: 100%; }
   .tribe-interest .tribe-interest-img {
-    margin: 20px 0;
+    padding: 20px 0;
     text-align: center; }
+    .tribe-interest .tribe-interest-img a {
+      display: inline-block; }
+    .tribe-interest .tribe-interest-img img {
+      max-width: 100%; }

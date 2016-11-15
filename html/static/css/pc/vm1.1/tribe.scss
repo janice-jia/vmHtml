@@ -1131,20 +1131,25 @@ $color-ffffff: #ffffff;
 
 
 //兴趣部落
+.tribe-interest-banner{
+    width: 100%;
+    background: #2f3543;
+    text-align: center;
+    img{
+        max-width: 100%;
+    }
+}
 .tribe-interest{
     width: 100%;
     background: url("../../../images/pc/vm1.1/tribe/tribe-interest-bg.jpg") center no-repeat;
-    .tribe-interest-banner{
-        width: 100%;
+    .tribe-interest-img{
+        padding: 20px 0;
+        text-align: center;
+        a{
+            display: inline-block;
+        }
         img{
             max-width: 100%;
-        }
-    }
-    .tribe-interest-img{
-        margin: 20px 0;
-        text-align: center;
-        img{
-
         }
     }
 }

@@ -102,7 +102,7 @@ class Header extends React.Component {
                         <List className="header-nav">
                             <List.Item
                                 linkComponent={NavLink}
-                                media={<Icon/>}
+                                media={<Icon name=""/>}
                                 linkProps={{
                                 to: `/`,
                                 onClick: this.onDismiss,
@@ -113,7 +113,7 @@ class Header extends React.Component {
                             />
                             <List.Item
                                 linkComponent={NavLink}
-                                media={<Icon/>}
+                                media={<Icon name=""/>}
                                 linkProps={{
                                 to: '/tribe',
                                 onClick: this.onDismiss,
@@ -123,7 +123,7 @@ class Header extends React.Component {
                             />
                             <List.Item
                                 linkComponent={NavLink}
-                                media={<Icon/>}
+                                media={<Icon name=""/>}
                                 linkProps={{
                                 to: '/require',
                                 onClick: this.onDismiss,
@@ -133,7 +133,7 @@ class Header extends React.Component {
                             />
                             <List.Item
                                 linkComponent={NavLink}
-                                media={<Icon/>}
+                                media={<Icon name=""/>}
                                 linkProps={{
                                 to: '/server',
                                 onClick: this.onDismiss,

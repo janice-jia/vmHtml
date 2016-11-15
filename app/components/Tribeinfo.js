@@ -8,12 +8,64 @@ const albums = {
         title: '原画部落',
         media: 'http://lorempixel.com/160/160/people/',
         subTitle: '123456',
-        desc: '一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介'
-    };
+        desc: '一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介',
+        personHref:"/tribe/person",
+        albumHref:"/tribe/album/01",
+
+};
 const listName=[
   "原画CG部落规定","原画硬件设备：手绘板的参数调整","别停笔，一直画","【重要通知】关于最近删帖状况解释"
 ];
 
+const topicList=[
+    {
+        username:"嗨粉",
+        media:"http://s.amazeui.org/media/i/demos/bing-1.jpg",
+        userhref:"http://s.amazeui.org/media/i/demos/bing-1.jpg",
+        topichref:"/tribe/topic/01",
+        time:"1小时前",
+        titname:"标题名称标题名称",
+        desc:"帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内",
+        say:"123",
+        zan:"123",
+        com:"123",
+        imgarr:[
+            "http://s.amazeui.org/media/i/demos/bing-1.jpg",
+            "http://s.amazeui.org/media/i/demos/bing-2.jpg",
+            "http://s.amazeui.org/media/i/demos/bing-3.jpg"
+        ]
+    },
+    {
+        username:"嗨粉",
+        media:"http://s.amazeui.org/media/i/demos/bing-1.jpg",
+        time:"1小时前",
+        titname:"标题名称标题名称",
+        desc:"帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内",
+        say:"123",
+        zan:"123",
+        com:"123",
+        imgarr:[
+            "http://s.amazeui.org/media/i/demos/bing-1.jpg",
+            "http://s.amazeui.org/media/i/demos/bing-2.jpg",
+            "http://s.amazeui.org/media/i/demos/bing-3.jpg"
+        ]
+    },
+    {
+        username:"嗨粉",
+        media:"http://s.amazeui.org/media/i/demos/bing-1.jpg",
+        time:"1小时前",
+        titname:"标题名称标题名称",
+        desc:"帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内",
+        say:"123",
+        zan:"123",
+        com:"123",
+        imgarr:[
+            "http://s.amazeui.org/media/i/demos/bing-1.jpg",
+            "http://s.amazeui.org/media/i/demos/bing-2.jpg",
+            "http://s.amazeui.org/media/i/demos/bing-3.jpg"
+        ]
+    }
+];
 const img = <img className="home-tribe-media" width="44" height="44" src="http://s.amazeui.org/media/i/demos/bing-1.jpg" />
 const tit = (
     <div className="home-tribe-item">
@@ -43,9 +95,9 @@ export default React.createClass({
                         //title={tit}
                     />
                     <div className="tirbe-info-tab">
-                        <a href="#">族员</a>
+                        <a href={albums.personHref}>族员</a>
                         <hr/>
-                        <a href="/tribe/album/01">相册</a>
+                        <a href={albums.albumHref}>相册</a>
                     </div>
                 </div>
                 <Group className="margin-v tribe-toTopList">
@@ -60,138 +112,67 @@ export default React.createClass({
                 </Group>
                 
                 <div className="tribe-topic-list">
-                    <div className="border-d7d7d7 bgF margin-top-sm">
-                        <Group noPadded className="margin-v-0">
-                            <List>
-                                <List.Item
-                                    media={img}
-                                    //after={btn}
-                                    title={tit}
-                                />
-                                <div className="padding-h margin-v-xs">
-                                    <div className="text-size-15 text-color-3 font-weight">标题名称名称名称</div>
-                                    <div className="text-size-13 text-color-2 home-tribe-desc">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</div>
-                                </div>
-                                <Grid avg={3}>
-                                    <Col className="padding-h padding-top-xs padding-bottom-0">
-                                        <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg" />
-                                    </Col>
-                                    <Col className="padding-h padding-top-xs padding-bottom-0">
-                                        <img src="http://s.amazeui.org/media/i/demos/bing-2.jpg" />
-                                    </Col>
-                                    <Col className="padding-h padding-top-xs padding-bottom-0">
-                                        <img src="http://s.amazeui.org/media/i/demos/bing-3.jpg" />
-                                    </Col>
-                                </Grid>
-                                <Grid align="between">
-                                    <Col cols={2} className="padding-h text-size-12 text-color-4">
-                                        <span className="icon icon-back text-size-12"></span>
-                                        123
-                                    </Col>
-                                    <Col cols={2} className="padding-h text-size-12 text-color-4 text-right">
-                                        <Grid>
-                                            <Col>
-                                                <span className="icon icon-back text-size-12"></span>
-                                                123
-                                            </Col>
-                                            <Col>
-                                                <span className="icon icon-back text-size-12"></span>
-                                                123
-                                            </Col>
-                                        </Grid>
-                                    </Col>
-                                </Grid>
-                            </List>
-                        </Group>
-                    </div>
-                    <div className="border-d7d7d7 bgF margin-top-sm">
-                        <Group noPadded className="margin-v-0">
-                            <List>
-                                <List.Item
-                                    media={img}
-                                    //after={btn}
-                                    title={tit}
-                                />
-                                <div className="padding-h margin-v-xs">
-                                    <div className="text-size-15 text-color-3 font-weight">标题名称名称名称</div>
-                                    <div className="text-size-13 text-color-2 home-tribe-desc">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</div>
-                                </div>
-                                <Grid avg={3}>
-                                    <Col className="padding-h padding-top-xs padding-bottom-0">
-                                        <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg" />
-                                    </Col>
-                                    <Col className="padding-h padding-top-xs padding-bottom-0">
-                                        <img src="http://s.amazeui.org/media/i/demos/bing-2.jpg" />
-                                    </Col>
-                                    <Col className="padding-h padding-top-xs padding-bottom-0">
-                                        <img src="http://s.amazeui.org/media/i/demos/bing-3.jpg" />
-                                    </Col>
-                                </Grid>
-                                <Grid align="between">
-                                    <Col cols={2} className="padding-h text-size-12 text-color-4">
-                                        <span className="icon icon-back text-size-12"></span>
-                                        123
-                                    </Col>
-                                    <Col cols={2} className="padding-h text-size-12 text-color-4 text-right">
-                                        <Grid>
-                                            <Col>
-                                                <span className="icon icon-back text-size-12"></span>
-                                                123
-                                            </Col>
-                                            <Col>
-                                                <span className="icon icon-back text-size-12"></span>
-                                                123
-                                            </Col>
-                                        </Grid>
-                                    </Col>
-                                </Grid>
-                            </List>
-                        </Group>
-                    </div>
-                    <div className="border-d7d7d7 bgF margin-top-sm">
-                        <Group noPadded className="margin-v-0">
-                            <List>
-                                <List.Item
-                                    media={img}
-                                    //after={btn}
-                                    title={tit}
-                                />
-                                <div className="padding-h margin-v-xs">
-                                    <div className="text-size-15 text-color-3 font-weight">标题名称名称名称</div>
-                                    <div className="text-size-13 text-color-2 home-tribe-desc">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</div>
-                                </div>
-                                <Grid avg={3}>
-                                    <Col className="padding-h padding-top-xs padding-bottom-0">
-                                        <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg" />
-                                    </Col>
-                                    <Col className="padding-h padding-top-xs padding-bottom-0">
-                                        <img src="http://s.amazeui.org/media/i/demos/bing-2.jpg" />
-                                    </Col>
-                                    <Col className="padding-h padding-top-xs padding-bottom-0">
-                                        <img src="http://s.amazeui.org/media/i/demos/bing-3.jpg" />
-                                    </Col>
-                                </Grid>
-                                <Grid align="between">
-                                    <Col cols={2} className="padding-h text-size-12 text-color-4">
-                                        <span className="icon icon-back text-size-12"></span>
-                                        123
-                                    </Col>
-                                    <Col cols={2} className="padding-h text-size-12 text-color-4 text-right">
-                                        <Grid>
-                                            <Col>
-                                                <span className="icon icon-back text-size-12"></span>
-                                                123
-                                            </Col>
-                                            <Col>
-                                                <span className="icon icon-back text-size-12"></span>
-                                                123
-                                            </Col>
-                                        </Grid>
-                                    </Col>
-                                </Grid>
-                            </List>
-                        </Group>
-                    </div>
+
+                    {topicList.map((topic, i) => {
+                        return (
+                            <div className="border-d7d7d7 bgF margin-top-sm" key={i}>
+                                <Group noPadded className="margin-v-0">
+                                    <List>
+                                        <List.Item
+                                            media= {
+                                            <a href={topic.userhref}>
+                                                <img className="home-tribe-media" width="44" height="44" src= {topic.media}/>
+                                            </a>
+                                            }
+                                            title={
+                                             <div className="home-tribe-item">
+                                                <a href={topic.userhref}>
+                                                    <p className="text-color-3 text-size-14">{topic.username}</p>
+                                                </a>
+                                                <p className="text-color-4 text-size-13">{topic.time}</p>
+                                            </div>
+                                            }
+                                        />
+                                        <a href={topic.topichref}>
+                                            <div className="padding-h margin-v-xs">
+                                                <div className="text-size-15 text-color-3 font-weight">{topic.titname}</div>
+                                                <div className="text-size-13 text-color-2 home-tribe-desc">{topic.desc}</div>
+                                            </div>
+                                            <Grid avg={3}>
+                                                {topic.imgarr.map((img,f) => {
+                                                    return (
+                                                        <Col className="padding-h padding-top-xs padding-bottom-0" key={f}>
+                                                            <img src={img}  />
+                                                        </Col>
+                                                    );
+                                                })}
+
+                                            </Grid>
+                                            <Grid align="between">
+                                                <Col cols={2} className="padding-h text-size-12 text-color-4">
+                                                    <span className="icon icon-back text-size-12"></span>
+                                                    {topic.say}
+                                                </Col>
+                                                <Col cols={2} className="padding-h text-size-12 text-color-4 text-right">
+                                                    <Grid>
+                                                        <Col>
+                                                            <span className="icon icon-back text-size-12"></span>
+                                                            {topic.zan}
+                                                        </Col>
+                                                        <Col>
+                                                            <span className="icon icon-back text-size-12"></span>
+                                                            {topic.com}
+                                                        </Col>
+                                                    </Grid>
+                                                </Col>
+                                            </Grid>
+                                        </a>
+
+                                    </List>
+                                </Group>
+                            </div>
+                        );
+                    })}
                 </div>
                 
 

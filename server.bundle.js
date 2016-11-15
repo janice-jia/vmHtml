@@ -158,54 +158,90 @@
 
 	var _App2 = _interopRequireDefault(_App);
 
-	var _Home = __webpack_require__(10);
+	var _Register = __webpack_require__(10);
+
+	var _Register2 = _interopRequireDefault(_Register);
+
+	var _Login = __webpack_require__(14);
+
+	var _Login2 = _interopRequireDefault(_Login);
+
+	var _Home = __webpack_require__(15);
 
 	var _Home2 = _interopRequireDefault(_Home);
 
-	var _Server = __webpack_require__(18);
+	var _Server = __webpack_require__(20);
 
 	var _Server2 = _interopRequireDefault(_Server);
 
-	var _ServerInfo = __webpack_require__(19);
+	var _ServerInfo = __webpack_require__(21);
 
 	var _ServerInfo2 = _interopRequireDefault(_ServerInfo);
 
-	var _Require = __webpack_require__(20);
+	var _Require = __webpack_require__(22);
 
 	var _Require2 = _interopRequireDefault(_Require);
 
-	var _RequireInfo = __webpack_require__(21);
+	var _RequireInfo = __webpack_require__(23);
 
 	var _RequireInfo2 = _interopRequireDefault(_RequireInfo);
 
-	var _Tribe = __webpack_require__(22);
+	var _Search = __webpack_require__(24);
+
+	var _Search2 = _interopRequireDefault(_Search);
+
+	var _Tribe = __webpack_require__(25);
 
 	var _Tribe2 = _interopRequireDefault(_Tribe);
 
-	var _TribeInfo = __webpack_require__(23);
+	var _TribeInfo = __webpack_require__(26);
 
 	var _TribeInfo2 = _interopRequireDefault(_TribeInfo);
 
-	var _TribeAlbum = __webpack_require__(24);
+	var _TribeAlbum = __webpack_require__(27);
 
 	var _TribeAlbum2 = _interopRequireDefault(_TribeAlbum);
+
+	var _TribeAlbumInfo = __webpack_require__(28);
+
+	var _TribeAlbumInfo2 = _interopRequireDefault(_TribeAlbumInfo);
+
+	var _TribeImgCom = __webpack_require__(29);
+
+	var _TribeImgCom2 = _interopRequireDefault(_TribeImgCom);
+
+	var _TribeTopic = __webpack_require__(30);
+
+	var _TribeTopic2 = _interopRequireDefault(_TribeTopic);
+
+	var _TribePerson = __webpack_require__(31);
+
+	var _TribePerson2 = _interopRequireDefault(_TribePerson);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	module.exports = _react2.default.createElement(
 	    _reactRouter.Router,
-	    { history: _reactRouter.browserHistory },
+	    null,
 	    _react2.default.createElement(
 	        _reactRouter.Route,
 	        { path: '/', component: _App2.default },
 	        _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
+	        _react2.default.createElement(_reactRouter.Route, { path: '/register', component: _Register2.default }),
+	        _react2.default.createElement(_reactRouter.Route, { path: '/Login', component: _Login2.default }),
 	        _react2.default.createElement(_reactRouter.Route, { path: '/server', component: _Server2.default }),
 	        _react2.default.createElement(_reactRouter.Route, { path: '/server/info/:serverId', component: _ServerInfo2.default }),
 	        _react2.default.createElement(_reactRouter.Route, { path: '/require', component: _Require2.default }),
 	        _react2.default.createElement(_reactRouter.Route, { path: '/require/info/:requireId', component: _RequireInfo2.default }),
+	        _react2.default.createElement(_reactRouter.Route, { path: '/search', component: _Search2.default }),
 	        _react2.default.createElement(_reactRouter.Route, { path: '/tribe', component: _Tribe2.default }),
 	        _react2.default.createElement(_reactRouter.Route, { path: '/tribe/info/:tribeId', component: _TribeInfo2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: '/tribe/album/:albumId', component: _TribeAlbum2.default })
+	        _react2.default.createElement(_reactRouter.Route, { path: '/tribe/album/:albumId', component: _TribeAlbum2.default }),
+	        _react2.default.createElement(_reactRouter.Route, { path: '/tribe/album/:tribeId', component: _TribeAlbum2.default }),
+	        _react2.default.createElement(_reactRouter.Route, { path: '/tribe/album/info/:albumId', component: _TribeAlbumInfo2.default }),
+	        _react2.default.createElement(_reactRouter.Route, { path: '/tribe/album/img/:imgId', component: _TribeImgCom2.default }),
+	        _react2.default.createElement(_reactRouter.Route, { path: '/tribe/topic/01', component: _TribeTopic2.default }),
+	        _react2.default.createElement(_reactRouter.Route, { path: '/tribe/person', component: _TribePerson2.default })
 	    )
 	);
 
@@ -254,6 +290,435 @@
 	    value: true
 	});
 
+	var _react = __webpack_require__(4);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _amazeuiTouch = __webpack_require__(9);
+
+	var _Header = __webpack_require__(11);
+
+	var _Header2 = _interopRequireDefault(_Header);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	    displayName: 'Register',
+	    render: function render() {
+	        return _react2.default.createElement(
+	            _amazeuiTouch.View,
+	            null,
+	            _react2.default.createElement(
+	                _amazeuiTouch.Container,
+	                null,
+	                _react2.default.createElement(_Header2.default, null),
+	                _react2.default.createElement(
+	                    _amazeuiTouch.Group,
+	                    { className: 'regLog-logo' },
+	                    _react2.default.createElement('div', { className: 'regLog-logo-img' })
+	                ),
+	                _react2.default.createElement(
+	                    _amazeuiTouch.Group,
+	                    { className: 'bgNone' },
+	                    _react2.default.createElement(
+	                        'form',
+	                        { action: '' },
+	                        _react2.default.createElement(
+	                            _amazeuiTouch.List,
+	                            null,
+	                            _react2.default.createElement(
+	                                _amazeuiTouch.List.Item,
+	                                { key: '1', media: _react2.default.createElement(_amazeuiTouch.Icon, { name: 'person' }), nested: 'input' },
+	                                _react2.default.createElement(_amazeuiTouch.Field, { type: 'text', placeholder: '\u8BF7\u8F93\u5165\u60A8\u7684\u624B\u673A\u53F7' })
+	                            ),
+	                            _react2.default.createElement(
+	                                _amazeuiTouch.List.Item,
+	                                { key: '2', media: _react2.default.createElement(_amazeuiTouch.Icon, { name: 'person' }), nested: 'input' },
+	                                _react2.default.createElement(_amazeuiTouch.Field, { type: 'text', placeholder: '\u8BF7\u8BBE\u7F6E6-16\u4F4D\u5BC6\u7801' })
+	                            ),
+	                            _react2.default.createElement(
+	                                _amazeuiTouch.List.Item,
+	                                { key: '3', media: _react2.default.createElement(_amazeuiTouch.Icon, { name: 'person' }), nested: 'input' },
+	                                _react2.default.createElement(_amazeuiTouch.Field, { type: 'text', placeholder: '\u8BF7\u8BBE\u7F6E\u60A8\u7684\u7528\u6237\u6635\u79F0' })
+	                            ),
+	                            _react2.default.createElement(
+	                                _amazeuiTouch.Grid,
+	                                null,
+	                                _react2.default.createElement(
+	                                    _amazeuiTouch.Col,
+	                                    { cols: 4 },
+	                                    _react2.default.createElement(_amazeuiTouch.Field, { type: 'text', placeholder: '\u8BF7\u8BBE\u7F6E\u60A8\u7684\u7528\u6237\u6635\u79F0' })
+	                                ),
+	                                _react2.default.createElement(
+	                                    _amazeuiTouch.Col,
+	                                    { cols: 2 },
+	                                    _react2.default.createElement(
+	                                        _amazeuiTouch.Button,
+	                                        null,
+	                                        '\u70B9\u51FB\u83B7\u53D6\u9A8C\u8BC1\u7801'
+	                                    )
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                _amazeuiTouch.Grid,
+	                                null,
+	                                _react2.default.createElement(
+	                                    _amazeuiTouch.Col,
+	                                    { shrink: true, className: 'padding-right-0' },
+	                                    _react2.default.createElement('input', { type: 'checkbox' })
+	                                ),
+	                                _react2.default.createElement(
+	                                    _amazeuiTouch.Col,
+	                                    null,
+	                                    '\u6211\u5DF2\u9605\u8BFB\u5E76\u63A5\u53D7\u4F17\u521B\u90E8\u843D\u7684\u7528\u6237\u534F\u8BAE'
+	                                )
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            _amazeuiTouch.Button,
+	                            { className: 'btn-yellow' },
+	                            '\u6CE8\u518C'
+	                        )
+	                    )
+	                )
+	            )
+	        );
+	    }
+	});
+
+/***/ },
+/* 11 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(4);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(6);
+
+	var _NavLink = __webpack_require__(12);
+
+	var _NavLink2 = _interopRequireDefault(_NavLink);
+
+	var _amazeuiTouch = __webpack_require__(9);
+
+	var _jquery = __webpack_require__(13);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	//import {
+	//    Link,
+	//} from 'react-router';
+
+
+	var Header = function (_React$Component) {
+	    _inherits(Header, _React$Component);
+
+	    function Header(props) {
+	        _classCallCheck(this, Header);
+
+	        //判断当前是否在搜索页，如果是搜索页则默认显示搜索导航条
+	        var _this = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this, props));
+
+	        if (_this.props.isSearch) {
+	            _this.state = {
+	                visible: true,
+	                searchVal: _this.props.searchVal
+	            };
+	        } else {
+	            _this.state = {
+	                visible: false,
+	                searchVal: ''
+	            };
+	        }
+	        _this.onChange = _this.onChange.bind(_this);
+	        return _this;
+	    }
+
+	    _createClass(Header, [{
+	        key: 'componentDidMount',
+	        value: function componentDidMount() {}
+
+	        //打开搜索
+
+	    }, {
+	        key: 'openNotification',
+	        value: function openNotification(item) {
+	            if (item.className == 'right') {
+	                this.setState({
+	                    visible: true
+	                });
+	            } else {
+	                this.setState({
+	                    visible: false
+	                });
+	            }
+	        }
+
+	        //关闭搜索
+
+	    }, {
+	        key: 'closeNotification',
+	        value: function closeNotification() {
+	            this.setState({
+	                visible: false
+	            });
+	        }
+	    }, {
+	        key: 'handleChange',
+	        value: function handleChange(event) {
+	            this.setState({
+	                searchVal: event.target.value
+	            });
+	        }
+	    }, {
+	        key: 'onChange',
+	        value: function onChange(state) {
+	            this.setState(state);
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                { className: 'header' },
+	                _react2.default.createElement(
+	                    _amazeuiTouch.Notification,
+	                    {
+	                        className: 'padding-v-xs',
+	                        amStyle: this.state.amStyle,
+	                        visible: this.state.visible,
+	                        animated: true,
+	                        closeBtn: false,
+	                        onDismiss: this.closeNotification.bind(this)
+	                    },
+	                    _react2.default.createElement(
+	                        _amazeuiTouch.Grid,
+	                        { className: 'bgNone' },
+	                        _react2.default.createElement(
+	                            _amazeuiTouch.Col,
+	                            { cols: 5, className: 'padding-0' },
+	                            _react2.default.createElement(
+	                                'form',
+	                                { action: '/search' },
+	                                _react2.default.createElement(_amazeuiTouch.Field, { name: 'search', onChange: this.handleChange.bind(this), value: this.state.searchVal,
+	                                    className: 'margin-0 padding-v-xs text-size-14', placeholder: '\u4F17\u521B' })
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            _amazeuiTouch.Col,
+	                            { cols: 1, className: 'padding-0 bgNone text-right', onClick: this.closeNotification.bind(this) },
+	                            _react2.default.createElement(
+	                                'p',
+	                                { className: 'text-size-14 padding-v-xs' },
+	                                '\u53D6\u6D88'
+	                            )
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(_amazeuiTouch.NavBar, {
+	                    className: 'Header',
+	                    title: _react2.default.createElement(
+	                        'div',
+	                        { className: 'home-logo' },
+	                        'logo'
+	                    ),
+	                    leftNav: [{ title: '',
+	                        icon: 'bars',
+	                        component: _amazeuiTouch.OffCanvasTrigger,
+	                        offCanvas: _react2.default.createElement(
+	                            _amazeuiTouch.OffCanvas,
+	                            null,
+	                            _react2.default.createElement(
+	                                _amazeuiTouch.Group,
+	                                { className: 'header-login bgNone margin-0 padding-v' },
+	                                _react2.default.createElement(
+	                                    _reactRouter.Link,
+	                                    { to: '/register', className: 'btn-yellow margin-bottom' },
+	                                    '\u6CE8\u518C'
+	                                ),
+	                                _react2.default.createElement(
+	                                    _reactRouter.Link,
+	                                    { to: '/login', className: 'btn-white-noBorder' },
+	                                    '\u767B\u9646'
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                _amazeuiTouch.Group,
+	                                { className: 'header-login bgNone margin-0 hidden' },
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'header-user-avatar margin-v' },
+	                                    _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg', height: '50', width: '50', alt: '' })
+	                                ),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'header-user-name text-color-7 text-size-16' },
+	                                    '\u7528\u6237\u540D\u7528\u6237\u540D'
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                _amazeuiTouch.List,
+	                                { className: 'header-nav' },
+	                                _react2.default.createElement(_amazeuiTouch.List.Item, {
+	                                    linkComponent: _NavLink2.default,
+	                                    media: _react2.default.createElement(_amazeuiTouch.Icon, null),
+	                                    linkProps: {
+	                                        to: '/',
+	                                        onClick: this.onDismiss,
+	                                        onlyActiveOnIndex: true
+	                                    },
+	                                    title: '\u9996\u9875',
+	                                    className: 'header-nav-icon header-nav-index'
+	                                }),
+	                                _react2.default.createElement(_amazeuiTouch.List.Item, {
+	                                    linkComponent: _NavLink2.default,
+	                                    media: _react2.default.createElement(_amazeuiTouch.Icon, null),
+	                                    linkProps: {
+	                                        to: '/tribe',
+	                                        onClick: this.onDismiss
+	                                    },
+	                                    title: '\u90E8\u843D',
+	                                    className: 'header-nav-icon header-nav-tribe'
+	                                }),
+	                                _react2.default.createElement(_amazeuiTouch.List.Item, {
+	                                    linkComponent: _NavLink2.default,
+	                                    media: _react2.default.createElement(_amazeuiTouch.Icon, null),
+	                                    linkProps: {
+	                                        to: '/require',
+	                                        onClick: this.onDismiss
+	                                    },
+	                                    title: '\u9700\u6C42',
+	                                    className: 'header-nav-icon header-nav-require'
+	                                }),
+	                                _react2.default.createElement(_amazeuiTouch.List.Item, {
+	                                    linkComponent: _NavLink2.default,
+	                                    media: _react2.default.createElement(_amazeuiTouch.Icon, null),
+	                                    linkProps: {
+	                                        to: '/server',
+	                                        onClick: this.onDismiss
+	                                    },
+	                                    title: '\u670D\u52A1',
+	                                    className: 'header-nav-icon header-nav-server'
+	                                })
+	                            )
+	                        ),
+	                        isClone: true }],
+	                    rightNav: [{
+	                        title: 'right',
+	                        className: 'right'
+	                    }],
+	                    onAction: this.openNotification.bind(this),
+	                    amStyle: 'dark' })
+	            );
+	        }
+	    }]);
+
+	    return Header;
+	}(_react2.default.Component);
+
+	exports.default = Header;
+
+/***/ },
+/* 12 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var _react = __webpack_require__(4);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(6);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	    displayName: 'NavLink',
+	    render: function render() {
+	        return _react2.default.createElement(_reactRouter.Link, _extends({}, this.props, { activeClassName: 'header-link-active' }));
+	    }
+	});
+
+/***/ },
+/* 13 */
+/***/ function(module, exports) {
+
+	module.exports = require("jquery");
+
+/***/ },
+/* 14 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(4);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _amazeuiTouch = __webpack_require__(9);
+
+	var _Header = __webpack_require__(11);
+
+	var _Header2 = _interopRequireDefault(_Header);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	    displayName: 'Login',
+	    render: function render() {
+	        return _react2.default.createElement(
+	            _amazeuiTouch.View,
+	            null,
+	            _react2.default.createElement(
+	                _amazeuiTouch.Container,
+	                null,
+	                _react2.default.createElement(_Header2.default, null),
+	                _react2.default.createElement(
+	                    _amazeuiTouch.Group,
+	                    { className: 'regLog-logo' },
+	                    _react2.default.createElement('div', { className: 'regLog-logo-img' })
+	                )
+	            )
+	        );
+	    }
+	});
+
+/***/ },
+/* 15 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _react = __webpack_require__(4);
@@ -262,15 +727,15 @@
 
 	var _amazeuiTouch = __webpack_require__(9);
 
-	var _HomeStore = __webpack_require__(11);
+	var _HomeStore = __webpack_require__(16);
 
 	var _HomeStore2 = _interopRequireDefault(_HomeStore);
 
-	var _HomeActions = __webpack_require__(14);
+	var _HomeActions = __webpack_require__(19);
 
 	var _HomeActions2 = _interopRequireDefault(_HomeActions);
 
-	var _Header = __webpack_require__(16);
+	var _Header = __webpack_require__(11);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
@@ -305,13 +770,6 @@
 
 	var Home = function (_React$Component) {
 	    _inherits(Home, _React$Component);
-
-	    _createClass(Home, [{
-	        key: 'setHeight',
-	        value: function setHeight() {
-	            console.info('myImg', this.refs);
-	        }
-	    }]);
 
 	    function Home(props) {
 	        _classCallCheck(this, Home);
@@ -385,7 +843,7 @@
 	                                _react2.default.createElement(
 	                                    _amazeuiTouch.Col,
 	                                    { className: 'padding-v-0' },
-	                                    _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg', ref: 'myImg', onLoad: this.setHeight() })
+	                                    _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' })
 	                                ),
 	                                _react2.default.createElement(
 	                                    _amazeuiTouch.Col,
@@ -533,7 +991,7 @@
 	                                    _react2.default.createElement(
 	                                        _amazeuiTouch.Col,
 	                                        { cols: 2, className: 'padding-h text-size-12 text-color-4' },
-	                                        _react2.default.createElement('span', { className: 'icon icon-back text-size-12' }),
+	                                        _react2.default.createElement('span', { className: 'icon home-icon-view margin-right-xs' }),
 	                                        '123'
 	                                    ),
 	                                    _react2.default.createElement(
@@ -545,13 +1003,13 @@
 	                                            _react2.default.createElement(
 	                                                _amazeuiTouch.Col,
 	                                                null,
-	                                                _react2.default.createElement('span', { className: 'icon icon-back text-size-12' }),
+	                                                _react2.default.createElement('span', { className: 'icon home-icon-view margin-right-xs' }),
 	                                                '123'
 	                                            ),
 	                                            _react2.default.createElement(
 	                                                _amazeuiTouch.Col,
 	                                                null,
-	                                                _react2.default.createElement('span', { className: 'icon icon-back text-size-12' }),
+	                                                _react2.default.createElement('span', { className: 'icon home-icon-view margin-right-xs' }),
 	                                                '123'
 	                                            )
 	                                        )
@@ -600,11 +1058,6 @@
 	                            { className: 'text-center text-size-14 text-color-2' },
 	                            '\u4EACICP\u590714057447\u53F7-3'
 	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        '\u610F\u89C1\u53CD\u9988\u610F\u89C1\u53CD\u9988\u610F\u89C1\u53CD\u9988\u610F\u89C1\u53CD\u9988\u610F\u89C1\u53CD\u9988\u610F\u89C1\u53CD\u9988\u610F\u89C1\u53CD\u9988'
 	                    )
 	                )
 	            );
@@ -617,7 +1070,7 @@
 	exports.default = Home;
 
 /***/ },
-/* 11 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -628,11 +1081,11 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _alt = __webpack_require__(12);
+	var _alt = __webpack_require__(17);
 
 	var _alt2 = _interopRequireDefault(_alt);
 
-	var _HomeActions = __webpack_require__(14);
+	var _HomeActions = __webpack_require__(19);
 
 	var _HomeActions2 = _interopRequireDefault(_HomeActions);
 
@@ -671,7 +1124,7 @@
 	exports.default = _alt2.default.createStore(HomeStore, 'HomeStore');
 
 /***/ },
-/* 12 */
+/* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -680,7 +1133,7 @@
 	  value: true
 	});
 
-	var _alt = __webpack_require__(13);
+	var _alt = __webpack_require__(18);
 
 	var _alt2 = _interopRequireDefault(_alt);
 
@@ -689,13 +1142,13 @@
 	exports.default = new _alt2.default();
 
 /***/ },
-/* 13 */
+/* 18 */
 /***/ function(module, exports) {
 
 	module.exports = require("alt");
 
 /***/ },
-/* 14 */
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -706,11 +1159,11 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _alt = __webpack_require__(12);
+	var _alt = __webpack_require__(17);
 
 	var _alt2 = _interopRequireDefault(_alt);
 
-	var _jquery = __webpack_require__(15);
+	var _jquery = __webpack_require__(13);
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -747,206 +1200,7 @@
 	exports.default = _alt2.default.createActions(HomeActions);
 
 /***/ },
-/* 15 */
-/***/ function(module, exports) {
-
-	module.exports = require("jquery");
-
-/***/ },
-/* 16 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(4);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(6);
-
-	var _NavLink = __webpack_require__(17);
-
-	var _NavLink2 = _interopRequireDefault(_NavLink);
-
-	var _amazeuiTouch = __webpack_require__(9);
-
-	var _jquery = __webpack_require__(15);
-
-	var _jquery2 = _interopRequireDefault(_jquery);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Header = function (_React$Component) {
-	    _inherits(Header, _React$Component);
-
-	    function Header(props) {
-	        _classCallCheck(this, Header);
-
-	        var _this = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this, props));
-
-	        _this.state = {
-	            visible: false
-	        };
-	        return _this;
-	    }
-
-	    _createClass(Header, [{
-	        key: 'openNotification',
-	        value: function openNotification() {
-	            this.setState({
-	                visible: true
-	            });
-	        }
-	    }, {
-	        key: 'closeNotification',
-	        value: function closeNotification() {
-	            this.setState({
-	                visible: false
-	            });
-	        }
-	    }, {
-	        key: 'render',
-	        value: function render() {
-	            return _react2.default.createElement(
-	                'div',
-	                { className: 'header' },
-	                _react2.default.createElement(
-	                    _amazeuiTouch.Notification,
-	                    {
-	                        amStyle: this.state.amStyle,
-	                        visible: this.state.visible,
-	                        animated: true,
-	                        closeBtn: false,
-	                        onDismiss: this.closeNotification.bind(this)
-	                    },
-	                    _react2.default.createElement(
-	                        _amazeuiTouch.Grid,
-	                        { className: 'bgNone' },
-	                        _react2.default.createElement(
-	                            _amazeuiTouch.Col,
-	                            { cols: 5, className: 'padding-0' },
-	                            _react2.default.createElement(
-	                                'form',
-	                                { action: '' },
-	                                _react2.default.createElement(_amazeuiTouch.Field, { className: 'margin-0 padding-v-xs text-size-14',
-	                                    placeholder: '\u4F17\u521B'
-	                                })
-	                            )
-	                        ),
-	                        _react2.default.createElement(
-	                            _amazeuiTouch.Col,
-	                            { cols: 1, className: 'padding-0 bgNone text-right' },
-	                            _react2.default.createElement(
-	                                'p',
-	                                { className: 'text-size-14 padding-v-xs' },
-	                                '\u53D6\u6D88'
-	                            )
-	                        )
-	                    )
-	                ),
-	                _react2.default.createElement(_amazeuiTouch.NavBar, {
-	                    className: 'Header',
-	                    title: 'vmaking',
-	                    leftNav: [{ title: '',
-	                        icon: 'bars',
-	                        component: _amazeuiTouch.OffCanvasTrigger,
-	                        offCanvas: _react2.default.createElement(
-	                            _amazeuiTouch.OffCanvas,
-	                            null,
-	                            _react2.default.createElement(
-	                                _amazeuiTouch.List,
-	                                null,
-	                                _react2.default.createElement(_amazeuiTouch.List.Item, {
-	                                    linkComponent: _NavLink2.default,
-	                                    linkProps: {
-	                                        to: '/',
-	                                        onClick: this.onDismiss,
-	                                        onlyActiveOnIndex: true
-	                                    },
-	                                    title: '\u9996\u9875'
-	                                }),
-	                                _react2.default.createElement(_amazeuiTouch.List.Item, {
-	                                    linkComponent: _NavLink2.default,
-	                                    linkProps: {
-	                                        to: '/tribe',
-	                                        onClick: this.onDismiss
-	                                    },
-	                                    title: '\u90E8\u843D'
-	                                }),
-	                                _react2.default.createElement(_amazeuiTouch.List.Item, {
-	                                    linkComponent: _NavLink2.default,
-	                                    linkProps: {
-	                                        to: '/require',
-	                                        onClick: this.onDismiss
-	                                    },
-	                                    title: '\u9700\u6C42'
-	                                }),
-	                                _react2.default.createElement(_amazeuiTouch.List.Item, {
-	                                    linkComponent: _NavLink2.default,
-	                                    linkProps: {
-	                                        to: '/server',
-	                                        onClick: this.onDismiss
-	                                    },
-	                                    title: '\u670D\u52A1'
-	                                })
-	                            )
-	                        ),
-	                        isClone: true }],
-	                    rightNav: [{
-	                        title: 'right'
-	                    }],
-	                    onAction: this.openNotification.bind(this),
-	                    amStyle: 'dark' })
-	            );
-	        }
-	    }]);
-
-	    return Header;
-	}(_react2.default.Component);
-
-	exports.default = Header;
-
-/***/ },
-/* 17 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	var _react = __webpack_require__(4);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(6);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = _react2.default.createClass({
-	    displayName: 'NavLink',
-	    render: function render() {
-	        return _react2.default.createElement(_reactRouter.Link, _extends({}, this.props, { activeClassName: 'header-link-active' }));
-	    }
-	});
-
-/***/ },
-/* 18 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -961,7 +1215,7 @@
 
 	var _amazeuiTouch = __webpack_require__(9);
 
-	var _Header = __webpack_require__(16);
+	var _Header = __webpack_require__(11);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
@@ -1152,7 +1406,7 @@
 	});
 
 /***/ },
-/* 19 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1167,7 +1421,7 @@
 
 	var _amazeuiTouch = __webpack_require__(9);
 
-	var _Header = __webpack_require__(16);
+	var _Header = __webpack_require__(11);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
@@ -1330,7 +1584,7 @@
 	});
 
 /***/ },
-/* 20 */
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1345,7 +1599,7 @@
 
 	var _amazeuiTouch = __webpack_require__(9);
 
-	var _Header = __webpack_require__(16);
+	var _Header = __webpack_require__(11);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
@@ -1531,7 +1785,7 @@
 	});
 
 /***/ },
-/* 21 */
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1546,7 +1800,7 @@
 
 	var _amazeuiTouch = __webpack_require__(9);
 
-	var _Header = __webpack_require__(16);
+	var _Header = __webpack_require__(11);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
@@ -1863,7 +2117,123 @@
 	});
 
 /***/ },
-/* 22 */
+/* 24 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(4);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _amazeuiTouch = __webpack_require__(9);
+
+	var _Header = __webpack_require__(11);
+
+	var _Header2 = _interopRequireDefault(_Header);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Search = function (_React$Component) {
+	    _inherits(Search, _React$Component);
+
+	    function Search(props) {
+	        _classCallCheck(this, Search);
+
+	        var _this = _possibleConstructorReturn(this, (Search.__proto__ || Object.getPrototypeOf(Search)).call(this, props));
+
+	        _this.state = {
+	            visible: true,
+	            searchVal: _this.props.location.query.search
+	        };
+	        return _this;
+	    }
+
+	    _createClass(Search, [{
+	        key: 'handleChange',
+	        value: function handleChange(event) {
+	            this.setState({
+	                searchVal: event.target.value
+	            });
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                _amazeuiTouch.View,
+	                { className: 'header' },
+	                _react2.default.createElement(
+	                    _amazeuiTouch.Container,
+	                    null,
+	                    _react2.default.createElement(_Header2.default, { isSearch: true, onChange: this.handleChange.bind(this), searchVal: this.state.searchVal }),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'require-tabs-list' },
+	                        _react2.default.createElement(
+	                            _amazeuiTouch.Tabs,
+	                            { onAction: this.handleAction, className: 'margin-0' },
+	                            _react2.default.createElement(
+	                                _amazeuiTouch.Tabs.Item,
+	                                { title: '\u90E8\u843D', key: '1', className: 'padding-0' },
+	                                _react2.default.createElement(
+	                                    _amazeuiTouch.List,
+	                                    { className: 'margin-top-0' },
+	                                    this.state.searchVal
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                _amazeuiTouch.Tabs.Item,
+	                                { title: '\u8BDD\u9898', key: '2', className: 'padding-0' },
+	                                _react2.default.createElement(
+	                                    _amazeuiTouch.List,
+	                                    { className: 'margin-top-0' },
+	                                    's'
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                _amazeuiTouch.Tabs.Item,
+	                                { title: '\u9700\u6C42', key: '3', className: 'padding-0' },
+	                                _react2.default.createElement(
+	                                    _amazeuiTouch.List,
+	                                    { className: 'margin-top-0' },
+	                                    's'
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                _amazeuiTouch.Tabs.Item,
+	                                { title: '\u670D\u52A1', key: '3', className: 'padding-0' },
+	                                _react2.default.createElement(
+	                                    _amazeuiTouch.List,
+	                                    { className: 'margin-top-0' },
+	                                    's'
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Search;
+	}(_react2.default.Component);
+
+	exports.default = Search;
+
+/***/ },
+/* 25 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1878,7 +2248,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Header = __webpack_require__(16);
+	var _Header = __webpack_require__(11);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
@@ -2024,7 +2394,7 @@
 	});
 
 /***/ },
-/* 23 */
+/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2037,7 +2407,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Header = __webpack_require__(16);
+	var _Header = __webpack_require__(11);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
@@ -2049,10 +2419,46 @@
 	    title: '原画部落',
 	    media: 'http://lorempixel.com/160/160/people/',
 	    subTitle: '123456',
-	    desc: '一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介'
+	    desc: '一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介',
+	    personHref: "/tribe/person",
+	    albumHref: "/tribe/album/01"
+
 	};
 	var listName = ["原画CG部落规定", "原画硬件设备：手绘板的参数调整", "别停笔，一直画", "【重要通知】关于最近删帖状况解释"];
 
+	var topicList = [{
+	    username: "嗨粉",
+	    media: "http://s.amazeui.org/media/i/demos/bing-1.jpg",
+	    userhref: "http://s.amazeui.org/media/i/demos/bing-1.jpg",
+	    topichref: "/tribe/topic/01",
+	    time: "1小时前",
+	    titname: "标题名称标题名称",
+	    desc: "帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内",
+	    say: "123",
+	    zan: "123",
+	    com: "123",
+	    imgarr: ["http://s.amazeui.org/media/i/demos/bing-1.jpg", "http://s.amazeui.org/media/i/demos/bing-2.jpg", "http://s.amazeui.org/media/i/demos/bing-3.jpg"]
+	}, {
+	    username: "嗨粉",
+	    media: "http://s.amazeui.org/media/i/demos/bing-1.jpg",
+	    time: "1小时前",
+	    titname: "标题名称标题名称",
+	    desc: "帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内",
+	    say: "123",
+	    zan: "123",
+	    com: "123",
+	    imgarr: ["http://s.amazeui.org/media/i/demos/bing-1.jpg", "http://s.amazeui.org/media/i/demos/bing-2.jpg", "http://s.amazeui.org/media/i/demos/bing-3.jpg"]
+	}, {
+	    username: "嗨粉",
+	    media: "http://s.amazeui.org/media/i/demos/bing-1.jpg",
+	    time: "1小时前",
+	    titname: "标题名称标题名称",
+	    desc: "帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内",
+	    say: "123",
+	    zan: "123",
+	    com: "123",
+	    imgarr: ["http://s.amazeui.org/media/i/demos/bing-1.jpg", "http://s.amazeui.org/media/i/demos/bing-2.jpg", "http://s.amazeui.org/media/i/demos/bing-3.jpg"]
+	}];
 	var img = _react2.default.createElement('img', { className: 'home-tribe-media', width: '44', height: '44', src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' });
 	var tit = _react2.default.createElement(
 	    'div',
@@ -2121,13 +2527,13 @@
 	                        { className: 'tirbe-info-tab' },
 	                        _react2.default.createElement(
 	                            'a',
-	                            { href: '#' },
+	                            { href: albums.personHref },
 	                            '\u65CF\u5458'
 	                        ),
 	                        _react2.default.createElement('hr', null),
 	                        _react2.default.createElement(
 	                            'a',
-	                            { href: '/tribe/album/01' },
+	                            { href: albums.albumHref },
 	                            '\u76F8\u518C'
 	                        )
 	                    )
@@ -2150,246 +2556,104 @@
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'tribe-topic-list' },
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'border-d7d7d7 bgF margin-top-sm' },
-	                        _react2.default.createElement(
-	                            _amazeuiTouch.Group,
-	                            { noPadded: true, className: 'margin-v-0' },
+	                    topicList.map(function (topic, i) {
+	                        return _react2.default.createElement(
+	                            'div',
+	                            { className: 'border-d7d7d7 bgF margin-top-sm', key: i },
 	                            _react2.default.createElement(
-	                                _amazeuiTouch.List,
-	                                null,
-	                                _react2.default.createElement(_amazeuiTouch.List.Item, {
-	                                    media: img
-	                                    //after={btn}
-	                                    , title: tit
-	                                }),
+	                                _amazeuiTouch.Group,
+	                                { noPadded: true, className: 'margin-v-0' },
 	                                _react2.default.createElement(
-	                                    'div',
-	                                    { className: 'padding-h margin-v-xs' },
+	                                    _amazeuiTouch.List,
+	                                    null,
+	                                    _react2.default.createElement(_amazeuiTouch.List.Item, {
+	                                        media: _react2.default.createElement(
+	                                            'a',
+	                                            { href: topic.userhref },
+	                                            _react2.default.createElement('img', { className: 'home-tribe-media', width: '44', height: '44', src: topic.media })
+	                                        ),
+	                                        title: _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'home-tribe-item' },
+	                                            _react2.default.createElement(
+	                                                'a',
+	                                                { href: topic.userhref },
+	                                                _react2.default.createElement(
+	                                                    'p',
+	                                                    { className: 'text-color-3 text-size-14' },
+	                                                    topic.username
+	                                                )
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                'p',
+	                                                { className: 'text-color-4 text-size-13' },
+	                                                topic.time
+	                                            )
+	                                        )
+	                                    }),
 	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'text-size-15 text-color-3 font-weight' },
-	                                        '\u6807\u9898\u540D\u79F0\u540D\u79F0\u540D\u79F0'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'text-size-13 text-color-2 home-tribe-desc' },
-	                                        '\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0'
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    _amazeuiTouch.Grid,
-	                                    { avg: 3 },
-	                                    _react2.default.createElement(
-	                                        _amazeuiTouch.Col,
-	                                        { className: 'padding-h padding-top-xs padding-bottom-0' },
-	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' })
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _amazeuiTouch.Col,
-	                                        { className: 'padding-h padding-top-xs padding-bottom-0' },
-	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' })
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _amazeuiTouch.Col,
-	                                        { className: 'padding-h padding-top-xs padding-bottom-0' },
-	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-3.jpg' })
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    _amazeuiTouch.Grid,
-	                                    { align: 'between' },
-	                                    _react2.default.createElement(
-	                                        _amazeuiTouch.Col,
-	                                        { cols: 2, className: 'padding-h text-size-12 text-color-4' },
-	                                        _react2.default.createElement('span', { className: 'icon icon-back text-size-12' }),
-	                                        '123'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _amazeuiTouch.Col,
-	                                        { cols: 2, className: 'padding-h text-size-12 text-color-4 text-right' },
+	                                        'a',
+	                                        { href: topic.topichref },
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'padding-h margin-v-xs' },
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                { className: 'text-size-15 text-color-3 font-weight' },
+	                                                topic.titname
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                { className: 'text-size-13 text-color-2 home-tribe-desc' },
+	                                                topic.desc
+	                                            )
+	                                        ),
 	                                        _react2.default.createElement(
 	                                            _amazeuiTouch.Grid,
-	                                            null,
+	                                            { avg: 3 },
+	                                            topic.imgarr.map(function (img, f) {
+	                                                return _react2.default.createElement(
+	                                                    _amazeuiTouch.Col,
+	                                                    { className: 'padding-h padding-top-xs padding-bottom-0', key: f },
+	                                                    _react2.default.createElement('img', { src: img })
+	                                                );
+	                                            })
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            _amazeuiTouch.Grid,
+	                                            { align: 'between' },
 	                                            _react2.default.createElement(
 	                                                _amazeuiTouch.Col,
-	                                                null,
+	                                                { cols: 2, className: 'padding-h text-size-12 text-color-4' },
 	                                                _react2.default.createElement('span', { className: 'icon icon-back text-size-12' }),
-	                                                '123'
+	                                                topic.say
 	                                            ),
 	                                            _react2.default.createElement(
 	                                                _amazeuiTouch.Col,
-	                                                null,
-	                                                _react2.default.createElement('span', { className: 'icon icon-back text-size-12' }),
-	                                                '123'
+	                                                { cols: 2, className: 'padding-h text-size-12 text-color-4 text-right' },
+	                                                _react2.default.createElement(
+	                                                    _amazeuiTouch.Grid,
+	                                                    null,
+	                                                    _react2.default.createElement(
+	                                                        _amazeuiTouch.Col,
+	                                                        null,
+	                                                        _react2.default.createElement('span', { className: 'icon icon-back text-size-12' }),
+	                                                        topic.zan
+	                                                    ),
+	                                                    _react2.default.createElement(
+	                                                        _amazeuiTouch.Col,
+	                                                        null,
+	                                                        _react2.default.createElement('span', { className: 'icon icon-back text-size-12' }),
+	                                                        topic.com
+	                                                    )
+	                                                )
 	                                            )
 	                                        )
 	                                    )
 	                                )
 	                            )
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'border-d7d7d7 bgF margin-top-sm' },
-	                        _react2.default.createElement(
-	                            _amazeuiTouch.Group,
-	                            { noPadded: true, className: 'margin-v-0' },
-	                            _react2.default.createElement(
-	                                _amazeuiTouch.List,
-	                                null,
-	                                _react2.default.createElement(_amazeuiTouch.List.Item, {
-	                                    media: img
-	                                    //after={btn}
-	                                    , title: tit
-	                                }),
-	                                _react2.default.createElement(
-	                                    'div',
-	                                    { className: 'padding-h margin-v-xs' },
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'text-size-15 text-color-3 font-weight' },
-	                                        '\u6807\u9898\u540D\u79F0\u540D\u79F0\u540D\u79F0'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'text-size-13 text-color-2 home-tribe-desc' },
-	                                        '\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0'
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    _amazeuiTouch.Grid,
-	                                    { avg: 3 },
-	                                    _react2.default.createElement(
-	                                        _amazeuiTouch.Col,
-	                                        { className: 'padding-h padding-top-xs padding-bottom-0' },
-	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' })
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _amazeuiTouch.Col,
-	                                        { className: 'padding-h padding-top-xs padding-bottom-0' },
-	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' })
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _amazeuiTouch.Col,
-	                                        { className: 'padding-h padding-top-xs padding-bottom-0' },
-	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-3.jpg' })
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    _amazeuiTouch.Grid,
-	                                    { align: 'between' },
-	                                    _react2.default.createElement(
-	                                        _amazeuiTouch.Col,
-	                                        { cols: 2, className: 'padding-h text-size-12 text-color-4' },
-	                                        _react2.default.createElement('span', { className: 'icon icon-back text-size-12' }),
-	                                        '123'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _amazeuiTouch.Col,
-	                                        { cols: 2, className: 'padding-h text-size-12 text-color-4 text-right' },
-	                                        _react2.default.createElement(
-	                                            _amazeuiTouch.Grid,
-	                                            null,
-	                                            _react2.default.createElement(
-	                                                _amazeuiTouch.Col,
-	                                                null,
-	                                                _react2.default.createElement('span', { className: 'icon icon-back text-size-12' }),
-	                                                '123'
-	                                            ),
-	                                            _react2.default.createElement(
-	                                                _amazeuiTouch.Col,
-	                                                null,
-	                                                _react2.default.createElement('span', { className: 'icon icon-back text-size-12' }),
-	                                                '123'
-	                                            )
-	                                        )
-	                                    )
-	                                )
-	                            )
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'border-d7d7d7 bgF margin-top-sm' },
-	                        _react2.default.createElement(
-	                            _amazeuiTouch.Group,
-	                            { noPadded: true, className: 'margin-v-0' },
-	                            _react2.default.createElement(
-	                                _amazeuiTouch.List,
-	                                null,
-	                                _react2.default.createElement(_amazeuiTouch.List.Item, {
-	                                    media: img
-	                                    //after={btn}
-	                                    , title: tit
-	                                }),
-	                                _react2.default.createElement(
-	                                    'div',
-	                                    { className: 'padding-h margin-v-xs' },
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'text-size-15 text-color-3 font-weight' },
-	                                        '\u6807\u9898\u540D\u79F0\u540D\u79F0\u540D\u79F0'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'text-size-13 text-color-2 home-tribe-desc' },
-	                                        '\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0'
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    _amazeuiTouch.Grid,
-	                                    { avg: 3 },
-	                                    _react2.default.createElement(
-	                                        _amazeuiTouch.Col,
-	                                        { className: 'padding-h padding-top-xs padding-bottom-0' },
-	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' })
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _amazeuiTouch.Col,
-	                                        { className: 'padding-h padding-top-xs padding-bottom-0' },
-	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' })
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _amazeuiTouch.Col,
-	                                        { className: 'padding-h padding-top-xs padding-bottom-0' },
-	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-3.jpg' })
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    _amazeuiTouch.Grid,
-	                                    { align: 'between' },
-	                                    _react2.default.createElement(
-	                                        _amazeuiTouch.Col,
-	                                        { cols: 2, className: 'padding-h text-size-12 text-color-4' },
-	                                        _react2.default.createElement('span', { className: 'icon icon-back text-size-12' }),
-	                                        '123'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _amazeuiTouch.Col,
-	                                        { cols: 2, className: 'padding-h text-size-12 text-color-4 text-right' },
-	                                        _react2.default.createElement(
-	                                            _amazeuiTouch.Grid,
-	                                            null,
-	                                            _react2.default.createElement(
-	                                                _amazeuiTouch.Col,
-	                                                null,
-	                                                _react2.default.createElement('span', { className: 'icon icon-back text-size-12' }),
-	                                                '123'
-	                                            ),
-	                                            _react2.default.createElement(
-	                                                _amazeuiTouch.Col,
-	                                                null,
-	                                                _react2.default.createElement('span', { className: 'icon icon-back text-size-12' }),
-	                                                '123'
-	                                            )
-	                                        )
-	                                    )
-	                                )
-	                            )
-	                        )
-	                    )
+	                        );
+	                    })
 	                )
 	            )
 	        );
@@ -2397,7 +2661,7 @@
 	});
 
 /***/ },
-/* 24 */
+/* 27 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2410,7 +2674,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Header = __webpack_require__(16);
+	var _Header = __webpack_require__(11);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
@@ -2420,31 +2684,41 @@
 
 	var albumList = [{
 	    img: "http://lorempixel.com/160/160/people/",
-	    name: "相册名称"
+	    name: "相册名称",
+	    href: "/tribe/album/info/01"
 	}, {
 	    img: "http://s.amazeui.org/media/i/demos/bing-1.jpg",
-	    name: "相册2"
+	    name: "相册2",
+	    href: "/tribe/album/info/01"
+
 	}, {
 	    img: "http://lorempixel.com/128/128/people/",
-	    name: "相册3"
+	    name: "相册3",
+	    href: "/tribe/album/info/01"
 	}, {
 	    img: "http://lorempixel.com/160/160/people/",
-	    name: "相册4"
+	    name: "相册4",
+	    href: "/tribe/album/info/01"
 	}, {
 	    img: "http://s.amazeui.org/media/i/demos/bing-1.jpg",
-	    name: "相册5"
+	    name: "相册5",
+	    href: "/tribe/album/info/01"
 	}, {
 	    img: "http://lorempixel.com/128/128/people/",
-	    name: "相册6"
+	    name: "相册6",
+	    href: "/tribe/album/info/01"
 	}, {
 	    img: "http://lorempixel.com/160/160/people/",
-	    name: "相册7"
+	    name: "相册7",
+	    href: "/tribe/album/info/01"
 	}, {
 	    img: "http://s.amazeui.org/media/i/demos/bing-1.jpg",
-	    name: "相册8"
+	    name: "相册8",
+	    href: "/tribe/album/info/01"
 	}, {
 	    img: "http://lorempixel.com/128/128/people/",
-	    name: "相册9"
+	    name: "相册9",
+	    href: "/tribe/album/info/01"
 	}];
 
 	exports.default = _react2.default.createClass({
@@ -2456,7 +2730,595 @@
 	            _react2.default.createElement(
 	                _amazeuiTouch.Container,
 	                { scrollable: true, className: 'tribe' },
-	                _react2.default.createElement(_Header2.default, null)
+	                _react2.default.createElement(_Header2.default, null),
+	                _react2.default.createElement(
+	                    _amazeuiTouch.Grid,
+	                    { avg: 3, className: 'text-center tribe-album' },
+	                    albumList.map(function (album, i) {
+	                        return _react2.default.createElement(
+	                            _amazeuiTouch.Col,
+	                            { key: i },
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: album.href },
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'albumImg' },
+	                                    _react2.default.createElement('img', { src: album.img, alt: '' })
+	                                ),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'tribe-albumName' },
+	                                    album.name
+	                                )
+	                            )
+	                        );
+	                    })
+	                )
+	            )
+	        );
+	    }
+	});
+
+/***/ },
+/* 28 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(4);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Header = __webpack_require__(11);
+
+	var _Header2 = _interopRequireDefault(_Header);
+
+	var _amazeuiTouch = __webpack_require__(9);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var albumList = {
+	    "msg": "23",
+	    "imgarr": [{
+	        img: "http://lorempixel.com/160/160/people/",
+	        href: "/tribe/album/img/01"
+	    }, {
+	        img: "http://s.amazeui.org/media/i/demos/bing-1.jpg",
+	        href: "/tribe/album/img/01"
+
+	    }, {
+	        img: "http://lorempixel.com/128/128/people/",
+	        href: "/tribe/album/img/01"
+	    }, {
+	        img: "http://lorempixel.com/160/160/people/",
+	        href: "/tribe/album/img/01"
+	    }, {
+	        img: "http://s.amazeui.org/media/i/demos/bing-1.jpg",
+	        href: "/tribe/album/img/01"
+	    }, {
+	        img: "http://lorempixel.com/128/128/people/",
+	        href: "/tribe/album/img/01"
+	    }, {
+	        img: "http://lorempixel.com/160/160/people/",
+	        href: "/tribe/album/img/01"
+	    }, {
+	        img: "http://s.amazeui.org/media/i/demos/bing-1.jpg",
+	        href: "/tribe/album/img/01"
+	    }, {
+	        img: "http://lorempixel.com/128/128/people/",
+	        href: "/tribe/album/img/01"
+	    }]
+	};
+
+	exports.default = _react2.default.createClass({
+	    displayName: 'TribeAlbumInfo',
+	    render: function render() {
+	        return _react2.default.createElement(
+	            _amazeuiTouch.View,
+	            null,
+	            _react2.default.createElement(
+	                _amazeuiTouch.Container,
+	                { scrollable: true, fill: true, className: 'tribe' },
+	                _react2.default.createElement(_Header2.default, null),
+	                _react2.default.createElement(
+	                    _amazeuiTouch.Grid,
+	                    { avg: 3, className: 'text-center tribe-album' },
+	                    albumList.imgarr.map(function (album, i) {
+	                        return _react2.default.createElement(
+	                            _amazeuiTouch.Col,
+	                            { key: i },
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'albumImg' },
+	                                _react2.default.createElement(
+	                                    'a',
+	                                    { href: album.href },
+	                                    _react2.default.createElement('img', { src: album.img, alt: '' })
+	                                )
+	                            )
+	                        );
+	                    })
+	                )
+	            )
+	        );
+	    }
+	});
+
+/***/ },
+/* 29 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(4);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Header = __webpack_require__(11);
+
+	var _Header2 = _interopRequireDefault(_Header);
+
+	var _amazeuiTouch = __webpack_require__(9);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var imgcom = {
+	    "img": "http://lorempixel.com/160/160/people/"
+	};
+
+	exports.default = _react2.default.createClass({
+	    displayName: 'TribeImgCom',
+	    render: function render() {
+	        return _react2.default.createElement(
+	            _amazeuiTouch.View,
+	            null,
+	            _react2.default.createElement(
+	                _amazeuiTouch.Container,
+	                { scrollable: true, fill: true, className: 'tribe' },
+	                _react2.default.createElement(_Header2.default, null),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'tribe-imgcom-img' },
+	                    _react2.default.createElement('img', { src: imgcom.img, alt: '' })
+	                ),
+	                _react2.default.createElement(
+	                    _amazeuiTouch.Group,
+	                    { noPadded: true, className: 'margin-v' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'padding-top require-badge' },
+	                        _react2.default.createElement(
+	                            'p',
+	                            { className: 'text-size-14' },
+	                            _react2.default.createElement(_amazeuiTouch.Badge, null),
+	                            _react2.default.createElement(
+	                                'span',
+	                                { className: 'padding-left-sm' },
+	                                '\u70ED\u95E8\u8BC4\u8BBA'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            _amazeuiTouch.List,
+	                            { className: 'comments' },
+	                            _react2.default.createElement(_amazeuiTouch.List.Item, {
+	                                media: _react2.default.createElement('img', { className: 'comments-avatar', width: '44', height: '44', src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' }),
+	                                title: '\u5973\u7235',
+	                                subTitle: '\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185',
+	                                desc: _react2.default.createElement(
+	                                    _amazeuiTouch.Grid,
+	                                    { align: 'between' },
+	                                    _react2.default.createElement(
+	                                        _amazeuiTouch.Col,
+	                                        { cols: 2, className: 'text-left padding-0' },
+	                                        '10\u5206\u949F\u524D'
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        _amazeuiTouch.Col,
+	                                        { cols: 2, className: 'text-right' },
+	                                        '2'
+	                                    )
+	                                )
+	                            })
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'padding-top require-badge border-none' },
+	                        _react2.default.createElement(
+	                            'p',
+	                            { className: 'text-size-14' },
+	                            _react2.default.createElement(_amazeuiTouch.Badge, null),
+	                            _react2.default.createElement(
+	                                'span',
+	                                { className: 'padding-left-sm' },
+	                                '\u5168\u90E8\u8BC4\u8BBA\uFF0830\u6761\uFF09'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            _amazeuiTouch.List,
+	                            { className: 'comments' },
+	                            _react2.default.createElement(_amazeuiTouch.List.Item, {
+	                                media: _react2.default.createElement('img', { className: 'comments-avatar', width: '44', height: '44', src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' }),
+	                                title: '\u5973\u7235',
+	                                subTitle: '\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185',
+	                                desc: _react2.default.createElement(
+	                                    _amazeuiTouch.Grid,
+	                                    { align: 'between' },
+	                                    _react2.default.createElement(
+	                                        _amazeuiTouch.Col,
+	                                        { cols: 2, className: 'text-left padding-0' },
+	                                        '10\u5206\u949F\u524D'
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        _amazeuiTouch.Col,
+	                                        { cols: 2, className: 'text-right' },
+	                                        '2'
+	                                    )
+	                                )
+	                            }),
+	                            _react2.default.createElement(_amazeuiTouch.List.Item, {
+	                                media: _react2.default.createElement('img', { className: 'comments-avatar', width: '44', height: '44', src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' }),
+	                                title: '\u5973\u7235',
+	                                subTitle: '\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185',
+	                                desc: _react2.default.createElement(
+	                                    _amazeuiTouch.Grid,
+	                                    { align: 'between' },
+	                                    _react2.default.createElement(
+	                                        _amazeuiTouch.Col,
+	                                        { cols: 2, className: 'text-left padding-0' },
+	                                        '10\u5206\u949F\u524D'
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        _amazeuiTouch.Col,
+	                                        { cols: 2, className: 'text-right' },
+	                                        '2'
+	                                    )
+	                                )
+	                            })
+	                        )
+	                    )
+	                )
+	            )
+	        );
+	    }
+	});
+
+/***/ },
+/* 30 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(4);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Header = __webpack_require__(11);
+
+	var _Header2 = _interopRequireDefault(_Header);
+
+	var _amazeuiTouch = __webpack_require__(9);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var albums = [{
+	    title: '女爵',
+	    media: 'http://lorempixel.com/160/160/people/',
+	    subTitle: '10分钟',
+	    tribe: "海贼王",
+	    userhref: "http://s.amazeui.org/media/i/demos/bing-1.jpg",
+	    tribehref: "/tribe/info/01",
+	    topicTit: "标题名称标题名称",
+	    topicDesc: "帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容",
+	    topicImg: "http://lorempixel.com/128/128/people/"
+
+	}];
+
+	exports.default = _react2.default.createClass({
+	    displayName: 'TribeTopic',
+	    render: function render() {
+	        return _react2.default.createElement(
+	            _amazeuiTouch.View,
+	            null,
+	            _react2.default.createElement(
+	                _amazeuiTouch.Container,
+	                { scrollable: true, className: 'tribe tribe-topic' },
+	                _react2.default.createElement(_Header2.default, null),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'tribe-info-user bgF' },
+	                    albums.map(function (album, i) {
+	                        return _react2.default.createElement(_amazeuiTouch.List.Item, {
+	                            title: _react2.default.createElement(
+	                                'div',
+	                                { className: 'tribe-user-name' },
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'item-title' },
+	                                    album.title
+	                                ),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'item-subtitle' },
+	                                    album.subTitle
+	                                )
+	                            ),
+	                            target: '_blank',
+	                            media: _react2.default.createElement('img', { src: album.media }),
+	                            after: _react2.default.createElement(
+	                                'a',
+	                                { href: album.tribehref, className: 'tribe-tribe-btn' },
+	                                album.tribe,
+	                                '\u90E8\u843D'
+	                            )
+	                            //href={i === 0 ? null : album.href}
+	                            , key: i
+	                        });
+	                    })
+	                ),
+	                _react2.default.createElement(
+	                    _amazeuiTouch.Group,
+	                    { className: 'topic-box' },
+	                    _react2.default.createElement(
+	                        'h1',
+	                        { className: 'topic-title' },
+	                        '\u6807\u9898\u540D\u79F0\u6807\u9898\u540D\u79F0\u6807\u9898'
+	                    ),
+	                    _react2.default.createElement(
+	                        'p',
+	                        { className: 'topic-p' },
+	                        '\u300A\u5B88\u671B\u5148\u950B\u300B\u52A8\u753B\u7CFB\u5217\u6700\u65B0\u4E00\u96C6\u52A8\u753B\u7CFB\u5217\u6700\u65B0\u4E00\u96C6\u52A8\u753B\u7CFB\u5217\u6700\u65B0\u4E00\u96C6\u52A8\u753B\u7CFB\u5217\u6700\u65B0\u4E00\u96C6\u52A8\u753B\u7CFB\u5217\u6700\u65B0\u4E00\u96C6\u52A8\u753B\u7CFB\u5217\u6700\u65B0\u4E00\u96C6\u52A8\u753B\u7CFB\u5217\u6700\u65B0\u4E00\u96C6\u52A8\u753B\u7CFB\u5217\u6700\u65B0\u4E00\u96C6\u52A8\u753B\u7CFB\u5217\u6700\u65B0\u4E00\u96C6\u52A8\u753B\u7CFB\u5217\u6700\u65B0\u4E00\u96C6\u52A8\u753B\u7CFB\u5217\u6700\u65B0\u4E00\u96C6\u52A8\u753B\u7CFB\u5217\u6700\u65B0\u4E00\u96C6\u52A8\u753B\u7CFB\u5217\u6700\u65B0\u4E00\u96C6\u52A8\u753B\u7CFB\u5217\u6700\u65B0\u4E00\u96C6\u52A8\u753B\u7CFB\u5217\u6700\u65B0\u4E00\u96C6\u52A8\u753B\u7CFB\u5217\u6700\u65B0\u4E00\u96C6'
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'topic-img' },
+	                        _react2.default.createElement('img', { src: 'http://lorempixel.com/160/160/people/', alt: '' })
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    _amazeuiTouch.Group,
+	                    { noPadded: true, className: 'margin-v' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'padding-top require-badge' },
+	                        _react2.default.createElement(
+	                            'p',
+	                            { className: 'text-size-14' },
+	                            _react2.default.createElement(_amazeuiTouch.Badge, null),
+	                            _react2.default.createElement(
+	                                'span',
+	                                { className: 'padding-left-sm' },
+	                                '\u70ED\u95E8\u8BC4\u8BBA'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            _amazeuiTouch.List,
+	                            { className: 'comments' },
+	                            _react2.default.createElement(_amazeuiTouch.List.Item, {
+	                                media: _react2.default.createElement('img', { className: 'comments-avatar', width: '44', height: '44', src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' }),
+	                                title: '\u5973\u7235',
+	                                subTitle: '\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185',
+	                                desc: _react2.default.createElement(
+	                                    _amazeuiTouch.Grid,
+	                                    { align: 'between' },
+	                                    _react2.default.createElement(
+	                                        _amazeuiTouch.Col,
+	                                        { cols: 2, className: 'text-left padding-0' },
+	                                        '10\u5206\u949F\u524D'
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        _amazeuiTouch.Col,
+	                                        { cols: 2, className: 'text-right' },
+	                                        '2'
+	                                    )
+	                                )
+	                            })
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'padding-top require-badge border-none' },
+	                        _react2.default.createElement(
+	                            'p',
+	                            { className: 'text-size-14' },
+	                            _react2.default.createElement(_amazeuiTouch.Badge, null),
+	                            _react2.default.createElement(
+	                                'span',
+	                                { className: 'padding-left-sm' },
+	                                '\u5168\u90E8\u8BC4\u8BBA\uFF0830\u6761\uFF09'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            _amazeuiTouch.List,
+	                            { className: 'comments' },
+	                            _react2.default.createElement(_amazeuiTouch.List.Item, {
+	                                media: _react2.default.createElement('img', { className: 'comments-avatar', width: '44', height: '44', src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' }),
+	                                title: '\u5973\u7235',
+	                                subTitle: '\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185',
+	                                desc: _react2.default.createElement(
+	                                    _amazeuiTouch.Grid,
+	                                    { align: 'between' },
+	                                    _react2.default.createElement(
+	                                        _amazeuiTouch.Col,
+	                                        { cols: 2, className: 'text-left padding-0' },
+	                                        '10\u5206\u949F\u524D'
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        _amazeuiTouch.Col,
+	                                        { cols: 2, className: 'text-right' },
+	                                        '2'
+	                                    )
+	                                )
+	                            }),
+	                            _react2.default.createElement(_amazeuiTouch.List.Item, {
+	                                media: _react2.default.createElement('img', { className: 'comments-avatar', width: '44', height: '44', src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' }),
+	                                title: '\u5973\u7235',
+	                                subTitle: '\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185',
+	                                desc: _react2.default.createElement(
+	                                    _amazeuiTouch.Grid,
+	                                    { align: 'between' },
+	                                    _react2.default.createElement(
+	                                        _amazeuiTouch.Col,
+	                                        { cols: 2, className: 'text-left padding-0' },
+	                                        '10\u5206\u949F\u524D'
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        _amazeuiTouch.Col,
+	                                        { cols: 2, className: 'text-right' },
+	                                        '2'
+	                                    )
+	                                )
+	                            })
+	                        )
+	                    )
+	                )
+	            )
+	        );
+	    }
+	});
+
+/***/ },
+/* 31 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(4);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Header = __webpack_require__(11);
+
+	var _Header2 = _interopRequireDefault(_Header);
+
+	var _amazeuiTouch = __webpack_require__(9);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	    displayName: 'TribePerson',
+	    render: function render() {
+	        return _react2.default.createElement(
+	            _amazeuiTouch.View,
+	            null,
+	            _react2.default.createElement(
+	                _amazeuiTouch.Container,
+	                { scrollable: true, fill: true, className: 'tribe' },
+	                _react2.default.createElement(_Header2.default, null),
+	                _react2.default.createElement(
+	                    _amazeuiTouch.Group,
+	                    { noPadded: true, className: 'margin-v' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'padding-top require-badge' },
+	                        _react2.default.createElement(
+	                            'p',
+	                            { className: 'text-size-14' },
+	                            _react2.default.createElement(_amazeuiTouch.Badge, null),
+	                            _react2.default.createElement(
+	                                'span',
+	                                { className: 'padding-left-sm' },
+	                                '\u70ED\u95E8\u8BC4\u8BBA'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            _amazeuiTouch.List,
+	                            { className: 'comments' },
+	                            _react2.default.createElement(_amazeuiTouch.List.Item, {
+	                                media: _react2.default.createElement('img', { className: 'comments-avatar', width: '44', height: '44', src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' }),
+	                                title: '\u5973\u7235',
+	                                subTitle: '\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185',
+	                                desc: _react2.default.createElement(
+	                                    _amazeuiTouch.Grid,
+	                                    { align: 'between' },
+	                                    _react2.default.createElement(
+	                                        _amazeuiTouch.Col,
+	                                        { cols: 2, className: 'text-left padding-0' },
+	                                        '10\u5206\u949F\u524D'
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        _amazeuiTouch.Col,
+	                                        { cols: 2, className: 'text-right' },
+	                                        '2'
+	                                    )
+	                                )
+	                            })
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'padding-top require-badge border-none' },
+	                        _react2.default.createElement(
+	                            'p',
+	                            { className: 'text-size-14' },
+	                            _react2.default.createElement(_amazeuiTouch.Badge, null),
+	                            _react2.default.createElement(
+	                                'span',
+	                                { className: 'padding-left-sm' },
+	                                '\u5168\u90E8\u8BC4\u8BBA\uFF0830\u6761\uFF09'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            _amazeuiTouch.List,
+	                            { className: 'comments' },
+	                            _react2.default.createElement(_amazeuiTouch.List.Item, {
+	                                media: _react2.default.createElement('img', { className: 'comments-avatar', width: '44', height: '44', src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' }),
+	                                title: '\u5973\u7235',
+	                                subTitle: '\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185',
+	                                desc: _react2.default.createElement(
+	                                    _amazeuiTouch.Grid,
+	                                    { align: 'between' },
+	                                    _react2.default.createElement(
+	                                        _amazeuiTouch.Col,
+	                                        { cols: 2, className: 'text-left padding-0' },
+	                                        '10\u5206\u949F\u524D'
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        _amazeuiTouch.Col,
+	                                        { cols: 2, className: 'text-right' },
+	                                        '2'
+	                                    )
+	                                )
+	                            }),
+	                            _react2.default.createElement(_amazeuiTouch.List.Item, {
+	                                media: _react2.default.createElement('img', { className: 'comments-avatar', width: '44', height: '44', src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' }),
+	                                title: '\u5973\u7235',
+	                                subTitle: '\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185\u5BB9\u5185',
+	                                desc: _react2.default.createElement(
+	                                    _amazeuiTouch.Grid,
+	                                    { align: 'between' },
+	                                    _react2.default.createElement(
+	                                        _amazeuiTouch.Col,
+	                                        { cols: 2, className: 'text-left padding-0' },
+	                                        '10\u5206\u949F\u524D'
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        _amazeuiTouch.Col,
+	                                        { cols: 2, className: 'text-right' },
+	                                        '2'
+	                                    )
+	                                )
+	                            })
+	                        )
+	                    )
+	                )
 	            )
 	        );
 	    }

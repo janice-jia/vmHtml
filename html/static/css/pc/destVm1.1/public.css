@@ -198,6 +198,7 @@
   top: 0;
   left: 0;
   background: #ffffff;
+  border-bottom: 1px solid #EEEEEE;
   z-index: 1000; }
   .vm-header h1 {
     padding-left: 20px;

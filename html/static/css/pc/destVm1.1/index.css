@@ -220,6 +220,10 @@
             height: 12px;
             width: 12px;
             background: url("../../../images/pc/vm1.1/icon/icon-care.png"); }
+          .vm-tribe .vm-tribe-con ul li .vm-tribe-con-view span.care-red:before {
+            height: 12px;
+            width: 12px;
+            background: url("../../../images/pc/vm1.1/icon/icon-care-red.png"); }
 
 .vm-need .vm-need-con ul {
   padding-left: 10px; }

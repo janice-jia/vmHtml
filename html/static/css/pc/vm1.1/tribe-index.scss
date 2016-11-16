@@ -309,6 +309,13 @@ hr {
                                 background: url("../../../images/pc/vm1.1/icon/icon-care.png");
                             }
                         }
+                        &.care-red{
+                            &:before {
+                                height: 12px;
+                                width: 12px;
+                                background: url("../../../images/pc/vm1.1/icon/icon-care-red.png");
+                            }
+                        }
                     }
                 }
             }

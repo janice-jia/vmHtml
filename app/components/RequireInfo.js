@@ -71,7 +71,7 @@ export default React.createClass({
                             <span className="padding-left-sm">报名列表（20人）</span></p>
                     </div>
                     <Group noPadded className="margin-0 require-apply-list">
-                        <Grid className="padding-v-xs"  align="left">
+                        <Grid className="padding-v-xs">
                             <Col className="padding-xs text-center" ><img  width="44" height="44" src="http://s.amazeui.org/media/i/demos/bing-2.jpg" /></Col>
                             <Col className="padding-xs text-center" ><img  width="44" height="44" src="http://s.amazeui.org/media/i/demos/bing-2.jpg" /></Col>
                             <Col className="padding-xs text-center" ><img  width="44" height="44" src="http://s.amazeui.org/media/i/demos/bing-2.jpg" /></Col>

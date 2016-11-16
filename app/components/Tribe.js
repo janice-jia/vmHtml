@@ -194,7 +194,6 @@ export default React.createClass({
                                 media={
                                 <img src={ album.media }/>
                                 }
-                                //href={i === 0 ? null : album.href}
                                 key={i}
                             />
                         );

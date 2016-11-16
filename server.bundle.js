@@ -162,11 +162,11 @@
 
 	var _Register2 = _interopRequireDefault(_Register);
 
-	var _Login = __webpack_require__(14);
+	var _Login = __webpack_require__(13);
 
 	var _Login2 = _interopRequireDefault(_Login);
 
-	var _Home = __webpack_require__(15);
+	var _Home = __webpack_require__(14);
 
 	var _Home2 = _interopRequireDefault(_Home);
 
@@ -410,10 +410,6 @@
 
 	var _amazeuiTouch = __webpack_require__(9);
 
-	var _jquery = __webpack_require__(13);
-
-	var _jquery2 = _interopRequireDefault(_jquery);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -421,10 +417,6 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	//import {
-	//    Link,
-	//} from 'react-router';
-
 
 	var Header = function (_React$Component) {
 	    _inherits(Header, _React$Component);
@@ -535,7 +527,7 @@
 	                    className: 'Header',
 	                    title: _react2.default.createElement(
 	                        'div',
-	                        { className: 'home-logo' },
+	                        { className: 'home-logo text-size-12' },
 	                        'logo'
 	                    ),
 	                    leftNav: [{ title: '',
@@ -577,7 +569,7 @@
 	                                { className: 'header-nav' },
 	                                _react2.default.createElement(_amazeuiTouch.List.Item, {
 	                                    linkComponent: _NavLink2.default,
-	                                    media: _react2.default.createElement(_amazeuiTouch.Icon, null),
+	                                    media: _react2.default.createElement(_amazeuiTouch.Icon, { name: '' }),
 	                                    linkProps: {
 	                                        to: '/',
 	                                        onClick: this.onDismiss,
@@ -588,7 +580,7 @@
 	                                }),
 	                                _react2.default.createElement(_amazeuiTouch.List.Item, {
 	                                    linkComponent: _NavLink2.default,
-	                                    media: _react2.default.createElement(_amazeuiTouch.Icon, null),
+	                                    media: _react2.default.createElement(_amazeuiTouch.Icon, { name: '' }),
 	                                    linkProps: {
 	                                        to: '/tribe',
 	                                        onClick: this.onDismiss
@@ -598,7 +590,7 @@
 	                                }),
 	                                _react2.default.createElement(_amazeuiTouch.List.Item, {
 	                                    linkComponent: _NavLink2.default,
-	                                    media: _react2.default.createElement(_amazeuiTouch.Icon, null),
+	                                    media: _react2.default.createElement(_amazeuiTouch.Icon, { name: '' }),
 	                                    linkProps: {
 	                                        to: '/require',
 	                                        onClick: this.onDismiss
@@ -608,7 +600,7 @@
 	                                }),
 	                                _react2.default.createElement(_amazeuiTouch.List.Item, {
 	                                    linkComponent: _NavLink2.default,
-	                                    media: _react2.default.createElement(_amazeuiTouch.Icon, null),
+	                                    media: _react2.default.createElement(_amazeuiTouch.Icon, { name: '' }),
 	                                    linkProps: {
 	                                        to: '/server',
 	                                        onClick: this.onDismiss
@@ -663,12 +655,6 @@
 
 /***/ },
 /* 13 */
-/***/ function(module, exports) {
-
-	module.exports = require("jquery");
-
-/***/ },
-/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -710,7 +696,7 @@
 	});
 
 /***/ },
-/* 15 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -727,11 +713,11 @@
 
 	var _amazeuiTouch = __webpack_require__(9);
 
-	var _HomeStore = __webpack_require__(16);
+	var _HomeStore = __webpack_require__(15);
 
 	var _HomeStore2 = _interopRequireDefault(_HomeStore);
 
-	var _HomeActions = __webpack_require__(19);
+	var _HomeActions = __webpack_require__(18);
 
 	var _HomeActions2 = _interopRequireDefault(_HomeActions);
 
@@ -1070,7 +1056,7 @@
 	exports.default = Home;
 
 /***/ },
-/* 16 */
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1081,11 +1067,11 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _alt = __webpack_require__(17);
+	var _alt = __webpack_require__(16);
 
 	var _alt2 = _interopRequireDefault(_alt);
 
-	var _HomeActions = __webpack_require__(19);
+	var _HomeActions = __webpack_require__(18);
 
 	var _HomeActions2 = _interopRequireDefault(_HomeActions);
 
@@ -1124,7 +1110,7 @@
 	exports.default = _alt2.default.createStore(HomeStore, 'HomeStore');
 
 /***/ },
-/* 17 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1133,7 +1119,7 @@
 	  value: true
 	});
 
-	var _alt = __webpack_require__(18);
+	var _alt = __webpack_require__(17);
 
 	var _alt2 = _interopRequireDefault(_alt);
 
@@ -1142,13 +1128,13 @@
 	exports.default = new _alt2.default();
 
 /***/ },
-/* 18 */
+/* 17 */
 /***/ function(module, exports) {
 
 	module.exports = require("alt");
 
 /***/ },
-/* 19 */
+/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1159,11 +1145,11 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _alt = __webpack_require__(17);
+	var _alt = __webpack_require__(16);
 
 	var _alt2 = _interopRequireDefault(_alt);
 
-	var _jquery = __webpack_require__(13);
+	var _jquery = __webpack_require__(19);
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -1198,6 +1184,12 @@
 	}();
 
 	exports.default = _alt2.default.createActions(HomeActions);
+
+/***/ },
+/* 19 */
+/***/ function(module, exports) {
+
+	module.exports = require("jquery");
 
 /***/ },
 /* 20 */

@@ -27104,11 +27104,11 @@
 
 	var _Register2 = _interopRequireDefault(_Register);
 
-	var _Login = __webpack_require__(295);
+	var _Login = __webpack_require__(294);
 
 	var _Login2 = _interopRequireDefault(_Login);
 
-	var _Home = __webpack_require__(296);
+	var _Home = __webpack_require__(295);
 
 	var _Home2 = _interopRequireDefault(_Home);
 
@@ -34236,10 +34236,6 @@
 
 	var _amazeuiTouch = __webpack_require__(237);
 
-	var _jquery = __webpack_require__(294);
-
-	var _jquery2 = _interopRequireDefault(_jquery);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -34247,10 +34243,6 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	//import {
-	//    Link,
-	//} from 'react-router';
-
 
 	var Header = function (_React$Component) {
 	    _inherits(Header, _React$Component);
@@ -34361,7 +34353,7 @@
 	                    className: 'Header',
 	                    title: _react2.default.createElement(
 	                        'div',
-	                        { className: 'home-logo' },
+	                        { className: 'home-logo text-size-12' },
 	                        'logo'
 	                    ),
 	                    leftNav: [{ title: '',
@@ -34403,7 +34395,7 @@
 	                                { className: 'header-nav' },
 	                                _react2.default.createElement(_amazeuiTouch.List.Item, {
 	                                    linkComponent: _NavLink2.default,
-	                                    media: _react2.default.createElement(_amazeuiTouch.Icon, null),
+	                                    media: _react2.default.createElement(_amazeuiTouch.Icon, { name: '' }),
 	                                    linkProps: {
 	                                        to: '/',
 	                                        onClick: this.onDismiss,
@@ -34414,7 +34406,7 @@
 	                                }),
 	                                _react2.default.createElement(_amazeuiTouch.List.Item, {
 	                                    linkComponent: _NavLink2.default,
-	                                    media: _react2.default.createElement(_amazeuiTouch.Icon, null),
+	                                    media: _react2.default.createElement(_amazeuiTouch.Icon, { name: '' }),
 	                                    linkProps: {
 	                                        to: '/tribe',
 	                                        onClick: this.onDismiss
@@ -34424,7 +34416,7 @@
 	                                }),
 	                                _react2.default.createElement(_amazeuiTouch.List.Item, {
 	                                    linkComponent: _NavLink2.default,
-	                                    media: _react2.default.createElement(_amazeuiTouch.Icon, null),
+	                                    media: _react2.default.createElement(_amazeuiTouch.Icon, { name: '' }),
 	                                    linkProps: {
 	                                        to: '/require',
 	                                        onClick: this.onDismiss
@@ -34434,7 +34426,7 @@
 	                                }),
 	                                _react2.default.createElement(_amazeuiTouch.List.Item, {
 	                                    linkComponent: _NavLink2.default,
-	                                    media: _react2.default.createElement(_amazeuiTouch.Icon, null),
+	                                    media: _react2.default.createElement(_amazeuiTouch.Icon, { name: '' }),
 	                                    linkProps: {
 	                                        to: '/server',
 	                                        onClick: this.onDismiss
@@ -34489,6 +34481,2243 @@
 
 /***/ },
 /* 294 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _amazeuiTouch = __webpack_require__(237);
+
+	var _Header = __webpack_require__(292);
+
+	var _Header2 = _interopRequireDefault(_Header);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	    displayName: 'Login',
+	    render: function render() {
+	        return _react2.default.createElement(
+	            _amazeuiTouch.View,
+	            null,
+	            _react2.default.createElement(
+	                _amazeuiTouch.Container,
+	                null,
+	                _react2.default.createElement(_Header2.default, null),
+	                _react2.default.createElement(
+	                    _amazeuiTouch.Group,
+	                    { className: 'regLog-logo' },
+	                    _react2.default.createElement('div', { className: 'regLog-logo-img' })
+	                )
+	            )
+	        );
+	    }
+	});
+
+/***/ },
+/* 295 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _amazeuiTouch = __webpack_require__(237);
+
+	var _HomeStore = __webpack_require__(296);
+
+	var _HomeStore2 = _interopRequireDefault(_HomeStore);
+
+	var _HomeActions = __webpack_require__(311);
+
+	var _HomeActions2 = _interopRequireDefault(_HomeActions);
+
+	var _Header = __webpack_require__(292);
+
+	var _Header2 = _interopRequireDefault(_Header);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var img = _react2.default.createElement('img', { className: 'home-tribe-media', width: '44', height: '44', src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' });
+	var tit = _react2.default.createElement(
+	    'div',
+	    { className: 'home-tribe-item' },
+	    _react2.default.createElement(
+	        'p',
+	        { className: 'text-color-3 text-size-14' },
+	        '\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89'
+	    ),
+	    _react2.default.createElement(
+	        'p',
+	        { className: 'text-color-4 text-size-13' },
+	        '1\u5C0F\u65F6\u524D'
+	    )
+	);
+	var btn = _react2.default.createElement(
+	    'div',
+	    { className: 'home-tribe-tag' },
+	    '\u6D77\u8D3C\u738B\u90E8\u843D'
+	);
+
+	var Home = function (_React$Component) {
+	    _inherits(Home, _React$Component);
+
+	    function Home(props) {
+	        _classCallCheck(this, Home);
+
+	        var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
+
+	        _this.state = _HomeStore2.default.getState();
+	        _this.state.home = [];
+	        _this.onChange = _this.onChange.bind(_this);
+	        return _this;
+	    }
+
+	    _createClass(Home, [{
+	        key: 'componentDidMount',
+	        value: function componentDidMount() {
+	            _HomeStore2.default.listen(this.onChange);
+	            _HomeActions2.default.updateHome();
+	        }
+	    }, {
+	        key: 'componentWillUnmount',
+	        value: function componentWillUnmount() {
+	            _HomeStore2.default.unlisten(this.onChange);
+	        }
+	    }, {
+	        key: 'onChange',
+	        value: function onChange(state) {
+	            this.setState(state);
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                _amazeuiTouch.View,
+	                null,
+	                _react2.default.createElement(
+	                    _amazeuiTouch.Container,
+	                    { scrollable: true, className: 'home' },
+	                    _react2.default.createElement(_Header2.default, null),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'home-slide' },
+	                        _react2.default.createElement(
+	                            _amazeuiTouch.Slider,
+	                            null,
+	                            _react2.default.createElement(
+	                                _amazeuiTouch.Slider.Item,
+	                                null,
+	                                _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' })
+	                            ),
+	                            _react2.default.createElement(
+	                                _amazeuiTouch.Slider.Item,
+	                                null,
+	                                _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' })
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'home-tribe border-d7d7d7 bgF' },
+	                        _react2.default.createElement(
+	                            _amazeuiTouch.Group,
+	                            { noPadded: true, className: 'margin-0' },
+	                            _react2.default.createElement(
+	                                'h5',
+	                                { className: 'home-group-header margin-sm' },
+	                                '\u90E8\u843D'
+	                            ),
+	                            _react2.default.createElement(
+	                                _amazeuiTouch.Grid,
+	                                { avg: 4 },
+	                                _react2.default.createElement(
+	                                    _amazeuiTouch.Col,
+	                                    { className: 'padding-v-0' },
+	                                    _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' })
+	                                ),
+	                                _react2.default.createElement(
+	                                    _amazeuiTouch.Col,
+	                                    { className: 'padding-v-0' },
+	                                    _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' })
+	                                ),
+	                                _react2.default.createElement(
+	                                    _amazeuiTouch.Col,
+	                                    { className: 'padding-v-0' },
+	                                    _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-3.jpg' })
+	                                ),
+	                                _react2.default.createElement(
+	                                    _amazeuiTouch.Col,
+	                                    { className: 'padding-v-0' },
+	                                    _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-4.jpg' })
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                _amazeuiTouch.Grid,
+	                                { avg: 4, className: 'text-center' },
+	                                _react2.default.createElement(
+	                                    _amazeuiTouch.Col,
+	                                    { className: 'padding-v-xs' },
+	                                    _react2.default.createElement(
+	                                        'p',
+	                                        { className: 'home-tribe-name' },
+	                                        '\u5251\u7075\u90E8\u843D'
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    _amazeuiTouch.Col,
+	                                    { className: 'padding-v-xs' },
+	                                    _react2.default.createElement(
+	                                        'p',
+	                                        { className: 'home-tribe-name' },
+	                                        '\u6D77\u8D3C\u738B\u90E8\u843D'
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    _amazeuiTouch.Col,
+	                                    { className: 'padding-v-xs' },
+	                                    _react2.default.createElement(
+	                                        'p',
+	                                        { className: 'home-tribe-name' },
+	                                        '\u9B54\u517D\u90E8\u843D'
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    _amazeuiTouch.Col,
+	                                    { className: 'padding-v-xs' },
+	                                    _react2.default.createElement(
+	                                        'p',
+	                                        { className: 'home-tribe-name' },
+	                                        '\u5947\u8FF9\u738B\u5EA7\u90E8\u843D'
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'home-square border-d7d7d7 bgF margin-top-sm' },
+	                        _react2.default.createElement(
+	                            _amazeuiTouch.Group,
+	                            { noPadded: true, className: 'margin-v-0' },
+	                            _react2.default.createElement(
+	                                'h5',
+	                                { className: 'home-group-header margin-sm' },
+	                                '\u5E7F\u573A'
+	                            ),
+	                            _react2.default.createElement(
+	                                _amazeuiTouch.Grid,
+	                                { align: 'between', className: 'padding-v-sm' },
+	                                _react2.default.createElement(
+	                                    _amazeuiTouch.Col,
+	                                    { cols: 3 },
+	                                    _react2.default.createElement(
+	                                        'button',
+	                                        { className: 'btn-yellow' },
+	                                        '\u9700\u6C42'
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    _amazeuiTouch.Col,
+	                                    { cols: 3 },
+	                                    _react2.default.createElement(
+	                                        'button',
+	                                        { className: 'btn-blue' },
+	                                        '\u670D\u52A1'
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'border-d7d7d7 bgF margin-top-sm' },
+	                        _react2.default.createElement(
+	                            _amazeuiTouch.Group,
+	                            { noPadded: true, className: 'margin-v-0' },
+	                            _react2.default.createElement(
+	                                _amazeuiTouch.List,
+	                                null,
+	                                _react2.default.createElement(_amazeuiTouch.List.Item, {
+	                                    media: img,
+	                                    after: btn,
+	                                    title: tit
+	                                }),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'padding-h margin-v-xs' },
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        { className: 'text-size-15 text-color-3' },
+	                                        '\u6807\u9898\u540D\u79F0\u540D\u79F0\u540D\u79F0'
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        { className: 'text-size-13 text-color-2 home-tribe-desc' },
+	                                        '\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0'
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    _amazeuiTouch.Grid,
+	                                    { avg: 3 },
+	                                    _react2.default.createElement(
+	                                        _amazeuiTouch.Col,
+	                                        { className: 'padding-h padding-top-xs padding-bottom-0' },
+	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' })
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        _amazeuiTouch.Col,
+	                                        { className: 'padding-h padding-top-xs padding-bottom-0' },
+	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' })
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        _amazeuiTouch.Col,
+	                                        { className: 'padding-h padding-top-xs padding-bottom-0' },
+	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-3.jpg' })
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    _amazeuiTouch.Grid,
+	                                    { align: 'between' },
+	                                    _react2.default.createElement(
+	                                        _amazeuiTouch.Col,
+	                                        { cols: 2, className: 'padding-h text-size-12 text-color-4' },
+	                                        _react2.default.createElement('span', { className: 'icon home-icon-view margin-right-xs' }),
+	                                        '123'
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        _amazeuiTouch.Col,
+	                                        { cols: 2, className: 'padding-h text-size-12 text-color-4 text-right' },
+	                                        _react2.default.createElement(
+	                                            _amazeuiTouch.Grid,
+	                                            null,
+	                                            _react2.default.createElement(
+	                                                _amazeuiTouch.Col,
+	                                                null,
+	                                                _react2.default.createElement('span', { className: 'icon home-icon-view margin-right-xs' }),
+	                                                '123'
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                _amazeuiTouch.Col,
+	                                                null,
+	                                                _react2.default.createElement('span', { className: 'icon home-icon-view margin-right-xs' }),
+	                                                '123'
+	                                            )
+	                                        )
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'margin-h margin-v' },
+	                        _react2.default.createElement(
+	                            _amazeuiTouch.Group,
+	                            { noPadded: true, className: 'margin-0' },
+	                            _react2.default.createElement(
+	                                'a',
+	                                { className: 'btn-white' },
+	                                '\u67E5\u770B\u66F4\u591A'
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'margin-h margin-v bgNone' },
+	                        _react2.default.createElement(
+	                            'p',
+	                            { className: 'text-center text-size-12 text-color-2' },
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: '', className: 'text-size-12 text-color-2' },
+	                                '\u610F\u89C1\u53CD\u9988'
+	                            ),
+	                            _react2.default.createElement(
+	                                'span',
+	                                { className: 'padding-h-xs text-size-12 text-color-2' },
+	                                '|'
+	                            ),
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: '', className: 'text-size-12 text-color-2' },
+	                                '\u5173\u4E8E\u6211\u4EEC'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            { className: 'text-center text-size-14 text-color-2' },
+	                            '\u4EACICP\u590714057447\u53F7-3'
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Home;
+	}(_react2.default.Component);
+
+	exports.default = Home;
+
+/***/ },
+/* 296 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _alt = __webpack_require__(297);
+
+	var _alt2 = _interopRequireDefault(_alt);
+
+	var _HomeActions = __webpack_require__(311);
+
+	var _HomeActions2 = _interopRequireDefault(_HomeActions);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var HomeStore = function () {
+	    function HomeStore() {
+	        _classCallCheck(this, HomeStore);
+
+	        this.bindActions(_HomeActions2.default);
+	        this.home = [];
+	    }
+
+	    //updateHome(todo) {
+	    //    this.setState({ todos: this.state.todos.concat(todo) });
+	    //}
+
+	    _createClass(HomeStore, [{
+	        key: 'onUpdateHomeSuccess',
+	        value: function onUpdateHomeSuccess(data) {
+	            this.home = data.result;
+	            console.info('onUpdateHomeSuccess', this.home);
+	        }
+	    }, {
+	        key: 'onUpdateHomeFail',
+	        value: function onUpdateHomeFail() {
+	            console.info('onUpdateHomeFail', data);
+	        }
+	    }]);
+
+	    return HomeStore;
+	}();
+
+	exports.default = _alt2.default.createStore(HomeStore, 'HomeStore');
+
+/***/ },
+/* 297 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _alt = __webpack_require__(298);
+
+	var _alt2 = _interopRequireDefault(_alt);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = new _alt2.default();
+
+/***/ },
+/* 298 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _flux = __webpack_require__(299);
+
+	var _StateFunctions = __webpack_require__(302);
+
+	var StateFunctions = _interopRequireWildcard(_StateFunctions);
+
+	var _functions = __webpack_require__(303);
+
+	var fn = _interopRequireWildcard(_functions);
+
+	var _store = __webpack_require__(304);
+
+	var store = _interopRequireWildcard(_store);
+
+	var _AltUtils = __webpack_require__(305);
+
+	var utils = _interopRequireWildcard(_AltUtils);
+
+	var _actions = __webpack_require__(309);
+
+	var _actions2 = _interopRequireDefault(_actions);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj['default'] = obj; return newObj; } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } } /* global window */
+
+
+	var Alt = function () {
+	  function Alt() {
+	    var config = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
+
+	    _classCallCheck(this, Alt);
+
+	    this.config = config;
+	    this.serialize = config.serialize || JSON.stringify;
+	    this.deserialize = config.deserialize || JSON.parse;
+	    this.dispatcher = config.dispatcher || new _flux.Dispatcher();
+	    this.batchingFunction = config.batchingFunction || function (callback) {
+	      return callback();
+	    };
+	    this.actions = { global: {} };
+	    this.stores = {};
+	    this.storeTransforms = config.storeTransforms || [];
+	    this.trapAsync = false;
+	    this._actionsRegistry = {};
+	    this._initSnapshot = {};
+	    this._lastSnapshot = {};
+	  }
+
+	  Alt.prototype.dispatch = function () {
+	    function dispatch(action, data, details) {
+	      var _this = this;
+
+	      this.batchingFunction(function () {
+	        var id = Math.random().toString(18).substr(2, 16);
+
+	        // support straight dispatching of FSA-style actions
+	        if (action.hasOwnProperty('type') && action.hasOwnProperty('payload')) {
+	          var fsaDetails = {
+	            id: action.type,
+	            namespace: action.type,
+	            name: action.type
+	          };
+	          return _this.dispatcher.dispatch(utils.fsa(id, action.type, action.payload, fsaDetails));
+	        }
+
+	        if (action.id && action.dispatch) {
+	          return utils.dispatch(id, action, data, _this);
+	        }
+
+	        return _this.dispatcher.dispatch(utils.fsa(id, action, data, details));
+	      });
+	    }
+
+	    return dispatch;
+	  }();
+
+	  Alt.prototype.createUnsavedStore = function () {
+	    function createUnsavedStore(StoreModel) {
+	      var key = StoreModel.displayName || '';
+	      store.createStoreConfig(this.config, StoreModel);
+	      var Store = store.transformStore(this.storeTransforms, StoreModel);
+
+	      for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+	        args[_key - 1] = arguments[_key];
+	      }
+
+	      return fn.isFunction(Store) ? store.createStoreFromClass.apply(store, [this, Store, key].concat(args)) : store.createStoreFromObject(this, Store, key);
+	    }
+
+	    return createUnsavedStore;
+	  }();
+
+	  Alt.prototype.createStore = function () {
+	    function createStore(StoreModel, iden) {
+	      var key = iden || StoreModel.displayName || StoreModel.name || '';
+	      store.createStoreConfig(this.config, StoreModel);
+	      var Store = store.transformStore(this.storeTransforms, StoreModel);
+
+	      /* istanbul ignore next */
+	      if (false) delete this.stores[key];
+
+	      if (this.stores[key] || !key) {
+	        if (this.stores[key]) {
+	          utils.warn('A store named ' + String(key) + ' already exists, double check your store ' + 'names or pass in your own custom identifier for each store');
+	        } else {
+	          utils.warn('Store name was not specified');
+	        }
+
+	        key = utils.uid(this.stores, key);
+	      }
+
+	      for (var _len2 = arguments.length, args = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
+	        args[_key2 - 2] = arguments[_key2];
+	      }
+
+	      var storeInstance = fn.isFunction(Store) ? store.createStoreFromClass.apply(store, [this, Store, key].concat(args)) : store.createStoreFromObject(this, Store, key);
+
+	      this.stores[key] = storeInstance;
+	      StateFunctions.saveInitialSnapshot(this, key);
+
+	      return storeInstance;
+	    }
+
+	    return createStore;
+	  }();
+
+	  Alt.prototype.generateActions = function () {
+	    function generateActions() {
+	      var actions = { name: 'global' };
+
+	      for (var _len3 = arguments.length, actionNames = Array(_len3), _key3 = 0; _key3 < _len3; _key3++) {
+	        actionNames[_key3] = arguments[_key3];
+	      }
+
+	      return this.createActions(actionNames.reduce(function (obj, action) {
+	        obj[action] = utils.dispatchIdentity;
+	        return obj;
+	      }, actions));
+	    }
+
+	    return generateActions;
+	  }();
+
+	  Alt.prototype.createAction = function () {
+	    function createAction(name, implementation, obj) {
+	      return (0, _actions2['default'])(this, 'global', name, implementation, obj);
+	    }
+
+	    return createAction;
+	  }();
+
+	  Alt.prototype.createActions = function () {
+	    function createActions(ActionsClass) {
+	      var _this3 = this;
+
+	      var exportObj = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
+
+	      var actions = {};
+	      var key = utils.uid(this._actionsRegistry, ActionsClass.displayName || ActionsClass.name || 'Unknown');
+
+	      if (fn.isFunction(ActionsClass)) {
+	        fn.assign(actions, utils.getPrototypeChain(ActionsClass));
+
+	        var ActionsGenerator = function (_ActionsClass) {
+	          _inherits(ActionsGenerator, _ActionsClass);
+
+	          function ActionsGenerator() {
+	            _classCallCheck(this, ActionsGenerator);
+
+	            for (var _len5 = arguments.length, args = Array(_len5), _key5 = 0; _key5 < _len5; _key5++) {
+	              args[_key5] = arguments[_key5];
+	            }
+
+	            return _possibleConstructorReturn(this, _ActionsClass.call.apply(_ActionsClass, [this].concat(args)));
+	          }
+
+	          ActionsGenerator.prototype.generateActions = function () {
+	            function generateActions() {
+	              for (var _len6 = arguments.length, actionNames = Array(_len6), _key6 = 0; _key6 < _len6; _key6++) {
+	                actionNames[_key6] = arguments[_key6];
+	              }
+
+	              actionNames.forEach(function (actionName) {
+	                actions[actionName] = utils.dispatchIdentity;
+	              });
+	            }
+
+	            return generateActions;
+	          }();
+
+	          return ActionsGenerator;
+	        }(ActionsClass);
+
+	        for (var _len4 = arguments.length, argsForConstructor = Array(_len4 > 2 ? _len4 - 2 : 0), _key4 = 2; _key4 < _len4; _key4++) {
+	          argsForConstructor[_key4 - 2] = arguments[_key4];
+	        }
+
+	        fn.assign(actions, new (Function.prototype.bind.apply(ActionsGenerator, [null].concat(argsForConstructor)))());
+	      } else {
+	        fn.assign(actions, ActionsClass);
+	      }
+
+	      this.actions[key] = this.actions[key] || {};
+
+	      fn.eachObject(function (actionName, action) {
+	        if (!fn.isFunction(action)) {
+	          exportObj[actionName] = action;
+	          return;
+	        }
+
+	        // create the action
+	        exportObj[actionName] = (0, _actions2['default'])(_this3, key, actionName, action, exportObj);
+
+	        // generate a constant
+	        var constant = utils.formatAsConstant(actionName);
+	        exportObj[constant] = exportObj[actionName].id;
+	      }, [actions]);
+
+	      return exportObj;
+	    }
+
+	    return createActions;
+	  }();
+
+	  Alt.prototype.takeSnapshot = function () {
+	    function takeSnapshot() {
+	      for (var _len7 = arguments.length, storeNames = Array(_len7), _key7 = 0; _key7 < _len7; _key7++) {
+	        storeNames[_key7] = arguments[_key7];
+	      }
+
+	      var state = StateFunctions.snapshot(this, storeNames);
+	      fn.assign(this._lastSnapshot, state);
+	      return this.serialize(state);
+	    }
+
+	    return takeSnapshot;
+	  }();
+
+	  Alt.prototype.rollback = function () {
+	    function rollback() {
+	      StateFunctions.setAppState(this, this.serialize(this._lastSnapshot), function (storeInst) {
+	        storeInst.lifecycle('rollback');
+	        storeInst.emitChange();
+	      });
+	    }
+
+	    return rollback;
+	  }();
+
+	  Alt.prototype.recycle = function () {
+	    function recycle() {
+	      for (var _len8 = arguments.length, storeNames = Array(_len8), _key8 = 0; _key8 < _len8; _key8++) {
+	        storeNames[_key8] = arguments[_key8];
+	      }
+
+	      var initialSnapshot = storeNames.length ? StateFunctions.filterSnapshots(this, this._initSnapshot, storeNames) : this._initSnapshot;
+
+	      StateFunctions.setAppState(this, this.serialize(initialSnapshot), function (storeInst) {
+	        storeInst.lifecycle('init');
+	        storeInst.emitChange();
+	      });
+	    }
+
+	    return recycle;
+	  }();
+
+	  Alt.prototype.flush = function () {
+	    function flush() {
+	      var state = this.serialize(StateFunctions.snapshot(this));
+	      this.recycle();
+	      return state;
+	    }
+
+	    return flush;
+	  }();
+
+	  Alt.prototype.bootstrap = function () {
+	    function bootstrap(data) {
+	      StateFunctions.setAppState(this, data, function (storeInst, state) {
+	        storeInst.lifecycle('bootstrap', state);
+	        storeInst.emitChange();
+	      });
+	    }
+
+	    return bootstrap;
+	  }();
+
+	  Alt.prototype.prepare = function () {
+	    function prepare(storeInst, payload) {
+	      var data = {};
+	      if (!storeInst.displayName) {
+	        throw new ReferenceError('Store provided does not have a name');
+	      }
+	      data[storeInst.displayName] = payload;
+	      return this.serialize(data);
+	    }
+
+	    return prepare;
+	  }();
+
+	  // Instance type methods for injecting alt into your application as context
+
+	  Alt.prototype.addActions = function () {
+	    function addActions(name, ActionsClass) {
+	      for (var _len9 = arguments.length, args = Array(_len9 > 2 ? _len9 - 2 : 0), _key9 = 2; _key9 < _len9; _key9++) {
+	        args[_key9 - 2] = arguments[_key9];
+	      }
+
+	      this.actions[name] = Array.isArray(ActionsClass) ? this.generateActions.apply(this, ActionsClass) : this.createActions.apply(this, [ActionsClass].concat(args));
+	    }
+
+	    return addActions;
+	  }();
+
+	  Alt.prototype.addStore = function () {
+	    function addStore(name, StoreModel) {
+	      for (var _len10 = arguments.length, args = Array(_len10 > 2 ? _len10 - 2 : 0), _key10 = 2; _key10 < _len10; _key10++) {
+	        args[_key10 - 2] = arguments[_key10];
+	      }
+
+	      this.createStore.apply(this, [StoreModel, name].concat(args));
+	    }
+
+	    return addStore;
+	  }();
+
+	  Alt.prototype.getActions = function () {
+	    function getActions(name) {
+	      return this.actions[name];
+	    }
+
+	    return getActions;
+	  }();
+
+	  Alt.prototype.getStore = function () {
+	    function getStore(name) {
+	      return this.stores[name];
+	    }
+
+	    return getStore;
+	  }();
+
+	  Alt.debug = function () {
+	    function debug(name, alt, win) {
+	      var key = 'alt.js.org';
+	      var context = win;
+	      if (!context && typeof window !== 'undefined') {
+	        context = window;
+	      }
+	      if (typeof context !== 'undefined') {
+	        context[key] = context[key] || [];
+	        context[key].push({ name: name, alt: alt });
+	      }
+	      return alt;
+	    }
+
+	    return debug;
+	  }();
+
+	  return Alt;
+	}();
+
+	exports['default'] = Alt;
+	module.exports = exports['default'];
+
+/***/ },
+/* 299 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright (c) 2014-2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 */
+
+	module.exports.Dispatcher = __webpack_require__(300);
+
+
+/***/ },
+/* 300 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {/**
+	 * Copyright (c) 2014-2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule Dispatcher
+	 * 
+	 * @preventMunge
+	 */
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+	var invariant = __webpack_require__(301);
+
+	var _prefix = 'ID_';
+
+	/**
+	 * Dispatcher is used to broadcast payloads to registered callbacks. This is
+	 * different from generic pub-sub systems in two ways:
+	 *
+	 *   1) Callbacks are not subscribed to particular events. Every payload is
+	 *      dispatched to every registered callback.
+	 *   2) Callbacks can be deferred in whole or part until other callbacks have
+	 *      been executed.
+	 *
+	 * For example, consider this hypothetical flight destination form, which
+	 * selects a default city when a country is selected:
+	 *
+	 *   var flightDispatcher = new Dispatcher();
+	 *
+	 *   // Keeps track of which country is selected
+	 *   var CountryStore = {country: null};
+	 *
+	 *   // Keeps track of which city is selected
+	 *   var CityStore = {city: null};
+	 *
+	 *   // Keeps track of the base flight price of the selected city
+	 *   var FlightPriceStore = {price: null}
+	 *
+	 * When a user changes the selected city, we dispatch the payload:
+	 *
+	 *   flightDispatcher.dispatch({
+	 *     actionType: 'city-update',
+	 *     selectedCity: 'paris'
+	 *   });
+	 *
+	 * This payload is digested by `CityStore`:
+	 *
+	 *   flightDispatcher.register(function(payload) {
+	 *     if (payload.actionType === 'city-update') {
+	 *       CityStore.city = payload.selectedCity;
+	 *     }
+	 *   });
+	 *
+	 * When the user selects a country, we dispatch the payload:
+	 *
+	 *   flightDispatcher.dispatch({
+	 *     actionType: 'country-update',
+	 *     selectedCountry: 'australia'
+	 *   });
+	 *
+	 * This payload is digested by both stores:
+	 *
+	 *   CountryStore.dispatchToken = flightDispatcher.register(function(payload) {
+	 *     if (payload.actionType === 'country-update') {
+	 *       CountryStore.country = payload.selectedCountry;
+	 *     }
+	 *   });
+	 *
+	 * When the callback to update `CountryStore` is registered, we save a reference
+	 * to the returned token. Using this token with `waitFor()`, we can guarantee
+	 * that `CountryStore` is updated before the callback that updates `CityStore`
+	 * needs to query its data.
+	 *
+	 *   CityStore.dispatchToken = flightDispatcher.register(function(payload) {
+	 *     if (payload.actionType === 'country-update') {
+	 *       // `CountryStore.country` may not be updated.
+	 *       flightDispatcher.waitFor([CountryStore.dispatchToken]);
+	 *       // `CountryStore.country` is now guaranteed to be updated.
+	 *
+	 *       // Select the default city for the new country
+	 *       CityStore.city = getDefaultCityForCountry(CountryStore.country);
+	 *     }
+	 *   });
+	 *
+	 * The usage of `waitFor()` can be chained, for example:
+	 *
+	 *   FlightPriceStore.dispatchToken =
+	 *     flightDispatcher.register(function(payload) {
+	 *       switch (payload.actionType) {
+	 *         case 'country-update':
+	 *         case 'city-update':
+	 *           flightDispatcher.waitFor([CityStore.dispatchToken]);
+	 *           FlightPriceStore.price =
+	 *             getFlightPriceStore(CountryStore.country, CityStore.city);
+	 *           break;
+	 *     }
+	 *   });
+	 *
+	 * The `country-update` payload will be guaranteed to invoke the stores'
+	 * registered callbacks in order: `CountryStore`, `CityStore`, then
+	 * `FlightPriceStore`.
+	 */
+
+	var Dispatcher = (function () {
+	  function Dispatcher() {
+	    _classCallCheck(this, Dispatcher);
+
+	    this._callbacks = {};
+	    this._isDispatching = false;
+	    this._isHandled = {};
+	    this._isPending = {};
+	    this._lastID = 1;
+	  }
+
+	  /**
+	   * Registers a callback to be invoked with every dispatched payload. Returns
+	   * a token that can be used with `waitFor()`.
+	   */
+
+	  Dispatcher.prototype.register = function register(callback) {
+	    var id = _prefix + this._lastID++;
+	    this._callbacks[id] = callback;
+	    return id;
+	  };
+
+	  /**
+	   * Removes a callback based on its token.
+	   */
+
+	  Dispatcher.prototype.unregister = function unregister(id) {
+	    !this._callbacks[id] ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Dispatcher.unregister(...): `%s` does not map to a registered callback.', id) : invariant(false) : undefined;
+	    delete this._callbacks[id];
+	  };
+
+	  /**
+	   * Waits for the callbacks specified to be invoked before continuing execution
+	   * of the current callback. This method should only be used by a callback in
+	   * response to a dispatched payload.
+	   */
+
+	  Dispatcher.prototype.waitFor = function waitFor(ids) {
+	    !this._isDispatching ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Dispatcher.waitFor(...): Must be invoked while dispatching.') : invariant(false) : undefined;
+	    for (var ii = 0; ii < ids.length; ii++) {
+	      var id = ids[ii];
+	      if (this._isPending[id]) {
+	        !this._isHandled[id] ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Dispatcher.waitFor(...): Circular dependency detected while ' + 'waiting for `%s`.', id) : invariant(false) : undefined;
+	        continue;
+	      }
+	      !this._callbacks[id] ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Dispatcher.waitFor(...): `%s` does not map to a registered callback.', id) : invariant(false) : undefined;
+	      this._invokeCallback(id);
+	    }
+	  };
+
+	  /**
+	   * Dispatches a payload to all registered callbacks.
+	   */
+
+	  Dispatcher.prototype.dispatch = function dispatch(payload) {
+	    !!this._isDispatching ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Dispatch.dispatch(...): Cannot dispatch in the middle of a dispatch.') : invariant(false) : undefined;
+	    this._startDispatching(payload);
+	    try {
+	      for (var id in this._callbacks) {
+	        if (this._isPending[id]) {
+	          continue;
+	        }
+	        this._invokeCallback(id);
+	      }
+	    } finally {
+	      this._stopDispatching();
+	    }
+	  };
+
+	  /**
+	   * Is this Dispatcher currently dispatching.
+	   */
+
+	  Dispatcher.prototype.isDispatching = function isDispatching() {
+	    return this._isDispatching;
+	  };
+
+	  /**
+	   * Call the callback stored with the given id. Also do some internal
+	   * bookkeeping.
+	   *
+	   * @internal
+	   */
+
+	  Dispatcher.prototype._invokeCallback = function _invokeCallback(id) {
+	    this._isPending[id] = true;
+	    this._callbacks[id](this._pendingPayload);
+	    this._isHandled[id] = true;
+	  };
+
+	  /**
+	   * Set up bookkeeping needed when dispatching.
+	   *
+	   * @internal
+	   */
+
+	  Dispatcher.prototype._startDispatching = function _startDispatching(payload) {
+	    for (var id in this._callbacks) {
+	      this._isPending[id] = false;
+	      this._isHandled[id] = false;
+	    }
+	    this._pendingPayload = payload;
+	    this._isDispatching = true;
+	  };
+
+	  /**
+	   * Clear bookkeeping used for dispatching.
+	   *
+	   * @internal
+	   */
+
+	  Dispatcher.prototype._stopDispatching = function _stopDispatching() {
+	    delete this._pendingPayload;
+	    this._isDispatching = false;
+	  };
+
+	  return Dispatcher;
+	})();
+
+	module.exports = Dispatcher;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ },
+/* 301 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {/**
+	 * Copyright 2013-2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule invariant
+	 */
+
+	"use strict";
+
+	/**
+	 * Use invariant() to assert state which your program assumes to be true.
+	 *
+	 * Provide sprintf-style format (only %s is supported) and arguments
+	 * to provide information about what broke and what you were
+	 * expecting.
+	 *
+	 * The invariant message will be stripped in production, but the invariant
+	 * will remain to ensure logic does not differ in production.
+	 */
+
+	var invariant = function (condition, format, a, b, c, d, e, f) {
+	  if (process.env.NODE_ENV !== 'production') {
+	    if (format === undefined) {
+	      throw new Error('invariant requires an error message argument');
+	    }
+	  }
+
+	  if (!condition) {
+	    var error;
+	    if (format === undefined) {
+	      error = new Error('Minified exception occurred; use the non-minified dev environment ' + 'for the full error message and additional helpful warnings.');
+	    } else {
+	      var args = [a, b, c, d, e, f];
+	      var argIndex = 0;
+	      error = new Error('Invariant Violation: ' + format.replace(/%s/g, function () {
+	        return args[argIndex++];
+	      }));
+	    }
+
+	    error.framesToPop = 1; // we don't care about invariant's own frame
+	    throw error;
+	  }
+	};
+
+	module.exports = invariant;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ },
+/* 302 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.setAppState = setAppState;
+	exports.snapshot = snapshot;
+	exports.saveInitialSnapshot = saveInitialSnapshot;
+	exports.filterSnapshots = filterSnapshots;
+
+	var _functions = __webpack_require__(303);
+
+	var fn = _interopRequireWildcard(_functions);
+
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj['default'] = obj; return newObj; } }
+
+	function setAppState(instance, data, onStore) {
+	  var obj = instance.deserialize(data);
+	  fn.eachObject(function (key, value) {
+	    var store = instance.stores[key];
+	    if (store) {
+	      (function () {
+	        var config = store.StoreModel.config;
+
+	        var state = store.state;
+	        if (config.onDeserialize) obj[key] = config.onDeserialize(value) || value;
+	        if (fn.isMutableObject(state)) {
+	          fn.eachObject(function (k) {
+	            return delete state[k];
+	          }, [state]);
+	          fn.assign(state, obj[key]);
+	        } else {
+	          store.state = obj[key];
+	        }
+	        onStore(store, store.state);
+	      })();
+	    }
+	  }, [obj]);
+	}
+
+	function snapshot(instance) {
+	  var storeNames = arguments.length <= 1 || arguments[1] === undefined ? [] : arguments[1];
+
+	  var stores = storeNames.length ? storeNames : Object.keys(instance.stores);
+	  return stores.reduce(function (obj, storeHandle) {
+	    var storeName = storeHandle.displayName || storeHandle;
+	    var store = instance.stores[storeName];
+	    var config = store.StoreModel.config;
+
+	    store.lifecycle('snapshot');
+	    var customSnapshot = config.onSerialize && config.onSerialize(store.state);
+	    obj[storeName] = customSnapshot ? customSnapshot : store.getState();
+	    return obj;
+	  }, {});
+	}
+
+	function saveInitialSnapshot(instance, key) {
+	  var state = instance.deserialize(instance.serialize(instance.stores[key].state));
+	  instance._initSnapshot[key] = state;
+	  instance._lastSnapshot[key] = state;
+	}
+
+	function filterSnapshots(instance, state, stores) {
+	  return stores.reduce(function (obj, store) {
+	    var storeName = store.displayName || store;
+	    if (!state[storeName]) {
+	      throw new ReferenceError(String(storeName) + ' is not a valid store');
+	    }
+	    obj[storeName] = state[storeName];
+	    return obj;
+	  }, {});
+	}
+
+/***/ },
+/* 303 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.isMutableObject = isMutableObject;
+	exports.eachObject = eachObject;
+	exports.assign = assign;
+	var isFunction = exports.isFunction = function isFunction(x) {
+	  return typeof x === 'function';
+	};
+
+	function isMutableObject(target) {
+	  var Ctor = target.constructor;
+
+	  return !!target && Object.prototype.toString.call(target) === '[object Object]' && isFunction(Ctor) && !Object.isFrozen(target) && (Ctor instanceof Ctor || target.type === 'AltStore');
+	}
+
+	function eachObject(f, o) {
+	  o.forEach(function (from) {
+	    Object.keys(Object(from)).forEach(function (key) {
+	      f(key, from[key]);
+	    });
+	  });
+	}
+
+	function assign(target) {
+	  for (var _len = arguments.length, source = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+	    source[_key - 1] = arguments[_key];
+	  }
+
+	  eachObject(function (key, value) {
+	    return target[key] = value;
+	  }, source);
+	  return target;
+	}
+
+/***/ },
+/* 304 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.createStoreConfig = createStoreConfig;
+	exports.transformStore = transformStore;
+	exports.createStoreFromObject = createStoreFromObject;
+	exports.createStoreFromClass = createStoreFromClass;
+
+	var _AltUtils = __webpack_require__(305);
+
+	var utils = _interopRequireWildcard(_AltUtils);
+
+	var _functions = __webpack_require__(303);
+
+	var fn = _interopRequireWildcard(_functions);
+
+	var _AltStore = __webpack_require__(306);
+
+	var _AltStore2 = _interopRequireDefault(_AltStore);
+
+	var _StoreMixin = __webpack_require__(308);
+
+	var _StoreMixin2 = _interopRequireDefault(_StoreMixin);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj['default'] = obj; return newObj; } }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	function doSetState(store, storeInstance, state) {
+	  if (!state) {
+	    return;
+	  }
+
+	  var config = storeInstance.StoreModel.config;
+
+
+	  var nextState = fn.isFunction(state) ? state(storeInstance.state) : state;
+
+	  storeInstance.state = config.setState.call(store, storeInstance.state, nextState);
+
+	  if (!store.alt.dispatcher.isDispatching()) {
+	    store.emitChange();
+	  }
+	}
+
+	function createPrototype(proto, alt, key, extras) {
+	  return fn.assign(proto, _StoreMixin2['default'], {
+	    displayName: key,
+	    alt: alt,
+	    dispatcher: alt.dispatcher,
+	    preventDefault: function () {
+	      function preventDefault() {
+	        this.getInstance().preventDefault = true;
+	      }
+
+	      return preventDefault;
+	    }(),
+
+	    boundListeners: [],
+	    lifecycleEvents: {},
+	    actionListeners: {},
+	    publicMethods: {},
+	    handlesOwnErrors: false
+	  }, extras);
+	}
+
+	function createStoreConfig(globalConfig, StoreModel) {
+	  StoreModel.config = fn.assign({
+	    getState: function () {
+	      function getState(state) {
+	        if (Array.isArray(state)) {
+	          return state.slice();
+	        } else if (fn.isMutableObject(state)) {
+	          return fn.assign({}, state);
+	        }
+
+	        return state;
+	      }
+
+	      return getState;
+	    }(),
+	    setState: function () {
+	      function setState(currentState, nextState) {
+	        if (fn.isMutableObject(nextState)) {
+	          return fn.assign(currentState, nextState);
+	        }
+	        return nextState;
+	      }
+
+	      return setState;
+	    }()
+	  }, globalConfig, StoreModel.config);
+	}
+
+	function transformStore(transforms, StoreModel) {
+	  return transforms.reduce(function (Store, transform) {
+	    return transform(Store);
+	  }, StoreModel);
+	}
+
+	function createStoreFromObject(alt, StoreModel, key) {
+	  var storeInstance = void 0;
+
+	  var StoreProto = createPrototype({}, alt, key, fn.assign({
+	    getInstance: function () {
+	      function getInstance() {
+	        return storeInstance;
+	      }
+
+	      return getInstance;
+	    }(),
+	    setState: function () {
+	      function setState(nextState) {
+	        doSetState(this, storeInstance, nextState);
+	      }
+
+	      return setState;
+	    }()
+	  }, StoreModel));
+
+	  // bind the store listeners
+	  /* istanbul ignore else */
+	  if (StoreProto.bindListeners) {
+	    _StoreMixin2['default'].bindListeners.call(StoreProto, StoreProto.bindListeners);
+	  }
+	  /* istanbul ignore else */
+	  if (StoreProto.observe) {
+	    _StoreMixin2['default'].bindListeners.call(StoreProto, StoreProto.observe(alt));
+	  }
+
+	  // bind the lifecycle events
+	  /* istanbul ignore else */
+	  if (StoreProto.lifecycle) {
+	    fn.eachObject(function (eventName, event) {
+	      _StoreMixin2['default'].on.call(StoreProto, eventName, event);
+	    }, [StoreProto.lifecycle]);
+	  }
+
+	  // create the instance and fn.assign the public methods to the instance
+	  storeInstance = fn.assign(new _AltStore2['default'](alt, StoreProto, StoreProto.state !== undefined ? StoreProto.state : {}, StoreModel), StoreProto.publicMethods, {
+	    displayName: key,
+	    config: StoreModel.config
+	  });
+
+	  return storeInstance;
+	}
+
+	function createStoreFromClass(alt, StoreModel, key) {
+	  var storeInstance = void 0;
+	  var config = StoreModel.config;
+
+	  // Creating a class here so we don't overload the provided store's
+	  // prototype with the mixin behaviour and I'm extending from StoreModel
+	  // so we can inherit any extensions from the provided store.
+
+	  var Store = function (_StoreModel) {
+	    _inherits(Store, _StoreModel);
+
+	    function Store() {
+	      _classCallCheck(this, Store);
+
+	      for (var _len2 = arguments.length, args = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+	        args[_key2] = arguments[_key2];
+	      }
+
+	      return _possibleConstructorReturn(this, _StoreModel.call.apply(_StoreModel, [this].concat(args)));
+	    }
+
+	    return Store;
+	  }(StoreModel);
+
+	  createPrototype(Store.prototype, alt, key, {
+	    type: 'AltStore',
+	    getInstance: function () {
+	      function getInstance() {
+	        return storeInstance;
+	      }
+
+	      return getInstance;
+	    }(),
+	    setState: function () {
+	      function setState(nextState) {
+	        doSetState(this, storeInstance, nextState);
+	      }
+
+	      return setState;
+	    }()
+	  });
+
+	  for (var _len = arguments.length, argsForClass = Array(_len > 3 ? _len - 3 : 0), _key = 3; _key < _len; _key++) {
+	    argsForClass[_key - 3] = arguments[_key];
+	  }
+
+	  var store = new (Function.prototype.bind.apply(Store, [null].concat(argsForClass)))();
+
+	  /* istanbul ignore next */
+	  if (config.bindListeners) store.bindListeners(config.bindListeners);
+	  /* istanbul ignore next */
+	  if (config.datasource) store.registerAsync(config.datasource);
+
+	  storeInstance = fn.assign(new _AltStore2['default'](alt, store, store.state !== undefined ? store.state : store, StoreModel), utils.getInternalMethods(StoreModel), config.publicMethods, { displayName: key });
+
+	  return storeInstance;
+	}
+
+/***/ },
+/* 305 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	exports.getInternalMethods = getInternalMethods;
+	exports.getPrototypeChain = getPrototypeChain;
+	exports.warn = warn;
+	exports.uid = uid;
+	exports.formatAsConstant = formatAsConstant;
+	exports.dispatchIdentity = dispatchIdentity;
+	exports.fsa = fsa;
+	exports.dispatch = dispatch;
+
+	var _functions = __webpack_require__(303);
+
+	var fn = _interopRequireWildcard(_functions);
+
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj['default'] = obj; return newObj; } }
+
+	/*eslint-disable*/
+	var builtIns = Object.getOwnPropertyNames(NoopClass);
+	var builtInProto = Object.getOwnPropertyNames(NoopClass.prototype);
+	/*eslint-enable*/
+
+	function getInternalMethods(Obj, isProto) {
+	  var excluded = isProto ? builtInProto : builtIns;
+	  var obj = isProto ? Obj.prototype : Obj;
+	  return Object.getOwnPropertyNames(obj).reduce(function (value, m) {
+	    if (excluded.indexOf(m) !== -1) {
+	      return value;
+	    }
+
+	    value[m] = obj[m];
+	    return value;
+	  }, {});
+	}
+
+	function getPrototypeChain(Obj) {
+	  var methods = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
+
+	  return Obj === Function.prototype ? methods : getPrototypeChain(Object.getPrototypeOf(Obj), fn.assign(getInternalMethods(Obj, true), methods));
+	}
+
+	function warn(msg) {
+	  /* istanbul ignore else */
+	  /*eslint-disable*/
+	  if (typeof console !== 'undefined') {
+	    console.warn(new ReferenceError(msg));
+	  }
+	  /*eslint-enable*/
+	}
+
+	function uid(container, name) {
+	  var count = 0;
+	  var key = name;
+	  while (Object.hasOwnProperty.call(container, key)) {
+	    key = name + String(++count);
+	  }
+	  return key;
+	}
+
+	function formatAsConstant(name) {
+	  return name.replace(/[a-z]([A-Z])/g, function (i) {
+	    return String(i[0]) + '_' + String(i[1].toLowerCase());
+	  }).toUpperCase();
+	}
+
+	function dispatchIdentity(x) {
+	  if (x === undefined) return null;
+
+	  for (var _len = arguments.length, a = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+	    a[_key - 1] = arguments[_key];
+	  }
+
+	  return a.length ? [x].concat(a) : x;
+	}
+
+	function fsa(id, type, payload, details) {
+	  return {
+	    type: type,
+	    payload: payload,
+	    meta: _extends({
+	      dispatchId: id
+	    }, details),
+
+	    id: id,
+	    action: type,
+	    data: payload,
+	    details: details
+	  };
+	}
+
+	function dispatch(id, actionObj, payload, alt) {
+	  var data = actionObj.dispatch(payload);
+	  if (data === undefined) return null;
+
+	  var type = actionObj.id;
+	  var namespace = type;
+	  var name = type;
+	  var details = { id: type, namespace: namespace, name: name };
+
+	  var dispatchLater = function dispatchLater(x) {
+	    return alt.dispatch(type, x, details);
+	  };
+
+	  if (fn.isFunction(data)) return data(dispatchLater, alt);
+
+	  // XXX standardize this
+	  return alt.dispatcher.dispatch(fsa(id, type, data, details));
+	}
+
+	/* istanbul ignore next */
+	function NoopClass() {}
+
+/***/ },
+/* 306 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _functions = __webpack_require__(303);
+
+	var fn = _interopRequireWildcard(_functions);
+
+	var _transmitter = __webpack_require__(307);
+
+	var _transmitter2 = _interopRequireDefault(_transmitter);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj['default'] = obj; return newObj; } }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var AltStore = function () {
+	  function AltStore(alt, model, state, StoreModel) {
+	    var _this = this;
+
+	    _classCallCheck(this, AltStore);
+
+	    var lifecycleEvents = model.lifecycleEvents;
+	    this.transmitter = (0, _transmitter2['default'])();
+	    this.lifecycle = function (event, x) {
+	      if (lifecycleEvents[event]) lifecycleEvents[event].publish(x);
+	    };
+	    this.state = state;
+
+	    this.alt = alt;
+	    this.preventDefault = false;
+	    this.displayName = model.displayName;
+	    this.boundListeners = model.boundListeners;
+	    this.StoreModel = StoreModel;
+	    this.reduce = model.reduce || function (x) {
+	      return x;
+	    };
+	    this.subscriptions = [];
+
+	    var output = model.output || function (x) {
+	      return x;
+	    };
+
+	    this.emitChange = function () {
+	      return _this.transmitter.publish(output(_this.state));
+	    };
+
+	    var handleDispatch = function handleDispatch(f, payload) {
+	      try {
+	        return f();
+	      } catch (e) {
+	        if (model.handlesOwnErrors) {
+	          _this.lifecycle('error', {
+	            error: e,
+	            payload: payload,
+	            state: _this.state
+	          });
+	          return false;
+	        }
+
+	        throw e;
+	      }
+	    };
+
+	    fn.assign(this, model.publicMethods);
+
+	    // Register dispatcher
+	    this.dispatchToken = alt.dispatcher.register(function (payload) {
+	      _this.preventDefault = false;
+
+	      _this.lifecycle('beforeEach', {
+	        payload: payload,
+	        state: _this.state
+	      });
+
+	      var actionHandlers = model.actionListeners[payload.action];
+
+	      if (actionHandlers || model.otherwise) {
+	        var result = void 0;
+
+	        if (actionHandlers) {
+	          result = handleDispatch(function () {
+	            return actionHandlers.filter(Boolean).every(function (handler) {
+	              return handler.call(model, payload.data, payload.action) !== false;
+	            });
+	          }, payload);
+	        } else {
+	          result = handleDispatch(function () {
+	            return model.otherwise(payload.data, payload.action);
+	          }, payload);
+	        }
+
+	        if (result !== false && !_this.preventDefault) _this.emitChange();
+	      }
+
+	      if (model.reduce) {
+	        handleDispatch(function () {
+	          var value = model.reduce(_this.state, payload);
+	          if (value !== undefined) _this.state = value;
+	        }, payload);
+	        if (!_this.preventDefault) _this.emitChange();
+	      }
+
+	      _this.lifecycle('afterEach', {
+	        payload: payload,
+	        state: _this.state
+	      });
+	    });
+
+	    this.lifecycle('init');
+	  }
+
+	  AltStore.prototype.listen = function () {
+	    function listen(cb) {
+	      var _this2 = this;
+
+	      if (!fn.isFunction(cb)) throw new TypeError('listen expects a function');
+
+	      var _transmitter$subscrib = this.transmitter.subscribe(cb);
+
+	      var dispose = _transmitter$subscrib.dispose;
+
+	      this.subscriptions.push({ cb: cb, dispose: dispose });
+	      return function () {
+	        _this2.lifecycle('unlisten');
+	        dispose();
+	      };
+	    }
+
+	    return listen;
+	  }();
+
+	  AltStore.prototype.unlisten = function () {
+	    function unlisten(cb) {
+	      this.lifecycle('unlisten');
+	      this.subscriptions.filter(function (subscription) {
+	        return subscription.cb === cb;
+	      }).forEach(function (subscription) {
+	        return subscription.dispose();
+	      });
+	    }
+
+	    return unlisten;
+	  }();
+
+	  AltStore.prototype.getState = function () {
+	    function getState() {
+	      return this.StoreModel.config.getState.call(this, this.state);
+	    }
+
+	    return getState;
+	  }();
+
+	  return AltStore;
+	}();
+
+	exports['default'] = AltStore;
+	module.exports = exports['default'];
+
+/***/ },
+/* 307 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	function transmitter() {
+	  var subscriptions = [];
+	  var nowDispatching = false;
+	  var toUnsubscribe = {};
+
+	  var unsubscribe = function unsubscribe(onChange) {
+	    var id = subscriptions.indexOf(onChange);
+	    if (id < 0) return;
+	    if (nowDispatching) {
+	      toUnsubscribe[id] = onChange;
+	      return;
+	    }
+	    subscriptions.splice(id, 1);
+	  };
+
+	  var subscribe = function subscribe(onChange) {
+	    var id = subscriptions.push(onChange);
+	    var dispose = function dispose() {
+	      return unsubscribe(onChange);
+	    };
+	    return { dispose: dispose };
+	  };
+
+	  var publish = function publish() {
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+
+	    nowDispatching = true;
+	    try {
+	      subscriptions.forEach(function (subscription, id) {
+	        return toUnsubscribe[id] || subscription.apply(undefined, args);
+	      });
+	    } finally {
+	      nowDispatching = false;
+	      Object.keys(toUnsubscribe).forEach(function (id) {
+	        return unsubscribe(toUnsubscribe[id]);
+	      });
+	      toUnsubscribe = {};
+	    }
+	  };
+
+	  return {
+	    publish: publish,
+	    subscribe: subscribe,
+	    $subscriptions: subscriptions
+	  };
+	}
+
+	module.exports = transmitter;
+
+/***/ },
+/* 308 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _transmitter = __webpack_require__(307);
+
+	var _transmitter2 = _interopRequireDefault(_transmitter);
+
+	var _functions = __webpack_require__(303);
+
+	var fn = _interopRequireWildcard(_functions);
+
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj['default'] = obj; return newObj; } }
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var StoreMixin = {
+	  waitFor: function () {
+	    function waitFor() {
+	      for (var _len = arguments.length, sources = Array(_len), _key = 0; _key < _len; _key++) {
+	        sources[_key] = arguments[_key];
+	      }
+
+	      if (!sources.length) {
+	        throw new ReferenceError('Dispatch tokens not provided');
+	      }
+
+	      var sourcesArray = sources;
+	      if (sources.length === 1) {
+	        sourcesArray = Array.isArray(sources[0]) ? sources[0] : sources;
+	      }
+
+	      var tokens = sourcesArray.map(function (source) {
+	        return source.dispatchToken || source;
+	      });
+
+	      this.dispatcher.waitFor(tokens);
+	    }
+
+	    return waitFor;
+	  }(),
+	  exportAsync: function () {
+	    function exportAsync(asyncMethods) {
+	      this.registerAsync(asyncMethods);
+	    }
+
+	    return exportAsync;
+	  }(),
+	  registerAsync: function () {
+	    function registerAsync(asyncDef) {
+	      var _this = this;
+
+	      var loadCounter = 0;
+
+	      var asyncMethods = fn.isFunction(asyncDef) ? asyncDef(this.alt) : asyncDef;
+
+	      var toExport = Object.keys(asyncMethods).reduce(function (publicMethods, methodName) {
+	        var desc = asyncMethods[methodName];
+	        var spec = fn.isFunction(desc) ? desc(_this) : desc;
+
+	        var validHandlers = ['success', 'error', 'loading'];
+	        validHandlers.forEach(function (handler) {
+	          if (spec[handler] && !spec[handler].id) {
+	            throw new Error(String(handler) + ' handler must be an action function');
+	          }
+	        });
+
+	        publicMethods[methodName] = function () {
+	          for (var _len2 = arguments.length, args = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+	            args[_key2] = arguments[_key2];
+	          }
+
+	          var state = _this.getInstance().getState();
+	          var value = spec.local && spec.local.apply(spec, [state].concat(args));
+	          var shouldFetch = spec.shouldFetch ? spec.shouldFetch.apply(spec, [state].concat(args))
+	          /*eslint-disable*/
+	          : value == null;
+	          /*eslint-enable*/
+	          var intercept = spec.interceptResponse || function (x) {
+	            return x;
+	          };
+
+	          var makeActionHandler = function () {
+	            function makeActionHandler(action, isError) {
+	              return function (x) {
+	                var fire = function () {
+	                  function fire() {
+	                    loadCounter -= 1;
+	                    action(intercept(x, action, args));
+	                    if (isError) throw x;
+	                    return x;
+	                  }
+
+	                  return fire;
+	                }();
+	                return _this.alt.trapAsync ? function () {
+	                  return fire();
+	                } : fire();
+	              };
+	            }
+
+	            return makeActionHandler;
+	          }();
+
+	          // if we don't have it in cache then fetch it
+	          if (shouldFetch) {
+	            loadCounter += 1;
+	            /* istanbul ignore else */
+	            if (spec.loading) spec.loading(intercept(null, spec.loading, args));
+	            return spec.remote.apply(spec, [state].concat(args)).then(makeActionHandler(spec.success), makeActionHandler(spec.error, 1));
+	          }
+
+	          // otherwise emit the change now
+	          _this.emitChange();
+	          return value;
+	        };
+
+	        return publicMethods;
+	      }, {});
+
+	      this.exportPublicMethods(toExport);
+	      this.exportPublicMethods({
+	        isLoading: function () {
+	          function isLoading() {
+	            return loadCounter > 0;
+	          }
+
+	          return isLoading;
+	        }()
+	      });
+	    }
+
+	    return registerAsync;
+	  }(),
+	  exportPublicMethods: function () {
+	    function exportPublicMethods(methods) {
+	      var _this2 = this;
+
+	      fn.eachObject(function (methodName, value) {
+	        if (!fn.isFunction(value)) {
+	          throw new TypeError('exportPublicMethods expects a function');
+	        }
+
+	        _this2.publicMethods[methodName] = value;
+	      }, [methods]);
+	    }
+
+	    return exportPublicMethods;
+	  }(),
+	  emitChange: function () {
+	    function emitChange() {
+	      this.getInstance().emitChange();
+	    }
+
+	    return emitChange;
+	  }(),
+	  on: function () {
+	    function on(lifecycleEvent, handler) {
+	      if (lifecycleEvent === 'error') this.handlesOwnErrors = true;
+	      var bus = this.lifecycleEvents[lifecycleEvent] || (0, _transmitter2['default'])();
+	      this.lifecycleEvents[lifecycleEvent] = bus;
+	      return bus.subscribe(handler.bind(this));
+	    }
+
+	    return on;
+	  }(),
+	  bindAction: function () {
+	    function bindAction(symbol, handler) {
+	      if (!symbol) {
+	        throw new ReferenceError('Invalid action reference passed in');
+	      }
+	      if (!fn.isFunction(handler)) {
+	        throw new TypeError('bindAction expects a function');
+	      }
+
+	      // You can pass in the constant or the function itself
+	      var key = symbol.id ? symbol.id : symbol;
+	      this.actionListeners[key] = this.actionListeners[key] || [];
+	      this.actionListeners[key].push(handler.bind(this));
+	      this.boundListeners.push(key);
+	    }
+
+	    return bindAction;
+	  }(),
+	  bindActions: function () {
+	    function bindActions(actions) {
+	      var _this3 = this;
+
+	      fn.eachObject(function (action, symbol) {
+	        var matchFirstCharacter = /./;
+	        var assumedEventHandler = action.replace(matchFirstCharacter, function (x) {
+	          return 'on' + String(x[0].toUpperCase());
+	        });
+
+	        if (_this3[action] && _this3[assumedEventHandler]) {
+	          // If you have both action and onAction
+	          throw new ReferenceError('You have multiple action handlers bound to an action: ' + (String(action) + ' and ' + String(assumedEventHandler)));
+	        }
+
+	        var handler = _this3[action] || _this3[assumedEventHandler];
+	        if (handler) {
+	          _this3.bindAction(symbol, handler);
+	        }
+	      }, [actions]);
+	    }
+
+	    return bindActions;
+	  }(),
+	  bindListeners: function () {
+	    function bindListeners(obj) {
+	      var _this4 = this;
+
+	      fn.eachObject(function (methodName, symbol) {
+	        var listener = _this4[methodName];
+
+	        if (!listener) {
+	          throw new ReferenceError(String(methodName) + ' defined but does not exist in ' + String(_this4.displayName));
+	        }
+
+	        if (Array.isArray(symbol)) {
+	          symbol.forEach(function (action) {
+	            _this4.bindAction(action, listener);
+	          });
+	        } else {
+	          _this4.bindAction(symbol, listener);
+	        }
+	      }, [obj]);
+	    }
+
+	    return bindListeners;
+	  }()
+	};
+
+	exports['default'] = StoreMixin;
+	module.exports = exports['default'];
+
+/***/ },
+/* 309 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports['default'] = makeAction;
+
+	var _functions = __webpack_require__(303);
+
+	var fn = _interopRequireWildcard(_functions);
+
+	var _AltUtils = __webpack_require__(305);
+
+	var utils = _interopRequireWildcard(_AltUtils);
+
+	var _isPromise = __webpack_require__(310);
+
+	var _isPromise2 = _interopRequireDefault(_isPromise);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj['default'] = obj; return newObj; } }
+
+	function makeAction(alt, namespace, name, implementation, obj) {
+	  var id = utils.uid(alt._actionsRegistry, String(namespace) + '.' + String(name));
+	  alt._actionsRegistry[id] = 1;
+
+	  var data = { id: id, namespace: namespace, name: name };
+
+	  var dispatch = function dispatch(payload) {
+	    return alt.dispatch(id, payload, data);
+	  };
+
+	  // the action itself
+	  var action = function action() {
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+
+	    var invocationResult = implementation.apply(obj, args);
+	    var actionResult = invocationResult;
+
+	    // async functions that return promises should not be dispatched
+	    if (invocationResult !== undefined && !(0, _isPromise2['default'])(invocationResult)) {
+	      if (fn.isFunction(invocationResult)) {
+	        // inner function result should be returned as an action result
+	        actionResult = invocationResult(dispatch, alt);
+	      } else {
+	        dispatch(invocationResult);
+	      }
+	    }
+
+	    if (invocationResult === undefined) {
+	      utils.warn('An action was called but nothing was dispatched');
+	    }
+
+	    return actionResult;
+	  };
+	  action.defer = function () {
+	    for (var _len2 = arguments.length, args = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+	      args[_key2] = arguments[_key2];
+	    }
+
+	    return setTimeout(function () {
+	      return action.apply(null, args);
+	    });
+	  };
+	  action.id = id;
+	  action.data = data;
+
+	  // ensure each reference is unique in the namespace
+	  var container = alt.actions[namespace];
+	  var namespaceId = utils.uid(container, name);
+	  container[namespaceId] = action;
+
+	  // generate a constant
+	  var constant = utils.formatAsConstant(namespaceId);
+	  container[constant] = id;
+
+	  return action;
+	}
+	module.exports = exports['default'];
+
+/***/ },
+/* 310 */
+/***/ function(module, exports) {
+
+	module.exports = isPromise;
+
+	function isPromise(obj) {
+	  return !!obj && (typeof obj === 'object' || typeof obj === 'function') && typeof obj.then === 'function';
+	}
+
+
+/***/ },
+/* 311 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _alt = __webpack_require__(297);
+
+	var _alt2 = _interopRequireDefault(_alt);
+
+	var _jquery = __webpack_require__(312);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var HomeActions = function () {
+	    function HomeActions() {
+	        _classCallCheck(this, HomeActions);
+
+	        this.generateActions('updateHomeSuccess', 'updateHomeFail');
+	    }
+
+	    _createClass(HomeActions, [{
+	        key: 'updateHome',
+	        value: function updateHome() {
+	            var _this = this;
+
+	            _jquery2.default.ajax({
+	                type: 'Get',
+	                url: 'http://www.ibanyi.com/api/user'
+	            }).done(function (data) {
+	                _this.updateHomeSuccess(data);
+	            }).fail(function (jqXhr) {
+	                _this.updateHomeFail(jqXhr);
+	            });
+	        }
+	    }]);
+
+	    return HomeActions;
+	}();
+
+	exports.default = _alt2.default.createActions(HomeActions);
+
+/***/ },
+/* 312 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -44714,2243 +46943,6 @@
 
 
 /***/ },
-/* 295 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _amazeuiTouch = __webpack_require__(237);
-
-	var _Header = __webpack_require__(292);
-
-	var _Header2 = _interopRequireDefault(_Header);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = _react2.default.createClass({
-	    displayName: 'Login',
-	    render: function render() {
-	        return _react2.default.createElement(
-	            _amazeuiTouch.View,
-	            null,
-	            _react2.default.createElement(
-	                _amazeuiTouch.Container,
-	                null,
-	                _react2.default.createElement(_Header2.default, null),
-	                _react2.default.createElement(
-	                    _amazeuiTouch.Group,
-	                    { className: 'regLog-logo' },
-	                    _react2.default.createElement('div', { className: 'regLog-logo-img' })
-	                )
-	            )
-	        );
-	    }
-	});
-
-/***/ },
-/* 296 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _amazeuiTouch = __webpack_require__(237);
-
-	var _HomeStore = __webpack_require__(297);
-
-	var _HomeStore2 = _interopRequireDefault(_HomeStore);
-
-	var _HomeActions = __webpack_require__(312);
-
-	var _HomeActions2 = _interopRequireDefault(_HomeActions);
-
-	var _Header = __webpack_require__(292);
-
-	var _Header2 = _interopRequireDefault(_Header);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var img = _react2.default.createElement('img', { className: 'home-tribe-media', width: '44', height: '44', src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' });
-	var tit = _react2.default.createElement(
-	    'div',
-	    { className: 'home-tribe-item' },
-	    _react2.default.createElement(
-	        'p',
-	        { className: 'text-color-3 text-size-14' },
-	        '\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89'
-	    ),
-	    _react2.default.createElement(
-	        'p',
-	        { className: 'text-color-4 text-size-13' },
-	        '1\u5C0F\u65F6\u524D'
-	    )
-	);
-	var btn = _react2.default.createElement(
-	    'div',
-	    { className: 'home-tribe-tag' },
-	    '\u6D77\u8D3C\u738B\u90E8\u843D'
-	);
-
-	var Home = function (_React$Component) {
-	    _inherits(Home, _React$Component);
-
-	    function Home(props) {
-	        _classCallCheck(this, Home);
-
-	        var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
-
-	        _this.state = _HomeStore2.default.getState();
-	        _this.state.home = [];
-	        _this.onChange = _this.onChange.bind(_this);
-	        return _this;
-	    }
-
-	    _createClass(Home, [{
-	        key: 'componentDidMount',
-	        value: function componentDidMount() {
-	            _HomeStore2.default.listen(this.onChange);
-	            _HomeActions2.default.updateHome();
-	        }
-	    }, {
-	        key: 'componentWillUnmount',
-	        value: function componentWillUnmount() {
-	            _HomeStore2.default.unlisten(this.onChange);
-	        }
-	    }, {
-	        key: 'onChange',
-	        value: function onChange(state) {
-	            this.setState(state);
-	        }
-	    }, {
-	        key: 'render',
-	        value: function render() {
-	            return _react2.default.createElement(
-	                _amazeuiTouch.View,
-	                null,
-	                _react2.default.createElement(
-	                    _amazeuiTouch.Container,
-	                    { scrollable: true, className: 'home' },
-	                    _react2.default.createElement(_Header2.default, null),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'home-slide' },
-	                        _react2.default.createElement(
-	                            _amazeuiTouch.Slider,
-	                            null,
-	                            _react2.default.createElement(
-	                                _amazeuiTouch.Slider.Item,
-	                                null,
-	                                _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' })
-	                            ),
-	                            _react2.default.createElement(
-	                                _amazeuiTouch.Slider.Item,
-	                                null,
-	                                _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' })
-	                            )
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'home-tribe border-d7d7d7 bgF' },
-	                        _react2.default.createElement(
-	                            _amazeuiTouch.Group,
-	                            { noPadded: true, className: 'margin-0' },
-	                            _react2.default.createElement(
-	                                'h5',
-	                                { className: 'home-group-header margin-sm' },
-	                                '\u90E8\u843D'
-	                            ),
-	                            _react2.default.createElement(
-	                                _amazeuiTouch.Grid,
-	                                { avg: 4 },
-	                                _react2.default.createElement(
-	                                    _amazeuiTouch.Col,
-	                                    { className: 'padding-v-0' },
-	                                    _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' })
-	                                ),
-	                                _react2.default.createElement(
-	                                    _amazeuiTouch.Col,
-	                                    { className: 'padding-v-0' },
-	                                    _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' })
-	                                ),
-	                                _react2.default.createElement(
-	                                    _amazeuiTouch.Col,
-	                                    { className: 'padding-v-0' },
-	                                    _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-3.jpg' })
-	                                ),
-	                                _react2.default.createElement(
-	                                    _amazeuiTouch.Col,
-	                                    { className: 'padding-v-0' },
-	                                    _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-4.jpg' })
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                _amazeuiTouch.Grid,
-	                                { avg: 4, className: 'text-center' },
-	                                _react2.default.createElement(
-	                                    _amazeuiTouch.Col,
-	                                    { className: 'padding-v-xs' },
-	                                    _react2.default.createElement(
-	                                        'p',
-	                                        { className: 'home-tribe-name' },
-	                                        '\u5251\u7075\u90E8\u843D'
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    _amazeuiTouch.Col,
-	                                    { className: 'padding-v-xs' },
-	                                    _react2.default.createElement(
-	                                        'p',
-	                                        { className: 'home-tribe-name' },
-	                                        '\u6D77\u8D3C\u738B\u90E8\u843D'
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    _amazeuiTouch.Col,
-	                                    { className: 'padding-v-xs' },
-	                                    _react2.default.createElement(
-	                                        'p',
-	                                        { className: 'home-tribe-name' },
-	                                        '\u9B54\u517D\u90E8\u843D'
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    _amazeuiTouch.Col,
-	                                    { className: 'padding-v-xs' },
-	                                    _react2.default.createElement(
-	                                        'p',
-	                                        { className: 'home-tribe-name' },
-	                                        '\u5947\u8FF9\u738B\u5EA7\u90E8\u843D'
-	                                    )
-	                                )
-	                            )
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'home-square border-d7d7d7 bgF margin-top-sm' },
-	                        _react2.default.createElement(
-	                            _amazeuiTouch.Group,
-	                            { noPadded: true, className: 'margin-v-0' },
-	                            _react2.default.createElement(
-	                                'h5',
-	                                { className: 'home-group-header margin-sm' },
-	                                '\u5E7F\u573A'
-	                            ),
-	                            _react2.default.createElement(
-	                                _amazeuiTouch.Grid,
-	                                { align: 'between', className: 'padding-v-sm' },
-	                                _react2.default.createElement(
-	                                    _amazeuiTouch.Col,
-	                                    { cols: 3 },
-	                                    _react2.default.createElement(
-	                                        'button',
-	                                        { className: 'btn-yellow' },
-	                                        '\u9700\u6C42'
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    _amazeuiTouch.Col,
-	                                    { cols: 3 },
-	                                    _react2.default.createElement(
-	                                        'button',
-	                                        { className: 'btn-blue' },
-	                                        '\u670D\u52A1'
-	                                    )
-	                                )
-	                            )
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'border-d7d7d7 bgF margin-top-sm' },
-	                        _react2.default.createElement(
-	                            _amazeuiTouch.Group,
-	                            { noPadded: true, className: 'margin-v-0' },
-	                            _react2.default.createElement(
-	                                _amazeuiTouch.List,
-	                                null,
-	                                _react2.default.createElement(_amazeuiTouch.List.Item, {
-	                                    media: img,
-	                                    after: btn,
-	                                    title: tit
-	                                }),
-	                                _react2.default.createElement(
-	                                    'div',
-	                                    { className: 'padding-h margin-v-xs' },
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'text-size-15 text-color-3' },
-	                                        '\u6807\u9898\u540D\u79F0\u540D\u79F0\u540D\u79F0'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'text-size-13 text-color-2 home-tribe-desc' },
-	                                        '\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0'
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    _amazeuiTouch.Grid,
-	                                    { avg: 3 },
-	                                    _react2.default.createElement(
-	                                        _amazeuiTouch.Col,
-	                                        { className: 'padding-h padding-top-xs padding-bottom-0' },
-	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' })
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _amazeuiTouch.Col,
-	                                        { className: 'padding-h padding-top-xs padding-bottom-0' },
-	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' })
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _amazeuiTouch.Col,
-	                                        { className: 'padding-h padding-top-xs padding-bottom-0' },
-	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-3.jpg' })
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    _amazeuiTouch.Grid,
-	                                    { align: 'between' },
-	                                    _react2.default.createElement(
-	                                        _amazeuiTouch.Col,
-	                                        { cols: 2, className: 'padding-h text-size-12 text-color-4' },
-	                                        _react2.default.createElement('span', { className: 'icon home-icon-view margin-right-xs' }),
-	                                        '123'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _amazeuiTouch.Col,
-	                                        { cols: 2, className: 'padding-h text-size-12 text-color-4 text-right' },
-	                                        _react2.default.createElement(
-	                                            _amazeuiTouch.Grid,
-	                                            null,
-	                                            _react2.default.createElement(
-	                                                _amazeuiTouch.Col,
-	                                                null,
-	                                                _react2.default.createElement('span', { className: 'icon home-icon-view margin-right-xs' }),
-	                                                '123'
-	                                            ),
-	                                            _react2.default.createElement(
-	                                                _amazeuiTouch.Col,
-	                                                null,
-	                                                _react2.default.createElement('span', { className: 'icon home-icon-view margin-right-xs' }),
-	                                                '123'
-	                                            )
-	                                        )
-	                                    )
-	                                )
-	                            )
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'margin-h margin-v' },
-	                        _react2.default.createElement(
-	                            _amazeuiTouch.Group,
-	                            { noPadded: true, className: 'margin-0' },
-	                            _react2.default.createElement(
-	                                'a',
-	                                { className: 'btn-white' },
-	                                '\u67E5\u770B\u66F4\u591A'
-	                            )
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'margin-h margin-v bgNone' },
-	                        _react2.default.createElement(
-	                            'p',
-	                            { className: 'text-center text-size-12 text-color-2' },
-	                            _react2.default.createElement(
-	                                'a',
-	                                { href: '', className: 'text-size-12 text-color-2' },
-	                                '\u610F\u89C1\u53CD\u9988'
-	                            ),
-	                            _react2.default.createElement(
-	                                'span',
-	                                { className: 'padding-h-xs text-size-12 text-color-2' },
-	                                '|'
-	                            ),
-	                            _react2.default.createElement(
-	                                'a',
-	                                { href: '', className: 'text-size-12 text-color-2' },
-	                                '\u5173\u4E8E\u6211\u4EEC'
-	                            )
-	                        ),
-	                        _react2.default.createElement(
-	                            'p',
-	                            { className: 'text-center text-size-14 text-color-2' },
-	                            '\u4EACICP\u590714057447\u53F7-3'
-	                        )
-	                    )
-	                )
-	            );
-	        }
-	    }]);
-
-	    return Home;
-	}(_react2.default.Component);
-
-	exports.default = Home;
-
-/***/ },
-/* 297 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _alt = __webpack_require__(298);
-
-	var _alt2 = _interopRequireDefault(_alt);
-
-	var _HomeActions = __webpack_require__(312);
-
-	var _HomeActions2 = _interopRequireDefault(_HomeActions);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	var HomeStore = function () {
-	    function HomeStore() {
-	        _classCallCheck(this, HomeStore);
-
-	        this.bindActions(_HomeActions2.default);
-	        this.home = [];
-	    }
-
-	    //updateHome(todo) {
-	    //    this.setState({ todos: this.state.todos.concat(todo) });
-	    //}
-
-	    _createClass(HomeStore, [{
-	        key: 'onUpdateHomeSuccess',
-	        value: function onUpdateHomeSuccess(data) {
-	            this.home = data.result;
-	            console.info('onUpdateHomeSuccess', this.home);
-	        }
-	    }, {
-	        key: 'onUpdateHomeFail',
-	        value: function onUpdateHomeFail() {
-	            console.info('onUpdateHomeFail', data);
-	        }
-	    }]);
-
-	    return HomeStore;
-	}();
-
-	exports.default = _alt2.default.createStore(HomeStore, 'HomeStore');
-
-/***/ },
-/* 298 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _alt = __webpack_require__(299);
-
-	var _alt2 = _interopRequireDefault(_alt);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = new _alt2.default();
-
-/***/ },
-/* 299 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _flux = __webpack_require__(300);
-
-	var _StateFunctions = __webpack_require__(303);
-
-	var StateFunctions = _interopRequireWildcard(_StateFunctions);
-
-	var _functions = __webpack_require__(304);
-
-	var fn = _interopRequireWildcard(_functions);
-
-	var _store = __webpack_require__(305);
-
-	var store = _interopRequireWildcard(_store);
-
-	var _AltUtils = __webpack_require__(306);
-
-	var utils = _interopRequireWildcard(_AltUtils);
-
-	var _actions = __webpack_require__(310);
-
-	var _actions2 = _interopRequireDefault(_actions);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj['default'] = obj; return newObj; } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } } /* global window */
-
-
-	var Alt = function () {
-	  function Alt() {
-	    var config = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
-
-	    _classCallCheck(this, Alt);
-
-	    this.config = config;
-	    this.serialize = config.serialize || JSON.stringify;
-	    this.deserialize = config.deserialize || JSON.parse;
-	    this.dispatcher = config.dispatcher || new _flux.Dispatcher();
-	    this.batchingFunction = config.batchingFunction || function (callback) {
-	      return callback();
-	    };
-	    this.actions = { global: {} };
-	    this.stores = {};
-	    this.storeTransforms = config.storeTransforms || [];
-	    this.trapAsync = false;
-	    this._actionsRegistry = {};
-	    this._initSnapshot = {};
-	    this._lastSnapshot = {};
-	  }
-
-	  Alt.prototype.dispatch = function () {
-	    function dispatch(action, data, details) {
-	      var _this = this;
-
-	      this.batchingFunction(function () {
-	        var id = Math.random().toString(18).substr(2, 16);
-
-	        // support straight dispatching of FSA-style actions
-	        if (action.hasOwnProperty('type') && action.hasOwnProperty('payload')) {
-	          var fsaDetails = {
-	            id: action.type,
-	            namespace: action.type,
-	            name: action.type
-	          };
-	          return _this.dispatcher.dispatch(utils.fsa(id, action.type, action.payload, fsaDetails));
-	        }
-
-	        if (action.id && action.dispatch) {
-	          return utils.dispatch(id, action, data, _this);
-	        }
-
-	        return _this.dispatcher.dispatch(utils.fsa(id, action, data, details));
-	      });
-	    }
-
-	    return dispatch;
-	  }();
-
-	  Alt.prototype.createUnsavedStore = function () {
-	    function createUnsavedStore(StoreModel) {
-	      var key = StoreModel.displayName || '';
-	      store.createStoreConfig(this.config, StoreModel);
-	      var Store = store.transformStore(this.storeTransforms, StoreModel);
-
-	      for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-	        args[_key - 1] = arguments[_key];
-	      }
-
-	      return fn.isFunction(Store) ? store.createStoreFromClass.apply(store, [this, Store, key].concat(args)) : store.createStoreFromObject(this, Store, key);
-	    }
-
-	    return createUnsavedStore;
-	  }();
-
-	  Alt.prototype.createStore = function () {
-	    function createStore(StoreModel, iden) {
-	      var key = iden || StoreModel.displayName || StoreModel.name || '';
-	      store.createStoreConfig(this.config, StoreModel);
-	      var Store = store.transformStore(this.storeTransforms, StoreModel);
-
-	      /* istanbul ignore next */
-	      if (false) delete this.stores[key];
-
-	      if (this.stores[key] || !key) {
-	        if (this.stores[key]) {
-	          utils.warn('A store named ' + String(key) + ' already exists, double check your store ' + 'names or pass in your own custom identifier for each store');
-	        } else {
-	          utils.warn('Store name was not specified');
-	        }
-
-	        key = utils.uid(this.stores, key);
-	      }
-
-	      for (var _len2 = arguments.length, args = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
-	        args[_key2 - 2] = arguments[_key2];
-	      }
-
-	      var storeInstance = fn.isFunction(Store) ? store.createStoreFromClass.apply(store, [this, Store, key].concat(args)) : store.createStoreFromObject(this, Store, key);
-
-	      this.stores[key] = storeInstance;
-	      StateFunctions.saveInitialSnapshot(this, key);
-
-	      return storeInstance;
-	    }
-
-	    return createStore;
-	  }();
-
-	  Alt.prototype.generateActions = function () {
-	    function generateActions() {
-	      var actions = { name: 'global' };
-
-	      for (var _len3 = arguments.length, actionNames = Array(_len3), _key3 = 0; _key3 < _len3; _key3++) {
-	        actionNames[_key3] = arguments[_key3];
-	      }
-
-	      return this.createActions(actionNames.reduce(function (obj, action) {
-	        obj[action] = utils.dispatchIdentity;
-	        return obj;
-	      }, actions));
-	    }
-
-	    return generateActions;
-	  }();
-
-	  Alt.prototype.createAction = function () {
-	    function createAction(name, implementation, obj) {
-	      return (0, _actions2['default'])(this, 'global', name, implementation, obj);
-	    }
-
-	    return createAction;
-	  }();
-
-	  Alt.prototype.createActions = function () {
-	    function createActions(ActionsClass) {
-	      var _this3 = this;
-
-	      var exportObj = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
-
-	      var actions = {};
-	      var key = utils.uid(this._actionsRegistry, ActionsClass.displayName || ActionsClass.name || 'Unknown');
-
-	      if (fn.isFunction(ActionsClass)) {
-	        fn.assign(actions, utils.getPrototypeChain(ActionsClass));
-
-	        var ActionsGenerator = function (_ActionsClass) {
-	          _inherits(ActionsGenerator, _ActionsClass);
-
-	          function ActionsGenerator() {
-	            _classCallCheck(this, ActionsGenerator);
-
-	            for (var _len5 = arguments.length, args = Array(_len5), _key5 = 0; _key5 < _len5; _key5++) {
-	              args[_key5] = arguments[_key5];
-	            }
-
-	            return _possibleConstructorReturn(this, _ActionsClass.call.apply(_ActionsClass, [this].concat(args)));
-	          }
-
-	          ActionsGenerator.prototype.generateActions = function () {
-	            function generateActions() {
-	              for (var _len6 = arguments.length, actionNames = Array(_len6), _key6 = 0; _key6 < _len6; _key6++) {
-	                actionNames[_key6] = arguments[_key6];
-	              }
-
-	              actionNames.forEach(function (actionName) {
-	                actions[actionName] = utils.dispatchIdentity;
-	              });
-	            }
-
-	            return generateActions;
-	          }();
-
-	          return ActionsGenerator;
-	        }(ActionsClass);
-
-	        for (var _len4 = arguments.length, argsForConstructor = Array(_len4 > 2 ? _len4 - 2 : 0), _key4 = 2; _key4 < _len4; _key4++) {
-	          argsForConstructor[_key4 - 2] = arguments[_key4];
-	        }
-
-	        fn.assign(actions, new (Function.prototype.bind.apply(ActionsGenerator, [null].concat(argsForConstructor)))());
-	      } else {
-	        fn.assign(actions, ActionsClass);
-	      }
-
-	      this.actions[key] = this.actions[key] || {};
-
-	      fn.eachObject(function (actionName, action) {
-	        if (!fn.isFunction(action)) {
-	          exportObj[actionName] = action;
-	          return;
-	        }
-
-	        // create the action
-	        exportObj[actionName] = (0, _actions2['default'])(_this3, key, actionName, action, exportObj);
-
-	        // generate a constant
-	        var constant = utils.formatAsConstant(actionName);
-	        exportObj[constant] = exportObj[actionName].id;
-	      }, [actions]);
-
-	      return exportObj;
-	    }
-
-	    return createActions;
-	  }();
-
-	  Alt.prototype.takeSnapshot = function () {
-	    function takeSnapshot() {
-	      for (var _len7 = arguments.length, storeNames = Array(_len7), _key7 = 0; _key7 < _len7; _key7++) {
-	        storeNames[_key7] = arguments[_key7];
-	      }
-
-	      var state = StateFunctions.snapshot(this, storeNames);
-	      fn.assign(this._lastSnapshot, state);
-	      return this.serialize(state);
-	    }
-
-	    return takeSnapshot;
-	  }();
-
-	  Alt.prototype.rollback = function () {
-	    function rollback() {
-	      StateFunctions.setAppState(this, this.serialize(this._lastSnapshot), function (storeInst) {
-	        storeInst.lifecycle('rollback');
-	        storeInst.emitChange();
-	      });
-	    }
-
-	    return rollback;
-	  }();
-
-	  Alt.prototype.recycle = function () {
-	    function recycle() {
-	      for (var _len8 = arguments.length, storeNames = Array(_len8), _key8 = 0; _key8 < _len8; _key8++) {
-	        storeNames[_key8] = arguments[_key8];
-	      }
-
-	      var initialSnapshot = storeNames.length ? StateFunctions.filterSnapshots(this, this._initSnapshot, storeNames) : this._initSnapshot;
-
-	      StateFunctions.setAppState(this, this.serialize(initialSnapshot), function (storeInst) {
-	        storeInst.lifecycle('init');
-	        storeInst.emitChange();
-	      });
-	    }
-
-	    return recycle;
-	  }();
-
-	  Alt.prototype.flush = function () {
-	    function flush() {
-	      var state = this.serialize(StateFunctions.snapshot(this));
-	      this.recycle();
-	      return state;
-	    }
-
-	    return flush;
-	  }();
-
-	  Alt.prototype.bootstrap = function () {
-	    function bootstrap(data) {
-	      StateFunctions.setAppState(this, data, function (storeInst, state) {
-	        storeInst.lifecycle('bootstrap', state);
-	        storeInst.emitChange();
-	      });
-	    }
-
-	    return bootstrap;
-	  }();
-
-	  Alt.prototype.prepare = function () {
-	    function prepare(storeInst, payload) {
-	      var data = {};
-	      if (!storeInst.displayName) {
-	        throw new ReferenceError('Store provided does not have a name');
-	      }
-	      data[storeInst.displayName] = payload;
-	      return this.serialize(data);
-	    }
-
-	    return prepare;
-	  }();
-
-	  // Instance type methods for injecting alt into your application as context
-
-	  Alt.prototype.addActions = function () {
-	    function addActions(name, ActionsClass) {
-	      for (var _len9 = arguments.length, args = Array(_len9 > 2 ? _len9 - 2 : 0), _key9 = 2; _key9 < _len9; _key9++) {
-	        args[_key9 - 2] = arguments[_key9];
-	      }
-
-	      this.actions[name] = Array.isArray(ActionsClass) ? this.generateActions.apply(this, ActionsClass) : this.createActions.apply(this, [ActionsClass].concat(args));
-	    }
-
-	    return addActions;
-	  }();
-
-	  Alt.prototype.addStore = function () {
-	    function addStore(name, StoreModel) {
-	      for (var _len10 = arguments.length, args = Array(_len10 > 2 ? _len10 - 2 : 0), _key10 = 2; _key10 < _len10; _key10++) {
-	        args[_key10 - 2] = arguments[_key10];
-	      }
-
-	      this.createStore.apply(this, [StoreModel, name].concat(args));
-	    }
-
-	    return addStore;
-	  }();
-
-	  Alt.prototype.getActions = function () {
-	    function getActions(name) {
-	      return this.actions[name];
-	    }
-
-	    return getActions;
-	  }();
-
-	  Alt.prototype.getStore = function () {
-	    function getStore(name) {
-	      return this.stores[name];
-	    }
-
-	    return getStore;
-	  }();
-
-	  Alt.debug = function () {
-	    function debug(name, alt, win) {
-	      var key = 'alt.js.org';
-	      var context = win;
-	      if (!context && typeof window !== 'undefined') {
-	        context = window;
-	      }
-	      if (typeof context !== 'undefined') {
-	        context[key] = context[key] || [];
-	        context[key].push({ name: name, alt: alt });
-	      }
-	      return alt;
-	    }
-
-	    return debug;
-	  }();
-
-	  return Alt;
-	}();
-
-	exports['default'] = Alt;
-	module.exports = exports['default'];
-
-/***/ },
-/* 300 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright (c) 2014-2015, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 */
-
-	module.exports.Dispatcher = __webpack_require__(301);
-
-
-/***/ },
-/* 301 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(process) {/**
-	 * Copyright (c) 2014-2015, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule Dispatcher
-	 * 
-	 * @preventMunge
-	 */
-
-	'use strict';
-
-	exports.__esModule = true;
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-	var invariant = __webpack_require__(302);
-
-	var _prefix = 'ID_';
-
-	/**
-	 * Dispatcher is used to broadcast payloads to registered callbacks. This is
-	 * different from generic pub-sub systems in two ways:
-	 *
-	 *   1) Callbacks are not subscribed to particular events. Every payload is
-	 *      dispatched to every registered callback.
-	 *   2) Callbacks can be deferred in whole or part until other callbacks have
-	 *      been executed.
-	 *
-	 * For example, consider this hypothetical flight destination form, which
-	 * selects a default city when a country is selected:
-	 *
-	 *   var flightDispatcher = new Dispatcher();
-	 *
-	 *   // Keeps track of which country is selected
-	 *   var CountryStore = {country: null};
-	 *
-	 *   // Keeps track of which city is selected
-	 *   var CityStore = {city: null};
-	 *
-	 *   // Keeps track of the base flight price of the selected city
-	 *   var FlightPriceStore = {price: null}
-	 *
-	 * When a user changes the selected city, we dispatch the payload:
-	 *
-	 *   flightDispatcher.dispatch({
-	 *     actionType: 'city-update',
-	 *     selectedCity: 'paris'
-	 *   });
-	 *
-	 * This payload is digested by `CityStore`:
-	 *
-	 *   flightDispatcher.register(function(payload) {
-	 *     if (payload.actionType === 'city-update') {
-	 *       CityStore.city = payload.selectedCity;
-	 *     }
-	 *   });
-	 *
-	 * When the user selects a country, we dispatch the payload:
-	 *
-	 *   flightDispatcher.dispatch({
-	 *     actionType: 'country-update',
-	 *     selectedCountry: 'australia'
-	 *   });
-	 *
-	 * This payload is digested by both stores:
-	 *
-	 *   CountryStore.dispatchToken = flightDispatcher.register(function(payload) {
-	 *     if (payload.actionType === 'country-update') {
-	 *       CountryStore.country = payload.selectedCountry;
-	 *     }
-	 *   });
-	 *
-	 * When the callback to update `CountryStore` is registered, we save a reference
-	 * to the returned token. Using this token with `waitFor()`, we can guarantee
-	 * that `CountryStore` is updated before the callback that updates `CityStore`
-	 * needs to query its data.
-	 *
-	 *   CityStore.dispatchToken = flightDispatcher.register(function(payload) {
-	 *     if (payload.actionType === 'country-update') {
-	 *       // `CountryStore.country` may not be updated.
-	 *       flightDispatcher.waitFor([CountryStore.dispatchToken]);
-	 *       // `CountryStore.country` is now guaranteed to be updated.
-	 *
-	 *       // Select the default city for the new country
-	 *       CityStore.city = getDefaultCityForCountry(CountryStore.country);
-	 *     }
-	 *   });
-	 *
-	 * The usage of `waitFor()` can be chained, for example:
-	 *
-	 *   FlightPriceStore.dispatchToken =
-	 *     flightDispatcher.register(function(payload) {
-	 *       switch (payload.actionType) {
-	 *         case 'country-update':
-	 *         case 'city-update':
-	 *           flightDispatcher.waitFor([CityStore.dispatchToken]);
-	 *           FlightPriceStore.price =
-	 *             getFlightPriceStore(CountryStore.country, CityStore.city);
-	 *           break;
-	 *     }
-	 *   });
-	 *
-	 * The `country-update` payload will be guaranteed to invoke the stores'
-	 * registered callbacks in order: `CountryStore`, `CityStore`, then
-	 * `FlightPriceStore`.
-	 */
-
-	var Dispatcher = (function () {
-	  function Dispatcher() {
-	    _classCallCheck(this, Dispatcher);
-
-	    this._callbacks = {};
-	    this._isDispatching = false;
-	    this._isHandled = {};
-	    this._isPending = {};
-	    this._lastID = 1;
-	  }
-
-	  /**
-	   * Registers a callback to be invoked with every dispatched payload. Returns
-	   * a token that can be used with `waitFor()`.
-	   */
-
-	  Dispatcher.prototype.register = function register(callback) {
-	    var id = _prefix + this._lastID++;
-	    this._callbacks[id] = callback;
-	    return id;
-	  };
-
-	  /**
-	   * Removes a callback based on its token.
-	   */
-
-	  Dispatcher.prototype.unregister = function unregister(id) {
-	    !this._callbacks[id] ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Dispatcher.unregister(...): `%s` does not map to a registered callback.', id) : invariant(false) : undefined;
-	    delete this._callbacks[id];
-	  };
-
-	  /**
-	   * Waits for the callbacks specified to be invoked before continuing execution
-	   * of the current callback. This method should only be used by a callback in
-	   * response to a dispatched payload.
-	   */
-
-	  Dispatcher.prototype.waitFor = function waitFor(ids) {
-	    !this._isDispatching ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Dispatcher.waitFor(...): Must be invoked while dispatching.') : invariant(false) : undefined;
-	    for (var ii = 0; ii < ids.length; ii++) {
-	      var id = ids[ii];
-	      if (this._isPending[id]) {
-	        !this._isHandled[id] ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Dispatcher.waitFor(...): Circular dependency detected while ' + 'waiting for `%s`.', id) : invariant(false) : undefined;
-	        continue;
-	      }
-	      !this._callbacks[id] ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Dispatcher.waitFor(...): `%s` does not map to a registered callback.', id) : invariant(false) : undefined;
-	      this._invokeCallback(id);
-	    }
-	  };
-
-	  /**
-	   * Dispatches a payload to all registered callbacks.
-	   */
-
-	  Dispatcher.prototype.dispatch = function dispatch(payload) {
-	    !!this._isDispatching ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Dispatch.dispatch(...): Cannot dispatch in the middle of a dispatch.') : invariant(false) : undefined;
-	    this._startDispatching(payload);
-	    try {
-	      for (var id in this._callbacks) {
-	        if (this._isPending[id]) {
-	          continue;
-	        }
-	        this._invokeCallback(id);
-	      }
-	    } finally {
-	      this._stopDispatching();
-	    }
-	  };
-
-	  /**
-	   * Is this Dispatcher currently dispatching.
-	   */
-
-	  Dispatcher.prototype.isDispatching = function isDispatching() {
-	    return this._isDispatching;
-	  };
-
-	  /**
-	   * Call the callback stored with the given id. Also do some internal
-	   * bookkeeping.
-	   *
-	   * @internal
-	   */
-
-	  Dispatcher.prototype._invokeCallback = function _invokeCallback(id) {
-	    this._isPending[id] = true;
-	    this._callbacks[id](this._pendingPayload);
-	    this._isHandled[id] = true;
-	  };
-
-	  /**
-	   * Set up bookkeeping needed when dispatching.
-	   *
-	   * @internal
-	   */
-
-	  Dispatcher.prototype._startDispatching = function _startDispatching(payload) {
-	    for (var id in this._callbacks) {
-	      this._isPending[id] = false;
-	      this._isHandled[id] = false;
-	    }
-	    this._pendingPayload = payload;
-	    this._isDispatching = true;
-	  };
-
-	  /**
-	   * Clear bookkeeping used for dispatching.
-	   *
-	   * @internal
-	   */
-
-	  Dispatcher.prototype._stopDispatching = function _stopDispatching() {
-	    delete this._pendingPayload;
-	    this._isDispatching = false;
-	  };
-
-	  return Dispatcher;
-	})();
-
-	module.exports = Dispatcher;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
-
-/***/ },
-/* 302 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(process) {/**
-	 * Copyright 2013-2015, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule invariant
-	 */
-
-	"use strict";
-
-	/**
-	 * Use invariant() to assert state which your program assumes to be true.
-	 *
-	 * Provide sprintf-style format (only %s is supported) and arguments
-	 * to provide information about what broke and what you were
-	 * expecting.
-	 *
-	 * The invariant message will be stripped in production, but the invariant
-	 * will remain to ensure logic does not differ in production.
-	 */
-
-	var invariant = function (condition, format, a, b, c, d, e, f) {
-	  if (process.env.NODE_ENV !== 'production') {
-	    if (format === undefined) {
-	      throw new Error('invariant requires an error message argument');
-	    }
-	  }
-
-	  if (!condition) {
-	    var error;
-	    if (format === undefined) {
-	      error = new Error('Minified exception occurred; use the non-minified dev environment ' + 'for the full error message and additional helpful warnings.');
-	    } else {
-	      var args = [a, b, c, d, e, f];
-	      var argIndex = 0;
-	      error = new Error('Invariant Violation: ' + format.replace(/%s/g, function () {
-	        return args[argIndex++];
-	      }));
-	    }
-
-	    error.framesToPop = 1; // we don't care about invariant's own frame
-	    throw error;
-	  }
-	};
-
-	module.exports = invariant;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
-
-/***/ },
-/* 303 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.setAppState = setAppState;
-	exports.snapshot = snapshot;
-	exports.saveInitialSnapshot = saveInitialSnapshot;
-	exports.filterSnapshots = filterSnapshots;
-
-	var _functions = __webpack_require__(304);
-
-	var fn = _interopRequireWildcard(_functions);
-
-	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj['default'] = obj; return newObj; } }
-
-	function setAppState(instance, data, onStore) {
-	  var obj = instance.deserialize(data);
-	  fn.eachObject(function (key, value) {
-	    var store = instance.stores[key];
-	    if (store) {
-	      (function () {
-	        var config = store.StoreModel.config;
-
-	        var state = store.state;
-	        if (config.onDeserialize) obj[key] = config.onDeserialize(value) || value;
-	        if (fn.isMutableObject(state)) {
-	          fn.eachObject(function (k) {
-	            return delete state[k];
-	          }, [state]);
-	          fn.assign(state, obj[key]);
-	        } else {
-	          store.state = obj[key];
-	        }
-	        onStore(store, store.state);
-	      })();
-	    }
-	  }, [obj]);
-	}
-
-	function snapshot(instance) {
-	  var storeNames = arguments.length <= 1 || arguments[1] === undefined ? [] : arguments[1];
-
-	  var stores = storeNames.length ? storeNames : Object.keys(instance.stores);
-	  return stores.reduce(function (obj, storeHandle) {
-	    var storeName = storeHandle.displayName || storeHandle;
-	    var store = instance.stores[storeName];
-	    var config = store.StoreModel.config;
-
-	    store.lifecycle('snapshot');
-	    var customSnapshot = config.onSerialize && config.onSerialize(store.state);
-	    obj[storeName] = customSnapshot ? customSnapshot : store.getState();
-	    return obj;
-	  }, {});
-	}
-
-	function saveInitialSnapshot(instance, key) {
-	  var state = instance.deserialize(instance.serialize(instance.stores[key].state));
-	  instance._initSnapshot[key] = state;
-	  instance._lastSnapshot[key] = state;
-	}
-
-	function filterSnapshots(instance, state, stores) {
-	  return stores.reduce(function (obj, store) {
-	    var storeName = store.displayName || store;
-	    if (!state[storeName]) {
-	      throw new ReferenceError(String(storeName) + ' is not a valid store');
-	    }
-	    obj[storeName] = state[storeName];
-	    return obj;
-	  }, {});
-	}
-
-/***/ },
-/* 304 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.isMutableObject = isMutableObject;
-	exports.eachObject = eachObject;
-	exports.assign = assign;
-	var isFunction = exports.isFunction = function isFunction(x) {
-	  return typeof x === 'function';
-	};
-
-	function isMutableObject(target) {
-	  var Ctor = target.constructor;
-
-	  return !!target && Object.prototype.toString.call(target) === '[object Object]' && isFunction(Ctor) && !Object.isFrozen(target) && (Ctor instanceof Ctor || target.type === 'AltStore');
-	}
-
-	function eachObject(f, o) {
-	  o.forEach(function (from) {
-	    Object.keys(Object(from)).forEach(function (key) {
-	      f(key, from[key]);
-	    });
-	  });
-	}
-
-	function assign(target) {
-	  for (var _len = arguments.length, source = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-	    source[_key - 1] = arguments[_key];
-	  }
-
-	  eachObject(function (key, value) {
-	    return target[key] = value;
-	  }, source);
-	  return target;
-	}
-
-/***/ },
-/* 305 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.createStoreConfig = createStoreConfig;
-	exports.transformStore = transformStore;
-	exports.createStoreFromObject = createStoreFromObject;
-	exports.createStoreFromClass = createStoreFromClass;
-
-	var _AltUtils = __webpack_require__(306);
-
-	var utils = _interopRequireWildcard(_AltUtils);
-
-	var _functions = __webpack_require__(304);
-
-	var fn = _interopRequireWildcard(_functions);
-
-	var _AltStore = __webpack_require__(307);
-
-	var _AltStore2 = _interopRequireDefault(_AltStore);
-
-	var _StoreMixin = __webpack_require__(309);
-
-	var _StoreMixin2 = _interopRequireDefault(_StoreMixin);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj['default'] = obj; return newObj; } }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	function doSetState(store, storeInstance, state) {
-	  if (!state) {
-	    return;
-	  }
-
-	  var config = storeInstance.StoreModel.config;
-
-
-	  var nextState = fn.isFunction(state) ? state(storeInstance.state) : state;
-
-	  storeInstance.state = config.setState.call(store, storeInstance.state, nextState);
-
-	  if (!store.alt.dispatcher.isDispatching()) {
-	    store.emitChange();
-	  }
-	}
-
-	function createPrototype(proto, alt, key, extras) {
-	  return fn.assign(proto, _StoreMixin2['default'], {
-	    displayName: key,
-	    alt: alt,
-	    dispatcher: alt.dispatcher,
-	    preventDefault: function () {
-	      function preventDefault() {
-	        this.getInstance().preventDefault = true;
-	      }
-
-	      return preventDefault;
-	    }(),
-
-	    boundListeners: [],
-	    lifecycleEvents: {},
-	    actionListeners: {},
-	    publicMethods: {},
-	    handlesOwnErrors: false
-	  }, extras);
-	}
-
-	function createStoreConfig(globalConfig, StoreModel) {
-	  StoreModel.config = fn.assign({
-	    getState: function () {
-	      function getState(state) {
-	        if (Array.isArray(state)) {
-	          return state.slice();
-	        } else if (fn.isMutableObject(state)) {
-	          return fn.assign({}, state);
-	        }
-
-	        return state;
-	      }
-
-	      return getState;
-	    }(),
-	    setState: function () {
-	      function setState(currentState, nextState) {
-	        if (fn.isMutableObject(nextState)) {
-	          return fn.assign(currentState, nextState);
-	        }
-	        return nextState;
-	      }
-
-	      return setState;
-	    }()
-	  }, globalConfig, StoreModel.config);
-	}
-
-	function transformStore(transforms, StoreModel) {
-	  return transforms.reduce(function (Store, transform) {
-	    return transform(Store);
-	  }, StoreModel);
-	}
-
-	function createStoreFromObject(alt, StoreModel, key) {
-	  var storeInstance = void 0;
-
-	  var StoreProto = createPrototype({}, alt, key, fn.assign({
-	    getInstance: function () {
-	      function getInstance() {
-	        return storeInstance;
-	      }
-
-	      return getInstance;
-	    }(),
-	    setState: function () {
-	      function setState(nextState) {
-	        doSetState(this, storeInstance, nextState);
-	      }
-
-	      return setState;
-	    }()
-	  }, StoreModel));
-
-	  // bind the store listeners
-	  /* istanbul ignore else */
-	  if (StoreProto.bindListeners) {
-	    _StoreMixin2['default'].bindListeners.call(StoreProto, StoreProto.bindListeners);
-	  }
-	  /* istanbul ignore else */
-	  if (StoreProto.observe) {
-	    _StoreMixin2['default'].bindListeners.call(StoreProto, StoreProto.observe(alt));
-	  }
-
-	  // bind the lifecycle events
-	  /* istanbul ignore else */
-	  if (StoreProto.lifecycle) {
-	    fn.eachObject(function (eventName, event) {
-	      _StoreMixin2['default'].on.call(StoreProto, eventName, event);
-	    }, [StoreProto.lifecycle]);
-	  }
-
-	  // create the instance and fn.assign the public methods to the instance
-	  storeInstance = fn.assign(new _AltStore2['default'](alt, StoreProto, StoreProto.state !== undefined ? StoreProto.state : {}, StoreModel), StoreProto.publicMethods, {
-	    displayName: key,
-	    config: StoreModel.config
-	  });
-
-	  return storeInstance;
-	}
-
-	function createStoreFromClass(alt, StoreModel, key) {
-	  var storeInstance = void 0;
-	  var config = StoreModel.config;
-
-	  // Creating a class here so we don't overload the provided store's
-	  // prototype with the mixin behaviour and I'm extending from StoreModel
-	  // so we can inherit any extensions from the provided store.
-
-	  var Store = function (_StoreModel) {
-	    _inherits(Store, _StoreModel);
-
-	    function Store() {
-	      _classCallCheck(this, Store);
-
-	      for (var _len2 = arguments.length, args = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-	        args[_key2] = arguments[_key2];
-	      }
-
-	      return _possibleConstructorReturn(this, _StoreModel.call.apply(_StoreModel, [this].concat(args)));
-	    }
-
-	    return Store;
-	  }(StoreModel);
-
-	  createPrototype(Store.prototype, alt, key, {
-	    type: 'AltStore',
-	    getInstance: function () {
-	      function getInstance() {
-	        return storeInstance;
-	      }
-
-	      return getInstance;
-	    }(),
-	    setState: function () {
-	      function setState(nextState) {
-	        doSetState(this, storeInstance, nextState);
-	      }
-
-	      return setState;
-	    }()
-	  });
-
-	  for (var _len = arguments.length, argsForClass = Array(_len > 3 ? _len - 3 : 0), _key = 3; _key < _len; _key++) {
-	    argsForClass[_key - 3] = arguments[_key];
-	  }
-
-	  var store = new (Function.prototype.bind.apply(Store, [null].concat(argsForClass)))();
-
-	  /* istanbul ignore next */
-	  if (config.bindListeners) store.bindListeners(config.bindListeners);
-	  /* istanbul ignore next */
-	  if (config.datasource) store.registerAsync(config.datasource);
-
-	  storeInstance = fn.assign(new _AltStore2['default'](alt, store, store.state !== undefined ? store.state : store, StoreModel), utils.getInternalMethods(StoreModel), config.publicMethods, { displayName: key });
-
-	  return storeInstance;
-	}
-
-/***/ },
-/* 306 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	exports.getInternalMethods = getInternalMethods;
-	exports.getPrototypeChain = getPrototypeChain;
-	exports.warn = warn;
-	exports.uid = uid;
-	exports.formatAsConstant = formatAsConstant;
-	exports.dispatchIdentity = dispatchIdentity;
-	exports.fsa = fsa;
-	exports.dispatch = dispatch;
-
-	var _functions = __webpack_require__(304);
-
-	var fn = _interopRequireWildcard(_functions);
-
-	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj['default'] = obj; return newObj; } }
-
-	/*eslint-disable*/
-	var builtIns = Object.getOwnPropertyNames(NoopClass);
-	var builtInProto = Object.getOwnPropertyNames(NoopClass.prototype);
-	/*eslint-enable*/
-
-	function getInternalMethods(Obj, isProto) {
-	  var excluded = isProto ? builtInProto : builtIns;
-	  var obj = isProto ? Obj.prototype : Obj;
-	  return Object.getOwnPropertyNames(obj).reduce(function (value, m) {
-	    if (excluded.indexOf(m) !== -1) {
-	      return value;
-	    }
-
-	    value[m] = obj[m];
-	    return value;
-	  }, {});
-	}
-
-	function getPrototypeChain(Obj) {
-	  var methods = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
-
-	  return Obj === Function.prototype ? methods : getPrototypeChain(Object.getPrototypeOf(Obj), fn.assign(getInternalMethods(Obj, true), methods));
-	}
-
-	function warn(msg) {
-	  /* istanbul ignore else */
-	  /*eslint-disable*/
-	  if (typeof console !== 'undefined') {
-	    console.warn(new ReferenceError(msg));
-	  }
-	  /*eslint-enable*/
-	}
-
-	function uid(container, name) {
-	  var count = 0;
-	  var key = name;
-	  while (Object.hasOwnProperty.call(container, key)) {
-	    key = name + String(++count);
-	  }
-	  return key;
-	}
-
-	function formatAsConstant(name) {
-	  return name.replace(/[a-z]([A-Z])/g, function (i) {
-	    return String(i[0]) + '_' + String(i[1].toLowerCase());
-	  }).toUpperCase();
-	}
-
-	function dispatchIdentity(x) {
-	  if (x === undefined) return null;
-
-	  for (var _len = arguments.length, a = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-	    a[_key - 1] = arguments[_key];
-	  }
-
-	  return a.length ? [x].concat(a) : x;
-	}
-
-	function fsa(id, type, payload, details) {
-	  return {
-	    type: type,
-	    payload: payload,
-	    meta: _extends({
-	      dispatchId: id
-	    }, details),
-
-	    id: id,
-	    action: type,
-	    data: payload,
-	    details: details
-	  };
-	}
-
-	function dispatch(id, actionObj, payload, alt) {
-	  var data = actionObj.dispatch(payload);
-	  if (data === undefined) return null;
-
-	  var type = actionObj.id;
-	  var namespace = type;
-	  var name = type;
-	  var details = { id: type, namespace: namespace, name: name };
-
-	  var dispatchLater = function dispatchLater(x) {
-	    return alt.dispatch(type, x, details);
-	  };
-
-	  if (fn.isFunction(data)) return data(dispatchLater, alt);
-
-	  // XXX standardize this
-	  return alt.dispatcher.dispatch(fsa(id, type, data, details));
-	}
-
-	/* istanbul ignore next */
-	function NoopClass() {}
-
-/***/ },
-/* 307 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _functions = __webpack_require__(304);
-
-	var fn = _interopRequireWildcard(_functions);
-
-	var _transmitter = __webpack_require__(308);
-
-	var _transmitter2 = _interopRequireDefault(_transmitter);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj['default'] = obj; return newObj; } }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	var AltStore = function () {
-	  function AltStore(alt, model, state, StoreModel) {
-	    var _this = this;
-
-	    _classCallCheck(this, AltStore);
-
-	    var lifecycleEvents = model.lifecycleEvents;
-	    this.transmitter = (0, _transmitter2['default'])();
-	    this.lifecycle = function (event, x) {
-	      if (lifecycleEvents[event]) lifecycleEvents[event].publish(x);
-	    };
-	    this.state = state;
-
-	    this.alt = alt;
-	    this.preventDefault = false;
-	    this.displayName = model.displayName;
-	    this.boundListeners = model.boundListeners;
-	    this.StoreModel = StoreModel;
-	    this.reduce = model.reduce || function (x) {
-	      return x;
-	    };
-	    this.subscriptions = [];
-
-	    var output = model.output || function (x) {
-	      return x;
-	    };
-
-	    this.emitChange = function () {
-	      return _this.transmitter.publish(output(_this.state));
-	    };
-
-	    var handleDispatch = function handleDispatch(f, payload) {
-	      try {
-	        return f();
-	      } catch (e) {
-	        if (model.handlesOwnErrors) {
-	          _this.lifecycle('error', {
-	            error: e,
-	            payload: payload,
-	            state: _this.state
-	          });
-	          return false;
-	        }
-
-	        throw e;
-	      }
-	    };
-
-	    fn.assign(this, model.publicMethods);
-
-	    // Register dispatcher
-	    this.dispatchToken = alt.dispatcher.register(function (payload) {
-	      _this.preventDefault = false;
-
-	      _this.lifecycle('beforeEach', {
-	        payload: payload,
-	        state: _this.state
-	      });
-
-	      var actionHandlers = model.actionListeners[payload.action];
-
-	      if (actionHandlers || model.otherwise) {
-	        var result = void 0;
-
-	        if (actionHandlers) {
-	          result = handleDispatch(function () {
-	            return actionHandlers.filter(Boolean).every(function (handler) {
-	              return handler.call(model, payload.data, payload.action) !== false;
-	            });
-	          }, payload);
-	        } else {
-	          result = handleDispatch(function () {
-	            return model.otherwise(payload.data, payload.action);
-	          }, payload);
-	        }
-
-	        if (result !== false && !_this.preventDefault) _this.emitChange();
-	      }
-
-	      if (model.reduce) {
-	        handleDispatch(function () {
-	          var value = model.reduce(_this.state, payload);
-	          if (value !== undefined) _this.state = value;
-	        }, payload);
-	        if (!_this.preventDefault) _this.emitChange();
-	      }
-
-	      _this.lifecycle('afterEach', {
-	        payload: payload,
-	        state: _this.state
-	      });
-	    });
-
-	    this.lifecycle('init');
-	  }
-
-	  AltStore.prototype.listen = function () {
-	    function listen(cb) {
-	      var _this2 = this;
-
-	      if (!fn.isFunction(cb)) throw new TypeError('listen expects a function');
-
-	      var _transmitter$subscrib = this.transmitter.subscribe(cb);
-
-	      var dispose = _transmitter$subscrib.dispose;
-
-	      this.subscriptions.push({ cb: cb, dispose: dispose });
-	      return function () {
-	        _this2.lifecycle('unlisten');
-	        dispose();
-	      };
-	    }
-
-	    return listen;
-	  }();
-
-	  AltStore.prototype.unlisten = function () {
-	    function unlisten(cb) {
-	      this.lifecycle('unlisten');
-	      this.subscriptions.filter(function (subscription) {
-	        return subscription.cb === cb;
-	      }).forEach(function (subscription) {
-	        return subscription.dispose();
-	      });
-	    }
-
-	    return unlisten;
-	  }();
-
-	  AltStore.prototype.getState = function () {
-	    function getState() {
-	      return this.StoreModel.config.getState.call(this, this.state);
-	    }
-
-	    return getState;
-	  }();
-
-	  return AltStore;
-	}();
-
-	exports['default'] = AltStore;
-	module.exports = exports['default'];
-
-/***/ },
-/* 308 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	function transmitter() {
-	  var subscriptions = [];
-	  var nowDispatching = false;
-	  var toUnsubscribe = {};
-
-	  var unsubscribe = function unsubscribe(onChange) {
-	    var id = subscriptions.indexOf(onChange);
-	    if (id < 0) return;
-	    if (nowDispatching) {
-	      toUnsubscribe[id] = onChange;
-	      return;
-	    }
-	    subscriptions.splice(id, 1);
-	  };
-
-	  var subscribe = function subscribe(onChange) {
-	    var id = subscriptions.push(onChange);
-	    var dispose = function dispose() {
-	      return unsubscribe(onChange);
-	    };
-	    return { dispose: dispose };
-	  };
-
-	  var publish = function publish() {
-	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-	      args[_key] = arguments[_key];
-	    }
-
-	    nowDispatching = true;
-	    try {
-	      subscriptions.forEach(function (subscription, id) {
-	        return toUnsubscribe[id] || subscription.apply(undefined, args);
-	      });
-	    } finally {
-	      nowDispatching = false;
-	      Object.keys(toUnsubscribe).forEach(function (id) {
-	        return unsubscribe(toUnsubscribe[id]);
-	      });
-	      toUnsubscribe = {};
-	    }
-	  };
-
-	  return {
-	    publish: publish,
-	    subscribe: subscribe,
-	    $subscriptions: subscriptions
-	  };
-	}
-
-	module.exports = transmitter;
-
-/***/ },
-/* 309 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _transmitter = __webpack_require__(308);
-
-	var _transmitter2 = _interopRequireDefault(_transmitter);
-
-	var _functions = __webpack_require__(304);
-
-	var fn = _interopRequireWildcard(_functions);
-
-	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj['default'] = obj; return newObj; } }
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var StoreMixin = {
-	  waitFor: function () {
-	    function waitFor() {
-	      for (var _len = arguments.length, sources = Array(_len), _key = 0; _key < _len; _key++) {
-	        sources[_key] = arguments[_key];
-	      }
-
-	      if (!sources.length) {
-	        throw new ReferenceError('Dispatch tokens not provided');
-	      }
-
-	      var sourcesArray = sources;
-	      if (sources.length === 1) {
-	        sourcesArray = Array.isArray(sources[0]) ? sources[0] : sources;
-	      }
-
-	      var tokens = sourcesArray.map(function (source) {
-	        return source.dispatchToken || source;
-	      });
-
-	      this.dispatcher.waitFor(tokens);
-	    }
-
-	    return waitFor;
-	  }(),
-	  exportAsync: function () {
-	    function exportAsync(asyncMethods) {
-	      this.registerAsync(asyncMethods);
-	    }
-
-	    return exportAsync;
-	  }(),
-	  registerAsync: function () {
-	    function registerAsync(asyncDef) {
-	      var _this = this;
-
-	      var loadCounter = 0;
-
-	      var asyncMethods = fn.isFunction(asyncDef) ? asyncDef(this.alt) : asyncDef;
-
-	      var toExport = Object.keys(asyncMethods).reduce(function (publicMethods, methodName) {
-	        var desc = asyncMethods[methodName];
-	        var spec = fn.isFunction(desc) ? desc(_this) : desc;
-
-	        var validHandlers = ['success', 'error', 'loading'];
-	        validHandlers.forEach(function (handler) {
-	          if (spec[handler] && !spec[handler].id) {
-	            throw new Error(String(handler) + ' handler must be an action function');
-	          }
-	        });
-
-	        publicMethods[methodName] = function () {
-	          for (var _len2 = arguments.length, args = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-	            args[_key2] = arguments[_key2];
-	          }
-
-	          var state = _this.getInstance().getState();
-	          var value = spec.local && spec.local.apply(spec, [state].concat(args));
-	          var shouldFetch = spec.shouldFetch ? spec.shouldFetch.apply(spec, [state].concat(args))
-	          /*eslint-disable*/
-	          : value == null;
-	          /*eslint-enable*/
-	          var intercept = spec.interceptResponse || function (x) {
-	            return x;
-	          };
-
-	          var makeActionHandler = function () {
-	            function makeActionHandler(action, isError) {
-	              return function (x) {
-	                var fire = function () {
-	                  function fire() {
-	                    loadCounter -= 1;
-	                    action(intercept(x, action, args));
-	                    if (isError) throw x;
-	                    return x;
-	                  }
-
-	                  return fire;
-	                }();
-	                return _this.alt.trapAsync ? function () {
-	                  return fire();
-	                } : fire();
-	              };
-	            }
-
-	            return makeActionHandler;
-	          }();
-
-	          // if we don't have it in cache then fetch it
-	          if (shouldFetch) {
-	            loadCounter += 1;
-	            /* istanbul ignore else */
-	            if (spec.loading) spec.loading(intercept(null, spec.loading, args));
-	            return spec.remote.apply(spec, [state].concat(args)).then(makeActionHandler(spec.success), makeActionHandler(spec.error, 1));
-	          }
-
-	          // otherwise emit the change now
-	          _this.emitChange();
-	          return value;
-	        };
-
-	        return publicMethods;
-	      }, {});
-
-	      this.exportPublicMethods(toExport);
-	      this.exportPublicMethods({
-	        isLoading: function () {
-	          function isLoading() {
-	            return loadCounter > 0;
-	          }
-
-	          return isLoading;
-	        }()
-	      });
-	    }
-
-	    return registerAsync;
-	  }(),
-	  exportPublicMethods: function () {
-	    function exportPublicMethods(methods) {
-	      var _this2 = this;
-
-	      fn.eachObject(function (methodName, value) {
-	        if (!fn.isFunction(value)) {
-	          throw new TypeError('exportPublicMethods expects a function');
-	        }
-
-	        _this2.publicMethods[methodName] = value;
-	      }, [methods]);
-	    }
-
-	    return exportPublicMethods;
-	  }(),
-	  emitChange: function () {
-	    function emitChange() {
-	      this.getInstance().emitChange();
-	    }
-
-	    return emitChange;
-	  }(),
-	  on: function () {
-	    function on(lifecycleEvent, handler) {
-	      if (lifecycleEvent === 'error') this.handlesOwnErrors = true;
-	      var bus = this.lifecycleEvents[lifecycleEvent] || (0, _transmitter2['default'])();
-	      this.lifecycleEvents[lifecycleEvent] = bus;
-	      return bus.subscribe(handler.bind(this));
-	    }
-
-	    return on;
-	  }(),
-	  bindAction: function () {
-	    function bindAction(symbol, handler) {
-	      if (!symbol) {
-	        throw new ReferenceError('Invalid action reference passed in');
-	      }
-	      if (!fn.isFunction(handler)) {
-	        throw new TypeError('bindAction expects a function');
-	      }
-
-	      // You can pass in the constant or the function itself
-	      var key = symbol.id ? symbol.id : symbol;
-	      this.actionListeners[key] = this.actionListeners[key] || [];
-	      this.actionListeners[key].push(handler.bind(this));
-	      this.boundListeners.push(key);
-	    }
-
-	    return bindAction;
-	  }(),
-	  bindActions: function () {
-	    function bindActions(actions) {
-	      var _this3 = this;
-
-	      fn.eachObject(function (action, symbol) {
-	        var matchFirstCharacter = /./;
-	        var assumedEventHandler = action.replace(matchFirstCharacter, function (x) {
-	          return 'on' + String(x[0].toUpperCase());
-	        });
-
-	        if (_this3[action] && _this3[assumedEventHandler]) {
-	          // If you have both action and onAction
-	          throw new ReferenceError('You have multiple action handlers bound to an action: ' + (String(action) + ' and ' + String(assumedEventHandler)));
-	        }
-
-	        var handler = _this3[action] || _this3[assumedEventHandler];
-	        if (handler) {
-	          _this3.bindAction(symbol, handler);
-	        }
-	      }, [actions]);
-	    }
-
-	    return bindActions;
-	  }(),
-	  bindListeners: function () {
-	    function bindListeners(obj) {
-	      var _this4 = this;
-
-	      fn.eachObject(function (methodName, symbol) {
-	        var listener = _this4[methodName];
-
-	        if (!listener) {
-	          throw new ReferenceError(String(methodName) + ' defined but does not exist in ' + String(_this4.displayName));
-	        }
-
-	        if (Array.isArray(symbol)) {
-	          symbol.forEach(function (action) {
-	            _this4.bindAction(action, listener);
-	          });
-	        } else {
-	          _this4.bindAction(symbol, listener);
-	        }
-	      }, [obj]);
-	    }
-
-	    return bindListeners;
-	  }()
-	};
-
-	exports['default'] = StoreMixin;
-	module.exports = exports['default'];
-
-/***/ },
-/* 310 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports['default'] = makeAction;
-
-	var _functions = __webpack_require__(304);
-
-	var fn = _interopRequireWildcard(_functions);
-
-	var _AltUtils = __webpack_require__(306);
-
-	var utils = _interopRequireWildcard(_AltUtils);
-
-	var _isPromise = __webpack_require__(311);
-
-	var _isPromise2 = _interopRequireDefault(_isPromise);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj['default'] = obj; return newObj; } }
-
-	function makeAction(alt, namespace, name, implementation, obj) {
-	  var id = utils.uid(alt._actionsRegistry, String(namespace) + '.' + String(name));
-	  alt._actionsRegistry[id] = 1;
-
-	  var data = { id: id, namespace: namespace, name: name };
-
-	  var dispatch = function dispatch(payload) {
-	    return alt.dispatch(id, payload, data);
-	  };
-
-	  // the action itself
-	  var action = function action() {
-	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-	      args[_key] = arguments[_key];
-	    }
-
-	    var invocationResult = implementation.apply(obj, args);
-	    var actionResult = invocationResult;
-
-	    // async functions that return promises should not be dispatched
-	    if (invocationResult !== undefined && !(0, _isPromise2['default'])(invocationResult)) {
-	      if (fn.isFunction(invocationResult)) {
-	        // inner function result should be returned as an action result
-	        actionResult = invocationResult(dispatch, alt);
-	      } else {
-	        dispatch(invocationResult);
-	      }
-	    }
-
-	    if (invocationResult === undefined) {
-	      utils.warn('An action was called but nothing was dispatched');
-	    }
-
-	    return actionResult;
-	  };
-	  action.defer = function () {
-	    for (var _len2 = arguments.length, args = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-	      args[_key2] = arguments[_key2];
-	    }
-
-	    return setTimeout(function () {
-	      return action.apply(null, args);
-	    });
-	  };
-	  action.id = id;
-	  action.data = data;
-
-	  // ensure each reference is unique in the namespace
-	  var container = alt.actions[namespace];
-	  var namespaceId = utils.uid(container, name);
-	  container[namespaceId] = action;
-
-	  // generate a constant
-	  var constant = utils.formatAsConstant(namespaceId);
-	  container[constant] = id;
-
-	  return action;
-	}
-	module.exports = exports['default'];
-
-/***/ },
-/* 311 */
-/***/ function(module, exports) {
-
-	module.exports = isPromise;
-
-	function isPromise(obj) {
-	  return !!obj && (typeof obj === 'object' || typeof obj === 'function') && typeof obj.then === 'function';
-	}
-
-
-/***/ },
-/* 312 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _alt = __webpack_require__(298);
-
-	var _alt2 = _interopRequireDefault(_alt);
-
-	var _jquery = __webpack_require__(294);
-
-	var _jquery2 = _interopRequireDefault(_jquery);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	var HomeActions = function () {
-	    function HomeActions() {
-	        _classCallCheck(this, HomeActions);
-
-	        this.generateActions('updateHomeSuccess', 'updateHomeFail');
-	    }
-
-	    _createClass(HomeActions, [{
-	        key: 'updateHome',
-	        value: function updateHome() {
-	            var _this = this;
-
-	            _jquery2.default.ajax({
-	                type: 'Get',
-	                url: 'http://www.ibanyi.com/api/user'
-	            }).done(function (data) {
-	                _this.updateHomeSuccess(data);
-	            }).fail(function (jqXhr) {
-	                _this.updateHomeFail(jqXhr);
-	            });
-	        }
-	    }]);
-
-	    return HomeActions;
-	}();
-
-	exports.default = _alt2.default.createActions(HomeActions);
-
-/***/ },
 /* 313 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -49110,7 +49102,7 @@
 
 
 	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n/* Amaze UI Touch Base Styles */\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n/* normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */\n/**\n * 1. Change the default font family in all browsers (opinionated).\n * 2. Prevent adjustments of font size after orientation changes in IE and iOS.\n */\nhtml {\n  font-family: sans-serif;\n  /* 1 */\n  -ms-text-size-adjust: 100%;\n  /* 2 */\n  -webkit-text-size-adjust: 100%;\n  /* 2 */ }\n\n/**\n * Remove the margin in all browsers (opinionated).\n */\nbody {\n  margin: 0; }\n\n/* HTML5 display definitions\n   ========================================================================== */\n/**\n * Add the correct display in IE 9-.\n * 1. Add the correct display in Edge, IE, and Firefox.\n * 2. Add the correct display in IE.\n */\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  /* 1 */\n  display: block; }\n\n/**\n * Add the correct display in IE 9-.\n */\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block; }\n\n/**\n * Add the correct display in iOS 4-7.\n */\naudio:not([controls]) {\n  display: none;\n  height: 0; }\n\n/**\n * Add the correct vertical alignment in Chrome, Firefox, and Opera.\n */\nprogress {\n  vertical-align: baseline; }\n\n/**\n * Add the correct display in IE 10-.\n * 1. Add the correct display in IE.\n */\ntemplate,\n[hidden] {\n  display: none; }\n\n/* Links\n   ========================================================================== */\n/**\n * 1. Remove the gray background on active links in IE 10.\n * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.\n */\na {\n  background-color: transparent;\n  /* 1 */\n  -webkit-text-decoration-skip: objects;\n  /* 2 */ }\n\n/**\n * Remove the outline on focused links when they are also active or hovered\n * in all browsers (opinionated).\n */\na:active,\na:hover {\n  outline-width: 0; }\n\n/* Text-level semantics\n   ========================================================================== */\n/**\n * 1. Remove the bottom border in Firefox 39-.\n * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.\n */\nabbr[title] {\n  border-bottom: none;\n  /* 1 */\n  text-decoration: underline;\n  /* 2 */\n  text-decoration: underline dotted;\n  /* 2 */ }\n\n/**\n * Prevent the duplicate application of `bolder` by the next rule in Safari 6.\n */\nb,\nstrong {\n  font-weight: inherit; }\n\n/**\n * Add the correct font weight in Chrome, Edge, and Safari.\n */\nb,\nstrong {\n  font-weight: bolder; }\n\n/**\n * Add the correct font style in Android 4.3-.\n */\ndfn {\n  font-style: italic; }\n\n/**\n * Correct the font size and margin on `h1` elements within `section` and\n * `article` contexts in Chrome, Firefox, and Safari.\n */\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0; }\n\n/**\n * Add the correct background and color in IE 9-.\n */\nmark {\n  background-color: #ff0;\n  color: #000; }\n\n/**\n * Add the correct font size in all browsers.\n */\nsmall {\n  font-size: 80%; }\n\n/**\n * Prevent `sub` and `sup` elements from affecting the line height in\n * all browsers.\n */\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline; }\n\nsub {\n  bottom: -0.25em; }\n\nsup {\n  top: -0.5em; }\n\n/* Embedded content\n   ========================================================================== */\n/**\n * Remove the border on images inside links in IE 10-.\n */\nimg {\n  border-style: none; }\n\n/**\n * Hide the overflow in IE.\n */\nsvg:not(:root) {\n  overflow: hidden; }\n\n/* Grouping content\n   ========================================================================== */\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  /* 1 */\n  font-size: 1em;\n  /* 2 */ }\n\n/**\n * Add the correct margin in IE 8.\n */\nfigure {\n  margin: 1em 40px; }\n\n/**\n * 1. Add the correct box sizing in Firefox.\n * 2. Show the overflow in Edge and IE.\n */\nhr {\n  box-sizing: content-box;\n  /* 1 */\n  height: 0;\n  /* 1 */\n  overflow: visible;\n  /* 2 */ }\n\n/* Forms\n   ========================================================================== */\n/**\n * 1. Change font properties to `inherit` in all browsers (opinionated).\n * 2. Remove the margin in Firefox and Safari.\n */\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  margin: 0;\n  /* 2 */ }\n\n/**\n * Restore the font weight unset by the previous rule.\n */\noptgroup {\n  font-weight: bold; }\n\n/**\n * Show the overflow in IE.\n * 1. Show the overflow in Edge.\n */\nbutton,\ninput {\n  /* 1 */\n  overflow: visible; }\n\n/**\n * Remove the inheritance of text transform in Edge, Firefox, and IE.\n * 1. Remove the inheritance of text transform in Firefox.\n */\nbutton,\nselect {\n  /* 1 */\n  text-transform: none; }\n\n/**\n * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`\n *    controls in Android 4.\n * 2. Correct the inability to style clickable types in iOS and Safari.\n */\nbutton,\nhtml [type=\"button\"],\n[type=\"reset\"],\n[type=\"submit\"] {\n  -webkit-appearance: button;\n  /* 2 */\n  cursor: pointer;\n  /* 3 */ }\n\n/**\n * Re-set default cursor for disabled elements.\n */\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default; }\n\n/**\n * Remove the inner border and padding in Firefox.\n */\nbutton::-moz-focus-inner,\n[type=\"button\"]::-moz-focus-inner,\n[type=\"reset\"]::-moz-focus-inner,\n[type=\"submit\"]::-moz-focus-inner {\n  border-style: none;\n  padding: 0; }\n\n/**\n * Restore the focus styles unset by the previous rule.\n */\nbutton:-moz-focusring,\n[type=\"button\"]:-moz-focusring,\n[type=\"reset\"]:-moz-focusring,\n[type=\"submit\"]:-moz-focusring {\n  outline: 1px dotted ButtonText; }\n\n/**\n * Change the border, margin, and padding in all browsers (opinionated).\n */\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em; }\n\n/**\n * 1. Correct the text wrapping in Edge and IE.\n * 2. Correct the color inheritance from `fieldset` elements in IE.\n * 3. Remove the padding so developers are not caught out when they zero out\n *    `fieldset` elements in all browsers.\n */\nlegend {\n  box-sizing: border-box;\n  /* 1 */\n  color: inherit;\n  /* 2 */\n  display: table;\n  /* 1 */\n  max-width: 100%;\n  /* 1 */\n  padding: 0;\n  /* 3 */\n  white-space: normal;\n  /* 1 */ }\n\ninput {\n  line-height: normal; }\n\n/**\n * Remove the default vertical scrollbar in IE.\n */\ntextarea {\n  overflow: auto; }\n\n/**\n * 1. Add the correct box sizing in IE 10-.\n * 2. Remove the padding in IE 10-.\n */\n[type=\"checkbox\"],\n[type=\"radio\"] {\n  box-sizing: border-box;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Correct the cursor style of increment and decrement buttons in Chrome.\n */\n[type=\"number\"]::-webkit-inner-spin-button,\n[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\n/**\n * 1. Correct the odd appearance in Chrome and Safari.\n * 2. Correct the outline style in Safari.\n */\n[type=\"search\"] {\n  -webkit-appearance: textfield;\n  /* 1 */\n  outline-offset: -2px;\n  /* 2 */ }\n\n/**\n * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.\n */\n[type=\"search\"]::-webkit-search-cancel-button,\n[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n/**\n * Correct the text style of placeholders in Chrome, Edge, and Safari.\n */\n::-webkit-input-placeholder {\n  color: inherit;\n  opacity: 0.54; }\n\n/**\n * 1. Correct the inability to style clickable types in iOS and Safari.\n * 2. Change font properties to `inherit` in Safari.\n */\n::-webkit-file-upload-button {\n  -webkit-appearance: button;\n  /* 1 */\n  font: inherit;\n  /* 2 */ }\n\nhtml,\nbody {\n  height: 100%;\n  overflow: hidden;\n  font-size: 100%; }\n\nhtml {\n  box-sizing: border-box; }\n\n*,\n*:before,\n*:after {\n  box-sizing: inherit; }\n\n* {\n  outline: none;\n  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);\n  -webkit-touch-callout: none;\n  background: linear-gradient(to bottom, transparent, transparent); }\n\nbody {\n  background: #f4f4f4;\n  color: #333333;\n  padding: 0;\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, \"PingFang SC\", \"Hiragino Sans GB\", \"Segoe UI\", \"Microsoft YaHei\", \"Roboto\", \"Oxygen\", \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"wenquanyi micro hei\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-weight: normal;\n  font-style: normal;\n  line-height: 1.6;\n  position: relative;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\nlabel {\n  -webkit-appearance: none; }\n\nimg {\n  max-width: 100%;\n  height: auto;\n  -ms-interpolation-mode: bicubic;\n  display: inline-block;\n  vertical-align: middle; }\n\na {\n  color: #0e90d2;\n  text-decoration: none; }\n\n#map_canvas img,\n#map_canvas embed,\n#map_canvas object,\n.map_canvas img,\n.map_canvas embed,\n.map_canvas object {\n  max-width: none !important; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\ntd,\nth {\n  padding: 0; }\n\n.fade {\n  opacity: 0;\n  transition: opacity .2s linear; }\n  .fade.in {\n    opacity: 1; }\n\n.collapse {\n  display: none; }\n  .collapse.in {\n    display: block; }\n\ntr.collapse.in {\n  display: table-row; }\n\ntbody.collapse.in {\n  display: table-row-group; }\n\n.collapsing {\n  position: relative;\n  height: 0;\n  overflow: hidden;\n  transition: height .3s ease; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\naddress,\nblockquote,\ndl,\nfieldset,\nfigure,\nhr,\nol,\np,\npre,\nul {\n  margin: 0 0 1rem; }\n  address:last-child,\n  blockquote:last-child,\n  dl:last-child,\n  fieldset:last-child,\n  figure:last-child,\n  hr:last-child,\n  ol:last-child,\n  p:last-child,\n  pre:last-child,\n  ul:last-child {\n    margin-bottom: 0; }\n\n* + address,\n* + blockquote,\n* + dl,\n* + fieldset,\n* + figure,\n* + hr,\n* + ol,\n* + p,\n* + pre,\n* + ul {\n  margin-top: 1rem; }\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-weight: bold;\n  color: #222222;\n  margin: 0 0 1rem;\n  line-height: 1.2; }\n\nh1 {\n  font-size: 1.5rem; }\n\nh2 {\n  font-size: 1.375rem; }\n\nh3 {\n  font-size: 1.25rem; }\n\nh4 {\n  font-size: 1.125rem; }\n\nh5 {\n  font-size: 1rem; }\n\nh6 {\n  font-size: 0.875rem; }\n\n* + h1,\n* + h2,\n* + h3,\n* + h4,\n* + h5,\n* + h6 {\n  margin-top: 1.5em; }\n\np {\n  font-size: 1rem;\n  line-height: 1.6; }\n\nul,\nol,\ndl {\n  padding: 0;\n  line-height: 1.6; }\n\nul,\nol {\n  padding-left: 2em; }\n  ul li ul,\n  ul li ol,\n  ol li ul,\n  ol li ol {\n    margin-bottom: 0;\n    margin-top: 0; }\n\ndl dt {\n  margin-bottom: 0.625rem;\n  font-weight: bold; }\n\ndl dd {\n  margin: 0 0 0.75rem 0;\n  font-size: 0.9375rem; }\n\nblockquote {\n  font-family: Georgia, \"Times New Roman\", Times, SimSun, serif;\n  padding: 0.625rem 0.625rem 0.625rem 0.9375rem;\n  border-left: 3px solid #ddd; }\n  blockquote cite,\n  blockquote small {\n    display: block;\n    font-size: 0.8125rem;\n    color: #555555; }\n    blockquote cite a,\n    blockquote cite a:visited,\n    blockquote small a,\n    blockquote small a:visited {\n      color: #555555; }\n\nhr {\n  border: solid #ddd;\n  border-width: 1px 0 0;\n  clear: both;\n  margin: 1.25rem 0;\n  height: 0; }\n\n.responsive-img {\n  max-width: 100%;\n  height: auto;\n  display: block; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n@keyframes amt-spin {\n  to {\n    transform: rotate(360deg); } }\n\n@keyframes amt-fade-in {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n\n@keyframes amt-fade-out {\n  to {\n    opacity: 0; } }\n\n@keyframes amt-slide-top {\n  0% {\n    opacity: 0;\n    transform: translateY(-100%); }\n  100% {\n    opacity: 1;\n    transform: translateY(0); } }\n\n@keyframes amt-slide-bottom {\n  0% {\n    opacity: 0;\n    transform: translateY(100%); }\n  100% {\n    opacity: 1;\n    transform: translateY(0); } }\n\n@keyframes amt-slide-left {\n  0% {\n    opacity: 0;\n    transform: translateX(-100%); }\n  100% {\n    opacity: 1;\n    transform: translateX(0); } }\n\n@keyframes amt-slide-top-fixed {\n  0% {\n    opacity: 0;\n    transform: translateY(-10px); }\n  100% {\n    opacity: 1;\n    transform: translateY(0); } }\n\n@keyframes amt-slide-bottom-fixed {\n  0% {\n    opacity: 0;\n    transform: translateY(10px); }\n  100% {\n    opacity: 1;\n    transform: translateY(0); } }\n\n@keyframes amt-shake {\n  0%, 100% {\n    transform: translateX(0); }\n  10% {\n    transform: translateX(-9px); }\n  20% {\n    transform: translateX(8px); }\n  30% {\n    transform: translateX(-7px); }\n  40% {\n    transform: translateX(6px); }\n  50% {\n    transform: translateX(-5px); }\n  60% {\n    transform: translateX(4px); }\n  70% {\n    transform: translateX(-3px); }\n  80% {\n    transform: translateX(2px); }\n  90% {\n    transform: translateX(-1px); } }\n\n@keyframes amt-scale-up {\n  0% {\n    opacity: 0;\n    transform: scale(0.2); }\n  100% {\n    opacity: 1;\n    transform: scale(1); } }\n\n@keyframes amt-scale-down {\n  0% {\n    opacity: 0;\n    transform: scale(1.8); }\n  100% {\n    opacity: 1;\n    transform: scale(1); } }\n\n[class*=\"animation-\"] {\n  animation-duration: .3s;\n  animation-timing-function: ease-out;\n  animation-fill-mode: both; }\n\n.animation-spin {\n  animation-name: amt-spin; }\n\n.animation-fade-in {\n  animation-name: amt-fade-in; }\n\n.animation-fade-out {\n  animation-name: amt-fade-out; }\n\n.animation-slide-top {\n  animation-name: amt-slide-top; }\n\n.animation-slide-bottom {\n  animation-name: amt-slide-bottom; }\n\n.animation-slide-left {\n  animation-name: amt-slide-left; }\n\n.animation-slide-right {\n  animation-name: amt-slide-right; }\n\n.animation-slide-top-fixed {\n  animation-name: amt-slide-top-fixed; }\n\n.animation-slide-bottom-fixed {\n  animation-name: amt-slide-bottom-fixed; }\n\n.animation-scale-up {\n  animation-name: amt-scale-up; }\n\n.animation-scale-down {\n  animation-name: amt-scale-down; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n/**\n * Fill Container\n * 1. on its own - fill available vertical space\n * 2. as a child - flex to fill vertical space\n * 3. fill available vertical space without resorting to \"height: 100%\", which\n\t *    yields undesirable results\n */\n.container-fill {\n  height: 100%; }\n  .container-fill > .container-fill {\n    flex: 1 1 0;\n    position: relative; }\n\n/**\n * Container Layout\n * 1. create a flexible layout, either `column` or `row`\n * 2. flex-column elements collapse horizontally, so we stretch them out again\n */\n.container-column,\n.container-row {\n  display: flex;\n  max-height: 100%;\n  width: 100%; }\n  .container-column > .container-fill,\n  .container-row > .container-fill {\n    flex: 1 1 0;\n    position: relative; }\n\n.container-column {\n  flex-direction: column; }\n\n.container-row {\n  flex-direction: row;\n  height: auto; }\n  .container-row > .container-fill {\n    height: auto;\n    width: auto; }\n\n.container-align-end {\n  align-items: flex-end; }\n\n.container-align-center {\n  align-items: center; }\n  .container-direction-column > .container-align-center {\n    text-align: center; }\n\n.container-align-start {\n  align-items: flex-start; }\n\n.container-justified {\n  justify-content: space-around; }\n\n.container-justify-end {\n  justify-content: flex-end; }\n\n.container-justify-center {\n  justify-content: center; }\n\n.container-justify-start {\n  justify-content: flex-start; }\n\n.container-scrollable {\n  max-height: 100%;\n  overflow-x: hidden;\n  overflow-y: scroll;\n  -webkit-overflow-scrolling: touch; }\n  .container-scrollable:before, .container-scrollable:after {\n    content: \"\";\n    height: 1px;\n    position: absolute;\n    width: 1px; }\n  .container-scrollable:before {\n    bottom: -1px; }\n  .container-scrollable:after {\n    top: -1px; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.g {\n  display: flex;\n  position: relative;\n  overflow: hidden;\n  backface-visibility: hidden;\n  align-items: stretch; }\n  .g .g {\n    margin-left: -0.625rem;\n    margin-right: -0.625rem; }\n  .g.g-collapse .col {\n    padding: 0; }\n\n[class*=\"g-avg-\"] {\n  flex-wrap: wrap;\n  overflow: visible;\n  list-style: none; }\n  [class*=\"g-avg-\"] > .col,\n  [class*=\"g-avg-\"] > li,\n  [class*=\"g-avg-\"] > div {\n    padding: 0.625rem; }\n    .fb-legacy-flexbox [class*=\"g-avg-\"] > .col, .fb-legacy-flexbox\n    [class*=\"g-avg-\"] > li, .fb-legacy-flexbox\n    [class*=\"g-avg-\"] > div {\n      display: inline-block; }\n\n.g-wrap {\n  flex-wrap: wrap; }\n\n.g-wrap-reverse {\n  flex-wrap: wrap-reverse; }\n\n.g-left {\n  justify-content: flex-start; }\n\n.g-right {\n  justify-content: flex-end; }\n\n.g-center {\n  justify-content: center; }\n\n.g-between {\n  justify-content: space-between; }\n\n.g-around {\n  justify-content: space-around; }\n\n.col {\n  flex: 1 1 auto;\n  padding-left: 0.625rem;\n  padding-right: 0.625rem; }\n\n.col-1 {\n  flex: 0 0 16.66667%;\n  max-width: 16.66667%; }\n  .fb-legacy-flexbox .col-1 {\n    width: 16.66667%; }\n\n.col-offset-1 {\n  margin-left: 16.66667%; }\n\n.order-1 {\n  order: 1; }\n\n.g-avg-1 > .col, .g-avg-1 > li, .g-avg-1 > div {\n  flex: 0 0 100%;\n  max-width: 100%; }\n  .fb-legacy-flexbox .g-avg-1 > .col, .fb-legacy-flexbox .g-avg-1 > li, .fb-legacy-flexbox .g-avg-1 > div {\n    width: 100%; }\n\n.g-avg-1.g-bordered > .col:nth-of-type(1n):before, .g-avg-1 > li:nth-of-type(1n):before, .g-avg-1 > div:nth-of-type(1n):before {\n  display: none; }\n\n.col-2 {\n  flex: 0 0 33.33333%;\n  max-width: 33.33333%; }\n  .fb-legacy-flexbox .col-2 {\n    width: 33.33333%; }\n\n.col-offset-2 {\n  margin-left: 33.33333%; }\n\n.order-2 {\n  order: 2; }\n\n.g-avg-2 > .col, .g-avg-2 > li, .g-avg-2 > div {\n  flex: 0 0 50%;\n  max-width: 50%; }\n  .fb-legacy-flexbox .g-avg-2 > .col, .fb-legacy-flexbox .g-avg-2 > li, .fb-legacy-flexbox .g-avg-2 > div {\n    width: 50%; }\n\n.g-avg-2.g-bordered > .col:nth-of-type(2n):before, .g-avg-2 > li:nth-of-type(2n):before, .g-avg-2 > div:nth-of-type(2n):before {\n  display: none; }\n\n.col-3 {\n  flex: 0 0 50%;\n  max-width: 50%; }\n  .fb-legacy-flexbox .col-3 {\n    width: 50%; }\n\n.col-offset-3 {\n  margin-left: 50%; }\n\n.order-3 {\n  order: 3; }\n\n.g-avg-3 > .col, .g-avg-3 > li, .g-avg-3 > div {\n  flex: 0 0 33.33333%;\n  max-width: 33.33333%; }\n  .fb-legacy-flexbox .g-avg-3 > .col, .fb-legacy-flexbox .g-avg-3 > li, .fb-legacy-flexbox .g-avg-3 > div {\n    width: 33.33333%; }\n\n.g-avg-3.g-bordered > .col:nth-of-type(3n):before, .g-avg-3 > li:nth-of-type(3n):before, .g-avg-3 > div:nth-of-type(3n):before {\n  display: none; }\n\n.col-4 {\n  flex: 0 0 66.66667%;\n  max-width: 66.66667%; }\n  .fb-legacy-flexbox .col-4 {\n    width: 66.66667%; }\n\n.col-offset-4 {\n  margin-left: 66.66667%; }\n\n.order-4 {\n  order: 4; }\n\n.g-avg-4 > .col, .g-avg-4 > li, .g-avg-4 > div {\n  flex: 0 0 25%;\n  max-width: 25%; }\n  .fb-legacy-flexbox .g-avg-4 > .col, .fb-legacy-flexbox .g-avg-4 > li, .fb-legacy-flexbox .g-avg-4 > div {\n    width: 25%; }\n\n.g-avg-4.g-bordered > .col:nth-of-type(4n):before, .g-avg-4 > li:nth-of-type(4n):before, .g-avg-4 > div:nth-of-type(4n):before {\n  display: none; }\n\n.col-5 {\n  flex: 0 0 83.33333%;\n  max-width: 83.33333%; }\n  .fb-legacy-flexbox .col-5 {\n    width: 83.33333%; }\n\n.col-offset-5 {\n  margin-left: 83.33333%; }\n\n.order-5 {\n  order: 5; }\n\n.g-avg-5 > .col, .g-avg-5 > li, .g-avg-5 > div {\n  flex: 0 0 20%;\n  max-width: 20%; }\n  .fb-legacy-flexbox .g-avg-5 > .col, .fb-legacy-flexbox .g-avg-5 > li, .fb-legacy-flexbox .g-avg-5 > div {\n    width: 20%; }\n\n.g-avg-5.g-bordered > .col:nth-of-type(5n):before, .g-avg-5 > li:nth-of-type(5n):before, .g-avg-5 > div:nth-of-type(5n):before {\n  display: none; }\n\n.col-6 {\n  flex: 0 0 100%;\n  max-width: 100%; }\n  .fb-legacy-flexbox .col-6 {\n    width: 100%; }\n\n.col-offset-6 {\n  margin-left: 100%; }\n\n.order-6 {\n  order: 6; }\n\n.g-avg-6 > .col, .g-avg-6 > li, .g-avg-6 > div {\n  flex: 0 0 16.66667%;\n  max-width: 16.66667%; }\n  .fb-legacy-flexbox .g-avg-6 > .col, .fb-legacy-flexbox .g-avg-6 > li, .fb-legacy-flexbox .g-avg-6 > div {\n    width: 16.66667%; }\n\n.g-avg-6.g-bordered > .col:nth-of-type(6n):before, .g-avg-6 > li:nth-of-type(6n):before, .g-avg-6 > div:nth-of-type(6n):before {\n  display: none; }\n\n.col-shrink {\n  flex: 0 0 auto;\n  overflow: visible; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.group {\n  margin: 1.875rem 0; }\n  .group .list {\n    margin: 0; }\n\n.group-body {\n  display: block;\n  padding: 0.9375rem;\n  background: #fff; }\n  .group-no-padded .group-body {\n    padding: 0; }\n\n.group-header,\n.group-footer {\n  padding: 0.3125rem 0.9375rem;\n  color: #6d6d72;\n  font-size: 0.875rem; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.badge {\n  line-height: 1;\n  white-space: nowrap;\n  display: inline-block;\n  cursor: default;\n  min-width: 1.5rem;\n  font-size: 0.8rem;\n  padding: 0.33333rem 0.5rem;\n  background: #e6e6e6;\n  border-radius: 0;\n  color: #333; }\n\n.badge-primary {\n  background: #0e90d2;\n  border-radius: 0;\n  color: #fff; }\n\n.badge-secondary {\n  background: #3bb4f2;\n  border-radius: 0;\n  color: #fff; }\n\n.badge-success {\n  background: #5eb95e;\n  border-radius: 0;\n  color: #fff; }\n\n.badge-warning {\n  background: #F37B1D;\n  border-radius: 0;\n  color: #fff; }\n\n.badge-alert {\n  background: #dd514c;\n  border-radius: 0;\n  color: #fff; }\n\n.badge-dark {\n  background: #393939;\n  border-radius: 0;\n  color: #fff; }\n\n.badge-radius {\n  border-radius: 4px; }\n\n.badge-rounded {\n  border-radius: 1000px; }\n\n.doc-content .badge {\n  margin: 5px; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.btn {\n  display: inline-block;\n  border: 0;\n  text-align: center;\n  line-height: 1;\n  cursor: pointer;\n  -webkit-appearance: none;\n  -webkit-font-smoothing: antialiased;\n  transition: .25s ease-out;\n  vertical-align: middle;\n  padding: 0.75em 1em;\n  margin: 0 1rem 1rem 0;\n  border-radius: 0;\n  font-size: 1rem;\n  background: #e6e6e6;\n  border: 1px solid #e6e6e6;\n  color: #333; }\n  .btn:only-child {\n    margin-bottom: 0; }\n  .btn:focus {\n    outline: none; }\n  .btn-group .btn {\n    border-color: #c4c4c4; }\n  .btn:hover, .btn:active, .btn.active {\n    background: #c4c4c4;\n    border-color: #c4c4c4;\n    color: #333; }\n  .btn[disabled], .btn.disabled {\n    opacity: 0.5;\n    cursor: not-allowed;\n    pointer-events: none; }\n\n.btn-block {\n  display: block;\n  width: 100%;\n  margin-left: 0;\n  margin-right: 0; }\n\n.btn-primary {\n  background: #0e90d2;\n  border: 1px solid #0e90d2;\n  color: #fff; }\n  .btn-group .btn-primary {\n    border-color: #0c7ab3; }\n  .btn-primary:hover, .btn-primary:active, .btn-primary.active {\n    background: #0c7ab3;\n    border-color: #0c7ab3;\n    color: #fff; }\n\n.btn-secondary {\n  background: #3bb4f2;\n  border: 1px solid #3bb4f2;\n  color: #fff; }\n  .btn-group .btn-secondary {\n    border-color: #10a4ef; }\n  .btn-secondary:hover, .btn-secondary:active, .btn-secondary.active {\n    background: #10a4ef;\n    border-color: #10a4ef;\n    color: #fff; }\n\n.btn-success {\n  background: #5eb95e;\n  border: 1px solid #5eb95e;\n  color: #fff; }\n  .btn-group .btn-success {\n    border-color: #48a548; }\n  .btn-success:hover, .btn-success:active, .btn-success.active {\n    background: #48a548;\n    border-color: #48a548;\n    color: #fff; }\n\n.btn-warning {\n  background: #F37B1D;\n  border: 1px solid #F37B1D;\n  color: #fff; }\n  .btn-group .btn-warning {\n    border-color: #dc670c; }\n  .btn-warning:hover, .btn-warning:active, .btn-warning.active {\n    background: #dc670c;\n    border-color: #dc670c;\n    color: #fff; }\n\n.btn-alert {\n  background: #dd514c;\n  border: 1px solid #dd514c;\n  color: #fff; }\n  .btn-group .btn-alert {\n    border-color: #d42e28; }\n  .btn-alert:hover, .btn-alert:active, .btn-alert.active {\n    background: #d42e28;\n    border-color: #d42e28;\n    color: #fff; }\n\n.btn-dark {\n  background: #393939;\n  border: 1px solid #393939;\n  color: #fff; }\n  .btn-group .btn-dark {\n    border-color: #303030; }\n  .btn-dark:hover, .btn-dark:active, .btn-dark.active {\n    background: #303030;\n    border-color: #303030;\n    color: #fff; }\n\n.btn-xs {\n  font-size: 0.75rem; }\n\n.btn-sm {\n  font-size: 0.875rem; }\n\n.btn-lg {\n  font-size: 1.125rem; }\n\n.btn-xl {\n  font-size: 1.25rem; }\n\n.btn-hollow {\n  background: transparent;\n  border: 1px solid #888888;\n  color: #888888; }\n  .btn-hollow:active, .btn-hollow.active {\n    background: #888888;\n    color: #fff; }\n  .btn-hollow.btn-primary {\n    border: 1px solid #0e90d2;\n    color: #0e90d2; }\n    .btn-hollow.btn-primary:active, .btn-hollow.btn-primary.active {\n      background: #0e90d2;\n      color: #fff; }\n  .btn-hollow.btn-secondary {\n    border: 1px solid #3bb4f2;\n    color: #3bb4f2; }\n    .btn-hollow.btn-secondary:active, .btn-hollow.btn-secondary.active {\n      background: #3bb4f2;\n      color: #fff; }\n  .btn-hollow.btn-success {\n    border: 1px solid #5eb95e;\n    color: #5eb95e; }\n    .btn-hollow.btn-success:active, .btn-hollow.btn-success.active {\n      background: #5eb95e;\n      color: #fff; }\n  .btn-hollow.btn-warning {\n    border: 1px solid #F37B1D;\n    color: #F37B1D; }\n    .btn-hollow.btn-warning:active, .btn-hollow.btn-warning.active {\n      background: #F37B1D;\n      color: #fff; }\n  .btn-hollow.btn-alert {\n    border: 1px solid #dd514c;\n    color: #dd514c; }\n    .btn-hollow.btn-alert:active, .btn-hollow.btn-alert.active {\n      background: #dd514c;\n      color: #fff; }\n  .btn-hollow.btn-dark {\n    border: 1px solid #393939;\n    color: #393939; }\n    .btn-hollow.btn-dark:active, .btn-hollow.btn-dark.active {\n      background: #393939;\n      color: #fff; }\n\n.btn-radius {\n  border-radius: 4px; }\n\n.btn-rounded {\n  border-radius: 1000px; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.btn-group {\n  margin: 0 0 1rem;\n  list-style-type: none;\n  display: inline-flex;\n  overflow: hidden;\n  font-size: 1rem; }\n  .btn-group > .btn {\n    flex: 0 0 auto;\n    position: relative;\n    margin: 0; }\n    .btn-group > .btn:hover, .btn-group > .btn:focus, .btn-group > .btn:active, .btn-group > .btn.active {\n      z-index: 2; }\n\n.btn-group .btn + .btn,\n.btn-group .btn + .btn-group,\n.btn-group .btn-group + .btn,\n.btn-group .btn-group + .btn-group {\n  margin-left: -1px; }\n\n.btn-toolbar {\n  display: flex;\n  margin-left: -0.3125rem; }\n  .btn-toolbar .btn-group {\n    flex: 0 0 auto; }\n  .btn-toolbar > .btn,\n  .btn-toolbar > .btn-group {\n    margin-left: -0.3125rem; }\n\n.btn-group-stacked {\n  display: inline-block; }\n  .btn-group-stacked > .btn,\n  .btn-group-stacked > .btn-group,\n  .btn-group-stacked > .btn-group > .btn {\n    flex: none;\n    display: block;\n    width: 100%;\n    max-width: 100%; }\n  .btn-group-stacked > .btn + .btn,\n  .btn-group-stacked > .btn + .btn-group,\n  .btn-group-stacked > .btn-group + .btnbtn,\n  .btn-group-stacked > .btn-group + .btn-group {\n    margin-top: -1px;\n    margin-left: 0; }\n\n.btn-group-justify {\n  display: flex;\n  width: 100%; }\n  .btn-group-justify > .btn,\n  .btn-group-justify > .btn-group {\n    display: block;\n    flex: 1; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n@font-face {\n  font-family: Ratchicons;\n  font-weight: normal;\n  font-style: normal;\n  src: url(" + __webpack_require__(328) + ") format(\"woff2\"), url(" + __webpack_require__(329) + ") format(\"woff\"), url(" + __webpack_require__(330) + ") format(\"truetype\");; }\n\n.icon {\n  display: inline-block;\n  font-family: Ratchicons, sans-serif;\n  font-size: 24px;\n  line-height: 1;\n  text-decoration: none;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\n.btn .icon {\n  font-size: inherit; }\n\n.icon-back:before {\n  content: \"\\E80A\"; }\n\n.icon-bars:before {\n  content: \"\\E80E\"; }\n\n.icon-caret:before {\n  content: \"\\E80F\"; }\n\n.icon-check:before {\n  content: \"\\E810\"; }\n\n.icon-close:before {\n  content: \"\\E811\"; }\n\n.icon-code:before {\n  content: \"\\E812\"; }\n\n.icon-compose:before {\n  content: \"\\E813\"; }\n\n.icon-download:before {\n  content: \"\\E815\"; }\n\n.icon-edit:before {\n  content: \"\\E829\"; }\n\n.icon-forward:before {\n  content: \"\\E82A\"; }\n\n.icon-gear:before {\n  content: \"\\E821\"; }\n\n.icon-home:before {\n  content: \"\\E82B\"; }\n\n.icon-info:before {\n  content: \"\\E82C\"; }\n\n.icon-list:before {\n  content: \"\\E823\"; }\n\n.icon-more-vertical:before {\n  content: \"\\E82E\"; }\n\n.icon-more:before {\n  content: \"\\E82F\"; }\n\n.icon-pages:before {\n  content: \"\\E824\"; }\n\n.icon-pause:before {\n  content: \"\\E830\"; }\n\n.icon-person:before {\n  content: \"\\E832\"; }\n\n.icon-play:before {\n  content: \"\\E816\"; }\n\n.icon-plus:before {\n  content: \"\\E817\"; }\n\n.icon-refresh:before {\n  content: \"\\E825\"; }\n\n.icon-search:before {\n  content: \"\\E819\"; }\n\n.icon-share:before {\n  content: \"\\E81A\"; }\n\n.icon-sound:before {\n  content: \"\\E827\"; }\n\n.icon-sound2:before {\n  content: \"\\E828\"; }\n\n.icon-sound3:before {\n  content: \"\\E80B\"; }\n\n.icon-sound4:before {\n  content: \"\\E80C\"; }\n\n.icon-star-filled:before {\n  content: \"\\E81B\"; }\n\n.icon-star:before {\n  content: \"\\E81C\"; }\n\n.icon-stop:before {\n  content: \"\\E81D\"; }\n\n.icon-trash:before {\n  content: \"\\E81E\"; }\n\n.icon-up-nav:before {\n  content: \"\\E81F\"; }\n\n.icon-up:before {\n  content: \"\\E80D\"; }\n\n.icon-right-nav:before {\n  content: \"\\E818\"; }\n\n.icon-right:before {\n  content: \"\\E826\"; }\n\n.icon-down-nav:before {\n  content: \"\\E814\"; }\n\n.icon-down:before {\n  content: \"\\E820\"; }\n\n.icon-left-nav:before {\n  content: \"\\E82D\"; }\n\n.icon-left:before {\n  content: \"\\E822   \"; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\ninput[type=\"text\"],\ninput[type=\"password\"],\ninput[type=\"date\"],\ninput[type=\"datetime\"],\ninput[type=\"datetime-local\"],\ninput[type=\"month\"],\ninput[type=\"week\"],\ninput[type=\"time\"],\ninput[type=\"email\"],\ninput[type=\"tel\"],\ninput[type=\"url\"],\ninput[type=\"number\"],\ninput[type=\"search\"],\ninput[type=\"color\"],\ntextarea {\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  display: block;\n  box-sizing: border-box;\n  width: 100%;\n  padding: 0.75rem 0.5rem;\n  margin-bottom: 1rem;\n  border: 1px solid #ccc;\n  border-radius: 0;\n  outline: 0;\n  background: #fff;\n  color: #222222;\n  font-size: 1rem;\n  -webkit-font-smoothing: antialiased;\n  vertical-align: middle;\n  transition: border .15s; }\n  input[type=\"text\"]:hover,\n  input[type=\"password\"]:hover,\n  input[type=\"date\"]:hover,\n  input[type=\"datetime\"]:hover,\n  input[type=\"datetime-local\"]:hover,\n  input[type=\"month\"]:hover,\n  input[type=\"week\"]:hover,\n  input[type=\"time\"]:hover,\n  input[type=\"email\"]:hover,\n  input[type=\"tel\"]:hover,\n  input[type=\"url\"]:hover,\n  input[type=\"number\"]:hover,\n  input[type=\"search\"]:hover,\n  input[type=\"color\"]:hover,\n  textarea:hover {\n    border-color: #bbb;\n    background: #fff;\n    color: #222222; }\n  input[type=\"text\"]:focus,\n  input[type=\"password\"]:focus,\n  input[type=\"date\"]:focus,\n  input[type=\"datetime\"]:focus,\n  input[type=\"datetime-local\"]:focus,\n  input[type=\"month\"]:focus,\n  input[type=\"week\"]:focus,\n  input[type=\"time\"]:focus,\n  input[type=\"email\"]:focus,\n  input[type=\"tel\"]:focus,\n  input[type=\"url\"]:focus,\n  input[type=\"number\"]:focus,\n  input[type=\"search\"]:focus,\n  input[type=\"color\"]:focus,\n  textarea:focus {\n    outline: 0;\n    border-color: #999;\n    background: #fff;\n    color: #222222; }\n\ninput[type=\"date\"],\ninput[type=\"datetime\"],\ninput[type=\"datetime-local\"] {\n  height: 2.625rem; }\n\nlabel {\n  display: block;\n  font-size: 1rem;\n  margin-bottom: 0.5rem;\n  color: #333; }\n  label > input,\n  label > select,\n  label > textarea {\n    margin-top: 0.5rem; }\n  label .field-icon {\n    display: none; }\n\ninput.disabled, input[disabled], input[readonly],\nfieldset[disabled] input,\ntextarea.disabled,\ntextarea[disabled],\ntextarea[readonly],\nfieldset[disabled]\ntextarea {\n  cursor: not-allowed; }\n  input.disabled, input.disabled:hover, input[disabled], input[disabled]:hover, input[readonly], input[readonly]:hover,\n  fieldset[disabled] input,\n  fieldset[disabled] input:hover,\n  textarea.disabled,\n  textarea.disabled:hover,\n  textarea[disabled],\n  textarea[disabled]:hover,\n  textarea[readonly],\n  textarea[readonly]:hover,\n  fieldset[disabled]\n  textarea,\n  fieldset[disabled]\n  textarea:hover {\n    background-color: #f2f2f2; }\n\n.form-set {\n  margin-bottom: 0.9375rem; }\n  .form-set > input {\n    position: relative;\n    top: -1px;\n    border-radius: 0 !important; }\n    .form-set > input:not(:last-of-type) {\n      margin-bottom: 0; }\n    .form-set > input:focus {\n      z-index: 2; }\n    .form-set > input:first-child {\n      top: 1px; }\n    .form-set > input:last-child {\n      top: -2px; }\n\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  -webkit-appearance: none;\n  background: #0e90d2; }\n\nselect {\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  display: block;\n  width: 100%;\n  padding: 0.75rem 0.5rem;\n  margin: 0 0 0.9375rem 0;\n  font-size: 1rem;\n  line-height: normal;\n  color: #222222;\n  border-radius: 0;\n  border: 1px solid #ccc;\n  background: #fafafa url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20version%3D%221.1%22%20width%3D%2232%22%20height%3D%2220%22%20viewBox%3D%220%200%2032%2020%22%3E%3Cpolygon%20points%3D%220%2C0%2032%2C0%2016%2C20%22%20style%3D%22fill%3A%20#222222%22%3E%3C/polygon%3E%3C/svg%3E\") right 10px center no-repeat;\n  background-size: 8px 8px;\n  padding-right: 1.625rem; }\n  select:hover {\n    background-color: #f0f0f0; }\n  select:focus {\n    outline: 0; }\n  select::-ms-expand {\n    display: none; }\n\ntextarea {\n  height: auto;\n  width: 100%;\n  min-height: 5rem;\n  resize: vertical; }\n\n.field-group {\n  display: flex;\n  flex-flow: row nowrap;\n  align-items: stretch;\n  margin-bottom: 1rem; }\n  .field-group > input,\n  .field-group > select {\n    flex: 1;\n    margin: 0; }\n  .field-group > .btn,\n  .field-group .field-group-label {\n    display: flex;\n    align-items: center;\n    flex: 0 0 auto;\n    margin: 0;\n    padding-top: 0;\n    padding-bottom: 0;\n    border-radius: 0; }\n    .field-group > .btn:first-child,\n    .field-group .field-group-label:first-child {\n      border-right: 0; }\n    .field-group > .btn:last-child,\n    .field-group .field-group-label:last-child {\n      border-left: 0; }\n  .field-group > .btn {\n    border-color: #ccc; }\n\n.field-group-label {\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n  border: 1px solid #ccc;\n  background: #eee;\n  color: #333; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\ninput[type=\"range\"] {\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  display: block;\n  width: 100%;\n  height: auto;\n  cursor: pointer;\n  margin-top: 0.25rem;\n  margin-bottom: 0.25rem;\n  border: 0;\n  line-height: 1; }\n  input[type=\"range\"]:focus {\n    outline: 0; }\n  input[type=\"range\"]::-webkit-slider-runnable-track {\n    height: 1rem;\n    background: #ddd; }\n  input[type=\"range\"]::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    background: #0e90d2;\n    width: 1.5rem;\n    height: 1.5rem;\n    margin-top: -0.25rem;\n    border: none; }\n  input[type=\"range\"]::-moz-range-track {\n    -moz-appearance: none;\n    height: 1rem;\n    background: #ccc; }\n  input[type=\"range\"]::-moz-range-thumb {\n    -moz-appearance: none;\n    background: #0e90d2;\n    width: 1.5rem;\n    height: 1.5rem;\n    margin-top: -0.25rem; }\n  input[type=\"range\"]::-ms-track {\n    height: 1rem;\n    background: #ddd;\n    color: transparent;\n    border: 0;\n    overflow: visible;\n    border-top: 0.25rem solid #f4f4f4;\n    border-bottom: 0.25rem solid #f4f4f4; }\n  input[type=\"range\"]::-ms-thumb {\n    background: #0e90d2;\n    width: 1.5rem;\n    height: 1.5rem;\n    border: 0; }\n  input[type=\"range\"]::-ms-fill-lower, input[type=\"range\"]::-ms-fill-upper {\n    background: #ddd; }\n  .field-container input[type=\"range\"] {\n    margin-top: 0.75rem;\n    margin-bottom: 1.25rem; }\n\noutput {\n  line-height: 1.5rem;\n  vertical-align: middle;\n  margin-left: 0.5em; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.card-header, .card-footer {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  min-height: 2.75rem;\n  padding: 0.625rem 0.9375rem; }\n\n.card {\n  margin: 0.625rem 0.9375rem;\n  border-radius: 1px;\n  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);\n  background: #fff;\n  color: #333; }\n\n.card-header {\n  border-bottom: 1px solid #eeeeee; }\n\n.card-cover {\n  background-size: cover;\n  background-position: center;\n  min-height: 10rem;\n  color: #f2f2f2; }\n  .card-cover.card-header {\n    align-items: flex-end; }\n  .card-cover .card-title {\n    color: inherit; }\n\n.card-title {\n  font-size: 1rem;\n  margin: 0; }\n\n.card-body {\n  padding: 1.25rem 0.9375rem;\n  line-height: 1.6; }\n\n.card-footer {\n  border-top: 1px solid #eee;\n  font-size: 0.875rem;\n  color: #888888; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.accordion {\n  margin: 0.9375rem 0;\n  border-top: 1px solid #eee;\n  background: #fff; }\n  .card-body .accordion {\n    border-top: none; }\n    .card-body .accordion .accordion-item:last-child {\n      border-bottom: none; }\n\n.accordion-item {\n  margin: 0;\n  border-bottom: 1px solid #eee; }\n  .accordion-item.active .accordion-icon {\n    transform: rotate(90deg); }\n\n.accordion-title {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin: 0;\n  padding: 0.625rem 0.9375rem;\n  font-weight: normal;\n  cursor: pointer; }\n  .accordion-title:active {\n    background: #eeeeee; }\n  .accordion-item.disabled .accordion-title {\n    cursor: default;\n    pointer-events: none; }\n  .accordion-title .accordion-icon {\n    display: block;\n    font-size: 1.25rem;\n    color: rgba(136, 136, 136, 0.45);\n    transform: rotate(0deg);\n    transition: transform .3s; }\n\n.accordion-body {\n  margin: 0 !important;\n  padding: 0 !important;\n  border: none !important; }\n\n.accordion-content {\n  padding: 0 0.9375rem 0.625rem;\n  font-size: 0.9375rem;\n  color: #555555; }\n\n.accordion-inset {\n  margin-left: 0.9375rem;\n  margin-right: 0.9375rem; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.item, .item-linked > a, .item-main, .item-title-row {\n  display: flex;\n  justify-content: space-between;\n  align-items: center; }\n\n.list {\n  margin: 1.875rem 0;\n  padding: 0;\n  list-style: none;\n  background: #fff; }\n\n.item {\n  padding: 0.625rem 0.9375rem;\n  min-height: 2.75rem;\n  margin-bottom: -1px;\n  border: 1px solid #e6e6e6;\n  border-width: 1px 0; }\n  .card-body .item:first-child {\n    border-top: none; }\n  .card-body .item:last-child {\n    border-bottom: none; }\n\n.item-header {\n  min-height: 0;\n  padding: 0.1875rem 0.9375rem;\n  border-top: 1px solid #e6e6e6;\n  background: #f7f7f7;\n  color: #888888; }\n\n.item-linked {\n  padding: 0; }\n  .item-linked > a {\n    width: 100%;\n    padding: 0.625rem 0.46875rem 0.625rem 0.9375rem;\n    color: #222222; }\n    .item-linked > a:active {\n      background: #eeeeee; }\n\n.item-main {\n  flex: 1; }\n\n.item-title-row {\n  flex: 1; }\n  .item-title-row ~ [class*=\"item-\"] {\n    margin-top: 0.3125rem; }\n\n.item-title {\n  flex: 1;\n  margin: 0;\n  font-size: 1.0625rem;\n  font-weight: 500; }\n\n.item-icon {\n  color: rgba(136, 136, 136, 0.45);\n  font-size: 1.25rem; }\n\n.item-after {\n  color: #888888;\n  margin-left: 0.3125rem; }\n  .item-after + .icon {\n    margin-left: 0.1875rem; }\n\n.item-subtitle {\n  color: #555555; }\n\n.item-desc {\n  font-size: 0.875rem;\n  color: #888888;\n  text-overflow: ellipsis;\n  display: -webkit-box;\n  -webkit-box-orient: vertical;\n  -webkit-line-clamp: 2;\n  overflow: hidden;\n  line-height: 1.3em;\n  max-height: 2.6em; }\n\n.item-content .item-main {\n  display: block; }\n\n.item-media + .item-main {\n  margin-left: 0.625rem; }\n\n.item-input, .item-checkbox,\n.item-radio {\n  border-color: #ddd;\n  padding-top: 0;\n  padding-bottom: 0; }\n  .item-input .field-container, .item-checkbox .field-container,\n  .item-radio .field-container {\n    display: flex;\n    align-items: center;\n    flex: 1;\n    margin: 0; }\n\n.item-input .field-label {\n  display: block;\n  width: 35%; }\n\n.item-input input,\n.item-input textarea {\n  flex: 1; }\n  .item-input input, .item-input input:hover, .item-input input:focus,\n  .item-input textarea,\n  .item-input textarea:hover,\n  .item-input textarea:focus {\n    margin: 0;\n    padding: 0.8125rem 0;\n    border: none; }\n\n.item-checkbox,\n.item-radio {\n  padding: 0; }\n  .item-checkbox .field-container,\n  .item-radio .field-container {\n    padding: 0 0.9375rem; }\n    .item-checkbox .field-container:active,\n    .item-radio .field-container:active {\n      background: #eeeeee; }\n  .item-checkbox .field-label,\n  .item-radio .field-label {\n    display: block;\n    flex: 1;\n    padding: 0.8125rem 0;\n    line-height: normal; }\n  .item-checkbox input,\n  .item-radio input {\n    display: none; }\n    .item-checkbox input + .field-icon,\n    .item-radio input + .field-icon {\n      display: none;\n      overflow: hidden;\n      border-radius: 0.625rem;\n      color: #0e90d2;\n      font-size: 1.25rem; }\n    .item-checkbox input:checked + .field-icon,\n    .item-radio input:checked + .field-icon {\n      display: block; }\n\n.item-checkbox .field-icon {\n  background: #0e90d2;\n  color: #fff !important; }\n\n.list-inset {\n  margin-left: 0.9375rem;\n  margin-right: 0.9375rem; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.loader {\n  display: inline-block;\n  text-align: center; }\n  .loader > div {\n    width: 16px;\n    height: 16px;\n    background-color: #888;\n    display: inline-block;\n    animation: amt-bouncedelay 1.4s infinite ease-in-out both; }\n    .loader > div + div {\n      margin-left: 5px; }\n  .loader .loader-bounce1 {\n    animation-delay: -0.32s; }\n  .loader .loader-bounce2 {\n    animation-delay: -0.16s; }\n\n@keyframes amt-bouncedelay {\n  0%, 80%, 100% {\n    transform: scale(0); }\n  40% {\n    transform: scale(1); } }\n\n.loader-rounded > div {\n  border-radius: 100%; }\n\n.loader-primary > div {\n  background-color: #0e90d2; }\n\n.loader-secondary > div {\n  background-color: #3bb4f2; }\n\n.loader-success > div {\n  background-color: #5eb95e; }\n\n.loader-warning > div {\n  background-color: #F37B1D; }\n\n.loader-alert > div {\n  background-color: #dd514c; }\n\n.loader-dark > div {\n  background-color: #393939; }\n\n.loader-white > div {\n  background-color: #fff; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.modal {\n  position: fixed;\n  z-index: 1010;\n  left: 50%;\n  top: 50%;\n  width: 270px;\n  text-align: center;\n  transform: translate3d(-50%, -50%, 0); }\n  .modal:focus {\n    outline: 0; }\n\n.modal-inner {\n  position: relative;\n  background: #f8f8f8;\n  backface-visibility: hidden;\n  perspective: 1000px;\n  animation: amt-modal-in 0.3s ease-out; }\n  .modal-out .modal-inner {\n    animation-name: amt-modal-out; }\n\n@keyframes amt-modal-in {\n  from {\n    opacity: 0;\n    transform: scale3d(0.5, 0.5, 1); }\n  to {\n    transform: scale3d(1, 1, 1);\n    opacity: 1; } }\n\n@keyframes amt-modal-out {\n  to {\n    opacity: 0;\n    transform: scale3d(0.5, 0.5, 1); } }\n\n.modal-header {\n  padding: 0.9375rem 0.625rem; }\n\n.modal-title {\n  margin: 0;\n  font-weight: 500;\n  font-size: 1.125rem; }\n\n.modal-icon, .popup-icon {\n  position: absolute;\n  right: 0.3125rem;\n  top: 0.3125rem;\n  color: rgba(136, 136, 136, 0.5);\n  cursor: pointer; }\n  .modal-icon:active, .popup-icon:active {\n    color: #555555;\n    background: #eeeeee; }\n\n.modal-body {\n  padding: 0.9375rem 0.625rem;\n  text-align: center; }\n  .modal-header + .modal-body {\n    padding-top: 0; }\n  .modal-body + .modal-body {\n    margin-top: 5px; }\n  .modal-body input[type=\"text\"] {\n    padding-top: .5em;\n    padding-bottom: .5em; }\n  .modal-body > :last-child {\n    margin-bottom: 0 !important; }\n  .modal-body + .modal-footer {\n    border-top: 1px solid #dedede; }\n\n.modal-footer {\n  display: flex;\n  overflow: hidden; }\n\n.modal-btn {\n  flex: 1;\n  display: block;\n  font-size: 1rem;\n  line-height: 2.75rem;\n  text-align: center;\n  color: #0e90d2;\n  cursor: pointer;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n  .modal-btn + .modal-btn {\n    border-left: 1px solid #dedede; }\n  .modal-btn:active {\n    background: #d4d4d4; }\n\n.modal-transition-appear.modal-actions, .modal-transition-appear.popup {\n  transform: translate3d(0, 100%, 0); }\n\n.modal-transition-appear-active.modal-actions, .modal-transition-appear-active.popup {\n  transform: translate3d(0, 0, 0);\n  transition: transform 0.3s linear; }\n\n.modal-out.modal-actions, .modal-out.popup {\n  animation: amt-modal-transition-out 0.3s linear; }\n\n.modal-actions {\n  position: fixed;\n  left: 0;\n  bottom: 0;\n  z-index: 1010;\n  width: 100%;\n  text-align: center; }\n  .modal-actions .list {\n    margin: 0; }\n\n@keyframes amt-modal-transition-out {\n  to {\n    transform: translate3d(0, 100%, 0); } }\n\n.modal-actions-group {\n  margin: 0.625rem; }\n\n.modal-actions-header {\n  color: #888888;\n  font-size: 0.875rem; }\n\n.modal-actions-alert {\n  color: #dd514c; }\n  .modal-actions-alert a {\n    color: inherit; }\n\n.popup {\n  position: fixed;\n  left: 0;\n  top: 0;\n  bottom: 0;\n  width: 100%;\n  height: 100%;\n  z-index: 1010;\n  background: #fff;\n  overflow: hidden; }\n\n.modal-popup-appear-active {\n  color: red !important;\n  border: 1px solid red; }\n\n.popup-inner {\n  padding-top: 2.75rem;\n  height: 100%;\n  overflow: auto;\n  -webkit-overflow-scrolling: touch; }\n\n.popup-header {\n  position: absolute;\n  top: 0;\n  width: 100%;\n  height: 2.75rem;\n  border-bottom: 1px solid #dedede;\n  background-color: #fff; }\n\n.popup-icon {\n  top: 50%;\n  transform: translateY(-50%); }\n\n.popup-title {\n  margin: 0 1.875rem;\n  font-size: 1rem;\n  font-weight: bold;\n  line-height: 2.6875rem;\n  text-align: center;\n  color: #333333; }\n\n.popup-body {\n  padding: 0.9375rem;\n  background: #f8f8f8;\n  color: #555555; }\n\n.modal-backdrop {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: 1009;\n  background: rgba(0, 0, 0, 0.3);\n  opacity: 1;\n  animation-duration: 0.3s;\n  animation-timing-function: ease-out;\n  animation-fill-mode: forwards;\n  animation-name: amt-fade-in; }\n  .modal-backdrop.modal-backdrop-out {\n    animation-name: amt-fade-out; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.navbar {\n  display: flex;\n  flex: 0 0 auto;\n  align-items: center;\n  justify-content: flex-start;\n  overflow: visible;\n  height: 2.75rem;\n  padding: 0 0.625rem;\n  line-height: 2.6875rem;\n  background: #eeeeee;\n  color: #333333; }\n  .navbar:after {\n    border-color: #e2e2e2; }\n\n.navbar-title {\n  margin: 0;\n  font-size: 100%;\n  font-weight: bold;\n  color: inherit; }\n\n.navbar-left,\n.navbar-center,\n.navbar-right {\n  display: block;\n  white-space: nowrap;\n  overflow: visible; }\n  .navbar-left:first-child:last-child,\n  .navbar-center:first-child:last-child,\n  .navbar-right:first-child:last-child {\n    flex: 1;\n    margin: 0; }\n\n.navbar-nav-item {\n  display: inline-flex;\n  align-items: center;\n  cursor: pointer; }\n  .fb-legacy-flexbox .navbar-nav-item {\n    display: inline-block; }\n  .navbar-nav-item + .navbar-nav-item {\n    margin-left: 0.625rem; }\n\n/*\n.navbar-nav-title {\n  & ~ .navbar-icon {\n    font-size: inherit;\n    line-height: normal;\n  }\n}\n*/\n.navbar-icon-sibling-of-title {\n  font-size: inherit;\n  line-height: normal; }\n\n.navbar-left {\n  order: 1;\n  flex: 0 0 25%; }\n  .fb-legacy-flexbox .navbar-left {\n    width: 25%; }\n  .navbar-left .navbar-icon {\n    order: -1; }\n\n.navbar-center {\n  order: 2;\n  flex: 0 0 50%;\n  text-align: center; }\n  .fb-legacy-flexbox .navbar-center {\n    width: 50%; }\n\n.navbar-right {\n  order: 3;\n  flex: 0 0 25%;\n  text-align: right; }\n  .fb-legacy-flexbox .navbar-right {\n    width: 25%; }\n\n.navbar-left:first-child {\n  flex: 1 1 auto; }\n\n.navbar-left:first-child + .navbar-right:last-child {\n  flex: 1 1 auto; }\n\n.navbar-center:first-child:not(:last-child) {\n  margin-left: 25%; }\n\n.navbar-center + .navbar-left {\n  margin-right: -25%; }\n\n.navbar-primary {\n  background: #0e90d2;\n  color: #fff; }\n  .navbar-primary:after {\n    border-color: #0c80ba; }\n  .navbar-primary .navbar-nav-item {\n    color: #f2f2f2; }\n\n.navbar-secondary {\n  background: #3bb4f2;\n  color: #fff; }\n  .navbar-secondary:after {\n    border-color: #23abf0; }\n  .navbar-secondary .navbar-nav-item {\n    color: #f2f2f2; }\n\n.navbar-success {\n  background: #5eb95e;\n  color: #fff; }\n  .navbar-success:after {\n    border-color: #4db14d; }\n  .navbar-success .navbar-nav-item {\n    color: #f2f2f2; }\n\n.navbar-warning {\n  background: #F37B1D;\n  color: #fff; }\n  .navbar-warning:after {\n    border-color: #ea6e0c; }\n  .navbar-warning .navbar-nav-item {\n    color: #f2f2f2; }\n\n.navbar-alert {\n  background: #dd514c;\n  color: #fff; }\n  .navbar-alert:after {\n    border-color: #d93c37; }\n  .navbar-alert .navbar-nav-item {\n    color: #f2f2f2; }\n\n.navbar-dark {\n  background: #393939;\n  color: #fff; }\n  .navbar-dark:after {\n    border-color: #2c2c2c; }\n  .navbar-dark .navbar-nav-item {\n    color: #f2f2f2; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.notification {\n  top: 0;\n  left: 0;\n  z-index: 1100;\n  display: flex;\n  width: 100%;\n  padding: 0.625rem 1rem;\n  /*.active {\n    display: flex;\n  }*/\n  background: rgba(34, 34, 34, 0.9);\n  color: #fff; }\n\n.notification-icon {\n  cursor: pointer; }\n\n.notification-content {\n  flex: 1;\n  align-self: stretch;\n  display: flex;\n  flex-direction: column;\n  justify-content: center; }\n  .notification-content,\n  .notification-content .notification-title {\n    font-size: 0.875rem; }\n  .notification-content > :first-child {\n    margin-top: 0; }\n  .notification-content > :last-child {\n    margin-bottom: 0; }\n\n.notification-title {\n  margin: 0;\n  color: inherit; }\n\n.notification-primary {\n  background: rgba(14, 144, 210, 0.9);\n  color: #fff; }\n\n.notification-secondary {\n  background: rgba(59, 180, 242, 0.9);\n  color: #fff; }\n\n.notification-success {\n  background: rgba(94, 185, 94, 0.9);\n  color: #fff; }\n\n.notification-warning {\n  background: rgba(243, 123, 29, 0.9);\n  color: #fff; }\n\n.notification-alert {\n  background: rgba(221, 81, 76, 0.9);\n  color: #fff; }\n\n.notification-animated {\n  position: absolute; }\n\n.notification-enter {\n  transform: translate3d(0, -100%, 0); }\n\n.notification-enter-active {\n  animation: amt-notification-enter .3s ease-in-out; }\n\n.notification-leave {\n  animation: amt-notification-leave .3s ease-in-out; }\n\n@keyframes amt-notification-enter {\n  from {\n    transform: translate3d(0, -100%, 0);\n    opacity: .5; }\n  to {\n    transform: translate3d(0, 0, 0);\n    opacity: 1; } }\n\n@keyframes amt-notification-leave {\n  from {\n    transform: translate3d(0, 0, 0);\n    opacity: 1; }\n  to {\n    transform: translate3d(0, -100%, 0);\n    opacity: .5; } }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.offcanvas {\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  z-index: 1020;\n  width: 16.875rem;\n  height: 100%;\n  overflow: auto;\n  -webkit-overflow-scrolling: touch;\n  background: #fff;\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);\n  animation-duration: 0.4s;\n  animation-timing-function: ease-in-out; }\n\n.offcanvas-left {\n  left: 0;\n  animation-name: offcanvas-left-in; }\n  .offcanvas-left.offcanvas-out {\n    animation-name: offcanvas-left-out; }\n\n@keyframes offcanvas-left-in {\n  0% {\n    opacity: 0;\n    transform: translate3d(-100%, 0, 0); }\n  100% {\n    opacity: 1;\n    transform: translate3d(0, 0, 0); } }\n\n@keyframes offcanvas-left-out {\n  to {\n    opacity: 0;\n    transform: translate3d(-100%, 0, 0); } }\n\n.offcanvas-right {\n  right: 0;\n  animation-name: offcanvas-right-in; }\n  .offcanvas-right.offcanvas-out {\n    animation-name: offcanvas-right-out; }\n\n@keyframes offcanvas-right-in {\n  0% {\n    opacity: 0;\n    transform: translate3d(100%, 0, 0); }\n  100% {\n    opacity: 1;\n    transform: translate3d(0, 0, 0); } }\n\n@keyframes offcanvas-right-out {\n  to {\n    opacity: 0;\n    transform: translate3d(100%, 0, 0); } }\n\n.with-offcanvas-left .offcanvas-push-target, .with-offcanvas-right .offcanvas-push-target, .with-offcanvas-closing .offcanvas-push-target {\n  transition: transform 0.4s ease-in-out; }\n\n.with-offcanvas-left .offcanvas-push-target {\n  transform: translate3d(16.875rem, 0, 0); }\n\n.with-offcanvas-right .offcanvas-push-target {\n  transform: translate3d(-16.875rem, 0, 0); }\n\n.with-offcanvas-closing .offcanvas-push-target {\n  transform: translate3d(0, 0, 0); }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.popover {\n  position: absolute;\n  top: 0;\n  left: 0;\n  z-index: 1030;\n  width: 15rem;\n  margin: 0;\n  background: #fff;\n  color: #333333;\n  border: 1px solid #ddd;\n  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);\n  animation-duration: 0.3s;\n  animation-timing-function: ease-out;\n  animation-name: amt-slide-top-fixed; }\n\n.popover-out {\n  animation-name: amt-popover-out; }\n\n@keyframes amt-popover-out {\n  to {\n    opacity: 0;\n    transform: translateY(-10px); } }\n\n.popover-inner {\n  position: relative;\n  z-index: 110;\n  background: #fff;\n  padding: 8px; }\n\n.popover-angle {\n  border-width: 8px; }\n  .popover-angle, .popover-angle:after {\n    position: absolute;\n    z-index: 120;\n    display: block;\n    width: 0;\n    height: 0;\n    border-color: transparent;\n    border-style: solid; }\n  .popover-angle:after {\n    content: \"\";\n    border-width: 7px; }\n\n.popover-angle-bottom {\n  bottom: 0;\n  border-top-color: #ddd;\n  transform: translate3d(-50%, 100%, 0); }\n  .popover-angle-bottom:after {\n    border-top-color: #fff;\n    bottom: 1px; }\n  .popover-angle-bottom, .popover-angle-bottom:after {\n    border-bottom-width: 0; }\n\n.popover-angle-top {\n  top: 0;\n  border-bottom-color: #ddd;\n  transform: translate3d(-50%, -100%, 0); }\n  .popover-angle-top:after {\n    top: 1px;\n    border-bottom-color: #fff; }\n  .popover-angle-top, .popover-angle-top:after {\n    border-top-width: 0; }\n\n.popover-angle-top:after,\n.popover-angle-bottom:after {\n  transform: translateX(-50%); }\n\n.popover-angle-left {\n  left: 0;\n  border-right-color: #ddd;\n  transform: translateX(-100%); }\n  .popover-angle-left:after {\n    border-right-color: #fff;\n    top: -7px;\n    left: 1px; }\n  .popover-angle-left, .popover-angle-left:after {\n    border-left-width: 0; }\n\n.popover-angle-right {\n  right: 0;\n  border-left-color: #ddd;\n  transform: translateX(100%); }\n  .popover-angle-right:after {\n    border-left-color: #fff;\n    top: -7px;\n    right: 1px; }\n  .popover-angle-right, .popover-angle-right:after {\n    border-right-width: 0; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.slider {\n  position: relative; }\n  .slider ul,\n  .slider ol {\n    list-style: none;\n    padding: 0; }\n\n.slider-slides {\n  position: relative;\n  width: 100%;\n  overflow: hidden;\n  margin: 0; }\n  .slider-slides > li {\n    position: relative;\n    display: none;\n    transition: transform 0.5s ease-in-out;\n    backface-visibility: hidden;\n    perspective: 1000px; }\n    .slider-slides > li > img,\n    .slider-slides > li > a > img {\n      display: block;\n      width: 100%;\n      height: auto;\n      line-height: 1; }\n    .slider-slides > li.next, .slider-slides > li.active.right {\n      left: 0;\n      transform: translate3d(100%, 0, 0); }\n    .slider-slides > li.prev, .slider-slides > li.active.left {\n      left: 0;\n      transform: translate3d(-100%, 0, 0); }\n    .slider-slides > li.next.left, .slider-slides > li.prev.right, .slider-slides > li.active {\n      left: 0;\n      transform: translate3d(0, 0, 0); }\n  .slider-slides > .active,\n  .slider-slides > .next,\n  .slider-slides > .prev {\n    display: block; }\n  .slider-slides > .active {\n    left: 0; }\n  .slider-slides > .next,\n  .slider-slides > .prev {\n    position: absolute;\n    top: 0;\n    width: 100%; }\n\n.slider-control-prev, .slider-control-next {\n  position: absolute;\n  top: 50%;\n  z-index: 5;\n  transform: translate3d(0, -50%, 0);\n  border-radius: 50%;\n  color: rgba(255, 255, 255, 0.7);\n  backdrop-filter: blur(10px);\n  cursor: pointer; }\n\n.slider-control-prev {\n  left: 10px; }\n\n.slider-control-next {\n  right: 10px; }\n\n.slider-indicators {\n  position: absolute;\n  bottom: 0.9375rem;\n  left: 50%;\n  z-index: 15;\n  display: flex;\n  justify-content: center;\n  margin: 0;\n  transform: translate3d(-50%, 0, 0); }\n  .slider-indicators li {\n    display: block;\n    width: 8px;\n    height: 8px;\n    overflow: hidden;\n    text-indent: -999px;\n    border: 1px solid #fff;\n    border-radius: 10px;\n    cursor: pointer; }\n    .slider-indicators li + li {\n      margin-left: 8px; }\n  .slider-indicators .active {\n    background: #fff; }\n\n.slider-thumbs {\n  display: flex;\n  margin: 5px 0 0; }\n  .slider-thumbs li {\n    flex: 1;\n    opacity: 0.75;\n    cursor: pointer;\n    transition: opacity 0.5s; }\n    .slider-thumbs li + li {\n      margin-left: 2px; }\n  .slider-thumbs .active {\n    opacity: 1; }\n\n.slider-caption {\n  position: absolute;\n  bottom: 20px;\n  z-index: 10;\n  width: 100%;\n  padding-top: 0.9375rem;\n  padding-bottom: 0.9375rem;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.switch {\n  position: relative;\n  display: inline-block;\n  overflow: hidden;\n  vertical-align: middle;\n  align-self: center;\n  outline: none;\n  cursor: pointer;\n  user-select: none;\n  touch-action: manipulation; }\n  .switch input[type=\"checkbox\"] {\n    position: absolute;\n    margin-left: -9999px;\n    visibility: hidden; }\n    .switch input[type=\"checkbox\"]:checked + .switch-label:after {\n      transform: translateX(1.375rem); }\n  .switch.disabled {\n    opacity: 0.5;\n    cursor: not-allowed;\n    pointer-events: none; }\n  .switch .switch-label, .switch .switch-label:after {\n    background: #aaa; }\n  .switch .switch-label:before {\n    background: #fff; }\n  .switch input:checked + .switch-label, .switch input:checked + .switch-label:after {\n    background: #0e90d2; }\n  .list .switch {\n    margin-bottom: 0; }\n\n.switch-label {\n  position: relative;\n  display: block;\n  width: 3.25rem;\n  height: 1.875rem;\n  border-radius: 9999px;\n  transition: background .35s; }\n  .switch-label:before, .switch-label:after {\n    position: absolute;\n    display: block;\n    content: \" \";\n    transition: all .35s;\n    border-radius: 9999px; }\n  .switch-label:before {\n    top: 2px;\n    left: 2px;\n    bottom: 2px;\n    right: 2px; }\n  .switch-label:after {\n    top: 4px;\n    left: 4px;\n    bottom: 4px;\n    width: 1.375rem;\n    transform: translateX(0); }\n\n.switch-secondary input:checked + .switch-label, .switch-secondary input:checked + .switch-label:after {\n  background: #3bb4f2; }\n\n.switch-success input:checked + .switch-label, .switch-success input:checked + .switch-label:after {\n  background: #5eb95e; }\n\n.switch-warning input:checked + .switch-label, .switch-warning input:checked + .switch-label:after {\n  background: #F37B1D; }\n\n.switch-alert input:checked + .switch-label, .switch-alert input:checked + .switch-label:after {\n  background: #dd514c; }\n\n.switch-dark input:checked + .switch-label, .switch-dark input:checked + .switch-label:after {\n  background: #393939; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.tabbar {\n  display: flex;\n  width: 100%;\n  height: 3.0625rem;\n  padding: 0 1rem;\n  background: #e6e6e6; }\n  .tabbar:before {\n    border-color: #d2d2d2; }\n  .tabbar,\n  .tabbar a {\n    color: #888888; }\n  .tabbar > .active,\n  .tabbar > .active a {\n    color: #0e90d2; }\n\n.tabbar-item {\n  display: flex;\n  flex: 1;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  cursor: pointer; }\n  .tabbar-item .icon {\n    position: relative; }\n  .tabbar-item .badge {\n    position: absolute;\n    left: 100%;\n    top: -2px;\n    margin-left: -10px;\n    padding: 2px 5px;\n    font-size: 0.625rem;\n    min-width: 0; }\n  .tabbar-item.active {\n    cursor: default;\n    pointer-events: none; }\n\n.tabbar-label {\n  position: relative;\n  display: block;\n  text-align: center; }\n  .icon ~ .tabbar-label {\n    font-size: 0.625rem; }\n\n.tabbar-primary {\n  background: #0e90d2; }\n  .tabbar-primary:before {\n    border-color: #0b76ac; }\n\n.tabbar-secondary {\n  background: #3bb4f2; }\n  .tabbar-secondary:before {\n    border-color: #14a6ef; }\n\n.tabbar-success {\n  background: #5eb95e; }\n  .tabbar-success:before {\n    border-color: #48a648; }\n\n.tabbar-warning {\n  background: #F37B1D; }\n  .tabbar-warning:before {\n    border-color: #dc670c; }\n\n.tabbar-alert {\n  background: #dd514c; }\n  .tabbar-alert:before {\n    border-color: #d6302a; }\n\n.tabbar-dark {\n  background: #393939; }\n  .tabbar-dark:before {\n    border-color: #252525; }\n\n.tabbar-primary,\n.tabbar-primary a, .tabbar-secondary,\n.tabbar-secondary a, .tabbar-success,\n.tabbar-success a, .tabbar-warning,\n.tabbar-warning a, .tabbar-alert,\n.tabbar-alert a, .tabbar-dark,\n.tabbar-dark a {\n  color: #dedede; }\n\n.tabbar-primary > .active,\n.tabbar-primary > .active a, .tabbar-secondary > .active,\n.tabbar-secondary > .active a, .tabbar-success > .active,\n.tabbar-success > .active a, .tabbar-warning > .active,\n.tabbar-warning > .active a, .tabbar-alert > .active,\n.tabbar-alert > .active a, .tabbar-dark > .active,\n.tabbar-dark > .active a {\n  color: #fff; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.tabs {\n  margin: 0.9375rem 0;\n  background: #fff; }\n\n.tabs-nav {\n  margin-bottom: 0; }\n\n.tabs-body {\n  position: relative;\n  z-index: 100;\n  overflow: hidden; }\n\n.tab-panel {\n  position: absolute;\n  top: 0;\n  z-index: 99;\n  width: 100%;\n  padding: 0.9375rem;\n  visibility: hidden;\n  transition: transform 0.3s;\n  transform: translateX(-100%); }\n  .tab-panel.active {\n    position: relative;\n    z-index: 100;\n    visibility: visible;\n    transform: translateX(0); }\n    .tab-panel.active ~ .tab-panel {\n      transform: translateX(100%); }\n  .tab-panel.tab-panel-no-padded {\n    padding: 0; }\n\n.tabs-inset {\n  margin-left: 0.9375rem;\n  margin-right: 0.9375rem; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.root {\n  display: block;\n  height: 100%;\n  width: 100%;\n  overflow: hidden; }\n\n.fl {\n  float: left; }\n\n.fr {\n  float: right; }\n\n.fn {\n  float: none; }\n\n.padding-0 {\n  padding: 0 !important; }\n\n.margin-0 {\n  margin: 0 !important; }\n\n.padding-xs {\n  padding: 0.3125rem !important; }\n\n.margin-xs {\n  margin: 0.3125rem !important; }\n\n.padding-sm {\n  padding: 0.625rem !important; }\n\n.margin-sm {\n  margin: 0.625rem !important; }\n\n.padding {\n  padding: 0.9375rem !important; }\n\n.margin {\n  margin: 0.9375rem !important; }\n\n.padding-lg {\n  padding: 1.25rem !important; }\n\n.margin-lg {\n  margin: 1.25rem !important; }\n\n.padding-xl {\n  padding: 2rem !important; }\n\n.margin-xl {\n  margin: 2rem !important; }\n\n.padding-h-0 {\n  padding-left: 0 !important;\n  padding-right: 0 !important; }\n\n.margin-h-0 {\n  margin-left: 0 !important;\n  margin-right: 0 !important; }\n\n.padding-h-xs {\n  padding-left: 0.3125rem !important;\n  padding-right: 0.3125rem !important; }\n\n.margin-h-xs {\n  margin-left: 0.3125rem !important;\n  margin-right: 0.3125rem !important; }\n\n.padding-h-sm {\n  padding-left: 0.625rem !important;\n  padding-right: 0.625rem !important; }\n\n.margin-h-sm {\n  margin-left: 0.625rem !important;\n  margin-right: 0.625rem !important; }\n\n.padding-h {\n  padding-left: 0.9375rem !important;\n  padding-right: 0.9375rem !important; }\n\n.margin-h {\n  margin-left: 0.9375rem !important;\n  margin-right: 0.9375rem !important; }\n\n.padding-h-lg {\n  padding-left: 1.25rem !important;\n  padding-right: 1.25rem !important; }\n\n.margin-h-lg {\n  margin-left: 1.25rem !important;\n  margin-right: 1.25rem !important; }\n\n.padding-h-xl {\n  padding-left: 2rem !important;\n  padding-right: 2rem !important; }\n\n.margin-h-xl {\n  margin-left: 2rem !important;\n  margin-right: 2rem !important; }\n\n.padding-v-0 {\n  padding-top: 0 !important;\n  padding-bottom: 0 !important; }\n\n.margin-v-0 {\n  margin-top: 0 !important;\n  margin-bottom: 0 !important; }\n\n.padding-v-xs {\n  padding-top: 0.3125rem !important;\n  padding-bottom: 0.3125rem !important; }\n\n.margin-v-xs {\n  margin-top: 0.3125rem !important;\n  margin-bottom: 0.3125rem !important; }\n\n.padding-v-sm {\n  padding-top: 0.625rem !important;\n  padding-bottom: 0.625rem !important; }\n\n.margin-v-sm {\n  margin-top: 0.625rem !important;\n  margin-bottom: 0.625rem !important; }\n\n.padding-v {\n  padding-top: 0.9375rem !important;\n  padding-bottom: 0.9375rem !important; }\n\n.margin-v {\n  margin-top: 0.9375rem !important;\n  margin-bottom: 0.9375rem !important; }\n\n.padding-v-lg {\n  padding-top: 1.25rem !important;\n  padding-bottom: 1.25rem !important; }\n\n.margin-v-lg {\n  margin-top: 1.25rem !important;\n  margin-bottom: 1.25rem !important; }\n\n.padding-v-xl {\n  padding-top: 2rem !important;\n  padding-bottom: 2rem !important; }\n\n.margin-v-xl {\n  margin-top: 2rem !important;\n  margin-bottom: 2rem !important; }\n\n.padding-top-0 {\n  padding-top: 0 !important; }\n\n.margin-top-0 {\n  margin-top: 0 !important; }\n\n.padding-top-xs {\n  padding-top: 0.3125rem !important; }\n\n.margin-top-xs {\n  margin-top: 0.3125rem !important; }\n\n.padding-top-sm {\n  padding-top: 0.625rem !important; }\n\n.margin-top-sm {\n  margin-top: 0.625rem !important; }\n\n.padding-top {\n  padding-top: 0.9375rem !important; }\n\n.margin-top {\n  margin-top: 0.9375rem !important; }\n\n.padding-top-lg {\n  padding-top: 1.25rem !important; }\n\n.margin-top-lg {\n  margin-top: 1.25rem !important; }\n\n.padding-top-xl {\n  padding-top: 2rem !important; }\n\n.margin-top-xl {\n  margin-top: 2rem !important; }\n\n.padding-right-0 {\n  padding-right: 0 !important; }\n\n.margin-right-0 {\n  margin-right: 0 !important; }\n\n.padding-right-xs {\n  padding-right: 0.3125rem !important; }\n\n.margin-right-xs {\n  margin-right: 0.3125rem !important; }\n\n.padding-right-sm {\n  padding-right: 0.625rem !important; }\n\n.margin-right-sm {\n  margin-right: 0.625rem !important; }\n\n.padding-right {\n  padding-right: 0.9375rem !important; }\n\n.margin-right {\n  margin-right: 0.9375rem !important; }\n\n.padding-right-lg {\n  padding-right: 1.25rem !important; }\n\n.margin-right-lg {\n  margin-right: 1.25rem !important; }\n\n.padding-right-xl {\n  padding-right: 2rem !important; }\n\n.margin-right-xl {\n  margin-right: 2rem !important; }\n\n.padding-bottom-0 {\n  padding-bottom: 0 !important; }\n\n.margin-bottom-0 {\n  margin-bottom: 0 !important; }\n\n.padding-bottom-xs {\n  padding-bottom: 0.3125rem !important; }\n\n.margin-bottom-xs {\n  margin-bottom: 0.3125rem !important; }\n\n.padding-bottom-sm {\n  padding-bottom: 0.625rem !important; }\n\n.margin-bottom-sm {\n  margin-bottom: 0.625rem !important; }\n\n.padding-bottom {\n  padding-bottom: 0.9375rem !important; }\n\n.margin-bottom {\n  margin-bottom: 0.9375rem !important; }\n\n.padding-bottom-lg {\n  padding-bottom: 1.25rem !important; }\n\n.margin-bottom-lg {\n  margin-bottom: 1.25rem !important; }\n\n.padding-bottom-xl {\n  padding-bottom: 2rem !important; }\n\n.margin-bottom-xl {\n  margin-bottom: 2rem !important; }\n\n.padding-left-0 {\n  padding-left: 0 !important; }\n\n.margin-left-0 {\n  margin-left: 0 !important; }\n\n.padding-left-xs {\n  padding-left: 0.3125rem !important; }\n\n.margin-left-xs {\n  margin-left: 0.3125rem !important; }\n\n.padding-left-sm {\n  padding-left: 0.625rem !important; }\n\n.margin-left-sm {\n  margin-left: 0.625rem !important; }\n\n.padding-left, .comments .item, .comments .item-linked > a {\n  padding-left: 0.9375rem !important; }\n\n.margin-left {\n  margin-left: 0.9375rem !important; }\n\n.padding-left-lg {\n  padding-left: 1.25rem !important; }\n\n.margin-left-lg {\n  margin-left: 1.25rem !important; }\n\n.padding-left-xl {\n  padding-left: 2rem !important; }\n\n.margin-left-xl {\n  margin-left: 2rem !important; }\n\n.align-v {\n  display: flex;\n  align-items: center;\n  justify-content: space-between; }\n  .align-v .align-top {\n    align-self: flex-start; }\n  .align-v .align-center {\n    align-self: center; }\n  .align-v .align-bottom {\n    align-self: flex-end; }\n\n.text-left {\n  text-align: left !important; }\n\n.text-right {\n  text-align: right !important; }\n\n.text-center {\n  text-align: center !important; }\n\n.text-justify {\n  text-align: justify !important; }\n\n.text-primary {\n  color: #0e90d2 !important; }\n\n.text-secondary {\n  color: #3bb4f2 !important; }\n\n.text-success {\n  color: #5eb95e !important; }\n\n.text-warning {\n  color: #F37B1D !important; }\n\n.text-alert {\n  color: #dd514c !important; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.views {\n  position: relative;\n  flex: 1 1 0;\n  width: 100%;\n  height: 100%;\n  overflow: hidden; }\n\n.view {\n  display: flex;\n  flex-direction: column;\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n  background: #f4f4f4;\n  backface-visibility: hidden; }\n  .view > .container {\n    flex: 1 1 0; }\n\n@keyframes amt-view-sfl-enter {\n  from {\n    transform: translate3d(-100%, 0, 0); }\n  to {\n    transform: translate3d(0, 0, 0); } }\n\n@keyframes amt-view-sfl-leave {\n  /*from {\n    transform: translate3d(0, 0, 0);\n  }*/\n  to {\n    opacity: .75;\n    transform: translate3d(25%, 0, 0); } }\n\n@keyframes amt-view-sfr-enter {\n  from {\n    transform: translate3d(100%, 0, 0); }\n  to {\n    transform: translate3d(0, 0, 0); } }\n\n@keyframes amt-view-sfr-leave {\n  to {\n    opacity: .75;\n    transform: translate3d(-25%, 0, 0); } }\n\n@keyframes amt-view-rfl-enter {\n  from {\n    opacity: .75;\n    transform: translate3d(75%, 0, 0); }\n  to {\n    opacity: 1;\n    transform: translate3d(0, 0, 0); } }\n\n@keyframes amt-view-rfl-leave {\n  from {\n    opacity: 1;\n    transform: translate3d(0, 0, 0); }\n  to {\n    opacity: 0;\n    transform: translate3d(-100%, 0, 0); } }\n\n@keyframes amt-view-rfr-enter {\n  from {\n    opacity: .75;\n    transform: translate3d(-25%, 0, 0); }\n  to {\n    opacity: 1;\n    transform: translate3d(0, 0, 0); } }\n\n@keyframes amt-view-rfr-leave {\n  to {\n    opacity: 0.75;\n    transform: translate3d(100%, 0, 0); } }\n\n.view-transition-sfl-enter-active,\n.view-transition-sfl-leave,\n.view-transition-sfr-enter-active,\n.view-transition-sfr-leave, .view-transition-rfl-enter-active,\n.view-transition-rfl-leave,\n.view-transition-rfr-enter-active,\n.view-transition-rfr-leave {\n  animation-duration: 0.5s;\n  animation-timing-function: cubic-bezier(0.36, 0.66, 0.04, 1);\n  animation-fill-mode: forwards; }\n\n.view-transition-sfr-enter-active,\n.view-transition-sfl-enter-active {\n  pointer-events: none;\n  z-index: 20; }\n\n.view-transition-sfr-leave,\n.view-transition-sfl-leave {\n  pointer-events: none;\n  z-index: 10; }\n\n.view-transition-sfr-enter-active {\n  animation-name: amt-view-sfr-enter; }\n\n.view-transition-sfl-enter-active {\n  animation-name: amt-view-sfl-enter; }\n\n.view-transition-sfr-leave {\n  animation-name: amt-view-sfr-leave; }\n\n.view-transition-sfl-leave {\n  animation-name: amt-view-sfl-leave; }\n\n.view-transition-rfr-enter-active,\n.view-transition-rfl-enter-active {\n  pointer-events: none;\n  z-index: 10; }\n\n.view-transition-rfr-leave,\n.view-transition-rfl-leave {\n  pointer-events: none;\n  z-index: 20; }\n\n.view-transition-rfr-enter-active {\n  animation-name: amt-view-rfr-enter; }\n\n.view-transition-rfr-leave {\n  animation-name: amt-view-rfr-leave; }\n\n.view-transition-rfl-enter-active {\n  animation-name: amt-view-rfl-enter; }\n\n.view-transition-rfl-leave {\n  animation-name: amt-view-rfl-leave; }\n\n/*public start*/\n.font-weight {\n  font-weight: bold; }\n\n.hidden {\n  display: none; }\n\n.text-color-1 {\n  color: #171717; }\n\n.text-color-2, .tribe-topic .tribe-tribe-btn {\n  color: #949494; }\n\n.text-color-3, .server-info-user .server-user-tag, .require-info-user .require-user-tag, .tribe-info-user .tirbe-info-tab a {\n  color: #3C3C3C; }\n\n.text-color-4 {\n  color: #C3C3C3; }\n\n.text-color-5, .tribe-info-user .tribe-user-btn {\n  color: #FFB30E; }\n\n.text-color-6 {\n  color: #4BBCF6; }\n\n.text-color-7 {\n  color: #FFFFFF; }\n\n.text-size-12, .home .home-tribe-name, .server-tabs-list .list .item-desc, .server-tabs-list .list .item-subtitle, .require-tabs-list .list .item-desc, .require-tabs-list .list .item-subtitle, .comments .g, .tribe .t-index-list .item-main .item-desc, .tribe-info-user .item-main .item-desc, .tribe-info-user .tribe-user-btn, .tribe-topic-list .home-tribe-name {\n  font-size: 0.75rem; }\n\n.text-size-13, .comments .item-title, .tribe .t-index-list .item-main .item-subtitle, .tribe-info-user .item-main .item-subtitle, .tribe-topic .tribe-tribe-btn {\n  font-size: 0.8125rem; }\n\n.text-size-14, .extend-btn, .btn-yellow, .btn-blue, .btn-white, .btn-white-noBorder, .server-tabs-list .list .item-title, .server-info-user .server-user-tag, .require-tabs-list .list .item-title, .require-info-user .require-user-tag, .comments .item-subtitle, .tribe .t-index-list .item-main .item-title, .tribe-info-user .item-main .item-title, .tribe-info-user .tirbe-info-tab a, .tribe-toTopList li, .tribe-topic .topic-box .topic-p {\n  font-size: 0.875rem; }\n\n.text-size-15, .header-nav .item-title {\n  font-size: 0.9375rem; }\n\n.text-size-16 {\n  font-size: 1rem; }\n\n.text-size-18, .tribe-topic .topic-box .topic-title {\n  font-size: 1.125rem; }\n\n.text-size-20 {\n  font-size: 1.25rem; }\n\n.text-size-22 {\n  font-size: 1.375rem; }\n\n.text-size-24 {\n  font-size: 1.5rem; }\n\n.bgNone {\n  background: none; }\n  .bgNone .group-body {\n    background: none; }\n\n.bgF {\n  background: #ffffff; }\n\n.extend-btn, .btn-yellow, .btn-blue, .btn-white, .btn-white-noBorder {\n  width: 100%;\n  border: none;\n  line-height: 1;\n  padding: .75em 1em;\n  border-radius: 4px;\n  display: inline-block;\n  text-align: center; }\n  .extend-btn:hover, .btn-yellow:hover, .btn-blue:hover, .btn-white:hover, .btn-white-noBorder:hover {\n    cursor: pointer; }\n\n.btn-yellow {\n  background: #FFB30E;\n  color: #ffffff; }\n\n.btn-blue {\n  background: #4BBCF6;\n  color: #ffffff; }\n\n.btn-white {\n  background: #ffffff;\n  color: #3C3C3C;\n  border: 1px solid #DDDDDD;\n  border-radius: 0; }\n\n.btn-white-noBorder {\n  background: #ffffff;\n  color: #3C3C3C; }\n\n.regLog-logo .group-body {\n  background: none; }\n\n.regLog-logo .regLog-logo-img {\n  width: 139px;\n  height: 127px;\n  background: pink;\n  margin: 0 auto; }\n\n/*Header start*/\n.header-nav .icon-right-nav {\n  display: none; }\n\n.header-nav .header-nav-icon .icon {\n  height: 17px;\n  width: 18px;\n  float: left; }\n\n.header-nav .header-nav-index .icon {\n  background: pink; }\n\n.header-nav .header-nav-tribe .icon {\n  background: yellow; }\n\n.header-nav .header-nav-require .icon {\n  background: blue; }\n\n.header-nav .header-nav-server .icon {\n  background: palevioletred; }\n\n.header-login {\n  background: #171717; }\n  .header-login .group-body {\n    background: none; }\n  .header-login .header-user-avatar {\n    width: 50px;\n    height: 50px;\n    padding: 0;\n    margin: 0 auto; }\n    .header-login .header-user-avatar img {\n      width: 100%;\n      height: 100%;\n      border-radius: 50%; }\n  .header-login .header-user-name {\n    text-align: center; }\n\n/*Header end*/\n/*Home start*/\n.home-logo {\n  height: 27px;\n  width: 34px;\n  background: pink;\n  margin: 0 auto; }\n\n.home .slider-control {\n  display: none; }\n\n.home .slider-indicators .active {\n  background: #FFB30E; }\n\n.home .border-d7d7d7 {\n  border: 1px solid #D7D7D7; }\n\n.home .home-group-header {\n  color: #171717; }\n\n.home .home-tribe-name {\n  width: 100%;\n  height: 1.2rem;\n  overflow: hidden;\n  color: #949494; }\n\n.home .home-tribe-media {\n  width: 44px;\n  height: 44px;\n  border-radius: 50%; }\n\n.home .home-tribe-tag {\n  border: 1px solid #D7D7D7;\n  padding: 0 0.625rem; }\n\n.home .home-tribe-item p {\n  line-height: 1.5;\n  height: 1.5rem;\n  overflow: hidden;\n  margin: 0; }\n\n.home .item {\n  border: none; }\n\n.home .home-tribe-desc {\n  text-overflow: ellipsis;\n  display: -webkit-box;\n  -webkit-box-orient: vertical;\n  -webkit-line-clamp: 2;\n  overflow: hidden;\n  line-height: 1.3em;\n  max-height: 2.6em; }\n\n.header-link-active .item-title {\n  color: #FFB30E; }\n\n.home-icon-view {\n  width: 18px;\n  height: 11px;\n  background: pink; }\n\n/*Home end*/\n/*服务列表  start*/\n.server-tabs-list {\n  border-bottom: 1px solid #D7D7D7; }\n  .server-tabs-list .tabs-nav button {\n    border: none;\n    color: #3C3C3C;\n    background: none; }\n    .server-tabs-list .tabs-nav button:hover {\n      border: none;\n      background: none;\n      color: #3C3C3C; }\n  .server-tabs-list .tabs-nav button.active {\n    background: none;\n    border: none;\n    border-bottom: 2px solid #FFB30E;\n    color: #FFB30E; }\n  .server-tabs-list .list .item {\n    border: 1px solid #D7D7D7; }\n  .server-tabs-list .list .item-desc {\n    text-overflow: ellipsis;\n    display: -webkit-box;\n    -webkit-box-orient: vertical;\n    -webkit-line-clamp: 3;\n    overflow: hidden;\n    line-height: 1.3em;\n    max-height: 3.9em;\n    color: #C3C3C3; }\n  .server-tabs-list .list .item-title {\n    color: #3C3C3C; }\n  .server-tabs-list .list .item-subtitle {\n    color: #FFB30E; }\n\n/*服务列表  end*/\n/*服务详细  start*/\n.server-info-user {\n  border-bottom: 1px solid #D7D7D7; }\n  .server-info-user .server-user-avatar {\n    width: 44px;\n    height: 44px;\n    border-radius: 50%; }\n  .server-info-user .server-user-name p {\n    line-height: 1.5;\n    height: 1.5rem;\n    overflow: hidden;\n    margin: 0; }\n  .server-info-user .server-user-tag {\n    border: 1px solid #3C3C3C;\n    padding: 0 0.625rem; }\n\n.server-info .g {\n  border-bottom: 1px solid #DDDDDD; }\n\n.server-info .border-none {\n  border: none; }\n\n.server-info .server-info-tit-l {\n  min-width: 70px; }\n\n/*服务详细  end*/\n/*需求列表 start*/\n.require-tabs-list {\n  border-bottom: 1px solid #D7D7D7; }\n  .require-tabs-list .tabs-nav button {\n    border: none;\n    color: #3C3C3C;\n    background: none; }\n    .require-tabs-list .tabs-nav button:hover {\n      border: none;\n      background: none;\n      color: #3C3C3C; }\n  .require-tabs-list .tabs-nav button.active {\n    background: none;\n    border: none;\n    border-bottom: 2px solid #FFB30E;\n    color: #FFB30E; }\n  .require-tabs-list .list .item {\n    border: 1px solid #D7D7D7; }\n  .require-tabs-list .list .item-desc {\n    text-overflow: ellipsis;\n    display: -webkit-box;\n    -webkit-box-orient: vertical;\n    -webkit-line-clamp: 3;\n    overflow: hidden;\n    line-height: 1.3em;\n    max-height: 3.9em;\n    color: #C3C3C3; }\n  .require-tabs-list .list .item-title {\n    color: #FFB30E; }\n  .require-tabs-list .list .item-subtitle {\n    color: #3C3C3C; }\n\n/*需求列表 end*/\n/*需求详细 start*/\n.require-info-user {\n  border-bottom: 1px solid #D7D7D7; }\n  .require-info-user .require-user-avatar {\n    width: 44px;\n    height: 44px;\n    border-radius: 50%; }\n  .require-info-user .require-user-name p {\n    line-height: 1.5;\n    height: 1.5rem;\n    overflow: hidden;\n    margin: 0; }\n  .require-info-user .require-user-tag {\n    border: 1px solid #3C3C3C;\n    padding: 0 0.625rem; }\n\n.require-info .g {\n  border-bottom: 1px solid #DDDDDD; }\n\n.require-info .border-none {\n  border: none; }\n\n.require-info .require-info-tit-l {\n  min-width: 70px; }\n\n.require-badge {\n  border-top: 1px solid #D7D7D7;\n  border-bottom: 1px solid #D7D7D7; }\n  .require-badge .badge {\n    padding-left: .1rem;\n    padding-right: .2rem;\n    min-width: 0.3rem;\n    background: #4BBCF6; }\n  .require-badge .require-badge-pl {\n    padding-left: 0.5376rem; }\n\n.border-none {\n  border: none; }\n\n.require-apply-list img {\n  height: 44px;\n  width: 44px;\n  border-radius: 50%; }\n\n.comments .comments-avatar {\n  height: 44px;\n  width: 44px;\n  border-radius: 50%; }\n\n.comments .item, .comments .item-linked > a {\n  align-items: flex-start; }\n\n.comments .item-title {\n  color: #949494; }\n\n.comments .item-subtitle {\n  color: #3C3C3C; }\n\n.comments .g {\n  color: #C3C3C3; }\n\n/*需求详细 end*/\n.tribe .t-index-list {\n  margin: 0; }\n  .tribe .t-index-list li {\n    border-color: #ddd; }\n  .tribe .t-index-list .item-media {\n    width: 60px;\n    height: 60px;\n    border: 1px solid #ddd; }\n  .tribe .t-index-list .item-main .item-title {\n    margin-bottom: 0.625rem;\n    font-weight: bold; }\n  .tribe .t-index-list .item-main .item-subtitle {\n    margin-bottom: 0.625rem;\n    color: #949494; }\n  .tribe .t-index-list .item-main .item-desc {\n    -webkit-line-clamp: 1;\n    color: #949494; }\n  .tribe .t-index-list .item-title-row > .icon-right-nav {\n    filter: alpha(opacity=0);\n    /* IE */\n    -moz-opacity: 0;\n    /* 老版Mozilla */\n    -khtml-opacity: 0;\n    /* 老版Safari */\n    opacity: 0;\n    /* 支持opacity的浏览器*/ }\n\n/*部落 详细 start*/\n.tribe-info-user {\n  border-bottom: 1px solid #D7D7D7; }\n  .tribe-info-user .item-media {\n    width: 60px;\n    height: 60px;\n    border: 1px solid #ddd; }\n  .tribe-info-user .item-main .item-title {\n    margin-bottom: 0.625rem;\n    font-weight: bold; }\n  .tribe-info-user .item-main .item-subtitle {\n    margin-bottom: 0.625rem;\n    font-weight: normal;\n    color: #949494; }\n  .tribe-info-user .item-main .item-desc {\n    font-weight: normal;\n    -webkit-line-clamp: 1;\n    color: #949494;\n    padding-right: 30px; }\n  .tribe-info-user .tribe-user-btn {\n    border: 1px solid #FFB30E;\n    padding: 0.625rem; }\n  .tribe-info-user .tirbe-info-tab {\n    text-align: center; }\n    .tribe-info-user .tirbe-info-tab a {\n      display: inline-block;\n      width: 49%; }\n    .tribe-info-user .tirbe-info-tab hr {\n      display: inline-block;\n      height: 25px;\n      margin: 0.625rem 0;\n      border-right-width: 1px;\n      vertical-align: middle; }\n\n.tribe-toTopList {\n  border: 1px solid #ddd; }\n  .tribe-toTopList ul {\n    padding: 0; }\n  .tribe-toTopList li {\n    list-style: none;\n    line-height: 26px;\n    color: #3C3C3C; }\n  .tribe-toTopList .icon-toTop:before {\n    width: 17px;\n    height: 17px;\n    background-color: #FFB30E;\n    display: inline-block;\n    margin-right: 0.625rem;\n    content: \"\\9876\";\n    line-height: 17px;\n    text-align: center;\n    color: #fff;\n    border-radius: 2px; }\n\n.tribe-topic-list .border-d7d7d7 {\n  border: 1px solid #D7D7D7; }\n\n.tribe-topic-list .home-tribe-name {\n  width: 100%;\n  height: 1.2rem;\n  overflow: hidden;\n  color: #949494; }\n\n.tribe-topic-list .home-tribe-media {\n  width: 44px;\n  height: 44px;\n  border-radius: 50%; }\n\n.tribe-topic-list .home-tribe-tag {\n  border: 1px solid #D7D7D7;\n  padding: 0 0.625rem; }\n\n.tribe-topic-list .home-tribe-item p {\n  line-height: 1.5;\n  height: 1.5rem;\n  overflow: hidden;\n  margin: 0; }\n\n.tribe-topic-list .item {\n  border: none; }\n\n.tribe-topic-list .home-tribe-desc {\n  text-overflow: ellipsis;\n  display: -webkit-box;\n  -webkit-box-orient: vertical;\n  -webkit-line-clamp: 2;\n  overflow: hidden;\n  line-height: 1.3em;\n  max-height: 2.6em; }\n\n.tribe-album .albumImg {\n  width: 115px;\n  height: 115px;\n  margin: 0 auto; }\n  .tribe-album .albumImg img {\n    width: 100%;\n    height: 100%; }\n\n.tribe-album .tribe-albumName {\n  color: #3C3C3C; }\n\n.tribe-imgcom-img {\n  border-bottom: 1px solid #ddd; }\n  .tribe-imgcom-img img {\n    width: 100%; }\n\n.tribe-topic .tribe-tribe-btn {\n  border: 1px solid #949494;\n  padding: 0.625rem; }\n\n.tribe-topic .topic-box {\n  margin: 0;\n  border-bottom: 1px solid #ddd; }\n  .tribe-topic .topic-box .topic-title {\n    color: #3C3C3C;\n    font-weight: bold; }\n  .tribe-topic .topic-box .topic-p {\n    text-indent: 2em;\n    color: #949494; }\n  .tribe-topic .topic-box .topic-img {\n    max-width: 100%;\n    text-align: center; }\n", ""]);
+	exports.push([module.id, "@charset \"UTF-8\";\n/* Amaze UI Touch Base Styles */\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n/* normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */\n/**\n * 1. Change the default font family in all browsers (opinionated).\n * 2. Prevent adjustments of font size after orientation changes in IE and iOS.\n */\nhtml {\n  font-family: sans-serif;\n  /* 1 */\n  -ms-text-size-adjust: 100%;\n  /* 2 */\n  -webkit-text-size-adjust: 100%;\n  /* 2 */ }\n\n/**\n * Remove the margin in all browsers (opinionated).\n */\nbody {\n  margin: 0; }\n\n/* HTML5 display definitions\n   ========================================================================== */\n/**\n * Add the correct display in IE 9-.\n * 1. Add the correct display in Edge, IE, and Firefox.\n * 2. Add the correct display in IE.\n */\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  /* 1 */\n  display: block; }\n\n/**\n * Add the correct display in IE 9-.\n */\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block; }\n\n/**\n * Add the correct display in iOS 4-7.\n */\naudio:not([controls]) {\n  display: none;\n  height: 0; }\n\n/**\n * Add the correct vertical alignment in Chrome, Firefox, and Opera.\n */\nprogress {\n  vertical-align: baseline; }\n\n/**\n * Add the correct display in IE 10-.\n * 1. Add the correct display in IE.\n */\ntemplate,\n[hidden] {\n  display: none; }\n\n/* Links\n   ========================================================================== */\n/**\n * 1. Remove the gray background on active links in IE 10.\n * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.\n */\na {\n  background-color: transparent;\n  /* 1 */\n  -webkit-text-decoration-skip: objects;\n  /* 2 */ }\n\n/**\n * Remove the outline on focused links when they are also active or hovered\n * in all browsers (opinionated).\n */\na:active,\na:hover {\n  outline-width: 0; }\n\n/* Text-level semantics\n   ========================================================================== */\n/**\n * 1. Remove the bottom border in Firefox 39-.\n * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.\n */\nabbr[title] {\n  border-bottom: none;\n  /* 1 */\n  text-decoration: underline;\n  /* 2 */\n  text-decoration: underline dotted;\n  /* 2 */ }\n\n/**\n * Prevent the duplicate application of `bolder` by the next rule in Safari 6.\n */\nb,\nstrong {\n  font-weight: inherit; }\n\n/**\n * Add the correct font weight in Chrome, Edge, and Safari.\n */\nb,\nstrong {\n  font-weight: bolder; }\n\n/**\n * Add the correct font style in Android 4.3-.\n */\ndfn {\n  font-style: italic; }\n\n/**\n * Correct the font size and margin on `h1` elements within `section` and\n * `article` contexts in Chrome, Firefox, and Safari.\n */\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0; }\n\n/**\n * Add the correct background and color in IE 9-.\n */\nmark {\n  background-color: #ff0;\n  color: #000; }\n\n/**\n * Add the correct font size in all browsers.\n */\nsmall {\n  font-size: 80%; }\n\n/**\n * Prevent `sub` and `sup` elements from affecting the line height in\n * all browsers.\n */\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline; }\n\nsub {\n  bottom: -0.25em; }\n\nsup {\n  top: -0.5em; }\n\n/* Embedded content\n   ========================================================================== */\n/**\n * Remove the border on images inside links in IE 10-.\n */\nimg {\n  border-style: none; }\n\n/**\n * Hide the overflow in IE.\n */\nsvg:not(:root) {\n  overflow: hidden; }\n\n/* Grouping content\n   ========================================================================== */\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  /* 1 */\n  font-size: 1em;\n  /* 2 */ }\n\n/**\n * Add the correct margin in IE 8.\n */\nfigure {\n  margin: 1em 40px; }\n\n/**\n * 1. Add the correct box sizing in Firefox.\n * 2. Show the overflow in Edge and IE.\n */\nhr {\n  box-sizing: content-box;\n  /* 1 */\n  height: 0;\n  /* 1 */\n  overflow: visible;\n  /* 2 */ }\n\n/* Forms\n   ========================================================================== */\n/**\n * 1. Change font properties to `inherit` in all browsers (opinionated).\n * 2. Remove the margin in Firefox and Safari.\n */\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  margin: 0;\n  /* 2 */ }\n\n/**\n * Restore the font weight unset by the previous rule.\n */\noptgroup {\n  font-weight: bold; }\n\n/**\n * Show the overflow in IE.\n * 1. Show the overflow in Edge.\n */\nbutton,\ninput {\n  /* 1 */\n  overflow: visible; }\n\n/**\n * Remove the inheritance of text transform in Edge, Firefox, and IE.\n * 1. Remove the inheritance of text transform in Firefox.\n */\nbutton,\nselect {\n  /* 1 */\n  text-transform: none; }\n\n/**\n * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`\n *    controls in Android 4.\n * 2. Correct the inability to style clickable types in iOS and Safari.\n */\nbutton,\nhtml [type=\"button\"],\n[type=\"reset\"],\n[type=\"submit\"] {\n  -webkit-appearance: button;\n  /* 2 */\n  cursor: pointer;\n  /* 3 */ }\n\n/**\n * Re-set default cursor for disabled elements.\n */\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default; }\n\n/**\n * Remove the inner border and padding in Firefox.\n */\nbutton::-moz-focus-inner,\n[type=\"button\"]::-moz-focus-inner,\n[type=\"reset\"]::-moz-focus-inner,\n[type=\"submit\"]::-moz-focus-inner {\n  border-style: none;\n  padding: 0; }\n\n/**\n * Restore the focus styles unset by the previous rule.\n */\nbutton:-moz-focusring,\n[type=\"button\"]:-moz-focusring,\n[type=\"reset\"]:-moz-focusring,\n[type=\"submit\"]:-moz-focusring {\n  outline: 1px dotted ButtonText; }\n\n/**\n * Change the border, margin, and padding in all browsers (opinionated).\n */\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em; }\n\n/**\n * 1. Correct the text wrapping in Edge and IE.\n * 2. Correct the color inheritance from `fieldset` elements in IE.\n * 3. Remove the padding so developers are not caught out when they zero out\n *    `fieldset` elements in all browsers.\n */\nlegend {\n  box-sizing: border-box;\n  /* 1 */\n  color: inherit;\n  /* 2 */\n  display: table;\n  /* 1 */\n  max-width: 100%;\n  /* 1 */\n  padding: 0;\n  /* 3 */\n  white-space: normal;\n  /* 1 */ }\n\ninput {\n  line-height: normal; }\n\n/**\n * Remove the default vertical scrollbar in IE.\n */\ntextarea {\n  overflow: auto; }\n\n/**\n * 1. Add the correct box sizing in IE 10-.\n * 2. Remove the padding in IE 10-.\n */\n[type=\"checkbox\"],\n[type=\"radio\"] {\n  box-sizing: border-box;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Correct the cursor style of increment and decrement buttons in Chrome.\n */\n[type=\"number\"]::-webkit-inner-spin-button,\n[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\n/**\n * 1. Correct the odd appearance in Chrome and Safari.\n * 2. Correct the outline style in Safari.\n */\n[type=\"search\"] {\n  -webkit-appearance: textfield;\n  /* 1 */\n  outline-offset: -2px;\n  /* 2 */ }\n\n/**\n * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.\n */\n[type=\"search\"]::-webkit-search-cancel-button,\n[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n/**\n * Correct the text style of placeholders in Chrome, Edge, and Safari.\n */\n::-webkit-input-placeholder {\n  color: inherit;\n  opacity: 0.54; }\n\n/**\n * 1. Correct the inability to style clickable types in iOS and Safari.\n * 2. Change font properties to `inherit` in Safari.\n */\n::-webkit-file-upload-button {\n  -webkit-appearance: button;\n  /* 1 */\n  font: inherit;\n  /* 2 */ }\n\nhtml,\nbody {\n  height: 100%;\n  overflow: hidden;\n  font-size: 100%; }\n\nhtml {\n  box-sizing: border-box; }\n\n*,\n*:before,\n*:after {\n  box-sizing: inherit; }\n\n* {\n  outline: none;\n  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);\n  -webkit-touch-callout: none;\n  background: linear-gradient(to bottom, transparent, transparent); }\n\nbody {\n  background: #f4f4f4;\n  color: #333333;\n  padding: 0;\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, \"PingFang SC\", \"Hiragino Sans GB\", \"Segoe UI\", \"Microsoft YaHei\", \"Roboto\", \"Oxygen\", \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"wenquanyi micro hei\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-weight: normal;\n  font-style: normal;\n  line-height: 1.6;\n  position: relative;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\nlabel {\n  -webkit-appearance: none; }\n\nimg {\n  max-width: 100%;\n  height: auto;\n  -ms-interpolation-mode: bicubic;\n  display: inline-block;\n  vertical-align: middle; }\n\na {\n  color: #0e90d2;\n  text-decoration: none; }\n\n#map_canvas img,\n#map_canvas embed,\n#map_canvas object,\n.map_canvas img,\n.map_canvas embed,\n.map_canvas object {\n  max-width: none !important; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\ntd,\nth {\n  padding: 0; }\n\n.fade {\n  opacity: 0;\n  transition: opacity .2s linear; }\n  .fade.in {\n    opacity: 1; }\n\n.collapse {\n  display: none; }\n  .collapse.in {\n    display: block; }\n\ntr.collapse.in {\n  display: table-row; }\n\ntbody.collapse.in {\n  display: table-row-group; }\n\n.collapsing {\n  position: relative;\n  height: 0;\n  overflow: hidden;\n  transition: height .3s ease; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\naddress,\nblockquote,\ndl,\nfieldset,\nfigure,\nhr,\nol,\np,\npre,\nul {\n  margin: 0 0 1rem; }\n  address:last-child,\n  blockquote:last-child,\n  dl:last-child,\n  fieldset:last-child,\n  figure:last-child,\n  hr:last-child,\n  ol:last-child,\n  p:last-child,\n  pre:last-child,\n  ul:last-child {\n    margin-bottom: 0; }\n\n* + address,\n* + blockquote,\n* + dl,\n* + fieldset,\n* + figure,\n* + hr,\n* + ol,\n* + p,\n* + pre,\n* + ul {\n  margin-top: 1rem; }\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-weight: bold;\n  color: #222222;\n  margin: 0 0 1rem;\n  line-height: 1.2; }\n\nh1 {\n  font-size: 1.5rem; }\n\nh2 {\n  font-size: 1.375rem; }\n\nh3 {\n  font-size: 1.25rem; }\n\nh4 {\n  font-size: 1.125rem; }\n\nh5 {\n  font-size: 1rem; }\n\nh6 {\n  font-size: 0.875rem; }\n\n* + h1,\n* + h2,\n* + h3,\n* + h4,\n* + h5,\n* + h6 {\n  margin-top: 1.5em; }\n\np {\n  font-size: 1rem;\n  line-height: 1.6; }\n\nul,\nol,\ndl {\n  padding: 0;\n  line-height: 1.6; }\n\nul,\nol {\n  padding-left: 2em; }\n  ul li ul,\n  ul li ol,\n  ol li ul,\n  ol li ol {\n    margin-bottom: 0;\n    margin-top: 0; }\n\ndl dt {\n  margin-bottom: 0.625rem;\n  font-weight: bold; }\n\ndl dd {\n  margin: 0 0 0.75rem 0;\n  font-size: 0.9375rem; }\n\nblockquote {\n  font-family: Georgia, \"Times New Roman\", Times, SimSun, serif;\n  padding: 0.625rem 0.625rem 0.625rem 0.9375rem;\n  border-left: 3px solid #ddd; }\n  blockquote cite,\n  blockquote small {\n    display: block;\n    font-size: 0.8125rem;\n    color: #555555; }\n    blockquote cite a,\n    blockquote cite a:visited,\n    blockquote small a,\n    blockquote small a:visited {\n      color: #555555; }\n\nhr {\n  border: solid #ddd;\n  border-width: 1px 0 0;\n  clear: both;\n  margin: 1.25rem 0;\n  height: 0; }\n\n.responsive-img {\n  max-width: 100%;\n  height: auto;\n  display: block; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n@keyframes amt-spin {\n  to {\n    transform: rotate(360deg); } }\n\n@keyframes amt-fade-in {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n\n@keyframes amt-fade-out {\n  to {\n    opacity: 0; } }\n\n@keyframes amt-slide-top {\n  0% {\n    opacity: 0;\n    transform: translateY(-100%); }\n  100% {\n    opacity: 1;\n    transform: translateY(0); } }\n\n@keyframes amt-slide-bottom {\n  0% {\n    opacity: 0;\n    transform: translateY(100%); }\n  100% {\n    opacity: 1;\n    transform: translateY(0); } }\n\n@keyframes amt-slide-left {\n  0% {\n    opacity: 0;\n    transform: translateX(-100%); }\n  100% {\n    opacity: 1;\n    transform: translateX(0); } }\n\n@keyframes amt-slide-top-fixed {\n  0% {\n    opacity: 0;\n    transform: translateY(-10px); }\n  100% {\n    opacity: 1;\n    transform: translateY(0); } }\n\n@keyframes amt-slide-bottom-fixed {\n  0% {\n    opacity: 0;\n    transform: translateY(10px); }\n  100% {\n    opacity: 1;\n    transform: translateY(0); } }\n\n@keyframes amt-shake {\n  0%, 100% {\n    transform: translateX(0); }\n  10% {\n    transform: translateX(-9px); }\n  20% {\n    transform: translateX(8px); }\n  30% {\n    transform: translateX(-7px); }\n  40% {\n    transform: translateX(6px); }\n  50% {\n    transform: translateX(-5px); }\n  60% {\n    transform: translateX(4px); }\n  70% {\n    transform: translateX(-3px); }\n  80% {\n    transform: translateX(2px); }\n  90% {\n    transform: translateX(-1px); } }\n\n@keyframes amt-scale-up {\n  0% {\n    opacity: 0;\n    transform: scale(0.2); }\n  100% {\n    opacity: 1;\n    transform: scale(1); } }\n\n@keyframes amt-scale-down {\n  0% {\n    opacity: 0;\n    transform: scale(1.8); }\n  100% {\n    opacity: 1;\n    transform: scale(1); } }\n\n[class*=\"animation-\"] {\n  animation-duration: .3s;\n  animation-timing-function: ease-out;\n  animation-fill-mode: both; }\n\n.animation-spin {\n  animation-name: amt-spin; }\n\n.animation-fade-in {\n  animation-name: amt-fade-in; }\n\n.animation-fade-out {\n  animation-name: amt-fade-out; }\n\n.animation-slide-top {\n  animation-name: amt-slide-top; }\n\n.animation-slide-bottom {\n  animation-name: amt-slide-bottom; }\n\n.animation-slide-left {\n  animation-name: amt-slide-left; }\n\n.animation-slide-right {\n  animation-name: amt-slide-right; }\n\n.animation-slide-top-fixed {\n  animation-name: amt-slide-top-fixed; }\n\n.animation-slide-bottom-fixed {\n  animation-name: amt-slide-bottom-fixed; }\n\n.animation-scale-up {\n  animation-name: amt-scale-up; }\n\n.animation-scale-down {\n  animation-name: amt-scale-down; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n/**\n * Fill Container\n * 1. on its own - fill available vertical space\n * 2. as a child - flex to fill vertical space\n * 3. fill available vertical space without resorting to \"height: 100%\", which\n\t *    yields undesirable results\n */\n.container-fill {\n  height: 100%; }\n  .container-fill > .container-fill {\n    flex: 1 1 0;\n    position: relative; }\n\n/**\n * Container Layout\n * 1. create a flexible layout, either `column` or `row`\n * 2. flex-column elements collapse horizontally, so we stretch them out again\n */\n.container-column,\n.container-row {\n  display: flex;\n  max-height: 100%;\n  width: 100%; }\n  .container-column > .container-fill,\n  .container-row > .container-fill {\n    flex: 1 1 0;\n    position: relative; }\n\n.container-column {\n  flex-direction: column; }\n\n.container-row {\n  flex-direction: row;\n  height: auto; }\n  .container-row > .container-fill {\n    height: auto;\n    width: auto; }\n\n.container-align-end {\n  align-items: flex-end; }\n\n.container-align-center {\n  align-items: center; }\n  .container-direction-column > .container-align-center {\n    text-align: center; }\n\n.container-align-start {\n  align-items: flex-start; }\n\n.container-justified {\n  justify-content: space-around; }\n\n.container-justify-end {\n  justify-content: flex-end; }\n\n.container-justify-center {\n  justify-content: center; }\n\n.container-justify-start {\n  justify-content: flex-start; }\n\n.container-scrollable {\n  max-height: 100%;\n  overflow-x: hidden;\n  overflow-y: scroll;\n  -webkit-overflow-scrolling: touch; }\n  .container-scrollable:before, .container-scrollable:after {\n    content: \"\";\n    height: 1px;\n    position: absolute;\n    width: 1px; }\n  .container-scrollable:before {\n    bottom: -1px; }\n  .container-scrollable:after {\n    top: -1px; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.g {\n  display: flex;\n  position: relative;\n  overflow: hidden;\n  backface-visibility: hidden;\n  align-items: stretch; }\n  .g .g {\n    margin-left: -0.625rem;\n    margin-right: -0.625rem; }\n  .g.g-collapse .col {\n    padding: 0; }\n\n[class*=\"g-avg-\"] {\n  flex-wrap: wrap;\n  overflow: visible;\n  list-style: none; }\n  [class*=\"g-avg-\"] > .col,\n  [class*=\"g-avg-\"] > li,\n  [class*=\"g-avg-\"] > div {\n    padding: 0.625rem; }\n    .fb-legacy-flexbox [class*=\"g-avg-\"] > .col, .fb-legacy-flexbox\n    [class*=\"g-avg-\"] > li, .fb-legacy-flexbox\n    [class*=\"g-avg-\"] > div {\n      display: inline-block; }\n\n.g-wrap {\n  flex-wrap: wrap; }\n\n.g-wrap-reverse {\n  flex-wrap: wrap-reverse; }\n\n.g-left {\n  justify-content: flex-start; }\n\n.g-right {\n  justify-content: flex-end; }\n\n.g-center {\n  justify-content: center; }\n\n.g-between {\n  justify-content: space-between; }\n\n.g-around {\n  justify-content: space-around; }\n\n.col {\n  flex: 1 1 auto;\n  padding-left: 0.625rem;\n  padding-right: 0.625rem; }\n\n.col-1 {\n  flex: 0 0 16.66667%;\n  max-width: 16.66667%; }\n  .fb-legacy-flexbox .col-1 {\n    width: 16.66667%; }\n\n.col-offset-1 {\n  margin-left: 16.66667%; }\n\n.order-1 {\n  order: 1; }\n\n.g-avg-1 > .col, .g-avg-1 > li, .g-avg-1 > div {\n  flex: 0 0 100%;\n  max-width: 100%; }\n  .fb-legacy-flexbox .g-avg-1 > .col, .fb-legacy-flexbox .g-avg-1 > li, .fb-legacy-flexbox .g-avg-1 > div {\n    width: 100%; }\n\n.g-avg-1.g-bordered > .col:nth-of-type(1n):before, .g-avg-1 > li:nth-of-type(1n):before, .g-avg-1 > div:nth-of-type(1n):before {\n  display: none; }\n\n.col-2 {\n  flex: 0 0 33.33333%;\n  max-width: 33.33333%; }\n  .fb-legacy-flexbox .col-2 {\n    width: 33.33333%; }\n\n.col-offset-2 {\n  margin-left: 33.33333%; }\n\n.order-2 {\n  order: 2; }\n\n.g-avg-2 > .col, .g-avg-2 > li, .g-avg-2 > div {\n  flex: 0 0 50%;\n  max-width: 50%; }\n  .fb-legacy-flexbox .g-avg-2 > .col, .fb-legacy-flexbox .g-avg-2 > li, .fb-legacy-flexbox .g-avg-2 > div {\n    width: 50%; }\n\n.g-avg-2.g-bordered > .col:nth-of-type(2n):before, .g-avg-2 > li:nth-of-type(2n):before, .g-avg-2 > div:nth-of-type(2n):before {\n  display: none; }\n\n.col-3 {\n  flex: 0 0 50%;\n  max-width: 50%; }\n  .fb-legacy-flexbox .col-3 {\n    width: 50%; }\n\n.col-offset-3 {\n  margin-left: 50%; }\n\n.order-3 {\n  order: 3; }\n\n.g-avg-3 > .col, .g-avg-3 > li, .g-avg-3 > div {\n  flex: 0 0 33.33333%;\n  max-width: 33.33333%; }\n  .fb-legacy-flexbox .g-avg-3 > .col, .fb-legacy-flexbox .g-avg-3 > li, .fb-legacy-flexbox .g-avg-3 > div {\n    width: 33.33333%; }\n\n.g-avg-3.g-bordered > .col:nth-of-type(3n):before, .g-avg-3 > li:nth-of-type(3n):before, .g-avg-3 > div:nth-of-type(3n):before {\n  display: none; }\n\n.col-4 {\n  flex: 0 0 66.66667%;\n  max-width: 66.66667%; }\n  .fb-legacy-flexbox .col-4 {\n    width: 66.66667%; }\n\n.col-offset-4 {\n  margin-left: 66.66667%; }\n\n.order-4 {\n  order: 4; }\n\n.g-avg-4 > .col, .g-avg-4 > li, .g-avg-4 > div {\n  flex: 0 0 25%;\n  max-width: 25%; }\n  .fb-legacy-flexbox .g-avg-4 > .col, .fb-legacy-flexbox .g-avg-4 > li, .fb-legacy-flexbox .g-avg-4 > div {\n    width: 25%; }\n\n.g-avg-4.g-bordered > .col:nth-of-type(4n):before, .g-avg-4 > li:nth-of-type(4n):before, .g-avg-4 > div:nth-of-type(4n):before {\n  display: none; }\n\n.col-5 {\n  flex: 0 0 83.33333%;\n  max-width: 83.33333%; }\n  .fb-legacy-flexbox .col-5 {\n    width: 83.33333%; }\n\n.col-offset-5 {\n  margin-left: 83.33333%; }\n\n.order-5 {\n  order: 5; }\n\n.g-avg-5 > .col, .g-avg-5 > li, .g-avg-5 > div {\n  flex: 0 0 20%;\n  max-width: 20%; }\n  .fb-legacy-flexbox .g-avg-5 > .col, .fb-legacy-flexbox .g-avg-5 > li, .fb-legacy-flexbox .g-avg-5 > div {\n    width: 20%; }\n\n.g-avg-5.g-bordered > .col:nth-of-type(5n):before, .g-avg-5 > li:nth-of-type(5n):before, .g-avg-5 > div:nth-of-type(5n):before {\n  display: none; }\n\n.col-6 {\n  flex: 0 0 100%;\n  max-width: 100%; }\n  .fb-legacy-flexbox .col-6 {\n    width: 100%; }\n\n.col-offset-6 {\n  margin-left: 100%; }\n\n.order-6 {\n  order: 6; }\n\n.g-avg-6 > .col, .g-avg-6 > li, .g-avg-6 > div {\n  flex: 0 0 16.66667%;\n  max-width: 16.66667%; }\n  .fb-legacy-flexbox .g-avg-6 > .col, .fb-legacy-flexbox .g-avg-6 > li, .fb-legacy-flexbox .g-avg-6 > div {\n    width: 16.66667%; }\n\n.g-avg-6.g-bordered > .col:nth-of-type(6n):before, .g-avg-6 > li:nth-of-type(6n):before, .g-avg-6 > div:nth-of-type(6n):before {\n  display: none; }\n\n.col-shrink {\n  flex: 0 0 auto;\n  overflow: visible; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.group {\n  margin: 1.875rem 0; }\n  .group .list {\n    margin: 0; }\n\n.group-body {\n  display: block;\n  padding: 0.9375rem;\n  background: #fff; }\n  .group-no-padded .group-body {\n    padding: 0; }\n\n.group-header,\n.group-footer {\n  padding: 0.3125rem 0.9375rem;\n  color: #6d6d72;\n  font-size: 0.875rem; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.badge {\n  line-height: 1;\n  white-space: nowrap;\n  display: inline-block;\n  cursor: default;\n  min-width: 1.5rem;\n  font-size: 0.8rem;\n  padding: 0.33333rem 0.5rem;\n  background: #e6e6e6;\n  border-radius: 0;\n  color: #333; }\n\n.badge-primary {\n  background: #0e90d2;\n  border-radius: 0;\n  color: #fff; }\n\n.badge-secondary {\n  background: #3bb4f2;\n  border-radius: 0;\n  color: #fff; }\n\n.badge-success {\n  background: #5eb95e;\n  border-radius: 0;\n  color: #fff; }\n\n.badge-warning {\n  background: #F37B1D;\n  border-radius: 0;\n  color: #fff; }\n\n.badge-alert {\n  background: #dd514c;\n  border-radius: 0;\n  color: #fff; }\n\n.badge-dark {\n  background: #393939;\n  border-radius: 0;\n  color: #fff; }\n\n.badge-radius {\n  border-radius: 4px; }\n\n.badge-rounded {\n  border-radius: 1000px; }\n\n.doc-content .badge {\n  margin: 5px; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.btn {\n  display: inline-block;\n  border: 0;\n  text-align: center;\n  line-height: 1;\n  cursor: pointer;\n  -webkit-appearance: none;\n  -webkit-font-smoothing: antialiased;\n  transition: .25s ease-out;\n  vertical-align: middle;\n  padding: 0.75em 1em;\n  margin: 0 1rem 1rem 0;\n  border-radius: 0;\n  font-size: 1rem;\n  background: #e6e6e6;\n  border: 1px solid #e6e6e6;\n  color: #333; }\n  .btn:only-child {\n    margin-bottom: 0; }\n  .btn:focus {\n    outline: none; }\n  .btn-group .btn {\n    border-color: #c4c4c4; }\n  .btn:hover, .btn:active, .btn.active {\n    background: #c4c4c4;\n    border-color: #c4c4c4;\n    color: #333; }\n  .btn[disabled], .btn.disabled {\n    opacity: 0.5;\n    cursor: not-allowed;\n    pointer-events: none; }\n\n.btn-block {\n  display: block;\n  width: 100%;\n  margin-left: 0;\n  margin-right: 0; }\n\n.btn-primary {\n  background: #0e90d2;\n  border: 1px solid #0e90d2;\n  color: #fff; }\n  .btn-group .btn-primary {\n    border-color: #0c7ab3; }\n  .btn-primary:hover, .btn-primary:active, .btn-primary.active {\n    background: #0c7ab3;\n    border-color: #0c7ab3;\n    color: #fff; }\n\n.btn-secondary {\n  background: #3bb4f2;\n  border: 1px solid #3bb4f2;\n  color: #fff; }\n  .btn-group .btn-secondary {\n    border-color: #10a4ef; }\n  .btn-secondary:hover, .btn-secondary:active, .btn-secondary.active {\n    background: #10a4ef;\n    border-color: #10a4ef;\n    color: #fff; }\n\n.btn-success {\n  background: #5eb95e;\n  border: 1px solid #5eb95e;\n  color: #fff; }\n  .btn-group .btn-success {\n    border-color: #48a548; }\n  .btn-success:hover, .btn-success:active, .btn-success.active {\n    background: #48a548;\n    border-color: #48a548;\n    color: #fff; }\n\n.btn-warning {\n  background: #F37B1D;\n  border: 1px solid #F37B1D;\n  color: #fff; }\n  .btn-group .btn-warning {\n    border-color: #dc670c; }\n  .btn-warning:hover, .btn-warning:active, .btn-warning.active {\n    background: #dc670c;\n    border-color: #dc670c;\n    color: #fff; }\n\n.btn-alert {\n  background: #dd514c;\n  border: 1px solid #dd514c;\n  color: #fff; }\n  .btn-group .btn-alert {\n    border-color: #d42e28; }\n  .btn-alert:hover, .btn-alert:active, .btn-alert.active {\n    background: #d42e28;\n    border-color: #d42e28;\n    color: #fff; }\n\n.btn-dark {\n  background: #393939;\n  border: 1px solid #393939;\n  color: #fff; }\n  .btn-group .btn-dark {\n    border-color: #303030; }\n  .btn-dark:hover, .btn-dark:active, .btn-dark.active {\n    background: #303030;\n    border-color: #303030;\n    color: #fff; }\n\n.btn-xs {\n  font-size: 0.75rem; }\n\n.btn-sm {\n  font-size: 0.875rem; }\n\n.btn-lg {\n  font-size: 1.125rem; }\n\n.btn-xl {\n  font-size: 1.25rem; }\n\n.btn-hollow {\n  background: transparent;\n  border: 1px solid #888888;\n  color: #888888; }\n  .btn-hollow:active, .btn-hollow.active {\n    background: #888888;\n    color: #fff; }\n  .btn-hollow.btn-primary {\n    border: 1px solid #0e90d2;\n    color: #0e90d2; }\n    .btn-hollow.btn-primary:active, .btn-hollow.btn-primary.active {\n      background: #0e90d2;\n      color: #fff; }\n  .btn-hollow.btn-secondary {\n    border: 1px solid #3bb4f2;\n    color: #3bb4f2; }\n    .btn-hollow.btn-secondary:active, .btn-hollow.btn-secondary.active {\n      background: #3bb4f2;\n      color: #fff; }\n  .btn-hollow.btn-success {\n    border: 1px solid #5eb95e;\n    color: #5eb95e; }\n    .btn-hollow.btn-success:active, .btn-hollow.btn-success.active {\n      background: #5eb95e;\n      color: #fff; }\n  .btn-hollow.btn-warning {\n    border: 1px solid #F37B1D;\n    color: #F37B1D; }\n    .btn-hollow.btn-warning:active, .btn-hollow.btn-warning.active {\n      background: #F37B1D;\n      color: #fff; }\n  .btn-hollow.btn-alert {\n    border: 1px solid #dd514c;\n    color: #dd514c; }\n    .btn-hollow.btn-alert:active, .btn-hollow.btn-alert.active {\n      background: #dd514c;\n      color: #fff; }\n  .btn-hollow.btn-dark {\n    border: 1px solid #393939;\n    color: #393939; }\n    .btn-hollow.btn-dark:active, .btn-hollow.btn-dark.active {\n      background: #393939;\n      color: #fff; }\n\n.btn-radius {\n  border-radius: 4px; }\n\n.btn-rounded {\n  border-radius: 1000px; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.btn-group {\n  margin: 0 0 1rem;\n  list-style-type: none;\n  display: inline-flex;\n  overflow: hidden;\n  font-size: 1rem; }\n  .btn-group > .btn {\n    flex: 0 0 auto;\n    position: relative;\n    margin: 0; }\n    .btn-group > .btn:hover, .btn-group > .btn:focus, .btn-group > .btn:active, .btn-group > .btn.active {\n      z-index: 2; }\n\n.btn-group .btn + .btn,\n.btn-group .btn + .btn-group,\n.btn-group .btn-group + .btn,\n.btn-group .btn-group + .btn-group {\n  margin-left: -1px; }\n\n.btn-toolbar {\n  display: flex;\n  margin-left: -0.3125rem; }\n  .btn-toolbar .btn-group {\n    flex: 0 0 auto; }\n  .btn-toolbar > .btn,\n  .btn-toolbar > .btn-group {\n    margin-left: -0.3125rem; }\n\n.btn-group-stacked {\n  display: inline-block; }\n  .btn-group-stacked > .btn,\n  .btn-group-stacked > .btn-group,\n  .btn-group-stacked > .btn-group > .btn {\n    flex: none;\n    display: block;\n    width: 100%;\n    max-width: 100%; }\n  .btn-group-stacked > .btn + .btn,\n  .btn-group-stacked > .btn + .btn-group,\n  .btn-group-stacked > .btn-group + .btnbtn,\n  .btn-group-stacked > .btn-group + .btn-group {\n    margin-top: -1px;\n    margin-left: 0; }\n\n.btn-group-justify {\n  display: flex;\n  width: 100%; }\n  .btn-group-justify > .btn,\n  .btn-group-justify > .btn-group {\n    display: block;\n    flex: 1; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n@font-face {\n  font-family: Ratchicons;\n  font-weight: normal;\n  font-style: normal;\n  src: url(" + __webpack_require__(328) + ") format(\"woff2\"), url(" + __webpack_require__(329) + ") format(\"woff\"), url(" + __webpack_require__(330) + ") format(\"truetype\");; }\n\n.icon {\n  display: inline-block;\n  font-family: Ratchicons, sans-serif;\n  font-size: 24px;\n  line-height: 1;\n  text-decoration: none;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\n.btn .icon {\n  font-size: inherit; }\n\n.icon-back:before {\n  content: \"\\E80A\"; }\n\n.icon-bars:before {\n  content: \"\\E80E\"; }\n\n.icon-caret:before {\n  content: \"\\E80F\"; }\n\n.icon-check:before {\n  content: \"\\E810\"; }\n\n.icon-close:before {\n  content: \"\\E811\"; }\n\n.icon-code:before {\n  content: \"\\E812\"; }\n\n.icon-compose:before {\n  content: \"\\E813\"; }\n\n.icon-download:before {\n  content: \"\\E815\"; }\n\n.icon-edit:before {\n  content: \"\\E829\"; }\n\n.icon-forward:before {\n  content: \"\\E82A\"; }\n\n.icon-gear:before {\n  content: \"\\E821\"; }\n\n.icon-home:before {\n  content: \"\\E82B\"; }\n\n.icon-info:before {\n  content: \"\\E82C\"; }\n\n.icon-list:before {\n  content: \"\\E823\"; }\n\n.icon-more-vertical:before {\n  content: \"\\E82E\"; }\n\n.icon-more:before {\n  content: \"\\E82F\"; }\n\n.icon-pages:before {\n  content: \"\\E824\"; }\n\n.icon-pause:before {\n  content: \"\\E830\"; }\n\n.icon-person:before {\n  content: \"\\E832\"; }\n\n.icon-play:before {\n  content: \"\\E816\"; }\n\n.icon-plus:before {\n  content: \"\\E817\"; }\n\n.icon-refresh:before {\n  content: \"\\E825\"; }\n\n.icon-search:before {\n  content: \"\\E819\"; }\n\n.icon-share:before {\n  content: \"\\E81A\"; }\n\n.icon-sound:before {\n  content: \"\\E827\"; }\n\n.icon-sound2:before {\n  content: \"\\E828\"; }\n\n.icon-sound3:before {\n  content: \"\\E80B\"; }\n\n.icon-sound4:before {\n  content: \"\\E80C\"; }\n\n.icon-star-filled:before {\n  content: \"\\E81B\"; }\n\n.icon-star:before {\n  content: \"\\E81C\"; }\n\n.icon-stop:before {\n  content: \"\\E81D\"; }\n\n.icon-trash:before {\n  content: \"\\E81E\"; }\n\n.icon-up-nav:before {\n  content: \"\\E81F\"; }\n\n.icon-up:before {\n  content: \"\\E80D\"; }\n\n.icon-right-nav:before {\n  content: \"\\E818\"; }\n\n.icon-right:before {\n  content: \"\\E826\"; }\n\n.icon-down-nav:before {\n  content: \"\\E814\"; }\n\n.icon-down:before {\n  content: \"\\E820\"; }\n\n.icon-left-nav:before {\n  content: \"\\E82D\"; }\n\n.icon-left:before {\n  content: \"\\E822   \"; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\ninput[type=\"text\"],\ninput[type=\"password\"],\ninput[type=\"date\"],\ninput[type=\"datetime\"],\ninput[type=\"datetime-local\"],\ninput[type=\"month\"],\ninput[type=\"week\"],\ninput[type=\"time\"],\ninput[type=\"email\"],\ninput[type=\"tel\"],\ninput[type=\"url\"],\ninput[type=\"number\"],\ninput[type=\"search\"],\ninput[type=\"color\"],\ntextarea {\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  display: block;\n  box-sizing: border-box;\n  width: 100%;\n  padding: 0.75rem 0.5rem;\n  margin-bottom: 1rem;\n  border: 1px solid #ccc;\n  border-radius: 0;\n  outline: 0;\n  background: #fff;\n  color: #222222;\n  font-size: 1rem;\n  -webkit-font-smoothing: antialiased;\n  vertical-align: middle;\n  transition: border .15s; }\n  input[type=\"text\"]:hover,\n  input[type=\"password\"]:hover,\n  input[type=\"date\"]:hover,\n  input[type=\"datetime\"]:hover,\n  input[type=\"datetime-local\"]:hover,\n  input[type=\"month\"]:hover,\n  input[type=\"week\"]:hover,\n  input[type=\"time\"]:hover,\n  input[type=\"email\"]:hover,\n  input[type=\"tel\"]:hover,\n  input[type=\"url\"]:hover,\n  input[type=\"number\"]:hover,\n  input[type=\"search\"]:hover,\n  input[type=\"color\"]:hover,\n  textarea:hover {\n    border-color: #bbb;\n    background: #fff;\n    color: #222222; }\n  input[type=\"text\"]:focus,\n  input[type=\"password\"]:focus,\n  input[type=\"date\"]:focus,\n  input[type=\"datetime\"]:focus,\n  input[type=\"datetime-local\"]:focus,\n  input[type=\"month\"]:focus,\n  input[type=\"week\"]:focus,\n  input[type=\"time\"]:focus,\n  input[type=\"email\"]:focus,\n  input[type=\"tel\"]:focus,\n  input[type=\"url\"]:focus,\n  input[type=\"number\"]:focus,\n  input[type=\"search\"]:focus,\n  input[type=\"color\"]:focus,\n  textarea:focus {\n    outline: 0;\n    border-color: #999;\n    background: #fff;\n    color: #222222; }\n\ninput[type=\"date\"],\ninput[type=\"datetime\"],\ninput[type=\"datetime-local\"] {\n  height: 2.625rem; }\n\nlabel {\n  display: block;\n  font-size: 1rem;\n  margin-bottom: 0.5rem;\n  color: #333; }\n  label > input,\n  label > select,\n  label > textarea {\n    margin-top: 0.5rem; }\n  label .field-icon {\n    display: none; }\n\ninput.disabled, input[disabled], input[readonly],\nfieldset[disabled] input,\ntextarea.disabled,\ntextarea[disabled],\ntextarea[readonly],\nfieldset[disabled]\ntextarea {\n  cursor: not-allowed; }\n  input.disabled, input.disabled:hover, input[disabled], input[disabled]:hover, input[readonly], input[readonly]:hover,\n  fieldset[disabled] input,\n  fieldset[disabled] input:hover,\n  textarea.disabled,\n  textarea.disabled:hover,\n  textarea[disabled],\n  textarea[disabled]:hover,\n  textarea[readonly],\n  textarea[readonly]:hover,\n  fieldset[disabled]\n  textarea,\n  fieldset[disabled]\n  textarea:hover {\n    background-color: #f2f2f2; }\n\n.form-set {\n  margin-bottom: 0.9375rem; }\n  .form-set > input {\n    position: relative;\n    top: -1px;\n    border-radius: 0 !important; }\n    .form-set > input:not(:last-of-type) {\n      margin-bottom: 0; }\n    .form-set > input:focus {\n      z-index: 2; }\n    .form-set > input:first-child {\n      top: 1px; }\n    .form-set > input:last-child {\n      top: -2px; }\n\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  -webkit-appearance: none;\n  background: #0e90d2; }\n\nselect {\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  display: block;\n  width: 100%;\n  padding: 0.75rem 0.5rem;\n  margin: 0 0 0.9375rem 0;\n  font-size: 1rem;\n  line-height: normal;\n  color: #222222;\n  border-radius: 0;\n  border: 1px solid #ccc;\n  background: #fafafa url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20version%3D%221.1%22%20width%3D%2232%22%20height%3D%2220%22%20viewBox%3D%220%200%2032%2020%22%3E%3Cpolygon%20points%3D%220%2C0%2032%2C0%2016%2C20%22%20style%3D%22fill%3A%20#222222%22%3E%3C/polygon%3E%3C/svg%3E\") right 10px center no-repeat;\n  background-size: 8px 8px;\n  padding-right: 1.625rem; }\n  select:hover {\n    background-color: #f0f0f0; }\n  select:focus {\n    outline: 0; }\n  select::-ms-expand {\n    display: none; }\n\ntextarea {\n  height: auto;\n  width: 100%;\n  min-height: 5rem;\n  resize: vertical; }\n\n.field-group {\n  display: flex;\n  flex-flow: row nowrap;\n  align-items: stretch;\n  margin-bottom: 1rem; }\n  .field-group > input,\n  .field-group > select {\n    flex: 1;\n    margin: 0; }\n  .field-group > .btn,\n  .field-group .field-group-label {\n    display: flex;\n    align-items: center;\n    flex: 0 0 auto;\n    margin: 0;\n    padding-top: 0;\n    padding-bottom: 0;\n    border-radius: 0; }\n    .field-group > .btn:first-child,\n    .field-group .field-group-label:first-child {\n      border-right: 0; }\n    .field-group > .btn:last-child,\n    .field-group .field-group-label:last-child {\n      border-left: 0; }\n  .field-group > .btn {\n    border-color: #ccc; }\n\n.field-group-label {\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n  border: 1px solid #ccc;\n  background: #eee;\n  color: #333; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\ninput[type=\"range\"] {\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  display: block;\n  width: 100%;\n  height: auto;\n  cursor: pointer;\n  margin-top: 0.25rem;\n  margin-bottom: 0.25rem;\n  border: 0;\n  line-height: 1; }\n  input[type=\"range\"]:focus {\n    outline: 0; }\n  input[type=\"range\"]::-webkit-slider-runnable-track {\n    height: 1rem;\n    background: #ddd; }\n  input[type=\"range\"]::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    background: #0e90d2;\n    width: 1.5rem;\n    height: 1.5rem;\n    margin-top: -0.25rem;\n    border: none; }\n  input[type=\"range\"]::-moz-range-track {\n    -moz-appearance: none;\n    height: 1rem;\n    background: #ccc; }\n  input[type=\"range\"]::-moz-range-thumb {\n    -moz-appearance: none;\n    background: #0e90d2;\n    width: 1.5rem;\n    height: 1.5rem;\n    margin-top: -0.25rem; }\n  input[type=\"range\"]::-ms-track {\n    height: 1rem;\n    background: #ddd;\n    color: transparent;\n    border: 0;\n    overflow: visible;\n    border-top: 0.25rem solid #f4f4f4;\n    border-bottom: 0.25rem solid #f4f4f4; }\n  input[type=\"range\"]::-ms-thumb {\n    background: #0e90d2;\n    width: 1.5rem;\n    height: 1.5rem;\n    border: 0; }\n  input[type=\"range\"]::-ms-fill-lower, input[type=\"range\"]::-ms-fill-upper {\n    background: #ddd; }\n  .field-container input[type=\"range\"] {\n    margin-top: 0.75rem;\n    margin-bottom: 1.25rem; }\n\noutput {\n  line-height: 1.5rem;\n  vertical-align: middle;\n  margin-left: 0.5em; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.card-header, .card-footer {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  min-height: 2.75rem;\n  padding: 0.625rem 0.9375rem; }\n\n.card {\n  margin: 0.625rem 0.9375rem;\n  border-radius: 1px;\n  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);\n  background: #fff;\n  color: #333; }\n\n.card-header {\n  border-bottom: 1px solid #eeeeee; }\n\n.card-cover {\n  background-size: cover;\n  background-position: center;\n  min-height: 10rem;\n  color: #f2f2f2; }\n  .card-cover.card-header {\n    align-items: flex-end; }\n  .card-cover .card-title {\n    color: inherit; }\n\n.card-title {\n  font-size: 1rem;\n  margin: 0; }\n\n.card-body {\n  padding: 1.25rem 0.9375rem;\n  line-height: 1.6; }\n\n.card-footer {\n  border-top: 1px solid #eee;\n  font-size: 0.875rem;\n  color: #888888; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.accordion {\n  margin: 0.9375rem 0;\n  border-top: 1px solid #eee;\n  background: #fff; }\n  .card-body .accordion {\n    border-top: none; }\n    .card-body .accordion .accordion-item:last-child {\n      border-bottom: none; }\n\n.accordion-item {\n  margin: 0;\n  border-bottom: 1px solid #eee; }\n  .accordion-item.active .accordion-icon {\n    transform: rotate(90deg); }\n\n.accordion-title {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin: 0;\n  padding: 0.625rem 0.9375rem;\n  font-weight: normal;\n  cursor: pointer; }\n  .accordion-title:active {\n    background: #eeeeee; }\n  .accordion-item.disabled .accordion-title {\n    cursor: default;\n    pointer-events: none; }\n  .accordion-title .accordion-icon {\n    display: block;\n    font-size: 1.25rem;\n    color: rgba(136, 136, 136, 0.45);\n    transform: rotate(0deg);\n    transition: transform .3s; }\n\n.accordion-body {\n  margin: 0 !important;\n  padding: 0 !important;\n  border: none !important; }\n\n.accordion-content {\n  padding: 0 0.9375rem 0.625rem;\n  font-size: 0.9375rem;\n  color: #555555; }\n\n.accordion-inset {\n  margin-left: 0.9375rem;\n  margin-right: 0.9375rem; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.item, .item-linked > a, .item-main, .item-title-row {\n  display: flex;\n  justify-content: space-between;\n  align-items: center; }\n\n.list {\n  margin: 1.875rem 0;\n  padding: 0;\n  list-style: none;\n  background: #fff; }\n\n.item {\n  padding: 0.625rem 0.9375rem;\n  min-height: 2.75rem;\n  margin-bottom: -1px;\n  border: 1px solid #e6e6e6;\n  border-width: 1px 0; }\n  .card-body .item:first-child {\n    border-top: none; }\n  .card-body .item:last-child {\n    border-bottom: none; }\n\n.item-header {\n  min-height: 0;\n  padding: 0.1875rem 0.9375rem;\n  border-top: 1px solid #e6e6e6;\n  background: #f7f7f7;\n  color: #888888; }\n\n.item-linked {\n  padding: 0; }\n  .item-linked > a {\n    width: 100%;\n    padding: 0.625rem 0.46875rem 0.625rem 0.9375rem;\n    color: #222222; }\n    .item-linked > a:active {\n      background: #eeeeee; }\n\n.item-main {\n  flex: 1; }\n\n.item-title-row {\n  flex: 1; }\n  .item-title-row ~ [class*=\"item-\"] {\n    margin-top: 0.3125rem; }\n\n.item-title {\n  flex: 1;\n  margin: 0;\n  font-size: 1.0625rem;\n  font-weight: 500; }\n\n.item-icon {\n  color: rgba(136, 136, 136, 0.45);\n  font-size: 1.25rem; }\n\n.item-after {\n  color: #888888;\n  margin-left: 0.3125rem; }\n  .item-after + .icon {\n    margin-left: 0.1875rem; }\n\n.item-subtitle {\n  color: #555555; }\n\n.item-desc {\n  font-size: 0.875rem;\n  color: #888888;\n  text-overflow: ellipsis;\n  display: -webkit-box;\n  -webkit-box-orient: vertical;\n  -webkit-line-clamp: 2;\n  overflow: hidden;\n  line-height: 1.3em;\n  max-height: 2.6em; }\n\n.item-content .item-main {\n  display: block; }\n\n.item-media + .item-main {\n  margin-left: 0.625rem; }\n\n.item-input, .item-checkbox,\n.item-radio {\n  border-color: #ddd;\n  padding-top: 0;\n  padding-bottom: 0; }\n  .item-input .field-container, .item-checkbox .field-container,\n  .item-radio .field-container {\n    display: flex;\n    align-items: center;\n    flex: 1;\n    margin: 0; }\n\n.item-input .field-label {\n  display: block;\n  width: 35%; }\n\n.item-input input,\n.item-input textarea {\n  flex: 1; }\n  .item-input input, .item-input input:hover, .item-input input:focus,\n  .item-input textarea,\n  .item-input textarea:hover,\n  .item-input textarea:focus {\n    margin: 0;\n    padding: 0.8125rem 0;\n    border: none; }\n\n.item-checkbox,\n.item-radio {\n  padding: 0; }\n  .item-checkbox .field-container,\n  .item-radio .field-container {\n    padding: 0 0.9375rem; }\n    .item-checkbox .field-container:active,\n    .item-radio .field-container:active {\n      background: #eeeeee; }\n  .item-checkbox .field-label,\n  .item-radio .field-label {\n    display: block;\n    flex: 1;\n    padding: 0.8125rem 0;\n    line-height: normal; }\n  .item-checkbox input,\n  .item-radio input {\n    display: none; }\n    .item-checkbox input + .field-icon,\n    .item-radio input + .field-icon {\n      display: none;\n      overflow: hidden;\n      border-radius: 0.625rem;\n      color: #0e90d2;\n      font-size: 1.25rem; }\n    .item-checkbox input:checked + .field-icon,\n    .item-radio input:checked + .field-icon {\n      display: block; }\n\n.item-checkbox .field-icon {\n  background: #0e90d2;\n  color: #fff !important; }\n\n.list-inset {\n  margin-left: 0.9375rem;\n  margin-right: 0.9375rem; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.loader {\n  display: inline-block;\n  text-align: center; }\n  .loader > div {\n    width: 16px;\n    height: 16px;\n    background-color: #888;\n    display: inline-block;\n    animation: amt-bouncedelay 1.4s infinite ease-in-out both; }\n    .loader > div + div {\n      margin-left: 5px; }\n  .loader .loader-bounce1 {\n    animation-delay: -0.32s; }\n  .loader .loader-bounce2 {\n    animation-delay: -0.16s; }\n\n@keyframes amt-bouncedelay {\n  0%, 80%, 100% {\n    transform: scale(0); }\n  40% {\n    transform: scale(1); } }\n\n.loader-rounded > div {\n  border-radius: 100%; }\n\n.loader-primary > div {\n  background-color: #0e90d2; }\n\n.loader-secondary > div {\n  background-color: #3bb4f2; }\n\n.loader-success > div {\n  background-color: #5eb95e; }\n\n.loader-warning > div {\n  background-color: #F37B1D; }\n\n.loader-alert > div {\n  background-color: #dd514c; }\n\n.loader-dark > div {\n  background-color: #393939; }\n\n.loader-white > div {\n  background-color: #fff; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.modal {\n  position: fixed;\n  z-index: 1010;\n  left: 50%;\n  top: 50%;\n  width: 270px;\n  text-align: center;\n  transform: translate3d(-50%, -50%, 0); }\n  .modal:focus {\n    outline: 0; }\n\n.modal-inner {\n  position: relative;\n  background: #f8f8f8;\n  backface-visibility: hidden;\n  perspective: 1000px;\n  animation: amt-modal-in 0.3s ease-out; }\n  .modal-out .modal-inner {\n    animation-name: amt-modal-out; }\n\n@keyframes amt-modal-in {\n  from {\n    opacity: 0;\n    transform: scale3d(0.5, 0.5, 1); }\n  to {\n    transform: scale3d(1, 1, 1);\n    opacity: 1; } }\n\n@keyframes amt-modal-out {\n  to {\n    opacity: 0;\n    transform: scale3d(0.5, 0.5, 1); } }\n\n.modal-header {\n  padding: 0.9375rem 0.625rem; }\n\n.modal-title {\n  margin: 0;\n  font-weight: 500;\n  font-size: 1.125rem; }\n\n.modal-icon, .popup-icon {\n  position: absolute;\n  right: 0.3125rem;\n  top: 0.3125rem;\n  color: rgba(136, 136, 136, 0.5);\n  cursor: pointer; }\n  .modal-icon:active, .popup-icon:active {\n    color: #555555;\n    background: #eeeeee; }\n\n.modal-body {\n  padding: 0.9375rem 0.625rem;\n  text-align: center; }\n  .modal-header + .modal-body {\n    padding-top: 0; }\n  .modal-body + .modal-body {\n    margin-top: 5px; }\n  .modal-body input[type=\"text\"] {\n    padding-top: .5em;\n    padding-bottom: .5em; }\n  .modal-body > :last-child {\n    margin-bottom: 0 !important; }\n  .modal-body + .modal-footer {\n    border-top: 1px solid #dedede; }\n\n.modal-footer {\n  display: flex;\n  overflow: hidden; }\n\n.modal-btn {\n  flex: 1;\n  display: block;\n  font-size: 1rem;\n  line-height: 2.75rem;\n  text-align: center;\n  color: #0e90d2;\n  cursor: pointer;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n  .modal-btn + .modal-btn {\n    border-left: 1px solid #dedede; }\n  .modal-btn:active {\n    background: #d4d4d4; }\n\n.modal-transition-appear.modal-actions, .modal-transition-appear.popup {\n  transform: translate3d(0, 100%, 0); }\n\n.modal-transition-appear-active.modal-actions, .modal-transition-appear-active.popup {\n  transform: translate3d(0, 0, 0);\n  transition: transform 0.3s linear; }\n\n.modal-out.modal-actions, .modal-out.popup {\n  animation: amt-modal-transition-out 0.3s linear; }\n\n.modal-actions {\n  position: fixed;\n  left: 0;\n  bottom: 0;\n  z-index: 1010;\n  width: 100%;\n  text-align: center; }\n  .modal-actions .list {\n    margin: 0; }\n\n@keyframes amt-modal-transition-out {\n  to {\n    transform: translate3d(0, 100%, 0); } }\n\n.modal-actions-group {\n  margin: 0.625rem; }\n\n.modal-actions-header {\n  color: #888888;\n  font-size: 0.875rem; }\n\n.modal-actions-alert {\n  color: #dd514c; }\n  .modal-actions-alert a {\n    color: inherit; }\n\n.popup {\n  position: fixed;\n  left: 0;\n  top: 0;\n  bottom: 0;\n  width: 100%;\n  height: 100%;\n  z-index: 1010;\n  background: #fff;\n  overflow: hidden; }\n\n.modal-popup-appear-active {\n  color: red !important;\n  border: 1px solid red; }\n\n.popup-inner {\n  padding-top: 2.75rem;\n  height: 100%;\n  overflow: auto;\n  -webkit-overflow-scrolling: touch; }\n\n.popup-header {\n  position: absolute;\n  top: 0;\n  width: 100%;\n  height: 2.75rem;\n  border-bottom: 1px solid #dedede;\n  background-color: #fff; }\n\n.popup-icon {\n  top: 50%;\n  transform: translateY(-50%); }\n\n.popup-title {\n  margin: 0 1.875rem;\n  font-size: 1rem;\n  font-weight: bold;\n  line-height: 2.6875rem;\n  text-align: center;\n  color: #333333; }\n\n.popup-body {\n  padding: 0.9375rem;\n  background: #f8f8f8;\n  color: #555555; }\n\n.modal-backdrop {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: 1009;\n  background: rgba(0, 0, 0, 0.3);\n  opacity: 1;\n  animation-duration: 0.3s;\n  animation-timing-function: ease-out;\n  animation-fill-mode: forwards;\n  animation-name: amt-fade-in; }\n  .modal-backdrop.modal-backdrop-out {\n    animation-name: amt-fade-out; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.navbar {\n  display: flex;\n  flex: 0 0 auto;\n  align-items: center;\n  justify-content: flex-start;\n  overflow: visible;\n  height: 2.75rem;\n  padding: 0 0.625rem;\n  line-height: 2.6875rem;\n  background: #eeeeee;\n  color: #333333; }\n  .navbar:after {\n    border-color: #e2e2e2; }\n\n.navbar-title {\n  margin: 0;\n  font-size: 100%;\n  font-weight: bold;\n  color: inherit; }\n\n.navbar-left,\n.navbar-center,\n.navbar-right {\n  display: block;\n  white-space: nowrap;\n  overflow: visible; }\n  .navbar-left:first-child:last-child,\n  .navbar-center:first-child:last-child,\n  .navbar-right:first-child:last-child {\n    flex: 1;\n    margin: 0; }\n\n.navbar-nav-item {\n  display: inline-flex;\n  align-items: center;\n  cursor: pointer; }\n  .fb-legacy-flexbox .navbar-nav-item {\n    display: inline-block; }\n  .navbar-nav-item + .navbar-nav-item {\n    margin-left: 0.625rem; }\n\n/*\n.navbar-nav-title {\n  & ~ .navbar-icon {\n    font-size: inherit;\n    line-height: normal;\n  }\n}\n*/\n.navbar-icon-sibling-of-title {\n  font-size: inherit;\n  line-height: normal; }\n\n.navbar-left {\n  order: 1;\n  flex: 0 0 25%; }\n  .fb-legacy-flexbox .navbar-left {\n    width: 25%; }\n  .navbar-left .navbar-icon {\n    order: -1; }\n\n.navbar-center {\n  order: 2;\n  flex: 0 0 50%;\n  text-align: center; }\n  .fb-legacy-flexbox .navbar-center {\n    width: 50%; }\n\n.navbar-right {\n  order: 3;\n  flex: 0 0 25%;\n  text-align: right; }\n  .fb-legacy-flexbox .navbar-right {\n    width: 25%; }\n\n.navbar-left:first-child {\n  flex: 1 1 auto; }\n\n.navbar-left:first-child + .navbar-right:last-child {\n  flex: 1 1 auto; }\n\n.navbar-center:first-child:not(:last-child) {\n  margin-left: 25%; }\n\n.navbar-center + .navbar-left {\n  margin-right: -25%; }\n\n.navbar-primary {\n  background: #0e90d2;\n  color: #fff; }\n  .navbar-primary:after {\n    border-color: #0c80ba; }\n  .navbar-primary .navbar-nav-item {\n    color: #f2f2f2; }\n\n.navbar-secondary {\n  background: #3bb4f2;\n  color: #fff; }\n  .navbar-secondary:after {\n    border-color: #23abf0; }\n  .navbar-secondary .navbar-nav-item {\n    color: #f2f2f2; }\n\n.navbar-success {\n  background: #5eb95e;\n  color: #fff; }\n  .navbar-success:after {\n    border-color: #4db14d; }\n  .navbar-success .navbar-nav-item {\n    color: #f2f2f2; }\n\n.navbar-warning {\n  background: #F37B1D;\n  color: #fff; }\n  .navbar-warning:after {\n    border-color: #ea6e0c; }\n  .navbar-warning .navbar-nav-item {\n    color: #f2f2f2; }\n\n.navbar-alert {\n  background: #dd514c;\n  color: #fff; }\n  .navbar-alert:after {\n    border-color: #d93c37; }\n  .navbar-alert .navbar-nav-item {\n    color: #f2f2f2; }\n\n.navbar-dark {\n  background: #393939;\n  color: #fff; }\n  .navbar-dark:after {\n    border-color: #2c2c2c; }\n  .navbar-dark .navbar-nav-item {\n    color: #f2f2f2; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.notification {\n  top: 0;\n  left: 0;\n  z-index: 1100;\n  display: flex;\n  width: 100%;\n  padding: 0.625rem 1rem;\n  /*.active {\n    display: flex;\n  }*/\n  background: rgba(34, 34, 34, 0.9);\n  color: #fff; }\n\n.notification-icon {\n  cursor: pointer; }\n\n.notification-content {\n  flex: 1;\n  align-self: stretch;\n  display: flex;\n  flex-direction: column;\n  justify-content: center; }\n  .notification-content,\n  .notification-content .notification-title {\n    font-size: 0.875rem; }\n  .notification-content > :first-child {\n    margin-top: 0; }\n  .notification-content > :last-child {\n    margin-bottom: 0; }\n\n.notification-title {\n  margin: 0;\n  color: inherit; }\n\n.notification-primary {\n  background: rgba(14, 144, 210, 0.9);\n  color: #fff; }\n\n.notification-secondary {\n  background: rgba(59, 180, 242, 0.9);\n  color: #fff; }\n\n.notification-success {\n  background: rgba(94, 185, 94, 0.9);\n  color: #fff; }\n\n.notification-warning {\n  background: rgba(243, 123, 29, 0.9);\n  color: #fff; }\n\n.notification-alert {\n  background: rgba(221, 81, 76, 0.9);\n  color: #fff; }\n\n.notification-animated {\n  position: absolute; }\n\n.notification-enter {\n  transform: translate3d(0, -100%, 0); }\n\n.notification-enter-active {\n  animation: amt-notification-enter .3s ease-in-out; }\n\n.notification-leave {\n  animation: amt-notification-leave .3s ease-in-out; }\n\n@keyframes amt-notification-enter {\n  from {\n    transform: translate3d(0, -100%, 0);\n    opacity: .5; }\n  to {\n    transform: translate3d(0, 0, 0);\n    opacity: 1; } }\n\n@keyframes amt-notification-leave {\n  from {\n    transform: translate3d(0, 0, 0);\n    opacity: 1; }\n  to {\n    transform: translate3d(0, -100%, 0);\n    opacity: .5; } }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.offcanvas {\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  z-index: 1020;\n  width: 16.875rem;\n  height: 100%;\n  overflow: auto;\n  -webkit-overflow-scrolling: touch;\n  background: #fff;\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);\n  animation-duration: 0.4s;\n  animation-timing-function: ease-in-out; }\n\n.offcanvas-left {\n  left: 0;\n  animation-name: offcanvas-left-in; }\n  .offcanvas-left.offcanvas-out {\n    animation-name: offcanvas-left-out; }\n\n@keyframes offcanvas-left-in {\n  0% {\n    opacity: 0;\n    transform: translate3d(-100%, 0, 0); }\n  100% {\n    opacity: 1;\n    transform: translate3d(0, 0, 0); } }\n\n@keyframes offcanvas-left-out {\n  to {\n    opacity: 0;\n    transform: translate3d(-100%, 0, 0); } }\n\n.offcanvas-right {\n  right: 0;\n  animation-name: offcanvas-right-in; }\n  .offcanvas-right.offcanvas-out {\n    animation-name: offcanvas-right-out; }\n\n@keyframes offcanvas-right-in {\n  0% {\n    opacity: 0;\n    transform: translate3d(100%, 0, 0); }\n  100% {\n    opacity: 1;\n    transform: translate3d(0, 0, 0); } }\n\n@keyframes offcanvas-right-out {\n  to {\n    opacity: 0;\n    transform: translate3d(100%, 0, 0); } }\n\n.with-offcanvas-left .offcanvas-push-target, .with-offcanvas-right .offcanvas-push-target, .with-offcanvas-closing .offcanvas-push-target {\n  transition: transform 0.4s ease-in-out; }\n\n.with-offcanvas-left .offcanvas-push-target {\n  transform: translate3d(16.875rem, 0, 0); }\n\n.with-offcanvas-right .offcanvas-push-target {\n  transform: translate3d(-16.875rem, 0, 0); }\n\n.with-offcanvas-closing .offcanvas-push-target {\n  transform: translate3d(0, 0, 0); }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.popover {\n  position: absolute;\n  top: 0;\n  left: 0;\n  z-index: 1030;\n  width: 15rem;\n  margin: 0;\n  background: #fff;\n  color: #333333;\n  border: 1px solid #ddd;\n  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);\n  animation-duration: 0.3s;\n  animation-timing-function: ease-out;\n  animation-name: amt-slide-top-fixed; }\n\n.popover-out {\n  animation-name: amt-popover-out; }\n\n@keyframes amt-popover-out {\n  to {\n    opacity: 0;\n    transform: translateY(-10px); } }\n\n.popover-inner {\n  position: relative;\n  z-index: 110;\n  background: #fff;\n  padding: 8px; }\n\n.popover-angle {\n  border-width: 8px; }\n  .popover-angle, .popover-angle:after {\n    position: absolute;\n    z-index: 120;\n    display: block;\n    width: 0;\n    height: 0;\n    border-color: transparent;\n    border-style: solid; }\n  .popover-angle:after {\n    content: \"\";\n    border-width: 7px; }\n\n.popover-angle-bottom {\n  bottom: 0;\n  border-top-color: #ddd;\n  transform: translate3d(-50%, 100%, 0); }\n  .popover-angle-bottom:after {\n    border-top-color: #fff;\n    bottom: 1px; }\n  .popover-angle-bottom, .popover-angle-bottom:after {\n    border-bottom-width: 0; }\n\n.popover-angle-top {\n  top: 0;\n  border-bottom-color: #ddd;\n  transform: translate3d(-50%, -100%, 0); }\n  .popover-angle-top:after {\n    top: 1px;\n    border-bottom-color: #fff; }\n  .popover-angle-top, .popover-angle-top:after {\n    border-top-width: 0; }\n\n.popover-angle-top:after,\n.popover-angle-bottom:after {\n  transform: translateX(-50%); }\n\n.popover-angle-left {\n  left: 0;\n  border-right-color: #ddd;\n  transform: translateX(-100%); }\n  .popover-angle-left:after {\n    border-right-color: #fff;\n    top: -7px;\n    left: 1px; }\n  .popover-angle-left, .popover-angle-left:after {\n    border-left-width: 0; }\n\n.popover-angle-right {\n  right: 0;\n  border-left-color: #ddd;\n  transform: translateX(100%); }\n  .popover-angle-right:after {\n    border-left-color: #fff;\n    top: -7px;\n    right: 1px; }\n  .popover-angle-right, .popover-angle-right:after {\n    border-right-width: 0; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.slider {\n  position: relative; }\n  .slider ul,\n  .slider ol {\n    list-style: none;\n    padding: 0; }\n\n.slider-slides {\n  position: relative;\n  width: 100%;\n  overflow: hidden;\n  margin: 0; }\n  .slider-slides > li {\n    position: relative;\n    display: none;\n    transition: transform 0.5s ease-in-out;\n    backface-visibility: hidden;\n    perspective: 1000px; }\n    .slider-slides > li > img,\n    .slider-slides > li > a > img {\n      display: block;\n      width: 100%;\n      height: auto;\n      line-height: 1; }\n    .slider-slides > li.next, .slider-slides > li.active.right {\n      left: 0;\n      transform: translate3d(100%, 0, 0); }\n    .slider-slides > li.prev, .slider-slides > li.active.left {\n      left: 0;\n      transform: translate3d(-100%, 0, 0); }\n    .slider-slides > li.next.left, .slider-slides > li.prev.right, .slider-slides > li.active {\n      left: 0;\n      transform: translate3d(0, 0, 0); }\n  .slider-slides > .active,\n  .slider-slides > .next,\n  .slider-slides > .prev {\n    display: block; }\n  .slider-slides > .active {\n    left: 0; }\n  .slider-slides > .next,\n  .slider-slides > .prev {\n    position: absolute;\n    top: 0;\n    width: 100%; }\n\n.slider-control-prev, .slider-control-next {\n  position: absolute;\n  top: 50%;\n  z-index: 5;\n  transform: translate3d(0, -50%, 0);\n  border-radius: 50%;\n  color: rgba(255, 255, 255, 0.7);\n  backdrop-filter: blur(10px);\n  cursor: pointer; }\n\n.slider-control-prev {\n  left: 10px; }\n\n.slider-control-next {\n  right: 10px; }\n\n.slider-indicators {\n  position: absolute;\n  bottom: 0.9375rem;\n  left: 50%;\n  z-index: 15;\n  display: flex;\n  justify-content: center;\n  margin: 0;\n  transform: translate3d(-50%, 0, 0); }\n  .slider-indicators li {\n    display: block;\n    width: 8px;\n    height: 8px;\n    overflow: hidden;\n    text-indent: -999px;\n    border: 1px solid #fff;\n    border-radius: 10px;\n    cursor: pointer; }\n    .slider-indicators li + li {\n      margin-left: 8px; }\n  .slider-indicators .active {\n    background: #fff; }\n\n.slider-thumbs {\n  display: flex;\n  margin: 5px 0 0; }\n  .slider-thumbs li {\n    flex: 1;\n    opacity: 0.75;\n    cursor: pointer;\n    transition: opacity 0.5s; }\n    .slider-thumbs li + li {\n      margin-left: 2px; }\n  .slider-thumbs .active {\n    opacity: 1; }\n\n.slider-caption {\n  position: absolute;\n  bottom: 20px;\n  z-index: 10;\n  width: 100%;\n  padding-top: 0.9375rem;\n  padding-bottom: 0.9375rem;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.switch {\n  position: relative;\n  display: inline-block;\n  overflow: hidden;\n  vertical-align: middle;\n  align-self: center;\n  outline: none;\n  cursor: pointer;\n  user-select: none;\n  touch-action: manipulation; }\n  .switch input[type=\"checkbox\"] {\n    position: absolute;\n    margin-left: -9999px;\n    visibility: hidden; }\n    .switch input[type=\"checkbox\"]:checked + .switch-label:after {\n      transform: translateX(1.375rem); }\n  .switch.disabled {\n    opacity: 0.5;\n    cursor: not-allowed;\n    pointer-events: none; }\n  .switch .switch-label, .switch .switch-label:after {\n    background: #aaa; }\n  .switch .switch-label:before {\n    background: #fff; }\n  .switch input:checked + .switch-label, .switch input:checked + .switch-label:after {\n    background: #0e90d2; }\n  .list .switch {\n    margin-bottom: 0; }\n\n.switch-label {\n  position: relative;\n  display: block;\n  width: 3.25rem;\n  height: 1.875rem;\n  border-radius: 9999px;\n  transition: background .35s; }\n  .switch-label:before, .switch-label:after {\n    position: absolute;\n    display: block;\n    content: \" \";\n    transition: all .35s;\n    border-radius: 9999px; }\n  .switch-label:before {\n    top: 2px;\n    left: 2px;\n    bottom: 2px;\n    right: 2px; }\n  .switch-label:after {\n    top: 4px;\n    left: 4px;\n    bottom: 4px;\n    width: 1.375rem;\n    transform: translateX(0); }\n\n.switch-secondary input:checked + .switch-label, .switch-secondary input:checked + .switch-label:after {\n  background: #3bb4f2; }\n\n.switch-success input:checked + .switch-label, .switch-success input:checked + .switch-label:after {\n  background: #5eb95e; }\n\n.switch-warning input:checked + .switch-label, .switch-warning input:checked + .switch-label:after {\n  background: #F37B1D; }\n\n.switch-alert input:checked + .switch-label, .switch-alert input:checked + .switch-label:after {\n  background: #dd514c; }\n\n.switch-dark input:checked + .switch-label, .switch-dark input:checked + .switch-label:after {\n  background: #393939; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.tabbar {\n  display: flex;\n  width: 100%;\n  height: 3.0625rem;\n  padding: 0 1rem;\n  background: #e6e6e6; }\n  .tabbar:before {\n    border-color: #d2d2d2; }\n  .tabbar,\n  .tabbar a {\n    color: #888888; }\n  .tabbar > .active,\n  .tabbar > .active a {\n    color: #0e90d2; }\n\n.tabbar-item {\n  display: flex;\n  flex: 1;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  cursor: pointer; }\n  .tabbar-item .icon {\n    position: relative; }\n  .tabbar-item .badge {\n    position: absolute;\n    left: 100%;\n    top: -2px;\n    margin-left: -10px;\n    padding: 2px 5px;\n    font-size: 0.625rem;\n    min-width: 0; }\n  .tabbar-item.active {\n    cursor: default;\n    pointer-events: none; }\n\n.tabbar-label {\n  position: relative;\n  display: block;\n  text-align: center; }\n  .icon ~ .tabbar-label {\n    font-size: 0.625rem; }\n\n.tabbar-primary {\n  background: #0e90d2; }\n  .tabbar-primary:before {\n    border-color: #0b76ac; }\n\n.tabbar-secondary {\n  background: #3bb4f2; }\n  .tabbar-secondary:before {\n    border-color: #14a6ef; }\n\n.tabbar-success {\n  background: #5eb95e; }\n  .tabbar-success:before {\n    border-color: #48a648; }\n\n.tabbar-warning {\n  background: #F37B1D; }\n  .tabbar-warning:before {\n    border-color: #dc670c; }\n\n.tabbar-alert {\n  background: #dd514c; }\n  .tabbar-alert:before {\n    border-color: #d6302a; }\n\n.tabbar-dark {\n  background: #393939; }\n  .tabbar-dark:before {\n    border-color: #252525; }\n\n.tabbar-primary,\n.tabbar-primary a, .tabbar-secondary,\n.tabbar-secondary a, .tabbar-success,\n.tabbar-success a, .tabbar-warning,\n.tabbar-warning a, .tabbar-alert,\n.tabbar-alert a, .tabbar-dark,\n.tabbar-dark a {\n  color: #dedede; }\n\n.tabbar-primary > .active,\n.tabbar-primary > .active a, .tabbar-secondary > .active,\n.tabbar-secondary > .active a, .tabbar-success > .active,\n.tabbar-success > .active a, .tabbar-warning > .active,\n.tabbar-warning > .active a, .tabbar-alert > .active,\n.tabbar-alert > .active a, .tabbar-dark > .active,\n.tabbar-dark > .active a {\n  color: #fff; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.tabs {\n  margin: 0.9375rem 0;\n  background: #fff; }\n\n.tabs-nav {\n  margin-bottom: 0; }\n\n.tabs-body {\n  position: relative;\n  z-index: 100;\n  overflow: hidden; }\n\n.tab-panel {\n  position: absolute;\n  top: 0;\n  z-index: 99;\n  width: 100%;\n  padding: 0.9375rem;\n  visibility: hidden;\n  transition: transform 0.3s;\n  transform: translateX(-100%); }\n  .tab-panel.active {\n    position: relative;\n    z-index: 100;\n    visibility: visible;\n    transform: translateX(0); }\n    .tab-panel.active ~ .tab-panel {\n      transform: translateX(100%); }\n  .tab-panel.tab-panel-no-padded {\n    padding: 0; }\n\n.tabs-inset {\n  margin-left: 0.9375rem;\n  margin-right: 0.9375rem; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.root {\n  display: block;\n  height: 100%;\n  width: 100%;\n  overflow: hidden; }\n\n.fl {\n  float: left; }\n\n.fr {\n  float: right; }\n\n.fn {\n  float: none; }\n\n.padding-0 {\n  padding: 0 !important; }\n\n.margin-0 {\n  margin: 0 !important; }\n\n.padding-xs {\n  padding: 0.3125rem !important; }\n\n.margin-xs {\n  margin: 0.3125rem !important; }\n\n.padding-sm {\n  padding: 0.625rem !important; }\n\n.margin-sm {\n  margin: 0.625rem !important; }\n\n.padding {\n  padding: 0.9375rem !important; }\n\n.margin {\n  margin: 0.9375rem !important; }\n\n.padding-lg {\n  padding: 1.25rem !important; }\n\n.margin-lg {\n  margin: 1.25rem !important; }\n\n.padding-xl {\n  padding: 2rem !important; }\n\n.margin-xl {\n  margin: 2rem !important; }\n\n.padding-h-0 {\n  padding-left: 0 !important;\n  padding-right: 0 !important; }\n\n.margin-h-0 {\n  margin-left: 0 !important;\n  margin-right: 0 !important; }\n\n.padding-h-xs {\n  padding-left: 0.3125rem !important;\n  padding-right: 0.3125rem !important; }\n\n.margin-h-xs {\n  margin-left: 0.3125rem !important;\n  margin-right: 0.3125rem !important; }\n\n.padding-h-sm {\n  padding-left: 0.625rem !important;\n  padding-right: 0.625rem !important; }\n\n.margin-h-sm {\n  margin-left: 0.625rem !important;\n  margin-right: 0.625rem !important; }\n\n.padding-h {\n  padding-left: 0.9375rem !important;\n  padding-right: 0.9375rem !important; }\n\n.margin-h {\n  margin-left: 0.9375rem !important;\n  margin-right: 0.9375rem !important; }\n\n.padding-h-lg {\n  padding-left: 1.25rem !important;\n  padding-right: 1.25rem !important; }\n\n.margin-h-lg {\n  margin-left: 1.25rem !important;\n  margin-right: 1.25rem !important; }\n\n.padding-h-xl {\n  padding-left: 2rem !important;\n  padding-right: 2rem !important; }\n\n.margin-h-xl {\n  margin-left: 2rem !important;\n  margin-right: 2rem !important; }\n\n.padding-v-0 {\n  padding-top: 0 !important;\n  padding-bottom: 0 !important; }\n\n.margin-v-0 {\n  margin-top: 0 !important;\n  margin-bottom: 0 !important; }\n\n.padding-v-xs {\n  padding-top: 0.3125rem !important;\n  padding-bottom: 0.3125rem !important; }\n\n.margin-v-xs {\n  margin-top: 0.3125rem !important;\n  margin-bottom: 0.3125rem !important; }\n\n.padding-v-sm {\n  padding-top: 0.625rem !important;\n  padding-bottom: 0.625rem !important; }\n\n.margin-v-sm {\n  margin-top: 0.625rem !important;\n  margin-bottom: 0.625rem !important; }\n\n.padding-v {\n  padding-top: 0.9375rem !important;\n  padding-bottom: 0.9375rem !important; }\n\n.margin-v {\n  margin-top: 0.9375rem !important;\n  margin-bottom: 0.9375rem !important; }\n\n.padding-v-lg {\n  padding-top: 1.25rem !important;\n  padding-bottom: 1.25rem !important; }\n\n.margin-v-lg {\n  margin-top: 1.25rem !important;\n  margin-bottom: 1.25rem !important; }\n\n.padding-v-xl {\n  padding-top: 2rem !important;\n  padding-bottom: 2rem !important; }\n\n.margin-v-xl {\n  margin-top: 2rem !important;\n  margin-bottom: 2rem !important; }\n\n.padding-top-0 {\n  padding-top: 0 !important; }\n\n.margin-top-0 {\n  margin-top: 0 !important; }\n\n.padding-top-xs {\n  padding-top: 0.3125rem !important; }\n\n.margin-top-xs {\n  margin-top: 0.3125rem !important; }\n\n.padding-top-sm {\n  padding-top: 0.625rem !important; }\n\n.margin-top-sm {\n  margin-top: 0.625rem !important; }\n\n.padding-top {\n  padding-top: 0.9375rem !important; }\n\n.margin-top {\n  margin-top: 0.9375rem !important; }\n\n.padding-top-lg {\n  padding-top: 1.25rem !important; }\n\n.margin-top-lg {\n  margin-top: 1.25rem !important; }\n\n.padding-top-xl {\n  padding-top: 2rem !important; }\n\n.margin-top-xl {\n  margin-top: 2rem !important; }\n\n.padding-right-0 {\n  padding-right: 0 !important; }\n\n.margin-right-0 {\n  margin-right: 0 !important; }\n\n.padding-right-xs {\n  padding-right: 0.3125rem !important; }\n\n.margin-right-xs {\n  margin-right: 0.3125rem !important; }\n\n.padding-right-sm {\n  padding-right: 0.625rem !important; }\n\n.margin-right-sm {\n  margin-right: 0.625rem !important; }\n\n.padding-right {\n  padding-right: 0.9375rem !important; }\n\n.margin-right {\n  margin-right: 0.9375rem !important; }\n\n.padding-right-lg {\n  padding-right: 1.25rem !important; }\n\n.margin-right-lg {\n  margin-right: 1.25rem !important; }\n\n.padding-right-xl {\n  padding-right: 2rem !important; }\n\n.margin-right-xl {\n  margin-right: 2rem !important; }\n\n.padding-bottom-0 {\n  padding-bottom: 0 !important; }\n\n.margin-bottom-0 {\n  margin-bottom: 0 !important; }\n\n.padding-bottom-xs {\n  padding-bottom: 0.3125rem !important; }\n\n.margin-bottom-xs {\n  margin-bottom: 0.3125rem !important; }\n\n.padding-bottom-sm {\n  padding-bottom: 0.625rem !important; }\n\n.margin-bottom-sm {\n  margin-bottom: 0.625rem !important; }\n\n.padding-bottom {\n  padding-bottom: 0.9375rem !important; }\n\n.margin-bottom {\n  margin-bottom: 0.9375rem !important; }\n\n.padding-bottom-lg {\n  padding-bottom: 1.25rem !important; }\n\n.margin-bottom-lg {\n  margin-bottom: 1.25rem !important; }\n\n.padding-bottom-xl {\n  padding-bottom: 2rem !important; }\n\n.margin-bottom-xl {\n  margin-bottom: 2rem !important; }\n\n.padding-left-0 {\n  padding-left: 0 !important; }\n\n.margin-left-0 {\n  margin-left: 0 !important; }\n\n.padding-left-xs {\n  padding-left: 0.3125rem !important; }\n\n.margin-left-xs {\n  margin-left: 0.3125rem !important; }\n\n.padding-left-sm {\n  padding-left: 0.625rem !important; }\n\n.margin-left-sm {\n  margin-left: 0.625rem !important; }\n\n.padding-left, .comments .item, .comments .item-linked > a {\n  padding-left: 0.9375rem !important; }\n\n.margin-left {\n  margin-left: 0.9375rem !important; }\n\n.padding-left-lg {\n  padding-left: 1.25rem !important; }\n\n.margin-left-lg {\n  margin-left: 1.25rem !important; }\n\n.padding-left-xl {\n  padding-left: 2rem !important; }\n\n.margin-left-xl {\n  margin-left: 2rem !important; }\n\n.align-v {\n  display: flex;\n  align-items: center;\n  justify-content: space-between; }\n  .align-v .align-top {\n    align-self: flex-start; }\n  .align-v .align-center {\n    align-self: center; }\n  .align-v .align-bottom {\n    align-self: flex-end; }\n\n.text-left {\n  text-align: left !important; }\n\n.text-right {\n  text-align: right !important; }\n\n.text-center {\n  text-align: center !important; }\n\n.text-justify {\n  text-align: justify !important; }\n\n.text-primary {\n  color: #0e90d2 !important; }\n\n.text-secondary {\n  color: #3bb4f2 !important; }\n\n.text-success {\n  color: #5eb95e !important; }\n\n.text-warning {\n  color: #F37B1D !important; }\n\n.text-alert {\n  color: #dd514c !important; }\n\n[class*=\"animation-\"] {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n  perspective: 1000; }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered:before, .tabbar:before, .g-bordered > .col:after, .navbar:after {\n    transform: scaleY(0.33) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 2) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.5) translateZ(0); } }\n\n@media (-webkit-min-device-pixel-ratio: 3) {\n  .g-bordered > .col:before {\n    transform: scaleX(0.33) translateZ(0); } }\n\n.g-bordered, .tabbar {\n  position: relative; }\n  .g-bordered:before, .tabbar:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: auto;\n    right: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-top: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 0; }\n\n.g-bordered > .col, .navbar {\n  position: relative; }\n  .g-bordered > .col:after, .navbar:after {\n    content: \"\";\n    position: absolute;\n    top: auto;\n    right: auto;\n    bottom: 0;\n    left: 0;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-bottom: 1px solid #d8d8d8;\n    width: 100%;\n    height: 1px;\n    transform-origin: 50% 100%; }\n\n.g-bordered > .col {\n  position: relative; }\n  .g-bordered > .col:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: auto;\n    left: auto;\n    z-index: 15;\n    display: block;\n    box-sizing: content-box;\n    background-color: transparent;\n    border-right: 1px solid #d8d8d8;\n    width: 1px;\n    height: 100%;\n    transform-origin: 100% 50%; }\n\n.cf:before, .cf:after {\n  content: \" \";\n  display: table; }\n\n.cf:after {\n  clear: both; }\n\n.card-body .accordion, .card-body .list, .card-body .tabs {\n  margin: -1.25rem -0.9375rem -1.25rem -0.9375rem; }\n\n.item-header, .tabbar-label, .tabs-nav .btn, .text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n/* ENV */\n.views {\n  position: relative;\n  flex: 1 1 0;\n  width: 100%;\n  height: 100%;\n  overflow: hidden; }\n\n.view {\n  display: flex;\n  flex-direction: column;\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n  background: #f4f4f4;\n  backface-visibility: hidden; }\n  .view > .container {\n    flex: 1 1 0; }\n\n@keyframes amt-view-sfl-enter {\n  from {\n    transform: translate3d(-100%, 0, 0); }\n  to {\n    transform: translate3d(0, 0, 0); } }\n\n@keyframes amt-view-sfl-leave {\n  /*from {\n    transform: translate3d(0, 0, 0);\n  }*/\n  to {\n    opacity: .75;\n    transform: translate3d(25%, 0, 0); } }\n\n@keyframes amt-view-sfr-enter {\n  from {\n    transform: translate3d(100%, 0, 0); }\n  to {\n    transform: translate3d(0, 0, 0); } }\n\n@keyframes amt-view-sfr-leave {\n  to {\n    opacity: .75;\n    transform: translate3d(-25%, 0, 0); } }\n\n@keyframes amt-view-rfl-enter {\n  from {\n    opacity: .75;\n    transform: translate3d(75%, 0, 0); }\n  to {\n    opacity: 1;\n    transform: translate3d(0, 0, 0); } }\n\n@keyframes amt-view-rfl-leave {\n  from {\n    opacity: 1;\n    transform: translate3d(0, 0, 0); }\n  to {\n    opacity: 0;\n    transform: translate3d(-100%, 0, 0); } }\n\n@keyframes amt-view-rfr-enter {\n  from {\n    opacity: .75;\n    transform: translate3d(-25%, 0, 0); }\n  to {\n    opacity: 1;\n    transform: translate3d(0, 0, 0); } }\n\n@keyframes amt-view-rfr-leave {\n  to {\n    opacity: 0.75;\n    transform: translate3d(100%, 0, 0); } }\n\n.view-transition-sfl-enter-active,\n.view-transition-sfl-leave,\n.view-transition-sfr-enter-active,\n.view-transition-sfr-leave, .view-transition-rfl-enter-active,\n.view-transition-rfl-leave,\n.view-transition-rfr-enter-active,\n.view-transition-rfr-leave {\n  animation-duration: 0.5s;\n  animation-timing-function: cubic-bezier(0.36, 0.66, 0.04, 1);\n  animation-fill-mode: forwards; }\n\n.view-transition-sfr-enter-active,\n.view-transition-sfl-enter-active {\n  pointer-events: none;\n  z-index: 20; }\n\n.view-transition-sfr-leave,\n.view-transition-sfl-leave {\n  pointer-events: none;\n  z-index: 10; }\n\n.view-transition-sfr-enter-active {\n  animation-name: amt-view-sfr-enter; }\n\n.view-transition-sfl-enter-active {\n  animation-name: amt-view-sfl-enter; }\n\n.view-transition-sfr-leave {\n  animation-name: amt-view-sfr-leave; }\n\n.view-transition-sfl-leave {\n  animation-name: amt-view-sfl-leave; }\n\n.view-transition-rfr-enter-active,\n.view-transition-rfl-enter-active {\n  pointer-events: none;\n  z-index: 10; }\n\n.view-transition-rfr-leave,\n.view-transition-rfl-leave {\n  pointer-events: none;\n  z-index: 20; }\n\n.view-transition-rfr-enter-active {\n  animation-name: amt-view-rfr-enter; }\n\n.view-transition-rfr-leave {\n  animation-name: amt-view-rfr-leave; }\n\n.view-transition-rfl-enter-active {\n  animation-name: amt-view-rfl-enter; }\n\n.view-transition-rfl-leave {\n  animation-name: amt-view-rfl-leave; }\n\n/*public start*/\n.font-weight {\n  font-weight: bold; }\n\n.hidden {\n  display: none; }\n\n.text-color-1 {\n  color: #171717; }\n\n.text-color-2, .tribe-topic .tribe-tribe-btn {\n  color: #949494; }\n\n.text-color-3, .server-info-user .server-user-tag, .require-info-user .require-user-tag, .tribe-info-user .tirbe-info-tab a {\n  color: #3C3C3C; }\n\n.text-color-4 {\n  color: #C3C3C3; }\n\n.text-color-5, .tribe-info-user .tribe-user-btn {\n  color: #FFB30E; }\n\n.text-color-6 {\n  color: #4BBCF6; }\n\n.text-color-7 {\n  color: #FFFFFF; }\n\n.text-size-12, .home .home-tribe-name, .server-tabs-list .list .item-desc, .server-tabs-list .list .item-subtitle, .require-tabs-list .list .item-desc, .require-tabs-list .list .item-subtitle, .comments .g, .tribe .t-index-list .item-main .item-desc, .tribe-info-user .item-main .item-desc, .tribe-info-user .tribe-user-btn, .tribe-topic-list .home-tribe-name {\n  font-size: 0.75rem; }\n\n.text-size-13, .comments .item-title, .tribe .t-index-list .item-main .item-subtitle, .tribe-info-user .item-main .item-subtitle, .tribe-topic .tribe-tribe-btn {\n  font-size: 0.8125rem; }\n\n.text-size-14, .extend-btn, .btn-yellow, .btn-blue, .btn-white, .btn-white-noBorder, .server-tabs-list .list .item-title, .server-info-user .server-user-tag, .require-tabs-list .list .item-title, .require-info-user .require-user-tag, .comments .item-subtitle, .tribe .t-index-list .item-main .item-title, .tribe-info-user .item-main .item-title, .tribe-info-user .tirbe-info-tab a, .tribe-toTopList li, .tribe-topic .topic-box .topic-p {\n  font-size: 0.875rem; }\n\n.text-size-15, .header-nav .item-title {\n  font-size: 0.9375rem; }\n\n.text-size-16 {\n  font-size: 1rem; }\n\n.text-size-18, .tribe-topic .topic-box .topic-title {\n  font-size: 1.125rem; }\n\n.text-size-20 {\n  font-size: 1.25rem; }\n\n.text-size-22 {\n  font-size: 1.375rem; }\n\n.text-size-24 {\n  font-size: 1.5rem; }\n\n.bgNone {\n  background: none; }\n  .bgNone .group-body {\n    background: none; }\n\n.bgF {\n  background: #ffffff; }\n\n.extend-btn, .btn-yellow, .btn-blue, .btn-white, .btn-white-noBorder {\n  width: 100%;\n  border: none;\n  line-height: 1;\n  padding: .75em 1em;\n  border-radius: 4px;\n  display: inline-block;\n  text-align: center; }\n  .extend-btn:hover, .btn-yellow:hover, .btn-blue:hover, .btn-white:hover, .btn-white-noBorder:hover {\n    cursor: pointer; }\n\n.btn-yellow {\n  background: #FFB30E;\n  color: #ffffff; }\n\n.btn-blue {\n  background: #4BBCF6;\n  color: #ffffff; }\n\n.btn-white {\n  background: #ffffff;\n  color: #3C3C3C;\n  border: 1px solid #DDDDDD;\n  border-radius: 0; }\n\n.btn-white-noBorder {\n  background: #ffffff;\n  color: #3C3C3C; }\n\n.regLog-logo .group-body {\n  background: none; }\n\n.regLog-logo .regLog-logo-img {\n  width: 139px;\n  height: 127px;\n  background: pink;\n  margin: 0 auto; }\n\n/*Header start*/\n.header-nav .icon-right-nav {\n  display: none; }\n\n.header-nav .header-nav-icon .icon {\n  height: 17px;\n  width: 18px;\n  float: left; }\n\n.header-nav .header-nav-index .icon {\n  background: pink; }\n\n.header-nav .header-nav-tribe .icon {\n  background: yellow; }\n\n.header-nav .header-nav-require .icon {\n  background: blue; }\n\n.header-nav .header-nav-server .icon {\n  background: palevioletred; }\n\n.header-login {\n  background: #171717; }\n  .header-login .group-body {\n    background: none; }\n  .header-login .header-user-avatar {\n    width: 50px;\n    height: 50px;\n    padding: 0;\n    margin: 0 auto; }\n    .header-login .header-user-avatar img {\n      width: 100%;\n      height: 100%;\n      border-radius: 50%; }\n  .header-login .header-user-name {\n    text-align: center; }\n\n/*Header end*/\n/*Home start*/\n.home-logo {\n  width: 27px;\n  height: 34px;\n  background: pink;\n  margin: 0 auto; }\n\n.home .slider-control {\n  display: none; }\n\n.home .slider-indicators .active {\n  background: #FFB30E; }\n\n.home .border-d7d7d7 {\n  border: 1px solid #D7D7D7; }\n\n.home .home-group-header {\n  color: #171717; }\n\n.home .home-tribe-name {\n  width: 100%;\n  height: 1.2rem;\n  overflow: hidden;\n  color: #949494; }\n\n.home .home-tribe-media {\n  width: 44px;\n  height: 44px;\n  border-radius: 50%; }\n\n.home .home-tribe-tag {\n  border: 1px solid #D7D7D7;\n  padding: 0 0.625rem; }\n\n.home .home-tribe-item p {\n  line-height: 1.5;\n  height: 1.5rem;\n  overflow: hidden;\n  margin: 0; }\n\n.home .item {\n  border: none; }\n\n.home .home-tribe-desc {\n  text-overflow: ellipsis;\n  display: -webkit-box;\n  -webkit-box-orient: vertical;\n  -webkit-line-clamp: 2;\n  overflow: hidden;\n  line-height: 1.3em;\n  max-height: 2.6em; }\n\n.header-link-active .item-title {\n  color: #FFB30E; }\n\n.home-icon-view {\n  width: 18px;\n  height: 11px;\n  background: pink; }\n\n/*Home end*/\n/*服务列表  start*/\n.server-tabs-list {\n  border-bottom: 1px solid #D7D7D7; }\n  .server-tabs-list .tabs-nav button {\n    border: none;\n    color: #3C3C3C;\n    background: none; }\n    .server-tabs-list .tabs-nav button:hover {\n      border: none;\n      background: none;\n      color: #3C3C3C; }\n  .server-tabs-list .tabs-nav button.active {\n    background: none;\n    border: none;\n    border-bottom: 2px solid #FFB30E;\n    color: #FFB30E; }\n  .server-tabs-list .list .item {\n    border: 1px solid #D7D7D7; }\n  .server-tabs-list .list .item-desc {\n    text-overflow: ellipsis;\n    display: -webkit-box;\n    -webkit-box-orient: vertical;\n    -webkit-line-clamp: 3;\n    overflow: hidden;\n    line-height: 1.3em;\n    max-height: 3.9em;\n    color: #C3C3C3; }\n  .server-tabs-list .list .item-title {\n    color: #3C3C3C; }\n  .server-tabs-list .list .item-subtitle {\n    color: #FFB30E; }\n\n/*服务列表  end*/\n/*服务详细  start*/\n.server-info-user {\n  border-bottom: 1px solid #D7D7D7; }\n  .server-info-user .server-user-avatar {\n    width: 44px;\n    height: 44px;\n    border-radius: 50%; }\n  .server-info-user .server-user-name p {\n    line-height: 1.5;\n    height: 1.5rem;\n    overflow: hidden;\n    margin: 0; }\n  .server-info-user .server-user-tag {\n    border: 1px solid #3C3C3C;\n    padding: 0 0.625rem; }\n\n.server-info .g {\n  border-bottom: 1px solid #DDDDDD; }\n\n.server-info .border-none {\n  border: none; }\n\n.server-info .server-info-tit-l {\n  min-width: 70px; }\n\n/*服务详细  end*/\n/*需求列表 start*/\n.require-tabs-list {\n  border-bottom: 1px solid #D7D7D7; }\n  .require-tabs-list .tabs-nav button {\n    border: none;\n    color: #3C3C3C;\n    background: none; }\n    .require-tabs-list .tabs-nav button:hover {\n      border: none;\n      background: none;\n      color: #3C3C3C; }\n  .require-tabs-list .tabs-nav button.active {\n    background: none;\n    border: none;\n    border-bottom: 2px solid #FFB30E;\n    color: #FFB30E; }\n  .require-tabs-list .list .item {\n    border: 1px solid #D7D7D7; }\n  .require-tabs-list .list .item-desc {\n    text-overflow: ellipsis;\n    display: -webkit-box;\n    -webkit-box-orient: vertical;\n    -webkit-line-clamp: 3;\n    overflow: hidden;\n    line-height: 1.3em;\n    max-height: 3.9em;\n    color: #C3C3C3; }\n  .require-tabs-list .list .item-title {\n    color: #FFB30E; }\n  .require-tabs-list .list .item-subtitle {\n    color: #3C3C3C; }\n\n/*需求列表 end*/\n/*需求详细 start*/\n.require-info-user {\n  border-bottom: 1px solid #D7D7D7; }\n  .require-info-user .require-user-avatar {\n    width: 44px;\n    height: 44px;\n    border-radius: 50%; }\n  .require-info-user .require-user-name p {\n    line-height: 1.5;\n    height: 1.5rem;\n    overflow: hidden;\n    margin: 0; }\n  .require-info-user .require-user-tag {\n    border: 1px solid #3C3C3C;\n    padding: 0 0.625rem; }\n\n.require-info .g {\n  border-bottom: 1px solid #DDDDDD; }\n\n.require-info .border-none {\n  border: none; }\n\n.require-info .require-info-tit-l {\n  min-width: 70px; }\n\n.require-badge {\n  border-top: 1px solid #D7D7D7;\n  border-bottom: 1px solid #D7D7D7; }\n  .require-badge .badge {\n    padding-left: .1rem;\n    padding-right: .2rem;\n    min-width: 0.3rem;\n    background: #4BBCF6; }\n  .require-badge .require-badge-pl {\n    padding-left: 0.5376rem; }\n\n.border-none {\n  border: none; }\n\n.require-apply-list img {\n  height: 44px;\n  width: 44px;\n  border-radius: 50%; }\n\n.comments .comments-avatar {\n  height: 44px;\n  width: 44px;\n  border-radius: 50%; }\n\n.comments .item, .comments .item-linked > a {\n  align-items: flex-start; }\n\n.comments .item-title {\n  color: #949494; }\n\n.comments .item-subtitle {\n  color: #3C3C3C; }\n\n.comments .g {\n  color: #C3C3C3; }\n\n/*需求详细 end*/\n.tribe .t-index-list {\n  margin: 0; }\n  .tribe .t-index-list li {\n    border-color: #ddd; }\n  .tribe .t-index-list .item-media {\n    width: 60px;\n    height: 60px;\n    border: 1px solid #ddd; }\n    .tribe .t-index-list .item-media img {\n      width: 100%;\n      height: 100%; }\n  .tribe .t-index-list .item-main .item-title {\n    margin-bottom: 0.625rem;\n    font-weight: bold; }\n  .tribe .t-index-list .item-main .item-subtitle {\n    margin-bottom: 0.625rem;\n    color: #949494; }\n  .tribe .t-index-list .item-main .item-desc {\n    -webkit-line-clamp: 1;\n    color: #949494; }\n  .tribe .t-index-list .item-title-row > .icon-right-nav {\n    filter: alpha(opacity=0);\n    /* IE */\n    -moz-opacity: 0;\n    /* 老版Mozilla */\n    -khtml-opacity: 0;\n    /* 老版Safari */\n    opacity: 0;\n    /* 支持opacity的浏览器*/ }\n\n/*部落 详细 start*/\n.tribe-info-user {\n  border-bottom: 1px solid #D7D7D7; }\n  .tribe-info-user .item-media {\n    width: 60px;\n    height: 60px;\n    border: 1px solid #ddd; }\n  .tribe-info-user .item-main .item-title {\n    margin-bottom: 0.625rem;\n    font-weight: bold; }\n  .tribe-info-user .item-main .item-subtitle {\n    margin-bottom: 0.625rem;\n    font-weight: normal;\n    color: #949494; }\n  .tribe-info-user .item-main .item-desc {\n    font-weight: normal;\n    -webkit-line-clamp: 1;\n    color: #949494;\n    padding-right: 30px; }\n  .tribe-info-user .tribe-user-btn {\n    border: 1px solid #FFB30E;\n    padding: 0.625rem; }\n  .tribe-info-user .tirbe-info-tab {\n    text-align: center; }\n    .tribe-info-user .tirbe-info-tab a {\n      display: inline-block;\n      width: 49%; }\n    .tribe-info-user .tirbe-info-tab hr {\n      display: inline-block;\n      height: 25px;\n      margin: 0.625rem 0;\n      border-right-width: 1px;\n      vertical-align: middle; }\n\n.tribe-toTopList {\n  border: 1px solid #ddd; }\n  .tribe-toTopList ul {\n    padding: 0; }\n  .tribe-toTopList li {\n    list-style: none;\n    line-height: 26px;\n    color: #3C3C3C; }\n  .tribe-toTopList .icon-toTop:before {\n    width: 17px;\n    height: 17px;\n    background-color: #FFB30E;\n    display: inline-block;\n    margin-right: 0.625rem;\n    content: \"\\9876\";\n    line-height: 17px;\n    text-align: center;\n    color: #fff;\n    border-radius: 2px; }\n\n.tribe-topic-list .border-d7d7d7 {\n  border: 1px solid #D7D7D7; }\n\n.tribe-topic-list .home-tribe-name {\n  width: 100%;\n  height: 1.2rem;\n  overflow: hidden;\n  color: #949494; }\n\n.tribe-topic-list .home-tribe-media {\n  width: 44px;\n  height: 44px;\n  border-radius: 50%; }\n\n.tribe-topic-list .home-tribe-tag {\n  border: 1px solid #D7D7D7;\n  padding: 0 0.625rem; }\n\n.tribe-topic-list .home-tribe-item p {\n  line-height: 1.5;\n  height: 1.5rem;\n  overflow: hidden;\n  margin: 0; }\n\n.tribe-topic-list .item {\n  border: none; }\n\n.tribe-topic-list .home-tribe-desc {\n  text-overflow: ellipsis;\n  display: -webkit-box;\n  -webkit-box-orient: vertical;\n  -webkit-line-clamp: 2;\n  overflow: hidden;\n  line-height: 1.3em;\n  max-height: 2.6em; }\n\n.tribe-album .albumImg {\n  width: 115px;\n  height: 115px;\n  margin: 0 auto; }\n  .tribe-album .albumImg img {\n    width: 100%;\n    height: 100%; }\n\n.tribe-album .tribe-albumName {\n  color: #3C3C3C; }\n\n.tribe-imgcom-img {\n  border-bottom: 1px solid #ddd; }\n  .tribe-imgcom-img img {\n    width: 100%; }\n\n.tribe-topic .tribe-tribe-btn {\n  border: 1px solid #949494;\n  padding: 0.625rem; }\n\n.tribe-topic .topic-box {\n  margin: 0;\n  border-bottom: 1px solid #ddd; }\n  .tribe-topic .topic-box .topic-title {\n    color: #3C3C3C;\n    font-weight: bold; }\n  .tribe-topic .topic-box .topic-p {\n    text-indent: 2em;\n    color: #949494; }\n  .tribe-topic .topic-box .topic-img {\n    max-width: 100%;\n    text-align: center; }\n", ""]);
 
 	// exports
 

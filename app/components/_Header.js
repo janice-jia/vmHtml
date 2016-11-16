@@ -1,11 +1,7 @@
 import React from 'react'
 import { browserHistory, Link } from 'react-router'
-//import {
-//    Link,
-//} from 'react-router';
 import NavLink from './NavLink'
 import {NavBar, OffCanvasTrigger, OffCanvas, List, TabBar, Notification, Field, Group, Grid, Col, Button, Icon} from 'amazeui-touch'
-import $ from 'jquery'
 
 
 class Header extends React.Component {
@@ -86,7 +82,7 @@ class Header extends React.Component {
 
             <NavBar
                 className="Header"
-                title={<div className="home-logo">logo</div>}
+                title={<div className="home-logo text-size-12">logo</div>}
                 leftNav={[{title: '',
                 icon:'bars',
                 component: OffCanvasTrigger,

@@ -14,15 +14,20 @@ $color-border-01:#ddd;
             width:60px;
             height: 60px;
             border: 1px solid $color-border-01;
+            img{
+                width: 100%;
+                height: 100%;
+            }
         }
         .item-main{
             .item-title{
-                margin-bottom: $sm;
+                margin-bottom: $xs;
                 font-weight: bold;
                 @extend .text-size-14;
             }
             .item-subtitle{
-                margin-bottom: $sm;
+                margin-top: 0;
+                margin-bottom: $xs;
                 @extend .text-size-13;
                 color: $color-txt-02;
             }
@@ -48,15 +53,19 @@ $color-border-01:#ddd;
         width:60px;
         height: 60px;
         border: 1px solid $color-border-01;
+        img{
+            width: 100%;
+            height: 100%;
+        }
     }
     .item-main{
-        .item-title{
-            margin-bottom: $sm;
+        .item-title .item-title{
+            margin-bottom: $xs;
             font-weight: bold;
             @extend .text-size-14;
         }
         .item-subtitle{
-            margin-bottom: $sm;
+            margin-bottom: $xs;
             font-weight: normal;
             @extend .text-size-13;
             color: $color-txt-02;

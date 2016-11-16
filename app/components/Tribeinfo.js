@@ -92,7 +92,6 @@ export default React.createClass({
                         }
                         media={<img src={ albums.media }/>}
                         after={<button className="tribe-user-btn">加入部落</button>}
-                        //title={tit}
                     />
                     <div className="tirbe-info-tab">
                         <a href={albums.personHref}>族员</a>

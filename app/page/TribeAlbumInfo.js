@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './_Header'
+import _Header from './../components/_Header'
 import {
     Container, Group, List, View, Badge, Grid, Col,TabBar
 } from 'amazeui-touch';
@@ -53,7 +53,7 @@ export default React.createClass({
     render() {
         return <View>
             <Container scrollable fill className="tribe">
-                <Header></Header>
+                <_Header></_Header>
                 <Grid avg={3} className="text-center tribe-album">
                     {
                         albumList.imgarr.map((album, i) => {

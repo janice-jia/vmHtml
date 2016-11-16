@@ -1,0 +1,46 @@
+//公用组件样式
+
+//需求列表样式
+.requireList{
+    .list {
+        .item {
+            border: 1px solid $border-color-1;
+        }
+        .item-desc {
+            @include line-clamp(3);
+            @extend .text-size-12;
+            color: $text-color-4;
+        }
+        .item-title {
+            color: $color-1;
+            @extend .text-size-14;
+        }
+        .item-subtitle {
+            color: $text-color-3;
+            @extend .text-size-12;
+        }
+    }
+}
+
+
+//服务列表样式
+.serverList{
+    .list{
+        .item{
+            border: 1px solid $border-color-1;
+        }
+        .item-desc{
+            @include line-clamp(3);
+            @extend .text-size-12;
+            color: $text-color-4;
+        }
+        .item-title{
+            color: $text-color-3;
+            @extend .text-size-14;
+        }
+        .item-subtitle{
+            color: $color-1;
+            @extend .text-size-12;
+        }
+    }
+}

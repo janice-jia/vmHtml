@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './_Header'
+import _Header from './../components/_Header'
 import {
     Container,Group,List,View,Badge} from 'amazeui-touch';
 
@@ -184,7 +184,7 @@ export default React.createClass({
     render() {
         return <View>
         <Container scrollable className="tribe">
-                <Header></Header>
+                <_Header></_Header>
                 <List className="t-index-list">
                     {albums.map((album, i) => {
                         return (

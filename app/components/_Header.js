@@ -1,10 +1,10 @@
 import React from 'react'
 import { browserHistory, Link } from 'react-router'
-import NavLink from './NavLink'
+import NavLink from './../page/NavLink'
 import {NavBar, OffCanvasTrigger, OffCanvas, List, TabBar, Notification, Field, Group, Grid, Col, Button, Icon} from 'amazeui-touch'
 
-
-class Header extends React.Component {
+//公用头部组件
+class _Header extends React.Component {
     constructor(props) {
         super(props);
         //判断当前是否在搜索页，如果是搜索页则默认显示搜索导航条
@@ -150,5 +150,5 @@ class Header extends React.Component {
     }
 }
 
-export default Header;
+export default _Header;
 

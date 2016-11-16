@@ -7,7 +7,7 @@ import {
     Group,
     List
 } from 'amazeui-touch';
-import Header from './_Header'
+import _Header from './../components/_Header'
 
 export default React.createClass({
     render() {
@@ -22,7 +22,7 @@ export default React.createClass({
         const btn = <div className="server-user-tag">关注</div>
         return <View>
             <Container>
-                <Header></Header>
+                <_Header></_Header>
                     <div  className="border-d7d7d7 bgF server-info-user">
                         <List.Item
                             media={img}

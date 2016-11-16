@@ -2,16 +2,8 @@ import React from 'react'
 import {Container, Group, Slider, Grid, Col, List, View} from 'amazeui-touch'
 import HomeStore from '../stores/HomeStore'
 import HomeActions from '../actions/HomeActions'
-import Header from './_Header'
+import _Header from '../components/_Header'
 
-const img = <img className="home-tribe-media" width="44" height="44" src="http://s.amazeui.org/media/i/demos/bing-1.jpg" />
-const tit = (
-    <div className="home-tribe-item">
-        <p className="text-color-3 text-size-14">嗨粉嗨粉嗨粉嗨粉嗨粉嗨粉嗨粉嗨粉嗨粉嗨粉</p>
-        <p className="text-color-4 text-size-13">1小时前</p>
-    </div>
-)
-const btn = <div className="home-tribe-tag">海贼王部落</div>
 
 class Home extends React.Component{
     constructor(props) {
@@ -37,7 +29,7 @@ class Home extends React.Component{
     render() {
         return <View>
                 <Container scrollable className="home">
-                    <Header></Header>
+                    <_Header/>
                     <div className="home-slide">
                         <Slider>
                             <Slider.Item>
@@ -48,6 +40,7 @@ class Home extends React.Component{
                             </Slider.Item>
                         </Slider>
                     </div>
+
                     <div className="home-tribe border-d7d7d7 bgF">
                         <Group noPadded className="margin-0">
                             <h5 className="home-group-header margin-sm">部落</h5>
@@ -101,9 +94,12 @@ class Home extends React.Component{
                         <Group noPadded className="margin-v-0">
                             <List>
                                 <List.Item
-                                    media={img}
-                                    after={btn}
-                                    title={tit}
+                                    media={<img className="home-tribe-media" width="44" height="44" src="http://s.amazeui.org/media/i/demos/bing-1.jpg" />}
+                                    after={<div className="home-tribe-tag">海贼王部落</div>}
+                                    title={<div className="home-tribe-item">
+                                        <p className="text-color-3 text-size-14">嗨粉嗨粉嗨粉嗨粉嗨粉嗨粉嗨粉嗨粉嗨粉嗨粉</p>
+                                        <p className="text-color-4 text-size-13">1小时前</p>
+                                    </div>}
                                 />
                                 <div className="padding-h margin-v-xs">
                                     <div className="text-size-15 text-color-3">标题名称名称名称</div>

@@ -144,3 +144,8 @@ $xl: 2rem;
     @extend .extend-btn
 }
 
+body{
+    font-family: "Microsoft YaHei","Arial","Helvetica Neue","Hiragino Sans GB","Simsun,sans-self";
+    @extend .text-size-12;
+}
+

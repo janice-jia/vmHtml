@@ -1,21 +1,27 @@
 import React from 'react'
-import {List} from 'amazeui-touch'
+import {List, Grid, Col} from 'amazeui-touch'
 
-class Comments extends React.Component {
+//公用评论组件
+class _Comments extends React.Component {
     render() {
         return <List className="comments">
-            <List.Item
-                media={<img className="comments-avatar" width="44" height="44" src="http://s.amazeui.org/media/i/demos/bing-2.jpg" />}
-                title="女爵"
-                subTitle="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内"
-                desc={<Grid align="between">
-                                        <Col cols={2} className="text-left padding-0">10分钟前</Col>
-                                        <Col cols={2} className="text-right">2</Col>
-                                      </Grid>}
-            />
+            {this.props.commentList.map((item, i) => {
+                return(
+                    <List.Item
+                        media = {<img className="comments-avatar" width="44" height="44" src={item.media}/>}
+                        title = {item.title}
+                        subTitle = {item.subTitle}
+                        desc={<Grid align="between">
+                            <Col cols={2} className="text-left padding-0">{item.time}</Col>
+                            <Col cols={2} className="text-right">{item.like}</Col>
+                          </Grid>}
+                        key={i}
+                    />
+                )
+            })}
         </List>;
     }
 }
 
-export default Comments;
+export default _Comments;
 

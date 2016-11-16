@@ -8,27 +8,54 @@ import {
     List,
     Badge
 } from 'amazeui-touch';
-import Header from './_Header'
+import _Header from './../components/_Header'
+import _Comments from './../components/_Comments'
 
-export default React.createClass({
+class RequireInfo extends React.Component{
+    constructor(props) {
+        super(props);
+        this.state = {};
+        this.state.hotCommentList =[
+            {
+            media:'http://s.amazeui.org/media/i/demos/bing-2.jpg',//头像地址
+            title:'女爵',                                         //标题
+            subTitle:'内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内',//描述
+            time:'10分钟前',                                      //时间
+            like:'2'                                              //点赞人数
+            }
+        ]
+
+        this.state.commentList = [
+            {
+                media:'http://s.amazeui.org/media/i/demos/bing-2.jpg',//头像地址
+                title:'女爵',                                         //标题
+                subTitle:'内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内',//描述
+                time:'10分钟前',                                      //时间
+                like:'2'                                              //点赞人数
+            },
+            {
+                media:'http://s.amazeui.org/media/i/demos/bing-1.jpg',
+                title:'女爵',
+                subTitle:'内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内',
+                time:'10分钟前',
+                like:'2'
+            }
+        ];
+    }
+
+
     render() {
-        const { serverId } = this.props.params
-        const img = <img className="require-user-avatar" width="44" height="44" src="http://s.amazeui.org/media/i/demos/bing-2.jpg" />
-        const tit = (
-            <div className="require-user-name">
-                <p className="text-color-3 text-size-14">白发魔女</p>
-                <p className="text-color-4 text-size-13">北京</p>
-            </div>
-        )
-        const btn = <div className="require-user-tag">关注</div>
         return <View>
             <Container scrollable>
-                <Header></Header>
+                <_Header></_Header>
                 <div className="bgF require-info-user">
                     <List.Item
-                        media={img}
-                        after={btn}
-                        title={tit}
+                        media={<img className="require-user-avatar" width="44" height="44" src="http://s.amazeui.org/media/i/demos/bing-2.jpg" />}
+                        after={<div className="require-user-tag">关注</div>}
+                        title={<div className="require-user-name">
+                                <p className="text-color-3 text-size-14">白发魔女</p>
+                                <p className="text-color-4 text-size-13">北京</p>
+                            </div>}
                     />
                 </div>
                 <Group noPadded className="margin-0">
@@ -89,46 +116,19 @@ export default React.createClass({
                             <Badge></Badge>
                             <span className="padding-left-sm">热门评论</span>
                         </p>
-                        <List className="comments">
-                            <List.Item
-                                media={<img className="comments-avatar" width="44" height="44" src="http://s.amazeui.org/media/i/demos/bing-2.jpg" />}
-                                title="女爵"
-                                subTitle="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内"
-                                desc={<Grid align="between">
-                                        <Col cols={2} className="text-left padding-0">10分钟前</Col>
-                                        <Col cols={2} className="text-right">2</Col>
-                                      </Grid>}
-                            />
-                        </List>
+                        <_Comments commentList={this.state.hotCommentList}></_Comments>
                     </div>
                     <div className="padding-top require-badge border-none">
                         <p className="text-size-14">
                             <Badge></Badge>
                             <span className="padding-left-sm">全部评论（30条）</span>
                         </p>
-                        <List className="comments">
-                            <List.Item
-                                media={<img className="comments-avatar" width="44" height="44" src="http://s.amazeui.org/media/i/demos/bing-2.jpg" />}
-                                title="女爵"
-                                subTitle="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内"
-                                desc={<Grid align="between">
-                                        <Col cols={2} className="text-left padding-0">10分钟前</Col>
-                                        <Col cols={2} className="text-right">2</Col>
-                                      </Grid>}
-                            />
-                            <List.Item
-                                media={<img className="comments-avatar" width="44" height="44" src="http://s.amazeui.org/media/i/demos/bing-2.jpg" />}
-                                title="女爵"
-                                subTitle="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内"
-                                desc={<Grid align="between">
-                                        <Col cols={2} className="text-left padding-0">10分钟前</Col>
-                                        <Col cols={2} className="text-right">2</Col>
-                                      </Grid>}
-                            />
-                        </List>
+                        <_Comments commentList={this.state.commentList}></_Comments>
                     </div>
                 </Group>
             </Container>
         </View>;
     }
-})
+}
+
+export default RequireInfo;

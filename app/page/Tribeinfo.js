@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './_Header'
+import _Header from './../components/_Header'
 import {
     Container, Group, List, View, Badge,Grid,Col
 } from 'amazeui-touch';
@@ -80,7 +80,7 @@ export default React.createClass({
     render() {
         return <View>
             <Container scrollable className="tribe">
-                <Header></Header>
+                <_Header></_Header>
                 <div className="bgF tribe-info-user">
                     <List.Item
                         title={

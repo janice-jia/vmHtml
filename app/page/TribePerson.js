@@ -1,24 +1,14 @@
 import React from 'react';
-import Header from './_Header'
+import _Header from './../components/_Header'
 import {
     Container, Group, List, View, Badge, Grid, Col,TabBar
 } from 'amazeui-touch';
-
-const imgcom = {
-    "img" : "http://lorempixel.com/160/160/people/"
-};
-
-
 
 export default React.createClass({
     render() {
         return <View>
             <Container scrollable fill className="tribe">
-                <Header></Header>
-                <div className="tribe-imgcom-img">
-                    <img src={imgcom.img} alt=""/>
-                </div>
-
+                <_Header></_Header>
                 <Group noPadded className="margin-v">
                     <div className="padding-top require-badge">
                         <p className="text-size-14">

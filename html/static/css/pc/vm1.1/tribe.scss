@@ -90,7 +90,14 @@ $color-ffffff: #ffffff;
             a{
                 color: $color-06;
                 font-size: 12px;
+                display: none;
             }
+            &:hover{
+                a{
+                    display: block;
+                }
+            }
+
         }
         .topic-public{
             height: 56px;

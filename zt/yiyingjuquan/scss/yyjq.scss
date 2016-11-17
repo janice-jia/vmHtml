@@ -6,6 +6,7 @@
 .yyjq-Wall{
     margin-top: 50px;
     background: #0b090e;
+    min-width: 1187px;
     .yyjq-Wall-1{
         height: 1587px;
         position: relative;
@@ -20,7 +21,6 @@
             left: 0;
             height: 1035px;
             width: 100%;
-            padding-top: 1035px;
             background: url("../images/yyjq-bg1.png") center no-repeat;
             .single{
                 margin: 212px auto 0 auto;
@@ -30,30 +30,24 @@
     }
 
     .yyjq-con-single{
-        height: 200px;
         width: 100%;
-        background: yellow;
+        height: 944px;
+        padding-top: 121px;
+        background: url("../images/yyjq-bg3.png") center no-repeat ;
     }
 
     .yyjq-con-double{
-        height: 200px;
         width: 100%;
-        background: deeppink;
+        height: 705px;
+        background: url("../images/yyjq-bg2.png") center no-repeat ;
     }
-}
 
-.single{
-    width: 1187px;
-    height: 705px;
-    margin: 0 auto;
-    background: url("../images/singlebox.png") left no-repeat;
-    position: relative;
-    .single-num{
+
+
+    .extendNum{
         font-family: "Arial";
         font-weight: bold;
         position: absolute;
-        left: 0;
-        top: 75px;
         width: 66px;
         height: 93px;
         line-height: 93px;
@@ -61,61 +55,234 @@
         font-size: 64px;
         color: #422a08;
     }
-    .single-box{
-        margin-left: 89px;
-        padding-top: 56px;
-        width: 1010px;
-        .single-left{
-            width: 394px;
-            height: 585px;
-            margin: 7px 45px 0 33px;
-            float: left;
-            img{
-                width: 100%;
-                height: 100%;
-            }
+
+    .extendBtn{
+        display: inline-block;
+        width: 290px;
+        height: 62px;
+        text-align: center;
+        line-height: 62px;
+        background: #f8b551;
+        color: #293842;
+        &:hover{
+            color: #ffffff;
         }
-        .single-right{
-            float: left;
-            width: 525px;
-            .single-tit{
-                font-size: 44px;
-                line-height: 44px;
-                color: #ffffff;
-                padding-top: 32px;
-                padding-bottom: 24px;
-            }
-            .single-con{
-                table{
+    }
+
+    .text2em{
+        display: inline-block;
+        width: 2em;
+    }
+    .single{
+        width: 1187px;
+        height: 705px;
+        margin: 0 auto;
+        background: url("../images/singlebox.png") left no-repeat;
+        position: relative;
+        .single-num{
+            @extend .extendNum;
+            left: 0;
+            top: 75px;
+        }
+        .single-box{
+            margin-left: 89px;
+            padding-top: 56px;
+            width: 1010px;
+            .single-left{
+                width: 394px;
+                height: 585px;
+                margin: 7px 45px 0 33px;
+                float: left;
+                img{
                     width: 100%;
-                    td{
-                        float: left;
-                        font-size: 18px;
-                        line-height: 24px;
-                        padding-top: 10px;
-                    }
-                    .single-con-label{
-                        width: 90px;
-                        color: #b3b2b2;
-                    }
-                    .single-con-desc{
-                        width: 435px;
-                        color: #ffffff;
-                    }
+                    height: 100%;
                 }
             }
-            .single-btn{
-                padding-top: 40px;
-                .btn-zq{
-                    display: inline-block;
-                    width: 290px;
-                    height: 62px;
-                    text-align: center;
-                    line-height: 62px;
-                    background: #f8b551;
-                    color: #293842;
+            .single-right{
+                float: left;
+                width: 525px;
+                .single-tit{
+                    font-size: 44px;
+                    line-height: 44px;
+                    color: #ffffff;
+                    padding-top: 32px;
+                    padding-bottom: 24px;
+                }
+                .single-con{
+                    table{
+                        width: 100%;
+                        td{
+                            float: left;
+                            font-size: 18px;
+                            line-height: 24px;
+                            padding-top: 10px;
+                        }
+                        .single-con-label{
+                            width: 90px;
+                            color: #b3b2b2;
+                        }
+                        .single-con-desc{
+                            width: 435px;
+                            color: #ffffff;
+                        }
+                    }
+                }
+                .single-btn{
+                    padding-top: 40px;
+                    .btn-zq{
+                        @extend .extendBtn
+                    }
                 }
             }
         }
+    }
+
+    .double{
+        width: 1187px;
+        height: 705px;
+        margin: 0 auto;
+        background: url("../images/doublebox.png") right no-repeat;
+        position: relative;
+        .double-num{
+            @extend .extendNum;
+            right: 0;
+            top: 75px;
+        }
+        .double-box{
+            margin-left: 89px;
+            padding-top: 56px;
+            width: 1010px;
+            .double-right{
+                width: 394px;
+                height: 585px;
+                margin: 7px 0 0 0;
+                float: left;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .double-left{
+                float: left;
+                width: 525px;
+                margin: 0 35px 0 42px;
+                .double-tit{
+                    font-size: 44px;
+                    line-height: 44px;
+                    color: #ffffff;
+                    padding-top: 32px;
+                    padding-bottom: 24px;
+                }
+                .double-con{
+                    table{
+                        width: 100%;
+                        td{
+                            float: left;
+                            font-size: 18px;
+                            line-height: 24px;
+                            padding-top: 10px;
+                        }
+                        .double-con-label{
+                            width: 90px;
+                            color: #b3b2b2;
+                        }
+                        .double-con-desc{
+                            width: 430px;
+                            color: #ffffff;
+                        }
+                    }
+                }
+                .double-btn{
+                    padding-top: 40px;
+                    .btn-zq{
+                        @extend .extendBtn;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.footer {
+    background: url("../images/yyjq-bg4.png") top  center no-repeat #0c090e;
+    padding-top:112px;
+    .footer-container {
+        width: 1000px;
+        margin: 0 auto;
+        color: #616160;
+        font-size: 14px;
+        padding-bottom: 36px;
+        .footer-left {
+            .txt-black {
+                clear: both;
+                color: #fff;
+                margin-top: 20px;
+                a {
+                    color: #fff;
+                }
+                h1 {
+                    font-size: 36px;
+                    margin-top: 6px;
+                    margin-bottom: 10px;
+                }
+                p {
+                    font-size: 18px;
+
+                }
+                .logo-wbg {
+                    margin-right: 13px;
+                    margin-bottom: 10px;
+                    float: left;
+                    width: 76px;
+                    height: 76px;
+                    padding-top: 12px;
+                    padding-left: 17px;
+                    background-color: #ffffff;
+                    border-radius: 18px;
+                }
+                &:after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+            }
+            .textP{
+                color: rgba(204, 183, 153, .5);
+            }
+
+        }
+        .footer-right {
+            color: #353430;
+            img {
+                width: 108px;
+                height: 108px;
+                margin-bottom: 8px;
+            }
+            ul > li {
+                float: left;
+                margin-left: 27px;
+                text-align: center;
+                .icon-weixin:before {
+                    content: "";
+                    display: inline-block;
+                    background-image: url("../images/icon/icon-weixin.png");
+                    width: 18px;
+                    height: 14px;
+                    margin-right: 5px;
+                    vertical-align: middle;
+                }
+                .icon-weibo:before {
+                    content: "";
+                    display: inline-block;
+                    background-image: url("../images/icon/icon-weibo.png");
+                    width: 18px;
+                    height: 14px;
+                    margin-right: 5px;
+                    vertical-align: middle;
+                }
+            }
+        }
+
     }
 }

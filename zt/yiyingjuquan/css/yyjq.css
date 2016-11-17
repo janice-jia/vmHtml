@@ -3,22 +3,33 @@
 */
 .yyjq-Wall {
   margin-top: 50px;
-  background: #0b090e;
-  position: relative; }
-  .yyjq-Wall .yyjq-banner {
-    height: 820px;
+  background: #0b090e; }
+  .yyjq-Wall .yyjq-Wall-1 {
+    height: 1587px;
+    position: relative; }
+    .yyjq-Wall .yyjq-Wall-1 .yyjq-banner {
+      height: 820px;
+      width: 100%;
+      background: url("../images/yyjq-banner.jpg") center no-repeat; }
+    .yyjq-Wall .yyjq-Wall-1 .yyjq-con-single-1 {
+      position: absolute;
+      top: 552px;
+      left: 0;
+      height: 1035px;
+      width: 100%;
+      padding-top: 1035px;
+      background: url("../images/yyjq-bg1.png") center no-repeat; }
+      .yyjq-Wall .yyjq-Wall-1 .yyjq-con-single-1 .single {
+        margin: 212px auto 0 auto;
+        background: url("../images/singlebox.png") left no-repeat; }
+  .yyjq-Wall .yyjq-con-single {
+    height: 200px;
     width: 100%;
-    background: url("../images/yyjq-banner.jpg") center no-repeat; }
-  .yyjq-Wall .yyjq-con-single-1 {
-    position: absolute;
-    top: 552px;
-    left: 0;
-    height: 1035px;
+    background: yellow; }
+  .yyjq-Wall .yyjq-con-double {
+    height: 200px;
     width: 100%;
-    background: url("../images/yyjq-bg1.png") center no-repeat; }
-    .yyjq-Wall .yyjq-con-single-1 .single {
-      margin: 212px auto 0 auto;
-      background: url("../images/singlebox.png") left no-repeat; }
+    background: deeppink; }
 
 .single {
   width: 1187px;

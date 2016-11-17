@@ -1,0 +1,84 @@
+/*
+*
+*/
+.yyjq-Wall {
+  margin-top: 50px;
+  background: #0b090e;
+  position: relative; }
+  .yyjq-Wall .yyjq-banner {
+    height: 820px;
+    width: 100%;
+    background: url("../images/yyjq-banner.jpg") center no-repeat; }
+  .yyjq-Wall .yyjq-con-single-1 {
+    position: absolute;
+    top: 552px;
+    left: 0;
+    height: 1035px;
+    width: 100%;
+    background: url("../images/yyjq-bg1.png") center no-repeat; }
+    .yyjq-Wall .yyjq-con-single-1 .single {
+      margin: 212px auto 0 auto;
+      background: url("../images/singlebox.png") left no-repeat; }
+
+.single {
+  width: 1187px;
+  height: 705px;
+  margin: 0 auto;
+  background: url("../images/singlebox.png") left no-repeat;
+  position: relative; }
+  .single .single-num {
+    font-family: "Arial";
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 75px;
+    width: 66px;
+    height: 93px;
+    line-height: 93px;
+    text-align: center;
+    font-size: 64px;
+    color: #422a08; }
+  .single .single-box {
+    margin-left: 89px;
+    padding-top: 56px;
+    width: 1010px; }
+    .single .single-box .single-left {
+      width: 394px;
+      height: 585px;
+      margin: 7px 45px 0 33px;
+      float: left; }
+      .single .single-box .single-left img {
+        width: 100%;
+        height: 100%; }
+    .single .single-box .single-right {
+      float: left;
+      width: 525px; }
+      .single .single-box .single-right .single-tit {
+        font-size: 44px;
+        line-height: 44px;
+        color: #ffffff;
+        padding-top: 32px;
+        padding-bottom: 24px; }
+      .single .single-box .single-right .single-con table {
+        width: 100%; }
+        .single .single-box .single-right .single-con table td {
+          float: left;
+          font-size: 18px;
+          line-height: 24px;
+          padding-top: 10px; }
+        .single .single-box .single-right .single-con table .single-con-label {
+          width: 90px;
+          color: #b3b2b2; }
+        .single .single-box .single-right .single-con table .single-con-desc {
+          width: 435px;
+          color: #ffffff; }
+      .single .single-box .single-right .single-btn {
+        padding-top: 40px; }
+        .single .single-box .single-right .single-btn .btn-zq {
+          display: inline-block;
+          width: 290px;
+          height: 62px;
+          text-align: center;
+          line-height: 62px;
+          background: #f8b551;
+          color: #293842; }

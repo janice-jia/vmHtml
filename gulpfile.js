@@ -19,7 +19,7 @@ var reload      = browserSync.reload;
 /*
  * default
  * */
-gulp.task('default', ['styles-wujinshenyu', 'styles-qijiwangzuo', 'styles-cosplay', 'styles-disney', 'styles-dongrinuanbei', 'styles-denghuo'],function(){
+gulp.task('default', ['styles-wujinshenyu', 'styles-qijiwangzuo', 'styles-cosplay', 'styles-disney', 'styles-dongrinuanbei', 'styles-denghuo', 'styles-yiyingjuquan'],function(){
 
 });
 
@@ -27,7 +27,7 @@ gulp.task('default', ['styles-wujinshenyu', 'styles-qijiwangzuo', 'styles-cospla
 gulp.task('server', function() {
     browserSync.init({
         server: {
-            baseDir: ["./zt/wujinshenyu", "./zt", ".zt/disney", "./zt/dongrinuanbei", "./zt/denghuo"]
+            baseDir: ["./zt/wujinshenyu", "./zt", ".zt/disney", "./zt/dongrinuanbei", "./zt/denghuo", "./zt/yiyingjuquan"]
         }
     });
 
@@ -46,6 +46,7 @@ gulp.task("watch",['server'], function(){
     gulp.watch('./zt/disney/scss/*.scss', ['styles-disney']);
     gulp.watch('./zt/dongrinuanbei/scss/*.scss', ['styles-dongrinuanbei']);
     gulp.watch('./zt/denghuo/scss/*.scss', ['styles-denghuo']);
+    gulp.watch('./zt/yiyingjuquan/scss/*.scss', ['styles-yiyingjuquan']);
 
     gulp.watch('./zt/wujinshenyu/css/*.css').on('change', reload);
     gulp.watch('./zt/qijiwangzuo/css/*.css').on('change', reload);
@@ -55,6 +56,7 @@ gulp.task("watch",['server'], function(){
     gulp.watch('./zt/disney/css/*.css').on('change', reload);
     gulp.watch('./zt/dongrinuanbei/css/*.css').on('change', reload);
     gulp.watch('./zt/denghuo/css/*.css').on('change', reload);
+    gulp.watch('./zt/yiyingjuquan/css/*.css').on('change', reload);
 
     gulp.watch("./html/*.html").on('change', reload);
     gulp.watch("./zt/wujinshenyu/*.html").on('change', reload);
@@ -65,6 +67,7 @@ gulp.task("watch",['server'], function(){
     gulp.watch("./zt/disney/*.html").on('change', reload);
     gulp.watch("./zt/dongrinuanbei/*.html").on('change', reload);
     gulp.watch("./zt/denghuo/*.html").on('change', reload);
+    gulp.watch("./zt/yiyingjuquan/*.html").on('change', reload);
 
 });
 
@@ -146,4 +149,17 @@ gulp.task('styles-denghuo', function(){
         .pipe(gulp.dest('./zt/denghuo/css/'))
 
 });
+
+
+
+//一应剧全专题
+gulp.task('styles-yiyingjuquan', function(){
+    //编译sass
+    return sass('./zt/yiyingjuquan/scss/*.scss')
+
+    //保存编译之后的css文件到指定的目录
+        .pipe(gulp.dest('./zt/yiyingjuquan/css/'))
+
+});
+
 

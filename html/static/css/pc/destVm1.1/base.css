@@ -28,7 +28,7 @@ td {
   border: none; }
 
 a, input, textarea, select {
-  font-family: "Microsoft YaHei";
+  font-family: "Helvetica","Microsoft YaHei";
   outline: none; }
 
 textarea {
@@ -38,7 +38,7 @@ img, button {
   border: none; }
 
 button {
-  font-family: "Microsoft YaHei";
+  font-family: "Helvetica","Microsoft YaHei";
   cursor: pointer; }
 
 li {

@@ -90,11 +90,15 @@ $color-ffffff: #ffffff;
             a{
                 color: $color-06;
                 font-size: 12px;
-                display: none;
+                &.hoverShow{
+                    display: none;
+                }
             }
             &:hover{
                 a{
-                    display: block;
+                    &.hoverShow{
+                        display: block;
+                    }
                 }
             }
 

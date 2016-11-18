@@ -62,9 +62,10 @@
         line-height: 30px; }
       .topic-wall .topic-wall-l .topic-tit a {
         color: #999999;
-        font-size: 12px;
-        display: none; }
-      .topic-wall .topic-wall-l .topic-tit:hover a {
+        font-size: 12px; }
+        .topic-wall .topic-wall-l .topic-tit a.hoverShow {
+          display: none; }
+      .topic-wall .topic-wall-l .topic-tit:hover a.hoverShow {
         display: block; }
     .topic-wall .topic-wall-l .topic-public {
       height: 56px;

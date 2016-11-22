@@ -1,0 +1,106 @@
+/*用户首页 start*/
+.userDesc{
+    .user-avatar{
+        width: 65px;
+        height: 65px;
+        position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+        .user-woman,.user-man{
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            right: 0;
+            top:50px;
+        }
+        .user-woman{
+            background: pink;
+        }
+        .user-man{
+            background: blue;
+        }
+    }
+    .item-title{
+        @include line-clamp(1);
+        @extend .text-size-16;
+        @extend .text-color-3;
+    }
+}
+
+.userTag{
+    @extend .text-color-3;
+    border-top: 1px solid $border-color-2;
+    border-bottom: 1px solid $border-color-2;
+    .userTagTit{
+        margin: 0;
+        text-align: center;
+        @extend .text-size-13;
+    }
+    .userTagNum{
+        margin: 0;
+        text-align: center;
+        @extend .text-size-13;
+    }
+    .user-fans{
+        border-left: 1px solid $border-color-2;
+        border-right: 1px solid $border-color-2;
+    }
+}
+
+.userNav{
+    .extend-userNav-icon{
+        width: 22px;
+        height: 20px;
+        display: inline-block;
+        float: left;
+    }
+    .item-title{
+        width: 20px;
+        @extend .text-size-14;
+    }
+    .userNav-bl{
+        @extend .extend-userNav-icon;
+        background: pink;
+    }
+    .userNav-ht{
+        width: 22px;
+        @extend .extend-userNav-icon;
+        background: blue;
+    }
+    .userNav-xq{
+        height: 17px;
+        @extend .extend-userNav-icon;
+        background: deeppink;
+    }
+    .userNav-fw{
+        @extend .extend-userNav-icon;
+        background: lightblue;
+    }
+}
+/*用户首页  end*/
+
+/*用户详细 start*/
+.userInfo{
+    .item{
+        align-items: flex-start;
+    }
+    .item-media{
+        width: 6em;
+        @extend .text-size-14;
+        @extend .text-color-2;
+        .icon{
+            @extend .text-size-14;
+            @extend .text-color-2;
+        }
+    }
+    .item-main{
+        p{
+            @extend .text-size-14;
+            @extend .text-color-3;
+        }
+    }
+}
+/*用户详细 end*/

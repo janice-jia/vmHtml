@@ -28,7 +28,7 @@ class _Header extends React.Component {
 
     //打开搜索
     openNotification(item) {
-        if (item.className == 'right') {
+        if (item.className == 'search') {
             this.setState({
                 visible: true
             });
@@ -83,17 +83,19 @@ class _Header extends React.Component {
             <NavBar
                 className="Header"
                 title={<div className="home-logo text-size-12">logo</div>}
-                leftNav={[{title: '',
-                icon:'bars',
+                leftNav={[{title: 'nav',
                 component: OffCanvasTrigger,
+                className:"leftNav",
                 offCanvas:<OffCanvas>
-                        <Group className="header-login bgNone margin-0 padding-v">
+                        <Group className="header-login bgNone margin-0 padding-v hidden">
                             <Link to="/register" className="btn-yellow margin-bottom">注册</Link>
                             <Link to="/login" className="btn-white-noBorder">登陆</Link>
                         </Group>
-                        <Group className="header-login bgNone margin-0 hidden">
-                            <div className="header-user-avatar margin-v"><img src="http://s.amazeui.org/media/i/demos/bing-2.jpg" height="50" width="50" alt=""/></div>
-                            <div className="header-user-name text-color-7 text-size-16">用户名用户名</div>
+                        <Group className="header-login bgNone margin-0">
+                            <div className="header-user-avatar margin-v">
+                                <a href="/user/01"><img src="http://s.amazeui.org/media/i/demos/bing-2.jpg" height="50" width="50" alt=""/></a>
+                            </div>
+                            <div className="header-user-name text-color-7 text-size-16"><a href="/user/01">用户名用户名</a></div>
                         </Group>
                         <List className="header-nav">
                             <List.Item
@@ -141,8 +143,8 @@ class _Header extends React.Component {
                     </OffCanvas>,
                 isClone:true}]}
                 rightNav={[{
-                title:'right',
-                className:'right'
+                title:'search',
+                className:'search'
             }]}
                 onAction={this.openNotification.bind(this)}
                 amStyle="dark"/>

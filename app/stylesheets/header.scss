@@ -1,4 +1,23 @@
 /*Header start*/
+.header{
+    .navbar-left{
+        .leftNav{
+            width: 22px;
+            height: 25px;
+            float: left;
+            background: pink;
+        }
+    }
+
+    .navbar-right{
+        .search{
+            float: right;
+            width: 25px;
+            height: 25px;
+            background: pink;
+        }
+    }
+}
 .header-nav{
     .icon-right-nav{
         display: none;
@@ -55,6 +74,9 @@
     }
     .header-user-name{
         text-align: center;
+        a{
+            color: $text-color-7;
+        }
     }
 }
 /*Header end*/

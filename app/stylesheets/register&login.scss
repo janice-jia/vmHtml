@@ -9,3 +9,104 @@
         margin: 0 auto;
     }
 }
+.form-register{
+    .item-media{
+        width: 18px;
+        .extend-icon{
+            height: 20px;
+            background: pink;
+            display: inline-block;
+            float: left;
+        }
+        .icon-phone{
+            width: 13px;
+            @extend .extend-icon;
+        }
+        .icon-pwd{
+            width: 16px;
+            @extend .extend-icon;
+        }
+        .icon-nickname{
+            width: 18px;
+            @extend .extend-icon;
+        }
+    }
+
+    .item-main{
+        border-left: 1px solid $border-color-2;
+        input{
+            padding:0 0 0 $sm;
+            @extend .text-size-14;
+        }
+        .field-group{
+            width: 100%;
+            margin-bottom: 0;
+        }
+        .icon-pwdHid{
+            width: 22px;
+            height: 15px;
+            display: inline-block;
+            background: pink;
+        }
+    }
+    .item-input{
+        border-left:1px solid $border-color-2;
+        border-right:1px solid $border-color-2;
+        border-radius: 4px;
+        background: #FFFFFF;
+
+    }
+    .list{
+        background: none;
+    }
+    .btn-white{
+        @extend .text-size-13;
+        color: $color-1;
+        width: auto;
+        float: right;
+        border-radius: 4px;
+        line-height: 1.5em;
+    }
+    .auth-code{
+        border: 1px solid $border-color-2;
+        border-radius: 4px;
+        @extend .text-size-14;
+    }
+    .input-terms{
+        width: 18px;
+        height: 18px;
+    }
+    .btn-yellow{
+        @extend .text-color-1;
+    }
+}
+
+.form-login{
+    .list{
+        background: none;
+        .item-media{
+            width: 4em;
+        }
+        .item-input{
+            background: none;
+            border: none;
+            border-bottom: 1px solid $border-color-6;
+        }
+        .icon{
+            @extend .text-size-14;
+            color: $text-color-2;
+        }
+    }
+
+    input{
+        background: none;
+        border: none;
+        @extend .text-size-14;
+        &:focus{
+            background: none;
+        }
+    }
+    .btn-yellow{
+        @extend .text-color-1;
+    }
+}

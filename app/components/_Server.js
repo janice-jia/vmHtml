@@ -15,9 +15,10 @@ class _Server extends React.Component {
                             href = {item.href}
                             desc = {item.desc}
                             target = {item.target}
+                            after={item.after}
                             key={i}
                         >
-                            <Grid align="between">
+                            <Grid align="between" className="margin-top-xs">
                                 <Col cols={2} className="padding-0">
                                     <span className="text-size-12 text-color-6">{item.bottomLeft}</span>
                                 </Col>

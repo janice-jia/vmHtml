@@ -3,12 +3,28 @@ import {Router, Route, IndexRoute, browserHistory} from 'react-router'
 import App from './page/App'
 import Register from './page/Register'
 import Login from './page/Login'
+
+//user  module
+import User from './page/User'
+import UserInfo from './page/UserInfo'
+import UserServer from './page/UserServer'
+import UserRequire from './page/UserRequire'
+
+//home  module
 import Home from './page/Home'
+
+//server  module
 import Server from './page/Server'
 import ServerInfo from './page/ServerInfo'
+
+//require  module
 import Require from './page/Require'
 import RequireInfo from './page/RequireInfo'
+
+//search  module
 import Search from './page/Search'
+
+//tribe  module
 import Tribe from './page/Tribe'
 import TribeInfo from './page/Tribeinfo'
 import TribeAlbum from './page/TribeAlbum'
@@ -23,12 +39,21 @@ module.exports = (
         <Route path="/" component={App}>
             <IndexRoute component={Home}/>
             <Route path="/register" component={Register}/>
-            <Route path="/Login" component={Login}/>
+            <Route path="/login" component={Login}/>
+
+            <Route path="/user/:userId" component={User}/>
+            <Route path="/user/info/:userId" component={UserInfo}/>
+            <Route path="/user/server/:userId" component={UserServer}/>
+            <Route path="/user/require/:userId" component={UserRequire}/>
+
             <Route path="/server" component={Server}/>
             <Route path="/server/info/:serverId" component={ServerInfo}/>
+
             <Route path="/require" component={Require}/>
             <Route path="/require/info/:requireId" component={RequireInfo}/>
+
             <Route path="/search"  component={Search}/>
+
             <Route path="/tribe" component={Tribe}/>
             <Route path="/tribe/info/:tribeId" component={TribeInfo}/>
             <Route path="/tribe/album/:albumId" component={TribeAlbum}/>

@@ -86,6 +86,8 @@
     .topic-wall .topic-wall-l .vm-topic-con > ul > li {
       margin-top: 0;
       box-shadow: none; }
+      .topic-wall .topic-wall-l .vm-topic-con > ul > li:hover {
+        background: #f7f8fa; }
     .topic-wall .topic-wall-l .vm-topic-con .tp-list-header {
       border-top: 1px solid #b9c1c7;
       border-bottom: none; }
@@ -246,7 +248,6 @@
             line-height: 38px;
             font-weight: bold; }
           .topic-wall .topic-wall-l .topicInfo .topicInfo-con .topicInfo-conR .topicInfo-conR-con {
-            text-align: center;
             padding: 10px 0; }
             .topic-wall .topic-wall-l .topicInfo .topicInfo-con .topicInfo-conR .topicInfo-conR-con p {
               text-align: left;

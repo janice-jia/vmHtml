@@ -79,15 +79,34 @@ class Home extends React.Component{
                     <div className="home-square border-d7d7d7 bgF margin-top-sm">
                         <Group noPadded className="margin-v-0">
                             <h5 className="home-group-header margin-sm">广场</h5>
-
-                            <Grid align="between" className="padding-v-sm">
+                            <Grid align="between" className="padding-v-sm home-square-borderT">
                                 <Col cols={3}>
-                                    <button className="btn-yellow">需求</button>
+                                    <Grid>
+                                        <Col  className="home-square-img" shrink>
+                                        </Col>
+                                        <Col className="home-square-btn">
+                                            <a className="btn-gray" href="/require">需求</a>
+                                            <p>为专业团队提供对接服务</p>
+                                        </Col>
+                                    </Grid>
                                 </Col>
-                                <Col cols={3}>
-                                    <button className="btn-blue">服务</button>
+                                <Col cols={3} className="home-square-borderL">
+                                    <Grid>
+                                        <Col className="home-square-img" shrink>
+                                        </Col>
+                                        <Col className="home-square-btn">
+                                            <a className="btn-gray" href="server">服务</a>
+                                            <p>原创人网上个性化空间</p>
+                                        </Col>
+                                    </Grid>
                                 </Col>
                             </Grid>
+                        </Group>
+                    </div>
+
+                    <div className="home-square border-d7d7d7 bgF margin-top-sm hidden">
+                        <Group noPadded className="margin-v-0">
+                            <h5 className="home-group-header margin-sm">广场</h5>
 
                             <Grid align="between" className="padding-v-sm">
                                 <Col cols={3}>
@@ -151,7 +170,7 @@ class Home extends React.Component{
 
                     <div className="margin-h margin-v">
                         <Group noPadded className="margin-0">
-                            <a className="btn-white">查看更多</a>
+                            <a className="btn-white" href="/tribe">查看更多</a>
                         </Group>
                     </div>
 

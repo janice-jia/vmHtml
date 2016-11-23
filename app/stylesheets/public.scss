@@ -3,6 +3,7 @@
 //主体颜色
 $color-1:#FFB30E;
 $color-2:#4BBCF6;
+$color-3:#3C3C3C;
 
 //边框颜色
 $border-color-1:#D7D7D7;
@@ -143,6 +144,14 @@ $xl: 2rem;
     background: #ffffff;
     color: $text-color-3;
     @extend .extend-btn
+}
+
+.btn-gray{
+    background: $color-3;
+    color: #FFFFFF;
+    border-radius: 0;
+    padding: $xs 0 $xs 0;
+    @extend .extend-btn;
 }
 
 body{

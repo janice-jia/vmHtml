@@ -49,6 +49,38 @@
     .home-tribe-desc{
         @include line-clamp();
     }
+
+    .home-square{
+        .home-square-img{
+            img{
+                max-width: 59px;
+                height: 72px;
+            }
+            width: 59px;
+            height: 72px;
+            padding: 0;
+            margin: 0 0 0 $xs;
+            background: pink;
+        }
+        .home-square-btn{
+            text-align: center;
+            a{
+                width: 4em;
+                @extend .text-size-15;
+            }
+            p{
+                width:7em;
+                margin: $sm auto 0 auto;
+                @extend .text-size-12;
+            }
+        }
+        .home-square-borderT{
+            border-top: 1px solid $border-color-2;
+        }
+        .home-square-borderL{
+            border-left: 1px solid $border-color-2;
+        }
+    }
 }
 .header-link-active .item-title{
     color: $color-1;

@@ -6,8 +6,8 @@ export default React.createClass({
     render() {
         return (
             <View>
-                <Container>
-                    <_Header/>
+                <_Header/>
+                <Container scrollable>
                     <Group noPadded className="margin-0 userDesc">
                         <List>
                             <List.Item

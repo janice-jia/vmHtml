@@ -79,8 +79,8 @@ const btn = <div className="home-tribe-tag">海贼王部落</div>
 export default React.createClass({
     render() {
         return <View>
+            <_Header></_Header>
             <Container scrollable className="tribe">
-                <_Header></_Header>
                 <div className="bgF tribe-info-user">
                     <List.Item
                         title={

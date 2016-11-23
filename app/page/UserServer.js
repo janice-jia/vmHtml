@@ -30,8 +30,8 @@ export default React.createClass({
     render() {
         return (
             <View>
-                <Container>
-                    <_Header/>
+                <_Header/>
+                <Container scrollable>
                     <_Server serverList={serverList}></_Server>
                 </Container>
             </View>

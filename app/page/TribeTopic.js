@@ -48,8 +48,8 @@ const commentList = [
 export default React.createClass({
     render() {
         return <View>
+            <_Header></_Header>
             <Container scrollable className="tribe tribe-topic">
-                <_Header></_Header>
                 <div className="tribe-info-user bgF">
                     {albums.map((album, i) => {
                         return (
@@ -95,7 +95,7 @@ export default React.createClass({
                             <Badge></Badge>
                             <span className="padding-left-sm">全部评论（30条）</span>
                         </p>
-                        <Comments commentList={commentList}></Comments>
+                        <_Comments commentList={commentList}></_Comments>
                     </div>
                 </Group>
             </Container>

@@ -28,8 +28,8 @@ class Home extends React.Component{
 
     render() {
         return <View>
+                <_Header/>
                 <Container scrollable className="home">
-                    <_Header/>
                     <div className="home-slide">
                         <Slider>
                             <Slider.Item>
@@ -79,6 +79,16 @@ class Home extends React.Component{
                     <div className="home-square border-d7d7d7 bgF margin-top-sm">
                         <Group noPadded className="margin-v-0">
                             <h5 className="home-group-header margin-sm">广场</h5>
+
+                            <Grid align="between" className="padding-v-sm">
+                                <Col cols={3}>
+                                    <button className="btn-yellow">需求</button>
+                                </Col>
+                                <Col cols={3}>
+                                    <button className="btn-blue">服务</button>
+                                </Col>
+                            </Grid>
+
                             <Grid align="between" className="padding-v-sm">
                                 <Col cols={3}>
                                     <button className="btn-yellow">需求</button>

@@ -1,7 +1,11 @@
 import React from 'react'
 import {Router, Route, IndexRoute, browserHistory} from 'react-router'
 import App from './page/App'
+
+//register  module
 import Register from './page/Register'
+
+//login  module
 import Login from './page/Login'
 
 //user  module

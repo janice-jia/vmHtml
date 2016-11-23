@@ -56,8 +56,8 @@ const albumList=[
 export default React.createClass({
     render() {
         return <View>
+            <_Header></_Header>
             <Container scrollable className="tribe">
-                <_Header></_Header>
                 <Grid avg={3} className="text-center tribe-album">
                     {
                         albumList.map((album, i) => {

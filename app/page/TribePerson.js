@@ -7,8 +7,8 @@ import {
 export default React.createClass({
     render() {
         return <View>
+            <_Header></_Header>
             <Container scrollable fill className="tribe">
-                <_Header></_Header>
                 <Group noPadded className="margin-v">
                     <div className="padding-top require-badge">
                         <p className="text-size-14">

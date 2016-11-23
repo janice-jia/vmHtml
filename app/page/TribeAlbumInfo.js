@@ -52,8 +52,8 @@ const albumList = {
 export default React.createClass({
     render() {
         return <View>
+            <_Header></_Header>
             <Container scrollable fill className="tribe">
-                <_Header></_Header>
                 <Grid avg={3} className="text-center tribe-album">
                     {
                         albumList.imgarr.map((album, i) => {

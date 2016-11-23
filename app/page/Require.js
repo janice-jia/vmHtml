@@ -67,8 +67,8 @@ export default React.createClass({
     },
     render() {
         return <View>
-            <Container>
-                <_Header/>
+            <_Header/>
+            <Container scrollable>
                 <div className="require-tabs-list">
                     <Tabs activeKey={this.state.activeTab} onAction={this.handleAction} className="margin-0">
                         <Tabs.Item title='个人' key='1' className="padding-0">

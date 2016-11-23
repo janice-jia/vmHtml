@@ -6,8 +6,8 @@ export default React.createClass({
     render() {
         return (
             <View>
-                <Container>
-                    <_Header/>
+                <_Header/>
+                <Container scrollable>
                     <Group noPadded className="bgNone  userInfo margin-0">
                         <List className="padding-0">
                             <List.Item key="1" media={<Icon name="">用户名</Icon>}>

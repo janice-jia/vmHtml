@@ -6,7 +6,7 @@ import {
 const albums = [
     {
         title: '女爵',
-        media:'http://lorempixel.com/160/160/people/',
+        media: 'http://lorempixel.com/160/160/people/',
         subTitle: '发行公司：环球唱片',
         href: '/tribe/info/01',
         desc: `
@@ -20,7 +20,7 @@ const albums = [
     },
     {
         title: '第一张精选',
-        media:'http://lorempixel.com/128/128/people/',
+        media: 'http://lorempixel.com/128/128/people/',
         subTitle: '发行公司：滚石唱片',
         href: '/tribe/info/01',
         desc: `
@@ -28,14 +28,14 @@ const albums = [
     },
     {
         title: 'Silence',
-        media:'http://lorempixel.com/160/160/people/',
+        media: 'http://lorempixel.com/160/160/people/',
         subTitle: '发行公司：魔岩唱片',
         href: '/tribe/info/01',
         desc: `所有人都能从作品中听到能量和震撼的呈现，矛盾与妥协，失意与快乐，制作人林炜哲是真正进入到歌手的灵魂，找出最真实的瞬间再燃烧释放，献给大家；这种完全认真作音乐不哈啦的态度，不是只字片语能形容，也并非速食文化所能比拟，这种精神是和全世界的音乐人同步，这也是他们的作品和台湾大部份截然不同的原因。这样的音乐正是台湾年轻人目前需要的，与世界处在同步潮流，所有年轻人都能感受的热情和力量`
     },
     {
         title: '女爵',
-        media:'http://lorempixel.com/160/160/people/',
+        media: 'http://lorempixel.com/160/160/people/',
         subTitle: '发行公司：环球唱片',
         href: '/tribe/info/01',
         desc: `
@@ -49,7 +49,7 @@ const albums = [
     },
     {
         title: '第一张精选',
-        media:'http://lorempixel.com/128/128/people/',
+        media: 'http://lorempixel.com/128/128/people/',
         subTitle: '发行公司：滚石唱片',
         href: '/tribe/info/01',
         desc: `
@@ -57,14 +57,14 @@ const albums = [
     },
     {
         title: 'Silence',
-        media:'http://lorempixel.com/160/160/people/',
+        media: 'http://lorempixel.com/160/160/people/',
         subTitle: '发行公司：魔岩唱片',
         href: '/tribe/info/01',
         desc: `所有人都能从作品中听到能量和震撼的呈现，矛盾与妥协，失意与快乐，制作人林炜哲是真正进入到歌手的灵魂，找出最真实的瞬间再燃烧释放，献给大家；这种完全认真作音乐不哈啦的态度，不是只字片语能形容，也并非速食文化所能比拟，这种精神是和全世界的音乐人同步，这也是他们的作品和台湾大部份截然不同的原因。这样的音乐正是台湾年轻人目前需要的，与世界处在同步潮流，所有年轻人都能感受的热情和力量`
     },
     {
         title: '女爵',
-        media:'http://lorempixel.com/160/160/people/',
+        media: 'http://lorempixel.com/160/160/people/',
         subTitle: '发行公司：环球唱片',
         href: '/tribe/info/01',
         desc: `
@@ -78,7 +78,7 @@ const albums = [
     },
     {
         title: '第一张精选',
-        media:'http://lorempixel.com/128/128/people/',
+        media: 'http://lorempixel.com/128/128/people/',
         subTitle: '发行公司：滚石唱片',
         href: '/tribe/info/01',
         desc: `
@@ -86,14 +86,14 @@ const albums = [
     },
     {
         title: 'Silence',
-        media:'http://lorempixel.com/160/160/people/',
+        media: 'http://lorempixel.com/160/160/people/',
         subTitle: '发行公司：魔岩唱片',
         href: '/tribe/info/01',
         desc: `所有人都能从作品中听到能量和震撼的呈现，矛盾与妥协，失意与快乐，制作人林炜哲是真正进入到歌手的灵魂，找出最真实的瞬间再燃烧释放，献给大家；这种完全认真作音乐不哈啦的态度，不是只字片语能形容，也并非速食文化所能比拟，这种精神是和全世界的音乐人同步，这也是他们的作品和台湾大部份截然不同的原因。这样的音乐正是台湾年轻人目前需要的，与世界处在同步潮流，所有年轻人都能感受的热情和力量`
     },
     {
         title: '女爵',
-        media:'http://lorempixel.com/160/160/people/',
+        media: 'http://lorempixel.com/160/160/people/',
         subTitle: '发行公司：环球唱片',
         href: '/tribe/info/01',
         desc: `
@@ -107,7 +107,7 @@ const albums = [
     },
     {
         title: '第一张精选',
-        media:'http://lorempixel.com/128/128/people/',
+        media: 'http://lorempixel.com/128/128/people/',
         subTitle: '发行公司：滚石唱片',
         href: '/tribe/info/01',
         desc: `
@@ -115,14 +115,14 @@ const albums = [
     },
     {
         title: 'Silence',
-        media:'http://lorempixel.com/160/160/people/',
+        media: 'http://lorempixel.com/160/160/people/',
         subTitle: '发行公司：魔岩唱片',
         href: '/tribe/info/01',
         desc: `所有人都能从作品中听到能量和震撼的呈现，矛盾与妥协，失意与快乐，制作人林炜哲是真正进入到歌手的灵魂，找出最真实的瞬间再燃烧释放，献给大家；这种完全认真作音乐不哈啦的态度，不是只字片语能形容，也并非速食文化所能比拟，这种精神是和全世界的音乐人同步，这也是他们的作品和台湾大部份截然不同的原因。这样的音乐正是台湾年轻人目前需要的，与世界处在同步潮流，所有年轻人都能感受的热情和力量`
     },
     {
         title: '女爵',
-        media:'http://lorempixel.com/160/160/people/',
+        media: 'http://lorempixel.com/160/160/people/',
         subTitle: '发行公司：环球唱片',
         href: '/tribe/info/01',
         desc: `
@@ -136,7 +136,7 @@ const albums = [
     },
     {
         title: '第一张精选',
-        media:'http://lorempixel.com/128/128/people/',
+        media: 'http://lorempixel.com/128/128/people/',
         subTitle: '发行公司：滚石唱片',
         href: '/tribe/info/01',
         desc: `
@@ -144,14 +144,14 @@ const albums = [
     },
     {
         title: 'Silence',
-        media:'http://lorempixel.com/160/160/people/',
+        media: 'http://lorempixel.com/160/160/people/',
         subTitle: '发行公司：魔岩唱片',
         href: '/tribe/info/01',
         desc: `所有人都能从作品中听到能量和震撼的呈现，矛盾与妥协，失意与快乐，制作人林炜哲是真正进入到歌手的灵魂，找出最真实的瞬间再燃烧释放，献给大家；这种完全认真作音乐不哈啦的态度，不是只字片语能形容，也并非速食文化所能比拟，这种精神是和全世界的音乐人同步，这也是他们的作品和台湾大部份截然不同的原因。这样的音乐正是台湾年轻人目前需要的，与世界处在同步潮流，所有年轻人都能感受的热情和力量`
     },
     {
         title: '女爵',
-        media:'http://lorempixel.com/160/160/people/',
+        media: 'http://lorempixel.com/160/160/people/',
         subTitle: '发行公司：环球唱片',
         href: '/tribe/info/01',
         desc: `
@@ -165,7 +165,7 @@ const albums = [
     },
     {
         title: '第一张精选',
-        media:'http://lorempixel.com/128/128/people/',
+        media: 'http://lorempixel.com/128/128/people/',
         subTitle: '发行公司：滚石唱片',
         href: '/tribe/info/01',
         desc: `
@@ -173,7 +173,7 @@ const albums = [
     },
     {
         title: 'Silence',
-        media:'http://lorempixel.com/160/160/people/',
+        media: 'http://lorempixel.com/160/160/people/',
         subTitle: '发行公司：魔岩唱片',
         href: '/tribe/info/01',
         desc: `所有人都能从作品中听到能量和震撼的呈现，矛盾与妥协，失意与快乐，制作人林炜哲是真正进入到歌手的灵魂，找出最真实的瞬间再燃烧释放，献给大家；这种完全认真作音乐不哈啦的态度，不是只字片语能形容，也并非速食文化所能比拟，这种精神是和全世界的音乐人同步，这也是他们的作品和台湾大部份截然不同的原因。这样的音乐正是台湾年轻人目前需要的，与世界处在同步潮流，所有年轻人都能感受的热情和力量`
@@ -183,8 +183,8 @@ const albums = [
 export default React.createClass({
     render() {
         return <View>
-        <Container scrollable className="tribe">
-                <_Header></_Header>
+            <_Header></_Header>
+            <Container scrollable className="tribe">
                 <List className="t-index-list">
                     {albums.map((album, i) => {
                         return (
@@ -200,7 +200,7 @@ export default React.createClass({
                     })}
                 </List>
             </Container>
-            </View>
+        </View>
 
     }
 })

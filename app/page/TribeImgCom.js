@@ -13,8 +13,8 @@ const imgcom = {
 export default React.createClass({
     render() {
         return <View>
+            <_Header></_Header>
             <Container scrollable fill className="tribe">
-                <_Header></_Header>
                 <div className="tribe-imgcom-img">
                     <img src={imgcom.img} alt=""/>
                 </div>

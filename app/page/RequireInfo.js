@@ -46,8 +46,8 @@ class RequireInfo extends React.Component{
 
     render() {
         return <View>
+            <_Header></_Header>
             <Container scrollable>
-                <_Header></_Header>
                 <div className="bgF require-info-user">
                     <List.Item
                         media={<img className="require-user-avatar" width="44" height="44" src="http://s.amazeui.org/media/i/demos/bing-2.jpg" />}

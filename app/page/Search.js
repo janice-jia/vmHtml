@@ -19,8 +19,8 @@ class Search extends React.Component{
 
     render() {
         return <View className="header">
-            <Container>
-                <_Header isSearch={true} onChange={this.handleChange.bind(this)} searchVal={this.state.searchVal}></_Header>
+            <_Header isSearch={true} onChange={this.handleChange.bind(this)} searchVal={this.state.searchVal}></_Header>
+            <Container scrollable>
                 <div className="require-tabs-list">
                     <Tabs  onAction={this.handleAction} className="margin-0">
                         <Tabs.Item title='部落' key='1' className="padding-0">

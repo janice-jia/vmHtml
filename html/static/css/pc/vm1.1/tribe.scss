@@ -458,6 +458,24 @@ $color-ffffff: #ffffff;
                         a{
                             @extend .extend-aline;
                         }
+
+
+                        h2 {
+                            a {
+                            }
+                            display: inline-block;
+                            font-weight: normal;
+                        }
+                        div[data-demdet="answer"] {
+                            display: inline-block;
+                            font-weight: normal;
+                            span {
+                                color: #499af5;
+                                a{
+                                    color: #499af5;
+                                }
+                            }
+                        }
                     }
                     .topicCom-con{
                         padding: 5px 0 0 0;
@@ -1035,7 +1053,7 @@ $color-ffffff: #ffffff;
                     }
                     .artworkCom-comR{
                         float: left;
-                        width: 224px;
+                        width: 211px;
                         .artworkCom-name{
                             height: 38px;
                             line-height: 38px;

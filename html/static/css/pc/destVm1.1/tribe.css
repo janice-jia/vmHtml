@@ -305,6 +305,16 @@
             line-height: 38px;
             overflow: hidden;
             font-weight: bold; }
+            .topic-wall .topic-wall-l .topicInfo-comment .topicCom-com .topicCom-comR .topicCom-name h2 {
+              display: inline-block;
+              font-weight: normal; }
+            .topic-wall .topic-wall-l .topicInfo-comment .topicCom-com .topicCom-comR .topicCom-name div[data-demdet="answer"] {
+              display: inline-block;
+              font-weight: normal; }
+              .topic-wall .topic-wall-l .topicInfo-comment .topicCom-com .topicCom-comR .topicCom-name div[data-demdet="answer"] span {
+                color: #499af5; }
+                .topic-wall .topic-wall-l .topicInfo-comment .topicCom-com .topicCom-comR .topicCom-name div[data-demdet="answer"] span a {
+                  color: #499af5; }
           .topic-wall .topic-wall-l .topicInfo-comment .topicCom-com .topicCom-comR .topicCom-con {
             padding: 5px 0 0 0; }
           .topic-wall .topic-wall-l .topicInfo-comment .topicCom-com .topicCom-comR .topicCom-time {
@@ -727,7 +737,7 @@
               border-radius: 50%; }
           .modal-infoComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-comR {
             float: left;
-            width: 224px; }
+            width: 211px; }
             .modal-infoComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-comR .artworkCom-name {
               height: 38px;
               line-height: 38px;

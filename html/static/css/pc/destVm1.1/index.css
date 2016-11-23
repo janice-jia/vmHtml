@@ -165,6 +165,8 @@
       margin-bottom: 18px;
       box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
       position: relative; }
+      .vm-tribe .vm-tribe-con ul li:hover {
+        box-shadow: 0 0 18px rgba(0, 0, 0, 0.7); }
       .vm-tribe .vm-tribe-con ul li .vm-tribe-con-img {
         width: 220px;
         height: 220px; }
@@ -181,13 +183,15 @@
           font-size: 14px;
           color: #171717; }
       .vm-tribe .vm-tribe-con ul li .vm-tribe-con-des {
-        height: 45px;
+        height: 25px;
         overflow: hidden;
         margin: 0 10px;
-        padding: 0 15px;
+        text-align: center;
         line-height: 20px;
         color: #999999;
-        border-bottom: 1px solid #c2c2c2; }
+        border-bottom: 1px solid #c2c2c2;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
       .vm-tribe .vm-tribe-con ul li .vm-tribe-con-view {
         padding-left: 15px;
         padding-top: 17px;
@@ -233,6 +237,8 @@
     border: 1px solid #cccccc;
     margin: 0 0 18px 25px;
     position: relative; }
+    .vm-need .vm-need-con ul li:hover {
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); }
     .vm-need .vm-need-con ul li .vm-need-img {
       width: 295px;
       height: 150px; }
@@ -241,10 +247,11 @@
         width: 295px; }
     .vm-need .vm-need-con ul li .vm-need-tit {
       line-height: 20px;
-      height: 40px;
+      height: 20px;
       overflow: hidden;
-      padding: 0 75px;
-      margin: 20px 0; }
+      padding: 0 45px;
+      margin: 15px 0;
+      text-align: center; }
       .vm-need .vm-need-con ul li .vm-need-tit a {
         font-size: 14px;
         color: #171717; }
@@ -285,6 +292,8 @@
       background: #ffffff;
       margin: 0 0 18px 18px;
       position: relative; }
+      .vm-serve .vm-serve-con ul li:hover {
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); }
       .vm-serve .vm-serve-con ul li .hrefBlock {
         height: 235px; }
       .vm-serve .vm-serve-con ul li .vm-serve-img {
@@ -298,7 +307,8 @@
         height: 40px;
         overflow: hidden;
         padding: 0 25px;
-        margin: 10px 0; }
+        margin: 10px 0;
+        text-align: center; }
         .vm-serve .vm-serve-con ul li .vm-serve-tit a {
           font-size: 14px;
           color: #171717; }
@@ -327,7 +337,7 @@
             height: 21px; }
             .vm-serve .vm-serve-con ul li .vm-serve-user a.vm-serve-avatar img {
               max-width: 21px;
-              max-width: 21px;
+              max-height: 21px;
               border-radius: 50%; }
           .vm-serve .vm-serve-con ul li .vm-serve-user a.vm-serve-name {
             width: 135px;

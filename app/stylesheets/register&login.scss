@@ -2,11 +2,39 @@
     .group-body{
         background: none;
     }
-    .regLog-logo-img {
-        width: 139px;
-        height: 127px;
-        background: pink;
+    .regLog-logo-box {
+        height: 89px;
+        width: 78px;
         margin: 0 auto;
+        padding-top: 23px;
+        .regLog-logo-img{
+            height: 44px;
+            background: url("../public/img/sign/logo.png") no-repeat center $color-4;
+            background-size: 35px 45px;
+            position: relative;
+            &:before{
+                content: "";
+                position: absolute;
+                top: -22px;
+                left: 0;
+                width: 0;
+                height: 0;
+                border-left: 39px solid transparent;
+                border-right: 39px solid transparent;
+                border-bottom: 22px solid $color-4;
+            }
+            &:after{
+                content: "";
+                position: absolute;
+                bottom: -22px;
+                left: 0;
+                width: 0;
+                height: 0;
+                border-left: 39px solid transparent;
+                border-right: 39px solid transparent;
+                border-top: 22px solid $color-4;
+            }
+        }
     }
 }
 .form-register{
@@ -21,14 +49,20 @@
         .icon-phone{
             width: 13px;
             @extend .extend-icon;
+            background: url("../public/img/sign/register_iphone_icon.png") no-repeat;
+            background-size: 13px 20px;
         }
         .icon-pwd{
             width: 16px;
             @extend .extend-icon;
+            background: url("../public/img/sign/register_password_icon.png") no-repeat;
+            background-size: 16px 20px;
         }
         .icon-nickname{
             width: 18px;
             @extend .extend-icon;
+            background: url("../public/img/sign/register_nickname_icon.png") no-repeat;
+            background-size: 16px 20px;
         }
     }
 
@@ -46,7 +80,8 @@
             width: 22px;
             height: 15px;
             display: inline-block;
-            background: pink;
+            background: url("../public/img/sign/register_eyes_btn.png") no-repeat;
+            background-size: 20px 15px;
         }
     }
     .item-input{

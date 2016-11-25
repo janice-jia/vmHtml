@@ -15,12 +15,14 @@
             height: 15px;
             right: 0;
             top:50px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
         }
         .user-woman{
-            background: pink;
+            background-image: url("../public/img/me/me_men_icon.png");
         }
         .user-man{
-            background: blue;
+            background-image: url("../public/img/me/me_women_icon.png");
         }
     }
     .item-title{
@@ -63,21 +65,25 @@
     }
     .userNav-bl{
         @extend .extend-userNav-icon;
-        background: pink;
+        background: url("../public/img/me/me_tribe_icon.png") no-repeat;
+        background-size: 20px 20px;
     }
     .userNav-ht{
         width: 22px;
         @extend .extend-userNav-icon;
-        background: blue;
+        background: url("../public/img/me/me_topic_icon.png") no-repeat;
+        background-size: 22px 20px;
     }
     .userNav-xq{
         height: 17px;
         @extend .extend-userNav-icon;
-        background: deeppink;
+        background: url("../public/img/me/me_demand_icon.png") no-repeat;
+        background-size: 20px 17px;
     }
     .userNav-fw{
         @extend .extend-userNav-icon;
-        background: lightblue;
+        background: url("../public/img/me/me_service_icon.png") no-repeat;
+        background-size: 20px 17px;
     }
 }
 /*用户首页  end*/

@@ -9,7 +9,9 @@ export default React.createClass({
                 <_Header/>
                 <Container scrollable>
                     <Group className="regLog-logo">
-                        <div className="regLog-logo-img"></div>
+                        <div className="regLog-logo-box">
+                            <div className="regLog-logo-img"></div>
+                        </div>
                     </Group>
                     <Group className="bgNone">
                         <form action="" className="form-login">

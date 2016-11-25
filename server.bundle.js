@@ -584,12 +584,8 @@
 	                ),
 	                _react2.default.createElement(_amazeuiTouch.NavBar, {
 	                    className: 'Header',
-	                    title: _react2.default.createElement(
-	                        'div',
-	                        { className: 'home-logo text-size-12' },
-	                        'logo'
-	                    ),
-	                    leftNav: [{ title: 'nav',
+	                    title: _react2.default.createElement('div', { className: 'home-logo text-size-12' }),
+	                    leftNav: [{ title: '',
 	                        component: _amazeuiTouch.OffCanvasTrigger,
 	                        className: "leftNav",
 	                        offCanvas: _react2.default.createElement(
@@ -679,7 +675,7 @@
 	                        ),
 	                        isClone: true }],
 	                    rightNav: [{
-	                        title: 'search',
+	                        title: '',
 	                        className: 'search'
 	                    }],
 	                    onAction: this.openNotification.bind(this),
@@ -1564,7 +1560,7 @@
 	                                    _react2.default.createElement(
 	                                        _amazeuiTouch.Grid,
 	                                        null,
-	                                        _react2.default.createElement(_amazeuiTouch.Col, { className: 'home-square-img', shrink: true }),
+	                                        _react2.default.createElement(_amazeuiTouch.Col, { className: 'home-square-img home-square-require', shrink: true }),
 	                                        _react2.default.createElement(
 	                                            _amazeuiTouch.Col,
 	                                            { className: 'home-square-btn' },
@@ -1587,7 +1583,7 @@
 	                                    _react2.default.createElement(
 	                                        _amazeuiTouch.Grid,
 	                                        null,
-	                                        _react2.default.createElement(_amazeuiTouch.Col, { className: 'home-square-img', shrink: true }),
+	                                        _react2.default.createElement(_amazeuiTouch.Col, { className: 'home-square-img home-square-server', shrink: true }),
 	                                        _react2.default.createElement(
 	                                            _amazeuiTouch.Col,
 	                                            { className: 'home-square-btn' },

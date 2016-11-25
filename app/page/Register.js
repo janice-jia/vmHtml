@@ -9,7 +9,9 @@ export default React.createClass({
                 <_Header/>
                 <Container scrollable>
                     <Group className="regLog-logo">
-                        <div className="regLog-logo-img"></div>
+                        <div className="regLog-logo-box">
+                            <div className="regLog-logo-img"></div>
+                        </div>
                     </Group>
                     <Group className="bgNone">
                         <form action="" className="form-register">
@@ -21,7 +23,7 @@ export default React.createClass({
 
                             <List>
                                 <List.Item key="2" className="margin-bottom" media={<Icon className="icon-pwd" name=""/>} nested="input" >
-                                    <Field type="password" placeholder="请设置6-16位密码" btnAfter={<Icon className="icon-pwdHid" name=""/>}/>
+                                    <Field type="password" placeholder="请设置6-16位密码" btnAfter={<Icon className="icon-pwdHid" name=""/>} onClick={this.showPassword.bind(this)}/>
                                 </List.Item>
                             </List>
 

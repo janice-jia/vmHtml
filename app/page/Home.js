@@ -47,29 +47,18 @@ class Home extends React.Component{
                             <Grid avg={4}>
                                 <Col className="padding-v-0">
                                     <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg"/>
+                                    <p className="home-tribe-name">剑灵部落</p>
                                 </Col>
                                 <Col className="padding-v-0">
                                     <img src="http://s.amazeui.org/media/i/demos/bing-2.jpg" />
+                                    <p className="home-tribe-name">海贼王部落</p>
                                 </Col>
                                 <Col className="padding-v-0">
                                     <img src="http://s.amazeui.org/media/i/demos/bing-3.jpg" />
+                                    <p className="home-tribe-name">魔兽部落</p>
                                 </Col>
                                 <Col className="padding-v-0">
                                     <img src="http://s.amazeui.org/media/i/demos/bing-4.jpg" />
-                                </Col>
-                            </Grid>
-
-                            <Grid avg={4} className="text-center">
-                                <Col className="padding-v-xs">
-                                    <p className="home-tribe-name">剑灵部落</p>
-                                </Col>
-                                <Col className="padding-v-xs">
-                                    <p className="home-tribe-name">海贼王部落</p>
-                                </Col>
-                                <Col className="padding-v-xs">
-                                    <p className="home-tribe-name">魔兽部落</p>
-                                </Col>
-                                <Col className="padding-v-xs">
                                     <p className="home-tribe-name">奇迹王座部落</p>
                                 </Col>
                             </Grid>
@@ -82,7 +71,7 @@ class Home extends React.Component{
                             <Grid align="between" className="padding-v-sm home-square-borderT">
                                 <Col cols={3}>
                                     <Grid>
-                                        <Col  className="home-square-img" shrink>
+                                        <Col  className="home-square-img home-square-require" shrink>
                                         </Col>
                                         <Col className="home-square-btn">
                                             <a className="btn-gray" href="/require">需求</a>
@@ -92,7 +81,7 @@ class Home extends React.Component{
                                 </Col>
                                 <Col cols={3} className="home-square-borderL">
                                     <Grid>
-                                        <Col className="home-square-img" shrink>
+                                        <Col className="home-square-img home-square-server" shrink>
                                         </Col>
                                         <Col className="home-square-btn">
                                             <a className="btn-gray" href="server">服务</a>
@@ -119,7 +108,7 @@ class Home extends React.Component{
                         </Group>
                     </div>
 
-                    <div className="border-d7d7d7 bgF margin-top-sm">
+                    <div className="border-d7d7d7 bgF margin-top-sm home-tribe-item">
                         <Group noPadded className="margin-v-0">
                             <List>
                                 <List.Item

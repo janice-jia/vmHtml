@@ -1,66 +1,95 @@
 /*Home start*/
-.home-logo{
-    width: 27px;
-    height: 34px;
-    background: pink;
-    margin: 0 auto;
-}
+
 
 .home{
-    .slider-control{
-        display: none;
-    }
-    .slider-indicators .active{
-        background: $color-1;
-    }
     .border-d7d7d7{
         border: 1px solid $border-color-1;
     }
-    .home-group-header{
-        color: $text-color-1;
-    }
-    .home-tribe-name{
-        width: 100%;
-        height: 1.2rem;
-        overflow: hidden;
-        @extend .text-size-12;
-        color: $text-color-2;
-    }
-    .home-tribe-media{
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-    }
-    .home-tribe-tag{
-        border: 1px solid $border-color-1;
-        padding: 0 $sm;
-    }
-    .home-tribe-item{
-        p{
-            line-height: 1.5;
-            height: 1.5rem;
-            overflow: hidden;
-            margin: 0;
+
+    //幻灯片
+    .home-slide{
+        .slider-control{
+            display: none;
+        }
+        .slider-slides{
+            height: 175px;
+            li{
+                height: 100%;
+            }
+        }
+        .slider-indicators .active{
+            background: $color-1;
         }
     }
-    .item{
-        border: none;
-    }
-    .home-tribe-desc{
-        @include line-clamp();
+
+    //部落
+    .home-tribe{
+        .home-group-header{
+            color: $text-color-1;
+        }
+        .home-tribe-name{
+            width: 100%;
+            height: 1.2rem;
+            overflow: hidden;
+            @extend .text-size-12;
+            color: $text-color-2;
+            margin: $xs 0 $sm 0;
+        }
+        .col{
+            width: 80px;
+            text-align: center;
+            img{
+                width: 80px;
+                height: 80px;
+            }
+        }
     }
 
-    .home-square{
-        .home-square-img{
-            img{
-                max-width: 59px;
-                height: 72px;
+    //部落item
+    .home-tribe-item{
+        .home-tribe-media{
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+        }
+        .home-tribe-tag{
+            border: 1px solid $border-color-1;
+            padding: 0 $sm;
+        }
+        .home-tribe-item{
+            p{
+                line-height: 1.5;
+                height: 1.5rem;
+                overflow: hidden;
+                margin: 0;
             }
-            width: 59px;
-            height: 72px;
+        }
+        .item{
+            border: none;
+        }
+        .home-tribe-desc{
+            @include line-clamp();
+        }
+    }
+
+    //广场
+    .home-square{
+        .g{
+            align-items: center;
+        }
+        .home-square-img{
+            height: 59px;
+            width: 72px;
             padding: 0;
             margin: 0 0 0 $xs;
-            background: pink;
+        }
+        .home-square-require{
+            background: url("../public/img/home/tribe_demand_icon.png") no-repeat;
+            background-size: 100% 56px;
+        }
+        .home-square-server{
+            background: url("../public/img/home/tribe_service_icon.png") no-repeat;
+            background-size: 62px 59px;
         }
         .home-square-btn{
             text-align: center;

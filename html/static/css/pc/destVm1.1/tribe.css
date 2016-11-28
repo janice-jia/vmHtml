@@ -545,6 +545,21 @@
           border: 1px solid #dcdcdc;
           background: url("../../../images/pc/vm1.1/icon/icon-cover.png");
           background-size: 120px 120px; }
+        .topic-wall .vm-album-con-pd ul li .tribe-del {
+          display: none;
+          padding: 0 8px;
+          height: 32px;
+          line-height: 32px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: rgba(0, 0, 0, 0.6);
+          color: #fff;
+          width: 100%; }
+          .topic-wall .vm-album-con-pd ul li .tribe-del a {
+            color: #fff; }
+        .topic-wall .vm-album-con-pd ul li:hover .tribe-del {
+          display: block; }
     .topic-wall .vm-album-con-pd .edit-albumName {
       display: inline-block;
       position: relative;

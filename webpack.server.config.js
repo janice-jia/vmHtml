@@ -24,8 +24,8 @@ module.exports = {
             {test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader?presets[]=es2015&presets[]=react'},
             {test: /\.scss$/, loader: "style-loader!css-loader!sass-loader"},
             {test: /\.less$/, loader: "style-loader!css-loader!less-loader"},
-            {test: /\.woff|\.woff2|\.svg|.eot|\.ttf/, loader: 'url?prefix=font/&limit=10000'},
-            {test: /\.(jpg|png)$/,loader: 'url?prefix=font/&limit=10000'}
+            {test: /\.woff|\.woff2|\.svg|.eot|\.ttf/, loader: 'url-loader?prefix=font/&limit=10000'},
+            {test: /\.(jpg|png)$/,loader: 'url-loader?prefix=font/&limit=10000'}
         ]
     },
     plugins: [

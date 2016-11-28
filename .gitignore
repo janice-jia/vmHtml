@@ -7,3 +7,5 @@ npm-debug.log
 .idea/*
 /.idea
 /node_modules
+/build
+server.bundle.js

@@ -3,7 +3,7 @@ import {Container, Group, Slider, Grid, Col, List, View} from 'amazeui-touch'
 import HomeStore from '../stores/HomeStore'
 import HomeActions from '../actions/HomeActions'
 import _Header from '../components/_Header'
-//import Swiper from 'swiper'
+import Swiper from 'swiper'
 
 class Home extends React.Component{
     constructor(props) {
@@ -16,7 +16,12 @@ class Home extends React.Component{
     componentDidMount() {
         HomeStore.listen(this.onChange);
         HomeActions.updateHome();
-
+        this.swipe = Swiper(this.refs.swiperContainer,{
+            pagination: '.swiper-pagination',
+            slidesPerView: 'auto',
+            paginationClickable: true,
+            spaceBetween: 5
+        });
     }
 
     componentWillUnmount() {

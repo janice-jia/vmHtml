@@ -15,6 +15,10 @@
             height: 175px;
             li{
                 height: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
         .slider-indicators .active{
@@ -24,6 +28,7 @@
 
     //部落
     .home-tribe{
+
         .home-group-header{
             color: $text-color-1;
         }
@@ -35,11 +40,14 @@
             color: $text-color-2;
             margin: $xs 0 $sm 0;
         }
-        .col{
+        .swiper-slide{
             width: 80px;
             text-align: center;
+            padding: 0;
+            margin: 0 $xs;
             img{
                 width: 80px;
+                max-width: 80px;
                 height: 80px;
             }
         }

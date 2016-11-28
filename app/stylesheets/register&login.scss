@@ -77,11 +77,18 @@
             margin-bottom: 0;
         }
         .icon-pwdHid{
-            width: 22px;
+            width: 27px;
             height: 15px;
             display: inline-block;
-            background: url("../public/img/sign/register_eyes_btn.png") no-repeat;
+            background: url("../public/img/sign/register_eyes_btn.png") no-repeat right;
             background-size: 20px 15px;
+        }
+        .icon-pwdShow{
+            width: 27px;
+            height: 15px;
+            display: inline-block;
+            background: url("../public/img/sign/register_eyes_btn_selected.png") no-repeat right;
+            background-size: 25px 15px;
         }
     }
     .item-input{
@@ -143,5 +150,28 @@
     }
     .btn-yellow{
         @extend .text-color-1;
+    }
+    .forgetPwd{
+        text-align: right;
+        a{
+            @extend .text-color-2;
+            text-decoration: underline;
+        }
+    }
+}
+
+
+.registerNow{
+    width: 100%;
+    text-align: center;
+    a{
+        color: #FFB30E;
+    }
+}
+
+@media screen and (min-height: 550px) {
+    .registerNow{
+        position: fixed;
+        bottom: 0;
     }
 }

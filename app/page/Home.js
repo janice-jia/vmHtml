@@ -3,7 +3,7 @@ import {Container, Group, Slider, Grid, Col, List, View} from 'amazeui-touch'
 import HomeStore from '../stores/HomeStore'
 import HomeActions from '../actions/HomeActions'
 import _Header from '../components/_Header'
-
+//import Swiper from 'swiper'
 
 class Home extends React.Component{
     constructor(props) {
@@ -16,6 +16,7 @@ class Home extends React.Component{
     componentDidMount() {
         HomeStore.listen(this.onChange);
         HomeActions.updateHome();
+
     }
 
     componentWillUnmount() {
@@ -25,44 +26,56 @@ class Home extends React.Component{
     onChange(state) {
         this.setState(state)
     }
+    handleLeftSwipe (e) {
+        console.log(e);
+    }
 
     render() {
         return <View>
                 <_Header/>
                 <Container scrollable className="home">
+
                     <div className="home-slide">
                         <Slider>
                             <Slider.Item>
-                                <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg" />
+                                <a href="#"><img src="http://s.amazeui.org/media/i/demos/bing-1.jpg" /></a>
                             </Slider.Item>
                             <Slider.Item>
-                                <img src="http://s.amazeui.org/media/i/demos/bing-2.jpg" />
+                                <a href="#"><img src="http://s.amazeui.org/media/i/demos/bing-2.jpg" /></a>
                             </Slider.Item>
                         </Slider>
                     </div>
 
                     <div className="home-tribe border-d7d7d7 bgF">
-                        <Group noPadded className="margin-0">
-                            <h5 className="home-group-header margin-sm">部落</h5>
-                            <Grid avg={4}>
-                                <Col className="padding-v-0">
-                                    <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg"/>
-                                    <p className="home-tribe-name">剑灵部落</p>
-                                </Col>
-                                <Col className="padding-v-0">
-                                    <img src="http://s.amazeui.org/media/i/demos/bing-2.jpg" />
-                                    <p className="home-tribe-name">海贼王部落</p>
-                                </Col>
-                                <Col className="padding-v-0">
-                                    <img src="http://s.amazeui.org/media/i/demos/bing-3.jpg" />
-                                    <p className="home-tribe-name">魔兽部落</p>
-                                </Col>
-                                <Col className="padding-v-0">
-                                    <img src="http://s.amazeui.org/media/i/demos/bing-4.jpg" />
-                                    <p className="home-tribe-name">奇迹王座部落</p>
-                                </Col>
-                            </Grid>
-                        </Group>
+                            <Group noPadded className="margin-0">
+                                <h5 className="home-group-header margin-sm">部落</h5>
+                                <Group noPadded className="margin-h-xs margin-v-0">
+                                    <div ref="swiperContainer"  className="swiper-container">
+                                        <div className="swiper-wrapper">
+                                            <div className="swiper-slide">
+                                                <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg"/>
+                                                <p className="home-tribe-name">剑灵部落</p>
+                                            </div>
+                                            <div className="swiper-slide">
+                                                <img src="http://s.amazeui.org/media/i/demos/bing-2.jpg" />
+                                                <p className="home-tribe-name">海贼王部落</p>
+                                            </div>
+                                            <div className="swiper-slide">
+                                                <img src="http://s.amazeui.org/media/i/demos/bing-3.jpg" />
+                                                <p className="home-tribe-name">魔兽部落</p>
+                                            </div>
+                                            <div className="swiper-slide">
+                                                <img src="http://s.amazeui.org/media/i/demos/bing-4.jpg" />
+                                                <p className="home-tribe-name">奇迹王座部落</p>
+                                            </div>
+                                            <div className="swiper-slide">
+                                                <img src="http://s.amazeui.org/media/i/demos/bing-4.jpg" />
+                                                <p className="home-tribe-name">奇迹王座部落</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Group>
+                            </Group>
                     </div>
 
                     <div className="home-square border-d7d7d7 bgF margin-top-sm">

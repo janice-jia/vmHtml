@@ -8,6 +8,9 @@ import Register from './page/Register'
 //login  module
 import Login from './page/Login'
 
+//ForgetPwd module
+import ForgetPwd from './page/ForgetPwd'
+
 //user  module
 import User from './page/User'
 import UserInfo from './page/UserInfo'
@@ -44,6 +47,7 @@ module.exports = (
             <IndexRoute component={Home}/>
             <Route path="/register" component={Register}/>
             <Route path="/login" component={Login}/>
+            <Route path="/forgetpwd" component={ForgetPwd}/>
 
             <Route path="/user/:userId" component={User}/>
             <Route path="/user/info/:userId" component={UserInfo}/>

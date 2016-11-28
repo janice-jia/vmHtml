@@ -162,75 +162,79 @@
 
 	var _Register2 = _interopRequireDefault(_Register);
 
-	var _Login = __webpack_require__(13);
+	var _Login = __webpack_require__(14);
 
 	var _Login2 = _interopRequireDefault(_Login);
 
-	var _User = __webpack_require__(14);
+	var _ForgetPwd = __webpack_require__(15);
+
+	var _ForgetPwd2 = _interopRequireDefault(_ForgetPwd);
+
+	var _User = __webpack_require__(16);
 
 	var _User2 = _interopRequireDefault(_User);
 
-	var _UserInfo = __webpack_require__(15);
+	var _UserInfo = __webpack_require__(17);
 
 	var _UserInfo2 = _interopRequireDefault(_UserInfo);
 
-	var _UserServer = __webpack_require__(16);
+	var _UserServer = __webpack_require__(18);
 
 	var _UserServer2 = _interopRequireDefault(_UserServer);
 
-	var _UserRequire = __webpack_require__(18);
+	var _UserRequire = __webpack_require__(20);
 
 	var _UserRequire2 = _interopRequireDefault(_UserRequire);
 
-	var _Home = __webpack_require__(20);
+	var _Home = __webpack_require__(22);
 
 	var _Home2 = _interopRequireDefault(_Home);
 
-	var _Server = __webpack_require__(26);
+	var _Server = __webpack_require__(27);
 
 	var _Server2 = _interopRequireDefault(_Server);
 
-	var _ServerInfo = __webpack_require__(27);
+	var _ServerInfo = __webpack_require__(28);
 
 	var _ServerInfo2 = _interopRequireDefault(_ServerInfo);
 
-	var _Require = __webpack_require__(28);
+	var _Require = __webpack_require__(29);
 
 	var _Require2 = _interopRequireDefault(_Require);
 
-	var _RequireInfo = __webpack_require__(29);
+	var _RequireInfo = __webpack_require__(30);
 
 	var _RequireInfo2 = _interopRequireDefault(_RequireInfo);
 
-	var _Search = __webpack_require__(31);
+	var _Search = __webpack_require__(32);
 
 	var _Search2 = _interopRequireDefault(_Search);
 
-	var _Tribe = __webpack_require__(32);
+	var _Tribe = __webpack_require__(33);
 
 	var _Tribe2 = _interopRequireDefault(_Tribe);
 
-	var _Tribeinfo = __webpack_require__(33);
+	var _Tribeinfo = __webpack_require__(34);
 
 	var _Tribeinfo2 = _interopRequireDefault(_Tribeinfo);
 
-	var _TribeAlbum = __webpack_require__(34);
+	var _TribeAlbum = __webpack_require__(35);
 
 	var _TribeAlbum2 = _interopRequireDefault(_TribeAlbum);
 
-	var _TribeAlbumInfo = __webpack_require__(35);
+	var _TribeAlbumInfo = __webpack_require__(36);
 
 	var _TribeAlbumInfo2 = _interopRequireDefault(_TribeAlbumInfo);
 
-	var _TribeImgCom = __webpack_require__(36);
+	var _TribeImgCom = __webpack_require__(37);
 
 	var _TribeImgCom2 = _interopRequireDefault(_TribeImgCom);
 
-	var _TribeTopic = __webpack_require__(37);
+	var _TribeTopic = __webpack_require__(38);
 
 	var _TribeTopic2 = _interopRequireDefault(_TribeTopic);
 
-	var _TribePerson = __webpack_require__(38);
+	var _TribePerson = __webpack_require__(39);
 
 	var _TribePerson2 = _interopRequireDefault(_TribePerson);
 
@@ -245,7 +249,10 @@
 	//server  module
 
 
-	//login  module
+	//ForgetPwd module
+
+
+	//register  module
 	module.exports = _react2.default.createElement(
 	            _reactRouter.Router,
 	            null,
@@ -255,6 +262,7 @@
 	                        _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
 	                        _react2.default.createElement(_reactRouter.Route, { path: '/register', component: _Register2.default }),
 	                        _react2.default.createElement(_reactRouter.Route, { path: '/login', component: _Login2.default }),
+	                        _react2.default.createElement(_reactRouter.Route, { path: '/forgetpwd', component: _ForgetPwd2.default }),
 	                        _react2.default.createElement(_reactRouter.Route, { path: '/user/:userId', component: _User2.default }),
 	                        _react2.default.createElement(_reactRouter.Route, { path: '/user/info/:userId', component: _UserInfo2.default }),
 	                        _react2.default.createElement(_reactRouter.Route, { path: '/user/server/:userId', component: _UserServer2.default }),
@@ -284,7 +292,7 @@
 	//user  module
 
 
-	//register  module
+	//login  module
 
 /***/ },
 /* 8 */
@@ -341,10 +349,35 @@
 
 	var _Header3 = _interopRequireDefault(_Header2);
 
+	var _jquery = __webpack_require__(13);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.default = _react2.default.createClass({
 	    displayName: 'Register',
+
+	    getInitialState: function getInitialState() {
+	        return {
+	            'passwordType': 'password',
+	            'passwordIconClass': 'icon-pwdHid'
+	        };
+	    },
+	    showPassword: function showPassword() {
+	        console.info('this.refspassword', this.refs.password);
+	        if (this.state.passwordType == 'password') {
+	            this.setState({
+	                'passwordType': 'text',
+	                'passwordIconClass': 'icon-pwdShow'
+	            });
+	        } else {
+	            this.setState({
+	                'passwordType': 'password',
+	                'passwordIconClass': 'icon-pwdHid'
+	            });
+	        }
+	    },
 	    render: function render() {
 	        return _react2.default.createElement(
 	            _amazeuiTouch.View,
@@ -356,7 +389,11 @@
 	                _react2.default.createElement(
 	                    _amazeuiTouch.Group,
 	                    { className: 'regLog-logo' },
-	                    _react2.default.createElement('div', { className: 'regLog-logo-img' })
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'regLog-logo-box' },
+	                        _react2.default.createElement('div', { className: 'regLog-logo-img' })
+	                    )
 	                ),
 	                _react2.default.createElement(
 	                    _amazeuiTouch.Group,
@@ -379,7 +416,7 @@
 	                            _react2.default.createElement(
 	                                _amazeuiTouch.List.Item,
 	                                { key: '2', className: 'margin-bottom', media: _react2.default.createElement(_amazeuiTouch.Icon, { className: 'icon-pwd', name: '' }), nested: 'input' },
-	                                _react2.default.createElement(_amazeuiTouch.Field, { type: 'password', placeholder: '\u8BF7\u8BBE\u7F6E6-16\u4F4D\u5BC6\u7801', btnAfter: _react2.default.createElement(_amazeuiTouch.Icon, { className: 'icon-pwdHid', name: '' }) })
+	                                _react2.default.createElement(_amazeuiTouch.Field, { type: this.state.passwordType, className: 'password', placeholder: '\u8BF7\u8BBE\u7F6E6-16\u4F4D\u5BC6\u7801', btnAfter: _react2.default.createElement(_amazeuiTouch.Icon, { className: this.state.passwordIconClass, name: '', onClick: this.showPassword }) })
 	                            )
 	                        ),
 	                        _react2.default.createElement(
@@ -531,10 +568,17 @@
 	            });
 	        }
 	    }, {
-	        key: 'handleChange',
-	        value: function handleChange(event) {
+	        key: 'changeSearch',
+	        value: function changeSearch(event) {
 	            this.setState({
 	                searchVal: event.target.value
+	            });
+	        }
+	    }, {
+	        key: 'cleanSearch',
+	        value: function cleanSearch() {
+	            this.setState({
+	                searchVal: ''
 	            });
 	        }
 	    }, {
@@ -560,15 +604,22 @@
 	                    },
 	                    _react2.default.createElement(
 	                        _amazeuiTouch.Grid,
-	                        { className: 'bgNone' },
+	                        { className: 'bgNone header-search' },
 	                        _react2.default.createElement(
 	                            _amazeuiTouch.Col,
 	                            { cols: 5, className: 'padding-0' },
 	                            _react2.default.createElement(
 	                                'form',
 	                                { action: '/search' },
-	                                _react2.default.createElement(_amazeuiTouch.Field, { name: 'search', onChange: this.handleChange.bind(this), value: this.state.searchVal,
-	                                    className: 'margin-0 padding-v-xs text-size-14', placeholder: '\u4F17\u521B' })
+	                                _react2.default.createElement(
+	                                    _amazeuiTouch.List,
+	                                    { className: 'margin-0' },
+	                                    _react2.default.createElement(
+	                                        _amazeuiTouch.List.Item,
+	                                        { key: '1', media: _react2.default.createElement(_amazeuiTouch.Icon, { className: 'header-icon-search', name: '' }), nested: 'input' },
+	                                        _react2.default.createElement(_amazeuiTouch.Field, { ref: 'search', name: 'search', onChange: this.changeSearch.bind(this), value: this.state.searchVal, className: 'margin-0 padding-v-xs text-size-14', placeholder: '\u4F17\u521B\u4F17\u521B\u4F17\u521B\u4F17\u521B', btnAfter: _react2.default.createElement(_amazeuiTouch.Icon, { className: 'header-icon-close', name: '', onClick: this.cleanSearch.bind(this) }) })
+	                                    )
+	                                )
 	                            )
 	                        ),
 	                        _react2.default.createElement(
@@ -718,6 +769,12 @@
 
 /***/ },
 /* 13 */
+/***/ function(module, exports) {
+
+	module.exports = require("jquery");
+
+/***/ },
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -751,11 +808,15 @@
 	                _react2.default.createElement(
 	                    _amazeuiTouch.Group,
 	                    { className: 'regLog-logo' },
-	                    _react2.default.createElement('div', { className: 'regLog-logo-img' })
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'regLog-logo-box' },
+	                        _react2.default.createElement('div', { className: 'regLog-logo-img' })
+	                    )
 	                ),
 	                _react2.default.createElement(
 	                    _amazeuiTouch.Group,
-	                    { className: 'bgNone' },
+	                    { className: 'bgNone margin-bottom-0' },
 	                    _react2.default.createElement(
 	                        'form',
 	                        { action: '', className: 'form-login' },
@@ -789,6 +850,29 @@
 	                            _amazeuiTouch.Button,
 	                            { className: 'btn-yellow margin-top-xl padding-v' },
 	                            '\u767B\u5F55'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            { className: 'forgetPwd text-size-13' },
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: '/forgetpwd' },
+	                                '\u5FD8\u8BB0\u5BC6\u7801\uFF1F'
+	                            )
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    _amazeuiTouch.Group,
+	                    { className: 'registerNow bgNone margin-v-xs' },
+	                    _react2.default.createElement(
+	                        'p',
+	                        { className: 'text-size-13 text-color-2' },
+	                        '\u60A8\u8FD8\u6CA1\u6709\u8D26\u53F7\uFF1F\u73B0\u5728',
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: '/register' },
+	                            ' \u6CE8\u518C'
 	                        )
 	                    )
 	                )
@@ -798,7 +882,131 @@
 	});
 
 /***/ },
-/* 14 */
+/* 15 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(4);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _amazeuiTouch = __webpack_require__(9);
+
+	var _Header2 = __webpack_require__(11);
+
+	var _Header3 = _interopRequireDefault(_Header2);
+
+	var _jquery = __webpack_require__(13);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	    displayName: 'ForgetPwd',
+
+	    getInitialState: function getInitialState() {
+	        return {
+	            'passwordType': 'password',
+	            'passwordIconClass': 'icon-pwdHid'
+	        };
+	    },
+	    showPassword: function showPassword() {
+	        console.info('this.refspassword', this.refs.password);
+	        if (this.state.passwordType == 'password') {
+	            this.setState({
+	                'passwordType': 'text',
+	                'passwordIconClass': 'icon-pwdShow'
+	            });
+	        } else {
+	            this.setState({
+	                'passwordType': 'password',
+	                'passwordIconClass': 'icon-pwdHid'
+	            });
+	        }
+	    },
+	    render: function render() {
+	        return _react2.default.createElement(
+	            _amazeuiTouch.View,
+	            null,
+	            _react2.default.createElement(_Header3.default, null),
+	            _react2.default.createElement(
+	                _amazeuiTouch.Container,
+	                { scrollable: true },
+	                _react2.default.createElement(
+	                    _amazeuiTouch.Group,
+	                    { className: 'regLog-logo' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'regLog-logo-box' },
+	                        _react2.default.createElement('div', { className: 'regLog-logo-img' })
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    _amazeuiTouch.Group,
+	                    { className: 'bgNone' },
+	                    _react2.default.createElement(
+	                        'form',
+	                        { action: '', className: 'form-register' },
+	                        _react2.default.createElement(
+	                            _amazeuiTouch.List,
+	                            null,
+	                            _react2.default.createElement(
+	                                _amazeuiTouch.List.Item,
+	                                { key: '1', className: 'margin-bottom', media: _react2.default.createElement(_amazeuiTouch.Icon, { className: 'icon-phone', name: '' }), nested: 'input' },
+	                                _react2.default.createElement(_amazeuiTouch.Field, { type: 'number', placeholder: '\u8BF7\u8F93\u5165\u60A8\u7684\u624B\u673A\u53F7' })
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            _amazeuiTouch.List,
+	                            null,
+	                            _react2.default.createElement(
+	                                _amazeuiTouch.List.Item,
+	                                { key: '2', className: 'margin-bottom', media: _react2.default.createElement(_amazeuiTouch.Icon, { className: 'icon-pwd', name: '' }), nested: 'input' },
+	                                _react2.default.createElement(_amazeuiTouch.Field, { type: this.state.passwordType, className: 'password', placeholder: '\u8BF7\u8BBE\u7F6E6-16\u4F4D\u5BC6\u7801', btnAfter: _react2.default.createElement(_amazeuiTouch.Icon, { className: this.state.passwordIconClass, name: '', onClick: this.showPassword }) })
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            _amazeuiTouch.List,
+	                            null,
+	                            _react2.default.createElement(
+	                                _amazeuiTouch.Grid,
+	                                null,
+	                                _react2.default.createElement(
+	                                    _amazeuiTouch.Col,
+	                                    { className: 'padding-0' },
+	                                    _react2.default.createElement(_amazeuiTouch.Field, { className: 'auth-code', type: 'number', placeholder: '\u8BF7\u8F93\u5165\u9A8C\u8BC1\u7801' })
+	                                ),
+	                                _react2.default.createElement(
+	                                    _amazeuiTouch.Col,
+	                                    { className: 'padding-0' },
+	                                    _react2.default.createElement(
+	                                        _amazeuiTouch.Button,
+	                                        { className: 'btn-white margin-0 margin-left-xs text-size-13' },
+	                                        '\u70B9\u51FB\u83B7\u53D6\u9A8C\u8BC1\u7801'
+	                                    )
+	                                )
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            _amazeuiTouch.Button,
+	                            { className: 'btn-yellow margin-top-xl padding-v' },
+	                            '\u5B8C\u6210'
+	                        )
+	                    )
+	                )
+	            )
+	        );
+	    }
+	});
+
+/***/ },
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -933,7 +1141,7 @@
 	});
 
 /***/ },
-/* 15 */
+/* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1042,7 +1250,7 @@
 	});
 
 /***/ },
-/* 16 */
+/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1061,7 +1269,7 @@
 
 	var _Header3 = _interopRequireDefault(_Header2);
 
-	var _Server2 = __webpack_require__(17);
+	var _Server2 = __webpack_require__(19);
 
 	var _Server3 = _interopRequireDefault(_Server2);
 
@@ -1103,7 +1311,7 @@
 	});
 
 /***/ },
-/* 17 */
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1194,7 +1402,7 @@
 	exports.default = _Server;
 
 /***/ },
-/* 18 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1213,7 +1421,7 @@
 
 	var _Header3 = _interopRequireDefault(_Header2);
 
-	var _Require2 = __webpack_require__(19);
+	var _Require2 = __webpack_require__(21);
 
 	var _Require3 = _interopRequireDefault(_Require2);
 
@@ -1277,7 +1485,7 @@
 	});
 
 /***/ },
-/* 19 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1368,7 +1576,7 @@
 	exports.default = _Require;
 
 /***/ },
-/* 20 */
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1385,11 +1593,11 @@
 
 	var _amazeuiTouch = __webpack_require__(9);
 
-	var _HomeStore = __webpack_require__(21);
+	var _HomeStore = __webpack_require__(23);
 
 	var _HomeStore2 = _interopRequireDefault(_HomeStore);
 
-	var _HomeActions = __webpack_require__(24);
+	var _HomeActions = __webpack_require__(26);
 
 	var _HomeActions2 = _interopRequireDefault(_HomeActions);
 
@@ -1404,6 +1612,8 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	//import Swiper from 'swiper'
 
 	var Home = function (_React$Component) {
 	    _inherits(Home, _React$Component);
@@ -1436,6 +1646,11 @@
 	            this.setState(state);
 	        }
 	    }, {
+	        key: 'handleLeftSwipe',
+	        value: function handleLeftSwipe(e) {
+	            console.log(e);
+	        }
+	    }, {
 	        key: 'render',
 	        value: function render() {
 	            return _react2.default.createElement(
@@ -1454,12 +1669,20 @@
 	                            _react2.default.createElement(
 	                                _amazeuiTouch.Slider.Item,
 	                                null,
-	                                _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' })
+	                                _react2.default.createElement(
+	                                    'a',
+	                                    { href: '#' },
+	                                    _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' })
+	                                )
 	                            ),
 	                            _react2.default.createElement(
 	                                _amazeuiTouch.Slider.Item,
 	                                null,
-	                                _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' })
+	                                _react2.default.createElement(
+	                                    'a',
+	                                    { href: '#' },
+	                                    _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' })
+	                                )
 	                            )
 	                        )
 	                    ),
@@ -1475,66 +1698,64 @@
 	                                '\u90E8\u843D'
 	                            ),
 	                            _react2.default.createElement(
-	                                _amazeuiTouch.Grid,
-	                                { avg: 4 },
+	                                _amazeuiTouch.Group,
+	                                { noPadded: true, className: 'margin-h-xs margin-v-0' },
 	                                _react2.default.createElement(
-	                                    _amazeuiTouch.Col,
-	                                    { className: 'padding-v-0' },
-	                                    _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' })
-	                                ),
-	                                _react2.default.createElement(
-	                                    _amazeuiTouch.Col,
-	                                    { className: 'padding-v-0' },
-	                                    _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' })
-	                                ),
-	                                _react2.default.createElement(
-	                                    _amazeuiTouch.Col,
-	                                    { className: 'padding-v-0' },
-	                                    _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-3.jpg' })
-	                                ),
-	                                _react2.default.createElement(
-	                                    _amazeuiTouch.Col,
-	                                    { className: 'padding-v-0' },
-	                                    _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-4.jpg' })
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                _amazeuiTouch.Grid,
-	                                { avg: 4, className: 'text-center' },
-	                                _react2.default.createElement(
-	                                    _amazeuiTouch.Col,
-	                                    { className: 'padding-v-xs' },
+	                                    'div',
+	                                    { ref: 'swiperContainer', className: 'swiper-container' },
 	                                    _react2.default.createElement(
-	                                        'p',
-	                                        { className: 'home-tribe-name' },
-	                                        '\u5251\u7075\u90E8\u843D'
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    _amazeuiTouch.Col,
-	                                    { className: 'padding-v-xs' },
-	                                    _react2.default.createElement(
-	                                        'p',
-	                                        { className: 'home-tribe-name' },
-	                                        '\u6D77\u8D3C\u738B\u90E8\u843D'
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    _amazeuiTouch.Col,
-	                                    { className: 'padding-v-xs' },
-	                                    _react2.default.createElement(
-	                                        'p',
-	                                        { className: 'home-tribe-name' },
-	                                        '\u9B54\u517D\u90E8\u843D'
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    _amazeuiTouch.Col,
-	                                    { className: 'padding-v-xs' },
-	                                    _react2.default.createElement(
-	                                        'p',
-	                                        { className: 'home-tribe-name' },
-	                                        '\u5947\u8FF9\u738B\u5EA7\u90E8\u843D'
+	                                        'div',
+	                                        { className: 'swiper-wrapper' },
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'swiper-slide' },
+	                                            _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' }),
+	                                            _react2.default.createElement(
+	                                                'p',
+	                                                { className: 'home-tribe-name' },
+	                                                '\u5251\u7075\u90E8\u843D'
+	                                            )
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'swiper-slide' },
+	                                            _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' }),
+	                                            _react2.default.createElement(
+	                                                'p',
+	                                                { className: 'home-tribe-name' },
+	                                                '\u6D77\u8D3C\u738B\u90E8\u843D'
+	                                            )
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'swiper-slide' },
+	                                            _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-3.jpg' }),
+	                                            _react2.default.createElement(
+	                                                'p',
+	                                                { className: 'home-tribe-name' },
+	                                                '\u9B54\u517D\u90E8\u843D'
+	                                            )
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'swiper-slide' },
+	                                            _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-4.jpg' }),
+	                                            _react2.default.createElement(
+	                                                'p',
+	                                                { className: 'home-tribe-name' },
+	                                                '\u5947\u8FF9\u738B\u5EA7\u90E8\u843D'
+	                                            )
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'swiper-slide' },
+	                                            _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-4.jpg' }),
+	                                            _react2.default.createElement(
+	                                                'p',
+	                                                { className: 'home-tribe-name' },
+	                                                '\u5947\u8FF9\u738B\u5EA7\u90E8\u843D'
+	                                            )
+	                                        )
 	                                    )
 	                                )
 	                            )
@@ -1640,7 +1861,7 @@
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'border-d7d7d7 bgF margin-top-sm' },
+	                        { className: 'border-d7d7d7 bgF margin-top-sm home-tribe-item' },
 	                        _react2.default.createElement(
 	                            _amazeuiTouch.Group,
 	                            { noPadded: true, className: 'margin-v-0' },
@@ -1787,7 +2008,7 @@
 	exports.default = Home;
 
 /***/ },
-/* 21 */
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1798,11 +2019,11 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _alt = __webpack_require__(22);
+	var _alt = __webpack_require__(24);
 
 	var _alt2 = _interopRequireDefault(_alt);
 
-	var _HomeActions = __webpack_require__(24);
+	var _HomeActions = __webpack_require__(26);
 
 	var _HomeActions2 = _interopRequireDefault(_HomeActions);
 
@@ -1841,7 +2062,7 @@
 	exports.default = _alt2.default.createStore(HomeStore, 'HomeStore');
 
 /***/ },
-/* 22 */
+/* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1850,7 +2071,7 @@
 	  value: true
 	});
 
-	var _alt = __webpack_require__(23);
+	var _alt = __webpack_require__(25);
 
 	var _alt2 = _interopRequireDefault(_alt);
 
@@ -1859,13 +2080,13 @@
 	exports.default = new _alt2.default();
 
 /***/ },
-/* 23 */
+/* 25 */
 /***/ function(module, exports) {
 
 	module.exports = require("alt");
 
 /***/ },
-/* 24 */
+/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1876,11 +2097,11 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _alt = __webpack_require__(22);
+	var _alt = __webpack_require__(24);
 
 	var _alt2 = _interopRequireDefault(_alt);
 
-	var _jquery = __webpack_require__(25);
+	var _jquery = __webpack_require__(13);
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -1917,13 +2138,7 @@
 	exports.default = _alt2.default.createActions(HomeActions);
 
 /***/ },
-/* 25 */
-/***/ function(module, exports) {
-
-	module.exports = require("jquery");
-
-/***/ },
-/* 26 */
+/* 27 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1942,7 +2157,7 @@
 
 	var _Header3 = _interopRequireDefault(_Header2);
 
-	var _Server2 = __webpack_require__(17);
+	var _Server2 = __webpack_require__(19);
 
 	var _Server3 = _interopRequireDefault(_Server2);
 
@@ -2037,7 +2252,7 @@
 	});
 
 /***/ },
-/* 27 */
+/* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2216,7 +2431,7 @@
 	});
 
 /***/ },
-/* 28 */
+/* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2235,7 +2450,7 @@
 
 	var _Header3 = _interopRequireDefault(_Header2);
 
-	var _Require2 = __webpack_require__(19);
+	var _Require2 = __webpack_require__(21);
 
 	var _Require3 = _interopRequireDefault(_Require2);
 
@@ -2329,7 +2544,7 @@
 	});
 
 /***/ },
-/* 29 */
+/* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2350,7 +2565,7 @@
 
 	var _Header3 = _interopRequireDefault(_Header2);
 
-	var _Comments2 = __webpack_require__(30);
+	var _Comments2 = __webpack_require__(31);
 
 	var _Comments3 = _interopRequireDefault(_Comments2);
 
@@ -2643,7 +2858,7 @@
 	exports.default = RequireInfo;
 
 /***/ },
-/* 30 */
+/* 31 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2716,7 +2931,7 @@
 	exports.default = _Comments;
 
 /***/ },
-/* 31 */
+/* 32 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2832,7 +3047,7 @@
 	exports.default = Search;
 
 /***/ },
-/* 32 */
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2992,7 +3207,7 @@
 	});
 
 /***/ },
-/* 33 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3258,7 +3473,7 @@
 	});
 
 /***/ },
-/* 34 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3358,7 +3573,7 @@
 	});
 
 /***/ },
-/* 35 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3447,7 +3662,7 @@
 	});
 
 /***/ },
-/* 36 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3590,7 +3805,7 @@
 	});
 
 /***/ },
-/* 37 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3607,7 +3822,7 @@
 
 	var _Header3 = _interopRequireDefault(_Header2);
 
-	var _Comments2 = __webpack_require__(30);
+	var _Comments2 = __webpack_require__(31);
 
 	var _Comments3 = _interopRequireDefault(_Comments2);
 
@@ -3749,7 +3964,7 @@
 	});
 
 /***/ },
-/* 38 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';

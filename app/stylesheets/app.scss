@@ -1,6 +1,7 @@
 // 覆盖字体路径变量，以防止编译出错
 $ratchicons-path: "../../node_modules/amazeui-touch/fonts/";
 @import "../../node_modules/amazeui-touch/scss/amazeui.touch.scss";
+@import "../../node_modules/react-dynamic-swiper/lib/styles.css";
 
 
 //引入自定义样式文件

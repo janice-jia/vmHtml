@@ -190,51 +190,51 @@
 
 	var _Home2 = _interopRequireDefault(_Home);
 
-	var _Server = __webpack_require__(27);
+	var _Server = __webpack_require__(28);
 
 	var _Server2 = _interopRequireDefault(_Server);
 
-	var _ServerInfo = __webpack_require__(28);
+	var _ServerInfo = __webpack_require__(29);
 
 	var _ServerInfo2 = _interopRequireDefault(_ServerInfo);
 
-	var _Require = __webpack_require__(29);
+	var _Require = __webpack_require__(30);
 
 	var _Require2 = _interopRequireDefault(_Require);
 
-	var _RequireInfo = __webpack_require__(30);
+	var _RequireInfo = __webpack_require__(31);
 
 	var _RequireInfo2 = _interopRequireDefault(_RequireInfo);
 
-	var _Search = __webpack_require__(32);
+	var _Search = __webpack_require__(33);
 
 	var _Search2 = _interopRequireDefault(_Search);
 
-	var _Tribe = __webpack_require__(33);
+	var _Tribe = __webpack_require__(34);
 
 	var _Tribe2 = _interopRequireDefault(_Tribe);
 
-	var _Tribeinfo = __webpack_require__(34);
+	var _Tribeinfo = __webpack_require__(35);
 
 	var _Tribeinfo2 = _interopRequireDefault(_Tribeinfo);
 
-	var _TribeAlbum = __webpack_require__(35);
+	var _TribeAlbum = __webpack_require__(36);
 
 	var _TribeAlbum2 = _interopRequireDefault(_TribeAlbum);
 
-	var _TribeAlbumInfo = __webpack_require__(36);
+	var _TribeAlbumInfo = __webpack_require__(37);
 
 	var _TribeAlbumInfo2 = _interopRequireDefault(_TribeAlbumInfo);
 
-	var _TribeImgCom = __webpack_require__(37);
+	var _TribeImgCom = __webpack_require__(38);
 
 	var _TribeImgCom2 = _interopRequireDefault(_TribeImgCom);
 
-	var _TribeTopic = __webpack_require__(38);
+	var _TribeTopic = __webpack_require__(39);
 
 	var _TribeTopic2 = _interopRequireDefault(_TribeTopic);
 
-	var _TribePerson = __webpack_require__(39);
+	var _TribePerson = __webpack_require__(40);
 
 	var _TribePerson2 = _interopRequireDefault(_TribePerson);
 
@@ -1605,9 +1605,7 @@
 
 	var _Header3 = _interopRequireDefault(_Header2);
 
-	var _jquery = __webpack_require__(13);
-
-	var _jquery2 = _interopRequireDefault(_jquery);
+	var _reactDynamicSwiper = __webpack_require__(27);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1616,8 +1614,6 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	//import Swiper from 'swiper'
 
 	var Home = function (_React$Component) {
 	    _inherits(Home, _React$Component);
@@ -1628,7 +1624,8 @@
 	        var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
 
 	        _this.state = _HomeStore2.default.getState();
-	        _this.state.home = [];
+	        _this.state.tribePage = 0;
+	        _this.state.tribeList = [];
 	        _this.onChange = _this.onChange.bind(_this);
 	        return _this;
 	    }
@@ -1638,12 +1635,7 @@
 	        value: function componentDidMount() {
 	            _HomeStore2.default.listen(this.onChange);
 	            _HomeActions2.default.updateHome();
-	            //this.swipe = Swiper(this.refs.swiperContainer,{
-	            //    pagination: '.swiper-pagination',
-	            //    slidesPerView: 'auto',
-	            //    paginationClickable: true,
-	            //    spaceBetween: 5
-	            //});
+	            this.state.tribeList = [{ title: '标题名称名称名称' }, { title: '标题名称名称名称1' }];
 	        }
 	    }, {
 	        key: 'componentWillUnmount',
@@ -1655,10 +1647,15 @@
 	        value: function onChange(state) {
 	            this.setState(state);
 	        }
+
+	        //查看更多部落
+
 	    }, {
-	        key: 'handleLeftSwipe',
-	        value: function handleLeftSwipe(e) {
-	            console.log(e);
+	        key: 'loadTribe',
+	        value: function loadTribe() {
+	            this.state.tribePage = this.state.tribePage + 1;
+	            this.state.tribeList.push({ title: '标题名称名称名' + this.state.tribePage });
+	            this.setState({ tribeList: this.state.tribeList });
 	        }
 	    }, {
 	        key: 'render',
@@ -1711,11 +1708,15 @@
 	                                _amazeuiTouch.Group,
 	                                { noPadded: true, className: 'margin-h-xs margin-v-0' },
 	                                _react2.default.createElement(
-	                                    'div',
-	                                    { ref: 'swiperContainer', className: 'swiper-container' },
+	                                    _reactDynamicSwiper.Swiper,
+	                                    {
+	                                        swiperOptions: { slidesPerView: 'auto' },
+	                                        navigation: false,
+	                                        pagination: false
+	                                    },
 	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'swiper-wrapper' },
+	                                        _reactDynamicSwiper.Slide,
+	                                        null,
 	                                        _react2.default.createElement(
 	                                            'div',
 	                                            { className: 'swiper-slide' },
@@ -1725,46 +1726,80 @@
 	                                                { className: 'home-tribe-name' },
 	                                                '\u5251\u7075\u90E8\u843D'
 	                                            )
-	                                        ),
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        _reactDynamicSwiper.Slide,
+	                                        null,
+	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' }),
+	                                        _react2.default.createElement(
+	                                            'p',
+	                                            { className: 'home-tribe-name' },
+	                                            '\u6D77\u8D3C\u738B\u90E8\u843D'
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        _reactDynamicSwiper.Slide,
+	                                        null,
+	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-3.jpg' }),
+	                                        _react2.default.createElement(
+	                                            'p',
+	                                            { className: 'home-tribe-name' },
+	                                            '\u9B54\u517D\u90E8\u843D'
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        _reactDynamicSwiper.Slide,
+	                                        null,
+	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-4.jpg' }),
+	                                        _react2.default.createElement(
+	                                            'p',
+	                                            { className: 'home-tribe-name' },
+	                                            '\u5947\u8FF9\u738B\u5EA7\u90E8\u843D'
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        _reactDynamicSwiper.Slide,
+	                                        null,
 	                                        _react2.default.createElement(
 	                                            'div',
 	                                            { className: 'swiper-slide' },
-	                                            _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' }),
+	                                            _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' }),
 	                                            _react2.default.createElement(
 	                                                'p',
 	                                                { className: 'home-tribe-name' },
-	                                                '\u6D77\u8D3C\u738B\u90E8\u843D'
+	                                                '\u5251\u7075\u90E8\u843D'
 	                                            )
-	                                        ),
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        _reactDynamicSwiper.Slide,
+	                                        null,
+	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' }),
 	                                        _react2.default.createElement(
-	                                            'div',
-	                                            { className: 'swiper-slide' },
-	                                            _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-3.jpg' }),
-	                                            _react2.default.createElement(
-	                                                'p',
-	                                                { className: 'home-tribe-name' },
-	                                                '\u9B54\u517D\u90E8\u843D'
-	                                            )
-	                                        ),
+	                                            'p',
+	                                            { className: 'home-tribe-name' },
+	                                            '\u6D77\u8D3C\u738B\u90E8\u843D'
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        _reactDynamicSwiper.Slide,
+	                                        null,
+	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-3.jpg' }),
 	                                        _react2.default.createElement(
-	                                            'div',
-	                                            { className: 'swiper-slide' },
-	                                            _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-4.jpg' }),
-	                                            _react2.default.createElement(
-	                                                'p',
-	                                                { className: 'home-tribe-name' },
-	                                                '\u5947\u8FF9\u738B\u5EA7\u90E8\u843D'
-	                                            )
-	                                        ),
+	                                            'p',
+	                                            { className: 'home-tribe-name' },
+	                                            '\u9B54\u517D\u90E8\u843D'
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        _reactDynamicSwiper.Slide,
+	                                        null,
+	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-4.jpg' }),
 	                                        _react2.default.createElement(
-	                                            'div',
-	                                            { className: 'swiper-slide' },
-	                                            _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-4.jpg' }),
-	                                            _react2.default.createElement(
-	                                                'p',
-	                                                { className: 'home-tribe-name' },
-	                                                '\u5947\u8FF9\u738B\u5EA7\u90E8\u843D'
-	                                            )
+	                                            'p',
+	                                            { className: 'home-tribe-name' },
+	                                            '\u5947\u8FF9\u738B\u5EA7\u90E8\u843D'
 	                                        )
 	                                    )
 	                                )
@@ -1878,91 +1913,97 @@
 	                            _react2.default.createElement(
 	                                _amazeuiTouch.List,
 	                                null,
-	                                _react2.default.createElement(_amazeuiTouch.List.Item, {
-	                                    media: _react2.default.createElement('img', { className: 'home-tribe-media', width: '44', height: '44', src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' }),
-	                                    after: _react2.default.createElement(
+	                                this.state.tribeList.map(function (item, i) {
+	                                    return _react2.default.createElement(
 	                                        'div',
-	                                        { className: 'home-tribe-tag' },
-	                                        '\u6D77\u8D3C\u738B\u90E8\u843D'
-	                                    ),
-	                                    title: _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'home-tribe-item' },
+	                                        { key: i },
+	                                        _react2.default.createElement(_amazeuiTouch.List.Item, {
+	                                            media: _react2.default.createElement('img', { className: 'home-tribe-media', width: '44', height: '44', src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' }),
+	                                            after: _react2.default.createElement(
+	                                                'div',
+	                                                { className: 'home-tribe-tag' },
+	                                                '\u6D77\u8D3C\u738B\u90E8\u843D'
+	                                            ),
+	                                            title: _react2.default.createElement(
+	                                                'div',
+	                                                { className: 'home-tribe-item' },
+	                                                _react2.default.createElement(
+	                                                    'p',
+	                                                    { className: 'text-color-3 text-size-14' },
+	                                                    '\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89'
+	                                                ),
+	                                                _react2.default.createElement(
+	                                                    'p',
+	                                                    { className: 'text-color-4 text-size-13' },
+	                                                    '1\u5C0F\u65F6\u524D'
+	                                                )
+	                                            )
+	                                        }),
 	                                        _react2.default.createElement(
-	                                            'p',
-	                                            { className: 'text-color-3 text-size-14' },
-	                                            '\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89'
+	                                            'div',
+	                                            { className: 'padding-h margin-v-xs' },
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                { className: 'text-size-15 text-color-3' },
+	                                                item.title
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                { className: 'text-size-13 text-color-2 home-tribe-desc' },
+	                                                '\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0'
+	                                            )
 	                                        ),
 	                                        _react2.default.createElement(
-	                                            'p',
-	                                            { className: 'text-color-4 text-size-13' },
-	                                            '1\u5C0F\u65F6\u524D'
-	                                        )
-	                                    )
-	                                }),
-	                                _react2.default.createElement(
-	                                    'div',
-	                                    { className: 'padding-h margin-v-xs' },
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'text-size-15 text-color-3' },
-	                                        '\u6807\u9898\u540D\u79F0\u540D\u79F0\u540D\u79F0'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'text-size-13 text-color-2 home-tribe-desc' },
-	                                        '\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0'
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    _amazeuiTouch.Grid,
-	                                    { avg: 3 },
-	                                    _react2.default.createElement(
-	                                        _amazeuiTouch.Col,
-	                                        { className: 'padding-h padding-top-xs padding-bottom-0' },
-	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' })
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _amazeuiTouch.Col,
-	                                        { className: 'padding-h padding-top-xs padding-bottom-0' },
-	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' })
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _amazeuiTouch.Col,
-	                                        { className: 'padding-h padding-top-xs padding-bottom-0' },
-	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-3.jpg' })
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    _amazeuiTouch.Grid,
-	                                    { align: 'between' },
-	                                    _react2.default.createElement(
-	                                        _amazeuiTouch.Col,
-	                                        { cols: 2, className: 'padding-h text-size-12 text-color-4' },
-	                                        _react2.default.createElement('span', { className: 'icon home-icon-view margin-right-xs' }),
-	                                        '123'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _amazeuiTouch.Col,
-	                                        { cols: 2, className: 'padding-h text-size-12 text-color-4 text-right' },
-	                                        _react2.default.createElement(
 	                                            _amazeuiTouch.Grid,
-	                                            null,
+	                                            { avg: 3 },
 	                                            _react2.default.createElement(
 	                                                _amazeuiTouch.Col,
-	                                                null,
+	                                                { className: 'padding-h padding-top-xs padding-bottom-0' },
+	                                                _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' })
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                _amazeuiTouch.Col,
+	                                                { className: 'padding-h padding-top-xs padding-bottom-0' },
+	                                                _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' })
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                _amazeuiTouch.Col,
+	                                                { className: 'padding-h padding-top-xs padding-bottom-0' },
+	                                                _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-3.jpg' })
+	                                            )
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            _amazeuiTouch.Grid,
+	                                            { align: 'between' },
+	                                            _react2.default.createElement(
+	                                                _amazeuiTouch.Col,
+	                                                { cols: 2, className: 'padding-h text-size-12 text-color-4' },
 	                                                _react2.default.createElement('span', { className: 'icon home-icon-view margin-right-xs' }),
 	                                                '123'
 	                                            ),
 	                                            _react2.default.createElement(
 	                                                _amazeuiTouch.Col,
-	                                                null,
-	                                                _react2.default.createElement('span', { className: 'icon home-icon-view margin-right-xs' }),
-	                                                '123'
+	                                                { cols: 2, className: 'padding-h text-size-12 text-color-4 text-right' },
+	                                                _react2.default.createElement(
+	                                                    _amazeuiTouch.Grid,
+	                                                    null,
+	                                                    _react2.default.createElement(
+	                                                        _amazeuiTouch.Col,
+	                                                        null,
+	                                                        _react2.default.createElement('span', { className: 'icon home-icon-view margin-right-xs' }),
+	                                                        '123'
+	                                                    ),
+	                                                    _react2.default.createElement(
+	                                                        _amazeuiTouch.Col,
+	                                                        null,
+	                                                        _react2.default.createElement('span', { className: 'icon home-icon-view margin-right-xs' }),
+	                                                        '123'
+	                                                    )
+	                                                )
 	                                            )
 	                                        )
-	                                    )
-	                                )
+	                                    );
+	                                })
 	                            )
 	                        )
 	                    ),
@@ -1974,7 +2015,7 @@
 	                            { noPadded: true, className: 'margin-0' },
 	                            _react2.default.createElement(
 	                                'a',
-	                                { className: 'btn-white', href: '/tribe' },
+	                                { className: 'btn-white', href: 'javascript:;', onClick: this.loadTribe.bind(this) },
 	                                '\u67E5\u770B\u66F4\u591A'
 	                            )
 	                        )
@@ -2149,6 +2190,12 @@
 
 /***/ },
 /* 27 */
+/***/ function(module, exports) {
+
+	module.exports = require("react-dynamic-swiper");
+
+/***/ },
+/* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2262,7 +2309,7 @@
 	});
 
 /***/ },
-/* 28 */
+/* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2441,7 +2488,7 @@
 	});
 
 /***/ },
-/* 29 */
+/* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2554,7 +2601,7 @@
 	});
 
 /***/ },
-/* 30 */
+/* 31 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2575,7 +2622,7 @@
 
 	var _Header3 = _interopRequireDefault(_Header2);
 
-	var _Comments2 = __webpack_require__(31);
+	var _Comments2 = __webpack_require__(32);
 
 	var _Comments3 = _interopRequireDefault(_Comments2);
 
@@ -2868,7 +2915,7 @@
 	exports.default = RequireInfo;
 
 /***/ },
-/* 31 */
+/* 32 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2941,7 +2988,7 @@
 	exports.default = _Comments;
 
 /***/ },
-/* 32 */
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3057,7 +3104,7 @@
 	exports.default = Search;
 
 /***/ },
-/* 33 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3217,7 +3264,7 @@
 	});
 
 /***/ },
-/* 34 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3483,7 +3530,7 @@
 	});
 
 /***/ },
-/* 35 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3583,7 +3630,7 @@
 	});
 
 /***/ },
-/* 36 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3672,7 +3719,7 @@
 	});
 
 /***/ },
-/* 37 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3815,7 +3862,7 @@
 	});
 
 /***/ },
-/* 38 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3832,7 +3879,7 @@
 
 	var _Header3 = _interopRequireDefault(_Header2);
 
-	var _Comments2 = __webpack_require__(31);
+	var _Comments2 = __webpack_require__(32);
 
 	var _Comments3 = _interopRequireDefault(_Comments2);
 
@@ -3974,7 +4021,7 @@
 	});
 
 /***/ },
-/* 39 */
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';

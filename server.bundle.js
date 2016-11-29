@@ -190,51 +190,51 @@
 
 	var _Home2 = _interopRequireDefault(_Home);
 
-	var _Server = __webpack_require__(28);
+	var _Server = __webpack_require__(27);
 
 	var _Server2 = _interopRequireDefault(_Server);
 
-	var _ServerInfo = __webpack_require__(29);
+	var _ServerInfo = __webpack_require__(28);
 
 	var _ServerInfo2 = _interopRequireDefault(_ServerInfo);
 
-	var _Require = __webpack_require__(30);
+	var _Require = __webpack_require__(29);
 
 	var _Require2 = _interopRequireDefault(_Require);
 
-	var _RequireInfo = __webpack_require__(31);
+	var _RequireInfo = __webpack_require__(30);
 
 	var _RequireInfo2 = _interopRequireDefault(_RequireInfo);
 
-	var _Search = __webpack_require__(33);
+	var _Search = __webpack_require__(32);
 
 	var _Search2 = _interopRequireDefault(_Search);
 
-	var _Tribe = __webpack_require__(34);
+	var _Tribe = __webpack_require__(33);
 
 	var _Tribe2 = _interopRequireDefault(_Tribe);
 
-	var _Tribeinfo = __webpack_require__(35);
+	var _Tribeinfo = __webpack_require__(34);
 
 	var _Tribeinfo2 = _interopRequireDefault(_Tribeinfo);
 
-	var _TribeAlbum = __webpack_require__(36);
+	var _TribeAlbum = __webpack_require__(35);
 
 	var _TribeAlbum2 = _interopRequireDefault(_TribeAlbum);
 
-	var _TribeAlbumInfo = __webpack_require__(37);
+	var _TribeAlbumInfo = __webpack_require__(36);
 
 	var _TribeAlbumInfo2 = _interopRequireDefault(_TribeAlbumInfo);
 
-	var _TribeImgCom = __webpack_require__(38);
+	var _TribeImgCom = __webpack_require__(37);
 
 	var _TribeImgCom2 = _interopRequireDefault(_TribeImgCom);
 
-	var _TribeTopic = __webpack_require__(39);
+	var _TribeTopic = __webpack_require__(38);
 
 	var _TribeTopic2 = _interopRequireDefault(_TribeTopic);
 
-	var _TribePerson = __webpack_require__(40);
+	var _TribePerson = __webpack_require__(39);
 
 	var _TribePerson2 = _interopRequireDefault(_TribePerson);
 
@@ -1605,9 +1605,9 @@
 
 	var _Header3 = _interopRequireDefault(_Header2);
 
-	var _swiper = __webpack_require__(27);
+	var _jquery = __webpack_require__(13);
 
-	var _swiper2 = _interopRequireDefault(_swiper);
+	var _jquery2 = _interopRequireDefault(_jquery);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1616,6 +1616,8 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	//import Swiper from 'swiper'
 
 	var Home = function (_React$Component) {
 	    _inherits(Home, _React$Component);
@@ -1636,12 +1638,12 @@
 	        value: function componentDidMount() {
 	            _HomeStore2.default.listen(this.onChange);
 	            _HomeActions2.default.updateHome();
-	            this.swipe = (0, _swiper2.default)(this.refs.swiperContainer, {
-	                pagination: '.swiper-pagination',
-	                slidesPerView: 'auto',
-	                paginationClickable: true,
-	                spaceBetween: 5
-	            });
+	            //this.swipe = Swiper(this.refs.swiperContainer,{
+	            //    pagination: '.swiper-pagination',
+	            //    slidesPerView: 'auto',
+	            //    paginationClickable: true,
+	            //    spaceBetween: 5
+	            //});
 	        }
 	    }, {
 	        key: 'componentWillUnmount',
@@ -2147,12 +2149,6 @@
 
 /***/ },
 /* 27 */
-/***/ function(module, exports) {
-
-	module.exports = require("swiper");
-
-/***/ },
-/* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2266,7 +2262,7 @@
 	});
 
 /***/ },
-/* 29 */
+/* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2445,7 +2441,7 @@
 	});
 
 /***/ },
-/* 30 */
+/* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2558,7 +2554,7 @@
 	});
 
 /***/ },
-/* 31 */
+/* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2579,7 +2575,7 @@
 
 	var _Header3 = _interopRequireDefault(_Header2);
 
-	var _Comments2 = __webpack_require__(32);
+	var _Comments2 = __webpack_require__(31);
 
 	var _Comments3 = _interopRequireDefault(_Comments2);
 
@@ -2872,7 +2868,7 @@
 	exports.default = RequireInfo;
 
 /***/ },
-/* 32 */
+/* 31 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2945,7 +2941,7 @@
 	exports.default = _Comments;
 
 /***/ },
-/* 33 */
+/* 32 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3061,7 +3057,7 @@
 	exports.default = Search;
 
 /***/ },
-/* 34 */
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3221,7 +3217,7 @@
 	});
 
 /***/ },
-/* 35 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3487,7 +3483,7 @@
 	});
 
 /***/ },
-/* 36 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3587,7 +3583,7 @@
 	});
 
 /***/ },
-/* 37 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3676,7 +3672,7 @@
 	});
 
 /***/ },
-/* 38 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3819,7 +3815,7 @@
 	});
 
 /***/ },
-/* 39 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3836,7 +3832,7 @@
 
 	var _Header3 = _interopRequireDefault(_Header2);
 
-	var _Comments2 = __webpack_require__(32);
+	var _Comments2 = __webpack_require__(31);
 
 	var _Comments3 = _interopRequireDefault(_Comments2);
 
@@ -3978,7 +3974,7 @@
 	});
 
 /***/ },
-/* 40 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';

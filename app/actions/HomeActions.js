@@ -12,9 +12,10 @@ class HomeActions {
     updateHome() {
         $.ajax({
                 type: 'Get',
-                url: 'http://www.ibanyi.com/api/user',
+                url: '/app/banner',
             })
             .done((data) => {
+                console.info('data',data);
                 this.updateHomeSuccess(data);
             })
             .fail((jqXhr) => {

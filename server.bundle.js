@@ -70,6 +70,10 @@
 
 	var _routes2 = _interopRequireDefault(_routes);
 
+	var _httpProxyMiddleware = __webpack_require__(41);
+
+	var _httpProxyMiddleware2 = _interopRequireDefault(_httpProxyMiddleware);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var app = (0, _express2.default)();
@@ -78,6 +82,7 @@
 
 	// serve our static stuff like index.css
 	app.use(_express2.default.static(_path2.default.join(__dirname, 'build'), { index: false }));
+	app.use('/app', (0, _httpProxyMiddleware2.default)({ target: 'http://test.vmaking.com', changeOrigin: true }));
 
 	// send all requests to index.html so browserHistory works
 	app.get('*', function (req, res) {
@@ -1906,105 +1911,103 @@
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'border-d7d7d7 bgF margin-top-sm home-tribe-item' },
+	                        { className: 'margin-top-sm home-tribe-list' },
 	                        _react2.default.createElement(
-	                            _amazeuiTouch.Group,
-	                            { noPadded: true, className: 'margin-v-0' },
-	                            _react2.default.createElement(
-	                                _amazeuiTouch.List,
-	                                null,
-	                                this.state.tribeList.map(function (item, i) {
-	                                    return _react2.default.createElement(
-	                                        'div',
-	                                        { key: i },
-	                                        _react2.default.createElement(_amazeuiTouch.List.Item, {
-	                                            media: _react2.default.createElement('img', { className: 'home-tribe-media', width: '44', height: '44', src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' }),
-	                                            after: _react2.default.createElement(
-	                                                'div',
-	                                                { className: 'home-tribe-tag' },
-	                                                '\u6D77\u8D3C\u738B\u90E8\u843D'
+	                            _amazeuiTouch.List,
+	                            { className: 'margin-0' },
+	                            this.state.tribeList.map(function (item, i) {
+	                                return _react2.default.createElement(
+	                                    _amazeuiTouch.Group,
+	                                    { noPadded: true, className: 'margin-v bgF border-d7d7d7', key: i },
+	                                    _react2.default.createElement(_amazeuiTouch.List.Item, {
+
+	                                        media: _react2.default.createElement('img', { className: 'home-tribe-media', width: '44', height: '44', src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' }),
+	                                        after: _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'home-tribe-tag' },
+	                                            '\u6D77\u8D3C\u738B\u90E8\u843D'
+	                                        ),
+	                                        title: _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'home-tribe-item' },
+	                                            _react2.default.createElement(
+	                                                'p',
+	                                                { className: 'text-color-3 text-size-14' },
+	                                                '\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89'
 	                                            ),
-	                                            title: _react2.default.createElement(
-	                                                'div',
-	                                                { className: 'home-tribe-item' },
-	                                                _react2.default.createElement(
-	                                                    'p',
-	                                                    { className: 'text-color-3 text-size-14' },
-	                                                    '\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89'
-	                                                ),
-	                                                _react2.default.createElement(
-	                                                    'p',
-	                                                    { className: 'text-color-4 text-size-13' },
-	                                                    '1\u5C0F\u65F6\u524D'
-	                                                )
+	                                            _react2.default.createElement(
+	                                                'p',
+	                                                { className: 'text-color-4 text-size-13' },
+	                                                '1\u5C0F\u65F6\u524D'
 	                                            )
-	                                        }),
+	                                        )
+	                                    }),
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        { className: 'padding-h margin-v-xs' },
 	                                        _react2.default.createElement(
 	                                            'div',
-	                                            { className: 'padding-h margin-v-xs' },
-	                                            _react2.default.createElement(
-	                                                'div',
-	                                                { className: 'text-size-15 text-color-3' },
-	                                                item.title
-	                                            ),
-	                                            _react2.default.createElement(
-	                                                'div',
-	                                                { className: 'text-size-13 text-color-2 home-tribe-desc' },
-	                                                '\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0'
-	                                            )
+	                                            { className: 'text-size-15 text-color-3' },
+	                                            item.title
 	                                        ),
 	                                        _react2.default.createElement(
-	                                            _amazeuiTouch.Grid,
-	                                            { avg: 3 },
-	                                            _react2.default.createElement(
-	                                                _amazeuiTouch.Col,
-	                                                { className: 'padding-h padding-top-xs padding-bottom-0' },
-	                                                _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' })
-	                                            ),
-	                                            _react2.default.createElement(
-	                                                _amazeuiTouch.Col,
-	                                                { className: 'padding-h padding-top-xs padding-bottom-0' },
-	                                                _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' })
-	                                            ),
-	                                            _react2.default.createElement(
-	                                                _amazeuiTouch.Col,
-	                                                { className: 'padding-h padding-top-xs padding-bottom-0' },
-	                                                _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-3.jpg' })
-	                                            )
+	                                            'div',
+	                                            { className: 'text-size-13 text-color-2 home-tribe-desc' },
+	                                            '\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0'
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        _amazeuiTouch.Grid,
+	                                        { avg: 3 },
+	                                        _react2.default.createElement(
+	                                            _amazeuiTouch.Col,
+	                                            { className: 'padding-h padding-top-xs padding-bottom-0' },
+	                                            _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' })
 	                                        ),
 	                                        _react2.default.createElement(
-	                                            _amazeuiTouch.Grid,
-	                                            { align: 'between' },
+	                                            _amazeuiTouch.Col,
+	                                            { className: 'padding-h padding-top-xs padding-bottom-0' },
+	                                            _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' })
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            _amazeuiTouch.Col,
+	                                            { className: 'padding-h padding-top-xs padding-bottom-0' },
+	                                            _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-3.jpg' })
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        _amazeuiTouch.Grid,
+	                                        { align: 'between', className: 'margin-v-xs' },
+	                                        _react2.default.createElement(
+	                                            _amazeuiTouch.Col,
+	                                            { cols: 2, className: 'padding-h text-size-12 text-color-4' },
+	                                            _react2.default.createElement('span', { className: 'icon home-icon-view margin-right-xs' }),
+	                                            '123'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            _amazeuiTouch.Col,
+	                                            { cols: 2, className: 'padding-h text-size-12 text-color-4 text-right' },
 	                                            _react2.default.createElement(
-	                                                _amazeuiTouch.Col,
-	                                                { cols: 2, className: 'padding-h text-size-12 text-color-4' },
-	                                                _react2.default.createElement('span', { className: 'icon home-icon-view margin-right-xs' }),
-	                                                '123'
-	                                            ),
-	                                            _react2.default.createElement(
-	                                                _amazeuiTouch.Col,
-	                                                { cols: 2, className: 'padding-h text-size-12 text-color-4 text-right' },
+	                                                _amazeuiTouch.Grid,
+	                                                null,
 	                                                _react2.default.createElement(
-	                                                    _amazeuiTouch.Grid,
+	                                                    _amazeuiTouch.Col,
 	                                                    null,
-	                                                    _react2.default.createElement(
-	                                                        _amazeuiTouch.Col,
-	                                                        null,
-	                                                        _react2.default.createElement('span', { className: 'icon home-icon-view margin-right-xs' }),
-	                                                        '123'
-	                                                    ),
-	                                                    _react2.default.createElement(
-	                                                        _amazeuiTouch.Col,
-	                                                        null,
-	                                                        _react2.default.createElement('span', { className: 'icon home-icon-view margin-right-xs' }),
-	                                                        '123'
-	                                                    )
+	                                                    _react2.default.createElement('span', {
+	                                                        className: 'icon home-icon-fabulous margin-right-xs' }),
+	                                                    '123'
+	                                                ),
+	                                                _react2.default.createElement(
+	                                                    _amazeuiTouch.Col,
+	                                                    null,
+	                                                    _react2.default.createElement('span', { className: 'icon home-icon-comment margin-right-xs' }),
+	                                                    '123'
 	                                                )
 	                                            )
 	                                        )
-	                                    );
-	                                })
-	                            )
+	                                    )
+	                                );
+	                            })
 	                        )
 	                    ),
 	                    _react2.default.createElement(
@@ -2174,8 +2177,9 @@
 
 	            _jquery2.default.ajax({
 	                type: 'Get',
-	                url: 'http://www.ibanyi.com/api/user'
+	                url: '/app/banner'
 	            }).done(function (data) {
+	                console.info('data', data);
 	                _this.updateHomeSuccess(data);
 	            }).fail(function (jqXhr) {
 	                _this.updateHomeFail(jqXhr);
@@ -4153,6 +4157,12 @@
 	        );
 	    }
 	});
+
+/***/ },
+/* 41 */
+/***/ function(module, exports) {
+
+	module.exports = require("http-proxy-middleware");
 
 /***/ }
 /******/ ]);

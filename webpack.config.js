@@ -23,5 +23,15 @@ module.exports = {
             template: 'views/index.html'
         }),
         new webpack.BannerPlugin('This file is created by vmaking')
-    ]
+    ],
+    devServer:{
+        historyApiFallback: true,
+        proxy: {
+            '/app': {
+                target: 'http://test.vmaking.com',
+                pathRewrite: {'^/' : '/'},
+                changeOrigin: true
+            }
+        }
+    }
 }

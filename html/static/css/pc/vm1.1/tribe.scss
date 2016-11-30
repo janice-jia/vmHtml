@@ -400,7 +400,7 @@ $color-ffffff: #ffffff;
 
         //评论
         .topicInfo-comment{
-            padding: 20px;
+            padding: 20px 0;
             background: $color-ffffff;
             box-shadow: 0 0 5px rgba(81, 81, 81, 0.2);
             margin-top: 13px;
@@ -433,11 +433,20 @@ $color-ffffff: #ffffff;
                 }
             }
             .topicCom-tit{
-                margin: 36px 0 20px 0;
+                margin: 36px 0 20px 20px;
                 font-size: 14px;
             }
             .topicCom-com{
-                padding-bottom: 40px;
+                padding: 20px;
+                border-top: 1px solid #b8c1c8;
+                .topicCom-comR .topicCom-time .topicCom-num .delete{
+                    display: none;
+                }
+                &:hover{
+                    .topicCom-comR .topicCom-time .topicCom-num .delete{
+                        display: inline-block;
+                    }
+                }
                 .topicCom-comL{
                     float: left;
                     width: 58px;
@@ -956,6 +965,7 @@ $color-ffffff: #ffffff;
                     }
                 }
                 .comicBox-con{
+                    text-align: center;
                     img{
                         max-width: 635px;
                     }

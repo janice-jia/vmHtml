@@ -260,7 +260,7 @@
               float: left;
               padding-right: 40px; }
     .topic-wall .topic-wall-l .topicInfo-comment {
-      padding: 20px;
+      padding: 20px 0;
       background: #ffffff;
       box-shadow: 0 0 5px rgba(81, 81, 81, 0.2);
       margin-top: 13px; }
@@ -286,10 +286,15 @@
           padding: 10px;
           border: 1px solid #bcbcbc; }
       .topic-wall .topic-wall-l .topicInfo-comment .topicCom-tit {
-        margin: 36px 0 20px 0;
+        margin: 36px 0 20px 20px;
         font-size: 14px; }
       .topic-wall .topic-wall-l .topicInfo-comment .topicCom-com {
-        padding-bottom: 40px; }
+        padding: 20px;
+        border-top: 1px solid #b8c1c8; }
+        .topic-wall .topic-wall-l .topicInfo-comment .topicCom-com .topicCom-comR .topicCom-time .topicCom-num .delete {
+          display: none; }
+        .topic-wall .topic-wall-l .topicInfo-comment .topicCom-com:hover .topicCom-comR .topicCom-time .topicCom-num .delete {
+          display: inline-block; }
         .topic-wall .topic-wall-l .topicInfo-comment .topicCom-com .topicCom-comL {
           float: left;
           width: 58px; }
@@ -662,8 +667,10 @@
           color: #999999; }
           .modal-infoComic .artworkBox .artworkL .comicBox .comicBox-edit a:hover {
             color: #666666; }
-      .modal-infoComic .artworkBox .artworkL .comicBox .comicBox-con img {
-        max-width: 635px; }
+      .modal-infoComic .artworkBox .artworkL .comicBox .comicBox-con {
+        text-align: center; }
+        .modal-infoComic .artworkBox .artworkL .comicBox .comicBox-con img {
+          max-width: 635px; }
     .modal-infoComic .artworkBox .artworkR {
       float: right;
       width: 320px;

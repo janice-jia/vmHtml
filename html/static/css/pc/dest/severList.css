@@ -36,7 +36,7 @@
     font-size: 12px; }
   #severList [data-websever="dropdown"] [data-websever="search"] {
     margin-top: 20px;
-    float: right; }
+    float: left; }
     #severList [data-websever="dropdown"] [data-websever="search"] #index-search-box .search-input-box {
       margin: 0; }
       #severList [data-websever="dropdown"] [data-websever="search"] #index-search-box .search-input-box .border-left {

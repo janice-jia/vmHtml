@@ -16,6 +16,9 @@
     background-color: #ffffff;
     height: 60px;
     /**  下拉按钮  **/ }
+    #choosedemand [data-webdemand="dropdown"] .dropdown {
+      width: 80%;
+      float: left; }
     #choosedemand [data-webdemand="dropdown"] [data-webdemand="dropdownbtn"] {
       padding-bottom: 10px;
       margin-bottom: 20px;
@@ -43,6 +46,8 @@
       border-bottom-color: #ffffff; }
     #choosedemand [data-webdemand="dropdown"] .dropdown-menu li a {
       font-size: 12px; }
+  #choosedemand .webdemandFB {
+    margin-top: -10px; }
   #choosedemand .per-req ul li {
     /**  复选框 选择样式  **/ }
     #choosedemand .per-req ul li .checkbox {

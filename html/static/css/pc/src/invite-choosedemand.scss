@@ -37,6 +37,11 @@ $color-fb4444: #fb4444;
     [data-webdemand="dropdown"] {
         background-color: $color-ffffff;
         height: 60px;
+        .dropdown{
+            width: 80%;
+            float: left;
+        }
+
         /**  下拉按钮  **/
         [data-webdemand="dropdownbtn"] {
             padding-bottom: 10px;
@@ -76,7 +81,9 @@ $color-fb4444: #fb4444;
             }
         }
     }
-
+    .webdemandFB{
+        margin-top: -10px;
+    }
     /**  需求列表 **/
     .per-req {
         ul {

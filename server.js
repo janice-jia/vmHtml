@@ -13,7 +13,8 @@ app.use(compression())
 
 // serve our static stuff like index.css
 app.use(express.static(path.join(__dirname, 'build'), {index: false}))
-app.use('/app', proxy({target: 'http://test.vmaking.com', changeOrigin: true}));
+app.use('/app', proxy({target: 'http://www.vmaking.com', changeOrigin: true}));
+app.use('/code', proxy({target: 'http://www.vmaking.com', changeOrigin: true}));
 
 // send all requests to index.html so browserHistory works
 app.get('*', (req, res) => {

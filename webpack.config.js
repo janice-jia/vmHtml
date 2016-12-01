@@ -31,6 +31,11 @@ module.exports = {
                 target: 'http://test.vmaking.com',
                 pathRewrite: {'^/' : '/'},
                 changeOrigin: true
+            },
+            '/code': {
+                target: 'http://test.vmaking.com',
+                pathRewrite: {'^/' : '/'},
+                changeOrigin: true
             }
         }
     }

@@ -70,7 +70,7 @@
 
 	var _routes2 = _interopRequireDefault(_routes);
 
-	var _httpProxyMiddleware = __webpack_require__(41);
+	var _httpProxyMiddleware = __webpack_require__(42);
 
 	var _httpProxyMiddleware2 = _interopRequireDefault(_httpProxyMiddleware);
 
@@ -195,51 +195,51 @@
 
 	var _Home2 = _interopRequireDefault(_Home);
 
-	var _Server = __webpack_require__(28);
+	var _Server = __webpack_require__(29);
 
 	var _Server2 = _interopRequireDefault(_Server);
 
-	var _ServerInfo = __webpack_require__(29);
+	var _ServerInfo = __webpack_require__(30);
 
 	var _ServerInfo2 = _interopRequireDefault(_ServerInfo);
 
-	var _Require = __webpack_require__(30);
+	var _Require = __webpack_require__(31);
 
 	var _Require2 = _interopRequireDefault(_Require);
 
-	var _RequireInfo = __webpack_require__(31);
+	var _RequireInfo = __webpack_require__(32);
 
 	var _RequireInfo2 = _interopRequireDefault(_RequireInfo);
 
-	var _Search = __webpack_require__(33);
+	var _Search = __webpack_require__(34);
 
 	var _Search2 = _interopRequireDefault(_Search);
 
-	var _Tribe = __webpack_require__(34);
+	var _Tribe = __webpack_require__(35);
 
 	var _Tribe2 = _interopRequireDefault(_Tribe);
 
-	var _Tribeinfo = __webpack_require__(35);
+	var _Tribeinfo = __webpack_require__(36);
 
 	var _Tribeinfo2 = _interopRequireDefault(_Tribeinfo);
 
-	var _TribeAlbum = __webpack_require__(36);
+	var _TribeAlbum = __webpack_require__(37);
 
 	var _TribeAlbum2 = _interopRequireDefault(_TribeAlbum);
 
-	var _TribeAlbumInfo = __webpack_require__(37);
+	var _TribeAlbumInfo = __webpack_require__(38);
 
 	var _TribeAlbumInfo2 = _interopRequireDefault(_TribeAlbumInfo);
 
-	var _TribeImgCom = __webpack_require__(38);
+	var _TribeImgCom = __webpack_require__(39);
 
 	var _TribeImgCom2 = _interopRequireDefault(_TribeImgCom);
 
-	var _TribeTopic = __webpack_require__(39);
+	var _TribeTopic = __webpack_require__(40);
 
 	var _TribeTopic2 = _interopRequireDefault(_TribeTopic);
 
-	var _TribePerson = __webpack_require__(40);
+	var _TribePerson = __webpack_require__(41);
 
 	var _TribePerson2 = _interopRequireDefault(_TribePerson);
 
@@ -283,7 +283,7 @@
 	                        _react2.default.createElement(_reactRouter.Route, { path: '/tribe/album/:tribeId', component: _TribeAlbum2.default }),
 	                        _react2.default.createElement(_reactRouter.Route, { path: '/tribe/album/info/:albumId', component: _TribeAlbumInfo2.default }),
 	                        _react2.default.createElement(_reactRouter.Route, { path: '/tribe/album/img/:imgId', component: _TribeImgCom2.default }),
-	                        _react2.default.createElement(_reactRouter.Route, { path: '/tribe/topic/01', component: _TribeTopic2.default }),
+	                        _react2.default.createElement(_reactRouter.Route, { path: '/tribe/topic/:topicId', component: _TribeTopic2.default }),
 	                        _react2.default.createElement(_reactRouter.Route, { path: '/tribe/person', component: _TribePerson2.default })
 	            )
 	);
@@ -383,6 +383,10 @@
 	            });
 	        }
 	    },
+	    subRegister: function subRegister() {
+	        alert('提交');
+	        return false;
+	    },
 	    render: function render() {
 	        return _react2.default.createElement(
 	            _amazeuiTouch.View,
@@ -405,7 +409,7 @@
 	                    { className: 'bgNone' },
 	                    _react2.default.createElement(
 	                        'form',
-	                        { action: '', className: 'form-register' },
+	                        { className: 'form-register', onSubmit: this.subRegister },
 	                        _react2.default.createElement(
 	                            _amazeuiTouch.List,
 	                            null,
@@ -649,7 +653,7 @@
 	                            null,
 	                            _react2.default.createElement(
 	                                _amazeuiTouch.Group,
-	                                { className: 'header-login bgNone margin-0 padding-v hidden' },
+	                                { className: 'header-login bgNone margin-0 padding-v' },
 	                                _react2.default.createElement(
 	                                    _reactRouter.Link,
 	                                    { to: '/register', className: 'btn-yellow margin-bottom' },
@@ -663,7 +667,7 @@
 	                            ),
 	                            _react2.default.createElement(
 	                                _amazeuiTouch.Group,
-	                                { className: 'header-login bgNone margin-0' },
+	                                { className: 'header-login bgNone margin-0 hidden' },
 	                                _react2.default.createElement(
 	                                    'div',
 	                                    { className: 'header-user-avatar margin-v' },
@@ -1612,6 +1616,10 @@
 
 	var _reactDynamicSwiper = __webpack_require__(27);
 
+	var _Moment2 = __webpack_require__(28);
+
+	var _Moment3 = _interopRequireDefault(_Moment2);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -1629,8 +1637,6 @@
 	        var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
 
 	        _this.state = _HomeStore2.default.getState();
-	        _this.state.tribePage = 0;
-	        _this.state.tribeList = [];
 	        _this.onChange = _this.onChange.bind(_this);
 	        return _this;
 	    }
@@ -1639,8 +1645,9 @@
 	        key: 'componentDidMount',
 	        value: function componentDidMount() {
 	            _HomeStore2.default.listen(this.onChange);
-	            _HomeActions2.default.updateHome();
-	            this.state.tribeList = [{ title: '标题名称名称名称' }, { title: '标题名称名称名称1' }];
+	            _HomeActions2.default.getSlide();
+	            _HomeActions2.default.getTribe();
+	            _HomeActions2.default.getTopic(1);
 	        }
 	    }, {
 	        key: 'componentWillUnmount',
@@ -1653,14 +1660,14 @@
 	            this.setState(state);
 	        }
 
-	        //查看更多部落
+	        //查看更多话题
 
 	    }, {
-	        key: 'loadTribe',
-	        value: function loadTribe() {
-	            this.state.tribePage = this.state.tribePage + 1;
-	            this.state.tribeList.push({ title: '标题名称名称名' + this.state.tribePage });
-	            this.setState({ tribeList: this.state.tribeList });
+	        key: 'loadTopic',
+	        value: function loadTopic() {
+	            if (!this.state.lastPage) {
+	                _HomeActions2.default.getTopic(this.state.topicPage + 1);
+	            }
 	        }
 	    }, {
 	        key: 'render',
@@ -1678,24 +1685,17 @@
 	                        _react2.default.createElement(
 	                            _amazeuiTouch.Slider,
 	                            null,
-	                            _react2.default.createElement(
-	                                _amazeuiTouch.Slider.Item,
-	                                null,
-	                                _react2.default.createElement(
-	                                    'a',
-	                                    { href: '#' },
-	                                    _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' })
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                _amazeuiTouch.Slider.Item,
-	                                null,
-	                                _react2.default.createElement(
-	                                    'a',
-	                                    { href: '#' },
-	                                    _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' })
-	                                )
-	                            )
+	                            this.state.slideList.map(function (item, i) {
+	                                return _react2.default.createElement(
+	                                    _amazeuiTouch.Slider.Item,
+	                                    { key: i },
+	                                    _react2.default.createElement(
+	                                        'a',
+	                                        { href: '#' },
+	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' })
+	                                    )
+	                                );
+	                            })
 	                        )
 	                    ),
 	                    _react2.default.createElement(
@@ -1719,94 +1719,30 @@
 	                                        navigation: false,
 	                                        pagination: false
 	                                    },
-	                                    _react2.default.createElement(
-	                                        _reactDynamicSwiper.Slide,
-	                                        null,
-	                                        _react2.default.createElement(
-	                                            'div',
-	                                            { className: 'swiper-slide' },
-	                                            _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' }),
+	                                    this.state.tribeList.map(function (item, i) {
+	                                        return _react2.default.createElement(
+	                                            _reactDynamicSwiper.Slide,
+	                                            { key: i },
 	                                            _react2.default.createElement(
-	                                                'p',
-	                                                { className: 'home-tribe-name' },
-	                                                '\u5251\u7075\u90E8\u843D'
+	                                                'div',
+	                                                { className: 'swiper-slide' },
+	                                                _react2.default.createElement(
+	                                                    'a',
+	                                                    { href: '/tribe/info/' + item.id },
+	                                                    _react2.default.createElement('img', { src: item.logo })
+	                                                ),
+	                                                _react2.default.createElement(
+	                                                    'a',
+	                                                    { href: '/tribe/info/' + item.id },
+	                                                    _react2.default.createElement(
+	                                                        'p',
+	                                                        { className: 'home-tribe-name' },
+	                                                        item.title
+	                                                    )
+	                                                )
 	                                            )
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _reactDynamicSwiper.Slide,
-	                                        null,
-	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' }),
-	                                        _react2.default.createElement(
-	                                            'p',
-	                                            { className: 'home-tribe-name' },
-	                                            '\u6D77\u8D3C\u738B\u90E8\u843D'
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _reactDynamicSwiper.Slide,
-	                                        null,
-	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-3.jpg' }),
-	                                        _react2.default.createElement(
-	                                            'p',
-	                                            { className: 'home-tribe-name' },
-	                                            '\u9B54\u517D\u90E8\u843D'
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _reactDynamicSwiper.Slide,
-	                                        null,
-	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-4.jpg' }),
-	                                        _react2.default.createElement(
-	                                            'p',
-	                                            { className: 'home-tribe-name' },
-	                                            '\u5947\u8FF9\u738B\u5EA7\u90E8\u843D'
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _reactDynamicSwiper.Slide,
-	                                        null,
-	                                        _react2.default.createElement(
-	                                            'div',
-	                                            { className: 'swiper-slide' },
-	                                            _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' }),
-	                                            _react2.default.createElement(
-	                                                'p',
-	                                                { className: 'home-tribe-name' },
-	                                                '\u5251\u7075\u90E8\u843D'
-	                                            )
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _reactDynamicSwiper.Slide,
-	                                        null,
-	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' }),
-	                                        _react2.default.createElement(
-	                                            'p',
-	                                            { className: 'home-tribe-name' },
-	                                            '\u6D77\u8D3C\u738B\u90E8\u843D'
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _reactDynamicSwiper.Slide,
-	                                        null,
-	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-3.jpg' }),
-	                                        _react2.default.createElement(
-	                                            'p',
-	                                            { className: 'home-tribe-name' },
-	                                            '\u9B54\u517D\u90E8\u843D'
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _reactDynamicSwiper.Slide,
-	                                        null,
-	                                        _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-4.jpg' }),
-	                                        _react2.default.createElement(
-	                                            'p',
-	                                            { className: 'home-tribe-name' },
-	                                            '\u5947\u8FF9\u738B\u5EA7\u90E8\u843D'
-	                                        )
-	                                    )
+	                                        );
+	                                    })
 	                                )
 	                            )
 	                        )
@@ -1911,34 +1847,42 @@
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'margin-top-sm home-tribe-list' },
+	                        { className: 'margin-top-sm home-topic-list' },
 	                        _react2.default.createElement(
 	                            _amazeuiTouch.List,
 	                            { className: 'margin-0' },
-	                            this.state.tribeList.map(function (item, i) {
+	                            this.state.topicList.map(function (item, i) {
 	                                return _react2.default.createElement(
 	                                    _amazeuiTouch.Group,
 	                                    { noPadded: true, className: 'margin-v bgF border-d7d7d7', key: i },
 	                                    _react2.default.createElement(_amazeuiTouch.List.Item, {
-
-	                                        media: _react2.default.createElement('img', { className: 'home-tribe-media', width: '44', height: '44', src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' }),
+	                                        media: _react2.default.createElement(
+	                                            'a',
+	                                            { href: '/user/' + item.uid },
+	                                            _react2.default.createElement('img', { className: 'home-topic-media', width: '44', height: '44', src: item.userAvatar })
+	                                        ),
 	                                        after: _react2.default.createElement(
 	                                            'div',
-	                                            { className: 'home-tribe-tag' },
-	                                            '\u6D77\u8D3C\u738B\u90E8\u843D'
+	                                            { className: 'home-topic-tag' },
+	                                            _react2.default.createElement('a', { href: '/tribe/info/' + item.tribesId }),
+	                                            item.tribeName
 	                                        ),
 	                                        title: _react2.default.createElement(
 	                                            'div',
-	                                            { className: 'home-tribe-item' },
+	                                            { className: 'home-topic-item' },
 	                                            _react2.default.createElement(
 	                                                'p',
 	                                                { className: 'text-color-3 text-size-14' },
-	                                                '\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89\u55E8\u7C89'
+	                                                _react2.default.createElement(
+	                                                    'a',
+	                                                    { href: '/user/' + item.uid },
+	                                                    item.userName
+	                                                )
 	                                            ),
 	                                            _react2.default.createElement(
 	                                                'p',
 	                                                { className: 'text-color-4 text-size-13' },
-	                                                '1\u5C0F\u65F6\u524D'
+	                                                _react2.default.createElement(_Moment3.default, { momentTime: item.createTime })
 	                                            )
 	                                        )
 	                                    }),
@@ -1947,33 +1891,37 @@
 	                                        { className: 'padding-h margin-v-xs' },
 	                                        _react2.default.createElement(
 	                                            'div',
-	                                            { className: 'text-size-15 text-color-3' },
-	                                            item.title
+	                                            { className: 'text-size-15 text-color-3 margin-bottom-xs home-topic-tit' },
+	                                            _react2.default.createElement(
+	                                                'a',
+	                                                { href: '/tribe/topic/' + item.id },
+	                                                item.title
+	                                            )
 	                                        ),
 	                                        _react2.default.createElement(
 	                                            'div',
-	                                            { className: 'text-size-13 text-color-2 home-tribe-desc' },
-	                                            '\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0'
+	                                            { className: 'text-size-13 text-color-2 home-topic-desc' },
+	                                            _react2.default.createElement(
+	                                                'a',
+	                                                { href: '/tribe/topic/' + item.id },
+	                                                item.description
+	                                            )
 	                                        )
 	                                    ),
 	                                    _react2.default.createElement(
 	                                        _amazeuiTouch.Grid,
 	                                        { avg: 3 },
-	                                        _react2.default.createElement(
-	                                            _amazeuiTouch.Col,
-	                                            { className: 'padding-h padding-top-xs padding-bottom-0' },
-	                                            _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-1.jpg' })
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            _amazeuiTouch.Col,
-	                                            { className: 'padding-h padding-top-xs padding-bottom-0' },
-	                                            _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-2.jpg' })
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            _amazeuiTouch.Col,
-	                                            { className: 'padding-h padding-top-xs padding-bottom-0' },
-	                                            _react2.default.createElement('img', { src: 'http://s.amazeui.org/media/i/demos/bing-3.jpg' })
-	                                        )
+	                                        item.topicPic.map(function (topicPic, topicPicI) {
+	                                            return _react2.default.createElement(
+	                                                _amazeuiTouch.Col,
+	                                                { key: topicPicI, className: 'padding-h padding-top-xs padding-bottom-0' },
+	                                                _react2.default.createElement(
+	                                                    'a',
+	                                                    { href: '/tribe/topic/' + item.id },
+	                                                    _react2.default.createElement('img', { src: topicPic })
+	                                                )
+	                                            );
+	                                        })
 	                                    ),
 	                                    _react2.default.createElement(
 	                                        _amazeuiTouch.Grid,
@@ -1982,7 +1930,7 @@
 	                                            _amazeuiTouch.Col,
 	                                            { cols: 2, className: 'padding-h text-size-12 text-color-4' },
 	                                            _react2.default.createElement('span', { className: 'icon home-icon-view margin-right-xs' }),
-	                                            '123'
+	                                            item.lookNum
 	                                        ),
 	                                        _react2.default.createElement(
 	                                            _amazeuiTouch.Col,
@@ -1995,13 +1943,13 @@
 	                                                    null,
 	                                                    _react2.default.createElement('span', {
 	                                                        className: 'icon home-icon-fabulous margin-right-xs' }),
-	                                                    '123'
+	                                                    item.like
 	                                                ),
 	                                                _react2.default.createElement(
 	                                                    _amazeuiTouch.Col,
 	                                                    null,
 	                                                    _react2.default.createElement('span', { className: 'icon home-icon-comment margin-right-xs' }),
-	                                                    '123'
+	                                                    item.commentAmount
 	                                                )
 	                                            )
 	                                        )
@@ -2018,7 +1966,7 @@
 	                            { noPadded: true, className: 'margin-0' },
 	                            _react2.default.createElement(
 	                                'a',
-	                                { className: 'btn-white', href: 'javascript:;', onClick: this.loadTribe.bind(this) },
+	                                { className: 'btn-white', href: 'javascript:;', onClick: this.loadTopic.bind(this) },
 	                                '\u67E5\u770B\u66F4\u591A'
 	                            )
 	                        )
@@ -2090,23 +2038,60 @@
 	        _classCallCheck(this, HomeStore);
 
 	        this.bindActions(_HomeActions2.default);
-	        this.home = [];
+	        this.slideList = [];
+	        this.tribeList = [];
+	        this.topicList = [];
 	    }
 
-	    //updateHome(todo) {
-	    //    this.setState({ todos: this.state.todos.concat(todo) });
-	    //}
+	    //获取首页幻灯片---成功
+
 
 	    _createClass(HomeStore, [{
-	        key: 'onUpdateHomeSuccess',
-	        value: function onUpdateHomeSuccess(data) {
-	            this.home = data.result;
-	            console.info('onUpdateHomeSuccess', this.home);
+	        key: 'onGetSlideSuccess',
+	        value: function onGetSlideSuccess(data) {
+	            this.slideList = data.data;
 	        }
+
+	        //获取首页幻灯片---失败
+
 	    }, {
-	        key: 'onUpdateHomeFail',
-	        value: function onUpdateHomeFail() {
-	            console.info('onUpdateHomeFail', data);
+	        key: 'onGetSlideFail',
+	        value: function onGetSlideFail() {
+	            this.slideList = [];
+	        }
+
+	        //获取首页部落列表---成功
+
+	    }, {
+	        key: 'onGetTribeSuccess',
+	        value: function onGetTribeSuccess(data) {
+	            this.tribeList = data.data;
+	        }
+
+	        //获取首页部落列表---失败
+
+	    }, {
+	        key: 'onGetTribeFail',
+	        value: function onGetTribeFail() {
+	            this.tribeList = [];
+	        }
+
+	        //获取首页话题列表---成功
+
+	    }, {
+	        key: 'onGetTopicSuccess',
+	        value: function onGetTopicSuccess(data) {
+	            this.topicPage = data.currentPage;
+	            this.lastPage = data.lastPage;
+	            this.topicList = this.topicList.concat(data.data);
+	        }
+
+	        //获取首页话题列表---失败
+
+	    }, {
+	        key: 'onGetTopicFail',
+	        value: function onGetTopicFail() {
+	            this.topicList = [];
 	        }
 	    }]);
 
@@ -2167,22 +2152,62 @@
 	    function HomeActions() {
 	        _classCallCheck(this, HomeActions);
 
-	        this.generateActions('updateHomeSuccess', 'updateHomeFail');
+	        this.generateActions('getSlideSuccess', 'getSlideFail', 'getTribeSuccess', 'getTribeFail', 'getTopicSuccess', 'getTopicFail');
 	    }
 
+	    //获取首页幻灯片
+
+
 	    _createClass(HomeActions, [{
-	        key: 'updateHome',
-	        value: function updateHome() {
+	        key: 'getSlide',
+	        value: function getSlide() {
 	            var _this = this;
 
 	            _jquery2.default.ajax({
 	                type: 'Get',
 	                url: '/app/banner'
 	            }).done(function (data) {
-	                console.info('data', data);
-	                _this.updateHomeSuccess(data);
+	                _this.getSlideSuccess(data);
 	            }).fail(function (jqXhr) {
-	                _this.updateHomeFail(jqXhr);
+	                _this.getSlideFail(jqXhr);
+	            });
+	        }
+
+	        //获取首页部落列表
+
+	    }, {
+	        key: 'getTribe',
+	        value: function getTribe() {
+	            var _this2 = this;
+
+	            _jquery2.default.ajax({
+	                type: 'Get',
+	                url: '/app/index/tribe/list'
+	            }).done(function (data) {
+	                _this2.getTribeSuccess(data);
+	            }).fail(function (jqXhr) {
+	                _this2.getTribeFail(jqXhr);
+	            });
+	        }
+
+	        //获取首页话题列表
+
+	    }, {
+	        key: 'getTopic',
+	        value: function getTopic(topicPage) {
+	            var _this3 = this;
+
+	            _jquery2.default.ajax({
+	                type: 'Get',
+	                url: '/app/index/topic/list',
+	                data: {
+	                    currentPage: topicPage,
+	                    itemsPerPage: 10
+	                }
+	            }).done(function (data) {
+	                _this3.getTopicSuccess(data);
+	            }).fail(function (jqXhr) {
+	                _this3.getTopicFail(jqXhr);
 	            });
 	        }
 	    }]);
@@ -2200,6 +2225,98 @@
 
 /***/ },
 /* 28 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(4);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _jquery = __webpack_require__(13);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	//公用时间控件
+	var _Moment = function (_React$Component) {
+	    _inherits(_Moment, _React$Component);
+
+	    function _Moment(props) {
+	        _classCallCheck(this, _Moment);
+
+	        var _this = _possibleConstructorReturn(this, (_Moment.__proto__ || Object.getPrototypeOf(_Moment)).call(this, props));
+
+	        _this.momentTime = _this.props.momentTime;
+	        _this.onChange = _this.onChange.bind(_this);
+	        var minute = 1000 * 60;
+	        var hour = minute * 60;
+	        var day = hour * 24;
+	        var month = day * 30;
+
+	        var now = new Date().getTime();
+	        var diffValue = now - _this.props.momentTime;
+	        if (diffValue < 0) {
+	            //结束日期不能小于开始日期！
+	            _this.momentTime = '';
+	        }
+	        var monthC = diffValue / month;
+	        var dayC = diffValue / day;
+	        var hourC = diffValue / hour;
+	        var minC = diffValue / minute;
+	        var result = '';
+
+	        if (monthC >= 1) {
+	            result = parseInt(monthC) + "个月前";
+	        } else if (dayC >= 1) {
+	            result = parseInt(dayC) + "天前";
+	        } else if (hourC >= 1) {
+	            result = parseInt(hourC) + "个小时前";
+	        } else if (minC >= 1) {
+	            result = parseInt(minC) + "分钟前";
+	        } else {
+	            result = "刚刚发表";
+	        }
+	        _this.momentTime = result;
+	        return _this;
+	    }
+
+	    _createClass(_Moment, [{
+	        key: 'onChange',
+	        value: function onChange(state) {
+	            this.setState(state);
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'span',
+	                null,
+	                this.momentTime
+	            );
+	        }
+	    }]);
+
+	    return _Moment;
+	}(_react2.default.Component);
+
+	exports.default = _Moment;
+
+/***/ },
+/* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2313,7 +2430,7 @@
 	});
 
 /***/ },
-/* 29 */
+/* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2492,7 +2609,7 @@
 	});
 
 /***/ },
-/* 30 */
+/* 31 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2605,7 +2722,7 @@
 	});
 
 /***/ },
-/* 31 */
+/* 32 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2626,7 +2743,7 @@
 
 	var _Header3 = _interopRequireDefault(_Header2);
 
-	var _Comments2 = __webpack_require__(32);
+	var _Comments2 = __webpack_require__(33);
 
 	var _Comments3 = _interopRequireDefault(_Comments2);
 
@@ -2919,7 +3036,7 @@
 	exports.default = RequireInfo;
 
 /***/ },
-/* 32 */
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2992,7 +3109,7 @@
 	exports.default = _Comments;
 
 /***/ },
-/* 33 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3108,7 +3225,7 @@
 	exports.default = Search;
 
 /***/ },
-/* 34 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3268,7 +3385,7 @@
 	});
 
 /***/ },
-/* 35 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3534,7 +3651,7 @@
 	});
 
 /***/ },
-/* 36 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3634,7 +3751,7 @@
 	});
 
 /***/ },
-/* 37 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3723,7 +3840,7 @@
 	});
 
 /***/ },
-/* 38 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3866,7 +3983,7 @@
 	});
 
 /***/ },
-/* 39 */
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3883,7 +4000,7 @@
 
 	var _Header3 = _interopRequireDefault(_Header2);
 
-	var _Comments2 = __webpack_require__(32);
+	var _Comments2 = __webpack_require__(33);
 
 	var _Comments3 = _interopRequireDefault(_Comments2);
 
@@ -4025,7 +4142,7 @@
 	});
 
 /***/ },
-/* 40 */
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4159,7 +4276,7 @@
 	});
 
 /***/ },
-/* 41 */
+/* 42 */
 /***/ function(module, exports) {
 
 	module.exports = require("http-proxy-middleware");

@@ -68,7 +68,7 @@ module.exports = (
             <Route path="/tribe/album/:tribeId" component={TribeAlbum}/>
             <Route path="/tribe/album/info/:albumId" component={TribeAlbumInfo}/>
             <Route path="/tribe/album/img/:imgId" component={TribeImgCom}/>
-            <Route path="/tribe/topic/01" component={TribeTopic}/>
+            <Route path="/tribe/topic/:topicId" component={TribeTopic}/>
             <Route path="/tribe/person" component={TribePerson}/>
         </Route>
     </Router>

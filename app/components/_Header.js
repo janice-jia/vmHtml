@@ -96,11 +96,11 @@ class _Header extends React.Component {
                 component: OffCanvasTrigger,
                 className:"leftNav",
                 offCanvas:<OffCanvas>
-                        <Group className="header-login bgNone margin-0 padding-v hidden">
+                        <Group className="header-login bgNone margin-0 padding-v">
                             <Link to="/register" className="btn-yellow margin-bottom">注册</Link>
                             <Link to="/login" className="btn-white-noBorder">登陆</Link>
                         </Group>
-                        <Group className="header-login bgNone margin-0">
+                        <Group className="header-login bgNone margin-0 hidden">
                             <div className="header-user-avatar margin-v">
                                 <a href="/user/01"><img src="http://s.amazeui.org/media/i/demos/bing-2.jpg" height="50" width="50" alt=""/></a>
                             </div>

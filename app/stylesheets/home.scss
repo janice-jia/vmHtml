@@ -53,21 +53,21 @@
         }
     }
 
-    //部落item
-    .home-tribe-list{
+    //话题item
+    .home-topic-list{
         .list{
             background: none;
         }
-        .home-tribe-media{
+        .home-topic-media{
             width: 44px;
             height: 44px;
             border-radius: 50%;
         }
-        .home-tribe-tag{
+        .home-topic-tag{
             border: 1px solid $border-color-1;
             padding: 0 $sm;
         }
-        .home-tribe-item{
+        .home-topic-item{
             p{
                 line-height: 1.5;
                 height: 1.5rem;
@@ -78,7 +78,10 @@
         .item{
             border: none;
         }
-        .home-tribe-desc{
+        .home-topic-tit{
+            @include line-clamp();
+        }
+        .home-topic-desc{
             @include line-clamp();
         }
 

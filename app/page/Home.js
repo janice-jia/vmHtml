@@ -4,23 +4,20 @@ import HomeStore from '../stores/HomeStore'
 import HomeActions from '../actions/HomeActions'
 import _Header from '../components/_Header'
 import { Swiper, Slide } from 'react-dynamic-swiper'
+import _Moment from '../components/_Moment'
 
 class Home extends React.Component {
     constructor(props) {
         super(props);
         this.state = HomeStore.getState();
-        this.state.tribePage = 0;
-        this.state.tribeList = [];
         this.onChange = this.onChange.bind(this);
     }
 
     componentDidMount() {
         HomeStore.listen(this.onChange);
-        HomeActions.updateHome();
-        this.state.tribeList = [
-            {title: '标题名称名称名称'},
-            {title: '标题名称名称名称1'}
-        ];
+        HomeActions.getSlide();
+        HomeActions.getTribe();
+        HomeActions.getTopic(1);
     }
 
 
@@ -32,26 +29,26 @@ class Home extends React.Component {
         this.setState(state);
     }
 
-    //查看更多部落
-    loadTribe() {
-        this.state.tribePage = this.state.tribePage + 1;
-        this.state.tribeList.push({title: '标题名称名称名' + this.state.tribePage});
-        this.setState({tribeList: this.state.tribeList})
+    //查看更多话题
+    loadTopic() {
+        if(!this.state.lastPage){
+            HomeActions.getTopic(this.state.topicPage+1);
+        }
     }
 
     render() {
         return <View>
             <_Header/>
             <Container scrollable className="home">
-
                 <div className="home-slide">
                     <Slider>
-                        <Slider.Item>
-                            <a href="#"><img src="http://s.amazeui.org/media/i/demos/bing-1.jpg"/></a>
-                        </Slider.Item>
-                        <Slider.Item>
-                            <a href="#"><img src="http://s.amazeui.org/media/i/demos/bing-2.jpg"/></a>
-                        </Slider.Item>
+                        {
+                            this.state.slideList.map((item,i) =>{
+                                return  <Slider.Item key={i}>
+                                    <a href="#"><img src="http://s.amazeui.org/media/i/demos/bing-1.jpg"/></a>
+                                </Slider.Item>;
+                            })
+                        }
                     </Slider>
                 </div>
 
@@ -64,42 +61,16 @@ class Home extends React.Component {
                                 navigation={false}
                                 pagination={false}
                             >
-                                <Slide>
-                                    <div className="swiper-slide">
-                                        <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg"/>
-                                        <p className="home-tribe-name">剑灵部落</p>
-                                    </div>
-                                </Slide>
-                                <Slide>
-                                    <img src="http://s.amazeui.org/media/i/demos/bing-2.jpg"/>
-                                    <p className="home-tribe-name">海贼王部落</p>
-                                </Slide>
-                                <Slide>
-                                    <img src="http://s.amazeui.org/media/i/demos/bing-3.jpg"/>
-                                    <p className="home-tribe-name">魔兽部落</p>
-                                </Slide>
-                                <Slide>
-                                    <img src="http://s.amazeui.org/media/i/demos/bing-4.jpg"/>
-                                    <p className="home-tribe-name">奇迹王座部落</p>
-                                </Slide>
-                                <Slide>
-                                    <div className="swiper-slide">
-                                        <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg"/>
-                                        <p className="home-tribe-name">剑灵部落</p>
-                                    </div>
-                                </Slide>
-                                <Slide>
-                                    <img src="http://s.amazeui.org/media/i/demos/bing-2.jpg"/>
-                                    <p className="home-tribe-name">海贼王部落</p>
-                                </Slide>
-                                <Slide>
-                                    <img src="http://s.amazeui.org/media/i/demos/bing-3.jpg"/>
-                                    <p className="home-tribe-name">魔兽部落</p>
-                                </Slide>
-                                <Slide>
-                                    <img src="http://s.amazeui.org/media/i/demos/bing-4.jpg"/>
-                                    <p className="home-tribe-name">奇迹王座部落</p>
-                                </Slide>
+                                {
+                                    this.state.tribeList.map((item, i) => {
+                                        return <Slide key={i}>
+                                            <div className="swiper-slide">
+                                                <a href={'/tribe/info/'+item.id}><img src={item.logo}/></a>
+                                                <a href={'/tribe/info/'+item.id}><p className="home-tribe-name">{item.title}</p></a>
+                                            </div>
+                                        </Slide>
+                                    })
+                                }
                             </Swiper>
                         </Group>
                     </Group>
@@ -148,53 +119,53 @@ class Home extends React.Component {
                     </Group>
                 </div>
 
-                <div className="margin-top-sm home-tribe-list">
+                <div className="margin-top-sm home-topic-list">
 
                         <List className="margin-0">
                             {
-                                this.state.tribeList.map((item, i) => {
+                                this.state.topicList.map((item, i) => {
                                     return <Group noPadded className="margin-v bgF border-d7d7d7" key={i}>
                                         <List.Item
-
-                                            media={<img className="home-tribe-media" width="44" height="44" src="http://s.amazeui.org/media/i/demos/bing-1.jpg" />}
-                                            after={<div className="home-tribe-tag">海贼王部落</div>}
-                                            title={<div className="home-tribe-item">
-                                                <p className="text-color-3 text-size-14">嗨粉嗨粉嗨粉嗨粉嗨粉嗨粉嗨粉嗨粉嗨粉嗨粉</p>
-                                                <p className="text-color-4 text-size-13">1小时前</p>
+                                            media={<a href={'/user/'+item.uid}><img className="home-topic-media" width="44" height="44" src={item.userAvatar} /></a>}
+                                            after={<div className="home-topic-tag"><a href={'/tribe/info/'+item.tribesId}></a>{item.tribeName}</div>}
+                                            title={<div className="home-topic-item">
+                                                <p className="text-color-3 text-size-14"><a href={'/user/'+item.uid}>{item.userName}</a></p>
+                                                <p className="text-color-4 text-size-13"><_Moment momentTime={item.createTime}></_Moment></p>
                                             </div>}
                                         />
                                         <div className="padding-h margin-v-xs">
-                                            <div className="text-size-15 text-color-3">{item.title}</div>
-                                            <div className="text-size-13 text-color-2 home-tribe-desc">
-                                                描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
+                                            <div className="text-size-15 text-color-3 margin-bottom-xs home-topic-tit">
+                                                <a href={'/tribe/topic/'+item.id}>{item.title}</a>
+                                            </div>
+                                            <div className="text-size-13 text-color-2 home-topic-desc">
+                                                <a href={'/tribe/topic/'+item.id}>{item.description}</a>
                                             </div>
                                         </div>
                                         <Grid avg={3}>
-                                            <Col className="padding-h padding-top-xs padding-bottom-0">
-                                                <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg"/>
-                                            </Col>
-                                            <Col className="padding-h padding-top-xs padding-bottom-0">
-                                                <img src="http://s.amazeui.org/media/i/demos/bing-2.jpg"/>
-                                            </Col>
-                                            <Col className="padding-h padding-top-xs padding-bottom-0">
-                                                <img src="http://s.amazeui.org/media/i/demos/bing-3.jpg"/>
-                                            </Col>
+                                            {
+                                                item.topicPic.map( (topicPic, topicPicI) => {
+                                                    return <Col key={topicPicI} className="padding-h padding-top-xs padding-bottom-0">
+                                                        <a href={'/tribe/topic/'+item.id}><img src={topicPic}/></a>
+                                                    </Col>
+                                                })
+                                            }
+
                                         </Grid>
                                         <Grid align="between" className="margin-v-xs">
                                             <Col cols={2} className="padding-h text-size-12 text-color-4">
                                                 <span className="icon home-icon-view margin-right-xs"></span>
-                                                123
+                                                {item.lookNum}
                                             </Col>
                                             <Col cols={2} className="padding-h text-size-12 text-color-4 text-right">
                                                 <Grid>
                                                     <Col>
                                                         <span
                                                             className="icon home-icon-fabulous margin-right-xs"></span>
-                                                        123
+                                                        {item.like}
                                                     </Col>
                                                     <Col>
                                                         <span className="icon home-icon-comment margin-right-xs"></span>
-                                                        123
+                                                        {item.commentAmount}
                                                     </Col>
                                                 </Grid>
                                             </Col>
@@ -210,7 +181,7 @@ class Home extends React.Component {
 
                 <div className="margin-h margin-v">
                     <Group noPadded className="margin-0">
-                        <a className="btn-white" href="javascript:;" onClick={this.loadTribe.bind(this)}>查看更多</a>
+                        <a className="btn-white" href="javascript:;" onClick={this.loadTopic.bind(this)}>查看更多</a>
                     </Group>
                 </div>
 

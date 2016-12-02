@@ -19,7 +19,17 @@ var reload      = browserSync.reload;
 /*
  * default
  * */
-gulp.task('default', ['styles-wujinshenyu', 'styles-qijiwangzuo', 'styles-cosplay', 'styles-disney', 'styles-dongrinuanbei', 'styles-denghuo', 'styles-yiyingjuquan', 'styles-tanqingshuoan'],function(){
+gulp.task('default', [
+    'styles-wujinshenyu',
+    'styles-qijiwangzuo',
+    'styles-cosplay',
+    'styles-disney',
+    'styles-dongrinuanbei',
+    'styles-denghuo',
+    'styles-yiyingjuquan',
+    'styles-tanqingshuoan',
+    'styles-yongwuzhijing'
+],function(){
 
 });
 
@@ -27,7 +37,16 @@ gulp.task('default', ['styles-wujinshenyu', 'styles-qijiwangzuo', 'styles-cospla
 gulp.task('server', function() {
     browserSync.init({
         server: {
-            baseDir: ["./zt/wujinshenyu", "./zt", ".zt/disney", "./zt/dongrinuanbei", "./zt/denghuo", "./zt/yiyingjuquan", "./zt/tanqingshuoan"]
+            baseDir: [
+                "./zt/wujinshenyu",
+                "./zt",
+                ".zt/disney",
+                "./zt/dongrinuanbei",
+                "./zt/denghuo",
+                "./zt/yiyingjuquan",
+                "./zt/yiyingjuquan",
+                "./zt/yongwuzhijing"
+            ]
         }
     });
 
@@ -48,6 +67,7 @@ gulp.task("watch",['server'], function(){
     gulp.watch('./zt/denghuo/scss/*.scss', ['styles-denghuo']);
     gulp.watch('./zt/yiyingjuquan/scss/*.scss', ['styles-yiyingjuquan']);
     gulp.watch('./zt/tanqingshuoan/scss/*.scss', ['styles-tanqingshuoan']);
+    gulp.watch('./zt/yongwuzhijing/scss/*.scss', ['styles-yongwuzhijing']);
 
     gulp.watch('./zt/wujinshenyu/css/*.css').on('change', reload);
     gulp.watch('./zt/qijiwangzuo/css/*.css').on('change', reload);
@@ -59,6 +79,7 @@ gulp.task("watch",['server'], function(){
     gulp.watch('./zt/denghuo/css/*.css').on('change', reload);
     gulp.watch('./zt/yiyingjuquan/css/*.css').on('change', reload);
     gulp.watch('./zt/tanqingshuoan/css/*.css').on('change', reload);
+    gulp.watch('./zt/yongwuzhijing/css/*.css').on('change', reload);
 
     gulp.watch("./html/*.html").on('change', reload);
     gulp.watch("./zt/wujinshenyu/*.html").on('change', reload);
@@ -71,6 +92,7 @@ gulp.task("watch",['server'], function(){
     gulp.watch("./zt/denghuo/*.html").on('change', reload);
     gulp.watch("./zt/yiyingjuquan/*.html").on('change', reload);
     gulp.watch("./zt/tanqingshuoan/*.html").on('change', reload);
+    gulp.watch("./zt/yongwuzhijing/*.html").on('change', reload);
 
 });
 
@@ -175,6 +197,17 @@ gulp.task('styles-tanqingshuoan', function(){
         .pipe(gulp.dest('./zt/tanqingshuoan/css/'))
 
 });
+
+//永武止境专题
+gulp.task('styles-yongwuzhijing', function(){
+    //编译sass
+    return sass('./zt/yongwuzhijing/scss/*.scss')
+
+    //保存编译之后的css文件到指定的目录
+        .pipe(gulp.dest('./zt/yongwuzhijing/css/'))
+
+});
+
 
 
 

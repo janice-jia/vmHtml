@@ -1,0 +1,162 @@
+@charset "utf-8";
+/*
+*
+*/
+.ywzj-wall{
+    margin-top: 50px;
+    min-width: 1010px;
+    background: url("../images/bg1.png") center 0 no-repeat #e9e5e4;
+    .ywzj-l010{
+        width: 1010px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .ywzj-banner{
+        min-height: 1360px;
+    }
+    .ywzj-jy{
+        background: url("../images/bg2.png") center 0 no-repeat;
+        min-height: 888px;
+    }
+    .extend-A{
+        font-family: "宋体";
+        color: #000000;
+        width: 1em;
+        line-height: 1.1em;
+        display: inline-block;
+        font-size: 32px;
+        position: absolute;
+        right: 37px;
+        font-weight: bold;
+    }
+    .ywzj-lcj{
+        background: url("../images/bg3.png") center 0 no-repeat;
+        min-height:598px;
+        .ywzj-lcjA{
+            @extend .extend-A;
+            top: 214px;
+        }
+    }
+    .ywzj-xkx{
+        background: url("../images/bg4.png") center 0 no-repeat;
+        min-height:418px;
+        .ywzj-xkxA{
+            @extend .extend-A;
+            top: 35px;
+        }
+    }
+    .ywzj-ynj{
+        background: url("../images/bg5.png") center 0 no-repeat;
+        min-height:480px;
+        .ywzj-ynjA{
+            @extend .extend-A;
+            top: 32px;
+        }
+    }
+    .ywzj-hy{
+        background: url("../images/bg6.png") center 0 no-repeat;
+        min-height: 1121px;
+    }
+    .ywzj-fsj{
+        background: url("../images/bg7.png") center 0 no-repeat;
+        min-height:607px;
+        .ywzj-fsjA{
+            @extend .extend-A;
+            top: 224px;
+        }
+    }
+    .ywzj-psxk{
+        background: url("../images/bg8.png") center 0 no-repeat;
+        min-height:420px;
+        .ywzj-psxkA{
+            @extend .extend-A;
+            top: 35px;
+        }
+    }
+    .ywzj-rydk{
+        background: url("../images/bg9.png") center 0 no-repeat;
+        min-height:428px;
+        .ywzj-rydkA{
+            @extend .extend-A;
+            top: 35px;
+        }
+    }
+    .ywzj-footer{
+        background: url("../images/bg10.png") center 0 no-repeat;
+        min-height: 575px;
+        padding-top: 200px;
+        .footer-container {
+            width: 1000px;
+            margin: 0 auto;
+            color: #353430;
+            font-size: 14px;
+            padding-bottom: 36px;
+            .footer-left {
+                .txt-write {
+                    clear: both;
+                    color: #353430;
+                    margin-top: 20px;
+                    a {
+                        color: #353430;
+                    }
+                    h1 {
+                        font-size: 36px;
+                        margin-top: 6px;
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        font-size: 18px;
+                    }
+                    .logo-wbg {
+                        margin-right: 13px;
+                        margin-bottom: 10px;
+                        float: left;
+                        width: 76px;
+                        height: 76px;
+                        padding-top: 12px;
+                        padding-left: 17px;
+                        background-color: #353430;
+                        border-radius: 18px;
+                    }
+                    &:after {
+                        content: "";
+                        display: block;
+                        clear: both;
+                    }
+                }
+
+            }
+            .footer-right {
+                img {
+                    width: 108px;
+                    height: 108px;
+                    margin-bottom: 8px;
+                }
+                ul > li {
+                    float: left;
+                    margin-left: 27px;
+                    text-align: center;
+                    .icon-weixin:before {
+                        content: "";
+                        display: inline-block;
+                        background-image: url("../images/icon/icon-weixin-353430.png");
+                        width: 18px;
+                        height: 14px;
+                        margin-right: 5px;
+                    }
+                    .icon-weibo:before {
+                        content: "";
+                        display: inline-block;
+                        background-image: url("../images/icon/icon-weibo-353430.png");
+                        width: 18px;
+                        height: 14px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+            .copy-con{
+                color: #7b776b;
+            }
+        }
+    }
+}

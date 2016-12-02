@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/*
+*
+*/
+.ywzj-wall {
+  margin-top: 50px;
+  min-width: 1010px;
+  background: url("../images/bg1.png") center 0 no-repeat #e9e5e4; }
+  .ywzj-wall .ywzj-l010 {
+    width: 1010px;
+    margin: 0 auto;
+    position: relative; }
+  .ywzj-wall .ywzj-banner {
+    min-height: 1360px; }
+  .ywzj-wall .ywzj-jy {
+    background: url("../images/bg2.png") center 0 no-repeat;
+    min-height: 888px; }
+  .ywzj-wall .extend-A, .ywzj-wall .ywzj-lcj .ywzj-lcjA, .ywzj-wall .ywzj-xkx .ywzj-xkxA, .ywzj-wall .ywzj-ynj .ywzj-ynjA, .ywzj-wall .ywzj-fsj .ywzj-fsjA, .ywzj-wall .ywzj-psxk .ywzj-psxkA, .ywzj-wall .ywzj-rydk .ywzj-rydkA {
+    font-family: "宋体";
+    color: #000000;
+    width: 1em;
+    line-height: 1.1em;
+    display: inline-block;
+    font-size: 32px;
+    position: absolute;
+    right: 37px;
+    font-weight: bold; }
+  .ywzj-wall .ywzj-lcj {
+    background: url("../images/bg3.png") center 0 no-repeat;
+    min-height: 598px; }
+    .ywzj-wall .ywzj-lcj .ywzj-lcjA {
+      top: 214px; }
+  .ywzj-wall .ywzj-xkx {
+    background: url("../images/bg4.png") center 0 no-repeat;
+    min-height: 418px; }
+    .ywzj-wall .ywzj-xkx .ywzj-xkxA {
+      top: 35px; }
+  .ywzj-wall .ywzj-ynj {
+    background: url("../images/bg5.png") center 0 no-repeat;
+    min-height: 480px; }
+    .ywzj-wall .ywzj-ynj .ywzj-ynjA {
+      top: 32px; }
+  .ywzj-wall .ywzj-hy {
+    background: url("../images/bg6.png") center 0 no-repeat;
+    min-height: 1121px; }
+  .ywzj-wall .ywzj-fsj {
+    background: url("../images/bg7.png") center 0 no-repeat;
+    min-height: 607px; }
+    .ywzj-wall .ywzj-fsj .ywzj-fsjA {
+      top: 224px; }
+  .ywzj-wall .ywzj-psxk {
+    background: url("../images/bg8.png") center 0 no-repeat;
+    min-height: 420px; }
+    .ywzj-wall .ywzj-psxk .ywzj-psxkA {
+      top: 35px; }
+  .ywzj-wall .ywzj-rydk {
+    background: url("../images/bg9.png") center 0 no-repeat;
+    min-height: 428px; }
+    .ywzj-wall .ywzj-rydk .ywzj-rydkA {
+      top: 35px; }
+  .ywzj-wall .ywzj-footer {
+    background: url("../images/bg10.png") center 0 no-repeat;
+    min-height: 575px;
+    padding-top: 200px; }
+    .ywzj-wall .ywzj-footer .footer-container {
+      width: 1000px;
+      margin: 0 auto;
+      color: #353430;
+      font-size: 14px;
+      padding-bottom: 36px; }
+      .ywzj-wall .ywzj-footer .footer-container .footer-left .txt-write {
+        clear: both;
+        color: #353430;
+        margin-top: 20px; }
+        .ywzj-wall .ywzj-footer .footer-container .footer-left .txt-write a {
+          color: #353430; }
+        .ywzj-wall .ywzj-footer .footer-container .footer-left .txt-write h1 {
+          font-size: 36px;
+          margin-top: 6px;
+          margin-bottom: 10px; }
+        .ywzj-wall .ywzj-footer .footer-container .footer-left .txt-write p {
+          font-size: 18px; }
+        .ywzj-wall .ywzj-footer .footer-container .footer-left .txt-write .logo-wbg {
+          margin-right: 13px;
+          margin-bottom: 10px;
+          float: left;
+          width: 76px;
+          height: 76px;
+          padding-top: 12px;
+          padding-left: 17px;
+          background-color: #353430;
+          border-radius: 18px; }
+        .ywzj-wall .ywzj-footer .footer-container .footer-left .txt-write:after {
+          content: "";
+          display: block;
+          clear: both; }
+      .ywzj-wall .ywzj-footer .footer-container .footer-right img {
+        width: 108px;
+        height: 108px;
+        margin-bottom: 8px; }
+      .ywzj-wall .ywzj-footer .footer-container .footer-right ul > li {
+        float: left;
+        margin-left: 27px;
+        text-align: center; }
+        .ywzj-wall .ywzj-footer .footer-container .footer-right ul > li .icon-weixin:before {
+          content: "";
+          display: inline-block;
+          background-image: url("../images/icon/icon-weixin-353430.png");
+          width: 18px;
+          height: 14px;
+          margin-right: 5px; }
+        .ywzj-wall .ywzj-footer .footer-container .footer-right ul > li .icon-weibo:before {
+          content: "";
+          display: inline-block;
+          background-image: url("../images/icon/icon-weibo-353430.png");
+          width: 18px;
+          height: 14px;
+          margin-right: 5px; }
+      .ywzj-wall .ywzj-footer .footer-container .copy-con {
+        color: #7b776b; }

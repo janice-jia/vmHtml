@@ -10,7 +10,8 @@ export default React.createClass({
         this.state = RegisterStore.getState();
         return {
             'passwordType':'password',
-            'passwordIconClass':'icon-pwdHid'
+            'passwordIconClass':'icon-pwdHid',
+            'btnCode':'点击获取验证码'
         }
     },
 
@@ -33,7 +34,7 @@ export default React.createClass({
     //提交注册表单验证
     subRegister : function(){
         console.info('this.refs.mobile',this.refs.mobile.getValue());
-        var mobileReg = /^1\d{10}$/;
+        var mobileReg =  /^[1][3-9][0-9]{9}$/;
         if(!this.state.mobile){
             alert('请输入手机号！');
         }else if(!mobileReg.test(this.state.mobile)){
@@ -71,13 +72,26 @@ export default React.createClass({
 
     //获取验证码
     sendCode : function(){
-        var mobileReg = /^1\d{10}$/;
+        var mobileReg =  /^[1][3-9][0-9]{9}$/;
         if(!this.state.mobile){
             alert('请输入手机号！');
         }else if(!mobileReg.test(this.state.mobile)){
             alert('请输入正确的手机号码！');
         }else{
-            RegisterActions.getCode(this.state.mobile);
+            var timeer = 5;
+            this.setState({btnCode:'重新发送' + timeer});
+            if(timeer > 0){
+                var _this = this;
+                var codeTimeer = setInterval(function(){
+                    console.info(_this.state.btnCode);
+                    timeer --;
+                    if(timeer == 0 || timeer < 0){
+                        _this.setState({btnCode:'点击获取验证码'});
+                        clearInterval(codeTimeer);
+                    }
+                    _this.setState({btnCode:'重新发送' + timeer});
+                },1000)
+            }
         }
     },
     render() {
@@ -115,7 +129,7 @@ export default React.createClass({
                                     <Col  className="padding-0">
                                         <Field ref="code" className="auth-code" type="number"  placeholder="请输入验证码" onChange={this.changeCode}/>
                                     </Col>
-                                    <Col  className="padding-0"><Button className="btn-white margin-0 margin-left-xs text-size-13" onClick={this.sendCode}>点击获取验证码</Button></Col>
+                                    <Col  className="padding-0"><Button ref="codeBtn" className="btn-white margin-0 margin-left-xs text-size-13" onClick={this.sendCode}>{this.state.btnCode}</Button></Col>
                                 </Grid>
                                 <Grid>
                                     <Col shrink className="padding-h-0"><input type="checkbox" className="input-terms"/></Col>

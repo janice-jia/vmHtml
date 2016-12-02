@@ -1158,6 +1158,10 @@ $color-ffffff: #ffffff;
     p{
         margin-bottom: 20px;
         text-indent: 2em;
+        white-space: normal !important;
+        span{
+            white-space: normal !important;
+        }
     }
 }
 .photoBox-date{

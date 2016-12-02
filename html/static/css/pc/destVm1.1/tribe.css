@@ -807,7 +807,10 @@
     margin: 30px 0; }
   .bookBox-con p {
     margin-bottom: 20px;
-    text-indent: 2em; }
+    text-indent: 2em;
+    white-space: normal !important; }
+    .bookBox-con p span {
+      white-space: normal !important; }
 
 .photoBox-date {
   padding: 0 10px;

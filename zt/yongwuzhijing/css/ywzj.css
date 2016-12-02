@@ -24,10 +24,17 @@
     font-size: 32px;
     position: absolute;
     right: 37px;
-    font-weight: bold; }
+    font-weight: bold;
+    z-index: 0; }
+  .ywzj-wall .extend-AB, .ywzj-wall .ywzj-lcj .ywzj-lcjAB, .ywzj-wall .ywzj-xkx .ywzj-xkxAB, .ywzj-wall .ywzj-ynj .ywzj-ynjAB, .ywzj-wall .ywzj-fsj .ywzj-fsjAB, .ywzj-wall .ywzj-psxk .ywzj-psxkAB, .ywzj-wall .ywzj-rydk .ywzj-rydkAB {
+    display: inline-block;
+    height: 320px;
+    width: 100%; }
   .ywzj-wall .ywzj-lcj {
     background: url("../images/bg3.png") center 0 no-repeat;
     min-height: 598px; }
+    .ywzj-wall .ywzj-lcj .ywzj-lcjAB {
+      margin-top: 180px; }
     .ywzj-wall .ywzj-lcj .ywzj-lcjA {
       top: 214px; }
   .ywzj-wall .ywzj-xkx {
@@ -48,6 +55,8 @@
     min-height: 607px; }
     .ywzj-wall .ywzj-fsj .ywzj-fsjA {
       top: 224px; }
+    .ywzj-wall .ywzj-fsj .ywzj-fsjAB {
+      margin-top: 190px; }
   .ywzj-wall .ywzj-psxk {
     background: url("../images/bg8.png") center 0 no-repeat;
     min-height: 420px; }

@@ -4,6 +4,7 @@ import App from './page/App'
 
 //register  module
 import Register from './page/Register'
+import Agreement from './page/Agreement'
 
 //login  module
 import Login from './page/Login'
@@ -45,14 +46,16 @@ module.exports = (
     <Router>
         <Route path="/" component={App}>
             <IndexRoute component={Home}/>
+            <Route path="/agreement" component={Agreement}/>
             <Route path="/register" component={Register}/>
             <Route path="/login" component={Login}/>
             <Route path="/forgetpwd" component={ForgetPwd}/>
 
-            <Route path="/user/:userId" component={User}/>
-            <Route path="/user/info/:userId" component={UserInfo}/>
-            <Route path="/user/server/:userId" component={UserServer}/>
-            <Route path="/user/require/:userId" component={UserRequire}/>
+            <Route path="/user/:uid" component={User}/>
+            <Route path="/user/info/:uid" component={UserInfo}/>
+            <Route path="/user/server/:uid" component={UserServer}/>
+            <Route path="/user/require/:uid" component={UserRequire}/>
+
 
             <Route path="/server" component={Server}/>
             <Route path="/server/info/:serverId" component={ServerInfo}/>

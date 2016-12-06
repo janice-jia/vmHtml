@@ -11,7 +11,8 @@ export default React.createClass({
         return {
             'passwordType':'password',
             'passwordIconClass':'icon-pwdHid',
-            'btnCode':'点击获取验证码'
+            'btnCode':'点击获取验证码',
+            'btnDisabled':''
         }
     },
 
@@ -28,12 +29,10 @@ export default React.createClass({
                 'passwordIconClass':'icon-pwdHid'
             });
         }
-
     },
 
     //提交注册表单验证
     subRegister : function(){
-        console.info('this.refs.mobile',this.refs.mobile.getValue());
         var mobileReg =  /^[1][3-9][0-9]{9}$/;
         if(!this.state.mobile){
             alert('请输入手机号！');
@@ -47,8 +46,24 @@ export default React.createClass({
             alert('请输入昵称！');
         }else if(!this.state.code){
             alert('请输入验证码！');
+        }else if(!this.state.agreement){
+            alert('请阅读并接受众创部落的用户协议！');
+
+        //校验验证码
+        }else if(!RegisterActions.checkCode({mobile:this.state.mobile,code:this.state.code})){
+            alert('验证码不成功');
+
+        //用户注册
+        }else{
+            RegisterActions.register({
+                mobile : this.state.mobile,
+                password : this.state.password,
+                nickName : this.state.nickName,
+                category : 1,
+            });
         }
-    },
+    }
+    ,
 
     //监听手机号码，更改state
     changeMoile : function(event){
@@ -66,8 +81,13 @@ export default React.createClass({
     },
 
     //监听验证码，更改state
-    changeCode : function(){
+    changeCode : function(event){
         this.setState({code: event.target.value});
+    },
+
+    //监听用户协议选中状态，更改state
+    changeAgreement : function(event){
+        this.setState({agreement: event.target.checked});
     },
 
     //获取验证码
@@ -78,18 +98,23 @@ export default React.createClass({
         }else if(!mobileReg.test(this.state.mobile)){
             alert('请输入正确的手机号码！');
         }else{
-            var timeer = 5;
+            //发送验证码
+            RegisterActions.getCode(this.state.mobile);
+            var timeer = 60;
             this.setState({btnCode:'重新发送' + timeer});
+            this.setState({btnDisabled:'disabled'});
             if(timeer > 0){
                 var _this = this;
                 var codeTimeer = setInterval(function(){
-                    console.info(_this.state.btnCode);
+                    //console.info(_this.state.btnCode);
                     timeer --;
                     if(timeer == 0 || timeer < 0){
                         _this.setState({btnCode:'点击获取验证码'});
+                        _this.setState({btnDisabled:''});
                         clearInterval(codeTimeer);
+                    }else{
+                        _this.setState({btnCode:'重新发送' + timeer});
                     }
-                    _this.setState({btnCode:'重新发送' + timeer});
                 },1000)
             }
         }
@@ -129,11 +154,13 @@ export default React.createClass({
                                     <Col  className="padding-0">
                                         <Field ref="code" className="auth-code" type="number"  placeholder="请输入验证码" onChange={this.changeCode}/>
                                     </Col>
-                                    <Col  className="padding-0"><Button ref="codeBtn" className="btn-white margin-0 margin-left-xs text-size-13" onClick={this.sendCode}>{this.state.btnCode}</Button></Col>
+                                    <Col  className="padding-0"><button disabled={this.state.btnDisabled} ref="codeBtn" className="btn-white margin-0 margin-left-xs text-size-13" onClick={this.sendCode}>{this.state.btnCode}</button></Col>
                                 </Grid>
                                 <Grid>
-                                    <Col shrink className="padding-h-0"><input type="checkbox" className="input-terms"/></Col>
-                                    <Col>我已阅读并接受众创部落的 <a className="text-color-6">用户协议</a></Col>
+                                    <Col shrink className="padding-h-0">
+                                        <input ref="agreement"  type="checkbox" className="input-terms" onChange={this.changeAgreement}/>
+                                    </Col>
+                                    <Col>我已阅读并接受众创部落的 <a className="text-color-6" href="/agreement" target="_blank">用户协议</a></Col>
                                 </Grid>
                             </List>
                             <Button className="btn-yellow margin-top-xl padding-v" onClick={this.subRegister}>注册</Button>

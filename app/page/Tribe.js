@@ -1,7 +1,7 @@
 import React from 'react';
 import _Header from './../components/_Header'
-import {
-    Container,Group,List,View,Badge} from 'amazeui-touch';
+import _Tribe from './../components/_Tribe'
+import {Container, Group, List, View, Badge} from 'amazeui-touch';
 
 const albums = [
     {
@@ -184,21 +184,8 @@ export default React.createClass({
     render() {
         return <View>
             <_Header></_Header>
-            <Container scrollable className="tribe">
-                <List className="t-index-list">
-                    {albums.map((album, i) => {
-                        return (
-                            <List.Item
-                                {...album}
-                                target="_blank"
-                                media={
-                                <img src={ album.media }/>
-                                }
-                                key={i}
-                            />
-                        );
-                    })}
-                </List>
+            <Container scrollable>
+                <_Tribe tribeList={albums}></_Tribe>
             </Container>
         </View>
 

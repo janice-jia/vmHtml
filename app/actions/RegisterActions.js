@@ -5,15 +5,19 @@ class RegisterActions {
     constructor() {
         this.generateActions(
             'getCodeSuccess',
-            'getCodeFail'
+            'getCodeFail',
+            'checkCodeSuccess',
+            'checkCodeFail',
+            'registerSuccess',
+            'registerFail'
         );
     }
 
-    //获取验证码
+    //发送验证码
     getCode(mobile) {
         $.ajax({
             type: 'Get',
-            url: '/code/check',
+            url: '/code/send',
             data:{mobile:mobile}
         })
         .done((data) => {
@@ -21,6 +25,38 @@ class RegisterActions {
         })
         .fail((jqXhr) => {
             this.getCodeFail(jqXhr);
+        });
+    }
+
+    //验证验证码
+    checkCode(data) {
+        $.ajax({
+            type: 'POST',
+            url: '/code/check',
+            data:data
+        })
+        .done((data) => {
+            this.checkCodeSuccess(data);
+        })
+        .fail((jqXhr) => {
+            this.checkCodeFail(jqXhr);
+        });
+    }
+
+    //用户注册
+    register(data){
+        $.ajax({
+            type: 'POST',
+            dataType:'json',
+            contentType:'application/json; charset=utf-8',
+            url: '/app/user/register',
+            data:JSON.stringify(data)
+        })
+        .done((data) => {
+            this.registerSuccess(data);
+        })
+        .fail((jqXhr) => {
+            this.registerFail(jqXhr);
         });
     }
 }

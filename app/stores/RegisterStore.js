@@ -6,13 +6,43 @@ class RegisterStore{
         this.bindActions(RegisterActions);
     }
 
-    //获取验证码--成功
+    //发送验证码--成功
     onGetCodeSuccess(data){
+        console.info('onGetCodeSuccess',data);
         this.code = data.code;
     }
 
-    //获取验证码--失败
+    //发送验证码--失败
     onGetCodeFail(data){
+        console.info('onGetCodeFail',data);
+        this.code = data.data;
+    }
+
+    //验证验证码--成功
+    onCheckCodeSuccess(data){
+        console.info('onCheckCodeSuccess',data);
+        if(data.status){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    //验证验证码--失败
+    onCheckCodeFail(data){
+        console.info('onCheckCodeFail',data);
+        return false;
+    }
+
+    //用户注册--成功
+    onRegisterSuccess(data){
+        console.info('onRegisterSuccess',data);
+        this.code = data.code;
+    }
+
+    //用户注册--失败
+    onRegisterFail(data){
+        console.info('onRegisterFail',data);
         this.code = data.data;
     }
 }

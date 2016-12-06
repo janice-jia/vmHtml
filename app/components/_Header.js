@@ -11,14 +11,22 @@ class _Header extends React.Component {
         if (this.props.isSearch) {
             this.state = {
                 visible: true,
-                searchVal: this.props.searchVal
+                searchVal: this.props.searchVal,
             };
         } else {
             this.state = {
                 visible: false,
-                searchVal: ''
+                searchVal: '',
             };
         }
+        if(sessionStorage.uid){
+            this.state.showLogin = 'hidden';
+            this.state.showUser = '';
+        }else{
+            this.state.showLogin = '';
+            this.state.showUser = 'hidden';
+        }
+        this.state.uid = sessionStorage.uid;
         this.onChange = this.onChange.bind(this);
     }
 
@@ -75,9 +83,10 @@ class _Header extends React.Component {
                 <Grid className="bgNone header-search">
                     <Col cols={5} className="padding-0">
                         <form action="/search">
+                            <input type="hidden" name="searchType" value={this.props.searchType}/>
                             <List className="margin-0">
                                 <List.Item key="1"  media={<Icon className="header-icon-search" name=""></Icon>} nested="input" >
-                                    <Field ref="search" name="search" onChange={this.changeSearch.bind(this)} value={this.state.searchVal} className="margin-0 padding-v-xs text-size-14" placeholder="众创众创众创众创" btnAfter={<Icon className="header-icon-close" name="" onClick={this.cleanSearch.bind(this)}></Icon>}/>
+                                    <Field ref="search" name="search" onChange={this.changeSearch.bind(this)} value={this.state.searchVal} className="margin-0 padding-v-xs text-size-14" placeholder="" btnAfter={<Icon className="header-icon-close" name="" onClick={this.cleanSearch.bind(this)}></Icon>}/>
                                 </List.Item>
                             </List>
                         </form>
@@ -96,15 +105,15 @@ class _Header extends React.Component {
                 component: OffCanvasTrigger,
                 className:"leftNav",
                 offCanvas:<OffCanvas>
-                        <Group className="header-login bgNone margin-0 padding-v">
+                        <Group className={'header-login bgNone margin-0 padding-v '+ this.state.showLogin}>
                             <Link to="/register" className="btn-yellow margin-bottom">注册</Link>
                             <Link to="/login" className="btn-white-noBorder">登陆</Link>
                         </Group>
-                        <Group className="header-login bgNone margin-0 hidden">
+                        <Group className={'header-login bgNone margin-0 '+ this.state.showUser}>
                             <div className="header-user-avatar margin-v">
-                                <a href="/user/01"><img src="http://s.amazeui.org/media/i/demos/bing-2.jpg" height="50" width="50" alt=""/></a>
+                                <a href={'/user/'+this.state.uid}><img src="http://s.amazeui.org/media/i/demos/bing-2.jpg" height="50" width="50" alt=""/></a>
                             </div>
-                            <div className="header-user-name text-color-7 text-size-16"><a href="/user/01">用户名用户名</a></div>
+                            <div className="header-user-name text-color-7 text-size-16"><a href={'/user/'+this.state.uid}>用户名用户名</a></div>
                         </Group>
                         <List className="header-nav">
                             <List.Item

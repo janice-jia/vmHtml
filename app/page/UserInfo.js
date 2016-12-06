@@ -2,7 +2,14 @@ import React from 'react'
 import {View, Container, Group, List, Icon, Field, Button} from 'amazeui-touch';
 import _Header from './../components/_Header'
 
-export default React.createClass({
+class UserInfo extends React.Component{
+
+    constructor(props){
+        super(props);
+        console.info('props',props);
+        console.info('this.context',this.context);
+    }
+
     render() {
         return (
             <View>
@@ -34,4 +41,6 @@ export default React.createClass({
             </View>
         )
     }
-})
+}
+
+export default UserInfo

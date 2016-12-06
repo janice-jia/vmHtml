@@ -70,7 +70,7 @@
 
 	var _routes2 = _interopRequireDefault(_routes);
 
-	var _httpProxyMiddleware = __webpack_require__(42);
+	var _httpProxyMiddleware = __webpack_require__(47);
 
 	var _httpProxyMiddleware2 = _interopRequireDefault(_httpProxyMiddleware);
 
@@ -82,7 +82,8 @@
 
 	// serve our static stuff like index.css
 	app.use(_express2.default.static(_path2.default.join(__dirname, 'build'), { index: false }));
-	app.use('/app', (0, _httpProxyMiddleware2.default)({ target: 'http://test.vmaking.com', changeOrigin: true }));
+	app.use('/app', (0, _httpProxyMiddleware2.default)({ target: 'http://www.vmaking.com', changeOrigin: true }));
+	app.use('/code', (0, _httpProxyMiddleware2.default)({ target: 'http://www.vmaking.com', changeOrigin: true }));
 
 	// send all requests to index.html so browserHistory works
 	app.get('*', function (req, res) {
@@ -167,79 +168,83 @@
 
 	var _Register2 = _interopRequireDefault(_Register);
 
-	var _Login = __webpack_require__(14);
+	var _Agreement = __webpack_require__(18);
+
+	var _Agreement2 = _interopRequireDefault(_Agreement);
+
+	var _Login = __webpack_require__(19);
 
 	var _Login2 = _interopRequireDefault(_Login);
 
-	var _ForgetPwd = __webpack_require__(15);
+	var _ForgetPwd = __webpack_require__(22);
 
 	var _ForgetPwd2 = _interopRequireDefault(_ForgetPwd);
 
-	var _User = __webpack_require__(16);
+	var _User = __webpack_require__(23);
 
 	var _User2 = _interopRequireDefault(_User);
 
-	var _UserInfo = __webpack_require__(17);
+	var _UserInfo = __webpack_require__(24);
 
 	var _UserInfo2 = _interopRequireDefault(_UserInfo);
 
-	var _UserServer = __webpack_require__(18);
+	var _UserServer = __webpack_require__(25);
 
 	var _UserServer2 = _interopRequireDefault(_UserServer);
 
-	var _UserRequire = __webpack_require__(20);
+	var _UserRequire = __webpack_require__(27);
 
 	var _UserRequire2 = _interopRequireDefault(_UserRequire);
 
-	var _Home = __webpack_require__(22);
+	var _Home = __webpack_require__(29);
 
 	var _Home2 = _interopRequireDefault(_Home);
 
-	var _Server = __webpack_require__(29);
+	var _Server = __webpack_require__(34);
 
 	var _Server2 = _interopRequireDefault(_Server);
 
-	var _ServerInfo = __webpack_require__(30);
+	var _ServerInfo = __webpack_require__(35);
 
 	var _ServerInfo2 = _interopRequireDefault(_ServerInfo);
 
-	var _Require = __webpack_require__(31);
+	var _Require = __webpack_require__(36);
 
 	var _Require2 = _interopRequireDefault(_Require);
 
-	var _RequireInfo = __webpack_require__(32);
+	var _RequireInfo = __webpack_require__(37);
 
 	var _RequireInfo2 = _interopRequireDefault(_RequireInfo);
 
-	var _Search = __webpack_require__(34);
+	var _Search = __webpack_require__(39);
 
 	var _Search2 = _interopRequireDefault(_Search);
 
-	var _Tribe = __webpack_require__(35);
+	var _Tribe = __webpack_require__(40);
 
 	var _Tribe2 = _interopRequireDefault(_Tribe);
 
-	var _Tribeinfo = __webpack_require__(36);
+	var _Tribeinfo = __webpack_require__(41);
 
 	var _Tribeinfo2 = _interopRequireDefault(_Tribeinfo);
 
-	var _TribeAlbum = __webpack_require__(37);
+	var _TribeAlbum = __webpack_require__(42);
 
 	var _TribeAlbum2 = _interopRequireDefault(_TribeAlbum);
 
-	var _TribeAlbumInfo = __webpack_require__(38);
+	var _TribeAlbumInfo = __webpack_require__(43);
 
 	var _TribeAlbumInfo2 = _interopRequireDefault(_TribeAlbumInfo);
 
-	var _TribeImgCom = __webpack_require__(39);
+	var _TribeImgCom = __webpack_require__(44);
 
 	var _TribeImgCom2 = _interopRequireDefault(_TribeImgCom);
 
-	var _TribeTopic = __webpack_require__(40);
+	var _TribeTopic = __webpack_require__(45);
 
 	var _TribeTopic2 = _interopRequireDefault(_TribeTopic);
 
-	var _TribePerson = __webpack_require__(41);
+	var _TribePerson = __webpack_require__(46);
 
 	var _TribePerson2 = _interopRequireDefault(_TribePerson);
 
@@ -255,9 +260,6 @@
 
 
 	//ForgetPwd module
-
-
-	//register  module
 	module.exports = _react2.default.createElement(
 	            _reactRouter.Router,
 	            null,
@@ -265,6 +267,7 @@
 	                        _reactRouter.Route,
 	                        { path: '/', component: _App2.default },
 	                        _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
+	                        _react2.default.createElement(_reactRouter.Route, { path: '/agreement', component: _Agreement2.default }),
 	                        _react2.default.createElement(_reactRouter.Route, { path: '/register', component: _Register2.default }),
 	                        _react2.default.createElement(_reactRouter.Route, { path: '/login', component: _Login2.default }),
 	                        _react2.default.createElement(_reactRouter.Route, { path: '/forgetpwd', component: _ForgetPwd2.default }),
@@ -298,6 +301,9 @@
 
 
 	//login  module
+
+
+	//register  module
 
 /***/ },
 /* 8 */
@@ -358,19 +364,31 @@
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
+	var _RegisterActions = __webpack_require__(14);
+
+	var _RegisterActions2 = _interopRequireDefault(_RegisterActions);
+
+	var _RegisterStore = __webpack_require__(17);
+
+	var _RegisterStore2 = _interopRequireDefault(_RegisterStore);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.default = _react2.default.createClass({
 	    displayName: 'Register',
 
 	    getInitialState: function getInitialState() {
+	        this.state = _RegisterStore2.default.getState();
 	        return {
 	            'passwordType': 'password',
-	            'passwordIconClass': 'icon-pwdHid'
+	            'passwordIconClass': 'icon-pwdHid',
+	            'btnCode': '点击获取验证码',
+	            'btnDisabled': ''
 	        };
 	    },
+
+	    //密码隐藏显示
 	    showPassword: function showPassword() {
-	        console.info('this.refspassword', this.refs.password);
 	        if (this.state.passwordType == 'password') {
 	            this.setState({
 	                'passwordType': 'text',
@@ -383,9 +401,93 @@
 	            });
 	        }
 	    },
+
+	    //提交注册表单验证
 	    subRegister: function subRegister() {
-	        alert('提交');
-	        return false;
+	        var mobileReg = /^[1][3-9][0-9]{9}$/;
+	        if (!this.state.mobile) {
+	            alert('请输入手机号！');
+	        } else if (!mobileReg.test(this.state.mobile)) {
+	            alert('请输入正确的手机号码！');
+	        } else if (!this.state.password) {
+	            alert('请输入密码！');
+	        } else if (this.state.password.length < 6 || this.state.password.length > 16) {
+	            alert('请设置6-16位密码！');
+	        } else if (!this.state.nickName) {
+	            alert('请输入昵称！');
+	        } else if (!this.state.code) {
+	            alert('请输入验证码！');
+	        } else if (!this.state.agreement) {
+	            alert('请阅读并接受众创部落的用户协议！');
+
+	            //校验验证码
+	        } else if (!_RegisterActions2.default.checkCode({ mobile: this.state.mobile, code: this.state.code })) {
+	            alert('验证码不成功');
+
+	            //用户注册
+	        } else {
+	            _RegisterActions2.default.register({
+	                mobile: this.state.mobile,
+	                password: this.state.password,
+	                nickName: this.state.nickName,
+	                category: 1
+	            });
+	        }
+	    },
+
+	    //监听手机号码，更改state
+	    changeMoile: function changeMoile(event) {
+	        this.setState({ mobile: event.target.value });
+	    },
+
+	    //监听密码，更改state
+	    changePassword: function changePassword(event) {
+	        this.setState({ password: event.target.value });
+	    },
+
+	    //监听昵称，更改state
+	    changeNickName: function changeNickName(event) {
+	        this.setState({ nickName: event.target.value });
+	    },
+
+	    //监听验证码，更改state
+	    changeCode: function changeCode(event) {
+	        this.setState({ code: event.target.value });
+	    },
+
+	    //监听用户协议选中状态，更改state
+	    changeAgreement: function changeAgreement(event) {
+	        this.setState({ agreement: event.target.checked });
+	    },
+
+	    //获取验证码
+	    sendCode: function sendCode() {
+	        var mobileReg = /^[1][3-9][0-9]{9}$/;
+	        if (!this.state.mobile) {
+	            alert('请输入手机号！');
+	        } else if (!mobileReg.test(this.state.mobile)) {
+	            alert('请输入正确的手机号码！');
+	        } else {
+	            //发送验证码
+	            _RegisterActions2.default.getCode(this.state.mobile);
+	            var timeer = 60;
+	            this.setState({ btnCode: '重新发送' + timeer });
+	            this.setState({ btnDisabled: 'disabled' });
+	            if (timeer > 0) {
+	                var _this = this;
+	                var codeTimeer = setInterval(function () {
+	                    //console.info(_this.state.btnCode);
+	                    timeer--;
+	                    if (timeer == 0 || timeer < 0) {
+	                        _this.setState({ btnCode: '点击获取验证码' });
+	                        _this.setState({ btnDisabled: '' });
+	                        clearInterval(codeTimeer);
+	                    } else {
+	                        _this.setState({ btnCode: '重新发送' + timeer });
+	                    }
+	                }, 1000);
+	            }
+	        }
 	    },
 	    render: function render() {
 	        return _react2.default.createElement(
@@ -408,15 +510,15 @@
 	                    _amazeuiTouch.Group,
 	                    { className: 'bgNone' },
 	                    _react2.default.createElement(
-	                        'form',
-	                        { className: 'form-register', onSubmit: this.subRegister },
+	                        'div',
+	                        { className: 'form-register' },
 	                        _react2.default.createElement(
 	                            _amazeuiTouch.List,
 	                            null,
 	                            _react2.default.createElement(
 	                                _amazeuiTouch.List.Item,
 	                                { key: '1', className: 'margin-bottom', media: _react2.default.createElement(_amazeuiTouch.Icon, { className: 'icon-phone', name: '' }), nested: 'input' },
-	                                _react2.default.createElement(_amazeuiTouch.Field, { type: 'number', placeholder: '\u8BF7\u8F93\u5165\u60A8\u7684\u624B\u673A\u53F7' })
+	                                _react2.default.createElement(_amazeuiTouch.Field, { ref: 'mobile', type: 'number', placeholder: '\u8BF7\u8F93\u5165\u60A8\u7684\u624B\u673A\u53F7', onChange: this.changeMoile })
 	                            )
 	                        ),
 	                        _react2.default.createElement(
@@ -425,7 +527,7 @@
 	                            _react2.default.createElement(
 	                                _amazeuiTouch.List.Item,
 	                                { key: '2', className: 'margin-bottom', media: _react2.default.createElement(_amazeuiTouch.Icon, { className: 'icon-pwd', name: '' }), nested: 'input' },
-	                                _react2.default.createElement(_amazeuiTouch.Field, { type: this.state.passwordType, className: 'password', placeholder: '\u8BF7\u8BBE\u7F6E6-16\u4F4D\u5BC6\u7801', btnAfter: _react2.default.createElement(_amazeuiTouch.Icon, { className: this.state.passwordIconClass, name: '', onClick: this.showPassword }) })
+	                                _react2.default.createElement(_amazeuiTouch.Field, { ref: 'password', type: this.state.passwordType, className: 'password', placeholder: '\u8BF7\u8BBE\u7F6E6-16\u4F4D\u5BC6\u7801', btnAfter: _react2.default.createElement(_amazeuiTouch.Icon, { className: this.state.passwordIconClass, name: '', onClick: this.showPassword }), onChange: this.changePassword })
 	                            )
 	                        ),
 	                        _react2.default.createElement(
@@ -434,7 +536,7 @@
 	                            _react2.default.createElement(
 	                                _amazeuiTouch.List.Item,
 	                                { key: '3', className: 'margin-bottom', media: _react2.default.createElement(_amazeuiTouch.Icon, { className: 'icon-nickname', name: '' }), nested: 'input' },
-	                                _react2.default.createElement(_amazeuiTouch.Field, { type: 'text', placeholder: '\u8BF7\u8BBE\u7F6E\u60A8\u7684\u7528\u6237\u6635\u79F0' })
+	                                _react2.default.createElement(_amazeuiTouch.Field, { ref: 'nickName', type: 'text', placeholder: '\u8BF7\u8BBE\u7F6E\u60A8\u7684\u7528\u6237\u6635\u79F0', onChange: this.changeNickName })
 	                            )
 	                        ),
 	                        _react2.default.createElement(
@@ -446,15 +548,15 @@
 	                                _react2.default.createElement(
 	                                    _amazeuiTouch.Col,
 	                                    { className: 'padding-0' },
-	                                    _react2.default.createElement(_amazeuiTouch.Field, { className: 'auth-code', type: 'number', placeholder: '\u8BF7\u8F93\u5165\u9A8C\u8BC1\u7801' })
+	                                    _react2.default.createElement(_amazeuiTouch.Field, { ref: 'code', className: 'auth-code', type: 'number', placeholder: '\u8BF7\u8F93\u5165\u9A8C\u8BC1\u7801', onChange: this.changeCode })
 	                                ),
 	                                _react2.default.createElement(
 	                                    _amazeuiTouch.Col,
 	                                    { className: 'padding-0' },
 	                                    _react2.default.createElement(
-	                                        _amazeuiTouch.Button,
-	                                        { className: 'btn-white margin-0 margin-left-xs text-size-13' },
-	                                        '\u70B9\u51FB\u83B7\u53D6\u9A8C\u8BC1\u7801'
+	                                        'button',
+	                                        { disabled: this.state.btnDisabled, ref: 'codeBtn', className: 'btn-white margin-0 margin-left-xs text-size-13', onClick: this.sendCode },
+	                                        this.state.btnCode
 	                                    )
 	                                )
 	                            ),
@@ -464,7 +566,7 @@
 	                                _react2.default.createElement(
 	                                    _amazeuiTouch.Col,
 	                                    { shrink: true, className: 'padding-h-0' },
-	                                    _react2.default.createElement('input', { type: 'checkbox', className: 'input-terms' })
+	                                    _react2.default.createElement('input', { ref: 'agreement', type: 'checkbox', className: 'input-terms', onChange: this.changeAgreement })
 	                                ),
 	                                _react2.default.createElement(
 	                                    _amazeuiTouch.Col,
@@ -472,7 +574,7 @@
 	                                    '\u6211\u5DF2\u9605\u8BFB\u5E76\u63A5\u53D7\u4F17\u521B\u90E8\u843D\u7684 ',
 	                                    _react2.default.createElement(
 	                                        'a',
-	                                        { className: 'text-color-6' },
+	                                        { className: 'text-color-6', href: '/agreement', target: '_blank' },
 	                                        '\u7528\u6237\u534F\u8BAE'
 	                                    )
 	                                )
@@ -480,7 +582,7 @@
 	                        ),
 	                        _react2.default.createElement(
 	                            _amazeuiTouch.Button,
-	                            { className: 'btn-yellow margin-top-xl padding-v' },
+	                            { className: 'btn-yellow margin-top-xl padding-v', onClick: this.subRegister },
 	                            '\u6CE8\u518C'
 	                        )
 	                    )
@@ -618,7 +720,7 @@
 	                            _amazeuiTouch.Col,
 	                            { cols: 5, className: 'padding-0' },
 	                            _react2.default.createElement(
-	                                'form',
+	                                'div',
 	                                { action: '/search' },
 	                                _react2.default.createElement(
 	                                    _amazeuiTouch.List,
@@ -626,7 +728,7 @@
 	                                    _react2.default.createElement(
 	                                        _amazeuiTouch.List.Item,
 	                                        { key: '1', media: _react2.default.createElement(_amazeuiTouch.Icon, { className: 'header-icon-search', name: '' }), nested: 'input' },
-	                                        _react2.default.createElement(_amazeuiTouch.Field, { ref: 'search', name: 'search', onChange: this.changeSearch.bind(this), value: this.state.searchVal, className: 'margin-0 padding-v-xs text-size-14', placeholder: '\u4F17\u521B\u4F17\u521B\u4F17\u521B\u4F17\u521B', btnAfter: _react2.default.createElement(_amazeuiTouch.Icon, { className: 'header-icon-close', name: '', onClick: this.cleanSearch.bind(this) }) })
+	                                        _react2.default.createElement(_amazeuiTouch.Field, { ref: 'search', type: 'search', name: 'search', onChange: this.changeSearch.bind(this), value: this.state.searchVal, className: 'margin-0 padding-v-xs text-size-14', placeholder: '', btnAfter: _react2.default.createElement(_amazeuiTouch.Icon, { className: 'header-icon-close', name: '', onClick: this.cleanSearch.bind(this) }) })
 	                                    )
 	                                )
 	                            )
@@ -792,6 +894,220 @@
 	    value: true
 	});
 
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _alt = __webpack_require__(15);
+
+	var _alt2 = _interopRequireDefault(_alt);
+
+	var _jquery = __webpack_require__(13);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var RegisterActions = function () {
+	    function RegisterActions() {
+	        _classCallCheck(this, RegisterActions);
+
+	        this.generateActions('getCodeSuccess', 'getCodeFail', 'checkCodeSuccess', 'checkCodeFail', 'registerSuccess', 'registerFail');
+	    }
+
+	    //发送验证码
+
+
+	    _createClass(RegisterActions, [{
+	        key: 'getCode',
+	        value: function getCode(mobile) {
+	            var _this = this;
+
+	            _jquery2.default.ajax({
+	                type: 'Get',
+	                url: '/code/send',
+	                data: { mobile: mobile }
+	            }).done(function (data) {
+	                _this.getCodeSuccess(data);
+	            }).fail(function (jqXhr) {
+	                _this.getCodeFail(jqXhr);
+	            });
+	        }
+
+	        //验证验证码
+
+	    }, {
+	        key: 'checkCode',
+	        value: function checkCode(data) {
+	            var _this2 = this;
+
+	            _jquery2.default.ajax({
+	                type: 'POST',
+	                url: '/code/check',
+	                data: data
+	            }).done(function (data) {
+	                _this2.checkCodeSuccess(data);
+	            }).fail(function (jqXhr) {
+	                _this2.checkCodeFail(jqXhr);
+	            });
+	        }
+
+	        //用户注册
+
+	    }, {
+	        key: 'register',
+	        value: function register(data) {
+	            var _this3 = this;
+
+	            _jquery2.default.ajax({
+	                type: 'POST',
+	                dataType: 'json',
+	                contentType: 'application/json; charset=utf-8',
+	                url: '/app/user/register',
+	                data: JSON.stringify(data)
+	            }).done(function (data) {
+	                _this3.registerSuccess(data);
+	            }).fail(function (jqXhr) {
+	                _this3.registerFail(jqXhr);
+	            });
+	        }
+	    }]);
+
+	    return RegisterActions;
+	}();
+
+	exports.default = _alt2.default.createActions(RegisterActions);
+
+/***/ },
+/* 15 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _alt = __webpack_require__(16);
+
+	var _alt2 = _interopRequireDefault(_alt);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = new _alt2.default();
+
+/***/ },
+/* 16 */
+/***/ function(module, exports) {
+
+	module.exports = require("alt");
+
+/***/ },
+/* 17 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _alt = __webpack_require__(15);
+
+	var _alt2 = _interopRequireDefault(_alt);
+
+	var _RegisterActions = __webpack_require__(14);
+
+	var _RegisterActions2 = _interopRequireDefault(_RegisterActions);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var RegisterStore = function () {
+	    function RegisterStore() {
+	        _classCallCheck(this, RegisterStore);
+
+	        this.bindActions(_RegisterActions2.default);
+	    }
+
+	    //发送验证码--成功
+
+
+	    _createClass(RegisterStore, [{
+	        key: 'onGetCodeSuccess',
+	        value: function onGetCodeSuccess(data) {
+	            console.info('onGetCodeSuccess', data);
+	            this.code = data.code;
+	        }
+
+	        //发送验证码--失败
+
+	    }, {
+	        key: 'onGetCodeFail',
+	        value: function onGetCodeFail(data) {
+	            console.info('onGetCodeFail', data);
+	            this.code = data.data;
+	        }
+
+	        //验证验证码--成功
+
+	    }, {
+	        key: 'onCheckCodeSuccess',
+	        value: function onCheckCodeSuccess(data) {
+	            console.info('onCheckCodeSuccess', data);
+	            if (data.status) {
+	                return true;
+	            } else {
+	                return false;
+	            }
+	        }
+
+	        //验证验证码--失败
+
+	    }, {
+	        key: 'onCheckCodeFail',
+	        value: function onCheckCodeFail(data) {
+	            console.info('onCheckCodeFail', data);
+	            return false;
+	        }
+
+	        //用户注册--成功
+
+	    }, {
+	        key: 'onRegisterSuccess',
+	        value: function onRegisterSuccess(data) {
+	            console.info('onRegisterSuccess', data);
+	            this.code = data.code;
+	        }
+
+	        //用户注册--失败
+
+	    }, {
+	        key: 'onRegisterFail',
+	        value: function onRegisterFail(data) {
+	            console.info('onRegisterFail', data);
+	            this.code = data.data;
+	        }
+	    }]);
+
+	    return RegisterStore;
+	}();
+
+	exports.default = _alt2.default.createStore(RegisterStore, 'RegisterStore');
+
+/***/ },
+/* 18 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
 	var _react = __webpack_require__(4);
 
 	var _react2 = _interopRequireDefault(_react);
@@ -805,7 +1121,454 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.default = _react2.default.createClass({
+	    displayName: 'Agreement',
+	    render: function render() {
+	        return _react2.default.createElement(
+	            _amazeuiTouch.View,
+	            null,
+	            _react2.default.createElement(_Header3.default, null),
+	            _react2.default.createElement(
+	                _amazeuiTouch.Container,
+	                { scrollable: true },
+	                _react2.default.createElement(
+	                    'div',
+	                    null,
+	                    _react2.default.createElement(
+	                        'p',
+	                        { className: 'text-center' },
+	                        '\u300A\u7528\u6237\u534F\u8BAE\u300B'
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'about-article padding' },
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            _react2.default.createElement(
+	                                'b',
+	                                null,
+	                                '\u7248\u6743\u58F0\u660E'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u5317\u4EAC\u7248\u6620\u79D1\u6280\u6709\u9650\u516C\u53F8\uFF08\u4EE5\u4E0B\u7B80\u79F0\u201C\u7248\u6620\u79D1\u6280\u201D\u6216\u8005\u201C\u672C\u516C\u53F8\u201D\uFF09\u5BF9\u5176\u5F00\u53D1\u53CA\u8FD0\u8425\u7684\u6216\u4E0E\u5408\u4F5C\u516C\u53F8\u5171\u540C\u5F00\u53D1\u53CA\u8FD0\u8425\u7684\u5305\u62EC\u4F46\u4E0D\u9650\u4E8E\u4EA7\u54C1\u6216\u670D\u52A1\u7684\u5168\u90E8\u5185\u5BB9\u62E5\u6709\u7248\u6743\u7B49\u77E5\u8BC6\u4EA7\u6743\uFF0C\u53D7\u6CD5\u5F8B\u4FDD\u62A4\u3002\u672A\u7ECF\u672C\u516C\u53F8\u8BB8\u53EF\uFF0C\u4EFB\u4F55\u4EBA\u4E0D\u5F97\u64C5\u81EA\u4F7F\u7528\uFF08\u5305\u62EC\u4F46\u4E0D\u9650\u4E8E\u590D\u5236\u3001\u4F20\u64AD\u3001\u5C55\u793A\u3001\u955C\u50CF\u3001\u4E0A\u8F7D\u3001\u4E0B\u8F7D\uFF09\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u672C\u516C\u53F8\u7684\u6807\u8BC6\u3001LOGO\u7B49\u6587\u5B57\u3001\u56FE\u5F62\u53CA\u5176\u7EC4\u5408\uFF0C\u6E90\u4EE3\u7801\u4EE5\u53CA\u6240\u6709\u9875\u9762\u7684\u7248\u5F0F\u8BBE\u8BA1\u7B49\u7248\u6743\u5C5E\u4E8E\u672C\u516C\u53F8\u6240\u6709\uFF0C\u672A\u7ECF\u6388\u6743\uFF0C\u4E0D\u5F97\u7528\u4E8E\u672C\u7F51\u7AD9\u4E4B\u5916\u7684\u4EFB\u4F55\u7AD9\u70B9\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u672C\u516C\u53F8\u6240\u8FD0\u8425\u7684\u4F17\u521B\u90E8\u843D\u7F51\u6CE8\u518C\u7528\u6237\u5728\u4F17\u521B\u90E8\u843D\u7F51\u7AD9\u6240\u53D1\u5E03\u5C55\u793A\u7684\u201C\u5C55\u793A\u4F5C\u54C1\u201D\u53CA\u201C\u6388\u6743\u4F5C\u54C1\u201D\uFF0C\u7248\u6743\u5F52\u539F\u8457\u4F5C\u6743\u4EBA\u6240\u6709\u3002\u5728\u672C\u7F51\u7AD9\u516C\u5F00\u4E0A\u4F20\u3001\u53D1\u5E03\u3001\u5206\u4EAB\u5185\u5BB9\u65F6\uFF0C\u8BF7\u4E25\u683C\u9075\u5B88\u300A\u4E2D\u534E\u4EBA\u6C11\u5171\u548C\u56FD\u8457\u4F5C\u6743\u6CD5\u300B\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u672C\u7F51\u7AD9\u7684\u5185\u5BB9\u4E3B\u8981\u6765\u81EA\u6CE8\u518C\u7528\u6237\u6240\u4E0A\u4F20\u7684\u5185\u5BB9\u3002\u60A8\u4EE5\u4EFB\u4F55\u5F62\u5F0F\u4E0A\u4F20\u3001\u53D1\u5E03\u3001\u5206\u4EAB\u4E8E\u672C\u7F51\u7AD9\u7684\u4EFB\u4F55\u4FE1\u606F\u4E0E\u5185\u5BB9\uFF0C\u5747\u4E3A\u60A8\u7684\u4E2A\u4EBA\u884C\u4E3A\uFF0C\u5982\u679C\u4EFB\u4F55\u7B2C\u4E09\u65B9\u5BF9\u8BE5\u5185\u5BB9\u63D0\u51FA\u5305\u62EC\u4F46\u4E0D\u9650\u4E8E\u7248\u6743\u5728\u5185\u7684\u5F02\u8BAE\uFF0C\u672C\u7F51\u7AD9\u5E94\u786E\u5B9E\u7684\u6743\u5229\u4EBA\u8BF7\u6C42\uFF0C\u5C06\u8BE5\u5185\u5BB9\u5220\u9664\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u4F17\u521B\u90E8\u843D\u7F51\u6CE8\u518C\u7528\u6237\u6388\u6743\u672C\u7F51\u7AD9\u53EF\u4EE5\u5728\u672C\u7F51\u7AD9\u8303\u56F4\u5185\uFF0C\u4EE5\u53CA\u672C\u7F51\u7AD9\u8FDB\u884C\u76F8\u5173\u7684\u5E02\u573A\u516C\u5173\u63A8\u5E7F\u65F6\u5F15\u7528\u3001\u53D1\u5E03\u3001\u8F6C\u8F7D\u60A8\u5728\u4F17\u521B\u90E8\u843D\u7F51\u7AD9\u6240\u53D1\u5E03\u5C55\u793A\u7684\u4F5C\u54C1\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u5728\u672A\u83B7\u5F97\u8457\u4F5C\u6743\u4EBA\u6388\u6743\u8BB8\u53EF\u7684\u60C5\u51B5\u4E0B\uFF0C\u4E0D\u5F97\u5C06\u8457\u4F5C\u6743\u4EBA\u7684\u4F5C\u54C1\u5168\u90E8\u6216\u90E8\u5206\u53D1\u8868\u53CA\u5C55\u793A\u4E8E\u4F17\u521B\u90E8\u843D\u7F51\u3002'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'about-article padding' },
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            _react2.default.createElement(
+	                                'b',
+	                                null,
+	                                '\u670D\u52A1\u6761\u6B3E'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u4F17\u521B\u90E8\u843D\u7F51\u7AD9vmaking.com\uFF08\u4EE5\u4E0B\u7B80\u79F0\u201C\u6211\u4EEC\u201D\u6216\u8005\u201C\u672C\u7F51\u7AD9\u201D\uFF09\u7684\u7F51\u7EDC\u8FD0\u8425\u670D\u52A1\u4E3B\u4F53\u4E3A\u5317\u4EAC\u7248\u6620\u79D1\u6280\u6709\u9650\u516C\u53F8\uFF08\u4EE5\u4E0B\u7B80\u79F0\u201C\u7248\u6620\u79D1\u6280\u201D\u6216\u8005\u201C\u672C\u516C\u53F8\u201D\uFF09\uFF0C\u672C\u7F51\u7AD9\u7684\u6240\u6709\u6743\u5F52\u5C5E\u4E8E\u5317\u4EAC\u7248\u6620\u79D1\u6280\u6709\u9650\u516C\u53F8\u53CA\u5176\u8BB8\u53EF\u4EBA\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u8BF7\u60A8\u4ED4\u7EC6\u9605\u8BFB\u4EE5\u4E0B\u5168\u90E8\u5185\u5BB9\u3002\u5982\u679C\u60A8\u4E0D\u540C\u610F\u672C\u7F51\u7AD9\u670D\u52A1\u6761\u6B3E\u4E2D\u7684\u4EFB\u610F\u5185\u5BB9\uFF0C\u8BF7\u52FF\u6CE8\u518C\u6216\u4F7F\u7528\u672C\u7F51\u7AD9\u6240\u63D0\u4F9B\u7684\u670D\u52A1\u3002\u5728\u60A8\u4F7F\u7528\u67D0\u7279\u5B9A\u4EA7\u54C1\u6216\u8005\u670D\u52A1\u7684\u60C5\u51B5\u4E0B\uFF0C\u60A8\u9700\u8981\u540C\u65F6\u9075\u5B88\u5E76\u63A5\u53D7\u76F8\u5173\u9002\u7528\u4E8E\u90A3\u4E9B\u4EA7\u54C1\u548C\u670D\u52A1\u7684\u6761\u6B3E\u6216\u8005\u534F\u8BAE\uFF08\u4EE5\u4E0B\u7EDF\u79F0\u4E3A\u201C\u5176\u4ED6\u6761\u6B3E\u201D\uFF09\u3002\u4F8B\u5982\uFF0C\u5F53\u60A8\u901A\u8FC7\u672C\u7F51\u7AD9\u8FDB\u884C\u7248\u6743\u7D20\u6750\u9500\u552E\u5408\u4F5C\u65F6\uFF0C\u9700\u8981\u540C\u65F6\u9075\u5B88\u300A\u4F17\u521B\u90E8\u843D\u7F51\u7AD9\u7248\u6743\u7D20\u6750\u9500\u552E\u5408\u4F5C\u534F\u8BAE\u300B\uFF1B\u5F53\u60A8\u901A\u8FC7\u672C\u7F51\u7AD9\u8D2D\u4E70\u672C\u7F51\u7AD9\u6CE8\u518C\u7528\u6237\u6240\u63D0\u4F9B\u7684\u7248\u6743\u7D20\u6750\u65F6\uFF0C\u60A8\u9700\u8981\u540C\u65F6\u9075\u5B88\u300A\u7248\u6743\u7D20\u6750\u6807\u51C6\u6388\u6743\u534F\u8BAE\u300B\u6216\u8005\u300A\u7248\u6743\u7D20\u6750\u6269\u5C55\u6388\u6743\u534F\u8BAE\u300B\u3002\u5982\u679C\u4EE5\u4E0B\u670D\u52A1\u6761\u6B3E\u4E0E\u201C\u5176\u4ED6\u6761\u6B3E\u201D\u6709\u4E0D\u4E00\u81F4\u4E4B\u5904\uFF0C\u5219\u4EE5\u201C\u5176\u4ED6\u6761\u6B3E\u201D\u4E3A\u51C6\u3002\u5982\u679C\u60A8\u5DF2\u7ECF\u901A\u8FC7\u8FDB\u5165\u6CE8\u518C\u7A0B\u5E8F\u5E76\u52FE\u9009\u201C\u6211\u5DF2\u9605\u8BFB\u5E76\u63A5\u53D7\u4F17\u521B\u90E8\u843D\u7F51\u7AD9\u7F51\u7AD9\u670D\u52A1\u6761\u6B3E\u201D\u5728\u672C\u7F51\u7AD9\u8D2D\u4E70\u4E0A\u5546\u54C1\u548C\u4F7F\u7528\u6240\u63D0\u4F9B\u7684\u670D\u52A1\uFF0C\u5373\u8868\u793A\u60A8\u4E0E\u672C\u7F51\u7AD9\u5DF2\u8FBE\u6210\u534F\u8BAE\uFF0C\u81EA\u613F\u540C\u610F\u5E76\u63A5\u53D7\u672C\u670D\u52A1\u6761\u6B3E\u548C\u6240\u6709\u76F8\u5173\u7684\u6761\u6B3E\u3001\u653F\u7B56\u548C\u534F\u8BAE\u7684\u7EA6\u675F\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u4E00 : \u6761\u6B3E\u7684\u4FEE\u6539'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u672C\u7F51\u7AD9\u6709\u6743\u4FEE\u6539\u670D\u52A1\u6761\u6B3E\u4EE5\u53CA\u5176\u4ED6\u6761\u6B3E\uFF0C\u672C\u7F51\u7AD9\u4F1A\u5C3D\u53EF\u80FD\u63D0\u524D\u5728\u672C\u7F51\u7AD9\u91CD\u8981\u9875\u9762\u4E0A\u8FDB\u884C\u516C\u544A\u901A\u77E5\u7528\u6237\u4FEE\u6539\u5185\u5BB9\u3002\u5982\u679C\u60A8\u4E0D\u540C\u610F\u670D\u52A1\u6761\u6B3E\u6240\u4FEE\u6539\u7684\u5185\u5BB9\uFF0C\u60A8\u53EF\u4EE5\u4E3B\u52A8\u8054\u7CFB\u672C\u7F51\u7AD9\u53D6\u6D88\u7F51\u7EDC\u670D\u52A1\u3002\u5982\u679C\u60A8\u7EE7\u7EED\u4F7F\u7528\u672C\u7F51\u7AD9\u6240\u63D0\u4F9B\u7684\u670D\u52A1\uFF0C\u5219\u89C6\u4E3A\u60A8\u63A5\u6536\u670D\u52A1\u6761\u6B3E\u7684\u53D8\u52A8\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u4E8C : \u670D\u52A1\u5185\u5BB9'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u672C\u7F51\u7AD9\u6240\u63D0\u4F9B\u7684\u5177\u4F53\u670D\u52A1\u4E0E\u5185\u5BB9\u7531\u672C\u7F51\u7AD9\u6839\u636E\u5B9E\u9645\u60C5\u51B5\u63D0\u4F9B\uFF0C\u4F8B\u5982\u901A\u8FC7\u5728\u7EBF\u3001\u7535\u5B50\u90AE\u4EF6\u6216\u8005\u624B\u673A\u8FDB\u884C\u5185\u5BB9\u4E0A\u4F20\u3001\u5171\u4EAB\u6216\u9500\u552E\uFF0C\u901A\u8FC7\u5728\u7EBF\u6216\u8005\u624B\u673A\u8FDB\u884C\u5185\u5BB9\u641C\u7D22\u3001\u8D2D\u4E70\u3002\u60A8\u660E\u786E\u77E5\u6653\uFF0C\u672C\u7F51\u7AD9\u4EC5\u63D0\u4F9B\u76F8\u5173\u7684\u7F51\u7EDC\u670D\u52A1\uFF0C\u9664\u6B64\u4E4B\u5916\u4E0E\u76F8\u5173\u7F51\u7EDC\u670D\u52A1\u6709\u5173\u7684\u8BBE\u5907\uFF08\u5982\u4E2A\u4EBA\u7535\u8111\u3001\u624B\u673A\u3001\u4EE5\u53CA\u5176\u4ED6\u4E0E\u63A5\u5165\u4E92\u8054\u7F51\u6216\u79FB\u52A8\u7269\u8054\u7F51\u6709\u5173\u7684\u88C5\u7F6E\uFF09\u53CA\u6240\u9700\u7684\u8D39\u7528\uFF08\u5982\u4E3A\u63A5\u5165\u4E92\u8054\u7F51\u800C\u652F\u4ED8\u7684\u4E0A\u7F51\u8D39\u4EE5\u53CA\u7535\u8BDD\u8D39\u3001\u4E3A\u4F7F\u7528\u79FB\u52A8\u4E92\u8054\u7F51\u800C\u652F\u4ED8\u7684\u624B\u673A\u8BDD\u8D39\uFF09\u5747\u5E94\u7531\u60A8\u81EA\u884C\u627F\u62C5\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u4E09 : \u670D\u52A1\u7684\u53D8\u66F4\u3001\u4E2D\u65AD\u6216\u8005\u7EC8\u6B62'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u9274\u4E8E\u7F51\u7EDC\u670D\u52A1\u7684\u7279\u6B8A\u6027\uFF0C\u60A8\u540C\u610F\u672C\u7F51\u7AD9\u6709\u6743\u968F\u65F6\u53D8\u66F4\u3001\u4E2D\u65AD\u6216\u7EC8\u6B62\u90E8\u5206\u6216\u5168\u90E8\u7684\u7F51\u7EDC\u670D\u52A1\u3002\u5982\u53D8\u66F4\u3001\u4E2D\u65AD\u6216\u7EC8\u6B62\u7F51\u7EDC\u670D\u52A1\uFF0C\u672C\u7F51\u7AD9\u4F1A\u5C3D\u53EF\u80FD\u63D0\u524D\u8FDB\u884C\u516C\u544A\u901A\u77E5\u7528\u6237\uFF0C\u65E0\u9700\u5BF9\u4EFB\u4F55\u7528\u6237\u6216\u4EFB\u4F55\u7B2C\u4E09\u65B9\u627F\u62C5\u4EFB\u4F55\u8D23\u4EFB\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u7528\u6237\u7406\u89E3\uFF0C\u672C\u7F51\u7AD9\u9700\u8981\u5B9A\u671F\u6216\u4E0D\u5B9A\u671F\u5730\u5BF9\u63D0\u4F9B\u7F51\u7EDC\u670D\u52A1\u7684\u5E73\u53F0\uFF08\u5982\u4E92\u8054\u7F51\u7F51\u7AD9\u3001\u79FB\u52A8\u7F51\u7EDC\u7B49\uFF09\u6216\u76F8\u5173\u7684\u8BBE\u5907\u8FDB\u884C\u68C0\u4FEE\u6216\u8005\u7EF4\u62A4\uFF0C\u5982\u56E0\u6B64\u7C7B\u60C5\u51B5\u800C\u9020\u6210\u6536\u8D39\u7F51\u7EDC\u670D\u52A1\u5728\u5408\u7406\u65F6\u95F4\u5185\u7684\u4E2D\u65AD\uFF0C\u672C\u7F51\u7AD9\u65E0\u9700\u4E3A\u6B64\u627F\u62C5\u4EFB\u4F55\u8D23\u4EFB\uFF0C\u4F46\u672C\u7F51\u7AD9\u5E94\u5C3D\u53EF\u80FD\u4E8B\u5148\u8FDB\u884C\u901A\u544A\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u7528\u6237\u8FDD\u53CD\u672C\u6761\u6B3E\u4E2D\u89C4\u5B9A\u7684\u4F7F\u7528\u89C4\u5219\uFF0C\u672C\u7F51\u7AD9\u6709\u6743\u968F\u65F6\u4E2D\u65AD\u6216\u7EC8\u6B62\u5411\u7528\u6237\u63D0\u4F9B\u672C\u6761\u6B3E\u9879\u4E0B\u7684\u7F51\u7EDC\u670D\u52A1\u800C\u65E0\u9700\u5BF9\u7528\u6237\u6216\u4EFB\u4F55\u7B2C\u4E09\u65B9\u627F\u62C5\u4EFB\u4F55\u8D23\u4EFB\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u56DB : \u7528\u6237\u548C\u8D26\u6237'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u5728\u60A8\u4F7F\u7528\u672C\u7F51\u7AD9\u7684\u67D0\u4E9B\u529F\u80FD\u548C\u670D\u52A1\u7684\u65F6\u5019\uFF0C\u53EF\u80FD\u9700\u8981\u60A8\u5728\u672C\u7F51\u7AD9\u521B\u5EFA\u8D26\u6237\uFF0C\u60A8\u540C\u610F\u4E3A\u5728\u60A8\u7684\u8D26\u6237\u548C\u5BC6\u7801\u4E0B\u53D1\u751F\u7684\u6240\u6709\u884C\u4E3A\u627F\u62C5\u8D23\u4EFB\u3002\u5BF9\u4E8E\u56E0\u60A8\u672A\u80FD\u4FDD\u62A4\u4FE1\u606F\u5B89\u5168\u4EE5\u53CA\u4FDD\u5BC6\u800C\u5728\u60A8\u7684\u8D26\u6237\u4E0B\u53D1\u751F\u7684\u4EFB\u4F55\u884C\u4E3A\uFF0C\u60A8\u627F\u62C5\u5168\u90E8\u8D23\u4EFB\u3002\u5982\u679C\u60A8\u672A\u6EE118\u5468\u5C81\uFF0C\u60A8\u53EA\u80FD\u5728\u7236\u6BCD\u6216\u8005\u76D1\u62A4\u4EBA\u7684\u53C2\u4E0E\u4E0B\u4F7F\u7528\u672C\u7F51\u7AD9\u3002\u6211\u4EEC\u4FDD\u7559\u81EA\u884C\u51B3\u5B9A\u62D2\u7EDD\u63D0\u4F9B\u670D\u52A1\u3001\u5173\u95ED\u8D26\u53F7\u3001\u5220\u9664\u6216\u8005\u7F16\u8F91\u5185\u5BB9\u6216\u8005\u53D6\u6D88\u8BA2\u5355\u7684\u6743\u5229\u3002\u5982\u679C\u60A8\u7684\u6CE8\u518C\u8D26\u53F7\u5728180\u65E5\u5185\u672A\u88AB\u6FC0\u6D3B\u5E76\u5B9E\u9645\u4F7F\u7528\uFF0C\u672C\u7F51\u7AD9\u6709\u6743\u5220\u9664\u8BE5\u5E10\u53F7\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u4E94 : \u4F7F\u7528\u884C\u4E3A'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u60A8\u6709\u6743\u968F\u65F6\u4FEE\u6539\u6216\u8005\u5220\u9664\u81EA\u5DF1\u7684\u8D26\u6237\u4FE1\u606F\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u60A8\u6709\u4E49\u52A1\u548C\u8D23\u4EFB\u59A5\u5584\u4FDD\u7BA1\u60A8\u5728\u672C\u7F51\u7AD9\u6CE8\u518C\u7684\u81EA\u5DF1\u8D26\u6237\u4FE1\u606F\u3002\u60A8\u4E0D\u5E94\u5C06\u8D26\u53F7\u548C\u5BC6\u7801\u8F6C\u8BA9\u6216\u8005\u51FA\u501F\u4ED6\u4EBA\u4F7F\u7528\u3002\u5982\u679C\u60A8\u53D1\u73B0\u60A8\u7684\u8D26\u53F7\u906D\u4ED6\u4EBA\u975E\u6CD5\u4F7F\u7528\uFF0C\u5E94\u7ACB\u5373\u901A\u77E5\u672C\u7F51\u7AD9\u3002\u56E0\u9ED1\u5BA2\u884C\u4E3A\u6216\u8005\u7528\u6237\u7684\u4FDD\u7BA1\u758F\u5FFD\u5BFC\u81F4\u8D26\u53F7\u3001\u5BC6\u7801\u906D\u4ED6\u4EBA\u975E\u6CD5\u4F7F\u7528\uFF0C\u672C\u7F51\u7AD9\u4E0D\u627F\u62C5\u4EFB\u4F55\u8D23\u4EFB\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u60A8\u5728\u4F7F\u7528\u672C\u7F51\u7AD9\u6240\u63D0\u4F9B\u7684\u670D\u52A1\u8FC7\u7A0B\u4E2D\uFF0C\u5FC5\u987B\u9075\u5B88\u4EE5\u4E0B\u539F\u5219\uFF1A'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '1. \u9075\u5B88\u4E2D\u56FD\u6709\u5173\u7684\u6CD5\u5F8B\u548C\u6CD5\u89C4\uFF0C\u4E0D\u4F1A\u8FDD\u53CD\u4EFB\u4F55\u9002\u7528\u7684\u56FD\u5BB6\u6216\u8005\u56FD\u9645\u6CD5\u5F8B\u3001\u6CD5\u4EE4\u3001\u8C03\u7406\u3001\u89C4\u5219\u6216\u8005\u89C4\u5B9A\uFF1B'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '2. \u9075\u5B88\u6240\u6709\u4E0E\u7F51\u7EDC\u670D\u52A1\u6709\u5173\u7684\u7F51\u7EDC\u534F\u8BAE\u3001\u89C4\u5B9A\u548C\u7A0B\u5E8F\uFF1B'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '3. \u4E0D\u5F97\u4E3A\u4EFB\u4F55\u975E\u6CD5\u76EE\u7684\u800C\u4F7F\u7528\u7F51\u7EDC\u670D\u52A1\u7CFB\u7EDF\uFF1B'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '4. \u4E0D\u5F97\u5229\u7528\u672C\u7F51\u7AD9\u6240\u63D0\u4F9B\u7684\u7F51\u7EDC\u670D\u52A1\u4E0A\u4F20\u3001\u5C55\u793A\u6216\u4F20\u64AD\uFF1A'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'a. \u4FB5\u72AF\u7B2C\u4E09\u65B9\u6743\u5229\u7684\u4EFB\u4F55\u5185\u5BB9\u8D44\u6599\uFF0C\u5305\u62EC\u4F46\u4E0D\u9650\u4E8E\u4E13\u5229\u6743\u3001\u8457\u4F5C\u6743\u3001\u5546\u6807\u6743\u3001\u540D\u8A89\u6743\u6216\u8005\u6216\u8005\u4EFB\u4F55\u5176\u4ED6\u5408\u6CD5\u6743\u76CA\uFF1B'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'b. \u5546\u4E1A\u5E7F\u544A\uFF1B'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'c. \u4EFB\u4F55\u7B2C\u4E09\u65B9\u5E7F\u544A\uFF0C\u5305\u62EC\u6A2A\u5E45\u5E7F\u544A\u8054\u76DF\u7B49\u670D\u52A1\uFF1B'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'd. \u4EFB\u4F55\u865A\u5047\u7684\u3001\u9A9A\u6270\u6027\u7684\u3001\u4E2D\u4F24\u4ED6\u4EBA\u7684\u3001\u8FB1\u9A82\u6027\u7684\u3001\u6050\u5413\u6027\u7684\u3001\u5EB8\u4FD7\u6DEB\u79FD\u7684\u6216\u5176\u4ED6\u4EFB\u4F55\u975E\u6CD5\u7684\u4FE1\u606F\u8D44\u6599\uFF1B'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '5. \u4E0D\u5F97\u5229\u7528\u672C\u7F51\u7AD9\u7F51\u7EDC\u670D\u52A1\u7CFB\u7EDF\u8FDB\u884C\u4EFB\u4F55\u4E0D\u5229\u4E8E\u672C\u7F51\u7AD9\u7684\u884C\u4E3A\uFF1B'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '6. \u4E0D\u5F97\u5BF9\u5176\u4ED6\u7528\u6237\u8FDB\u884C\u4FAE\u8FB1\u3001\u8C29\u9A82\u3001\u6076\u610F\u8C03\u4F83\u7B49\u4EBA\u8EAB\u653B\u51FB\u7684\u884C\u4E3A\uFF1B'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '7. \u5982\u53D1\u73B0\u4EFB\u4F55\u975E\u6CD5\u4F7F\u7528\u7528\u6237\u5E10\u53F7\u6216\u5E10\u53F7\u51FA\u73B0\u5B89\u5168\u6F0F\u6D1E\u7684\u60C5\u51B5\uFF0C\u5E94\u7ACB\u5373\u901A\u77E5\u672C\u7F51\u7AD9\uFF1B'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '8. \u60A8\u4E0D\u4F1A\u5047\u5192\u4EFB\u4F55\u4EBA\u6216\u8005\u6CD5\u4EBA\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u5982\u7528\u6237\u5728\u4F7F\u7528\u7F51\u7EDC\u670D\u52A1\u65F6\u8FDD\u53CD\u4EFB\u4F55\u4E0A\u8FF0\u89C4\u5B9A\uFF0C\u672C\u7F51\u7AD9\u6216\u5176\u6388\u6743\u7684\u4EBA\u6709\u6743\u8981\u6C42\u7528\u6237\u6539\u6B63\u6216\u76F4\u63A5\u91C7\u53D6\u4E00\u5207\u5FC5\u8981\u7684\u63AA\u65BD\uFF08\u5305\u62EC\u4F46\u4E0D\u9650\u4E8E\u66F4\u6539\u6216\u5220\u9664\u7528\u6237\u5F20\u8D34\u7684\u5185\u5BB9\u7B49\u3001\u6682\u505C\u6216\u7EC8\u6B62\u7528\u6237\u4F7F\u7528\u7F51\u7EDC\u670D\u52A1\u7684\u6743\u5229\uFF09\u4EE5\u51CF\u8F7B\u7528\u6237\u4E0D\u5F53\u884C\u4E3A\u9020\u6210\u7684\u5F71\u54CD\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u672C\u7F51\u7AD9\u5BF9\u6240\u63D0\u4F9B\u7684\u67D0\u4E9B\u7279\u5B9A\u7684\u7F51\u7EDC\u670D\u52A1\u7684\u4F7F\u7528\u901A\u8FC7\u5404\u79CD\u65B9\u5F0F\uFF08\u5305\u62EC\u4F46\u4E0D\u9650\u4E8E\u7F51\u9875\u516C\u544A\u3001\u7535\u5B50\u90AE\u4EF6\u3001\u53D1\u9001\u7AD9\u5185\u4FE1\u63D0\u9192\u7B49\uFF09\u4F5C\u51FA\u7684\u4EFB\u4F55\u58F0\u660E\u3001\u901A\u77E5\u3001\u8B66\u793A\u7B49\u5185\u5BB9\u89C6\u4E3A\u672C\u6761\u6B3E\u7684\u4E00\u90E8\u5206\uFF0C\u7528\u6237\u5982\u4F7F\u7528\u8BE5\u672C\u7F51\u7AD9\u7F51\u7EDC\u670D\u52A1\uFF0C\u89C6\u4E3A\u7528\u6237\u540C\u610F\u8BE5\u7B49\u58F0\u660E\u3001\u901A\u77E5\u3001\u8B66\u793A\u7684\u5185\u5BB9\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u516D\u3001\u514D\u8D23\u58F0\u660E'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u672C\u7F51\u7AD9\u5728\u63D0\u4F9B\u4EA7\u54C1\u6216\u670D\u52A1\u53EF\u80FD\u4F1A\u9047\u5230\u4E0D\u53EF\u6297\u529B\u7B49\u98CE\u9669\u56E0\u7D20\uFF0C\u56E0\u6B64\u672C\u7F51\u7AD9\u65E0\u6CD5\u62C5\u4FDD\u7F51\u7EDC\u670D\u52A1\u4E0D\u4F1A\u4E2D\u65AD\uFF0C\u4E5F\u65E0\u6CD5\u62C5\u4FDD\u7F51\u7EDC\u670D\u52A1\u4E00\u5B9A\u80FD\u6EE1\u8DB3\u60A8\u7684\u8981\u6C42\uFF0C\u5BF9\u7F51\u7EDC\u670D\u52A1\u7684\u53CA\u65F6\u6027\u3001\u5B89\u5168\u6027\u3001\u51C6\u786E\u6027\u4E5F\u90FD\u65E0\u6CD5\u4F5C\u51FA\u62C5\u4FDD\u3002\u60A8\u540C\u610F\u4FDD\u969C\u548C\u7EF4\u62A4\u672C\u7F51\u7AD9\u53CA\u5176\u4ED6\u7528\u6237\u7684\u5229\u76CA\uFF0C\u7531\u4E8E\u60A8\u767B\u5F55\u7F51\u7AD9\u4EA7\u751F\u7684\u5185\u5BB9\u8FDD\u6CD5\u3001\u4E0D\u771F\u5B9E\u3001\u4E0D\u6B63\u5F53\u3001\u4FB5\u72AF\u7B2C\u4E09\u65B9\u5408\u6CD5\u6743\u76CA\uFF0C\u6216\u8005\u60A8\u8FDD\u53CD\u672C\u6761\u6B3E\u9879\u4E0B\u7684\u4EFB\u4F55\u6761\u6B3E\u800C\u7ED9\u672C\u7F51\u7AD9\u6216\u4EFB\u4F55\u5176\u4ED6\u7B2C\u4E09\u65B9\u9020\u6210\u635F\u5931\uFF0C\u60A8\u540C\u610F\u627F\u62C5\u635F\u5BB3\u8D54\u507F\u8D23\u4EFB\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u4E03\u3001\u901A\u77E5\u9001\u8FBE'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u672C\u6761\u6B3E\u9879\u4E0B\u672C\u7F51\u7AD9\u5BF9\u4E8E\u7528\u6237\u6240\u6709\u7684\u901A\u77E5\u5747\u53EF\u901A\u8FC7\u7F51\u9875\u516C\u544A\u3001\u7535\u5B50\u90AE\u4EF6\u3001\u53D1\u9001\u4FE1\u606F\u6216\u5E38\u89C4\u7684\u4FE1\u4EF6\u4F20\u9001\u7B49\u65B9\u5F0F\u8FDB\u884C\uFF1B\u8BE5\u7B49\u901A\u77E5\u4E8E\u53D1\u9001\u4E4B\u65E5\u89C6\u4E3A\u5DF2\u9001\u8FBE\u6536\u4EF6\u4EBA\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u7528\u6237\u5BF9\u4E8E\u672C\u7F51\u7AD9\u7684\u901A\u77E5\u5E94\u5F53\u901A\u8FC7\u672C\u7F51\u7AD9\u5BF9\u5916\u6B63\u5F0F\u516C\u5E03\u7684\u901A\u4FE1\u5730\u5740\u3001\u4F20\u771F\u53F7\u7801\u3001\u7535\u5B50\u90AE\u4EF6\u5730\u5740\u7B49\u8054\u7CFB\u4FE1\u606F\u8FDB\u884C\u9001\u8FBE\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            ' \u516B\u3001\u6CD5\u5F8B\u7BA1\u8F96'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u672C\u6761\u6B3E\u7684\u8BA2\u7ACB\u3001\u6267\u884C\u548C\u89E3\u91CA\u53CA\u4E89\u8BAE\u7684\u89E3\u51B3\u5747\u5E94\u9002\u7528\u4E2D\u56FD\u6CD5\u5F8B\u5E76\u53D7\u4E2D\u56FD\u6CD5\u9662\u7BA1\u8F96\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u5982\u53CC\u65B9\u5C31\u672C\u534F\u8BAE\u5185\u5BB9\u6216\u5176\u6267\u884C\u53D1\u751F\u4EFB\u4F55\u4E89\u8BAE\uFF0C\u53CC\u65B9\u5E94\u5C3D\u91CF\u53CB\u597D\u534F\u5546\u89E3\u51B3\uFF1B\u534F\u5546\u4E0D\u6210\u65F6\uFF0C\u4EFB\u4F55\u4E00\u65B9\u5747\u53EF\u5411\u672C\u7F51\u7AD9\u6240\u5728\u5730\u7684\u4EBA\u6C11\u6CD5\u9662\u63D0\u8D77\u8BC9\u8BBC\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u4E5D\u3001\u7591\u95EE\u89E3\u7B54'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u5982\u679C\u60A8\u5BF9\u4EE5\u4E0A\u6761\u6B3E\u6709\u4EFB\u4F55\u7591\u95EE\uFF0C\u8BF7\u901A\u8FC7\u90AE\u4EF6\u8054\u7CFB\u6211\u4EEC help@copyrightshow.cn\u3002'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'about-article padding' },
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            _react2.default.createElement(
+	                                'b',
+	                                null,
+	                                '\u9690\u79C1\u534F\u8BAE'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u7528\u6237\u5728\u4F17\u521B\u90E8\u843D\u7F51\u7AD9\u8FDB\u884C\u767B\u8BB0\u6CE8\u518C\u3001\u4E0A\u4F20\u5185\u5BB9\u3001\u53C2\u4E0E\u8BA8\u8BBA\u7B49\u6D3B\u52A8\u65F6\uFF0C\u7ECF\u7528\u6237\u540C\u610F\u53CA\u786E\u8BA4\uFF0C\u672C\u7F51\u7AD9\u5C06\u901A\u8FC7\u6CE8\u518C\u8868\u683C\u3001\u8BA2\u5355\u7B49\u5F62\u5F0F\u8981\u6C42\u7528\u6237\u63D0\u4F9B\u4E00\u4E9B\u4E2A\u4EBA\u8D44\u6599\u3002\u672C\u7F51\u7AD9\u6536\u96C6\u6B64\u7C7B\u4E2A\u4EBA\u8EAB\u4EFD\u4FE1\u606F\uFF0C\u4E3B\u8981\u662F\u4E3A\u6CE8\u518C\u7528\u6237\u7528\u4E8E\u63D0\u4F9B\u548C\u6539\u8FDB\u6211\u4EEC\u7684\u4EA7\u54C1\u3001\u670D\u52A1\u3001\u5185\u5BB9\u548C\u5E7F\u544A\u5BA3\u4F20'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u672C\u7F51\u7AD9\u6240\u6536\u96C6\u7684\u4E2A\u4EBA\u4FE1\u606F\u6216\u4F01\u4E1A\u4FE1\u606F\u5305\u62EC\uFF1A'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '1. \u4E2A\u4EBA/\u4F01\u4E1A\u8BC6\u522B\u8D44\u6599\uFF1A\u5982\u59D3\u540D\u3001\u4F01\u4E1A\u540D\u79F0\u3001\u7EC4\u7EC7\u673A\u6784\u4EE3\u7801\u3001\u6CD5\u4EBA\u4EE3\u8868\u3001\u4E2A\u4EBA\u6027\u522B\u3001\u4E2A\u4EBA\u751F\u65E5\u3001\u4E2A\u4EBA\u4E3B\u9875\u3001\u516C\u53F8\u7F51\u7AD9\u5730\u5740\u3001\u5373\u65F6\u901A\u8BAF\u3001\u6240\u5728\u5730\u3001\u7535\u5B50\u90AE\u4EF6\u5730\u5740\u7B49\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '2. \u4E2A\u4EBA\u80CC\u666F\uFF1A \u804C\u4E1A\u3001\u5A5A\u59FB\u3001\u5174\u8DA3\u7231\u597D\u7B49\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u672C\u7F51\u7AD9\u5BF9\u7528\u6237\u6240\u63D0\u4F9B\u7684\u4E2A\u4EBA\u8D44\u6599\u8FDB\u884C\u4E25\u683C\u7684\u7BA1\u7406\u53CA\u4FDD\u62A4\uFF0C\u672C\u7F51\u7AD9\u5C06\u4F7F\u7528\u76F8\u5E94\u7684\u6280\u672F\uFF0C\u9632\u6B62\u60A8\u7684\u4E2A\u4EBA\u8D44\u6599\u4E22\u5931\u3001\u88AB\u76D7\u7528\u6216\u906D\u7BE1\u6539\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u67D0\u4E9B\u4E2A\u4EBA\u4FE1\u606F\u56E0\u5176\u7279\u6B8A\u6027\u53EF\u80FD\u88AB\u8BA4\u4E3A\u662F\u654F\u611F\u4E2A\u4EBA\u4FE1\u606F\uFF0C\u4F8B\u5982\u60A8\u7684\u79CD\u65CF\u3001\u5B97\u6559\u3001\u4E2A\u4EBA\u5065\u5EB7\u548C\u533B\u7597\u4FE1\u606F\u7B49\u3002\u76F8\u6BD4\u5176\u4ED6\u4E2A\u4EBA\u4FE1\u606F\uFF0C\u654F\u611F\u4E2A\u4EBA\u4FE1\u606F\u53D7\u5230\u66F4\u52A0\u4E25\u683C\u7684\u4FDD\u62A4\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u8BF7\u6CE8\u610F\uFF0C\u60A8\u5728\u4F7F\u7528\u6211\u4EEC\u7684\u670D\u52A1\u65F6\u6240\u63D0\u4F9B\u3001\u4E0A\u4F20\u6216\u53D1\u5E03\u7684\u5185\u5BB9\u548C\u4FE1\u606F\uFF08\u4F8B\u5982\u6709\u5173\u60A8\u793E\u4EA4\u6D3B\u52A8\u7684\u7167\u7247\u7B49\u4FE1\u606F\uFF09\uFF0C\u53EF\u80FD\u4F1A\u6CC4\u9732\u60A8\u7684\u654F\u611F\u4E2A\u4EBA\u4FE1\u606F\u3002\u60A8\u9700\u8981\u8C28\u614E\u5730\u8003\u8651\uFF0C\u662F\u5426\u5728\u4F7F\u7528\u6211\u4EEC\u7684\u670D\u52A1\u65F6\u62AB\u9732\u76F8\u5173\u654F\u611F\u4E2A\u4EBA\u4FE1\u606F\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u672C\u516C\u53F8\u7684\u7F51\u7AD9\u3001\u5728\u7EBF\u670D\u52A1\u3001\u4E92\u52A8\u5E94\u7528\u8F6F\u4EF6\u3001\u7535\u5B50\u90AE\u4EF6\u548C\u5E7F\u544A\u53EF\u80FD\u4F1A\u4F7F\u7528\u201CCookie\u201D\u548C\u5176\u4ED6\u6280\u672F\uFF0C\u5982\u50CF\u7D20\u6807\u7B7E\u548C\u7F51\u7AD9\u4FE1\u6807\u3002\u6B64\u7C7B\u6280\u672F\u5E2E\u52A9\u6211\u4EEC\u66F4\u597D\u5730\u4E86\u89E3\u7528\u6237\u7684\u884C\u4E3A\uFF0C\u544A\u8BC9\u672C\u7F51\u7AD9\u4EBA\u4EEC\u6D4F\u89C8\u4E86\u672C\u7F51\u7AD9\u7684\u54EA\u4E9B\u90E8\u5206\uFF0C\u8861\u91CF\u5E7F\u544A\u548C\u7F51\u7EDC\u641C\u7D22\u7684\u6548\u679C\u5E76\u52A0\u4EE5\u6539\u5584\u3002\u672C\u7F51\u7AD9\u5C06\u901A\u8FC7 Cookie \u548C\u5176\u4ED6\u6280\u672F\u6536\u96C6\u7684\u4FE1\u606F\u89C6\u4E3A\u975E\u4E2A\u4EBA\u4FE1\u606F\u3002\u4F46\u662F\uFF0C\u5982\u679C\u5F53\u5730\u6CD5\u5F8B\u5C06 Internet \u534F\u8BAE (IP) \u5730\u5740\u6216\u7C7B\u4F3C\u8BC6\u522B\u6807\u8BB0\u89C6\u4E3A\u4E2A\u4EBA\u4FE1\u606F\uFF0C\u5219\u6211\u4EEC\u4EA6\u5C06\u6B64\u7B49\u8BC6\u522B\u6807\u8BB0\u89C6\u4E3A\u4E2A\u4EBA\u4FE1\u606F\u3002\u540C\u6837\uFF0C\u5C31\u672C\u9690\u79C1\u653F\u7B56\u800C\u8A00\uFF0C\u5728\u5C06\u975E\u4E2A\u4EBA\u4FE1\u606F\u4E0E\u4E2A\u4EBA\u4FE1\u606F\u7ED3\u5408\u4F7F\u7528\u7684\u60C5\u51B5\u4E0B\uFF0C\u6211\u4EEC\u5C06\u7ED3\u5408\u4F7F\u7528\u7684\u4FE1\u606F\u89C6\u4E3A\u4E2A\u4EBA\u4FE1\u606F\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u5728\u672A\u7ECF\u8BBF\u95EE\u8005\u6388\u6743\u540C\u610F\u7684\u60C5\u51B5\u4E0B\uFF0C\u672C\u7F51\u7AD9\u4E0D\u4F1A\u5C06\u8BBF\u95EE\u8005\u7684\u4E2A\u4EBA\u4FE1\u606F\u3001\u4F01\u4E1A\u4FE1\u606F\u6CC4\u9732\u7ED9\u4EFB\u4F55\u7B2C\u4E09\u65B9\u3002\u4EE5\u4E0B\u60C5\u51B5\u9664\u5916\uFF1A'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '1. \u6839\u636E\u6267\u6CD5\u5355\u4F4D\u4E4B\u8981\u6C42\u6216\u4E3A\u516C\u5171\u4E4B\u76EE\u7684\u5411\u76F8\u5173\u5355\u4F4D\u63D0\u4F9B\u4E2A\u4EBA\u8D44\u6599\uFF1B'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '2. \u7531\u4E8E\u8BBF\u95EE\u8005\u5C06\u7528\u6237\u5BC6\u7801\u544A\u77E5\u4ED6\u4EBA\u6216\u4E0E\u4ED6\u4EBA\u5171\u4EAB\u6CE8\u518C\u5E10\u6237\uFF0C\u7531\u6B64\u5BFC\u81F4\u7684\u4EFB\u4F55\u4E2A\u4EBA\u8D44\u6599\u6CC4\u9732\uFF1B'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '3. \u7531\u4E8E\u9ED1\u5BA2\u653B\u51FB\u3001\u8BA1\u7B97\u673A\u75C5\u6BD2\u4FB5\u5165\u6216\u53D1\u4F5C\u3001\u56E0\u653F\u5E9C\u7BA1\u5236\u800C\u9020\u6210\u7684\u6682\u65F6\u6027\u5173\u95ED\u7B49\u5F71\u54CD\u7F51\u7EDC\u6B63\u5E38\u7ECF\u8425\u4E4B\u4E0D\u53EF\u6297\u529B\u800C\u9020\u6210\u7684\u4E2A\u4EBA\u8D44\u6599\u6CC4\u9732\u3001\u4E22\u5931\u3001\u88AB\u76D7\u7528\u6216\u88AB\u7A9C\u6539\u7B49\uFF1B'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '4. \u7531\u4E8E\u4E0E\u672C\u7F51\u7AD9\u94FE\u63A5\u7684\u5176\u4ED6\u7F51\u7AD9\u6240\u9020\u6210\u4E4B\u4E2A\u4EBA\u8D44\u6599\u6CC4\u9732\u53CA\u7531\u6B64\u800C\u5BFC\u81F4\u7684\u4EFB\u4F55\u6CD5\u5F8B\u4E89\u8BAE\u548C\u540E\u679C\uFF1B'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '5. \u4E3A\u514D\u9664\u8BBF\u95EE\u8005\u5728\u751F\u547D\u3001\u8EAB\u4F53\u6216\u8D22\u4EA7\u65B9\u9762\u4E4B\u6025\u8FEB\u5371\u9669\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u672C\u7F51\u7AD9\u53EF\u80FD\u4F1A\u4E0E\u7B2C\u4E09\u65B9\u5408\u4F5C\u5411\u7528\u6237\u63D0\u4F9B\u76F8\u5173\u7684\u7F51\u7EDC\u670D\u52A1\uFF0C\u5728\u6B64\u60C5\u51B5\u4E0B\uFF0C\u5982\u8BE5\u7B2C\u4E09\u65B9\u540C\u610F\u627F\u62C5\u4E0E\u672C\u7F51\u7AD9\u540C\u7B49\u7684\u4FDD\u62A4\u7528\u6237\u9690\u79C1\u7684\u8D23\u4EFB\uFF0C\u5219\u672C\u7F51\u7AD9\u6709\u6743\u5C06\u7528\u6237\u7684\u6CE8\u518C\u8D44\u6599\u7B49\u63D0\u4F9B\u7ED9\u8BE5\u7B2C\u4E09\u65B9\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u5728\u4E0D\u900F\u9732\u5355\u4E2A\u7528\u6237\u9690\u79C1\u8D44\u6599\u7684\u524D\u63D0\u4E0B\uFF0C\u672C\u7F51\u7AD9\u6709\u6743\u5BF9\u6574\u4E2A\u7528\u6237\u6570\u636E\u5E93\u8FDB\u884C\u5206\u6790\u5E76\u5BF9\u7528\u6237\u6570\u636E\u5E93\u8FDB\u884C\u5546\u4E1A\u4E0A\u7684\u5229\u7528\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u5982\u679C\u60A8\u5BF9\u4F17\u521B\u90E8\u843D\u7F51\u7AD9\u7684\u9690\u79C1\u653F\u7B56\u6216\u6570\u636E\u5904\u7406\u6709\u4EFB\u4F55\u95EE\u9898\u6216\u8005\u7591\u95EE\uFF0C\u6216\u8005\u5E0C\u671B\u5C31\u53EF\u80FD\u8FDD\u53CD\u5F53\u5730\u9690\u79C1\u6743\u6CD5\u5F8B\u7684\u60C5\u51B5\u8FDB\u884C\u6295\u8BC9\uFF0C\u8BF7\u901A\u8FC7help@copyrightshow.cn\u8054\u7CFB\u6211\u4EEC\u3002'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '\u6211\u4EEC\u53EF\u80FD\u9002\u65F6\u4FEE\u8BA2\u672C\u300A\u9690\u79C1\u653F\u7B56\u300B\u7684\u6761\u6B3E\uFF0C\u8BE5\u7B49\u4FEE\u8BA2\u6784\u6210\u672C\u300A\u9690\u79C1\u653F\u7B56\u300B\u7684\u4E00\u90E8\u5206\u3002\u5982\u8BE5\u7B49\u4FEE\u8BA2\u9020\u6210\u60A8\u5728\u672C\u300A\u9690\u79C1\u653F\u7B56\u300B\u4E0B\u6743\u5229\u7684\u5B9E\u8D28\u51CF\u5C11\uFF0C\u6211\u4EEC\u5C06\u5728\u4FEE\u8BA2\u751F\u6548\u524D\u901A\u8FC7\u5728\u4E3B\u9875\u4E0A\u663E\u8457\u4F4D\u7F6E\u63D0\u793A\u6216\u5411\u60A8\u53D1\u9001\u7535\u5B50\u90AE\u4EF6\u6216\u4EE5\u5176\u4ED6\u65B9\u5F0F\u901A\u77E5\u60A8\u3002\u5728\u8BE5\u79CD\u60C5\u51B5\u4E0B\uFF0C\u82E5\u60A8\u7EE7\u7EED\u4F7F\u7528\u6211\u4EEC\u7684\u670D\u52A1\uFF0C\u5373\u8868\u793A\u540C\u610F\u53D7\u7ECF\u4FEE\u8BA2\u7684\u672C\u300A\u9690\u79C1\u653F\u7B56\u300B\u7684\u7EA6\u675F\u3002'
+	                        )
+	                    )
+	                )
+	            )
+	        );
+	    }
+	});
+
+/***/ },
+/* 19 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(4);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _amazeuiTouch = __webpack_require__(9);
+
+	var _Header2 = __webpack_require__(11);
+
+	var _Header3 = _interopRequireDefault(_Header2);
+
+	var _LoginStore = __webpack_require__(20);
+
+	var _LoginStore2 = _interopRequireDefault(_LoginStore);
+
+	var _LoginActions = __webpack_require__(21);
+
+	var _LoginActions2 = _interopRequireDefault(_LoginActions);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
 	    displayName: 'Login',
+
+	    getInitialState: function getInitialState() {
+	        return {};
+	    },
+	    subLogin: function subLogin() {
+	        var mobileReg = /^[1][3-9][0-9]{9}$/;
+	        if (!this.state.mobile) {
+	            alert('请输入手机号！');
+	        } else if (!mobileReg.test(this.state.mobile)) {
+	            alert('请输入正确的手机号码！');
+	        } else if (!this.state.password) {
+	            alert('请输入密码！');
+	        } else if (this.state.password.length < 6 || this.state.password.length > 16) {
+	            alert('请输入6-16位密码！');
+
+	            //用户注册
+	        } else {
+	            _LoginActions2.default.login({
+	                mobile: this.state.mobile,
+	                password: this.state.password
+	            });
+	        }
+	    },
+
+	    //监听手机号码，更改state
+	    changeMoile: function changeMoile(event) {
+	        this.setState({ mobile: event.target.value });
+	    },
+
+	    //监听密码，更改state
+	    changePassword: function changePassword(event) {
+	        this.setState({ password: event.target.value });
+	    },
+
 	    render: function render() {
 	        return _react2.default.createElement(
 	            _amazeuiTouch.View,
@@ -827,8 +1590,8 @@
 	                    _amazeuiTouch.Group,
 	                    { className: 'bgNone margin-bottom-0' },
 	                    _react2.default.createElement(
-	                        'form',
-	                        { action: '', className: 'form-login' },
+	                        'div',
+	                        { className: 'form-login' },
 	                        _react2.default.createElement(
 	                            _amazeuiTouch.List,
 	                            null,
@@ -839,7 +1602,7 @@
 	                                        { name: '' },
 	                                        '\u624B\u673A\u53F7'
 	                                    ), nested: 'input' },
-	                                _react2.default.createElement(_amazeuiTouch.Field, { type: 'number' })
+	                                _react2.default.createElement(_amazeuiTouch.Field, { type: 'number', onChange: this.changeMoile })
 	                            )
 	                        ),
 	                        _react2.default.createElement(
@@ -852,12 +1615,12 @@
 	                                        { name: '' },
 	                                        '\u5BC6\u7801'
 	                                    ), nested: 'input' },
-	                                _react2.default.createElement(_amazeuiTouch.Field, { type: 'password' })
+	                                _react2.default.createElement(_amazeuiTouch.Field, { type: 'password', onChange: this.changePassword })
 	                            )
 	                        ),
 	                        _react2.default.createElement(
 	                            _amazeuiTouch.Button,
-	                            { className: 'btn-yellow margin-top-xl padding-v' },
+	                            { className: 'btn-yellow margin-top-xl padding-v', onClick: this.subLogin },
 	                            '\u767B\u5F55'
 	                        ),
 	                        _react2.default.createElement(
@@ -891,7 +1654,125 @@
 	});
 
 /***/ },
-/* 15 */
+/* 20 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _alt = __webpack_require__(15);
+
+	var _alt2 = _interopRequireDefault(_alt);
+
+	var _LoginActions = __webpack_require__(21);
+
+	var _LoginActions2 = _interopRequireDefault(_LoginActions);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var LoginStore = function () {
+	    function LoginStore() {
+	        _classCallCheck(this, LoginStore);
+
+	        this.bindActions(_LoginActions2.default);
+	    }
+
+	    //用户登录--成功
+
+
+	    _createClass(LoginStore, [{
+	        key: 'onLoginSuccess',
+	        value: function onLoginSuccess(data) {
+	            console.info('onLoginSuccess', data);
+	            if (data.status) {
+	                alert('登录成功');
+	            } else {
+	                alert(data.msg);
+	            }
+	        }
+
+	        //用户登录--失败
+
+	    }, {
+	        key: 'onLoginFail',
+	        value: function onLoginFail(data) {
+	            console.info('onLoginFail', data);
+	            this.code = data.data;
+	        }
+	    }]);
+
+	    return LoginStore;
+	}();
+
+	exports.default = _alt2.default.createStore(LoginStore, 'LoginStore');
+
+/***/ },
+/* 21 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _alt = __webpack_require__(15);
+
+	var _alt2 = _interopRequireDefault(_alt);
+
+	var _jquery = __webpack_require__(13);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var LoginActions = function () {
+	    function LoginActions() {
+	        _classCallCheck(this, LoginActions);
+
+	        this.generateActions('loginSuccess', 'loginFail');
+	    }
+
+	    //用户登录
+
+
+	    _createClass(LoginActions, [{
+	        key: 'login',
+	        value: function login(data) {
+	            var _this = this;
+
+	            _jquery2.default.ajax({
+	                type: 'POST',
+	                dataType: 'json',
+	                contentType: 'application/json; charset=utf-8',
+	                url: '/app/user/login',
+	                data: JSON.stringify(data)
+	            }).done(function (data) {
+	                _this.loginSuccess(data);
+	            }).fail(function (jqXhr) {
+	                _this.LoginFail(jqXhr);
+	            });
+	        }
+	    }]);
+
+	    return LoginActions;
+	}();
+
+	exports.default = _alt2.default.createActions(LoginActions);
+
+/***/ },
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1015,7 +1896,7 @@
 	});
 
 /***/ },
-/* 16 */
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1150,7 +2031,7 @@
 	});
 
 /***/ },
-/* 17 */
+/* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1259,7 +2140,7 @@
 	});
 
 /***/ },
-/* 18 */
+/* 25 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1278,7 +2159,7 @@
 
 	var _Header3 = _interopRequireDefault(_Header2);
 
-	var _Server2 = __webpack_require__(19);
+	var _Server2 = __webpack_require__(26);
 
 	var _Server3 = _interopRequireDefault(_Server2);
 
@@ -1320,7 +2201,7 @@
 	});
 
 /***/ },
-/* 19 */
+/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1411,7 +2292,7 @@
 	exports.default = _Server;
 
 /***/ },
-/* 20 */
+/* 27 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1430,7 +2311,7 @@
 
 	var _Header3 = _interopRequireDefault(_Header2);
 
-	var _Require2 = __webpack_require__(21);
+	var _Require2 = __webpack_require__(28);
 
 	var _Require3 = _interopRequireDefault(_Require2);
 
@@ -1494,7 +2375,7 @@
 	});
 
 /***/ },
-/* 21 */
+/* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1585,7 +2466,7 @@
 	exports.default = _Require;
 
 /***/ },
-/* 22 */
+/* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1602,11 +2483,11 @@
 
 	var _amazeuiTouch = __webpack_require__(9);
 
-	var _HomeStore = __webpack_require__(23);
+	var _HomeStore = __webpack_require__(30);
 
 	var _HomeStore2 = _interopRequireDefault(_HomeStore);
 
-	var _HomeActions = __webpack_require__(26);
+	var _HomeActions = __webpack_require__(31);
 
 	var _HomeActions2 = _interopRequireDefault(_HomeActions);
 
@@ -1614,9 +2495,9 @@
 
 	var _Header3 = _interopRequireDefault(_Header2);
 
-	var _reactDynamicSwiper = __webpack_require__(27);
+	var _reactDynamicSwiper = __webpack_require__(32);
 
-	var _Moment2 = __webpack_require__(28);
+	var _Moment2 = __webpack_require__(33);
 
 	var _Moment3 = _interopRequireDefault(_Moment2);
 
@@ -2010,7 +2891,7 @@
 	exports.default = Home;
 
 /***/ },
-/* 23 */
+/* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2021,11 +2902,11 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _alt = __webpack_require__(24);
+	var _alt = __webpack_require__(15);
 
 	var _alt2 = _interopRequireDefault(_alt);
 
-	var _HomeActions = __webpack_require__(26);
+	var _HomeActions = __webpack_require__(31);
 
 	var _HomeActions2 = _interopRequireDefault(_HomeActions);
 
@@ -2101,31 +2982,7 @@
 	exports.default = _alt2.default.createStore(HomeStore, 'HomeStore');
 
 /***/ },
-/* 24 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _alt = __webpack_require__(25);
-
-	var _alt2 = _interopRequireDefault(_alt);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = new _alt2.default();
-
-/***/ },
-/* 25 */
-/***/ function(module, exports) {
-
-	module.exports = require("alt");
-
-/***/ },
-/* 26 */
+/* 31 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2136,7 +2993,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _alt = __webpack_require__(24);
+	var _alt = __webpack_require__(15);
 
 	var _alt2 = _interopRequireDefault(_alt);
 
@@ -2218,13 +3075,13 @@
 	exports.default = _alt2.default.createActions(HomeActions);
 
 /***/ },
-/* 27 */
+/* 32 */
 /***/ function(module, exports) {
 
 	module.exports = require("react-dynamic-swiper");
 
 /***/ },
-/* 28 */
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2316,7 +3173,7 @@
 	exports.default = _Moment;
 
 /***/ },
-/* 29 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2335,7 +3192,7 @@
 
 	var _Header3 = _interopRequireDefault(_Header2);
 
-	var _Server2 = __webpack_require__(19);
+	var _Server2 = __webpack_require__(26);
 
 	var _Server3 = _interopRequireDefault(_Server2);
 
@@ -2430,7 +3287,7 @@
 	});
 
 /***/ },
-/* 30 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2609,7 +3466,7 @@
 	});
 
 /***/ },
-/* 31 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2628,7 +3485,7 @@
 
 	var _Header3 = _interopRequireDefault(_Header2);
 
-	var _Require2 = __webpack_require__(21);
+	var _Require2 = __webpack_require__(28);
 
 	var _Require3 = _interopRequireDefault(_Require2);
 
@@ -2722,7 +3579,7 @@
 	});
 
 /***/ },
-/* 32 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2743,7 +3600,7 @@
 
 	var _Header3 = _interopRequireDefault(_Header2);
 
-	var _Comments2 = __webpack_require__(33);
+	var _Comments2 = __webpack_require__(38);
 
 	var _Comments3 = _interopRequireDefault(_Comments2);
 
@@ -3036,7 +3893,7 @@
 	exports.default = RequireInfo;
 
 /***/ },
-/* 33 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3109,7 +3966,7 @@
 	exports.default = _Comments;
 
 /***/ },
-/* 34 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3225,7 +4082,7 @@
 	exports.default = Search;
 
 /***/ },
-/* 35 */
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3385,7 +4242,7 @@
 	});
 
 /***/ },
-/* 36 */
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3651,7 +4508,7 @@
 	});
 
 /***/ },
-/* 37 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3751,7 +4608,7 @@
 	});
 
 /***/ },
-/* 38 */
+/* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3840,7 +4697,7 @@
 	});
 
 /***/ },
-/* 39 */
+/* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3983,7 +4840,7 @@
 	});
 
 /***/ },
-/* 40 */
+/* 45 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4000,7 +4857,7 @@
 
 	var _Header3 = _interopRequireDefault(_Header2);
 
-	var _Comments2 = __webpack_require__(33);
+	var _Comments2 = __webpack_require__(38);
 
 	var _Comments3 = _interopRequireDefault(_Comments2);
 
@@ -4142,7 +4999,7 @@
 	});
 
 /***/ },
-/* 41 */
+/* 46 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4276,7 +5133,7 @@
 	});
 
 /***/ },
-/* 42 */
+/* 47 */
 /***/ function(module, exports) {
 
 	module.exports = require("http-proxy-middleware");

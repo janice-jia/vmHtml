@@ -1088,6 +1088,32 @@ $color-ffffff: #ffffff;
                             height: 38px;
                             line-height: 38px;
                             font-weight: bold;
+                            width: 100%;
+                            overflow: hidden;
+                            h2 {
+                                a {
+                                }
+                                display: inline-block;
+                                font-weight: normal;
+                                max-width: 50%;
+                                height: 38px;
+                                line-height: 38px;
+                                overflow: hidden;
+                            }
+                            div[data-demdet="answer"] {
+                                display: inline-block;
+                                font-weight: normal;
+                                max-width: 50%;
+                                height: 38px;
+                                line-height: 38px;
+                                overflow: hidden;
+                                span {
+                                    color: #499af5;
+                                    a{
+                                        color: #499af5;
+                                    }
+                                }
+                            }
                         }
                     }
                     .artworkCom-con{

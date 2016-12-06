@@ -763,7 +763,27 @@
             .modal-infoComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-comR .artworkCom-name {
               height: 38px;
               line-height: 38px;
-              font-weight: bold; }
+              font-weight: bold;
+              width: 100%;
+              overflow: hidden; }
+              .modal-infoComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-comR .artworkCom-name h2 {
+                display: inline-block;
+                font-weight: normal;
+                max-width: 50%;
+                height: 38px;
+                line-height: 38px;
+                overflow: hidden; }
+              .modal-infoComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-comR .artworkCom-name div[data-demdet="answer"] {
+                display: inline-block;
+                font-weight: normal;
+                max-width: 50%;
+                height: 38px;
+                line-height: 38px;
+                overflow: hidden; }
+                .modal-infoComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-comR .artworkCom-name div[data-demdet="answer"] span {
+                  color: #499af5; }
+                  .modal-infoComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-comR .artworkCom-name div[data-demdet="answer"] span a {
+                    color: #499af5; }
           .modal-infoComic .artworkBox .artworkR .artworkCom-Box .artworkCom-com .artworkCom-con {
             padding-top: 20px;
             padding-bottom: 10px; }

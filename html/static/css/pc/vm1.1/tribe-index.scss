@@ -229,7 +229,7 @@ hr {
             padding-left: 20px;
             li{
                 width: 222px;
-                height: 367px;
+                height: 347px;
                 float: left;
                 background: $color-ffffff;
                 border: 1px solid $color-d7d7d7;
@@ -237,6 +237,9 @@ hr {
                 margin-bottom: 18px;
                 box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
                 position: relative;
+                &:hover{
+                    box-shadow: 0 0 18px rgba(0, 0, 0, 0.7);
+                }
                 .vm-tribe-con-img{
                     width: 220px;
                     height: 220px;
@@ -260,13 +263,15 @@ hr {
                     }
                 }
                 .vm-tribe-con-des{
-                    height: 45px;
+                    height: 25px;
                     overflow: hidden;
                     margin: 0 10px;
-                    padding: 0 15px;
+                    text-align: center;
                     line-height: 20px;
                     color: $color-06;
                     border-bottom: 1px solid #c2c2c2;
+                    white-space:nowrap;
+                    text-overflow:ellipsis;
                 }
                 .vm-tribe-con-view{
                     padding: 17px 10px 0 10px;

@@ -150,7 +150,7 @@ hr {
     padding-left: 20px; }
     .vm-tribe .vm-tribe-con ul li {
       width: 222px;
-      height: 367px;
+      height: 347px;
       float: left;
       background: #ffffff;
       border: 1px solid #d7d7d7;
@@ -158,6 +158,8 @@ hr {
       margin-bottom: 18px;
       box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
       position: relative; }
+      .vm-tribe .vm-tribe-con ul li:hover {
+        box-shadow: 0 0 18px rgba(0, 0, 0, 0.7); }
       .vm-tribe .vm-tribe-con ul li .vm-tribe-con-img {
         width: 220px;
         height: 220px; }
@@ -174,13 +176,15 @@ hr {
           font-size: 14px;
           color: #171717; }
       .vm-tribe .vm-tribe-con ul li .vm-tribe-con-des {
-        height: 45px;
+        height: 25px;
         overflow: hidden;
         margin: 0 10px;
-        padding: 0 15px;
+        text-align: center;
         line-height: 20px;
         color: #999999;
-        border-bottom: 1px solid #c2c2c2; }
+        border-bottom: 1px solid #c2c2c2;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
       .vm-tribe .vm-tribe-con ul li .vm-tribe-con-view {
         padding: 17px 10px 0 10px;
         color: #999999; }

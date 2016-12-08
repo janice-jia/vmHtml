@@ -946,6 +946,14 @@ $color-ffffff: #ffffff;
         }
         .userInfo {
             padding-bottom: 7px;
+            .tl{
+                a{
+                    text-decoration: none!important;
+                    &:hover{
+                        text-decoration: underline!important;
+                    }
+                }
+            }
             .jb {
                 a {
                     color: $color-06;
@@ -1249,12 +1257,14 @@ $color-ffffff: #ffffff;
                 li {
                     float: left;
                     margin-left: 40px;
+                    a{
+                        color: $color-06;
+                    }
                     b {
                         display: inline-block;
                         vertical-align: sub;
                         width: 15px;
                         height: 13px;
-
                         margin-right: 5px;
                     }
                     span {
@@ -1266,8 +1276,20 @@ $color-ffffff: #ffffff;
                     &.icon-msg b {
                         background-image: url("../../../images/pc/vm1.1/icon/icon-msg.png");
                     }
-                    &.icon-zan b {
-                        background-image: url("../../../images/pc/vm1.1/icon/icon-zan.png");
+                    &.icon-zan{
+                        position: relative;
+                        .addZan{
+                            width: 20px;
+                            text-align: center;
+                            position: absolute;
+                            bottom: 100%;
+                            left: 50%;
+                            margin: 0 0 0 -10px;
+                            color: $color-09;
+                        }
+                        b {
+                            background-image: url("../../../images/pc/vm1.1/icon/icon-zan.png");
+                        }
                     }
                 }
             }

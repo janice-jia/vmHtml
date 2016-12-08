@@ -90,7 +90,16 @@
         background: #f7f8fa; }
     .topic-wall .topic-wall-l .vm-topic-con .tp-list-header {
       border-top: 1px solid #b9c1c7;
+      position: relative;
       border-bottom: none; }
+      .topic-wall .topic-wall-l .vm-topic-con .tp-list-header:after {
+        content: '';
+        width: 615px;
+        border-bottom: 1px solid #dcdcdc;
+        position: absolute;
+        left: 30px;
+        bottom: 0;
+        margin: 0 auto; }
     .topic-wall .topic-wall-l .topicCon {
       background: #ffffff;
       box-shadow: 0 0 5px rgba(81, 81, 81, 0.2);

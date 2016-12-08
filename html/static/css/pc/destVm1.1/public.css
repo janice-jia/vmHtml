@@ -696,6 +696,10 @@
         height: 22px; }
     #mhp-header .footermsg .userInfo {
       padding-bottom: 7px; }
+      #mhp-header .footermsg .userInfo .tl a {
+        text-decoration: none !important; }
+        #mhp-header .footermsg .userInfo .tl a:hover {
+          text-decoration: underline !important; }
       #mhp-header .footermsg .userInfo .jb a {
         color: #999999; }
 
@@ -912,6 +916,8 @@
         .vm-topic-con > ul > li .tp-list-content .othermsg li {
           float: left;
           margin-left: 40px; }
+          .vm-topic-con > ul > li .tp-list-content .othermsg li a {
+            color: #999999; }
           .vm-topic-con > ul > li .tp-list-content .othermsg li b {
             display: inline-block;
             vertical-align: sub;
@@ -924,8 +930,18 @@
             background-image: url("../../../images/pc/vm1.1/icon/icon-eye.png"); }
           .vm-topic-con > ul > li .tp-list-content .othermsg li.icon-msg b {
             background-image: url("../../../images/pc/vm1.1/icon/icon-msg.png"); }
-          .vm-topic-con > ul > li .tp-list-content .othermsg li.icon-zan b {
-            background-image: url("../../../images/pc/vm1.1/icon/icon-zan.png"); }
+          .vm-topic-con > ul > li .tp-list-content .othermsg li.icon-zan {
+            position: relative; }
+            .vm-topic-con > ul > li .tp-list-content .othermsg li.icon-zan .addZan {
+              width: 20px;
+              text-align: center;
+              position: absolute;
+              bottom: 100%;
+              left: 50%;
+              margin: 0 0 0 -10px;
+              color: #e43f3f; }
+            .vm-topic-con > ul > li .tp-list-content .othermsg li.icon-zan b {
+              background-image: url("../../../images/pc/vm1.1/icon/icon-zan.png"); }
       .vm-topic-con > ul > li .tp-list-content .left-img-200 {
         float: left; }
         .vm-topic-con > ul > li .tp-list-content .left-img-200 img {

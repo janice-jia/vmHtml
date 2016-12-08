@@ -228,7 +228,13 @@
                                 <ul class="othermsg">
                                     <li class="icon-eye"><b></b>浏览<span>30999</span></li>
                                     <li class="icon-msg"><b></b>留言<span>30999</span></li>
-                                    <li class="icon-zan"><b></b>赞<span>30999</span></li>
+                                    <li class="icon-zan">
+                                        <a href="javascript:;" class="clickZan">
+                                            <b></b>赞
+                                            <span class="zanNum">30999</span>
+                                            <span class="addZan zcbl-hidden">+1</span>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </li>
@@ -251,7 +257,13 @@
                                 <ul class="othermsg">
                                     <li class="icon-eye"><b></b>浏览<span>30999</span></li>
                                     <li class="icon-msg"><b></b>留言<span>30999</span></li>
-                                    <li class="icon-zan"><b></b>赞<span>30999</span></li>
+                                    <li class="icon-zan">
+                                        <a href="javascript:;" class="clickZan">
+                                            <b></b>赞
+                                            <span class="zanNum">30999</span>
+                                            <span class="addZan zcbl-hidden">+1</span>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </li>
@@ -281,7 +293,13 @@
                                 <ul class="othermsg">
                                     <li class="icon-eye"><b></b>浏览<span>30999</span></li>
                                     <li class="icon-msg"><b></b>留言<span>30999</span></li>
-                                    <li class="icon-zan"><b></b>赞<span>30999</span></li>
+                                    <li class="icon-zan">
+                                        <a href="javascript:;" class="clickZan">
+                                            <b></b>赞
+                                            <span class="zanNum">30999</span>
+                                            <span class="addZan zcbl-hidden">+1</span>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </li>
@@ -793,6 +811,19 @@
     });
     $('.channel-close a').click(function(){
         $('.vn-add-channel').hide('slow');
+    });
+
+    //点赞+1效果
+    var timer = null;
+    $(".clickZan").click(function(){
+        var _this = $(this);
+        _this.find('.addZan').hide();
+        _this.find('.addZan').show('slow');
+        _this.find('.zanNum').html(parseInt(_this.find('.zanNum').html())+1);
+        clearTimeout(timer);
+        timer = setTimeout(function(){
+            _this.find('.addZan').hide('slow');
+        },2000);
     });
 </script>
 <script type="text/javascript">

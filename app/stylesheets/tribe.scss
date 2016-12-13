@@ -113,8 +113,10 @@ $color-border-01:#ddd;
         padding:0;
     }
     li{
+        @include line-clamp(1);
         list-style: none;
-        line-height: 26px;
+        line-height: 2.0em;
+        max-height: 2.0em;
         @extend .text-size-14;
         color: $text-color-3;
     }

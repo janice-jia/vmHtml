@@ -12,8 +12,8 @@ class LoginStore{
     onLoginSuccess(data){
         if(data.status) {
             alert('登录成功');
-            console.info(data.data);
-            sessionStorage.setItem('uid', data.data.uid);
+            //console.info(data.data);
+            localStorage.setItem('uid', data.data.uid);
             browserHistory.push('/user/'+data.data.uid);
         }else{
             alert(data.msg);
@@ -22,7 +22,7 @@ class LoginStore{
 
     //用户登录--失败
     onLoginFail(data){
-        console.info('onLoginFail',data);
+        //console.info('onLoginFail',data);
         this.code = data.data;
     }
 }

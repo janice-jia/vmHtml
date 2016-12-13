@@ -1,21 +1,8 @@
 import React from 'react';
 import _Header from './../components/_Header'
-import {
-    Container, Group, List, View, Badge,Grid,Col
-} from 'amazeui-touch';
-
-const albums = {
-        title: '原画部落',
-        media: 'http://lorempixel.com/160/160/people/',
-        subTitle: '123456',
-        desc: '一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介一句话简介',
-        personHref:"/tribe/person",
-        albumHref:"/tribe/album/01",
-
-};
-const listName=[
-  "原画CG部落规定","原画硬件设备：手绘板的参数调整","别停笔，一直画","【重要通知】关于最近删帖状况解释"
-];
+import {Container, Group, List, View, Badge, Grid, Col} from 'amazeui-touch';
+import TribeInfoActions from './../actions/TribeInfoActions'
+import TribeInfoStore from './../stores/TribeInfoStore'
 
 const topicList=[
     {
@@ -76,7 +63,40 @@ const tit = (
 const btn = <div className="home-tribe-tag">海贼王部落</div>
 
 
-export default React.createClass({
+class TribeInfo extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = TribeInfoStore.getState();
+        this.state.addDelTribeBtn = <button className="tribe-user-btn" onClick={this.addMember.bind(this)}>加入部落</button>;
+        this.onChange = this.onChange.bind(this);
+    }
+
+    componentDidMount(){
+        TribeInfoStore.listen(this.onChange);
+        TribeInfoActions.getTribeInfo(this.props.params.tribeId);
+        //console.info('this.state',this.state);
+    }
+
+    componentWillUnmount(){
+        TribeInfoStore.unlisten(this.onChange)
+    }
+
+    onChange(state){
+        this.setState(state);
+    }
+
+    //加入部落
+    addMember(){
+        this.state.addDelTribeBtn = <button className="tribe-user-btn" onClick={this.delMember.bind(this)}>退出部落</button>;
+        this.setState(this.state);
+    }
+
+    //退出部落
+    delMember(){
+        this.state.addDelTribeBtn = <button className="tribe-user-btn" onClick={this.addMember.bind(this)}>加入部落</button>;
+        this.setState(this.state);
+    }
+
     render() {
         return <View>
             <_Header></_Header>
@@ -85,31 +105,30 @@ export default React.createClass({
                     <List.Item
                         title={
                         <div className="tribe-user-name">
-                            <div className="item-title">{albums.title}</div>
-                            <div className="item-subtitle">族员：{albums.subTitle}</div>
-                            <div className="item-desc padding-right">{albums.desc}</div>
+                            <div className="item-title">{this.state.tribeInfo.title}</div>
+                            <div className="item-subtitle">族员：{this.state.tribeInfo.memberAmount}</div>
+                            <div className="item-desc padding-right">{this.state.tribeInfo.descript}</div>
                          </div>
                         }
-                        media={<img src={ albums.media }/>}
-                        after={<button className="tribe-user-btn">加入部落</button>}
+                        media={<img src={ this.state.tribeInfo.logo}/>}
+                        after={this.state.addDelTribeBtn}
                     />
                     <div className="tirbe-info-tab">
-                        <a href={albums.personHref}>族员</a>
+                        <a href="/tribe/person">族员</a>
                         <hr/>
-                        <a href={albums.albumHref}>相册</a>
+                        <a href="/tribe/album/01">相册</a>
                     </div>
                 </div>
                 <Group className="margin-v tribe-toTopList">
                     <ul>
-                        {listName.map((ln, i) => {
+                        {this.state.tribeInfo.topTopics.map((item, i) => {
                             return (
-                                <li className="icon-toTop" key={i}>{ln}</li>
-
+                                <li className="icon-toTop" key={i}>{item.title}</li>
                             );
                         })}
                     </ul>
                 </Group>
-                
+
                 <div className="tribe-topic-list">
 
                     {topicList.map((topic, i) => {
@@ -173,12 +192,14 @@ export default React.createClass({
                         );
                     })}
                 </div>
-                
+
 
 
             </Container>
         </View>
 
     }
-})
+}
+
+export default TribeInfo
 

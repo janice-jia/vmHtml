@@ -4,6 +4,7 @@ import {View, Container, Group, List, Grid, Col} from 'amazeui-touch';
 import _Header from './../components/_Header'
 import UserActions from './../actions/UserActions'
 import UserStore from './../stores/UserStore'
+import publicFn from '../publicFn'
 import $ from 'jquery'
 
 class User extends  React.Component{
@@ -11,14 +12,14 @@ class User extends  React.Component{
         super(props);
         this.state = UserStore.getState();
         this.onChange = this.onChange.bind(this);
-        this.state.uid = sessionStorage.uid;
+        this.state.uid = publicFn.getUser();
         this.state.userType = '他的';
     }
 
     componentDidMount(){
         UserStore.listen(this.onChange);
         var uid = this.props.params.uid;
-        if(uid == sessionStorage.uid){
+        if(uid == publicFn.getUser()){
             UserActions.getUser({uid:uid,password:''});
             this.state.userType = '我的';
             this.refs.btnAttention.remove();
@@ -51,6 +52,19 @@ class User extends  React.Component{
     onChange(state) {
         this.setState(state);
     }
+
+    testClick(){
+        console.info('this',this);
+        this.context.router.push({
+            pathname: '/user/info/' + this.state.uid,
+            query: {
+                nickName: this.state.userInfo.nickName,
+                birthday: this.state.userInfo.birthday,
+                city: this.state.userInfo.city,
+                desc: this.state.userInfo.desc
+            }
+        })
+    }
     render() {
         return (
             <View>
@@ -62,7 +76,7 @@ class User extends  React.Component{
                                 className="padding-v"
                                 media={
                                     <div className="user-avatar">
-                                        <a href={'/user/info/'+this.state.userInfo.uid}><img width="65" height="65" src={this.state.userInfo.avatar}/></a>
+                                        <a href='javascript:;' onClick={this.testClick.bind(this)}><img width="65" height="65" src={this.state.userInfo.avatar}/></a>
                                         <span className={this.state.genderF}></span>
                                         <span className={this.state.genderM}></span>
                                     </div>
@@ -109,13 +123,8 @@ class User extends  React.Component{
     }
 }
 
-
 User.contextTypes = {
-    user:React.PropTypes.string
-}
-
-User.defaultProps = {
-    color:'test'
+    router: React.PropTypes.object
 }
 
 export default User;

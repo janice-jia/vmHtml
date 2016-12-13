@@ -81,24 +81,28 @@ class Home extends React.Component {
                         <h5 className="home-group-header margin-sm">广场</h5>
                         <Grid align="between" className="padding-v-sm home-square-borderT">
                             <Col cols={3}>
+                                <a href="/require" className="text-color-3">
                                 <Grid>
                                     <Col className="home-square-img home-square-require" shrink>
                                     </Col>
                                     <Col className="home-square-btn">
-                                        <a className="btn-gray" href="/require">需求</a>
+                                        <span className="btn-gray" >需求</span>
                                         <p>为专业团队提供对接服务</p>
                                     </Col>
                                 </Grid>
+                                </a>
                             </Col>
                             <Col cols={3} className="home-square-borderL">
+                                <a href="/server" className="text-color-3">
                                 <Grid>
                                     <Col className="home-square-img home-square-server" shrink>
                                     </Col>
                                     <Col className="home-square-btn">
-                                        <a className="btn-gray" href="server">服务</a>
+                                        <span className="btn-gray">服务</span>
                                         <p>原创人网上个性化空间</p>
                                     </Col>
                                 </Grid>
+                                </a>
                             </Col>
                         </Grid>
                     </Group>
@@ -127,7 +131,7 @@ class Home extends React.Component {
                                     return <Group noPadded className="margin-v bgF border-d7d7d7" key={i}>
                                         <List.Item
                                             media={<a href={'/user/'+item.uid}><img className="home-topic-media" width="44" height="44" src={item.userAvatar} /></a>}
-                                            after={<div className="home-topic-tag"><a href={'/tribe/info/'+item.tribesId}></a>{item.tribeName}</div>}
+                                            after={<div className="home-topic-tag text-color-2"><a href={'/tribe/info/'+item.tribesId}>{item.tribeName}</a></div>}
                                             title={<div className="home-topic-item">
                                                 <p className="text-color-3 text-size-14"><a href={'/user/'+item.uid}>{item.userName}</a></p>
                                                 <p className="text-color-4 text-size-13"><_Moment momentTime={item.createTime}></_Moment></p>

@@ -34,7 +34,7 @@ import Search from './page/Search'
 
 //tribe  module
 import Tribe from './page/Tribe'
-import TribeInfo from './page/Tribeinfo'
+import TribeInfo from './page/TribeInfo'
 import TribeAlbum from './page/TribeAlbum'
 import TribeAlbumInfo from './page/TribeAlbumInfo'
 import TribeImgCom from './page/TribeImgCom'

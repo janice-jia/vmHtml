@@ -27,10 +27,5 @@ module.exports = {
             {test: /\.woff|\.woff2|\.svg|.eot|\.ttf/, loader: 'url-loader?prefix=font/&limit=10000'},
             {test: /\.(jpg|png)$/,loader: 'url-loader?prefix=font/&limit=10000'}
         ]
-    },
-    plugins: [
-        new htmlWebpackPlugin({
-            title: 'vmking',
-        }),
-    ]
+    }
 }

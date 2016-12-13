@@ -6,8 +6,9 @@ class UserInfo extends React.Component{
 
     constructor(props){
         super(props);
-        console.info('props',props);
-        console.info('this.context',this.context);
+        //console.info('props',props);
+        //console.info('this.props',this.props);
+        //console.info('this.location',this.location);
     }
 
     render() {
@@ -18,22 +19,22 @@ class UserInfo extends React.Component{
                     <Group noPadded className="bgNone  userInfo margin-0">
                         <List className="padding-0">
                             <List.Item key="1" media={<Icon name="">用户名</Icon>}>
-                                <p>明明</p>
+                                <p>{this.props.location.query.nickName}</p>
                             </List.Item>
                         </List>
                         <List>
                             <List.Item key="1" media={<Icon name="">年龄</Icon>}>
-                                <p>22</p>
+                                <p>{this.props.location.query.birthday ? this.props.location.query.birthday : '未知'}</p>
                             </List.Item>
                         </List>
                         <List>
                             <List.Item key="1" media={<Icon name="">所在地区</Icon>}>
-                                <p>北京</p>
+                                <p>{this.props.location.query.city ? this.props.location.query.city : '未知'}</p>
                             </List.Item>
                         </List>
                         <List>
                             <List.Item key="1" media={<Icon name="">个人简介</Icon>}>
-                                <p>个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介</p>
+                                <p>{this.props.location.query.desc ? this.props.location.query.desc : '未填写'}</p>
                             </List.Item>
                         </List>
                     </Group>

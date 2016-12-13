@@ -2,36 +2,44 @@ import React from 'react'
 import { browserHistory, Link } from 'react-router'
 import NavLink from './../page/NavLink'
 import {NavBar, OffCanvasTrigger, OffCanvas, List, TabBar, Notification, Field, Group, Grid, Col, Button, Icon} from 'amazeui-touch'
+import publicFn from '../publicFn'
+import UserStore from '../stores/UserStore'
+import UserActions from '../actions/UserActions'
 
 //公用头部组件
 class _Header extends React.Component {
     constructor(props) {
         super(props);
+        this.state = UserStore.getState();
+        this.onChange = this.onChange.bind(this);
+        console.info('constructorthis.state',this.state);
         //判断当前是否在搜索页，如果是搜索页则默认显示搜索导航条
         if (this.props.isSearch) {
-            this.state = {
-                visible: true,
-                searchVal: this.props.searchVal,
-            };
+            this.state.visible = true;
+            this.state.searchVal = this.props.searchVal;
         } else {
-            this.state = {
-                visible: false,
-                searchVal: '',
-            };
+            this.state.visible = false;
+            this.state.searchVal = '';
         }
-        if(sessionStorage.uid){
+        if(publicFn.isUser()){
+            this.state.uid = publicFn.getUser();
             this.state.showLogin = 'hidden';
             this.state.showUser = '';
         }else{
             this.state.showLogin = '';
             this.state.showUser = 'hidden';
         }
-        this.state.uid = sessionStorage.uid;
-        this.onChange = this.onChange.bind(this);
     }
 
     componentDidMount() {
+        UserStore.listen(this.onChange);
+        if(publicFn.isUser() && this.state.uid){
+            UserActions.getUser({uid:this.state.uid});
+        }
+    }
 
+    componentWillUnmount() {
+        UserStore.unlisten(this.onChange);
     }
 
     //打开搜索
@@ -111,7 +119,7 @@ class _Header extends React.Component {
                         </Group>
                         <Group className={'header-login bgNone margin-0 '+ this.state.showUser}>
                             <div className="header-user-avatar margin-v">
-                                <a href={'/user/'+this.state.uid}><img src="http://s.amazeui.org/media/i/demos/bing-2.jpg" height="50" width="50" alt=""/></a>
+                                <a href={'/user/'+this.state.uid}><img src={this.state.userInfo.avatar} height="50" width="50" alt=""/></a>
                             </div>
                             <div className="header-user-name text-color-7 text-size-16"><a href={'/user/'+this.state.uid}>用户名用户名</a></div>
                         </Group>

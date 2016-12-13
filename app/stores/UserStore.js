@@ -2,7 +2,7 @@ import alt from '../alt'
 import UserActions from '../actions/UserActions'
 import {browserHistory} from 'react-router'
 
-class LoginStore{
+class UserStore{
     constructor() {
         this.bindActions(UserActions);
         this.userInfo = {};
@@ -40,4 +40,4 @@ class LoginStore{
     }
 }
 
-export default alt.createStore(LoginStore, 'LoginStore');
+export default alt.createStore(UserStore, 'UserStore');

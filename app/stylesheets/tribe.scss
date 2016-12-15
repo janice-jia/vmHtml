@@ -23,6 +23,7 @@ $color-border-01:#ddd;
             .item-title{
                 margin-bottom: $xs;
                 font-weight: bold;
+                @extend .text-size-13;
                 @extend .text-size-14;
             }
             .item-subtitle{
@@ -50,10 +51,12 @@ $color-border-01:#ddd;
 .tribe-info-user{
     border-bottom: 1px solid $border-color-1;
     .item-media{
-        width:60px;
-        height: 60px;
+        width:44px;
+        height: 44px;
         border: 1px solid $color-border-01;
+        border-radius: 50%;
         img{
+            border-radius: 50%;
             width: 100%;
             height: 100%;
         }
@@ -78,32 +81,40 @@ $color-border-01:#ddd;
             padding-right: 30px;
         }
     }
-    .tribe-user-btn{
+    .tribe-addMember-btn{
         border: 1px solid $border-color-5;
         padding:$sm;
         @extend .text-color-5;
         @extend .text-size-12;
     }
+    .tribe-delMember-btn{
+        border: 1px solid $border-color-1;
+        padding:$sm;
+        @extend .text-color-2;
+        @extend .text-size-12;
+    }
 
     .tirbe-info-tab{
-        text-align: center;
-        //p{
-        //    display: inline-block;
-        //    width: 49%;
-        //    margin: 0;
-        //}
         a{
-            display: inline-block;
-            width: 49%;
-            @extend .text-size-14;
-            @extend .text-color-3;
-        }
-        hr{
+            text-align: center;
             display: inline-block;
             height: 25px;
-            margin: $sm 0;
-            border-right-width:1px;
-            vertical-align: middle;
+            line-height: 25px;
+            width: 100%;
+            @extend .margin-v-sm;
+            @extend .text-size-14;
+            @extend .text-color-3;
+            position: relative;
+            border-left:1px solid $border-color-1;
+            &.border-none{
+                border: none;
+            }
+        }
+        .swiper-wrapper{
+            display: flex;
+            .swiper-slide{
+                flex: 1 1 auto;
+            }
         }
     }
 }
@@ -205,8 +216,8 @@ $color-border-01:#ddd;
 .tribe-topic{
     //部落名称
     .tribe-tribe-btn{
-        border: 1px solid $border-color-4;
-        padding:$sm;
+        border: 1px solid $border-color-1;
+        padding: $xs;
         @extend .text-color-2;
         @extend .text-size-13;
     }
@@ -230,6 +241,42 @@ $color-border-01:#ddd;
     }
 
 
+}
+
+//部落族员
+.member{
+    .member-tit{
+        font-weight: normal;
+    }
+    .border-top{
+        border-top: 1px solid $border-color-7;
+    }
+    .member-list{
+        .item-media{
+            width: 44px;
+            height: 44px;
+            img{
+                max-width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+        .icon-right-nav{
+            display: none;
+        }
+        .item-main{
+            .item-title{
+                @include line-clamp(1);
+                @extend .text-size-14;
+                @extend .text-color-3;
+            }
+            .item-subtitle{
+                @include line-clamp(1);
+                @extend .text-size-13;
+                @extend .text-color-4;
+            }
+        }
+    }
 }
 
 

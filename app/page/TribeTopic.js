@@ -1,9 +1,10 @@
 import React from 'react';
 import _Header from './../components/_Header'
 import _Comments from './../components/_Comments'
-import {
-    Container,Group,List,View,Badge,Grid, Col,
-} from 'amazeui-touch';
+import {Container, Group, List, View, Badge, Grid, Col} from 'amazeui-touch';
+import TribeTopicActions from './../actions/TribeTopicActions'
+import TribeTopicStore from './../stores/TribeTopicStore'
+
 
 const albums = [
     {
@@ -45,7 +46,23 @@ const commentList = [
     }
 ];
 
-export default React.createClass({
+class TribeTopic extends React.Component{
+    constructor(pops){
+        super(pops);
+        this.state = TribeTopicStore.getState();
+        this.onChange = this.onChange.bind(this);
+    }
+    componentDidMount(){
+        TribeTopicStore.listen(this.onChange);
+        TribeTopicActions.getTopicInfo()
+    }
+
+    componentWillUnmount(){
+        TribeTopicStore.unlisten(this.onChange)
+    }
+    onChange(state){
+        this.setState(state);
+    }
     render() {
         return <View>
             <_Header></_Header>
@@ -71,17 +88,7 @@ export default React.createClass({
                         );
                     })}
                 </div>
-                <Group className="topic-box">
-                        <h1 className="topic-title">标题名称标题名称标题</h1>
-                        <p className="topic-p">
-                            《守望先锋》动画系列最新一集动画系列最新一集动画系列最新一集动画系列最新一集动画系列最新一集动画系列最新一集动画系列最新一集动画系列最新一集动画系列最新一集动画系列最新一集动画系列最新一集动画系列最新一集动画系列最新一集动画系列最新一集动画系列最新一集动画系列最新一集
-                        </p>
-                        <div className="topic-img">
-                            <img src="http://lorempixel.com/160/160/people/" alt=""/>
-                        </div>
-                </Group>
-
-
+                <iframe src={'http://test.vmaking.com/tribe/theme/'+this.props.params.topicId} frameBorder="0" width="100%" height="100%"></iframe>
                 <Group noPadded className="margin-v">
                     <div className="padding-top require-badge">
                         <p className="text-size-14">
@@ -102,5 +109,6 @@ export default React.createClass({
         </View>
 
     }
-})
+}
+export default TribeTopic;
 

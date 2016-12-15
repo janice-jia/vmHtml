@@ -12,7 +12,6 @@ class _Header extends React.Component {
         super(props);
         this.state = UserStore.getState();
         this.onChange = this.onChange.bind(this);
-        console.info('constructorthis.state',this.state);
         //判断当前是否在搜索页，如果是搜索页则默认显示搜索导航条
         if (this.props.isSearch) {
             this.state.visible = true;

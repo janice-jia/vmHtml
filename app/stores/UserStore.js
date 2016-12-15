@@ -11,7 +11,7 @@ class UserStore{
     //当前用户信息--成功
     onGetUserSuccess(data){
         if(data.status) {
-            console.info('onGetUserSuccess',data);
+            //console.info('onGetUserSuccess',data);
             this.userInfo = data.data;
         }else{
             alert(data.msg);
@@ -19,7 +19,7 @@ class UserStore{
     }
     //当前用户信息--失败
     onGetUserFail(data){
-        console.info('onGetUserFail',data);
+        //console.info('onGetUserFail',data);
         this.userInfo = {};
     }
 

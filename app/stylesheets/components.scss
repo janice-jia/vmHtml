@@ -3,7 +3,9 @@
 .navbar{
     background: $color-4;
 }
-
+.border-d7d7d7{
+    border: 1px solid $border-color-1;
+}
 .header{
     .navbar-left{
         .leftNav{
@@ -214,5 +216,57 @@
                 @extend .text-size-14;
             }
         }
+    }
+}
+
+//话题item
+.comp-topic-list{
+    .list{
+        background: none;
+    }
+    .home-topic-media{
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+    }
+    .home-topic-tag{
+        border: 1px solid $border-color-1;
+        padding: 0 $sm;
+    }
+    .home-topic-item{
+        p{
+            line-height: 1.5;
+            height: 1.5rem;
+            overflow: hidden;
+            margin: 0;
+        }
+    }
+    .item{
+        border: none;
+    }
+    .home-topic-tit{
+        @include line-clamp(1);
+    }
+    .home-topic-desc{
+        @include line-clamp();
+    }
+
+    .home-icon-view{
+        width: 18px;
+        height: 11px;
+        background: url("../public/img/home/home_watch_icon.png") no-repeat;
+        background-size: 18px 11px;
+    }
+    .home-icon-fabulous{
+        width: 12px;
+        height: 12px;
+        background: url("../public/img/home/home_fabulous_icon.png") no-repeat;
+        background-size: 12px 12px;
+    }
+    .home-icon-comment{
+        width: 14px;
+        height: 12px;
+        background: url("../public/img/home/home_comment_icon.png") no-repeat;
+        background-size: 14px 12px;
     }
 }

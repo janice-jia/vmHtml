@@ -2,7 +2,7 @@ import React from 'react'
 import {List, Grid, Col} from 'amazeui-touch'
 
 
-//公用需求列表组件
+//公用部落列表组件
 class _Tribe extends React.Component {
     componentDidMount(){
         console.info('this.props',this.props);

@@ -19,10 +19,10 @@
             background-repeat: no-repeat;
         }
         .user-woman{
-            background-image: url("../public/img/me/me_men_icon.png");
+            background-image: url("../public/img/me/me_women_icon.png");
         }
         .user-man{
-            background-image: url("../public/img/me/me_women_icon.png");
+            background-image: url("../public/img/me/me_men_icon.png");
         }
     }
     .item-title{
@@ -66,24 +66,24 @@
     .userNav-bl{
         @extend .extend-userNav-icon;
         background: url("../public/img/me/me_tribe_icon.png") no-repeat;
-        background-size: 20px 20px;
+        background-size: 17px 20px;
     }
     .userNav-ht{
         width: 22px;
         @extend .extend-userNav-icon;
         background: url("../public/img/me/me_topic_icon.png") no-repeat;
-        background-size: 22px 20px;
+        background-size: 19px 20px;
     }
     .userNav-xq{
-        height: 17px;
+        height: 20px;
         @extend .extend-userNav-icon;
         background: url("../public/img/me/me_demand_icon.png") no-repeat;
-        background-size: 20px 17px;
+        background-size: 20px 20px;
     }
     .userNav-fw{
         @extend .extend-userNav-icon;
         background: url("../public/img/me/me_service_icon.png") no-repeat;
-        background-size: 20px 17px;
+        background-size: 22px 19px;
     }
 }
 /*用户首页  end*/

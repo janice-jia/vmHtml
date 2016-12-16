@@ -1,5 +1,6 @@
 import alt from '../alt'
 import $ from 'jquery'
+import publicFn from '../publicFn'
 
 class UserActions {
     constructor() {
@@ -7,7 +8,11 @@ class UserActions {
             'getUserSuccess',
             'getUserFail',
             'getLookUserSuccess',
-            'getLookUserFail'
+            'getLookUserFail',
+            'attentionUserSuccess',
+            'attentionUserFail',
+            'attentionCancelSuccess',
+            'attentionCancelFail'
         );
     }
 
@@ -31,13 +36,47 @@ class UserActions {
         $.ajax({
                 type: 'Get',
                 url: '/app/user/look/'+uid+'/infos',
-                data:{lookUid:uid}
+                data:{lookUid:publicFn.getUser()}
             })
             .done((data) => {
                 this.getLookUserSuccess(data);
             })
             .fail((jqXhr) => {
                 this.getUserFail(jqXhr);
+            });
+    }
+
+    //关注某人
+    attentionUser(uid){
+        $.ajax({
+                type: 'Get',
+                url: '/app/user/attention/'+uid+'/',
+                data:{
+                    "attentionId":publicFn.getUser()
+                }
+            })
+            .done((data) => {
+                this.attentionUserSuccess(data);
+            })
+            .fail((jqXhr) => {
+                this.attentionUserFail(jqXhr);
+            });
+    }
+
+    //关注某人
+    attentionCancel(uid){
+        $.ajax({
+                type: 'Get',
+                url: '/app/user/attention/cancel/'+uid+'/',
+                data:{
+                    "attentionId":publicFn.getUser()
+                }
+            })
+            .done((data) => {
+                this.attentionCancelSuccess(data);
+            })
+            .fail((jqXhr) => {
+                this.attentionCancelFail(jqXhr);
             });
     }
 }

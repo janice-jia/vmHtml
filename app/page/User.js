@@ -13,35 +13,21 @@ class User extends  React.Component{
         this.state = UserStore.getState();
         this.onChange = this.onChange.bind(this);
         this.state.uid = publicFn.getUser();
-        this.state.userType = '他的';
+        this.state.userType = '';
+        this.state.uid = this.props.params.uid;
     }
 
     componentDidMount(){
         UserStore.listen(this.onChange);
-        var uid = this.props.params.uid;
-        if(uid == publicFn.getUser()){
-            UserActions.getUser({uid:uid,password:''});
-            this.state.userType = '我的';
+
+        if(this.state.uid == publicFn.getUser()){
+            //查看自己
+            UserActions.getUser({uid:this.state.uid,password:''});
+            //当前用户为自己移除关注按钮
             this.refs.btnAttention.remove();
         }else{
-            UserActions.getLookUser(uid);
-            if(this.state.gender == 'F'){
-                this.state.userType = '他的';
-            }else if(this.state.gender == 'M'){
-                this.state.userType = '她的';
-            }else{
-                this.state.userType = '他的';
-            }
-        }
-        if(this.state.gender == 'F'){
-            this.state.genderF = 'user-man';
-            this.state.genderM = 'hidden';
-        }else if(this.state.gender == 'M'){
-            this.state.genderF = 'hidden';
-            this.state.genderM = 'user-woman';
-        }else{
-            this.state.genderF = 'hidden';
-            this.state.genderM = 'hidden';
+            //查看他人
+            UserActions.getLookUser(this.state.uid);
         }
     }
 
@@ -53,8 +39,8 @@ class User extends  React.Component{
         this.setState(state);
     }
 
-    testClick(){
-        console.info('this',this);
+    _lookUserInfo(){
+        //console.info('this',this);
         this.context.router.push({
             pathname: '/user/info/' + this.state.uid,
             query: {
@@ -65,6 +51,27 @@ class User extends  React.Component{
             }
         })
     }
+
+    //关注
+    _attentionUser(event){
+        event.preventDefault();
+        if(publicFn.isUser()){
+            UserActions.attentionUser(this.state.userInfo.uid);
+        }else{
+            alert('您还没有登录');
+        }
+    }
+
+    //取消关注
+    _attentionCancel(event){
+        event.preventDefault();
+        if(publicFn.isUser()){
+            UserActions.attentionCancel(this.state.userInfo.uid);
+        }else{
+            alert('您还没有登录');
+        }
+    }
+
     render() {
         return (
             <View>
@@ -75,13 +82,14 @@ class User extends  React.Component{
                             <List.Item
                                 className="padding-v"
                                 media={
-                                    <div className="user-avatar">
-                                        <a href='javascript:;' onClick={this.testClick.bind(this)}><img width="65" height="65" src={this.state.userInfo.avatar}/></a>
-                                        <span className={this.state.genderF}></span>
-                                        <span className={this.state.genderM}></span>
+                                    <a href="javascript:;" onClick={this._lookUserInfo.bind(this)}><div className="user-avatar">
+                                        <img width="65" height="65" src={this.state.userInfo.avatar}/>
+                                        <span className={this.state.userInfo.gender == 'F' ? 'user-woman' : ''}></span>
+                                        <span className={this.state.userInfo.gender == 'M' ? 'user-man' : ''}></span>
                                     </div>
+                                    </a>
                                 }
-                                after={<button ref="btnAttention" className="btn-yellow">关注</button>}
+                                after={this.state.userInfo.isAttention ? <button ref="btnAttention" className="btn-white" onClick={this._attentionCancel.bind(this)}>已关注</button> : <button ref="btnAttention" className="btn-yellow" onClick={this._attentionUser.bind(this)}>关注</button>}
                                 title={this.state.userInfo.nickName}
                             />
                         </List>
@@ -104,14 +112,14 @@ class User extends  React.Component{
                     </Group>
                     <Group noPadded className="margin-v userNav">
                         <List>
-                            <List.Item href="#" title={this.state.userType+'部落'} media={<span className="userNav-bl"></span>}/>
-                            <List.Item href="#" title={this.state.userType+'话题'} media={<span className="userNav-ht"></span>}/>
+                            <List.Item href="#" title= {this.state.uid == publicFn.getUser() ? '我的部落' : (this.state.userInfo.gender == 'F' ? '她的部落': '他的部落')} media={<span className="userNav-bl"></span>}/>
+                            <List.Item href="#" title={this.state.uid == publicFn.getUser() ? '我的话题' : (this.state.userInfo.gender == 'F' ? '她的话题': '他的话题')} media={<span className="userNav-ht"></span>}/>
                         </List>
                     </Group>
                     <Group noPadded className="margin-0 userNav">
                         <List>
-                            <List.Item href="/user/require/01" title={this.state.userType+'需求'} media={<span className="userNav-xq"></span>}/>
-                            <List.Item href="/user/server/01" title={this.state.userType+'服务'} media={<span className="userNav-fw"></span>}/>
+                            <List.Item href="/user/require/01" title={this.state.uid == publicFn.getUser() ? '我的需求' : (this.state.userInfo.gender == 'F' ? '她的需求': '他的需求')} media={<span className="userNav-xq"></span>}/>
+                            <List.Item href="/user/server/01" title={this.state.uid == publicFn.getUser() ? '我的服务' : (this.state.userInfo.gender == 'F' ? '她的服务': '他的服务')} media={<span className="userNav-fw"></span>}/>
                         </List>
                     </Group>
                 </Container>

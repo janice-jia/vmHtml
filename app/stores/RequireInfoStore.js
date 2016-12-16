@@ -30,9 +30,8 @@ class RequireInfoStore{
     //关注某人--成功
     onAttentionUserSuccess(data){
         if(data.status) {
-            console.info('onAttentionUserSuccess',data);
+            //console.info('onAttentionUserSuccess',data);
             this.requireInfo.isAttention = true;
-            console.info('this.requireInfo',this.requireInfo);
         }else{
             this.requireInfo.isAttention = false;
         }
@@ -47,9 +46,8 @@ class RequireInfoStore{
     //取消关注--成功
     onAttentionCancelSuccess(data){
         if(data.status) {
-            console.info('onAttentionCancelSuccess',data);
+            //console.info('onAttentionCancelSuccess',data);
             this.requireInfo.isAttention = false;
-            console.info('this.requireInfo',this.requireInfo);
         }else{
             this.requireInfo.isAttention = true;
         }

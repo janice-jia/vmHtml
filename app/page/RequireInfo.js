@@ -74,7 +74,11 @@ class RequireInfo extends React.Component{
     //取消关注
     attentionCancel(event){
         event.preventDefault();
-        RequireInfoActions.attentionCancel(this.state.requireInfo.userInfo.uid);
+        if(publicFn.isUser()){
+            RequireInfoActions.attentionCancel(this.state.requireInfo.userInfo.uid);
+        }else{
+            alert('您还没有登录');
+        }
     }
 
     render() {

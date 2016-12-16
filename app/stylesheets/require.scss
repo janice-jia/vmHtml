@@ -31,6 +31,11 @@
         height: 44px;
         border-radius: 50%;
     }
+
+    .icon-right-nav{
+        display: none;
+    }
+
     .require-user-name{
         p{
             line-height: 1.5;
@@ -39,10 +44,16 @@
             margin: 0;
         }
     }
-    .require-user-tag{
+    .attentionUser{
         border: 1px solid $border-color-3;
         padding: 0 $sm;
         @extend .text-color-3;
+        @extend .text-size-14;
+    }
+    .attentionCancel{
+        border: 1px solid $border-color-2;
+        padding: 0 $sm;
+        @extend .text-color-2;
         @extend .text-size-14;
     }
 }

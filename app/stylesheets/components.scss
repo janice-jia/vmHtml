@@ -159,7 +159,7 @@
             border: 1px solid $border-color-1;
         }
         .item-desc {
-            @include line-clamp(3);
+            @include line-clamp(2);
             @extend .text-size-12;
             line-height: 1.5em;
             max-height: 4.5em;
@@ -188,9 +188,35 @@
 
 //服务列表样式
 .serverList{
+    .mt-1{
+        margin-top: -1px;
+    }
+    .server-user{
+        border: none;
+        .server-user-con{
+            border-bottom: 1px solid $border-color-1;
+        }
+    }
+    .server-user-img{
+        height: 44px;
+        width: 44px;
+        border-radius: 50%;
+        img{
+            border-radius: 50%;
+            height: 44px;
+            width: 44px;
+        }
+    }
+    .server-user-p{
+        @include line-clamp(1);
+        line-height: 44px;
+        max-height: 44px;
+    }
     .list{
+        background: none;
         .item{
-            border: 1px solid $border-color-1;
+            @extend .margin-bottom;
+            border: none;
         }
         .item-desc{
             @include line-clamp(3);
@@ -206,6 +232,7 @@
         .item-subtitle{
             color: $color-1;
             @extend .text-size-12;
+            @include line-clamp(1);
         }
         .item-title-row{
             .icon{

@@ -1,11 +1,15 @@
 /*服务列表  start*/
 .server-tabs-list{
     border-bottom:1px solid $border-color-1;
+    .tabs{
+        background: none!important;
+    }
     .tabs-nav{
+        border-bottom: 1px solid $border-color-1;
         button{
             border: none;
             color: $text-color-3;
-            background: none;
+            background: #ffffff;
             &:hover{
                 border: none;
                 background: none;
@@ -13,7 +17,7 @@
             }
         }
         button.active{
-            background: none;
+            background: #ffffff;
             border: none;
             border-bottom: 2px solid $color-1;
             color: $color-1;

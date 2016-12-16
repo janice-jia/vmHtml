@@ -11,83 +11,41 @@ import {
 } from 'amazeui-touch';
 import _Header from './../components/_Header';
 import _Require from '../components/_Require'
+import RequireActions from '../actions/RequireActions'
+import RequireStore from '../stores/RequireStore'
 
-
-//个人需求数据
-const personalList = [
-    {
-        title: '12345元',
-        subTitle: '名称',
-        href: '/require/info/01',
-        desc: '需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述',
-        target: '_blank',
-        after:'保证金300元',
-        bottomLeft:'招募创作人',
-        bottomRight:'剩余50天'
-    },
-    {
-        title: "女爵",
-        subTitle: "发行公司：环球唱片",
-        href: "/require/info/01",
-        desc: "需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述",
-        target: "_blank",
-        bottomLeft:'征集作品',
-        bottomRight:'剩余50天'
+class Require extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = RequireStore.getState();
+        this.state.currentPage = 1;
+        this.state.itemsPerPage = 10;
+        this.onChange = this.onChange.bind(this);
     }
-];
 
-//工作室需求数据
-const studioList = [
-    {
-        title: "女爵",
-        subTitle: "发行公司：环球唱片",
-        href: "/require/info/01",
-        desc: "111",
-        target: "_blank",
-        bottomLeft:'交易成功',
-        bottomRight:'北京'
+    componentDidMount(){
+        RequireStore.listen(this.onChange);
+        RequireActions.getRuquireList({currentPage: this.state.currentPage,itemsPerPage: this.state.itemsPerPage})
     }
-];
 
-//企业需求数据
-const companyList = [
-    {
-        title: "女爵",
-        subTitle: "发行公司：环球唱片",
-        href: "/require/info/01",
-        desc: "111",
-        target: "_blank",
-        bottomLeft:'交易成功',
-        bottomRight:'北京'
+    componentWillUnmount() {
+        RequireStore.unlisten(this.onChange);
     }
-];
-export default React.createClass({
-    getInitialState: function(){
-        return {}
-    },
+
+    onChange(state) {
+        this.setState(state);
+    }
     render() {
         return <View>
             <_Header/>
             <Container scrollable>
                 <div className="require-tabs-list">
-                    <Tabs activeKey={this.state.activeTab} onAction={this.handleAction} className="margin-0">
-                        <Tabs.Item title='个人' key='1' className="padding-0">
-                            <_Require requireList={personalList}></_Require>
-                        </Tabs.Item>
-                        <Tabs.Item title='工作室' key='2' className="padding-0">
-                            <_Require requireList={studioList}></_Require>
-
-                        </Tabs.Item>
-                        <Tabs.Item title='企业' key='3' className="padding-0">
-                            <List className="margin-top-0">
-                                <_Require requireList={companyList}></_Require>
-                            </List>
-                        </Tabs.Item>
-                    </Tabs>
+                    <_Require requireList={this.state.requireList}></_Require>
                 </div>
             </Container>
         </View>;
     }
-})
+}
+export default Require;
 
 

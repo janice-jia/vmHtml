@@ -1,6 +1,6 @@
 import React from 'react'
 import {Group, List, Grid, Col} from 'amazeui-touch'
-import _Moment from '../components/_Moment'
+import publicFn from '../publicFn'
 
 
 //公用话题列表组件
@@ -19,7 +19,7 @@ class _Topic extends React.Component {
                                 after={<div className={this.props.showTribe ? 'home-topic-tag text-color-2' : 'hidden'}><a href={'/tribe/info/'+item.tribesId}>{item.tribeName}</a></div>}
                                 title={<div className="home-topic-item">
                                                 <p className="text-color-3 text-size-14"><a href={'/user/'+item.uid}>{item.userName}</a></p>
-                                                <p className="text-color-4 text-size-13"><_Moment momentTime={item.createTime}></_Moment></p>
+                                                <p className="text-color-4 text-size-13">{publicFn.getFromNow(item.createTime)}</p>
                                             </div>}
                             />
                             <div className="padding-h margin-v-xs">

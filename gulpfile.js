@@ -28,7 +28,8 @@ gulp.task('default', [
     'styles-denghuo',
     'styles-yiyingjuquan',
     'styles-tanqingshuoan',
-    'styles-yongwuzhijing'
+    'styles-yongwuzhijing',
+    'styles-youjianlaoganbu'
 ],function(){
 
 });
@@ -45,7 +46,8 @@ gulp.task('server', function() {
                 "./zt/denghuo",
                 "./zt/yiyingjuquan",
                 "./zt/yiyingjuquan",
-                "./zt/yongwuzhijing"
+                "./zt/yongwuzhijing",
+                "./zt/youjianlaoganbu"
             ]
         }
     });
@@ -68,6 +70,7 @@ gulp.task("watch",['server'], function(){
     gulp.watch('./zt/yiyingjuquan/scss/*.scss', ['styles-yiyingjuquan']);
     gulp.watch('./zt/tanqingshuoan/scss/*.scss', ['styles-tanqingshuoan']);
     gulp.watch('./zt/yongwuzhijing/scss/*.scss', ['styles-yongwuzhijing']);
+    gulp.watch('./zt/youjianlaoganbu/scss/*.scss', ['styles-youjianlaoganbu']);
 
     gulp.watch('./zt/wujinshenyu/css/*.css').on('change', reload);
     gulp.watch('./zt/qijiwangzuo/css/*.css').on('change', reload);
@@ -80,6 +83,7 @@ gulp.task("watch",['server'], function(){
     gulp.watch('./zt/yiyingjuquan/css/*.css').on('change', reload);
     gulp.watch('./zt/tanqingshuoan/css/*.css').on('change', reload);
     gulp.watch('./zt/yongwuzhijing/css/*.css').on('change', reload);
+    gulp.watch('./zt/youjianlaoganbu/css/*.css').on('change', reload);
 
     gulp.watch("./html/*.html").on('change', reload);
     gulp.watch("./zt/wujinshenyu/*.html").on('change', reload);
@@ -93,6 +97,7 @@ gulp.task("watch",['server'], function(){
     gulp.watch("./zt/yiyingjuquan/*.html").on('change', reload);
     gulp.watch("./zt/tanqingshuoan/*.html").on('change', reload);
     gulp.watch("./zt/yongwuzhijing/*.html").on('change', reload);
+    gulp.watch("./zt/youjianlaoganbu/*.html").on('change', reload);
 
 });
 
@@ -205,6 +210,16 @@ gulp.task('styles-yongwuzhijing', function(){
 
     //保存编译之后的css文件到指定的目录
         .pipe(gulp.dest('./zt/yongwuzhijing/css/'))
+
+});
+
+//又见老干部专题
+gulp.task('styles-youjianlaoganbu', function(){
+    //编译sass
+    return sass('./zt/youjianlaoganbu/scss/*.scss')
+
+    //保存编译之后的css文件到指定的目录
+        .pipe(gulp.dest('./zt/youjianlaoganbu/css/'))
 
 });
 

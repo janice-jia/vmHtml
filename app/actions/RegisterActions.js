@@ -32,8 +32,10 @@ class RegisterActions {
     checkCode(data) {
         $.ajax({
             type: 'POST',
+            dataType:'json',
+            contentType:'application/json; charset=utf-8',
             url: '/code/check',
-            data:data
+            data:JSON.stringify(data)
         })
         .done((data) => {
             this.checkCodeSuccess(data);

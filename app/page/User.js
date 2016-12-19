@@ -40,7 +40,6 @@ class User extends  React.Component{
     }
 
     _lookUserInfo(){
-        //console.info('this',this);
         this.context.router.push({
             pathname: '/user/info/' + this.state.uid,
             query: {
@@ -112,14 +111,14 @@ class User extends  React.Component{
                     </Group>
                     <Group noPadded className="margin-v userNav">
                         <List>
-                            <List.Item href="#" title= {this.state.uid == publicFn.getUser() ? '我的部落' : (this.state.userInfo.gender == 'F' ? '她的部落': '他的部落')} media={<span className="userNav-bl"></span>}/>
-                            <List.Item href="#" title={this.state.uid == publicFn.getUser() ? '我的话题' : (this.state.userInfo.gender == 'F' ? '她的话题': '他的话题')} media={<span className="userNav-ht"></span>}/>
+                            <List.Item href={'/user/tribe/'+this.state.uid} title= {this.state.uid == publicFn.getUser() ? '我的部落' : (this.state.userInfo.gender == 'F' ? '她的部落': '他的部落')} media={<span className="userNav-bl"></span>}/>
+                            <List.Item href={'/user/topic/'+this.state.uid} title={this.state.uid == publicFn.getUser() ? '我的话题' : (this.state.userInfo.gender == 'F' ? '她的话题': '他的话题')} media={<span className="userNav-ht"></span>}/>
                         </List>
                     </Group>
                     <Group noPadded className="margin-0 userNav">
                         <List>
-                            <List.Item href="/user/require/01" title={this.state.uid == publicFn.getUser() ? '我的需求' : (this.state.userInfo.gender == 'F' ? '她的需求': '他的需求')} media={<span className="userNav-xq"></span>}/>
-                            <List.Item href="/user/server/01" title={this.state.uid == publicFn.getUser() ? '我的服务' : (this.state.userInfo.gender == 'F' ? '她的服务': '他的服务')} media={<span className="userNav-fw"></span>}/>
+                            <List.Item href={'/user/require/'+this.state.uid} title={this.state.uid == publicFn.getUser() ? '我的需求' : (this.state.userInfo.gender == 'F' ? '她的需求': '他的需求')} media={<span className="userNav-xq"></span>}/>
+                            <List.Item href={'/user/server/'+this.state.uid} title={this.state.uid == publicFn.getUser() ? '我的服务' : (this.state.userInfo.gender == 'F' ? '她的服务': '他的服务')} media={<span className="userNav-fw"></span>}/>
                         </List>
                     </Group>
                 </Container>

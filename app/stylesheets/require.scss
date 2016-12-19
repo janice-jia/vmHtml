@@ -2,6 +2,7 @@
 .require-tabs-list {
     border-bottom: 1px solid $border-color-1;
     .tabs-nav {
+        border-bottom: 1px solid $border-color-1;
         button {
             border: none;
             color: $text-color-3;

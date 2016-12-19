@@ -10,7 +10,7 @@ class RequireStore{
     //需求列表接口--成功
     onGetRuquireListSuccess(data){
         if(data.status) {
-            console.info('onGetRuquireListSuccess',data);
+            //console.info('onGetRuquireListSuccess',data);
             this.requireList = data.data;
         }else{
             alert(data.msg);
@@ -19,7 +19,7 @@ class RequireStore{
     //需求列表接口--失败
     onGetRuquireListFail(data){
         //console.info('onGetRuquireListFail',data);
-        this.serverList = [];
+        this.requireList = [];
     }
 }
 

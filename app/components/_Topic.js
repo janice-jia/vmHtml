@@ -1,13 +1,21 @@
 import React from 'react'
+import {Link}  from 'react-router'
 import {Group, List, Grid, Col} from 'amazeui-touch'
 import publicFn from '../publicFn'
 
 
 //公用话题列表组件
 class _Topic extends React.Component {
-    componentDidMount(){
-        //console.info('this.props',this.props);
+    constructor(props) {
+        super(props);
+        this.state = {}
+        this.onChange = this.onChange.bind(this);
     }
+
+    onChange(state) {
+        this.setState(state);
+    }
+
     render() {
         return <div>
             <List className="margin-0">
@@ -24,10 +32,10 @@ class _Topic extends React.Component {
                             />
                             <div className="padding-h margin-v-xs">
                                 <div className="text-size-15 text-color-3 margin-bottom-xs home-topic-tit">
-                                    <a href={'/tribe/topic/'+item.id}>{item.title}</a>
+                                    <Link to={{ pathname: '/tribe/topic/'+item.id, query: { userAvatar: item.userAvatar,userName: item.userName,tribeName:item.tribeName,tribesId:item.tribesId,createTime:item.createTime,uid:item.uid} }}>{item.title}</Link>
                                 </div>
                                 <div className="text-size-13 text-color-2 home-topic-desc">
-                                    <a href={'/tribe/topic/'+item.id}>{item.description}</a>
+                                    <Link to={{ pathname: '/tribe/topic/'+item.id, query: { userAvatar: item.userAvatar,userName: item.userName,tribeName:item.tribeName,tribesId:item.tribesId,createTime:item.createTime,uid:item.uid} }}>{item.description}</Link>
                                 </div>
                             </div>
                             <Grid avg={3}>

@@ -4,6 +4,7 @@ import RegisterActions from '../actions/RegisterActions'
 class RegisterStore{
     constructor() {
         this.bindActions(RegisterActions);
+        this.userInfo = {}
     }
 
     //发送验证码--成功
@@ -36,14 +37,23 @@ class RegisterStore{
 
     //用户注册--成功
     onRegisterSuccess(data){
-        console.info('onRegisterSuccess',data);
+        //console.info('onRegisterSuccess',data);
         this.code = data.code;
+        if(data.status){
+            this.userInfo = data.data;
+            return true;
+        }else{
+            this.userInfo = {};
+            alert(data.msg);
+            return false;
+        }
     }
 
     //用户注册--失败
     onRegisterFail(data){
-        console.info('onRegisterFail',data);
-        this.code = data.data;
+        //console.info('onRegisterFail',data);
+        this.userInfo = {};
+        return false;
     }
 }
 

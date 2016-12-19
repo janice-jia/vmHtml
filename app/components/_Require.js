@@ -7,7 +7,7 @@ import publicFn from '../publicFn'
 class _Require extends React.Component {
     render() {
         return <div className="requireList">
-            <p className="text-center margin-0">{this.props.requireList.length > 0 ? '' : '暂无需求！'}</p>
+            <p className={this.props.requireList.length > 0 ? 'hidden' : 'text-center margin-0 noRequire'}>{this.props.requireList.length > 0 ? '' : '没有内容！'}</p>
             <List className="margin-top-0">
                 {this.props.requireList.map((item,i)=>{
                     return(

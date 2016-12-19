@@ -4,22 +4,9 @@ import _Comments from './../components/_Comments'
 import {Container, Group, List, View, Badge, Grid, Col} from 'amazeui-touch';
 import TribeTopicActions from './../actions/TribeTopicActions'
 import TribeTopicStore from './../stores/TribeTopicStore'
+import publicFn from '../publicFn'
 
 
-const albums = [
-    {
-        title: '女爵',
-        media:'http://lorempixel.com/160/160/people/',
-        subTitle: '10分钟',
-        tribe:"海贼王",
-        userhref:"http://s.amazeui.org/media/i/demos/bing-1.jpg",
-        tribehref:"/tribe/info/01",
-        topicTit:"标题名称标题名称",
-        topicDesc:"帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容",
-        topicImg:"http://lorempixel.com/128/128/people/"
-
-    }
-];
 const hotCommentList = [
     {
         media:'http://s.amazeui.org/media/i/demos/bing-2.jpg',//头像地址
@@ -50,11 +37,12 @@ class TribeTopic extends React.Component{
     constructor(pops){
         super(pops);
         this.state = TribeTopicStore.getState();
+        this.state.topicId = this.props.params.topicId;
         this.onChange = this.onChange.bind(this);
     }
     componentDidMount(){
         TribeTopicStore.listen(this.onChange);
-        TribeTopicActions.getTopicInfo()
+        TribeTopicActions.getTopicInfo(this.state.topicId)
     }
 
     componentWillUnmount(){
@@ -63,32 +51,29 @@ class TribeTopic extends React.Component{
     onChange(state){
         this.setState(state);
     }
+
     render() {
         return <View>
             <_Header></_Header>
             <Container scrollable className="tribe tribe-topic">
                 <div className="tribe-info-user bgF">
-                    {albums.map((album, i) => {
-                        return (
                             <List.Item
                                 title={
                                         <div className="tribe-user-name">
-                                            <div className="item-title">{album.title}</div>
-                                            <div className="item-subtitle">{album.subTitle}</div>
+                                            <a href={'/user/'+this.props.location.query.uid} className="text-color-3">
+                                                <div className="item-title">{this.props.location.query.userName}</div>
+                                                <div className="item-subtitle">{publicFn.getFromNow(this.props.location.query.createTime)}</div>
+                                            </a>
                                         </div>
                                             }
                                 target="_blank"
                                 media={
-                                <img src={ album.media }/>
+                                <img src={ this.props.location.query.userAvatar}/>
                                 }
-                                after={<a href={album.tribehref} className="tribe-tribe-btn">{album.tribe}部落</a>}
-                                //href={i === 0 ? null : album.href}
-                                key={i}
+                                after={<a href={'/tribe/info/'+this.props.location.query.tribesId} className="tribe-tribe-btn">{this.props.location.query.tribeName}</a>}
                             />
-                        );
-                    })}
                 </div>
-                <iframe src={'http://test.vmaking.com/tribe/theme/'+this.props.params.topicId} frameBorder="0" width="100%" height="100%"></iframe>
+                <iframe src={'http://www.vmaking.com/tribe/theme/'+this.props.params.topicId} frameBorder="0" width="100%" height="auto" ></iframe>
                 <Group noPadded className="margin-v">
                     <div className="padding-top require-badge">
                         <p className="text-size-14">

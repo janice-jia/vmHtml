@@ -50,7 +50,7 @@ export default React.createClass({
             alert('请阅读并接受众创部落的用户协议！');
 
         //校验验证码
-        }else if(!RegisterActions.checkCode({mobile:this.state.mobile,code:this.state.code})){
+        }else if(RegisterActions.checkCode({mobile:this.state.mobile,code:this.state.code})){
             alert('验证码不成功');
 
         //用户注册
@@ -60,7 +60,10 @@ export default React.createClass({
                 password : this.state.password,
                 nickName : this.state.nickName,
                 category : 1,
-            });
+            })
+            if(this.state.userInfo.uid){
+                location.href = "/user/"+this.state.userInfo.uid
+            }
         }
     }
     ,

@@ -36,6 +36,11 @@ module.exports = {
                 target: 'http://test.vmaking.com',
                 pathRewrite: {'^/' : '/'},
                 changeOrigin: true
+            },
+            'tribe/theme/': {
+                target: 'http://test.vmaking.com',
+                pathRewrite: {'^/' : '/'},
+                changeOrigin: true
             }
         }
     }

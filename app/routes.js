@@ -17,6 +17,8 @@ import User from './page/User'
 import UserInfo from './page/UserInfo'
 import UserServer from './page/UserServer'
 import UserRequire from './page/UserRequire'
+import UserTribe from './page/UserTribe'
+import UserTopic from './page/UserTopic'
 
 //home  module
 import Home from './page/Home'
@@ -55,6 +57,8 @@ module.exports = (
             <Route path="/user/info/:uid" component={UserInfo}/>
             <Route path="/user/server/:uid" component={UserServer}/>
             <Route path="/user/require/:uid" component={UserRequire}/>
+            <Route path="/user/tribe/:uid" component={UserTribe}/>
+            <Route path="/user/topic/:uid" component={UserTopic}/>
 
 
             <Route path="/server" component={Server}/>

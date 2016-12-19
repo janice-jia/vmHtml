@@ -119,7 +119,7 @@ class Search extends React.Component{
                         <Tabs.Item title='话题' key='2' className="padding-0">
                             <List className="margin-top-0">
                                 {this.state.topicList.map((item, i) => {
-                                    return <div key={i}>{item.title}</div>
+                                    return <div key={i}>{item.title}11</div>
                                 })}
                             </List>
                         </Tabs.Item>

@@ -154,6 +154,10 @@
 
 //需求列表样式
 .requireList{
+    .noRequire{
+        height: 200px;
+        line-height: 200px;
+    }
     .list {
         .item {
             border: 1px solid $border-color-1;
@@ -246,7 +250,7 @@
     }
 }
 
-//话题item
+//话题
 .comp-topic-list{
     .list{
         background: none;
@@ -295,5 +299,34 @@
         height: 12px;
         background: url("../public/img/home/home_comment_icon.png") no-repeat;
         background-size: 14px 12px;
+    }
+}
+
+//话题item
+.comp-topicItem-list{
+    .item-after{
+        width: 60px;
+        height: 60px;
+    }
+    .item-title{
+        p{
+            margin: 0;
+        }
+        .tit{
+            @extend .text-size-15;
+            @extend .text-color-8;
+            @include line-clamp(1);
+        }
+        .subTit{
+            @extend .margin-top-xs;
+            @extend .text-size-13;
+            @extend .text-color-2;
+            @include line-clamp(2);
+            line-height:1.8em;
+            max-height: 4.6em;
+        }
+    }
+    .icon-right-nav{
+        display: none;
     }
 }

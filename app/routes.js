@@ -38,6 +38,7 @@ import Search from './page/Search'
 import Tribe from './page/Tribe'
 import TribeInfo from './page/TribeInfo'
 import TribeAlbum from './page/TribeAlbum'
+import TribeVideo from './page/TribeVideo'
 import TribeAlbumInfo from './page/TribeAlbumInfo'
 import TribeImgCom from './page/TribeImgCom'
 import TribeTopic from './page/TribeTopic'
@@ -71,11 +72,12 @@ module.exports = (
 
             <Route path="/tribe" component={Tribe}/>
             <Route path="/tribe/info/:tribeId" component={TribeInfo}/>
-            <Route path="/tribe/album/:albumId" component={TribeAlbum}/>
-            <Route path="/tribe/album/info/:albumId" component={TribeAlbumInfo}/>
+            <Route path="/tribe/album/:tribeId" component={TribeAlbum}/>
+            <Route path="/tribe/video/:tribeId" component={TribeVideo}/>
+            <Route path="/tribe/:tribeId/album/info/:albumId" component={TribeAlbumInfo}/>
             <Route path="/tribe/album/img/:imgId" component={TribeImgCom}/>
             <Route path="/tribe/topic/:topicId" component={TribeTopic}/>
-            <Route path="/tribe/member/:topicId" component={TribeMember}/>
+            <Route path="/tribe/member/:tribeId" component={TribeMember}/>
         </Route>
     </Router>
 )

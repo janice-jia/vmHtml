@@ -8,14 +8,22 @@ class TribeMemberStore{
         this.tribeMember.creator = {};
         this.tribeMember.members = [];
         this.tribeMember.totalItems = 0;
+        this.lastPage = false;
     }
 
     //部落族员列表--成功
     onGetMemberSuccess(data){
         if(data.status) {
             console.info('onGetTribeInfoSuccess',data);
-            this.tribeMember = data.data;
-            this.tribeMember.totalItems = data.totalItems;
+            //this.tribeMember = data.data;
+            //this.tribeMember.totalItems = data.totalItems;
+            if(data.currentPage > 1){
+                this.tribeMember.members = this.tribeMember.members.concat(data.data.members);
+            }else{
+                this.tribeMember = data.data;
+                this.tribeMember.totalItems = data.totalItems;
+            }
+            this.lastPage = data.lastPage;
         }else{
             alert(data.msg);
         }

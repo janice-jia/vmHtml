@@ -1,16 +1,16 @@
 import React from 'react';
 import _Header from './../components/_Header'
-import TribeAlbumActions from '../actions/TribeAlbumActions'
-import TribeAlbumStore from '../stores/TribeAlbumStore'
+import TribeVideoActions from '../actions/TribeVideoActions'
+import TribeVideoStore from '../stores/TribeVideoStore'
 import {
     Container, Group, List, View, Badge,Grid,Col
 } from 'amazeui-touch';
 
 
-class TribeAlbum extends React.Component{
+class TribeVideo extends React.Component{
     constructor(props){
         super(props);
-        this.state = TribeAlbumStore.getState();
+        this.state = TribeVideoStore.getState();
         this.onChange = this.onChange.bind(this);
         this.state.currentPage = 1;
         this.state.iScrollOptions={
@@ -23,8 +23,8 @@ class TribeAlbum extends React.Component{
     }
 
     componentDidMount(){
-        TribeAlbumStore.listen(this.onChange);
-        TribeAlbumActions.getTribeAlbum({
+        TribeVideoStore.listen(this.onChange);
+        TribeVideoActions.getTribeVideo({
             tribeId:this.props.params.tribeId,
             currentPage:this.state.currentPage,
             itemsPerPage:10
@@ -32,7 +32,7 @@ class TribeAlbum extends React.Component{
     }
 
     componentWillUnmount() {
-        TribeAlbumStore.unlisten(this.onChange);
+        TribeVideoStore.unlisten(this.onChange);
     }
 
     onChange(state) {
@@ -45,7 +45,7 @@ class TribeAlbum extends React.Component{
             <Container scrollable className="tribe">
                 <Grid avg={3} className="text-center tribe-album">
                     {
-                        this.state.tribeAlbumList.map((item, i) => {
+                        this.state.tribeVideoList.map((item, i) => {
                             return (
                                 <Col key={i}>
                                     <a href={'/tribe/'+item.tribesId+'/album/info/'+item.id}>
@@ -67,4 +67,4 @@ class TribeAlbum extends React.Component{
 
     }
 }
-export default TribeAlbum;
+export default TribeVideo;

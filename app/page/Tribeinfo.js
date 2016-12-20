@@ -101,7 +101,7 @@ class TribeInfo extends React.Component{
                                 if(item.category == 0){
                                     itemView = <Slide key={i}><a href={'/tribe/member/'+this.state.tribeInfo.id} className={item.className}>{item.name}</a></Slide>;
                                 }else if(item.category == 2){
-                                    itemView = <Slide key={i}><a href={'/tribe/album/'+item.id} className={item.className}>{item.name}</a></Slide>
+                                    itemView = <Slide key={i}><a href={'/tribe/album/'+this.state.tribeInfo.id} className={item.className}>{item.name}</a></Slide>
                                 }else if(item.category == 3){
                                     itemView = <Slide key={i}><a href={'/tribe/video/'+item.id} className={item.className}>{item.name}</a></Slide>
                                 }else if(item.category == 4){

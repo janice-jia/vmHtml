@@ -22,11 +22,8 @@ class _Header extends React.Component {
         }
         if(publicFn.isUser()){
             this.state.uid = publicFn.getUser();
-            this.state.showLogin = 'hidden';
-            this.state.showUser = '';
         }else{
-            this.state.showLogin = '';
-            this.state.showUser = 'hidden';
+            this.state.uid = '';
         }
     }
 
@@ -77,6 +74,12 @@ class _Header extends React.Component {
         this.setState(state)
     }
 
+    logOut(){
+        localStorage.clear();
+        alert('退出成功');
+        this.setState({uid:''});
+    }
+
     render() {
         return <div className="header">
             <Notification
@@ -112,11 +115,11 @@ class _Header extends React.Component {
                 component: OffCanvasTrigger,
                 className:"leftNav",
                 offCanvas:<OffCanvas>
-                        <Group className={'header-login bgNone margin-0 padding-v '+ this.state.showLogin}>
+                        <Group className={this.state.uid ? 'hidden' : 'header-login bgNone margin-0 padding-v '}>
                             <Link to="/register" className="btn-yellow margin-bottom">注册</Link>
                             <Link to="/login" className="btn-white-noBorder">登陆</Link>
                         </Group>
-                        <Group className={'header-login bgNone margin-0 '+ this.state.showUser}>
+                        <Group className={this.state.uid ? 'header-login bgNone margin-0 ' : 'hidden'}>
                             <div className="header-user-avatar margin-v">
                                 <a href={'/user/'+this.state.uid}><img src={this.state.userInfo.avatar} height="50" width="50" alt=""/></a>
                             </div>
@@ -165,6 +168,7 @@ class _Header extends React.Component {
                                 className="header-nav-icon header-nav-server"
                             />
                         </List>
+                        <div className={this.state.uid ? 'header-logout' : 'hidden'} onClick={this.logOut.bind(this)}>退出登录</div>
                     </OffCanvas>,
                 isClone:true}]}
                 rightNav={[{

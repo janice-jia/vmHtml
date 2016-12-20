@@ -14,7 +14,7 @@ class _Tribe extends React.Component {
                     return (
                         <List.Item
                             title={item.title}
-                            subTitle = {'组员：'+item.memberAmount}
+                            subTitle = {'族员：'+item.memberAmount}
                             desc = {item.descript}
                             target="_blank"
                             media={<img src={ item.logo }/> }

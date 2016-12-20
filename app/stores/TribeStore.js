@@ -27,7 +27,7 @@ class TribeStore{
     //所有部落列表接口--失败
     onGetTribeFail(data){
         console.info('onGetTribeFail',data);
-        this.tribeList = {};
+        this.tribeList = [];
     }
 }
 

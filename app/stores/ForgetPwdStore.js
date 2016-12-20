@@ -1,10 +1,10 @@
 import alt from '../alt'
-import RegisterActions from '../actions/RegisterActions'
+import ForgetPwdActions from '../actions/ForgetPwdActions'
+import {browserHistory} from 'react-router'
 
-class RegisterStore{
+class ForgetPwdStore{
     constructor() {
-        this.bindActions(RegisterActions);
-        this.userInfo = {}
+        this.bindActions(ForgetPwdActions);
     }
 
     //发送验证码--成功
@@ -31,29 +31,28 @@ class RegisterStore{
 
     //验证验证码--失败
     onCheckCodeFail(data){
-        //console.info('onCheckCodeFail',data);
+        console.info('onCheckCodeFail',data);
         return false;
     }
 
-    //用户注册--成功
-    onRegisterSuccess(data){
-        //console.info('onRegisterSuccess',data);
+    //忘记密码--成功
+    onForgetPwdSuccess(data){
+        //console.info('onForgetPwdSuccess',data);
         if(data.status){
-            this.userInfo = data.data;
+            alert('修改密码成功');
+            browserHistory.push('/login/');
             return true;
         }else{
-            this.userInfo = {};
             alert(data.msg);
             return false;
         }
     }
 
-    //用户注册--失败
-    onRegisterFail(data){
-        //console.info('onRegisterFail',data);
-        this.userInfo = {};
+    //忘记密码--失败
+    onForgetPwdFail(data){
+        //console.info('onForgetPwdFail',data);
         return false;
     }
 }
 
-export default alt.createStore(RegisterStore, 'RegisterStore');
+export default alt.createStore(ForgetPwdStore, 'ForgetPwdStore');

@@ -11,6 +11,7 @@ class Home extends React.Component {
         super(props);
         this.state = HomeStore.getState();
         this.onChange = this.onChange.bind(this);
+        this.state.hiddenDownLoad = false;
         //console.info('this.sate',this.state);
     }
 
@@ -35,6 +36,11 @@ class Home extends React.Component {
         if(!this.state.lastPage){
             HomeActions.getTopic(this.state.topicPage+1);
         }
+    }
+
+    //关闭app下载
+    hiddenDownLoad(){
+        this.setState({hiddenDownLoad:true});
     }
 
     render() {
@@ -141,6 +147,14 @@ class Home extends React.Component {
                         <a href="" className="text-size-12 text-color-2">关于我们</a>
                     </p>
                     <p className="text-center text-size-14 text-color-2">京ICP备14057447号-3</p>
+                </div>
+
+                <div className={this.state.hiddenDownLoad ? 'hidden' : 'appDownLoad'}>
+                    <Grid>
+                        <Col><span className="GB" onClick={this.hiddenDownLoad.bind(this)}></span></Col>
+                        <Col className="text-color-5 text-size-16">众创部落-IP垂直孵化平台</Col>
+                        <Col><button className="btn-yellow">下载App</button></Col>
+                    </Grid>
                 </div>
             </Container>
         </View>;

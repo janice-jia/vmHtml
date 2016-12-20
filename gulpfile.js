@@ -49,7 +49,8 @@ gulp.task('server', function() {
                 "./zt/yiyingjuquan",
                 "./zt/yongwuzhijing",
                 "./zt/youjianlaoganbu",
-                "./zt/kuaniandaxi"
+                "./zt/kuaniandaxi",
+                "./zt/appdownload"
             ]
         }
     });
@@ -77,6 +78,7 @@ gulp.task("watch",['server'], function(){
     gulp.watch('./zt/yongwuzhijing/scss/*.scss', ['styles-yongwuzhijing']);
     gulp.watch('./zt/youjianlaoganbu/scss/*.scss', ['styles-youjianlaoganbu']);
     gulp.watch('./zt/kuaniandaxi/scss/*.scss', ['styles-kuaniandaxi']);
+    gulp.watch('./zt/appdownload/scss/*.scss', ['styles-appdownload']);
 });
 
 
@@ -201,7 +203,7 @@ gulp.task('styles-youjianlaoganbu', function(){
 
 });
 
-//跨年大戏
+//跨年大戏专题
 gulp.task('styles-kuaniandaxi', function(){
     //编译sass
     return sass('./zt/kuaniandaxi/scss/*.scss')
@@ -210,6 +212,17 @@ gulp.task('styles-kuaniandaxi', function(){
         .pipe(gulp.dest('./zt/kuaniandaxi/css/'))
 
 });
+
+//app下载专题
+gulp.task('styles-appdownload', function(){
+    //编译sass
+    return sass('./zt/appdownload/scss/*.scss')
+
+    //保存编译之后的css文件到指定的目录
+        .pipe(gulp.dest('./zt/appdownload/css/'))
+
+});
+
 
 
 

@@ -4,14 +4,14 @@
  */
 var gulp = require('gulp');
 var sass = require('gulp-ruby-sass');//sass的编译
-var cleanCss = require('gulp-clean-css');//压缩css
+//var cleanCss = require('gulp-clean-css');//压缩css
 var autoprefixer = require('gulp-autoprefixer');//自动添加css前缀
 var concat = require('gulp-concat');//合并js文件
 var uglify = require('gulp-uglify');//压缩js代码
 var rename = require('gulp-rename');//重命名
 var notify = require('gulp-notify');//更改提醒
-var cssSprite = require('gulp-css-spritesmith');//css 代码中的切片合并成雪碧图的工具
-var gulpIf = require('gulp-if');//gulp if
+//var cssSprite = require('gulp-css-spritesmith');//css 代码中的切片合并成雪碧图的工具
+//var gulpIf = require('gulp-if');//gulp if
 var browserSync = require('browser-sync').create();
 var reload      = browserSync.reload;
 
@@ -29,7 +29,8 @@ gulp.task('default', [
     'styles-yiyingjuquan',
     'styles-tanqingshuoan',
     'styles-yongwuzhijing',
-    'styles-youjianlaoganbu'
+    'styles-youjianlaoganbu',
+    'styles-kuaniandaxi'
 ],function(){
 
 });
@@ -47,7 +48,8 @@ gulp.task('server', function() {
                 "./zt/yiyingjuquan",
                 "./zt/yiyingjuquan",
                 "./zt/yongwuzhijing",
-                "./zt/youjianlaoganbu"
+                "./zt/youjianlaoganbu",
+                "./zt/kuaniandaxi"
             ]
         }
     });
@@ -59,7 +61,10 @@ gulp.task('server', function() {
  * 监听
  * */
 gulp.task("watch",['server'], function(){
-    gulp.watch('./zt/wujinshenyu/scss/*.scss', ['styles-wujinshenyu']);
+    gulp.watch('./zt/*/css/*.css').on('change', reload);
+    gulp.watch("./zt/*/*.html").on('change', reload);
+
+    gulp.watch('./zt/*/scss/*.scss', ['styles-wujinshenyu']);
     gulp.watch('./zt/qijiwangzuo/scss/*.scss', ['styles-qijiwangzuo']);
     gulp.watch('./zt/cosplay/scss/*.scss', ['styles-cosplay']);
     gulp.watch('./zt/kfilm/scss/*.scss', ['styles-kfilm']);
@@ -71,34 +76,7 @@ gulp.task("watch",['server'], function(){
     gulp.watch('./zt/tanqingshuoan/scss/*.scss', ['styles-tanqingshuoan']);
     gulp.watch('./zt/yongwuzhijing/scss/*.scss', ['styles-yongwuzhijing']);
     gulp.watch('./zt/youjianlaoganbu/scss/*.scss', ['styles-youjianlaoganbu']);
-
-    gulp.watch('./zt/wujinshenyu/css/*.css').on('change', reload);
-    gulp.watch('./zt/qijiwangzuo/css/*.css').on('change', reload);
-    gulp.watch('./zt/cosplay/css/*.css').on('change', reload);
-    gulp.watch('./zt/kfilm/css/*.css').on('change', reload);
-    gulp.watch('./zt/sunhuohuo/css/*.css').on('change', reload);
-    gulp.watch('./zt/disney/css/*.css').on('change', reload);
-    gulp.watch('./zt/dongrinuanbei/css/*.css').on('change', reload);
-    gulp.watch('./zt/denghuo/css/*.css').on('change', reload);
-    gulp.watch('./zt/yiyingjuquan/css/*.css').on('change', reload);
-    gulp.watch('./zt/tanqingshuoan/css/*.css').on('change', reload);
-    gulp.watch('./zt/yongwuzhijing/css/*.css').on('change', reload);
-    gulp.watch('./zt/youjianlaoganbu/css/*.css').on('change', reload);
-
-    gulp.watch("./html/*.html").on('change', reload);
-    gulp.watch("./zt/wujinshenyu/*.html").on('change', reload);
-    gulp.watch("./zt/qijiwangzuo/*.html").on('change', reload);
-    gulp.watch("./zt/cosplay/*.html").on('change', reload);
-    gulp.watch("./zt/kfilm/*.html").on('change', reload);
-    gulp.watch("./zt/sunhuohuo/*.html").on('change', reload);
-    gulp.watch("./zt/disney/*.html").on('change', reload);
-    gulp.watch("./zt/dongrinuanbei/*.html").on('change', reload);
-    gulp.watch("./zt/denghuo/*.html").on('change', reload);
-    gulp.watch("./zt/yiyingjuquan/*.html").on('change', reload);
-    gulp.watch("./zt/tanqingshuoan/*.html").on('change', reload);
-    gulp.watch("./zt/yongwuzhijing/*.html").on('change', reload);
-    gulp.watch("./zt/youjianlaoganbu/*.html").on('change', reload);
-
+    gulp.watch('./zt/kuaniandaxi/scss/*.scss', ['styles-kuaniandaxi']);
 });
 
 
@@ -222,6 +200,17 @@ gulp.task('styles-youjianlaoganbu', function(){
         .pipe(gulp.dest('./zt/youjianlaoganbu/css/'))
 
 });
+
+//跨年大戏
+gulp.task('styles-kuaniandaxi', function(){
+    //编译sass
+    return sass('./zt/kuaniandaxi/scss/*.scss')
+
+    //保存编译之后的css文件到指定的目录
+        .pipe(gulp.dest('./zt/kuaniandaxi/css/'))
+
+});
+
 
 
 

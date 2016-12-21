@@ -19,7 +19,7 @@ class _Tribe extends React.Component {
                             target="_blank"
                             media={<img src={ item.logo }/> }
                             key={i}
-                            href={"/tribe/info/"+item.id}
+                            href={"/tribe/item/"+item.id}
                         />
                     );
                 })}

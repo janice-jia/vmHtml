@@ -2,16 +2,16 @@ import React from 'react';
 import _Header from './../components/_Header'
 import _Tribe from './../components/_Tribe'
 import {Container, Group, List, View, Badge} from 'amazeui-touch';
-import TribeActions from './../actions/TribeActions'
-import TribeStore from './../stores/TribeStore'
+import TribeListActions from './../actions/TribeListActions'
+import TribeListStore from './../stores/TribeListStore'
 import ReactIScroll from 'react-iscroll'
 import iscroll from 'iscroll'
 import $  from 'jquery'
 
-class Tribe extends React.Component{
+class TribeList extends React.Component{
     constructor(props){
         super(props);
-        this.state = TribeStore.getState();
+        this.state = TribeListStore.getState();
         this.onChange = this.onChange.bind(this);
         this.state.currentPage = 1;
         this.state.iScrollOptions={
@@ -24,8 +24,8 @@ class Tribe extends React.Component{
     }
 
     componentDidMount(){
-        TribeStore.listen(this.onChange);
-        TribeActions.getTribe({
+        TribeListStore.listen(this.onChange);
+        TribeListActions.getTribe({
             currentPage:this.state.currentPage,
             itemsPerPage:10
         });
@@ -33,7 +33,7 @@ class Tribe extends React.Component{
     }
 
     componentWillUnmount() {
-        TribeStore.unlisten(this.onChange);
+        TribeListStore.unlisten(this.onChange);
     }
 
     onChange(state) {
@@ -44,7 +44,7 @@ class Tribe extends React.Component{
         if((iScrollInstance.y - iScrollInstance.maxScrollY) < 25){
             if(!this.state.lastPage){
                 this.state.currentPage = this.state.currentPage + 1;
-                TribeActions.getTribe({
+                TribeListActions.getTribe({
                     currentPage:this.state.currentPage,
                     itemsPerPage:10
                 });
@@ -67,5 +67,5 @@ class Tribe extends React.Component{
     }
 }
 
-export default Tribe
+export default TribeList
 

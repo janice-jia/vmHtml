@@ -280,6 +280,14 @@ $color-border-01:#ddd;
 }
 
 
+//部落小说
+.tribe-novel{
+    .border-v-dashed{
+        border-top:1px dashed $border-color-2;
+        border-bottom:1px dashed $border-color-2;
+    }
+}
+
 
 
 

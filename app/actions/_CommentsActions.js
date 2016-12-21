@@ -1,31 +1,32 @@
 import alt from '../alt'
 import $ from 'jquery'
 
-class TribeVideoActions {
+class _CommentsActions {
     constructor() {
         this.generateActions(
-            'getTribeVideoSuccess',
-            'getTribeVideoFail'
+            'getCommentSuccess',
+            'getCommentFail'
         );
     }
 
-    //部落所有视频列表
-    getTribeVideo(data){
+    //获取评论列表
+    getComment(data){
         $.ajax({
             type: 'Get',
-            url:  '/app/tribe/'+data.tribeId+'/tab/'+data.tabId+'/content/list/',
+            url: data.url,
             data:{
+                "uid"  :  data.uid,
                 "currentPage": data.currentPage,
                 "itemsPerPage": data.itemsPerPage
             }
         })
         .done((data) => {
-            this.getTribeVideoSuccess(data);
+            this.getCommentSuccess(data);
         })
         .fail((jqXhr) => {
-            this.getTribeVideoFail(jqXhr);
+            this.getCommentFail(jqXhr);
         });
     }
 }
 
-export default alt.createActions(TribeVideoActions);
+export default alt.createActions(_CommentsActions);

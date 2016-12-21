@@ -29,6 +29,7 @@ module.exports = {
 
     //格式化时间
     getFormat(momentTime){
+        momentTime = parseInt(momentTime);
         var newDate = new Date(momentTime);
         var year = newDate.getFullYear();
         var month = newDate.getMonth()+1;

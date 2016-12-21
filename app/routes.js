@@ -35,12 +35,18 @@ import RequireInfo from './page/RequireInfo'
 import Search from './page/Search'
 
 //tribe  module
-import Tribe from './page/Tribe'
+import TribeList from './page/TribeList'
+import TribeItem from './page/TribeItem'
 import TribeInfo from './page/TribeInfo'
 import TribeAlbum from './page/TribeAlbum'
-import TribeVideo from './page/TribeVideo'
 import TribeAlbumInfo from './page/TribeAlbumInfo'
-import TribeImgCom from './page/TribeImgCom'
+import TribeAlbumImgInfo from './page/TribeAlbumImgInfo'
+import TribeVideo from './page/TribeVideo'
+import TribeVideoInfo from './page/TribeVideoInfo'
+import TribeNovel from './page/TribeNovel'
+import TribeNovelInfo from './page/TribeNovelInfo'
+import TribeComic from './page/TribeComic'
+import TribeComicInfo from './page/TribeComicInfo'
 import TribeTopic from './page/TribeTopic'
 import TribeMember from './page/TribeMember'
 
@@ -70,12 +76,18 @@ module.exports = (
 
             <Route path="/search"  component={Search}/>
 
-            <Route path="/tribe" component={Tribe}/>
+            <Route path="/tribe/list" component={TribeList}/>
+            <Route path="/tribe/item/:tribeId" component={TribeItem}/>
             <Route path="/tribe/info/:tribeId" component={TribeInfo}/>
-            <Route path="/tribe/album/:tribeId" component={TribeAlbum}/>
-            <Route path="/tribe/video/:tribeId" component={TribeVideo}/>
+            <Route path="/tribe/:tribeId/album/:tabId" component={TribeAlbum}/>
             <Route path="/tribe/:tribeId/album/info/:albumId" component={TribeAlbumInfo}/>
-            <Route path="/tribe/album/img/:imgId" component={TribeImgCom}/>
+            <Route path="/tribe/album/img/:photoId" component={TribeAlbumImgInfo}/>
+            <Route path="/tribe/:tribeId/video/:tabId" component={TribeVideo}/>
+            <Route path="/tribe/video/info/:videoId" component={TribeVideoInfo}/>
+            <Route path="/tribe/:tribeId/novel/:tabId" component={TribeNovel}/>
+            <Route path="/tribe/novel/info/:novelId" component={TribeNovelInfo}/>
+            <Route path="/tribe/:tribeId/comic/:tabId" component={TribeComic}/>
+            <Route path="/tribe/comic/info/:comicId" component={TribeComicInfo}/>
             <Route path="/tribe/topic/:topicId" component={TribeTopic}/>
             <Route path="/tribe/member/:tribeId" component={TribeMember}/>
         </Route>

@@ -1,16 +1,16 @@
 import alt from '../alt'
 import $ from 'jquery'
 
-class TribeVideoActions {
+class TribeComicActions {
     constructor() {
         this.generateActions(
-            'getTribeVideoSuccess',
-            'getTribeVideoFail'
+            'getTribeComicSuccess',
+            'getTribeComicFail'
         );
     }
 
-    //部落所有视频列表
-    getTribeVideo(data){
+    //部落所有漫画列表
+    getTribeComic(data){
         $.ajax({
             type: 'Get',
             url:  '/app/tribe/'+data.tribeId+'/tab/'+data.tabId+'/content/list/',
@@ -20,12 +20,12 @@ class TribeVideoActions {
             }
         })
         .done((data) => {
-            this.getTribeVideoSuccess(data);
+            this.getTribeComicSuccess(data);
         })
         .fail((jqXhr) => {
-            this.getTribeVideoFail(jqXhr);
+            this.getTribeComicFail(jqXhr);
         });
     }
 }
 
-export default alt.createActions(TribeVideoActions);
+export default alt.createActions(TribeComicActions);

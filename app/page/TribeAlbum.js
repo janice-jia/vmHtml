@@ -25,6 +25,7 @@ class TribeAlbum extends React.Component{
     componentDidMount(){
         TribeAlbumStore.listen(this.onChange);
         TribeAlbumActions.getTribeAlbum({
+            tabId:this.props.params.tabId,
             tribeId:this.props.params.tribeId,
             currentPage:this.state.currentPage,
             itemsPerPage:10

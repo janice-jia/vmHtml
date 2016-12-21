@@ -1,7 +1,7 @@
 import alt from '../alt'
 import $ from 'jquery'
 
-class TribeInfoActions {
+class TribeItemActions {
     constructor() {
         this.generateActions(
             'getTribeInfoSuccess',
@@ -81,4 +81,4 @@ class TribeInfoActions {
     }
 }
 
-export default alt.createActions(TribeInfoActions);
+export default alt.createActions(TribeItemActions);

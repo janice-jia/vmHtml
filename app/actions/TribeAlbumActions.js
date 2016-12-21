@@ -13,7 +13,7 @@ class TribeAlbumActions {
     getTribeAlbum(data){
         $.ajax({
             type: 'Get',
-            url: '/app/tribe/'+data.tribeId+'/photo-album/list',
+            url:  '/app/tribe/'+data.tribeId+'/tab/'+data.tabId+'/content/list/',
             data:{
                 "currentPage": data.currentPage,
                 "itemsPerPage": data.itemsPerPage

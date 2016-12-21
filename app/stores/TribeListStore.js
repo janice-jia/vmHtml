@@ -1,10 +1,10 @@
 import alt from '../alt'
-import TribeActions from '../actions/TribeActions'
+import TribeListActions from '../actions/TribeListActions'
 import {browserHistory} from 'react-router'
 
-class TribeStore{
+class TribeListStore{
     constructor() {
-        this.bindActions(TribeActions);
+        this.bindActions(TribeListActions);
         this.tribeList = [];
         this.lastPage = false;
     }
@@ -31,4 +31,4 @@ class TribeStore{
     }
 }
 
-export default alt.createStore(TribeStore, 'TribeStore');
+export default alt.createStore(TribeListStore, 'TribeListStore');

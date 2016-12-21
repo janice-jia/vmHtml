@@ -25,6 +25,7 @@ class TribeVideo extends React.Component{
     componentDidMount(){
         TribeVideoStore.listen(this.onChange);
         TribeVideoActions.getTribeVideo({
+            tabId:this.props.params.tabId,
             tribeId:this.props.params.tribeId,
             currentPage:this.state.currentPage,
             itemsPerPage:10
@@ -39,6 +40,16 @@ class TribeVideo extends React.Component{
         this.setState(state);
     }
 
+    _lookVideoInfo(item){
+        this.context.router.push({
+            pathname:'/tribe/video/info/'+item.id,
+            query: {
+                addr:item.addr,
+                title:item.title
+            }
+        })
+    }
+
     render() {
         return <View>
             <_Header></_Header>
@@ -48,12 +59,12 @@ class TribeVideo extends React.Component{
                         this.state.tribeVideoList.map((item, i) => {
                             return (
                                 <Col key={i}>
-                                    <a href={'/tribe/'+item.tribesId+'/album/info/'+item.id}>
+                                    <a href="javascript:;" onClick={this._lookVideoInfo.bind(this,item)}>
                                         <div className="albumImg">
                                             <img src={item.cover} alt=""/>
                                         </div>
                                         <div className="tribe-albumName">
-                                            {item.name}
+                                            {item.title}
                                         </div>
                                     </a>
 
@@ -67,4 +78,9 @@ class TribeVideo extends React.Component{
 
     }
 }
+
+TribeVideo.contextTypes = {
+    router: React.PropTypes.object
+}
+
 export default TribeVideo;

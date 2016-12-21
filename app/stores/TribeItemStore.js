@@ -1,11 +1,11 @@
 import alt from '../alt'
-import TribeInfoActions from '../actions/TribeInfoActions'
+import TribeItemActions from '../actions/TribeItemActions'
 import {browserHistory} from 'react-router'
 import publicFn from '../publicFn'
 
-class TribeInfoStore{
+class TribeItemStore{
     constructor() {
-        this.bindActions(TribeInfoActions);
+        this.bindActions(TribeItemActions);
         this.tribeInfo = {};
         this.tribeInfo.topTopics = [];
         this.tribeInfo.tabs = [];
@@ -35,7 +35,7 @@ class TribeInfoStore{
             //获取部落详细成功--获取部落话题
             this.lastPage = data.lastPage;
             if(this.tabId){
-                TribeInfoActions.getTopicCon({
+                TribeItemActions.getTopicCon({
                     tribeId:this.tribeInfo.id,
                     tabId:201,
                     uid:publicFn.getUser(),
@@ -56,7 +56,7 @@ class TribeInfoStore{
     //部落话题列表--成功
     onGetTopicConSuccess(data){
         if(data.status) {
-            console.info('onGetTopicConSuccess',data);
+            //console.info('onGetTopicConSuccess',data);
             if(data.data != null && data.currentPage > 1){
                 this.topicList = this.topicList.concat(data.data);
                 this.currentPage = data.currentPage;
@@ -101,4 +101,4 @@ class TribeInfoStore{
     }
 }
 
-export default alt.createStore(TribeInfoStore, 'TribeInfoStore');
+export default alt.createStore(TribeItemStore, 'TribeItemStore');

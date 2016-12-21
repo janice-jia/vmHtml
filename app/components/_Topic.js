@@ -24,7 +24,7 @@ class _Topic extends React.Component {
                         return <Group noPadded className="margin-v bgF border-d7d7d7" key={i}>
                             <List.Item
                                 media={<a href={'/user/'+item.uid}><img className="home-topic-media" width="44" height="44" src={item.userAvatar} /></a>}
-                                after={<div className={this.props.showTribe ? 'home-topic-tag text-color-2' : 'hidden'}><a href={'/tribe/info/'+item.tribesId}>{item.tribeName}</a></div>}
+                                after={<div className={this.props.showTribe ? 'home-topic-tag text-color-2' : 'hidden'}><a href={'/tribe/item/'+item.tribesId}>{item.tribeName}</a></div>}
                                 title={<div className="home-topic-item">
                                                 <p className="text-color-3 text-size-14"><a href={'/user/'+item.uid}>{item.userName}</a></p>
                                                 <p className="text-color-4 text-size-13">{publicFn.getFromNow(item.createTime)}</p>

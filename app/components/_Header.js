@@ -141,7 +141,7 @@ class _Header extends React.Component {
                                 linkComponent={NavLink}
                                 media={<Icon name=""/>}
                                 linkProps={{
-                                to: '/tribe',
+                                to: '/tribe/list',
                                 onClick: this.onDismiss,
                                 }}
                                 title="部落"

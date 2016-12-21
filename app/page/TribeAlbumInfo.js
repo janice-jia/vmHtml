@@ -7,50 +7,6 @@ import TribeAlbumInfoActions from '../actions/TribeAlbumInfoActions'
 import TribeAlbumInfoStore from '../stores/TribeAlbumInfoStore'
 import publicFn from '../publicFn'
 
-const albumList = {
-    "msg": "23",
-    "imgarr" : [
-        {
-            img:"http://lorempixel.com/160/160/people/",
-            href:"/tribe/album/img/01"
-        },
-        {
-            img: "http://s.amazeui.org/media/i/demos/bing-1.jpg",
-            href:"/tribe/album/img/01"
-
-        },
-        {
-            img:"http://lorempixel.com/128/128/people/",
-            href:"/tribe/album/img/01"
-        },
-        {
-            img:"http://lorempixel.com/160/160/people/",
-            href:"/tribe/album/img/01"
-        },
-        {
-            img: "http://s.amazeui.org/media/i/demos/bing-1.jpg",
-            href:"/tribe/album/img/01"
-        },
-        {
-            img:"http://lorempixel.com/128/128/people/",
-            href:"/tribe/album/img/01"
-        },
-        {
-            img:"http://lorempixel.com/160/160/people/",
-            href:"/tribe/album/img/01"
-        },
-        {
-            img: "http://s.amazeui.org/media/i/demos/bing-1.jpg",
-            href:"/tribe/album/img/01"
-        },
-        {
-            img:"http://lorempixel.com/128/128/people/",
-            href:"/tribe/album/img/01"
-        }
-    ]
-    };
-
-
 
 class TribeAlbumInfo extends React.Component{
     constructor(props){
@@ -86,6 +42,15 @@ class TribeAlbumInfo extends React.Component{
         this.setState(state);
     }
 
+    _lookAlbumImgInfo(item){
+        this.context.router.push({
+            pathname:'/tribe/album/img/'+item.id,
+            query: {
+                photo:item.photo
+            }
+        })
+    }
+
     render() {
         return <View>
             <_Header></_Header>
@@ -96,7 +61,7 @@ class TribeAlbumInfo extends React.Component{
                             return (
                                 <Col key={i}>
                                     <div className="albumImg">
-                                        <a href={'/tribe/album/img/'+item.id}>
+                                        <a href="javascript:;" onClick={this._lookAlbumImgInfo.bind(this,item)}>
                                             <img src={item.cover} alt=""/>
                                         </a>
                                     </div>
@@ -110,4 +75,9 @@ class TribeAlbumInfo extends React.Component{
 
     }
 }
+
+TribeAlbumInfo.contextTypes = {
+    router: React.PropTypes.object
+}
+
 export default TribeAlbumInfo;

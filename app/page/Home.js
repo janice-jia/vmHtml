@@ -72,8 +72,8 @@ class Home extends React.Component {
                                     this.state.tribeList.map((item, i) => {
                                         return <Slide key={i}>
                                             <div className="swiper-slide">
-                                                <a href={'/tribe/info/'+item.id}><img src={item.logo}/></a>
-                                                <a href={'/tribe/info/'+item.id}><p className="home-tribe-name">{item.title}</p></a>
+                                                <a href={'/tribe/item/'+item.id}><img src={item.logo}/></a>
+                                                <a href={'/tribe/item/'+item.id}><p className="home-tribe-name">{item.title}</p></a>
                                             </div>
                                         </Slide>
                                     })

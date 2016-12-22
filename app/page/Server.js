@@ -27,7 +27,6 @@ class Server extends React.Component{
         this.state.itemsPerPage = 10;
 
 
-        this.state.y = 0;
         this.state.iScrollOptions={
             mouseWheel: true,
             scrollbars: true,
@@ -67,44 +66,31 @@ class Server extends React.Component{
     }
 
     handleAction(key){
-        this.state.type = key+1;
+        this.setState({type :key+1});
         //ServerActions.getServerList({
         //    type:this.state.type,
         //    currentPage:this.state.currentPage,
         //    itemsPerPage:this.state.itemsPerPage
         //});
-        this.onChange(this);
+        //this.onChange(this);
     }
+
 
     _handleScrollEnd (iScrollInstance) {
         console.info('iScrollInstance.y ',iScrollInstance.y );
         console.info('iScrollInstance.maxScrollY',iScrollInstance.maxScrollY);
-        console.info('iScrollInstance',iScrollInstance);
+        //console.info('iScrollInstance',iScrollInstance);
         if((iScrollInstance.y - iScrollInstance.maxScrollY) < 25){
-            //if(!this.state.lastPage){
-            //    this.state.currentPage = this.state.currentPage + 1;
-            //    TribeActions.getTribe({
-            //        currentPage:this.state.currentPage,
-            //        itemsPerPage:10
-            //    });
-            //}
+            if(!this.state.lastPage){
+                this.state.currentPage = this.state.currentPage + 1;
+                ServerActions.getServerList({
+                    type:this.state.type,
+                    currentPage:this.state.currentPage,
+                    itemsPerPage:this.state.itemsPerPage
+                });
+            }
         }
     }
-
-    _handleScrollRefresh (iScrollInstance) {
-        console.info('===============_handleScrollRefresh===========');
-        const hasVerticalScroll = iScrollInstance.hasVerticalScroll
-        iScrollInstance.hasVerticalScroll = true;
-
-        if(this.state.canVerticallyScroll !== hasVerticalScroll) {
-            this.setState({canVerticallyScroll: hasVerticalScroll})
-        }
-    };
-
-    _handleScrollStart () {
-        console.info('===============_handleScrollStart===========');
-        this.setState({isScrolling: true})
-    };
 
     render() {
         return <View>
@@ -113,23 +99,42 @@ class Server extends React.Component{
                 <div className="server-tabs-list">
                     <Tabs onAction={this.handleAction.bind(this)} className="margin-0">
                         <Tabs.Item title='个人' key='1' className="padding-0">
-                            <ReactIScroll iScroll={iscroll}
-                                          options={this.state.iScrollOptions}
-                                          onRefresh={this._handleScrollRefresh.bind(this)}
-                                          onScrollStart={this._handleScrollStart.bind(this)}
-                                          onScrollEnd={this._handleScrollEnd.bind(this)}
-                            >
-                                <_Server serverList={this.state.personalServerList}></_Server>
-                            </ReactIScroll>
                         </Tabs.Item>
                         <Tabs.Item title='工作室' key='2' className="padding-0">
-                            <_Server serverList={this.state.studioServerList}></_Server>
                         </Tabs.Item>
                         <Tabs.Item title='企业' key='3' className="padding-0">
-                            <_Server serverList={this.state.companyServerList}></_Server>
                         </Tabs.Item>
                     </Tabs>
                 </div>
+
+
+                    <ReactIScroll iScroll={iscroll}
+                                  options={this.state.iScrollOptions}
+                                  onScrollEnd={this._handleScrollEnd.bind(this)}
+                                  className={this.state.type == 1 ? '' : 'hidden'}
+                    >
+                        <_Server serverList={this.state.personalServerList}></_Server>
+                    </ReactIScroll>
+
+                    <ReactIScroll iScroll={iscroll}
+                              options={this.state.iScrollOptions}
+                              onScrollEnd={this._handleScrollEnd.bind(this)}
+                                  className={this.state.type == 2 ? '' : 'hidden'}
+                    >
+                        <_Server serverList={this.state.studioServerList}></_Server>
+                    </ReactIScroll>
+
+                    <ReactIScroll iScroll={iscroll}
+                                  options={this.state.iScrollOptions}
+                                  onScrollEnd={this._handleScrollEnd.bind(this)}
+                                  className={this.state.type == 3 ? '' : 'hidden'}
+                    >
+                        <_Server serverList={this.state.companyServerList}></_Server>
+                    </ReactIScroll>
+
+
+
+
             </Container>
             {this.props.children}
         </View>;

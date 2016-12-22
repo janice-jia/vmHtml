@@ -12,11 +12,15 @@ class UserTopicStore{
     //某用户话题列表--成功
     onGetTopicSuccess(data){
         if(data.status) {
-            console.info('onGetTopicSuccess',data);
+            //console.info('onGetTopicSuccess',data);
             if(data.currentPage > 1){
-                this.topicList = this.topicList.concat(data.data);
+                if(data.data){
+                    this.topicList = this.topicList.concat(data.data);
+                }
             }else{
-                this.topicList = data.data;
+                if(data.data){
+                    this.topicList = data.data;
+                }
             }
             this.lastPage = data.lastPage;
 

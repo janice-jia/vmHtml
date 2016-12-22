@@ -58,7 +58,7 @@ class UserTribe extends React.Component{
     render() {
         return <View>
             <_Header></_Header>
-            <Container scrollable id="wrapper">
+            <Container scrollable id="wrapper" className={this.state.tribeList.length>0 ? '' : 'hidden'}>
                 <ReactIScroll iScroll={iscroll}
                               options={this.state.iScrollOptions}
                               onScrollEnd={this._handleScrollEnd.bind(this)}
@@ -66,6 +66,7 @@ class UserTribe extends React.Component{
                     <_Tribe tribeList={this.state.tribeList}></_Tribe>
                 </ReactIScroll>
             </Container>
+            <Group  className={this.state.tribeList.length>0 ? 'hidden' : 'null-con bgF margin-0'}>部落为空</Group>
         </View>
     }
 }

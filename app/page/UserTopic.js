@@ -66,6 +66,7 @@ class UserTopic extends React.Component{
                     <_TopicItem topicList={this.state.topicList}></_TopicItem>
                 </ReactIScroll>
             </Container>
+
         </View>
     }
 }

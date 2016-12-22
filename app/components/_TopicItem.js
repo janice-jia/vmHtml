@@ -10,7 +10,8 @@ class _Topic extends React.Component {
         console.info('this.props',this.props);
     }
     render() {
-        return <div className="comp-topicItem-list">
+        return <div className={this.props.topicList.length>0 ? 'comp-topicItem-list' : 'comp-topicItem-list height-100'}>
+            <Group className={this.props.topicList.length>0 ? 'hidden' : 'null-con bgF margin-0'}>话题为空</Group>
             <List className="margin-0">
                 {
                     this.props.topicList.map((item, i) => {

@@ -7,22 +7,36 @@ class ServerStore{
         this.personalServerList = [];
         this.studioServerList = [];
         this.companyServerList = [];
+        this.lastPage = false;
     }
 
     //服务列表接口--成功
     onGetServerListSuccess(data){
         if(data.status) {
             if(data.type ==1){
-                this.personalServerList = data.data;
+                if(data.data){
+                    if(data.currentPage > 1){
+                        this.personalServerList = this.personalServerList.concat(data.data);
+                    }else{
+                        this.personalServerList = data.data;
+                    }
+                }
             }else if(data.type ==2){
-                this.studioServerList = data.data;
+                if(data.currentPage > 1){
+                    this.studioServerList = this.studioServerList.concat(data.data);
+                }else{
+                    this.studioServerList = data.data;
+                }
             }else if(data.type ==3){
-                this.companyServerList = data.data;
+                if(data.currentPage > 1){
+                    this.companyServerList = this.companyServerList.concat(data.data);
+                }else{
+                    this.companyServerList = data.data;
+                }
             }
-            console.info('onGetServerListSuccess',data);
+            this.lastPage = data.lastPage;
+            //console.info('onGetServerListSuccess',data);
 
-            //获取部落详细成功--unshift族员
-            this.serverList = data.data;
         }else{
             alert(data.msg);
         }

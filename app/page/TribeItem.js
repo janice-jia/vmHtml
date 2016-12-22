@@ -59,8 +59,6 @@ class TribeItem extends React.Component{
         }
     }
 
-
-
     //退出部落
     delMember(){
         if(publicFn.isUser()) {
@@ -100,7 +98,7 @@ class TribeItem extends React.Component{
                                     <div className="item-desc padding-right">{this.state.tribeInfo.descript}</div>
                                  </div></a>
                                 }
-                            media={<img src={ this.state.tribeInfo.logo}/>}
+                            media={<a href="javascript:;" onClick={this._lookTribeInfo.bind(this)}><img src={ this.state.tribeInfo.logo}/></a>}
                             after={this.state.tribeInfo.hasJoined ? <button className="tribe-delMember-btn" onClick={this.delMember.bind(this)}>退出部落</button> : <button className="tribe-addMember-btn" onClick={this.addMember.bind(this)}>加入部落</button>}
                         />
                         <div className="tirbe-info-tab">

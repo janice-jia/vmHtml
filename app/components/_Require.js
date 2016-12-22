@@ -1,13 +1,13 @@
 import React from 'react'
-import {List, Grid, Col} from 'amazeui-touch'
+import {Container, List, Grid, Col, Group} from 'amazeui-touch'
 import publicFn from '../publicFn'
 
 
 //公用需求列表组件
 class _Require extends React.Component {
     render() {
-        return <div className="requireList">
-            <p className={this.props.requireList.length > 0 ? 'hidden' : 'text-center margin-0 noRequire'}>{this.props.requireList.length > 0 ? '' : '没有内容！'}</p>
+        return <div className={this.props.requireList.length>0 ? 'requireList' : 'requireList height-100'}>
+            <Group className={this.props.requireList.length>0 ? 'hidden' : 'null-con bgF margin-0'}>需求为空！</Group>
             <List className="margin-top-0">
                 {this.props.requireList.map((item,i)=>{
                     return(

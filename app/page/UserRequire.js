@@ -5,29 +5,6 @@ import _Require from './../components/_Require'
 import UserRequireStore from './../stores/UserRequireStore'
 import UserRequireActions from './../actions/UserRequireActions'
 
-//需求数据
-const requireList = [
-    {
-        title: '12345元',
-        subTitle: '名称',
-        href: '/require/info/01',
-        desc: '需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述',
-        target: '_blank',
-        after:'保证金300元',
-        bottomLeft:'招募创作人',
-        bottomRight:'剩余50天'
-    },
-    {
-        title: "女爵",
-        subTitle: "发行公司：环球唱片",
-        href: "/require/info/01",
-        desc: "需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述",
-        target: "_blank",
-        bottomLeft:'征集作品',
-        bottomRight:'剩余50天'
-    }
-];
-
 class UserRequire extends React.Component{
     constructor(props){
         super(props);
@@ -61,7 +38,7 @@ class UserRequire extends React.Component{
             <View>
                 <_Header/>
                 <Container scrollable>
-                    <div className="require-tabs-list">
+                    <div className={this.state.requireList.length>0 ? 'require-tabs-list' : 'require-tabs-list require-tabs-100' }>
                     <Tabs onAction={this.handleAction.bind(this)}  className="margin-0">
                         <Tabs.Item title='发布的需求' key='1' className="padding-0">
                             <_Require requireList={this.state.requireList}></_Require>

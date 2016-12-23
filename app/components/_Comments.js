@@ -16,10 +16,11 @@ class _Comments extends React.Component {
                             <Col cols={2} className="text-left padding-0">{publicFn.getFromNow(item.createTime)}</Col>
                             <Col cols={2} className="text-right">
                                 <span className="icon comments-likesCount margin-right-xs"></span>
-                                {item.likesCount}
+                                {item.likesCount ? item.likesCount : '0'}
                             </Col>
                           </Grid>}
                         key={i}
+                        href={'/user/'+item.uid}
                     />
                 )
             })}

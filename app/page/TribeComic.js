@@ -51,7 +51,8 @@ class TribeComic extends React.Component{
     render() {
         return <View>
             <_Header></_Header>
-            <Container scrollable className="tribe-novel">
+            <Group className={this.state.tribeComicList.length>0 ? 'hidden' : 'null-con bgF margin-0'}>没有内容！</Group>
+            <Container scrollable className={this.state.tribeComicList.length>0 ? 'tribe-novel' : 'hidden'}>
                 <Group className="margin-0" noPadded>
                     <List className="margin-h margin-v-0">
                         {

@@ -197,6 +197,14 @@
 
 //服务列表样式
 .serverList{
+    .icon-successful-trade{
+        width: 21px;
+        height: 15px;
+        margin-top: 2px;
+        float: left;
+        background: url("../public/img/me/successful-trade.png") 0 0 no-repeat;
+        background-size: 15px 14px;
+    }
     .mt-1{
         margin-top: -1px;
     }
@@ -338,6 +346,9 @@
 
 
 .comments{
+    .icon-right-nav{
+        display: none;
+    }
     .comments-likesCount{
         width: 15px;
         height: 18px;
@@ -368,4 +379,18 @@
         @extend .text-size-12;
         color: $text-color-4;
     }
+}
+
+
+.attentionUser{
+    border: 1px solid $border-color-3;
+    padding: 0 $sm;
+    @extend .text-color-3;
+    @extend .text-size-14;
+}
+.attentionCancel{
+    border: 1px solid $border-color-2;
+    padding: 0 $sm;
+    @extend .text-color-2;
+    @extend .text-size-14;
 }

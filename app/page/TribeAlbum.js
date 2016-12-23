@@ -43,7 +43,8 @@ class TribeAlbum extends React.Component{
     render() {
         return <View>
             <_Header></_Header>
-            <Container scrollable className="tribe">
+            <Group className={this.state.tribeAlbumList.length>0 ? 'hidden' : 'null-con bgF margin-0'}>没有内容！</Group>
+            <Container scrollable className={this.state.tribeAlbumList.length > 0 ? 'tribe' : 'hidden'}>
                 <Grid avg={3} className="text-center tribe-album">
                     {
                         this.state.tribeAlbumList.map((item, i) => {

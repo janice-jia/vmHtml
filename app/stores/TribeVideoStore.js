@@ -14,9 +14,13 @@ class TribeVideoStore{
         if(data.status) {
             //console.info('onGetTribeVideoSuccess',data);
             if(data.currentPage > 1){
-                this.tribeVideoList = this.tribeVideoList.concat(data.data);
+                if(data.data) {
+                    this.tribeVideoList = this.tribeVideoList.concat(data.data);
+                }
             }else{
-                this.tribeVideoList = data.data;
+                if(data.data) {
+                    this.tribeVideoList = data.data;
+                }
             }
             this.lastPage = data.lastPage;
 

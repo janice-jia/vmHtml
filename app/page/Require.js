@@ -1,14 +1,5 @@
 import React from 'react'
-import {
-    Button,
-    View,
-    Container,
-    Tabs,
-    Group,
-    List,
-    Grid,
-    Col
-} from 'amazeui-touch';
+import {Button, View, Container, Tabs, Group, List, Grid, Col} from 'amazeui-touch';
 import _Header from './../components/_Header';
 import _Require from '../components/_Require'
 import RequireActions from '../actions/RequireActions'

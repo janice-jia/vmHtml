@@ -14,9 +14,13 @@ class TribeComicStore{
         if(data.status) {
             //console.info('onGetTribeComicSuccess',data);
             if(data.currentPage > 1){
-                this.tribeComicList = this.tribeComicList.concat(data.data);
+                if(data.data) {
+                    this.tribeComicList = this.tribeComicList.concat(data.data);
+                }
             }else{
-                this.tribeComicList = data.data;
+                if(data.data){
+                    this.tribeComicList = data.data;
+                }
             }
             this.lastPage = data.lastPage;
 

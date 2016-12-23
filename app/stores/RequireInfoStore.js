@@ -5,14 +5,16 @@ class RequireInfoStore{
     constructor() {
         this.bindActions(RequireInfoActions);
         this.requireInfo = {};
+        this.requireApplyList = [];
+        this.requireApplyItems = 0;
         this.requireInfo.skills = [];
         this.requireInfo.userInfo = {};
     }
 
     //需求详细接口--成功
-    onGetRuquireInfoSuccess(data){
+    onGetRequireInfoSuccess(data){
         if(data.status) {
-            console.info('onGetRuquireInfoSuccess',data);
+            //console.info('onGetRuquireInfoSuccess',data);
             if(data.data.status == 1){
                 data.data.skills = data.data.worksTypes;
             }
@@ -22,9 +24,27 @@ class RequireInfoStore{
         }
     }
     //需求详细接口--失败
-    onGetRuquireInfoFail(data){
+    onGetRequireInfoFail(data){
         //console.info('onGetRuquireInfoFail',data);
         this.requireInfo = {};
+    }
+
+    //报名列表 / 投稿列表--成功
+    onGetRequireApplySuccess(data){
+        if(data.status) {
+            //console.info('onGetRequireApplySuccess',data);
+            if(data.data){
+                this.requireApplyList = data.data;
+            }
+            this.requireApplyItems = data.totalItems;
+        }else{
+            alert(data.msg);
+        }
+    }
+    //报名列表 / 投稿列表--失败
+    onGetRequireApplyFail(data){
+        //console.info('onGetRequireApplyFail',data);
+        this.requireApplyList = [];
     }
 
     //关注某人--成功

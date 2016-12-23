@@ -14,9 +14,13 @@ class TribeNovelStore{
         if(data.status) {
             //console.info('onGetTribeNovelSuccess',data);
             if(data.currentPage > 1){
-                this.tribeNovelList = this.tribeNovelList.concat(data.data);
+                if(data.data) {
+                    this.tribeNovelList = this.tribeNovelList.concat(data.data);
+                }
             }else{
-                this.tribeNovelList = data.data;
+                if(data.data) {
+                    this.tribeNovelList = data.data;
+                }
             }
             this.lastPage = data.lastPage;
 

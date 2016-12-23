@@ -58,7 +58,7 @@ class TribeNovelInfo extends React.Component{
     render() {
         return <View>
             <_Header></_Header>
-            <Container scrollable fill className="tribe-novel">
+            <Container scrollable className="tribe-novel">
                 <ReactIScroll iScroll={iscroll}
                               options={this.state.iScrollOptions}
                               onScrollEnd={this._handleScrollEnd.bind(this)}
@@ -77,7 +77,7 @@ class TribeNovelInfo extends React.Component{
                                 <_Comments commentList={this.state.hotsCommentList}></_Comments>
                             </div>
                             <div className="padding-top require-badge border-none">
-                                <p className="text-size-14">
+                                <p className="text-size-14 margin-0 padding-bottom">
                                     <Badge></Badge>
                                     <span className="padding-left-sm">全部评论（{this.state.totalItems}条）</span>
                                 </p>

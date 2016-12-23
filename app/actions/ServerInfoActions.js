@@ -2,55 +2,36 @@ import alt from '../alt'
 import $ from 'jquery'
 import publicFn from '../publicFn'
 
-class RequireInfoActions{
+class ServerInfoActions{
     constructor() {
         this.generateActions(
-            'getRequireInfoSuccess',
-            'getRequireInfoFail',
+            'getServerInfoSuccess',
+            'getServerInfoFail',
             'attentionUserSuccess',
             'attentionUserFail',
             'attentionCancelSuccess',
-            'attentionCancelFail',
-            'getRequireApplySuccess',
-            'getRequireApplyFail'
+            'attentionCancelFail'
         );
     }
 
-    //需求详细接口
-    getRequireInfo(requireId){
+    //服务详细接口
+    getServerInfo(serverId){
         $.ajax({
             type: 'Get',
-            url: '/app/require/'+requireId,
+            url: '/app/server/'+serverId,
             data:{
                 "uid":publicFn.getUser()
             }
         })
         .done((data) => {
-            this.getRequireInfoSuccess(data);
+            this.getServerInfoSuccess(data);
         })
         .fail((jqXhr) => {
-            this.getRequireInfoFail(jqXhr);
+            this.getServerInfoFail(jqXhr);
         });
     }
 
-    //报名列表 / 投稿列表
-    getRequireApply(data){
-        $.ajax({
-            type: 'Get',
-            url: ' /app/require/'+data.requireId+'/apply/list',
-            data:{
-                "uid":publicFn.getUser(),
-                "currentPage": data.currentPage,
-                "itemsPerPage": data.itemsPerPage
-            }
-        })
-        .done((data) => {
-            this.getRequireApplySuccess(data);
-        })
-        .fail((jqXhr) => {
-            this.getRequireApplyFail(jqXhr);
-        });
-    }
+
 
     //关注某人
     attentionUser(uid){
@@ -87,4 +68,4 @@ class RequireInfoActions{
     }
 }
 
-export default alt.createActions(RequireInfoActions);
+export default alt.createActions(ServerInfoActions);

@@ -14,9 +14,13 @@ class TribeAlbumStore{
         if(data.status) {
             //console.info('onGetTribeAlbumSuccess',data);
             if(data.currentPage > 1){
-                this.tribeAlbumList = this.tribeAlbumList.concat(data.data);
+                if(data.data) {
+                    this.tribeAlbumList = this.tribeAlbumList.concat(data.data);
+                }
             }else{
-                this.tribeAlbumList = data.data;
+                if(data.data) {
+                    this.tribeAlbumList = data.data;
+                }
             }
             this.lastPage = data.lastPage;
 

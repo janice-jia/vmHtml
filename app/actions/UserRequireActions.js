@@ -18,7 +18,7 @@ class UserRequireActions{
             type: 'Get',
             url: '/app/user/'+data.uid+'/require/list',
             data:{
-                "currentUid":publicFn.getUser() , // 当前页 int
+                "currentUid":publicFn.getUser() , // 当前用户 int
                 "currentPage":data.currentPage , // 当前页 int
                 "itemsPerPage":data.itemsPerPage ,// 每一页数据条数 int
             }

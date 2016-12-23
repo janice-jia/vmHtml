@@ -151,7 +151,7 @@ class Home extends React.Component {
 
                 <div className={this.state.hiddenDownLoad ? 'hidden' : 'appDownLoad'}>
                     <Grid>
-                        <Col><span className="GB" onClick={this.hiddenDownLoad.bind(this)}></span></Col>
+                        <Col><span className="close" onClick={this.hiddenDownLoad.bind(this)}></span></Col>
                         <Col className="text-color-5 text-size-16">众创部落-IP垂直孵化平台</Col>
                         <Col><button className="btn-yellow">下载App</button></Col>
                     </Grid>

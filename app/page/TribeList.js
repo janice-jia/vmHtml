@@ -60,7 +60,9 @@ class TribeList extends React.Component{
                               options={this.state.iScrollOptions}
                               onScrollEnd={this._handleScrollEnd.bind(this)}
                 >
-                    <_Tribe tribeList={this.state.tribeList}></_Tribe>
+                    <div style={{paddingBottom:'40px'}}>
+                        <_Tribe tribeList={this.state.tribeList}></_Tribe>
+                    </div>
                 </ReactIScroll>
             </Container>
         </View>

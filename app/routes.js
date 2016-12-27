@@ -12,6 +12,10 @@ import Login from './page/Login'
 //ForgetPwd module
 import ForgetPwd from './page/ForgetPwd'
 
+//FeedBack module
+import FeedBack from './page/FeedBack'
+
+
 //user  module
 import User from './page/User'
 import UserInfo from './page/UserInfo'
@@ -59,6 +63,7 @@ module.exports = (
             <Route path="/register" component={Register}/>
             <Route path="/login" component={Login}/>
             <Route path="/forgetpwd" component={ForgetPwd}/>
+            <Route path="/feedback" component={FeedBack}/>
 
             <Route path="/user/:uid" component={User}/>
             <Route path="/user/info/:uid" component={UserInfo}/>

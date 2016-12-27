@@ -26,6 +26,19 @@
     }
 
     .navbar-right{
+        a{
+            display: inline-block;
+            &.left{
+                float: left;
+            }
+        }
+        .msg{
+            float: right;
+            width: 39px;
+            height: 25px;
+            background: url("../public/img/home/news_icon.png") no-repeat;
+            background-size: 100% 100%;
+        }
         .search{
             float: right;
             width: 25px;

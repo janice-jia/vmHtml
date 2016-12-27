@@ -113,7 +113,9 @@ class Server extends React.Component{
                                   onScrollEnd={this._handleScrollEnd.bind(this)}
                                   className={this.state.type == 1 ? '' : 'hidden'}
                     >
-                        <_Server serverList={this.state.personalServerList}></_Server>
+                        <div style={{paddingBottom:'60px'}}>
+                            <_Server serverList={this.state.personalServerList}></_Server>
+                        </div>
                     </ReactIScroll>
 
                     <ReactIScroll iScroll={iscroll}
@@ -121,7 +123,9 @@ class Server extends React.Component{
                               onScrollEnd={this._handleScrollEnd.bind(this)}
                                   className={this.state.type == 2 ? '' : 'hidden'}
                     >
-                        <_Server serverList={this.state.studioServerList}></_Server>
+                        <div style={{paddingBottom:'60px'}}>
+                            <_Server serverList={this.state.studioServerList}></_Server>
+                        </div>
                     </ReactIScroll>
 
                     <ReactIScroll iScroll={iscroll}
@@ -129,11 +133,10 @@ class Server extends React.Component{
                                   onScrollEnd={this._handleScrollEnd.bind(this)}
                                   className={this.state.type == 3 ? '' : 'hidden'}
                     >
-                        <_Server serverList={this.state.companyServerList}></_Server>
+                        <div style={{paddingBottom:'60px'}}>
+                            <_Server serverList={this.state.companyServerList}></_Server>
+                        </div>
                     </ReactIScroll>
-
-
-
 
             </Container>
             {this.props.children}

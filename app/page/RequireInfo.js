@@ -18,7 +18,7 @@ class RequireInfo extends React.Component{
         this.state = RequireInfoStore.getState();
         this.state.hotsCommentList=[];
         this.state.commentList=[];
-        console.info('this.state',this.state);
+        //console.info('this.state',this.state);
         this.state.requireId = this.props.params.requireId;
         this.state.currentPage = 1;
         this.state.iScrollOptions={

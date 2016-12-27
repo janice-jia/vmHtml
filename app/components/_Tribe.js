@@ -5,7 +5,7 @@ import {List, Grid, Col, Group} from 'amazeui-touch'
 //公用部落列表组件
 class _Tribe extends React.Component {
     componentDidMount(){
-        console.info('this.props',this.props);
+        //console.info('this.props',this.props);
     }
     render() {
         return <div className={this.props.tribeList.length>0 ? 'tribe' : 'tribe height-100'} >

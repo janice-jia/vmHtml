@@ -52,7 +52,7 @@ class Home extends React.Component {
                         {
                             this.state.slideList.map((item,i) =>{
                                 return  <Slider.Item key={i}>
-                                    <a href="#"><img src="http://s.amazeui.org/media/i/demos/bing-1.jpg"/></a>
+                                    <a href={'/tribe/item/'+item.id}><img src={item.thumb}/></a>
                                 </Slider.Item>;
                             })
                         }
@@ -142,7 +142,7 @@ class Home extends React.Component {
 
                 <div className="margin-h margin-v bgNone">
                     <p className="text-center text-size-12 text-color-2">
-                        <a href="" className="text-size-12 text-color-2">意见反馈</a>
+                        <a href="/feedback" className="text-size-12 text-color-2">意见反馈</a>
                         <span className="padding-h-xs text-size-12 text-color-2">|</span>
                         <a href="" className="text-size-12 text-color-2">关于我们</a>
                     </p>
@@ -151,7 +151,7 @@ class Home extends React.Component {
 
                 <div className={this.state.hiddenDownLoad ? 'hidden' : 'appDownLoad'}>
                     <Grid>
-                        <Col><span className="close" onClick={this.hiddenDownLoad.bind(this)}></span></Col>
+                        <Col className="text-center"><span className="close" onClick={this.hiddenDownLoad.bind(this)}></span></Col>
                         <Col className="text-color-5 text-size-16">众创部落-IP垂直孵化平台</Col>
                         <Col><button className="btn-yellow">下载App</button></Col>
                     </Grid>

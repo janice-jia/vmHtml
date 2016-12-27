@@ -130,9 +130,9 @@ class _Header extends React.Component {
                                 linkComponent={NavLink}
                                 media={<Icon name=""/>}
                                 linkProps={{
-                                to: `/`,
-                                onClick: this.onDismiss,
-                                onlyActiveOnIndex:true
+                                    to: `/`,
+                                    onClick: this.onDismiss,
+                                    onlyActiveOnIndex:true
                                 }}
                                 title="首页"
                                 className="header-nav-icon header-nav-index"
@@ -141,8 +141,8 @@ class _Header extends React.Component {
                                 linkComponent={NavLink}
                                 media={<Icon name=""/>}
                                 linkProps={{
-                                to: '/tribe/list',
-                                onClick: this.onDismiss,
+                                    to: '/tribe/list',
+                                    onClick: this.onDismiss,
                                 }}
                                 title="部落"
                                 className="header-nav-icon header-nav-tribe"
@@ -151,8 +151,8 @@ class _Header extends React.Component {
                                 linkComponent={NavLink}
                                 media={<Icon name=""/>}
                                 linkProps={{
-                                to: '/require',
-                                onClick: this.onDismiss,
+                                    to: '/require',
+                                    onClick: this.onDismiss,
                                 }}
                                 title="需求"
                                 className="header-nav-icon header-nav-require"
@@ -161,8 +161,8 @@ class _Header extends React.Component {
                                 linkComponent={NavLink}
                                 media={<Icon name=""/>}
                                 linkProps={{
-                                to: '/server',
-                                onClick: this.onDismiss,
+                                    to: '/server',
+                                    onClick: this.onDismiss,
                                 }}
                                 title="服务"
                                 className="header-nav-icon header-nav-server"
@@ -171,10 +171,19 @@ class _Header extends React.Component {
                         <div className={this.state.uid ? 'header-logout' : 'hidden'} onClick={this.logOut.bind(this)}>退出登录</div>
                     </OffCanvas>,
                 isClone:true}]}
-                rightNav={[{
-                title:'',
-                className:'search'
-            }]}
+                rightNav={publicFn.isUser() ?
+                        [{
+                            title:'',
+                            className:'msg left'
+                        },{
+                            title:'',
+                            className:'search'
+                        }]
+                        :
+                        [{
+                            title:'',
+                            className:'search'
+                        }]}
                 onAction={this.openNotification.bind(this)}
                 amStyle="dark"/>
         </div>;

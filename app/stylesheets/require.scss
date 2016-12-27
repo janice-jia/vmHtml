@@ -1,12 +1,12 @@
 /*需求列表 start*/
 .require-tabs-100{
+    height: 100%;
     .tabs,.tabs .tabs-body,.tabs .tabs-body .tab-panel{
         min-height: 100%;
         height: 100%;
     }
 }
 .require-tabs-list {
-    height: 100%;
     border-bottom: 1px solid $border-color-1;
     .tabs-nav {
         border-bottom: 1px solid $border-color-1;

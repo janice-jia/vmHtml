@@ -40,7 +40,6 @@ class NoticeComment extends React.Component{
     }
 
     _handleScrollEnd (iScrollInstance) {
-        console.info('this.state.lastPage',this.state.lastPage);
         if((iScrollInstance.y - iScrollInstance.maxScrollY) < 25){
             if(!this.state.lastPage){
                 this.state.currentPage = this.state.currentPage + 1;
@@ -70,15 +69,17 @@ class NoticeComment extends React.Component{
                               onScrollEnd={this._handleScrollEnd.bind(this)}
                 >
                     <div style={{paddingBottom:'40px'}}>
-                        <List className="comments margin-0">
+                        <List className="comments margin-0 noticeList">
                             {this.state.noticeComment.map((item, i) => {
                                 return(
                                     <List.Item
                                         media = {<img className="comments-avatar" width="44" height="44" src={item.avatar}/>}
-                                        title = {<div>
-                                                    <span>{item.nickName}</span>
+                                        title = {<span className="text-size-14 text-color-3">{item.nickName}</span>}
+                                        subTitle = {<span className="text-size-13 text-color-4">{publicFn.getFormat(item.createTime)}</span>}
+                                        desc = {<div className="notice-desc">
+                                                    <p className="margin-0 text-size-14 text-color-3 notice-desc-tit">{item.title}</p>
+                                                    <p className="margin-0 text-size-14 text-color-4 notice-desc-con">{item.content}</p>
                                                 </div>}
-                                        subTitle = {publicFn.getFormat(item.createTime)}
                                         href={'/user/'+item.uid}
                                         key={i}
                                     />

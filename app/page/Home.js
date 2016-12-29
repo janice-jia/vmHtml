@@ -52,7 +52,7 @@ class Home extends React.Component {
                         {
                             this.state.slideList.map((item,i) =>{
                                 return  <Slider.Item key={i}>
-                                    <a href={'/tribe/item/'+item.id}><img src={item.thumb}/></a>
+                                    <a href={'/tribe/item/'+item.id}><img src={item.img}/></a>
                                 </Slider.Item>;
                             })
                         }
@@ -153,7 +153,7 @@ class Home extends React.Component {
                     <Grid>
                         <Col className="text-center"><span className="close" onClick={this.hiddenDownLoad.bind(this)}></span></Col>
                         <Col className="text-color-5 text-size-16">众创部落-IP垂直孵化平台</Col>
-                        <Col><button className="btn-yellow">下载App</button></Col>
+                        <Col><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.ibanyi" target="_blank"><button className="btn-yellow">下载App</button></a></Col>
                     </Grid>
                 </div>
             </Container>

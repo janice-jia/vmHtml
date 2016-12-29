@@ -69,16 +69,16 @@ class NoticeAttention extends React.Component{
                               onScrollEnd={this._handleScrollEnd.bind(this)}
                 >
                     <div style={{paddingBottom:'40px'}}>
-                        <List className="comments margin-0">
+                        <List className="comments margin-0 noticeList">
                             {this.state.noticeAttention.map((item, i) => {
                                 return(
                                     <List.Item
                                         media = {<img className="comments-avatar" width="44" height="44" src={item.avatar}/>}
                                         title = {<div>
-                                                    <span>{item.nickName}</span>
+                                                    <span className="text-size-14 text-color-3">{item.nickName}</span>
                                                     <span className="text-color-5 padding-left">关注了你</span>
                                                 </div>}
-                                        subTitle = {publicFn.getFormat(item.createTime)}
+                                        subTitle = {<span className="text-size-13 text-color-4">{publicFn.getFormat(item.createTime)}</span>}
                                         href={'/user/'+item.uid}
                                         key={i}
                                     />

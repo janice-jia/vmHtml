@@ -22,3 +22,25 @@
         @extend .text-size-14;
     }
 }
+
+.noticeList{
+    .item-linked{
+        a{
+            padding-left: 0!important;
+        }
+    }
+    .notice-desc{
+
+    }
+    .item-desc{
+        max-height: none;
+        word-wrap: break-word;
+        .notice-desc-tit{
+            @include line-clamp(1);
+        }
+        .notice-desc-con{
+            word-wrap: break-word;
+            word-break:break-all;
+        }
+    }
+}

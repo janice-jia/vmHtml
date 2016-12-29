@@ -5,6 +5,7 @@ import {NavBar, OffCanvasTrigger, OffCanvas, List, TabBar, Notification, Field, 
 import publicFn from '../publicFn'
 import UserStore from '../stores/UserStore'
 import UserActions from '../actions/UserActions'
+import cookie from 'react-cookie'
 
 //公用头部组件
 class _Header extends React.Component {
@@ -75,7 +76,8 @@ class _Header extends React.Component {
     }
 
     logOut(){
-        localStorage.clear();
+        //localStorage.clear();
+        cookie.remove('uid', { path: '/' });
         alert('退出成功');
         this.setState({uid:''});
     }

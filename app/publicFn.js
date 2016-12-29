@@ -1,16 +1,17 @@
 import $ from 'jquery'
 import React from 'react'
+import cookie from 'react-cookie'
 
 module.exports = {
 
     //返回用户登录状态
     isUser() {
-        return !!localStorage.uid
+        return !!cookie.load('uid')
     },
 
     //返回用户id
     getUser() {
-        return localStorage.uid
+        return cookie.load('uid')
     },
 
     //当前用户信息

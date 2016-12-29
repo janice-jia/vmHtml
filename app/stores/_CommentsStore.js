@@ -14,7 +14,7 @@ class _CommentsStore{
     //获取评论列表--成功
     onGetCommentSuccess(data){
         if(data.status) {
-            console.info('onGetCommentSuccess',data);
+            //console.info('onGetCommentSuccess',data);
             if(data.currentPage > 1){
                 this.commentList = this.commentList.concat(data.data.comments);
             }else{
@@ -40,7 +40,7 @@ class _CommentsStore{
     //获取评论列表--成功
     onGetCommentListSuccess(data){
         if(data.status) {
-            console.info('onGetCommentListSuccess',data);
+            //console.info('onGetCommentListSuccess',data);
             if(data.currentPage > 1){
                 this.commentList = this.commentList.concat(data.data);
             }else{

@@ -174,7 +174,8 @@ class _Header extends React.Component {
                 rightNav={publicFn.isUser() ?
                         [{
                             title:'',
-                            className:'msg left'
+                            className:'msg left',
+                            href:'/notice'
                         },{
                             title:'',
                             className:'search'

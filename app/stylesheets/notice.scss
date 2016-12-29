@@ -1,0 +1,24 @@
+.notice-tit{
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    background: $color-4;
+    text-align: center;
+    color: $color-1;
+    @extend .text-size-16;
+    .icon-notice-close{
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        margin: 15px 0 0 15px;
+        float: left;
+        background: url("../public/img/home/close.png") no-repeat;
+        background-size: 20px 20px;
+    }
+}
+
+.notice-nav{
+    .item-title{
+        @extend .text-size-14;
+    }
+}

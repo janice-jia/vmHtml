@@ -31,7 +31,7 @@ class ForgetPwdStore{
 
     //验证验证码--失败
     onCheckCodeFail(data){
-        console.info('onCheckCodeFail',data);
+        //console.info('onCheckCodeFail',data);
         return false;
     }
 

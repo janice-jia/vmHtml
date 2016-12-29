@@ -15,6 +15,12 @@ import ForgetPwd from './page/ForgetPwd'
 //FeedBack module
 import FeedBack from './page/FeedBack'
 
+//Notice module
+import Notice from './page/Notice'
+import NoticeAttention from './page/NoticeAttention'
+import NoticeRequire from './page/NoticeRequire'
+import NoticeComment from './page/NoticeComment'
+import NoticeSystem from './page/NoticeSystem'
 
 //user  module
 import User from './page/User'
@@ -64,6 +70,12 @@ module.exports = (
             <Route path="/login" component={Login}/>
             <Route path="/forgetpwd" component={ForgetPwd}/>
             <Route path="/feedback" component={FeedBack}/>
+
+            <Route path="/notice" component={Notice}/>
+            <Route path="/notice/attention" component={NoticeAttention}/>
+            <Route path="/notice/require" component={NoticeRequire}/>
+            <Route path="/notice/comment" component={NoticeComment}/>
+            <Route path="/notice/system" component={NoticeSystem}/>
 
             <Route path="/user/:uid" component={User}/>
             <Route path="/user/info/:uid" component={UserInfo}/>

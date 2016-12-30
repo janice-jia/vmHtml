@@ -2,9 +2,8 @@ import React from 'react';
 import _Header from './../components/_Header'
 import TribeAlbumActions from '../actions/TribeAlbumActions'
 import TribeAlbumStore from '../stores/TribeAlbumStore'
-import {
-    Container, Group, List, View, Badge,Grid,Col
-} from 'amazeui-touch';
+import { Container, Group, List, View, Badge,Grid,Col} from 'amazeui-touch';
+import _DownLoadApp from '../components/_DownLoadApp'
 
 
 class TribeAlbum extends React.Component{
@@ -64,6 +63,7 @@ class TribeAlbum extends React.Component{
                         })
                     }
                 </Grid>
+                <_DownLoadApp></_DownLoadApp>
             </Container>
         </View>
 

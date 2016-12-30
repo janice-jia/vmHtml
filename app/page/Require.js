@@ -2,6 +2,7 @@ import React from 'react'
 import {Button, View, Container, Tabs, Group, List, Grid, Col} from 'amazeui-touch';
 import _Header from './../components/_Header';
 import _Require from '../components/_Require'
+import _DownLoadApp from '../components/_DownLoadApp'
 import RequireActions from '../actions/RequireActions'
 import RequireStore from '../stores/RequireStore'
 
@@ -33,6 +34,7 @@ class Require extends React.Component{
                 <div className="require-tabs-list">
                     <_Require requireList={this.state.requireList}></_Require>
                 </div>
+                <_DownLoadApp></_DownLoadApp>
             </Container>
         </View>;
     }

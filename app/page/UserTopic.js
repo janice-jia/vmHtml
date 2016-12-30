@@ -1,12 +1,12 @@
 import React from 'react';
 import _Header from './../components/_Header'
 import _TopicItem from './../components/_TopicItem'
+import _DownLoadApp from './../components/_DownLoadApp'
 import {Container, Group, List, View, Badge} from 'amazeui-touch';
 import UserTopicActions from './../actions/UserTopicActions'
 import UserTopicStore from './../stores/UserTopicStore'
 import ReactIScroll from 'react-iscroll'
 import iscroll from 'iscroll'
-import $  from 'jquery'
 
 class UserTopic extends React.Component{
     constructor(props){
@@ -65,6 +65,7 @@ class UserTopic extends React.Component{
                 >
                     <_TopicItem topicList={this.state.topicList}></_TopicItem>
                 </ReactIScroll>
+                <_DownLoadApp></_DownLoadApp>
             </Container>
 
         </View>

@@ -1,5 +1,6 @@
 import React from 'react';
 import _Header from './../components/_Header'
+import _DownLoadApp from './../components/_DownLoadApp'
 import TribeComicActions from '../actions/TribeComicActions'
 import TribeComicStore from '../stores/TribeComicStore'
 import {Container, Group, List, View, Badge,Grid,Col} from 'amazeui-touch';
@@ -64,6 +65,7 @@ class TribeComic extends React.Component{
                         }
                     </List>
                 </Group>
+                <_DownLoadApp></_DownLoadApp>
             </Container>
         </View>
 

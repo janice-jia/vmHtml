@@ -2,6 +2,7 @@ import React from 'react'
 import {browserHistory}  from 'react-router'
 import {View, Container, Group, List, Grid, Col} from 'amazeui-touch';
 import _Header from './../components/_Header'
+import _DownLoadApp from './../components/_DownLoadApp'
 import UserActions from './../actions/UserActions'
 import UserStore from './../stores/UserStore'
 import publicFn from '../publicFn'
@@ -121,6 +122,7 @@ class User extends  React.Component{
                             <List.Item href={'/user/server/'+this.state.uid} title={this.state.uid == publicFn.getUser() ? '我的服务' : (this.state.userInfo.gender == 'F' ? '她的服务': '他的服务')} media={<span className="userNav-fw"></span>}/>
                         </List>
                     </Group>
+                    <_DownLoadApp></_DownLoadApp>
                 </Container>
                 <Group className={$.isEmptyObject(this.state.userInfo) ? 'text-center bgNone' : 'hidden'}>
                     改用户不存在

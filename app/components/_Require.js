@@ -16,7 +16,6 @@ class _Require extends React.Component {
                             subTitle = {item.name}
                             href = {'/require/info/'+item.id}
                             desc = {item.details}
-                            target = 'target'
                             after={'保证金: '+item.margin}
                             key={i}
                         >

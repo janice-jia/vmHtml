@@ -1,7 +1,7 @@
 import React from 'react'
 import {View, Container, Group, Field, List, Icon, Grid, Col, Button} from 'amazeui-touch';
 import _Header from './../components/_Header'
-import $ from 'jquery'
+import _DownLoadApp from './../components/_DownLoadApp'
 import RegisterActions from '../actions/RegisterActions'
 import RegisterStore from '../stores/RegisterStore'
 
@@ -169,6 +169,7 @@ export default React.createClass({
                             <Button className="btn-yellow margin-top-xl padding-v" onClick={this.subRegister}>注册</Button>
                         </div>
                     </Group>
+                    <_DownLoadApp></_DownLoadApp>
                 </Container>
             </View>
         )

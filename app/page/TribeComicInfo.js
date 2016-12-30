@@ -1,14 +1,13 @@
 import React from 'react';
 import _Header from './../components/_Header'
-import {
-    Container, Group, List, View, Badge, Grid, Col,TabBar
-} from 'amazeui-touch';
+import {Container, Group, List, View, Badge, Grid, Col,TabBar} from 'amazeui-touch';
 import _CommentsActions from '../actions/_CommentsActions'
 import _CommentsStore from '../stores/_CommentsStore'
 import ReactIScroll from 'react-iscroll'
 import iscroll from 'iscroll'
 import publicFn from '../publicFn'
 import _Comments from '../components/_Comments'
+import _DownLoadApp from '../components/_DownLoadApp'
 
 class TribeComicInfo extends React.Component{
     constructor(props){
@@ -86,6 +85,7 @@ class TribeComicInfo extends React.Component{
                         </Group>
                     </div>
                 </ReactIScroll>
+                <_DownLoadApp></_DownLoadApp>
             </Container>
         </View>
 

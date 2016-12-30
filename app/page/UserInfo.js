@@ -1,15 +1,9 @@
 import React from 'react'
 import {View, Container, Group, List, Icon, Field, Button} from 'amazeui-touch';
 import _Header from './../components/_Header'
+import _DownLoadApp from './../components/_DownLoadApp'
 
 class UserInfo extends React.Component{
-
-    constructor(props){
-        super(props);
-        //console.info('props',props);
-        //console.info('this.props',this.props);
-        //console.info('this.location',this.location);
-    }
 
     render() {
         return (
@@ -38,6 +32,7 @@ class UserInfo extends React.Component{
                             </List.Item>
                         </List>
                     </Group>
+                    <_DownLoadApp></_DownLoadApp>
                 </Container>
             </View>
         )

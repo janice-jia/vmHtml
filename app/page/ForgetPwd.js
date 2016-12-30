@@ -1,9 +1,9 @@
 import React from 'react'
 import {View, Container, Group, Field, List, Icon, Grid, Col, Button} from 'amazeui-touch';
 import _Header from './../components/_Header'
+import _DownLoadApp from './../components/_DownLoadApp'
 import ForgetPwdStore from './../stores/ForgetPwdStore'
 import ForgetPwdActions from './../actions/ForgetPwdActions'
-import $ from 'jquery'
 
 export default React.createClass({
     getInitialState:function () {
@@ -141,6 +141,7 @@ export default React.createClass({
                             <Button className="btn-yellow margin-top-xl padding-v" onClick={this.subForgetPwd}>完成</Button>
                         </div>
                     </Group>
+                    <_DownLoadApp></_DownLoadApp>
                 </Container>
             </View>
         )

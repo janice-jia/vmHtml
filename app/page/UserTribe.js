@@ -1,12 +1,12 @@
 import React from 'react';
 import _Header from './../components/_Header'
 import _Tribe from './../components/_Tribe'
+import _DownLoadApp from './../components/_DownLoadApp'
 import {Container, Group, List, View, Badge} from 'amazeui-touch';
 import UserTribeActions from './../actions/UserTribeActions'
 import UserTribeStore from './../stores/UserTribeStore'
 import ReactIScroll from 'react-iscroll'
 import iscroll from 'iscroll'
-import $  from 'jquery'
 
 class UserTribe extends React.Component{
     constructor(props){
@@ -65,6 +65,7 @@ class UserTribe extends React.Component{
                 >
                     <_Tribe tribeList={this.state.tribeList}></_Tribe>
                 </ReactIScroll>
+                <_DownLoadApp></_DownLoadApp>
             </Container>
             <Group  className={this.state.tribeList.length>0 ? 'hidden' : 'null-con bgF margin-0'}>部落为空</Group>
         </View>

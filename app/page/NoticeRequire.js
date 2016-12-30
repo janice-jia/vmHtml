@@ -1,6 +1,7 @@
 import React from 'react';
 import _Header from './../components/_Header'
-import {Container, Group, List, View, Badge, Notification, Grid, Col} from 'amazeui-touch';
+import _DownLoadApp from './../components/_DownLoadApp'
+import {Container, Group, List, View} from 'amazeui-touch';
 import ReactIScroll from 'react-iscroll'
 import iscroll from 'iscroll'
 import NoticeStore from '../stores/NoticeStore'
@@ -58,6 +59,7 @@ class NoticeRequire extends React.Component{
 
     render() {
         return <View>
+            <_DownLoadApp></_DownLoadApp>
             <div className="notice-tit">
                 <span className="icon icon-notice-close" onClick={this.backPage}></span>
                 通知
@@ -89,6 +91,7 @@ class NoticeRequire extends React.Component{
                     </div>
                 </ReactIScroll>
             </Container>
+
         </View>
     }
 }

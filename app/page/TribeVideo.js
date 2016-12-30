@@ -2,9 +2,8 @@ import React from 'react';
 import _Header from './../components/_Header'
 import TribeVideoActions from '../actions/TribeVideoActions'
 import TribeVideoStore from '../stores/TribeVideoStore'
-import {
-    Container, Group, List, View, Badge,Grid,Col
-} from 'amazeui-touch';
+import {Container, Group, List, View, Badge,Grid,Col} from 'amazeui-touch';
+import _DownLoadApp from '../components/_DownLoadApp'
 
 
 class TribeVideo extends React.Component{
@@ -74,6 +73,7 @@ class TribeVideo extends React.Component{
                         })
                     }
                 </Grid>
+                <_DownLoadApp></_DownLoadApp>
             </Container>
         </View>
 

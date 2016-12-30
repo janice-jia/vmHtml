@@ -5,6 +5,7 @@ import TribeMemberActions from '../actions/TribeMemberActions'
 import TribeMemberStore from '../stores/TribeMemberStore'
 import ReactIScroll from 'react-iscroll'
 import iscroll from 'iscroll'
+import _DownLoadApp from '../components/_DownLoadApp'
 
 class TribeMember extends  React.Component{
     constructor(props){
@@ -91,6 +92,7 @@ class TribeMember extends  React.Component{
                 </div>
                 </ReactIScroll>
             </Container>
+            <_DownLoadApp></_DownLoadApp>
         </View>
 
     }

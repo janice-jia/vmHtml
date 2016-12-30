@@ -1,6 +1,7 @@
 import React from 'react';
 import _Header from './../components/_Header'
-import {Container, Group, List, View, Badge, Notification, Grid, Col} from 'amazeui-touch';
+import _DownLoadApp from './../components/_DownLoadApp'
+import {Container, Group, List, View} from 'amazeui-touch';
 import ReactIScroll from 'react-iscroll'
 import iscroll from 'iscroll'
 import NoticeStore from '../stores/NoticeStore'
@@ -89,6 +90,7 @@ class NoticeSystem extends React.Component{
                         </List>
                     </div>
                 </ReactIScroll>
+                <_DownLoadApp></_DownLoadApp>
             </Container>
         </View>
     }

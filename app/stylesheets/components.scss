@@ -23,6 +23,11 @@
         margin: 0 auto;
         background: url("../public/img/home/logo_icon.png") no-repeat;
         background-size: 100% 100%;
+        a{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
     }
 
     .navbar-right{
@@ -64,6 +69,12 @@
         height: 15px;
         display: inline-block;
         float: left;
+    }
+    .cancel{
+        color: #ffffff;
+        a{
+            color: #ffffff;
+        }
     }
     .header-icon-close{
         margin-top: $xs;
@@ -406,4 +417,28 @@
     padding: 0 $sm;
     @extend .text-color-2;
     @extend .text-size-14;
+}
+
+
+//app下载
+.appDownLoad{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 49px;
+    line-height: 49px;
+    background: rgba(23,23,23,.8);
+    z-index: 100;
+    .close{
+        display: inline-block;
+        width: 19px;
+        height: 49px;
+        background: url("../public/img/home/close.png") 0 15px  no-repeat;
+        background-size: 19px 19px;
+    }
+    .btn-yellow{
+        border-radius: 0;
+        @extend .text-color-1;
+    }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import _Header from './../components/_Header'
 import _Comments from './../components/_Comments'
+import _DownLoadApp from './../components/_DownLoadApp'
 import {Container, Group, List, View, Badge, Grid, Col} from 'amazeui-touch';
 import _CommentsStore from '../stores/_CommentsStore'
 import _CommentsActions from '../actions/_CommentsActions'
@@ -99,6 +100,7 @@ class TribeTopic extends React.Component{
                         </Group>
                     </div>
                 </ReactIScroll>
+                <_DownLoadApp></_DownLoadApp>
             </Container>
         </View>
 

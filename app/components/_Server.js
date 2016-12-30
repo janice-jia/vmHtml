@@ -24,7 +24,6 @@ class _Server extends React.Component {
                                 subTitle = {item.rewardDesc}
                                 href = {'/server/info/'+item.id}
                                 desc = {item.desc}
-                                target = {item.target}
                                 after={item.after}
                             >
                                 <Grid align="between" className="margin-top-xs">

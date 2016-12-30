@@ -5,6 +5,7 @@ import _Tribe from './../components/_Tribe'
 import _TopicItem from './../components/_TopicItem'
 import _Require from './../components/_Require'
 import _Server from './../components/_Server'
+import _DownLoadApp from './../components/_DownLoadApp'
 import SearchActions from '../actions/SearchActions'
 import SearchStore from '../stores/SearchStore'
 import ReactIScroll from 'react-iscroll'
@@ -84,42 +85,50 @@ class Search extends React.Component{
 
     //部落搜索
     searchTribe(currentPage){
-        //部落搜索
-        SearchActions.searchTribes({
-            searchValue : this.state.searchVal,
-            currentPage : currentPage ? currentPage : this.state.currentPage_tribe,
-            itemsPerPage : this.state.itemsPerPage,
-        });
+        if(this.state.searchVal) {
+            //部落搜索
+            SearchActions.searchTribes({
+                searchValue: this.state.searchVal,
+                currentPage: currentPage ? currentPage : this.state.currentPage_tribe,
+                itemsPerPage: this.state.itemsPerPage,
+            });
+        }
     }
 
     //话题搜索
     searchTopic(currentPage){
-        //话题搜索
-        SearchActions.searchTopic({
-            searchValue : this.state.searchVal,
-            currentPage : currentPage ? currentPage : this.state.currentPage_topic,
-            itemsPerPage : this.state.itemsPerPage,
-        });
+        if(this.state.searchVal) {
+            //话题搜索
+            SearchActions.searchTopic({
+                searchValue: this.state.searchVal,
+                currentPage: currentPage ? currentPage : this.state.currentPage_topic,
+                itemsPerPage: this.state.itemsPerPage,
+            });
+        }
     }
 
     //需求搜索
     searchRequire(currentPage){
-        //需求搜索
-        SearchActions.searchRequire({
-            searchValue : this.state.searchVal,
-            currentPage : currentPage ? currentPage : this.state.currentPage_require,
-            itemsPerPage : this.state.itemsPerPage,
-        });
+        if(this.state.searchVal) {
+            //需求搜索
+            SearchActions.searchRequire({
+                searchValue: this.state.searchVal,
+                currentPage: currentPage ? currentPage : this.state.currentPage_require,
+                itemsPerPage: this.state.itemsPerPage,
+            });
+        }
     }
 
     //服务搜索
     searchServer(currentPage){
-        //服务搜索
-        SearchActions.searchServer({
-            searchValue : this.state.searchVal,
-            currentPage : currentPage ? currentPage : this.state.currentPage_server,
-            itemsPerPage : this.state.itemsPerPage,
-        });
+        if(this.state.searchVal) {
+            //服务搜索
+            SearchActions.searchServer({
+                searchValue: this.state.searchVal,
+                currentPage: currentPage ? currentPage : this.state.currentPage_server,
+                itemsPerPage: this.state.itemsPerPage,
+            });
+        }
     }
 
     _handleScrollEnd (iScrollInstance) {
@@ -198,6 +207,7 @@ class Search extends React.Component{
                 >
                     <_Server serverList={this.state.serverList}></_Server>
                 </ReactIScroll>
+                <_DownLoadApp></_DownLoadApp>
             </Container>
         </View>;
     }

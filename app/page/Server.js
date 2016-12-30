@@ -1,16 +1,8 @@
 import React from 'react'
-import {
-    Button,
-    View,
-    Container,
-    Tabs,
-    Group,
-    List,
-    Grid,
-    Col
-} from 'amazeui-touch';
+import {Button, View, Container, Tabs, Group, List, Grid, Col} from 'amazeui-touch';
 import _Header from './../components/_Header'
 import _Server from '../components/_Server'
+import _DownLoadApp from '../components/_DownLoadApp'
 import ServerStore from '../stores/ServerStore'
 import ServerActions from '../actions/ServerActions'
 import ReactIScroll from 'react-iscroll'
@@ -139,7 +131,7 @@ class Server extends React.Component{
                     </ReactIScroll>
 
             </Container>
-            {this.props.children}
+            <_DownLoadApp></_DownLoadApp>
         </View>;
     }
 }

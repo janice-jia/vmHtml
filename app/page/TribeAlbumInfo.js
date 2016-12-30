@@ -6,6 +6,7 @@ import {
 import TribeAlbumInfoActions from '../actions/TribeAlbumInfoActions'
 import TribeAlbumInfoStore from '../stores/TribeAlbumInfoStore'
 import publicFn from '../publicFn'
+import _DownLoadApp from '../components/_DownLoadApp'
 
 
 class TribeAlbumInfo extends React.Component{
@@ -70,6 +71,7 @@ class TribeAlbumInfo extends React.Component{
                         })
                     }
                 </Grid>
+                <_DownLoadApp></_DownLoadApp>
             </Container>
         </View>
 

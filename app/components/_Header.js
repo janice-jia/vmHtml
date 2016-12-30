@@ -104,7 +104,7 @@ class _Header extends React.Component {
                         </form>
                     </Col>
                     <Col cols={1} className="padding-0 bgNone text-right" onClick={this.closeNotification.bind(this)}>
-                        <p className="text-size-14 padding-v-xs">取消</p>
+                        <p className="text-size-14 padding-v-xs cancel"><a href="/">取消</a></p>
                     </Col>
                 </Grid>
 
@@ -112,7 +112,7 @@ class _Header extends React.Component {
 
             <NavBar
                 className="Header"
-                title={<div className="home-logo text-size-12"></div>}
+                title={<div className="home-logo text-size-12"><a href="/"></a></div>}
                 leftNav={[{title: '',
                 component: OffCanvasTrigger,
                 className:"leftNav",
@@ -180,12 +180,14 @@ class _Header extends React.Component {
                             href:'/notice'
                         },{
                             title:'',
-                            className:'search'
+                            className:'search',
+                            href:'/search'
                         }]
                         :
                         [{
                             title:'',
-                            className:'search'
+                            className:'search',
+                            href:'/search'
                         }]}
                 onAction={this.openNotification.bind(this)}
                 amStyle="dark"/>

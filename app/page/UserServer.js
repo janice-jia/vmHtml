@@ -1,6 +1,7 @@
 import React from 'react'
 import {View, Container} from 'amazeui-touch';
 import _Header from './../components/_Header'
+import _DownLoadApp from './../components/_DownLoadApp'
 import _Server from './../components/_Server'
 import UserServerStore from './../stores/UserServerStore'
 import UserServerActions from './../actions/UserServerActions'
@@ -33,6 +34,7 @@ class UserServer extends React.Component{
                 <_Header/>
                 <Container scrollable>
                     <_Server serverList={this.state.serverList}></_Server>
+                    <_DownLoadApp></_DownLoadApp>
                 </Container>
             </View>
         )

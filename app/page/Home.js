@@ -5,13 +5,13 @@ import HomeActions from '../actions/HomeActions'
 import _Header from '../components/_Header'
 import { Swiper, Slide } from 'react-dynamic-swiper'
 import _Topic from '../components/_Topic'
+import _DownLoadApp from '../components/_DownLoadApp'
 
 class Home extends React.Component {
     constructor(props) {
         super(props);
         this.state = HomeStore.getState();
         this.onChange = this.onChange.bind(this);
-        this.state.hiddenDownLoad = false;
         //console.info('this.sate',this.state);
     }
 
@@ -38,10 +38,6 @@ class Home extends React.Component {
         }
     }
 
-    //关闭app下载
-    hiddenDownLoad(){
-        this.setState({hiddenDownLoad:true});
-    }
 
     render() {
         return <View>
@@ -61,8 +57,8 @@ class Home extends React.Component {
 
                 <div className="home-tribe border-d7d7d7 bgF">
                     <Group noPadded className="margin-0">
-                        <h5 className="home-group-header margin-sm">部落</h5>
-                        <Group noPadded className="margin-h-xs margin-v-0">
+                        <h5 className="home-group-header margin">部落</h5>
+                        <Group noPadded className="margin-v-0">
                             <Swiper
                                 swiperOptions={{slidesPerView:'auto'}}
                                 navigation={false}
@@ -70,7 +66,7 @@ class Home extends React.Component {
                             >
                                 {
                                     this.state.tribeList.map((item, i) => {
-                                        return <Slide key={i}>
+                                        return <Slide key={i} className="margin-left">
                                             <div className="swiper-slide">
                                                 <a href={'/tribe/item/'+item.id}><img src={item.logo}/></a>
                                                 <a href={'/tribe/item/'+item.id}><p className="home-tribe-name">{item.title}</p></a>
@@ -85,7 +81,7 @@ class Home extends React.Component {
 
                 <div className="home-square border-d7d7d7 bgF margin-top-sm">
                     <Group noPadded className="margin-v-0">
-                        <h5 className="home-group-header margin-sm">广场</h5>
+                        <h5 className="home-group-header margin">广场</h5>
                         <Grid align="between" className="padding-v-sm home-square-borderT">
                             <Col cols={3}>
                                 <a href="/require" className="text-color-3">
@@ -148,15 +144,8 @@ class Home extends React.Component {
                     </p>
                     <p className="text-center text-size-14 text-color-2">京ICP备14057447号-3</p>
                 </div>
-
-                <div className={this.state.hiddenDownLoad ? 'hidden' : 'appDownLoad'}>
-                    <Grid>
-                        <Col className="text-center"><span className="close" onClick={this.hiddenDownLoad.bind(this)}></span></Col>
-                        <Col className="text-color-5 text-size-16">众创部落-IP垂直孵化平台</Col>
-                        <Col><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.ibanyi" target="_blank"><button className="btn-yellow">下载App</button></a></Col>
-                    </Grid>
-                </div>
             </Container>
+            <_DownLoadApp></_DownLoadApp>
         </View>;
     }
 }

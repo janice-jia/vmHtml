@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link}  from 'react-router'
 import _Header from './../components/_Header'
 import {Container, Group, List, View, Badge, Grid, Col} from 'amazeui-touch';
 import TribeItemActions from './../actions/TribeItemActions'
@@ -8,6 +9,7 @@ import { Swiper, Slide } from 'react-dynamic-swiper'
 import _Topic from '../components/_Topic'
 import ReactIScroll from 'react-iscroll'
 import iscroll from 'iscroll'
+import _DownLoadApp from '../components/_DownLoadApp'
 
 class TribeItem extends React.Component{
     constructor(props){
@@ -131,7 +133,7 @@ class TribeItem extends React.Component{
                         <ul>
                             {this.state.tribeInfo.topTopics.map((item, i) => {
                                 return (
-                                    <li className="icon-toTop text-color-3" key={i}><a href={'/tribe/topic/'+item.id}>{item.title}</a></li>
+                                    <li className="icon-toTop text-color-3" key={i}><Link to={{ pathname: '/tribe/topic/'+item.id, query: { userAvatar: item.userAvatar,userName: item.userName,tribeName:item.tribeName,tribesId:item.tribesId,createTime:item.createTime,uid:item.uid} }}>{item.title}</Link></li>
                                 );
                             })}
                         </ul>
@@ -143,6 +145,7 @@ class TribeItem extends React.Component{
                     </div>
                     </div>
                 </ReactIScroll>
+                <_DownLoadApp></_DownLoadApp>
             </Container>
         </View>
 

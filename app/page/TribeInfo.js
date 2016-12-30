@@ -2,6 +2,7 @@ import React from 'react';
 import _Header from './../components/_Header'
 import {Container, Group, List, View, Badge, Grid, Col, Icon} from 'amazeui-touch';
 import publicFn from '../publicFn'
+import _DownLoadApp from '../components/_DownLoadApp'
 
 class TribeInfo extends React.Component{
     render() {
@@ -35,6 +36,7 @@ class TribeInfo extends React.Component{
                         </List.Item>
                     </List>
                 </Group>
+                <_DownLoadApp></_DownLoadApp>
             </Container>
         </View>
 

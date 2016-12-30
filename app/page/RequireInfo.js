@@ -3,6 +3,7 @@ import {View, Container, Grid, Col, Group, List, Badge} from 'amazeui-touch';
 import { Swiper, Slide } from 'react-dynamic-swiper'
 import _Header from './../components/_Header'
 import _Comments from './../components/_Comments'
+import _DownLoadApp from './../components/_DownLoadApp'
 import RequireInfoActions from '../actions/RequireInfoActions'
 import RequireInfoStore from '../stores/RequireInfoStore'
 import _CommentsStore from '../stores/_CommentsStore'
@@ -190,6 +191,7 @@ class RequireInfo extends React.Component{
                         </Group>
                     </div>
                 </ReactIScroll>
+                <_DownLoadApp></_DownLoadApp>
             </Container>
         </View>;
     }

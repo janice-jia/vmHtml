@@ -1,6 +1,7 @@
 import React from 'react'
 import {View, Container, Grid, Col, Group, List} from 'amazeui-touch';
 import _Header from './../components/_Header'
+import _DownLoadApp from './../components/_DownLoadApp'
 import ServerInfoActions from '../actions/ServerInfoActions'
 import ServerInfoStore from '../stores/ServerInfoStore'
 import publicFn from '../publicFn'
@@ -48,24 +49,19 @@ class ServerInfo extends React.Component{
     }
 
     render() {
-        const { serverId } = this.props.params
-        const img = <img className="server-user-avatar" width="44" height="44"
-                         src={this.state.serverInfo.avatar}/>
-        const tit = (
-            <div className="server-user-name">
-                <p className="text-color-3 text-size-14">{this.state.serverInfo.username}</p>
-                <p className="text-color-4 text-size-13">{this.state.serverInfo.city}</p>
-            </div>
-        )
-        const btn = <div className="server-user-tag">关注</div>
         return <View>
             <_Header></_Header>
             <Container scrollable>
                 <div className="border-d7d7d7 bgF server-info-user">
                     <List.Item
-                        media={img}
+                        media={<a href={'/user/'+this.state.serverInfo.userId}><img className="server-user-avatar" width="44" height="44" src={this.state.serverInfo.avatar}/></a>}
                         after={this.state.serverInfo.isAttention ? <div className="attentionCancel" onClick={this.attentionCancel.bind(this)}>已关注</div> :<div className="attentionUser" onClick={this.attentionUser.bind(this)}>关注</div>}
-                        title={tit}
+                        title={<div className="server-user-name">
+                                <a href={'/user/'+this.state.serverInfo.userId}>
+                                <p className="text-color-3 text-size-14">{this.state.serverInfo.username}</p>
+                                <p className="text-color-4 text-size-13">{this.state.serverInfo.city}</p>
+                                </a>
+                            </div>}
                     />
                 </div>
                 <Group noPadded className="margin-0">
@@ -114,8 +110,7 @@ class ServerInfo extends React.Component{
                         </Grid>
                     </div>
                 </Group>
-
-
+                <_DownLoadApp></_DownLoadApp>
             </Container>
         </View>;
     }

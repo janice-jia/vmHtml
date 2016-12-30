@@ -17,7 +17,6 @@ class _Tribe extends React.Component {
                             title={item.title}
                             subTitle = {'族员：'+item.memberAmount}
                             desc = {item.descript}
-                            target="_blank"
                             media={<img src={ item.logo }/> }
                             key={i}
                             href={"/tribe/item/"+item.id}

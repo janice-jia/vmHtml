@@ -2,6 +2,7 @@ import React from 'react'
 import {View, Container, Tabs} from 'amazeui-touch';
 import _Header from './../components/_Header'
 import _Require from './../components/_Require'
+import _DownLoadApp from './../components/_DownLoadApp'
 import UserRequireStore from './../stores/UserRequireStore'
 import UserRequireActions from './../actions/UserRequireActions'
 
@@ -48,6 +49,7 @@ class UserRequire extends React.Component{
                         </Tabs.Item>
                     </Tabs>
                     </div>
+                    <_DownLoadApp></_DownLoadApp>
                 </Container>
             </View>
         )

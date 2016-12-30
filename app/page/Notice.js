@@ -1,9 +1,9 @@
 import React from 'react';
 import _Header from './../components/_Header'
+import _DownLoadApp from './../components/_DownLoadApp'
 import {Container, Group, List, View, Badge, Notification} from 'amazeui-touch';
 import ReactIScroll from 'react-iscroll'
 import iscroll from 'iscroll'
-import $  from 'jquery'
 
 class Notice extends React.Component{
 
@@ -25,6 +25,7 @@ class Notice extends React.Component{
                     <List.Item href={'/notice/system'}  title="系统" />
                 </List>
             </Container>
+            <_DownLoadApp></_DownLoadApp>
         </View>
     }
 }

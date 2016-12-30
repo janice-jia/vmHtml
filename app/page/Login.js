@@ -1,6 +1,7 @@
 import React from 'react'
 import {View, Container, Group, Button, Field, List, Icon} from 'amazeui-touch';
 import _Header from './../components/_Header'
+import _DownLoadApp from './../components/_DownLoadApp'
 import LoginStore from '../stores/LoginStore'
 import LoginActions from '../actions/LoginActions'
 import $ from 'jquery';
@@ -67,6 +68,7 @@ export default React.createClass({
                     <Group className="registerNow bgNone margin-v-xs">
                         <p className="text-size-13 text-color-2">您还没有账号？现在<a href="/register"> 注册</a></p>
                     </Group>
+                    <_DownLoadApp></_DownLoadApp>
                 </Container>
             </View>
         )

@@ -6,7 +6,7 @@ import TribeListActions from './../actions/TribeListActions'
 import TribeListStore from './../stores/TribeListStore'
 import ReactIScroll from 'react-iscroll'
 import iscroll from 'iscroll'
-import $  from 'jquery'
+import _DownLoadApp from '../components/_DownLoadApp'
 
 class TribeList extends React.Component{
     constructor(props){
@@ -64,6 +64,7 @@ class TribeList extends React.Component{
                         <_Tribe tribeList={this.state.tribeList}></_Tribe>
                     </div>
                 </ReactIScroll>
+                <_DownLoadApp></_DownLoadApp>
             </Container>
         </View>
     }

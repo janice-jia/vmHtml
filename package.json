@@ -4,7 +4,8 @@
   "description": "This vmaking",
   "main": "index.js",
   "scripts": {
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start": "npm run build && node server.js",
+    "start:test": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:dev": "webpack-dev-server --devtool eval --progress --colors --watch --inline --open --content-base build/ --history-api-fallback",
     "start:prod": "npm run build && node server.js",
     "build:client": "webpack",

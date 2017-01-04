@@ -12,7 +12,7 @@ class TribeListStore{
     //所有部落列表接口--成功
     onGetTribeSuccess(data){
         if(data.status) {
-            console.info('onGetTribeSuccess',data);
+            //console.info('onGetTribeSuccess',data);
             if(data.currentPage > 1){
                 this.tribeList = this.tribeList.concat(data.data);
             }else{
@@ -26,7 +26,7 @@ class TribeListStore{
     }
     //所有部落列表接口--失败
     onGetTribeFail(data){
-        console.info('onGetTribeFail',data);
+        //console.info('onGetTribeFail',data);
         this.tribeList = [];
     }
 }

@@ -21,7 +21,7 @@ class _Topic extends React.Component {
             <List className="margin-0">
                 {
                     this.props.topicList.map((item, i) => {
-                        return <Group noPadded className="margin-v bgF border-d7d7d7" key={i}>
+                        return <Group noPadded className="margin-v-xs bgF border-d7d7d7" key={i}>
                             <List.Item
                                 media={<a href={'/user/'+item.uid}><img className="home-topic-media" width="44" height="44" src={item.userAvatar} /></a>}
                                 after={<div className={this.props.showTribe ? 'home-topic-tag text-color-2' : 'hidden'}><a href={'/tribe/item/'+item.tribesId}>{item.tribeName}</a></div>}
@@ -29,8 +29,9 @@ class _Topic extends React.Component {
                                                 <p className="text-color-3 text-size-14"><a href={'/user/'+item.uid}>{item.userName}</a></p>
                                                 <p className="text-color-4 text-size-13">{publicFn.getFromNow(item.createTime)}</p>
                                             </div>}
+                                className="padding-h-sm"
                             />
-                            <div className="padding-h margin-v-xs">
+                            <div className="padding-h-sm margin-v-xs">
                                 <div className="text-size-15 text-color-3 margin-bottom-xs home-topic-tit">
                                     <Link to={{ pathname: '/tribe/topic/'+item.id, query: { userAvatar: item.userAvatar,userName: item.userName,tribeName:item.tribeName,tribesId:item.tribesId,createTime:item.createTime,uid:item.uid} }}>{item.title}</Link>
                                 </div>
@@ -38,25 +39,24 @@ class _Topic extends React.Component {
                                     <Link to={{ pathname: '/tribe/topic/'+item.id, query: { userAvatar: item.userAvatar,userName: item.userName,tribeName:item.tribeName,tribesId:item.tribesId,createTime:item.createTime,uid:item.uid} }}>{item.description}</Link>
                                 </div>
                             </div>
-                            <Grid avg={3}>
+                            <Grid className="topic-banner">
                                 {
                                     item.topicPic.map( (topicPic, topicPicI) => {
-                                        return <Col key={topicPicI} className="padding-h padding-top-xs padding-bottom-0">
+                                        return <Col key={topicPicI} className="padding-h-sm padding-top-xs padding-bottom-0">
                                             <a href={'/tribe/topic/'+item.id}><img src={topicPic}/></a>
                                         </Col>
                                     })
                                 }
                             </Grid>
                             <Grid align="between" className="margin-v-xs">
-                                <Col cols={2} className="padding-h text-size-12 text-color-4">
+                                <Col cols={2} className="padding-h-sm text-size-12 text-color-4">
                                     <span className="icon home-icon-view margin-right-xs"></span>
                                     {item.lookNum}
                                 </Col>
-                                <Col cols={2} className="padding-h text-size-12 text-color-4 text-right">
+                                <Col cols={2} className="padding-h-sm text-size-12 text-color-4 text-right">
                                     <Grid>
                                         <Col>
-                                                        <span
-                                                            className="icon home-icon-fabulous margin-right-xs"></span>
+                                            <span className="icon home-icon-fabulous margin-right-xs"></span>
                                             {item.like}
                                         </Col>
                                         <Col>

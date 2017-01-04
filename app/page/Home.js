@@ -43,7 +43,14 @@ class Home extends React.Component {
         return <View>
             <_Header/>
             <Container scrollable className="home">
-                <div className="home-slide">
+                <div className={this.state.slideList.length < 2 ? 'home-slide' : 'hidden'}>
+                    {
+                        this.state.slideList.map((item,i) =>{
+                            return   <a href={'/tribe/item/'+item.id} key={i}><img src={item.img}/></a>;
+                        })
+                    }
+                </div>
+                <div className={this.state.slideList.length > 1 ? 'home-slide' : 'hidden'}>
                     <Slider>
                         {
                             this.state.slideList.map((item,i) =>{
@@ -57,7 +64,7 @@ class Home extends React.Component {
 
                 <div className="home-tribe border-d7d7d7 bgF">
                     <Group noPadded className="margin-0">
-                        <h5 className="home-group-header margin">部落</h5>
+                        <h5 className="home-group-header margin-sm">部落</h5>
                         <Group noPadded className="margin-v-0">
                             <Swiper
                                 swiperOptions={{slidesPerView:'auto'}}
@@ -66,7 +73,7 @@ class Home extends React.Component {
                             >
                                 {
                                     this.state.tribeList.map((item, i) => {
-                                        return <Slide key={i} className="margin-left">
+                                        return <Slide key={i} className="margin-left-sm margin-right-xs">
                                             <div className="swiper-slide">
                                                 <a href={'/tribe/item/'+item.id}><img src={item.logo}/></a>
                                                 <a href={'/tribe/item/'+item.id}><p className="home-tribe-name">{item.title}</p></a>
@@ -79,7 +86,7 @@ class Home extends React.Component {
                     </Group>
                 </div>
 
-                <div className="home-square border-d7d7d7 bgF margin-top-sm">
+                <div className="home-square border-d7d7d7 bgF margin-top-xs">
                     <Group noPadded className="margin-v-0">
                         <h5 className="home-group-header margin">广场</h5>
                         <Grid align="between" className="padding-v-sm home-square-borderT">
@@ -111,32 +118,17 @@ class Home extends React.Component {
                     </Group>
                 </div>
 
-                <div className="home-square border-d7d7d7 bgF margin-top-sm hidden">
-                    <Group noPadded className="margin-v-0">
-                        <h5 className="home-group-header margin-sm">广场</h5>
-
-                        <Grid align="between" className="padding-v-sm">
-                            <Col cols={3}>
-                                <button className="btn-yellow">需求</button>
-                            </Col>
-                            <Col cols={3}>
-                                <button className="btn-blue">服务</button>
-                            </Col>
-                        </Grid>
-                    </Group>
-                </div>
-
-                <div className="margin-top-sm comp-topic-list">
+                <div className="margin-top-xs comp-topic-list">
                     <_Topic topicList={this.state.topicList} showTribe={true}></_Topic>
                 </div>
 
-                <div className="margin-h margin-v">
+                <div className="margin-xs">
                     <Group noPadded className="margin-0">
                         <a className="btn-white" href="javascript:;" onClick={this.loadTopic.bind(this)}>查看更多</a>
                     </Group>
                 </div>
 
-                <div className="margin-h margin-v bgNone">
+                <div className="margin-h-xs margin-v bgNone">
                     <p className="text-center text-size-12 text-color-2">
                         <a href="/feedback" className="text-size-12 text-color-2">意见反馈</a>
                         <span className="padding-h-xs text-size-12 text-color-2">|</span>

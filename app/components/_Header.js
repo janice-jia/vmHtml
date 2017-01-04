@@ -180,13 +180,13 @@ class _Header extends React.Component {
                             href:'/notice'
                         },{
                             title:'',
-                            className:'search',
+                            className:'search margin-left',
                             href:'/search'
                         }]
                         :
                         [{
                             title:'',
-                            className:'search',
+                            className:'search margin-left',
                             href:'/search'
                         }]}
                 onAction={this.openNotification.bind(this)}

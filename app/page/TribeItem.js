@@ -129,7 +129,7 @@ class TribeItem extends React.Component{
                             </Swiper>
                         </div>
                     </div>
-                    <Group className={this.state.tribeInfo.topTopics.length>0 ? "margin-v tribe-toTopList" : 'hidden'}>
+                    <Group className={this.state.tribeInfo.topTopics.length>0 ? "margin-v-xs tribe-toTopList" : 'hidden'}>
                         <ul>
                             {this.state.tribeInfo.topTopics.map((item, i) => {
                                 return (

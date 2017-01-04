@@ -69,8 +69,8 @@ class Server extends React.Component{
 
 
     _handleScrollEnd (iScrollInstance) {
-        console.info('iScrollInstance.y ',iScrollInstance.y );
-        console.info('iScrollInstance.maxScrollY',iScrollInstance.maxScrollY);
+        //console.info('iScrollInstance.y ',iScrollInstance.y );
+        //console.info('iScrollInstance.maxScrollY',iScrollInstance.maxScrollY);
         //console.info('iScrollInstance',iScrollInstance);
         if((iScrollInstance.y - iScrollInstance.maxScrollY) < 25){
             if(!this.state.lastPage){

@@ -4,9 +4,10 @@
         background: none!important;
     }
     .tabs-nav{
-        border-bottom: 1px solid $border-color-1;
+        height: 44px;
         button{
             border: none;
+            border-bottom: 1px solid $border-color-1;
             color: $text-color-3;
             background: #ffffff;
             &:hover{

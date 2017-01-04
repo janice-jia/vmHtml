@@ -59,10 +59,7 @@ class TribeTopic extends React.Component{
         return <View>
             <_Header></_Header>
             <Container scrollable className="tribe tribe-topic">
-                <ReactIScroll iScroll={iscroll}
-                              options={this.state.iScrollOptions}
-                              onScrollEnd={this._handleScrollEnd.bind(this)}
-                >
+
                     <div>
                         <div className="tribe-info-user bgF">
                                     <List.Item
@@ -81,7 +78,9 @@ class TribeTopic extends React.Component{
                                         after={<a href={'/tribe/item/'+this.props.location.query.tribesId} className="tribe-tribe-btn">{this.props.location.query.tribeName}</a>}
                                     />
                         </div>
-                        <iframe src={'http://www.vmaking.com/tribe/theme/'+this.props.params.topicId} frameBorder="0" width="100%" height="auto" ></iframe>
+                        <div>
+                            <iframe src={'http://www.vmaking.com/tribe/theme/'+this.props.params.topicId} frameBorder="0" width="100%" height="auto" ></iframe>
+                        </div>
                         <Group noPadded className="margin-v">
                             <div className="padding-top require-badge">
                                 <p className="text-size-14">
@@ -95,11 +94,16 @@ class TribeTopic extends React.Component{
                                     <Badge></Badge>
                                     <span className="padding-left-sm">全部评论（{this.state.totalItems}条）</span>
                                 </p>
-                                <_Comments commentList={this.state.commentList}></_Comments>
+                                <ReactIScroll iScroll={iscroll}
+                                              options={this.state.iScrollOptions}
+                                              onScrollEnd={this._handleScrollEnd.bind(this)}
+                                >
+                                    <_Comments commentList={this.state.commentList}></_Comments>
+                                </ReactIScroll>
                             </div>
                         </Group>
                     </div>
-                </ReactIScroll>
+
                 <_DownLoadApp></_DownLoadApp>
             </Container>
         </View>

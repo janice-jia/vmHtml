@@ -11,8 +11,8 @@ class _Server extends React.Component {
                 {this.props.serverList.map((item,i)=>{
                     return(
                         <div key={i} className="bgF mt-1">
-                            <div className="server-user padding-h padding-top-sm">
-                                <a href={'/user/'+item.id} className="text-color-3">
+                            <div className="server-user padding-h-sm padding-top-sm">
+                                <a href={'/user/'+item.userId} className="text-color-3">
                                     <Grid className="server-user-con padding-bottom-sm">
                                         <Col shrink className="server-user-img padding-0"><img src={item.avatar} alt="" width="44" height="44"/></Col>
                                         <Col className="server-user-p text-size-14">{item.userName}</Col>

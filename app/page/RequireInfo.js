@@ -92,10 +92,6 @@ class RequireInfo extends React.Component{
         return <View>
             <_Header></_Header>
             <Container scrollable>
-                <ReactIScroll iScroll={iscroll}
-                              options={this.state.iScrollOptions}
-                              onScrollEnd={this._handleScrollEnd.bind(this)}
-                >
                     <div>
                         <div className="bgF require-info-user">
                             <List.Item
@@ -179,18 +175,21 @@ class RequireInfo extends React.Component{
                                 </Swiper>
                             </Group>
                         </Group>
-
-                        <Group noPadded className="margin-v">
-                            <div className="padding-top require-badge border-none">
-                                <p className="text-size-14 margin-0 padding-bottom">
-                                    <Badge></Badge>
-                                    <span className="padding-left-sm">全部评论（{this.state.totalItems}条）</span>
-                                </p>
-                                <_Comments commentList={this.state.commentList}></_Comments>
-                            </div>
-                        </Group>
+                        <ReactIScroll iScroll={iscroll}
+                                      options={this.state.iScrollOptions}
+                                      onScrollEnd={this._handleScrollEnd.bind(this)}
+                        >
+                            <Group noPadded className="margin-v">
+                                <div className="padding-top require-badge border-none">
+                                    <p className="text-size-14 margin-0 padding-bottom">
+                                        <Badge></Badge>
+                                        <span className="padding-left-sm">全部评论（{this.state.totalItems}条）</span>
+                                    </p>
+                                    <_Comments commentList={this.state.commentList}></_Comments>
+                                </div>
+                            </Group>
+                        </ReactIScroll>
                     </div>
-                </ReactIScroll>
                 <_DownLoadApp></_DownLoadApp>
             </Container>
         </View>;

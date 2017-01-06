@@ -231,6 +231,39 @@
         border-bottom: 3px solid #ffb30e; }
       .vm-header .vm-nav li.vm-nav-hover {
         background: #ffb30e; }
+  .vm-header .vm-nav-2-0 {
+    width: 495px; }
+    .vm-header .vm-nav-2-0 li {
+      position: relative;
+      z-index: 2; }
+      .vm-header .vm-nav-2-0 li:hover .vm-nav-down {
+        opacity: 1;
+        top: 50px;
+        display: block; }
+      .vm-header .vm-nav-2-0 li .icon-down {
+        display: inline-block;
+        width: 7px;
+        margin-left: 5px;
+        height: 10px;
+        background: url("../../../images/pc/vm1.1/icon/icon-down.png") center no-repeat; }
+    .vm-header .vm-nav-2-0 .vm-nav-down {
+      position: absolute;
+      border-radius: 2px;
+      display: none;
+      opacity: 0;
+      left: -6px;
+      width: 80px;
+      padding: 15px 0;
+      background: #ffffff;
+      z-index: 1;
+      z-index: 1000; }
+      .vm-header .vm-nav-2-0 .vm-nav-down li {
+        width: 100%;
+        height: 35px;
+        line-height: 35px; }
+        .vm-header .vm-nav-2-0 .vm-nav-down li:hover {
+          background: none;
+          border: none; }
   .vm-header .vm-search {
     float: left;
     margin: 0 50px 0 0; }
@@ -340,6 +373,87 @@
             height: 13px; }
     .vm-header .vm-user:hover .vm-user-open {
       display: block; }
+  .vm-header .vm-hRight {
+    width: 290px;
+    float: right; }
+    .vm-header .vm-hRight .vm-hSearch {
+      width: 70px;
+      float: left;
+      height: 50px;
+      text-align: center; }
+      .vm-header .vm-hRight .vm-hSearch a {
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        background: url("../../../images/pc/vm1.1/icon/icon-seach1.png") center no-repeat; }
+    .vm-header .vm-hRight .vm-hApp {
+      width: 120px;
+      float: left;
+      border-left: 1px solid #ececec;
+      border-right: 1px solid #ececec;
+      position: relative; }
+      .vm-header .vm-hRight .vm-hApp a {
+        display: inline-block;
+        width: 100%;
+        height: 50px;
+        color: #3b3b3b;
+        padding-left: 45px;
+        font-size: 14px;
+        position: relative; }
+        .vm-header .vm-hRight .vm-hApp a:before {
+          content: "";
+          position: absolute;
+          left: 25px;
+          top: 0;
+          width: 14px;
+          height: 50px;
+          background: url("../../../images/pc/vm1.1/icon/icon-app.png") center no-repeat; }
+      .vm-header .vm-hRight .vm-hApp:hover .vm-hApp-down {
+        display: inline-block; }
+      .vm-header .vm-hRight .vm-hApp .vm-hApp-down {
+        display: none;
+        text-align: center;
+        position: absolute;
+        top: 50px;
+        border-radius: 2px;
+        left: -15px;
+        width: 145px;
+        height: 187px;
+        background: #ffffff;
+        z-index: 1000; }
+        .vm-header .vm-hRight .vm-hApp .vm-hApp-down img {
+          margin: 10px 0; }
+        .vm-header .vm-hRight .vm-hApp .vm-hApp-down .vm-hApp-p1 {
+          font-size: 16px;
+          line-height: 20px;
+          color: #373737; }
+        .vm-header .vm-hRight .vm-hApp .vm-hApp-down .vm-hApp-p2 {
+          font-size: 12px;
+          line-height: 25px;
+          color: #7e7e7e; }
+    .vm-header .vm-hRight .vm-hNoLogin {
+      width: 100px;
+      float: left; }
+      .vm-header .vm-hRight .vm-hNoLogin ul {
+        text-align: right; }
+        .vm-header .vm-hRight .vm-hNoLogin ul li {
+          display: inline-block;
+          font-size: 14px; }
+          .vm-header .vm-hRight .vm-hNoLogin ul li a {
+            color: #3b3b3b; }
+            .vm-header .vm-hRight .vm-hNoLogin ul li a:hover {
+              color: #999999; }
+          .vm-header .vm-hRight .vm-hNoLogin ul li span {
+            padding: 0 5px;
+            color: #cccccc; }
+    .vm-header .vm-hRight .vm-news {
+      width: 40px;
+      margin-left: 20px; }
+    .vm-header .vm-hRight .vm-user {
+      width: 40px; }
+      .vm-header .vm-hRight .vm-user a {
+        width: 40px;
+        padding: 0 0 0 20px; }
 
 .vm-black-header {
   width: 100%;

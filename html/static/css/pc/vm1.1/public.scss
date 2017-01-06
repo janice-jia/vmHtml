@@ -309,6 +309,49 @@ $color-ffffff: #ffffff;
             }
         }
     }
+    .vm-nav-2-0{
+        width: 495px;
+        li{
+            position: relative;
+            z-index: 2;
+            &:hover{
+                .vm-nav-down{
+                    opacity: 1;
+                    top:50px;
+                    display: block;
+                }
+            }
+            .icon-down{
+                display: inline-block;
+                width: 7px;
+                margin-left: 5px;
+                height: 10px;
+                background: url("../../../images/pc/vm1.1/icon/icon-down.png") center no-repeat;
+            }
+        }
+        .vm-nav-down{
+            position: absolute;
+            border-radius: 2px;
+            display: none;
+            opacity: 0;
+            left: -6px;
+            width: 80px;
+            padding: 15px 0;
+            background: #ffffff;
+            z-index: 1;
+            z-index: 1000;
+            li{
+                width: 100%;
+                height: 35px;
+                line-height: 35px;
+                &:hover{
+                    background: none;
+                    border: none;
+                }
+            }
+
+        }
+    }
     .vm-search {
         float: left;
         margin: 0 50px 0 0;
@@ -456,6 +499,109 @@ $color-ffffff: #ffffff;
         &:hover {
             .vm-user-open {
                 display: block;
+            }
+        }
+    }
+    .vm-hRight{
+        width: 290px;
+        float: right;
+        .vm-hSearch{
+            width: 70px;
+            float: left;
+            height: 50px;
+            text-align: center;
+            a{
+                width:50px;
+                height: 50px;
+                display: inline-block;
+                background: url("../../../images/pc/vm1.1/icon/icon-seach1.png") center no-repeat;
+            }
+        }
+        .vm-hApp{
+            width: 120px;
+            float: left;
+            border-left: 1px solid #ececec;
+            border-right: 1px solid #ececec;
+            position: relative;
+            a{
+                display: inline-block;
+                width: 100%;
+                height: 50px;
+                color: #3b3b3b;
+                padding-left: 45px;
+                font-size: 14px;
+                position: relative;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    left: 25px;
+                    top:0;
+                    width: 14px;
+                    height: 50px;
+                    background: url("../../../images/pc/vm1.1/icon/icon-app.png") center no-repeat;
+                }
+            }
+            &:hover{
+                .vm-hApp-down{
+                    display: inline-block;
+                }
+            }
+            .vm-hApp-down{
+                display: none;
+                text-align: center;
+                position: absolute;
+                top:50px;
+                border-radius: 2px;
+                left: -15px;
+                width: 145px;
+                height: 187px;
+                background: #ffffff;
+                z-index: 1000;
+                img{
+                    margin: 10px 0;
+                }
+                .vm-hApp-p1{
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #373737;
+                }
+                .vm-hApp-p2{
+                    font-size: 12px;
+                    line-height: 25px;
+                    color: #7e7e7e;
+                }
+            }
+        }
+        .vm-hNoLogin{
+            width: 100px;
+            float: left;
+            ul{
+                text-align: right;
+                li{
+                    display: inline-block;
+                    font-size: 14px;
+                    a {
+                        color: #3b3b3b;
+                        &:hover {
+                            color: #999999;
+                        }
+                    }
+                    span {
+                        padding: 0 5px;
+                        color: #cccccc;
+                    }
+                }
+            }
+        }
+        .vm-news{
+            width: 40px;
+            margin-left: 20px;
+        }
+        .vm-user{
+            width: 40px;
+            a{
+                width: 40px;
+                padding: 0 0 0 20px;
             }
         }
     }

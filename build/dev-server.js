@@ -60,7 +60,7 @@ app.use(devMiddleware)
 // enable hot-reload and state-preserving
 // compilation error display
 app.use(hotMiddleware)
-
+console.info(' process.env.NODE_ENV',  process.env.NODE_ENV)
 app.use('/app', proxy({target: process.env.NODE_ENV === 'development' ? 'http://test.vmaking.com' : 'http://www.vmaking.com', changeOrigin: true}));
 app.use('/webapp', proxy({target: process.env.NODE_ENV === 'development' ? 'http://test.vmaking.com' : 'http://www.vmaking.com', changeOrigin: true}));
 app.use('/code', proxy({target: process.env.NODE_ENV === 'development' ? 'http://test.vmaking.com' : 'http://www.vmaking.com', changeOrigin: true}));

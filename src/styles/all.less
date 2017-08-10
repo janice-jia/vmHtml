@@ -367,11 +367,20 @@ li {
     .like,.dislike,.vs{
       font-size: 14px;
       color: #949494;
-      display: inline-block;
+      display: block;
+      float: left;
+      line-height: 25px;
+    }
+    .img{
+      width: 19px;
+      display: block;
+      padding: 5px 0 0 2px;
+      float: left;
     }
     .vs{
       font-weight: bold;
       color: #d7d7d7;
+      padding: 0 5px;
     }
     .lablesBox{
       height: 80px;
@@ -628,7 +637,7 @@ li {
     font-size: 15px;
     color: #ffffff;
     display: inline-block;
-    padding: 0 20px 0 40px;
+    padding: 0 10px 0 35px;
     position: relative;
   }
 
@@ -1149,6 +1158,7 @@ li {
 .appNewsInfo{
   font-family:"Microsoft YaHei","Arial","Helvetica Neue","Hiragino Sans GB","Simsun,sans-self";
   padding: 10px;
+  margin-bottom: 37px;
 }
 .app-newsInfoTit{
   padding: 15px 0;
@@ -1329,6 +1339,27 @@ li {
 .app-newsInfoItemR03{
   color: #3C3C3C;
   font-size: 14px;
+  margin: 5px 0 0 0;
+}
+.app-newsInfoItemR04{
+  margin: 5px 0 0 0;
+}
+.app-newsInfoItemR04 span{
+  width: 50%;
+  font-size: 14px;
+  color: #949494;
+}
+.app-newsInfoItemR04 span.time{
+  float: left;
+  text-align: left;
+}
+.app-newsInfoItemR04 span.del{
+  float: right;
+  text-align: right;
+  font-size: 14px;
+}
+.app-newsInfoItemR04 span a{
+  color: #FA306A;
 }
 .app-newsInfoBtn{
   margin: -1px 0 0 0;

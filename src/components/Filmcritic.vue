@@ -14,7 +14,7 @@
           <div class="dialog">
             <div class="contentType">
               <button type="button" v-model="contentType" :class="{typeSelect: contentType===0}" @click="contentType=0">想看</button>
-              <button type="button" v-model="contentType" :class="{typeSelect: contentType===1}" @click="contentType=1">在看</button>
+              <button type="button" v-model="contentType" :class="{typeSelect: contentType===1}" @click="contentType=1">不想看</button>
               <button type="button" v-model="contentType" :class="{typeSelect: contentType===2}" @click="contentType=2">看过</button>
             </div>
             <div class="contentCon">
@@ -88,6 +88,9 @@
                                   content: '评论成功！',
                                   buttonText: '关闭'
                               })
+                              setTimeout(() => {
+                                this.$vux.alert.hide()
+                              }, 2000)
                               this.hiddenAddCom()
                               if (this.$route.name === 'contentCommentList') {
                                   this.$router.go(0)

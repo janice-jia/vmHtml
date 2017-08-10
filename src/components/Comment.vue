@@ -118,6 +118,9 @@
                                   content: '评论成功！',
                                   buttonText: '关闭'
                               })
+                              setTimeout(() => {
+                                this.$vux.alert.hide()
+                              }, 2000)
                               this.commentBlur()
                               if (this.$route.name === 'charactersCommentList' || this.$route.name === 'newsCommentList') {
                                   this.$router.go(0)
@@ -128,6 +131,9 @@
                                   content: data.body.msg,
                                   buttonText: '关闭'
                               })
+                              setTimeout(() => {
+                                this.$vux.alert.hide()
+                              }, 2000)
                               this.commentBlur()
                           }
                       }, function (response) {

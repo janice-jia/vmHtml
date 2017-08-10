@@ -32,12 +32,16 @@
                         回复
                     </span>
                   </div>
-                  <div class="app-newsInfoItemR02">
-                    {{item.createTime | getFromNow}}
-                  </div>
+                  <!--<div class="app-newsInfoItemR02">-->
+                    <!--{{item.createTime}}-->
+                  <!--</div>-->
                   <div class="app-newsInfoItemR03">
                     <span v-show="item.commentId">回复 {{item.replyNickName}}:&nbsp;</span>
                     {{item.content}}
+                  </div>
+                  <div class="app-newsInfoItemR04">
+                    <span class="time">{{item.createTime}}</span>
+                    <span class="del" v-if="item.uid == uid"><a href="javascript:;" @click="delComment(item)">删除</a></span>
                   </div>
                 </div>
               </div>
@@ -61,6 +65,7 @@ export default {
     name: 'newsInfo',
     data () {
         return {
+            uid: publicFn.isUser(),
             newsInfoData: {},
             newsCommetn: [],
             commetnTotalItems: 0,
@@ -79,9 +84,6 @@ export default {
     filters: {
         getFormat (time) {
             return publicFn.getFormat(time)
-        },
-        getFromNow (time) {
-            return publicFn.getFromNow(time)
         }
     },
     created () {
@@ -118,6 +120,36 @@ export default {
                 userName: data.userName
             }
             this.$refs.comment.commentFocus(this.replyComData)
+        },
+        delComment(delInfo){
+            const _this = this
+            this.$vux.confirm.show({
+                // 组件除show外的属性
+                content: '确定删除吗？',
+                name: '',
+                onCancel () {
+                },
+                onConfirm () {
+                    _this.$http.delete('/app/news/comment/delete', {body: {
+                        "commentId": delInfo.id
+                    }}).then(function (data) {
+                        if (data.body.status) {
+                            this.$router.go(0);
+                        }else{
+                            this.$vux.alert.show({
+                                title: '',
+                                content: data.body.msg,
+                                buttonText: '关闭'
+                            })
+                            setTimeout(() => {
+                              this.$vux.alert.hide()
+                            }, 2000)
+                        }
+                    }, function (response) {
+                      console.info(response)
+                    })
+                }
+            })
         }
     }
 }

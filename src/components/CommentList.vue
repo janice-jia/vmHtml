@@ -5,7 +5,7 @@
               v-show="true"
               :left-options="{showBack: true, backText: ''}"
               :right-options="{showMore: false}"
-              :title="totalItems+'条影评'"
+              :title="this.$route.name === 'contentCommentList' ? totalItems+'条影评' : totalItems+'条评论'"
     ><span slot="right" class="rightMenu red" v-if="this.$route.name === 'contentCommentList'"><a href="javascript:;" @click="showAddCom">写影评</a></span></x-header>
     <div class="app-newsInfoList" style="margin: 0 10px;">
       <p class="nullCon" v-show="!commentList">内容为空</p>
@@ -19,17 +19,26 @@
             </div>
             <div class="app-newsInfoItemR">
               <div class="app-newsInfoItemR01">
-                <span class="user">{{item.userName}}</span>
+                <span class="user">
+                  {{item.userName}}
+                  <b v-if="item.type == 0">想看</b>
+                  <b v-if="item.type == 1">不想看</b>
+                  <b v-if="item.type == 2">看过</b>
+                </span>
                 <span class="reply" @click="replyCom(item)" v-if="isShowReply()">
                   回复
                 </span>
               </div>
-              <div class="app-newsInfoItemR02">
-                {{item.createTime}}
-              </div>
+              <!--<div class="app-newsInfoItemR02">-->
+                <!--{{item.createTime}}-->
+              <!--</div>-->
               <div class="app-newsInfoItemR03">
                 <span v-show="item.commentId">回复 {{item.replyNickName}}:&nbsp;</span>
                 {{item.content}}
+              </div>
+              <div class="app-newsInfoItemR04">
+                <span class="time">{{item.createTime}}</span>
+                <span class="del" v-if="item.uid == uid"><a href="javascript:;" @click="delComment(item)">删除</a></span>
               </div>
             </div>
           </div>
@@ -46,6 +55,7 @@
   import Comment from './Comment.vue'
   import Filmcritic from './Filmcritic.vue'
   import {Scroller, XHeader} from 'vux'
+  import publicFn from '../publicFn'
   export default {
       name: 'commentList',
       components: {
@@ -56,6 +66,7 @@
       },
       data () {
           return {
+              uid: publicFn.isUser(),
               commentList: [],
               replyComData: {},
               itemsPerPage: 10,
@@ -115,7 +126,6 @@
                   id: data.id,
                   userName: data.userName
               }
-//              console.info('this', this.$refs.comment)
               this.$refs.comment.commentFocus(this.replyComData)
           },
           commentModuleFn () {
@@ -136,6 +146,54 @@
           showAddCom () {
 //              console.info('this.showDialogStyle', this.showDialogStyle)
               this.showDialogStyle = !this.showDialogStyle
+          },
+          delComment(delInfo){
+              const _this = this
+              this.$vux.confirm.show({
+                  // 组件除show外的属性
+                  content: '确定删除吗？',
+                  name:'',
+                  onCancel () {
+                  },
+                  onConfirm () {
+                      let delLink = ''
+                      let delData = {}
+                      if (_this.$route.name === 'charactersCommentList') {
+                          delLink = '/app/character/comment'
+                          delData = {
+                              "characterId": delInfo.characterId,
+                              "commentId": delInfo.id
+                          }
+                      } else if (_this.$route.name === 'newsCommentList') {
+                          delLink = '/app/news/comment/delete'
+                          delData = {
+                            "commentId": delInfo.id
+                          }
+                      } else if (_this.$route.name === 'contentCommentList') {
+                          delLink = '/app/content/filmcritic'
+                          delData = {
+                            "contentId": _this.$route.params.contentId,
+                            "commentId": delInfo.id
+                          }
+                      }
+                      _this.$http.delete(delLink, {body: delData}).then(function (data) {
+                          if (data.body.status) {
+                              this.$router.go(0);
+                          }else{
+                              this.$vux.alert.show({
+                                  title: '',
+                                  content: data.body.msg,
+                                  buttonText: '关闭'
+                              })
+                              setTimeout(() => {
+                                this.$vux.alert.hide()
+                              }, 2000)
+                          }
+                      }, function (response) {
+                        console.info(response)
+                      })
+                  }
+              })
           }
       }
   }

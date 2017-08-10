@@ -6,15 +6,17 @@ import VueRouter from 'vue-router'
 import Vuex from 'vuex'
 import VueResource from 'vue-resource'
 import { sync } from 'vuex-router-sync'
-import { AlertPlugin } from 'vux'
+import { AlertPlugin, ConfirmPlugin } from 'vux'
 
 import App from './App'
 import router from './router/index'
+import publicFn from './publicFn'
 
 Vue.use(VueRouter)
 Vue.use(VueResource)
 Vue.use(Vuex)
 Vue.use(AlertPlugin)
+Vue.use(ConfirmPlugin)
 
 import vuexI18n from 'vuex-i18n'
 
@@ -33,6 +35,7 @@ FastClick.attach(document.body)
 
 Vue.config.productionTip = false
 Vue.http.headers.common['os'] = 'web'
+Vue.http.headers.common['uid'] = publicFn.isUser()
 
 /* eslint-disable no-new */
 new Vue({

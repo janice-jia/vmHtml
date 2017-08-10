@@ -40,9 +40,12 @@
                       </p>
                     </div>
                     <p>
-                      <span class="like">{{item.likeCount ? Math.round(item.likeCount/(item.likeCount+item.dislikeCount)*100) : 0 }}%喜欢</span>
+                      <span class="like">{{item.likeCount ? Math.round(item.likeCount/(item.likeCount+item.dislikeCount)*100) : 0 }}%</span>
+                      <img src="../assets/like@2x.png" alt="" class="img">
                       <span class="vs">VS</span>
-                      <span class="dislike">{{item.dislikeCount ? Math.round(item.dislikeCount/(item.likeCount+item.dislikeCount)*100) : 0}}%不喜欢</span>
+                      <span class="dislike">{{item.dislikeCount ? Math.round(item.dislikeCount/(item.likeCount+item.dislikeCount)*100) : 0}}%
+                      </span>
+                      <img src="../assets/don't-like@2x.png" alt="" class="img">
                     </p>
                 </div>
                 <div class="conten-itemRight">
@@ -90,7 +93,7 @@
            *获取精彩列表
            */
           getContents (currentPage) {
-              this.$http.get('/app/contents?itemsPerPage=' + this.itemsPerPage + '&currentPage=' + currentPage).then(function (data) {
+              this.$http.get('/app/content/movie/list?itemsPerPage=' + this.itemsPerPage + '&currentPage=' + currentPage).then(function (data) {
                   if (data.body.data) {
                       for (var i = 0; i < data.body.data.length; i++) {
                           this.contents.push(data.body.data[i])

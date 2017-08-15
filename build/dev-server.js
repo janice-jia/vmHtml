@@ -12,9 +12,9 @@ var express = require('express')
 var webpack = require('webpack')
 var proxy = require('http-proxy-middleware')
 var proxyMiddleware = require('http-proxy-middleware')
-var webpackConfig = process.env.NODE_ENV === 'development'
-  ? require('./webpack.dev.conf')
-  : require('./webpack.prod.conf')
+var webpackConfig = process.env.NODE_ENV === 'testing'
+  ? require('./webpack.prod.conf')
+  : require('./webpack.dev.conf')
 
 // default port where dev server listens for incoming traffic
 var port = process.env.PORT || config.dev.port
@@ -61,10 +61,11 @@ app.use(devMiddleware)
 // enable hot-reload and state-preserving
 // compilation error display
 app.use(hotMiddleware)
-app.use('/app', proxy({target: process.env.NODE_ENV === 'development' ? 'http://test.vmaking.com' : 'http://www.vmaking.com', changeOrigin: true}));
-app.use('/webapp', proxy({target: process.env.NODE_ENV === 'development' ? 'http://test.vmaking.com' : 'http://www.vmaking.com', changeOrigin: true}));
-app.use('/code', proxy({target: process.env.NODE_ENV === 'development' ? 'http://test.vmaking.com' : 'http://www.vmaking.com', changeOrigin: true}));
-app.use('/pc', proxy({target: process.env.NODE_ENV === 'development' ? 'http://test.vmaking.com' : 'http://www.vmaking.com', changeOrigin: true}));
+app.use('/app', proxy({target: 'http://test.vmaking.com', changeOrigin: true}));
+app.use('/webapp', proxy({target: 'http://test.vmaking.com', changeOrigin: true}));
+app.use('/code', proxy({target: 'http://test.vmaking.com', changeOrigin: true}));
+app.use('/pc', proxy({target: 'http://test.vmaking.com', changeOrigin: true}));
+
 
 // serve pure static assets
 var staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)

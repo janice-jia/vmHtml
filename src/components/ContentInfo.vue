@@ -178,6 +178,9 @@
                 </router-link>
               </flexbox-item>
           </flexbox>
+          <p class="bottom-line">
+            <span>请记住，我们是有底线的</span>
+          </p>
         </div>
 
         <Filmcritic :showDialog="showDialogStyle"></Filmcritic>

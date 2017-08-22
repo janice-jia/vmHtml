@@ -55,6 +55,10 @@
                 </div>
             </div>
           </router-link>
+            <load-more tip="正在加载更多" v-show="!lastPage"></load-more>
+            <p class="bottom-line" v-show="lastPage && totalItems > 6">
+              <span>请记住，我们是有底线的</span>
+            </p>
           </div>
         </scroller>
       </div>
@@ -63,7 +67,7 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import { Tab, TabItem, Sticky, Flexbox, FlexboxItem, Scroller } from 'vux'
+  import { Tab, TabItem, Sticky, Flexbox, FlexboxItem, Scroller, LoadMore } from 'vux'
   export default {
       components: {
           Tab,
@@ -71,7 +75,8 @@
           Sticky,
           Flexbox,
           FlexboxItem,
-          Scroller
+          Scroller,
+          LoadMore
       },
       name: 'content',
       data () {
@@ -80,6 +85,7 @@
               contents: [],
               itemsPerPage: 10,
               currentPage: 1,
+              totalItems: 0,
               lastPage: false,
               onFetching: false
           }
@@ -101,6 +107,7 @@
                   }
                   this.currentPage = data.body.currentPage
                   this.lastPage = data.body.lastPage
+                  this.totalItems = data.body.totalItems
                   this.$nextTick(function () {
                       // DOM 现在更新了
                       // `this` 绑定到当前实例

@@ -42,6 +42,10 @@
                   </router-link>
                 </div>
               </div>
+              <load-more tip="正在加载更多" v-show="!lastPage"></load-more>
+              <p class="bottom-line" v-show="lastPage && totalItems > 3">
+                <span>请记住，我们是有底线的</span>
+              </p>
             </div>
           </scroller>
         </div>
@@ -74,6 +78,7 @@ export default {
             lastPage: false,
             itemsPerPage: 10,
             currentPage: 1,
+            totalItems: 0,
             items: [],
             onFetching: false
         }
@@ -114,6 +119,7 @@ export default {
                 }
                 this.currentPage = data.body.currentPage
                 this.lastPage = data.body.lastPage
+                this.totalItems = data.body.totalItems
                 this.$nextTick(function () {
                     // DOM 现在更新了
                     // `this` 绑定到当前实例

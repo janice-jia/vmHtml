@@ -6,6 +6,10 @@
           <img class="previewer-demo-img"  :src="item.src" @click="show(index)">
         </div>
       </div>
+      <load-more tip="正在加载更多" v-show="!lastPage"></load-more>
+      <p class="bottom-line" v-show="lastPage && totalItems > 12">
+        <span>请记住，我们是有底线的</span>
+      </p>
     </scroller>
     <div v-transfer-dom>
       <previewer :list="ContentAlbum" ref="previewer" :options="options"></previewer>
@@ -14,7 +18,7 @@
 </template>
 
 <script>
-import { Previewer, TransferDom, Scroller } from 'vux'
+import { Previewer, TransferDom, Scroller, LoadMore } from 'vux'
 export default {
     name: 'ContentAlbum',
     directives: {
@@ -22,12 +26,14 @@ export default {
     },
     components: {
         Previewer,
-        Scroller
+        Scroller,
+        LoadMore
     },
     data () {
         return {
             ContentAlbum: [],
             lastPage: false,
+            totalItems: 0,
             itemsPerPage: 10,
             currentPage: 1,
             onFetching: false,
@@ -89,6 +95,7 @@ export default {
                 }
                 this.currentPage = data.body.currentPage
                 this.lastPage = data.body.lastPage
+                this.totalItems = data.body.totalItems
                 this.$nextTick(function () {
                     // DOM 现在更新了
                     // `this` 绑定到当前实例

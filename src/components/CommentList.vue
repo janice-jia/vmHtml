@@ -91,6 +91,8 @@
                   this.comGetStr = '/app/news/' + this.$route.params.newsId + '/comment/?itemsPerPage=' + this.itemsPerPage + '&currentPage=' + this.currentPage
               } else if (this.$route.name === 'contentCommentList') {
                   this.comGetStr = '/app/content/' + this.$route.params.contentId + '/filmcritic/?itemsPerPage=' + this.itemsPerPage + '&currentPage=' + this.currentPage
+              } else if (this.$route.name === 'seriesCommentList') {
+                this.comGetStr = '/app/video/comments?videoId='+ this.$route.params.seriesId + '&itemsPerPage=' + this.itemsPerPage + '&currentPage=' + this.currentPage
               }
               this.$http.get(this.comGetStr).then(function (data) {
                   this.totalItems = data.body.totalItems
@@ -134,6 +136,8 @@
                   return 'character'
               } else if (this.$route.name === 'newsCommentList' || this.$route.name === 'newsInfo') {
                   return 'news'
+              } else if (this.$route.name === 'seriesCommentList') {
+                return 'video'
               }
           },
           isShowReply () {
@@ -175,6 +179,12 @@
                             "contentId": _this.$route.params.contentId,
                             "commentId": delInfo.id
                           }
+                      }else if (_this.$route.name === 'seriesCommentList') {
+                        delLink = '/app/video/comments/delete'
+                        delData = {
+                          "id": delInfo.id,
+                          "uid":_this.uid
+                        }
                       }
                       _this.$http.delete(delLink, {body: delData}).then(function (data) {
                           if (data.body.status) {

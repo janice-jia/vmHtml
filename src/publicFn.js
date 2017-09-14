@@ -7,12 +7,13 @@ export default {
     },
 
     // 格式化时间 2017.00.00
-    getFormat (momentTime) {
+    getFormat (momentTime, tag) {
         momentTime = parseInt(momentTime)
         var newDate = new Date(momentTime)
         var year = newDate.getFullYear()
         var month = newDate.getMonth() + 1
         var date = newDate.getDate()
+        var returnData = null;
         // var hour = newDate.getHours();
         // var minute = newDate.getMinutes();
         // var second = newDate.getSeconds();
@@ -21,7 +22,12 @@ export default {
         } else if (date < 10) {
             date = '0' + date
         }
-        return year + '年' + month + '月' + date + '日'
+        if(tag){
+          returnData = year + tag + month + tag + date
+        }else{
+          returnData =  year + '年' + month + '月' + date + '日'
+        }
+        return returnData
     },
 
     // 格式化时间 2017-01-01 12-12-12

@@ -104,6 +104,8 @@
               } else if (this.$props.module.name === 'message' && this.messageType === 2) {
                   this.addComData.newsId = this.contentId
                   this.moduleName = 'news'
+              }else if (this.$props.module.name === 'video') {
+                this.addComData.videoId = this.$route.params.seriesId
               }
               this.addComData.uid = publicFn.isUser()
 
@@ -111,7 +113,11 @@
                   if (this.addComData.content.length < 0) {
                       return false
                   } else {
-                      this.$http.post('/app/' + this.moduleName + '/comment/add', this.addComData).then(function (data) {
+                      var str = '/app/' + this.moduleName + '/comment/add'
+                      if(this.$props.module.name === 'video'){
+                          str = '/app/' + this.moduleName + '/comments/add'
+                      }
+                      this.$http.post(str, this.addComData).then(function (data) {
                           if (data.body.status) {
                               this.$vux.alert.show({
                                   title: '',

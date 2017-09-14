@@ -100,6 +100,11 @@
               if (this.route.name === 'invite') return '邀请好友'
               if (this.route.name === 'officialWeibo') return '官方微博'
               if (this.route.name === 'officialWeChat') return '官方微信公众号'
+              if (this.route.name === 'video') return '视频'
+              if (this.route.name === 'series') return '快看剧集'
+              if (this.route.name === 'trivia' && this.route.params.episode == 2) return '花絮'
+              if (this.route.name === 'trivia' && this.route.params.episode == 3) return '原创'
+              if (this.route.name === 'trivia' && this.route.params.episode == 4) return '热门视频'
           }
       },
       data () {

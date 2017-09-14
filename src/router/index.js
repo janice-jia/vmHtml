@@ -12,6 +12,12 @@ import Content from '../components/Content.vue'
 import ContentInfo from '../components/ContentInfo.vue'
 import Album from '../components/Album.vue'
 
+import Video from '../components/Video.vue'
+import Series from '../components/Series.vue'
+import SeriesInfo from '../components/SeriesInfo.vue'
+import SeriesInfoShare from '../components/SeriesInfoShare.vue'
+import Trivia from '../components/Trivia.vue'
+
 import Characters from '../components/Characters.vue'
 import CharactersInfo from '../components/CharactersInfo.vue'
 import CommentList from '../components/CommentList.vue'
@@ -207,6 +213,40 @@ export default new Router({
                 }
             ],
             component: Register
+        },
+        {
+            path: '/video',
+            name: 'video',
+            component: Video
+        },
+        {
+            path: '/video/series',
+            name: 'series',
+            component: Series
+        },
+        {
+          path: '/video/series/info/:seriesId',
+          name: 'seriesInfo',
+          component: SeriesInfo
+        },
+        {
+            path: '/video/series/info/:seriesId/:eid',
+            name: 'seriesInfo',
+            component: SeriesInfo
+        },{
+            path: '/video/series/share/:seriesId',
+            name: 'seriesInfo',
+            component: SeriesInfoShare
+        },
+        {
+            name: 'seriesCommentList',
+            path: '/video/series/:seriesId/comment/list',
+            component: CommentList
+        },
+        {
+            path: '/video/trivia/:episode',
+            name: 'trivia',
+            component: Trivia
         }
     ]
 })

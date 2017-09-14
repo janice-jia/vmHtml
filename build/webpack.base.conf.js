@@ -29,6 +29,9 @@ let webpackConfig = {
       '@': resolve('src')
     }
   },
+  externals: {
+    "prismplayer": "prismplayer"
+  },
   module: {
     rules: [
       // {

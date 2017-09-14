@@ -82,7 +82,8 @@
       <div class="app-newsInfoBtn" v-show="videoDetails.comCount" style="border-bottom: none">
         <a href="javascript:;" @click="downApp">点击进入APP查看更多评论</a>
       </div>
-
+      <div style="height: 47px;"></div>
+      <Comment :module="{name: 'video'}" ref="comment"></Comment>
     </div>
   </div>
 </template>

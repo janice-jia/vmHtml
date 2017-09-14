@@ -7,7 +7,7 @@
         <button type="button" disabled ref="addBtn" @click="addComment">确定</button>
       </p>
     </div>
-    <div :class="{ commentCon:true, showLike: this.$props.module.showLike }">
+    <div :class="{ commentCon:true, showLike: this.$props.module.showLike }" >
       <input type="text" name="" placeholder="请发表您的看法…" @focus="commentFocus">
       <p :class="{like: !hasLiked, disLike: hasLiked}" @click="hasLikedFn"></p>
     </div>

@@ -237,6 +237,10 @@ export default new Router({
             path: '/video/series/share/:seriesId',
             name: 'seriesInfo',
             component: SeriesInfoShare
+        },{
+            path: '/video/series/share/:seriesId/:eid',
+            name: 'seriesInfo',
+            component: SeriesInfoShare
         },
         {
             name: 'seriesCommentList',

@@ -24,9 +24,13 @@
         <router-link :to="{name: 'series'}">{{videoDetails.updateDesc}}</router-link>
       </div>
       <div class="series-select-list">
-        <scroller lock-y scrollbar-x  ref="scrollerStills">
+        <scroller lock-y scrollbar-x  ref="scrollerStills" v-if="videoDetails.epiList">
           <div class="seriesList" id="seriesList">
-            <div :class="{ hover: item.playEpi == index+1,seriesItem: true}" v-for="(item, index) in videoDetails.epiList">{{index+1}}</div>
+            <div :class="{ hover: (videoDetails.playEpi==0 ? videoDetails.playEpi=1 : videoDetails.playEpi = videoDetails.playEpi) == index+1,seriesItem: true, new: item.isNew}" v-for="(item, index) in videoDetails.epiList">
+              <router-link :to="{name:'seriesInfo1', params: {seriesId: videoDetails.id, eid: item.eid}}">
+                {{index+1}}
+              </router-link>
+            </div>
           </div>
         </scroller>
       </div>
@@ -34,7 +38,7 @@
     <div class="series-about">
       <div class="series-about-tit">
         相关花絮
-        <router-link :to="{name:'home'}">更多</router-link>
+        <router-link :to="{name:'trivia', params: {episode:2}}">更多</router-link>
       </div>
       <div class="trivia">
         <div class="triviaItem" v-for="(item, index) in videoDetails.recommends">
@@ -140,6 +144,10 @@
           this.$http.get(str).then(function (data) {
             if (data.body.data) {
               this.videoDetails = data.body.data
+              this.$nextTick(() => {
+                document.getElementById('seriesList').style.width = this.videoDetails.epiList ? (this.videoDetails.epiList.length + 1) * '60' + 10 + 'px' : ''
+                this.$refs.scrollerStills.reset()
+              })
             }
             let player = new prismplayer({
               id: 'J_prismPlayer',

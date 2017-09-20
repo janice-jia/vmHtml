@@ -19,8 +19,13 @@
       </div>
       <div class="seriesList">
         <grid :rows="6">
-          <grid-item v-for="(epItem, epIndex) in item.epiList" :key="epIndex">
-            <span class="grid-center">{{epIndex+1}}</span>
+          <grid-item :class="{new: epItem.isNew}" v-for="(epItem, epIndex) in item.epiList" :key="epIndex">
+            <span class="newIcon"></span>
+            <span class="grid-center">
+              <router-link :to="{name:'seriesInfo1', params: {seriesId: item.id, eid: epItem.eid}}">
+                {{epIndex+1}}
+              </router-link>
+            </span>
           </grid-item>
         </grid>
       </div>

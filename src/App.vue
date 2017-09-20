@@ -24,6 +24,11 @@
           <img slot="icon-active" src="./assets/tab_Area_btn_selected.png">
           <span slot="label">专区</span>
         </tabbar-item>
+        <tabbar-item link="/video" :selected="route.path === '/video'">
+          <img slot="icon" src="./assets/video.png">
+          <img slot="icon-active" src="./assets/video_selected.png">
+          <span slot="label">视频</span>
+        </tabbar-item>
         <tabbar-item link="/mine" :selected="route.path === '/mine'">
           <img slot="icon" src="./assets/tab_my_btn.png">
           <img slot="icon-active" src="./assets/tab_my_btn_selected.png">
@@ -52,7 +57,7 @@
           }),
           leftOptions () {
               return {
-                  showBack: (this.route.name !== 'Home' && this.route.name !== 'news'),
+                  showBack: (this.route.name !== 'Home' && this.route.name !== 'news' && this.route.name !== 'video'),
                   backText: ''
               }
           },
@@ -78,6 +83,7 @@
               if (this.route.path === '/mine') return true
               if (this.route.path === '/content') return true
               if (this.route.path === '/characters') return true
+              if (this.route.path === '/video') return true
           },
           appTitle () {
               if (this.route.path === '/') return '众创部落'

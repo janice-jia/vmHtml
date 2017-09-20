@@ -5,8 +5,8 @@
     </div>
     <div class="seriesDesc">
       <div class="seriesDescript-tit">
-        <p class="tit">简介
-          <router-link :to="{name:'seriesInfo', params: {seriesId:videoDetails.id}}">
+        <p class="tit">简介{{this.$route.query.eid}}
+          <router-link :to="{name:'seriesInfo1', params: {seriesId:videoDetails.id, eid: this.$route.query.eid}}">
             <img src="../assets/video_closed_btn.png" alt="">
           </router-link>
         </p>

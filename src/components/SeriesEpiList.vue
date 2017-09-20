@@ -6,7 +6,7 @@
     <div class="series-select" v-if="videoDetails.episode == 1">
       <div class="seriesDescript-tit">
         <p class="tit">选集
-        <router-link :to="{name:'seriesInfo', params: {seriesId:videoDetails.id}}">
+        <router-link :to="{name:'seriesInfo1', params: {seriesId:videoDetails.id, eid: this.$route.query.eid}}">
           <img src="../assets/video_closed_btn.png" alt="">
         </router-link>
         </p>
@@ -56,9 +56,9 @@
       },
       methods: {
         getVideoDetails () {
-          var str = '/app/video/details?id=' + this.$route.params.seriesId
-          if(this.$route.params.eid){
-              str = '/app/video/details?id=' + this.$route.params.seriesId + '&eid=' + this.$route.params.eid
+          var str = '/app/video/details?id=' + this.$route.query.seriesId
+          if(this.$route.query.eid){
+              str = '/app/video/details?id=' + this.$route.query.seriesId + '&eid=' + this.$route.query.eid
           }
           this.$http.get(str).then(function (data) {
             if (data.body.data) {

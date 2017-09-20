@@ -21,7 +21,7 @@
     <div class="series-select" v-if="videoDetails.episode == 1">
       <div class="series-select-tit">
         选集
-        <router-link :to="{name: 'seriesEpiList', params: {seriesId:videoDetails.id}}">{{videoDetails.updateDesc}}</router-link>
+        <router-link :to="{name: 'seriesEpiList', query: {seriesId:videoDetails.id, eid: this.$route.params.eid}}">{{videoDetails.updateDesc}}</router-link>
       </div>
       <div class="series-select-list">
         <scroller lock-y scrollbar-x  ref="scrollerStills" v-if="videoDetails.epiList">

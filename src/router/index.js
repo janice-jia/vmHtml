@@ -226,7 +226,7 @@ export default new Router({
             name: 'series',
             component: Series
         },{
-          path: '/video/series/epiList/:seriesId',
+          path: '/video/series/epiList',
           name: 'seriesEpiList',
           component: SeriesEpiList
         },{

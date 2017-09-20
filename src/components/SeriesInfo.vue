@@ -5,7 +5,7 @@
     </div>
     <div class="seriesDesc">
       <div class="seriesInfo-tit">
-        <p class="tit">{{videoDetails.title}} <router-link :to="{name:'series'}">简介</router-link></p>
+        <p class="tit">{{videoDetails.title}} <router-link :to="{name:'seriesDescript', query: {seriesId:videoDetails.id, eid: this.$route.params.eid}}">简介</router-link></p>
         <p class="info">
           <span class="red">{{videoDetails.score}}分</span>
           <span class="dot">·</span>
@@ -21,7 +21,7 @@
     <div class="series-select" v-if="videoDetails.episode == 1">
       <div class="series-select-tit">
         选集
-        <router-link :to="{name: 'series'}">{{videoDetails.updateDesc}}</router-link>
+        <router-link :to="{name: 'seriesEpiList', params: {seriesId:videoDetails.id}}">{{videoDetails.updateDesc}}</router-link>
       </div>
       <div class="series-select-list">
         <scroller lock-y scrollbar-x  ref="scrollerStills" v-if="videoDetails.epiList">

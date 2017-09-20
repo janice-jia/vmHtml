@@ -15,6 +15,8 @@ import Album from '../components/Album.vue'
 import Video from '../components/Video.vue'
 import Series from '../components/Series.vue'
 import SeriesInfo from '../components/SeriesInfo.vue'
+import SeriesEpiList from '../components/SeriesEpiList.vue'
+import SeriesDescript from '../components/SeriesDescript.vue'
 import SeriesInfoShare from '../components/SeriesInfoShare.vue'
 import Trivia from '../components/Trivia.vue'
 
@@ -223,6 +225,14 @@ export default new Router({
             path: '/video/series',
             name: 'series',
             component: Series
+        },{
+          path: '/video/series/epiList/:seriesId',
+          name: 'seriesEpiList',
+          component: SeriesEpiList
+        },{
+          path: '/video/series/descript',
+          name: 'seriesDescript',
+          component: SeriesDescript
         },
         {
           path: '/video/series/info/:seriesId',

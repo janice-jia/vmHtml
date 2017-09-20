@@ -2282,43 +2282,48 @@ li {
       }
     }
   }
+}
 
-  .seriesList{
-    clear: both;
-    .weui-grids{
-      a{
-        padding: 0 10px;
-        display: inline-block;
-        text-align: center;
-        font-size: 14px;
-        color: #3C3C3C;
-        .grid-center{
-          height: 50px;
-          line-height: 50px;
+.seriesList{
+  clear: both;
+  .weui-grids{
+    a{
+      padding: 0 10px;
+      display: inline-block;
+      text-align: center;
+      font-size: 14px;
+      color: #3C3C3C;
+      .grid-center{
+        height: 50px;
+        line-height: 50px;
+      }
+      .hover{
+        color: #fa306a;
+        a{
+          color: #fa306a;
         }
       }
-      .newIcon{
-        display: none;
-      }
     }
-    .new{
-      position: relative;
-      span{
-        display: inline-block;
-      }
-      .newIcon{
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 25px;
-        height: 13px;
-        background: url("../assets/new.png") no-repeat;
-        background-size: 25px 13px;
-      }
+    .newIcon{
+      display: none;
     }
   }
-
+  .new{
+    position: relative;
+    span{
+      display: inline-block;
+    }
+    .newIcon{
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 25px;
+      height: 13px;
+      background: url("../assets/new.png") no-repeat;
+      background-size: 25px 13px;
+    }
+  }
 }
 
 //trivia
@@ -2393,6 +2398,25 @@ li {
     min-height: 300px;
     position: relative;
   }
+  .seriesDescript-tit {
+    .tit {
+      font-size: 18px;
+      color: #3C3C3C;
+      height: 50px;
+      line-height: 50px;
+      a {
+        float: right;
+        position: relative;
+        font-size: 13px;
+        color: #949494;
+        text-align: right;
+        display: inline-block;
+        img{
+          width: 50%;
+        }
+      }
+    }
+  }
   .seriesDesc{
     padding: 0 10px;
     .seriesBtn{
@@ -2464,6 +2488,19 @@ li {
           width: 36px;
           height: 25px;
         }
+      }
+    }
+    .seriesDescript{
+      table{
+        width: 100%;
+        font-size: 14px;
+        color: #949494;
+        line-height: 25px;
+      }
+      .descript{
+        padding:10px 0 0 2em;
+        font-size: 14px;
+        color: #949494;
       }
     }
   }

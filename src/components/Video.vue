@@ -4,14 +4,14 @@
       <div class="vide-tit">
         <router-link :to="{name:'series'}">快看剧情</router-link>
       </div>
-      <div class="banner">
+      <div class="banner" v-if="video.banner">
         <router-link :to="{name:'seriesInfo', params: {seriesId: video.banner.id}}">
           <img :src="video.banner.cover" alt="">
           <p>{{video.banner.title}}</p>
         </router-link>
       </div>
       <div class="kkList">
-        <div class="stills">
+        <div class="stills" v-if="video.banner && video.banner.epiList">
           <!--<p class="nullCon" v-show="!charactersInfo.stills">内容为空</p>-->
           <scroller lock-y scrollbar-x  ref="scrollerEpiList" v-if="video.banner.epiList">
             <div class="stillsList" id="stillsList">
@@ -119,7 +119,7 @@
               if (data.body.data) {
                   this.video = data.body.data
                   this.$nextTick(() => {
-                    document.getElementById('stillsList').style.width = this.video.banner.epiList ? (this.video.banner.epiList.length + 1) * '77' + 10 + 'px' : ''
+                    document.getElementById('stillsList').style.width = this.video.banner.epiList ? (this.video.banner.epiList.length + 1) * '134' + 10 + 'px' : ''
                     this.$refs.scrollerEpiList.reset()
                   })
               }

@@ -2177,14 +2177,21 @@ li {
       .stillsItem{
         position: relative;
         margin-bottom: 25px;
-        width: 77px;
-        height: 77px;
+        width: 134px;
+        height: 75px;
         background-color: #ffffff;
+        a{
+          display: inline-block;
+        }
+        img{
+          height: 100%;
+        }
         a{
           padding: 0;
         }
         p{
           position: absolute;
+          background: #ffffff;
           left: 0;
           bottom: -25px;
           height: 25px;
@@ -2437,7 +2444,7 @@ li {
         font-size: 18px;
         color: #3C3C3C;
         padding: 10px 0 8px 0;
-        height: 25px;
+        min-height: 25px;
         line-height: 25px;
         a{
           float: right;
@@ -2496,9 +2503,15 @@ li {
         font-size: 14px;
         color: #949494;
         line-height: 25px;
+        tr{
+          td{
+            vertical-align: top;
+          }
+        }
       }
       .descript{
-        padding:10px 0 0 2em;
+        padding:10px 0 0 0;
+        text-indent: 2em;
         font-size: 14px;
         color: #949494;
       }

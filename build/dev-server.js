@@ -66,6 +66,11 @@ app.use('/webapp', proxy({target: 'http://test.vmaking.com', changeOrigin: true}
 app.use('/code', proxy({target: 'http://test.vmaking.com', changeOrigin: true}));
 app.use('/pc', proxy({target: 'http://test.vmaking.com', changeOrigin: true}));
 
+// app.use('/app', proxy({target: 'http://www.vmaking.com', changeOrigin: true}));
+// app.use('/webapp', proxy({target: 'http://www.vmaking.com', changeOrigin: true}));
+// app.use('/code', proxy({target: 'http://www.vmaking.com', changeOrigin: true}));
+// app.use('/pc', proxy({target: 'http://www.vmaking.com', changeOrigin: true}));
+
 // app.use('/app', proxy({target: 'http://192.168.3.3:9090', changeOrigin: true}));
 // app.use('/webapp', proxy({target: 'http://192.168.3.3:9090', changeOrigin: true}));
 // app.use('/code', proxy({target: 'http://192.168.3.3:9090', changeOrigin: true}));

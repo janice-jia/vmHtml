@@ -5,7 +5,7 @@
     </div>
     <div class="seriesDesc">
       <div class="seriesDescript-tit">
-        <p class="tit">简介{{this.$route.query.eid}}
+        <p class="tit">简介
           <router-link :to="{name:'seriesInfo1', params: {seriesId:videoDetails.id, eid: this.$route.query.eid}}">
             <img src="../assets/video_closed_btn.png" alt="">
           </router-link>
@@ -14,22 +14,23 @@
       <div class="seriesDescript">
         <table>
           <tr>
-            <td>名称：</td>
-            <td>{{videoDetails.title}}</td>
+            <td style="width: 3em;">
+              名称：</td>
+            <td colspan="3">{{videoDetails.title}}</td>
           </tr>
           <tr>
             <td>评分：</td>
-            <td>{{videoDetails.title}}分</td>
+            <td colspan="3">{{videoDetails.score}}</td>
           </tr>
           <tr>
             <td>导演：</td>
             <td>{{videoDetails.director}}</td>
-            <td>主演：</td>
-            <td>{{videoDetails.actors}}</td>
+            <td style="width: 3em;">主演：</td>
+            <td>{{videoDetails.actors}}&nbsp;</td>
           </tr>
           <tr>
-            <td>播放：</td>
-            <td>{{videoDetails.score}}分</td>
+            <td >播放：</td>
+            <td colspan="3">{{videoDetails.playCount}}次播放</td>
           </tr>
         </table>
         <p class="descript">{{videoDetails.descript}}</p>

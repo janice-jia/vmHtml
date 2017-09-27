@@ -5,10 +5,11 @@
     </div>
     <div class="seriesDesc">
       <div class="seriesInfo-tit">
-        <p class="tit">{{videoDetails.title}} <router-link :to="{name:'seriesDescript', query: {seriesId:videoDetails.id, eid: this.$route.params.eid}}">简介</router-link></p>
+        <p class="tit" v-if="videoDetails.episode == 1">{{videoDetails.epiList[(videoDetails.playEpi-1)].title}} <router-link :to="{name:'seriesDescript', query: {seriesId:videoDetails.id, eid: this.$route.params.eid}}">简介</router-link></p>
+        <p class="tit" v-if="videoDetails.episode == 0">{{videoDetails.title}} <router-link :to="{name:'seriesDescript', query: {seriesId:videoDetails.id, eid: this.$route.params.eid}}">简介</router-link></p>
         <p class="info">
-          <span class="red">{{videoDetails.score}}分</span>
-          <span class="dot">·</span>
+          <span class="red">{{videoDetails.score ? videoDetails.score : '无评'}}分</span>
+          <span class="dot" v-if="videoDetails.category">·</span>
           {{videoDetails.category}}
           <span class="dot">·</span>
           快看
@@ -49,7 +50,7 @@
             </div>
             <div class="triviaItemR">
               <router-link :to="{name:'seriesInfo', params: {seriesId: item.id}}">
-              <p class="color-1">{{item.title}}{{item.eid}}</p> <p class="color-2">发布时间：{{item.publishTime | getFormat}}</p>
+              <p class="color-1">{{item.title}}</p> <p class="color-2">发布时间：{{item.publishTime | getFormat}}</p>
               </router-link>
             </div>
 

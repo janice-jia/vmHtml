@@ -20,8 +20,8 @@
           <span slot="label">资讯</span>
         </tabbar-item>
         <tabbar-item link="/content" :selected="route.path === '/content'">
-          <img slot="icon" src="./assets/tab_Area_btn.png">
-          <img slot="icon-active" src="./assets/tab_Area_btn_selected.png">
+          <img slot="icon" src="./assets/tab_tribe_btn.png">
+          <img slot="icon-active" src="./assets/tab_tribe_btn_selected.png">
           <span slot="label">专区</span>
         </tabbar-item>
         <tabbar-item link="/video" :selected="route.path === '/video'">

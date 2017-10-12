@@ -5,11 +5,14 @@
         <sticky scrollBox="vux_view_box_body" :check-sticky-support="false" :offset="0">
           <div class="contentTab">
               <tab :line-width=3 custom-bar-width="15px"  active-color='#fc378c' v-model="index">
-                <tab-item class="contentTab-left"  :key="0">
-                  <router-link to="/content">精彩</router-link>
+                <tab-item class="contentTab-left" :key="0">
+                  <router-link to="/content/0">影视</router-link>
                 </tab-item>
                 <tab-item class="contentTab-left" :key="1">
                   <router-link to="/characters">人物</router-link>
+                </tab-item>
+                <tab-item class="contentTab-left" :key="2">
+                  <router-link to="/content/2">电影</router-link>
                 </tab-item>
               </tab>
           </div>

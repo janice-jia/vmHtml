@@ -18,7 +18,7 @@
               <div class="stillsItem"  v-for="item in video.banner.epiList">
                 <router-link :to="{name:'seriesInfo', params: {seriesId: item.id}}">
                   <img :src="item.cover" alt="">
-                  <p>河神</p>
+                  <p>{{item.title}}</p>
                 </router-link>
               </div>
               <!--<div class="stillsItem">-->

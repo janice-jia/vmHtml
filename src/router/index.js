@@ -84,7 +84,7 @@ export default new Router({
             component: CommentList
         },
         {
-            path: '/content',
+            path: '/content/:contentType',
             name: 'content',
             component: Content
         },

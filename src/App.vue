@@ -19,7 +19,7 @@
           <img slot="icon-active" src="./assets/tab_information_btn_selected.png">
           <span slot="label">资讯</span>
         </tabbar-item>
-        <tabbar-item link="/content" :selected="route.path === '/content'">
+        <tabbar-item link="/content/0" :selected="route.path === '/content'">
           <img slot="icon" src="./assets/tab_tribe_btn.png">
           <img slot="icon-active" src="./assets/tab_tribe_btn_selected.png">
           <span slot="label">专区</span>
@@ -71,7 +71,7 @@
               if (this.route.path === '/news') return '<a href="/welfare" class="home-welfare"></a>'
           },
           isHeader () {
-              if (this.route.path === '/content') return true
+              if (this.route.name === 'content') return true
               if (this.route.path === '/characters') return true
               if (this.route.path === '/mine') return true
               if (this.route.name === 'resetPwd') return true
@@ -81,7 +81,7 @@
               if (this.route.path === '/') return true
               if (this.route.path === '/news') return true
               if (this.route.path === '/mine') return true
-              if (this.route.path === '/content') return true
+              if (this.route.name === 'content') return true
               if (this.route.path === '/characters') return true
               if (this.route.path === '/video') return true
           },

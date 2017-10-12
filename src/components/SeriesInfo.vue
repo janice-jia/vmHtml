@@ -50,7 +50,7 @@
             </div>
             <div class="triviaItemR">
               <router-link :to="{name:'seriesInfo', params: {seriesId: item.id}}">
-              <p class="color-1">{{item.title}}</p> <p class="color-2">发布时间：{{item.publishTime | getFormat}}</p>
+                <p class="color-1">{{item.title}}</p> <p class="color-2">发布时间：{{item.publishTime | getFormat}}</p>
               </router-link>
             </div>
 

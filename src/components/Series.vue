@@ -8,7 +8,8 @@
         </div>
         <div class="seriesItemR">
           <div class="seriesItemR01">
-            <p class="type">{{item.category}}</p>
+            <!--<p class="type">{{item.category}}</p>-->
+            <p class="type">{{item.title}}</p>
             <p class="year">年份：{{item.airTime}}</p>
             <p class="desc">演员：{{item.actors}}</p>
           </div>

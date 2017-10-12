@@ -5,11 +5,14 @@
         <sticky scrollBox="vux_view_box_body" :check-sticky-support="false" :offset="0">
           <div class="contentTab">
               <tab :line-width=3 custom-bar-width="15px"  active-color='#fc378c' v-model="index">
-                <tab-item class="contentTab-left" selected  :key="0">
-                  <router-link to="/content">精彩</router-link>
+                <tab-item class="contentTab-left" :key="0">
+                  <router-link to="/content/0">影视</router-link>
                 </tab-item>
                 <tab-item class="contentTab-left" :key="1">
                   <router-link to="/characters">人物</router-link>
+                </tab-item>
+                <tab-item class="contentTab-left" :key="2">
+                  <router-link to="/content/2">电影</router-link>
                 </tab-item>
               </tab>
           </div>
@@ -81,7 +84,7 @@
       name: 'content',
       data () {
           return {
-              index: 0,
+              index: parseInt(this.$route.params.contentType),
               contents: [],
               itemsPerPage: 10,
               currentPage: 1,
@@ -94,12 +97,22 @@
       created () {
           this.getContents(this.currentPage)
       },
+      watch: {
+        '$route' (to, from) {
+          this.contents = []
+          this.getContents(this.currentPage)
+        }
+      },
       methods: {
           /*
-           *获取精彩列表
+           *获取影视/电影列表
            */
           getContents (currentPage) {
-              this.$http.get('/app/content/movie/list?itemsPerPage=' + this.itemsPerPage + '&currentPage=' + currentPage).then(function (data) {
+              var str = '/app/content/movie/list?itemsPerPage=' + this.itemsPerPage + '&currentPage=' + currentPage;
+              if(this.$route.params.contentType == 0){
+                  str = '/app/content/filmTelevision/list?itemsPerPage=' + this.itemsPerPage + '&currentPage=' + currentPage
+              }
+              this.$http.get(str).then(function (data) {
                   if (data.body.data) {
                       for (var i = 0; i < data.body.data.length; i++) {
                           this.contents.push(data.body.data[i])
